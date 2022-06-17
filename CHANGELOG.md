@@ -1,3 +1,10 @@
+## 0.1.1 (2022-06-17)
+
+### Fix
+
+- add click to the dependencies
+- add click to the dependencies
+
 ## 0.1.0 (2022-06-17)
 
 ### Feat
