@@ -11,7 +11,7 @@ jobs:
     strategy:
       max-parallel: 3
       matrix:
-        python-version: [3.7, 3.8, 3.9, '3.10']
+        python-version: [3.9]
     steps:
       - uses: actions/checkout@v1
       - name: Set up Python ${{ matrix.python-version }}
@@ -29,7 +29,7 @@ jobs:
           rm -r .git/hooks
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add pdm.lock
+          git add rss.xml
           git diff-index --quiet HEAD \
             || git commit -m "chore: update requirements"
       - name: Push changes
