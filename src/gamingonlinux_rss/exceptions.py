@@ -1,3 +1,6 @@
+"""Define the program exceptions."""
+
+
 class FetchError(Exception):
     """Capture Fetch errors."""
 
