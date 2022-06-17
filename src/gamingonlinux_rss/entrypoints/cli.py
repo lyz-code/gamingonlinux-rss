@@ -10,9 +10,9 @@ from . import load_logger
 @click.version_option(version="", message=version.version_info())
 @click.argument("rss_path")
 @click.argument("rss_url")
-@click.option("-n", "--max-articles", type=int)
+@click.option("-n", "--max-articles", type=int, default=100)
 @click.option("-v", "--verbose", is_flag=True)
-def cli(rss_path: str, rss_url: str, verbose: bool, max_articles: int = 100) -> None:
+def cli(rss_path: str, rss_url: str, verbose: bool, max_articles: int) -> None:
     """Command line interface main click entrypoint."""
     load_logger(verbose)
     services.create_rss(rss_path=rss_path, rss_url=rss_url, max_articles=max_articles)
