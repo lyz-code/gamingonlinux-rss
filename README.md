@@ -11,7 +11,7 @@ so that users support them to get the good RSS feed. It's important to support
 the content creators, so if you can, [please
 do](https://www.gamingonlinux.com/support-us/), if you are not able to do so,
 you can use [this alternate
-RSS](https://lyz-code.github.io/gamingonlinux-rss/rss.xml) created with this
+RSS](https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml) created with this
 program.
 
 Features:
