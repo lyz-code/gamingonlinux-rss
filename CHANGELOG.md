@@ -1,3 +1,10 @@
+## 0.1.3 (2022-06-17)
+
+### Fix
+
+- set default max_articles
+- set default max_articles
+
 ## 0.1.2 (2022-06-17)
 
 ### Fix
