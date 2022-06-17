@@ -1,3 +1,9 @@
+## 0.1.2 (2022-06-17)
+
+### Fix
+
+- add requests and dateutil to the requirements
+
 ## 0.1.1 (2022-06-17)
 
 ### Fix
