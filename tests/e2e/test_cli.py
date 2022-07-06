@@ -2,6 +2,7 @@
 
 import re
 from datetime import datetime
+from email.utils import parsedate_to_datetime
 
 import feedparser
 import pytest
@@ -53,5 +54,9 @@ def test_corrects_one_file(runner: CliRunner, tmpdir: LocalPath) -> None:
     )
     # Entry attributes
     assert len(feed.entries) == 1
-    for attribute in ["title", "author", "description", "link", "published"]:
-        assert getattr(feed.entries[0], attribute) is not None
+    article = feed.entries[0]
+    for attribute in ["title", "author", "description", "link"]:
+        assert getattr(article, attribute) is not None
+    # Assert that the date are compliant with RFC2822
+    # https://www.rssboard.org/rss-validator/docs/error/InvalidRFC2822Date.html
+    assert isinstance(parsedate_to_datetime(article.published), datetime)

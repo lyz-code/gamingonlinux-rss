@@ -13,7 +13,8 @@
     {# Feed illustration #}
     <image>
       <url>https://www.gamingonlinux.com/templates/default/images/favicons/favicon.ico</url>
-      <title>GamingOnLinux Icon</title>
+      <title>GamingOnLinux Latest Articles</title>
+      <link>https://www.gamingonlinux.com/</link>
     </image>
 
     {# Entries #}
@@ -24,7 +25,7 @@
       <description>{{ article.content }}</description>
       <link>{{ article.url }}</link>
       <guid isPermaLink="true">{{ article.url }}</guid>
-      <pubDate>{{ article.published_at }}</pubDate>
+      <pubDate>{{ article.published_at_rfc2822 }}</pubDate>
       <enclosure url="{{ article.image }}" type="image/jpeg"/>
       {% for tag in article.tags %}
       <category>{{ tag }}</category>
