@@ -22,7 +22,7 @@ jobs:
         run: pip install gamingonlinux-rss feedparser
       - name: Create RSS
         run: |-
-          gamingonlinux -v -n 500 rss.xml \
+          gamingonlinux -v rss.xml \
           https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml
       - name: Validate the RSS
         run: python .validate_rss.py rss.xml
