@@ -24,6 +24,8 @@ jobs:
         run: |-
           gamingonlinux rss.xml \
           https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml -v -n 500
+      - name: Validate the RSS
+        run: python .validate_rss.py rss.xml
       - name: Commit files
         run: |
           rm -r .git/hooks
