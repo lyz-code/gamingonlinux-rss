@@ -24,7 +24,7 @@
       <description>{{ article.content }}</description>
       <link>{{ article.url }}</link>
       <guid isPermaLink="true">{{ article.url }}</guid>
-      <pubDate>{{ article.created_at }}</pubDate>
+      <pubDate>{{ article.published_at }}</pubDate>
       <enclosure url="{{ article.image }}" type="image/jpeg"/>
       {% for tag in article.tags %}
       <category>{{ tag }}</category>

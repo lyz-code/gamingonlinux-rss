@@ -23,7 +23,7 @@ jobs:
       - name: Create RSS
         run: |-
           gamingonlinux rss.xml \
-          https://lyz-code.github.io/gamingonlinux-rss/rss.xml -v
+          https://lyz-code.github.io/gamingonlinux-rss/rss.xml -v -n 200
       - name: Commit files
         run: |
           rm -r .git/hooks

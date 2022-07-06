@@ -5,6 +5,8 @@ and handlers to achieve the program's purpose.
 """
 
 import logging
+import typing
+import urllib.parse
 from datetime import datetime
 from typing import Generator, List
 
@@ -12,6 +14,7 @@ import requests
 from bs4 import BeautifulSoup, Tag
 from dateutil import parser
 from jinja2 import Environment, PackageLoader, select_autoescape
+from pydantic import AnyHttpUrl
 from tenacity import RetryError, retry
 from tenacity.stop import stop_after_attempt
 from tenacity.wait import wait_exponential
@@ -30,6 +33,14 @@ def get(url: str) -> BeautifulSoup:
     if request.status_code != 200:
         raise FetchError(f"{url} returned an {request.status_code} code")
     return BeautifulSoup(request.text, "html.parser")
+
+
+def _normalize_url(url: str) -> AnyHttpUrl:
+    """Encode url to make it compatible with AnyHttpUrl."""
+    return typing.cast(
+        AnyHttpUrl,
+        urllib.parse.quote(url, ":/"),
+    )
 
 
 def get_articles(
@@ -52,11 +63,11 @@ def get_articles(
 
         for article_data in articles_data.find_all("div", class_="article"):
             yield Article(
-                url=article_data.find(class_="title").a["href"],
+                url=_normalize_url(article_data.find(class_="title").a["href"]),
                 title=article_data.find(class_="title").string,
                 summary=article_data.find(class_="p-summary").string,
                 author=article_data.find(class_="p-author").string,
-                image=article_data.img["src"],
+                image=_normalize_url(article_data.img["src"]),
                 tags=[
                     tag.string
                     for tag in article_data.find(class_="tags").find_all("li")

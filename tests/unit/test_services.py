@@ -61,6 +61,28 @@ class TestGetArticles:
         ):
             next(services.get_articles())
 
+    def test_handles_spaces_in_image_url(
+        self, page_url: str, requests_mock: Mocker
+    ) -> None:
+        """
+        Given: that the web returns an html with an article that has a space in the url
+        When: using get_articles
+        Then: the image link is transformed so it doesn't raise a ValidationError
+        """
+        with open(
+            "tests/assets/homepage-with-space-in-article-image-url.html",
+            "r",
+            encoding="UTF8",
+        ) as file_descriptor:
+            requests_mock.get(page_url, text=file_descriptor.read())
+
+        result = next(services.get_articles())
+
+        assert str(result.image) == (
+            "https://www.gamingonlinux.com/uploads/tagline_gallery/"
+            "deck%20verified.jpg"
+        )
+
 
 class TestGetArticleContent:
     """Test the fetch of the article content."""
