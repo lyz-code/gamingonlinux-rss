@@ -19,11 +19,11 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install the program
-        run: pip install gamingonlinux-rss
+        run: pip install gamingonlinux-rss feedparser
       - name: Create RSS
         run: |-
-          gamingonlinux rss.xml \
-          https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml -v -n 500
+          gamingonlinux -v -n 500 rss.xml \
+          https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml
       - name: Validate the RSS
         run: python .validate_rss.py rss.xml
       - name: Commit files
