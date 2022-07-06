@@ -1,3 +1,10 @@
+## 0.1.4 (2022-07-06)
+
+### Fix
+
+- support articles that have spaces in the image url (#5)
+- correct the published date of the articles
+
 ## 0.1.3 (2022-06-17)
 
 ### Fix
