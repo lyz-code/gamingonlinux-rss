@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2022-07-18 07:31:32.226584</pubDate>
+    <pubDate>2022-07-19 07:31:18.344565</pubDate>
 
     
     <image>
@@ -18,6 +18,237 @@
     </image>
 
     
+    
+    <item>
+      <title>Wine 7.13 rolled out recently continuing the PE conversion</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Fashionably late on this one. <a href="https://www.winehq.org/announce/7.13" target="_blank">Wine 7.13</a> rolled out just before the weekend rolled in, so here's a quick run down of what's new in this Windows compatibility layer.</p>
+<p>This is the compatibility layer that allows you to run various Windows applications and games on Linux (and forms part of Steam Play Proton). Once a year or so, a new stable release is made but the development versions are usually fine to use.</p>
+<p>Highlights:</p>
+<blockquote>
+<ul>
+<li>Gecko engine updated to version 2.47.3.</li>
+<li>USB driver converted to PE.</li>
+<li>Some theming improvements.</li>
+<li>Various bug fixes.</li>
+</ul>
+</blockquote>
+<p>They're getting close to finishing the PE conversion now, which should bring compatibly improvements. Previously Wine has built its Win32 libraries (like DLLs and EXEs) as <a href="https://en.wikipedia.org/wiki/Executable_and_Linkable_Format" target="_blank">ELF</a> but for many reasons (like better compatibility) they've started to move them over to use <a href="https://en.wikipedia.org/wiki/Portable_Executable" target="_blank">PE</a> instead.</p>
+<p>For bug fixes they noted problems solved with: The Witcher 3, Photoshop C 2018, CLIP Studio Paint, SnowRunner, Hyperdimension Neptunia Re;Birth 1, Skyrim Legendary Edition, Wizard101, Wireshark and others.</p>
+<p>Need help installing apps with Wine? Try out <a href="https://usebottles.com/" target="_blank">Bottles</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/07/wine-713-rolled-out-recently-continuing-the-pe-conversion/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/07/wine-713-rolled-out-recently-continuing-the-pe-conversion/</guid>
+      <pubDate>Mon, 18 Jul 2022 14:28:19 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Heroic Games Launcher adds GOG Cloud Saves, Epic Overlay support, anti-cheat helpers</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Heroic Games Launcher for Epic Games and GOG on Linux has a huge new Beta release (plus a bug fixes for the stable build) with loads of fancy new features.</p>
+<p>Why should you use the Heroic Games Launcher? Well, Epic Games and GOG don't support Linux with their launchers and so playing games from them can be a bit of a nuisance on Linux and Steam Deck. This way you get a handy launcher to keep them nicely up to date. It's free and open source too, so anyone can help improve it!</p>
+<p>With the <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.4.0-beta.2" target="_blank">2.4.0 Beta 2</a> release now out it adds in:</p>
+<ul>
+<li>GOG Cloud Save, which works with Windows games run through Wine / Proton, as GOG doesn't support it for Native Linux games.</li>
+<li>Epic Overlay Support.</li>
+<li>Support for the Easy Anti-Cheat and BattlEye Runtimes (for games that have support hooked up). They also list anti-cheat status on game pages supplied by <a href="https://areweanticheatyet.com/" target="_blank">areweanticheatyet.com</a>, although that might not be too accurate.</li>
+<li>A new easier way of adding environment variables or wrappers to launch games with.</li>
+<li>A way to add a game shortcut directly to Steam (as a Non-Steam Game).</li>
+<li>Electron was updated to v19.</li>
+<li>Legendary was updated to v0.20.27.</li>
+<li>GOGDL was updated to v0.4.</li>
+<li>Various other improvements.</li>
+</ul>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/765384591658153030gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/765384591658153030gol1.png"/></a></p>
+<p>On top of that the stable <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.3.10" target="_blank">version 2.3.10</a> was also released fixing up a couple of issues.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/07/heroic-games-launcher-adds-gog-cloud-saves-epic-overlay-support-anti-cheat-helpers/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/07/heroic-games-launcher-adds-gog-cloud-saves-epic-overlay-support-anti-cheat-helpers/</guid>
+      <pubDate>Mon, 18 Jul 2022 14:05:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/102928167id21317gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Epic Games</category>
+      
+      <category>GOG</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Open source evolution sim Thrive gets procedural maps, better gameplay</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Thrive is a free and open source science-based game about evolution, currently allowing you to swim around as a little cell and attempt to survive. The latest release brings in some major improvements. It's in Early Access and they have a long way to go before it's a complete game but it's still a really interesting idea, very much like an expanded early-stage version of Spore.</p>
+<p>With the latest version they've now added in procedural generation for the map, so each game will be somewhat different now instead of the same each time. This includes new settings like entering a seed to play a specific map, along with multiple other new-game options like a "LAWK" toggle (life as we know it) to be more strict to realism. Swallowing up other cells has also been made much more interesting, a new 3D editor for the macroscopic portion of the Multicellular Stage, the addition of cilia as as placeable organelles, a spawn system revamp and much more.</p>
+<div class="hidden_video" data-video-id="3D3u88bSHSc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d661e31faf612fe2008c0018d4a9ee79.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3D3u88bSHSc" target="_blank">See video</a></div></div>
+<p>With the next release they're hoping to continue improving these recently added features, performance improvements and continue expanding the Multicellular Stage prototype along with adding more features to bring the Microbe Stage closer to completion.</p>
+<p>You can buy it on <a href="https://store.steampowered.com/app/1779200/Thrive/" target="_blank">Steam</a> to support development or grab it free with the launcher on <a href="https://github.com/Revolutionary-Games/Thrive-Launcher" target="_blank">GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/07/open-source-evolution-sim-thrive-gets-procedural-maps-better-gameplay/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/07/open-source-evolution-sim-thrive-gets-procedural-maps-better-gameplay/</guid>
+      <pubDate>Mon, 18 Jul 2022 10:40:45 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1130600259id21316gol.jpg" type="image/jpeg"/>
+      
+      <category>Free Game</category>
+      
+      <category>Godot Engine</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>iFixit have the Steam Deck Fan in stock if you&#39;re in the U.S.</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Want to get rid of the whine that certain models of Steam Deck have with their fan? Good news, at least if you're in the USA, as iFixit have fans in stock.</p>
+<p>As a reminder, the problem is that Valve use two different fans in the Steam Deck. One is like a more gentle blower sound, the other gives a thoroughly annoying high-pitch whine. iFixit are the official way to get replacement parts and they now seem to have quite a few <a href="https://www.ifixit.com/Store/Miscellanous/Steam-Deck-Fan/IF260-002?o=2" target="_blank">replacement fans</a> in stock for the US.</p>
+<p>You can get just the fan for $24.99 or the full kit for $29.99 which comes with Angled Tweezers, Opening Picks and a Precision Bit Driver.</p>
+<p style="text-align:center"><em><img src="https://uploads.golmedia.net/uploads/articles/article_media/12174723901658138852gol1.jpg"/>Image Credit - iFixit</em></p>
+<p>This time at least it seems they have enough stock that it didn't just vanish within an hour or two. They've remained available now for a couple of days so it appears the initial rush to buy replacements fans might be over, or with the newer fan curves and other upgrades Valve has put out for the Steam Deck perhaps it's annoying people less.</p>
+<p><em>No word yet on when the fan will be back for the EU, UK and others.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/07/ifixit-have-the-steam-deck-fan-in-stock-if-youre-in-the-us/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/07/ifixit-have-the-steam-deck-fan-in-stock-if-youre-in-the-us/</guid>
+      <pubDate>Mon, 18 Jul 2022 10:11:24 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/691064426id21315gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Hardware</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Souls-like game Hellpoint: Blue Sun major expansion DLC is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The thoroughly challenging Souls-like game Hellpoint has expanded with the Hellpoint: Blue Sun major expansion DLC. With the DLC you will end up getting some answers, as they said it reveals the full story "for those who can understand it".</p>
+<blockquote>
+<p>Strike a deal with the elder god Asmodeus and descend into the realm of the Blue Sun. A parallel dimension hiding the city’s deepest secrets, including the truth behind the cataclysm known as the Merge. Explore three new massive and interconnected zones, arm yourself with powerful new two-handed weapons, hunt horrifying new bosses for their equipment and gorge yourself on a bounty of respecs and other improvements. Reforge yourself as the mightiest Spawn of all.</p>
+</blockquote>
+<p>Trailer available below:</p>
+<div class="hidden_video" data-video-id="LDYfd1DWQpE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a9e6c1d8c0e4762193e123e993caa718.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/LDYfd1DWQpE" target="_blank">See video</a></div></div>
+<p>About Hellpoint:</p>
+<ul>
+<li><strong>Souls-like gameplay in a unique setting</strong>: Explore the derelict space station of Irid Novo and face bizarre enemies with a tight and unforgiving combat system.</li>
+<li><strong>Occult space story</strong>: Blending science and fantasy, the intensely atmospheric dark sci-fi setting will keep you searching for answers.</li>
+<li><strong>Dynamic World</strong>: The Quantic System acts as a dungeon master, slightly transforming the game world every time you die and triggering events as the station revolves around the black hole.</li>
+<li><strong>Jump-in co-op and PvP multiplayer</strong>: Hellpoint offers a full, uninterrupted online co-op story experience with shared loot drops.</li>
+</ul>
+<p>You can buy the game on <a href="https://www.gog.com/game/hellpoint" target="_blank">GOG</a> and Steam.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/07/souls-like-game-hellpoint-blue-sun-major-expansion-dlc-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/07/souls-like-game-hellpoint-blue-sun-major-expansion-dlc-is-out-now/</guid>
+      <pubDate>Mon, 18 Jul 2022 09:49:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1416221364id21314gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>DLC</category>
+      
+      <category>GOG</category>
+      
+    </item>
+    
+    <item>
+      <title>Swirl W@tch is a blindly-vibrant upcoming stealth-action rogue-lite</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Sleeper Games have revealed their latest game with Swirl W@tch, a very colourful and bright stealth-action rogue-lite that will release later this year.</p>
+<p>Coming with Native Linux support as usual from Sleeper Games, it takes place on an "over-exploited gas giant". You need to fly around and infiltrate industrial installations, evade or eliminate guard ships, commit corporate sabotage and grow the movement to unlock new gear. From what the developer said over email the setting blends a space-shooter with an arcade-style submarine-sim, wrapped up in a rogue-lite gameplay loop of randomized missions.</p>
+<p>You can see the first teaser trailer below:</p>
+<div class="hidden_video" data-video-id="2nFGIEiEVBY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ebf9ffb0fd606eb3a0d3d815cc1e6251.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/2nFGIEiEVBY" target="_blank">See video</a></div></div>
+<p>Looks like one to watch.</p>
+<p>You can <a href="https://store.steampowered.com/app/2081970/Swirl_Wtch/" target="_blank">follow it on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/07/swirl-wtch-is-a-blindly-vibrant-upcoming-stealth-action-rogue-lite/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/07/swirl-wtch-is-a-blindly-vibrant-upcoming-stealth-action-rogue-lite/</guid>
+      <pubDate>Mon, 18 Jul 2022 09:43:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1177923838id21313gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Rogue-lite</category>
+      
+    </item>
+    
+    <item>
+      <title>fheroes2 game engine for Heroes of Might and Magic II gets even more AI upgrades</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Fully playable but they're not done yet. The team behind the Heroes of Might and Magic II game engine reimplementation continue to improve it even further for playing it on modern platforms. This free and open source reimplementation is simply awesome, the best way to play the classic.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17538617791658136865gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17538617791658136865gol1.png"/></a></p>
+<p>Version 0.9.17 was released recently with these highlights:</p>
+<ul>
+<li>Further audio improvements: add a sound for Freeman's Foundry, fix delays in MIDI music, fix many issues and crashes related to audio</li>
+<li>Expand initial Evil Interface to another in-game dialogs and elements</li>
+<li>Add huge AI improvements: add Courier role for heroes, AI defend castles more aggressively and hires heroes efficiently</li>
+<li>Add ability to change hotkeys within the game</li>
+<li>Improve Polish, Ukrainian, French and Norwegian translations</li>
+<li>Fix several places related to logic on Adventure Map</li>
+<li>Over 40 bugs are fixed since 0.9.16 release</li>
+</ul>
+<p>Giving a little more information to us over email, one of the developers gave us a longer explanation of the changes:</p>
+<blockquote>
+<p>Audio was significantly improved since the previous release. The team fixed issues with MIDI music playback delays on Adventure Map, multiple possible crashes with audio synchronization, extra sounds appearance in castle's window and etc. Such cases were very rare but nobody likes a buggy game. As a bonus Freeman's Foundry now has its own ambient sound on Adventure Map. Walk your hero nearby it to hear!<br/>
+<br/>
+"Evil" interface finally got some proper attention. In the original game this type of interface was applied only to a limited number of dialogs. The list of dialogs was expanded and now some windows to have a proper "evil" look.<br/>
+<br/>
+AI has been greatly enhanced in this release. The team added a new Courier role for AI heroes to focus on supplies delivery for more stronger heroes. AI now is smart enough to use Adventure Spells efficiently and also to estimate the number of needed heroes for the kingdom. Lastly, AI will defend its castle more aggressively instead of leaving them empty and defenseless.<br/>
+<br/>
+As per many player requests the team added an ability to change hotkeys for in-game events within the game. Now you can set any combinations to improve your gameplay skills.<br/>
+<br/>
+Besides this the team fixed multiple places with logic on Adventure Map, closed some visual issues with dialogs and improved translation for multiple languages. As usual more than 40 bugs were fixed since the last release.</p>
+</blockquote>
+<p>Available to download on <a href="https://github.com/ihhub/fheroes2" target="_blank">GitHub</a>. You do also need to grab the data from <a href="https://af.gog.com/game/heroes_of_might_and_magic_2_gold_edition?as=1636858786" target="_blank">GOG.com</a> which it requires to run.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/07/fheroes2-game-engine-for-heroes-of-might-and-magic-ii-gets-even-more-ai-upgrades/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/07/fheroes2-game-engine-for-heroes-of-might-and-magic-ii-gets-even-more-ai-upgrades/</guid>
+      <pubDate>Mon, 18 Jul 2022 09:36:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/317637052id21312gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Reimplementation</category>
+      
+    </item>
     
     <item>
       <title>Steam Deck hits over 4,000 titles marked either Verified or Playable</title>
@@ -4328,287 +4559,6 @@ Banter with old friends and new faces on familiar islands now under dangerous ne
       <category>Steam</category>
       
       <category>Strategy</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve continues tweaking Counter-Strike: Global Offensive for Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has released a fresh update to Counter-Strike: Global Offensive and they continue focusing on Steam Input improvements, to make playing it with a controller and the Steam Deck a better experience.</p>
-<p>Seems they're trying to help controller players catch up at least a tiny bit with those using a mouse, with plenty of working going into changing how gyros work. Quite a small patch overall though but it sounds like some pretty fun and welcome changes, although Gyros Akimbo does sound somewhat hilarious.</p>
-<blockquote>
-<ul>
-<li>Steam Deck now allows other game controllers to be connected via Steam Input. All connected controllers combine inputs. (You can play with Gyros Akimbo if you are very cool).</li>
-<li>“Pitch and Roll Combined” is the new default Gyro conversion on Steam Deck. All other controllers default to “Yaw”</li>
-<li>Radial menus (in particular, Quick Buy radials) no longer persist when dying.</li>
-<li>Some glyph fixes in Spectator mode.</li>
-</ul>
-</blockquote>
-<p>I did try out CS:GO on Deck myself and was tempted to video it but lets just say it was embarrassing. It's a very tough game to really get into on a controller of any sort. If you have a Deck, have you been playing CS:GO on it? Let us know what your experience has been in the comments.</p>
-<p>You can play<a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank"> free on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/06/valve-continues-tweaking-counter-strike-global-offensive-for-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/06/valve-continues-tweaking-counter-strike-global-offensive-for-steam-deck/</guid>
-      <pubDate>Fri, 24 Jun 2022 08:15:08 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1710656506id21217gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>FPS</category>
-      
-      <category>Free Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Summer Sale 2022 is live so prepare your wallet</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another year, another big <a href="https://store.steampowered.com/" target="_blank">Steam Summer Sale</a>. Time to load up your cart with all those games you will definitely get around to playing — right? Since this is the big event it comes with the usual fluffy extras like trading cards to earn, badges to craft and more. Really though, you all just want the sweet discounts though right?</p>
-<p>They even did a trailer again:</p>
-<div class="hidden_video" data-video-id="mYVcAn6Oj7Q"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bce12183f25268da3d3fb265fc1b0b71.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/mYVcAn6Oj7Q" target="_blank">See video</a></div></div>
-<p>Some great discounts that work on Linux desktop and Steam Deck like:</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/245170/Skullgirls_2nd_Encore/" target="_blank">Skullgirls 2nd Encore</a> - Deck Verified, Linux Native (80% off)</li>
-<li><a href="https://store.steampowered.com/app/1179210/Kill_It_With_Fire/" target="_blank">Kill It With Fire</a> - Deck Verified (75% off)</li>
-<li><a href="https://store.steampowered.com/app/305620/The_Long_Dark/" target="_blank">The Long Dark</a> - Deck Verified, Linux Native (75% off)</li>
-<li><a href="https://store.steampowered.com/app/330020/Children_of_Morta/" target="_blank">Children of Morta</a> - Deck Verified, Linux Native (66% off)</li>
-<li><a href="https://store.steampowered.com/app/457140/Oxygen_Not_Included/" target="_blank">Oxygen Not Included</a> - Deck Verified, Linux Native (60% off)</li>
-<li><a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank">Hollow Knight</a> - Deck Verified, Linux Native (50% off)</li>
-</ul>
-<p>And the list of course goes on and on. If you want an easy way to find discounts for games that will work well on both Linux desktop and Steam Deck <a href="https://store.steampowered.com/search/?sort_by=DeckCompatDate_DESC&amp;deck_compatibility=3%2C2&amp;os=linux%2Cwin&amp;specials=1" target="_blank">use this link</a>.</p>
-<p>If you find some especially good deals, be sure to comment and let people know what you think is worth picking up.</p>
-<p>The Steam Summer Sale 2022 runs from June 23rd at 5PM UTC to July 7th!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/06/steam-summer-sale-2022/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/06/steam-summer-sale-2022/</guid>
-      <pubDate>Thu, 23 Jun 2022 17:06:20 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1351841599id21216gol.jpg" type="image/jpeg"/>
-      
-      <category>Event</category>
-      
-      <category>Game Sale</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>With a quick script you can run Steam Deck Desktop Mode inside Gaming Mode</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>We're going into ridiculous territory of tweaking now and the possibilities are seemingly endless on what you can do with the Steam Deck. You can even run the Desktop Mode inside of Gaming Mode.</p>
-<p>Thanks to a <a href="https://old.reddit.com/r/SteamDeck/comments/uddyat/desktop_mode_within_gaming_mode/" target="_blank">Reddit user</a>, the script is pretty simple and only needs you to add the commands into a text file, set it as executable and add it to Steam as a Non-Steam game. From there, you can launch and switch between desktop mode and games running in the background and it actually works. It's far from perfect with some issues where the desktop mode may freeze up so you need to quit it with certain games, and sometimes the mouse won't go to the very bottom but hey — this is the kind of awesome stuff you can do with Linux right?</p>
-<p>Here's a brief demo:</p>
-<div class="hidden_video" data-video-id="3uJeqafjwsc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/dfa99ec6e4a2899d865f1a40f46e2dcc.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3uJeqafjwsc" target="_blank">See video</a></div></div>
-<p>Love it. If you try it, don't blame me if you break something. Just wanted to highlight something mildly amusing and also somewhat useful too.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/06/with-a-quick-script-you-can-run-steam-deck-desktop-mode-inside-gaming-mode/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/06/with-a-quick-script-you-can-run-steam-deck-desktop-mode-inside-gaming-mode/</guid>
-      <pubDate>Thu, 23 Jun 2022 14:04:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1784015227id21215gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Meta</category>
-      
-      <category>Video</category>
-      
-    </item>
-    
-    <item>
-      <title>Alien Swarm: Reactive Drop devs detail their support of Proton and Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://store.steampowered.com/app/563560/Alien_Swarm_Reactive_Drop/" target="_blank">Alien Swarm: Reactive Drop</a>, a community updated and expanded version of the free Alien Swarm originally by Valve continues to see lots of improvements. The developers also explained their clear support of Linux with Proton and the Steam Deck.</p>
-<p>Released by Valve originally in 2010, Alien Swarm: Reactive Drop continues the much lesser-known Valve title with an impressive set of extras. It doesn't have Native Linux support like other Valve titles and the Reactive Drop Team has explained it likely never will due to the specific Source engine build used. However "making the game run well on Proton was and continues to be a priority" <a href="https://steamcommunity.com/app/563560/discussions/2/4932019356819234637/" target="_blank">they say</a>.</p>
-<p>A bunch of improvements also came along for gamepad and Steam Deck users including:</p>
-<blockquote>
-<ul>
-<li>Improved controller navigation order on several menus.</li>
-<li>Made several in-game menus including the briefing menu navigable using ControllerFocus (the red/yellow flashing border).</li>
-<li>Added controller button prompts to several places, including the game instructor.</li>
-<li>Redesigned some menus entirely, such as the mission selection screen.</li>
-<li>Enlarged the main font size on smaller resolutions.</li>
-<li>Added a new radial menu system for selecting marines with the d-pad.</li>
-</ul>
-</blockquote>
-<p>They said to let them know if you have problems on Linux / Steam Deck in <a href="https://steamcommunity.com/app/563560/discussions/2/4932019356819234637/" target="_blank">this thread in the forum</a>.</p>
-<p>It's nice to see more developers do direct support like this. Here's a short video to show it working well:</p>
-<div class="hidden_video" data-video-id="QuXSHMIR8zk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/48b5f597aaeeef0ad432fad57f5a7802.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/QuXSHMIR8zk" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/06/alien-swarm-reactive-drop-devs-detail-their-support-of-proton-and-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/06/alien-swarm-reactive-drop-devs-detail-their-support-of-proton-and-steam-deck/</guid>
-      <pubDate>Thu, 23 Jun 2022 12:11:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/391628893id21214gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Action</category>
-      
-      <category>Free Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton Experimental gets Paladins working on Linux and Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve released a fresh upgrade for Proton Experimental on June 22nd which brings even more game compatibility to Linux desktops and Steam Deck.</p>
-<p>Listed as now playable as of this update includes:</p>
-<ul>
-<li>The Rising of the Shield Hero: Relive The Animation</li>
-<li>Paladins</li>
-</ul>
-<p>Paladins is an interesting one, as it was sort-of playable for a while using a few workarounds and an older version of GE-Proton but now having it in the official Proton is going to make it so much easier.</p>
-<p>This update also solves Tekken 7 crashing at launch and more work has been done on video playback, with many games that previous requires special hacks in Proton no longer being required including: The Long Dark, Trailmakers, Surviving the Aftermath, Haven, TOHU, Hardspace: Shipbreaker, V Rising and more.</p>
-<p>The changelog can be seen <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">here</a> at any time.</p>
-<p>Need to know how to change the Proton version used? See the below video:</p>
-<div class="hidden_video" data-video-id="f1GvONkE9S0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6bb07ac6333f611978e50464915ff76b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/f1GvONkE9S0" target="_blank">See video</a></div></div>
-<p>Many more Steam Deck Guides available on our <a href="https://www.youtube.com/playlist?list=PLRikbCj_P-2Ghffnr_MPIGI3BcU2WfypW" target="_blank">dedicated YouTube Playlist</a>.</p>
-<p>Text guide (Steam Deck):</p>
-<ul>
-<li>Pick a game and head to the little COG icon on the right.</li>
-<li>Click Properties, then Compatibility on the left.</li>
-<li>Make sure the tickbox is done, then select it from the dropdown.</li>
-</ul>
-<p>On a Linux desktop:</p>
-<ul>
-<li>Right click a game, go to Properties.</li>
-<li>Compatibility on the left.</li>
-<li>Make sure the tickbox is done, then select it from the dropdown.</li>
-</ul>
-<p>Here's also a quick video overview and a short look at Paladins running on the Steam Deck. It's not perfected yet with a few issues remaining but it's starting to get there and performance seems good.</p>
-<div class="hidden_video" data-video-id="pHl_98zBG3s"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/996d0429cb8a8c5d5d1e7f37e64997bd.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/pHl_98zBG3s" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/06/proton-experimental-gets-paladins-working-on-linux-and-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/06/proton-experimental-gets-paladins-working-on-linux-and-steam-deck/</guid>
-      <pubDate>Thu, 23 Jun 2022 10:36:55 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>AMD publishes the source code for FidelityFX Super Resolution 2 (FSR 2)</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>As they promised they would, AMD has now officially published the <a href="https://github.com/GPUOpen-Effects/FidelityFX-FSR2" target="_blank">source code</a> for FidelityFX Super Resolution 2 (FSR 2) under an open source license. With it under the MIT license, developers can pretty much go nuts with it.</p>
-<p>This tech is their newer and more advanced temporal upscaling solution, supporting the Vulkan and DirectX 12 graphics APIs, it's fully supported on Linux and works on different vendor GPUs (not just AMDs). AMD say it "uses cutting-edge temporal algorithms to reconstruct fine geometric and texture detail, producing anti-aliased output from aliased input". Developed from the ground-up, it's quite a big difference from FSR 1 to provide even better performance and clearer images. Developers can even use both since they're so different.</p>
-<p>FSR 2 features include:</p>
-<blockquote>
-<p><strong>Temporal</strong></p>
-<ul>
-<li>Delivers similar or better than native image quality using temporal data.</li>
-</ul>
-<p><strong>Anti-aliasing</strong></p>
-<ul>
-<li>Includes high-quality anti-aliasing.
-	<ul>
-<li>FSR 2 replaces any TAA within the game frame.</li>
-</ul>
-</li>
-</ul>
-<p><strong>High image quality</strong></p>
-<ul>
-<li>Higher image quality than FSR 1 technology at all quality presets/resolutions.
-	<ul>
-<li>Different quality modes available.</li>
-<li>Dynamic Resolution Scaling supported.</li>
-</ul>
-</li>
-</ul>
-<p><strong>No machine learning</strong></p>
-<ul>
-<li>Does not require dedicated Machine Learning (ML) hardware.
-	<ul>
-<li>More platforms can benefit.</li>
-<li>Gives more control to cater to a range of different scenarios.</li>
-<li>Better ability to optimize.</li>
-</ul>
-</li>
-</ul>
-<p><strong>Cross-platform</strong></p>
-<ul>
-<li>Boosts framerates in supported games.
-	<ul>
-<li>Wide range of products and platforms, both AMD and select competitors.</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<p>You can see a number of their comparisons on their <a href="https://gpuopen.com/fidelityfx-superresolution-2/" target="_blank">GPUOpen website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/06/amd-publishes-the-source-code-for-fidelityfx-super-resolution-2-fsr-2/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/06/amd-publishes-the-source-code-for-fidelityfx-super-resolution-2-fsr-2/</guid>
-      <pubDate>Thu, 23 Jun 2022 09:51:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1693371699id21213gol.jpg" type="image/jpeg"/>
-      
-      <category>AMD</category>
-      
-      <category>Game Dev</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Cyberpunk point and click adventure Born Punk is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Born Punk is a brand new cyberpunk point and click adventure from developer Insert Disk 22. It just released on Steam on June 18th and now a Native Linux version is also available. Funded thanks to a Kickstarter campaign, it's nice to see a trickle of games still coming from the crowdfunding platform.</p>
-<p>"In Born Punk, the player slips into the role of three people (well, two people, depending on your stance on artificial lifeforms) living on the island: Eevi, a corporate combat hacker turned bartender down on her luck; Mariposa, the CEO of Bornholm's biggest corporation; and a malfunctioning android who calls himself Grandmaster Flashdrive.</p>
-<p>The three characters have one thing in common: they all, one after another, get possessed by strange entities of unknown origin and even less known intentions. They must work together - and sometimes against each other - to find out of the nature of those beings, what they want, and why they seem to think that their 'mission' is of vital importance for the future of humanity."</p>
-<div class="hidden_video" data-video-id="cBJ5mo_rDTk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/64100af9ee33066cb1850240479715f9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/cBJ5mo_rDTk" target="_blank">See video</a></div></div>
-<p>Features to expect from it:</p>
-<blockquote>
-<ul>
-<li><strong>A classic point-and-click adventure experience:</strong> we're very proud to feature our own distinct style, but we are also definitely influenced by games like Monkey Island or Beneath a Steel Sky and try to please both veteran afficionados of the genre and newcomers alike with a traditional pixel-art appearance and a streamlined, modern approach to game design</li>
-<li><strong>Movement everywhere:</strong> you won't feel like you're walking through a still life painting; Born Punk's world is alive and full of animation, soundscapes and small details to discover</li>
-<li><strong>Choices and consequences:</strong> often, it's possible to approach dialogues and puzzles from different angles. As a result, interactions and dialogues with other characters, the difficulty to overcome certain obstacles, and the results of many actions will vary greatly depending on what the player chooses to do</li>
-<li><strong>Full voice-overs:</strong> every character in Born Punk and every line is voiced by professional voice actors. Yes, that includes the cat.</li>
-<li><strong>Bombastic music:</strong> the main theme and various other tracks are composed by Jeff Kurtenacker, composer of Wildstar and choral arranger of World of Warcraft. Jeff is joined by a merry band of synthwave musicians to create a genuine and emotional cyberpunk/sci-fi soundtrack with a Nordic twist</li>
-<li><strong>Let's be serious, it's funny:</strong> Born Punk is science-fiction with heavy cyberpunk influences; but we're also boasting a hopeful, often humorous undertone. Point &amp; click adventures without at least a bit of humour are unthinkable to us!</li>
-<li><strong>A comprehensive universe:</strong> there's a slew of background info to read and experience, all of which becomes available in your PDA as you interact with the game world. Sometimes, in-game lore will also serve as an optional gameplay mechanic.</li>
-</ul>
-</blockquote>
-<p>Available to buy on <a href="https://store.steampowered.com/app/979480/Born_Punk/" target="_blank">Steam</a>. Currently both <a href="https://www.gog.com/game/born_punk" target="_blank">GOG</a> and <a href="https://insertdisk22.itch.io/born-punk" target="_blank">itch.io</a> only have the Windows builds.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/06/cyberpunk-point-and-click-adventure-born-punk-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/06/cyberpunk-point-and-click-adventure-born-punk-is-out-now/</guid>
-      <pubDate>Thu, 23 Jun 2022 08:17:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1777790324id21212gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>New Release</category>
-      
-      <category>Point & Click</category>
       
     </item>
     
