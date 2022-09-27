@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2022-09-26 07:49:34.712401</pubDate>
+    <pubDate>2022-09-27 07:56:55.132832</pubDate>
 
     
     <image>
@@ -18,6 +18,257 @@
     </image>
 
     
+    
+    <item>
+      <title>Custom boot animations for the Steam Deck are pretty sweet</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Did you know you can change the boot animation on the Steam Deck? Well you can and the community has naturally gone and done some pretty amazing things with it.</p>
+<p>After messing around for a little while, I've come up with a full and hopefully easy enough guide to follow both in video and text form for anyone interested in doing it themselves. This was directly inspired by a <a href="https://www.reddit.com/r/SteamDeck/comments/xi3vno/comment/ip196e6/?utm_source=reddit&amp;utm_medium=web2x&amp;context=3" target="_blank">Reddit post</a> on it where the user changed their Steam Deck bootup to a Futurama animation with the Steam Deck wording which is pretty <em>fantastic</em>.</p>
+<div class="hidden_video" data-video-id="a4mctgqWM8o"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7a0afa51019489d66717faf32bda086d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/a4mctgqWM8o" target="_blank">See video</a></div></div>
+<p>Text Guide:</p>
+<ol>
+<li>First, you need a .webm video file of an animation, whatever you want. You can easily convert videos to webm using services like <a href="https://cloudconvert.com/" target="_blank">CloudConvert</a>, your favourite <a href="https://kdenlive.org/en/" target="_blank">video editor</a> or even ffmpeg scripts.</li>
+<li>In your Home folder in a file manager, unhide the files. <em>CTRL+H or via the options menu in the top right.</em></li>
+<li>Head to .local/share/Steam/steamui/movies/ and make a backup of deck_startup.webm if you wish.</li>
+<li>Get the filesize of the deck_startup.webm by right click -&gt; properties and make a note of the one in brackets.</li>
+<li>Replace the original deck_startup.webm with your chosen video file, using the same name.</li>
+<li>Open a terminal window inside this folder (right click -&gt; open terminal) and run this command (with the correct filesize you noted):<br/>
+<code class="inline-code">truncate -s 1840847 deck_startup.webm</code></li>
+<li>Go into .local/share/Steam/steamui/css/ and make a backup of library.css and again make a note of the filesize. This file tends to change filesize between Steam Deck updates.</li>
+<li>Open the library.css file, go to the line that has "video" and edit just after it to read like this:<br/>
+<code class="inline-code">video{flex-grow:1;width:100%; height:100%; z-index:10}</code></li>
+<li>Now open a terminal inside this folder as you did before, then run this (with the correct filesize you noted):<br/>
+<code class="inline-code">truncate -s 38492 library.css</code></li>
+</ol>
+<p>Now you're done. You can reboot and watch your new boot video! Enjoy.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/09/custom-boot-animations-for-the-steam-deck-are-pretty-sweet/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/custom-boot-animations-for-the-steam-deck-are-pretty-sweet/</guid>
+      <pubDate>Mon, 26 Sep 2022 15:20:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1342273342id21652gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>HOWTO</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Caesar III game engine Augustus has a new releases up</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://github.com/Keriew/augustus" target="_blank">Augustus</a> is a game engine reimplementation for the classic Caesar III, enabling you to play on modern platforms (like Linux / Steam Deck). It's a fork of another called Julius that focuses on accuracy, with Augustus aiming to improve the game with a number of changes.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17415989431664196447gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17415989431664196447gol1.jpg"/></a></p>
+<p>Version 3.2.0 was released and here's some highlights:</p>
+<blockquote>
+<ul>
+<li>A warning is displayed when the game can't be saved.</li>
+<li>Added a yearly autosave option.</li>
+<li>Fulfilling the emperor's requests will now spawn cartpushers heading to Rome with the resources.</li>
+<li>Added walkers who deliver food from the supply post to forts.</li>
+<li>Added inverse direction option to right mouse click dragging.</li>
+<li>Added relevant advisor buttons to many message types.</li>
+<li>Added hotkeys for setting the map orientation to north.</li>
+<li>Added the option to display messages as alerts on top of the screen.</li>
+<li>Added the option to display the building grid.</li>
+<li>Farms, raw materials buildings, workshops and wharves now display the efficiency of the building.</li>
+<li>Added support for MPG video files. Create a “mpg” folder in your Caesar 3 install directory and place the MPG video files inside, to use them in-game instead of the SMK video files.</li>
+<li>Added play/pause button to sidebar.</li>
+<li>Added hedge/palisade gates. They are created by building hedges/palisades over the roads.</li>
+<li>Added purple variants of columns and pavilions.</li>
+<li>Added watchtower variants.</li>
+<li>Added medium statue rotation.</li>
+<li>Added gladiator statue.</li>
+<li>Added support for assets relative path to the executable.</li>
+<li>Added a support for saving high-res screenshots of the minimap.</li>
+<li>+ a lot more.</li>
+</ul>
+</blockquote>
+<p>You need the original game assets which you can grab easily with a DRM-free copy of Caesar III on<a href="https://af.gog.com/game/caesar_3?as=1636858786" target="_blank"> GOG.com</a> or <a href="https://store.steampowered.com/app/517790/Caesar_3/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<p>If you wish to play it directly from Steam, you can use the Luxtorpeda project to run it which I've covered before in various articles <a href="https://www.gamingonlinux.com/2022/03/steam-deck-using-luxtorpeda-for-morrowind-warzone-2100-and-x-com/" target="_blank">like this guide</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/09/caesar-iii-game-engine-augustus-has-a-new-releases-up/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/caesar-iii-game-engine-augustus-has-a-new-releases-up/</guid>
+      <pubDate>Mon, 26 Sep 2022 12:49:31 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1971574746id21651gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>City Builder</category>
+      
+      <category>New Release</category>
+      
+      <category>Reimplementation</category>
+      
+    </item>
+    
+    <item>
+      <title>Trombone Champ is my new favourite rhythm game</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Discover the mysterious of the Trombiverse in Trombone Champ, a new hilarious rhythm game and absolutely now a clear favourite of mine. Come listen to me destroy it.</p>
+<p>Released on <a href="https://store.steampowered.com/app/1059990/Trombone_Champ/" target="_blank">Steam</a> on September 16th, the developer says it's "the world's first trombone-based rhythm music game. Unlike most music games, you can freely play any note at any time. You're not just following along with the music, you're actually playing the music".</p>
+<p>I came across a lot of noise about it on Twitter, including a Valve developer giving it a go on Steam Deck. I thought it looked and sounded hilarious and so I just had to give this one a go myself with the gyro controls on Steam Deck and it's as completely ridiculous as you might think but it wouldn't take all that much practice to get really good at it I think.</p>
+<p>Here's a video of me committing musical murder:</p>
+<div class="hidden_video" data-video-id="3YeJhPzRqTk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cad9601292e7c2e22a8581797f4a6436.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3YeJhPzRqTk" target="_blank">See video</a></div></div>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li>Toot your way through <strong>over 20 tracks.</strong> The better you play, the more toots you earn!</li>
+<li>Collect all <strong>50 Tromboner Cards!</strong></li>
+<li>Baboons on nearly every screen!</li>
+<li>Improvise and play whatever you want in <strong>Freeplay Mode!</strong></li>
+<li>Uncover the secrets of the Trombiverse and become the True Trombone Champ!</li>
+<li>Absolutely zero microtransactions!</li>
+<li>Playable with mouse and keyboard (recommended) or USB controllers (coming after launch)!</li>
+<li>Appropriate for all ages!</li>
+</ul>
+</blockquote>
+<p>It works great on Steam Deck out of the box and on my Fedora Linux desktop it worked just as well there with Proton 7 using mouse controls. Although for mouse controls, they're inverted by default which felt pretty terrible but thankfully in the settings they do let you put it normal which felt better. Overall though, I had far more fun with it on Steam Deck with gyro than I did on desktop.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/09/trombone-champ-is-my-new-favourite-rhythm-game/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/trombone-champ-is-my-new-favourite-rhythm-game/</guid>
+      <pubDate>Mon, 26 Sep 2022 11:17:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1018708250id21650gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Music</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Free and open source RTS 0 A.D. Alpha 26 &#39;Zhuangzi&#39; is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>0 A.D., an in-development free and open source real-time strategy game has a big new release out with Alpha 26. Easily one of the most impressive open source game projects!</p>
+<p><em>The release is named after the ancient Chinese philosopher Zhuang Zhou, who is better known as Zhuangzi and who wrote one of the most influential texts in Taoism.</em></p>
+<p>Some of what's new in this release includes:</p>
+<ul>
+<li>A new civilization: The Han</li>
+<li>New campaign maps: Tarim basin and Yangtze.</li>
+<li>Now units have acceleration.</li>
+<li>Twenty-six new music tracks.</li>
+<li>New and updated art.</li>
+<li>Better formation movement.</li>
+<li>New graphical options like Texture Quality and Anisotropic Filtering.</li>
+<li>Many performance improvements and ongoing refactorings.</li>
+</ul>
+<div class="hidden_video" data-video-id="cDcSXqlDcbA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/82764f0575a652c94ffd1237e3a2bab5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/cDcSXqlDcbA" target="_blank">See video</a></div></div>
+<p>You can download free on the <a href="https://play0ad.com" target="_blank">official site</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/09/free-and-open-source-rts-0-ad-alpha-26-zhuangzi-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/free-and-open-source-rts-0-ad-alpha-26-zhuangzi-is-out-now/</guid>
+      <pubDate>Mon, 26 Sep 2022 08:47:00 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/965529374id21649gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Blizzard don&#39;t officially support Steam Deck / Linux but they still fix issues for it</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Recently, there were was an upgrade to the Battle.net client that caused it to break on Linux desktop / Steam Deck but it seems the issue is thankfully solved now.</p>
+<p>The thing is, Blizzard don't support Linux as a platform at all for the client or their games. However, they do have a bit of history of now and then fixing up major issues preventing people playing with the Wine compatibility layer. Seems that level of support is still ongoing after the latest incident.</p>
+<p>Around <a href="https://us.forums.blizzard.com/en/blizzard/t/last-update-completely-breaks-wine-compatibility/33122" target="_blank">9 days ago</a>, it seems an update just broke it entirely and the app wouldn't install and update properly resulting in some sort of loop. While it's a shame no testing is done for Linux and Steam Deck before updates are rolled out, at least we're not stuck forever as they've now <a href="https://us.forums.blizzard.com/en/blizzard/t/fix-for-linuxlutris-users-stuck-in-battlenet-update-loop/33340/9" target="_blank">solved it</a>:</p>
+<blockquote>
+<div class="cooked">
+<p>Howdy Everyone!</p>
+<p>I do apologies we didn’t post here sooner but the development teams was aware that a recent change did cause havoc with Wine and the software used for Steam Deck. This wasn’t intended.</p>
+<p>A fix was deployed and it appears it’s working. If you are still having issues please try a reinstall of the app so it fully updates to the 8020 build.</p>
+</div>
+</blockquote>
+<p>Check on it today and it seems all good on my end now too.</p>
+<p>Good news, since Overwatch 2 releases next month and I'm sure plenty will want to play it.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/09/blizzard-may-not-support-steam-deck-linux-but-they-still-fix-issues-for-it/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/blizzard-may-not-support-steam-deck-linux-but-they-still-fix-issues-for-it/</guid>
+      <pubDate>Mon, 26 Sep 2022 08:38:57 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2132720876id21648gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Meta</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 7.18 rolls out with Unicode 15 support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Wine, the translation layer that allows you to run applications and games designed for Windows on Linux has a new development release up with <a href="https://www.winehq.org/announce/7.18" target="_blank">Wine 7.18</a>. This is the tech that forms part of Steam Play Proton! Once a year or so, a new stable release is made but the development versions are usually fine to use.</p>
+<p>Here's what's new in Wine 7.18:</p>
+<ul>
+<li>Character tables updated to Unicode 15.0.0.</li>
+<li>Wow64 support in the macOS driver.</li>
+<li>Async reader fixes in GStreamer support.</li>
+<li>Various bug fixes.</li>
+</ul>
+<p>20 bugs were marked as solved as of this release announcement including issues fixed for: KeePassXC, Resident Evil 7, Bloomberg Terminal, Hotel Giant 2, Gas Guzzlers Combat Carnage, Clip Studio Paint, Cube World, Intel ACAT and more.</p>
+<p>Be sure to try out <a href="https://usebottles.com/" target="_blank">Bottles</a>, a great app for managing various apps / games installed via Wine.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/09/wine-718-rolls-out-with-unicode-15-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/wine-718-rolls-out-with-unicode-15-support/</guid>
+      <pubDate>Mon, 26 Sep 2022 08:21:26 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Reminder: Update your PC info for the next round of statistics updates</title>
+      <author>gamingonlinux</author>
+      <description><div class="content group e-content">
+<p>This is the public once a month reminder to make sure your PC information is correct on your user profiles. A fresh batch of statistics is generated on the 1st of each month. Also a good reminder of our stats system for people who don't know about it.</p>
+<p><em>You need to be logged in to see when you last updated your PC info!</em></p>
+<p>You can see the statistics any time <a href="https://www.gamingonlinux.com/users/statistics" target="_blank">on this page</a>.</p>
+<p>PC Info is automatically purged if it hasn't been updated, or if you don't click the link to remain in for 5 years. This way we prevent too much stale data and don't hold onto your data for longer than required. If this is still correct and it has been a long time since you updated, you can simply <strong><a href="#" id="pc_info_update" target="_self">click here to continue</a> to be included</strong>. If this isn't correct, <a href="/usercp.php?module=pcinfo" target="_blank">click here to go to your User Control Panel to update it!</a></p>
+<div class="all-ok" id="pc_info_done"> </div>
+<p> </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/09/update-pc-info-202209/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/update-pc-info-202209/</guid>
+      <pubDate>Mon, 26 Sep 2022 08:11:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Site Info</category>
+      
+      <category>Survey</category>
+      
+    </item>
     
     <item>
       <title>Canadian customers seeing a temporary delay for the Steam Deck</title>
@@ -4038,263 +4289,6 @@ To play Voxel Doom you will need the original DOOM WAD file, which you can get f
       <category>Indie Game</category>
       
       <category>Open World</category>
-      
-    </item>
-    
-    <item>
-      <title>The Wandering Village launches with Linux support on September 14th</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Ready for a different kind of city builder? The Wandering Village is coming into Early Access on September 14th. Developed by Stray Fawn Studio the same team that made Nimbatus - The Space Drone Constructor, Retimed and Niche - a genetics survival game.</p>
-<p>What makes it unique? You're building on the back of a massive wandering creature. It combines together city building with resource management, plus there's some rogue-like and survival elements too. You need to forge some sort of bond with this creature too, you're freeloading on its back after all. From farming crops and gathering rare resources, to scouting the environment and expanding their settlement, you must maintain the creature's health while balancing the needs of your villagers if you're all to survive.</p>
-<div class="hidden_video" data-video-id="5Cgs-WWqadM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a5f915e05e99d7e3cee7fed82e27713f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/5Cgs-WWqadM" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Build a unique village on the back of a giant creature known as Onbu.</li>
-<li>Farm various crops to feed your villagers.</li>
-<li>Send out foraging missions to gather rare resources.</li>
-<li>Survive a variety of different biomes and events.</li>
-<li>Build a relationship with a giant beast and influence its actions.</li>
-<li>Research and construct a variety of different buildings.</li>
-<li>Ecology/Biology inspired gameplay.</li>
-<li>Unique art style with a blend of 3D and hand-drawn, hand-animated 2D graphics.</li>
-</ul>
-</blockquote>
-<p>Stray Fawn Studio sent over a key, so I'll be taking a look!</p>
-<p>You can <a href="https://store.steampowered.com/app/1121640/The_Wandering_Village/" target="_blank">follow it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/09/the-wandering-village-launches-with-linux-support-on-september-14th/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/the-wandering-village-launches-with-linux-support-on-september-14th/</guid>
-      <pubDate>Tue, 06 Sep 2022 15:39:15 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1982642870id21552gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>City Builder</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Void Scrappers is my new favourite coffee-break game — try the free Prologue</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Void Scrappers Prologue, the new free version of the bigger upcoming Void Scrappers is out now and I had a chance to try it before release and came away very impressed. This is easily going to be my new coffee-break game at my desk, and my next time-sink to stay up far too late with in bed with my Steam Deck.</p>
-<p>It is yet another <a href="https://www.gamingonlinux.com/2022/09/a-genre-is-born-horde-games/" target="_blank">horde game / Vampire Survivor-like</a> or whatever else you wish to call it. One day I will perhaps get sick of it but it's still not today. It's a bit more like <a href="https://www.gamingonlinux.com/2022/05/uh-oh-gunlocked-is-like-vampire-survivors-in-space-and-just-as-absorbing/" target="_blank">Gunlocked</a> in the way that it's a space sci-fi game with you controlling a ship but you fly around the area instead of being given a small scrolling area you're confined to.</p>
-<p>This one becomes completely ridiculous the further you go into it and I've been having so much fun with it. The builds you can make are pretty great too, even with the limited selection available in the Prologue it makes for an entertaining time. Here's some footage mixed between my Fedora Linux desktop and the Steam Deck:</p>
-<div class="hidden_video" data-video-id="x_EDky2n8NA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ff79bca69ca2bdb00e2345780603398c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/x_EDky2n8NA" target="_blank">See video</a></div></div>
-<p>What's surprising is just how smooth it feels already. The Prologue is just a glorified demo of a game that's not properly out yet but it feels so good already that I think the developer is onto a winner here.</p>
-<p>You can try the free <a href="https://store.steampowered.com/app/2126420/Void_Scrappers_Prologue/" target="_blank">Void Scrappers Prologue on Steam</a> with Native Linux support.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/09/void-scrappers-is-my-new-favourite-coffee-break-game-m-try-the-free-prologue/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/void-scrappers-is-my-new-favourite-coffee-break-game-m-try-the-free-prologue/</guid>
-      <pubDate>Tue, 06 Sep 2022 11:59:56 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1403706747id21551gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Free Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Classic pixel-art RTS &#39;TFC: The Fertile Crescent&#39; gets an online co-op Horde Mode</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>TFC: The Fertile Crescent is a really criminally overlooked pixel-art RTS that just got a major upgrade for all players.</p>
-<p>A first major update for the Early Access title brings with it some big new features like the online co-op Horde Mode. Previously only available in single-player, you can now build up and survive with a friend online. That I honestly can't wait to try!</p>
-<p>They've also added in more options you can tweak for single-player skirmish battles, you can add AI players to online matches and there's various other gameplay improvements too. Online play also got the ability to password protect games, so no more random people jumping into your lobby if you don't want them. You can also now actually kick players from an online lobby too.</p>
-<p>Some other gameplay features were also added in like map pinging to allies, sending resources to allies, several improvements to the AI and lots of bug fixes.</p>
-<div class="hidden_video" data-video-id="74cfsbKMP10"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bdf3123a9a9246272b03c33b0c152ec0.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/74cfsbKMP10" target="_blank">See video</a></div></div>
-<p>A really great game that all base-building RTS lovers need to try.</p>
-<p>I like this one so much, I gave it a little video overview for you:</p>
-<div class="hidden_video" data-video-id="jWYER6nahzI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e73642d7b5f3a28e8c34ed3bd5aca186.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/jWYER6nahzI" target="_blank">See video</a></div></div>
-<p><a href="https://store.steampowered.com/app/1674820/TFC_The_Fertile_Crescent/" target="_blank">Find it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/09/classic-pixel-art-rts-tfc-the-fertile-crescent-gets-an-online-co-op-horde-mode/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/classic-pixel-art-rts-tfc-the-fertile-crescent-gets-an-online-co-op-horde-mode/</guid>
-      <pubDate>Tue, 06 Sep 2022 10:03:37 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/459477054id21550gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Online Co-op</category>
-      
-    </item>
-    
-    <item>
-      <title>Action-RPG collectathon &#39;Shield Cat&#39; is looking gorgeous in the new demo</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Ready to check out more upcoming games? Shield Cat is a promising action-RPG adventuring collectathon with some wonderful pixel-art that blends in some great lighting and a new demo is out now.</p>
-<p>This is the demo made ready for the SAGE 2022 event, which showcases a ton of other titles too. The developer has been working away for two years to get the demo ready to this stage. Looks like the work paid off too, as this is shooting up higher in my own wishlist. Check out the new trailer below:</p>
-<div class="hidden_video" data-video-id="V22D4csN6FQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/253e4a2485614058b0b9e2005ecccbb3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/V22D4csN6FQ" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Beautiful pixel art reminiscent of the 16 and 32bit games of old, with plenty of modern enhancements.</li>
-<li>Numerous upgrades and abilities to find and increase your power with, as well as gain access to new areas you couldn’t before.</li>
-<li>Passive abilities that grant you bonuses and new moves just for having them.</li>
-<li>Mysterious puzzles all across the world. You’ll need to keep your wits about you for them!</li>
-<li>Tons of different collectibles to find all over the Cat Kingdom.</li>
-<li>Several areas to explore, from the depths of the Lignum Woods, to the tallest heights of Mt. Bophades.</li>
-<li>A detailed map system that keeps track of your progress in each area, how many collectibles you still need to find, and more.</li>
-<li>Secret areas all over the Cat Kingdom to be found by only the most cunning players.</li>
-<li>A large cast of humorous and interesting characters to meet and interact with.</li>
-</ul>
-</blockquote>
-<p>You can follow it and grab the demo from <a href="https://cyansorcery.itch.io/shield-cat" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1522810/Shield_Cat/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/09/action-rpg-collectathon-shield-cat-is-looking-gorgeous-in-the-new-demo/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/action-rpg-collectathon-shield-cat-is-looking-gorgeous-in-the-new-demo/</guid>
-      <pubDate>Tue, 06 Sep 2022 09:47:24 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/509552474id21549gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Adventure</category>
-      
-      <category>Demo</category>
-      
-    </item>
-    
-    <item>
-      <title>Prodeus cancels the Native Linux version, focusing on Proton compatibility (updated)</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Prodeus, the crowdfunded first-person shooter that blends together new and old design styles, will no longer be doing a Native Linux version and instead will ensure it works nicely with Proton.</p>
-<p>The team at Bounding Box Software had been quiet for some time on their plans here, seemingly ignoring all questions about Linux for many months so it's good to finally get a proper answer. Still, for those of you still sticking to <em>only</em> Native Linux games, this probably stings a little.</p>
-<p>Here's what <a href="https://www.kickstarter.com/projects/prodeus/prodeus/comments?comment=Q29tbWVudC0zNzU3MDYwNw%3D%3D" target="_blank">they said</a>:</p>
-<blockquote>
-<div class="flex">
-<div class="w100p">
-<p>We are making sure the game runs on Proton and will be doing a pass at reaching full green status on the Steam Deck once the game is fully out. Unfortunately, we won't be able to make a Native Linux build, there were far too many issues and we couldn't get it to run properly. The Proton version of the game has a much smoother experience and the tests on Steam Deck showed great promise. We apologize for any inconvenience this might cause.</p>
-</div>
-</div>
-</blockquote>
-<p><strong>Update</strong>: in their Discord, a developer added this clarification:</p>
-<blockquote>
-<p>A little clarification on the Linux News. Right now the Unity tool chain for making native Linux builds is still experimental. While they say you can do it, it does not work all that well and, as stated above, there are graphical errors and various other issues that make the game unplayable. A Linux build may still be a possibility in the future but at this time it is on hold until Unity's Linux tool chain is in a better state and we have the resources to dedicate to figuring it out properly.</p>
-</blockquote>
-<p>It does in fact already run extremely well with the Proton compatibility layer both on Linux desktop and Steam Deck, take a look at one of my earlier videos of it on Deck below:</p>
-<div class="hidden_video" data-video-id="w9Y4j069UmM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/411fe8a47e1a222cfefa476e22d59d8d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/w9Y4j069UmM" target="_blank">See video</a></div></div>
-<p>Prodeus is set to be released at some point soon it seems, with a release date announcement due to be revealed at the upcoming Realms Deep 2022 that will take place from Friday - Sunday, September 16-18 2022.</p>
-<p>Available to buy on <a href="https://www.humblebundle.com/store/prodeus?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/964800/Prodeus/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/09/prodeus-cancels-the-native-linux-version-focusing-on-proton-compatibility/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/prodeus-cancels-the-native-linux-version-focusing-on-proton-compatibility/</guid>
-      <pubDate>Tue, 06 Sep 2022 09:22:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1455209686id21548gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-    </item>
-    
-    <item>
-      <title>Even MORE invites for Steam Deck purchases will start going out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>You've heard this before right? As of today, Valve will be sending out even more emails each time to invite people to purchase their reserved Steam Deck.</p>
-<p>This is sounding a bit like déjà vu isn't it? You're not dreaming though. They just recently <a href="https://www.gamingonlinux.com/2022/08/steam-deck-reservations-continue-to-grow-now-at-its-highest-point/" target="_blank">updated shipping windows</a> and said reservations are higher than ever, before that back in the <a href="https://www.gamingonlinux.com/2022/08/even-more-steam-deck-purchase-invites-are-going-out-from-now/" target="_blank">middle of August</a> Valve announced that more invites were going out, following a <a href="https://www.gamingonlinux.com/2022/07/valve-speeds-up-steam-deck-production-some-more-all-existing-reservations-this-year/" target="_blank">production ramp-up</a> announcement at the end of July. Here we are again and Valve developer Lawrence Yang just said on <a href="https://twitter.com/lawrenceyang/status/1566824774885842944" target="_blank">Twitter</a>:</p>
-<blockquote>
-<p>For those curious - yes, Steam Deck order emails are going out on Labor Day (they just went out). We also bumped up the number of order emails per batch with today's release.</p>
-</blockquote>
-<p>So if you're expecting an order email to come through, which as a reminder is every Monday and Thursday, keep your eyes firmly peeled on that inbox. You'll also get a notification inside Steam too.</p>
-<p>In case you missed these:</p>
-<ul>
-<li><a href="https://www.gamingonlinux.com/2022/08/steam-deck-2-is-absolutely-coming-new-booklet-from-valve-confirms/" target="_blank">Steam Deck 2 is absolutely coming, new booklet from Valve confirms</a></li>
-<li><a href="https://www.gamingonlinux.com/2022/08/steam-deck-verified-and-playable-hits-5000/" target="_blank">Steam Deck Verified and Playable hits 5,000</a></li>
-<li><a href="https://www.gamingonlinux.com/2022/08/steam-deck-tips-and-tricks-part-2/" target="_blank">Steam Deck Tips and Tricks Part 2</a></li>
-<li><a class="u-url" href="https://www.gamingonlinux.com/2022/09/these-were-the-most-popular-steam-deck-games-in-august-2022/" target="_blank">These were the most popular Steam Deck games in August 2022</a></li>
-</ul>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/09/even-more-invites-for-steam-deck-purchases-will-start-going-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/even-more-invites-for-steam-deck-purchases-will-start-going-out-now/</guid>
-      <pubDate>Mon, 05 Sep 2022 16:43:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>SiNKR 3 is a wonderful end to a clever wordless puzzle game series</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Love puzzle games? Check out the new Native Linux release of SiNKR 3. It's a wordless puzzle game that needs you to hook and pull various objects and it's quite a gem. Note: key provided by the developer.</p>
-<p>While the idea may seem simple enough having you click the end of a hook to have it pull towards the end and capture some shapes on the way, it does gradually add in a few clever ways to make you think. Multiple types of shapes that need to be pulled into the correct hole, hooks you can click to flip them to one side, you can hook into another hook to pull it around and much more.</p>
-<p>You will need to study the whole level before you start moving anything around to get a feel for where things need to be placed. Some of them are quite…puzzling.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8698838091662395103gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8698838091662395103gol1.jpg"/></a></p>
-<p>From what the developer Robert C. Wahler told me, this seems like the final game in the series too. Speaking about the release the developer told me: "SiNKR 3 is a wordless puzzler that introduces mechanics gradually and attempts to maximize the “aha” moments and make the player feel smart. I hear the first two games did just that.".</p>
-<p>It's a thoroughly relaxing game too and the simplicity really is the key on this one. Some simple tunes to listen to, gameplay that doesn't really tell you anything that you just figure out as you go but never too frustrating since you can do a multi-step undo and restart at any point. There's just no failure here, you go at your own pace. Then you get to the later levels and realise I was lying about how relaxing it is because you'll be clawing at your brain for an answer. It has a great mix of easing you in and then hitting you with the challenge.</p>
-<div class="hidden_video" data-video-id="oFy6Yg_YYyY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3508d2e746f48304c26e7b7e9d5306e3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/oFy6Yg_YYyY" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<p>Carried over from SiNKR and SiNKR 2</p>
-<ul>
-<li>Tutorial levels (no SiNKR experience needed).</li>
-<li>Advanced levels allow for multiple solutions.</li>
-<li>No scores, no timers, no distractions.</li>
-<li>Responsive ambient soundscape.</li>
-<li>No text, suitable for all languages.</li>
-<li>Mini-map level selector with challenge ratings from * to ***.</li>
-<li>Multiple paths and skippable levels.</li>
-</ul>
-<p>Enhanced mechanics</p>
-<ul>
-<li>Diagonal movement expands play options.</li>
-<li>Bouncing pucks inject billiards-style dynamic challenges.</li>
-<li>Multi-step undo banks your progress on the toughest puzzles.</li>
-</ul>
-</blockquote>
-<p>If you're after a puzzle game to hook you in, this is it.</p>
-<p>You can buy it on <a href="https://wahlerdigital.itch.io/sinkr3" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1705580/SiNKR_3/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/09/sinkr-3-is-a-wonderful-end-to-a-clever-wordless-puzzle-game-series/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/sinkr-3-is-a-wonderful-end-to-a-clever-wordless-puzzle-game-series/</guid>
-      <pubDate>Mon, 05 Sep 2022 16:32:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/246897458id21546gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-      <category>Puzzle</category>
       
     </item>
     
