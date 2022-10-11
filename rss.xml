@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2022-10-10 07:52:57.396861</pubDate>
+    <pubDate>2022-10-11 07:55:44.326766</pubDate>
 
     
     <image>
@@ -18,6 +18,154 @@
     </image>
 
     
+    
+    <item>
+      <title>Decky Loader, get easy Steam Deck Plugins and make colours POP!</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Did you know you can extend the Steam Deck with various plugins? I’m going to show you how to do it, and some of what’s available using <a href="https://github.com/SteamDeckHomebrew/decky-loader" target="_blank">Decky Loader</a>. This was mentioned by me <a href="https://www.gamingonlinux.com/2022/04/steamos-plugin-manager-should-enable-lots-of-fun-on-the-steam-deck/" target="_blank">some time ago</a> but it has come a very long way since then.</p>
+<p>This allows you to browse, download and install plugins for the Steam Deck with an interface built into the Quick Access Menu (the three dot button on Steam Deck). In my video below, I'll show how to install it and demo a few of the plugins, with vibrantDeck being something quite amazing, at least to my eyes but it is not something everyone will like. The screen on the Deck really does look quite dull without using it now.</p>
+<div class="hidden_video" data-video-id="YQhvNiI3hKI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bd93ae009c399252cc75e9e90d568082.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/YQhvNiI3hKI" target="_blank">See video</a></div></div>
+<p><strong>Text Guide:</strong></p>
+<ul>
+<li>Go into the Steam Deck Settings.</li>
+<li>Under System -&gt; System Settings toggle <code class="inline-code">Enable Developer Mode</code></li>
+<li>Scroll the sidebar all the way down and click on <code class="inline-code">Developer</code></li>
+<li>Under Miscellaneous, enable <code class="inline-code">CEF Remote Debugging</code></li>
+<li>Confirm dialog and wait for system reboot</li>
+<li>Click on the <code class="inline-code">STEAM</code> button and select <code class="inline-code">Power</code> -&gt; <code class="inline-code">Switch to Desktop</code></li>
+<li>Make sure you have a password set with the "passwd" command in terminal to install it (<a href="https://www.youtube.com/watch?v=1vOMYGj22rQ" target="_blank">YouTube Guide</a>).<br/>
+<em>It won't show a password being entered as a security measure but it is working.</em></li>
+<li>Open a terminal ("Konsole" is the pre-installed terminal application) and paste the following command into it:
+	<ul>
+<li>For the latest release (recommended for all users):
+		<ul>
+<li><code class="inline-code">curl -L https://github.com/SteamDeckHomebrew/decky-loader/raw/main/dist/install_release.sh | sh</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>After that you can just boot into Gaming Mode, and the plugin menu will be available in the Quick Access Menu as shown in the video above. You can also turn off Developer Mode once it's installed, as I tested it working just fine.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/decky-loader-get-easy-steam-deck-plugins-and-make-colours-pop/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/decky-loader-get-easy-steam-deck-plugins-and-make-colours-pop/</guid>
+      <pubDate>Mon, 10 Oct 2022 12:28:46 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1769299952id21716gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>HOWTO</category>
+      
+      <category>Meta</category>
+      
+      <category>Video</category>
+      
+    </item>
+    
+    <item>
+      <title>The new Steam Mobile App is getting close to release</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A few updates later while in Beta and Valve has put out the first Release Candidate for their completely overhauled <a href="https://steamcommunity.com/groups/SteamMobileApp" target="_blank">Steam Mobile App</a>. Having a Release Candidate means they're very close to releasing it for everyone, it just needs a bit more testing to see if any urgent issues appear.</p>
+<p>What's they've added recently:</p>
+<blockquote>
+<ul>
+<li>Improved messaging when asking for camera permissions.</li>
+<li>Fixed pull to refresh in the Library screen not refreshing everything.</li>
+<li>Improved loading states in the Library screen.</li>
+<li>Fixed a crash that could happen when opening links externally.</li>
+<li>Improved behavior of how the app attempts to open non-Steam links in your default device browser.</li>
+<li>Fixed the ability to send multiple "Verify Code" actions when migrating / adding an authenticator, which would end up loading to failures.</li>
+<li>Updated wishlist notifications to open up directly to the wishlisted app page rather than taking you to the wishlist.</li>
+<li>Fix web content sometimes not refreshing properly when attempting to reload the same page multiple times.</li>
+<li>Fixed some non-English languages not always correctly displaying numbers with decimal places.</li>
+<li>Improved the reliability of sign in confirmation dialogs appearing.</li>
+<li>Fixed case for certain users where approving a sign in confirmation would have no effect.</li>
+</ul>
+</blockquote>
+<p>If you wish to try it out before release:</p>
+<p><strong>Android</strong></p>
+<p>Open <a href="https://play.google.com/apps/testing/com.valvesoftware.android.steam.community" target="_blank">this link</a> on your Android device. The Google Play store will offer you a link to join the beta and download the updated app.</p>
+<p><strong>iOS</strong></p>
+<p>Open <a href="https://testflight.apple.com/join/8BOPXsGz" target="_blank">this link</a> on your iOS device. You'll be prompted to install Apple's own TestFlight app. Once TestFlight is installed, it will automatically install the updated Steam Mobile App. Note: spaces on iOS are limited.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18272919321665404670gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/18272919321665404670gol1.jpg"/></a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/the-new-steam-mobile-app-is-getting-close-to-release/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/the-new-steam-mobile-app-is-getting-close-to-release/</guid>
+      <pubDate>Mon, 10 Oct 2022 12:25:40 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1438377844id21717gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>GE-Proton 7-37 is out now fixing up more games for Steam Deck / Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://github.com/GloriousEggroll/proton-ge-custom" target="_blank">GE-Proton</a> (also known as Proton GE) as a community-built version of the Proton compatibility layer to run Windows games, with a new release out now and FSR is back.</p>
+<p>Versions 7-37 and 7-36 were released, initially removing AMD FSR being in it directly, but thankfully another community hacker sorted out the patches needed for it so it made a return.</p>
+<p>Here's what's included:</p>
+<blockquote>
+<ul>
+<li>Import nvapi enablement list from proton upstream (<a class="commit-link" href="https://github.com/ValveSoftware/Proton/commit/9a708e02c18ea53386dddd13e7e1ae5c78615965" target="_blank">ValveSoftware@<tt>9a708e0</tt></a>)</li>
+<li>Import media-converter changes from proton upstream (<a class="commit-link" href="https://github.com/ValveSoftware/Proton/commit/5339633f9b5e32eae24d43e4572792ba6791220d" target="_blank">ValveSoftware@<tt>5339633</tt></a>)</li>
+<li>Update dxvk</li>
+<li>Update vkd3d-proton</li>
+<li>Update wine-bleeding edge</li>
+<li>Add protonfix for Shatterline (thanks orowith2os)</li>
+<li>Add protonfix for Halo Reach mod tools (thanks orowith2os)</li>
+<li>Add protonfix for Ougon Musoukyoku (thanks namaenonaimumei)</li>
+</ul>
+</blockquote>
+<p>This version is not included in Steam or Steam Deck, with you needing to add it yourself. It often includes fixes Valve hasn't yet done officially, and some things they can't (legally) do for videos. It does come with less quality assurance and testing though, so your mileage may vary.</p>
+<p>How to use it? You can simply use the ProtonUp-Qt tool that we've covered here numerous times now. See the previous <a href="https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/" target="_blank">GOL Guide on GE-Proton with ProtonUp</a>. </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/ge-proton-7-37-is-out-now-fixing-up-more-games-for-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/ge-proton-7-37-is-out-now-fixing-up-more-games-for-steam-deck-linux/</guid>
+      <pubDate>Mon, 10 Oct 2022 10:32:14 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/207454249id21715gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>There&#39;s now a dedicated website for Steam Deck boot videos</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Since Valve have made it official in the latest <a href="https://www.gamingonlinux.com/2022/10/steamos-332-and-a-stable-steam-deck-client-update-are-out-now-heres-whats-new/" target="_blank">Steam Deck stable update</a> to change your boot video, reddit user waylaidwanderer <a href="https://steamdeckrepo.com/" target="_blank">made a website</a> where you can easily upload and download these quick clips.</p>
+<p>A nice idea, and certainly makes finding one you want a little easier. Useful too, since you can preview the video before you download to see if you will like them. It also includes dedicated instructions below each video, telling you exactly what you need to do to get it working which is a nice touch.</p>
+<p>Here's a look over some of the boot videos available and a reminder on how to do it:</p>
+<div class="hidden_video" data-video-id="uyXru66XPeA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0ac78e57e5a321fe2f185f95f0c640fe.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/uyXru66XPeA" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/theres-now-a-dedicated-website-for-steam-deck-boot-videos/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/theres-now-a-dedicated-website-for-steam-deck-boot-videos/</guid>
+      <pubDate>Mon, 10 Oct 2022 10:22:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1495861586id21714gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Meta</category>
+      
+      <category>Video</category>
+      
+    </item>
     
     <item>
       <title>My current little wish-list for Steam Deck upgrades</title>
@@ -4180,214 +4328,6 @@ That's it for today, more to come soon!</p>
       <category>Meta</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Plasma 5.26 Beta brings on the bigscreen experience</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://kde.org/announcements/plasma/5/5.25.90/" target="_blank">Plasma 5.26 Beta</a> is officially out now and it comes with plenty of massive improvements, especially when it comes to using it on the bigscreen. With this version in preview, it's a chance for users and developers to find and help fix any remaining bugs to make the full release on October 6th a great one.</p>
-<p>One of the big new features is Plasma Bigscreen, a whole interface just for using Plasma on your TV.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20019782191663583536gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20019782191663583536gol1.png"/></a></p>
-<p>This also includes the Aura Browser for a "fully immersed Big Screen experience allowing you to navigate the world wide web using just your remote control" and Plank Player that's a "Multimedia Player for playing local files on Plasma Bigscreen".</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16346219341663583598gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16346219341663583598gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5001809211663583598gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/5001809211663583598gol1.png"/></a></p>
-<p>Even more improvements come to the Discover software store too including:</p>
-<blockquote>
-<ul>
-<li>Discover now lets you choose the frequency with which it notifies you about new updates.</li>
-<li>Discover now displays content ratings for apps.</li>
-<li>Discover now lets you change the name used for submitting a review.</li>
-<li>Discover now has a “Share” button on each app’s details page.</li>
-</ul>
-</blockquote>
-<p>Wayland support gets boosted yet again too:</p>
-<blockquote>
-<ul>
-<li>In the Plasma Wayland session, it’s now possible to adjust how a graphics tablet’s input area maps to your screen coordinates.</li>
-<li>It’s possible to select if apps will be scaled by the compositor or by themselves to avoid having blurry apps on Wayland.</li>
-<li>In the Plasma Wayland session, it’s now possible to disable middle-click paste.</li>
-</ul>
-</blockquote>
-<p>Plus lots more improvements across the whole desktop.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/09/plasma-526-beta-brings-on-the-bigscreen-experience/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/plasma-526-beta-brings-on-the-bigscreen-experience/</guid>
-      <pubDate>Mon, 19 Sep 2022 10:35:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/128382078id21616gol.jpg" type="image/jpeg"/>
-      
-      <category>Desktop Environment</category>
-      
-      <category>KDE</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve had the official Steam Deck Docking Station at TGS, plus other TGS bits</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>While they haven't yet released the official Steam Deck Dock and they haven't really talked about it since the <a href="https://www.gamingonlinux.com/2022/06/valve-delay-the-steam-deck-docking-station/" target="_blank">indefinite delay</a>, it's clearly still a thing.</p>
-<p>Thanks to people on Reddit (<a href="https://www.reddit.com/r/SteamDeck/comments/xesfln/the_official_dock_is_casually_being_shown_off_at/" target="_blank">#1</a>, <a href="https://www.reddit.com/r/SteamDeck/comments/xesiwl/clear_look_at_the_back_of_the_official_steam_deck/" target="_blank">#2</a>) we got a really good close-up of what to expect from it in the current form (click pictures to enlarge them):</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3826923691663576176gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/3826923691663576176gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17053681871663576178gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/17053681871663576178gol1.jpg"/></a></p>
-<p>No doubt some people are waiting on the official Docking Station for Steam Deck from Valve but you don't have to. JSAUX have a thoroughly <a href="https://www.gamingonlinux.com/2022/08/no-need-to-wait-on-valve-the-steam-deck-docking-station-from-jsaux-is-great/" target="_blank">great model already available</a>, with another on the way that has an <a href="https://www.gamingonlinux.com/2022/09/jsaux-announce-their-new-steam-deck-dock-with-an-m2-ssd-slot/" target="_blank">M.2 SSD slot</a> which they've sent along to GOL for review and should be with me sometime this week if we pray to the delivery gods.</p>
-<p>As for the official Docking Station and when we might see it? Likely not until after <a href="https://www.gamingonlinux.com/2022/08/steamos-34-beta-to-update-the-arch-linux-base-new-steam-deck-updates-out-now/" target="_blank">SteamOS 3.4</a> is out with an upgraded KDE Plasma desktop which should help smooth-over some of the rough edges as the current version in SteamOS is rather old. This will also give them time to continue to improve the main Gaming Mode session for external screens too.</p>
-<p>What was actually playable at TGS on the Steam Deck? Here's the list:</p>
-<ul>
-<li style="text-align:inherit">ACE COMBAT™ 7: SKIES UNKNOWN</li>
-<li style="text-align:inherit">Aperture Desk Job</li>
-<li style="text-align:inherit">Apex Legends™</li>
-<li style="text-align:inherit">Core Keeper</li>
-<li style="text-align:inherit">Danganronpa 2: Goodbye Despair</li>
-<li style="text-align:inherit">DEATH STRANDING DIRECTOR’S CUT</li>
-<li style="text-align:inherit">Devil May Cry 5</li>
-<li style="text-align:inherit">ELDEN RING</li>
-<li style="text-align:inherit">FINAL FANTASY VII REMAKE INTERGRADE</li>
-<li style="text-align:inherit">Hades</li>
-<li style="text-align:inherit">Hatsune Miku: Project DIVA Mega Mix+</li>
-<li style="text-align:inherit">Lego® Star Wars™: The Skywalker Saga</li>
-<li style="text-align:inherit">Marvel's Spider-Man Remastered</li>
-<li style="text-align:inherit">MELTY BLOOD: TYPE LUMINA</li>
-<li style="text-align:inherit">No Man's Sky</li>
-<li style="text-align:inherit">Persona 4 Golden</li>
-<li style="text-align:inherit">PowerWash Simulator</li>
-<li style="text-align:inherit">SCARLET NEXUS</li>
-<li style="text-align:inherit">Sonic Origins</li>
-<li style="text-align:inherit">Stardew Valley</li>
-<li style="text-align:inherit">Stray</li>
-<li style="text-align:inherit">Tales of Arise</li>
-<li style="text-align:inherit">Teenage Mutant Ninja Turtles: Shredder's Revenge</li>
-<li style="text-align:inherit">Yakuza: Like a Dragon</li>
-</ul>
-<p>Seems like TGS 2022 was a big hit for Valve and the Steam Deck — even Hideo Kojima <a href="https://twitter.com/Kojima_Hideo/status/1570660603710296068" target="_blank">stopped by</a>:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16518151511663576406gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16518151511663576406gol1.jpg"/></a></p>
-<p style="text-align:center">Valve developer Lawrence Yang also gave a brief overview of the experience on Twitter <a href="https://twitter.com/lawrenceyang/status/1570579515902160897" target="_blank">mentioning</a>:</p>
-<blockquote>
-<p>Quick walkthrough of the Steam Deck booth experience at #TGS2022</p>
-<p>- Walk in, get a swag bag<br/>
-- Watch a quick video<br/>
-- Grab a Steam Deck off the wall<br/>
-- Find a seat, have fun!</p>
-</blockquote>
-<div class="ckeditor-html5-video" style="text-align: center;">
-<video controls="controls" src="https://uploads.golmedia.net/uploads/articles/article_media/8501591581663576600gol1.mp4"> </video>
-</div>
-<p><em>I'm thoroughly jealous of the Steam Deck swag people got for attending.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/09/valve-had-the-official-steam-deck-docking-station-at-tgs-plus-other-tgs-bits/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/valve-had-the-official-steam-deck-docking-station-at-tgs-plus-other-tgs-bits/</guid>
-      <pubDate>Mon, 19 Sep 2022 08:40:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/609213100id21615gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Event</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Humble has a whole lot of Total War Classics in this bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Need some more Total War in your gaming library? Humble has a reasonably good selection available in the <a href="https://www.humblebundle.com/games/total-war-classics-bundle?partner=gamingonlinux" target="_blank">Total War Classics Bundle</a>. To ensure you've got the best idea of what to expect, I'll be going over each game to list the Steam Deck Verified rating plus either Native Linux status or <a href="https://www.protondb.com/" target="_blank">ProtonDB</a> ranking so you've got the full picture.</p>
-<p>Here's what's inside:</p>
-<p class="plain-list-title"><strong>Total War: MEDIEVAL II – Definitive Edition</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
-<li>Linux Native</li>
-</ul>
-<p class="plain-list-title"><strong>Total War: SHOGUN 2</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Deck Unsupported</li>
-<li>Linux Native</li>
-</ul>
-<p class="plain-list-title"><strong>Total War: SHOGUN 2 - Rise of the Samurai Campaign</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Deck Unsupported</li>
-<li>Linux Native</li>
-</ul>
-<p class="plain-list-title"><strong>Total War: EMPIRE – Definitive Edition</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Deck Unverified</li>
-<li>Linux Native</li>
-</ul>
-<p class="plain-list-title"><strong>Medieval: Total War - Collection</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Deck Unverified</li>
-<li>ProtonDB Silver</li>
-</ul>
-<p class="plain-list-title"><strong>Total War: NAPOLEON – Definitive Edition</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Deck Unsupported</li>
-<li>ProtonDB Silver</li>
-</ul>
-<p class="plain-list-title"><strong>SHOGUN: Total War - Collection</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Deck Unverified</li>
-<li>ProtonDB Silver</li>
-</ul>
-<p class="plain-list-title"><strong>Viking: Battle for Asgard</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
-<li>ProtonDB Bronze</li>
-</ul>
-<p>Check out <a href="https://www.humblebundle.com/games/total-war-classics-bundle?partner=gamingonlinux" target="_blank">the full bundle</a> if you want to buy it.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/09/humble-has-a-whole-lot-of-total-war-classics-in-this-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/humble-has-a-whole-lot-of-total-war-classics-in-this-bundle/</guid>
-      <pubDate>Sat, 17 Sep 2022 09:05:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1288111674id21614gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Vampire Survivors 1.0 coming soon along with a price increase</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/" target="_blank">Vampire Survivors</a>, a simple game that exploded in popularity is set for the big 1.0 release soon and so the price will be rising next week. This game works great on Linux with Proton and is Steam Deck Verified.</p>
-<p>Currently only £2.09 / $2.99 / €2.39, it's an absolute steal for what it is. They haven't said how much it will increase to but they did say it will happen on September 21st so you should really just go and buy it now. Seriously, buy it. You will thank me later for all that free time you no longer have as the hours disappear.</p>
-<p>They also released a small update to keep you going before the 1.0 that includes:</p>
-<blockquote>
-<ul>
-<li>1 new achievement: Reach Level 99 with Poe.</li>
-<li>The last Arcana: XXI - Blood Astronomia.</li>
-<li>1 new "weapon" : this is more like a minor gameplay feature.</li>
-<li>1 new SECRET.</li>
-</ul>
-</blockquote>
-<p>Update trailer is below:</p>
-<div class="hidden_video" data-video-id="cnE7CIJwfVY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0070dc29c97a5b49ca3cb3788ba59181.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/cnE7CIJwfVY" target="_blank">See video</a></div></div>
-<p>Looking for other similar games or don't really know what a horde game is? <a href="https://www.gamingonlinux.com/2022/09/a-genre-is-born-horde-games/" target="_blank">Check out a previous article</a> for some info and some suggested games to look at.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/09/vampire-survivors-10-coming-soon-along-with-a-price-increase/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/09/vampire-survivors-10-coming-soon-along-with-a-price-increase/</guid>
-      <pubDate>Fri, 16 Sep 2022 16:45:32 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1206684612id21613gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
       
     </item>
     
