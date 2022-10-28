@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2022-10-27 07:33:02.367913</pubDate>
+    <pubDate>2022-10-28 07:31:27.676077</pubDate>
 
     
     <image>
@@ -18,6 +18,593 @@
     </image>
 
     
+    
+    <item>
+      <title>Steam Deck UI comes to Desktop in Beta to replace Big Picture Mode</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve has finally done what a lot have been waiting for, made the Steam Deck UI <a href="https://store.steampowered.com/news/app/593110/view/3394051164709183116" target="_blank">available for desktops</a> although it's only available in the Steam Client Beta for now.</p>
+<p>To access it open Steam -&gt; Settings -&gt; Account -&gt; hit the Change button under Betas and select the Steam Client Beta. After that, you also need to add "-gamepadui" as a launch argument. So in terminal on Linux you can just simply run <code class="inline-code">steam -gamepadui</code> for it to work. Or just add it to the end of whatever shortcut you're using, same can be done on Windows too.</p>
+<p>For anyone who has been following any Steam Deck footage from me or others, you will know what it looks like by now but here's a couple shots from my desktop running it:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4215040561666898962gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/4215040561666898962gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6260385831666898962gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/6260385831666898962gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3145167311666898962gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/3145167311666898962gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3853570881666898960gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/3853570881666898960gol1.jpg"/></a></p>
+<p>It's not perfected yet of course, hence it being in Beta and hidden behind a launch argument. One issue I already found (shown above), was that the Steam menu ends up showing whatever I have behind it. Weirdly though, the Quick Access Menu doesn't have that problem.</p>
+<p>As far as I know, it will still be called Big Picture Mode but it just gets replaced from the old to the new, taken from the Steam Deck UI design.</p>
+<p>Valve say the updated UI includes:</p>
+<blockquote>
+<ul>
+<li>New Home Screen, where you can continue playing recent games, and see what’s new with the games in your library.</li>
+<li>New Universal Search, that searches across Library, Store, and your friends</li>
+<li>New controller configurator, designed for ease-of-use of picking, adjusting, or creating custom controller configurations</li>
+<li>Optimized Steam Store for controller navigation</li>
+<li>Updated in-game overlay, with access to achievements and guides
+	<ul>
+<li>Press Steam / Guide / PS button while in game</li>
+</ul>
+</li>
+<li>New system menu, for quick navigation to different parts of the interface
+	<ul>
+<li>Access this with the Steam / Guide / PS button</li>
+</ul>
+</li>
+<li>New quick access menu, for access to notifications, friends list, quick settings, and more.
+	<ul>
+<li>Access this with Steam / Guide / PS button + A</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/steam-deck-ui-comes-to-desktop-in-beta-to-replace-big-picture-mode/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/steam-deck-ui-comes-to-desktop-in-beta-to-replace-big-picture-mode/</guid>
+      <pubDate>Thu, 27 Oct 2022 19:31:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1077025946id21802gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Beta</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Direct3D 12 to Vulkan translator VKD3D-Proton version 2.7 out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Here is an absolutely huge open source release! <a href="https://github.com/HansKristian-Work/vkd3d-proton" target="_blank">VKD3D-Proton</a>, the translation tech used in Steam Play Proton to translate Direct3D 12 to Vulkan for Steam Deck / Linux version 2.7 is out now.</p>
+<p>This is the first tagged release since March, which pulls together all the work done for the Steam Deck launch up until now and it sounds pretty impressive.</p>
+<p>The new release does have higher graphics driver requirements including Mesa 22.0 or NVIDIA 510 series, which should be easily available in most distributions but the release notes say Proton 7.0 will stick with VKD3D-Proton 2.6 but Proton Experimental and future main Proton releases will jump to version 2.7.</p>
+<p>Some of the major additions include:</p>
+<ul>
+<li>An improved pipeline cache, now enabled for all games along with it being smaller (helps performance).</li>
+<li>Lots of optimizations and better GPU performance for various features.</li>
+<li>It now supports D3D12 Mesh shaders and Advanced ExecuteIndirect.</li>
+<li>DXR 1.1 had some more feature implemented that were missing.</li>
+<li>Basic Shared resources and fences supported with Proton.</li>
+<li>Preliminary HDR support.</li>
+</ul>
+<p>Loads more including:</p>
+<blockquote>
+<ul>
+<li>Fix random GPU hangs in Hitman 3.</li>
+<li>Fix crash in Redout 2.</li>
+<li>Fix random GPU hang in F1 2021.</li>
+<li>Fix random flicker in Guardians of the Galaxy.</li>
+<li>Update some API checks required by latest AgilitySDK runtime features. Fix crash in F1 2022.</li>
+<li>Add various workarounds for game bugs in Halo Infinite.</li>
+<li>Add workaround for amdgpu kernel issue for certain games using imported host memory and multiple Vulkan devices.</li>
+<li>Workaround glitched rendering in F1 2020 due to game bug.</li>
+<li>Workaround certain games that violate placed resource API w.r.t. subresource initialization.<br/>
+	Spiderman Remastered and Lost Judgment are affected. More games will likely surface.</li>
+</ul>
+</blockquote>
+<p>See the <a href="https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.7" target="_blank">full release notes</a> for more.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/direct3d-12-to-vulkan-translator-vkd3d-proton-version-27-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/direct3d-12-to-vulkan-translator-vkd3d-proton-version-27-out-now/</guid>
+      <pubDate>Thu, 27 Oct 2022 16:13:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Dark Reign: The Future of War, a true classic RTS is being remade in OpenRA</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Anyone else remember Dark Reign: The Future of War? Released back in 1997, it's a real classic and at the time it had some pretty favourable reviews too. The good news is that <a href="https://github.com/drogoganor/DarkReign" target="_blank">it's being rebuilt</a> by fans using <a href="https://www.openra.net/" target="_blank">OpenRA</a>.</p>
+<p>OpenRA is the same game engine that revived classic Westwood RTS games like Command &amp; Conquer,  Dune 2000 and Red Alert. It's highly versatile and open source, making it a good base to use to revive other classics too and this makes me happy.</p>
+<p>Dark Reign is easily one of my all-time favourite RTS games, next to Total Annihilation. Both managed to spice things up nicely that other RTS games around the time weren't doing. Heck, I even wrote about Dark Reign <a href="https://www.gamingonlinux.com/2016/11/wine-allowed-me-to-re-live-a-gaming-experience-i-had-from-when-i-was-a-child-on-linux/" target="_blank">here back in 2016</a> when trying it out in Wine (wow — has my opinion on Wine changed or what?). Just look at how gorgeous it was:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17909460541666885980gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/17909460541666885980gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14893085941666886113gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/14893085941666886113gol1.jpg"/></a><br/>
+<em>Click pictures to enlarge.</em></p>
+<blockquote>
+<p>A colossal war between the Imperium and Freedom Guard is annihilating your world. To save your civilization, you must enter the heart of an empire at war. Command over 35 units with specific orders and deploy suicide bombers, hostage takers, saboteurs and more. Use precisely calculated battlegrounds to your strategic advantage and play against a highly responsive and unpredictable AI that detects and adjusts intelligently to your tactics. Vanquish the military powers to alter the destiny of a galaxy.</p>
+<cite>The official blurb</cite></blockquote>
+<p>I had this OpenRA "mod" on my watch-list for a long time, hoping for the best but I wasn't aware that it was being <em>actively</em> developed. To the point that you can download an AppImage from the GitHub, download the demo content inside it and then get playing and it's really coming along nicely, although far from complete.</p>
+<p>What do I hope with this article? Perhaps there's a few fellow Dark Reigns fans lurking that might like it, and perhaps some might help give it a push along with code so we can see another classic truly revived for modern audiences.</p>
+<p style="text-align: center;"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15060194471666886645gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15060194471666886645gol1.jpg"/></a>Pictured - Dark Reign in OpenRA.</em></p>
+<p>Find the project on <a href="https://github.com/drogoganor/DarkReign" target="_blank">GitHub</a>. It works with the demo assets but you'll likely need a full copy from <a href="https://www.gog.com/en/game/dark_reign_expansion" target="_blank">GOG</a> at some point.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/dark-reign-the-future-of-war-a-true-classic-rts-is-being-remade-in-openra/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/dark-reign-the-future-of-war-a-true-classic-rts-is-being-remade-in-openra/</guid>
+      <pubDate>Thu, 27 Oct 2022 16:04:57 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1500186449id21800gol.jpg" type="image/jpeg"/>
+      
+      <category>Open Source</category>
+      
+      <category>Retro</category>
+      
+      <category>RTS</category>
+      
+    </item>
+    
+    <item>
+      <title>Wonderful looking puzzle adventure Harmony&#39;s Odyssey lands on Linux / Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Harmony's Odyssey from developer MythicOwl is a  3D fantasy adventure puzzle game set on mythical dioramas full of riddles, perky creatures and magic and now it is available for Linux and works well on Steam Deck.</p>
+<p>The developer email it in, to note the Native Linux support and that it has been fully Steam Deck tested too so it should by fully Deck Verified sometime soon. It really does look quite wonderful too! The adventure is presented as various detailed dioramas, filled with engaging mechanics and gameplay features with each being quite unique. Plus, there's numerous little side-activities to do too.</p>
+<div class="hidden_video" data-video-id="HoZHJrQG8ro"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5760ba044c04336351a2dd992badfaa7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/HoZHJrQG8ro" target="_blank">See video</a></div></div>
+<p>You can also see their <a href="https://www.youtube.com/shorts/8VL8S8dH6CY" target="_blank">little YouTube Short</a>, featuring the game being played on Steam Deck.</p>
+<p>Features:</p>
+<blockquote>
+<ul>
+<li>Over 100 dioramic puzzles filled with fantastic creatures and magic</li>
+<li>8 distinctive biomes to visit, arrange and complete</li>
+<li>7 types of exciting mini games to enjoy</li>
+<li>Challenging yet accessible gameplay mechanics</li>
+<li>Magical treasures to unlock and enhance your experience</li>
+<li>Cozy and chilled-out atmosphere to help you relax</li>
+</ul>
+</blockquote>
+<p>Available<a href="https://store.steampowered.com/app/1531490/Harmonys_Odyssey/" target="_blank"> on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/wonderful-looking-puzzle-adventure-harmonys-odyssey-lands-on-linux-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/wonderful-looking-puzzle-adventure-harmonys-odyssey-lands-on-linux-steam-deck/</guid>
+      <pubDate>Thu, 27 Oct 2022 15:17:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/102018989id21799gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Family Friendly</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Guide a convoy through a ruined world in the Sandwalkers prologue demo</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Sounding a bit like Vagrus - The Riven Realms, we have the upcoming game Sandwalkers from Goblinz Studio and the new prologue demo Sandwalkers: The Fourteenth Caravan. The demo already has Native Linux support, and the full game will too (the developer confirmed this to GOL).</p>
+<p>In this world some kind of "meteorological chaos" keeps all the tribes apart, so it seems your mission is to go through a perilous journey and meet up with them all. Manage diplomatic relations, trade, explore, fight and more. Looks like it could be pretty good!</p>
+<div class="hidden_video" data-video-id="2Z65VM-utH0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3653fc3248edc65686743fb7dad2d9c4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/2Z65VM-utH0" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<blockquote>
+<ul>
+<li>Guide a caravan of adventurers through ever-changing landscapes.</li>
+<li>Fight and survive in the face of acid rain, sandstorms and heat waves.</li>
+<li>Tame hostile creatures, rescue refugees, seek allies for mutual aid, or follow the blood path and loot everything you can.</li>
+<li>Seek rich arable soil to plant a new tree city for your people.</li>
+<li>Progress by passing on your knowledge to a new caravan.</li>
+<li>Repair the broken climate, and put an end to centuries of wandering.</li>
+</ul>
+</blockquote>
+<p>It's currently being <a href="https://www.kickstarter.com/projects/goblinzstudio/sandwalkers-a-roguelike-turn-based-exploration-game" target="_blank">crowdfunded on Kickstarter</a>, where the developer is trying to get at least €40,000 and they're off to a good start with over €12,000 pledged and they have 29 days to go. This is the first time they've done a crowdfunding campaign too, as they usually do Early Access on Steam.</p>
+<p>At release it will be up on <a href="https://www.gog.com/en/game/sandwalkers" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/1639080/Sandwalkers/" target="_blank">Steam</a>. Although the prologue demo only has a Linux version on <a href="https://store.steampowered.com/app/1966290/Sandwalkers_The_Fourteenth_Caravan/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/guide-a-convoy-through-a-ruined-world-in-the-sandwalkers-prologue-demo/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/guide-a-convoy-through-a-ruined-world-in-the-sandwalkers-prologue-demo/</guid>
+      <pubDate>Thu, 27 Oct 2022 15:01:39 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/201256169id21798gol.jpg" type="image/jpeg"/>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Upcoming</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve giving out a free Dota 2 Swag Bag with Battle Pass, Dota Plus and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>This is pretty great, and a nice way to pull more people into The International 2022. Valve are <a href="https://www.dota2.com/newsentry/3398555399418412272" target="_blank">giving out</a> a bunch of freebies for all Dota 2 players.</p>
+<p>As long as you've played at least 10 matches during the current Battle Pass season (available until sometime in January), you will be able to claim The International 2022 Swag Bag that contains:</p>
+<blockquote>
+<ul>
+<li>One month of Dota Plus.</li>
+<li>A Level 1 Battle Pass, redeemable for 24 Battle Levels if you already own a Battle Pass.</li>
+<li>Your choice of one Arcana from any available on the Dota 2 store.</li>
+</ul>
+</blockquote>
+<p>The finals of the tournament starts this weekend October 29-30, which you can watch over on the <a href="https://www.dota2.com/esports/" target="_blank">Dota 2 Esports section</a>.</p>
+<p>Valve said that a Part II of the Battle Pass will also be going live on November 3rd, which brings with it a new Diretide event mode, the Candyworks, new 'Conduit of the Blueheart' Crystal Maiden persona and more.</p>
+<p>Play <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank">Dota 2 free on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/valve-giving-out-a-free-dota-2-swag-bag-with-battle-pass-dota-plus-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/valve-giving-out-a-free-dota-2-swag-bag-with-battle-pass-dota-plus-and-more/</guid>
+      <pubDate>Thu, 27 Oct 2022 14:48:42 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/386056564id21797gol.jpg" type="image/jpeg"/>
+      
+      <category>Free Game</category>
+      
+      <category>MOBA</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>Comedy adventure McPixel 3 releases November 14th</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Ready for another point and click adventure? McPixel 3, yes they skipped the number 2, is heading to Linux and Steam Deck on November 14th.</p>
+<p>The developer explained that "McPixel 3 runs on 100% software-rendered McPixel Engine, so in the age of unaffordable graphics cards, you can be sure you will be able to run McPixel 3 just fine!</p>
+<p>The engine has been written from scratch just for the purpose of running McPixel. That makes the game run smoothly even on the oldest computer, so make sure you install McPixel on your grandma's PC next time you visit! Additionally, that makes the game environment-friendly! McPixel 3 saves the planet (and battery life)!"</p>
+<p>A fun part of this is their <a href="https://twitter.com/Sosowski/status/1585329526015684610" target="_blank">thread on Twitter</a> showing the game running across a classic Asus EEE PC 4G, Steam Deck, Windows 95, FreeBSD, Raspberry Pi, in a Linux terminal window, Haiku OS and more.</p>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5895728741666881396gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5895728741666881396gol1.jpg"/></a>Pictured - McPixel 3 running in a Linux terminal, credit: the developer.</em></p>
+<p>Some pretty amusing and clever marketing that.</p>
+<p>Anyway, here's the new trailer:</p>
+<div class="hidden_video" data-video-id="SJcqI208grM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3883f89ef7e215d8482b5bfa02592fa7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/SJcqI208grM" target="_blank">See video</a></div></div>
+<p>You can follow it and play a demo on <a href="https://www.gog.com/en/game/mcpixel_3" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/1338580/McPixel_3/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/comedy-adventure-mcpixel-3-releases-november-14th/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/comedy-adventure-mcpixel-3-releases-november-14th/</guid>
+      <pubDate>Thu, 27 Oct 2022 14:38:14 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1910165096id21796gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Adventure</category>
+      
+      <category>Comedy</category>
+      
+      <category>Point & Click</category>
+      
+    </item>
+    
+    <item>
+      <title>Get a free copy of Genesis Alpha One during the GOG Halloween Sale</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>For those of you that continue to prefer <a href="http://gog.com" target="_blank">GOG</a> for your gaming needs, they're now having a big <a href="https://www.gog.com/en/promo/gog_halloween_2022" target="_blank">Halloween Sale</a>.</p>
+<p>Starting with the best bit: you can get a free game! <a href="https://www.gog.com/en/game/genesis_alpha_one_deluxe_edition" target="_blank">Genesis Alpha One</a>, a roguelike FPS where you must build, maintain and navigate your ship through a galaxy filled with hostile alien and human threats. If you scroll down on the GOG homepage, you will see the giveaway banner. You have ~72 hours to grab it.</p>
+<p>On top of that, GOG will also give you a free copy of The Witcher along with a GWENT Card Keg if you <a href="https://www.gog.com/gwent-welcome-bonus" target="_blank">sign up</a> for their newsletter.</p>
+<p>They also just released <a href="https://www.gog.com/en/game/hands_of_necromancy" target="_blank">Hands of Necromancy</a>, which oddly doesn't have the Native Linux version on GOG but it does have one on Steam.</p>
+<p>Some quick picks:</p>
+<ul>
+<li><a href="https://www.gog.com/en/game/state_of_mind" target="_blank">State of Mind</a> - 90% off</li>
+<li><a href="https://www.gog.com/en/game/darkest_dungeon" target="_blank">Darkest Dungeon</a> - 85% off</li>
+<li><a href="https://www.gog.com/en/game/iratus_lord_of_the_dead" target="_blank">Iratus: Lord of the Dead</a> - 80% off</li>
+<li><a href="https://www.gog.com/en/game/stygian_reign_of_the_old_ones" target="_blank">Stygian: Reign of the Old Ones</a> - 80% off</li>
+<li><a href="https://www.gog.com/en/game/surviving_mars" target="_blank">Surviving Mars</a> - 75% off</li>
+<li><a href="https://www.gog.com/en/game/fury_unleashed" target="_blank">Fury Unleashed</a> - 70% off</li>
+</ul>
+<p>Head over to <a href="http://gog.com" target="_blank">GOG.com</a> for all the deals. Their sale lasts until November 3rd, 10 PM UTC.</p>
+<p>Plenty of their games have Linux versions, otherwise you can try using the <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher" target="_blank">Heroic Launcher</a> to run them with Wine which will work quite nicely for a lot of what they have.</p>
+<p>If you do find a good deal be sure to leave a comment.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/get-a-free-copy-of-genesis-alpha-one-during-the-gog-halloween-sale/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/get-a-free-copy-of-genesis-alpha-one-during-the-gog-halloween-sale/</guid>
+      <pubDate>Thu, 27 Oct 2022 14:31:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1917197857id21795gol.jpg" type="image/jpeg"/>
+      
+      <category>DRM-Free</category>
+      
+      <category>Game Sale</category>
+      
+      <category>GOG</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve finally clears up Steam game release dates, also adjusts pricing</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Two important pieces of info today for both players and game developers, as it will affect both quite a bit with release date changes and pricing changes.</p>
+<p>Firstly, prices! Valve <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/3314110913449340511" target="_blank">announced</a> to developers various updates to how they handle multi-currency. Developers and publishers are still free to set their own pricing but now Valve are giving developers a new tool to make it easier, along with adjusting their recommendation on prices across seemingly all currencies on Steam. This may result in price increases across many games on Steam in many different regions, as Valve said "with purchasing power and foreign exchange rates constantly evolving, we needed to make significant changes to those conversion recommendations to stay current".</p>
+<p><a href="https://steamdb.info/blog/valve-price-matrix-2022-update/" target="_blank">SteamDB</a>, as always, keep tracking changes on Steam and did their own blog post to highlight the changes. According to SteamDB the only currencies not changing have so far been CIS - U.S. Dollar, Costa Rican Colon. Israeli New Shekel, Kuwaiti Dinar, Singapore Dollar, South Asia - USD and U.A.E. Dirham. They included various tables, showing the changes against the dollar at various price points with this one showing just how big an increase it can be:</p>
+<p><strong>$59.99 USD difference:</strong></p>
+<table class="table-stripes-tbody">
+<thead>
+<tr>
+<th>Currency</th>
+<th>Old</th>
+<th>New</th>
+<th>Diff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>British Pound</td>
+<td>£46.49</td>
+<td>£49.99</td>
+<td>+8%</td>
+</tr>
+<tr>
+<td>Euro</td>
+<td>49,99€</td>
+<td>58,99€</td>
+<td>+18%</td>
+</tr>
+<tr>
+<td>Russian Ruble</td>
+<td>1085 ₽</td>
+<td>1900 ₽</td>
+<td>+75%</td>
+</tr>
+<tr>
+<td>Brazilian Real</td>
+<td>R$ 109,99</td>
+<td>R$ 162,00</td>
+<td>+47%</td>
+</tr>
+<tr>
+<td>Japanese Yen</td>
+<td>¥ 6290</td>
+<td>¥ 6500</td>
+<td>+3%</td>
+</tr>
+<tr>
+<td>Indonesian Rupiah</td>
+<td>Rp 249999</td>
+<td>Rp 449999</td>
+<td>+80%</td>
+</tr>
+<tr>
+<td>Malaysian Ringgit</td>
+<td>RM95.00</td>
+<td>RM133.00</td>
+<td>+40%</td>
+</tr>
+<tr>
+<td>Philippine Peso</td>
+<td>₱1219.95</td>
+<td>₱1670.00</td>
+<td>+37%</td>
+</tr>
+<tr>
+<td>Thai Baht</td>
+<td>฿699.00</td>
+<td>฿1100.00</td>
+<td>+57%</td>
+</tr>
+<tr>
+<td>Vietnamese Dong</td>
+<td>480000₫</td>
+<td>705000₫</td>
+<td>+47%</td>
+</tr>
+<tr>
+<td>South Korean Won</td>
+<td>₩ 61000</td>
+<td>₩ 63000</td>
+<td>+3%</td>
+</tr>
+<tr>
+<td>Turkish Lira</td>
+<td>₺92,00</td>
+<td>₺510,00</td>
+<td>+454%</td>
+</tr>
+<tr>
+<td>Ukrainian Hryvnia</td>
+<td>699₴</td>
+<td>1125₴</td>
+<td>+61%</td>
+</tr>
+<tr>
+<td>Mexican Peso</td>
+<td>Mex$ 527.99</td>
+<td>Mex$ 614.99</td>
+<td>+16%</td>
+</tr>
+<tr>
+<td>Canadian Dollar</td>
+<td>CDN$ 68.99</td>
+<td>CDN$ 77.99</td>
+<td>+13%</td>
+</tr>
+<tr>
+<td>Australian Dollar</td>
+<td>A$ 84.95</td>
+<td>A$ 87.95</td>
+<td>+4%</td>
+</tr>
+<tr>
+<td>New Zealand Dollar</td>
+<td>NZ$ 76.49</td>
+<td>NZ$ 85.99</td>
+<td>+12%</td>
+</tr>
+<tr>
+<td>Norwegian Krone</td>
+<td>412,00 kr</td>
+<td>670,00 kr</td>
+<td>+63%</td>
+</tr>
+<tr>
+<td>Polish Zloty</td>
+<td>214,99zł</td>
+<td>274,99zł</td>
+<td>+28%</td>
+</tr>
+<tr>
+<td>Swiss Franc</td>
+<td>CHF 57.50</td>
+<td>CHF 65.99</td>
+<td>+15%</td>
+</tr>
+<tr>
+<td>Chinese Yuan</td>
+<td>¥ 163</td>
+<td>¥ 198</td>
+<td>+21%</td>
+</tr>
+<tr>
+<td>Indian Rupee</td>
+<td>₹ 1299</td>
+<td>₹ 2400</td>
+<td>+85%</td>
+</tr>
+<tr>
+<td>Chilean Peso</td>
+<td>CLP$ 22500</td>
+<td>CLP$ 28500</td>
+<td>+27%</td>
+</tr>
+<tr>
+<td>Peruvian Sol</td>
+<td>S/.102.00</td>
+<td>S/.115.00</td>
+<td>+13%</td>
+</tr>
+<tr>
+<td>Colombian Peso</td>
+<td>COL$ 82500</td>
+<td>COL$ 130000</td>
+<td>+58%</td>
+</tr>
+<tr>
+<td>South African Rand</td>
+<td>R 329.00</td>
+<td>R 499.00</td>
+<td>+52%</td>
+</tr>
+<tr>
+<td>Hong Kong Dollar</td>
+<td>HK$ 258.00</td>
+<td>HK$ 365.00</td>
+<td>+41%</td>
+</tr>
+<tr>
+<td>Taiwan Dollar</td>
+<td>NT$ 858</td>
+<td>NT$ 898</td>
+<td>+5%</td>
+</tr>
+<tr>
+<td>Saudi Riyal</td>
+<td>89.95 SR</td>
+<td>114.95 SR</td>
+<td>+28%</td>
+</tr>
+<tr>
+<td>Argentine Peso</td>
+<td>ARS$ 649,99</td>
+<td>ARS$ 3800,00</td>
+<td>+485%</td>
+</tr>
+<tr>
+<td>Kazakhstani Tenge</td>
+<td>7100₸</td>
+<td>14000₸</td>
+<td>+97%</td>
+</tr>
+<tr>
+<td>Qatari Riyal</td>
+<td>114.99 QR</td>
+<td>119.99 QR</td>
+<td>+4%</td>
+</tr>
+<tr>
+<td>Uruguayan Peso</td>
+<td>$U1199</td>
+<td>$U1700</td>
+<td>+42%</td>
+</tr>
+</tbody>
+</table>
+<p><em>Thanks <a href="https://steamdb.info/blog/valve-price-matrix-2022-update/" target="_blank">SteamDB</a>. </em></p>
+<p>Another <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/3289340571611574692" target="_blank">big change</a> is how release dates are presented on Steam. Soon, gone will be the days of developers setting whatever format they wish for their dates, along with some including funny messages instead of an actual date. Instead, Valve will have a standard way to present dates that can be correctly formatted to your region so there will be no more confusion on days and months too.</p>
+<p>Take <a href="https://store.steampowered.com/app/975370/Dwarf_Fortress/" target="_blank">Dwarf Fortress</a> for example:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10741759131666866898gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10741759131666866898gol1.png"/></a></p>
+<p>What is changing is that developers will need to put an exact date that only they and Valve can see, and then pick between these types of public views:</p>
+<blockquote>
+<ul>
+<li>The exact date. “Aug 24, 2023”</li>
+<li>Month-and-year. “August 2023”</li>
+<li>The quarter of the calendar year. “Q3 2023”</li>
+<li>The year. "2023"</li>
+<li>No date at all. “Coming Soon”</li>
+</ul>
+</blockquote>
+<p>This change makes sense, and was a long time coming.</p>
+<p>With this change, it will also affect how developers have their games shown in upcoming lists on Steam. Valve will position games "at the last possible date of that time range", so if developers pick to have just a month and year they will appear as if they select the last day in that month. Hopefully this will also help fix the issue of some developers repeatedly changing their date to keep bumping their game in the upcoming lists.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/valve-finally-clears-up-steam-game-release-dates-also-adjusts-pricing/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/valve-finally-clears-up-steam-game-release-dates-also-adjusts-pricing/</guid>
+      <pubDate>Thu, 27 Oct 2022 10:39:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>Thoughts on the official Steam Deck Docking Station</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After having and playing with the official Steam Deck Docking Station, here's some thoughts on the experience. Note: personal purchase.</p>
+<p>Released <a href="https://www.gamingonlinux.com/2022/10/no-more-steam-deck-reservation-queue-m-buy-it-now-plus-docking-station-available/" target="_blank">earlier in October</a>, along with the Steam Deck itself no longer having a reservation queue, I was very keen to see what Valve would give us officially. Especially since <a href="https://www.gamingonlinux.com/2022/08/no-need-to-wait-on-valve-the-steam-deck-docking-station-from-jsaux-is-great/" target="_blank">JSAUX</a> and <a href="https://www.gamingonlinux.com/2022/10/the-upgraded-ivoler-steam-deck-docking-station-is-another-good-choice/" target="_blank">ivoler</a> already provide <em>great</em> docked experiences for a lower price (since they don't give you a charger too).</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15625936341666864552gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15625936341666864552gol1.jpeg"/></a></p>
+<p>For the basic design it's perfectly fine. All the ports are on the back out of the way, so you only see the short lip at the front when you've docked your Steam Deck. No ethernet wire poking out the side like with JSAUX (although ivoler don't have this issue). There's no problems with the design or build quality at all, except for those of you keeping thicker protective cases on where it won't fit in. It also has a nice non-slip cover on the bottom so it won't move around.</p>
+<p>A reminder on what it has available: 3 x USB-A 3.1 Gen1 Ports, Gigabit Ethernet, DisplayPort 1.4, HDMI 2.0, USB-C Power Delivery pass-through input and an included charger.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6714503211666864544gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6714503211666864544gol1.jpeg"/></a></p>
+<p>When you first get it, you'll likely need a firmware update before you really use it. A big benefit of it, is that Valve provide firmware updates directly, so there's no messing with anything external. You either get a pop-up telling you one is available, or you can go into the settings and check for updates to have it appear. It probably won't be updated often but it's still a nice touch.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9711401061666863019gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9711401061666863019gol1.jpeg"/></a></p>
+<p>So it looks nice and it can get easy updates — how is the overall experience? Well, that's where things aren't so good in this case. I've now used 4 or 5 different JSAUX docks (I've lost count) and one from ivoler, I use my Steam Deck docked all the time and have done since before the original release (since I was an original Steam Deck reviewer) via two different USB-C Hubs, so I think I have a fair amount of experience here.</p>
+<p>The problem is that the official Steam Deck Docking Station has its quirks with actually connecting to external displays, tested by connecting to multiple TVs and PC Monitors all from different vendors. Sometimes, it works right away. Most of the time though, I have to do a little dance between powering the Steam Deck down and on again, turning screens on and off and so on. Unfortunately, for me, the official Docking Station is very much <em>not</em> a plug and play experience. Sadly, I am apparently in a long list of people having issues with it. Looking on the <a href="https://steamcommunity.com/app/1675200/discussions/3?snr=1_614_steamdeckdock_steamdeckdock_1601" target="_blank">Steam Forum</a>, there's a great many posts of people seeing the same or just not seeing a signal on their external screen at all. A few in <a href="https://discord.gg/AghnYbMjYg" target="_blank">our Discord</a> have also reported such issues too.</p>
+<p>At 4K, the Steam Deck UI acts a bit weirdly too. Things don't always match up on the screen and the UI doesn't perform well. Thankfully, Valve added external screens settings so I can put it into 1080p and it works fine while still looking good overall. Not a big issue but one I hope they sort too.</p>
+<p>Since Valve has put a lot of work into the docked experience, overall once it's actually setup <em>correctly</em> it works quite nicely. I have no big main complaints about the main docked experience right now. Bluetooth controllers both PS4 and Xbox work just fine, as do controllers plugged in via USB. Honestly, playing with the Steam Deck while docked is a really fun experience and really continues to show how versatile the Steam Deck is as a gaming device. However, I really do hope Valve add an easy way to deal with external drives as more people wish to use them to expand their storage even more. It's possible to do, like with the <a href="https://www.gamingonlinux.com/2022/10/the-jsaux-m2-docking-station-for-steam-deck-is-a-great-choice/" target="_blank">JSAUX M.2 SSD Dock</a>, but the setup is annoying to do. They have the functionality there for SD Cards, so it's not a stretch to say they could expand that for other external drives too.</p>
+<p>If Valve manage to sort out the issues with it connecting properly to external screens, which is the <em>main</em> function, it might turn around into a recommendation. For now though, I would suggest going with JSAUX or ivoler instead and if you already have a spare charger, you'll be saving money too.</p>
+<p>You can buy it on <a href="https://store.steampowered.com/steamdeckdock" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/10/thoughts-on-the-official-steam-deck-docking-station/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/thoughts-on-the-official-steam-deck-docking-station/</guid>
+      <pubDate>Thu, 27 Oct 2022 09:56:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/268281841id21793gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Hardware</category>
+      
+      <category>Meta</category>
+      
+      <category>Review</category>
+      
+    </item>
     
     <item>
       <title>CD PROJEKT RED announce The Witcher Remake in Unreal Engine 5</title>
@@ -3587,439 +4174,6 @@ Not too big or too small, Docking Station is exactly the right size and shape to
       <category>Steam</category>
       
       <category>SteamOS</category>
-      
-    </item>
-    
-    <item>
-      <title>Humble have a nice list of classics in the RPG Legends bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Need some classic RPGs in your life? Check out the <a href="https://www.humblebundle.com/games/rpg-legends-baldurs-gate-beyond-bundle?partner=gamingonlinux" target="_blank">RPG Legends: Baldur's Gate &amp; Beyond bundle</a> with some great picks. It's quite a small bundle but still a good one if you don't already own the games. As usual, I'll be listing how they run on Steam Deck and Linux desktop either via a Native Linux port or via Proton with the <a href="https://www.protondb.com/" target="_blank">ProtonDB</a> rating.</p>
-<p>Included in the bundle are:</p>
-<p><strong>Neverwinter Nights: Complete Adventures</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unrated (but works)</li>
-<li>Linux Native</li>
-</ul>
-<p><strong>Pathfinder: Wrath of the Righteous</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p><strong>Baldur's Gate: Enhanced Edition (+ Siege of Dragonspear + Faces of Good and Evil)</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
-<li>Linux Native</li>
-</ul>
-<p><strong>Baldur's Gate II : Enhanced Edition</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
-<li>Linux Native</li>
-</ul>
-<p><strong>Planescape: Torment: Enhanced Edition</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unrated (but works)</li>
-<li>Linux Native</li>
-</ul>
-<p><strong>Icewind Dale: Enhanced Edition</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>Linux Native</li>
-</ul>
-<p>+ there's a 25% discount coupon for MythForce (Epic Games).</p>
-<p><a href="https://www.humblebundle.com/games/rpg-legends-baldurs-gate-beyond-bundle?partner=gamingonlinux" target="_blank">See the full bundle </a>if interested.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/10/humble-have-a-nice-list-of-classics-in-the-rpg-legends-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/humble-have-a-nice-list-of-classics-in-the-rpg-legends-bundle/</guid>
-      <pubDate>Wed, 05 Oct 2022 18:29:15 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/185065792id21700gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Go tell Bungie you want Destiny 2 on Steam Deck / Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Destiny 2 is one of the biggest and most popular shooters around and sadly it doesn't work on Steam Deck / Linux. Now is your chance to give your say and <em>maybe</em> Bungie will listen.</p>
-<p><a href="https://www.gamingonlinux.com/2022/03/bungie-say-a-big-fat-no-to-proton-and-steam-deck-for-destiny-2/" target="_blank">A little while ago</a> I wrote about how Bungie had given Steam Deck a pretty firm nope, and sadly the situation simply hasn't changed since then. They took notice of people requesting it, and then <a href="https://www.gamingonlinux.com/2022/03/bungie-has-more-to-say-on-destiny-2-for-steam-deck-and-its-still-a-no/" target="_blank">issued a statement</a> where they once again gave us a pretty firm nope.</p>
-<p>Now, there's a dedicated place on the Destiny 2 Reddit where you can give your feedback on it. This comes in the form of what they call a <em>Focused Feedback</em> post titled "<a href="https://www.reddit.com/r/DestinyTheGame/comments/xuonok/focused_feedback_linux_and_alternative_platform/?utm_source=share&amp;utm_medium=web2x&amp;context=3" target="_blank">Focused Feedback: Linux and Alternative Platform Support</a>". Writing about why the post was made, a Destiny 2 Reddit moderator noted in a comment:</p>
-<blockquote>
-<p>For some additional context on why this was selected as a Focused Feedback topic, despite lack of recent popular threads about it, posts discussing official support for Destiny 2 on Proton (read: Steam Deck) have been automodded to Bungie's official stance on the matter (listed below) for a while now because - until very recently - there was nothing to discuss besides people expressing that they wanted Proton support and/or whether or not Bungie's rationale for the Proton prohibition is valid.</p>
-<p>Given that, in the past week, we've had the announcement of Stadia's planned demise AND a Destiny 2 team lead expressing their love for Steam Deck as a <strong>hardware</strong> choice for playing Destiny 2 (they were playing D2 on Steam Deck in a manner which is allowed by Terms of Service), there is renewed public interest in the discussion and the decision was made to make it this week's Focused Feedback topic. This way, the discussion can be had and Bungie is provided with fresh, organized feedback on this issue from the DestinyReddit community.</p>
-</blockquote>
-<p>Their comment about the Destiny 2 developer enjoying the Steam Deck is probably <a href="https://twitter.com/tomfromtheweb/status/1576790234200649728" target="_blank">this post</a> from Tom Farnsworth, the Senior Design Lead at Bungie, who had to use Moonlight to stream it from a PC to their Steam Deck. <em>Sure would be nice if we didn't have to do things like that huh?</em></p>
-<p>Since the Steam Deck is doing so well (like apparently <a href="https://www.gamingonlinux.com/2022/10/kde-steam-deck-akademy-2022/" target="_blank">shipping over a million now</a>), players shouldn't need to resort to installing a different operating system or streaming from a PC to play their favourite games. Hopefully more developers, like Bungie, will start to take notice if the player base on Steam Deck continues growing.</p>
-<p>Head over to <a href="https://www.reddit.com/r/DestinyTheGame/comments/xuonok/focused_feedback_linux_and_alternative_platform/" target="_blank">the Reddit Post</a> to give your say.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/10/go-tell-bungie-you-want-destiny-2-on-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/go-tell-bungie-you-want-destiny-2-on-steam-deck-linux/</guid>
-      <pubDate>Wed, 05 Oct 2022 16:55:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2109954156id21699gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Anti-Cheat</category>
-      
-      <category>FPS</category>
-      
-    </item>
-    
-    <item>
-      <title>Here&#39;s how to play Overwatch 2 on Steam Deck / Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>While you might struggle to get in due to ongoing server issues, Overwatch 2 is out now free to play and it can run quite nicely on Steam Deck and Linux desktop. Here's how to get Overwatch 2 installed and running. Since it's not available officially for Linux, we're going to be using the Wine compatibility layer for this, along with help from the <a href="https://usebottles.com/" target="_blank">Bottles</a> app.</p>
-<p>First up is the video guide which walks through each step, plus some gameplay:</p>
-<div class="hidden_video" data-video-id="QsWL0mqFxgE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1a51491de3e7ec26d14dae9481aecaa8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/QsWL0mqFxgE" target="_blank">See video</a></div></div>
-<p><strong>Text Guide:</strong></p>
-<ol>
-<li>Download <a href="https://usebottles.com/" target="_blank">Bottles</a>. On Steam Deck be in Desktop Mode where it's found in the Discover app.</li>
-<li>Load it up and create a new Bottle for Gaming.</li>
-<li>In the main Bottles settings, go to Runners and download Caffe.</li>
-<li>Go inside the Bottle you created (click it).</li>
-<li>Head to preferences, scroll down to System and change the Runner to Caffe.</li>
-<li>Go to the Installers section, install Battle.net.</li>
-<li>For Steam Deck: when finished installing Battle.net and Overwatch, you can add Bottles to Steam to launch in Gaming Mode via the big "Add A Game" button on the bottom left of the Steam window. <em>Bottles has it's own add to Steam ability, but for me it didn't work.</em></li>
-<li>It can then be found in the Non-Steam section of your Library in Gaming Mode.</li>
-<li>After launching Bottles when in Gaming Mode, you can hold down the Steam button and use the right thumbpad / right thumbstick to move the mouse and right trigger for left mouse button by default so you can leave Steam Input as a gamepad. Makes it easy to click buttons in launchers while keeping gamepad for in-game.</li>
-</ol>
-<p> </p>
-<p>That's pretty much all there is to it. Performance will be really quite bad until the shaders compile though, just be patient with it and after a good while it will sort itself out quite nicely. I wouldn't recommend doing any Ranked gameplay until you've put a good few hours into each map so a lot of the shaders will be sorted.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/10/heres-how-to-play-overwatch-2-on-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/heres-how-to-play-overwatch-2-on-steam-deck-linux/</guid>
-      <pubDate>Wed, 05 Oct 2022 14:16:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1216849990id21697gol.jpg" type="image/jpeg"/>
-      
-      <category>FPS</category>
-      
-      <category>Free Game</category>
-      
-      <category>HOWTO</category>
-      
-      <category>Online Multiplayer</category>
-      
-    </item>
-    
-    <item>
-      <title>Oxygen Not Included has a new animated short, plus a &#39;Story Trait System&#39; update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Klei are back with a brand new big update to Oxygen Not Included, after they decided <a href="https://www.gamingonlinux.com/2022/08/no-more-dlc-for-oxygen-not-included-devs-decide-to-do-free-updates-instead/" target="_blank">not to do</a> any more paid DLC so this is the first of many free updates to come. Plus a fancy new animated short.</p>
-<p>With the new release they added in a "Story Trait System", which gives you a collection of interactive POIs (point of interest) burief inside the asteroids to find. The first two are: the Somnium Synthesizer harnesses the power of Duplicants’ subconscious minds by unlocking their ability to dream for the very first time, while the Critter Flux-O-Matic offers a new way to roll the dice on critter morph outcomes.</p>
-<p>Additionally there's a new Kitchen room, with a Spice Grinder to enhance food. Plus some additions for people who own the Spaced Out DLC.</p>
-<div class="hidden_video" data-video-id="7cK5oB3CM1k"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9649fbb338da6ddea7744ba45960b2b1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/7cK5oB3CM1k" target="_blank">See video</a></div></div>
-<p>New Feature Highlight:</p>
-<blockquote>
-<div>All versions</div>
-<ul>
-<li>Added Story Traits system and UI
-	<ul>
-<li>Added Somnium Synthesizer story trait</li>
-<li>Added Critter Flux-O-Matic story trait</li>
-</ul>
-</li>
-<li>Added Kitchen room type</li>
-<li>Added Spice Grinder building (Freshener Spice recipe, Brawny Spice recipe, Machinist Spice recipe)</li>
-<li>Enabled renaming rockets</li>
-<li>Fixed a number of Transit Tube bugs</li>
-</ul>
-<div>Spaced Out! only</div>
-<ul>
-<li>Added Smog Slug and Spong Slug critter morphs</li>
-<li>Added Rocketeer Spice recipe to Spice Grinder</li>
-</ul>
-</blockquote>
-<p>Recently they also put up a roadmap which sounds quite exciting. Klei are planning to add in expanded surface gameplay tools and content, various quality of life updates to make playing it smoother, various new room types like "Laboratory, Mission Control Room, better bedrooms" along with bigger additions like new biomes, expanded world generation options and more. A cosmetic system like in Don't Starve Together is also in the works, which they hope will help fund more free updates instead of DLC.</p>
-<p>You can buy Oxygen Not Included on <a href="https://store.steampowered.com/app/457140/Oxygen_Not_Included/?curator_clanid=4218320" target="_blank">Steam</a>. It has a Native Linux version and it is Steam Deck Verified.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/10/oxygen-not-included-has-a-new-animated-short-plus-a-story-trait-system-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/oxygen-not-included-has-a-new-animated-short-plus-a-story-trait-system-update/</guid>
-      <pubDate>Wed, 05 Oct 2022 14:08:08 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/284378231id21698gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Building Sim</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Sandbox</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck Beta updates fix Red Dead Redemption 2 and external screen changes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Two Beta updates have landed for the Steam Deck with a <a href="https://store.steampowered.com/news/app/1675200/view/3301726014484230244" target="_blank">Client</a> and an <a href="https://store.steampowered.com/news/app/1675200/view/3301726014483383230" target="_blank">OS</a> update available, with some pretty big changes to how external screens are handled.</p>
-<p>Available in the Beta and Preview channels:</p>
-<blockquote>
-<p>External display settings</p>
-<ul>
-<li>Keep track of refresh rate and FPS limit settings independently for internal and external displays.</li>
-<li>Disable refresh rate switching via the quick access menu for external displays by default. Alternative refresh rates are still accessible via the resolution dropdown in Settings-&gt;Display.</li>
-<li>Added a toggle to developer settings to re-enable refresh rate switching in the quick access menu for external displays. Please note that the Steam Deck’s built-in display was validated to support the full range of refresh rates available in the slider, but for arbitrary external displays we can't provide a guarantee that the resolution + refresh rate combination will be functional. This can lead to a scenario where the external display doesn’t display an image, so there isn’t an easy way to undo the change. Here be dragons, we don't recommend turning this setting on.</li>
-</ul>
-<p>General</p>
-<ul>
-<li>Performance improvements when rendering the homescreen.</li>
-<li>Fixed a crash when loading some SteamInput configs.</li>
-<li>Reduced occurrence of double-activations on Soft Press on Touch Pads and Sticks.</li>
-</ul>
-</blockquote>
-<p>Also available only in the Preview channel as it's an OS upgrade:</p>
-<blockquote>
-<ul>
-<li>Fixed a crash in Red Dead Redemption 2</li>
-<li>Improved external display hot-plug detection</li>
-</ul>
-</blockquote>
-<p>Here's a run over the changes and a quick look in a video. For this I tested a good while of Red Dead Redemption 2 to ensure it really was fixed and not only does it run smoothly, there's no crashing now either.</p>
-<div class="hidden_video" data-video-id="2mXCYXbhXUs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/762c60fd285c76d918a9d722385f3c61.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/2mXCYXbhXUs" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/10/steam-deck-beta-updates-fix-red-dead-redemption-2-and-external-screen-changes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/steam-deck-beta-updates-fix-red-dead-redemption-2-and-external-screen-changes/</guid>
-      <pubDate>Wed, 05 Oct 2022 09:49:21 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2137231981id21696gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>DEATHLOOP and Monster Train are in the new Humble Choice Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another fresh month and a new set of games in <a href="https://www.humblebundle.com/membership?partner=gamingonlinux" target="_blank">Humble Choice</a>, the monthly subscription from Humble Bundle so let's go over what's in it and the compatibility. Listing how they will run across Linux desktop and Steam Deck, and if any have Native builds as usual or <a href="https://www.protondb.com/" target="_blank">ProtonDB</a> rating.</p>
-<p><strong>DEATHLOOP</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>ProtonDB Silver</li>
-</ul>
-<p><strong>Monster Train</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported (everything but cutscenes work)</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p><strong>The Dark Pictures Anthology: Little Hope</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p><strong>Disciples: Liberation</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p><strong>Maid of Sker</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p><strong>Epic Chef</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</li>
-<li>ProtonDB No Rating</li>
-</ul>
-<p><strong>Railroad Corporation</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unrated</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p><strong>Golf Gang</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p>Head over to <a href="https://www.humblebundle.com/membership?partner=gamingonlinux" target="_blank">Humble Choice</a> if that interests you.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/10/deathloop-and-monster-train-are-in-the-new-humble-choice-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/deathloop-and-monster-train-are-in-the-new-humble-choice-bundle/</guid>
-      <pubDate>Tue, 04 Oct 2022 17:10:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/226799795id21695gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Streets of Rogue 2 gets a Steam page with some early screenshots</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Excuse me for being overly hyped about this one but HECK YES! Streets of Rogue 2 is coming along in development, with a <a href="https://store.steampowered.com/app/2165810/Streets_of_Rogue_2/" target="_blank">Steam page</a> up now.</p>
-<p>The first game was actually fantastic, <a href="https://store.steampowered.com/app/512900/Streets_of_Rogue/" target="_blank">Streets of Rogue</a> is up there as one of my all-time favourite indie games that we've livestreamed many times over the years here. It's also one of the best reviewed games on Steam, sitting firmly in the top 250 with an Overwhelmingly Positive rating from over 12,000 users.</p>
-<p>As for Streets of Rogue 2, it's going to be much bigger with an open-world and overall quite a different game but taking some of the best bits of the first one.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2938304481664901868gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2938304481664901868gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17432124941664901867gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/17432124941664901867gol1.jpg"/></a></p>
-<p>Game Features:</p>
-<ul>
-<li><strong>Play the game YOUR way!</strong> Don’t want to kill anybody? That’s cool! Want to hack computers? Got ya covered! In the mood for some laid-back mineral grinding or carrot farming? Go for it!</li>
-<li><strong>Endless replayability!</strong> Whether you want to pick up and play for an hour or sit down and binge for nine, Streets of Rogue 2’s randomly generated worlds and massive gameplay variety will quickly make it one of your go-to “forever games”.</li>
-<li><strong>Easy to learn, tough to master!</strong> Streets of Rogue 2 is user-friendly enough for anyone to jump in and play, and has enough complexity and depth to satiate the hardcore among us.</li>
-<li><strong>Online and local cooperative modes!</strong> Build your empire together, or make your own unique marks on opposite sides of the game world!</li>
-<li><strong>Play as a large number of wildly different character classes!</strong> Scientist, hacker, vampire, thief, wrestler, gorilla… or some oddball combination of all of these!</li>
-<li><strong>Super-advanced artificial intelligence!</strong> Remember that your actions have consequences for your reputation as you gain the favor or ire of these virtual humans.</li>
-<li><strong>Stupidly huge variety of items!</strong> Shrink rays, hypnotizing devices, boomboxes, bear traps, banana peels... Oh, and lots of guns, too.</li>
-<li><strong>Build your dream home!</strong> Or dream fortress! Or dream cave! Or dream shack! Or steal someone else’s home! Or sleep under the stars, the game just doesn’t care!</li>
-<li><strong>Vehicles!</strong> Load up your posse of ne’er-do-wells into a van, drive solo in a souped-up coupe, glide across the water in your very own speedboat, or tinker around and create your own personal fantasy ride.</li>
-<li><strong>Extreme customization!</strong> Whether you want an ultra-challenging permadeath experience or a chilled-out good time, a quick jaunt or a world you can play in for dozens of hours, the game lets you tailor the experience to your exact liking.</li>
-</ul>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13952429241664901876gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13952429241664901876gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18541654901664901878gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/18541654901664901878gol1.jpg"/></a></p>
-<p>"Streets of Rogue 2 is a procedurally generated open-world game about player choice, freedom, and anarchic fun. The game takes inspiration from open-world and crafting/survival titles ranging from Skyrim to GTA to Valheim to Stardew Valley, with an emphasis on streamlined and fast-paced gameplay. It also adds the free-form, experimentation-driven, emergent elements of RPGs like Deus Ex to create a true sandbox experience."</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17213763531664901879gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/17213763531664901879gol1.jpg"/></a></p>
-<p>It will have full Linux support too, just like the first game. Noted in the FAQ:</p>
-<blockquote>
-<p>Initially, the game will be released on PC, Mac and Linux. At some point later, the game will be released on Xbox, Playstation and Switch consoles.</p>
-</blockquote>
-<p>Due out next year, you can follow it on <a href="https://store.steampowered.com/app/2165810/Streets_of_Rogue_2/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/10/streets-of-rogue-2-gets-a-steam-page-with-some-early-screenshots/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/streets-of-rogue-2-gets-a-steam-page-with-some-early-screenshots/</guid>
-      <pubDate>Tue, 04 Oct 2022 16:47:18 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1882317965id21694gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Exploration</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>NVK is a new open source Mesa Vulkan driver for NVIDIA GPUs</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Jason Ekstrand of Collabora just <a href="https://www.collabora.com/news-and-blog/news-and-events/introducing-nvk.html" target="_blank">announced</a> NVK, a brand new open source Mesa Vulkan driver for NVIDIA GPUs. No you're not dreaming but it's also not from NVIDIA directly — as usual the open source community is doing the work.</p>
-<p>It's still early-ish days for NVK but what they've been able to do with it so far sounds reasonably promising. The current nouveau drivers for NVIDIA in Mesa aren't going to be removed but they don't exactly work well, and a lot of it was done coding in the dark with reverse engineering.</p>
-<p>Things have come a long way though, with NVIDIA gradually releasing more documentation and recently their <a href="https://www.gamingonlinux.com/2022/05/nvidia-releases-open-source-linux-gpu-kernel-modules-beta-driver-5154304-out/" target="_blank">open source Linux GPU kernel modules</a>.</p>
-<p>NVK itself was written "almost entirely from scratch using the new official headers from NVIDIA" over the last several months targeting Turing+. Ekstrand has some pretty high goals for it, like wanting it to become "the new reference Vulkan driver within Mesa" and so they're "building NVK with all the best practices we've developed for Vulkan drivers over the last 7.5 years and trying to keep the code-base clean and well-organized".</p>
-<p>This is a serious effort to get a good open source driver for NVIDIA GPUs and that sounds awesome. Eventually it could become "what RADV is to AMD hardware" but there's a lot of work to get there.</p>
-<p>As for OpenGL support, they might even end up using the Zink driver (an OpenGL implementation on top of Vulkan), instead of writing a whole new OpenGL driver to go along with it. Zink has come a long way too so it could be a pretty good plan.</p>
-<p>See the <a href="https://www.collabora.com/news-and-blog/news-and-events/introducing-nvk.html" target="_blank">blog post</a> for all the info.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/10/nvk-is-a-new-open-source-mesa-vulkan-driver-for-nvidia-gpus/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/nvk-is-a-new-open-source-mesa-vulkan-driver-for-nvidia-gpus/</guid>
-      <pubDate>Tue, 04 Oct 2022 16:32:11 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1325686122id21693gol.jpg" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Mesa</category>
-      
-      <category>Meta</category>
-      
-      <category>NVIDIA</category>
-      
-    </item>
-    
-    <item>
-      <title>Dome Keeper is a nice twist on base / tower defense</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Blending together elements of survival, mining, exploration and tower defense — Dome Keeper is worth your attention. Note: key provided by the developer to <a href="https://store.steampowered.com/curator/4218320-GamingOnLinux/" target="_blank">our Steam Curator</a>.</p>
-<p>Here you're defending your little Dome against an onslaught of monsters. Mixing between tower defense with waves of enemies, with your time in between waves dedicated to mining down below the surface for resources so you can upgrade everything you possibly can to survive just a little longer. Do you rush to get back before the monsters arrive, as you keep your watchful eye on the timer or do you let it get a small beating because you've struck gold with resources or something special?</p>
-<div class="hidden_video" data-video-id="WOYP2luxudY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b65583ab5ad4170643255cf0f774f7c2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/WOYP2luxudY" target="_blank">See video</a></div></div>
-<p>Even though you're constantly facing off against the timer, it doesn't feel frantic. It's a surprisingly chilled game half the time and i think that's a big part of why I like it. Action where it needs to be but a nice mixture of gameplay with the exploration mining below the surface.</p>
-<p>Perhaps a little bit light on content overall, with the vast majority of your time spent digging or just shooting monsters from your dome but for what it is — a lot of fun. The basic idea they have is perfectly formed here and for those who just like to chill out with their games, it's an easy pick up and play experience. The developer seems to have plans to keep expanding it too so I'm genuinely quite excited to see what else they add into it.</p>
-<p>According to the publisher, RawFury (<a href="https://twitter.com/jantonsson/status/1575863051085090819" target="_blank">Twitter</a>), it's done well too:</p>
-<blockquote>
-<p>Dome Keeper became profitable a few hours after launch &amp; grossed $1 mil soon after! With over 7K games launched on Steam this yr, this result is far from given, but shows what can happen when an amazing game, made by a world class developer gets the support to make full impact.</p>
-</blockquote>
-<p>A happy recommendation for desktop Linux and Steam Deck as it plays fantastically on both.</p>
-<p>You can pick it up on <a href="https://www.gog.com/game/dome_keeper" target="_blank">GOG</a> ("soon") and right now on <a href="https://store.steampowered.com/app/1637320/Dome_Keeper/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/10/dome-keeper-is-a-nice-twist-on-base-tower-defense/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/dome-keeper-is-a-nice-twist-on-base-tower-defense/</guid>
-      <pubDate>Tue, 04 Oct 2022 16:07:36 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1263143155id21679gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Godot Engine</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Wine manager app Bottles gets some drag and drop fun</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://usebottles.com/" target="_blank">Bottles</a> is the awesome free and open source app to help you manage the Windows compatibility layer Wine. A fresh release is out now with version 2022.9.28 (yes I'm a few days late).</p>
-<p>With Bottles, you can easily install the likes of Battle.net, EA Launcher, Origin, GOG Galaxy and more with a growing list of easy installers. Plus you can just throw in whatever Windows apps / games you need. It's just a nice tidy way to keep it all together.</p>
-<p>My favourite new feature is easily their new drag and drop implementation for running things, allowing you to throw a file on top of the window when you have a configured Bottle open to then run it inside it. In other words, you have a Wine Bottle created, then you drag and drop a Windows game / app installer inside — neat!</p>
-<div class="ckeditor-html5-video" style="text-align: center;">
-<video controls="controls" src="https://uploads.golmedia.net/uploads/articles/article_media/16485691741664898563gol1.mp4"> </video>
-</div>
-<p style="text-align: center;"><em>Video Credit - Bottles Team</em></p>
-<p>Display Settings also now have their own dedicated dialog, which looks a bit cleaner and keeps things a bit more focused for when you're tweaking various options. Like virtual desktop resolution not appearing unless the setting is actually turned on.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1494547201664898712gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1494547201664898712gol1.png"/></a></p>
-<p>Their work on the UI is great and they've continued cleaning it up in other places too, along with their continued work to have Bottles use the full power of the latest generation of GTK4 and libadwaita for designing interfaces. When tweaking your Gamescope settings, they've also adjusted the dialog to "be more intuitive and self-introducing". Plus lots more.</p>
-<p>The main highlights:</p>
-<blockquote>
-<ul>
-<li>Nvidia-specific settings are now hidden on other setups.</li>
-<li>Run executables by dropping them on the bottle.</li>
-<li>Move from XML to Blueprints for UI.</li>
-<li>Mobile improvements.</li>
-<li>The Gamescope dialog is now more polished and intuitive.</li>
-<li>Display settings has now a dedicated dialog.</li>
-<li>All selectors are ported to the libadwaita.</li>
-<li>Support for ja_JP,zh_TW,ko_KR languages.</li>
-<li>Dependencies with an incompatible architecture are now hidden.</li>
-<li>Support for the bundled gstreamer version if provided by the runner.</li>
-<li>Adding a new program will be immediately available, without having to update the whole list.</li>
-<li>Removed the ability to install multiple dependencies in one go.</li>
-<li>Improve wording for Components section.</li>
-<li>Lots of bug fixes.</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/10/wine-manager-app-bottles-gets-some-drag-and-drop-fun/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/wine-manager-app-bottles-gets-some-drag-and-drop-fun/</guid>
-      <pubDate>Tue, 04 Oct 2022 15:58:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1202453354id21692gol.jpg" type="image/jpeg"/>
-      
-      <category>Apps</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-      <category>Update</category>
       
     </item>
     
