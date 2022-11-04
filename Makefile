@@ -16,7 +16,7 @@ update:
 	pdm update --no-sync
 	pdm sync --clean
 
-	@echo ""
+	@echo "\a"
 
 .PHONY: update-mocks
 update-mocks:
@@ -38,7 +38,7 @@ update-production:
 	pdm update --production --no-sync
 	pdm sync --clean
 
-	@echo ""
+	@echo "\a"
 
 .PHONY: outdated
 outdated:
@@ -48,7 +48,7 @@ outdated:
 
 	pdm update --dry-run --unconstrained
 
-	@echo ""
+	@echo "\a"
 
 .PHONY: format
 format:
@@ -86,6 +86,8 @@ mypy:
 .PHONY: test
 test: test-code
 
+	@echo "\a"
+
 .PHONY: test-code
 test-code:
 	@echo "----------------"
@@ -112,6 +114,8 @@ test-examples:
 .PHONY: all
 all: lint mypy test security
 
+	@echo "\a"
+
 .PHONY: clean
 clean:
 	@echo "---------------------------"
@@ -122,6 +126,7 @@ clean:
 	rm -f `find . -type f -name '*.py[co]' `
 	rm -f `find . -type f -name '*.rej' `
 	rm -rf `find . -type d -name '*.egg-info' `
+	rm -rf `find . -type d -name '.mypy_cache' `
 	rm -f `find . -type f -name '*~' `
 	rm -f `find . -type f -name '.*~' `
 	rm -rf .cache
@@ -143,6 +148,8 @@ clean:
 
 .PHONY: bump
 bump: pull-main bump-version build-package upload-pypi clean
+
+	@echo "\a"
 
 .PHONY: pull-main
 pull-main:

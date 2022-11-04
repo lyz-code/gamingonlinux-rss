@@ -29,7 +29,7 @@ log = logging.getLogger(__name__)
 def get(url: str) -> BeautifulSoup:
     """Request an url and parse it."""
     log.debug(f"Fetching page {url}")
-    request = requests.get(url)
+    request = requests.get(url, timeout=10)
     if request.status_code != 200:
         raise FetchError(f"{url} returned an {request.status_code} code")
     return BeautifulSoup(request.text, "html.parser")
