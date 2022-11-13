@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2022-11-12 07:30:21.340445</pubDate>
+    <pubDate>2022-11-13 07:30:13.991522</pubDate>
 
     
     <image>
@@ -18,6 +18,120 @@
     </image>
 
     
+    
+    <item>
+      <title>SteamOS 3.4 rolls out in Beta for the Steam Deck - it&#39;s a massive upgrade</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve has done another weekend drop here, with a Beta version of SteamOS 3.4 <a href="https://store.steampowered.com/news/app/1675200/view/3383920059429575957" target="_blank">now available</a> for the Steam Deck. This is easily one of the biggest updates they've done to the system since release, and there's so many changes that improve the experiences across the whole device.</p>
+<p>This includes massive upgrades to the Desktop Mode, an upgraded Arch Linux package base, the performance overlay was changed for Level 2 to show the details along the top of the screen instead of going down the left, external drive upgrades and a whole lot more.</p>
+<p>New style of Level 2 for the Performance Overlay:</p>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12409952431668247579gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12409952431668247579gol1.jpeg"/></a>Looking good!</em></p>
+<p>Currently SteamOS 3.4 is using kernel 5.13 (with various Valve patches) and Mesa 22.2.0.</p>
+<p>Words and pictures are great but here's a video showcasing some of the changes:</p>
+<div class="hidden_video" data-video-id="QvL_nfHMnos"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b8c8de43239f536f597cbada1211908b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/QvL_nfHMnos" target="_blank">See video</a></div></div>
+<p>Here's the full list:</p>
+<blockquote>
+<ul>
+<li><strong>Rebased SteamOS on the latest version of Arch Linux</strong>
+<ul>
+<li>This update pulls in the latest performance, security and stability fixes for the underlying packages that are the foundation for SteamOS</li>
+<li>Most notably, this includes recent changes to KDE Plasma, Steam Deck's Desktop Mode. Full notes on these updates can be found on KDE's website <a href="https://steamcommunity.com/linkfilter/?url=https://kde.org/announcements/plasma/5/5.24.0/" target="_blank">here</a>, <a href="https://steamcommunity.com/linkfilter/?url=https://kde.org/announcements/plasma/5/5.25.0/" target="_blank">here</a>, and <a href="https://steamcommunity.com/linkfilter/?url=https://kde.org/announcements/plasma/5/5.26.0/" target="_blank">here</a>. Here are a few of the highlights:
+<ul>
+<li>New Overview view to see all open windows and virtual desktops</li>
+<li>Updates to KRunner, the built in assistant for searching and running tasks</li>
+<li>New touchscreen gestures</li>
+<li>New themes and wallpapers</li>
+<li>Updates to widgets</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Performance profiles</strong>
+<ul>
+<li>New option to allow Screen Tearing</li>
+<li>Changed performance HUD level 2 to use a horizontal layout. It fits in the letterbox space for games running in a 16:9 aspect ratio.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Storage</strong>
+<ul>
+<li>Re-enabled TRIM for the internal drive as well as supported external storage devices, improving write performance
+<ul>
+<li>This includes a workaround ensuring that TRIM operations are safe for SD cards that advertise discard support but do not support it</li>
+<li>Steam will periodically TRIM storage devices as needed</li>
+<li>New button in Settings → System → Advanced to run trim immediately</li>
+</ul>
+</li>
+<li>Added an eject option for removable drives in Settings → Storage
+<ul>
+<li>This unmounts the removable drive, it does not physically eject it</li>
+</ul>
+</li>
+<li>External drives formatted as ext4 are now automatically mounted and available for use in Steam</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Input</strong>
+<ul>
+<li>Disabled built-in DualShock 4 and DualSense trackpad → mouse emulation when Steam is running</li>
+<li>Changed timing of virtual keypresses to improve game compatibility with on-screen keyboard
+<ul>
+<li>Fixes input issues with apps such as Street Fighter V, EA app</li>
+</ul>
+</li>
+<li>Fixed Steam Input's action set switching based on cursor visibility in Game mode</li>
+<li>Re-enabled the built-in gamepad driver when Steam is not running in desktop mode</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Audio</strong>
+<ul>
+<li>Fixed a case where the default audio device would display "echo-cancel-sink" and audio controls would cease to work correctly</li>
+<li>Fixed a case where some applications would output audio to the wrong device</li>
+<li>Fixed an issue with HDMI/DisplayPort audio going to sleep after being idle on external displays</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>General</strong>
+<ul>
+<li>Fixed a performance issue that could cause 100ms hitches during gameplay if adaptive backlight was enabled</li>
+<li>Fixed issue with opening file managers if the gamescope session has been restarted</li>
+<li>Fixed issues with sleep / wake for a number of titles</li>
+<li>Fixed GPU clock settings sometimes not sticking if set manually (thanks to user xperia64 for the amdgpu kernel patch backport)</li>
+<li>Fixed an issue with fan controller excessive sensor polling causing sporadic fan behavior and higher SSD temps on some NVME drives</li>
+<li>New firmware for Docking Station
+<ul>
+<li>Fixes an issue where HDMI 2.0 displays are not detected during wake or boot up</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Known Issue</strong>: Chinese Pinyin and Zhuyin input for the on-screen keyboard are not currently functioning correctly - we are aware of the issues and will address in an upcoming update.</p>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/11/steamos-34-rolls-out-in-beta-for-the-steam-deck-its-a-massive-upgrade/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/steamos-34-rolls-out-in-beta-for-the-steam-deck-its-a-massive-upgrade/</guid>
+      <pubDate>Sat, 12 Nov 2022 10:30:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1235405605id21880gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>WW1 shooter Isonzo gets performance improvements for the Linux version</title>
@@ -249,7 +363,7 @@
 <p>The other subject is Docking Station compatibility. The Killswitch Case does not fit in a lot of docks, like the official Valve dock. So they're now going to be doing a USB-C extender so you can actually plug it in and a low-profile plastic "bucket" that serves as an adapter so it can actually sit in the dock with the case on. dbrand said they are not aiming to make a profit on those, as they will be "priced according to parts and labor" and that anyone who received the older magnetic version of the case would get them free in the upcoming reshipment of the new case. For everyone else, you can buy them standalone or add them to your order.</p>
 <p>Here's how the USB-C extender and bucket look:</p>
 <p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12004355141668166977gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12004355141668166977gol1.jpg"/></a></p>
-<p>The bucket looks fine but wow that USB-C extender sure does look ugly and out of plac, they probably can't make it much shorter though so it will have to do.</p>
+<p>The bucket looks fine but wow that USB-C extender sure does look ugly and out of place, they probably can't make it much shorter though so it will have to do.</p>
 <p>I do find it odd they only posted this on Reddit, and not in an email to actual customers though. I guess they assume they will reach most people there but if you don't go on Reddit, you would miss it.</p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
@@ -4184,49 +4298,6 @@ Congratulations to Blender Community for the 20th anniversary!</p>
       <category>Paradox Interactive</category>
       
       <category>Review</category>
-      
-    </item>
-    
-    <item>
-      <title>The new bigger demo for Scrabdackle deserves your attention</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Love your quirky little action-adventures? Scrabdackle should be something for you to take a look at and there's a big update to the demo for you to try.</p>
-<p>What is it? Scrabdackle is a hand-drawn action/adventure game about going exploring, with non-linear progression and a unique mix of skill-based challenge and accessible gameplay. It features a vast, intricate overworld, tight and responsive combat, cheeky banter, and pages of lore to discover – all under a coat of playful charm. Funded on Kickstarter, the full release is due out in 2023 sometime.</p>
-<p><em>Original demo trailer:</em></p>
-<div class="hidden_video" data-video-id="c3-nxqhlbLQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a5cd92681d32bf52d7f55897837576eb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/c3-nxqhlbLQ" target="_blank">See video</a></div></div>
-<p>Highlights of the new demo update include:</p>
-<blockquote>
-<ul>
-<li>A new region, with its own soundtrack and unique environment.</li>
-<li>4 new enemies.</li>
-<li>1 new miniboss.</li>
-<li>Several new unique NPCs and landmarks.</li>
-<li>14 new lore entries.</li>
-<li>Many new challenges, quests, and collectibles.</li>
-<li>A new spell to learn.</li>
-<li>4,000 words of dialogue.</li>
-<li>A new type of challenge/obstacle I'll let you discover for yourself...</li>
-<li>A new lighting system has been added to make caves dark and dim areas more atmospheric.</li>
-<li>A few older music tracks have been updated with a fresh coat of aural paint.</li>
-<li>A huge variety of bugfixes are in place!</li>
-</ul>
-</blockquote>
-<p>Give it a <a href="https://store.steampowered.com/app/1578720/Scrabdackle/" target="_blank">go on Steam</a>. Available with Native Linux support.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/10/the-new-bigger-demo-for-scrabdackle-deserves-your-attention/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/10/the-new-bigger-demo-for-scrabdackle-deserves-your-attention/</guid>
-      <pubDate>Mon, 24 Oct 2022 18:20:58 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1528714988id21780gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Adventure</category>
-      
-      <category>Demo</category>
       
     </item>
     
