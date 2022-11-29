@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2022-11-28 07:26:50.244696</pubDate>
+    <pubDate>2022-11-29 07:27:49.978730</pubDate>
 
     
     <image>
@@ -18,6 +18,286 @@
     </image>
 
     
+    
+    <item>
+      <title>NVIDIA Linux driver 525.60.11 is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA has today rolled out the <a href="https://www.nvidia.co.uk/download/driverResults.aspx/196736/en-uk" target="_blank">525.60.11 driver</a>, following on from the <a href="https://www.gamingonlinux.com/2022/11/nvidia-52553-beta-is-out-now-for-linux/" target="_blank">525.53 Beta</a> earlier this month. It is largely the same as the Beta, with a few extra fixes included and since it's not tagged as a Beta driver you should be all fine to upgrade to it.</p>
+<p>Here's the full changelog, with the additions in this new release added in bold:</p>
+<blockquote>
+<ul>
+<li>Fixed a bug which caused Dynamic Boost to not engage on certain Ampere GPU based notebooks.</li>
+<li>Added support for Dynamic Boost on notebooks with AMD CPUs.</li>
+<li><strong>Improved the performance of PRIME render-offloaded applications.</strong></li>
+<li><strong>Fixed a regression that prevented Warp &amp; Blend from working correctly.</strong></li>
+<li>Fixed a bug that resulted in stutter when moving windows in GNOME.</li>
+<li>Added support for the EGL_MESA_platform_surfaceless extension.</li>
+<li>Updated the nvidia-settings control panel to prevent the creation of display layouts that exceed hardware size limitations when using the SLI Mosaic configuration page, and to display a warning if such a layout is created manually in the Display Configuration page.</li>
+<li>Removed the hard dependency on GTK 2 when building nvidia-settings from source. nvidia-settings may now be built with support for GTK 2 only, GTK 3 only, or both GTK 2 and GTK 3.</li>
+<li><strong>Fixed a bug which caused suspend to fail on systems running GNOME 3 as a Wayland compositor with NVreg_PreserveVideoMemoryAllocations enabled.</strong></li>
+<li>Updated the open kernel modules to support Quadro Sync, Stereo, rotation in X11, and YUV 4:2:0 on Turing.</li>
+<li>Updated an error message that nvidia-installer displays when kernel header files cannot be found to print full paths for the missing files.</li>
+<li>Updated nvidia-installer to use "command -v" in place of depending on"which" to determine the availability and location of certain tools.</li>
+<li>Implemented support for over-the-air updates in the Proton and Wine NVIDIA NGX build. This feature is disabled by default and can be enabled by setting the "PROTON_ENABLE_NGX_UPDATER" environment variable to a value of "1".</li>
+<li>Updated the Vulkan driver so that the following extensions no longer depend on nvidia-uvm.ko being loaded at runtime:
+<ul>
+<li>* VK_KHR_acceleration_structure<br/>
+* VK_KHR_deferred_host_operations<br/>
+* VK_KHR_ray_query<br/>
+* VK_KHR_ray_tracing_pipeline<br/>
+* VK_NV_cuda_kernel_launch<br/>
+* VK_NV_ray_tracing<br/>
+* VK_NV_ray_tracing_motion_blur<br/>
+* VK_NVX_binary_import<br/>
+* VK_NVX_image_view_handle</li>
+</ul>
+</li>
+<li>Updated nvidia-installer to allow use of the "--add-this-kernel" feature by non-root users.</li>
+<li>Updated nvidia-installer to display a more accurate progress bar when building the kernel modules.</li>
+<li>Updated nvidia-installer to display a warning message if a Vulkan ICD loader is not detected.</li>
+<li>Reworked nvidia-installer's support for DKMS: the kernel modules willnow be optionally registered with DKMS after the installer has already built and installed them on its own. nvidia-installer will now register the kernel modules with DKMS by default when the dkms(8) utility is detected on the system.</li>
+<li>Fixed a bug in the Vulkan driver which could lead to corruption ingeometry and tessellation control shaders.</li>
+<li>Added a new CUDA Debugger implementation for Pascal and newer architectures as a part of the driver package: libcudadebugger.so (previously released separately as "CUDA GDB Developer Preview").</li>
+<li>Fixed a bug that caused nvidia-settings to find incorrect fan speedranges on some GPUs.  Lower-level layers of the driver protected the hardware from programming incorrect fan speeds, so the symptom was only incorrect reporting.  Now, reporting in nvidia-settings matches what actually gets programmed in hardware.</li>
+<li>Fixed a regression in 515.76 that caused blank screens and hangs whenstarting an X server on RTX 30 series GPUs in some configurations where the boot display is connected via HDMI.</li>
+<li>Fixed a bug where Marvel's Spider-Man Remastered would sometimes crashwith Xid 13 errors on Turing and later.</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/11/nvidia-linux-driver-5256011-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/nvidia-linux-driver-5256011-is-out-now/</guid>
+      <pubDate>Mon, 28 Nov 2022 16:47:42 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Half-Life: Alyx LEVITATION mod adds four hours of new story - out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Half-Life: Alyx LEVITATION is an incredibly ambitious mod for Valve's amazing VR FPS and it's out now! To this day, Alyx remains as one of my all time favourite gaming experiences and so I've been eagerly awaiting more of it with this free expansive mod.</p>
+<p>What it includes:</p>
+<blockquote>
+<ul>
+<li>New story (3-4 hours in length).</li>
+<li>New voicelines.</li>
+<li>New character animations.</li>
+<li>Eight challenging levels.</li>
+</ul>
+</blockquote>
+<p>LEVITATION starts right after the official story: Alyx returns to City-17, and teams up with Russell once again. During her absence, a mysterious levitating building appeared in the Sector X region of City-17. Two key members of the resistance named Barry and Maya decided to infiltrate and investigate Sector X -- until their signal went quiet... Now, Alyx must save her friends, and possibly the whole resistance.<br/>
+<br/>
+See the launch trailer below:</p>
+<div class="hidden_video" data-video-id="ualjhzxufpo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3c863e1ba8dcff26d70e37532b46a623.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ualjhzxufpo" target="_blank">See video</a></div></div>
+<p>You can grab it from the <a href="https://steamcommunity.com/workshop/filedetails/?id=2881604879" target="_blank">Steam Workshop</a>. It comes in 5 parts due to the size but you can subscribe to all at once.</p>
+<p>Currently, it seems there's a bug where the AI can break at an excavator section. The developers are working on an official fix but there is a <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2830812479" target="_blank">workaround</a> you can use.</p>
+<p>Annoyingly, Valve have still not fixed the issue with Alyx <a href="https://github.com/ValveSoftware/SteamVR-for-Linux/issues/332" target="_blank">not launching</a> on Linux with a "Timed out waiting for response from Mongoose" error that's been around since 2020. Thankfully, a <a href="https://github.com/ValveSoftware/SteamVR-for-Linux/issues/332#issuecomment-1272934934" target="_blank">workaround</a> of temporarily disabling ipv6 enables it to launch again and I can confirm LEVITATION appears to work fine on Linux with Proton.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/11/half-life-alyx-levitation-mod-adds-four-hours-of-new-story-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/half-life-alyx-levitation-mod-adds-four-hours-of-new-story-out-now/</guid>
+      <pubDate>Mon, 28 Nov 2022 12:04:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1444854191id21953gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>FPS</category>
+      
+      <category>Mod</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 7.22 out now with more 32bit on 64bit work</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The <a href="https://www.winehq.org/announce/7.22" target="_blank">Wine 7.22</a> development release is now available for the open source Windows compatibility layer, as they continue working towards the Wine 8.0 release. This is part of Steam Play Proton, which allows you to play tons of Windows games on Steam Deck and Linux desktops. Once a year they make a big new stable release, and eventually Proton updates to it too.</p>
+<p>Here's the highlights of Wine 7.22:</p>
+<blockquote>
+<ul>
+<li>32-on-64 thunks for both Vulkan and OpenGL.</li>
+<li>OpenLDAP library bundled and built as PE.</li>
+<li>Support for the RAW print processor in WinPrint.</li>
+<li>More progress on the long types printf format conversion.</li>
+<li>Various bug fixes.</li>
+</ul>
+</blockquote>
+<p>Eventually, the 32bit on 64bit work will allow you to run 32bit apps / games on 64bit Linux without any 32bit libraries on your system. For bug fixes they noted improvements for: Syberia, Gothic II, Saints Row 2022 and plenty of miscellaneous fixes elsewhere.</p>
+<p><em>ICYMI: <a href="https://www.gamingonlinux.com/2022/11/vulkan-based-d3d9-10-and-11-translation-layer-dxvk-version-20-out-now/" target="_blank">Vulkan-based D3D9, 10 and 11 translation layer DXVK version 2.0 out now</a>.</em></p>
+<p>Want help managing Wine on Linux? You can try <a href="https://usebottles.com/" target="_blank">Bottles</a>, <a href="https://lutris.net/" target="_blank">Lutris</a> and <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Launcher</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/11/wine-722-out-now-with-more-32bit-on-64bit-work/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/wine-722-out-now-with-more-32bit-on-64bit-work/</guid>
+      <pubDate>Mon, 28 Nov 2022 11:34:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>JSAUX release &#39;CaseKiller&#39; for the official Steam Deck Dock to help with protective cases</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Have the official Steam Deck Docking Station and find your Steam Deck doesn't fit in it with a protective case on? JSAUX are back with another new product, the <a href="https://www.jsaux.com/products/anti-slip-stand-for-steam-deck-dock-sg0104" target="_blank">CaseKiller Anti-Slip Stand</a>.</p>
+<p>I wonder where they got that naming from huh? Announced on <a href="https://twitter.com/jsauxofficial/status/1596178599580561409" target="_blank">Twitter</a>, the idea comes from a complaint that I saw quite often on Reddit when the official Docking Station arrived — people had to take off their protective casing to fit it in, otherwise it would just sit of rest on top and not exactly safe as it could easily be knocked out.</p>
+<p>This new little attachment works as a stand by itself, or it can slot over the official Docking Station to have your Steam Deck sat nicely with it. Seems like it's quite a useful addition to their various Steam Deck accessory line-up.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4825397101669634500gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4825397101669634500gol1.jpeg"/></a></p>
+<p>They say it's "compatible with almost all cases".</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/11/jsaux-release-casekiller-for-the-official-steam-deck-dock-to-help-with-protective-cases/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/jsaux-release-casekiller-for-the-official-steam-deck-dock-to-help-with-protective-cases/</guid>
+      <pubDate>Mon, 28 Nov 2022 11:22:35 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2052484864id21951gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Hardware</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>The Long Dark: Tales from the Far Territory begins on December 5th</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Starting off a 12 month long cycle of updates, The Long Dark: Tales from the Far Territory is the first DLC for the survival game acting as an expansion pass. That, plus a bunch of free updates too. This is the first paid DLC for the game that released in 2017, with the full story not yet complete this is largely focused on the survival game mode.</p>
+<p>Releasing in multiple parts over the 12 months will be:</p>
+<blockquote>
+<ul>
+<li>Three new Regions: Airfield, Industrial Mine, Mountain Pass</li>
+<li>Three new Tales: Narrative Challenges that reveal mysteries of the Far Territory’s strange history.</li>
+<li>New Gameplay Systems: Electrostatic Fog, Insomnia, Handheld Shortwave, Travois, Trader, Safehouse Customization, and more!</li>
+<li>New Clothing and Food items, and Rare Tool variants.</li>
+<li>20+ minutes of new Survival music.</li>
+<li>..and much more.</li>
+</ul>
+</blockquote>
+<p>Plus the free content:</p>
+<blockquote>
+<ul>
+<li>Global resource overhaul for all Gear, Harvestables, Clothing, and Wildlife spawns.</li>
+<li>New Gameplay Systems like: Improvised Cramp-Ons, Visor Notes, and Harvestables like Burdock and Acorns.</li>
+<li>Overhauls to existing systems like Fishing and Fire Starting.</li>
+<li>New first-person Harvesting animations.</li>
+<li>...and much more.</li>
+</ul>
+</blockquote>
+<p>You can check out the new trailer below:</p>
+<div class="hidden_video" data-video-id="xuf9HnNsNYI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8583943f9acdc8d235cad06358990e4d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/xuf9HnNsNYI" target="_blank">See video</a></div></div>
+<p>You can buy The Long Dark from <a href="https://www.humblebundle.com/store/the-long-dark?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/305620/The_Long_Dark/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/11/the-long-dark-tales-from-the-far-territory-begins-on-december-5th/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/the-long-dark-tales-from-the-far-territory-begins-on-december-5th/</guid>
+      <pubDate>Mon, 28 Nov 2022 11:14:06 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/405718159id21950gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>DLC</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Cyberspace hacking looter-shooter Black Ice gets a big content upgrade</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Black Ice is an indie first-person looter-shooter about hacking in cyberspace, I'm quite fond of it but it's not very well known even though it's a lot of fun. A big new update just rolled out with a bunch of extra content.</p>
+<p>You run around hacking these big servers, that each have a different difficulty rating. When you start hacking, you have to start within the hacking zone and defeat the various enemies that appear. It gets seriously frantic and it has grown dramatically since I last took a look. The various weapon types are seriously fun to use as well.</p>
+<p>In this new update it adds in multiple new enemy types, new types of servers to hack including one that will damage you if you leave the hacking area, new weapons, performance improvements, player nameplates in multiplayer, tons of new additions to the world and <a href="https://steamcommunity.com/app/311800/discussions/0/5855270367462437746/?snr=1_2108_9__2107" target="_blank">more</a>. They also have a new trailer below:</p>
+<div class="hidden_video" data-video-id="xIxkU0oB3s0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8c5370ecf1c67741bcbefad89020f645.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/xIxkU0oB3s0" target="_blank">See video</a></div></div>
+<p>You can find Black Ice on <a href="https://www.humblebundle.com/store/black-ice?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/311800/Black_Ice/?curator_clanid=4218320" target="_blank">Steam</a>. Seems like the version on <a href="https://superdupergc.itch.io/blackice" target="_blank">itch.io</a> is quite out of date.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/11/cyberspace-hacking-looter-shooter-black-ice-gets-a-big-content-upgrade/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/cyberspace-hacking-looter-shooter-black-ice-gets-a-big-content-upgrade/</guid>
+      <pubDate>Mon, 28 Nov 2022 11:07:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1498502439id21949gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Humble Store</category>
+      
+    </item>
+    
+    <item>
+      <title>Dome Keeper adds new cave types and little critters to make exploration more interesting</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Dome Keeper is <a href="https://www.gamingonlinux.com/2022/10/dome-keeper-is-a-nice-twist-on-base-tower-defense/" target="_blank">one of my favourite</a> indie releases this year, blending together casual underground mining with frantic base-defence and a new update just rolled out making it even more interesting.</p>
+<p>One of the problems with the initial release, was that the underground mining wasn't as interesting as it could have been. This update should help a bit there with the addition of 4 new cave types and little critters that roam around in the mines. With the new caves you can make tunnels in all directions, expand your vision, improve your bedrock scanner to see beyond and even unleash a caged squid.</p>
+<p>New trailer is below:</p>
+<div class="hidden_video" data-video-id="B7jI8zTL280"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/170a2047ae4a70d0e6dc570744b347cf.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/B7jI8zTL280" target="_blank">See video</a></div></div>
+<p>You can pick it up on <a href="https://store.steampowered.com/app/1637320/Dome_Keeper/?curator_clanid=4218320" target="_blank">Steam</a> with the <a href="https://af.gog.com/game/dome_keeper?as=1636858786" target="_blank">GOG</a> version only being for Windows.</p>
+<p><em>I'm looking forward to checking out the new content, once I eventually finish Mass Effect 3 (Legendary Edition) that I've been powering through on Steam Deck (with <a href="https://www.gamingonlinux.com/2022/11/how-to-fix-the-ea-app-on-steam-deck-and-linux-desktop/" target="_blank">my EA app fix</a>).</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/11/dome-keeper-adds-new-cave-types-and-little-critters-to-make-exploration-more-interesting/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/dome-keeper-adds-new-cave-types-and-little-critters-to-make-exploration-more-interesting/</guid>
+      <pubDate>Mon, 28 Nov 2022 10:59:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/586866526id21948gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Casual</category>
+      
+      <category>Exploration</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Reminder: Update your PC info for the next round of statistics updates</title>
+      <author>gamingonlinux</author>
+      <description><div class="content group e-content">
+<p>This is the public once a month reminder to make sure your PC information is correct on your user profiles. A fresh batch of statistics is generated on the 1st of each month. Also a good reminder of our stats system for people who don't know about it. You can see the statistics any time <a href="https://www.gamingonlinux.com/users/statistics" target="_blank">on this page</a>.</p>
+<p><em>You need to be logged in to see when you last updated your PC info!</em></p>
+<p>PC Info is automatically purged if it hasn't been updated, or if you don't click the link to remain in for 5 years. This way we prevent too much stale data and don't hold onto your data for longer than required. If this is still correct and it has been a long time since you updated, you can simply <strong><a href="#" id="pc_info_update" target="_self">click here to continue</a> to be included</strong>. If this isn't correct, <a href="/usercp.php?module=pcinfo" target="_blank">click here to go to your User Control Panel to update it!</a></p>
+<div class="all-ok" id="pc_info_done"> </div>
+<p> </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/11/update-pc-info-202211/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/update-pc-info-202211/</guid>
+      <pubDate>Mon, 28 Nov 2022 10:47:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
+      
+      <category>Site Info</category>
+      
+      <category>Survey</category>
+      
+    </item>
     
     <item>
       <title>SCS Software celebrate 25 years with a mini-documentary</title>
@@ -3779,324 +4059,6 @@ Added native compatibility with Linux! Make sure to disable “Force the use of 
       <category>Meta</category>
       
       <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Surprising probably no one, most people use the Steam Deck as a handheld</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Recently, I ran two different polls to find out how people with a Steam Deck used their device (or if they didn't much) and the results are out now.</p>
-<p>The key thing about the Steam Deck, is that while it is a handheld it's also a full Linux PC with a desktop mode. Many docks are available for it from different brands now and even the official Docking Station from Valve is out and has been for <a href="https://www.gamingonlinux.com/2022/10/no-more-steam-deck-reservation-queue-m-buy-it-now-plus-docking-station-available/" target="_blank">about a month</a> now.</p>
-<p>So I was keen to find out how what percentage of people actually used it mainly docked, partly also because I use now the vast majority of my time with it docked. Turns out, not a whole lot of other people do.</p>
-<p>From over 4,000 votes on <a href="https://www.youtube.com/gamingonlinux" target="_blank">our YouTube Channel</a>:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5824387571667836197gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5824387571667836197gol1.png"/></a></p>
-<p>While on <a href="https://twitter.com/gamingonlinux" target="_blank">our Twitter</a> from over 1,000 votes paints a very similar picture.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3946000081667836359gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3946000081667836359gol1.png"/></a></p>
-<p>What a shock, over 70% of people using a handheld use it as a handheld. I know, it's not breaking news but I found it interesting, because of how much I use it docked myself and how I've seen a lot of comments of others doing the same. Turns out though, it's a really small amount of people overall.</p>
-<p>I suppose it didn't help that the docked experience wasn't great at release, and it still has plenty of issues now, like I noted in <a href="https://www.gamingonlinux.com/2022/10/thoughts-on-the-official-steam-deck-docking-station/" target="_blank">my article on the official Docking Station</a> not always displaying on my TV.</p>
-<p>Another bit I wanted to highlight, was a really interesting comment on the GOL YouTube Channel about this from user "MechanicalMonk", which I <em>can't</em> link to as the original poll was <em>removed</em> to add an extra missed option. Anyway, they mentioned that people buying the Switch would have done so <em>anyway</em> because it's Nintendo and many people use it exclusively docked as it just happens to be a handheld (although, there is the newer handheld-only Lite). On the other hand, people would have been far less likely to buy the Steam Deck if it wasn't a handheld and so it favours that. Just an interesting thought.</p>
-<p><em>What do you think? How do you use it?</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/surprising-probably-no-one-most-people-use-the-steam-deck-as-a-handheld/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/surprising-probably-no-one-most-people-use-the-steam-deck-as-a-handheld/</guid>
-      <pubDate>Mon, 07 Nov 2022 16:02:24 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Editorial</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>American Truck Simulator - Texas releases on November 15th</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>SCS Soft have announced the big American Truck Simulator - Texas DLC will be releasing on November 15th.</p>
-<p>A DLC no doubt many have been waiting for to take in the sights. One exciting element to it that SCS detailed in a previous <a href="https://blog.scssoft.com/2022/10/texas-space-industry.html" target="_blank">blog post</a>, is that the Space Industry will be nicely featured in this DLC. They mentioned how "Texas is home to state-of-the-art development and test sites for multiple commercial space firms, and research shows that the space industry is big work for the state, bringing in 11 billion dollars per year in revenue and providing hundred of thousands of jobs. So it wouldn't be right for us to miss this out-of-this-world opportunity to include it in our upcoming Texas DLC for American Truck Simulator".</p>
-<p>Thanks to their work you'll be able to see some pretty fun spacey things as you travel around, including a certain famous space centre that they said is really worth passing by in your trucks. </p>
-<p>See their 3 minute trailer below:</p>
-<div class="hidden_video" data-video-id="cMSEm-dbTCQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bc5431006a5d9d48c0d4e6c6a32675d7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/cMSEm-dbTCQ" target="_blank">See video</a></div></div>
-<p>You can buy ATS from <a href="https://www.humblebundle.com/store/american-truck-simulator?partner=gamingonlinux&amp;charity=12277" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/270880/American_Truck_Simulator/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/american-truck-simulator-texas-releases-on-november-15th/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/american-truck-simulator-texas-releases-on-november-15th/</guid>
-      <pubDate>Mon, 07 Nov 2022 15:44:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/648847487id21852gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Casual</category>
-      
-      <category>DLC</category>
-      
-      <category>Simulation</category>
-      
-    </item>
-    
-    <item>
-      <title>AMD becomes a &#39;Diamond&#39; sponsor of OBS Studio</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The team behind <a href="https://obsproject.com/" target="_blank">OBS Studio</a> announced that AMD have become a Diamond Sponsor of the OBS Project, helping fund future development. Great to see, as OBS Studio is easily one of the most popular free and open source applications around and something I use near-daily.</p>
-<p>It was announced on <a href="https://twitter.com/OBSProject/status/1588301361275441154" target="_blank">Twitter</a> with a short message just confirming it, with no other details.</p>
-<p>What it means is that AMD are now funding OBS with at least $50,000 per year, joining NVIDIA and StreamElements at the same level. OBS also has many additional sponsors including YouTube, Logitech, Twitch, Facebook and others giving over plenty of funding and other help to the project.</p>
-<hr/>
-<p>This really is amazing to see. The last few years have seen so many positive stories like this for free and open source projects. Blender is another that <a href="https://www.gamingonlinux.com/2022/10/volkswagen-begins-funding-blender-development/" target="_blank">keeps pulling in</a> more funding, Godot Engine just <a href="https://www.gamingonlinux.com/2022/11/godot-engine-now-has-its-own-dedicated-foundation-for-funding/" target="_blank">launched their own Foundation</a> and even the Kdenlive video editor funding campaign I <a href="https://www.gamingonlinux.com/2022/09/kde-are-raising-funds-for-the-kdenlive-video-editor/" target="_blank">mentioned previously</a> has reached over the original goal.</p>
-<p><em>Good times for FOSS projects.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/amd-becomes-a-diamond-sponsor-of-obs-studio/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/amd-becomes-a-diamond-sponsor-of-obs-studio/</guid>
-      <pubDate>Mon, 07 Nov 2022 15:08:09 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/569899874id21851gol.jpg" type="image/jpeg"/>
-      
-      <category>AMD</category>
-      
-      <category>Apps</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Comedy point and click adventure Plot of the Druid is now in Early Access</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The point and click adventures just keep coming! Plot of the Druid has released featuring some more sarcastic British humour and classic, hand-drawn art. It's currently in Early Access, with Native Linux support. Another that was funded via <a href="https://www.kickstarter.com/projects/plot-of-the-druid/plot-of-the-druid" target="_blank">Kickstarter</a>, with the developer receiving $32,303 to help make it real.</p>
-<p>"A disgraced druid apprentice goes on a quest to prevent the world from going crazy by restoring balance to the forces of love, wisdom, and wealth. A mystical comedy adventure with sarcastic British wit, hand-drawn cartoon art, and an innovative shape-shifting ability for solving puzzles. Plot of the Druid is a classic-modern point-and-click game that’s reminiscent of Simon the Sorcerer, Discworld, and Harry Potter."</p>
-<div class="hidden_video" data-video-id="Dw5JdC7Bnhw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a731e40866b5e449a73769f311e14232.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Dw5JdC7Bnhw" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>The player can decide whether to deal with a situation as a human or as a ferocious animal. Well, maybe not that ferocious, but one with a unique skill set.</li>
-<li>Harness the powers of nature in order to solve puzzles. After all, sometimes an earthquake is just what’s needed to get people’s attention.</li>
-<li>Beautiful hand-painted HD artwork in the style of old-school pixel art.</li>
-<li>Dozens of wacky characters, ALL fully voiced.</li>
-<li>Cool references to classic LucasArts and Sierra games.</li>
-<li>Two difficulty levels: Young Apprentice and Master of Disaster. Finish the game to earn a digital certificate with your name on it, signed by the Elder Druids themselves!</li>
-<li>Many MANY smooth 2D animations, including thrilling cutscenes.</li>
-<li>Over an hour of immersive, charming music.</li>
-<li>A hotspot reveal option to avoid pixel hunting.</li>
-<li>Lots of achievements to be gained by exploring the world.</li>
-<li>A journal to help keep you on track.</li>
-<li>Available in English with Hebrew translations.</li>
-</ul>
-</blockquote>
-<p>You can <a href="https://store.steampowered.com/app/1108170/Plot_of_the_Druid/" target="_blank">buy it on Steam</a>. You can also still find the free prologue on <a href="http://Plot of the Druid: Nightwatch" target="_blank">Steam</a>.</p>
-<p><em>The developer expects it to remain in Early Access for around a year as more chapters get added to it.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/comedy-point-and-click-adventure-plot-of-the-druid-is-now-in-early-access/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/comedy-point-and-click-adventure-plot-of-the-druid-is-now-in-early-access/</guid>
-      <pubDate>Mon, 07 Nov 2022 14:59:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/535301579id21850gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Comedy</category>
-      
-    </item>
-    
-    <item>
-      <title>GE-Proton 7-39 released improving Overwatch 2 for Steam Deck &amp; Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://github.com/GloriousEggroll/proton-ge-custom" target="_blank">GE-Proton</a> is the community-maintained version of the Windows compatibility layer Proton, not endorsed by Valve but it can get more games running on Steam Deck and Linux desktop. A new release version GE-Proton7-39 is out now.</p>
-<p>Here's the change highlights:</p>
-<blockquote>
-<ul>
-<li>proton-wine updated to latest bleeding edge</li>
-<li>dxvk updated to git</li>
-<li>vkd3d-proton updated to git</li>
-<li>overwatch 2 freeze fix added (may help other games)</li>
-<li>pulled in upstream proton nvapi fixes</li>
-<li>enabled gamedrive option for ESO by default</li>
-<li>mono updated to 7.4.0</li>
-<li>no-longer-required protonfixes removed for Sonic Adventures 2, Farcry 5 EAC, Origin (thanks Bitwolfies)</li>
-</ul>
-</blockquote>
-<p>For those curious on how to set up Overwatch 2 on Steam Deck, I did <a href="https://www.gamingonlinux.com/2022/10/heres-how-to-play-overwatch-2-on-steam-deck-linux/" target="_blank">cover that before using the Bottles app</a> but since GE-Proton has some fixes in this release and the previous GE-Proton release, here's a video guide on how to do Battle Net and Overwatch 2 directly through Steam:</p>
-<div class="hidden_video" data-video-id="DTJ2dh_mv3Y"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/551f809ccdbd0011870592d8c007f403.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/DTJ2dh_mv3Y" target="_blank">See video</a></div></div>
-<p>Text Guide:</p>
-<ul>
-<li>Download ProtonUp-Qt from Discover.</li>
-<li>Install GE-Proton7-39 from ProtonUp-Qt.</li>
-<li>Close and reload Steam.</li>
-<li>Download the Battle Net launcher.</li>
-<li>Add the Battle Net installer into Steam. Add Game (bottom left) -&gt; Non-Steam game, select it from the list in your Downloads folder (select All Files from the bottom of the file picker to see it).</li>
-<li>Right click on it in Steam, go to Properties and select Compatibility. Tick the box and select GE-Proton7-39.</li>
-<li>Install it and then remove the shortcut.</li>
-<li>Add a new shortcut to the installed Battle Net launcher exe file. Again setting the compatibility on it to GE-Proton7-39.</li>
-<li>Now you're done. You can load it and install Overwatch 2 or anything else from Battle Net and run it inside Steam directly without another app like Bottles or Lutris.</li>
-</ul>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/ge-proton-7-39-released-improving-overwatch-2-for-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/ge-proton-7-39-released-improving-overwatch-2-for-steam-deck-linux/</guid>
-      <pubDate>Mon, 07 Nov 2022 14:46:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Cemu emulator for Wii U now provides an AppImage</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Want to get the Wii U emulator <a href="https://cemu.info/" target="_blank">Cemu</a> working on Linux? It's now a little easier, as they've providing an AppImage with the latest release.</p>
-<p>Version <a href="https://github.com/cemu-project/Cemu/releases/tag/v2.0-14" target="_blank">Cemu 2.0-14 (Experimental)</a> just went up and this is the first to offer the AppImage, which should work across various Linux distributions and perhaps make it easier on Steam Deck as well. Nice to see they keep improving it little by little, as they slowly move towards the full 2.0 release that's open source.</p>
-<p>They're not yet providing a full changelog between the small releases of the 2.0 release, with these still being listed as the main changes since the last major release:</p>
-<blockquote>
-<ul>
-<li>Cemu is now <a href="https://github.com/cemu-project/Cemu" target="_blank">open-source!</a></li>
-<li>Preliminary Linux builds are available <a href="https://github.com/cemu-project/Cemu/releases" target="_blank">on github</a>, but be warned that they are still very rough around the edges</li>
-<li>Going forward, we simplified the versioning a bit by using shorter version numbers for stable releases (2.1, 2.2, 2.3..). This version (2.0) is an exception in the sense that it follows the pattern of a stable release but is very much experimental.</li>
-<li>Updated all dependencies. Most notably SDL (input &amp; motion) and wxWidgets (UI)</li>
-<li>Fixed a crash in the H264 video decoder. Resolves crash on Smash title screen</li>
-<li>Made nsysnet a little less crash prone. Fixes crash in Call of Duty: Black Ops II</li>
-<li>Fixed a logging related crash that could occur under very specific circumstances. Seen in Wind Waker if letting the game idle on the title screen for 2 minutes</li>
-<li>Fixed a crash that could happen when the path to Cemu.exe contained unicode characters</li>
-<li>Fixed a crash that could happen when loading .elf homebrew</li>
-<li>The account list in the title manager save exporter is no longer empty</li>
-<li>Latency for wiimotes should be a bit better now</li>
-<li>Added symbol/function list to debugger + other small debugger/assembler improvements</li>
-<li>Implemented API: coreinit.FSOpenFileExAsync (used by some homebrew)</li>
-<li>Many more under-the-hood changes and fixes</li>
-<li>Some more work towards a Stop&amp;Restart emulation feature. Not ready yet but we are getting there</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/cemu-emulator-for-wii-u-now-provides-an-appimage/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/cemu-emulator-for-wii-u-now-provides-an-appimage/</guid>
-      <pubDate>Mon, 07 Nov 2022 11:10:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/390027527id21848gol.jpg" type="image/jpeg"/>
-      
-      <category>Apps</category>
-      
-      <category>Emulation</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Get some quality titles like Frostpunk and Children of Morta in the 11bit bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Ready for some more quality games? There's an <a href="https://www.humblebundle.com/games/complete-11-bit-collection?partner=gamingonlinux" target="_blank">11 Bit developer / publisher bundle</a> on Humble and it seems like a pretty good deal overall. Here's what to expect from it on Linux desktop and Steam Deck, along with <a href="https://www.protondb.com/" target="_blank">ProtonDB</a> rating if needed.</p>
-<p>Included in the bundle:</p>
-<p><strong>Frostpunk: Game of the Year Edition</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p><strong>Children of Morta: Complete Edition</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>Native Linux</li>
-</ul>
-<p><strong>This War of Mine: Complete Edition</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
-<li>Native Linux</li>
-</ul>
-<p><strong>Moonlighter: Complete Edition</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>Native Linux</li>
-</ul>
-<p><strong>Beat Cop</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unchecked</li>
-<li>Native Linux</li>
-</ul>
-<p><strong>Tower 57</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p><strong>Anomaly Game Collection</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Includes: Anomaly: Warzone Earth, Anomaly Warzone Earth Mobile Campaign, Anomaly Korea, Anomaly 2 and Anomaly Defenders.</li>
-<li>Various different ratings. Some work, some don't. Some Native Linux.</li>
-</ul>
-<p><strong>South of the Circle</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unchecked</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p><strong>Spacecom</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unchecked</li>
-<li>Native Linux</li>
-</ul>
-<p>See the <a href="https://www.humblebundle.com/games/complete-11-bit-collection?partner=gamingonlinux" target="_blank">full bundle here</a>.</p>
-<p>Additionally there's a few days left on the <a href="https://www.humblebundle.com/games/payday-2-ultimatescore-bundle?partner=gamingonlinux" target="_blank">PAYDAY 2 ultimate collection</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/get-some-quality-titles-like-frostpunk-and-children-of-morta-in-the-11bit-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/get-some-quality-titles-like-frostpunk-and-children-of-morta-in-the-11bit-bundle/</guid>
-      <pubDate>Sat, 05 Nov 2022 10:01:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1431743343id21847gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Dota 2 set to remove OpenGL support, new hero announced and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has put out an <a href="https://www.dota2.com/newsentry/3398555399443921912" target="_blank">update</a> for Dota 2 and there's some major changes coming, along with another new hero set to enter the fold.</p>
-<p>As part of the 2022 Battle Pass: Part II update Valve announced that NVIDIA Reflex support has been added, and they've said that this is the last major update that will have OpenGL support as everyone will need to be using Vulkan on Linux after that. OpenGL removal was previously announced <a href="https://www.gamingonlinux.com/2021/09/dota-2-to-drop-opengl-and-32bit-vulkan-default-on-linux-and-ti-21-tickets-on-september-22/" target="_blank">back in 2021</a>.</p>
-<p>For right now though Valve has added Diretide, their annual event with a new Candyworks game mode. This update also comes with a second Cavern Crawl map and the release of another round of rewards.</p>
-<p>As for the new hero, they're named Muerta and they arrive in early 2023:</p>
-<div class="hidden_video" data-video-id="Xx0YUuvW4wA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7e32792eda02e4a6e89a37ac4936af40.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Xx0YUuvW4wA" target="_blank">See video</a></div></div>
-<p>What else?</p>
-<p>Oh, there's also a little sprinkle of Portal with a Cave Johnson (voiced by J. K. Simmons) announcer pack that had its own fun trailer that even pulled in Valve CEO Gabe Newell. Amusingly, Newell calls himself both "G-Money" and "G-Fat" during it.</p>
-<div class="hidden_video" data-video-id="GNVAmbB8hEo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/612eee7cc9fd0c16dfa6bdaca42b4bc1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/GNVAmbB8hEo" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/dota-2-set-to-remove-opengl-support-new-hero-announced-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/dota-2-set-to-remove-opengl-support-new-hero-announced-and-more/</guid>
-      <pubDate>Fri, 04 Nov 2022 19:37:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/992185920id21846gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Free Game</category>
-      
-      <category>MOBA</category>
-      
-      <category>OpenGL</category>
       
     </item>
     
