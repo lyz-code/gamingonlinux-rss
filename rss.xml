@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2022-12-06 07:26:23.000610</pubDate>
+    <pubDate>2022-12-07 07:26:30.788728</pubDate>
 
     
     <image>
@@ -18,6 +18,312 @@
     </image>
 
     
+    
+    <item>
+      <title>Dwarf Fortress arrives on Steam, works on Linux desktop and Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Dwarf Fortress has now finally arrived on Steam, with all the shiny new bits including the new graphical tiles and audio included in Early Access. The good news is that even though it doesn't have Native Linux support <a href="https://www.gamingonlinux.com/2022/11/dwarf-fortress-releases-december-6-on-steam-and-itchio-native-linux-support-later/" target="_blank">yet</a>, it does work on Linux desktop and Steam Deck with Proton.</p>
+<p>It doesn't have controller support though, so on Steam Deck you'll need to mess about with Steam Input for a while to set it up how you want. I have no doubt it won't be long before someone makes a good one. To be honest with you, like a lot of people I was never able to get into it originally, it was a bit too retro for my tastes but this new more modern version definitely seems like something I can get into. The short guided tutorial is certainly a nice touch.</p>
+<p>Steam Deck screenshots:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11053347001670342359gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/11053347001670342359gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7572633191670342361gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7572633191670342361gol1.jpeg"/></a></p>
+<p><em>Seems like you might get pretty good battery life out of it on Steam Deck too.</em></p>
+<p>There's no Cloud Save support yet though, which for a game as big as this feels like a huge oversight. Even if you only play on one device, it's always good to have that backup there.</p>
+<p><em>Both Steam Deck and Desktop Linux were tested with Proton 7.0-4.</em></p>
+<p>Launch Trailer:</p>
+<div class="hidden_video" data-video-id="xawsp16oxb0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c2fb03a102c7d878071e554261705d63.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/xawsp16oxb0" target="_blank">See video</a></div></div>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li>Not just generated geometry -- a whole simulated world. Generated rise and fall of civilizations, personalities, creatures, cultures, etc. Infinite hours of gameplay.</li>
+<li>Now with beautiful pixel graphics!</li>
+<li>Learn the basics with in-game tutorials.</li>
+<li>A lifetime “living” project - created/updated since 2003, with no end in sight.</li>
+<li>Generate your unique world and manage a bustling colony of dwarves, even as they probably mine towards their eventual demise.</li>
+<li>A new endless hobby, just for you!</li>
+</ul>
+</blockquote>
+<p>You can <a href="https://store.steampowered.com/app/975370/Dwarf_Fortress/" target="_blank">buy it on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/dwarf-fortress-arrives-on-steam-works-on-linux-desktop-and-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/dwarf-fortress-arrives-on-steam-works-on-linux-desktop-and-steam-deck/</guid>
+      <pubDate>Tue, 06 Dec 2022 16:05:47 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1119420237id21995gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>New Release</category>
+      
+      <category>Simulation</category>
+      
+    </item>
+    
+    <item>
+      <title>Heroic Games Launcher gets a big Hotfix to clean up some issues</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Heroic Games Launcher to help manage games on Steam Deck and Linux with GOG, Epic Games and other apps you can sideload has a <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.5.1" target="_blank">new release</a> out to clean up after the <a href="https://www.gamingonlinux.com/2022/11/heroic-games-launcher-v250-is-out-with-downloads-manager-app-sideloading/" target="_blank">recent big update</a>. Nice to see they've been really quick to deal with some of the problems, including sideloaded apps not being added to Steam automatically that I pointed out.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10482096441670336011gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10482096441670336011gol1.jpg"/></a></p>
+<p>Here's what's been fixed:</p>
+<blockquote>
+<ul>
+<li>Fix the issue with the download's progress going crazy and duplicating the installation/update.</li>
+<li>Fix a crash on the Install dialog on some games.</li>
+<li>Fix sideload games not being added to steam automatically.</li>
+<li>Fix Games failing to start when launched from Steam because they have an update.</li>
+<li>Fix games falling to start when launched from Steam when they had Sync Saves but the path was not defined.</li>
+<li>Fix Auto detect saves path going on forever. Now it will have a timeout of 15s.</li>
+<li>Fix GOG games failing to install due to not supported language error.</li>
+<li>Increased the connectivity check timeout at startup and added a button to ignore the status.</li>
+<li>[macOS] Fixed an issue where the game save path was not correct for native games.</li>
+<li>[Linux/macOS] Fix the windows version of a game version being recognized as native and not showing Wine settings and others.</li>
+<li>Fix a crash that was happening when uninstalling Sideloaded Apps.</li>
+<li>Fix Login Page container size max Width.</li>
+<li>Possibly fix the state of the game card not correctly updating. Not showing an update button, for instance.</li>
+<li>[Windows] Fix an issue where Heroic was crashing when opening the install dialog.</li>
+<li>Heroic will clean the cache now after upgrading to a new release since some issues are associated with that after updating.</li>
+<li>Some other minor fixes and improvements.</li>
+</ul>
+</blockquote>
+<p>I recently did a quick look at the last major version you can see below:</p>
+<div class="hidden_video" data-video-id="ANso5tO97r0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f97474f634664648de4decb76f1d5e01.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ANso5tO97r0" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/heroic-games-launcher-gets-a-big-hotfix-to-clean-up-some-issues/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/heroic-games-launcher-gets-a-big-hotfix-to-clean-up-some-issues/</guid>
+      <pubDate>Tue, 06 Dec 2022 14:14:39 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/259719082id21994gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Epic Games</category>
+      
+      <category>GOG</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Death Stranding Director&#39;s Cut has an annoying issue that can reboot your Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><strong>Update</strong>: a follower of ours on Mastodon pointed out it's a <a href="https://gitlab.freedesktop.org/mesa/mesa/-/issues/7735#note_1674704" target="_blank">Mesa driver issue</a> in the ACO shader compiler, and there's a fix noted so hopefully Valve will update the Steam Deck AMD GPU driver soon.</p>
+<hr/>
+<p>Having recently finished Mass Effect Legendary Edition, I was in the mood for something different so I picked Death Stranding Director's Cut but it seems there's a rather annoying issue that can reboot your Steam Deck.</p>
+<p>Tested across various versions of Proton: when you load up the map, as soon as you move the Right Joystick, the game will freeze and quite often crash so hard it will reboot my Steam Deck. When going to report the issue on the official Proton GitHub, it seems I was beaten to it a few days before by <a href="https://github.com/ValveSoftware/Proton/issues/5758#issuecomment-1334882411" target="_blank">someone else</a> seeing the same issue. While I've only tested it on SteamOS 3.4 Preview, their report states it happens to them on the Stable channel too.</p>
+<p><u>Workaround</u>: for now, I was able to work around it by setting the Right Joystick to Joystick Mouse in Steam Input, although that means I can no longer tilt the map but at least the game won't keep dying on me.</p>
+<div class="hidden_video" data-video-id="zMguCPInqoQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2e36a2d17d5e55186edbe31a317004ee.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/zMguCPInqoQ" target="_blank">See video</a></div></div>
+<p>It doesn't always reboot the Steam Deck though and took me three random crashing reboots to realise what was happening. Sometimes it will just lock up the game, other times the game will close with an <a href="https://uploads.golmedia.net/uploads/articles/article_media/1929168341670330173gol1.jpeg" target="_blank">error message</a>. Thoroughly annoying for a Deck Verified game.</p>
+<p>A very confusing issue. Hopefully Valve will figure out what's going on if it's a game issue, a Proton issue, a Steam Input issue, an AMD GPU driver issue or something else.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/death-stranding-directors-cut-has-an-annoying-issue-that-can-reboot-your-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/death-stranding-directors-cut-has-an-annoying-issue-that-can-reboot-your-steam-deck/</guid>
+      <pubDate>Tue, 06 Dec 2022 13:06:18 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2124221778id21993gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>Valheim: Mistlands is out now with an animated trailer</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After a pretty short testing period, the Valheim: Mistlands update is <a href="https://valheim.com/news/patch-0-212-7-mistlands/" target="_blank">out now</a> for everyone expanding the great survival game quite a lot.</p>
+<p>If you want to see everything it has to offer, especially if you've explored a lot of your world, you will likely need to start on a new map to get the Mistlands to generate.</p>
+<div class="hidden_video" data-video-id="TyHAvmBKK50"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9448e1ce56671a63096ca9495517165b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/TyHAvmBKK50" target="_blank">See video</a></div></div>
+<p>Some of what's new includes:</p>
+<blockquote>
+<p><strong>New biome – Mistlands:</strong><br/>
+* New mechanics.<br/>
+* 9 new creatures + Mistlands boss.<br/>
+* More than 20 new crafting materials.<br/>
+* 2 new crafting stations, 3 crafting station extensions, and 3 other resource/crafting constructions.<br/>
+* 15 new food items.<br/>
+* 3 new potions.<br/>
+* More than 25 new craftable items (weapons, armours &amp; tools).<br/>
+* More than 35 new building/furniture pieces for building, decorating and defending your base.<br/>
+* New type of dungeon.<br/>
+* New lore stones.<br/>
+* New dreams.<br/>
+* New music.</p>
+<p><strong>Misc:</strong><br/>
+* Fishing update.<br/>
+* 12 new emotes.<br/>
+* 9 new hairstyles and 7 new beard styles.<br/>
+* Enabled Yule seasonal items (Yule tree, Yuleklapp, Yule wreath, Yule garland and Mistletoe).</p>
+<p><strong>Fixes &amp; Improvements:</strong><br/>
+* Various console command improvements.<br/>
+* Multiple animations have been updated and improved.<br/>
+* Multiple VFX have been updated and improved.<br/>
+* Various other tweaks.</p>
+</blockquote>
+<p>The full spoiler filled changelog can be seen in their <a href="https://valheim.com/news/patch-0-212-7-mistlands/" target="_blank">announcement</a>. </p>
+<div class="hidden_video" data-video-id="cZOuBjvETR8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e1e4b903bde89fdaa949f463d6d7c66d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/cZOuBjvETR8" target="_blank">See video</a></div></div>
+<p>Guess I know what I'll be doing over the upcoming festive holidays then.</p>
+<p>Valheim is available to buy on <a href="https://www.humblebundle.com/store/valheim?partner=gamingonlinux&amp;charity=12277" target="_blank">Humble Store</a> or <a href="https://store.steampowered.com/app/892970/Valheim/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/valheim-mistlands-is-out-now-with-an-animated-trailer/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/valheim-mistlands-is-out-now-with-an-animated-trailer/</guid>
+      <pubDate>Tue, 06 Dec 2022 12:19:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1839999826id21992gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Online Co-op</category>
+      
+    </item>
+    
+    <item>
+      <title>The Long Dark: Tales from the Far Territory out now as the game is split up</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Long Dark: Tales from the Far Territory is the 12-month long expansion pass for The Long Dark and it's out now, along with the game now split into different parts.</p>
+<p>As the developer detailed before, the main game is now the survival mode as their entry-level experience. With the Wintermute story mode now being a DLC, but all previous game owners were given it free since they purchased it as a whole thing originally.</p>
+<p>The way the new Tales from the Far Territory works, is that people who buy this DLC will get all the extra features and new additions sprinkled in over the next 12 months (there will still be free updates too). The price will rise as the DLC expands and it's for real lovers of the survival game. See their <a href="https://www.thelongdark.com/expansion/faq/" target="_blank">FAQ</a> for more. Some of what they have planned includes:</p>
+<ul>
+<li>Three new Regions: Airfield, Industrial Mine, Mountain Pass.</li>
+<li>Three new Tales, narrative-based Challenges that tie into the mysterious history of this Part of Great Bear Island.</li>
+<li>Several new gameplay systems including the Travois, Safehouse Customization, Handheld Shortwave, Weapon &amp; Tool Variations, etc.</li>
+<li>A bunch of new improvements to existing systems, like Clothing Items, new Harvestables, etc.</li>
+</ul>
+<div class="hidden_video" data-video-id="GHM3vOcqvT8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6d3e76389f58e98d3cd988311a44593d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/GHM3vOcqvT8" target="_blank">See video</a></div></div>
+<p>You can buy The Long Dark from <a href="https://www.humblebundle.com/store/the-long-dark?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/305620/The_Long_Dark/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/the-long-dark-tales-from-the-far-territory-out-now-as-the-game-is-split-up/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/the-long-dark-tales-from-the-far-territory-out-now-as-the-game-is-split-up/</guid>
+      <pubDate>Tue, 06 Dec 2022 12:01:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1382175339id21991gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>DLC</category>
+      
+      <category>Humble Store</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>MineClone2 version 0.81.0 (free Minecraft-like) for Minetest out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://forum.minetest.net/viewtopic.php?f=50&amp;t=16407" target="_blank">MineClone2</a> is pretty much as close as you can get to Minecraft without playing Minecraft. It's free, open source and runs on the <a href="https://www.minetest.net/" target="_blank">Minetest</a> voxel game engine. A new release is now available with version 0.81.0.</p>
+<p>I doubt it will need much of an introduction for people new to it: a sandbox game where you go and do whatever you want. The new release requires either 5.5.1 or 5.6.0 at a minimum.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20946310021670326956gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20946310021670326956gol1.jpg"/></a></p>
+<p>Some of the main highlights from the new version include:</p>
+<blockquote>
+<ul>
+<li>A rewrite of signs, including coloured text.</li>
+<li>Villager schedule implemented, villager fixes.</li>
+<li>Nether terrain generation improved for a lot more open space.</li>
+<li>Nether bulwark (mini-bastion) added.</li>
+<li>Nether bridge fragment.</li>
+<li>Strider mob added.</li>
+<li>Raids added.</li>
+<li>Axolotl mob added.</li>
+<li>Beehives and honey added.</li>
+<li>Ocean temples added.</li>
+<li>Lots more including various AI improvements.</li>
+</ul>
+</blockquote>
+<p>Minetest has quite a lot of mods, and a few big game packs like this. If you've not tried Minetest or MineClone2 for a while, it looks like a good time to jump back in.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/mineclone2-version-0810-free-minecraft-like-for-minetest-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/mineclone2-version-0810-free-minecraft-like-for-minetest-out-now/</guid>
+      <pubDate>Tue, 06 Dec 2022 11:46:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2011272635id21990gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Fanatical running a winter festival of game bundles, like a Steam Deck Verified Bundle</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Staying in and staying warm? I am. So might as well make the most of it with a whole load of new games to fill up your Steam Library with. Fanatical are running a <a href="https://www.kqzyfj.com/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fbundle" target="_blank">little festival of bundles</a>, including one full of Steam Deck Verified games.</p>
+<p>This is their <a href="https://www.anrdoezrs.net/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fpick-and-mix%2Fbuild-your-own-play-on-the-go-bundle-3" target="_blank">third Steam Deck Bundle</a>, and it looks to be another good one too. It's a build your own bundle type of deal, with you being able to buy 3 for £4.99, 5 for £6.99 and 8 for £9.99. Some of the picks include games like Blasphemous, Cat Quest, Shadow Tactics: Blades of the Shogun, Arietta of Spirits, Aragami, Darkwood, Kingdom Rush Vengeance and more.</p>
+<p>Fanatical will be releasing new bundles every day continuing through to Friday.</p>
+<p>Also live now is the <a href="https://www.dpbolvw.net/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fbundle%2Fepic-quest-bundle" target="_blank">Epic Quest Bundle</a> that includes Supraland, Rogue Heroes: Ruins of Tasos, Terrain of Magical Expertise and Close to the Sun for £3.99 that seems like another good deal.</p>
+<p>See <a href="https://www.kqzyfj.com/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fbundle" target="_blank">all the bundles here</a>.</p>
+<p>I'll give a reminder on Friday, when all bundles go live to have an overview for you.</p>
+<p>Additionally don't miss their Star Deal on <a href="https://www.tkqlhce.com/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fgame%2Fimmortals-fenyx-rising" target="_blank">Immortals Fenyx Rising</a> with 83% off, the deal on that only lasts for another day or so. Must admit, I'm thoroughly tempted by that one myself.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/fanatical-running-a-winter-festival-of-game-bundles-like-a-steam-deck-verified-bundle/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/fanatical-running-a-winter-festival-of-game-bundles-like-a-steam-deck-verified-bundle/</guid>
+      <pubDate>Tue, 06 Dec 2022 11:16:53 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/518880369id21989gol.jpg" type="image/jpeg"/>
+      
+      <category>Fanatical</category>
+      
+      <category>Game Bundle</category>
+      
+      <category>Game Sale</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA talks up RTX IO with GDeflate (used in DirectStorage 1.1) to speed up games</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Vulkan version 1.3.233 was released back in November, and with it came two new extensions from NVIDIA designed to help speed up gaming on Linux and Windows. Their tech is even used in DirectStorage from Microsoft.</p>
+<p>The new extensions are:</p>
+<ul>
+<li>VK_NV_memory_decompression - This extension adds support for performing memory to memory decompression.</li>
+<li>VK_NV_copy_memory_indirect - This extension adds support for performing copies between memory and image regions using indirect parameters that are read by the device from a buffer during execution. This functionality may be useful for performing copies where the copy parameters are not known during the command buffer creation time.</li>
+</ul>
+<p>It forms part of <a href="https://developer.nvidia.com/rtx-io" target="_blank">NVIDIA RTX IO</a>, that NVIDIA say will result in faster loading times, lower CPU utilisation, smaller assets so you get smaller game downloads and best of all — it's open source.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5577596711670323889gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5577596711670323889gol1.png"/></a></p>
+<p>NVIDIA also shared the below image, from testing compression with DirectStorage using the DirectStorage GPU Decompression Benchmark and they say "GDeflate GPU decompression delivers IO-saturating performance on modern NVMe devices".</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16338194141670327238gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16338194141670327238gol1.png"/></a></p>
+<p>This tech uses the two Vulkan extensions anyone can implement, plus the GDeflate compression format (this is what Microsoft use in DirectStorage 1.1) and NVIDIA say that GDeflate "will be open source" too.</p>
+<p>NVIDIA also talk up on their website how it's designed to work across "various operating systems and graphics APIs, computer-accelerated APIs, and SDKs" and that all "modern GPUs will benefit from the ability to speed up load times and reduce CPU utilization" but naturally they say it's best on their own Ada Lovelace architecture.</p>
+<p>Sounds pretty exciting. I've seen numerous Linux gamers ask over the last few years if Linux will see anything like DirectStorage, so it's nice to see elements of it available in the open and cross-platform.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/nvidia-talks-up-rtx-io-with-gdeflate-used-in-directstorage-11-to-speed-up-games/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/nvidia-talks-up-rtx-io-with-gdeflate-used-in-directstorage-11-to-speed-up-games/</guid>
+      <pubDate>Tue, 06 Dec 2022 10:54:48 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>NVIDIA</category>
+      
+      <category>Open Source</category>
+      
+      <category>Vulkan</category>
+      
+    </item>
     
     <item>
       <title>Saints Row IV getting a free upgrade to Saints Row IV: Re-Elected and store cross-play</title>
@@ -3714,277 +4020,6 @@ For example: <code class="inline-code">/.steam/root/steamapps/compatdata/*game_
       <category>Meta</category>
       
       <category>Unreal Engine</category>
-      
-    </item>
-    
-    <item>
-      <title>ProtonUp-Qt version 2.7.5 released for easy GE-Proton installs</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://davidotek.github.io/protonup-qt/" target="_blank">ProtonUp-Qt</a> is a simple and easy to use application that helps you install various compatibility layers on Steam Deck and Linux desktop, with a new release version 2.7.5 out now. It makes it easy to install the likes of GE-Proton, Wine-GE, Luxtorpeda and more for Steam, the Heroic Games Launcher and Lutris.</p>
-<p><span style="background-color:var(--article-main-background); color:var(--font-color); font-size:16px">Highlights of the new release:</span></p>
-<blockquote>
-<ul>
-<li>Many SteamTinkerLaunch improvements.</li>
-<li>ProtonUp-Qt Flatpak improvements.</li>
-<li>Added Traditional Chinese translation.</li>
-<li>Various small changes to enhance the experience of ProtonUp-Qt.</li>
-</ul>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4118863851668600098gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4118863851668600098gol1.jpg"/></a></p>
-<p>Want a guide on using it? See <a href="https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/" target="_blank">my previous article and video</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/protonup-qt-version-275-released-for-easy-ge-proton-installs/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/protonup-qt-version-275-released-for-easy-ge-proton-installs/</guid>
-      <pubDate>Wed, 16 Nov 2022 12:02:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1024808414id21895gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Apps</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Fedora Linux 37 is out now with official Raspberry Pi 4 support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After a bit of a delay due to security issues with OpenSSL, Fedora Linux 37 is officially <a href="https://fedoramagazine.org/announcing-fedora-37/" target="_blank">out now</a> with all the usual assortment of major software updates.</p>
-<p>Their main edition Fedora Workstation, continues using the GNOME desktop which bumps it up to <a href="https://release.gnome.org/43/" target="_blank">GNOME 43</a>. That along includes a lot of additions like the new Quick Settings menu, more applications upgraded to GTK 4, the Files app got refreshed, the Calendar / Contacts and Calls apps all got upgraded, Device Security Settings and more.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8144162721668529308gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8144162721668529308gol1.png"/></a></p>
-<p>Lots more is new like official Raspberry Pi 4 support with working accelerated graphics, plus upgrades to various programming languages and system libraries as they continued to follow their "<a href="https://docs.fedoraproject.org/en-US/project/#_first" target="_blank">First</a>" foundation (where they get stuff in early) like Python 3.11, Golang 1.19, glibc 2.36, and LLVM 15. It also includes Mesa 22.2.2 graphics drivers and the 6.0.7 Linux kernel.</p>
-<p>For their other Spins that come with different desktops you get KDE Plasma 5.26.2, Xfce 4.16, Cinnamon 5.4.12 and there's other desktop environments available too.</p>
-<p>With this release they slimmed the installation a bit, with Firefox language packs now as subpackages so you can remove the "firefox-langpacks" package if you don't need localization.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8962463541668529316gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8962463541668529316gol1.png"/></a></p>
-<p>Fedora continues to be my go-to system, as it really works quite nicely on desktop. Hopefully my 36 - 37 upgrade will go smoothly but I usually wait a week or so to make sure any kinks are ironed out.</p>
-<p>Do you use Fedora? Let us know in the comments what you're excited about in this release.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/fedora-linux-37-is-out-now-with-official-raspberry-pi-4-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/fedora-linux-37-is-out-now-with-official-raspberry-pi-4-support/</guid>
-      <pubDate>Tue, 15 Nov 2022 16:27:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/745162334id21894gol.png" type="image/jpeg"/>
-      
-      <category>Distro News</category>
-      
-      <category>Fedora</category>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Mixing factory management, Tower Defense and RTS - Mindustry 7.0 is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Easily one of the best open source games around, Mindustry from AnukenDev just had a MASSIVE new release out that took quite some time to make. This update was in development for over a year!</p>
-<p>It's like a mixture of Factorio with an RTS and Tower Defense blended in together, it's really quite something.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7233548371668516603gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7233548371668516603gol1.jpg"/></a></p>
-<p>Some of what's new in 7.0 includes:</p>
-<blockquote>
-<ul>
-<li>A whole new campaign that includes a new planet, with its own tech tree and 100+ new blocks to research.</li>
-<li>15 new units to research and construct.</li>
-<li>A new class of tank units.</li>
-<li>A new variant of insectoid walkers.</li>
-<li>Hovercraft units with unique weapons and abilities.</li>
-<li>Various new forms of factory transportation.</li>
-<li>Units can now be selected and commanded to positions or enemy targets, similarly to other RTS games.</li>
-</ul>
-</blockquote>
-<p>Considering how long it took, the developer mentioned they've burned-out a bit and so they will be taking a break from any feature updates for a couple of months but they will do smaller maintenance releases during this time to fix up issues as they appear.</p>
-<p>You can buy it on <a href="https://store.steampowered.com/app/1127400/Mindustry/" target="_blank">Steam</a> to support it, or grab it free on <a href="https://anuke.itch.io/mindustry" target="_blank">itch.io</a> and <a href="https://github.com/Anuken/Mindustry" target="_blank">GitHub</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/mixing-factory-management-tower-defense-and-rts-mindustry-70-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/mixing-factory-management-tower-defense-and-rts-mindustry-70-is-out-now/</guid>
-      <pubDate>Tue, 15 Nov 2022 12:50:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1123279743id21893gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Building Sim</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Itch.io</category>
-      
-    </item>
-    
-    <item>
-      <title>Popular Half-Life 2 mod Entropy : Zero 2 is getting full Linux support for Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://store.steampowered.com/app/1583720/Entropy__Zero_2/" target="_blank">Entropy : Zero 2</a> is a very popular and well reviewed Half-Life 2 mod, and the developer has recently <a href="https://steamcommunity.com/games/1583720/announcements/detail/5025482135637312982" target="_blank">announced</a> the public testing of Native Linux support and Steam Input gamepad support. Available now in the "deck-testing" opt-in Beta, you can try it for yourself!</p>
-<p>What is it? "The pessimistic, wisecracking, door-kicking zealot known as 'Bad Cop' is back.</p>
-<p>Command a small army of Combine synths and soldiers on a Northern campaign to capture Dr. Judith Mossman.</p>
-<p>Tread in the wake of Gordon Freeman at Nova Prospekt. Explore the mysterious 'Arbeit Communications' facility. Discover what lies beneath. Drive an APC through the arctic wastes. Confront the rebels on their doorstep and uncover a long-forgotten secret."</p>
-<div class="hidden_video" data-video-id="Uy0n-JGjHhw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9d749d4b4112a2f8d75f7da0b982ff0d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Uy0n-JGjHhw" target="_blank">See video</a></div></div>
-<p>Why are they doing it this now? They're going for <em>full</em> Steam Deck support and they said having it run Native on the Steam Deck avoids various font issues they saw with Proton. Nice to see more developers, even on mods like this, opt for full direct Linux support.</p>
-<p>Once it's properly ready, I look forward to giving it a full run through!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/popular-half-life-2-mod-entropy-zero-2-is-getting-full-linux-support-for-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/popular-half-life-2-mod-entropy-zero-2-is-getting-full-linux-support-for-steam-deck/</guid>
-      <pubDate>Tue, 15 Nov 2022 12:35:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2048210514id21892gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>FPS</category>
-      
-    </item>
-    
-    <item>
-      <title>Of Blades &amp; Tails is a fresh turn-based action-RPG now in Early Access</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Looking for your next action RPG with turn-based combat? Inspired by the classic Point &amp; Click Adventure Inherit the Earth, Of Blades &amp; Tails is out in Early Access.</p>
-<p>In Of Blades &amp; Tails you play Reik, an inquisitive member of the proud Fox Tribe. After a series of unfortunate events forces him to leave his home behind, Reik embarks on a quest to preserve the peace of the realm. Venture into the outside world and gain enough experience to fight a mysterious evil endangering the innocent and corrupting the once quiet forests with fearsome enemies.</p>
-<p>Trailer below:</p>
-<div class="hidden_video" data-video-id="Z3dKya8HDx4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ac593e7da08b36959e3d7f06dc7fa423.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Z3dKya8HDx4" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Designed for a consistent experience, with <strong>No Permadeath </strong>in the game, players' progress is encounter-based and is always saved when entering a new area.</li>
-<li><strong>Turn-based Combat</strong> that rewards quick decision-making and strategic gameplay.</li>
-<li>An <strong>Open World</strong> with plenty of curious secrets to discover.</li>
-<li>Set in a world filled with <strong>Anthropomorphic Denizens, </strong>and featuring a vibrant pixel art style.</li>
-<li>Challenge yourself by braving <strong>Procedurally Generated Dungeons</strong> for even greater rewards.</li>
-<li>Customize your hero with <strong>Classless Character Development</strong> unlocking a variety of abilities on your journey.</li>
-</ul>
-</blockquote>
-<p>Available to buy on <a href="https://www.gog.com/en/game/of_blades_and_tails" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/1768780/Of_Blades__Tails/" target="_blank">Steam</a> with Native Linux support.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/of-blades-a-tails-is-a-fresh-turn-based-action-rpg-now-in-early-access/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/of-blades-a-tails-is-a-fresh-turn-based-action-rpg-now-in-early-access/</guid>
-      <pubDate>Tue, 15 Nov 2022 12:06:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/914122627id21891gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>YoYo Games open source the GameMaker HTML5 runtime</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Here's a fun one for open source fans and game developers, as YoYo Games have <a href="https://gamemaker.io/en/blog/html5-open-source" target="_blank">open sourced</a> their HTML5 runtime. It's now available on <a href="https://github.com/YoYoGames/GameMaker-HTML5" target="_blank">GitHub</a>, under the Apache 2 license.</p>
-<p>The idea is to give developers a better idea of how it all works, plus it means that if there's something essential developers need, they can look to add it in themselves when creating their games. Open source (and even "source available") is just far better than hidden proprietary code.</p>
-<p>YoYo Games will continue to update it, so it's not just a code-drop and forget type of deal. They are also encouraging others to create Pull Requests to improve it.</p>
-<p>Their own Gurpreet S. Matharoo mentioned:</p>
-<blockquote>
-<p>As a developer, having access to the HTML5 source helps me understand how functions work behind the scenes, so I can get the most out of them.</p>
-<p>I find the source easy to understand, as it’s written in JavaScript, which is similar to GML Code in terms of readability and usage. It’s a breeze compared to reading a source written in C or C++.</p>
-<p>In addition to getting to look behind the curtain, I can now submit my own changes if I happen to come across bugs or functions that I can improve.</p>
-</blockquote>
-<p>Seems like it makes it easy for game devs to tweak and test it too, with the GameMaker Beta allowing you to pick a different runtime and select your own downloaded version of the code. So you can easily test it locally for your own games, and before potentially sending fixes directly to the new GitHub repository.</p>
-<p>Good stuff. Hopefully this is the start of more of GameMaker being open.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/yoyo-games-open-source-the-gamemaker-html5-runtime/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/yoyo-games-open-source-the-gamemaker-html5-runtime/</guid>
-      <pubDate>Tue, 15 Nov 2022 11:58:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1875080288id21890gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Dev</category>
-      
-      <category>Game Maker</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck Client update out fixing up more Big Picture Mode issues</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has rolled out a small stable Steam Deck Client update, mainly focused on fixing up the New Big Picture Mode. This is where you actually run it in desktop mode, with the "-gamepadui" launch setting.</p>
-<p>Here's <a href="https://steamcommunity.com/games/1675200/announcements/detail/3383920059441129610" target="_blank">what's changed</a>:</p>
-<blockquote>
-<p>General</p>
-<ul>
-<li>Fixed Steam desktop client browser scaling changing when New Big Picture Mode keyboard or controller configurator are opened</li>
-</ul>
-<p>New Big Picture Mode</p>
-<ul>
-<li>Added new startup movie for Big Picture Mode</li>
-<li>Fixed issue with Desktop version of Remote Play Together dialogs being displayed while in Big Picture Mode</li>
-<li>Re-worked "Gifts Pending" page to be gamepad navigable</li>
-<li>Fixed trackpad typing scale in standalone keyboard in Desktop mode</li>
-<li>Fixed issue where the Main Menu was visible after exiting, then re-entering Big Picture Mode</li>
-<li>Fixed standalone controller configurator showing at the incorrect browser scale</li>
-<li>Stopped showing Steam Deck interstitial screens when in Desktop mode</li>
-</ul>
-<p>Steam Input</p>
-<ul>
-<li>Fixed issue with the touch binding in As Mouse mode releasing before the end of a swipe</li>
-</ul>
-</blockquote>
-<p>Since it's a stable update, you should see it across Stable, Beta and Preview. </p>
-<p>What's your current #1 fix or improvement you want to see in the Steam Deck software?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/steam-deck-client-update-out-fixing-up-more-big-picture-mode-issues/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/steam-deck-client-update-out-fixing-up-more-big-picture-mode-issues/</guid>
-      <pubDate>Tue, 15 Nov 2022 11:49:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam</category>
-      
-      <category>Update</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Spider-Man: Miles Morales gets Steam Deck Verified ahead of release</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Hello web slingers! Good news for you, as Spider-Man: Miles Morales has been formally Steam Deck Verified ahead of the release later this week. Yes, it's releasing this week (November 18th), and I didn't realise it was that close either. Going to say goodbye to my backlog for a while again I think.</p>
-<p>Sharing the news via Twitter, Nixxes Software <a href="https://twitter.com/NixxesSoftware/status/1592185956710453248" target="_blank">said</a>:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/21189211841668512354gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21189211841668512354gol1.png"/></a></p>
-<p>Nice to see it get full testing, just like we saw with Spider-Man Remastered. I look forward to playing a good few hours in this one too.</p>
-<p>Will you be picking it up? Might want to ensure you've got the space ready, as it will take up at least 75 GB (probably more for us, due to shaders and Proton files). So it might be time to pick a couple to remove ready, unless you have a nice big SD Card.</p>
-<p>I'll be doing my usual video of such a big release, should be up later on release day.</p>
-<div class="hidden_video" data-video-id="CMRBuagwRb4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f5a479cd315506d4cd5aab61013348ec.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/CMRBuagwRb4" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/spider-man-miles-morales-gets-steam-deck-verified-ahead-of-release/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/spider-man-miles-morales-gets-steam-deck-verified-ahead-of-release/</guid>
-      <pubDate>Tue, 15 Nov 2022 11:43:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/329593088id21888gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Action</category>
-      
-      <category>Adventure</category>
       
     </item>
     
