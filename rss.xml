@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2022-12-13 07:27:05.676185</pubDate>
+    <pubDate>2022-12-14 07:26:43.654825</pubDate>
 
     
     <image>
@@ -18,6 +18,270 @@
     </image>
 
     
+    
+    <item>
+      <title>Wine on Wayland sounds like it&#39;s coming along nicely</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Collabora have given an <a href="https://www.collabora.com/news-and-blog/news-and-events/wine-on-wayland-2022-updatye-more-games-more-apps-more-fun.html" target="_blank">end of year update</a> on how the work towards running the Windows compatibility layer on Wayland is coming along and it sounds good.</p>
+<p>Their focus has been to keep up with upstream Wine development, which involved "splitting the driver into a PE and Unix part, updating it for the latest internal driver APIs, and making preparations to support WoW64". A big improvement is that it now supports cross-process rendering, something required for Chromium/CEF applications. On top of that they've also worked on improved support for the linux-dmabuf v4 Wayland protocol (aka dmabuf-feedback), that "allows compositors to dynamically send information about optimal formats and modifiers, e.g., depending on the surface presentation mode (fullscreen vs windowed)" plus many other ehancements.</p>
+<p>On the Wine Development <a href="https://www.winehq.org/mailman3/hyperkitty/list/wine-devel@winehq.org/thread/5GQWFP7MC6GQTL2KLAV6F6RUMOE3QULI/" target="_blank">mailing list</a>, developer Alexandros Frantzis also touched on when to expect the code in upstream Wine:</p>
+<blockquote>
+<p>Last year, due to the extensive ongoing internal rework in Wine (e.g., win32u), the decision was made to postpone the upstreaming of the Wayland driver until some amount of internal stability had been reached. My impression is that things are a lot more stable now, from the drivers' point of view at least. Is there any upcoming work that people feel would be severely hindered by the upstreaming of the Wayland driver?</p>
+<p>Ideally, I would like to start the upstreaming effort (which I expect will take some time) at some point early next year, after the codebase has been unfrozen. Does this sound reasonable?</p>
+</blockquote>
+<p>They also provided a video to show off the latest work that shows:  Chrome with accelerated cross-process rendering, LibreOffice, Call of Duty 2 (Demo), Crayon Physics Deluxe, Dagon, Factorio, The Last Express and Phoning Home.</p>
+<div class="hidden_video" data-video-id="lZ-MK72Kyp8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e85fb7de59a5ee2595b40fab75689758.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/lZ-MK72Kyp8" target="_blank">See video</a></div></div>
+<p>Why is this important? It's because Wayland is gradually replacing X11, and having Wine run on it natively without another compatibility layer in between like XWayland will hopefully improve performance and reduce another layer of complexities to go through for both users and developers.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/wine-on-wayland-sounds-like-its-coming-along-nicely/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/wine-on-wayland-sounds-like-its-coming-along-nicely/</guid>
+      <pubDate>Tue, 13 Dec 2022 18:31:45 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>AMD Radeon RX 7000 launched today for the select few able to beat the crowds</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>AMD has today released the Radeon RX 7000 series GPUs starting with the Radeon RX 7900 XTX and Radeon RX 7900 XT.</p>
+<p>Stock was, as expected, very limited. I won't go over every single bit again, which I <a href="https://www.gamingonlinux.com/2022/11/amd-announce-rx-7900-xtx-and-rx-7900-xt-plus-fsr3-teased/" target="_blank">covered previously</a> but to reiterate some of what to expect from these cards:</p>
+<blockquote>
+<ul>
+<li><strong>AMD RDNA 3 Architecture</strong> – Featuring an advanced chiplet design, rearchitected compute units and second-generation AMD Infinity Cache technology, RDNA 3 architecture delivers up to 54% more performance per watt than RDNA 2.</li>
+<li><strong>Chiplet Design</strong> – The world’s first gaming GPU with a chiplet design delivers up to 15% higher frequencies at up to 54% better power efficiency.</li>
+<li><strong>Generational Uplift – </strong>The flagship AMD Radeon RX 7900 XTX delivers considerably higher 4K performance than the Radeon RX 6950 XT.</li>
+<li><strong>DisplayPort 2.1 Support –</strong> The industry’s only high-end gaming graphics cards to support DisplayPort 2.1 technology with UHBR 13.5, enabling high-refresh 4K (up to 480Hz) or 8K (up to 165Hz) gaming on next-gen displays.</li>
+</ul>
+</blockquote>
+<p>Going by some Linux benchmarks <a href="https://www.phoronix.com/review/rx7900xt-rx7900xtx-linux" target="_blank">Phoronix</a> did, it seems like a pretty nice set of cards. Although, they didn't have the NVIDIA 4000 series to test against, but at least it shows AMD is a clear winner against even the 3090, which is good news for me as I have an NVIDIA 2080 Ti and I was lucky enough to beat the crowds at Overclockers to bag a Radeon RX 7900 XTX as a personal purchase (I rarely get sent any hardware). You can find some other reviews by the likes of <a href="https://www.youtube.com/watch?v=Yq6Yp2Zxnkk" target="_blank">JayzTwoCents</a>, <a href="https://www.youtube.com/watch?v=TBJ-vo6Ri9c" target="_blank">LinusTT</a> and <a href="https://www.youtube.com/watch?v=4UFiG7CwpHk" target="_blank">Hardware Unboxed</a>.</p>
+<p>Want to find where to possibly by one when they're back in stock? Check the <a href="https://www.amd.com/en/where-to-buy/radeon-rx-graphics" target="_blank">AMD website</a>, although they weirdly don't list the UK, apparently we no longer exist. For people in the UK you can try the likes of <a href="https://www.scan.co.uk/search?q=Radeon+RX+7900+XTX" target="_blank">Scan</a>, <a href="https://www.ebuyer.com/search?q=Radeon+RX+7900+XTX" target="_blank">Ebuyer</a>, <a href="https://www.overclockers.co.uk/?query=Radeon%2520RX%25207900%2520XTX" target="_blank">Overclockers</a>.</p>
+<p>For me it's especially exciting, as I haven't had an AMD card for a good 10+ years so it's going to be a whole different world. I'm looking forward to seeing what open source graphics drivers can do.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/amd-radeon-rx-7000-launched-today-for-the-select-few-able-to-beat-the-crowds/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/amd-radeon-rx-7000-launched-today-for-the-select-few-able-to-beat-the-crowds/</guid>
+      <pubDate>Tue, 13 Dec 2022 18:00:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/624688957id22040gol.jpg" type="image/jpeg"/>
+      
+      <category>AMD</category>
+      
+      <category>Hardware</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve has finally fixed the Steam Remote Play audio loss bug on Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Finally, after years of waiting, Valve has now fixed the Steam Remote Play bug that basically made the feature useless for a Linux host.</p>
+<p>Steam Remote Play is a great feature, allowing you to stream your Steam Library from a powerful PC to something smaller like a Steam Deck or anything that can run Steam Link. Especially nice for games the Steam Deck can't run directly, if you have the hardware elsewhere streaming it is a good solution to let you relax on the sofa or in bed with it.</p>
+<p>The problem is that since 2019 there's been <a href="https://github.com/ValveSoftware/steam-for-linux/issues/6749" target="_blank">a bug</a> where after a while, like clockwork, every single time the audio would crackle and then just vanish completely on the system receiving the stream. This bug caused me to seriously consider sitting at my PC one evening recently, just to continue my Death Stranding Director's Cut play-through which runs poorly for me across two different Steam Decks (even with multiple "fixes" tested).</p>
+<p>The latest <a href="https://store.steampowered.com/news/group/4397053/view/3627116953542043543" target="_blank">Steam Client Beta</a> for December 12th has now <u>solved</u> this! I cannot even begin to tell you how happy I am about this. I much prefer chilling on my sofa in the evening with a Steam Deck, so this pleases me.</p>
+<p>Here's the full list of fixes:</p>
+<blockquote>
+<p class="plain-list-title">New Big Picture Mode</p>
+<ul>
+<li>Added support for switching the primary monitor on Windows. See Settings -&gt; Display -&gt; Preferred Display.</li>
+<li>Fixed overlay scaling when resizing game window</li>
+</ul>
+<p class="plain-list-title">Steam Input</p>
+<ul>
+<li>Added support for the Armor-X Pro gamepad in PS4 mode</li>
+<li>Fixed long delay at startup when the Razer Huntsman Elite keyboard is plugged in</li>
+<li>Fixed the Logitech G29 controller showing up as a gamepad instead of a wheel</li>
+</ul>
+<p class="plain-list-title">Remote Play</p>
+<ul>
+<li>Fixed eventual audio crackling and loss when streaming from Linux</li>
+</ul>
+<p class="plain-list-title">Linux</p>
+<ul>
+<li>Fixed crash when taking screenshots through the overlay</li>
+</ul>
+</blockquote>
+<div class="hidden_video" data-video-id="NnisYGZv9QY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/181aa8cd8e1b2c2718e45aa6595ad78c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/NnisYGZv9QY" target="_blank">See video</a></div></div>
+<p>Now they just need to fix up the New Big Picture Mode being completely <a href="https://github.com/ValveSoftware/steam-for-linux/issues/8916" target="_blank">broken</a> on NVIDIA and I'll have even less to moan about.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/valve-has-finally-fixed-the-steam-remote-play-audio-loss-bug-on-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/valve-has-finally-fixed-the-steam-remote-play-audio-loss-bug-on-linux/</guid>
+      <pubDate>Tue, 13 Dec 2022 15:26:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>Open source evolution sim Thrive v0.6 out with a day and night cycle</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Thrive just continues to impress. It's a free and open source evolution sim built with Godot Engine and version 0.6 is out now with big new helpful features.</p>
+<p>One of the most immediately visible changes is the day and night cycle, so the game as a whole feels a lot more alive in a way. Although it's disabled by default, as it can make it more difficult. There's also now a Thriveopedia, giving you an easy way in-game to read up on all things Thrive. Fossilization is in allowing players to save species in a museum that can be viewed in the Thriveopedia too. Om top of that they also rewrote their launcher to provide "enhanced processing and loading speeds, a sleeker design, and greater versatility".</p>
+<p>More:</p>
+<blockquote>
+<ul>
+<li>Thrive now has a new intro video when you start the game. Make sure you have it enabled in the settings so you can appreciate the exciting view!</li>
+<li>The main menu now features social media icons so that you can easily find a community outlet of your choice.</li>
+<li>Thrive now has a safe-mode triggered crashing, which disables all mods and video playing before restarting.</li>
+<li>Pili now feature a slight damage delay, preventing them from rapidly inflicting a large amount of damage at once.</li>
+</ul>
+</blockquote>
+<p>Update trailer below:</p>
+<div class="hidden_video" data-video-id="tko9CMr7Adk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/477d1b0b45058501a65120c6a455a37f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/tko9CMr7Adk" target="_blank">See video</a></div></div>
+<p>Download free via the <a href="https://github.com/Revolutionary-Games/Thrive-Launcher" target="_blank">launcher</a>, or buy it on <a href="https://revolutionarygames.itch.io/thrive" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1779200/Thrive/?curator_clanid=4218320" target="_blank">Steam</a> to support developer.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/open-source-evolution-sim-thrive-v06-out-with-a-day-and-night-cycle/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/open-source-evolution-sim-thrive-v06-out-with-a-day-and-night-cycle/</guid>
+      <pubDate>Tue, 13 Dec 2022 13:43:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1482325704id22039gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>Itch.io</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Core Devourer is another for fans of Vampire Survivors and Soulstone Survivors</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Do you love over-the top repeatable action horde games like Soulstone Survivors, Vampire Survivors and all the others? You'll never guess what, another developer is making one that sounds and looks quite good.</p>
+<p>Core Devourer is the name and it's a "sci-fi action-packed roguelite where you hunt down huge hordes of droids and absorb their cores to become the strongest cybernetic being on the planet". The developer emailed it over, and mentioned it's coming to Linux. The boss fights in this one could be fun, as the developer said they each have a unique pattern to learn and overcome, that's on top of the many hordes you're blasting away too.</p>
+<p>You can see their first trailer below:</p>
+<div class="hidden_video" data-video-id="Wm_6xgth2KE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c2a62a4fb8c268e570634f77f807f6e5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Wm_6xgth2KE" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<blockquote>
+<ul>
+<li>10+ weapons with special effects.</li>
+<li>7+ procedural maps to explore.</li>
+<li>Hundreds of unique power-ups for your character.</li>
+<li>Many character upgrades.</li>
+<li>Craftable gear.</li>
+</ul>
+</blockquote>
+<p>The full game is due to launch sometime in Q2 2023.</p>
+<p>You can <a href="https://store.steampowered.com/app/2199060/Core_Devourer/" target="_blank">follow it on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/core-devourer-is-another-for-fans-of-vampire-survivors-and-soulstone-survivors/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/core-devourer-is-another-for-fans-of-vampire-survivors-and-soulstone-survivors/</guid>
+      <pubDate>Tue, 13 Dec 2022 13:28:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1733487036id22038gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Rogue-lite</category>
+      
+    </item>
+    
+    <item>
+      <title>The rather great LEGO Bricktales switches to Vulkan on Linux, adds UI scaling options</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>LEGO Bricktales was already a lot of fun and now perhaps it's even better with some new options and improvements for their Native Linux version too.</p>
+<p>This <a href="https://store.steampowered.com/news/app/1898290/view/3615857706245766322" target="_blank">update</a> went out on December 5th, it should enable it to be even smoother on Linux and thanks to the new UI scaling options, it should work better for people who need things a little big bigger — something I truly wish every modern game release had but for some reason some developers just don't even think about it.</p>
+<p>Here's what's changed in full:</p>
+<blockquote>
+<ul>
+<li>Added UI scaling options.</li>
+<li>Reworked UI for build mode.</li>
+<li>Tutorial improvements.</li>
+<li>Bricks can be nudged horizontally with arrow keys on keyboard when selected.</li>
+<li>Added achievements button to main menu.</li>
+<li>Improved mix of two City music tracks (removed troublesome frequencies).</li>
+<li>Set Vulkan as default graphics API on Linux.</li>
+<li>Minor diorama changes that ensure playability when players use the "Help, I'm stuck" teleport feature.</li>
+<li>Improved controls for touch devices.</li>
+</ul>
+</blockquote>
+<p><em>Plus a few bug fixes I won't note here due to spoilers.</em></p>
+<p>You can see some of my previous footage on LEGO Bricktales below:</p>
+<div class="hidden_video" data-video-id="6KZWVXyYxJM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9ade00aff9ceb2afc0be856d45655fba.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6KZWVXyYxJM" target="_blank">See video</a></div></div>
+<p>Available to buy on <a href="https://af.gog.com/en/game/lego_bricktales?as=1636858786" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/1898290/LEGO_Bricktales/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/the-rather-great-lego-bricktales-switches-to-vulkan-on-linux-adds-ui-scaling-options/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/the-rather-great-lego-bricktales-switches-to-vulkan-on-linux-adds-ui-scaling-options/</guid>
+      <pubDate>Tue, 13 Dec 2022 13:06:55 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/44729356id22037gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Casual</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Puzzle</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve improves the Steam Store on Steam Deck, plus more bug fixes in Beta</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Two updates for the Steam Deck today as Valve has not only put out another Steam Deck Client Beta, they're also finally trying to make the actual Steam store better on Steam Deck.</p>
+<p>For the store, there's been so many issues I've lost count. From losing where you are, to various bits of it just not working right and browsing Steam on it has been a nuisance.</p>
+<p>Valve has now done some work to resolve these issues server-side, meaning no download needed. On <a href="https://twitter.com/OnDeck/status/1602470806709493760" target="_blank">Twitter</a>, they said: "Hello! We’ve just shipped a quality of life update to the Store experience on Steam Deck (mostly around focus and navigation). This is a server side update, so you won’t need to do a software update to see these improvements. </p>
+<p>Thanks for all your feedback and keep it coming!"</p>
+<p>Additionally, here's what's in the December 12 <a href="https://store.steampowered.com/news/app/1675200/view/3637250052888201563" target="_blank">Steam Deck Client Beta</a>:</p>
+<blockquote>
+<p class="plain-list-title">General</p>
+<ul>
+<li>Fixed keyboard re-opening incorrectly on game exit</li>
+<li>Added support for the Armor-X Pro gamepad in PS4 mode</li>
+<li>Fixed long delay at startup when the Razer Huntsman Elite keyboard is plugged in</li>
+<li>Fixed the Logitech G29 controller showing up as a gamepad instead of a wheel</li>
+</ul>
+<p class="plain-list-title">Desktop Mode</p>
+<ul>
+<li>Fixed overlay scaling when resizing game window in new Big Picture Mode</li>
+<li>Fixed crash when taking screenshots through the overlay</li>
+</ul>
+</blockquote>
+<p>These changes are in the Beta and Preview update channels.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/valve-improves-the-steam-store-on-steam-deck-plus-more-bug-fixes-in-beta/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/valve-improves-the-steam-store-on-steam-deck-plus-more-bug-fixes-in-beta/</guid>
+      <pubDate>Tue, 13 Dec 2022 12:53:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>Chained Echoes is as close as you can get to retro-styled RPG perfection</title>
@@ -3721,288 +3985,6 @@ See the launch trailer below:</p>
       <category>Open World</category>
       
       <category>RPG</category>
-      
-    </item>
-    
-    <item>
-      <title>Tower-defense base-building mining game Lumencraft adds procedural maps</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Lumencraft is a really interesting game that blends together elements of tower-defense, base-building, mining and a little Deep Rock Galactic in a top-down view. A big new release is out now and it's Steam Deck Verified with Native Linux support.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8376991151669293033gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8376991151669293033gol1.jpg"/></a></p>
-<p>Some of the highlights of the new version include:</p>
-<blockquote>
-<ul>
-<li>​​​​​​Procedural maps: from baked handcrafted maps to 100% procedurally generated roguelike levels!</li>
-<li>New Weapon: Lumenal Discharger - a dramatic armament charged with a lightning beam.</li>
-<li>Balance changes:many costs changed from metal to Lumen, requirements added for some upgrades (eg. have a building placed)</li>
-<li>New Steam achievements: unlock 80 new achievements - some are easy and some are tricky!</li>
-<li>New languages: the game is now available in French, Spanish and Russian.</li>
-<li>Improvements and fixes: various UI, VFX, and sound changes.</li>
-</ul>
-</blockquote>
-<p>I've been loving watching this one grow, it scratches multiple gaming itches at the same time but the lack of variety in the levels was a downside they've now nicely solved so you can play fresh each time. A full release is planned next year, and their roadmap suggests they will add online multiplayer if its enough of a success to fund it.</p>
-<p>My main issue with it currently, is that in full-screen it doesn't cover the KDE Plasma menu at the bottom. A little annoying on desktop but not a problem on Steam Deck of course.</p>
-<p>Available to buy on <a href="https://af.gog.com/game/lumencraft?as=1636858786" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/1713810/Lumencraft/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/tower-defense-base-building-mining-game-lumencraft-adds-procedural-maps/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/tower-defense-base-building-mining-game-lumencraft-adds-procedural-maps/</guid>
-      <pubDate>Thu, 24 Nov 2022 12:31:00 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1669689702id21938gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>KDE has a fundraiser for all their work like the Plasma desktop (used by Steam Deck)</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>KDE have put up a <a href="https://kde.org/bluefriday/" target="_blank">new fundraising platform</a>, with an aim to make it easier for people to donate with a tongue-in-cheek anti-black-friday event they're calling Blue Friday.</p>
-<p>Developer Nate Graham mentioned in a <a href="https://pointieststick.com/2022/11/23/a-better-fundraising-platform/" target="_blank">blog post</a> that their previous way of raising funds was split between two platforms, one for single donations and a totally different one for reoccurring donations. They've now put up a new one that allows you to specify if your donation is one time, monthly or annually.</p>
-<p>The donations will go towards all their work in things like the Plasma desktop environment, that Valve ships for the desktop mode on the Steam Deck, Plasma Mobile for phones and tablets, all the various KDE apps like the Dolphin file manage or KDE Connect and much more.</p>
-<p>Hopefully it will be a success, as KDE have been going from strength to strength lately and they're currently hiring for a <a href="https://ev.kde.org/resources/callforproposals-platform2022/" target="_blank">Software Platform Engineer</a> to work on many different parts of the KDE system as a whole.</p>
-<p>The fundraiser has a current goal of €15,000.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/kde-has-a-fundraiser-for-all-their-work-like-the-plasma-desktop-used-by-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/kde-has-a-fundraiser-for-all-their-work-like-the-plasma-desktop-used-by-steam-deck/</guid>
-      <pubDate>Thu, 24 Nov 2022 12:00:38 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/kde.png" type="image/jpeg"/>
-      
-      <category>KDE</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck wins Best Gaming Hardware at the 40th Golden Joystick Awards</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The 40th Golden Joystick Awards presented by <a href="https://www.gamesradar.com/golden-joystick-awards-2022-winners/" target="_blank">GamesRadar</a> is over and in the Best Gaming Hardware category, the Steam Deck won. While the event is mostly about individual games, it's nice to see such a device get the recognition it deserves because it really is such a transformative device for the way people get to play PC games and for Linux gaming as a whole.</p>
-<p>Elden Ring made a nice sweep across the awards too winning multiple categories including: Best Visual Design, Best Multiplayer Game, Critics’ Choice Award and the Ultimate Game of the Year.</p>
-<p>The full results are:</p>
-<blockquote>
-<ul>
-<li>Best Storytelling: Horizon Forbidden West (public vote)</li>
-<li>Still Playing Award: Genshin Impact (public vote)</li>
-<li>Best Visual Design: Elden Ring (public vote)</li>
-<li>Studio of the Year: FromSoftware Inc. (public vote)</li>
-<li>Best Game Expansion: Cuphead: The Delicious Last Course (public vote)</li>
-<li>Best Early Access Launch: Slime Rancher 2 (public vote)</li>
-<li>Best Indie Game: Cult of the Lamb (public vote)</li>
-<li>Best Multiplayer Game: Elden Ring (public vote)</li>
-<li>Best Audio: Metal: Hellsinger (public vote)</li>
-<li>Best Game Trailer: Goat Simulator 3 Announcement Trailer (public vote)</li>
-<li>Best Game Community: Final Fantasy XIV (public vote)</li>
-<li>Best Gaming Hardware: Steam Deck (public vote)</li>
-<li>Breakthrough Award: Vampire Survivors (critically chosen)</li>
-<li>Critics’ Choice Award: Elden Ring (critically chosen)</li>
-<li>Best Performer: Mahon Gage (Marissa Marcel, IMMORTALITY) (critically chosen)</li>
-<li>Nintendo Game of the Year: Pokemon Legends: Arceus (public vote)</li>
-<li>PC Game of the Year: Return to Monkey Island (public vote)</li>
-<li>PlayStation Game of the Year: Stray (public vote)</li>
-<li>Xbox Game of the Year: Grounded (public vote)</li>
-<li>Most Wanted Game: The Legend of Zelda: Tears of the Kingdom (public vote)</li>
-<li>Ultimate Game of the Year: Elden Ring (public vote)</li>
-</ul>
-</blockquote>
-<p>Valve's co-founder Gabe Newell did a little video spot to thank gamers on <a href="https://twitter.com/OnDeck/status/1595160031036846080" target="_blank">Twitter</a>, so here's his video and some quick thoughts:</p>
-<div class="hidden_video" data-video-id="FRSMWu3e1c0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bade76b21b2d32bf00f417cc479e5182.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/FRSMWu3e1c0" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/steam-deck-wins-best-gaming-hardware-at-the-40th-golden-joystick-awards/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/steam-deck-wins-best-gaming-hardware-at-the-40th-golden-joystick-awards/</guid>
-      <pubDate>Thu, 24 Nov 2022 11:49:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/345258332id21935gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Hardware</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>WW1 FPS &#39;Isonzo&#39; is getting a free expansion on December 5th</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Isonzo from M2H, BlackMill Games is set to get bigger on December 5th, with the release of a free expansion featuring the Germans.</p>
-<p>The Caporetto expansion for Isonzo will be free, with an option for players to expand their visual customization options for the German Empire with the Royal Units DLC. As per their roadmap, this is one of three expansions that are planned and all will be free. They have multiple new maps planned to be added in too, along with a new game mode planned next year.</p>
-<p>Here's the expansion teaser:</p>
-<div class="hidden_video" data-video-id="w58hPwegk1I"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cfb75e8dd023abc1af26734175b76b4e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/w58hPwegk1I" target="_blank">See video</a></div></div>
-<p>Wow, that was sure a <em>teaser</em> huh? </p>
-<p>The full complement of Isonzo classes are represented in the new German Empire faction including the Mountaineer, with uniforms, weapons and equipment based on historical research to authentically recreate the German army as it was on the Italian Front. They're a fully fledged fighting force consisting of the previously revealed Stoßtrupp and the Rifleman, amongst others, and are ready to take the fight to the Italian defenders of Monte Kolovrat – the first of three maps to be added as part of the Battle of Caporetto Offensive.</p>
-<p>Jos Hoebe, Creative Director and co-founder of the WW1 Game Series says: “We’re looking forward to releasing the free Caporetto expansion for Isonzo this December 5 – the first of several free updates we have planned. It expands Isonzo to cover more of the key aspects of the war on the Italian Front, adding both German Empire troops and the first part of a new German Offensive.”</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16410589851669301435gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16410589851669301435gol1.png"/></a></p>
-<p>It is a lot of fun and it's nice to see them continue Native Linux support.</p>
-<p>You can buy it on <a href="https://www.humblebundle.com/store/isonzo?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1556790/Isonzo/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/ww1-fps-isonzo-is-getting-a-free-expansion-on-december-5th/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/ww1-fps-isonzo-is-getting-a-free-expansion-on-december-5th/</guid>
-      <pubDate>Thu, 24 Nov 2022 11:44:39 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1156278081id21936gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>FPS</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Online Multiplayer</category>
-      
-    </item>
-    
-    <item>
-      <title>Rogue Legacy 2 has a Native Linux port available now, more stable on Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>As promised recently, Rogue Legacy 2 from Cellar Door Games now has a Native Linux version available to give you the best experience possible on Steam Deck and Linux desktop.</p>
-<p>On Steam Deck, the Windows version with Proton was suffering from crashing issues that the new Native Linux version should solve. You will need to opt into this manually in the Properties -&gt; Compatibility menu and select the Steam Linux Runtime.</p>
-<p>"Rogue Legacy 2 is a genealogical rogue-LITE. That means it has all the trappings of a typical rogue-like (randomized runs, changing characters, and more), but with persistent upgrades, and persistent dead heirs. In this game, your legacy defines you. Spend your parents’ inheritance and grow the family manor to give your children a better fighting chance. Each child is unique, with their own traits and abilities. Your daughter could be a Ranger. She could also be vegan. It’s a new experience every time. Rogue Legacy 2 also lets you play how you want to. Go hard and fast, and dive deeper into the depths of a randomly-generated world. Or take it slow and steady and build your character up until you’re ready for greater challenges."</p>
-<div class="hidden_video" data-video-id="4VFRTUxPIwA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/77ae6b365edfac51ccdeedba90f53b99.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/4VFRTUxPIwA" target="_blank">See video</a></div></div>
-<p>Have to admit, not only is it a great action-platformer metroidvania but it also has a little comedic flair thrown in too. Can't tell you the amount of laughs I had when an heir's ability was "Super IBS" that enabled them to fart, allowing higher jumps and it was as amusing as expected.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9350650551669222840gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9350650551669222840gol1.jpg"/></a></p>
-<p>In my time playing it, I can confirm it's another quality port. The only weird issue I encountered was a Stadia Controller forcing the camera to pan upwards, but it was fine with keyboard and an Xbox controller. Admittedly that's going to be a very tiny amount of people seeing it. Other than that, very smooth and stable across both desktop Linux and Steam Deck.</p>
-<p>Enjoy the challenge in games like Dead Cells? You'll probably like this a lot too.</p>
-<p>On desktop with Fedora, as expected it's silky smooth on max settings. On Steam Deck, keeping it to 40Hz (45Hz in the below video though, as my monitor doesn't work with 40Hz) resulted in a smooth experience too, along with some great battery life. Another quality title not to be missed.</p>
-<p>You can <a href="https://store.steampowered.com/app/1253920/Rogue_Legacy_2/" target="_blank">buy it on Steam</a> and it's 25% off in the Autumn Sale.</p>
-<div class="hidden_video" data-video-id="VKLdYQWibkU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b3f7a10450f767a5c029d6e62d3d5650.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/VKLdYQWibkU" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/rogue-legacy-2-has-a-native-linux-port-available-now-more-stable-on-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/rogue-legacy-2-has-a-native-linux-port-available-now-more-stable-on-steam-deck/</guid>
-      <pubDate>Wed, 23 Nov 2022 17:28:35 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1662356282id21934gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Metroidvania</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>OBS Studio 29.0 Beta 1 adds AV1 Encode for AMD / Intel</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://github.com/obsproject/obs-studio/releases/tag/29.0.0-beta1" target="_blank">OBS Studio 29.0 Beta 1</a> is now available, as another big update to the video recording and livestreaming app.</p>
-<p>The main additions in this release include:</p>
-<blockquote>
-<ul>
-<li>Added support for the AMD AV1 Encoder for RDNA3 GPUs</li>
-<li>Added support for the Intel AV1 Encoder for Arc GPUs
-<ul>
-<li>Note: CQP is available but not fully supported</li>
-</ul>
-</li>
-<li>Added support for the Intel HEVC Encoder</li>
-<li>Added an upward compressor filter</li>
-<li>Added a 3-band equalizer filter </li>
-<li>Added support for native HEVC and ProRes encoders on macOS, including P010 and HDR</li>
-<li>Added support for macOS Desk View </li>
-<li>Added update channels for opting into receiving beta/release-candidate builds to Windows
-<ul>
-<li>Work is still underway to get everything ready on the server side, updating via the built-in updater may not be available until later in the OBS 29.0 beta-testing period</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20832658531669220164gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20832658531669220164gol1.png"/></a></p>
-<p>Plus these other fixes and improvements:</p>
-<blockquote>
-<ul>
-<li>The Replay Buffer's memory limit is now set to 75% of installed system RAM rather than fixed to 8GB </li>
-<li>Added media key support in Linux</li>
-<li>Various improvements to NVIDIA Video and Audio filters, including a Mask Refresh slider and support for temporal processing, which provides better quality masking</li>
-<li>Improved Display Capture screen naming &amp; saving on Windows; indexes should now match regardless of Mode, and reconnected displays should show the correct monitor
-<ul>
-<li>Note: This does mean existing Display Capture sources will be blank until manually configured, to avoid showing the wrong display</li>
-</ul>
-</li>
-<li>Added support for encryption and authentication for SRT and RIST outputs</li>
-<li>Disabled ScreenCaptureKit Display &amp; App capture on macOS 12 due to various issues; users should either update to macOS 13 or use the existing Screen Capture source</li>
-<li>Removed the automatic numbering on Multiview labels</li>
-<li>Added the ability to mute individual browser docks</li>
-<li>Added the ability to right click and 'Inspect' individual browser docks</li>
-<li>Changed the default Simple Output NVENC preset to P5 for better compatibility &amp; performance</li>
-<li>Added support for higher refresh rates in the Video Capture Device source on Windows</li>
-<li>Added the Apple VT Hardware encoder to the Auto Configuration Wizard</li>
-<li>Improved FFmpeg VA-API enablement by directly using Libva to check device capabilities</li>
-<li>Various minor UX/accessibility tweaks in the UI</li>
-<li>Raised the speed at which dynamic bitrate recovers after a drop</li>
-<li>Audio should now be automatically captured for most capture card brands using the Video Capture Device source on Windows</li>
-<li>Added a slide counter to the Source Toolbar when an Image Slide Show is selected</li>
-<li>Updated dependencies, including switching to Qt 6.4.1, which should fix a number of issues</li>
-<li>Lots of bug fixes</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/obs-studio-290-beta-1-adds-av1-encode-for-amd-intel/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/obs-studio-290-beta-1-adds-av1-encode-for-amd-intel/</guid>
-      <pubDate>Wed, 23 Nov 2022 16:18:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/63793159id21933gol.jpg" type="image/jpeg"/>
-      
-      <category>Apps</category>
-      
-      <category>Beta</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Get a free copy of Narita Boy during the GOG Black Friday sale</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://www.gog.com/en" target="_blank">GOG</a> are giving away another free game. This time it's <a href="https://www.gog.com/en/game/narita_boy" target="_blank">Narita Boy</a> during the <a href="https://www.gog.com/en/promo/2022_black_friday" target="_blank">GOG Black Friday sale</a> that's live now.</p>
-<p>The giveaway can be found on the GOG homepage, just be logged in and scroll down a bit. You can claim it free until November 25th at 2 PM UTC, after which they'll have another free game deal up.</p>
-<div class="hidden_video" data-video-id="4_wkR5Dpsp8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a971e5589b64770572440e14118406d5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/4_wkR5Dpsp8" target="_blank">See video</a></div></div>
-<p>For this sale, GOG has a few curated deal lists to help you:</p>
-<blockquote>
-<ul>
-<li><a href="https://www.gog.com/en/promo/2022_black_friday_classics_collection" target="_blank">Classics</a> – cause GOG is the best place for games that last forever, e.g. Heroes of Might and Magic 3 Complete (-75%), The Elder Scrolls V: Skyrim SE (-75%), Mortal Kombat Trilogy (-30%);</li>
-<li><a href="https://www.gog.com/en/promo/2022_black_friday_rpg_collection" target="_blank">RPG</a> – a selection of the most notable gems in the genre, e.g. The Witcher 3: Wild Hunt GOTY (-80%), Fallout 3 GOTY (-67%), Wasteland 3 Deluxe Edition (-67%);</li>
-<li><a href="https://www.gog.com/en/promo/2022_black_friday_indie_collection" target="_blank">Indie</a> – do not let them slip under your radar, e.g. Disco Elysium – The Final Cut (-75%), Scorn (-20%), Beholder 3 (-45%);</li>
-<li><a href="https://www.gog.com/en/game/gog_strategy_bundle" target="_blank">GOG Strategy Bundle</a> – 90% off discount for the whole bundle which includes 3 games: Hard West Collector's Edition, Krush Kill ‘N Destroy 2: Krossfire, and Cossacks Anthology;</li>
-<li><a href="https://www.gog.com/en/game/gog_rpg_bundle" target="_blank">GOG RPG Bundle</a> – 89% off discount for the 3 games bundle with Dead In Vinland, Knights of Pen and Paper +1 Edition, and Evoland Legendary Edition;</li>
-<li><a href="https://www.gog.com/en/game/gog_collection_versus_evil_turnbased_games" target="_blank">Versus Evil Turn-based Games</a> – a remarkable collection of games including The Hand of Merlin, Wintermoor Tactics Club, and Antihero with a -67% discount.</li>
-</ul>
-</blockquote>
-<p>The Black Friday Sale is live now and will last till November 30th at 11 PM UTC.</p>
-<p>For easy installing and updating on Linux regardless of Native Linux games or Windows games with Wine, try out the excellent <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Games Launcher</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/11/get-a-free-copy-of-narita-boy-during-the-gog-black-friday-sale/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/11/get-a-free-copy-of-narita-boy-during-the-gog-black-friday-sale/</guid>
-      <pubDate>Wed, 23 Nov 2022 14:56:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1971920510id21932gol.jpg" type="image/jpeg"/>
-      
-      <category>DRM-Free</category>
-      
-      <category>Free Game</category>
-      
-      <category>Game Sale</category>
-      
-      <category>Giveaway</category>
       
     </item>
     
