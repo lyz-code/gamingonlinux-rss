@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2022-12-21 07:25:37.093269</pubDate>
+    <pubDate>2022-12-22 07:25:15.018273</pubDate>
 
     
     <image>
@@ -18,6 +18,340 @@
     </image>
 
     
+    
+    <item>
+      <title>SteamOS 3.4 is out now for Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Pulling in tons of improvements for desktop mode, along with a healthy dose of bug fixes elsewhere, the <a href="https://store.steampowered.com/news/app/1675200/view/3646258449514531838" target="_blank">SteamOS 3.4 update</a> for Steam Deck has been released. This means you can now check for updates on Stable to get it, or switch back from Preview to Stable (tested fine across two Steam Decks just today).</p>
+<p>There's a lot that's new including a jump across multiple versions of KDE Plasma for the desktop mode including <a href="https://kde.org/announcements/plasma/5/5.24.0/" target="_blank">5.24</a>, <a href="https://kde.org/announcements/plasma/5/5.25.0/" target="_blank">5.25</a>, and <a href="https://kde.org/announcements/plasma/5/5.26.0/" target="_blank">5.26</a>. Discover software store in desktop mode especially saw a huge amount of stability improvements, along with the app page redesign and a responsive view based on the window size. Plus all the other bug fixes and improvements for the Steam Deck as a whole, like supporting the new 8BitDo Ultimate Wireless controller dongle, graphics driver crash fixes, stuttering fixes and much much more.</p>
+<p>Here's a brief overview video:</p>
+<div class="hidden_video" data-video-id="GL59y8bLB50"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1fd0f17bd66a0ce8ea07f2bb71780f95.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/GL59y8bLB50" target="_blank">See video</a></div></div>
+<p>Full list of changes includes:</p>
+<blockquote>
+<p>Rebased SteamOS on a newer snapshot of Arch Linux</p>
+<ul>
+<li>This update pulls in the latest performance, security and stability fixes for the underlying packages that are the foundation for SteamOS</li>
+<li>Most notably, this includes recent changes to KDE Plasma, Steam Deck's Desktop Mode. Full notes on these updates can be found on KDE's website <a href="https://kde.org/announcements/plasma/5/5.24.0/" target="_blank">here</a>, <a href="https://kde.org/announcements/plasma/5/5.25.0/" target="_blank">here</a>, and <a href="https://kde.org/announcements/plasma/5/5.26.0/" target="_blank">here</a>. Here are a few of the highlights:
+<ul>
+<li>New Overview view to see all open windows and virtual desktops</li>
+<li>Updates to KRunner, the built in assistant for searching and running tasks</li>
+<li>New touchscreen gestures</li>
+<li>New themes and wallpapers</li>
+<li>Updates to widgets</li>
+</ul>
+</li>
+</ul>
+<p>General</p>
+<ul>
+<li>Fixed issues with sleep affecting a small number of titles, where specific games would be frozen or exhibit glitchy behavior after waking up</li>
+<li>Fixed a performance issue that could cause 100ms hitches during gameplay if adaptive backlight was enabled</li>
+<li>Fixed a graphics driver crash when interacting with the map in DEATH STRANDING DIRECTOR'S CUT</li>
+<li>Fixed issue with opening file managers if the gamescope session has been restarted</li>
+<li>Fixed GPU clock settings sometimes not sticking if set manually (thanks to user xperia64 for the amdgpu kernel patch backport)</li>
+<li>Fixed an issue with fan controller excessive sensor polling causing sporadic fan behavior and higher SSD temps on some NVME drives</li>
+<li>New firmware for Docking Station
+<ul>
+<li>Fixes an issue where HDMI 2.0 displays are not detected during wake or boot up</li>
+</ul>
+</li>
+</ul>
+<p>Performance profiles</p>
+<ul>
+<li>New option to allow Screen Tearing: at the cost of sometimes displaying partial frames, allows for lower average latency when VSync is disabled and the frame limiter is off,</li>
+<li>Changed performance HUD level 2 to use a horizontal layout. It fits in the letterbox space for games running in a 16:9 aspect ratio.</li>
+</ul>
+<p>Storage</p>
+<ul>
+<li>Re-enabled TRIM for the internal drive as well as supported external storage devices, improving write performance
+<ul>
+<li>This includes a workaround ensuring that TRIM operations are safe for SD cards that advertise discard support but do not support it</li>
+<li>Steam will periodically TRIM storage devices as needed
+<ul>
+</ul>
+</li>
+<li>New button in Settings → System → Advanced to run trim immediately</li>
+</ul>
+</li>
+<li>Added an eject option for removable drives in Settings → Storage
+<ul>
+<li>This unmounts the removable drive, it does not physically eject it</li>
+</ul>
+</li>
+<li>External drives formatted as ext4 are now automatically mounted and available for use in Steam</li>
+</ul>
+<p>Input</p>
+<ul>
+<li>Disabled kernel DualShock 4 and DualSense trackpad → mouse emulation when Steam is running</li>
+<li>Changed timing of virtual keypresses to improve game compatibility with on-screen keyboard
+<ul>
+<li>Fixes input issues with apps such as Street Fighter V, EA app</li>
+</ul>
+</li>
+<li>Fixed Steam Input's action set switching based on cursor visibility in Game mode</li>
+<li>Re-enabled the built-in hid-steam kernel gamepad driver when Steam is not running in desktop mode, and added rumble support to it</li>
+<li>Added support for the 8BitDo Ultimate Wireless controller dongle</li>
+<li>Fixed a USB crash when using certain controllers such as the Hori Fighting Stick α</li>
+</ul>
+<p>Audio</p>
+<ul>
+<li>Fixed a case where the default audio device would display "echo-cancel-sink" and audio controls would cease to work correctly</li>
+<li>Fixed a case where some applications would output audio to the wrong device</li>
+<li>Fixed an audio driver bug that could lead to on-board audio crackling in some situations</li>
+</ul>
+</blockquote>
+<p>It was released with some issues with SD Cards, as the mount point (folder) changed, which would break a lot of non-Steam stuff and shortcuts so they've <a href="https://twitter.com/Plagman2/status/1605710534199988225" target="_blank">rolled that back</a> as a very quick 3.4.1 update too. That change wasn't well communicated by Valve, so glad to see it rolled back promptly.</p>
+<p>Valve also didn’t mention it but KDE Connect is now also included for easy file syncing.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/steamos-34-is-out-now-for-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/steamos-34-is-out-now-for-steam-deck/</guid>
+      <pubDate>Thu, 22 Dec 2022 00:42:32 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1515221584id22088gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam</category>
+      
+      <category>SteamOS</category>
+      
+      <category>Update</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental fixes The Witcher 3 — plus better steering wheel support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve has updated Proton Experimental for Steam Deck and Linux desktop with a few quick fixes so here's the usual run over what's new.</p>
+<p>The release today gets The Witcher 3: Wild Hunt working again and, while it doesn't say it, this is specifically for the DirectX 12 mode from the new update that previously required <a href="https://www.gamingonlinux.com/2022/12/proton-hotfix-valve-witcher-3-next-gen-dx12-working-on-steam-deck/" target="_blank">Proton Hotfix</a> (now you can just use Experimental). As DirectX 11 already worked.</p>
+<p>Additional changes include:</p>
+<ul>
+<li>Improved support for steering wheels.</li>
+<li>Fix regression with Mortal Combat X performance.</li>
+<li>Fix OpenGL launch option for Youropa.</li>
+</ul>
+<p>Changelog available <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">here</a>. As a reminder (for desktop), you need Mesa 22 / Nvidia drivers 510.47 or newer for Proton Experimental. Steam Deck is fine.</p>
+<p>Need to know how to change the Proton version used? See the below video:</p>
+<div class="hidden_video" data-video-id="f1GvONkE9S0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6bb07ac6333f611978e50464915ff76b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/f1GvONkE9S0" target="_blank">See video</a></div></div>
+<p>Text guide (Steam Deck):</p>
+<ul>
+<li>Pick a game and head to the little cog icon on the right.</li>
+<li>Click Properties, then Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<p>On a Linux desktop:</p>
+<ul>
+<li>Right click a game, go to Properties.</li>
+<li>Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/proton-experimental-fixes-the-witcher-3-plus-better-steering-wheel-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/proton-experimental-fixes-the-witcher-3-plus-better-steering-wheel-support/</guid>
+      <pubDate>Wed, 21 Dec 2022 21:57:40 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Open Source</category>
+      
+      <category>Steam</category>
+      
+      <category>Update</category>
+      
+    </item>
+    
+    <item>
+      <title>Heroes of Might and Magic II game engine remake fheroes2 hits 1.0</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>fheroes2 is a free and open source game engine reimplementation of the classic Heroes of Might and Magic II, and after many development releases they've finally hit the big 1.0.</p>
+<p>Designed originally to reproduce the game for modern platforms it grew quickly to add in various improvements to the gameplay, graphics and logic (including support for high-resolution graphics, improved AI, numerous fixes and user interface improvements) that breathes new life into such a classic.</p>
+<p>For the 1.0 release the highlights include:</p>
+<ul>
+<li>Fixed multiple issues with rendering on Windows and rendering speed on Adventure Map.</li>
+<li>Android version fully playable with all basic features present.</li>
+<li>Fixed monster, luck and catapult animations in battle.</li>
+<li>Add Scout AI role and fix multiple issues with AI behaviour on Adventure Map.</li>
+<li>Expand the amount of translated buttons and update translations.</li>
+<li>Over 50 bugs are fixed since the 0.9.21 release.</li>
+</ul>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7053538361671653103gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7053538361671653103gol1.png"/></a></p>
+<p>Available to download on <a href="https://github.com/ihhub/fheroes2" target="_blank">GitHub</a>. You do also need to grab the data from <a href="https://www.gog.com/game/heroes_of_might_and_magic_2_gold_edition" target="_blank">GOG.com</a> which it requires to run.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/heroes-of-might-and-magic-ii-game-engine-remake-fheroes2-hits-10/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/heroes-of-might-and-magic-ii-game-engine-remake-fheroes2-hits-10/</guid>
+      <pubDate>Wed, 21 Dec 2022 20:07:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1951803058id22086gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Open Source</category>
+      
+      <category>Reimplementation</category>
+      
+      <category>RPG</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux Mint 21.1 is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Smelling fresh and ready to invite you in, <a href="https://linuxmint.com/" target="_blank">Linux Mint</a> 21.1 is officially out now so here's what's new and improved. I <a href="https://www.gamingonlinux.com/2022/12/linux-mint-21-1-now-in-beta-with-full-flatpak-support/" target="_blank">covered the Beta release</a> and so of course not a whole lot apart from some bug fixes has happened since then. Now is the time to jump in though, as it's better than ever.</p>
+<p>Built on top of Ubuntu 22.04 you get everything that has, minus Snaps. There's Cinnamon 5.6, Linux kernel 5.15 and it will receive security updates until 2027. It's sporting a bit of a new look too, with plenty of style changes including the removal of unneeded items from the desktop, more vibrant colouring for accents, a change to Aqua by default so say goodbye to Linux Mint being green out of the box and a new mouse pointer theme.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8085205001671652292gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8085205001671652292gol1.jpg"/></a></p>
+<p>As a reminder on some of what's new:</p>
+<ul>
+<li>Driver Manager no longer needd a password to launch, plus improved offline support and fixes for NVIDIA.</li>
+<li>Full Flatpak integration in the Update Manager.</li>
+<li>More places needing a password prompt were removed that don't need administrative permissions.</li>
+<li>Right click on desktop now has a Display Settings option.</li>
+<li>A refreshed interface for the Software Manager, that makes it easier to tell the difference between Flatpak and normal packages. Plus you can switch between them if an app has both.</li>
+<li>A Verify ISO tool was added.</li>
+<li>Other visual changes include a seperator next to the Mint Menu button, a corner bar applet on the far right of the panel inspired by Windows 10, selecting an item in the file manager Nemo only highlights the name now and not the icon as well.</li>
+</ul>
+<p>For more on what's new see their <a href="https://www.linuxmint.com/rel_vera_cinnamon_whatsnew.php" target="_blank">announcement</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/linux-mint-211-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/linux-mint-211-is-out-now/</guid>
+      <pubDate>Wed, 21 Dec 2022 19:53:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/263418481id22085gol.jpg" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>Linux Mint</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Whisker Squadron: Survivor blends Vampire Survivors with a Star Fox-like shooter</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A new on-rails survival rogue-lite shooter? Sign me up. Whisker Squadron: Survivor is from the same team as Race the Sun, and the first in the Whisker Squadron series. There's also a demo right now.</p>
+<p>The actual Whisker Squadron game is still coming, but this is less about story and a smaller tighter game for fans of the survival genre that wish to keep on going as long as they can, while upgrading into a unique build. Think of it like a mashup between the classic Star Fox and Vampire Survivors. </p>
+<p>With my love of anything resembling Vampire Survivors, and some very fond memories of Star Fox 64 I nearly dropped my Steam Deck in excitement to try this one. It feels really good, looks really good and it seems to work perfectly out of the box both on Steam Deck and Linux desktop. Here's a little Steam Deck footage:</p>
+<div class="hidden_video" data-video-id="OgqLLTvIoeA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e214ef70e399f5494463f9af19a9a66a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/OgqLLTvIoeA" target="_blank">See video</a></div></div>
+<p>I discovered this thanks to my own excitement over the other Whisker Squadron game they're making, since I personally pledged to their Kickstarter some time ago where they announced this game before the Steam page went up.</p>
+<p>Check it <a href="https://store.steampowered.com/app/2140100/Whisker_Squadron_Survivor/" target="_blank">out on Steam</a>. The demo has a Native Linux version and so will the full release planned for 2023.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/whisker-squadron-survivor-vampire-survivors-star-fox-shooter/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/whisker-squadron-survivor-vampire-survivors-star-fox-shooter/</guid>
+      <pubDate>Wed, 21 Dec 2022 14:23:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/608691154id22083gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>GameMaker makes a few more open source moves with extensions</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Well, I have to admit I am surprised that the takeover of YoYo Games (who develop GameMaker) by Opera has been largely positive with them making more moves towards open source.</p>
+<p><a href="https://www.gamingonlinux.com/2022/11/yoyo-games-open-source-the-gamemaker-html5-runtime/" target="_blank">Back in November</a>, they open sourced the HTML5 runtime for GameMaker, which was quite a nice step for developers building web games. They also made big improvements to their Linux support <a href="https://www.gamingonlinux.com/2022/04/gamemaker-on-linux-gets-big-improvements-and-steam-deck-support/" target="_blank">back in April</a>.</p>
+<p>Now they're back again<a href="https://gamemaker.io/en/blog/open-source-extensions" target="_blank"> with a fresh announcement</a>, as they're open sourcing a whole bunch of extensions and they have more on the way. It's still baby steps in terms of the <em>overall</em> project being open but still a lot better than certain other companies. Some of what they've opened up includes the Google H5 Games Ads extension, Steamworks, Epic Online Services, Microsoft GDK, Google Play Services, GOG, Firebase, WebView, GameJolt etc and they have plans to do more.</p>
+<p>Some of the advantages they list with them being open source include:</p>
+<blockquote>
+<ol>
+<li>It lets you look behind the curtain, and understand how the code you’re using works. This allows you to use a library in a more efficient manner as you understand its inner workings.</li>
+<li>The team at GameMaker is always working to improve extensions. In addition to that, having access to the source allows you to make your own fixes and updates to an extension.</li>
+<li>You can build your own version of an extension with custom changes to suit your project’s needs. Later, you can submit these changes as pull requests, so other developers can benefit from your work.</li>
+</ol>
+</blockquote>
+<p>A bunch of them were actually open sourced earlier this year pretty quietly on their <a href="https://forum.gamemaker.io/index.php?threads/open-sourcing-extensions.98439/" target="_blank">forum</a>, with the full announcement only being made today.</p>
+<p>Hopefully this trend over at YoYo Games will continue, and eventually we might see the GameMaker editor as open source too. They're clearly becoming more friendly to the idea of open source so I wouldn't rule it out. It's a very popular game engine for developers and would be amazing to see happen.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/gamemaker-makes-a-few-more-open-source-moves-with-extensions/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/gamemaker-makes-a-few-more-open-source-moves-with-extensions/</guid>
+      <pubDate>Wed, 21 Dec 2022 14:20:46 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/881055863id22084gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Dev</category>
+      
+      <category>Game Engine</category>
+      
+      <category>Game Maker</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>The itch.io winter sale is live for you to stock up on indies</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Game store itch.io has their own big <a href="https://itch.io/sales" target="_blank">Winter Sale</a> now on, where you can save big and support one of the smaller stores along with plenty of indie games.</p>
+<p>You won't find the likes of Crysis or Spider-Man on there but you will find a lot of really unique experiences. It's always worth a look to find a next favourite. I even personally curate a list of what I believe are some of the <a href="https://itch.io/c/1674813/best-linux-games" target="_blank">Best Linux Games on itch.io</a>.</p>
+<p>After some recommendations? Well, I've used my Mark I Eyeball and searched high and low and come up with a list of great titles that are discounted to look at:</p>
+<ul>
+<li><a href="https://danielmullinsgames.itch.io/the-hex" target="_blank">The Hex</a> - 80% off - From the creator of Pony Island. A clever adventure with multiple stories going on.</li>
+<li><a href="https://adriaan.itch.io/hidden-folks" target="_blank">Hidden Folks</a> - 75% off - An absolute gem of a hidden object game a bit like an interactive Where's Wally?</li>
+<li><a href="https://draknek.itch.io/a-good-snowman" target="_blank">A Good Snowman Is Hard To Build</a> - 75% off - An interesting puzzle game about rolling snowballs.</li>
+<li><a href="https://thunderlotus.itch.io/spiritfarer" target="_blank">Spiritfarer</a> - 75% off - A cozy management sim about dying.</li>
+<li><a href="https://melessthanthree.itch.io/lucah" target="_blank">Lucah: Born of a Dream</a> - 70% off - An action-focused game with really wild visuals.</li>
+<li><a href="https://eniko.itch.io/midboss" target="_blank">MidBoss</a> - 75% off - Ever played a true roguelike where you posses the bodies of dead enemies? No? Try it.</li>
+<li><a href="https://underflow-studios.itch.io/the-away-team" target="_blank">The Away Team</a> - 60% off - A sci-fi interactive adventure novel.</li>
+<li><a href="https://abbyhoward.itch.io/scarlet-hollow" target="_blank">Scarlet Hollow</a> - 20% off - A thoroughly interesting horror visual novel that blends in elements of dating and a few RPG traits too. A big branching narrative not to be missed.</li>
+</ul>
+<p>Be sure to give your own recommendations in the comments.</p>
+<p>Their sale lasts until 5th of January at 10am PT / 6pm UTC.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/the-itchio-winter-sale-is-live-for-you-to-stock-up-on-indies/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/the-itchio-winter-sale-is-live-for-you-to-stock-up-on-indies/</guid>
+      <pubDate>Wed, 21 Dec 2022 12:56:14 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/itch-logo.jpg" type="image/jpeg"/>
+      
+      <category>Game Sale</category>
+      
+      <category>Itch.io</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Deck shipping update for Asia notes a few issues but plenty get it this year</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve and Komodo have given an <a href="https://komodo.jp/news/steamdeck-shipment-update-dec21.html" target="_blank">update</a> on the shipping of the Steam Deck through Japan, South Korea, Hong Kong, and Taiwan.</p>
+<p>It seems quite a lot of people will get their Steam Deck in those areas this year, with the announcement noting that anyone there who reserved a Steam Deck before December 1st will get them by the end of the year. They said that all pre-December 1st reservations they expect to have shipped across Japan, Hong Kong, and Taiwan by December 26th.</p>
+<p>The odd one out here is South Korea, where it was mentioned that "unanticipated transport and customs issues" held things up and caused delays, but they've already solved the issues and so shipments there will resume on December 26th, with all South Korean reservations expected to be shipped by December 30th.</p>
+<p>On top of that, it seems they messed up the reservation queue at some point, with Steam Decks going out in an incorrect order. Once again, they say this issue has been solved and now they should be going out again based on the reservation date.</p>
+<p>Sounds like it has once again been a success though, as they mentioned the "overwhelming interest in Steam Deck". So we really are about to get a big surge of people gaming on Linux with Steam Deck. Exciting.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2022/12/steam-deck-shipping-update-for-asia-notes-a-few-issues-but-plenty-get-it-this-year/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/steam-deck-shipping-update-for-asia-notes-a-few-issues-but-plenty-get-it-this-year/</guid>
+      <pubDate>Wed, 21 Dec 2022 12:28:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1745361318id22081gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
     
     <item>
       <title>Retro fuelled FPS &#39;Selaco&#39; has easily one of the best demos I&#39;ve ever played</title>
@@ -2811,7 +3145,7 @@ A new lighting system made possible by NVIDIA RTXDI, NVIDIA ReSTIR GI and the ad
       <description><div class="content group e-content">
 <p>Linux Mint 21.1 is now available in Beta to get testing, based upon Ubuntu 22.04 with kernel 5.15 it's a long-term support release so you'll be able to continue using it until 2027 before needing a major update.</p>
 <p>There's quite a lot new with this release, other than a bump to the versions of various packages that comes with the updated Ubuntu base so here's a short run over some things to expect from it.</p>
-<p>The first thing people may notice is an update to the theme, for a refreshed look and feel. This includes a removal of unneeded items from the desktop, my vibrant colouring for accents, a change to Aqua by default so say goodbye to Linux Mint being green out of the box and a new mouse pointer theme.</p>
+<p>The first thing people may notice is an update to the theme, for a refreshed look and feel. This includes a removal of unneeded items from the desktop, more vibrant colouring for accents, a change to Aqua by default so say goodbye to Linux Mint being green out of the box and a new mouse pointer theme.</p>
 <p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17121803141670502251gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17121803141670502251gol1.png"/></a></p>
 <p>Other major changes include:</p>
 <ul>
@@ -3605,283 +3939,6 @@ A new lighting system made possible by NVIDIA RTXDI, NVIDIA ReSTIR GI and the ad
       <category>Open Source</category>
       
       <category>RTS</category>
-      
-    </item>
-    
-    <item>
-      <title>ProtonPlus is a new in-development Proton version manager</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>While we already have ProtonUp-Qt which works just fine, it seems another thought they could do it better and differently with Proton version manager <a href="https://github.com/Vysp3r/ProtonPlus" target="_blank">ProtonPlus</a>. For those of your on GNOME desktops, you might like this one more eventually when it's more developed, since it's using GTK.</p>
-<p>It's early days yet, with nothing pre-built and a lack of build instructions but it seems like they have a nice idea for it. To help you manage Proton for Steam, Lutris, Heroic Games Launcher and Bottles.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4741207791670241853gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4741207791670241853gol1.png"/></a></p>
-<p>I'll be keeping an eye on it.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/protonplus-is-a-new-in-development-proton-version-manager/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/protonplus-is-a-new-in-development-proton-version-manager/</guid>
-      <pubDate>Mon, 05 Dec 2022 12:05:10 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/376831787id21983gol.png" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Apps</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Lutris v0.5.12 out now fixing Origin, Epic Store, Ubisoft Connect, GOG</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Lutris, the all-in-one game manager for Linux and Steam Deck, has an important bug-fix release out now you'll want to upgrade for the best experience. There was a Beta released for this back in October, with this full release including a couple of extras.</p>
-<p>Here's the highlights of Lutris v0.5.12:</p>
-<ul>
-<li>Add support for Xbox games with the xemu runner.</li>
-<li>Fix authentication issue with Origin.</li>
-<li>Fix authentication issue with EGS.</li>
-<li>Fix authentication issue with Ubisoft Connect when 2FA is enabled.</li>
-<li>Fix integration issue with GOG.</li>
-<li>Add Discord Rich Presence integration.</li>
-<li>Add ability to extract icons from Windows executables.</li>
-<li>Allow setting custom cover art.</li>
-<li>Re-style configuration dialogs.</li>
-</ul>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4751354881670240916gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4751354881670240916gol1.png"/></a></p>
-<p>More on the <a href="https://lutris.net/" target="_blank">official site</a>. The <a href="https://flathub.org/apps/details/net.lutris.Lutris" target="_blank">Flatpak</a> package is not yet up to date but they're working on it.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/lutris-v0512-out-now-fixing-origin-epic-store-ubisoft-connect-gog/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/lutris-v0512-out-now-fixing-origin-epic-store-ubisoft-connect-gog/</guid>
-      <pubDate>Mon, 05 Dec 2022 11:50:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1490329322id21982gol.jpg" type="image/jpeg"/>
-      
-      <category>Apps</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Amnesia: The Bunker from Frictional Games announced</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Frictional Games have another Amnesia game coming next year with Amnesia: The Bunker that puts a gun in your hand with a single bullet, and it also features a semi-open world.</p>
-<p>In a press release they said "For the first time, players are equipped with high levels of freedom to impact gameplay, choosing their playstyle as they explore at will this semi-open world. With hardly any scripted events, and constant tension brought about by an ever-present threat, it is up to each player to finesse their approach to survival.".</p>
-<p>Certainly sounds interesting and a major departure from the previous games with "emergent gameplay and sandbox elements" thrown into the mix. You'll be walking through a dark WWI bunker as a French soldier, armed with a revolver gun and a noisy dynamo flashlight.</p>
-<div class="hidden_video" data-video-id="OxLSsDmtj-U"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/fac03ee69bb3acff7af79579d3672421.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/OxLSsDmtj-U" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Player choice - emergent gameplay in a sandbox horror survival experience</li>
-<li>Unscripted environment - objects, threats, and resources, change in every playthrough</li>
-<li>Adaptive horrid threats - an ever-present gruesome creature that stalks the player.  </li>
-<li>Tactile immersion - all-new levels of interaction with the world through puzzle-solving and tool handling</li>
-<li>Absorbing yet terrifying tale - experience hell on earth in a fictional appalling story</li>
-<li>Engrossing atmosphere and tension - enhanced lighting effects and carefully designed sound effects for a real horror experience. </li>
-</ul>
-</blockquote>
-<p>I reached out to Frictional to see if it will have a Native Linux build like all their previous games, however their official email bounced back and didn't accept it and no reply to a Twitter DM as of yet. So stay tuned. If it doesn't, then hopefully Steam Play Proton will run it nicely.</p>
-<p>You can follow it on <a href="https://store.steampowered.com/app/1944430/Amnesia_The_Bunker/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/amnesia-the-bunker-from-frictional-games-announced/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/amnesia-the-bunker-from-frictional-games-announced/</guid>
-      <pubDate>Mon, 05 Dec 2022 11:34:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1734427996id21981gol.jpg" type="image/jpeg"/>
-      
-      <category>Horror</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Steam</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve are finally fixing buying games on Steam Deck that need a pop-up</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>It's hard to imagine for a lot of people, buying games directly on Steam Deck has been <a href="https://steamcommunity.com/app/1675200/discussions/1/3186864655193756275/" target="_blank">broken</a> this long but Valve are finally looking to fix it.</p>
-<p>The issue is that certain methods of payment, and probably only in certain countries, require a special pop-up browser window to do some security checks. It was broken at release of the Steam Deck, with an <a href="https://www.gamingonlinux.com/2022/03/steam-deck-update-fixes-buying-games-for-some-touch-input-on-digital-keyboard-theme/" target="_blank">update</a> attempting to fix it back in March, which only fixed it for some.</p>
-<p>In a fresh Steam Deck Beta Client <a href="https://store.steampowered.com/news/app/1675200/view/3647382900914478171" target="_blank">Update</a>, the single note is that it "Fixed Store payment methods which require popup windows for processing not working".</p>
-<p>Nice to see but that sure took a lot longer than expected for something so essential. It was frustrating, as every time I forgot it was broken, I then had to wait to buy it on my desktop because it was stuck since it didn't fully go through.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/valve-are-finally-fixing-buying-games-on-steam-deck-that-need-a-pop-up/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/valve-are-finally-fixing-buying-games-on-steam-deck-that-need-a-pop-up/</guid>
-      <pubDate>Mon, 05 Dec 2022 11:20:54 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck OS 3.4 Preview adds support for 8BitDo Ultimate Wireless controller dongle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve put out a small and sweet <a href="https://store.steampowered.com/news/app/1675200/view/3647382450221491185" target="_blank">update</a> for Steam Deck OS (SteamOS) 3.4 Preview, which adds in support for the <a href="https://www.8bitdo.com/ultimate-2.4g-wireless-controller/" target="_blank">8BitDo Ultimate Wireless</a> controller dongle.</p>
-<p>While it already worked in the Bluetooth mode, it didn't without a load of tinkering with the dedicated low-latency dongle. Nice to see Valve move quickly to support third-party pads like this. Must admit my own temptation to pick one up has increased. Seems like a nice controller, especially nice with the back paddles too.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10476617121670059670gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10476617121670059670gol1.png"/></a></p>
-<p>Other additions in the update include rumble support to the built-in hid-steam controller driver and they fixed a USB crash when using certain controllers such as the Hori Fighting Stick α.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/steamos-34-preview-adds-support-for-8bitdo-ultimate-wireless-controller-dongle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/steamos-34-preview-adds-support-for-8bitdo-ultimate-wireless-controller-dongle/</guid>
-      <pubDate>Sat, 03 Dec 2022 09:59:34 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1327383562id21979gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam</category>
-      
-      <category>SteamOS</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Google are now processing Stadia Hardware refunds</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>With the closing of Stadia fast approaching, Google has already run through plenty of refunds for <a href="https://www.gamingonlinux.com/2022/11/stadia-refunds-are-starting-to-begin-no-word-on-controller-bluetooth-yet/" target="_blank">Stadia game purchases</a> and now they're moving onto Stadia Hardware refunds.</p>
-<p>I have now received refunds for all of my Stadia game purchases, and just recently a fresh email entered my inbox from Google about Stadia Hardware. In the email it reiterated the January 18th, 2023 shutdown date and mentioned Google Store purchases of Stadia Hardware will be refunded "within two weeks" (from November 30th). So if you're waiting on the refund, you might want to keep an eye out soon.</p>
-<p>For any issues on refunds, you'll get an email on how to proceed with an alternative account to get the money.</p>
-<p>Stadia have a bunch of info in <a href="https://support.google.com/stadia/answer/12790109" target="_blank">their FAQ</a>.</p>
-<p>Did you game on Stadia and want to move progress over? So far <a href="https://twitter.com/UbisoftSupport/status/1575922767593078793" target="_blank">Ubisoft</a>, <a href="https://twitter.com/DestinyBulletn/status/1575558847250411521" target="_blank">Bungie</a>, <a href="https://twitter.com/IOInteractive/status/1575818132492636162" target="_blank">I/O Interactive</a>, <a href="https://support.cdprojektred.com/en/cyberpunk/stadia/sp-technical/issue/1709/where-are-my-game-saves-located-1" target="_blank">CD Projekt Red</a>, <a href="https://twitter.com/ItsColourTV/status/1582853316727275522" target="_blank">Rockstar Games</a> and <a href="https://9to5google.com/2022/10/20/elder-scrolls-online-stadia/" target="_blank">Bethesda</a> have already shared plans on that but it's down to each developer and publisher to sort it.</p>
-<p>What a massive shame for a once promising Cloud Gaming service, Google just had no real idea of what they were doing or what the industry actually truly wanted. Thankfully, Cloud Gaming fans still have the likes of GeForce NOW, Xbox Cloud Gaming and Luna.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/google-are-now-processing-stadia-hardware-refunds/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/google-are-now-processing-stadia-hardware-refunds/</guid>
-      <pubDate>Fri, 02 Dec 2022 22:25:25 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/stadia.jpg" type="image/jpeg"/>
-      
-      <category>Stadia</category>
-      
-      <category>Cloud Gaming</category>
-      
-      <category>Google</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Team Fortress 2 update adds VScript and you can now run Linux inside it</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Not only has Team Fortress 2 been updated but it seems like quite a huge one thanks to the addition of VScript, and you can now run Linux inside it. That's right, TF2 came to Linux back in 2013 and now TF2 itself can run Linux. What a time to be alive.</p>
-<p>Developer Joshua Ashton, who also works on DXVK and VKD3D-Proton (part of Steam Play Proton) has been busy it seems, helping out with other Valve projects like TF2 adding in VScript which enables map makers to do some pretty wild stuff. Here's the main <a href="https://www.teamfortress.com/post.php?id=166703" target="_blank">changes</a>:</p>
-<blockquote>
-<ul>
-<li>Implemented VScript
-<ul>
-<li>VScript allows mappers to embed script code (Squirrel3) into maps. This system is already being used for L4D2 and CS:GO maps.
-<ul>
-<li>Interface with entities and the world like regular Hammer logic</li>
-<li>Simplify things that were previously incredibly complicated/tedious in Hammer logic</li>
-<li>Interact with and control bots, bosses, player attributes, entities, and game state closely, allowing for enhanced, modified or entirely custom game modes</li>
-<li>React to game events and change the outcome of certain things, such as damage calculations</li>
-</ul>
-</li>
-<li>More technical info about VScript for Team Fortress 2 is available on the Valve Developer Community
-<ul>
-<li>https://developer.valvesoftware.com/wiki/VScript</li>
-<li>https://developer.valvesoftware.com/wiki/List_of_TF2_Script_Functions</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Added the ability to change the skybox dynamically using the skybox_swapper entity or SetSkyboxTexture</li>
-<li>Added support for custom MvM upgrade files packed into the map</li>
-<li>Added point_worldtext, an entity that can show text dynamically, with support for multiple SDF (signed distance field) fonts, multiple colors and a rainbow mode</li>
-<li>Exposed several movement related ConVars</li>
-<li>Implemented support for func_monitor and cameras</li>
-<li>Implemented logic_eventlistener for listening to game events from Hammer logic</li>
-<li>Added the ability to pass parameters and delay to MvM populator actions</li>
-<li>Improved compile time with VRAD</li>
-<li>Special thanks to Jakub and everyone on the GitHub VScript Mega Issue for testing, providing feedback, and submitting requests</li>
-</ul>
-</blockquote>
-<p>Ashton even did a little video, to show Linux running <em>inside</em> Team Fortress 2 and you can find the code behind it on <a href="https://github.com/Joshua-Ashton/riscv-vscript" target="_blank">GitHub</a>. It's quite fascinating, and probably means it won't be long before someone puts Doom inside TF2 if they haven't already somehow.</p>
-<div class="hidden_video" data-video-id="zi6osAtyaio"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/666b13d3111c84afd0755519ddf95929.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/zi6osAtyaio" target="_blank">See video</a></div></div>
-<p>Want to actually know more about it and what it can possibly do? YouTuber shounic, who I imagine you already know if you're into TF2, did a video on the Beta version of this which you can see below and explains it many times better than I could hope to for you:</p>
-<div class="hidden_video" data-video-id="VwEJUGwzm7U"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f9ad243c31cc1a86925177b6fe384f92.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/VwEJUGwzm7U" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/team-fortress-2-update-adds-vscript-and-you-can-now-run-linux-inside-it/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/team-fortress-2-update-adds-vscript-and-you-can-now-run-linux-inside-it/</guid>
-      <pubDate>Fri, 02 Dec 2022 22:11:15 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/278919150id21977gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>FPS</category>
-      
-      <category>Free Game</category>
-      
-      <category>Update</category>
-      
-    </item>
-    
-    <item>
-      <title>NVIDIA puts out Security Bulletin for various driver issues</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>NVIDIA today put out an official <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5415" target="_blank">Security Bulletin</a>, noting multiple flaws found in their Windows and Linux drivers. The good news is that drivers are already out that fix the problems, which I'll detail below.</p>
-<p>Here's all those that affect Linux, brace yourself, there's quite a few of them:</p>
-<blockquote>
-<p>CVE‑2022‑34670 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer handler, where an unprivileged regular user can cause truncation errors when casting a primitive to a primitive of smaller size causes data to be lost in the conversion, which may lead to denial of service or information disclosure.</p>
-<p>CVE‑2022‑42263 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer handler, where an Integer overflow may lead to denial of service or information disclosure.</p>
-<p>CVE‑2022‑34676 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer handler, where an out-of-bounds read may lead to denial of service, information disclosure, or data tampering.</p>
-<p>CVE‑2022‑42264 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer, where an unprivileged regular user can cause the use of an out-of-range pointer offset, which may lead to data tampering, data loss, information disclosure, or denial of service.</p>
-<p>CVE‑2022‑34674 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer handler, where a helper function maps more physical pages than were requested, which may lead to undefined behavior or an information leak.</p>
-<p>CVE‑2022‑34678 - NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer, where an unprivileged user can cause a null-pointer dereference, which may lead to denial of service.</p>
-<p>CVE‑2022‑34679 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer handler, where an unhandled return value can lead to a null-pointer dereference, which may lead to denial of service.</p>
-<p>CVE‑2022‑34680 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer handler, where an integer truncation can lead to an out-of-bounds read, which may lead to denial of service.</p>
-<p>CVE‑2022‑34677 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer handler, where an unprivileged regular user can cause an integer to be truncated, which may lead to denial of service or data tampering.</p>
-<p>CVE‑2022‑34682 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer, where an unprivileged regular user can cause a null-pointer dereference, which may lead to denial of service.</p>
-<p>CVE‑2022‑42257 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an integer overflow may lead to information disclosure, data tampering or denial of service.</p>
-<p>CVE‑2022‑42265 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an integer overflow may lead to information disclosure or data tampering.</p>
-<p>CVE‑2022‑34684 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an off-by-one error may lead to data tampering or information disclosure.</p>
-<p>CVE‑2022‑42254 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an out-of-bounds array access may lead to denial of service, data tampering, or information disclosure.</p>
-<p>CVE‑2022‑42258 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an integer overflow may lead to denial of service, data tampering, or information disclosure.</p>
-<p>CVE‑2022‑42255 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an out-of-bounds array access may lead to denial of service, information disclosure, or data tampering.</p>
-<p>CVE‑2022‑42256 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an integer overflow in index validation may lead to denial of service, information disclosure, or data tampering.</p>
-<p>CVE‑2022‑34673 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an out-of-bounds array access may lead to denial of service, information disclosure, or data tampering.</p>
-<p>CVE‑2022‑42259 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where an integer overflow may lead to denial of service.</p>
-</blockquote>
-<p>There's also a few for NVIDIA VGPU and they affect Tesla too. There's also some that only affect Windows, this isn't a Linux-specific thing but a lot of them are just in their Linux drivers.</p>
-<p>As mentioned, the good news is that drivers are already out that solve them. For GeForce users you want minimum driver versions 525.60.11, 515.86.01, 510.108.03, 470.161.03 or 390.157. For RTX, Quadro or NVS you want a minimum driver version of 525.60.11, 515.86.01, 510.108.03, 470.161.03 or 390.157. To put it very simply, if you're not using the very latest NVIDIA drivers in whatever series — update now, all previous versions are vulnerable to the drivers released on November 22nd.</p>
-<p>Going by the bulletin page, the issues were public on November 28 but they've seemingly only just actually put out the security bulletin email.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/nvidia-puts-out-security-bulletin-for-various-driver-issues/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/nvidia-puts-out-security-bulletin-for-various-driver-issues/</guid>
-      <pubDate>Fri, 02 Dec 2022 18:37:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Meta</category>
-      
-      <category>NVIDIA</category>
       
     </item>
     
