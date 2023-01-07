@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-01-06 07:24:55.790359</pubDate>
+    <pubDate>2023-01-07 07:24:32.780955</pubDate>
 
     
     <image>
@@ -18,6 +18,205 @@
     </image>
 
     
+    
+    <item>
+      <title>ASUS stick an OLED display into a controller, Dell want to reinvent it</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A new real controller from ASUS is on the way with the ROG Raikiri Pro that features an OLED display, plus Dell get weird with the Concept Nyx from CES 2023.</p>
+<p>Let's start with the real stuff shall we? ASUS have made the <a href="https://rog.asus.com/controllers/rog-raikiri-pro-model/" target="_blank">ROG Raikiri Pro</a>, while it's for Xbox you know how it goes — Linux ends up supporting it anyway (and Steam Input no doubt will too). This has a built-in OLED display for some reason, with customizable animations, status indicators and more. It can also connect via USB-C, 2.4 GHz RF or Bluetooth, multiple buttons on the back and triggers that can have the triggers with short or full range modes.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18168874211673020319gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18168874211673020319gol1.png"/></a></p>
+<p>Could be quite interesting? Although all the special extras would no doubt need someone to come up with a way to do it all on Linux too.</p>
+<p>Then we have the really weird with the <a href="https://dell.alienwarearena.com/leveling-up-concept-nyx-with-new-controller-concept-and-game-changing-enhancements/" target="_blank">Dell Concept Nyx</a>. It's not actually a real thing, although they have made and shown off some prototypes at CES. This is not really a controller you would use with a normal PC or even on another console, as it's designed to go along with the whole <a href="https://dell.alienwarearena.com/concept-nyx/" target="_blank">Concept Nyx system</a> which is sort-of like a shared server that does everything for multiple people across different screens.</p>
+<p>With the Concept Nyx Game Controller they added a finger print sensor to the middle of it, added dual-thumb scroll wheels to the bottom of it, put some paddles on the back and replaced the D-pad with what they call an Omnipad.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2989209361673021098gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2989209361673021098gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4981465201673021111gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/4981465201673021111gol1.jpg"/></a></p>
+<p>With the finger print reader, they suggest it's a way for it to quickly read your print and load everything up. Not exactly wild, since finger print readers exist for PC right now but on a controller to quickly get you into something when sharing the same controller with others? Interesting.</p>
+<p>Dell also said they're experiment with "haptics and self-adjusting variable resistance thumb sticks" that can be adjusted to your liking, or be specific to each game. The touch pad sounds a little bit more like what we've seen on the Steam Deck, giving you access to a lot more options that can be configured.</p>
+<p>The way the talk about it honestly makes it sound like something from a sci-fi film, with it being able to do entirely unique split-screen modes with each side having a different game and more. Sounds like something that in reality, will never become a real product, at least not any time soon.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/asus-stick-an-oled-display-into-a-controller-dell-want-to-reinvent-it/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/asus-stick-an-oled-display-into-a-controller-dell-want-to-reinvent-it/</guid>
+      <pubDate>Fri, 06 Jan 2023 16:08:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/937510142id22138gol.jpg" type="image/jpeg"/>
+      
+      <category>Hardware</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Google open sourced CDC File Transfer from the ashes of Stadia</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>As Google hover over the nuke from orbit button on Stadia, they're at least releasing some of it as open source like CDC File Transfer.</p>
+<p>Noted on their <a href="https://github.com/google/cdc-file-transfer" target="_blank">GitHub page</a>, it's a way for syncing and streaming files from Windows to Linux. The question is: why another way to sync files? There's tons of ways that already exist. Well, they explained that too.</p>
+<p>Developers could use scp, but they noted it was "impractical" especially with more people working from home as it "always copies full files". So they made cdc_rsync and cdc_stream to help developers who quickly iterate on games. Something that could potentially be useful for developers checking out stuff on Steam Deck too.</p>
+<p>CDC RSync is designed for syncing files from Windows to Linux but optimized for existing files possibly being on the end machine. They go into detail on why and how it's different to rsync, including showing it performing better for this specific case because of how they split up files into chunks differently at variable sizes. While CDC Stream is for streaming files from Windows to Linux, they say it's "conceptually" similar to sshfs but "optimized for read speed".</p>
+<p><em>For anyone interested in trying it out, they provide release builds for Ubuntu.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/google-open-sourced-cdc-file-transfer-from-the-ashes-of-stadia/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/google-open-sourced-cdc-file-transfer-from-the-ashes-of-stadia/</guid>
+      <pubDate>Fri, 06 Jan 2023 15:32:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/stadia.jpg" type="image/jpeg"/>
+      
+      <category>Stadia</category>
+      
+      <category>Game Dev</category>
+      
+      <category>Google</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Vampire Survivors dev poncle outlines 2023 plans</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Vampire Survivors, probably the most popular game on Steam Deck that keeps being top of the most played list, is set for a busy 2023.</p>
+<p>In an overview post on <a href="https://store.steampowered.com/news/app/1794680/view/3637250052875666496" target="_blank">Steam</a>, the developer goes on talk about why the big game engine port upgrade didn't happen last year. Part of that was due to the mobile release, with many full clones appearing "with stolen code, assets, data, progression" that forced their hand. They also struggled to find a partner for the release who liked their non-predatory monetization model for it.</p>
+<div class="hidden_video" data-video-id="aS7JqyHdQQA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c0b0d16ad23a843acd6bd4e927d422e7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/aS7JqyHdQQA" target="_blank">See video</a></div></div>
+<p>One point they mentioned about the new upcoming game engine port, is that they need to develop a little launcher to let you pick what version to load with what options. Steam Deck was mentioned here as a potential challenge, as they naturally want to keep it working nicely. They <a href="https://www.gamingonlinux.com/2022/09/vampire-survivors-10-coming-october-20th-seems-a-linux-port-is-still-planned/" target="_blank">previously mentioned</a> this is where a proper new Native Linux port will happen too (it has one now although not advertised and not fully supported).</p>
+<p><em>Side-note: if they just want a way to switch between the old and new, Steam has a built-in launch option feature for that.</em></p>
+<p>Work continues on the port though, with plenty of things still needed to be done in the new version, and support for the existing game built on JavaScript will continue. Eventually they will fully move everything and everyone to the new version though. One of their big problems seems to be physics, where it behaved very differently so they had to start over on some parts of it.</p>
+<p>They also plan to make more content DLC, given how the first had such a great reception and they're also working on things not related to Vampire Survivors now too.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/vampire-survivors-dev-poncle-outlines-2023-plans/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/vampire-survivors-dev-poncle-outlines-2023-plans/</guid>
+      <pubDate>Fri, 06 Jan 2023 15:07:12 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/979701537id22136gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>System Shock remake due to release in March</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Nightdive Studios have now set a launch window for System Shock, with it planned to release in March. That's if it doesn't see yet another delay.</p>
+<p>Shared in an update on <a href="https://www.kickstarter.com/projects/1598858095/system-shock/posts/3699917" target="_blank">Kickstarter</a>, they said: "After our return from Gamescom we’ve been hesitant to share anything so as not to spoil any remaining surprises we have in store. However, we’ve picked a few last things to share before our quickly approaching launch window of March, 2023.".</p>
+<p>Not the first time of course they've announced something, which they touched on and mentioned how the scope and scale of it has changed and with Prime Matter joining them as publisher it's helped them to focus on  "quality-of-life improvements, bug fixing, and localization support" which are the last steps towards the release. They also said they're "incredibly proud" of what they've done.</p>
+<p>In the post they also shared a few more small clips and art.</p>
+<p>This was the last full proper teaser from 6 months ago:</p>
+<div class="hidden_video" data-video-id="n2b1zQkYsyM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/88798b17fd085590a77bb652a5f02089.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/n2b1zQkYsyM" target="_blank">See video</a></div></div>
+<p>As far as I can see, they've still been pretty silent about the Native Linux support that was mentioned on the original crowdfunding campaign. A lot has changed since then though. Hopefully it will work okay in Proton if they're no longer doing that.</p>
+<p>You can follow it on <a href="https://www.gog.com/en/game/system_shock" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/482400/System_Shock/" target="_blank">Steam</a>. </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/system-shock-remake-due-to-release-in-march/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/system-shock-remake-due-to-release-in-march/</guid>
+      <pubDate>Fri, 06 Jan 2023 14:51:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/941373599id22135gol.jpg" type="image/jpeg"/>
+      
+      <category>Action</category>
+      
+      <category>Cyberpunk</category>
+      
+      <category>FPS</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Batman Rogue City is a fun looking GZDoom fan game</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Here's a fun retro fan game for you! Batman Rogue City released in December for GZDoom and looks like a criminal-kicking good time. As a fan game, it of course has nothing to do with DC Comics but you know what these big companies can be like, they might get itchy fingers over someone using their names and designs.</p>
+<p>The <a href="https://www.moddb.com/mods/batman-rogue-city" target="_blank">Mod DB page</a> doesn't really give it much of a description, but a nice touch is a full PDF manual included with the download that expands on the story and more.</p>
+<p>It has over 30 villains and their henchmen, 8 action-packed levels, 8 weapons, and you even get to ride in the Batmobile.</p>
+<div class="hidden_video" data-video-id="PrRY1t1-6u0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/70679834975be1daa5c666781c05cd56.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/PrRY1t1-6u0" target="_blank">See video</a></div></div>
+<p>Think I'm going to have fun with this one…</p>
+<p>Seems to work fine on Linux, with the Flatpak version of GZDoom and putting the .pk3 file in the right place running this command launched it just fine:</p>
+<p><code class="inline-code">flatpak run org.zdoom.GZDoom -file /home/liam/.var/app/org.zdoom.GZDoom/.config/gzdoom/BatmodRaycastRCv2.pk3</code></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/batman-rogue-city-is-a-fun-looking-gzdoom-fan-game/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/batman-rogue-city-is-a-fun-looking-gzdoom-fan-game/</guid>
+      <pubDate>Fri, 06 Jan 2023 14:39:34 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1746086852id22134gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Free Game</category>
+      
+      <category>Mod</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Deck Beta update, plus easy Flatpak updates and more HDR teasing</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Three fun bits for you today including Steam desktop and Steam Deck Beta updates, an easy way to update third-party Flatpaks on Steam Deck in Gaming Mode and another HDR teaser from Valve.</p>
+<p>Here's a video overview going over all of it, with the plain details below the video:</p>
+<div class="hidden_video" data-video-id="ZhtK92WNJZs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ac462d68323d110bfeecee053d741557.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ZhtK92WNJZs" target="_blank">See video</a></div></div>
+<p>Firstly, the Beta updates for Steam desktop and Steam Deck starting with the <a href="https://store.steampowered.com/news/app/1675200/view/3646258449571615797" target="_blank">Steam Deck Client Beta</a>:</p>
+<blockquote>
+<p class="plain-list-title">General</p>
+<ul>
+<li>Fixed reboot loop when failing to update a broken Steam install</li>
+<li>Changed selected launch option reminder to show three times per user instead of continuing to show every time the user returns to the game details.</li>
+<li>Fixed issues w/ digital navigation getting stuck on text boxes when using a physical keyboard</li>
+</ul>
+<p class="plain-list-title">New Big Picture Mode</p>
+<ul>
+<li>Fixed issue viewing the hardware survey web page after submitting results</li>
+<li>Added option to turn off controllers when exiting BPM</li>
+<li>Implemented Steam Controller dongle pairing</li>
+<li>Added controller setting dropdown for controller idle turn off timeout</li>
+<li>Prevented launch option reminder from appearing on top of other UI while a game is launching</li>
+<li>UI Digital Navigation Key Repeats are faster</li>
+</ul>
+<p class="plain-list-title">Steam Input</p>
+<ul>
+<li>Added support for the ThrustMaster eSwap PRO Controller Xbox</li>
+<li>Fixed long delay at startup when Razer keyboards are connected</li>
+<li>Show controller settings in app properties game for non-Steam games</li>
+<li>Fixed crash with games that use "Windows Gaming Input"</li>
+<li>Gyro Calibration Rework: Calibration Calculates an anti-drift value as normal, but also records Gyro and Accelerometer noise while stationary, so that Auto Calibration (toggle) is more discerning</li>
+</ul>
+<p class="plain-list-title">Linux</p>
+<ul>
+<li>Fix instances of Steam freezing or crashing in desktop mode.</li>
+<li>Fix closing non-steam shortcuts via the overlay when two or more are running.</li>
+</ul>
+</blockquote>
+<p>The desktop Steam Beta <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/3653013849007354968" target="_blank">update</a> is largely the same, except for a note about it fixing an issue with "duplicate streaming dialogs appearing on Mac &amp; Linux".</p>
+<p>For Steam Deck owners who have installed third-party software in desktop mode via the Discover app, there's an easy way to get Gaming Mode to run updates for those Flatpak packages using <a href="https://github.com/SteamDeckHomebrew/decky-loader" target="_blank">Decky Loader</a> thanks to the Flatpak Updates plugin. How to actually use Decky Loader and the Flatpak Updater plugin is noted in the above video, with the plain instructions on the Decky Loader link. I do love all these plugins — so useful!</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18692684121672999597gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18692684121672999597gol1.jpeg"/></a></p>
+<p>Finally, Valve developer Pierre-Loup Griffais gave another teaser on <a href="https://twitter.com/Plagman2/status/1611149273894387715/photo/1" target="_blank">Twitter</a> in regards to HDR support noting: "HDR working on a docked Deck connected to a current-gen LG OLED through HDMI! Again still needs a ton of work but making good progress.", with this shot included:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8430299801672999500gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8430299801672999500gol1.jpeg"/></a><br/>
+<em>Image Credit: Pierre-Loup Griffais</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/steam-deck-beta-update-plus-easy-flatpak-updates-and-more-hdr-teasing/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/steam-deck-beta-update-plus-easy-flatpak-updates-and-more-hdr-teasing/</guid>
+      <pubDate>Fri, 06 Jan 2023 10:07:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2028797933id22133gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>NVIDIA driver v525.78.01 out fixing bugs and supports RTX 4070 Ti</title>
@@ -4006,222 +4205,6 @@ However, it feels worth it to start enabling some games we know to work, so that
       <category>Meta</category>
       
       <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Chained Echoes is as close as you can get to retro-styled RPG perfection</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I am rarely this enthusiastic about games, especially retro-styled games because so many miss the mark in numerous ways but thankfully Chained Echoes is just brilliant.</p>
-<p>"Chained Echoes is a story-driven JRPG where a group of heroes travel around the vast continent of Valandis to bring an end to the war between its three kingdoms. In the course of their journey, they will travel through a wide array of diverse landscapes spanning from wind-tanned plateaus and exotic archipelagos to sunken cities and forgotten dungeons."</p>
-<p>Funded on Kickstarter back in 2019, it's out now along with the Native Linux version and as far as I can tell, it's awesome. It performs great, it looks bright and inviting with an art style that truly makes my eyes glow and the music as well — everything in this comes together so nicely. From the first few moments in the game, I knew I was going to love it.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3964507121670872248gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3964507121670872248gol1.jpg"/></a></p>
-<p>Honestly, not only is this shaping up to be one of my favourite games of the year, it has the makings to be eventually classed as a true classic in its own right.</p>
-<p>Modern features and retro styles fused together in a way that makes me want to keep coming back for more. It has good pacing, you can pretty much save wherever you want and the battles are a lot of fun too with multiple mechanics that makes them interesting. From the various abilities you get, to the overdrive system that has you plan your moves to stay inside the green bar and not overheat your team — and failure isn't annoying here, just try the battle again and you heal between battles. What joy.</p>
-<p>Here's some Steam Deck footage, spoilers within:</p>
-<div class="hidden_video" data-video-id="ir0Rr_64S6A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/953adbf2cb4354ea895526b008e42584.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ir0Rr_64S6A" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>30 - 40 hours of play time.</li>
-<li>Fast paced turn-based battles.</li>
-<li>No random encounters; enemies can be seen running around.</li>
-<li>Tons of items to be looted, stolen or crafted.</li>
-<li>Complex skill and equipment system.</li>
-<li>Customize your own airship.</li>
-<li>Travel and fight by foot or in your Mech.</li>
-<li>16-bit SNES style graphics.</li>
-<li>Music inspired by PSX RPGs.</li>
-</ul>
-</blockquote>
-<p>Don't sleep on this, could easily be my GOTY.</p>
-<p>Available to buy on <a href="https://www.gog.com/en/game/chained_echoes" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/1229240/Chained_Echoes/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/chained-echoes-is-as-close-as-you-can-get-to-retro-styled-rpg-perfection/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/chained-echoes-is-as-close-as-you-can-get-to-retro-styled-rpg-perfection/</guid>
-      <pubDate>Mon, 12 Dec 2022 19:58:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/758429212id22033gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>GOG</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Humble Bundle are bringing back popular limited bundles throughout this week</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Humble Bundle have announced that throughout this week, they will be sticking up older popular bundles for a very limited time and limited amount of purchases so keep an eye for some fun hits to stock up on.</p>
-<p>The first is the <a href="https://www.humblebundle.com/games/2k-megahits-holiday-encore?partner=gamingonlinux" target="_blank">2K Megahits collection</a> that contains XCOM Ultimate Edition (XCOM + XCOM 2 + Chimera Squad), X-COM Complete Pack (the classics), Borderlands 3, Civilization VI, BioShock: The Collection, Mafia: Definitive Edition, Railroad Tycoon 2 Platinum, Railroad Tycoon 3, WWE 2K Battlegrounds, CivCity: Rome, Hidden &amp; Dangerous, Hidden and Dangerous 2, Army Men RTS and Duke Nukem Forever Collection. For this bundle they do note that some keys aren't yet available but will be restocked sometime soon.</p>
-<p>So it's a little like Fanatical's Bundle Fest that they do each year. Seems like a nice easy way to build up your game collection this week ready for the holiday season. </p>
-<p>Keep an eye on their <a href="https://www.humblebundle.com/bundles?partner=gamingonlinux" target="_blank">Bundles Page</a> each day for something different.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/humble-bundle-are-bringing-back-popular-limited-bundles-throughout-this-week/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/humble-bundle-are-bringing-back-popular-limited-bundles-throughout-this-week/</guid>
-      <pubDate>Mon, 12 Dec 2022 19:31:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/289473461id22034gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>GOG are giving away Ghost of a Tale during their 2022 Winter Sale</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Tis the season to buy more games to keep warm and all that. The <a href="https://www.gog.com/en" target="_blank">GOG Winter Sale</a> is live, and you can get a free copy of <a href="https://www.gog.com/en/game/ghost_of_a_tale" target="_blank">Ghost of a Tale</a>.</p>
-<p>You have about 70 hours at time of writing to claim it, so don't sit around twiddling your thumbs or you might miss it. What is it? Ghost of a Tale is an action-RPG game in which you play as Tilo, a mouse and minstrel caught up in a perilous adventure. The game takes place in a medieval world populated only by animals, and puts an emphasis on immersion and exploration. It features stealth elements, disguises, conversations with allies and enemies, and quests.</p>
-<p>As for the Winter Sale you know the drill — lots going for cheap! A mixture of Native Linux games, and those you can run with Wine with help from the likes of <a href="https://lutris.net/" target="_blank">Lutris</a>, <a href="https://usebottles.com/" target="_blank">Bottles</a> or <a href="https://heroicgameslauncher.com/" target="_blank">Heroic</a>.</p>
-<p>Some quick links for you:</p>
-<ul>
-<li><a href="https://www.gog.com/en/games?publishers=devolver-digital" target="_blank">Devolver Digital</a></li>
-<li><a href="https://www.gog.com/en/games?publishers=cd-projekt-red" target="_blank">CD Projekt Red</a></li>
-<li><a href="https://www.gog.com/en/games?publishers=disney" target="_blank">Disney</a></li>
-<li><a href="https://www.gog.com/en/games?publishers=paradox-interactive" target="_blank">Paradox Interactive</a></li>
-<li><a href="https://www.gog.com/en/games?publishers=sega" target="_blank">SEGA</a></li>
-<li><a href="https://www.gog.com/en/games?publishers=11-bit-studios" target="_blank">11 bit studios</a></li>
-<li><a href="https://www.gog.com/en/games?publishers=thq-nordic-gmbh" target="_blank">THQ Nordic</a></li>
-<li><a href="https://www.gog.com/en/games?publishers=warner-bros-interactive-entertainment" target="_blank">Warner Bros</a></li>
-<li><a href="https://www.gog.com/en/promo/2022_winter_sale_bestsellers" target="_blank">Best Sellers</a></li>
-<li><a href="https://www.gog.com/en/promo/2022_winter_sale_classics" target="_blank">Good Old Games</a></li>
-</ul>
-<p>Along with this sale, GOG has also integrated <a href="https://www.gog.com/en/news/gog_2022_update_6_opencritic_reviews_on_our_gamecards" target="_blank">OpenCritic</a> to their game pages to give you another way to see what to expect from each game. GOG say it's being "live tested" so it might not yet appear for some of you.</p>
-<p>See the <a href="https://www.gog.com/en/promo/2022_winter_sale" target="_blank">Winter Sale</a> for all the deals.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/gog-are-giving-away-ghost-of-a-tale-during-their-2022-winter-sale/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/gog-are-giving-away-ghost-of-a-tale-during-their-2022-winter-sale/</guid>
-      <pubDate>Mon, 12 Dec 2022 15:53:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/62492302id22031gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Sale</category>
-      
-      <category>GOG</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>The Last of Us Part I on Steam Deck gets support from Valve and Naughty Dog Co-President</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Seems like the upcoming Steam release of The Last of Us Part I should work well on Steam Deck, as not only are Valve already teasing it, the Co-President of developer Naughty Dog talked about it too.</p>
-<p>On the Valve side, a keen eye might spot a short clip of it on the official Steam Deck <a href="https://www.steamdeck.com/en/" target="_blank">website</a>. Look for a friendly Giraffe, but to help you along it's here:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9123578921670851868gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9123578921670851868gol1.png"/></a></p>
-<p>Showing it off like that, even just as a brief teaser shows Valve clearly have confidence in it which makes me happy. It's still to this day one of my favourite single-player story experiences. If you missed the Steam release announcement, I noted it in my <a href="https://www.gamingonlinux.com/2022/12/lots-of-good-stuff-announced-at-the-game-awards-2022-m-roundup/" target="_blank">The Game Awards 2022 round-up</a> and there's a lot of good stuff coming.</p>
-<p>On top of that, Neil Druckmann the Co-President of Naughty Dog said on <a href="https://twitter.com/Neil_Druckmann/status/1601694903724953600" target="_blank">Twitter</a> "Ellie and Joel will grace the Steam Deck… don’t worry!". Sounds like it's a first-party port for Windows too (the Steam Deck runs it through <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>), with Naughty Dog doing it directly.</p>
-<p>Exciting times!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/the-last-of-us-part-i-on-steam-deck-gets-support-from-valve-and-naughty-dog-co-president/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/the-last-of-us-part-i-on-steam-deck-gets-support-from-valve-and-naughty-dog-co-president/</guid>
-      <pubDate>Mon, 12 Dec 2022 13:35:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1421230195id22030gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Steam</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Linux kernel 6.1 is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Linus Torvalds has officially released the Linux kernel 6.1, and as usual there's absolutely tons of new features and fixes.</p>
-<p>From the <a href="https://lkml.org/lkml/2022/12/11/206" target="_blank">announcement</a> "So here we are, a week late, but last week was nice and slow, and I'm much happier about the state of 6.1 than I was a couple of weeks ago when things didn't seem to be slowing down.". Torvalds also mentioned he will "be pretty strict about the merge window rules" as the plan is to have a calm holiday season.</p>
-<p>As for some of what's new:</p>
-<ul>
-<li>Initial support for the Rust language.</li>
-<li>Btrfs file system performance improvements.</li>
-<li>Various Intel Arc graphics improvements.</li>
-<li>More work for AMD RDNA3 GPUs.</li>
-<li>Intel Meteor Lake Thunderbolt support.</li>
-<li>Support for more sound systems.</li>
-<li>Support for Xbox One Elite Controller paddles.</li>
-<li>Better support of Nintendo clone controllers.</li>
-<li>Initial DualSense Edge controller support</li>
-<li>Lots more the list is very long.</li>
-</ul>
-<p>For more in-depth info you can check out the usual <a href="https://www.phoronix.com/review/linux-61-features" target="_blank">Phoronix</a> report and <a href="https://lwn.net/Articles/910312/" target="_blank">LWN Part 1</a> and <a href="https://lwn.net/Articles/910608/" target="_blank">Part 2</a> or wherever else you generally get your kernel news from. The full changelog is available over <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1" target="_blank">here</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/linux-kernel-61-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/linux-kernel-61-is-out-now/</guid>
-      <pubDate>Mon, 12 Dec 2022 13:24:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
-      
-      <category>Kernel</category>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Free 2D space exploration and action sim Naev has a big new Beta</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Naev is a reasonably well known free and open source 2D space sim, one that's about to get a whole lot bigger with the v0.10 release now in Beta (specifically, it's on its second Beta).</p>
-<p>The developers mentioned that they've spent a lot of time modernizing and rewriting lots of the legacy code, which should also help improve performance. While this Beta has a ton of new content, it also sounds like it's going to be the basis for some really fun sounding additions in future too.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10375689241670850293gol1.jpg"/></p>
-<p>Some of what's new in this Beta release include:</p>
-<blockquote>
-<ul>
-<li>14 new ships.</li>
-<li>New space anomolies.</li>
-<li>Lots of new places to explore.</li>
-<li>Support for different difficulty settings.</li>
-<li>Support for setting ships as escorts and thus player fleets.</li>
-<li>Asteroid rework:
-<ul>
-<li>Asteroids no longer randomly explode.</li>
-<li>Asteroid scanning is no longer binary, but distance-based.</li>
-<li>New mini-game based mining.</li>
-<li>More diversity in types with different rarity.</li>
-</ul>
-</li>
-<li>45 new missions.</li>
-<li>NPCs revamped to be more flexible with many new messages.</li>
-<li>Tons of quality of life improvements, to make the game feel better ovall.</li>
-<li>The list <a href="https://github.com/naev/naev/releases/tag/v0.10.0-beta.1" target="_blank">goes on and on</a>.</li>
-</ul>
-</blockquote>
-<p>You can find it on the <a href="https://naev.org/" target="_blank">official site</a>, <a href="https://naev.itch.io/naev" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/598530/Naev/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/free-2d-space-exploration-and-action-sim-naev-has-a-big-new-beta/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/free-2d-space-exploration-and-action-sim-naev-has-a-big-new-beta/</guid>
-      <pubDate>Mon, 12 Dec 2022 13:05:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1883448035id22028gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Beta</category>
-      
-      <category>Free Game</category>
-      
-      <category>Open Source</category>
       
     </item>
     
