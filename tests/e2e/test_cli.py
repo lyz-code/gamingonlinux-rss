@@ -3,12 +3,12 @@
 import re
 from datetime import datetime
 from email.utils import parsedate_to_datetime
+from pathlib import Path
 
 import feedparser
 import pytest
 from click.testing import CliRunner
 from dateutil import parser, tz
-from py._path.local import LocalPath
 
 from gamingonlinux_rss.entrypoints.cli import cli
 from gamingonlinux_rss.version import __version__
@@ -31,10 +31,9 @@ def test_version(runner: CliRunner) -> None:
     )
 
 
-def test_corrects_one_file(runner: CliRunner, tmpdir: LocalPath) -> None:
+def test_corrects_one_file(runner: CliRunner, tmp_path: Path) -> None:
     """Correct the source code of a file."""
-    # ignore: call to untyped join method, they don't have type hints
-    rss_file = str(tmpdir.join("rss.xml"))  # type: ignore
+    rss_file = str(tmp_path / "rss.xml")
     rss_url = "https://gamingonlinuxrss.com/rss.xml"
     now = datetime.now(tz=tz.tzlocal())
 
