@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-01-09 07:26:02.543807</pubDate>
+    <pubDate>2023-01-10 07:25:19.223181</pubDate>
 
     
     <image>
@@ -18,6 +18,297 @@
     </image>
 
     
+    
+    <item>
+      <title>Building a Retro Linux Gaming Computer - Part 20: The Antediluvian World</title>
+      <author>Hamish</author>
+      <description><div class="content group e-content">
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-19-sinsational/" target="_blank">Part 19: SiNsational</a></strong></p>
+<p><em>Atlantis: The Underwater City</em> is an animated film released in 2001 directed by Alessandro Bulath and distributed by Sterling Entertainment Group under their UAV brand. The cynic in me suspects the film was only produced to sow market confusion in the hope of cashing in on some of the hype surrounding the release of <em>Atlantis: The Lost Empire </em>that same year<em>,</em> which was a very common practice for budget animation studios during the Disney Renaissance.</p>
+<p>Few of those knock off straight to video movies ever got the companion CD-ROM treatment, but it was quite common for legit Disney films to receive them at the time. Sold as interactive storybooks, these took the form of narrated picture books which went over the story from the film while allowing for a certain degree of user agency, typically by allowing a selection of quirky animations to play by clicking around with the mouse.</p>
+<p>UAV must have wanted in on this craze as well, and so <em>Atlantis: The Underwater City - Interactive Storybook</em> was born. Even when compared to the source material it is clear that little effort was put into its production, with bare bones animation and crude art direction marring a title marketed as transporting children to a memorable fantasy world. About the only reason to save the software from the bargain bin that it was intended for is the boast of Linux support.</p>
+<p>Inside the jewel case the booklet instructs Linux users to mount the CD-ROM, change to the directory, and then launch the Atlantis_for_Linux.sh shell script. This will probe for a number of common Linux web browsers of the time including Mozilla, Konqueror, Galeon, and Netscape, before attempting to launch the browser.html web page located on the root directory of the CD-ROM. A nice effort, but they could have just called the $BROWSER global variable instead.</p>
+<p>Unfortunately the developers forgot to specify the present working directory, leaving the script to just fall flat on its face. Adding $PWD in the path before invoking browser.html would have made all the difference, a flaw which should have been obvious long before they burned the shell script to the CD-ROM. Thankfully the README.html page does at least include a working link for launching on other computer systems such as Linux and BeOS, so that is something.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13165353911672949546gol6.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13165353911672949546gol6.jpg"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10779695971672882248gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/10779695971672882248gol6.png"/></a></p>
+<p>The <em>Interactive Storybook</em> functions through the magic of Macromedia Flash, which I installed for use with Mozilla using the flash-plugin-7.0.69-1.rh7.rf.i386.rpm package from freshrpms. This allowed the storybook portion to work, but some of the included minigames proved to have rendering errors, with the Atlantis Bricks and Atlantis Blocks games both being crippled to the point of being unplayable. I suspect this is due to incompatibilities between Flash versions.</p>
+<p>Alongside Macromedia Flash the <em>Interactive Storybook</em> also depends on Apple QuickTime for playing the full movie, with it just being a dead link for me on Linux. Of course, there is nothing stopping you from searching the data directory on the CD-ROM for the atlantis.mov file and playing that through your favourite Linux movie player of choice. The README.html page suggests using XAnim but I settled for watching the bitcrushed file through MPlayer instead.</p>
+<p>At this point, playing the <em>Interactive Storybook</em> on Linux is not far removed from having no support for the platform at all. While it is nice that they acknowledged that everything they were doing could in theory be done on Linux, very little effort was put into making it be a smooth experience in practice. I am reminded of the demands by some to have more DOSBox wrappers available for Linux on storefronts, when without proper care they could easily wind up being like this.</p>
+<p>Having now gone to the trouble of finding and installing Macromedia Flash on Red Hat Linux 7.3 it might be an idea go back and explore some higher quality Flash games and amusements, as there are a number of them that I do have some actual nostalgic attachment towards. For the moment I think I have gotten my fill by messing about with this however, not helped by the fact Macromedia Flash runs a little heavy on Dianoga.</p>
+<p>Although it appears to have never been mentioned on their website, the credits reveal that the developer of the <em>Interactive Storybook </em>was none other than BlackHoleSun Software, a familiar name to those in the Linux gaming scene at the time. As one of the first Indie studios to truly embrace cross-platform development, even the mention of BeOS in the README.html page makes a lot more sense now, given who we are dealing with.</p>
+<p><strong>Carrying on in Part 21: Fluffy Bunnies</strong></p>
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-20-the-antediluvian-world/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-20-the-antediluvian-world/</guid>
+      <pubDate>Mon, 09 Jan 2023 19:32:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1876703877id22062gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Editorial</category>
+      
+      <category>Family Friendly</category>
+      
+      <category>Flash</category>
+      
+    </item>
+    
+    <item>
+      <title>Multiplayer voxel RPG &#39;Veloren&#39; v0.14 out with musical instruments, more graphics work</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Version 0.14 of the Multiplayer voxel RPG Veloren is out now, adding in some fun sounding additions while they work towards giving you more to do. It's still very much a sandbox right now, as a lot of the work going into Veloren is still building up the tech behind the game.</p>
+<p>As for what it is and what it aims to be: it's inspired by the likes of Cube World, Legend of Zelda: Breath of the Wild, Dwarf Fortress and Minecraft and mixes elements of all together but it's still early days. It's free, open source and supports Linux. Promising, but still needs some more <em>stuff and things</em> for players to actually experience.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9565751471673277433gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9565751471673277433gol1.jpg"/></a></p>
+<p>Some of what's new in this release includes:</p>
+<blockquote>
+<ul>
+<li>Added a Craft All button and new recipes.</li>
+<li>Musical instruments can now be crafted, looted and played.</li>
+<li>Pets can now be traded with.</li>
+<li>Added redwood and dead trees.</li>
+<li>SeaChapel, greek/latin inspired dungeon for ocean biome coasts.</li>
+<li>Doors now animate opening when entities are near them.</li>
+<li>Added screen-space reflection and refraction shaders.</li>
+<li>Added reflection quality setting.</li>
+<li>FxUpscale AA mode for higher quality graphics at reduced internal resolutions.</li>
+<li>NPCs now move to their target's last known position.</li>
+</ul>
+</blockquote>
+<p>See more on the <a href="https://veloren.net/" target="_blank">official site</a>.</p>
+<p>You can see their full release party stream below:</p>
+<div class="hidden_video" data-video-id="Ry9Z8Nr6RHM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/061340b1f63f59bf3854873aecd64036.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Ry9Z8Nr6RHM" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/multiplayer-voxel-rpg-veloren-v014-out-with-musical-instruments-more-graphics-work/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/multiplayer-voxel-rpg-veloren-v014-out-with-musical-instruments-more-graphics-work/</guid>
+      <pubDate>Mon, 09 Jan 2023 15:17:32 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/66563753id22146gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Casual</category>
+      
+      <category>Exploration</category>
+      
+      <category>Free Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Pixel-art RTS game TFC: The Fertile Crescent adds neutral settlements and unit stances</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>What might seem like a pixel-art Age of Empires on the surface, the RTS game TFC: The Fertile Crescent is much more than that and they recently released a major update for the game. It's currently in Early Access with this latest update being the second major milestone for the game.</p>
+<p>This update was released last month and added into the game neutral settlements, giving you and your opponents more to fight over as gaining control of them will give you various bonuses. Sounds like a fun addition to fight for control of the map and get going early on. Nice to see a bit more depth to it.</p>
+<p>You can also set your people across three different stances now including holding ground, being defensive or aggressive. On top of that some of the UI was reworked to be less confusing, enemy AI improvements and various smaller improvements for this RTS gem.</p>
+<div class="hidden_video" data-video-id="e7vpkCzfQ_g"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a5ea21029f6300e87f3bd161658fd400.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/e7vpkCzfQ_g" target="_blank">See video</a></div></div>
+<p>You can <a href="https://store.steampowered.com/app/1674820/TFC_The_Fertile_Crescent/" target="_blank">buy it on Steam</a> and it has Native Linux support.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/pixel-art-rts-game-tfc-the-fertile-crescent-adds-neutral-settlements-and-unit-stances/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/pixel-art-rts-game-tfc-the-fertile-crescent-adds-neutral-settlements-and-unit-stances/</guid>
+      <pubDate>Mon, 09 Jan 2023 14:17:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/887804610id22145gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Pixel Graphics</category>
+      
+    </item>
+    
+    <item>
+      <title>Druidwalker is an upcoming peaceful card-based roguelike about exploring</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Coldwild Games developers on Luna's Fishing Garden, Merchant of the Skies, Lazy Galaxy 2 and more have announced another peaceful game with Druidwalker.</p>
+<p>They say it's a peaceful roguelike that allows players to relax and enjoy the journey, without the fear of failure or death. You take on the role of a powerful druid preparing the forest for the approaching winter. You explore various hand-drawn landscapes through cards you flip about with no pressure along with some peaceful instrumental music.</p>
+<div class="hidden_video" data-video-id="WRLv0E7Cldk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/08cebc8419abf89dc62979ecbf9bec84.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/WRLv0E7Cldk" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<ul>
+<li>Traverse the forest, encounter the animals; move at your own pace, there is no rush.</li>
+<li>A combination of hand-drawn images with traditional instrumental music.</li>
+<li>Peaceful roguelike: you cannot lose here; there are no deaths, only breaks at the bonfire.</li>
+<li>A short, relaxing experience without pressure.</li>
+</ul>
+<p>You can <a href="https://store.steampowered.com/app/2231060/Druidwalker/" target="_blank">follow it on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/druidwalker-is-an-upcoming-peaceful-card-based-roguelike-about-exploring/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/druidwalker-is-an-upcoming-peaceful-card-based-roguelike-about-exploring/</guid>
+      <pubDate>Mon, 09 Jan 2023 14:03:30 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/107676716id22144gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Casual</category>
+      
+      <category>Exploration</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>OBS Studio recording software v29.0 is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>OBS Studio, the very useful and popular recording and livestream software has a new release available with <a href="https://github.com/obsproject/obs-studio/releases/tag/29.0.0" target="_blank">version 29.0</a> out now. As usual there's plenty of features that only currently work on Windows, some that will hopefully come to Linux eventually when OBS have people to work on them.</p>
+<p>Some of the new features include:</p>
+<blockquote>
+<ul>
+<li>Added support for the AMD AV1 Encoder for the RX7000 series GPUs on Windows.</li>
+<li>Added support for the Intel AV1 Encoder for Arc GPUs on Windows.
+<ul>
+<li>Note: CQP is available but not fully supported.</li>
+</ul>
+</li>
+<li>Added support for the Intel HEVC Encoder on Windows.</li>
+<li>Added an upward compressor filter.</li>
+<li>Added a 3-band equalizer filter.</li>
+<li>Added support for native HEVC and ProRes encoders on macOS, including P010 and HDR.</li>
+<li>Added support for macOS Desk View.</li>
+<li>Added update channels for opting into receiving beta/release-candidate builds to Windows.
+<ul>
+<li>Work is still underway to get everything ready on the server side, updating via the built-in updater may not be available until later in the OBS 30.0 beta-testing period.</li>
+</ul>
+</li>
+<li>Websockets updated to 5.1.0, which has a number of bug fixes, UI improvements, and new stream reconnect events.</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15644620271673272338gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15644620271673272338gol1.jpg"/></a><br/>
+<em>OBS Studio v29.0 capturing a Steam Deck</em></p>
+<p>Some other improvements include:</p>
+<blockquote>
+<ul>
+<li>The Replay Buffer's memory limit is now set to 75% of installed system RAM rather than fixed to 8GB.</li>
+<li>Added media key support in Linux.</li>
+<li>Various improvements to NVIDIA Video and Audio filters, including a Mask Refresh slider and support for temporal processing, which provides better quality masking.</li>
+<li>Improved Display Capture screen naming &amp; saving on Windows; indexes should now match regardless of Mode, and reconnected displays should show the correct monitor.
+<ul>
+<li>Note: This does mean existing Display Capture sources will be blank until manually configured, to avoid showing the wrong display.</li>
+</ul>
+</li>
+<li>Added support for encryption and authentication for SRT and RIST outputs.</li>
+<li>Disabled ScreenCaptureKit Display &amp; App capture on macOS 12 due to various issues; users should either update to macOS 13 or use the existing Screen Capture source.</li>
+<li>Removed the automatic numbering on Multiview labels.</li>
+<li>Added the ability to mute individual browser docks.</li>
+<li>Added the ability to right click and 'Inspect' individual browser docks.</li>
+<li>Changed the default Simple Output NVENC preset to P5 for better compatibility &amp; performance.</li>
+<li>Added support for higher refresh rates in the Video Capture Device source on Windows.</li>
+<li>Added the Apple VT Hardware encoder to the Auto Configuration Wizard.</li>
+<li>Improved FFmpeg VA-API enablement by directly using Libva to check device capabilities.</li>
+<li>Various minor UX/accessibility tweaks in the UI.</li>
+<li>Raised the speed at which dynamic bitrate recovers after a drop.</li>
+<li>Audio should now be automatically captured for most capture card brands using the Video Capture Device source on Windows.</li>
+<li>Added a slide counter to the Source Toolbar when an Image Slide Show is selected.</li>
+</ul>
+</blockquote>
+<p>On a personal note, I'm hoping this release will fix an audio bug I've been hitting recently where everything is fine for me with game captures looking great and for me sounding good, but the recording has audio that just constantly stutters. It's been a problem for a while, and has made quite a few of my recordings unusable. If you've encountered it and know a fix, do let me know in the comments.</p>
+<p>I also seem to have to do a weird little dance with my capture card recently. A first load of OBS never seems to have it working. Sometimes I have to unplug the capture card and plug it back in for OBS to see it properly — it's been getting quite annoying but it could also be Fedora-specific issues with V4L2.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/obs-studio-recording-software-v290-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/obs-studio-recording-software-v290-is-out-now/</guid>
+      <pubDate>Mon, 09 Jan 2023 13:55:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1157691513id22143gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Developer of No Man&#39;s Sky put up their old Joe Danger playable in your browser</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Joe Danger was the first commercial game release from No Man's Sky developer Hello Games, and as part of keeping it alive they've put it up online free to play in your browser.</p>
+<p>You get to play with Joe Danger Touch and Infinity with "improved visuals, on Mac/PC/Chrome/Linux, dynamic resolution, mouse and keyboard support" according to the <a href="https://twitter.com/NoMansSky/status/1611321944472956928" target="_blank">Twitter</a> announcement.</p>
+<p>Last year they revived the classic for the Apple App Store after noting an email they received from the mother of a child with Autism about it who loved it, and so now they're doing the same for PC players and in an expanded tweet they said: "It's sad that many games slowly die, and we've been trying to think of a way to let Joe live on forever, and reach the most people possible. This is hopefully one way of doing that. We owe this and more to him.".</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11180323931673270978gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11180323931673270978gol1.jpeg"/></a></p>
+<p>You can play it online <a href="https://joedangerthegame.com/" target="_blank">here</a>.</p>
+<p>Another way developers can keep old games alive is by open sourcing them, especially if they no longer plan to sell them, or even if they do want to continue selling them they can just open up the game code. Hopefully over time more will do that.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/developer-of-no-mans-sky-put-up-their-old-joe-danger-playable-in-your-browser/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/developer-of-no-mans-sky-put-up-their-old-joe-danger-playable-in-your-browser/</guid>
+      <pubDate>Mon, 09 Jan 2023 13:30:03 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1349257339id22142gol.jpg" type="image/jpeg"/>
+      
+      <category>Browser Game</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Left 4 Dead from Valve has a prototype leaked online</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Tis the season of leakage apparently. Seems a prototype of Left 4 Dead 2 has made its way online and you can even try it.</p>
+<p>Available on the <a href="https://gamebanana.com/mods/420879" target="_blank">GameBanana</a> modding platform for Counter-Strike: Source, Zombie City was apparently created by either Valve or Turtle Rock Studios and was part of a map sources folder leak that went out and seemingly the starting point of Left 4 Dead going by the name of Terror-Strike.</p>
+<p>The modder who uploaded it mentioned they did some tweaks to make it more playable like texture fixes. </p>
+<p>While it obviously doesn't compare with the real finished product or the sequel, it's always fun to see what the early prototype versions looked like so we can get a small glimpse behind the development curtain. Some footage on it you can find below:</p>
+<div class="hidden_video" data-video-id="Pd3ozUYaIcg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7b7ece2bd94cbe1cac654c6c3d78571f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Pd3ozUYaIcg" target="_blank">See video</a></div></div>
+<p>There sure has been a lot of leaks lately huh like the original <a href="https://twitter.com/BuildEnginePics/status/1610626880297701376" target="_blank">Blood</a>, various <a href="https://twitter.com/IRLskellydude/status/1609562544779272193" target="_blank">Duke Nukem</a> games, <a href="https://twitter.com/juanlurve/status/1609063069208186883" target="_blank">another</a> Duke Nukem, a <a href="https://twitter.com/Mr_Rebs_/status/1607185999687303169" target="_blank">Halo 3 Alpha</a> build and more.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/left-4-dead-from-valve-has-a-prototype-leaked-online/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/left-4-dead-from-valve-has-a-prototype-leaked-online/</guid>
+      <pubDate>Mon, 09 Jan 2023 13:12:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/648188623id22141gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Meta</category>
+      
+      <category>Mod</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam breaks more records with 33 million online, and over 10 million gaming</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve started the year off rather nicely by breaking two of their own records recently with users online and users actually gaming.</p>
+<p>They have a new all-time peak for concurrent online users as 33,078,963 and 10,284,568 playing games. This is only the second time we've seen over 10 million people in-game, the first being the day before on January 7th but these numbers from January 8th are the new records as shown by <a href="https://steamdb.info/app/753/graphs/" target="_blank">SteamDB</a>.</p>
+<p>The current top 5 most played games are:</p>
+<ul>
+<li>Counter-Strike: Global Offensive.</li>
+<li>Dota 2.</li>
+<li>Goose Goose Duck.</li>
+<li>PUBG: BATTLEGROUNDS.</li>
+<li>Apex Legends.</li>
+</ul>
+<p>Goose Goose Duck the social deduction game (that takes a look of inspiration <em>directly</em> from Among Us) being a complete newcomer releasing in October last year, and suddenly seeing the player count rise from late November where it went up like a rocket to see a 24 hour peak of 640,324. It being free to play probably helps a lot, and it runs on Linux with Proton.</p>
+<p><em>This and more was covered in <a href="https://youtu.be/8uXGYrldJmg" target="_blank">my News Flip #2 video</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/steam-breaks-more-records-with-33-million-online-and-over-10-million-gaming/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/steam-breaks-more-records-with-33-million-online-and-over-10-million-gaming/</guid>
+      <pubDate>Mon, 09 Jan 2023 13:00:19 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
     
     <item>
       <title>Proton Experimental updated and Proton Next (7.0-6) out for Linux and Steam Deck</title>
@@ -1203,7 +1494,7 @@ However, it feels worth it to start enabling some games we know to work, so that
 <p>This was followed by the next level "Xenomorphic Laboratory" producing broken save files, but once I got past this things proceeded fine up until the penultimate "Munt Phoenix" level. Here the scripting broke again, with the enemies standing stock still instead of attacking me, and mission critical items not spawning in. This I could resolve by just restarting the level, letting me go on to defeat the final boss, although the final MPEG cutscene aborted after a few seconds.</p>
 <p>Performance wise Windows 98 averaged 40.7 FPS compared to 33.1 FPS under Linux using High settings, with both versions benefiting from turning Tessellation and Dynamic Lighting off. Doing so brought the Linux average up to 37.3 FPS, although this was still dwarfed by the 51.2 FPS seen on Windows 98 with the same settings. Windows benefits too by having access to the more polished <em>Wages of Sin</em> mission pack, which sadly was never ported over to Linux.</p>
 <p>SiN would also later be adapted into an animated film, the inverse of what gave us the software I am to cover next. Plenty of games released for Linux could be considered adolescent or even childish, but software designed with actual children in mind can be few and far between, at least in the commercial or retail space. Time for some family friendly entertainment, even if I do come away from the experience questioning the sincerity of the publisher's intentions.</p>
-<p><strong>Carrying on in Part 20: The Antediluvian World</strong></p>
+<p><strong>Carrying on in <a href="https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-20-the-antediluvian-world/" target="_blank">Part 20: The Antediluvian World</a></strong></p>
 <p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
@@ -3946,306 +4237,6 @@ However, it feels worth it to start enabling some games we know to work, so that
       <category>Meta</category>
       
       <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck OS 3.4 gets a Death Stranding fix, plus new Client Beta and Firmware update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Three different bits of news to cover for Steam Deck updates today, as Valve pushed out three different upgrades. Here's all that's new.</p>
-<p>Firstly, for players of Death Stranding Director's Cut, Valve has put out a <a href="https://store.steampowered.com/news/app/1675200/view/3637250052887652007" target="_blank">fix</a> into SteamOS 3.4 Preview to work around it crashing when you move the right thumbstick on the map to tilt it. Always nice to see Valve fix up things <a href="https://www.gamingonlinux.com/2022/12/death-stranding-directors-cut-has-an-annoying-issue-that-can-reboot-your-steam-deck/" target="_blank">I highlighted previously</a>.</p>
-<p>The next one is an <a href="https://store.steampowered.com/news/app/1675200/view/3637250052890759226" target="_blank">update</a> for the Stable version of the Steam Deck OS (SteamOS 3.3.3), which has a "hotfix to enable compatibility with future input firmware". You'll see an update but there's no user-visible changes included right now.</p>
-<p>Finally the Steam Deck Client Beta was <a href="https://store.steampowered.com/news/app/1675200/view/3605725422746687645" target="_blank">updated</a> for December 13th to include these changes:</p>
-<blockquote>
-<p class="plain-list-title">General</p>
-<ul>
-<li>Fixed issue where a browser opened by a game was sticking around after closing the overlay</li>
-<li>Fixed launch options dialog not closing when cancelling game launch</li>
-<li>Various fixes to make the UI scale better in higher resolutions</li>
-<li>Fixed issue where the virtual keyboard would continuously be made visible after exiting a game</li>
-<li>Added option to start in windowed mode under Settings =&gt; Display =&gt; Big Picture Mode =&gt; Windowed</li>
-</ul>
-<p class="plain-list-title">Desktop Mode</p>
-<ul>
-<li>Fixed several issues related to popup dialogs being sized incorrectly</li>
-<li>Fixed issue where game hover UI would sometimes get stuck in the upper left corner of the UI</li>
-<li>Fixed sizing of app details DLC hover</li>
-<li>Fixed regression where clicking on DLC &amp; "view all" in the dlc rollup not navigate to the store</li>
-<li>Fixed "Move" and "Uninstall" not working in content management UI.</li>
-</ul>
-<p class="plain-list-title">Steam Input</p>
-<ul>
-<li>Added direct navigation to controller inputs and modes from the preview screen</li>
-<li>Fixed the XBox layout preview page layout having some incorrect items and missing others</li>
-<li>Added a specific XBox Elite layout preview page</li>
-<li>Added a specific Switch Pro layout preview page</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/steam-deck-os-34-gets-a-death-stranding-fix-plus-new-client-beta-and-firmware-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/steam-deck-os-34-gets-a-death-stranding-fix-plus-new-client-beta-and-firmware-update/</guid>
-      <pubDate>Wed, 14 Dec 2022 11:35:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Beta</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Here&#39;s how to get The Witcher 3 working on Steam Deck after the next-gen update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The massive free next-gen <a href="https://store.steampowered.com/news/app/292030/view/3642879552277333733" target="_blank">update</a> for The Witcher 3 is here, and out of the box now on Steam Deck it will just crash when you try to load into the game. Here's how to sort it out.</p>
-<p><em>Thankfully, it's actually quite easy.</em></p>
-<p>Currently the problem seems to be all the updates to the DirectX 12 mode, it will just crash to an error screen after loading and it will do this every time.</p>
-<p>To get around that in the new update: in the launcher, next to the play button is a drop-down box where you can select DirectX 11 and that will get it working again. Another option for those that want it, is in the game Properties -&gt; Betas, you can select the Classic option to get the pre-patch version of the game. You can select that Beta even before you download it, so you don't end up wasting time with an extra download too.</p>
-<div class="hidden_video" data-video-id="83N1X9m8N_U"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/02d3626f21d432fb3f4083a0beb5ea42.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/83N1X9m8N_U" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/heres-how-to-get-the-witcher-3-working-on-steam-deck-after-the-next-gen-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/heres-how-to-get-the-witcher-3-working-on-steam-deck-after-the-next-gen-update/</guid>
-      <pubDate>Wed, 14 Dec 2022 11:12:58 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/763837177id22042gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>HOWTO</category>
-      
-      <category>Open World</category>
-      
-    </item>
-    
-    <item>
-      <title>Wine on Wayland sounds like it&#39;s coming along nicely</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Collabora have given an <a href="https://www.collabora.com/news-and-blog/news-and-events/wine-on-wayland-2022-updatye-more-games-more-apps-more-fun.html" target="_blank">end of year update</a> on how the work towards running the Windows compatibility layer on Wayland is coming along and it sounds good.</p>
-<p>Their focus has been to keep up with upstream Wine development, which involved "splitting the driver into a PE and Unix part, updating it for the latest internal driver APIs, and making preparations to support WoW64". A big improvement is that it now supports cross-process rendering, something required for Chromium/CEF applications. On top of that they've also worked on improved support for the linux-dmabuf v4 Wayland protocol (aka dmabuf-feedback), that "allows compositors to dynamically send information about optimal formats and modifiers, e.g., depending on the surface presentation mode (fullscreen vs windowed)" plus many other ehancements.</p>
-<p>On the Wine Development <a href="https://www.winehq.org/mailman3/hyperkitty/list/wine-devel@winehq.org/thread/5GQWFP7MC6GQTL2KLAV6F6RUMOE3QULI/" target="_blank">mailing list</a>, developer Alexandros Frantzis also touched on when to expect the code in upstream Wine:</p>
-<blockquote>
-<p>Last year, due to the extensive ongoing internal rework in Wine (e.g., win32u), the decision was made to postpone the upstreaming of the Wayland driver until some amount of internal stability had been reached. My impression is that things are a lot more stable now, from the drivers' point of view at least. Is there any upcoming work that people feel would be severely hindered by the upstreaming of the Wayland driver?</p>
-<p>Ideally, I would like to start the upstreaming effort (which I expect will take some time) at some point early next year, after the codebase has been unfrozen. Does this sound reasonable?</p>
-</blockquote>
-<p>They also provided a video to show off the latest work that shows:  Chrome with accelerated cross-process rendering, LibreOffice, Call of Duty 2 (Demo), Crayon Physics Deluxe, Dagon, Factorio, The Last Express and Phoning Home.</p>
-<div class="hidden_video" data-video-id="lZ-MK72Kyp8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e85fb7de59a5ee2595b40fab75689758.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/lZ-MK72Kyp8" target="_blank">See video</a></div></div>
-<p>Why is this important? It's because Wayland is gradually replacing X11, and having Wine run on it natively without another compatibility layer in between like XWayland will hopefully improve performance and reduce another layer of complexities to go through for both users and developers.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/wine-on-wayland-sounds-like-its-coming-along-nicely/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/wine-on-wayland-sounds-like-its-coming-along-nicely/</guid>
-      <pubDate>Tue, 13 Dec 2022 18:31:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-      <category>Wine</category>
-      
-    </item>
-    
-    <item>
-      <title>AMD Radeon RX 7000 launched today for the select few able to beat the crowds</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>AMD has today released the Radeon RX 7000 series GPUs starting with the Radeon RX 7900 XTX and Radeon RX 7900 XT.</p>
-<p>Stock was, as expected, very limited. I won't go over every single bit again, which I <a href="https://www.gamingonlinux.com/2022/11/amd-announce-rx-7900-xtx-and-rx-7900-xt-plus-fsr3-teased/" target="_blank">covered previously</a> but to reiterate some of what to expect from these cards:</p>
-<blockquote>
-<ul>
-<li><strong>AMD RDNA 3 Architecture</strong> – Featuring an advanced chiplet design, rearchitected compute units and second-generation AMD Infinity Cache technology, RDNA 3 architecture delivers up to 54% more performance per watt than RDNA 2.</li>
-<li><strong>Chiplet Design</strong> – The world’s first gaming GPU with a chiplet design delivers up to 15% higher frequencies at up to 54% better power efficiency.</li>
-<li><strong>Generational Uplift – </strong>The flagship AMD Radeon RX 7900 XTX delivers considerably higher 4K performance than the Radeon RX 6950 XT.</li>
-<li><strong>DisplayPort 2.1 Support –</strong> The industry’s only high-end gaming graphics cards to support DisplayPort 2.1 technology with UHBR 13.5, enabling high-refresh 4K (up to 480Hz) or 8K (up to 165Hz) gaming on next-gen displays.</li>
-</ul>
-</blockquote>
-<p>Going by some Linux benchmarks <a href="https://www.phoronix.com/review/rx7900xt-rx7900xtx-linux" target="_blank">Phoronix</a> did, it seems like a pretty nice set of cards. Although, they didn't have the NVIDIA 4000 series to test against, but at least it shows AMD is a clear winner against even the 3090, which is good news for me as I have an NVIDIA 2080 Ti and I was lucky enough to beat the crowds at Overclockers to bag a Radeon RX 7900 XTX as a personal purchase (I rarely get sent any hardware). <strong>Update</strong>: correction, no 7900 XTX for me as <a href="https://twitter.com/gamingonlinux/status/1603073266364579842" target="_blank">Overclockers UK over-sold on it</a>.</p>
-<p>You can find some other reviews by the likes of <a href="https://www.youtube.com/watch?v=Yq6Yp2Zxnkk" target="_blank">JayzTwoCents</a>, <a href="https://www.youtube.com/watch?v=TBJ-vo6Ri9c" target="_blank">LinusTT</a> and <a href="https://www.youtube.com/watch?v=4UFiG7CwpHk" target="_blank">Hardware Unboxed</a>.</p>
-<p>Want to find where to possibly by one when they're back in stock? Check the <a href="https://www.amd.com/en/where-to-buy/radeon-rx-graphics" target="_blank">AMD website</a>, although they weirdly don't list the UK, apparently we no longer exist. For people in the UK you can try the likes of <a href="https://www.scan.co.uk/search?q=Radeon+RX+7900+XTX" target="_blank">Scan</a>, <a href="https://www.ebuyer.com/search?q=Radeon+RX+7900+XTX" target="_blank">Ebuyer</a>, <a href="https://www.overclockers.co.uk/?query=Radeon%2520RX%25207900%2520XTX" target="_blank">Overclockers</a>.</p>
-<p>For me it's especially exciting, as I haven't had an AMD card for a good 10+ years so it's going to be a whole different world. I'm looking forward to seeing what open source graphics drivers can do.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/amd-radeon-rx-7000-launched-today-for-the-select-few-able-to-beat-the-crowds/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/amd-radeon-rx-7000-launched-today-for-the-select-few-able-to-beat-the-crowds/</guid>
-      <pubDate>Tue, 13 Dec 2022 18:00:15 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/624688957id22040gol.jpg" type="image/jpeg"/>
-      
-      <category>AMD</category>
-      
-      <category>Hardware</category>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve has finally fixed the Steam Remote Play audio loss bug on Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Finally, after years of waiting, Valve has now fixed the Steam Remote Play bug that basically made the feature useless for a Linux host.</p>
-<p>Steam Remote Play is a great feature, allowing you to stream your Steam Library from a powerful PC to something smaller like a Steam Deck or anything that can run Steam Link. Especially nice for games the Steam Deck can't run directly, if you have the hardware elsewhere streaming it is a good solution to let you relax on the sofa or in bed with it.</p>
-<p>The problem is that since 2019 there's been <a href="https://github.com/ValveSoftware/steam-for-linux/issues/6749" target="_blank">a bug</a> where after a while, like clockwork, every single time the audio would crackle and then just vanish completely on the system receiving the stream. This bug caused me to seriously consider sitting at my PC one evening recently, just to continue my Death Stranding Director's Cut play-through which runs poorly for me across two different Steam Decks (even with multiple "fixes" tested).</p>
-<p>The latest <a href="https://store.steampowered.com/news/group/4397053/view/3627116953542043543" target="_blank">Steam Client Beta</a> for December 12th has now <u>solved</u> this! I cannot even begin to tell you how happy I am about this. I much prefer chilling on my sofa in the evening with a Steam Deck, so this pleases me.</p>
-<p>Here's the full list of fixes:</p>
-<blockquote>
-<p class="plain-list-title">New Big Picture Mode</p>
-<ul>
-<li>Added support for switching the primary monitor on Windows. See Settings -&gt; Display -&gt; Preferred Display.</li>
-<li>Fixed overlay scaling when resizing game window</li>
-</ul>
-<p class="plain-list-title">Steam Input</p>
-<ul>
-<li>Added support for the Armor-X Pro gamepad in PS4 mode</li>
-<li>Fixed long delay at startup when the Razer Huntsman Elite keyboard is plugged in</li>
-<li>Fixed the Logitech G29 controller showing up as a gamepad instead of a wheel</li>
-</ul>
-<p class="plain-list-title">Remote Play</p>
-<ul>
-<li>Fixed eventual audio crackling and loss when streaming from Linux</li>
-</ul>
-<p class="plain-list-title">Linux</p>
-<ul>
-<li>Fixed crash when taking screenshots through the overlay</li>
-</ul>
-</blockquote>
-<div class="hidden_video" data-video-id="NnisYGZv9QY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/181aa8cd8e1b2c2718e45aa6595ad78c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/NnisYGZv9QY" target="_blank">See video</a></div></div>
-<p>Now they just need to fix up the New Big Picture Mode being completely <a href="https://github.com/ValveSoftware/steam-for-linux/issues/8916" target="_blank">broken</a> on NVIDIA and I'll have even less to moan about.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/valve-has-finally-fixed-the-steam-remote-play-audio-loss-bug-on-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/valve-has-finally-fixed-the-steam-remote-play-audio-loss-bug-on-linux/</guid>
-      <pubDate>Tue, 13 Dec 2022 15:26:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Open source evolution sim Thrive v0.6 out with a day and night cycle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Thrive just continues to impress. It's a free and open source evolution sim built with Godot Engine and version 0.6 is out now with big new helpful features.</p>
-<p>One of the most immediately visible changes is the day and night cycle, so the game as a whole feels a lot more alive in a way. Although it's disabled by default, as it can make it more difficult. There's also now a Thriveopedia, giving you an easy way in-game to read up on all things Thrive. Fossilization is in allowing players to save species in a museum that can be viewed in the Thriveopedia too. Om top of that they also rewrote their launcher to provide "enhanced processing and loading speeds, a sleeker design, and greater versatility".</p>
-<p>More:</p>
-<blockquote>
-<ul>
-<li>Thrive now has a new intro video when you start the game. Make sure you have it enabled in the settings so you can appreciate the exciting view!</li>
-<li>The main menu now features social media icons so that you can easily find a community outlet of your choice.</li>
-<li>Thrive now has a safe-mode triggered crashing, which disables all mods and video playing before restarting.</li>
-<li>Pili now feature a slight damage delay, preventing them from rapidly inflicting a large amount of damage at once.</li>
-</ul>
-</blockquote>
-<p>Update trailer below:</p>
-<div class="hidden_video" data-video-id="tko9CMr7Adk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/477d1b0b45058501a65120c6a455a37f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/tko9CMr7Adk" target="_blank">See video</a></div></div>
-<p>Download free via the <a href="https://github.com/Revolutionary-Games/Thrive-Launcher" target="_blank">launcher</a>, or buy it on <a href="https://revolutionarygames.itch.io/thrive" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1779200/Thrive/?curator_clanid=4218320" target="_blank">Steam</a> to support developer.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/open-source-evolution-sim-thrive-v06-out-with-a-day-and-night-cycle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/open-source-evolution-sim-thrive-v06-out-with-a-day-and-night-cycle/</guid>
-      <pubDate>Tue, 13 Dec 2022 13:43:28 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1482325704id22039gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Free Game</category>
-      
-      <category>Itch.io</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Core Devourer is another for fans of Vampire Survivors and Soulstone Survivors</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Do you love over-the top repeatable action horde games like Soulstone Survivors, Vampire Survivors and all the others? You'll never guess what, another developer is making one that sounds and looks quite good.</p>
-<p>Core Devourer is the name and it's a "sci-fi action-packed roguelite where you hunt down huge hordes of droids and absorb their cores to become the strongest cybernetic being on the planet". The developer emailed it over, and mentioned it's coming to Linux. The boss fights in this one could be fun, as the developer said they each have a unique pattern to learn and overcome, that's on top of the many hordes you're blasting away too.</p>
-<p>You can see their first trailer below:</p>
-<div class="hidden_video" data-video-id="Wm_6xgth2KE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c2a62a4fb8c268e570634f77f807f6e5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Wm_6xgth2KE" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>10+ weapons with special effects.</li>
-<li>7+ procedural maps to explore.</li>
-<li>Hundreds of unique power-ups for your character.</li>
-<li>Many character upgrades.</li>
-<li>Craftable gear.</li>
-</ul>
-</blockquote>
-<p>The full game is due to launch sometime in Q2 2023.</p>
-<p>You can <a href="https://store.steampowered.com/app/2199060/Core_Devourer/" target="_blank">follow it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/core-devourer-is-another-for-fans-of-vampire-survivors-and-soulstone-survivors/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/core-devourer-is-another-for-fans-of-vampire-survivors-and-soulstone-survivors/</guid>
-      <pubDate>Tue, 13 Dec 2022 13:28:38 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1733487036id22038gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Rogue-lite</category>
-      
-    </item>
-    
-    <item>
-      <title>The rather great LEGO Bricktales switches to Vulkan on Linux, adds UI scaling options</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>LEGO Bricktales was already a lot of fun and now perhaps it's even better with some new options and improvements for their Native Linux version too.</p>
-<p>This <a href="https://store.steampowered.com/news/app/1898290/view/3615857706245766322" target="_blank">update</a> went out on December 5th, it should enable it to be even smoother on Linux and thanks to the new UI scaling options, it should work better for people who need things a little big bigger — something I truly wish every modern game release had but for some reason some developers just don't even think about it.</p>
-<p>Here's what's changed in full:</p>
-<blockquote>
-<ul>
-<li>Added UI scaling options.</li>
-<li>Reworked UI for build mode.</li>
-<li>Tutorial improvements.</li>
-<li>Bricks can be nudged horizontally with arrow keys on keyboard when selected.</li>
-<li>Added achievements button to main menu.</li>
-<li>Improved mix of two City music tracks (removed troublesome frequencies).</li>
-<li>Set Vulkan as default graphics API on Linux.</li>
-<li>Minor diorama changes that ensure playability when players use the "Help, I'm stuck" teleport feature.</li>
-<li>Improved controls for touch devices.</li>
-</ul>
-</blockquote>
-<p><em>Plus a few bug fixes I won't note here due to spoilers.</em></p>
-<p>You can see some of my previous footage on LEGO Bricktales below:</p>
-<div class="hidden_video" data-video-id="6KZWVXyYxJM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9ade00aff9ceb2afc0be856d45655fba.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6KZWVXyYxJM" target="_blank">See video</a></div></div>
-<p>Available to buy on <a href="https://af.gog.com/en/game/lego_bricktales?as=1636858786" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/1898290/LEGO_Bricktales/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/the-rather-great-lego-bricktales-switches-to-vulkan-on-linux-adds-ui-scaling-options/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/the-rather-great-lego-bricktales-switches-to-vulkan-on-linux-adds-ui-scaling-options/</guid>
-      <pubDate>Tue, 13 Dec 2022 13:06:55 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/44729356id22037gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Casual</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Puzzle</category>
       
     </item>
     
