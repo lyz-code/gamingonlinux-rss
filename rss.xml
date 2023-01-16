@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-01-15 07:24:38.333274</pubDate>
+    <pubDate>2023-01-16 07:26:25.387495</pubDate>
 
     
     <image>
@@ -18,6 +18,56 @@
     </image>
 
     
+    
+    <item>
+      <title>Proton Experimental fixes Splinter Cell, Final Fantasy XIV Online and Asian text</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve released a fresh build of Proton Experimental on January 13th which include a few notable improvements across various games for Steam Deck and Linux desktop.</p>
+<p>Here's what's included:</p>
+<blockquote>
+<ul>
+<li>Fix A Plague Tale: Innocence showing on-screen keyboard when starting the game on the Steam Deck.</li>
+<li>Fix rendering issues during cutscenes in Tom Clancy's Splinter Cell.</li>
+<li>Fix Japanese keyboard input in Final Fantasy XIV Online.</li>
+<li>Fix Football manager 2023 crashing when trying to return from a player profile.</li>
+<li>Fix experimental regression: Fall in Labyrinth started crashing on some setups.</li>
+<li>Improve CJK characters rendering in many games including NOBUNAGA'S AMBITION: Souzou with Power Up Kit.</li>
+</ul>
+</blockquote>
+<p>Changelog available <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">here</a>. As a reminder (for desktop), you need Mesa 22 / Nvidia drivers 510.47 or newer for Proton Experimental. Steam Deck is fine as Valve control what's needed for you.</p>
+<p><em>Don't forget that <a href="https://www.gamingonlinux.com/2023/01/proton-experimental-updated-and-proton-next-70-6-out-for-linux-and-steam-deck/" target="_blank">Proton Next (7.0-6) is also currently in testing</a>!</em></p>
+<p>As usual a video running through it, with a guide on how to change the Proton version per-game and as a whole for the Steam Deck:</p>
+<div class="hidden_video" data-video-id="AaEIrjgPQjo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/24474d16edd87bdc8fb3f15a3542ad90.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/AaEIrjgPQjo" target="_blank">See video</a></div></div>
+<p><strong>Text guide</strong></p>
+<p>Change it per game (Steam Deck)</p>
+<ul>
+<li>Pick a game and head to the little cog icon on the right.</li>
+<li>Click Properties, then Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<p>On a Linux desktop:</p>
+<ul>
+<li>Right click a game, go to Properties.</li>
+<li>Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/proton-experimental-fixes-splinter-cell-final-fantasy-xiv-online-and-asian-text/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/proton-experimental-fixes-splinter-cell-final-fantasy-xiv-online-and-asian-text/</guid>
+      <pubDate>Sun, 15 Jan 2023 20:36:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/610556042id22176gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Gamescope (used on Steam Deck) adds in some VR support</title>
@@ -4101,43 +4151,6 @@ However, it feels worth it to start enabling some games we know to work, so that
       <category>New Release</category>
       
       <category>NVIDIA</category>
-      
-    </item>
-    
-    <item>
-      <title>Vulkan Video 1.0 released with the Vulkan 1.3.238 spec update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The Khronos Group has <a href="https://www.khronos.org/blog/khronos-finalizes-vulkan-video-extensions-for-accelerated-h.264-and-h.265-decode" target="_blank">announced</a> that Vulkan Video is done and ready, the 1.0 release is out with the Vulkan 1.3.238 spec update and no longer considered provisional.</p>
-<p>It's been a while coming, with the provisional extensions going out back in April 2021. It's used for proper hardware-accelerated video compression and decompression using the Vulkan API and could be quite exciting for lots of different uses. Sure would be great if game developers went for it, instead of using various proprietary video tech.</p>
-<p>The release today includes the finalised extensions after gathering industry feedback and provides functionality to provide fully accelerated H.264 and H.265 decode.</p>
-<p>More codecs are coming though, this is just the start. The announcement mentioned they will release more extensions to provide additional codecs and accelerated encode as well as decode.</p>
-<p>These extensions are final:</p>
-<ul>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_queue.html" target="_blank">VK_KHR_video_queue</a>: common APIs for all video coding operations.</li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_decode_queue.html" target="_blank">VK_KHR_video_decode_queue</a>: common APIs for all video decode operations.</li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_decode_h264.html" target="_blank">VK_KHR_video_decode_h264</a>: H.264 decode-specific capabilities and parameters (promoted from EXT to KHR in this final release).</li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_decode_h265.html" target="_blank">VK_KHR_video_decode_h265</a>: H.265 decode-specific capabilities and parameters (promoted from EXT to KHR in this final release).</li>
-</ul>
-<p>Whereas these are still provisional:</p>
-<ul>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_encode_queue.html" target="_blank">VK_KHR_video_encode_queue</a>: common APIs for all video encode operations.</li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_video_encode_h264.html" target="_blank">VK_EXT_video_encode_h264</a>: H.264 encode-specific capabilities and parameters.</li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_video_encode_h265.html" target="_blank">VK_EXT_video_encode_h265</a>: H.265 encode-specific capabilities and parameters.</li>
-</ul>
-<p>At the <a href="https://www.khronos.org/events/vulkanised-2023" target="_blank">Vulkanised 2023</a> event (February 7-9 in Munich), they will also do a presentation and live demo on Vulkan Video.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/vulkan-video-10-released-with-the-vulkan-13238-spec-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/vulkan-video-10-released-with-the-vulkan-13238-spec-update/</guid>
-      <pubDate>Tue, 20 Dec 2022 13:54:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/vulkan.png" type="image/jpeg"/>
-      
-      <category>Game Dev</category>
-      
-      <category>Meta</category>
-      
-      <category>Vulkan</category>
       
     </item>
     
