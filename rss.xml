@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-01-18 07:26:28.588439</pubDate>
+    <pubDate>2023-01-19 07:26:18.973891</pubDate>
 
     
     <image>
@@ -18,6 +18,270 @@
     </image>
 
     
+    
+    <item>
+      <title>Ubisoft fixed The Division 2 on Steam Deck and Linux desktop </title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Well, that's a nice surprise isn't it. Ubisoft did something good. They released a <a href="https://store.steampowered.com/news/app/2221490/view/3632750190483497136" target="_blank">tiny patch</a>, that enabled Easy Anti-Cheat so The Division 2 now works on Steam Deck and Linux desktop.</p>
+<p>I've tested it on Steam Deck and my Fedora Linux desktop and yep — it works. Although, performance can be pretty <em>rough</em> due to the usual shader compiling issues on your first couple of runs while it stutters about quite fiercly. That <em>will</em> become smoother over time, and eventually (hopefully) Valve will have the shaders to send out with the game when it downloads like they do for others games. </p>
+<p>Note: for Steam Deck players, <u>don't</u> turn on DirectX 12 as the game won't run. If you do, steps are noted in the video below on how to fix it sliced in between some gameplay clips I did earlier (timestamped). Text steps on the fix below:</p>
+<div class="hidden_video" data-video-id="JNrs1QRa6Bc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9dc1abacdd6621584970dc7089a589fc.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/JNrs1QRa6Bc" target="_blank">See video</a></div></div>
+<p><strong>Turn Off DirectX 12 fix:</strong></p>
+<ol>
+<li>Head to this location:
+<ol>
+<li><code class="inline-code">./steam/root/steamapps/compatdata/2221490/pfx/drive_c/users/steamuser/Documents/My Games/Tom Clancy's The Division 2/</code></li>
+</ol>
+</li>
+<li>Edit the <code class="inline-code">state.cfg</code> file in a text editor, find where it says "dx12 = true" and change it to false.</li>
+<li>Reload the game.</li>
+</ol>
+<hr/>
+<p>With it now actually playable, I'm quite hopeful that Valve will have some tricks they can do in Proton to improve performance, on top of the shader stuff mentioned above. Now that it's working, at least they'll be able to investigate it to see if there's anything possibly.</p>
+<p>If you find it actually doesn't still run for you, make sure you have the "Proton EasyAntiCheat Runtime" installed from your Steam Library. Just search for it in Steam, it will be there to install. It's supposed to be automatic, but sometimes not.</p>
+<p>Now if we could just get Destiny 2, Rainbow Six Siege, Rust and Dead By Daylight then I will have a lot less to complain about.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/ubisoft-fixed-the-division-2-on-steam-deck-and-linux-desktop/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/ubisoft-fixed-the-division-2-on-steam-deck-and-linux-desktop/</guid>
+      <pubDate>Wed, 18 Jan 2023 21:42:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1307480496id22198gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Assemble Entertainment talk up their indie hits on Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Nice to see more publishers taking a direct interest in Steam Deck. Assemble Entertainment recently sent out an email to talk up their games on Valve's handheld. One of which, Endzone - A World Apart, <a href="https://www.gamingonlinux.com/2023/01/endzone-a-world-apart-gets-upgraded-for-steam-deck/" target="_blank">I just covered in an article and video</a>.</p>
+<p>They're not the first to do this, with others like <a href="https://www.gamingonlinux.com/2022/12/xbox-game-studios-talk-more-of-their-titles-on-steam-deck/" target="_blank">Xbox Game Studios</a> publishing their own details directly on Steam. I am surprised we haven't seen more of this though.</p>
+<p>In the press release, it was noted that Assemble "is looking to provide an extensive catalogue of hidden gems and instant classics to those who want a great gaming experience on the go" and that "getting everything Steam Deck ready is still a work in progress" but they gave a shout-out to some existing titles.</p>
+<p>Currently Steam Deck Verified:</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/609320/FAR_Lone_Sails/" target="_blank">FAR: Lone Sails</a></li>
+<li><a href="https://store.steampowered.com/app/1252830/A_Jugglers_Tale/" target="_blank">A Jugglers Tale</a></li>
+<li><a href="https://store.steampowered.com/app/1364100/Lacuna__A_SciFi_Noir_Adventure/" target="_blank">Lacuna</a></li>
+<li><a href="https://store.steampowered.com/app/388420/In_Between/" target="_blank">In Between</a></li>
+</ul>
+<p>While these are Playable but not yet Verified:</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/740080/Deadly_Days/" target="_blank">Deadly Days</a></li>
+<li><a href="https://store.steampowered.com/app/933820/Endzone__A_World_Apart/" target="_blank">Endzone - A World Apart</a></li>
+<li><a href="https://store.steampowered.com/app/1137450/ENCODYA/" target="_blank">Encodya</a></li>
+<li><a href="https://store.steampowered.com/app/1676910/Onde/" target="_blank">Onde</a></li>
+<li><a href="https://store.steampowered.com/app/1132910/ITORAH/" target="_blank">ITORAH</a></li>
+<li><a href="https://store.steampowered.com/app/944010/SWINE_HD_Remaster/" target="_blank">S.W.I.N.E HD</a></li>
+<li><a href="https://store.steampowered.com/app/1266820/Ultimate_ADOM__Caverns_of_Chaos/" target="_blank">Ultimate ADOM - Caverns of Chaos</a></li>
+<li><a href="https://store.steampowered.com/app/1016770/Interrogation_You_will_be_deceived/" target="_blank">Interrogation: You Will Be Deceived </a></li>
+<li><a href="https://store.steampowered.com/app/765870/Leisure_Suit_Larry__Wet_Dreams_Dont_Dry/" target="_blank">Leisure Suit Larry - Wet Dreams Don’t Dry</a></li>
+<li><a href="https://store.steampowered.com/app/1373430/Leisure_Suit_Larry__Wet_Dreams_Dry_Twice/" target="_blank">Leisure Suit Larry - Wet Dreams Dry Twice</a></li>
+</ul>
+<p>Hopefully more titles will see updates like Endzone did, I did email them to ask about it but as of yet they have not replied.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/assemble-entertainment-talk-up-their-indie-hits-on-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/assemble-entertainment-talk-up-their-indie-hits-on-steam-deck/</guid>
+      <pubDate>Wed, 18 Jan 2023 18:46:14 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1604991564id22196gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Endzone - A World Apart gets upgraded for Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Gentlymad Studios and Assemble Entertainment recently released an upgrade for Endzone - A World Apart, helping out anyone playing it on Steam Deck. This is part of a wider Steam Deck push from Assemble, that I'll be noting in an article to come.</p>
+<p>For Endzone, their post-apocalyptic survival city builder, they <a href="https://store.steampowered.com/news/app/933820/view/3648509051989294833" target="_blank">announced</a> that they've ported over the UI used on consoles for Steam Deck to give a better experience. Plus, they also adjusted performance and effects to make it work better on the hardware too. One trade-off is the text sizing, as they said "we had to compromise on text size for faster UI usability" that they claim won't harm the experience.</p>
+<p>I decided to give it a test directly and capture a little of it that you can see below along with giving some thoughts:</p>
+<div class="hidden_video" data-video-id="q8WvJvPr3xA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/13479a9f4ccf6114748fc2f8e016d52e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/q8WvJvPr3xA" target="_blank">See video</a></div></div>
+<p>The new UI is definitely looking good on Steam Deck, it feels like it was built for it. Text sizing as they said is still an issue though, the clarity is not amazing, made worse by how cramped the letter spacing looks with the font they're using but overall not too bad. Playable for sure.</p>
+<p>Nice to see more developers optimise the Steam Deck experience. Would be good to see more over this over the next year, as text size especially is important for the Steam Deck. Small fonts are just no good.</p>
+<p>You can buy it on <a href="https://www.humblebundle.com/store/endzone-a-world-apart?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/933820/Endzone__A_World_Apart/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/endzone-a-world-apart-gets-upgraded-for-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/endzone-a-world-apart-gets-upgraded-for-steam-deck/</guid>
+      <pubDate>Wed, 18 Jan 2023 18:37:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1446234028id22195gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>City Builder</category>
+      
+      <category>Humble Store</category>
+      
+    </item>
+    
+    <item>
+      <title>AYANEO confirm their Linux-based AYANEO OS arrives this year</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>AYANEO, maker of some pretty popular gaming handhelds, announced that their own Linux operating system for their devices will be released this year. While we've seen others looking to the public release of SteamOS 3 that powers the Steam Deck (like <a href="https://www.gamingonlinux.com/2022/07/gpd-talk-about-cooperating-with-valve-for-steamos-on-their-devices/" target="_blank">GPD</a> and <a href="https://www.gamingonlinux.com/2022/03/onexplayer-looking-at-shipping-handhelds-with-steamos-like-the-steam-deck/" target="_blank">OneXPlayer</a>), AYANEO seem to want to "do a Valve" and have that extra level of control directly.</p>
+<p>On <a href="https://twitter.com/AYANEO__/status/1615720358983921667" target="_blank">Twitter</a> their announcement was quite simple noting:</p>
+<blockquote>
+<p>AYASpace will be upgrade and improved and also AYASpace 2 is under development which will be released in 2023 !<br/>
+What's more,  new feature "Community" will be added to AYASpace APP.</p>
+<p>Even more exciting, AYANEO OS goes live in 2023 as well 🥳<br/>
+Expect official news announced soon ~</p>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5426039181674053406gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/5426039181674053406gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20601100821674053408gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/20601100821674053408gol1.jpeg"/></a></p>
+<p>When they <a href="https://store.ayaneo.com/article/234" target="_blank">previously</a> talked about the Linux-based AYANEO OS, they said "AYANEO team loves games and game consoles as well. In the process of creating the best Windows handheld in the world, they found that the existing operating system in the new form of PC handheld still has many poor experiences, and even some problems that we can't be solved. In order to allow everyone to enjoy the game and the handheld hardware better, AYANEO has launched the AYANEO OS, which is based on the Linux system and developed exclusively." and they mentioned clearly they would be using <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a> too.</p>
+<p>They recently finished their <a href="https://www.indiegogo.com/projects/ayaneo-2-completely-different-amd-6800u-handheld#/" target="_blank">IndieGoGo</a> crowdfunding campaign for the AYANEO 2 and the GEEK model, both of which come with an AMD Ryzen 6800U. They had 2,680 people give over their monies to help fund them, with their IndieGoGo now switching to in-demand which is basically like another way to pre-order the devices. So while successful for AYANEO at $3,157,147 currently in total, it's an absolutely tiny fraction of what the Steam Deck has sold which was over a 1 million units back in <a href="https://www.gamingonlinux.com/2022/10/kde-steam-deck-akademy-2022/" target="_blank">October last year</a> (that was even before launching in some Asian regions).</p>
+<p>If I hear any more, I'll let you know.</p>
+<p><em>2023 is clearly the year of Linux gaming handhelds huh?</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/ayaneo-confirm-their-linux-based-ayaneo-os-arrives-this-year/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/ayaneo-confirm-their-linux-based-ayaneo-os-arrives-this-year/</guid>
+      <pubDate>Wed, 18 Jan 2023 15:02:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1228383510id22194gol.jpg" type="image/jpeg"/>
+      
+      <category>Hardware</category>
+      
+      <category>Meta</category>
+      
+      <category>Upcoming</category>
+      
+    </item>
+    
+    <item>
+      <title>Circle of Kerzoven is an upcoming settlement builder with lots of simulation</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Circle of Kerzoven appears to be one I missed that was pointed out in December last year, as an interesting looking settlement building game that simulates a whole lot of things you need to keep an eye on. <em>The developer of the game pointed it out on the <a href="https://www.gamingonlinux.com/forum/topic/5511/" target="_blank">GamingOnLinux Forum</a>.</em></p>
+<p>"Take the role of a leader delegated to build new settlements in remote, unknown corners of the empire. In those forgotten places, nature is wild and legends are more real and vivid than one may think. Experience the challenges of different seasons and climates in a world, where every animal and every plant tries to find their place in nature, while you lead your villagers. How much will you share with nature? Will you strive for balance or even enforce the extinction of certain animals? Follow the old paths… or find your own."</p>
+<p>You can see their early trailer below:</p>
+<div class="hidden_video" data-video-id="wrl6BASU938"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/596e34c86e6d160f12893c14281d4e31.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/wrl6BASU938" target="_blank">See video</a></div></div>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li>Unique deep simulation of the nature in a building strategy game with complex interdependence between humans and nature.</li>
+<li>Manage simultaneously the acquisition, refining and distribution of resources on multiple maps in different climatic conditions.</li>
+<li>Manage the needs of the citizens. They are “alive” and have a specific home, workplace, and unique needs.</li>
+<li>Animals are looking for food, get thirsty, sleepy, and form social groups to find their place in nature.</li>
+<li>Plants grow and are affected by the actions of the humans, animals, and their environment.</li>
+<li>Seasons and climate affect the gameplay, as certain plants grow only under certain conditions. Temperature affects humans, animals, plants, and the environment.</li>
+<li>Interact and trade with other factions that produce goods with the same rules as you do.</li>
+<li>Create own maps and scenarios in the editor and extend them using mods.</li>
+<li>Charming and calm low poly art style.</li>
+</ul>
+</blockquote>
+<p>You can <a href="https://store.steampowered.com/app/1733110/Circle_of_Kerzoven" target="_blank">follow it on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/circle-of-kerzoven-is-an-upcoming-settlement-builder-with-lots-of-simulation/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/circle-of-kerzoven-is-an-upcoming-settlement-builder-with-lots-of-simulation/</guid>
+      <pubDate>Wed, 18 Jan 2023 11:41:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/852194236id22193gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>City Builder</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Simulation</category>
+      
+    </item>
+    
+    <item>
+      <title>Stone Kingdoms is an in-development open source remake of Stronghold</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Anyone remember the original Stronghold from FireFly Studios? Well, there's an open source remake named Stone Kingdoms. Currently in-development and available on <a href="https://stonekingdoms.itch.io/stone-kingdoms-rts" target="_blank">itch.io</a> and <a href="https://gitlab.com/stone-kingdoms/stone-kingdoms" target="_blank">GitLab</a>, the code is under the Apache 2.0 License but it also includes the artwork from the original game with permission from FireFly too (according to the developer of the project).</p>
+<p>Developed with <a href="https://love2d.org/" target="_blank">LÖVE</a>, a framework for making 2D games with Lua.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18072956221674040046gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18072956221674040046gol1.jpg"/></a></p>
+<p>Right now it seems it needs some more developers to jump in and help, with plenty missing from it, so it's not complete and playable. However, it does have enough done that you can load into the game into a map, and start building things so it's clearly off to a great start.</p>
+<p>Looking forward to following this along, Stronghold would definitely be a fun game to have a complete open source game engine replacement for that would allow it to continue living on modern platforms long into the future.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/stone-kingdoms-open-source-remake-of-stronghold/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/stone-kingdoms-open-source-remake-of-stronghold/</guid>
+      <pubDate>Wed, 18 Jan 2023 11:11:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/585429187id22192gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Alpha</category>
+      
+      <category>Open Source</category>
+      
+      <category>Reimplementation</category>
+      
+    </item>
+    
+    <item>
+      <title>GE-Proton 7-44 is out with multiple game-specific fixes, plus initial HDR work</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The community-built version of Proton, the Windows compatibility layer, <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton7-44" target="_blank">GE-Proton 7-44</a> is out now and here's what's new. As a reminder: this version is not endorsed by Valve, and doesn't have all the testing that the official Proton does, and so sometimes new releases can come with issues.</p>
+<p>From the release notes here's what's changed:</p>
+<blockquote>
+<ul>
+<li>wine: updated to latest bleeding edge (includes alt+tab fix)</li>
+<li>wine-staging: rebased for latest proton-wine bleeding edge</li>
+<li>dxvk: updated to latest git (includes HDR patches)</li>
+<li>vkd3d-proton: updated to latest git (includes HDR patches)</li>
+<li>proton: import upstream changes (includes prefix sync revert/fix)</li>
+<li>protonfixes: add workaround for pentiment launch failure (thanks tgurr)</li>
+<li>protonfixes: add multiplayer fix for stronghold hd/stronghold crusader hd/ stronghold crusader extreme hd (thanks jopejoe1)</li>
+<li>protonfixes: add framerate fix for Battle Fantia Revised Edition (thanks ranplayer)</li>
+<li>protonfixes: add launcher workaround for Assassin's Creed Brotherhood (thanks ranplayer)</li>
+</ul>
+</blockquote>
+<p>Need a primer on how to actually use it? You can see <a href="https://www.gamingonlinux.com/2022/03/protonup-qt-got-upgraded-heres-how-to-use-it-on-steam-deck-and-linux/" target="_blank">my previous guide here</a> but to save you clicking around the video and steps are below:</p>
+<div class="hidden_video" data-video-id="6doaQNnHR60"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37b4fc871ab3188f385a1c60a2e0949c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6doaQNnHR60" target="_blank">See video</a></div></div>
+<p><strong>Text Guide:</strong></p>
+<ul>
+<li>Download
+<ul>
+<li><u>Desktop</u>: head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>.</li>
+<li><u>Steam Deck</u>: simply download ProtonUp-Qt from Discover in Desktop Mode (Steam Button -&gt; Power - Switch to Desktop).</li>
+</ul>
+</li>
+<li>Load ProtonUp-Qt.</li>
+<li>Make sure it's set to Steam at the top and select to install GE-Proton.</li>
+<li>In Steam:
+<ul>
+<li><u>Desktop</u>: right click a game and go to Properties.</li>
+<li><u>Steam Deck</u>: find the game in your library, go to the little COG on the right and then select Properties.</li>
+</ul>
+</li>
+<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/ge-proton-7-44-is-out-with-multiple-game-specific-fixes/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/ge-proton-7-44-is-out-with-multiple-game-specific-fixes/</guid>
+      <pubDate>Wed, 18 Jan 2023 10:53:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1318550118id22191gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Bluetooth support for the Stadia Controller is now live</title>
@@ -3736,255 +4000,6 @@ However, it feels worth it to start enabling some games we know to work, so that
       <category>Game Sale</category>
       
       <category>Giveaway</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Replay gives you an overview of your 2022 gaming habits</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://store.steampowered.com/replay/" target="_blank">Steam Replay</a> is Valve's new highlight page going over a bunch of fun stats about your gaming year, something made popular by the likes of Spotify Wrapped and similar events from numerous other places.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7195598241672076962gol1.png"/></p>
-<p>It's actually quite a fun bit of info and you can set your own page public to send it to others too. I'm not going to because mine is a little embarrassing in some ways. It gives you a look over how many new games you played, what platforms your played on, the games you put the most time into, the biggest genres you played, how much time you used keyboard + mouse or gamepad, your top VR games, your longest gaming streak and so on. So you can find out fun details like 9% of your total playtime being in Deep Rock Galactic.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3101348871672076754gol1.png"/></p>
-<p>Steam Replay takes data between January 1st and December 14th 2022, and does <em>not</em> include any offline mode play, which explains why some of mine are a lot lower than I expected. I put myself in offline mode a lot, otherwise I end up getting spammed with messages a bit <em>too</em> much about new games.</p>
-<p>The page certainly needs some work to view on the desktop though, it's clearly a mobile-first design and looks a little bit too massive on desktop.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18612200281672076308gol1.jpg"/></p>
-<p>I'm actually surprised my plain "Linux" (desktop) time was still so big, then again it probably shouldn't surprise me since I test a lot of games for GamingOnLinux directly across my desktop and Steam Deck. Plus I use Remote Play too so there's that.</p>
-<p>You even get a nice collage of all the games you played too. No surprise to see Vampire Survivors in my top list there, that game was very difficult to put down after initially getting into it.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17698610581672077400gol1.png"/></p>
-<p>Feel free to share yours in the comments.</p>
-<p>Valve also sent out a press email about it and made another silly trailer:</p>
-<div class="hidden_video" data-video-id="Js2eR4YEiSk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/46dd16d69b389a7850b8a06dc2545ee4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Js2eR4YEiSk" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/steam-replay-gives-you-an-overview-of-your-2022-gaming-habits/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/steam-replay-gives-you-an-overview-of-your-2022-gaming-habits/</guid>
-      <pubDate>Mon, 26 Dec 2022 18:03:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/738053715id22098gol.jpg" type="image/jpeg"/>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Happy Holidays &amp; Merry Christmas from GamingOnLinux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Some of you might have noticed over December our little friendly Penguin logo gained a fancy hat to keep warm, it's that time of the year again.</p>
-<p>Time for GamingOnLinux to slow right down to a crawl, so that I can get some personal time off too. So don't be alarmed if you see <em>nothing</em> or just very few here and there (outside of bigger stuff — if any) for a week+ or so, as we all deserve a little time off for the holidays right? Time to blow off some steam and get refreshed ready for another year of news and exciting developments for Linux, SteamOS, Steam Deck, gaming, industry news, open source and everything else that is covered here.</p>
-<p>2022 has been quite a year hasn't it? This has probably been the most interesting and busiest year by every measure on record. Mostly thanks to all the work Valve is doing in Proton (and related projects), Steam Deck and SteamOS which benefits everyone trying to game on Linux. You can see my end of year <a href="https://www.gamingonlinux.com/2022/12/valve-steam-deck-home-run/" target="_blank">article on the Steam Deck over here</a>, and <a href="https://www.gamingonlinux.com/2022/12/my-game-of-the-year-2022-is-the-steam-deck/" target="_blank">read about my GOTY here</a>.</p>
-<p>For GamingOnLinux, it's been a <em>huge</em> year too with the <a href="https://www.youtube.com/@gamingonlinux" target="_blank">YouTube Channel</a> hitting close to 30K followers now. I'm genuinely shocked at how that has just <em>rocketed</em> <a href="https://uploads.golmedia.net/uploads/articles/article_media/18027455831671795578gol1.png" target="_blank">upwards</a> in subscribers and continues at a nice pace. Be sure to also follow along on <a href="https://mastodon.social/@gamingonlinux" target="_blank">Mastodon</a>, or for <em>just</em> the news without my extra spicy takes and <a href="https://mastodon.social/@gamingonlinux/109559833585150695" target="_blank">glorious memes</a> there's the main <a href="https://www.gamingonlinux.com/article_rss.php" target="_blank">RSS feed</a> (and every article tag also has a feed too!).</p>
-<p>Just a reminder, that I would appreciate any and all support you can give and you can find out all the ways how <a href="https://www.gamingonlinux.com/support-us/" target="_blank">on the Support Us page</a>.</p>
-<p>Happy Holidays, Merry Christmas and I hope you all have a wonderful New Year. Here's to a fun 2023! <em>Now where did I put that Steam Deck…?</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/happy-holidays-merry-christmas-from-gamingonlinux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/happy-holidays-merry-christmas-from-gamingonlinux/</guid>
-      <pubDate>Fri, 23 Dec 2022 11:54:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2136010781id22032gol.jpg" type="image/jpeg"/>
-      
-      <category>Community</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Intel working on new Xe graphics driver for Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A nice little bonus before the holidays, Intel have <a href="https://patchwork.freedesktop.org/series/112188/" target="_blank">made public</a> work on their brand new Xe driver for the future of Intel graphics on Linux. Found via Collabora developer Jason Ekstrand on <a href="https://toot.io/@gfxstrand@mastodon.gamedev.place/109561465470881471" target="_blank">Mastodon</a>, who previously started off this work, this is quite exciting.</p>
-<p>The idea is to have a fresh set of code that doesn't have to deal with the legacy the current i915 driver does, which supports a lot of older chips. The Xe driver support starts from Tiger Lake, which was the first with Intel Xe, and the code is already at a stage where it can actually be used. Going by what they said it is built to support multiple platforms with initial support in Mesa for Iris and ANV (the OpenGL and Vulkan drivers).</p>
-<p>In the Mesa <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/20418" target="_blank">merge request</a> draft, they also mentioned it's good enough already for running GNOME plus some OpenGL and Vulkan games but plenty of issues are expected and it's not optimized yet.</p>
-<p>Their plan is to keep working on it, and merge it into Mesa in smaller parts but their main draft for the whole thing will stay up as it goes to allow for easier testing.</p>
-<p>Looks like 2023 and beyond for Intel drivers on Linux is going to be quite exciting. Hopefully they will keep putting out new Xe cards too, so that we can have more competition in the GPU space.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/intel-working-on-new-xe-graphics-driver-for-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/intel-working-on-new-xe-graphics-driver-for-linux/</guid>
-      <pubDate>Fri, 23 Dec 2022 11:31:55 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/intel.png" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Intel</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Winter Sale 2022 is live now, plus vote for the Steam Awards</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has put up their huge Winter Sale 2022 with tens of thousands of games that are discounted, plus you can now vote for the winners of the Steam Awards. This is a great time to stock up on games ready for the holiday season, or to just fill up your Steam Library ready to play through 2023 because I'm sure you don't have many games you haven't played yet right? </p>
-<div class="hidden_video" data-video-id="W-sbLEvINmk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/15cac7776690a4413db8c802f75b63ea.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/W-sbLEvINmk" target="_blank">See video</a></div></div>
-<p>The sale is live until January 5, 2023 at 10am PST / 6pm UTC. With voting for nominees now over too, you can also begin voting for the winners in the Steam Awards.</p>
-<p>A few suggestions on some great deals to pick up that are Steam Deck Verified, so they should also be no problem to run on desktop Linux too:</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/775500/SCARLET_NEXUS/" target="_blank">SCARLET NEXUS</a> - 75% off</li>
-<li><a href="https://store.steampowered.com/app/557340/My_Friend_Pedro/" target="_blank">My Friend Pedro</a> - 75% off</li>
-<li><a href="https://store.steampowered.com/app/457140/Oxygen_Not_Included/" target="_blank">Oxygen Not Included</a> - 70% off</li>
-<li><a href="https://store.steampowered.com/app/275850/No_Mans_Sky/" target="_blank">No Man's Sky</a> - 50% off</li>
-<li><a href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition/" target="_blank">Sekiro: Shadows Die Twice</a> - GOTY Edition</li>
-<li><a href="https://store.steampowered.com/app/979110/Space_Haven/" target="_blank">Space Haven</a> - 50% off</li>
-<li><a href="https://store.steampowered.com/app/1593500/God_of_War/" target="_blank">God of War</a> - 40% off</li>
-<li><a href="https://store.steampowered.com/app/892970/Valheim/" target="_blank">Valheim</a> - 30% off</li>
-<li><a href="https://store.steampowered.com/app/1942280/Brotato/" target="_blank">Brotato</a> - 20% off (<a href="https://www.gamingonlinux.com/2022/12/my-game-of-the-year-2022-is-the-steam-deck/" target="_blank">my personal GOTY</a>)</li>
-</ul>
-<p>What will I be picking up? Nothing! I'm finally taking a stand, locking my wallet away and going through some games I picked up in previo…oh look at that <a href="https://store.steampowered.com/app/936790/Life_is_Strange_True_Colors/" target="_blank">Life is Strange: True Colors</a> is 60% off — oops.</p>
-<p>See all on the <a href="https://store.steampowered.com/" target="_blank">Steam Store</a>. As a reminder, it usually struggles with traffic at the start, so wait a while if it's loading to slow or not loading at all for you.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/steam-winter-sale-2022-is-live-now-plus-vote-for-the-steam-awards/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/steam-winter-sale-2022-is-live-now-plus-vote-for-the-steam-awards/</guid>
-      <pubDate>Thu, 22 Dec 2022 18:19:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/88468502id22092gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Sale</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Big open ocean adventure Sail Forth is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Sail Forth looks like a wonderful ocean adventure on the more chilled side of things (in a way), and if it's anything like the earlier versions I tried a while back, it would be an easy recommendation. Has quite a mixture of things from peaceful exploration and building up a fleet to various combat encounters too. </p>
-<p>More about it: "After waking in the middle of the ocean with no memories, tie together debris to create a makeshift sailboat and figure out what the heck happened. Master semi-realistic wind sailing physics to chart unknown waters, welcome aboard stat-enhancing crewmates, and grow your flimsy dingy into a fully-fledged fleet throughout a charming heartfelt journey to save the world. Discover island environments and challenge landlubbers to a variety of mini games including boat racing, target shooting, card games, fishing, or photo collecting."</p>
-<div class="hidden_video" data-video-id="cTXQiidpYDk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/96aca1d5a9c24df24800076bd3d40033.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/cTXQiidpYDk" target="_blank">See video</a></div></div>
-<p><em>I absolutely adore the style!</em></p>
-<p>Features:</p>
-<p><strong>Explore the Deepblue!</strong></p>
-<ul>
-<li>Put the wind to your back and cast out into High Adventure over a vast ocean spanning dozens of eccentric regions.</li>
-<li>Discover countless isles bursting with their own flora, fauna, friendly folk, and fearsome foes.</li>
-<li>Playfully pursue a pod of curious dolphins, admire the beauty of the sun sinking into an icy horizon, or run down a clutch of cowardly criminals only to accept their apologies to the tune of wild cannonry.</li>
-</ul>
-<p><strong>Command a Sailing Fleet!</strong></p>
-<ul>
-<li>Build and manage a custom cadre of specialized vessels to match any personality and play style.</li>
-<li>Buy, equip, upgrade, and modify your ships’ armaments to face off against the toughest privateers this side of the Eclipside.</li>
-<li>Crack open giant clams and loot lonely shipwrecks to fill your fleet’s treasure hoard and keep your crew in shipshape.</li>
-</ul>
-<p>Available with Native Linux support <a href="https://store.steampowered.com/app/1031460/Sail_Forth/" target="_blank">on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/big-open-ocean-adventure-sail-forth-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/big-open-ocean-adventure-sail-forth-is-out-now/</guid>
-      <pubDate>Thu, 22 Dec 2022 16:57:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/950052642id22094gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>JSAUX now selling a transparent Steam Deck backplate</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><strong>Update 27/12/22</strong>: they've <a href="https://twitter.com/jsauxofficial/status/1606648199598727170" target="_blank">removed</a> the logo from it now — good! They said shipping is delayed now though for 1 week.</p>
-<hr/>
-<p>Chinese accessory brand JSAUX have officially put up their <a href="https://jsaux.com/products/transparent-back-plate-for-steam-deck-pc0106" target="_blank">transparent backplate</a> for the Steam Deck.</p>
-<p>I know a fair few people love the whole retro transparent tech style, I sure do, reminds me of my original Game Boy Pocket that was transparent so perhaps a late Christmas present for someone? JSAUX say it comes equipped with  thermal grease and a heat dissipation aluminium sheet they claim "enhances the heat dissipation performance through their joint action". Along with the backplate they also have back buttons to go along with it too.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11983314711671727015gol1.png"/></p>
-<p>I actually like it a lot, wouldn't mind one myself but I have bad memories of snapping my SD Card when forgetting to take it out after taking off a back cover quite some time ago. I just know I would forget to remove it again.</p>
-<p>When I previously talked to JSAUX about doing this after <a href="https://www.gamingonlinux.com/2022/11/jsaux-teasing-a-clear-back-plate-for-the-steam-deck/" target="_blank">their original teaser</a>, and mentioning to them that Valve's Steam Deck shell designs were under a non-commercial license, they made it clear they did not have permission and were trying to get in touch with Valve. They didn't update me on if they did ever hear from Valve on it and now they're selling it so either they have permission or they're doing it anyway. Or, they simply didn't use any design work from Valve at all, and made it entirely themselves.</p>
-<p><em>I also have various <a href="https://youtu.be/IEgra6esLsc" target="_blank">privacy issues</a> with JSAUX, which remain unsolved and JSAUX denied all allegations. After pointing out other issues and being notified that Shopify (who they use for their orders) were investigating them — JSAUX simply stopped replying to me.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/jsaux-now-selling-a-transparent-steam-deck-backplate/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/jsaux-now-selling-a-transparent-steam-deck-backplate/</guid>
-      <pubDate>Thu, 22 Dec 2022 16:43:55 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2028507528id22093gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Hardware</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton 7.0-6 now in testing for Steam Deck &amp; Linux desktop</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Here's one missed from a week ago, Valve are testing another update to the stable version of Proton with Proton 7.0-6 needing some more eyes on it for testing. I don't imagine it to be released soon, given it's about to be holiday time.</p>
-<p>To test it out, you need to opt into a Beta on Proton 7.0-5. You can do that by searching for Proton in Steam, and selecting it from the Betas section in the Properties. You can give feedback on the <a href="https://github.com/ValveSoftware/Proton/issues/6385" target="_blank">GitHub post</a>, they're after issues only present in this build compared with the current version.</p>
-<p>As usual, here's a quick run over what to expect from it:</p>
-<div class="hidden_video" data-video-id="XIRsdOvG4ms"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e4271939e699984891339c6b2f7d414f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/XIRsdOvG4ms" target="_blank">See video</a></div></div>
-<p>This is the current changelog at time of writing that's subject to change as new fixes are put in, or things removed if they don't work well enough to be listed:</p>
-<blockquote>
-<ul>
-<li>Now playable:
-<ul>
-<li>Gotham Knights</li>
-<li>UNCHARTED: Legacy of Thieves Collection</li>
-<li>Wargame: Red Dragon</li>
-<li>Heroes of the Dark</li>
-<li>Super Arcade Racing</li>
-<li>Crazy Machines 3</li>
-<li>NinNinDays2</li>
-<li>雀姬 (Mahjong ladies)</li>
-</ul>
-</li>
-<li>Fix being unable to log in to Xbox Live from Main Menu in As Dusk Falls.</li>
-<li>Fix Septerra Core hanging on redistributables installation.</li>
-<li>Fix Super House of Dead Ninjas, Enemy Mind, and Out There Somewhere frame hitching every few seconds.</li>
-<li>Fix on-screen keyboard popping up every time when starting A Plague Tale: Requiem on the Steam Deck.</li>
-<li>Fix Zeepkist freezing when using controller.</li>
-<li>Fix Overcooked! All You Can Eat being unable to add a second controller-using player.</li>
-<li>Fix Quake III: Arena and Quake III: Team Arena displaying weird texture over the menu.</li>
-<li>Fix the new EA launcher displaying a blank window.</li>
-<li>Fix Marvel Snap not being able connect to online services.</li>
-<li>Fix Microsoft Flight Simulator crashing during longer flights.</li>
-<li>Fix Microsoft Flight Simulator not displaying live traffic.</li>
-<li>Fix Microsoft Flight Simulator not starting after a recent game update.</li>
-<li>Fix Microsoft Flight Simulator crashing when starting next to big cities.</li>
-<li>Fix Sackboy: A Big Adventure failing to start the first time it's launched.</li>
-<li>Fix Spyro Reignited Trilogy playing intro video in a wrong language.</li>
-<li>Fix Jurassic World Evolution 2 bad performance with recent Proton versions.</li>
-<li>Fix multiple monitor support in Project Cars 2.</li>
-<li>Fix Korean not being rendered correctly in Romance of the Three Kingdoms XIII launcher.</li>
-<li>Fix multiple languages not rendering correctly in Sins of a Solar Empire: Rebellion.</li>
-<li>Fix Lost Lands: Dark Overlord, Lost Lands: Dark Lord, Lost Lands: Redemption, and Haunted Hotel: Silent Waters Collector's Edition crashing when trying to set a wallpaper.</li>
-<li>Update wine-mono to <a href="https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-7.4.0" target="_blank">7.4.0</a>.</li>
-<li>Update dxvk-nvapi to <a href="https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.6" target="_blank">v0.6</a>.</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/proton-70-6-now-in-testing-for-steam-deck-linux-desktop/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/proton-70-6-now-in-testing-for-steam-deck-linux-desktop/</guid>
-      <pubDate>Thu, 22 Dec 2022 13:08:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/189766186id22091gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Beta</category>
-      
-      <category>Open Source</category>
       
     </item>
     
