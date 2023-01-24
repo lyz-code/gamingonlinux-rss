@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-01-23 07:25:41.795954</pubDate>
+    <pubDate>2023-01-24 07:24:47.012138</pubDate>
 
     
     <image>
@@ -18,6 +18,348 @@
     </image>
 
     
+    
+    <item>
+      <title>Building a Retro Linux Gaming Computer - Part 22: Happy Hacking</title>
+      <author>Hamish</author>
+      <description><div class="content group e-content">
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-21-fluffy-bunnies/" target="_blank">Part 21: Fluffy Bunnies</a> </strong></p>
+<p>As was true for many people at the time, some of my first real experiences of using Linux as a child came through the use of Knoppix, one of the first distributions to popularize the use of Live CDs. This allowed me to explore a wide swath of Linux applications while not disturbing the Windows environment I needed for school at the time. One of these was a role playing game which I recall I never got to work well, but lingered on in my imagination regardless.</p>
+<p>As an adult I can recognize this as <em>Falcon's Eye</em>, a GUI for the venerable <em>NetHack</em> released by Jaakko Peltonen in 2001. The SourceForge page for the game is still online, but only has source code available for use on Linux machines, the building of which is a byzantine task given the variety of build modes. By trawling the Wayback Machine I was able to find links to RPM packages for the last stable 1.9.3 release already built for Red Hat Linux, making installation far simpler. </p>
+<p>Even then setting up the game takes the form of modifying configuration files, either by editing jtp_options.txt located in the /usr/lib/games/nethackdir/config directory, which controls such things as graphic and sound modes, or by fiddling with the local ~/.nethackrc file for options specific to your personal user account. <em>Falcon's Eye</em> started in an oversized 1024x768 window on first launch, making consulting the jtp_options.txt file beforehand a good idea.</p>
+<p>The default option of playing the MIDI soundtrack through timidity also caused <em>Falcon's Eye</em> to hang at times with a black screen. Changing to using the MIDI sequencer device of my sound card by using playmidi solved this issue and also gives the music a nice AdLib feel, but the cleanest rendition of the music is by use of the MP3 files through the mpg321 player, although doing so takes less advantage of my Sound Blaster 16 hardware.</p>
+<p>As a <em>NetHack</em> novice the game comes with a steep learning curve, with the most important lessons for me being that you can move in diagonal rather than just cardinal directions, and that locked doors and chests can be kicked, rather than just picked or unlocked with keys. I also found myself hitting constant dead ends until I discovered that hidden passages and doorways could be revealed by pressing the "S" key. Learning how to fight at range is worthwhile as well.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11905077471673930890gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/11905077471673930890gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1653888171673930774gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/1653888171673930774gol6.png"/></a></p>
+<p>In terms of mechanics the most significant change <em>Falcon's Eye</em> makes to <em>NetHack</em> is having the game now be mouse driven, necessitating the addition of a sometimes overeager pathfinding system whenever I misclicked. Graphics are iconographic, being static replacements for the original ASCII characters, with no animation and often limited variation. At times I found myself being mauled by a jackal that I thought was just my tame little dog.</p>
+<p>The quality of the artwork that is there can not be disputed however, being an appealing and consistent set that does do a lot to bring the Mazes of Menace to life. In tackling those mazes, I have found that playing as a Samurai works well for me, not that it stopped me from succumbing to many a painful death. My most successful run so far saw me be felled by a fire ant on dungeon level six, after it ignited my potions and left me to suffer a slow agonizing burn.</p>
+<p>Roguelike concepts such as permadeath and procedural generation baffled me as a child, and even today leave me with a grudging acceptance that I am unlikely to ever beat the game. In fact, my first proper dive into the genre would not come until I played the far more accessible <em>Dungeons of Dredmor</em> about ten years later, itself being the brainchild of former Loki Software programmer Nicholas Vining. It may be heresy, but for me, being able to save made all the difference.</p>
+<p>Since then I have at least gained experience in a number of contemporary <em>Dungeons &amp; Dragons</em> licensed games, giving me a better handle on some of the fantasy terminology and quirks used in <em>Falcon's Eye</em>, such as how lower armour class values are actually better than higher ones. <em>NetHack</em> is a hodgepodge of popular culture milieu, from discovering Hobbits running around searching for the One Ring, to including an entire Tourist role as some kind of elaborate joke.</p>
+<p>Further work on <em>Falcon's Eye</em> stalled out by 2005, with later Linux Game Publishing alumnus Clive Crous forking the project into what would become <em>Vulture</em>, now purchasable on both itch.io and Steam, albeit with the source code still being freely available. No Arch Linux packages seem to exist, and the itch.io page only has Windows binaries available. I could compile <em>Vulture</em> from source, but if I am to go through all that trouble, I might as well build something fresh instead.</p>
+<p><strong>Carrying on in Part 22: Ready, Set, Go!</strong></p>
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-22-happy-hacking/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-22-happy-hacking/</guid>
+      <pubDate>Mon, 23 Jan 2023 21:00:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/54701747id22063gol.jpg" type="image/jpeg"/>
+      
+      <category>Dungeon Crawler</category>
+      
+      <category>Editorial</category>
+      
+      <category>Open Source</category>
+      
+      <category>Retro</category>
+      
+    </item>
+    
+    <item>
+      <title>dbrand bait Nintendo with their new SwitchDeck skin for Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>dbrand have today revealed their latest way of poking fun at other companies, with their special edition <a href="https://dbrand.com/shop/special-edition/switchdeck?utm_source=GamingOnLinux&amp;utm_medium=referral&amp;utm_campaign=switchdeck" target="_blank">SwitchDeck</a> skin for the Steam Deck. This isn't the first time they've prodded the beast, like with the <a href="https://www.gamingonlinux.com/2022/11/dbrand-issued-an-update-on-killswitch-replacements-dock-compatibility-and-more/" target="_blank">Killswitch</a> case for Steam Deck that they had to remake part of due to problems with magnets.</p>
+<blockquote>
+<p>For years, countless blogs have clickbaited millions into believing that a "Switch Pro" was just around the corner. One Switch Lite and a Switch OLED later, we decided to tackle the problem ourselves. After stockpiling a considerable amount of ammunition, our lawyers quietly remarked how they would prefer if we abandoned the mercenary plot and instead went back to shameless plagiarism. Unfortunately for the blog writers, we know how to multitask.</p>
+<cite>dbrand</cite></blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7012682131674500220gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7012682131674500220gol1.jpg"/></a></p>
+<p>dbrand did tell me via email that they will be shipping the skin out to me, although they've not said when. So I might be able to take a look at the quality soon, maybe not. Based on the <a href="https://www.youtube.com/watch?v=5aOqHNJBLDc" target="_blank">last skins I tried from dbrand</a> though, I would expect the SwitchDeck to be high quality.</p>
+<p>As for why they did this, dbrand didn't note it but I spoke to the creator behind the Fan the Deck YouTube channel who said dbrand sponsored them on the idea for their <a href="https://www.youtube.com/watch?v=A09_2yy5f2o" target="_blank">Nintendo Switch emulation video</a> because only dbrand were crazy enough to sponsor such an idea. I doubt Nintendo will let that video stay up for too long…</p>
+<p>You can buy the skin on <a href="https://dbrand.com/shop/special-edition/switchdeck?utm_source=GamingOnLinux&amp;utm_medium=referral&amp;utm_campaign=switchdeck" target="_blank">dbrand's website</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/dbrand-bait-nintendo-with-their-new-switchdeck-skin-for-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/dbrand-bait-nintendo-with-their-new-switchdeck-skin-for-steam-deck/</guid>
+      <pubDate>Mon, 23 Jan 2023 19:04:03 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1847403072id22217gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Deck thoughts a year later</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It's been <em>close</em> to a year since the Steam Deck launched, so here's where things currently stand and my thoughts on it.</p>
+<p>I’ve had access multiple weeks before the official release, as I was one of the lucky people Valve sent a review unit to, so I’ve seen first-hand how many of the rough edges have been smoothed out over the last year and I have to say, I’ve only continued to be more and more impressed with how Valve has handled their latest hardware entry. Last year I even wrote about how I felt Valve <a href="https://www.gamingonlinux.com/2022/12/valve-steam-deck-home-run/" target="_blank">hit a home run with the Steam Deck</a>.</p>
+<p>For those who prefer to listen in, here's a little video I did to round-up some thoughts and give an overview that I put up on the <a href="https://www.youtube.com/gamingonlinux" target="_blank">GamingOnLinux YouTube Channel</a> just recently:</p>
+<div class="hidden_video" data-video-id="I0L6NK-MfrU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9fc65db1370902f3317b4ea8eef783ab.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/I0L6NK-MfrU" target="_blank">See video</a></div></div>
+<p style="text-align:center"><em>Games in the video: Broforce, followed by Grim Dawn.</em></p>
+<p>I've actually had <em>three</em> Steam Decks now. The first one being the original review unit I had to send back that had a dying fan, which I also accidentally snapped the SD Card inside when going to check, a reminder to always remove it if you're going to do some tinkering. Seriously, don't forget about it. If you're going to take the back off, remove the SD Card first. So there was the replacement for that, and then I purchased one personally when my time in the original reservation queue came up. Safe to say, I'm invested both personally and professionally. I play something on mine nearly every day, with a mixture of docked and handheld depending on how I'm feeling.</p>
+<p>The Steam Deck is by no means perfect, with many issues still remaining, but then that’s true of any hardware ever made by anyone. I could write a long list of problems I have with my iPhone, my Nintendo Switch and all the other devices I own. I'm sure I'm not alone in this, unless you're some kind of zealot, you will find problems in everything.</p>
+<p>While it has issues, it remains my absolute <em>favourite</em> way to play games because of the convenience it provides to help unshackle me from my desk as well as the surprising power it has in what you can play on it.</p>
+<p>Valve’s support of it has helped pull over many sceptics too. I remember reading The Verge and their headline was "<a href="https://www.theverge.com/22950371/valve-steam-deck-review" target="_blank">it's not ready</a>" and yet a year later, the same writer has now said <a href="https://www.theverge.com/23513517/steam-deck-long-term-test-valve" target="_blank">it's ready</a> and it's won them over to be their favourite gadget of 2022. That wouldn't have been possible without the constant upgrades from Valve, of which they’ve put out over 100 updates looking back at all the release notes. There's been some really big updates too like the recent <a href="https://www.gamingonlinux.com/2022/12/steamos-34-is-out-now-for-steam-deck/" target="_blank">SteamOS 3.4</a>. However, Valve has slowed down on stable Steam Deck updates, as they've <a href="https://www.gamingonlinux.com/2022/12/we-may-get-a-steam-controller-2-plus-fun-updates-coming-to-steam-deck/" target="_blank">moved over</a> to a monthly release schedule now for stable updates.</p>
+<p>That's not even counting updates to <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>, their compatibility layer to run Windows games on Steam Deck that's used on Linux desktop too. Proton had tons of updates over the last year as well, as Valve keep chasing down issues in games and getting them fixed with various open source developers under contract to work on Proton, the graphics drivers and more. When you compare the compatibility on Steam Deck between now and when it launched, it's like a night and day difference, the improvements are simply astonishing. I'm sure desktop Linux gamers will understand this point too, the amount of games we have access to across the whole of Linux now is just awesome.</p>
+<p>When it comes to Valve's updates it's not just the usual notes you might see from other hardware vendors, and their typical patch notes stating things like "improved stability". Valve always like to tell you exactly what they've done and they've repeatedly improved the interface on the Steam Deck too, like how they added proper multi-tasking and ensured recently switching between different apps and closing them all <a href="https://www.youtube.com/watch?v=ZhtK92WNJZs" target="_blank">worked nicely</a>.</p>
+<p>With the Deck Verified system, Valve has seen plenty of things to be happy about there. Deck Verified is their official compatibility rating split between Verified, Playable for titles that have some issues and Unsupported with over 7,300 titles rated at least Playable (<a href="https://www.gamingonlinux.com/2022/12/steam-deck-hits-over-7000-games-playable/" target="_blank">7,000 was hit towards the end of 2022</a>). You can continue to try and play anything of course, this is only what Valve has officially tested.</p>
+<p>Some of the biggest and most played games around can be played on Steam Deck like: Elden Ring, Spider-Man Remastered, Cyberpunk 2077, Warframe, No Man's Sky, Apex Legends, Valheim and the list just keeps going on.</p>
+<p>Deck Verified is far from perfect though, you can’t really go anywhere without someone complaining about a rating on some game not being right. From Verified games that don’t actually work, to unsupported games that actually work perfectly. It’s an ongoing area of improvement that I hope the second year Valve really nails down, although the ratings are largely correct when you look at the bigger picture. It’s just a few random titles that slip through the net.</p>
+<p>It can get quite annoying though, to have a Verified game that clearly shouldn't be Verified. A <a href="https://twitter.com/gamingonlinux/status/1617238571659972609" target="_blank">recent example</a> I can pull up is God of War, which has a confirmed issue and has been a problem for months, where the RAM use will shoot up to about 14.2GB and then the game will slow to zero FPS and eventually reboot the Steam Deck. While asking for perfection on any platform is ridiculous and impossible, it does show that Valve need to be a more reactive to change ratings, regardless of games being AAA or indie. It would also be nice for Valve to be more open on <em>how</em> they are reviewing titles to improve trust in it.</p>
+<p>The Steam Deck has sat in the top 5 of the top sellers list (<a href="https://steamdb.info/topsellers/" target="_blank">SteamDB</a>) for something around 40 weeks, and the majority of that time has been at number 1 or number 2 when a few super hits came along to knock it down like Elden Ring or Modern Warfare 2 but it's quite rare to see it knocked down to the number 2 spot even a year later. The Steam Deck has some very clear staying power. It has only just launched in a <a href="https://www.gamingonlinux.com/2022/12/steam-deck-now-shipping-across-asia-plus-a-new-steam-deck-stable-client-update/" target="_blank">few select regions of Asia</a> too, so it should continue to sell quite well for some time.</p>
+<p>So while the Steam Deck is going great, it still has some mountains to climb as well. A sore point continues to be anti-cheat, a constant problem with some of the biggest games not working like Destiny 2, PUBG, Dead by Daylight, Rust, Modern Warfare 2, Lost Ark, FIFA 23 and so on. There's not exactly a huge amount Valve can do about this though, as they worked with Epic Games on Easy Anti-Cheat support and the same for BattlEye, we just need more people using the Steam Deck for developers to care to make sure it's supported. That of course is an ongoing problem, but one that might eventually solve <em>itself</em> if the Steam Deck continues to be a success. Massive publishers will only chase the big monies. Then again, Ubisoft surprised us recently by <a href="https://www.gamingonlinux.com/2023/01/ubisoft-fixed-the-division-2-on-steam-deck-and-linux-desktop/" target="_blank">fixing The Division 2</a>, which I am still surprised by.</p>
+<p>It's repeatedly a marvel that you can play so many games on a portable like this, or hooked up to a TV or a monitor with either the official Valve dock or one of the great many USB-C docks available elsewhere. Previously PlayStation or Microsoft exclusive titles running on it is just amazing.</p>
+<p>We've repeatedly seen publishers talk about their own excitement on it too, even Microsoft have <a href="https://www.gamingonlinux.com/2022/12/xbox-game-studios-talk-more-of-their-titles-on-steam-deck/" target="_blank">repeatedly</a> made announcements to showcase their published games compatibility. Microsoft also even went as far as to create their own guide for Xbox Cloud Gaming on Steam Deck. See my <a href="https://www.gamingonlinux.com/2022/11/microsoft-upgrades-xbox-cloud-gaming-for-linux-and-chromeos/" target="_blank">full guide on Xbox Cloud in this linked article</a>, you don't need Edge. The surprises through the last year just kept on coming.</p>
+<p>The community around the Steam Deck building up has been fun to watch too. People learning how Linux works, because it's powered by SteamOS and not Windows. We've seen the Heroic Games Launcher and others repeatedly improve to help with getting other stores working on Steam Deck like GOG and Epic Games. Then there's the <a href="https://www.gamingonlinux.com/2023/01/decky-loader-makes-steam-deck-plugins-even-easier-with-new-installer/" target="_blank">Decky Loader plugin system</a> I've covered a few times, that can really help add in some essential extras Valve has yet to add into the system or has no plans to add, the possibilities with the Steam Deck just feel endless because of Valve's support of it being such an open platform and I think this is what will keep it being so popular because so many people are really appreciating that there’s no walled garden locking you in.</p>
+<p>It's not just the software community though, the hardware community is incredible too. So many people still coming up with new and clever ways to attach things to the Steam Deck, like my favourite being the <a href="https://www.gamingonlinux.com/2022/09/your-steam-deck-deserves-a-deckmate/" target="_blank">Deckmate attachment system</a> that lets you slot anything onto the back of the Steam Deck. We’ve had a few gaffs like dbrand with their <a href="https://www.gamingonlinux.com/2022/09/project-killswitch-sales-suspended-as-the-kickstand-messed-with-the-steam-deck-fan/" target="_blank">problematic magnets</a> (that some <a href="https://www.gamingonlinux.com/2023/01/stop-mixing-magnets-with-the-steam-deck-or-face-fan-and-temperature-troubles/" target="_blank">haven't learned from</a>), but it’s all still fun to see companies try things for it.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9558120521674484630gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9558120521674484630gol1.png"/></a><br/>
+<em>Pictured: the Deckmate.</em></p>
+<p>Plenty more companies have jumped in too like JSAUX with various docks like one with an <a href="https://www.gamingonlinux.com/2022/10/the-jsaux-m2-docking-station-for-steam-deck-is-a-great-choice/" target="_blank">M.2 SSD slot</a>, there's <a href="https://www.gamingonlinux.com/2022/10/the-upgraded-ivoler-steam-deck-docking-station-is-another-good-choice/" target="_blank">ivoler too</a> and the list of companies doing Steam Deck docks goes on and on. Many of them beating Valve to the punch on the <a href="https://www.gamingonlinux.com/2022/10/thoughts-on-the-official-steam-deck-docking-station/" target="_blank">Official Docking Station</a>. JSAUX are even doing transparent Steam Deck backplates now too (and <a href="https://youtu.be/PI6GgNU1Z54" target="_blank">JSAUX are trying to improve</a>).</p>
+<p>Faced with an increasing amount of competition now from GPD, AYANEO, OneXPlayer and more, who are putting out more and more devices with newer chips in them, but often much higher prices, it will be fun to see how it all continues to build up. Valve opened the flood gates (flood valve?!) for handheld PC gaming and we still haven’t even seen the public release of SteamOS 3 yet, for more vendors to use it and for potentially people to make their own steam machines with it.</p>
+<p>Even with the competition noted above, Valve will still clearly come out on top. It's not enough to keep producing these new shiny handhelds with more powerful internals, if the price is a lot higher and with a lack of support as each company swiftly moves onto their next upgraded model. Something that I hope, perhaps, a SteamOS 3 launch might help with, because support could improve there across many devices over time.</p>
+<p>We do know a <a href="https://www.gamingonlinux.com/2022/08/steam-deck-2-is-absolutely-coming-new-booklet-from-valve-confirms/" target="_blank">Steam Deck 2</a> is at least planned too, so clearly this is not going to be a one time thing for Valve, something people were a bit worried about prior to release. Given the success, it would be weird if they didn't continue it.</p>
+<p>My Steam Deck <a href="https://www.gamingonlinux.com/2022/10/my-current-little-wish-list-for-steam-deck-upgrades/" target="_blank">wishlist</a> mostly still applies too, like the shader cache problem — when I went to load up God of War last night, it needed to deal with the shaders for a good 30 minutes before the game loaded.</p>
+<p>That's pretty much the state of things Steam Deck as they are now nearly a year on. There's a lot to look forward to from games coming out to continued Steam Deck upgrades, I'll be here covering all of it.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/steam-deck-thoughts-a-year-later/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/steam-deck-thoughts-a-year-later/</guid>
+      <pubDate>Mon, 23 Jan 2023 14:45:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1161487179id22204gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Editorial</category>
+      
+      <category>Meta</category>
+      
+      <category>Review</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve marks some EA games Playable on Steam Deck again like Sims 4, Jedi: Fallen Order</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>EA recently sent Origin to the graveyard and replaced it with the EA App, which caused numerous problems on Linux desktop and Steam Deck but it looks like the biggest problems are over on that.</p>
+<p>The problem is that these extra external launchers can cause a number of issues for the Proton compatibility layer. As Valve and their open source contractors who work on Proton, need time to catch-up on the compatibility side. The switchover <a href="https://www.gamingonlinux.com/2022/10/ea-begins-swapping-out-origin-for-ea-app-on-steam/" target="_blank">came with problems</a>, which Valve <a href="https://www.gamingonlinux.com/2022/11/valve-fix-new-ea-app-in-proton-experimental-for-linux-and-steam-deck/" target="_blank">partially solved</a> a week later but it still had issues leading me <a href="https://www.gamingonlinux.com/2022/11/how-to-fix-the-ea-app-on-steam-deck-and-linux-desktop/" target="_blank">to do a guide</a> on getting it working again. Another few weeks later, Valve put a <a href="https://www.gamingonlinux.com/2022/12/proton-experimental-upgraded-to-fix-the-ea-app-failing-to-update-on-steam-deck-a-linux/" target="_blank">proper fix in</a> to stop the EA App failing to update.</p>
+<p>With that all done and the dust settled, Valve has now gone back through multiple problematic EA published titles to re-review them for Steam Deck compatibility.</p>
+<p>Titles include:</p>
+<ul>
+<li>Battlefield 1.</li>
+<li>Jedi Fallen Order.</li>
+<li>Sims 4.</li>
+<li>Titanfall 2.</li>
+</ul>
+<p>All officially noted to be playable again, with Valve setting them to use Proton Experimental by default.</p>
+<p><em>Nice to see Valve do go back over certain titles to check them again, although they really need to do that for God of War that <a href="https://twitter.com/gamingonlinux/status/1617238571659972609" target="_blank">has a bug</a> that can reboot your Steam Deck.</em></p>
+<p>Be sure to <a href="https://www.youtube.com/@gamingonlinux" target="_blank">follow GamingOnLinux on YouTube</a> to see videos on those and many more games.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/valve-marks-some-ea-games-playable-on-steam-deck-again-like-sims-4-jedi-fallen-order/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/valve-marks-some-ea-games-playable-on-steam-deck-again-like-sims-4-jedi-fallen-order/</guid>
+      <pubDate>Mon, 23 Jan 2023 13:30:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1952236279id22216gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Humble Bundle offering a whole lot of gems in two new bundles</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another good chance for you to build up your Steam collection, with Humble Bundle offering two new bundles full of games. Here's what to expect from them. To help you out and stop you needing to click around, I'll note the expected compatibility across Linux desktop and Steam Deck, along with Native Linux support or a ProtonDB rating (which goes Platinum - Gold - Silver - Bronze - Broken).</p>
+<p>First up is the <a href="https://www.humblebundle.com/games/in-case-you-missed-it-gems-2022?partner=gamingonlinux" target="_blank">In Case You Missed It: Gems of 2022 bundle</a> that has:</p>
+<p class="plain-list-title"><strong>Prehistoric Kingdom</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>ZERO Sievert</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Submerged: Hidden Depths</strong></p>
+<ul>
+<li>
+<p class="plain-list-title"><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Deck Unrated</p>
+</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><strong>Supraland Six Inches Under</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Haiku, the Robot</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>PowerSlave Exhumed</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Source of Madness</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p>Another bundle they recently put up is the <a href="https://www.humblebundle.com/games/fighting-farmers?partner=gamingonlinux" target="_blank">Fighting Farmers Bundle</a> that has:</p>
+<p class="plain-list-title"><strong>Len's Island</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><strong>Spirit of the Island</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
+<li>No ProtonDB Rating</li>
+</ul>
+<p class="plain-list-title"><strong>Re: Legend</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Deck Unrated</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Serin Fate</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
+<li>No ProtonDB Rating</li>
+</ul>
+<p class="plain-list-title"><strong>Kitaria Fables</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Forager</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Stranded Sails - Explorers of the Cursed Islands</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<hr/>
+<p>Humble Store also has it's <a href="https://www.humblebundle.com/store?partner=gamingonlinux" target="_blank">Winter Sale</a> on that runs until February 7th, where you can bag up to 90% off hundreds of titles. You can find some real treats like <a href="https://www.humblebundle.com/store/deep-rock-galactic?partner=gamingonlinux" target="_blank">Deep Rock Galactic</a> with 67% off, <a href="https://www.humblebundle.com/store/valheim?partner=gamingonlinux" target="_blank">Valheim</a> with 30% off, <a href="https://www.humblebundle.com/store/noita?partner=gamingonlinux" target="_blank">Noita</a> with 50% off and tons more.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/humble-bundle-offering-a-whole-lot-of-gems-in-two-new-bundles/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/humble-bundle-offering-a-whole-lot-of-gems-in-two-new-bundles/</guid>
+      <pubDate>Mon, 23 Jan 2023 13:16:09 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1726939961id22215gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Bundle</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Rocket League is getting additional anti-cheat functionality</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>In a move that could cause issues for Linux desktop and Steam Deck gamers, Rocket League is going to introduce new anti-cheat measures. <em>Something people argued with me on Twitter some time ago that wouldn't happen — I was right again.</em></p>
+<p>Rocket League originally had Native Linux support and the development studio Psyonix was <a href="https://www.gamingonlinux.com/2019/05/psyonix-creator-of-rocket-league-is-joining-epic-games/" target="_blank">acquired by Epic Games</a> back in 2019. Then in early 2020 they ended support for Linux and macOS, and later that year it became an Epic Games Store exclusive on PC. Thanks to how far Wine and Proton have come though as Windows compatibility layers, it actually continued running nicely on Linux desktop and Steam Deck. That might change though.</p>
+<p>The problem is that Rocket League has recently seen a surge of AI bots being put into online games, so that people can cheat. An issue highlighted by <a href="https://www.wired.com/story/cheaters-hacked-an-ai-bot-and-beat-the-rocket-league-elite/" target="_blank">Wired</a>, where high-level players were seeing odd behaviour with players that had seemingly "superhuman skill". It's a growing problem, that developer Psyonix is now addressing.</p>
+<p>In a statement on <a href="https://www.reddit.com/r/RocketLeague/comments/10g5ods/update_on_bots_in_online_matches/" target="_blank">Reddit</a>, they said:</p>
+<blockquote>
+<p>For the last several weeks, the introduction of third-party bots to online matches – in Competitive Playlists, especially – has understandably been a very active topic among the Rocket League community.</p>
+<p>Earlier today, we took action against a number of accounts running bots in Rocket League. This banwave should cover the vast majority of accounts that have used bots since they first appeared in online matches towards the end of 2022, and we will continue to monitor for bots and take appropriate action against any players/accounts using them. Furthermore, to help us address bots in future matches, we have added a “Cheating” report reason back into the game. You can find this in game on the report reason list in the Report/Block menu.</p>
+<p>Finally, we are taking steps to introduce additional anti-cheat functionality into Rocket League. This is in progress with the engineering teams, and we’ll share more on this once we’re closer to implementation.</p>
+<p>While we have been quiet on the subject during this time, we have been actively investigating these bots since they first appeared late last year. We strive to be active participants when it comes to community conversations about our game, but we are always going to be more deliberate on issues related to game security and competitive integrity, withholding comments until we are ready to take action.</p>
+<p>There is a zero tolerance policy when it comes to using bots in online play. This is considered both cheating and matchmaking abuse, and it violates the Rocket League <u><strong>Terms of Use</strong></u> as well as the <u><strong>Code of Conduct</strong></u>. Also, if you are interested in working with Psyonix directly on anything bot-related, you can reach out to us here on Reddit, on Discord, or Twitter. Thanks, everyone.</p>
+</blockquote>
+<p>Anti-cheat is a repeating problem for Linux desktop and Steam Deck gamers, often blocking out games entirely from working. Hopefully this won't be a repeat of previous issues but it's worth highlighting for any readers who enjoy playing Rocket League.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/rocket-league-is-getting-additional-anti-cheat-functionality/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/rocket-league-is-getting-additional-anti-cheat-functionality/</guid>
+      <pubDate>Mon, 23 Jan 2023 12:56:30 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1517744227id22214gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>Epic Games</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Turn-based city-builder set on Mars, Farlanders has launched</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Farlanders is a turn-based city-builder from Andriy Bychkovskyi and publisher Crytivo that has you colonize and attempt to terraform the red planet. It's available now with Native Linux support, but no Steam Deck rating as of yet.</p>
+<p>"Lead the charge in establishing a colony on Mars in this turn-based strategy game with a nostalgic look but fresh gameplay. Use specialized tools to terraform the planet, build residential areas for your colonizers, and construct resource-producing factories in an effort to become a self-sustaining society."</p>
+<div class="hidden_video" data-video-id="omF4BR5AWe8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d485f48ef9e901b82b6790254a110fd7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/omF4BR5AWe8" target="_blank">See video</a></div></div>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li>7 campaign missions with narrative tied to the Farlanders: Prologue.</li>
+<li>Competitive freeplay game mode with 3 scenarios.</li>
+<li>Build your own colony on (and below) the Martian surface using more than 50 different structures.</li>
+<li>Terraform the planet using a variety of tools.</li>
+<li>No 2 maps are ever the same with procedural map generation.</li>
+<li>Dynamic weather changes and anomalies.</li>
+<li>Research tree with 19 technologies.</li>
+<li>Trade with other colonies that will reflect fluctuating market prices and demands.</li>
+<li>Uncover alien artifacts.</li>
+</ul>
+</blockquote>
+<p>I sadly simply haven't had time to personally play through this one, however I did enjoy the demo and the Prologue as it has some interesting mechanics. The Prologue had a good user review score too, as does the full game with them both being "Very Positive" on Steam. Nice to see more developers continue Native Linux support, and provide a free Prologue for people to actually see if they like it first, I do miss the days of easy to find demos but glad to see them come back in a new form.</p>
+<p>You can buy it now on <a href="https://store.steampowered.com/app/1318740/Farlanders/" target="_blank">Steam</a>. It's coming to <a href="https://www.gog.com/en/game/farlanders" target="_blank">GOG</a> but not clear when.</p>
+<p>On top of that you can try the free Prologue on <a href="https://andriy-bychkovskyi.itch.io/farlanders-prologue" target="_blank">itch.io</a>, <a href="https://www.gog.com/en/game/farlanders_prologue" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/1460540/Farlanders_Prologue/" target="_blank">Steam</a> to see if it's something you might like.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/turn-based-city-builder-set-on-mars-farlanders-has-launched/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/turn-based-city-builder-set-on-mars-farlanders-has-launched/</guid>
+      <pubDate>Mon, 23 Jan 2023 12:42:52 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1466331358id22213gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>City Builder</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Free open source RPG &#39;FreedroidRPG&#39; arrives on Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It's not going to win any awards on style but some of you may want to know that the classic free and open source RPG FreedroidRPG is now on <a href="https://store.steampowered.com/app/1979930/FreedroidRPG/" target="_blank">Steam</a>. <em>A name some older readers might not have seen for a while…</em></p>
+<p>This is a game I remember reading about and following along back in the early days, way before Steam came to Linux and when Wine couldn't exactly run a whole lot. It might not be up to modern standards in many ways but fun to see it continue on. Linux has obviously come a very long way as a gaming platform with so many games available to play either Native or through Proton.</p>
+<div class="hidden_video" data-video-id="-bUiKnrkKDY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/89016736834752ca9e56b4e25d2f21c6.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-bUiKnrkKDY" target="_blank">See video</a></div></div>
+<p><em>I have to admit a penguin slapping robots is quite amusing.</em></p>
+<p>More about it from the developers: "Freedroid aims to provide a popular reference game in the open-source world. Our goal is to do so through the implementation of an immersive world with distinctive dialog and graphical styles in a format that is friendly to all ages while providing a fair amount of choice to the player. In view of this, we rely on high quality literary content to provide entertainment and emotional investment as well as educational benefits."</p>
+<p>Find it on <a href="https://store.steampowered.com/app/1979930/FreedroidRPG/" target="_blank">Steam</a> and the <a href="https://freedroid.org/" target="_blank">official site</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/free-open-source-rpg-freedroidrpg-arrives-on-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/free-open-source-rpg-freedroidrpg-arrives-on-steam/</guid>
+      <pubDate>Mon, 23 Jan 2023 12:34:46 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/171572907id22212gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>Open Source</category>
+      
+      <category>RPG</category>
+      
+    </item>
     
     <item>
       <title>Get a free copy of the chilled Haven Park in the GOG New Year Sale</title>
@@ -1079,7 +1421,7 @@ Expect official news announced soon ~</p>
 <p>If I am honest I would say the overall visual style and presentation of <em>Jump 'n Bump</em> is superior to <em>Bunnies</em>, with cleaner pixel art and a cute interactive menu screen. The gameplay is pretty much identical, with the same frantic hopping about and the same rain of gibs upon contact. Even most of the modifiers found in <em>Bunnies</em> can be unlocked inside <em>Jump 'n Bump</em> through the use of cheat codes, along with a few tweaks unique to <em>Jump 'n Bump</em> itself.</p>
 <p>You can even activate AI controls by holding down the Alt key followed by the number of the player you wish to bring to life, allowing <em>Jump 'n Bump </em>to be tackled as a single player game. With its assets available work on <em>Jump 'n Bump</em> has continued apace, with a fork of the game supporting SDL2 still seeing active development. There is also a modern remake of the game based on the Godot Engine, and even a version made that can be ran from within a web browser.</p>
 <p><em>Jump 'n Bump</em> is far from the only time the free software community has created an enduring game, with its close to twenty five years of existence seeming paltry in comparison to some of the classics. One of those classics wears many faces, but there is one face in particular that has remained etched in my memory for years, even if I never did get a good handle on the game's actual mechanics. It is time to change that.</p>
-<p><strong>Carrying on in Part 22: Happy Hacking</strong></p>
+<p><strong>Carrying on in <a href="https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-22-happy-hacking/" target="_blank">Part 22: Happy Hacking</a></strong></p>
 <p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
@@ -3637,279 +3979,6 @@ However, it feels worth it to start enabling some games we know to work, so that
       <category>Meta</category>
       
       <category>NVIDIA</category>
-      
-    </item>
-    
-    <item>
-      <title>Intel announces 13th Gen mobile processors, plus 65-watt and 35-watt desktop processors</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Today Intel announced their new lineup on 13th Gen mobile processors including a 24-core beast and additionally some 65-watt and 35-watt desktop processors.</p>
-<p>For the mobile processors they're split across three different series from top to bottom: Intel Core H-series focused on the high end, with the Intel Core P-series and U-series focused on thin and light laptops. Below you can see the overview of all the different models that have been announced split across each series, click the images to make them bigger.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19178256401672763505gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/19178256401672763505gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/134315291672763507gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/134315291672763507gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14628713201672763507gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/14628713201672763507gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13595611291672763508gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13595611291672763508gol1.png"/></a></p>
-<p>They also announced a bunch more desktop processors in 65w and 35w variants completing the lineup for the 13th Gen Intel Core. Below is the overview on each of those. Click the images to make them bigger.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/132342001672763739gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/132342001672763739gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14568012331672763741gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/14568012331672763741gol1.png"/></a></p>
-<p>Overall it seems like a pretty solid lineup to compete with what AMD have been cooking up. Nice to see both sides continuing to push out decent processors, and the prices on them seem pretty reasonable too. At $196 for a 10 core CPU (6 P cores, 4 E cores) for the i5-13400F, seems like a good bet for those of you on a budget who don't need an integrated GPU.</p>
-<p>Additionally they also announced the Intel Processor N-series aimed at entry-level mainstream uses where you don't need a whole lot of performance. These replace the Intel Pentium and Intel Celeron branding.</p>
-<p><span style="background-color:var(--article-main-background); color:var(--font-color); font-size:16px">You can see their presentation below:</span></p>
-<div class="hidden_video" data-video-id="qspaICwyRfQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d66aec77a153a15f1bcf2bfe53e46e3e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/qspaICwyRfQ" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/intel-announces-13th-gen-mobile-processors-plus-65-watt-and-35-watt-desktop-processors/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/intel-announces-13th-gen-mobile-processors-plus-65-watt-and-35-watt-desktop-processors/</guid>
-      <pubDate>Tue, 03 Jan 2023 16:45:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1638546863id22118gol.jpg" type="image/jpeg"/>
-      
-      <category>Hardware</category>
-      
-      <category>Intel</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Linux use overtakes macOS on the Stack Overflow Survey</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Well this is a fun statistic, it seems Linux has become a fair bit more popular than macOS on the <a href="https://survey.stackoverflow.co/2022/#section-most-popular-technologies-operating-system" target="_blank">Stack Overflow Developer Survey for 2022</a>.</p>
-<p>Firstly for the <a href="https://insights.stackoverflow.com/survey/2021#most-popular-technologies-op-sys" target="_blank">2021 data</a>, professional Linux use was at 25.17% and overall Linux use was 25.32%. At the time macOS was at 30.04% for professionals and 25.19% overall. This was from over 80,000 responses.</p>
-<p>This year's survey had over 70,000 responses, and the results for 2022 show that 40.23% use Linux for personal use while 39.89% use it as a professional. Personal use for macOS was at 31.07% and professional use at 32.97%.</p>
-<p>So it's worth pointing out that while yes Linux use has risen quite a bit above macOS, they also had seemingly less responses on the latest survey. Still interesting enough to highlight though especially with the total responses being a pretty great sample size overall. A fun point here as well though is that the survey also noted that 15% of the respondents use Windows Subsystem for Linux (WSL) personally and 14.34% professionally.</p>
-<p>Naturally Windows was on top both years but the gap is getting smaller overall for developers, meanwhile poor old BSD was noted to only have 1.47% personal use and 1.03% professional use.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/linux-use-overtakes-macos-on-the-stack-overflow-survey/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/linux-use-overtakes-macos-on-the-stack-overflow-survey/</guid>
-      <pubDate>Tue, 03 Jan 2023 12:31:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
-      
-      <category>Meta</category>
-      
-      <category>Survey Results</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve dev teases HDR support for Linux Gaming</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Lots of people noticed recently than a whole lot of working was going into the <a href="https://github.com/Plagman/gamescope" target="_blank">Gamescope</a> project for HDR support, and now a Valve developer has teased trying it out. This has been a long time coming, with work needed to support it across multiple parts of the Linux stack but it's starting to get there now.</p>
-<p>For those not aware, Gamescope is a micro-compositor that's used on the Steam Deck to display your games and it can also be used on desktop too. It gives you a whole lot of control over what games are doing, with lots of work from developer Joshua Ashton going in for HDR support.</p>
-<p>Writing on <a href="https://twitter.com/Plagman2/status/1610200412854046720" target="_blank">Twitter</a>, Valve developer Pierre-Loup Griffais mentioned:</p>
-<blockquote>
-<p>New Linux gaming milestone: with the latest work from Josh Ashton, HDR can now be enabled for real games! Tested it tonight on my AMD desktop with Halo Infinite, Deep Rock Galactic, DEATH STRANDING DC. Very early and will still need some time to bake to be useful to most.</p>
-</blockquote>
-<p>Griffais showed these shots:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2085823411672742026gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2085823411672742026gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20673519671672742027gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/20673519671672742027gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9633386491672742027gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/9633386491672742027gol1.jpeg"/></a></p>
-<p>An increasingly exciting time to be a Linux gaming fan and it looks like 2023 will be the year of HDR. As Griffais said though, there's a lot still to do and this is just the start of it actually working.</p>
-<p>On their <a href="https://landofkittens.social/objects/822e33d8-8aad-4977-9f16-33611f27ed1a" target="_blank">Fediverse account</a> developer Joshua Ashton also showed off more of Death Stranding with a HDR Heatmap.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/valve-dev-teases-hdr-support-for-linux-gaming/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/valve-dev-teases-hdr-support-for-linux-gaming/</guid>
-      <pubDate>Tue, 03 Jan 2023 10:36:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/571239623id22116gol.jpg" type="image/jpeg"/>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Latest Steam Survey sees a minor dip for Linux &amp; Steam Deck, still trending nicely overall</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>December 2022 results are in for the <a href="https://store.steampowered.com/hwsurvey/?platform=combined" target="_blank">Steam Hardware &amp; Software Survey</a> and overall the Linux share is down but the overall trend is still good. Initially the survey results released to some parts that looked off, but Valve seems to have now corrected it.</p>
-<p>For December 2022 the Linux share was 1.38%, next to macOS at 2.48% and Windows at 96.15%.</p>
-<p>From our own <a href="https://www.gamingonlinux.com/steam-tracker/" target="_blank">Steam Tracker</a> you can see the current trend, which still puts the overall Linux share remaining at a multi-year high but just down from the peak last month. Unless something drastic changes, we're still trending towards possibly seeing 2% by the middle of the year.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19203672791672740605gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19203672791672740605gol1.png"/></a></p>
-<p>Valve are at least finally showing more distributions in their dedicated Linux list, when filtering it over to their Linux page you will now see all these shown:</p>
-<ul>
-<li>SteamOS Holo 64 bit 24.07% -1.70%</li>
-<li>Ubuntu 22.04.1 LTS 64 bit 11.12% +0.23%<img src="https://store.cloudflare.steamstatic.com/public/images/trans.gif"/></li>
-<li>Arch Linux 64 bit 9.16% -0.21%</li>
-<li>Freedesktop.org SDK 22.08 (Flatpak runtime) 64 bit 6.48% +0.66%</li>
-<li>Manjaro Linux 64 bit 6.40% -0.32%</li>
-<li>Pop!_OS 22.04 LTS 64 bit 3.83% +0.12%</li>
-<li>Linux Mint 21 64 bit 3.67% -0.23%<img src="https://store.cloudflare.steamstatic.com/public/images/trans.gif"/></li>
-<li>Other 35.28% +1.47%</li>
-</ul>
-<p>Going by the combined stats, the Steam Deck GPU shows up at 0.33% overall on Steam, so we can still tell that the vast majority of people on Steam Deck are sticking with SteamOS too.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/latest-steam-survey-sees-a-minor-dip-for-linux-steam-deck-still-trending-nicely-overall/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/latest-steam-survey-sees-a-minor-dip-for-linux-steam-deck-still-trending-nicely-overall/</guid>
-      <pubDate>Tue, 03 Jan 2023 10:19:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-      <category>SteamOS</category>
-      
-    </item>
-    
-    <item>
-      <title>Building a Retro Linux Gaming Computer - Part 19: SiNsational</title>
-      <author>Hamish</author>
-      <description><div class="content group e-content">
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<p><strong>Continued from <a href="https://www.gamingonlinux.com/2022/09/building-a-retro-linux-gaming-computer-part-18-run-away-and-join-the-circus/" target="_blank">Part 18: Run Away and Join the Circus</a></strong></p>
-<p>Given the the company's current focus, the name Hyperion Entertainment seems an odd fit for the modern maintainer of AmigaOS, betraying its earlier status as an Amiga focused video game porting house. Attracted by the apparent success of Loki Software, Hyperion Entertainment also decided to expand into the Linux market, porting three games to the platform. One of their ports, that of <em>SiN</em>, to this day remains from them an elusive Linux exclusive.</p>
-<p>Being given only a limited physical release in Europe, the Linux version of <em>SiN</em> is almost impossible to find today, so I would like to thank Nickolas Grigoriadis for supplying me with a copy. First developed by Ritual Entertainment for release in 1998 <em>SiN</em> is an ambitious if adolescent first person shooter with pretensions towards being an immersive sim, with level design that allows for a number of branching paths and a great degree of interactivity.</p>
-<p>Adolescent applying to both the content of <em>SiN</em>, with its ridiculous comic book plot carried by the bosom of its femme fatale antagonist, and to how well baked the final product is. Notorious for its bugs <em>SiN</em> can also just feel a bit of a mess, being a headache for completionists with its multiple conflicting objectives. <em>SiN</em> plays more as an overwrought <em>Duke Nukem 3D</em> than something like <em>Deus Ex</em>, perhaps unsurprising given the input from the likes of Richard Grey and Charlie Wiederhold.</p>
-<p>When the ingredients are fully cooked the game can be compelling, but you have to take the rough with the smooth. This also applies to the quality of the Linux port, with it being mercurial to get working. When I first installed the SiN demo on Red Hat Linux 7.3 it refused to recognize my libGL.so library, but in the year or so since it started working without a hitch. This carried over to when I installed the full version, but I still have no firm idea as to what changed.</p>
-<p>SiN also has the most obnoxious retail key and disc checks of any Linux game I have encountered, with it just kicking you to the desktop with an stderr message when starting a new game if the CD-ROM is not mounted. Given how often the game crashed this did not fill me with confidence. In addition, I found that audio clips would cut each other off and would at times be distorted, with the worst offender for this being at the end of the optional "Missile Silo" level.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9322435051670625057gol6.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/9322435051670625057gol6.jpg"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11576918371670625283gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/11576918371670625283gol6.png"/></a></p>
-<p>How much these problems had to do with the Linux port or the nature of <em>SiN</em> itself remains unclear, although I suspect it to be a combination of both. I found myself stuck for a time in that same level as it is the only instance in the whole campaign where the unadvertised inventory screen, accessible with the F11 key, is required in order to progress. <em>SiN</em> develops a habit of putting hurdles in your way, as an even more significant roadblock would arise from my going off the beaten path.</p>
-<p>Since I had opted to destroy all the pumps in the optional "Geothermal Plant" level, this breaks the scripting when you are forced to go through the "Biomass Reclamation Center" later in the game, causing Darwin Chamber 3 in "Area 57" not to be accessible. Thankfully a fan patch exists to fix this specific issue, as otherwise I would have been forced to cheat, or load up a previous save and use the alternative path through the "Hidden Docks" instead.</p>
-<p>This was followed by the next level "Xenomorphic Laboratory" producing broken save files, but once I got past this things proceeded fine up until the penultimate "Munt Phoenix" level. Here the scripting broke again, with the enemies standing stock still instead of attacking me, and mission critical items not spawning in. This I could resolve by just restarting the level, letting me go on to defeat the final boss, although the final MPEG cutscene aborted after a few seconds.</p>
-<p>Performance wise Windows 98 averaged 40.7 FPS compared to 33.1 FPS under Linux using High settings, with both versions benefiting from turning Tessellation and Dynamic Lighting off. Doing so brought the Linux average up to 37.3 FPS, although this was still dwarfed by the 51.2 FPS seen on Windows 98 with the same settings. Windows benefits too by having access to the more polished <em>Wages of Sin</em> mission pack, which sadly was never ported over to Linux.</p>
-<p>SiN would also later be adapted into an animated film, the inverse of what gave us the software I am to cover next. Plenty of games released for Linux could be considered adolescent or even childish, but software designed with actual children in mind can be few and far between, at least in the commercial or retail space. Time for some family friendly entertainment, even if I do come away from the experience questioning the sincerity of the publisher's intentions.</p>
-<p><strong>Carrying on in <a href="https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-20-the-antediluvian-world/" target="_blank">Part 20: The Antediluvian World</a></strong></p>
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-19-sinsational/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-19-sinsational/</guid>
-      <pubDate>Mon, 02 Jan 2023 19:29:32 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/476681665id21996gol.jpg" type="image/jpeg"/>
-      
-      <category>Action</category>
-      
-      <category>Editorial</category>
-      
-      <category>FPS</category>
-      
-      <category>Retro</category>
-      
-    </item>
-    
-    <item>
-      <title>What I want to see in 2023 for Linux, Gaming, Steam Deck and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The end of a year is a good time to sit, think and reflect on what a year it has been and what we hope 2023 will bring so here's some of what I want and what I think could happen.</p>
-<p>I actually wrote a <a href="https://www.gamingonlinux.com/2022/10/my-current-little-wish-list-for-steam-deck-upgrades/" target="_blank">wishlist for the Steam Deck back in October</a>, and funnily enough pretty much every single point there is still valid right now. Some points have had minor work but most of it hasn't been touched. I hope Valve are reading, because all of those points are what I regularly see people moan and gripe about too.</p>
-<p>What else though for the wider picture?</p>
-<p>- <strong>Neon Prime</strong>. Come on Valve, we need a new game from you. A proper one, not another (while very cool) Aperture Desk Job. We had the <a href="https://www.gamingonlinux.com/2022/10/valve-filed-a-computer-game-software-trademark-for-neon-prime/" target="_blank">trademark registration for Neon Prime</a> and leaker / data miner Tyler McVicker thinks it's <a href="https://www.gamingonlinux.com/2022/12/neon-prime-from-valve-is-reportedly-a-third-person-shooter-close-to-release/" target="_blank">close to release</a>. What the heck is it? I'm overly keen to find out. With good cross-platform support across Linux desktop, Steam Deck and Windows it could be an easy hit if it's a good multiplayer game like it's expected to be.</p>
-<p>- For publishers to actually stop forcing <strong>Launchers</strong> on us. Don't make me beg. Have you ever met someone who said "heck yeah, the EA App!" or "oh lovely, the 2K launcher" in any kind of serious way? No you haven't — no one has. They almost always add <em>nothing</em> of value, break things constantly (not just on Linux / Steam Deck) and they're just a great big nuisance. I would like for them to just go away, forever. Throw them in the bin. Get them in the sea, just far away from me.</p>
-<p>- <strong>Valve Deckard</strong>. We know from a lot of details going out, that Valve seem to be working <a href="https://www.gamingonlinux.com/2022/06/looks-like-valve-are-gearing-up-for-a-new-vr-headset/" target="_blank">on a new VR HMD</a>, one that should be both portable and able to connect up to a PC. It will likely run Linux for the portable mode, hence all their work on Linux (not just for Steam Deck). Gimme. Seriously. The Valve Index is great, but it's also overly bulky and really Valve haven't actually done all that much with it, especially on the Linux side where they've seemingly <em>ignored</em> Index support for some time now and the experience is less than stellar. I have high hopes that the Deckard will be a big improvement in many ways.</p>
-<p>- <strong>Steam Deck Refresh</strong>. Look, the Steam Deck is fantastic overall but it could be better. It's not time yet for a Steam Deck 2, Valve said it themselves that they want to keep the main internals (CPU/GPU) the same to have a good point for developers and gamers but they want to focus on the screen and battery life. So do it. Towards the end of 2023, I would be surprised if we didn't have a confirmation that a nice refresh was on the way for this. The battery life being the biggest gripe people seem to talk about would hopefully get wiped off the table. Having it a bit lighter somehow would be another great bit to focus on, to prevent that hand / wrist strain from longer sessions. I hope Valve keep focusing on improving the Steam Deck, and not entertain the <a href="https://www.gamingonlinux.com/2022/12/the-steam-deck-really-doesnt-need-exclusives/" target="_blank">ridiculous idea of exclusive games</a>.</p>
-<p>- <strong>Half-Life 3, Portal 3</strong>. I can dream can't I? Half-Life: Alyx was a true return to form for Valve games, and one of the best gaming experiences I've ever had but I want more! I need to find out what happens after [redacted]. Portal 3 would also be another great one, with the first two being some of my favourite puzzles games and even their own writers <a href="https://www.gamingonlinux.com/2022/04/erik-wolpaw-to-valve-on-portal-3-we-should-just-do-it/" target="_blank">want to do a third</a>.</p>
-<p>- <strong>SteamOS 3</strong> public release. Perhaps another big turning point for Linux and Linux Gaming as a whole? I get comments asking me for info on this daily (no I really don't know). The Steam Deck has turned a great many heads to just how powerful and good Linux can be as a platform, and now it seems many more people want to try it but they're waiting for SteamOS 3 to be released. While I think people would be better off sticking to a proper desktop Linux distribution (<a href="https://www.gamingonlinux.com/2022/12/the-best-linux-distribution-for-gaming-in-2023/" target="_blank">like Ubuntu</a>), SteamOS 3 on desktop could actually be quite interesting to see, and with it then being available to more hardware vendors, we could see a true explosion in gaming devices shipping with Linux. 2022 was the year of Linux Gaming thanks to the Steam Deck, perhaps 2023 will truly be the year of Linux on the desktop?</p>
-<p>- More <strong>Linux Hardware Releases</strong>. The Steam Deck is great but we need <u>more</u>, and not just from Valve. More hardware shipping with Linux on it out of the box and properly supported. I've said time and time again, this is what we <em>need</em> to push Linux forward. You can have the best distributions around, the slickest desktop environments, it can truly send Windows packing but it's largely useless if it's not out there in the face of the masses on hardware. It needs to be an oven ready deal; people just need to get it and turn it on.</p>
-<p>- For <strong>Linux to break 3%</strong> on the Steam Hardware &amp; Software Survey. I don't actually think this one is too big of an ask. It's <a href="https://www.gamingonlinux.com/steam-tracker/" target="_blank">trending towards</a> 2% by the middle of 2023, thanks to the Steam Deck shipping with SteamOS.</p>
-<p>- <strong>Anti-cheat woes</strong>. We already have <em>Easy Anti-Cheat</em> and <em>BattlEye</em> supporting Linux and Proton (and so Steam Deck too), so it's largely down to game developers to hook up support and many just haven't bothered to do so. There's issues developers and publishers need to think on of course, like opening up a multiplayer game to more platforms that could <em>potentially</em> bring in more cheaters. Both Linux desktop and Steam Deck are a growing market (<a href="https://www.gamingonlinux.com/2022/12/novembers-steam-survey-shows-another-uptick-for-linux-thanks-to-steam-deck/" target="_blank">#1</a>, <a href="https://www.gamingonlinux.com/2022/10/kde-steam-deck-akademy-2022/" target="_blank">#2</a>) of players, that I truly hope the <a href="https://www.gamingonlinux.com/2022/12/steam-deck-now-shipping-across-asia-plus-a-new-steam-deck-stable-client-update/" target="_blank">Steam Deck's expansion into Asia</a> becomes a turning point on this so that it can no longer be ignored.</p>
-<p>- More open source from <strong>NVIDIA</strong>. In 2022 we had quite a surprise, with NVIDIA <a href="https://www.gamingonlinux.com/2022/05/nvidia-releases-open-source-linux-gpu-kernel-modules-beta-driver-5154304-out/" target="_blank">opening up their kernel modules</a> and it would be great to see even more like this. They've made a good start and I hope to see them keep pushing. NVIDIA proprietary drivers are a constant nuisance and source of many annoyances for me over the past few years. I would already be on an AMD GPU by now, if <a href="https://twitter.com/gamingonlinux/status/1603073266364579842" target="_blank">OverclockersUK didn't oversell</a> at the 7900 XTX launch.</p>
-<p>- <strong>GOG Galaxy</strong> and <strong>Epic Games Store</strong> on Linux — officially. Yeah yeah, Steam is great and all but options are better for consumers as a whole. Wine / Proton development has helped firmly bridge the gap of getting games working on Linux, now we need the other stores to follow along but this is the biggest ask, much more of a dream than any of the previous.</p>
-<p><em>What do you want to see throughout 2023?</em></p>
-<p><em>Don't forget to <a href="https://www.youtube.com/@gamingonlinux" target="_blank">follow along on YouTube</a>!</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/what-i-want-to-see-in-2023-for-linux-steam-deck-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/what-i-want-to-see-in-2023-for-linux-steam-deck-and-more/</guid>
-      <pubDate>Sun, 01 Jan 2023 12:27:11 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/702661108id22107gol.jpg" type="image/jpeg"/>
-      
-      <category>Editorial</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve revealed the most played games on Steam Deck for 2022</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve put up a <a href="https://store.steampowered.com/sale/BestOf2022" target="_blank">big list</a> of all the top games on Steam for 2022, and they've given a breakdown across different categories like the Steam Deck. So here's what they listed as the most played, plus a note about the best reviewed games released playable on Steam Deck in 2022.</p>
-<p>Firstly the big Valve list: these games are what Valve say had the most daily active players on Steam Deck through 2022:</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/1145360/Hades/ " target="_blank">Hades</a> </li>
-<li><a href="https://store.steampowered.com/app/1817070/Marvels_SpiderMan_Remastered/ " target="_blank">Spider-Man Remastered</a> </li>
-<li><a href="https://store.steampowered.com/app/1313140/Cult_of_the_Lamb/ " target="_blank">Cult of the Lamb</a></li>
-<li><a href="http:// https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/ " target="_blank">The Witcher 3</a></li>
-<li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/ " target="_blank">Elden Ring</a></li>
-<li><a href="https://store.steampowered.com/app/275850/No_Mans_Sky/ " target="_blank">No Man’s Sky</a> </li>
-<li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/ " target="_blank">Cyberpunk 2077</a> </li>
-<li><a href="https://store.steampowered.com/app/1332010/Stray/ " target="_blank">Stray</a> </li>
-<li><a href="https://store.steampowered.com/app/1687950/Persona_5_Royal/ " target="_blank">Persona 5 Royal</a> </li>
-<li><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/ " target="_blank">Vampire Survivors</a> </li>
-<li><a href="https://store.steampowered.com/app/1818750/MultiVersus/ " target="_blank">Multiversus</a> </li>
-<li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank">Red Dead Redemption II</a> </li>
-</ul>
-<p>Additionally, going by <a href="https://steamdb.info/instantsearch/?refinementList%5Boslist%5D%5B0%5D=Steam%20Deck%20Verified&amp;refinementList%5BreleaseYear%5D%5B0%5D=2022" target="_blank">SteamDB</a> these are the top 10 best user-reviewed games released in 2022 that are Steam Deck Verified (from top to bottom):</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/" target="_blank">Vampire Survivors</a></li>
-<li><a href="http://store.steampowered.com/app/1332010/Stray/ " target="_blank">Stray</a></li>
-<li><a href="https://store.steampowered.com/app/1593500/God_of_War/" target="_blank">God of War</a></li>
-<li><a href="https://store.steampowered.com/app/1290000/PowerWash_Simulator/" target="_blank">PowerWash Simulator</a></li>
-<li><a href="https://store.steampowered.com/app/1533420/Neon_White/" target="_blank">Neon White</a></li>
-<li><a href="http://store.steampowered.com/app/1687950/Persona_5_Royal/ " target="_blank">Persona 5 Royal</a></li>
-<li><a href="http://store.steampowered.com/app/1817070/Marvels_SpiderMan_Remastered/ " target="_blank">Spider-Man Remastered</a></li>
-<li><a href="https://store.steampowered.com/app/1455840/Dorfromantik/" target="_blank">Dorfromantik</a></li>
-<li><a href="https://store.steampowered.com/app/1942280/Brotato/" target="_blank">Brotato</a></li>
-<li><a href="https://store.steampowered.com/app/1684930/CULTIC/" target="_blank">CULTIC</a></li>
-</ul>
-<div class="hidden_video" data-video-id="3qXZVyTPsXo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a06d471f053ce6eb4535547ba512f736.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3qXZVyTPsXo" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/most-played-games-on-steam-deck-2022/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/most-played-games-on-steam-deck-2022/</guid>
-      <pubDate>Fri, 30 Dec 2022 20:38:56 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/9940902id22113gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Listicle</category>
-      
-      <category>Round-up</category>
-      
-      <category>Video</category>
-      
-    </item>
-    
-    <item>
-      <title>The final free game during the GOG Winter Sale is Daymare: 1998</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Act fast to claim a free copy of <a href="https://www.gog.com/en/game/daymare_1998" target="_blank">Daymare: 1998</a> on GOG that they're giving away as the final free game in their Winter Sale. Scroll down on the <a href="https://www.gog.com/en" target="_blank">GOG home page</a> when you're logged in, and you'll see the giveaway banner to claim it.</p>
-<p>What is it? Daymare: 1998 is a third-person survival horror with hardcore survival mechanics and hard to kill enemies. It requires a strategical approach to combat and puzzles and offers a multi-character point of view on the story, revealing a deep and obscure lore. You can claim the game until Monday, January 2nd at 2 PM UTC. It doesn't have a Linux version but you can use the likes of <a href="https://lutris.net/" target="_blank">Lutris</a>, <a href="https://usebottles.com/" target="_blank">Bottles</a> or <a href="https://heroicgameslauncher.com/" target="_blank">Heroic</a> to grab it and play it easily with the Wine compatibility layer.</p>
-<div class="hidden_video" data-video-id="mHHVdBW29sM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ee486b0e90ee106d2649fadecc946d46.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/mHHVdBW29sM" target="_blank">See video</a></div></div>
-<p>A quick reminder of some easy lists to find some good cheap games to pick up during the sale:</p>
-<ul>
-<li><a href="https://af.gog.com/en/games?publishers=2k-games&amp;as=1636858786" target="_blank">2K Games</a></li>
-<li><a href="https://af.gog.com/en/promo/2022_winter_sale_indie_collection?as=1636858786" target="_blank">Indie Hits</a> (or <a href="https://af.gog.com/promo/2022_winter_sale_indie_byob?as=1636858786" target="_blank">build your own indie bundle</a>)</li>
-<li><a href="https://af.gog.com/en/games?publishers=devolver-digital&amp;as=1636858786" target="_blank">Devolver Digital</a></li>
-<li><a href="https://af.gog.com/en/promo/2022_winter_sale_rpg?as=1636858786" target="_blank">RPGs</a></li>
-<li><a href="https://af.gog.com/en/games?publishers=paradox-interactive&amp;as=1636858786" target="_blank">Paradox Interactive</a></li>
-<li><a href="https://af.gog.com/en/games?query=star%20trek&amp;order=desc:score&amp;as=1636858786" target="_blank">Star Trek</a></li>
-<li><a href="https://af.gog.com/en/games?query=star%20wars&amp;publishers=disney&amp;order=desc:score&amp;as=1636858786" target="_blank">Star Wars</a></li>
-<li><a href="https://af.gog.com/en/promo/2022_winter_sale_classics?as=1636858786" target="_blank">Timeless Classics</a></li>
-<li><a href="https://af.gog.com/partner/warhammer?as=1636858786" target="_blank">Warhammer</a></li>
-</ul>
-<p>The whole Winter Sale ends on January 2nd at 11 PM UTC. </p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2022/12/the-final-free-game-during-the-gog-winter-sale-is-daymare-1998/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2022/12/the-final-free-game-during-the-gog-winter-sale-is-daymare-1998/</guid>
-      <pubDate>Fri, 30 Dec 2022 18:51:48 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1954750777id22112gol.jpg" type="image/jpeg"/>
-      
-      <category>DRM-Free</category>
-      
-      <category>Free Game</category>
-      
-      <category>Giveaway</category>
-      
-      <category>GOG</category>
       
     </item>
     
