@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-01-24 07:24:47.012138</pubDate>
+    <pubDate>2023-01-25 07:27:26.828264</pubDate>
 
     
     <image>
@@ -18,6 +18,291 @@
     </image>
 
     
+    
+    <item>
+      <title>Forspoken needs desktop Linux to spoof being a Steam Deck to work</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>In a case of what the heck? Square Enix and Luminous Productions just released <a href="https://store.steampowered.com/app/1680880/Forspoken/" target="_blank">Forspoken</a>, which works on Steam Deck but it won't run on desktop Linux without spoofing it being a Steam Deck. One of those moments where I had to blink a good few times, wipe my glasses and let out a big sigh. </p>
+<p>To run it on desktop Linux you can either load launch Steam directly with "-steamdeck" or by setting "SteamDeck=1 %command%" as a launch option for the game itself. No this isn't a joke. It's not entirely clear why but I'm not going to say the developer or publisher actively chose to block Linux desktop, it's more likely they just didn't think about what they were doing outside of letting it run on Steam Deck specifically (which runs SteamOS Linux).</p>
+<p>Without that workaround, launching it on desktop Linux gives you this:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19843946761674596859gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19843946761674596859gol1.png"/></a><br/>
+<em>It "didn't be installed" on my <s>Windows</s> Linux.</em></p>
+<p>But when launching with the workaround, well it's a different story. </p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13689737811674597651gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13689737811674597651gol1.jpg"/></a></p>
+<p>Doesn't exactly seem very stable either, it would completely crash if I picked a different overall graphics preset. Some individual graphics settings made it completely crash too. I also couldn't get it to go above 30FPS, with Vsync off and a limit set to 120FPS it just wanted to stay at 30FPS (and plenty below that).</p>
+<p>Looks like a rough launch with it being Mixed on Steam so far and plenty of critic reviews have not been particularly kind on it either. At £64.99 it just doesn't seem worth the price.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/forspoken-desktop-linux-spoof-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/forspoken-desktop-linux-spoof-steam-deck/</guid>
+      <pubDate>Tue, 24 Jan 2023 22:13:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1952734333id22224gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Direct3D to Vulkan translation layer DXVK 2.1 adds HDR support, improves shader stutter</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>DXVK, one of the secret sauces included with the <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a> compatibility layer, has a big new release out now. <a href="https://github.com/doitsujin/dxvk/releases/tag/v2.1" target="_blank">DXVK 2.1</a> adds in some big new features like HDR!</p>
+<p>Currently, this new HDR support is quite limited though. No major Linux desktop environment actually supports HDR yet, so you will have to use <a href="https://github.com/Plagman/gamescope" target="_blank">Gamescope</a> specifically with it. When paired up with vkd3d-proton version 2.8 or newer, it "will allow D3D12 games to detect and use the HDR10 color space if they support it". It's also only supported on AMD GPUs, and even there it needs special Linux kernel patches.</p>
+<p>One that perhaps is more exciting, because pretty much everyone will benefit, is even more improvements to shader compilation. From the release notes it states the use of "pipeline libraries was extended to pipelines with tessellation or geometry shaders in order to further reduce stutter". On top of that, if your GPU driver supports it, more features of the VK_EXT_extended_dynamic_state3 extension are being used to reduce stutter when MSAA is on.</p>
+<p>Another performance upgrade is that DXVK will use fewer threads for background optimization of graphics pipelines, which may make games smoother on some systems but it doesn't change the <em>initial</em> shader compiling.</p>
+<p>Some other improvements include:</p>
+<ul>
+<li>A new GLFW backend for Native Linux builds using DXVK.</li>
+<li>More consistent D3D11 performance.</li>
+<li>A workaround for the Uplay overlay getting stuck on.</li>
+<li>Fixes for: Ashes of the Singularity, Battlefield: Bad Company 2, Cardfight!! Vanguard, Gujian 3, Resident Evil 4 HD, Saints Row: The Third, Sekiro: Shadows Die Twice, Sonic Frontiers and Supreme Commander: Forged Alliance.</li>
+</ul>
+<hr/>
+<p>I'm quite excited to see all the improvements. Hopefully it won't be too long before the Steam Deck and Proton together get upgraded to make use of it all.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/direct3d-to-vulkan-translation-layer-dxvk-21-adds-hdr-support-improves-shader-stutter/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/direct3d-to-vulkan-translation-layer-dxvk-21-adds-hdr-support-improves-shader-stutter/</guid>
+      <pubDate>Tue, 24 Jan 2023 21:43:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1392853294id22225gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 8.0 is out now with major compatibility improvements</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Wine 8.0 is out now, a big improvement over the last stable release with many upgrades for Windows to Linux compatibility across thousands of games and apps. This is part of what makes up <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Steam Play Proton</a>, the compatibility used on Steam Deck to run Windows games.</p>
+<p>One of the major changes here is the conversion to the PE format for various modules. This format is used by Windows, and an important milestone for Wine to increase compatibility with copy protection, 32-bit applications on 64-bit hosts, Windows debuggers and more. Work is still to be done though to finish it properly, as some modules still need to be properly converted.</p>
+<p>The Wine developers say they also implemented a "special syscall dispatcher", to avoid the overhead of a full NT system call to minimise the performance impact.</p>
+<p>WoW64 was upgraded too, and once the final PE work is done, they say it will then be "fully possible" to run 32-bit Windows applications without needing 32-bit libraries. This is no doubt something many are looking forward to.</p>
+<p>Lots of Media Foundation fixes and improvements too that should help audio and video issues across many apps and games, Direct2D upgrades, lots of optimizations for Direct3D and newly supported Direct3D 10 and 11 features are in, better steering wheel support, big improvements to controller hotplugging, better force feedback support, better support of DualShock and DualSense controllers, better support for CJK fonts and so on.</p>
+<p>Absolutely lots more you can see in the <a href="https://www.winehq.org/announce/8.0" target="_blank">release notes</a>.</p>
+<p>Hopefully later this year Proton will see a full upgrade to the latest Wine release, to give us even more improvements for gaming on Steam Deck and Linux desktop.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/wine-80-is-out-now-with-major-compatibility-improvements/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/wine-80-is-out-now-with-major-compatibility-improvements/</guid>
+      <pubDate>Tue, 24 Jan 2023 15:24:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental and GE-Proton 7-47 updates available now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve gave <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">Proton Experimental</a> a small update with two improvements, plus for users of <a href="https://github.com/GloriousEggroll/proton-ge-custom" target="_blank">GE-Proton</a> you may want to know about an important version bump there too for Steam Deck and Linux desktop gamers.</p>
+<p>For <strong>Proton Experimental</strong> the latest update included:</p>
+<ul>
+<li>Improve multi-touch support.</li>
+<li>Fix native scrollbar being always visible in Final Fantasy XIV Online launcher.</li>
+</ul>
+<p><strong>Proton Hotfix</strong> also seemed to get an update, although there's no notes anywhere I could see on what has actually changed there.</p>
+<p>If you're confused on Proton and all the different versions, see <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">my original guide on Proton</a>. Proton Experimental gets automatically installed if Valve set it on a game, or you can just search for Proton Experimental in your Steam Library to install it. Then in the Properties -&gt; Compatibility menu you can set it on individual games. I did a previous guide on swapping Proton versions below:</p>
+<div class="hidden_video" data-video-id="f1GvONkE9S0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6bb07ac6333f611978e50464915ff76b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/f1GvONkE9S0" target="_blank">See video</a></div></div>
+<p><strong>GE-Proton 7-47</strong> also rolled out, as another quick update to the community-made build that included a rather urgent fix, as the release notes mentioned it has "been writing invalid state cache files that can lead to all sorts of trouble". So it seems like a pretty important one to upgrade to.</p>
+<p><strong>Text Guide to install GE-Proton:</strong></p>
+<ul>
+<li>Download
+<ul>
+<li><u>Desktop</u>: head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>.</li>
+<li><u>Steam Deck</u>: simply download ProtonUp-Qt from Discover in Desktop Mode (Steam Button -&gt; Power - Switch to Desktop).</li>
+</ul>
+</li>
+<li>Load ProtonUp-Qt.</li>
+<li>Make sure it's set to Steam at the top and select to install GE-Proton.</li>
+<li>Reload Steam to update the compatibility layer list.</li>
+<li>In Steam:
+<ul>
+<li><u>Desktop</u>: right click a game and go to Properties.</li>
+<li><u>Steam Deck</u>: find the game in your library, go to the little COG on the right and then select Properties.</li>
+</ul>
+</li>
+<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down</li>
+</ul>
+<hr/>
+<p>All this and more was covered in my recent Steam Deck round-up video:</p>
+<div class="hidden_video" data-video-id="VuF985JGaV8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cd4ff5f407a131573027ef9e85eb31e9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/VuF985JGaV8" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/proton-experimental-and-ge-proton-7-47-updates-available-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/proton-experimental-and-ge-proton-7-47-updates-available-now/</guid>
+      <pubDate>Tue, 24 Jan 2023 15:08:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Colony sim Stardeus adds in derelict ships, system scanning, new ship design system</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://www.gamingonlinux.com/2022/10/inspired-by-factorio-and-rimworld-space-colony-building-sim-stardeus-out-in-early-access/" target="_blank">Stardeus was one of the most promising</a> Early Access releases on 2022, giving you pretty much RimWorld in space and the first major update is out now. Clearly, the developer has been rather busy.</p>
+<p>Taking on a ton of feedback from players, this update is largely focused on many systems that just make the whole game flow a bit better and some elements became far less tedious. </p>
+<p>It now includes derelict ships as you adventure through the stars, letting you reel it in with a winch and attach it to your ship or scrap it for materials. There's also now precision thrusters to easily adjust your ship, big improvements to system scanning with a radar to let you find resources a bit easier and it even allows you to find derelict ships and planets with anomalies. An auto rebuild option will help when a big rock smashes into your ship, a ship design preview when starting a new game along with giving you a detailed ship plan to rebuild it the same, a whole bunch of new objects and the list goes on.</p>
+<p>See the new overview from the developer below:</p>
+<div class="hidden_video" data-video-id="D8XbOko1RXo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/eaf91ab161097fa45b5ec95fbb207bc8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/D8XbOko1RXo" target="_blank">See video</a></div></div>
+<p>It has Native Linux support and is Steam Deck Verified.</p>
+<p>Available to buy on <a href="https://af.gog.com/en/game/stardeus?as=1636858786" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/1380910/Stardeus/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/colony-sim-stardeus-adds-in-derelict-ships-system-scanning-new-ship-design-system/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/colony-sim-stardeus-adds-in-derelict-ships-system-scanning-new-ship-design-system/</guid>
+      <pubDate>Tue, 24 Jan 2023 14:26:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/209113571id22221gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Building Sim</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>JSAUX will be doing more colours for their Steam Deck backplate</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Accessory brand <a href="https://jsaux.com/" target="_blank">JSAUX</a> recently did a poll to see what colours people might like for a Steam Deck backplate and the winners are in.</p>
+<p>Currently you can only order a clear backplate, well, they're <em>mostly</em> clear as it has a sort of frosted look to it which helps cover up the kind of small manufacturing issues you can see with some completely clear designs. People kept asking for colours though, and so JSAUX did a poll on Twitter with the result being Purple and Green as the winners and so they will be doing those sometime from April:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15983199181674569069gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15983199181674569069gol1.png"/></a></p>
+<p><em>I do wish Blue won though, I would have loved that but Purple looks pretty awesome I will admit.</em></p>
+<p>JSAUX also recently (finally) released a <a href="https://twitter.com/jsauxofficial/status/1617458412136046592" target="_blank">statement</a> about their mishap on teaming up with a very dubious store after some pushing from me, and they're <a href="https://youtu.be/PI6GgNU1Z54" target="_blank">trying to do better</a> on a whole bunch of other points I raised with them too which is really good to see.</p>
+<p>All this and more is covered in my recent Steam Deck news round-up video:</p>
+<div class="hidden_video" data-video-id="VuF985JGaV8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cd4ff5f407a131573027ef9e85eb31e9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/VuF985JGaV8" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/jsaux-steam-deck-backplate-colours/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/jsaux-steam-deck-backplate-colours/</guid>
+      <pubDate>Tue, 24 Jan 2023 14:08:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1011131377id22220gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Hardware</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Deck and Desktop Steam Beta improves Steam Input for Nintendo Controllers</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A fresh Steam Beta is out now for <a href="https://steamcommunity.com/games/1675200/announcements/detail/3635001990334169993" target="_blank">Steam Deck</a> and <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/3659771788285745556" target="_blank">Desktop Steam</a>, with a bigger focus on Steam Input improvements and some Big Picture Mode fixes too.</p>
+<p>Once again, the changelog is the same across both since both clients now share nearly everything thanks to the desktop client now using the New Big Picture Mode. Given how Steam Input has to handle and support all sorts of controllers, it's no surprise at times some of them could do with improvements. This time around there's quite a few improvements for Nintendo Joycons.</p>
+<blockquote>
+<p class="plain-list-title"><strong>Steam Input</strong></p>
+<ul>
+<li>Reworked the layout of the mode settings page to show more content</li>
+<li>Added upper grips as an option for mode shifts.</li>
+<li>Filtered Mode Shift button options to only show available buttons based on the controller type.</li>
+<li>Fixed chord activator options for XBox and XBox Elite controller types.</li>
+<li>Improved Layout Preview for Nintendo Switch Joycon Left/Right/Pair.</li>
+<li>Fixed Capture button icon not being displayed for Joycon Pair.</li>
+<li>Fixed the Switch Pro Layout Preview not showing the gyro.</li>
+<li>Nintendo Switch SL/SR buttons now show up as Bumpers for single Joycons or Grip buttons for a JoyCon Pair.</li>
+<li>Joycon individual/pair Gyro now displays and functions properly.</li>
+</ul>
+<p class="plain-list-title"><strong>Big Picture Mode (on Desktop Mode in Steam Deck)</strong></p>
+<ul>
+<li>Hide the cursor when in gamepad-navigation mode in Big Picture</li>
+<li>Fixed Big Picture Mode keyboard window not exiting when closed.</li>
+<li>Fixed an issue with detecting game windows on Linux</li>
+</ul>
+</blockquote>
+<p>On the subject of Nintendo, don't miss what <a href="https://www.gamingonlinux.com/2023/01/dbrand-bait-nintendo-with-their-new-switchdeck-skin-for-steam-deck/" target="_blank">dbrand recently did</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/steam-deck-beta-steam-input-nintendo-controllers/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/steam-deck-beta-steam-input-nintendo-controllers/</guid>
+      <pubDate>Tue, 24 Jan 2023 11:52:44 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Beta</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Here&#39;s how to fix Ghost Recon Breakpoint on Steam Deck and Linux desktop</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Want to play the new Steam release of Ghost Recon Breakpoint on Steam Deck? Or a Linux desktop? It doesn't run out of the box but here's how to fix it.</p>
+<p>Breakpoint actually comes with both Vulkan and DirectX 11 that you can pick between when launching, although neither of the options currently work giving a DirectX error. Thankfully, you <em>can</em> work around it by changing one single file. A word of warning though: this game has Denuvo Anti-Tamper, and so swapping around Proton versions and going between PC and Steam Deck a lot will get you locked out (as it did for me). It also has the same issue as <a href="https://github.com/ValveSoftware/Proton/issues/5511#issuecomment-1399504207" target="_blank">God of War</a> on Steam Deck, where it can hard-crash and reboot the Steam Deck — but just like God of War, not everyone has that problem.</p>
+<p>Here's a video talking about it, plus the fix and the text guide is delow:</p>
+<div class="hidden_video" data-video-id="IBXkUwPuVU8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e70c6feba9f7984daa46105de0e81b98.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/IBXkUwPuVU8" target="_blank">See video</a></div></div>
+<p>How to fix it (be in Desktop Mode for Steam Deck):</p>
+<ol>
+<li>Open the Properties of the game in Steam, go to Local Files and Browse.</li>
+<li>Head into the BattlEye folder.</li>
+<li>Edit the <code class="inline-code">BELauncher.ini</code> file in a text editor</li>
+<li>On the line that says <code class="inline-code">64BitExe=GRB.exe</code> change it to <code class="inline-code">64BitExe=GRB_vulkan.exe</code></li>
+<li>
+<p>Make sure you select Vulkan when going to launch the game</p>
+</li>
+</ol>
+<p>On desktop Linux though, there's another problem. It will keep forcing a small 720p window. The only workaround I've found for that, is to manually edit the settings file found somewhere like this:</p>
+<p><code>/steamapps/compatdata/2231380/pfx/drive_c/users/steamuser/Documents/My Games/Ghost Recon Breakpoint/GRB.ini</code></p>
+<p><em>The location above depends on where you have it installed.</em></p>
+<p>Inside there, change "WindowMode" to 0. At least there you can maximise it. All other modes end up forcing 720p, which is even a bug on Windows in their Vulkan renderer with many posts on it. You can't set the resolution there, as the game overrides it but setting WindowMode to 0 lets you maximise, and the game sets the resolution to match the window.</p>
+<p>As you can see from it on Fedora Linux working with the above:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14266701991674600115gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14266701991674600115gol1.jpg"/></a><em>KDE screenshots cause a huge FPS drop…</em></p>
+<hr/>
+<p>I do have a <a href="https://github.com/ValveSoftware/Proton/issues/6471" target="_blank">bug report</a> sent to Valve for Proton on this, and I've reached out to Ubisoft about it too. </p>
+<p><em>PS</em><em>. Don't miss out of <a href="https://www.gamingonlinux.com/2023/01/steam-deck-thoughts-a-year-later/" target="_blank">my overview of the Steam Deck one year later</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/01/fix-ghost-recon-breakpoint-on-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/fix-ghost-recon-breakpoint-on-steam-deck/</guid>
+      <pubDate>Tue, 24 Jan 2023 11:40:12 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/886527018id22218gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>HOWTO</category>
+      
+    </item>
     
     <item>
       <title>Building a Retro Linux Gaming Computer - Part 22: Happy Hacking</title>
@@ -36,7 +321,7 @@
 <p>Roguelike concepts such as permadeath and procedural generation baffled me as a child, and even today leave me with a grudging acceptance that I am unlikely to ever beat the game. In fact, my first proper dive into the genre would not come until I played the far more accessible <em>Dungeons of Dredmor</em> about ten years later, itself being the brainchild of former Loki Software programmer Nicholas Vining. It may be heresy, but for me, being able to save made all the difference.</p>
 <p>Since then I have at least gained experience in a number of contemporary <em>Dungeons &amp; Dragons</em> licensed games, giving me a better handle on some of the fantasy terminology and quirks used in <em>Falcon's Eye</em>, such as how lower armour class values are actually better than higher ones. <em>NetHack</em> is a hodgepodge of popular culture milieu, from discovering Hobbits running around searching for the One Ring, to including an entire Tourist role as some kind of elaborate joke.</p>
 <p>Further work on <em>Falcon's Eye</em> stalled out by 2005, with later Linux Game Publishing alumnus Clive Crous forking the project into what would become <em>Vulture</em>, now purchasable on both itch.io and Steam, albeit with the source code still being freely available. No Arch Linux packages seem to exist, and the itch.io page only has Windows binaries available. I could compile <em>Vulture</em> from source, but if I am to go through all that trouble, I might as well build something fresh instead.</p>
-<p><strong>Carrying on in Part 22: Ready, Set, Go!</strong></p>
+<p><strong>Carrying on in Part 23: Ready, Set, Go!</strong></p>
 <p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
@@ -45,13 +330,13 @@
       <pubDate>Mon, 23 Jan 2023 21:00:04 +0000</pubDate>
       <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/54701747id22063gol.jpg" type="image/jpeg"/>
       
+      <category>Native Linux</category>
+      
       <category>Dungeon Crawler</category>
       
       <category>Editorial</category>
       
       <category>Open Source</category>
-      
-      <category>Retro</category>
       
     </item>
     
@@ -69,8 +354,8 @@
 <p>You can buy the skin on <a href="https://dbrand.com/shop/special-edition/switchdeck?utm_source=GamingOnLinux&amp;utm_medium=referral&amp;utm_campaign=switchdeck" target="_blank">dbrand's website</a>.</p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
-      <link>https://www.gamingonlinux.com/2023/01/dbrand-bait-nintendo-with-their-new-switchdeck-skin-for-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/dbrand-bait-nintendo-with-their-new-switchdeck-skin-for-steam-deck/</guid>
+      <link>https://www.gamingonlinux.com/2023/01/dbrand-bait-nintendo-switchdeck-skin-for-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/dbrand-bait-nintendo-switchdeck-skin-for-steam-deck/</guid>
       <pubDate>Mon, 23 Jan 2023 19:04:03 +0000</pubDate>
       <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1847403072id22217gol.jpg" type="image/jpeg"/>
       
@@ -135,7 +420,7 @@
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
 <p>EA recently sent Origin to the graveyard and replaced it with the EA App, which caused numerous problems on Linux desktop and Steam Deck but it looks like the biggest problems are over on that.</p>
-<p>The problem is that these extra external launchers can cause a number of issues for the Proton compatibility layer. As Valve and their open source contractors who work on Proton, need time to catch-up on the compatibility side. The switchover <a href="https://www.gamingonlinux.com/2022/10/ea-begins-swapping-out-origin-for-ea-app-on-steam/" target="_blank">came with problems</a>, which Valve <a href="https://www.gamingonlinux.com/2022/11/valve-fix-new-ea-app-in-proton-experimental-for-linux-and-steam-deck/" target="_blank">partially solved</a> a week later but it still had issues leading me <a href="https://www.gamingonlinux.com/2022/11/how-to-fix-the-ea-app-on-steam-deck-and-linux-desktop/" target="_blank">to do a guide</a> on getting it working again. Another few weeks later, Valve put a <a href="https://www.gamingonlinux.com/2022/12/proton-experimental-upgraded-to-fix-the-ea-app-failing-to-update-on-steam-deck-a-linux/" target="_blank">proper fix in</a> to stop the EA App failing to update.</p>
+<p>The problem is that these extra external launchers can cause a number of issues for the Proton compatibility layer. This is because Valve (and their open source contractors who work on Proton) need time to catch-up on the compatibility side. The switchover <a href="https://www.gamingonlinux.com/2022/10/ea-begins-swapping-out-origin-for-ea-app-on-steam/" target="_blank">came with problems</a>, which Valve <a href="https://www.gamingonlinux.com/2022/11/valve-fix-new-ea-app-in-proton-experimental-for-linux-and-steam-deck/" target="_blank">partially solved</a> a week later but it still had issues leading me <a href="https://www.gamingonlinux.com/2022/11/how-to-fix-the-ea-app-on-steam-deck-and-linux-desktop/" target="_blank">to do a guide</a> on getting it working again. Another few weeks later, Valve put a <a href="https://www.gamingonlinux.com/2022/12/proton-experimental-upgraded-to-fix-the-ea-app-failing-to-update-on-steam-deck-a-linux/" target="_blank">proper fix in</a> to stop the EA App failing to update.</p>
 <p>With that all done and the dust settled, Valve has now gone back through multiple problematic EA published titles to re-review them for Steam Deck compatibility.</p>
 <p>Titles include:</p>
 <ul>
@@ -149,8 +434,8 @@
 <p>Be sure to <a href="https://www.youtube.com/@gamingonlinux" target="_blank">follow GamingOnLinux on YouTube</a> to see videos on those and many more games.</p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
-      <link>https://www.gamingonlinux.com/2023/01/valve-marks-some-ea-games-playable-on-steam-deck-again-like-sims-4-jedi-fallen-order/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/valve-marks-some-ea-games-playable-on-steam-deck-again-like-sims-4-jedi-fallen-order/</guid>
+      <link>https://www.gamingonlinux.com/2023/01/ea-games-playable-on-steam-deck-sims-4-jedi-fallen-order/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/ea-games-playable-on-steam-deck-sims-4-jedi-fallen-order/</guid>
       <pubDate>Mon, 23 Jan 2023 13:30:50 +0000</pubDate>
       <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1952236279id22216gol.jpg" type="image/jpeg"/>
       
@@ -3679,306 +3964,6 @@ The <a href="https://github.com/coronalabs/com.coronalabs-plugin.steamworks" ta
       <category>Fighting</category>
       
       <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Beyond All Reason is looking incredible for fans of Total Annihilation / Supreme Commander</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://www.beyondallreason.info/" target="_blank">Beyond All Reason</a> is an in-development free and open source RTS, based on the <a href="https://springrts.com/" target="_blank">SpringRTS</a> game engine and their latest update showcases just how great it looks.</p>
-<p>As a primer: designed for fans of Total Annihilation (1997), Supreme Commander (2007) and Planetary Annihilation (2014). It takes on the legacy of Total Annihilation, being heavily based on Balanced Annihilation (which was originally a total conversion of the Uberhack TA mod) which is a SpringRTS engine game, and the Spring engine started off by just getting Total Annihilation into full 3D so there's a <em>lot</em> of history here. Everything about it has been remade from models to sounds to prevent any copyright issues while retaining the essence of Total Annihilation. Their plan is to <em>eventually</em> release it on Steam.</p>
-<p>After a while of silence from the team working on it they've put up a new graphical showcase that includes a brand new lighting system, new textures for one of the factions, improved special effects, an improved ground scarring system to really show the destruction from battles, new death animations for units, a new fog system and the list goes on. Check it out in the video below:</p>
-<div class="hidden_video" data-video-id="GEQmm4UhLAg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/805b1c3dcdf8fa5ec521c864d23e840f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/GEQmm4UhLAg" target="_blank">See video</a></div></div>
-<p>When it finally releases properly, this could end up being one of the greatest free and open source games ever made, it's certainly looking the part and for fans of huge RTS games it's certainly exciting.</p>
-<p>After giving it a run today, I have to admit my excitement level of this has just gone through the roof. The level of polish compared to when I last tried it has come along immeasurably. It feels good and it looks pretty incredible too even with a bunch of settings nowhere near the maximum they could be and it runs very smoothly too. You know something is good, when you go to check it works and take a few screenshots and end up going through an entire skirmish battle. The pathfinding still needs some work, with some units just trying to push through others but just — wow.</p>
-<p>Some screenshots taken by me today (click them to enlarge):</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14706931672840029gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/14706931672840029gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2524979041672839970gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2524979041672839970gol1.jpg"/></a></p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15795495551672839993gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/15795495551672839993gol1.jpg"/></a></p>
-<p>You can try it right now too with their Alpha+ level downloads (Native Linux support) from either the <a href="https://www.beyondallreason.info/download#How-To-Install" target="_blank">official site</a> or <a href="https://flathub.org/apps/details/info.beyondallreason.bar" target="_blank">Flathub</a>. They're really keeping the classic RTS dream alive here. Don't pass up on this, very playable even though it's not technically release-ready.</p>
-<p><strong>Update 05/01/23</strong> - I’ve been enjoying it so much i decided to do a video on it myself on Fedora and a bit in Steam Deck at the end. Have a look:</p>
-<div class="hidden_video" data-video-id="r1G38Z-I-jY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ee1f90f24c276ff161121d672e72c80a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/r1G38Z-I-jY" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/beyond-all-reason-is-looking-incredible-for-fans-of-total-annihilation-supreme-commander/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/beyond-all-reason-is-looking-incredible-for-fans-of-total-annihilation-supreme-commander/</guid>
-      <pubDate>Wed, 04 Jan 2023 13:49:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1011881689id22126gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Alpha</category>
-      
-      <category>Free Game</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Humble Choice for January 2023 has DOOM Eternal, a good month for Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Up for a fresh set of games? The <a href="https://www.humblebundle.com/membership?partner=gamingonlinux" target="_blank">Humble Choice subscription</a> is back for January 2023 and the highlight game for some here will likely be DOOM Eternal. Here's a run over the compatibility expected on Steam Deck and Linux desktop.</p>
-<p>Checking if any are Native Linux releases, Deck Verified and ProtonDB for you so you don't have to do the boring clicking around here's what's in:</p>
-<p><strong>DOOM Eternal</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p><strong>Tribes of Midgard</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p><strong>Encased: A Sci-Fi Post-Apocalyptic RPG</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
-<li>Native Linux</li>
-</ul>
-<p><strong>OlliOlli World</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p><strong>Grow: Song of the Evertree</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p><strong>Conan Chop Chop</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p><strong>Hokko Life</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p><strong>The Serpent Rogue</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Deck Unrated</li>
-<li>ProtonDB Unrated</li>
-</ul>
-<p>Also on the Humble Store right now is the <a href="https://www.humblebundle.com/store/promo/lost-in-space-sale/?partner=gamingonlinux" target="_blank">Lost In Space Sale</a>, with some great savings on space sci-fi games!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/humble-choice-for-january-2023-has-doom-eternal-a-good-month-for-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/humble-choice-for-january-2023-has-doom-eternal-a-good-month-for-steam-deck/</guid>
-      <pubDate>Wed, 04 Jan 2023 12:36:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1876244793id22125gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Here&#39;s the winners of the 2022 Steam Awards</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The voting is over and <a href="https://store.steampowered.com/steamawards" target="_blank">The Steam Awards 2022</a> winners have been announced, so here's a run over each of them.</p>
-<ul>
-<li>Game of the Year: <strong>Elden Ring</strong></li>
-<li>VR Games of the Year: <strong>Hitman 3</strong></li>
-<li>Labor of Love: <strong>Cyberpunk 2077</strong></li>
-<li>Better with Friends: <strong>Raft</strong></li>
-<li>Outstanding Visual Style: <strong>Spider-Man: Miles Morales</strong></li>
-<li>Most Innovative Gameplay: <strong>Stray</strong></li>
-<li>Best game you Suck At: <strong>Elden Ring</strong></li>
-<li>Best Soundtrack: <strong>Final Fantasy VII Remake Intergrade</strong></li>
-<li>Outstanding Story-rich Game: <strong>God of War</strong></li>
-<li>Sit back and Relax:<strong> LEGO STAR WARS: The Skywalker Saga</strong></li>
-<li>Best game on the go: <strong>Death Stranding Director's Cut</strong></li>
-</ul>
-<p>What do you think of the winners of each category? It's a typical popularity contest, with those that have the biggest names and the most screen-time ending up winning. I definitely don't agree with some of them to be sure, although all the winners are arguably good games anyway.</p>
-<p>The one that confuses me is Death Stranding Director's Cut for on the go, as the performance across two different Steam Decks for me is not great. Every BT encounter drops it way below 30, as does open world exploration repeatedly dropping it no matter the settings used.</p>
-<p>The Steam Winter Sale 2022 is also still on right now too until January 5, 2023 at 10am PST / 6pm UTC. So you can pick up some of those above with a pretty nice discount.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/heres-the-winners-of-the-2022-steam-awards/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/heres-the-winners-of-the-2022-steam-awards/</guid>
-      <pubDate>Wed, 04 Jan 2023 12:21:41 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1464553867id22124gol.jpg" type="image/jpeg"/>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Classic 1990s series Catacomb lives on with the CatacombGL source port</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://github.com/ArnoAnsems/CatacombGL" target="_blank">CatacombGL</a> is an open source project to run Catacomb 3D (1991), The Catacomb Abyss (1992), The Catacomb Armageddon (1992) and The Catacomb Apocalypse (1993).</p>
-<p>Just recently the project had a 0.5.4 Beta release, which is the first to have Native Linux support, along with using the CMake system. It has been tested across Ubuntu, Mint and even on a RaspberryPi.</p>
-<p class="plain-list-title"><strong>Main features:</strong></p>
-<blockquote>
-<ul>
-<li>Runs native on Windows 7/8/10/11 and Linux.</li>
-<li>Hardware accelerated 3D rendering via OpenGL, supporting widescreen resolutions, a customizable field of view and an uncapped frame rate.</li>
-<li>Player, projectile and monster movement with floating point precision.</li>
-<li>Configurable mouse and keyboard controls.</li>
-<li>Supports all four Catacomb 3D games as included in the Catacombs Pack from GOG.com.</li>
-<li>Supports The Catacomb Abyss version 1.13 (shareware).</li>
-</ul>
-</blockquote>
-<p class="plain-list-title"><strong>Current limitations as of version 0.5.4:</strong></p>
-<blockquote>
-<ul>
-<li>No support for game controllers.</li>
-<li>No backwards compatibility with saved games from the original DOS game.</li>
-</ul>
-</blockquote>
-<p>It does require the original games, like a lot of open source game engine re-implementations. You can buy the whole pack legally thanks to <a href="https://www.gog.com/game/catacombs_pack" target="_blank">GOG.com</a>.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4132502901672834103gol1.jpg"/><br/>
-<em>The Catacomb Abyss screenshot from GOG.</em></p>
-<p>Never heard of the series? According to the GOG description: "Catacombs Pack is a fantastic compilation of the classic fantasy FPS series. Step into the shoes of one Pelton Everhail, the greatest of the living wizards. Discover secret, long-forgotten treasure troves as you blast away the walls with your powerful magicks. Explore twisting mazes filled with deadly traps and even deadlier denizens. Face Nemesis and fight for your life and those that depend on you. Enter the Catacombs, if you dare and witness the true roots of the First Person Shooter genre on the PC!"</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/classic-1990s-series-catacomb-lives-on-with-the-catacombgl-source-port/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/classic-1990s-series-catacomb-lives-on-with-the-catacombgl-source-port/</guid>
-      <pubDate>Wed, 04 Jan 2023 12:09:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1271104894id22123gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Beta</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Space sci-fi 4x city-builder &#39;Antimatter&#39; gets a new trailer</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Antimatter is a crowdfunded upcoming space sci-fi game that mixes together 4x strategy elements with city-building, and a whole lot more.</p>
-<p>I'm not even sure how you would accurately describe this one. The scope of it is just massive and it looks like it's coming together quite nicely. Rather than focusing on graphics, the developer is firmly focusing on the depth of the gameplay. A work of passion from a solo developer that gained only €11,765 on <a href="https://www.kickstarter.com/projects/geopi/antimatter-a-city-builder-and-4x-game" target="_blank">Kickstarter</a> back in 2020.</p>
-<p>Check out the new trailer:</p>
-<div class="hidden_video" data-video-id="v211Iv_D2dg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ee92f918fcf88b35a580adfcdb63d3e9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/v211Iv_D2dg" target="_blank">See video</a></div></div>
-<p>Some of what it will feature includes:</p>
-<blockquote>
-<ul>
-<li>Thousands of systems and planets to explore in a gigantic instantiated galaxy.</li>
-<li>A dynamic universe where dozens of factions struggle for power or survival.</li>
-<li>Take command of a spaceship, trade, mine, harvest, scavenge, produce and participate in the simulated economy.</li>
-<li>Manage an existing city or found a new colony on any planet.</li>
-<li>Climb the political ladder of a commercial corporation or a sovereign organisation, or found a new one from scratch.</li>
-<li>Interact with AI characters who are living independant and simulated life in the Antimatter universe.</li>
-<li>Terraform entire planets by altering their atmospheric compositions.</li>
-<li>Fulfil missions for corporations, factions or individuals, or unravel the secrets of this galaxy.</li>
-<li>Get involved in the Antimatter Crisis and try to change yourself the course of history.</li>
-</ul>
-</blockquote>
-<p>I just hope the ambition here doesn't end up a little too much for one developer. Even in the trailer it shows off a ridiculous amount of unique things to do in the game. Then again, tiny teams and solo developers have repeatedly managed some incredibly impressive games over the last few years.</p>
-<p>You can <a href="https://store.steampowered.com/app/1343010/Antimatter/" target="_blank">follow it on Steam</a> and it will have Native Linux support.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/space-sci-fi-4x-city-builder-antimatter-gets-a-new-trailer/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/space-sci-fi-4x-city-builder-antimatter-gets-a-new-trailer/</guid>
-      <pubDate>Wed, 04 Jan 2023 11:58:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1681972275id22122gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>4x</category>
-      
-      <category>City Builder</category>
-      
-      <category>Exploration</category>
-      
-    </item>
-    
-    <item>
-      <title>AMD Ray Tracing on Linux gets closer with Mesa enabling specific games</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The work going into the open source Mesa graphics drivers continues on, with AMD Ray Tracing picking up speed and they're going to <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/20464" target="_blank">enable</a> Quake II RTX and Doom Eternal support by default now.</p>
-<p>Currently you can turn it on manually, but now they're moving to add specific games known to work into a list. These two games are just the start. On the GitLab Merge Request, developer Bas Nieuwenhuizen <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/20464#note_1700820" target="_blank">noted</a> in reply to a question on why just these and why not default for all:</p>
-<blockquote>
-<p>Because it is not ready, in particular we're missing Daniel's shader calling work and some more game debugging.<br/>
-However, it feels worth it to start enabling some games we know to work, so that people can start playing.</p>
-</blockquote>
-<p>This work should be available in Mesa 23.0 due later this year.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2343847381672832865gol1.jpg"/><br/>
-<em>Pictured - DOOM Eternal.</em></p>
-<p>It's nice to see some more movement on this, as it's been a long time coming for those sticking with the open source Mesa drivers.</p>
-<p>This and other news was covered in my recent <a href="https://youtu.be/_aHIHI265Uw" target="_blank">News Flip video</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/amd-ray-tracing-on-linux-gets-closer-with-mesa-enabling-specific-games/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/amd-ray-tracing-on-linux-gets-closer-with-mesa-enabling-specific-games/</guid>
-      <pubDate>Wed, 04 Jan 2023 11:48:54 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2109306303id22121gol.jpg" type="image/jpeg"/>
-      
-      <category>AMD</category>
-      
-      <category>Drivers</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Starbreeze Studios announce PAYDAY 3 for this year</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Confirmed to be releasing later this year, Starbreeze Studios recently put up a teaser for PAYDAY 3. I'm sure many fans of the previous game will be excited it's back and coming to <a href="https://store.steampowered.com/app/1272080/PAYDAY_3/" target="_blank">Steam</a> so even if it's not a Native release it should be easy enough to get going with Proton.</p>
-<p>"Step out of retirement back into the life of crime in the shoes of the Payday Gang, the envy of their peers and the nightmare of law-enforcement wherever they go. Several years after the crew’s reign of terror over Washington DC has ended, they assemble once again to deal with the threat that roused them out of early retirement."</p>
-<div class="hidden_video" data-video-id="ugBDsaEIYog"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7ba97689531a9a82bc9f356c35ebf689.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ugBDsaEIYog" target="_blank">See video</a></div></div>
-<p>While they've not announced a date any clearer than "2023", we at least now know it takes place in New York and the developers confirmed it will use Unreal Engine, so the PC release should stay in sync with console versions they're also doing.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/starbreeze-studios-announce-payday-3-for-this-year/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/starbreeze-studios-announce-payday-3-for-this-year/</guid>
-      <pubDate>Wed, 04 Jan 2023 11:37:08 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/907326758id22120gol.jpg" type="image/jpeg"/>
-      
-      <category>Action</category>
-      
-      <category>FPS</category>
-      
-      <category>Online Co-op</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>NVIDIA RTX 4070 Ti launches January 5th</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Very much as expected, NVIDIA at CES today announced the new NVIDIA RTX 4070 Ti to launch on January 5th.</p>
-<p>Technically, it's not really a new GPU is it? This is basically what the second model of the RTX 4080 was going to be with 7680 CUDA Cores and 12 GB of GDDR6X, before they <a href="https://www.gamingonlinux.com/2022/10/nvidia-qunlaunchingq-the-rtx-4080-12gb-apparently-4090-ti-cancelled-due-to-melting/" target="_blank">unlaunched it</a>. At least this time it has a better name, and a lower price to match too at $799 / £799.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12171622781672765283gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12171622781672765283gol1.png"/></a></p>
-<p>From what NVIDIA say, it will "max out" a 1440p monitor and it's apparently faster than the RTX 3090 Ti while also using less power. However, keep your pinch of salt at the ready until you see third-party benchmarks as this announcements are always cherry-picking data and NVIDIA don't even go into what settings where used and it's likely also making use of things like DLSS 3.</p>
-<p>Anyway, this is what they showed:</p>
-<p><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1581245931672765180gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1581245931672765180gol1.png"/></a></p>
-<p>More on it in their <a href="https://www.nvidia.com/en-gb/geforce/news/geforce-rtx-4070-ti/" target="_blank">blog post</a> and the <a href="https://www.nvidia.com/en-gb/geforce/graphics-cards/40-series/rtx-4070ti/" target="_blank">product page</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/nvidia-rtx-4070-ti-launches-january-5th/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/nvidia-rtx-4070-ti-launches-january-5th/</guid>
-      <pubDate>Tue, 03 Jan 2023 17:03:32 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/930839846id22119gol.jpg" type="image/jpeg"/>
-      
-      <category>Hardware</category>
-      
-      <category>Meta</category>
-      
-      <category>NVIDIA</category>
       
     </item>
     
