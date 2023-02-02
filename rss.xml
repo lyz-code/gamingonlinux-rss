@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-02-01 07:26:18.139966</pubDate>
+    <pubDate>2023-02-02 07:25:26.117916</pubDate>
 
     
     <image>
@@ -18,6 +18,405 @@
     </image>
 
     
+    
+    <item>
+      <title>Big new Stable Update for Steam Deck and Desktop Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve has today released a major update for the Steam client on Steam Deck and for Desktop users too. There's absolutely masses new including small new features, along with plenty of bug fixes to make the experience smoother overall, as usual a whole bunch of it is shared between Desktop and Steam Deck.</p>
+<p>Specifically for Desktop Linux, here's some of what's changed:</p>
+<blockquote>
+<p class="plain-list-title"><strong>Remote Play</strong></p>
+<ul>
+<li>Fixed audio crackling and loss when streaming from Linux.</li>
+</ul>
+<p class="plain-list-title"><strong>Linux</strong></p>
+<ul>
+<li>Fixed a crash on Linux in libaudio.</li>
+<li>Fixed crash when taking screenshots through the overlay.</li>
+<li>Fixed closing non-Steam shortcuts via the overlay when two or more are running.</li>
+<li>Fixed some errors causing the Library not to render properly.</li>
+<li>Fixed issue with duplicate streaming dialogs appearing on Mac &amp; Linux.</li>
+</ul>
+</blockquote>
+<p>These also seem specific just to the Desktop Steam client:</p>
+<blockquote>
+<ul>
+<li>Fixed DLC hover on game details page being cropped.</li>
+<li>Fixed several issues related to popup dialogs being sized incorrectly.</li>
+</ul>
+</blockquote>
+<p>The vast majority of the below noted for Steam Deck will also apply to Desktop too:</p>
+<blockquote>
+<p class="plain-list-title"><strong>General</strong></p>
+<ul>
+<li>Replaced launch option dialog with new UI that includes a checkbox to remember the user's selection - this selection can be changed in game properties</li>
+<li>Further optimizations to load times for users with large game libraries</li>
+<li>Added pinned notifications for new inventory items, trade offers, async game turns, moderator messages, offline chat messages, and help request replies in Quick Access &gt; Notifications</li>
+<li>Added more buttons to the list of inputs that skip the BPM/Deck start up animations</li>
+<li>Changing download regions no longer requires restarting the Steam client</li>
+<li>UI Digital Navigation Key Repeats are faster</li>
+<li>Navigation column in the Overlay is now centered vertically to match the rest of the main menu</li>
+<li>Various fixes to make the UI scale better in higher resolutions</li>
+<li>Fixed intermittent browser crash when closing Update news dialog</li>
+<li>Fixed background images on a collection on the app details page not being clipped correctly</li>
+<li>Fixed some issues completing purchases through some payment providers</li>
+<li>Fixed some UI scaling issues in the overlay when running in games in high resolution</li>
+<li>Fixed a case where disconnecting a controller while navigating would not cancel repeating movements</li>
+<li>Fixed issue opting in to some game beta branches</li>
+<li>Fixed issue viewing the hardware survey web page after submitting results</li>
+<li>Fixed audio crackling and loss when streaming from Linux / Steam Deck using Remote Play</li>
+<li>Fixed "a" and "c" keystrokes on the app details page triggering an animation</li>
+</ul>
+<p class="plain-list-title"><strong>Keyboard</strong></p>
+<ul>
+<li>Added up/down cursor keys to onscreen keyboard, press shift then left/right cursor to use</li>
+<li>Added ability to move the standalone &amp; overlay keyboard</li>
+<li>Fixed issues w/ digital navigation getting stuck on text boxes when using a physical keyboard</li>
+<li>Fixed some issues using the virtual keyboard Paste button outside of a web context</li>
+<li>Fixed issue where the virtual keyboard would continuously be made visible after exiting a game</li>
+</ul>
+<p class="plain-list-title"><strong>Steam Input</strong></p>
+<ul>
+<li>Controller configuration browsing screen can now preview configurations and the selection processes now previews then applies instead of directly selecting the configuration</li>
+<li>Added a search tab to the controller layout browser screen</li>
+<li>Changed controller mode sliders to default to larger step sizes that match the old BPM interface and added footer button to switch to "fine adjustment" mode with smaller step sizes</li>
+<li>Reworked the layout of the mode settings page to show more content</li>
+<li>Generate Steam Input API origins for some virtual menu modes that were missing them</li>
+<li>Show controller settings in app properties game for non-Steam games</li>
+<li>Gyro Calibration Rework: Calibration Calculates an anti-drift value as normal, but also records Gyro and Accelerometer noise while stationary, so that Always-On Auto Calibration (toggle to enable) is more discerning, and should only recalculate anti-drift when on a stable surface</li>
+<li>Controller configurator now groups commands if they are attached to the same input</li>
+<li>Added support for the Armor-X Pro gamepad in PS4 mode</li>
+<li>Added direct navigation to controller inputs and modes from the preview screen</li>
+<li>Added a specific XBox Elite layout preview page</li>
+<li>Added a specific Switch Pro layout preview page</li>
+<li>Added support for the ThrustMaster eSwap PRO Controller Xbox</li>
+<li>Handle errors better and fix some cases where configs would no longer load</li>
+<li>On larger screens combine the keyboard and numpad tabs of the choose binding screen</li>
+<li>Remember the last active tab in the choose binding screen and open to that instead always using the tab w/ the current binding value</li>
+<li>Added upper grips as an option for mode shifts</li>
+<li>Improved Layout Preview for Nintendo Switch Joycon Left/Right/Pair</li>
+<li>Nintendo Switch SL/SR buttons now show up as Bumpers for single Joycons or Grip buttons for a JoyCon Pair</li>
+<li>Joycon individual/pair Gyro now displays and functions properly</li>
+<li>Filtered Mode Shift button options to only show available buttons based on the controller type</li>
+<li>Fixed an issue with the Joystick Deadzone sliders having delayed input</li>
+<li>Fixed an issue with gamepad navigation in the Steam Deck haptics calibration screen</li>
+<li>Fixed an issue w/ enabling Gyro for Switch controllers</li>
+<li>Fixed long delay at startup when the Razer Huntsman Elite keyboard is plugged in</li>
+<li>Fixed the Logitech G29 controller showing up as a gamepad instead of a wheel</li>
+<li>Fixed the XBox layout preview page layout having some incorrect items and missing others</li>
+<li>Fixed issue where Steam Controller joysticks would have unintended input during Steam Button chords</li>
+<li>Fixed long delay at startup when Razer keyboards are connected</li>
+<li>Fixed crash with games that use "Windows Gaming Input"</li>
+<li>Fixed issue w/ Joystick Deadzone visualization not updating</li>
+<li>Fixed some cases where some languages could have text overflow in choose binding screen</li>
+<li>Fixed chord activator options for XBox and XBox Elite controller types</li>
+<li>Fixed Capture button icon not being displayed for Joycon Pair</li>
+<li>Fixed the Switch Pro Layout Preview not showing the gyro</li>
+</ul>
+<p class="plain-list-title"><strong>Desktop Mode</strong></p>
+<ul>
+<li>Fixed a crash on Linux in libaudio</li>
+<li>Fixed crash when taking screenshots through the overlay</li>
+<li>Fixed instances of Steam freezing or crashing in desktop mode on Steam Deck</li>
+<li>Fixed closing non-Steam shortcuts via the overlay when two or more are running</li>
+<li>Fixed some errors causing the Library not to render properly</li>
+</ul>
+<p class="plain-list-title"><strong>Big Picture (while in Desktop Mode)</strong></p>
+<ul>
+<li>The new Big Picture Mode has been made the default experience. For compatibility purposes, you can access the old experience by using the command-line option "-oldbigpicture". Note that this functionality will be removed in a future update.</li>
+<li>Added a quick guided tour</li>
+<li>Added option to start in windowed mode under Settings =&gt; Display =&gt; Big Picture Mode =&gt; Windowed</li>
+<li>Allow onscreen keyboard to be activated while in New Big Picture Mode and Steam window is not focused</li>
+<li>Implemented Steam Controller dongle pairing</li>
+<li>Prevented launch option reminder from appearing on top of other UI while a game is launching</li>
+<li>Detect focus shifting away from the BPM window faster and reduce instances of navigation going to BPM after starting a game</li>
+<li>Hide the cursor when in gamepad-navigation mode in Big Picture</li>
+<li>Fixed a rare crash exiting BPM</li>
+<li>Fixed the new Big Picture Mode overlay being incorrectly sized when the monitor is set to display scaling other than 100%</li>
+<li>Fixed overlay scaling when resizing game window</li>
+<li>Fixed issue where a browser opened by a game was sticking around after closing the overlay</li>
+<li>Fixed launch options dialog not closing when cancelling game launch</li>
+<li>Fix the "Start in Big Picture Mode" setting not updating</li>
+<li>Fixed problem where setting certain library filters in Big Picture Mode could cause those games to become hidden when switching back to desktop</li>
+<li>Fixed an issue with detecting game windows</li>
+</ul>
+</blockquote>
+<p>See the full changelog for <a href="https://store.steampowered.com/news/app/593110/view/3682291055854286778" target="_blank">Desktop</a> and <a href="https://store.steampowered.com/news/app/1675200/view/3635002625425792684" target="_blank">Steam Deck</a>.</p>
+<p>See my overview video below which also touches on the recent <a href="https://www.gamingonlinux.com/2023/02/ubisoft-broke-their-games-on-linux-desktop-and-steam-deck/" target="_blank">Ubisoft breakage</a>:</p>
+<div class="hidden_video" data-video-id="rjd7NItZJI4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3fcdc4bc82c546f8808ee3f74cfce982.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/rjd7NItZJI4" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/big-new-stable-update-for-steam-deck-and-desktop-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/big-new-stable-update-for-steam-deck-and-desktop-steam/</guid>
+      <pubDate>Wed, 01 Feb 2023 21:14:02 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/264196606id22264gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>These were the most popular Steam Deck games for January 2023</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve has done their monthly thing, giving out a list of what was the most played games on Steam Deck through January 2023. <em>Yes it's already February, no I can't believe it either.</em></p>
+<p>Sorted by hours played from top to bottom the most popular games are:</p>
+<ul>
+<li><a href="https://www.humblebundle.com/store/elden-ring?partner=gamingonlinux" target="_blank">ELDEN RING</a></li>
+<li><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/" target="_blank">Vampire Survivors</a></li>
+<li><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank">The Witcher 3: Wild Hunt</a></li>
+<li><a href="https://www.humblebundle.com/store/stardew-valley?partner=gamingonlinux" target="_blank">Stardew Valley</a></li>
+<li><a href="https://store.steampowered.com/app/1145360/Hades/" target="_blank">Hades</a></li>
+<li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank">Red Dead Redemption 2</a></li>
+<li><a href="https://www.humblebundle.com/store/persona-5-royal?partner=gamingonlinux" target="_blank">Persona 5 Royale</a></li>
+<li><a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank">Grand Theft Auto V</a></li>
+<li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">Cyberpunk 2077</a></li>
+<li><a href="https://www.humblebundle.com/store/the-elder-scrolls-v-skyrim-special-edition?partner=gamingonlinux" target="_blank">The Elder Scrolls: Skyrim Special Edition</a></li>
+<li><a href="https://www.humblebundle.com/store/fallout-4?partner=gamingonlinux" target="_blank">Fallout 4</a></li>
+<li><a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/" target="_blank">The Binding of Isaac: Rebirth</a></li>
+<li><a href="https://www.humblebundle.com/store/valheim?partner=gamingonlinux" target="_blank">Valheim</a></li>
+<li><a href="https://store.steampowered.com/app/1942280/Brotato/" target="_blank">Brotato</a></li>
+<li><a href="https://www.humblebundle.com/store/slay-the-spire?partner=gamingonlinux" target="_blank">Slay the Spire</a></li>
+<li><a href="https://www.humblebundle.com/store/god-of-war?partner=gamingonlinux" target="_blank">God of War</a></li>
+<li><a href="https://www.humblebundle.com/store/monster-hunter-rise?partner=gamingonlinux" target="_blank">MONSTER HUNTER RISE</a></li>
+<li><a href="https://www.humblebundle.com/store/horizon-zero-dawn-complete-edition?partner=gamingonlinux" target="_blank">Horizon Zero Dawn</a></li>
+<li><a href="https://www.humblebundle.com/store/no-mans-sky?partner=gamingonlinux" target="_blank">No Man's Sky</a></li>
+<li><a href="https://store.steampowered.com/app/1401590/Disney_Dreamlight_Valley/" target="_blank">Disney Dreamlight Valley</a></li>
+</ul>
+<p>Does anything in that list really surprise you? Can't say I'm surprised by any of it, all pretty popular stuff as expected but interesting to see Vampire Survivors finally knocked down a position.</p>
+<p>What have you been playing over the last month on either Steam Deck or your Linux desktop? <a href="https://www.gamingonlinux.com/2023/01/hi-fi-rush-from-tango-gameworks-steam-deck/" target="_blank">Hi-Fi Rush</a> was quite the highlight for me but <a href="https://www.humblebundle.com/store/detroit-become-human?partner=gamingonlinux" target="_blank">Detroit: Become Human</a> also really sucked me in too.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/most-popular-steam-deck-games-january-2023/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/most-popular-steam-deck-games-january-2023/</guid>
+      <pubDate>Wed, 01 Feb 2023 17:50:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/607928939id22263gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>Ubisoft just broke their games on Linux desktop and Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><strong>Update 21:17</strong>: Looks like Proton developers have updated the "bleeding-edge" Beta for Proton Experimental, that works around the issue. Note: using it can cause other issues, the Beta doesn't have a lot of testing, you've been warned.</p>
+<p>If you go into the Properties on Proton Experimental in your Steam Library, and opt into the "bleeding-edge" Beta, then set your Ubisoft games to use Proton Experimental it will fix it for now until a proper Proton update is out. </p>
+<p><strong>Update 22:11</strong>: Valve released a Proton Experimental (no Beta needed) fix for this.</p>
+<hr/>
+<p><u><em>Original article below</em></u></p>
+<p>Third-party launchers on Steam are once again being a massive nuisance. First it was EA breaking everything on Linux and Steam Deck and now it's Ubisoft telling everyone to hold their beer.</p>
+<p>Valve <a href="https://www.gamingonlinux.com/2022/12/proton-experimental-upgraded-to-fix-the-ea-app-failing-to-update-on-steam-deck-a-linux/" target="_blank">fixed the EA App</a> in Proton after a while, and it's likely we're going to need to wait on a fix from Valve again for whatever Ubisoft changed in the latest Ubisoft Connect update.</p>
+<p>When you go to launch any game on desktop Linux or Steam Deck that uses Ubisoft Connect, it will do an update and then you'll be greeted with this:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5117776381675266378gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5117776381675266378gol1.png"/></a></p>
+<p>That picture above is from my Fedora Linux desktop trying Ghost Recon Breakpoint today.</p>
+<p>After testing The Division 2, Watch Dogs Legion, Assassin's Creed Valhalla and Ghost Recon Breakpoint on my Steam Deck too, they all also gave the exact same problem as you'll see in the screenshot below from my Steam Deck:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7110715951675266489gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7110715951675266489gol1.jpeg"/></a></p>
+<p>So it seems that every title that uses Ubisoft Connect, is now left broken on Linux desktop and Steam Deck. This comes only <a href="https://www.gamingonlinux.com/2023/01/ubisoft-fixed-the-division-2-on-steam-deck-and-linux-desktop/" target="_blank">two weeks after</a> Ubisoft fixed The Division 2 for Steam Deck / Linux. Meanwhile, <a href="https://www.gamingonlinux.com/2023/01/fix-ghost-recon-breakpoint-on-steam-deck/" target="_blank">Breakpoint still needs manual fixes</a>.</p>
+<p>Why do developers and publishers keep forcing these absolutely useless third-party launchers on us? Never once have I, or anyone I've spoken to, actually wanted them. They only ever cause problems and solve basically nothing that Steam cannot already do directly.</p>
+<p>I've logged an official <a href="https://github.com/ValveSoftware/Proton/issues/6498" target="_blank">bug report</a> with Valve and notified their developers about it.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/ubisoft-broke-their-games-on-linux-desktop-and-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/ubisoft-broke-their-games-on-linux-desktop-and-steam-deck/</guid>
+      <pubDate>Wed, 01 Feb 2023 15:50:17 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/699013223id22262gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Hotfix improves Dead Space, Proton Experimental tweak for Tiny Tina&#39;s Wonderland</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><strong>Update 22:13</strong>: In addition to the below, Valve did another Proton Experimental update after some recent Ubisoft Connect <a href="https://www.gamingonlinux.com/2023/02/ubisoft-broke-their-games-on-linux-desktop-and-steam-deck/" target="_blank">breakage I highlighted</a> that includes:</p>
+<blockquote>
+<ul>
+<li>Fix 2K launcher failure caused by launcher update.</li>
+<li>Fix Ubisoft Connect launcher failure caused by launcher update.</li>
+</ul>
+</blockquote>
+<hr/>
+<p><em>Original article below:</em></p>
+<p>Valve has released an update to two different versions of their Windows compatibility layer for Linux desktop and Steam Deck with Proton Hotfix and Proton Experimental seeing small updates. Here's what's new.</p>
+<p><em>If you're confused on what Proton is, <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">check out my beginner's guide</a>.</em></p>
+<p>Here's what's changed for <strong>Proton Experimental</strong>:</p>
+<ul>
+<li>Now playable: Forspoken, Samurai Maiden.</li>
+<li>Improve sleep/resume functionality on Steam Deck for Tiny Tina's Wonderland.</li>
+</ul>
+<p>For <strong>Proton Hotfix</strong>, Valve's Pierre-Loup Griffais said on <a href="https://twitter.com/Plagman2/status/1620567410205130752" target="_blank">Twitter</a>:</p>
+<blockquote>
+<p>A Proton Hotfix change has just been deployed to fix an issue where the Dead Space save screen thumbnail wouldn't appear properly. We're not aware of any remaining issues with the game but are continuing to monitor reports.</p>
+</blockquote>
+<p>Changelog can be found <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">here</a>.</p>
+<p>In a follow-up tweet asking for clarification Griffais <a href="https://twitter.com/Plagman2/status/1620587750587252736" target="_blank">said</a>:</p>
+<blockquote>
+<p>Most of those changes were improvements to our DX12 implementation to better support usage patterns we hadn't seen before.</p>
+</blockquote>
+<p>To change the version of Proton used by games on Linux desktop and Steam Deck:</p>
+<p class="plain-list-title"><strong>Steam Deck</strong></p>
+<ol>
+<li>Open a game in your Steam Library.</li>
+<li>Go to the settings icon on the far right and click it.</li>
+<li>Select Properties.</li>
+<li>Compatibility menu -&gt; tick the box -&gt; select from the dropdown box.</li>
+</ol>
+<p class="plain-list-title"><strong>Linux Desktop</strong></p>
+<ol>
+<li>Right click any game in your Steam Library.</li>
+<li>Select Properties.</li>
+<li>Compatibility menu -&gt; tick the box -&gt; select from the dropdown box.</li>
+</ol>
+<p>Here's a video too:</p>
+<div class="hidden_video" data-video-id="f1GvONkE9S0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6bb07ac6333f611978e50464915ff76b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/f1GvONkE9S0" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/proton-hotfix-dead-space-proton-experimental-tiny-tinas-wonderland/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/proton-hotfix-dead-space-proton-experimental-tiny-tinas-wonderland/</guid>
+      <pubDate>Wed, 01 Feb 2023 13:22:46 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>The Legend of Zelda: A Link to the Past gets a reverse-engineered clone</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Legend of Zelda: A Link to the Past, the 1991 classic from Nintendo has been reverse-engineered to bring it natively to more platforms. Nintendo are no doubt warming up their lawyers. Available on <a href="https://github.com/snesrev/zelda3" target="_blank">GitHub</a> under the MIT license, it notes the game is fully playable from start to finish and it does need the original ROM for the resources, so it doesn't include the copyrighted assets.</p>
+<p>Some extra features were added too including:</p>
+<blockquote>
+<ul>
+<li>Support for pixel shaders.</li>
+<li>Support for enhanced aspect ratios of 16:9 or 16:10.</li>
+<li>Higher quality world map.</li>
+<li>Support for MSU audio tracks.</li>
+<li>Secondary item slot on button X (Hold X in inventory to select).</li>
+<li>Switching current item with L/R keys.</li>
+</ul>
+</blockquote>
+<p>Looks like it's supported to run it across Linux, macOS and Windows too!</p>
+<p>You can see their own side-by-side comparison in the below video:</p>
+<div class="hidden_video" data-video-id="xctizwBntag"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9e60e96b01a78b98cc1f57471b5f6a65.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/xctizwBntag" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/zelda-a-link-to-the-past-reverse-engineered-clone/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/zelda-a-link-to-the-past-reverse-engineered-clone/</guid>
+      <pubDate>Wed, 01 Feb 2023 13:11:42 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/91678941id22260gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Retro</category>
+      
+    </item>
+    
+    <item>
+      <title>elementary OS 7 &#39;Horus&#39; is out now with major AppCenter upgrades</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>elementary OS, probably one of the absolutely slickest looking Linux distributions around, has released version 7 with some major upgrades.</p>
+<p>According to the Founder and CEO, Danielle Foré, the previous release saw downloads hit over 400,000 and that's not counting third-party downloads or torrents that don't use their downloads page. Some impressive numbers.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20058983841675254487gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20058983841675254487gol1.jpg"/></a><br/>
+<em>elementary OS 7 screen - credit to the elementary OS team</em></p>
+<p>elementary OS 7 saw a lot of working going into the AppCenter, their first-party application for installing and updating software. It's quite unique, as it offers developers a pay what you want model to put up applications for users, something they seem to be quite successful with.</p>
+<p>The new release overhauls the likes of app descriptions, easier updates, upgrades to side-loading and alternate stores, improved responsiveness of the AppCenter itself, rewritten navigation and lots more. One major change is how they handle installing from other sources, instead of showing a warning message it will now show the app in AppCenter with a clear icon and note that it's not curated by them.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17022305351675254762gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17022305351675254762gol1.png"/></a></p>
+<p>Some more of what's new includes:</p>
+<ul>
+<li>GNOME Web 43 with support for creating web apps.</li>
+<li>Big improvements to their Feedback app to make it easier to use.</li>
+<li>A simpler to use OS installer with less screens to click through.</li>
+<li>Their onboarding welcome app now lets you configure automatic updates.</li>
+<li>Their email app Mail now has a "more-modern, flatter design" as a final step to make it more responsive.</li>
+<li>A redesign of Printer settings.</li>
+<li>A complete rewrite of their Music app.</li>
+</ul>
+<p>The developers noted performance has been a focus for this release too and in "just about every section" they could have written about performance. They've spent a fair amount of time looking into slowdowns, reworking old code and optimizing everything they possibly could.</p>
+<p>Lots more in the <a href="https://blog.elementary.io/os-7-available-now/" target="_blank">release notes</a>.</p>
+<p>Really looking good! I've always been impressed by the design of elementary OS 7.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/elementary-os-7-linux-out-now-major-appcenter-upgrades/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/elementary-os-7-linux-out-now-major-appcenter-upgrades/</guid>
+      <pubDate>Wed, 01 Feb 2023 12:38:35 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2085148341id22259gol.jpg" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>elementary OS</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Budgie 10.7 sounds like a great desktop to use on Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Budgie 10.7 is out now, refreshing many parts of this Linux desktop environment to improve the UI across many parts. Originally created for the Solus Linux distribution, nowadays it lives as an independent project and continues to impress.</p>
+<p>There's quite a lot new including an application indexer that should be more reliable, Budgie Desktop Settings has a new design for widget selection and Budge Menu saw quite a few improvements like: gaining support for dual-GPUs to pick the right one, a personal user menu giving you quick access to folders like Home and Documents, quick-access buttons at the bottom things like Desktop Settings and Power and the Budgie Menu also no longer needs to reload when the application index changes.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10875362121675253239gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10875362121675253239gol1.jpg"/></a><br/>
+Budgie 10.7 screenshot - credit to the Budgie devs</p>
+<p>Some more of what's new includes:</p>
+<ul>
+<li>Budgie Run Dialog uses their new application indexer.</li>
+<li>A new Budgie Screenshot application built into the desktop.</li>
+<li>Lots of improvements to the notification system, like showing you a summary of notifications after using something in fullscreen. Their notification system also now supports more of the FreeDesktop Notification spec.</li>
+<li>Raven, their big panel on the right, now has a whole new widget API system so anyone can build their own widgets for Raven. Plus there's upgrades to multiple existing Raven widgets like a new Usage Monitor giving you a minimal look at CPU, RAM and Swap use.</li>
+</ul>
+<p>Lots more can be found in the <a href="https://blog.buddiesofbudgie.org/budgie-10-7-released/" target="_blank">release notes</a>.</p>
+<p>I've never actually used Budgie myself, and going by <a href="https://www.gamingonlinux.com/users/statistics/" target="_blank">our user stats</a> not a whole lot of people do that filled in their PC Info. If you do use it — what attracts you to it compared with the likes of GNOME, KDE, Xfce and so on?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/budgie-107-sounds-like-a-great-desktop-to-use-on-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/budgie-107-sounds-like-a-great-desktop-to-use-on-linux/</guid>
+      <pubDate>Wed, 01 Feb 2023 12:19:30 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/585556787id22258gol.jpg" type="image/jpeg"/>
+      
+      <category>Desktop Environment</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Colossal Cave returns from the 1970s in a 3D reimagining</title>
@@ -3595,275 +3994,6 @@ They DID send us the source code to the server itself, so maybe we can get it up
       <category>Indie Game</category>
       
       <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>GOverlay app for managing the MangoHud overlay gets a bunch of new options</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://github.com/benjamimgois/goverlay" target="_blank">GOverlay</a> is great! Giving you a real easy way to tweak the <a href="https://github.com/flightlessmango/MangoHud" target="_blank">MangoHud</a> performance overlay on Linux, along with it also working with <a href="https://github.com/DadSchoorse/vkBasalt" target="_blank">vkBasalt</a> and <a href="https://github.com/matanui159/ReplaySorcery" target="_blank">ReplaySorcery</a>. Instead of editing text configuration files, you get to tick boxes, much more user friendly overall.</p>
-<p>Here's a list of what's new and improved in version 0.9.1:</p>
-<blockquote>
-<ul>
-<li>NEW: Mangohud - Multigpu support with PCIDEV option.</li>
-<li>NEW: Mangohud - Vertical and horizontal hud orientation (not in the mangohud stable yet, you need use mangohud-git for it).</li>
-<li>NEW: Mangohud - NVME temperature option.</li>
-<li>New: Goverlay - Transparency trackbar moved to main form.</li>
-<li>New: Goverlay - Opengl Cube has a widemode to better fit the hud horizontal orientation.</li>
-<li>FIX: Goverlay - Interface fonts adjustments to improve interface scalling.</li>
-<li>Fix: Tabs reorder (Visual is the first one now).</li>
-<li>FIX: removed message ¨paint" spammed when running from terminal.</li>
-<li>Change: Some cosmetic changes on the spinning cube.</li>
-<li>Change: Removed framecount from the "Complete" quick layout.</li>
-<li>Fix: Removed lsb_release dependency and reimplemented feature through os-release file.</li>
-<li>Removed: Hack option to run steam with deckUI (no longer needed).</li>
-</ul>
-</blockquote>
-<p><em>This was released a few weeks ago, I'm still catching up from the holidays.</em></p>
-<p>The app looks like this:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19633501301673535179gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19633501301673535179gol1.png"/></a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/goverlay-app-for-managing-the-mangohud-overlay-gets-a-bunch-of-new-options/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/goverlay-app-for-managing-the-mangohud-overlay-gets-a-bunch-of-new-options/</guid>
-      <pubDate>Thu, 12 Jan 2023 14:53:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/914208249id22164gol.png" type="image/jpeg"/>
-      
-      <category>Apps</category>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Pokemon-like &#39;Coromon&#39; finally has big FPS problem fixed for Steam Deck / Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Coromon is another attempt to make a Pokemon styled game and while it is a lot of fun, the game had a major frustrating problem on Steam Deck and Linux desktop with Proton that has now been solved.</p>
-<p>When covering it initially <a href="https://www.gamingonlinux.com/2022/04/coromon-is-pretty-much-pokemon-for-the-steam-deck/" target="_blank">back in April 2022</a>, I noted how it looked good and ran quite well until the performance would suddenly hard-drop down to 14FPS and just lock itself there. It would do it like clockwork every single time after a while of playing it (around an hour or so) and it was the same on desktop Linux too. The game was Steam Deck Verified by Valve back in April 2022, and stayed Verified the entire time which is another clear example of Deck Verified just <em>not</em> being thorough enough because this issue happened to <em>everyone</em>.</p>
-<p>Thankfully, although rather late on it, the developer found the issue and fixed it in an update released in December 2022. So now it actually deserves the Steam Deck Verified rating.</p>
-<p>Interestingly, the developer actually went onto Valve's Proton GitHub page to give an <a href="https://github.com/ValveSoftware/Proton/issues/5828#issuecomment-1328015908" target="_blank">explanation</a> of what the issue was, to help others:</p>
-<blockquote>
-<p>Developer of Coromon here, we've been investigating this issue for some time now and we're finally able to pinpoint where the issue is coming from. Just dropping our findings here to help someone else perhaps fix the core issue.</p>
-<p>The FPS drop starts happening after the <code class="inline-code">BOverlayNeedsPresent()</code> Steam SDK API is called roughly ~130.000 times (~36.5 minutes converted to seconds * 60FPS).<br/>
-The <a href="https://github.com/coronalabs/com.coronalabs-plugin.steamworks" target="_blank">steamworks plugin</a> of our engine calls this on every frame to determine whether OpenGL should force a render to ensure the overlay is being updated. We tested decreasing the polling rate to the <code class="inline-code">BOverlayNeedsPresent()</code> to once every 10 frames, this delayed the FPS drop to 6 hours (360 minutes) instead of 36 minutes. This also changed the constant FPS drop into a frame spike every 10 frames, so it seems to me <code class="inline-code">BOverlayNeedsPresent()</code> starts to take a lot of CPU time after it is called over ~130.000 times.</p>
-<p>We tested on every available Proton version on Steam, Proton 4.2-9 &amp; Proton 3.16-9 do not have this glitch somehow.</p>
-<p>We'll be releasing an update of our game soon where we decrease the polling rate even further to allow sessions of at least 18 hours without the FPS drop, but a better solution would be a fix for <code class="inline-code">BOverlayNeedsPresent()</code> in Proton.</p>
-</blockquote>
-<p><em>So unless you're doing a single run longer than 18 hours (what?!) you're fine now.</em></p>
-<p>It's actually pretty great to see a developer explain things like this, I wished more did. It can help Proton developers, and other game developers for future problems.</p>
-<p>As usual here's a video with some fresh gameplay and a little discussion for people who prefer videos now:</p>
-<div class="hidden_video" data-video-id="kUi4YRr7Z90"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/146512ce300d681cfbf23f611b7df152.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/kUi4YRr7Z90" target="_blank">See video</a></div></div>
-<p>You can buy it on <a href="https://www.humblebundle.com/store/coromon?partner=gamingonlinux" target="_blank">Humble Store</a> and Steam.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/pokemon-like-coromon-finally-has-big-fps-problem-fixed-for-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/pokemon-like-coromon-finally-has-big-fps-problem-fixed-for-steam-deck-linux/</guid>
-      <pubDate>Thu, 12 Jan 2023 14:16:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1000081703id22158gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Monster Catching</category>
-      
-      <category>RPG</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam &amp; Steam Deck Beta improves controller configurator plus Linux fixes (updated)</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><strong>Update at 20:10 UTC</strong>: this Beta seems to have a pretty <a href="https://github.com/ValveSoftware/steam-for-linux/issues/9094" target="_blank">major bug</a>. I would suggest you stay away from it for now otherwise you might find you can't open things on Linux and Steam Deck.</p>
-<hr/>
-<p>Valve has released a new Steam Client Beta for both desktop and Steam Deck, with new fixes and some new features too like showing full or partial controller icons when hovering over items.</p>
-<p>The changelog is basically the <em>same</em> with different titles across <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/3642882655783105850" target="_blank">desktop</a> and <a href="https://store.steampowered.com/news/app/1675200/view/5662747178707105871" target="_blank">Steam Deck</a>, with the desktop client having an additional fix for macOS.</p>
-<blockquote>
-<p>General</p>
-<ul>
-<li>Changing download regions no longer requires restarting the Steam client</li>
-<li>Show icons for partial and full controller support in Library when a game portrait is focused or hovered</li>
-<li>Add a rollup of gifts received in the Quick Access &gt; Notifications area</li>
-</ul>
-<p>Steam Input</p>
-<ul>
-<li>Controller configurator now groups commands if they are attached to the same input</li>
-<li>Controller configuration browsing screen can now preview configurations and the selection processes now previews then applies instead of directly selecting the configuration</li>
-</ul>
-<p>Desktop Linux</p>
-<ul>
-<li>Fixed some errors causing the Library not to render properly</li>
-<li>Fix the "Start in Big Picture Mode" setting not updating</li>
-<li>Center the navigation column in the Big Picture Overlay vertically to match the rest of the main menu</li>
-</ul>
-<p>Virtual Keyboard</p>
-<ul>
-<li>Standalone keyboard can now be brought up outside of Big Picture Mode</li>
-<li>Fixed some issues using the Paste button outside of a web context</li>
-</ul>
-</blockquote>
-<p>An important detail they seem to have left out though, is that this new full / partial controller icon that appears when you hover over a game in your library is not actually on Steam Deck. It appears to only work on a desktop PC in the New Big Picture Mode (it doesn't even appear on Steam Deck Desktop Mode with New Big Picture either). This is the second time they've noted something not actually there for the Steam Deck, like the <a href="https://www.gamingonlinux.com/2023/01/steam-deck-beta-update-plus-easy-flatpak-updates-and-more-hdr-teasing/" target="_blank">last Beta mentioning</a> new controller options for idle turn off time and turn it off when exiting Big Picture. Seems they once again copy and pasted bits of the changelog, without enabling it on Steam Deck directly.</p>
-<p>Here's how it looks on Desktop Steam:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6004263061673524656gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6004263061673524656gol1.jpg"/></a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/steam-steam-deck-beta-improves-controller-configurator-plus-linux-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/steam-steam-deck-beta-improves-controller-configurator-plus-linux-fixes/</guid>
-      <pubDate>Thu, 12 Jan 2023 12:07:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/905245017id22163gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve remind people to be careful where you buy a Steam Deck </title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Recently the official OnDeck Twitter account from Steam creator Valve posted a PSA (public service announcement), reminding people on being careful where they buy a Steam Deck.</p>
-<p>On <a href="https://twitter.com/OnDeck/status/1612952676173742081" target="_blank">Twitter</a> they posted this:</p>
-<blockquote>
-<p>Hello, and happy new year! A quick note that the only official ways to purchase Steam Deck are directly from Steam (in the US, CA, EU, and UK), or from Komodo (JP, KR, TW, and HK). Steam Decks sold via any other websites or retailers are unofficial - please be careful.</p>
-</blockquote>
-<p>Why are they posting it? Well, they of course haven't mentioned anyone or anything else directly, but it's likely in part due to the store I covered <a href="https://www.gamingonlinux.com/2022/12/beware-of-scam-steam-deck-and-steam-account-stores/" target="_blank">in an article and video recently</a> that teamed up with accessory brand JSAUX. This store was selling Steam Accounts, Steam Gifts and more that are against Valve's terms and would get people banned from the platform, in addition to always claiming they have a discount on every model of Steam Deck with them being "brand new".</p>
-<p><em>My video on that is still blocked on <a href="https://youtu.be/wKZ3k2zutBo" target="_blank">YouTube</a> in the UK for "defamation", a mirror is on <a href="https://tilvids.com/w/sx3oWxzUqQeHDe3pjmfH9k" target="_blank">TILVids</a>.</em></p>
-<p>In the UK at least, there's actually nothing wrong with reselling. You buy something, it's yours. The key point is to be careful: if a deal looks too good, it probably is too good to be true. There's also no real reason in the UK or the US to buy one new from somewhere other than Valve.</p>
-<p>There are plenty of places Valve are not yet supplying though, which is part of a wider issue. Hopefully this year Valve will announce more regions they will serve officially or through a partner like they do with Komodo for some parts of Asia.</p>
-<p>Be sure to check out some of my recent videos:</p>
-<ul>
-<li><a href="https://youtu.be/ujP6ZB0-eIA" target="_blank">Steam Deck plugins get EASIER than ever</a></li>
-<li><a href="https://youtu.be/xnRqLVP4puc" target="_blank">Cuphead - what a MAGNIFICENT game</a></li>
-<li><a href="https://youtu.be/8uXGYrldJmg" target="_blank">News Flip 2: Steam Deck file sharing, AYANEO, over 7K Deck Playable</a></li>
-</ul>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/valve-remind-people-to-be-careful-where-you-buy-a-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/valve-remind-people-to-be-careful-where-you-buy-a-steam-deck/</guid>
-      <pubDate>Thu, 12 Jan 2023 11:38:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Get a whole load of Wadjet Eye Games adventures in this new bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Wadjet Eye Games publish some really good stuff and now you can easily pick up a load of them, thanks to <a href="https://www.humblebundle.com/games/wadjeteye-sixteen-years-of-adventure?partner=gamingonlinux" target="_blank">this very good Humble Bundle</a>. They've been good to Linux gamers too, publishing many Linux games and getting some classics upgraded too.</p>
-<p>Here's what you can get:</p>
-<ul>
-<li>Unavowed</li>
-<li>Strangeland</li>
-<li>Primordia</li>
-<li>Shardlight</li>
-<li>Technobabylon</li>
-<li>Resonance</li>
-<li>The Blackwell Legacy</li>
-<li>Blackwell Unbound</li>
-<li>Blackwell Convergence</li>
-<li>Blackwell Deception</li>
-<li>Blackwell Epiphany</li>
-<li>Gemini Rue</li>
-<li>The Shiva</li>
-<li>33% off The Excavation of Hob's Barrow</li>
-</ul>
-<p>All of them have Native Linux versions. A great bundle!</p>
-<p>Check out <a href="https://www.humblebundle.com/games/wadjeteye-sixteen-years-of-adventure?partner=gamingonlinux" target="_blank">the bundle here</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/get-a-whole-load-of-wadjet-eye-games-adventures-in-this-new-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/get-a-whole-load-of-wadjet-eye-games-adventures-in-this-new-bundle/</guid>
-      <pubDate>Wed, 11 Jan 2023 19:14:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1180594210id22161gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-    </item>
-    
-    <item>
-      <title>Check out the new release of Kandria a hand-crafted 2D action game</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I have to admit, not many platformer-likes catch my attention nowadays but Kandria certainly looks the part. This new Native Linux game just launched from the tiny team at Shirakumo Games, the lead of which is also part of <a href="https://shirakumo.org/" target="_blank">Shirakumo Collective</a> who do some open source software too (including their game engine).</p>
-<p>What is it? Kandria is a hand-crafted 2D role-playing action game that resembles a metroidvania. The developers say it has all the platforming puzzle elements of games like Celeste, but also features some slick swordplay found in the likes of NieR:Automata with a sprinkling of a post-apocalyptic world. It also has a lovely soundtrack to it!</p>
-<div class="hidden_video" data-video-id="usc0Znm-gbA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/12ef5b8629ec446d81840dc50abc9b1c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/usc0Znm-gbA" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Play as The Stranger, a powerful android recently unearthed from the ruins of the old world.</li>
-<li>Fight against rogue robots and malcontent humans - you’re faster, stronger, and more resilient. But are you smarter?</li>
-<li>When you think you’ve mastered things, prepare yourself for epic boss battles with beasts and machines, which slumber and lurk deep beneath the earth.</li>
-<li>Explore vast, open and interconnected levels full of non-linear missions, challenging platforming, and gorgeous pixel art decay - cross the barren surface, or spelunk deep underground.</li>
-<li>Meet diverse characters and factions struggling to survive; determine friend from foe, and choose allies wisely as you forge your own future amongst the ruins.</li>
-<li>Experience an epic story of mystery, grit and self-determination, all the way to its inevitable end. </li>
-</ul>
-</blockquote>
-<p>Nice to see another game that was <a href="https://www.kickstarter.com/projects/shinmera/kandria/description" target="_blank">crowdfunded</a> deliver!</p>
-<p>You can buy it from <a href="https://shinmera.itch.io/kandria" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1261430/Kandria/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/check-out-the-new-release-of-kandria-a-hand-crafted-2d-action-game/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/check-out-the-new-release-of-kandria-a-hand-crafted-2d-action-game/</guid>
-      <pubDate>Wed, 11 Jan 2023 18:31:48 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/760697156id22160gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Itch.io</category>
-      
-    </item>
-    
-    <item>
-      <title>Remember to support the projects you use and appreciate</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>In light of some recent news surrounding the MSI Afterburner software, it's another reminder that it's quite important for people to directly support projects they use and enjoy. <em>No this isn't me asking you to support my Patreon or anything.</em></p>
-<p>While this first bit isn't Linux related, stick with it a moment. On the guru3D forum, the developer on Afterburner <a href="https://forums.guru3d.com/threads/7900xt-power-usage-not-visible.446010/#post-6089040" target="_blank">noted</a> "MSI afterburner project is probably dead" and later <a href="https://forums.guru3d.com/threads/7900xt-power-usage-not-visible.446010/#post-6090142" target="_blank">elaborated</a> "War and politics are the reasons" (Ukraine and Russia) and mentioned "the project is semi abandoned by company during quite a long time already" with MSI apparently not "performing their obligations under Afterburner license agreement" with the developer not being paid for their work. MSI are <a href="https://twitter.com/hms1193/status/1612449753903554560" target="_blank">claiming</a> "product marketing &amp; accounting team are dealing with this problem now" and mentioned the war was causing payment issues.</p>
-<p>Regardless of what's <em>really</em> happening it's a stark reminder that a <em>lot</em> of things we use directly and probably take for granted, or things other bigger projects use, are often developed and supported by single people (or only a few people). So if there's something you're using that you want to keep using, and see it keep working, perhaps it's a good time to throw some direct support behind it?</p>
-<p>Makes me think about projects like <a href="https://github.com/flightlessmango/MangoHud" target="_blank">MangoHud</a> for Linux, the awesome way to get a Vulkan and OpenGL overlay on top of games that lets you monitor things like FPS, temperatures, system load, frame timings, benchmarking and more. MangoHud is even used on the Steam Deck, it's the performance overlay. Valve do sponsor the development on it but imagine if they didn't or just stopped (there's also direct support links on their GitHub).</p>
-<p><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12556950641673460308gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12556950641673460308gol1.jpg"/></a><br/>
-<em>That's MangoHud in the bottom right corner. Just ignore the frame timing spike, Dying Light 2 does not like its photo to be taken, it's a bit camera shy.</em></p>
-<p>We also have other great projects like the <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Games Launcher</a>, which has become very popular since the Steam Deck release to help people manage GOG and Epic Games Store on Linux desktop and Steam Deck. It only just recently expanded to handle games from other sources. I could keep on naming various important Linux gaming projects for hours. It's just another relevant easy example.</p>
-<p>There's been worse <a href="https://www.bleepingcomputer.com/news/security/dev-corrupts-npm-libs-colors-and-faker-breaking-thousands-of-apps/" target="_blank">examples</a> to bring up like the time a developer on the faker.js and colors.js projects decided to stop doing it, and ended up pushing out a malicious update screwing over everyone using it. Why? They <a href="http://web.archive.org/web/20210704022108/https:/github.com/Marak/faker.js/issues/1046" target="_blank">were fed up</a> of "Fortune 500s ( and other smaller sized companies )" using their work without supporting it.</p>
-<p>So to sum up this little reminder if you able to: give back to the projects you use and love, don't let them fade away.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/remember-to-support-the-projects-you-use-and-appreciate/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/remember-to-support-the-projects-you-use-and-appreciate/</guid>
-      <pubDate>Wed, 11 Jan 2023 18:12:39 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
-      
-      <category>Editorial</category>
-      
-      <category>Meta</category>
       
     </item>
     
