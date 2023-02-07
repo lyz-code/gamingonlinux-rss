@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-02-06 07:25:39.939566</pubDate>
+    <pubDate>2023-02-07 07:25:47.988748</pubDate>
 
     
     <image>
@@ -18,6 +18,376 @@
     </image>
 
     
+    
+    <item>
+      <title>Building a Retro Linux Gaming Computer - Part 24: Mother Knows Best</title>
+      <author>Hamish</author>
+      <description><div class="content group e-content">
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-23-ready-set-go/" target="_blank">Part 23: Ready, Set, Go!</a></strong></p>
+<p>My mother's favourite game on Linux is without a doubt <em>Frozen Bubble</em>. It is a casual game in all of the best ways; one you can dive into and learn at your own pace thanks to its simple but repeatable formula. The stakes are never too high, with each level just being repeated until you beat it; the worst possible outcome being seeing a cartoon penguin cry over the fleeting loss of its igloo home. You will have them all jumping for joy again soon enough.</p>
+<p>Searching online, I came across both the frozen-bubble-0.9.2-fr1.i386.rpm package alongside its perl-SDL-1.12-fr1.i386.rpm package dependency from freshrpms. I did try building the final 1.0.0 release from source, but it requires a newer version of SDL than is packaged for Red Hat Linux 7.3 which explains why no RPM packages were available. Consider this to be a snapshot in time back to 2002, from right before the game was to take the world by storm.</p>
+<p>In terms of limitations it is hard to believe this was not the final release. The degree of polish on display with <em>Frozen Bubble</em> even at this early stage is already leagues ahead of most of its other contemporary free gaming fare. The game has its own unique identity, with a custom soundtrack, polar atmosphere, and recognizable characters. While the gameplay at its core may be a straight lift from <em>Puzzle Bobble</em>, it is in the implementation that <em>Frozen Bubble</em> excels.</p>
+<p>One complaint I did have with <em>Frozen Bubble</em> over the years is how the blue and purple bubbles, as well as the yellow and green bubbles, can look very much alike to someone who is colourblind like myself. It was not until I was consulting the changelog that I discovered that a special option was included which makes the bubbles also contain geometric shapes, activated using the -cb launch flag. This did not come until the following 0.9.3 release of the game.</p>
+<p>While appreciated, this solution does still comes across as bit of an underexposed hack. The situation is still far better than what I encountered with <em>Theocracy</em>, where I missed spotting the Teotitlans entirely on the province view map, as their cyan colour code was almost indistinguishable to the beige given to neutral non-aligned provinces. Version 0.9.3 also has <em>Frozen Bubble</em> remember to ask for your high score after completing all 50 levels, about the only complaint I had.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16386212461675316432gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16386212461675316432gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9582936901675318969gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/9582936901675318969gol6.png"/></a></p>
+<p>The milestone 1.0.0 release of <em>Frozen Bubble</em> in 2003 would expand the game to have 100 levels as well as retooling the graphics and including a built-in level editor. Following that, the game would be rebranded as <em>Frozen Bubble 2</em> starting with the 2.0.0 release in 2006, with the final stable 2.2.0 version coming out in 2008. <em>Frozen Bubble 2</em> features the ability to play multiplayer over the network, as well as showcasing brand new 3D assets created with Blender.</p>
+<p>Some work would continue on the game up until 2010, but from there the project became dormant. It was never ported to SDL2 or had support added for widescreen or modern high definition displays. <em>Frozen Bubble</em> did see a number of forks to allow it to run in a web browser, with both a Java and JavaScript version being produced by Glenn Sanson. Considering how often the title is to this day held as a standard bearer of Linux gaming, an update does seem to be in order.</p>
+<p>I would also tweak the game's difficulty curve just a little. While skill does play a role, often a successful play is dependent on the order of bubbles you get fed to your launcher. With luck some levels are made ridiculously easy, while others can be near impossible. As a veteran of the game, my mother agrees with me that level 70 as still featured in the final release can kill your momentum dead, and should at the very least be moved to be the ultimate level. Food for thought.</p>
+<p>In the years following its release <em>Frozen Bubble</em> would stay the darling of Readers' and Editors' Choice Awards from a wide variety of Linux publications and websites, owing much to its wide demographic appeal. Consider how the lead developer Guillaume Cottenceau was inspired to start work on the game because he remembered how the original <em>Puzzle Bobble</em> was one of the few games he would play with his sister. Or how much my mother loves the game.</p>
+<p>This also gave <em>Frozen Bubble</em> the distinction of being one of the oddest of <em>Quake</em> killers. With the exception of <em>XBill</em>, which I suspect garnered favour for political reasons, the Readers' Choice Awards for the <em>Linux Journal</em> magazine had always been dominated by <em>Quake</em> games. Then <em>Frozen Bubble</em> wins in 2003 and goes on to hold the "Best Linux Game" title for all of the next eight years surveyed. I, on the other hand, do still feel the urge to play <em>Quake</em> again.</p>
+<p><strong>Carrying on in Part 25: Quantum Axcess</strong></p>
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-24-mother-knows-best/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-24-mother-knows-best/</guid>
+      <pubDate>Mon, 06 Feb 2023 19:30:02 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1370431875id22197gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Casual</category>
+      
+      <category>Family Friendly</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Get some laid-back life sims and builders in this latest game bundle</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The <a href="https://www.humblebundle.com/games/simple-life?partner=gamingonlinux" target="_blank">Sim-ple Life Bundle</a> from Humble Bundle is another that has a few good looking indie gems you might want to relax with. As usual, I'll go over what to expect on Linux desktop and Steam Deck for compatibility. Noting if something is Native Linux or ProtonDB ratings (which goes: Platinum - Gold - Silver - Bronze - Broken) to save you some clicking around.</p>
+<p>Here's what's in it:</p>
+<p class="plain-list-title"><strong>Townscraper</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Luna's Fishing Garden</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
+<li>Native Linux</li>
+</ul>
+<p class="plain-list-title"><strong>Staxel</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Playable</li>
+<li>Native Linux</li>
+</ul>
+<p class="plain-list-title"><strong>Summer in Mara</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Deck Unsupported (but works in Proton Experimental)</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Garden Paws</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><strong>Winkeltje: The Little Shop</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Lake</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Yonder: The Cloud Catcher Chronicles</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p>See <a href="https://www.humblebundle.com/games/simple-life?partner=gamingonlinux" target="_blank">the bundle here</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/get-some-laid-back-life-sims-and-builders-in-this-latest-game-bundle/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/get-some-laid-back-life-sims-and-builders-in-this-latest-game-bundle/</guid>
+      <pubDate>Mon, 06 Feb 2023 17:22:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/427888978id22286gol.jpg" type="image/jpeg"/>
+      
+      <category>Casual</category>
+      
+      <category>Game Bundle</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Superhero strategy game Capes now being published by Daedalic Entertainment</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Daedalic Entertainment have now teamed up with Spitfire Interactive to help their work on the superhero strategy game Capes. It's a turn-based strategy game where you assemble a team of unique heroes who are fighting to take back their city, which is now controlled by evildoers. </p>
+<p>Twenty years ago these nasty people won and the city has turned into something terrible, where having a super power is now a crime. </p>
+<div class="hidden_video" data-video-id="3b1XfO9tf1I"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c5bb818c86608dbf149d0f5e562e6cdc.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3b1XfO9tf1I" target="_blank">See video</a></div></div>
+<p>You play across a series of dark and gritty campaigns and patrol assignments, push the story forward, or take time to explore with side missions that unlock more heroes. Complete challenges to earn skill points to increase your hero's powers and abilities while you learn more about the hero's lives and backstories.</p>
+<p><strong>Features:</strong></p>
+<blockquote>
+<ul>
+<li><strong>Be Mighty</strong>: Play as heroic protectors of the innocent, each with unique skills and powers. Master your hero and unleash devastating ultimate abilities!</li>
+<li><strong>Assemble Your Team:</strong> Select the right team for the right mission. Combat isn’t based on random numbers, so choose wisely to win the day!</li>
+<li><strong>Level Up: </strong>Complete challenging missions and side-quests to improve your heroes with new abilities and powerful upgrades!</li>
+<li><strong>Defeat Evil: </strong>Face down vile villains and criminal corporate henchmen. Do you have what it takes to free your city from the clutches of villainy?</li>
+</ul>
+</blockquote>
+<p>It has a demo available right now that was updated today, along with Native Linux support. Check it out <a href="https://store.steampowered.com/app/2081080/Capes/" target="_blank">on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/superhero-strategy-game-capes-daedalic-entertainment/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/superhero-strategy-game-capes-daedalic-entertainment/</guid>
+      <pubDate>Mon, 06 Feb 2023 15:18:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/528722397id22285gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Steam</category>
+      
+      <category>Strategy</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA Vulkan Beta 525.47.07 supports extension to help VKD3D-Proton DXR</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Seems like a future update of VKD3D-Proton that translates Direct3D 12 to Vulkan for <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>, for Windows games on Linux desktop and Steam Deck, will make use of a newer extension available in the new NVIDIA Vulkan Beta 525.47.07 release.</p>
+<p>From the <a href="https://developer.nvidia.com/vulkan-driver" target="_blank">release notes</a> for the new NVIDIA driver:</p>
+<blockquote>
+<ul>
+<li>New:
+<ul>
+<li>VK_EXT_pipeline_library_group_handles</li>
+</ul>
+</li>
+<li>Vulkan Video driver experiments:
+<ul>
+<li>Internally synchronize the picture VkVideoSessionParametersKHR while during parameter updates with vkUpdateVideoSessionParametersKHR</li>
+<li>Allow for Picture Parameters like StdVideoH264PictureParameterSet, StdVideoH264SequenceParameterSet, StdVideoH265SequenceParameterSet, StdVideoH265PictureParameterSet and StdVideoH265VideoParameterSet to be optionally passed within vkCmdBeginVideoCodingKHR() and/or vkCmdDecodeVideoKHR() within VkVideoSessionParametersUpdateInfoKHR as an inlined extension structure</li>
+</ul>
+</li>
+<li>Fixes:
+<ul>
+<li>Ignore VkPipelineColorBlendStateCreateInfo.pAttachments when all state is dynamic</li>
+<li>Fix an issue with the video session picture parameters creation where the max PPS/SPS/VPS size is set to 1</li>
+</ul>
+</li>
+<li>open-gpu-kernel-modules release:
+<ul>
+<li><a href="https://github.com/NVIDIA/open-gpu-kernel-modules/releases/tag/525.47.07" target="_blank">https://github.com/NVIDIA/open-gpu-kernel-modules/releases/tag/525.47.07</a></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>When you look into what that new extension does the <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_pipeline_library_group_handles.html" target="_blank">documentation</a> says:</p>
+<blockquote>
+<p>When using pipeline libraries in ray tracing pipelines, a library might get linked into different pipelines in an incremental way. An application can have a strategy where a ray tracing pipeline is comprised of N pipeline libraries and is later augumented by creating a new pipeline with N + 1 libraries. Without this extension, all group handles must be re-queried as the group handle is tied to the pipeline, not the library. This is problematic for applications which aim to decouple construction of record buffers and the linkage of ray tracing pipelines.</p>
+<p>To aid in this, this extension enables support for querying group handles directly from pipeline libraries. Group handles obtained from a library <strong>must</strong> remain bitwise identical in any <code class="inline-code">VkPipeline</code> that links to the library.</p>
+<p>With this feature, the extension also improves compatibility with DXR 1.1 AddToStateObject(), which guarantees that group handles returned remain bitwise identical between parent and child pipelines. In addition, querying group handles from COLLECTION objects is also supported with that API.</p>
+</blockquote>
+<p>The key point being the last paragraph, making it able to more closely match with DirectX Ray Tracing (DXR) does. VKD3D-Proton added in support for it just <a href="https://github.com/HansKristian-Work/vkd3d-proton/commit/6f56e02354622b28041f8baaa2e201c950c0f7f5" target="_blank">recently</a> too. Seems like support for this extension is not yet in the Mesa drivers for Intel and AMD just yet.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/nvidia-vulkan-beta-5254707-supports-extension-to-help-vkd3d-proton-dxr/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/nvidia-vulkan-beta-5254707-supports-extension-to-help-vkd3d-proton-dxr/</guid>
+      <pubDate>Mon, 06 Feb 2023 15:05:42 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Beta</category>
+      
+      <category>Drivers</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Gorgeous puzzler Bonfire Peaks getting a 3-part DLC starting March 2nd</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Easily one of the best puzzle games to release back in 2021 and frankly it's criminally overlooked (only 140 use reviews on Steam?!), is set to get a whole lot bigger with the Lost Memories 3-part DLC. <em>The gorgeous blocky-voxel world with great lighting and bite-sized puzzles won me over easily.</em></p>
+<p>The first part of this DLC releases March 2nd, and the developer said it's already around one quarter the size of the original game, so it's going to have quite a bit in it and the 2nd and 3rd parts are under development. Each part will bring entirely new puzzles and game mechanics to go along with it so it should be real interesting to see what they have cooking up.</p>
+<div class="hidden_video" data-video-id="C4aYKw0ae2M"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4e07d8bc1d84e09f298009ba3a66a383.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/C4aYKw0ae2M" target="_blank">See video</a></div></div>
+<p>Created by Pipe Push Paradise and Hiding Spot developer Corey Martin, co-designed with Alan Hazelden (Draknek), and with art by Mari Khaleghi and Zach Soares. If you want a good puzzle game, look no further, seriously it's wonderful and you'll have a bit of time to complete it before the DLC releases.</p>
+<p>The full game is currently available via <a href="https://coreymartin.itch.io/bonfire-peaks" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1147890/Bonfire_Peaks/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/gorgeous-puzzler-bonfire-peaks-getting-a-3-part-dlc-starting-march-2nd/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/gorgeous-puzzler-bonfire-peaks-getting-a-3-part-dlc-starting-march-2nd/</guid>
+      <pubDate>Mon, 06 Feb 2023 13:38:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1324991244id22283gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>DLC</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Puzzle</category>
+      
+    </item>
+    
+    <item>
+      <title>Zero Wing, Twin Cobra and other Toaplan classics get upgraded for PC</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>All your base are belong to us. Toaplan are having some absolute classics revived including Zero Wing, Out Zone, Twin Cobra and Truxton with a PC release and enhancements. Oh, and Native Linux support to ensure they're great on Steam Deck too.</p>
+<p>Working with Bitwave Games, they've confirmed to me Native Linux support is a go for the release on February 14 for all of the games in this first collection. Well, <em>Native</em> being an interesting word to use because it's clearly old games with emulation but you get the idea — they're ensuring it all works properly including the enhancements within it and it's all set up correctly.</p>
+<p>Some true classics too! Zero Wing was one of the few full-games I had on SEGA Mega Drive when I was younger and that intro scene stuck with me forever.</p>
+<div class="hidden_video" data-video-id="AlNWV4QQYgk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a2fc4a952a76e0a3b6967ac4c1b189c4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/AlNWV4QQYgk" target="_blank">See video</a></div></div>
+<p>Some of the enhancements includes:</p>
+<blockquote>
+<ul>
+<li>Minimal Input Lag: Emulation, input processing, and rendering all complete on the same frame.</li>
+<li>Quick Save using F1-F10, Reload with Shift+ F1-F10.</li>
+<li>Online leaderboards for Single Credit, No Assist, and Assisted plays.</li>
+<li>Instrument panels with extra gameplay information and artwork.</li>
+<li>Rewind the game between 10-18 minutes, depending on the action.</li>
+<li>Capture sharable replays to immortalize your interstellar victories (or funny moments).</li>
+<li>Assist Features such as auto-fire at multiple rates.</li>
+<li>Very Easy Mode: Lower the difficulty to breeze through the adventure.</li>
+<li>Pixel perfect or full-screen scaling in windowed or full-screen mode.</li>
+<li>Rotate the gameplay in 90-degree increments.</li>
+<li>Steam Achievements.</li>
+<li>Choose between Raw Input on Windows or Steam Input.</li>
+<li>Hone your skills in the ultra customizable practice mode!</li>
+</ul>
+</blockquote>
+<p>You can follow / wishlist each of them on <a href="https://www.gog.com/en/games?publishers=bitwave-games" target="_blank">GOG</a> and <a href="https://store.steampowered.com/publisher/Bitwave" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/zero-wing-twin-cobra-and-other-toaplan-classics-get-upgraded-for-pc/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/zero-wing-twin-cobra-and-other-toaplan-classics-get-upgraded-for-pc/</guid>
+      <pubDate>Mon, 06 Feb 2023 13:22:17 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/360801708id22282gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Arcade</category>
+      
+      <category>Emulation</category>
+      
+    </item>
+    
+    <item>
+      <title>Superfluous Returnz is an unnecessary video game of a useless superhero</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>French comedy point and click adventure Superfluous Returnz is all about a useless superhero and it's releasing on May 15th. Coming with Native Linux support, I must admit one particular scene in the trailer made me laugh a bit, probably more than it should have.</p>
+<p>An interesting thing about this one, is that it has a free and open source game engine made for it too named <a href="https://framagit.org/Gee/sosage" target="_blank">Sosage</a> (Superfluous Open Source Adventure Game Engine).</p>
+<div class="hidden_video" data-video-id="8-ksx13Q84A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ae9d0e5b0e77c5d62d80145a9b812f40.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/8-ksx13Q84A" target="_blank">See video</a></div></div>
+<blockquote>
+<p>The action takes place in Fochougny, a very quiet French village where billionaire Harpagon Lonion resides. He regularly disguises himself as Superfluous, a very useless superhero in such a peaceful countryside ...</p>
+<p>Helped by his assistant Sophie, who tries to somehow temper the enthusiasm of his employer, he will try to apprehend the mysterious apple thief who is terrorizing the orchards of Fochougny ...</p>
+</blockquote>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li>Immerse yourself in a colorful universe in the style of a 2D cartoon.</li>
+<li>Wander quietly through the village of Fochougny, an open world.</li>
+<li>Solve puzzles, pick up items, combine them, talk to people from Fochougny to try to figure out what happened.</li>
+<li>Play with the mouse in the best tradition of point-and-click games, or choose gamepad or keyboard controls.</li>
+<li>Enjoy finely cut dialogues and omnipresent humor (the quality of the jokes is non-contractual).</li>
+<li>Relax playing a game where you can't lose, die or get stuck (but where you can to tear your hair trying to solve some puzzles - hair implants are not provided).</li>
+<li>Text dialogues available in English and French.</li>
+</ul>
+</blockquote>
+<p>You can follow it on <a href="https://ptilouk.itch.io/superfluous-returnz" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1753370/Superfluous_Returnz/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/superfluous-returnz-unnecessary-video-game-of-a-useless-superhero/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/superfluous-returnz-unnecessary-video-game-of-a-useless-superhero/</guid>
+      <pubDate>Mon, 06 Feb 2023 13:07:02 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1764640779id22281gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Adventure</category>
+      
+      <category>Comedy</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>touchHLE is a new emulator for iPhone OS apps</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Want a way to emulate old Apple iOS apps and games? Well, <a href="https://github.com/hikari-no-yume/touchHLE" target="_blank">touchHLE</a> just had its first release to prevent some more things being lost to time.</p>
+<p>Platforms change and move on, often cutting off what came before. We've seen it time and time again with games consoles and with iOS being the closed platform it is plenty will get lost from it too. Perhaps not so much now if projects like touchHLE can keep advancing.</p>
+<blockquote>
+<p>touchHLE is a high-level emulator (HLE) for iPhone OS apps. It runs on modern desktop operating systems, and is written in Rust.</p>
+<p>As an HLE, touchHLE is radically different from a low-level emulator (LLE) like QEMU. The only code the emulated CPU executes is the app binary and a handful of libraries; touchHLE takes the place of iPhone OS and provides its own implementations of the system frameworks (Foundation, UIKit, OpenGL ES, OpenAL, etc).</p>
+</blockquote>
+<p>Currently it doesn't seem to have fully working Linux support, and it has been a solo effort so far but now it has a release up and it's available on <a href="https://github.com/hikari-no-yume/touchHLE" target="_blank">GitHub</a> I'm sure it won't be long until someone else hacks away at it to get Linux support into shape.</p>
+<p>Right now their main goal for the project is to support the earlier days of iOS like iPhone OS 2.x and mainly later 32bit versions with modern 64bit apps a non-goal and unlikely to be prioritised due to the complexity of it.</p>
+<p>You can see their example video below:</p>
+<div class="hidden_video" data-video-id="Blz7qJrZ-s8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f23b7120679539eb6a477944ad1ba5ca.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Blz7qJrZ-s8" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/touchhle-is-a-new-emulator-for-iphone-os-apps/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/touchhle-is-a-new-emulator-for-iphone-os-apps/</guid>
+      <pubDate>Mon, 06 Feb 2023 12:50:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/687476781id22280gol.jpg" type="image/jpeg"/>
+      
+      <category>Emulation</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Open source Transport Tycoon Deluxe remake OpenTTD v13.0 is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another classic free and open source game continues getting better, with the Transport Tycoon Deluxe remake OpenTTD version 13.0 out now. A business sim where you make money by  transporting passengers and cargo via road, rail, water, and air.</p>
+<p>Only a few months since the last major update, it's nice to see development so active on a quality game! This is also one of the biggest updates they've done for some time.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18777525491675686917gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18777525491675686917gol1.jpg"/></a></p>
+<p>Here's the highlights of what's new:</p>
+<blockquote>
+<ul>
+<li>Variable interface scaling at whatever size you want (not just 2x and 4x), with optional chunky bevels for that retro feel. This includes better automatic scaling when using HiDPI or mixed DPI setups.</li>
+<li>Direct access to NewGRF/AI/GS settings from the new game window.</li>
+<li>Various small tweaks and improvements to several windows.</li>
+<li>NewGRFs can now provide engine variants that are shown hierarchically in the purchase list.</li>
+<li>Multi-track level crossings to keep road vehicles from stopping in the middle of the crossing.</li>
+<li>Custom league tables for GameScripts.</li>
+<li>More natural rivers which get wider as they flow downstream.</li>
+<li>And much more including lots of bug fixes.</li>
+</ul>
+</blockquote>
+<p>I'm definitely looking forward to the scaling options, now being on a 1440p monitor. </p>
+<p>You can grab it from the <a href="https://www.openttd.org/" target="_blank">official site</a> and <a href="https://store.steampowered.com/app/1536610/OpenTTD/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/open-source-transport-tycoon-deluxe-remake-openttd-v130-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/open-source-transport-tycoon-deluxe-remake-openttd-v130-is-out-now/</guid>
+      <pubDate>Mon, 06 Feb 2023 12:38:43 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2103566436id22279gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Building Sim</category>
+      
+      <category>Dating Sim</category>
+      
+      <category>Free Game</category>
+      
+    </item>
     
     <item>
       <title>Proton 7.0-6 out now fixing EA App, Ubisoft Connect and games on Steam Deck / Linux</title>
@@ -1280,7 +1650,7 @@ Budgie 10.7 screenshot - credit to the Budgie devs</p>
 <p>With all of these additions in particular, <em>Trophy</em> reminds me very much of <em>Mini-Car Racing</em> as published by eGames, one of my brother's favourite games growing up. Whether this a coincidence or not is hard to say, as both games first released in the same year, but they do both have you race on the moon. <em>Mini-Car Racing</em>, incidentally, is also one of many older games which are far easier to get working with WINE than on modern versions of Windows today.</p>
 <p>Looking at the TODO list included alongside <em>Trophy </em>shows that<em> </em>the similarities were planned to go even deeper than that, with the inclusion of oil slicks, rockets, and jump points on the tracks. All of which compounds the feeling that <em>Trophy</em> does still have a great deal of unfulfilled potential, with networked multiplayer also having been mooted at one point. There is a legacy here that would be great for someone to build upon, should the right contributor be found.</p>
 <p>Which free and open source game projects take off and which stagnant often seems to be at the gift of chance, but at least here there is always the option that some new life can be breathed into them, if given enough interest. The same can even be said for what is to this day my mother's favourite computer game, a free software title which for most of the 2000s was one of the most lauded Linux games to ever be released for the platform.</p>
-<p><strong>Carrying on in Part 24: Mother Knows Best</strong></p>
+<p><strong>Carrying on in <a href="https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-24-mother-knows-best" target="_blank">Part 24: Mother Knows Best</a></strong></p>
 <p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
@@ -3809,284 +4179,6 @@ Expect official news announced soon ~</p>
       <category>Action</category>
       
       <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>The longest beard wins in wizard brawler MageQuit</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>In the mood for a simpler action game to play with friends in local or online multiplayer? MageQuit isn't a new game, but I did miss that it added full Native Linux and Steam Deck support.</p>
-<p>The developer <a href="https://store.steampowered.com/news/app/572220/view/3271325539822338684" target="_blank">noticed</a> that the game wasn't working well with the Proton compatibility layer with the game crashing (even though it was "Steam Deck Verified" with Proton…), so they made a Native Linux version. Valve hasn't re-verified it, so you'll need to <a href="https://www.youtube.com/watch?v=f1GvONkE9S0" target="_blank">manually</a> set it to use the Steam Linux Runtime if you're on Steam Deck but desktop Linux will download it normally.</p>
-<p>This wizard brawler is all about "spell drafting and beard envy" with up to 10 players online or locally throwing around spells, with a beard that grows on each kill and the longest beard at the end of 9 rounds wins. There's 70 different spells to use, AI bots support, spell curving for trick shots, controller support, various game modes like teams or free for all, a dynamic soundtrack and cross-play between PC and Xbox.</p>
-<div class="hidden_video" data-video-id="54iOlcE9_V8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3589f0cac4d573e4d8bf6e6c3a66ccc4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/54iOlcE9_V8" target="_blank">See video</a></div></div>
-<p>It's really nice to see more games like this that actually have offline play, some developers making the big mistake of being online-only and it's real difficult for smaller indie games like this to cut through the noise to get players.</p>
-<p>Available to <a href="https://store.steampowered.com/app/572220/MageQuit/" target="_blank">buy on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/the-longest-beard-wins-in-wizard-brawler-magequit/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/the-longest-beard-wins-in-wizard-brawler-magequit/</guid>
-      <pubDate>Tue, 17 Jan 2023 11:06:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1442163754id22186gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Old World - The Sacred and The Profane DLC adds a lot of new events</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Old World - The Sacred and The Profane is a new DLC for the impressive historical strategy game from Mohawk Games and publisher Hooded Horse. I'm actually really surprised by Old World, it arrived on Steam <a href="https://www.gamingonlinux.com/2022/05/old-world-from-the-civilization-iv-designer-releases-on-steam-along-with-linux-support/" target="_blank">back in May 2022</a> with full Native Linux support that worked great. Since then, they've continued regularly updating the game with new free content and upgrades.</p>
-<p>This new DLC just dropped out of nowhere and it's pretty big too! While it's a historical game, this expansion is more about the "what if". It includes over 350 new events, new clergy characters, 10 new character traits, six new historical characters, new religious dissent mechanics as well as a bunch of "cult" city projects.</p>
-<div class="hidden_video" data-video-id="iKxn0uUnKMo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e1fb6fa640f266b187780c0fa7dc487e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/iKxn0uUnKMo" target="_blank">See video</a></div></div>
-<p>If you love 4x style strategy games like Civilization, give it a go.</p>
-<p>Available on <a href="https://www.humblebundle.com/store/old-world?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/597180/Old_World/" target="_blank">Steam</a>. The <a href="https://www.gog.com/en/game/old_world" target="_blank">GOG</a> store still doesn't have the Linux build.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/old-world-the-sacred-and-the-profane-dlc/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/old-world-the-sacred-and-the-profane-dlc/</guid>
-      <pubDate>Tue, 17 Jan 2023 10:50:00 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1118329472id22185gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>4x</category>
-      
-      <category>DLC</category>
-      
-      <category>Humble Store</category>
-      
-    </item>
-    
-    <item>
-      <title>The next Valheim biome will be Ashlands, a land of the dead</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valheim developer Iron Gate AB has begun teasing the next biome update, and they're doing things a little bit differently with Ashlands. They're not going to be so secretive about it, as they want to be more transparent. This will also likely help for those who kept thinking they weren't doing enough, as their community was quite outspoken on how long Mistlands took to arrive.</p>
-<p><em>While they won't be as secretive, it may mean they show things that don't end up making it into the game.</em></p>
-<p>Ashlands is also not going to be spread across the map, instead it will be placed at the far south as a big volcanic island. They're also sharing some pre-production concept art of what they want it to have:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14221731491673951224gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/14221731491673951224gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7532811241673951226gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7532811241673951226gol1.png"/></a></p>
-<p>In regards to it taking a long time to add a new biome, they said they they do have some " fun things planned for you between then and now", which does include an Xbox version that has full cross-play support so you'll be able to play with your console buddies. They also teased some difficulty settings and something called "Hildir’s Quest", which will be a new NPC and a new way to re-style your hair. More clothes seem to be coming too:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13111705391673951388gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13111705391673951388gol1.png"/></a></p>
-<p>Accessibility is also going to be a focus in future, as they want more people to be able to play the game. They've suggested sending them an email, if you have a disability or anything else that affects your gaming to chat about possible solutions that might help. Nice to see a focus on that.</p>
-<p>Valheim is available to buy on <a href="https://www.humblebundle.com/store/valheim?partner=gamingonlinux&amp;charity=12277" target="_blank">Humble Store</a> or <a href="https://store.steampowered.com/app/892970/Valheim/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/the-next-valheim-biome-will-be-ashlands-a-land-of-the-dead/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/the-next-valheim-biome-will-be-ashlands-a-land-of-the-dead/</guid>
-      <pubDate>Tue, 17 Jan 2023 10:33:20 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1628005028id22184gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Online Co-op</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam desktop and Steam Deck Beta fixes up more on-screen keyboard issues</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has released a fresh Steam desktop and Steam Deck Client Beta, with more fixes for the on-screen keyboard and other adjustments.</p>
-<p>With the New Big Picture Mode being on desktop now, as continued from previous Beta releases a lot of the changes between them are similar or the same now.</p>
-<p>Here's what's <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/6763877288741739919" target="_blank">changed</a> for desktop Steam:</p>
-<blockquote>
-<ul>
-<li>Fixed onscreen keyboard opening on desktop and in-game when opened via controller.</li>
-<li>Added up/down cursor keys to onscreen keyboard, press shift then left/right cursor to use.</li>
-<li>Decreased size of the full &amp; partial controller support icons on app portraits.</li>
-<li>Added pinned notifications for new inventory items, trade offers, async game turns, moderator messages, offline chat messages, and help request replies.</li>
-</ul>
-</blockquote>
-<p>And the <a href="https://steamcommunity.com/games/1675200/announcements/detail/5662747178724589491" target="_blank">notes</a> for Steam Deck:</p>
-<blockquote>
-<ul>
-<li>Fixed opening onscreen keyboard in-game causing input to no longer go to game.</li>
-<li>Added up/down cursor keys to keyboard, press shift then left/right cursor to use.</li>
-<li>Added option to ignore Steam Rewards on Account page if they were registered by another user on the device.</li>
-<li>Decreased size of the full &amp; partial controller support icons on app portraits.</li>
-<li>Added pinned notifications for new inventory items, trade offers, async game turns, moderator messages, offline chat messages, and help request replies.</li>
-</ul>
-</blockquote>
-<p>Once <em>again</em> though, they've copy pasted from the desktop Beta notes to Steam Deck, as the full and partial controller icons on app pictures are not on Steam Deck.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/steam-desktop-and-steam-deck-beta-fixes-up-more-on-screen-keyboard-issues/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/steam-desktop-and-steam-deck-beta-fixes-up-more-on-screen-keyboard-issues/</guid>
-      <pubDate>Tue, 17 Jan 2023 09:42:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1226703591id22183gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Building a Retro Linux Gaming Computer - Part 21: Fluffy Bunnies</title>
-      <author>Hamish</author>
-      <description><div class="content group e-content">
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-20-the-antediluvian-world/" target="_blank">Part 20: The Antideluvian World</a></strong></p>
-<p>While their foray into interactive storybooks did fail to impress, it did help remind me of BlackHoleSun Software, one of the earliest Indie developers to create games with Linux in mind. They were a cross-platform studio whose first game <em>Krilo </em>was boasted to be the first "commercial game that contained versions for Linux, Windows, MacOS, and BeOS on one CD-ROM", with at least some of their games having been developed from Linux and then ported to other systems.</p>
-<p>Their most well known game<em> Bunnies</em> would be released as shareware in 2001, with the bunnies-1.06-x86linux.sh installer providing a demo version you could later update through the use of a retail key. Since BlackHoleSun Software is now out of business I can no longer register my copy of the game, which is a shame as <em>Bunnies</em> while braindead is still kind of fun. The demo limits me to playing only one map called "The Castle", with eleven further maps being teased.</p>
-<p><em>Bunnies</em> also included a level editor for registered players which helped spawn an active mapping scene, with a collection of fan maps once being hosted on the BlackHoleSun Software website. Up to six rabbits can compete at any given time, and can be either computer or human controlled. The objective is simple; just move your rabbit to hop on top of other bunnies to make a rain of gibs fly out across the screen, or not if the "no gore" option has been set.</p>
-<p>In fact, an entirely gore free version of the game was also made available, by using the bunnies-nogore-1.06-x86linux.sh script instead of the default installer. <em>Bunnies</em> allowed the player to connect to online servers for networked multiplayer, as well as for up to four players to play locally from a single computer. Gameplay modifiers include being able to toggle a low gravity mode, jetpacks, or even reversing the orientation of any given map.</p>
-<p>Technically the game ran alright for me, but did produce a few segmentation faults and some graphical corruptions when displaying text fields. BlackHoleSun Software would go on to work on one more game, the 3D team based vehicular combat title <em>Aftermath,</em> before they folded up shop in the mid 2000s<em>. </em>At this point though the future of <em>Bunnies</em> or any of the other games from BlackHoleSun Software appears dead in the water.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1680471651671834404gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/1680471651671834404gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7271695401671834195gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7271695401671834195gol6.png"/></a></p>
-<p>Thankfully, the story does not have to end there. <em>Bunnies</em> itself is derivative of the earlier game <em>Jump 'n Bump </em>released for MS-DOS in 1998 by developer Brainchild Design, with its source code made available a year later in 1999. This allowed the game to be ported over to Linux using the SimpleDirect Media Layer, with installation on Red Hat Linux 7.3 being made trivial by use of the jumpnbump-1.50-1.0.rh7.rf.i386.rpm package from freshrpms.</p>
-<p><em>Jump 'n Bump</em> allows for up to four players to play over the network or from a local hotseat. The game also sported an active mapping scene in its day, with a number of additional maps once being available from the Brainchild Design website. Most of these maps can still be accessed through the Wayback Machine on the Internet Archive, although the need for someone to maintain a modern curated archive of these appears to be apparent.</p>
-<p>If I am honest I would say the overall visual style and presentation of <em>Jump 'n Bump</em> is superior to <em>Bunnies</em>, with cleaner pixel art and a cute interactive menu screen. The gameplay is pretty much identical, with the same frantic hopping about and the same rain of gibs upon contact. Even most of the modifiers found in <em>Bunnies</em> can be unlocked inside <em>Jump 'n Bump</em> through the use of cheat codes, along with a few tweaks unique to <em>Jump 'n Bump</em> itself.</p>
-<p>You can even activate AI controls by holding down the Alt key followed by the number of the player you wish to bring to life, allowing <em>Jump 'n Bump </em>to be tackled as a single player game. With its assets available work on <em>Jump 'n Bump</em> has continued apace, with a fork of the game supporting SDL2 still seeing active development. There is also a modern remake of the game based on the Godot Engine, and even a version made that can be ran from within a web browser.</p>
-<p><em>Jump 'n Bump</em> is far from the only time the free software community has created an enduring game, with its close to twenty five years of existence seeming paltry in comparison to some of the classics. One of those classics wears many faces, but there is one face in particular that has remained etched in my memory for years, even if I never did get a good handle on the game's actual mechanics. It is time to change that.</p>
-<p><strong>Carrying on in <a href="https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-22-happy-hacking/" target="_blank">Part 22: Happy Hacking</a></strong></p>
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-21-fluffy-bunnies/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-21-fluffy-bunnies/</guid>
-      <pubDate>Mon, 16 Jan 2023 19:30:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/219660494id22095gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Editorial</category>
-      
-      <category>Local multiplayer</category>
-      
-    </item>
-    
-    <item>
-      <title>Tabletop Club is a free and open source physics-based 3D tabletop game sim</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Want a Tabletop Simulator like experience but prefer free and open source games? Keep an eye on Tabletop Club. One I've been meaning to give a shout-out to for a little while, as I dig through a bunch of my missed items from before the holiday season.</p>
-<p>Available under the MIT license on <a href="https://github.com/drwhut/tabletop-club" target="_blank">GitHub</a> and <a href="https://drwhut.itch.io/tabletop-club" target="_blank">itch.io</a>, it enables you to play various tabletop games offline or online without the need for registrations and logins as you can just host a game and share a room code with friends.</p>
-<blockquote>
-<p>In Tabletop Club, you are given a box of toys to play with, and it's up to you what you do with them! Sure, you can play board games, but why not make a house made of dice, then frisbee it with a poker chip? Draw on the table while waiting for your opponent to make a move in chess, or flip the table into deep space after losing an all-in bet? The table is your oyster!</p>
-</blockquote>
-<p>Developed using a modified <a href="https://godotengine.org/" target="_blank">Godot Engine</a>, it allows you to do pretty much anything, since you can import your own stuff into it too.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8875587651673882156gol1.jpg"/></p>
-<p>Early days for the game project, with a first Beta version only going up in November last year. Nice to see more open source games appear though, especially stuff like this that can have such wide uses.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/tabletop-club-is-a-free-and-open-source-physics-based-3d-tabletop-game-sim/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/tabletop-club-is-a-free-and-open-source-physics-based-3d-tabletop-game-sim/</guid>
-      <pubDate>Mon, 16 Jan 2023 15:17:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/64514792id22182gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Board Game</category>
-      
-      <category>Free Game</category>
-      
-      <category>Godot Engine</category>
-      
-    </item>
-    
-    <item>
-      <title>Breachway is a deck-building Slay the Spire meets FTL: Faster Than Light </title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Breachway looks like one to watch, a game the blends together the deck-building of Slay the Spire and space antics of FTL. Two of my favourite indie games right there, and I must admit Breachway looks pretty good.</p>
-<p>In the game you will explore a randomized galaxy and build up a card deck of different ships, modules, crew and experiment with different combinations. You get to upgrade your ships too and unlock new cards to take into battle. According to a developer post on <a href="https://steamcommunity.com/app/2118810/discussions/0/5704402939722726569/#c3728449612309803135" target="_blank">Steam</a>, they plan Linux support too with testing already going on for it. Have a look at the trailer below:</p>
-<div class="hidden_video" data-video-id="J3ViAD06z8o"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d2cd2107f89af8cf65d4d8ef94acbc37.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/J3ViAD06z8o" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li><strong>Complex Ship upgrade system</strong> - Acquire powerful equipment for your ship, further enhancing its performance with a multitude of subsystems.</li>
-<li><strong>Diverse tactical choices</strong> - Hack enemy equipment or disable it with precise rail-gun attacks, overwhelm your enemy with flak barrages, or cook them alive with laser attacks.</li>
-<li><strong>Uncover powerful card synergies</strong> - Test out new card combinations and approaches to combat by mixing and matching equipment and cards in your deck.</li>
-<li><strong>Assemble a rag-tag crew</strong> - Each crew member has their own quirks and allegiances that have an effect on how you react to encounters and deal with various factions.</li>
-<li><strong>Unlock new ships and factions</strong> - Unlock special faction-specific ships as you play and experience the story and events from different angles.</li>
-<li><strong>Carve your own unique path</strong> - Your crew and previous choices determine how you can interact with the varied events you encounter on your journey, while tense narrative encounters force you to grapple with morally grey decisions.</li>
-</ul>
-</blockquote>
-<p>You can follow <a href="https://store.steampowered.com/app/2118810/Breachway/" target="_blank">Breachway on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/breachway-is-a-deck-building-slay-the-spire-meets-ftl-faster-than-light/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/breachway-is-a-deck-building-slay-the-spire-meets-ftl-faster-than-light/</guid>
-      <pubDate>Mon, 16 Jan 2023 15:02:04 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/371471060id22181gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Deck-builder</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Roguelike</category>
-      
-    </item>
-    
-    <item>
-      <title>Stop an alien substance spreading in the Regulator City demo</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Regulator City is an upcoming action rogue-like from developer Orangepixel, where you're tasked with stopping the spread of a strange powerful alien substance.</p>
-<p>This strange ooze is seeping out of an asteroid that crashed into the city, with various gangs using it to become stronger and more dangerous but you've got access to an apparently "safe" version of it to give you some special abilities of your own.</p>
-<p>In the game you control a single character but you also have an AI controlled team supporting your every move, so technically you're all of them. You can lead the way, or hang back a bit and watch the chaos as your team goes in to take out all the bad guys. Use the AI as your weapon, the developer says.</p>
-<p>You can see some gameplay from the developer below:</p>
-<div class="hidden_video" data-video-id="zGBsqVoY2mM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c0707630ff61f146952370d6b5cd3ec6.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/zGBsqVoY2mM" target="_blank">See video</a></div></div>
-<p>Seems like it's going to be a pixel-smashing good time.</p>
-<p>A free demo is available <a href="https://store.steampowered.com/app/1892750/Regulator_City/" target="_blank">right now on Steam</a> with Native Linux support.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/stop-an-alien-substance-spreading-in-the-regulator-city-demo/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/stop-an-alien-substance-spreading-in-the-regulator-city-demo/</guid>
-      <pubDate>Mon, 16 Jan 2023 14:21:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/195050741id22180gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Demo</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>State of the industry: MSI offered a chance to win the ability to buy a GPU</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The GPU industry is so broken right now and to make things worse, MSI thought it would be a good idea to do a lottery for a chance to win the ability to buy a GPU. I had to do a triple-take to make sure I was reading it right.</p>
-<p>I would really love to have been a fly on the wall in the meeting where MSI <a href="https://us-store.msi.com/luckyticketGPU" target="_blank">thought this</a> was a good idea. A competition that lasted all of 3 days, where people who signed up and entered would be put into a prize-draw where MSI would pull names out of a hat and give them the chance to buy a GeForce RTX 4090 within 48 hours.</p>
-<p>Wow, that's super generous isn't it? <em>A "limited" amount of people would also get a $50 MSI store code.</em></p>
-<p>I can't be alone in thinking that was just really weird, getting a chance to possibly spend money by entering a competition. What in the world…I thought doing a lottery was supposed to be the exact opposite of that. Did I fall into an alternate even worse universe recently?</p>
-<p>Am I going insane, or is the GPU industry just a complete total mess right now? Prices are absolutely crazy, pricing out a huge amount of people with AMD and NVIDIA focusing mostly on the high-end with their latest chips, with both sides also having plenty of problems like <a href="https://www.tomshardware.com/news/pci-sig-12vhpower-nvidia-statement" target="_blank">melted power connectors</a> and <a href="https://www.gamingonlinux.com/2023/01/amd-reveal-ryzen-7000-x3d-processors-desktop-65w-cpus-and-new-mobile-chips/" target="_blank">temperature issues</a> (noted at the bottom). Then we have Intel, whose new GPUs aren't exactly turning heads.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/msi-offered-a-chance-to-win-the-ability-to-buy-a-gpu/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/msi-offered-a-chance-to-win-the-ability-to-buy-a-gpu/</guid>
-      <pubDate>Mon, 16 Jan 2023 14:09:37 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1183629793id22179gol.jpg" type="image/jpeg"/>
-      
-      <category>Editorial</category>
-      
-      <category>Hardware</category>
-      
-      <category>Meta</category>
       
     </item>
     
