@@ -1,10 +1,10 @@
 """Store the classes and fixtures used throughout the tests."""
 
-from typing import Generator
+from typing import Generator, Union
 
 import freezegun
 import pytest
-from freezegun.api import FrozenDateTimeFactory
+from freezegun.api import FrozenDateTimeFactory, StepTickTimeFactory
 
 
 @pytest.fixture(name="page_url", scope="session")
@@ -37,7 +37,9 @@ def article_url_() -> str:
 
 
 @pytest.fixture(autouse=True)
-def frozen_time() -> Generator[FrozenDateTimeFactory, None, None]:
+def frozen_time() -> (
+    Generator[Union[FrozenDateTimeFactory, StepTickTimeFactory], None, None]
+):
     """Freeze all tests time"""
     with freezegun.freeze_time() as freeze:
         yield freeze
