@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-02-15 07:26:24.252404</pubDate>
+    <pubDate>2023-02-16 07:26:35.623901</pubDate>
 
     
     <image>
@@ -18,6 +18,271 @@
     </image>
 
     
+    
+    <item>
+      <title>Returnal is just rough on Steam Deck but great on Desktop Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Returnal is now on Steam so naturally I gave this previously PlayStation exclusive a run on Steam Deck. It's quite sad though.</p>
+<p>This is a case of a game just being a bit too much for the Steam Deck to nicely handle. With everything set to Low, with multiple in-game scaling methods tried like AMD FSR, NVIDIA NIS and dynamic resolution — all show the game really cannot stick to 30FPS. Frame pacing is all over the place too, making it just an <em>unpleasant</em> experience. You <em>could</em> reduce the rendering resolution but considering how fast paced the game is, the result is not pretty in action and getting it low enough where it makes a true difference is just not acceptable quality-wise.</p>
+<p>Have a look at benchmarks and gameplay blow:</p>
+<div class="hidden_video" data-video-id="o08FUGspv90"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/27789560759e2d97113fab5ff4ff7430.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/o08FUGspv90" target="_blank">See video</a></div></div>
+<p>As for how it runs on Desktop Linux? Testing it on Fedora KDE 37 with my AMD Ryzen 5800x and an NVIDIA 2080 Ti, performance there seems quite good overall. I'm actually really surprised by how smooth it is, I was expecting a lot more stutter but it's impressive.</p>
+<p>Running it at 1440p on the Epic settings preset with NVIDIA Image Scaling set to Quality and I've been seeing it running a good ~90FPS. Without using a scaling option, it would give me around 50-55FPS at 1440p. There is <em>some</em> shader stutter but as expected, it gets smoother over time and not a big deal here.</p>
+<p>Screenshots of it on Fedora (click to enlarge them):</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19849482861676501143gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/19849482861676501143gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6935789371676501444gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/6935789371676501444gol1.jpg"/></a></p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5921926731676501764gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/5921926731676501764gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17373596031676501902gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/17373596031676501902gol1.jpg"/></a></p>
+<p>For desktop Linux gamers at least, this looks like quite a safe bet from my early impressions here. It performs well, looks absolutely fantastic and the action sure is intense!</p>
+<p>You can buy it on <a href="https://www.humblebundle.com/store/returnal?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1649240/Returnal/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/returnal-rough-on-steam-deck-good-on-linux-desktop/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/returnal-rough-on-steam-deck-good-on-linux-desktop/</guid>
+      <pubDate>Wed, 15 Feb 2023 22:58:34 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1005063080id22333gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Benchmark</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Shader cache downloads being a nuisance? Valve may have solved it</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve's shader cache system can be extremely helpful for Linux gaming, however it can also at times be quite problematic but Valve may have solved a big problem with it.</p>
+<p>The idea behind the system is that you're supposed to see small regular downloads for the shader cache of each game, as Valve continue to build it up and then spread it out to everyone to help improve game performance on Linux and Steam Deck. However, over the years quite a lot of people have reported how it kept giving full downloads of the whole thing instead of being incremental.</p>
+<p>Writing on the GitHub bug report from 2021 today, Valve developer <a href="https://github.com/ValveSoftware/steam-for-linux/issues/8076#issuecomment-1430641159" target="_blank">Pierre-Loup Griffais said</a>:</p>
+<blockquote>
+<p>Shader cache downloads are designed to be incremental. Reports here indicate a daily download of the full shader cache file size, which is inconsistent with expectations - a small download and full disk write is expected instead.</p>
+<p>After looking at the logs shared on this issue and on <a href="https://github.com/ValveSoftware/steam-for-linux/issues/9200" target="_blank">#9200</a>, we've investigated and found a server-side problem with the system that keeps track of the ordering of shaders in those updates.</p>
+<p>We've just rolled out an initial fix and will continue to monitor the situation. If the issue persists, please comment on this report and attach your <code class="inline-code">shader_log[.previous].txt</code> as indicated above.</p>
+</blockquote>
+<p>Hopefully now fewer people (or no one) will see the issue but do let them know on the bug report if it happens to you.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/shader-cache-downloads-being-a-nuisance-valve-may-have-solved-it/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/shader-cache-downloads-being-a-nuisance-valve-may-have-solved-it/</guid>
+      <pubDate>Wed, 15 Feb 2023 20:48:06 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Zink driver for OpenGL over Vulkan gets a 10x performance boost for DOOM 2016</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A really small change to the Zink driver, that gives OpenGL support on top of Vulkan, has given an ~10x speed boost for DOOM (2016). Other games are likely to benefit from this change too but DOOM was the one where an issue was noticed.</p>
+<p>Writing on <a href="https://www.supergoodcode.com/CAPPED/" target="_blank">their blog</a> last week, developer Mike Blumenkrantz noted that a really odd issue was found where "Even as early as the title screen, framerate would struggle to hit 30fps for a while before rocketing up to whatever maximum it could reach. In-game was the same, soaring to the 200fps maximum after enough time standing stationary without moving the camera. As soon as the camera shifted however, back to 20fps we went.".</p>
+<p>After investigating they found the problem and a <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/21218" target="_blank">merge request</a> that was accepted for Mesa that's only around 4 lines has fixed the issue to allow DOOM to run at full-speed on the Zink driver.</p>
+<p>Makes me often wonder how many things can be fixed up by such small changes.</p>
+<p>What's the point of the Zink driver? As the Mesa documentation states: "The Zink driver is a Gallium driver that emits Vulkan API calls instead of targeting a specific GPU architecture. This can be used to get full desktop OpenGL support on devices that only support Vulkan.".</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/zink-driver-for-opengl-over-vulkan-gets-a-10x-performance-boost-for-doom-2016/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/zink-driver-for-opengl-over-vulkan-gets-a-10x-performance-boost-for-doom-2016/</guid>
+      <pubDate>Wed, 15 Feb 2023 14:59:24 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/49024062id22332gol.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Mesa</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Pick up some sweet deals during the We Love Games Sale on GOG</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>You just love games right? Need some more? Check out the big <a href="https://www.gog.com/en/promo/2023_we_love_games" target="_blank">We Love Games Sale</a> over on GOG to continue building up that collection. GOG are also giving away the <a href="https://www.gog.com/game/alien_breed_trilogy" target="_blank">Alien Breed Trilogy</a> until February 17th, 2 PM UCT.</p>
+<p>If you need help managing games from GOG from Native to playing Windows games in Wine you can try <a href="https://heroicgameslauncher.com/" target="_blank">Heroic</a> and <a href="https://lutris.net/" target="_blank">Lutris</a> (Lutris just <a href="https://www.gamingonlinux.com/2023/02/lutris-0513-beta-adds-proton-support-itchio-integration-battlenet-integration/" target="_blank">had a new Beta too</a>!) which both do a pretty good job of making it simpler for you.</p>
+<p>For this their team came up with a few curated lists including:</p>
+<ul>
+<li><a href="http://www.gog.com/promo/2023_we_love_games_first_crush" target="_blank">First game crush</a> (e.g. Heroes of Might and Magic® 3: Complete, Prince of Persia, Worms: Armageddon).</li>
+<li><a href="http://www.gog.com/promo/2023_we_love_games_death_destruction" target="_blank">Death and Destruction</a> (e.g. BioShock Infinite Complete Edition, Quake III Arena, Doom II).</li>
+<li><a href="http://www.gog.com/promo/2023_we_love_games_love_fluffiness" target="_blank">Love and Fluffiness</a> (e.g. Cat Quest, Haven, House Party).</li>
+<li><a href="http://www.gog.com/promo/2023_we_love_games_medieval" target="_blank">Medieval</a> (e.g. Crusader Kings Complete, Europa Universalis IV, Anno 1404: Gold Edition).</li>
+<li><a href="http://www.gog.com/promo/2023_we_love_games_bestsellers" target="_blank">Bestsellers</a> (e.g. Disco Elysium - The Final Cut, METAL GEAR SOLID, Fallout: New Vegas Ultimate Edition).</li>
+</ul>
+<p>Some quick picks on favourites of mine that have 80% off all of them:</p>
+<ul>
+<li><a href="https://www.gog.com/en/game/crypt_of_the_necrodancer" target="_blank">Crypt of the Necrodancer</a></li>
+<li><a href="https://www.gog.com/en/game/curious_expedition_the" target="_blank">Curious Expedition</a></li>
+<li><a href="https://www.gog.com/en/game/lair_of_the_clockwork_god" target="_blank">Lair of the Clockwork God</a></li>
+<li><a href="https://www.gog.com/en/game/prison_architect" target="_blank">Prison Architect</a></li>
+<li><a href="https://www.gog.com/en/game/stellaris" target="_blank">Stellaris</a></li>
+</ul>
+<p>As always if you find a particularly good deal on a game you love, comment and let other readers know!</p>
+<p>The sale lasts until February 20th, 11 PM UTC.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/pick-up-some-sweet-deals-during-the-we-love-games-sale-on-gog/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/pick-up-some-sweet-deals-during-the-we-love-games-sale-on-gog/</guid>
+      <pubDate>Wed, 15 Feb 2023 11:00:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1941544856id22331gol.jpg" type="image/jpeg"/>
+      
+      <category>DRM-Free</category>
+      
+      <category>Game Sale</category>
+      
+      <category>GOG</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>You may want to run system updates, after a recent sudo security flaw</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It was pointed out to me recently in the <a href="https://discord.gg/AghnYbMjYg" target="_blank">GamingOnLinux Discord</a>, that the sudo package recently had a security flaw, so time to check for updates.</p>
+<p>The sudo package is what's responsible for giving certain users or user groups the ability to run some (or all) commands as root or another user. A pretty important package, and of course one that needs to be secure. Nothing is perfect though of course, and security issues being reported and then fixed is a good thing.</p>
+<p>Going by the US NVD (National Vulnerability Database) <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22809" target="_blank">entry for it</a>, they classed it as a High level issue. As described:</p>
+<blockquote>
+<p>In Sudo before 1.9.12p2, the sudoedit (aka -e) feature mishandles extra arguments passed in the user-provided environment variables (SUDO_EDITOR, VISUAL, and EDITOR), allowing a local attacker to append arbitrary entries to the list of files to process. This can lead to privilege escalation. Affected versions are 1.8.0 through 1.9.12.p1. The problem exists because a user-specified editor may contain a "--" argument that defeats a protection mechanism, e.g., an EDITOR='vim -- /path/to/extra/file' value.</p>
+</blockquote>
+<p>Giving that it needs a local attack, it does limit what people can do with it but still a good reminder to ensure your systems are up to date eh?</p>
+<p>So if you're on at least sudo 1.9.12p2 you're good to go. Although, some distributions like Ubuntu use slightly different versioning so if you're on Ubuntu you should have 1.9.11p3. Fedora seems up to date too, but checking on System76's Pop!_OS it's only reporting sudo 1.9.9 for example (Edit: but as pointed out in comments, it has the patch as it's based on an older Ubuntu).</p>
+<p>You can read a little more on it <a href="https://medium.com/@dev.nest/how-to-bypass-sudo-exploit-cve-2023-22809-vulnerability-296ef10a1466" target="_blank">here</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/you-may-want-to-run-system-updates-after-a-recent-sudo-security-flaw/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/you-may-want-to-run-system-updates-after-a-recent-sudo-security-flaw/</guid>
+      <pubDate>Wed, 15 Feb 2023 10:45:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>D8VK is an in-progress implementation of Direct3D 8 for DXVK</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>While we have VKD3D-Proton for Direct3D 12 to Vulkan and DXVK for Direct3D 9 / 10 / 11 to Vulkan translation, what about Direct3D 8? <a href="https://github.com/AlpyneDreams/d8vk" target="_blank">D8VK</a> is an upcoming in-progress project for that.</p>
+<p>I've been aware of this for a while but after checking back on it, the project seems to be coming along rather nicely to support some older classics and get them performing well with Wine / <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Steam Play Proton</a>. It even had a first pre-release build back in December 2022 and work continues on it now. ProtonUp-Qt even added support for it in a <a href="https://www.gamingonlinux.com/2022/12/protonup-qt-v277-adds-support-for-northstarproton-to-play-modded-titanfall-2/" target="_blank">previous release</a> too.</p>
+<p>Going by <a href="https://github.com/AlpyneDreams/d8vk/wiki#supported-games" target="_blank">their list</a> of supported games, it's looking quite impressive on what it can run already but it seems plenty of work is still ahead before it's truly ready. Some of what they list as playable on Linux with it includes:</p>
+<ul>
+<li>7 Wonders Magical Mystery Tour</li>
+<li>Advent Rising</li>
+<li>Age of Mythology</li>
+<li>A.I.M.: Artificial Intelligence Machines</li>
+<li>A.I.M. 2: Clan Wars</li>
+<li>A.I.M. Racing</li>
+<li>Anito: Defend a Land Enraged</li>
+<li>Big Rigs: Over the Road Racing</li>
+<li>Broken Sword 3: The Sleeping Dragon</li>
+<li>AquaNox</li>
+<li>Arma: Cold War Assault</li>
+<li>Deus Ex: Invisible War</li>
+<li>Delta Force: Black Hawk Down</li>
+<li>Duke Nukem: Manhattan Project</li>
+<li>Enclave</li>
+<li>Europa 1400: The Guild</li>
+<li>Freedom Force</li>
+<li>Freelancer</li>
+<li>Gang Garrison 2</li>
+<li>Ghost Recon</li>
+<li>Grand Theft Auto III</li>
+<li>Grand Theft Auto: Vice City</li>
+<li>Hidden And Dangerous 2</li>
+<li>Hotline Miami</li>
+<li>Indiana Jones and the Emperor's Tomb</li>
+<li>Judge Dredd: Dredd vs. Death</li>
+<li>Killing Floor</li>
+<li>KnightShift (aka Polanie 2)</li>
+<li>Legacy of Kain: Blood Omen 2</li>
+<li>Legacy of Kain: Soul Reaver 2</li>
+<li>Mafia</li>
+<li>Max Payne</li>
+<li>Mobile Forces</li>
+<li>Postal 2</li>
+<li>RC Cars</li>
+<li>Red Faction II</li>
+<li>Rise of Nations</li>
+<li>Scrapland Remastered</li>
+<li>Sherlock Holmes: Secret of the Silver Earring</li>
+<li>Sam &amp; Max Save the World</li>
+<li>Sam &amp; Max: Beyond Time and Space</li>
+<li>Silent Hill 2</li>
+<li>Silent Hill 3</li>
+<li>Spider-Man 2</li>
+<li>Splinter Cell</li>
+<li>Star Trek: Armada II</li>
+<li>Star Wars: Starfighter</li>
+<li>Still Life</li>
+<li>Syberia II</li>
+<li>The Elder Scrolls III: Morrowind</li>
+<li>The Legend of Heroes: Trails in the Sky</li>
+<li>The Lord of the Rings: The Return of the King</li>
+<li>The Simpsons: Hit &amp; Run</li>
+<li>The Temple of Elemental Evil</li>
+<li>Thief: Deadly Shadows</li>
+<li>Tony Hawk's Pro Skater 3</li>
+<li>True Crime: Streets of LA</li>
+<li>Unreal II: The Awakening</li>
+<li>Unreal Tournament 2004</li>
+<li>URU: Complete Chronicles</li>
+<li>Worms Blast</li>
+<li>X2: The Threat</li>
+<li>XIII (Classic)</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/d8vk-is-an-in-progress-implementation-of-direct3d-8-for-dxvk/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/d8vk-is-an-in-progress-implementation-of-direct3d-8-for-dxvk/</guid>
+      <pubDate>Wed, 15 Feb 2023 10:25:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1794928935id22329gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>EVERSPACE 2 gets a Steam Deck and Linux release update</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>For those of you curious on what's happening with EVERSPACE 2 for Linux, ROCKFISH Games have given an official update on what to expect.</p>
+<p>In a post on <a href="https://store.steampowered.com/news/app/1128920/view/3632752322785384804" target="_blank">Steam</a> and <a href="https://www.kickstarter.com/projects/rockfishgames/everspace-2/posts/3732437" target="_blank">Kickstarter</a>, they made it clear that Linux support and Steam Deck are priorities for them to be supported. As they said having it playable "natively on Linux is high on our priority list" although there can always be unforeseen issues as they learned porting the first game to Linux but "overall Unreal Engine 4’s Linux support is in a much better state, now".</p>
+<p>However, they're clear that "PC" (they mean Windows…sigh) is their "top priority" right now since it's the biggest set of users and a few weeks will still be spent on Windows players before shifting over to Linux. They're "reasonably confident" on Linux support at the 1.0 launch.</p>
+<div class="hidden_video" data-video-id="u8m47pGxGaM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ea606059f206e0a9c60eeffbe5828351.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/u8m47pGxGaM" target="_blank">See video</a></div></div>
+<p>As for Steam Deck specific support they said they're also hoping for that at the 1.0 release but it's a lot more work due to optimizations needed, and changes needing to be made to the text size and UI for the smaller screen. Plus, Steam Deck was not part of their Kickstarter promises so it's a lower priority. They said trying it on Steam Deck right now is a "pretty OK time" but they want to aim for the experience to be of a higher quality.</p>
+<p>If I hear of any changes, I'll let you know.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/everspace-2-gets-a-steam-deck-and-linux-release-update/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/everspace-2-gets-a-steam-deck-and-linux-release-update/</guid>
+      <pubDate>Wed, 15 Feb 2023 10:13:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/412742337id22328gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+      <category>RPG</category>
+      
+    </item>
     
     <item>
       <title>10 years ago Steam released for Linux</title>
@@ -3906,282 +4171,6 @@ Budgie 10.7 screenshot - credit to the Budgie devs</p>
       <category>Game Engine</category>
       
       <category>Humble Store</category>
-      
-    </item>
-    
-    <item>
-      <title>Developer of point and click adventure Splittown looking at Linux support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Love your adventure games? Here's one to keep an eye on. The developer of Splittown has mentioned they're looking into Native Linux support. They're making the game with Visionaire Studio, which has Linux support, so hopefully it won't be too much trouble if they decide to do it.</p>
-<p>Writing on their Steam forum <a href="https://steamcommunity.com/app/2117400/discussions/0/3321988498676426081/?tscn=1674387698#c3759977302535798342" target="_blank">they said</a> earlier this week "FYI I'm looking to make a Linux build hopefully over the weekend or next week the latest. Thank you for your patience!"</p>
-<div class="hidden_video" data-video-id="uLwUO14sW7Y"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/43ca9c44ea11240fbf96faf7af9e7d4f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/uLwUO14sW7Y" target="_blank">See video</a></div></div>
-<p>More about the game:</p>
-<blockquote>
-<p>Cold War has split the world in two, both figuratively and literally. The Great Divide spans across the globe with an impenetrable mess of concrete and barbed wire sandwiched between the two blocs. You are Leonard Nimby; stone-faced former top agent of IM5, hot on the trail of a shrink gun stolen from you by a villanous mayoral candidate on the eve of a fateful election.<br/>
-<br/>
-Splittown is a point-and-click adventure game inspired by 90s classics such as Day of the Tentacle and Sam &amp; Max Hit The Road. You'll crack confounding puzzles, stuff improbable amounts of items in your pockets, and engage in humorous dialogue with a colorful cast of characters on an adventure that will push your wits to the limit.</p>
-</blockquote>
-<p>Follow it on <a href="https://store.steampowered.com/app/2117400/Splittown/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/point-and-click-adventure-splittown-linux-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/point-and-click-adventure-splittown-linux-support/</guid>
-      <pubDate>Thu, 26 Jan 2023 12:51:29 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/288717570id22236gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Point & Click</category>
-      
-    </item>
-    
-    <item>
-      <title>Might and Magic 6, 7 and 8 get an open source reimplementation with OpenEnroth</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Want to play Might and Magic 6, 7 and 8 on modern systems with an updated game engine? Well, <a href="https://github.com/OpenEnroth/OpenEnroth" target="_blank">OpenEnroth</a> looks mighty promising.</p>
-<p>It's nowhere near finished yet with only Might and Magic 7 playable but it's regularly seeing contributions to keep working away on it. Support for 6 &amp; 8 will be added in the future, obviously they need to start somewhere. The idea, like a lot of these open source projects including OpenMW for Morrowind or OpenRA for Red Alert (and others), is to build a platform to have it run on modern systems with enhancements while keeping the original game feel.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18047092811674735832gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/18047092811674735832gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13650682561674735835gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13650682561674735835gol1.png"/></a></p>
-<p>I've added it to my big list of releases to follow, so whenever there's a juicy update on it I'll let you know.</p>
-<p><em>Nice to see a good few more projects like this appear over the last few years.</em></p>
-<p>You'll need the data files which you can get easily on <a href="http://gog.com" target="_blank">GOG.com</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/might-and-magic-6-7-8-open-source-openenroth/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/might-and-magic-6-7-8-open-source-openenroth/</guid>
-      <pubDate>Thu, 26 Jan 2023 12:27:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/959498459id22234gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Game Engine</category>
-      
-      <category>Open Source</category>
-      
-      <category>Reimplementation</category>
-      
-    </item>
-    
-    <item>
-      <title>NVIDIA Vulkan Beta Driver 525.47.06 out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>NVIDIA has released another fresh update to their Vulkan Beta Driver, with version 525.47.06 rolling out now. This is the special driver series that's aimed at developers, or anyone who needs the newest Vulkan extension work before they eventually roll into their main driver series.</p>
-<p>Here's what's changed:</p>
-<blockquote>
-<ul>
-<li>New:
-<ul>
-<li>Support for all remaining <a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_EXT_extended_dynamic_state3.html" target="_blank">VK_EXT_extended_dynamic_state3</a> states:
-<ul>
-<li>VK_DYNAMIC_STATE_TESSELLATION_DOMAIN_ORIGIN_EXT</li>
-<li>VK_DYNAMIC_STATE_CONSERVATIVE_RASTERIZATION_MODE_EXT</li>
-<li>VK_DYNAMIC_STATE_EXTRA_PRIMITIVE_OVERESTIMATION_SIZE_EXT</li>
-<li>VK_DYNAMIC_STATE_RASTERIZATION_STREAM_EXT</li>
-<li>VK_DYNAMIC_STATE_DEPTH_CLIP_NEGATIVE_ONE_TO_ONE_EXT</li>
-<li>VK_DYNAMIC_STATE_SAMPLE_LOCATIONS_ENABLE_EXT</li>
-<li>VK_DYNAMIC_STATE_ALPHA_TO_COVERAGE_ENABLE_EXT</li>
-<li>VK_DYNAMIC_STATE_ALPHA_TO_ONE_ENABLE_EXT</li>
-<li>VK_DYNAMIC_STATE_SAMPLE_MASK_EXT</li>
-<li>VK_DYNAMIC_STATE_VIEWPORT_W_SCALING_ENABLE_NV</li>
-<li>VK_DYNAMIC_STATE_VIEWPORT_SWIZZLE_NV</li>
-<li>VK_DYNAMIC_STATE_COVERAGE_TO_COLOR_ENABLE_NV</li>
-<li>VK_DYNAMIC_STATE_COVERAGE_TO_COLOR_LOCATION_NV</li>
-<li>VK_DYNAMIC_STATE_COVERAGE_REDUCTION_MODE_NV</li>
-<li>VK_DYNAMIC_STATE_COVERAGE_MODULATION_MODE_NV</li>
-<li>VK_DYNAMIC_STATE_COVERAGE_MODULATION_TABLE_ENABLE_NV</li>
-<li>VK_DYNAMIC_STATE_COVERAGE_MODULATION_TABLE_NV</li>
-<li>VK_DYNAMIC_STATE_REPRESENTATIVE_FRAGMENT_TEST_ENABLE_NV</li>
-<li>VK_DYNAMIC_STATE_SHADING_RATE_IMAGE_ENABLE_NV</li>
-<li>VK_DYNAMIC_STATE_RASTERIZATION_SAMPLES_EXT</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Fixes:
-<ul>
-<li>Fixed the supported 444 format reporting based on the h.265 video profiles for Maxwell and Pascal GPUs</li>
-<li>Allow the use of VkVideoEncodeUsageInfoKHR and VkVideoDecodeUsageInfoKHR to be chained to VkVideoProfileInfoKHR structure</li>
-<li>Handle error with video surfaces incorrectly created without the proper video usage flags</li>
-<li>Handle the conditions for requiring VkVideoEncodeH264RateControlInfoEXT per the Vulkan spec <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#VUID-VkVideoCodingControlInfoKHR-flags-07021" target="_blank">VUID-VkVideoCodingControlInfoKHR-flags-07021</a></li>
-</ul>
-</li>
-<li>open-gpu-kernel-modules release:
-<ul>
-<li><a href="https://github.com/NVIDIA/open-gpu-kernel-modules/releases/tag/525.47.06" target="_blank">https://github.com/NVIDIA/open-gpu-kernel-modules/releases/tag/525.47.06</a></li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<hr/>
-<p>For the majority of Linux gamers, you're better off sticking to the mainline drivers currently at <a href="https://www.gamingonlinux.com/2023/01/nvidia-driver-5258505-is-out-now-for-linux/" target="_blank">525.85.05</a> from January 20th for their Production Branch.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/nvidia-vulkan-beta-driver-525-47-06-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/nvidia-vulkan-beta-driver-525-47-06-out-now/</guid>
-      <pubDate>Wed, 25 Jan 2023 15:27:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Drivers</category>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Atari announce another 80s classic revival with Caverns of Mars: Recharged</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another revamp of a classic is on the way with Atari once again teaming up with SneakyBox, as the 1981 title Caverns of Mars is releasing as Caverns of Mars: Recharged.</p>
-<p>In Caverns of Mars: Recharged, players progress through 30 missions set within three primary "depths" of Mars, descending deeper and deeper into enemy territory. Blast through oncoming hostile fire, bull through debris and obstructions, and dodge other obstacles all while keeping a close eye on fuel and ammo reserves. Featuring a unique local co-op mode, players can team up with one partner assigned to navigation while the other player shoots the drone. From the trailer below, it looks pretty good!</p>
-<div class="hidden_video" data-video-id="d0zp4P9SHUo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7199a8697e0d5792868c66a2153a11e3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/d0zp4P9SHUo" target="_blank">See video</a></div></div>
-<p>From the press release:</p>
-<p>“Caverns of Mars is a great early example of a game designed for Atari’s 8-bit computers, which makes it a perfect addition to the Atari Recharged series,” said Atari CEO Wade Rosen. “It’s an intensely fun arcade-style experience in both single player and two-player co-op.”</p>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li><strong>Fully Destructible: </strong>The environments in <em>Caverns of Mars: Recharged </em>are fully destructible; don’t hesitate to blast through any obstruction in your way, but be wary of fuel reserves. Each shot depletes fuel, but speedy travel grants time bonuses! </li>
-<li><strong>Arcade Mode:</strong> Traverse the depths of Mars in three stages, strategically choosing upgrades and power-ups that will make each run unique.</li>
-<li><strong>Challenge Mode: </strong>Progress through 30 bite-sized challenges across navigation, combat, and other exciting scenarios. </li>
-<li><strong>Perky Power-Ups:</strong> Collect weapons that will change your strategy on the fly for tactical maneuvering. Carve a new path with a well-aimed railgun shot or let the spread of a shotgun blast do the talking for you! </li>
-</ul>
-</blockquote>
-<p>You can wishlist / follow on <a href="https://store.steampowered.com/app/2213980/Caverns_of_Mars_Recharged/" target="_blank">Steam</a>. It's releasing in March and will have Native Linux support like previous titles developed by SneakyBox.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/atari-80s-classic-revival-caverns-of-mars-recharged/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/atari-80s-classic-revival-caverns-of-mars-recharged/</guid>
-      <pubDate>Wed, 25 Jan 2023 15:20:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1202526629id22231gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Arcade</category>
-      
-      <category>Retro</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Lots more EA games get a Steam Deck Playable rating</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has again continued to go through various EA games that were previously problematic on Steam Deck due to the new EA App, with lots of them now marked as Steam Deck Playable.</p>
-<p>They only <a href="https://www.gamingonlinux.com/2023/01/ea-games-playable-on-steam-deck-sims-4-jedi-fallen-order/" target="_blank">just recently</a> tweaked a few others including Battlefield 1, Jedi Fallen Order, Sims 4 and Titanfall 2 and so they've continued on now. Nice to see Valve are acting on all their work going into <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a> for improving Windows to Linux compatibility for games. <em>I'm surprised it took this long though.</em></p>
-<p>Here's all the latest games I've found that have been bumped up to Playable with them now using Proton Experimental by default since that has all the EA App fixes:</p>
-<ul>
-<li>A Way Out</li>
-<li>Battlefield 4</li>
-<li>Battlefield V</li>
-<li>It Takes Two</li>
-<li>Madden NFL 21</li>
-<li>Madden NFL 22</li>
-<li>Madden NFL 23</li>
-<li>Mass Effect: Andromeda Deluxe Edition</li>
-<li>Mass Effect Legendary Edition</li>
-<li>Mirror's Edge Catalyst</li>
-<li>Need for Speed Heat</li>
-<li>Need for Speed Hot Pursuit Remastered</li>
-<li>Need for Speed Most Wanted</li>
-<li>Need for Speed Rivals</li>
-<li>Plants vs. Zombies Garden Warfare 2: Deluxe Edition</li>
-<li>Unravel Two</li>
-</ul>
-<p>This long list only goes to show just how much of a ridiculous <em>nuisance</em> third-party launchers on Steam can be. There's often simply no need for them, other than extra advertising for big publishers. One day, I hope this repeating launcher problem gets solved for good, it's frustrating to have games work great and then suddenly one update later they're full of issues because of an extra launcher.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/more-ea-games-steam-deck-playable/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/more-ea-games-steam-deck-playable/</guid>
-      <pubDate>Wed, 25 Jan 2023 11:44:08 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1118746036id22230gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>ControllerTools plugin for Steam Deck now gives low battery notifications</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A Steam Deck plugin for Decky Loader that I <a href="https://www.gamingonlinux.com/2023/01/this-new-steam-deck-external-controller-plugin-is-quite-useful/" target="_blank">recently mentioned</a>, ControllerTools, has a fresh update out to make it more useful.</p>
-<p>Since I last covered it, all of this has been added in:</p>
-<blockquote>
-<ul>
-<li><strong>New feature:</strong> Added low battery alerts. These can be toggled via a new UI setting.</li>
-<li>Fixed a bug when multiple controllers with the same product/vendor ID are plugged in.</li>
-<li>Add a debug mode UI setting to enable verbose logging.</li>
-<li>There isn't support yet for battery capacity for Xbox controllers connected over USB. Hide the percentage indicator for now.</li>
-<li>Added hacky support for Xbox controllers battery capacity.</li>
-<li>Add more generic support for controllers and icon for Stadia.</li>
-</ul>
-</blockquote>
-<p>Hopefully though, at some point Valve will be able to hook up their own built-in features like this for third-party controllers but until then ControllerTools really does add some useful stuff.</p>
-<p>You can find the plugin on <a href="https://github.com/alphamercury/ControllerTools" target="_blank">GitHub</a>. Installing it with Decky Loader is easy, since it has a built-in plugin store to just download various plugins all directly inside Gaming Mode on Steam Deck. This update is currently <a href="https://github.com/SteamDeckHomebrew/decky-plugin-database/pull/205" target="_blank">pending</a> approval, so it should be live sometime soon.</p>
-<p>Want to know how to use Decky Loader on Steam Deck? See the video below:</p>
-<div class="hidden_video" data-video-id="ujP6ZB0-eIA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/672addaec553a4ff5c12bff8ffc6f566.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ujP6ZB0-eIA" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/controllertools-plugin-for-steam-deck-low-battery-notifications/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/controllertools-plugin-for-steam-deck-low-battery-notifications/</guid>
-      <pubDate>Wed, 25 Jan 2023 11:28:57 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1203778681id22229gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Factorio is about to increase in price so be quick</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The developers of the awesome Factorio have announced that the price is about to go up, so if you still haven't purchased it now is the time. Honestly this truly is one of the best indie games ever made, with full Native Linux support and it is Steam Deck "Playable" too.</p>
-<p>This is the third price rise in 7 years (at least going by GBP) and it's never been on sale either, so it's not like holding out for a big sale event on various stores is going to help.  The price will rise by $5 tomorrow (and likely the equivalent in your currency), January 26th, as announced by the official <a href="https://twitter.com/factoriogame/status/1616388275169628162" target="_blank">Twitter</a> account:</p>
-<blockquote>
-<p>Good day Engineers,</p>
-<p>Next week, on Thursday 26th January 2023,<br/>
-We will increase the base price of Factorio from $30 to $35.</p>
-<p>This is an adjustment to account for the level of inflation since the Steam release in 2016.</p>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3647544351674645008gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3647544351674645008gol1.jpg"/></a></p>
-<p>Why don't they ever put it on sale? It's a good question and their original <a href="https://forums.factorio.com/viewtopic.php?p=159626#p159626" target="_blank">answer</a> on this was about "respecting the players who have already purchased the game" and not to "reward the people who hold off on buying the game". It's a pretty fair point really and they've done well to sell so many copies without a sale with an Overwhelmingly Positive user rating on Steam.</p>
-<p>Available to buy on <a href="https://af.gog.com/game/factorio?as=1636858786" target="_blank">GOG</a>, <a href="https://www.humblebundle.com/store/factorio?partner=gamingonlinux&amp;charity=12277" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/427520/Factorio/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/factorio-is-about-to-increase-in-price-so-be-quick/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/factorio-is-about-to-increase-in-price-so-be-quick/</guid>
-      <pubDate>Wed, 25 Jan 2023 11:12:37 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/664996723id22228gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Building Sim</category>
-      
-      <category>Indie Game</category>
       
     </item>
     
