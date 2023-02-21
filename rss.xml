@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-02-20 07:26:45.873599</pubDate>
+    <pubDate>2023-02-21 07:26:40.200638</pubDate>
 
     
     <image>
@@ -18,6 +18,378 @@
     </image>
 
     
+    
+    <item>
+      <title>Building a Retro Linux Gaming Computer - Part 26: Coming to You Live</title>
+      <author>Hamish</author>
+      <description><div class="content group e-content">
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-25-quantum-axcess/" target="_blank">Part 25: Quantum Axcess</a></strong></p>
+<p>I have referenced a number of times now some of my experiences with Knoppix, which prompted me to see if I could still find the original CD-R disc I used back in the day. It turns out it was Knoppix 3.4 released in May 2004 that obsessed me as a child, providing me with some of my earliest steps into a larger world. Not only that, but the CD-R disc it was burned on still reads even after all of these years. Considering the volatility of such media, this surprised me.</p>
+<p>Named for its creator Klaus Knopper of Germany, Knoppix is a derivative of Debian which pioneered the modern Linux live media experience at the turn of the millennium. While the honour of being the first Linux live CD goes to Yggdrasil close to a full decade earlier, it was Knoppix that truly showed how powerful and effective Linux from a CD could be to the masses. In fact, everything that Knoppix manages can best be described as no small miracle.</p>
+<p>Operating out of system memory by use of a RAM drive, the fact that Knoppix does not even flinch at my paltry 512 MB of RAM is impressive enough. Adding to this feat, most of my hardware was detected and configured without the need for any prompting from me. The only exception to this was the DRI module for my Rage 128 Pro graphics card not being loaded by default, but this was easily addressed by passing the "knoppix xmodule=r128" boot option during start up. </p>
+<p>Lack of disk space forced me to be selective when installing Red Hat Linux 7.3 to my hard drive, meaning I just stuck with the default Gnome 1.4 desktop environment and the applications contained therein. As such, getting myself reacquainted with KDE 3 again proved to be a treat. Included here are versions of <em>KAtomic, KAsteroids</em>, <em>KBattleship, KBounce</em>, <em>KMahjongg</em>, <em>KReversi</em>, and <em>KSokoban</em>. There is also the fun if sometimes off putting <em>Potato Guy</em> software toy.</p>
+<p>Alongside the bundled KDE games were a few familiar faces. Included on the CD was <em>The Ace of Penguins</em> card game suite as was also featured in <em>100 Great Linux Games</em>, and I could at long last play and win the final 1.0.0 version of <em>Frozen Bubble</em> that refused to build for me on Red Hat Linux. Level 70 proved its potency once more, although I did spend longer tackling the final level of the game this time. Perhaps Level 70 should be moved to be the penultimate level instead.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1732091021676594965gol6.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/1732091021676594965gol6.jpg"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7108996271676539746gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7108996271676539746gol6.png"/></a></p>
+<p>Another favourite included with Knoppix 3.4 is <em>iMaze</em>, a client/server pseudo-3D deathmatch game inspired by <em>MIDI Maze</em> for the Atari ST. Alongside multiplayer, <em>iMaze</em> even sports support for computer controlled bots called ninjas through the use of a separate application, which go on to show that even smiley faces can be terrifying. There is just something sinister about their sacharine visages stalking the primitive single level landscape, even if they do get stuck on edges.</p>
+<p>Other games bundled on the disc include <em>GNU Chess</em>, <em>gTans</em>, <em>Netris</em>, <em>XBattle</em>, <em>XBoard</em>, <em>XBoing II, XGalaga</em>, <em>XKoules</em>, and <em>XSkat</em>. Also present is <em>Falcon's Eye</em>, which runs just about as well I remember it did. In a similar boat is <em>Chromium B.S.U. </em>which produced a black screen on launch. Clearly some games are better suited to running off of live media than others. <em>Enigma</em> meanwhile gave me I/0 errors, but that may just be the CD-R showing its age at last.</p>
+<p>Having gotten 3D acceleration to work, I decided to do my usual OpenGL test by loading <em>Quake III Arena</em> from the hard drive, which launched without complaint. I did encounter the same graphical glitches with shadows and marks on walls that I had experienced with Red Hat Linux 9 however, demonstrating beyond a doubt that there was a regression introduced into the driver upstream. Beyond this <em>Quake III Arena</em> ran beautifully from Knoppix.</p>
+<p>This qualified success got me wondering if could at long last also play the ultimate 2005 release of <em>Cube</em>, which did indeed also start up just fine. No graphical glitches were apparent, although the performance did seem to suffer in comparison to the earlier <em>Cube</em> release I had been playing. Whether this was due to increased graphical demands in the latest version of the game, or simply the fact I was running it from a live environment, I am unsure.</p>
+<p>While my principle interest in playing around with Knoppix was that of nostalgia, having a later Linux distribution on hand with support for applications on the other side of the glibc 2.3 boundary may well come in handy going forward. This is far from the only compatibility issue to have frustrated my attempts to get certain games to work in the past, but after having just previously dismissed the possibility of getting one of them running, I suddenly had a major breakthrough.</p>
+<p><strong>Carrying on in Part 27: Lost Souls</strong></p>
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a> </strong></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-26-coming-to-you-live/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-26-coming-to-you-live/</guid>
+      <pubDate>Mon, 20 Feb 2023 19:30:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1345131098id22287gol.jpg" type="image/jpeg"/>
+      
+      <category>Editorial</category>
+      
+      <category>Meta</category>
+      
+      <category>Retro</category>
+      
+    </item>
+    
+    <item>
+      <title>Dead Space got a small update for Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>In case you missed it in my recent <a href="https://youtu.be/kVfGOsMI1Hs" target="_blank">Steam Deck news video</a>, Motive released an update for the new Dead Space to improve it even more on Steam Deck.</p>
+<p>While at release Dead Space did not work well on Steam Deck, it was <a href="https://www.gamingonlinux.com/2023/01/valve-fix-dead-space-steam-deck/" target="_blank">fixed up rather quickly</a> by Valve with Proton and it has become Steam Deck Verified. Now, the actual game developer has taken notice. In their latest patch info they <a href="https://store.steampowered.com/news/app/1693980/view/3648515515970783142" target="_blank">mentioned</a> "Steam Deck Improvements" which was noted at the top before listing a bunch of gameplay tweaks.</p>
+<p>Sadly, they didn't go into <em>any</em> detail at all, so we're back to non-descriptive on-liners like this. I always find it weird that sometimes developers don't actually explain <em>what</em> they did. Reminds me of a lot of mobile app and console updates that list things like "stability improvements" without giving a clue as to what was changed — such secrecy annoys me. Like how <a href="https://www.gamingonlinux.com/2023/02/the-callisto-protocol-got-a-steam-deck-upgrade/" target="_blank">The Callisto Protocol now hides</a> the benchmark mode on Steam Deck. Still, it's nice to see developers pay attention to a Linux gaming device.</p>
+<p>You can see my previous Steam Deck video on Dead Space below where it was already working quite nicely:</p>
+<div class="hidden_video" data-video-id="liIh1i7vE1E"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9be5baf5ba3c600041cda43290c07a79.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/liIh1i7vE1E" target="_blank">See video</a></div></div>
+<p><em>Don't miss the new <a href="https://www.gamingonlinux.com/2023/02/steam-now-allows-transferring-games-between-pcs-and-steam-deck-too/" target="_blank">Steam Desktop and Steam Deck update</a> that added local game transfers.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/dead-space-got-a-small-update-for-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/dead-space-got-a-small-update-for-steam-deck/</guid>
+      <pubDate>Mon, 20 Feb 2023 16:48:06 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1131001287id22356gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Horror</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Open source evolution game Thrive adds part upgrades and a benchmark mode</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Benchmark the cells! Evolve all the things! Thrive 0.6.1 is a fun sounding upgrade to this free and open source scientific evolution sim.</p>
+<p>One of the big new features is the ability to actually upgrade parts. While it's early days for the feature with only one part able to use it, they can and will be expanding it across many other parts included in the game. The idea is to give you a bit more freedom in how you play it. Right now you can upgrade the Cilia to pull things in from a distance and the more you have the stronger the pull.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12767321261676898365gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12767321261676898365gol1.jpg"/></a></p>
+<p>There's also the new Benchmark mode to see how your PC will run it over time, which also gives the developers a good way to keep an eye on what they need to optimize in it. </p>
+<p>Some of the other changes include:</p>
+<blockquote>
+<ul>
+<li>Patch notes are now shown in the main menu first time when playing a new Thrive version.</li>
+<li>Added buttons in main menu and the pause menu to open the link for reporting bugs.</li>
+<li>Added new auto-evo exploring tool features (exporting data, running multiple worlds in a row + others).</li>
+<li>Evolutionary tree now works for freebuild games started with a fossil.</li>
+<li>Added day/night cycle tutorial.</li>
+<li>It is now possible to rebind and see controller buttons in the options menu.</li>
+</ul>
+</blockquote>
+<p>It's becoming quite an impressive game, while a little difficult to get into at the start they've done a pretty good job on expanding the tutorial to give you a good idea on what to do and how to survive. I don't seem to be dying as early and often as I was a few versions ago.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10188017611676898974gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10188017611676898974gol1.jpg"/></a></p>
+<p>See their new release trailer:</p>
+<div class="hidden_video" data-video-id="tpatXf9YkyE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5a58c6fd8cc0782de0d28258b27bf537.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/tpatXf9YkyE" target="_blank">See video</a></div></div>
+<p>You can buy it on <a href="https://store.steampowered.com/app/1779200/Thrive/" target="_blank">Steam</a> to support development or download it <a href="https://revolutionarygamesstudio.com/" target="_blank">direct</a> or via <a href="https://flathub.org/apps/details/com.revolutionarygamesstudio.ThriveLauncher" target="_blank">Flathub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/open-source-evolution-game-thrive-adds-part-upgrades-and-a-benchmark-mode/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/open-source-evolution-game-thrive-adds-part-upgrades-and-a-benchmark-mode/</guid>
+      <pubDate>Mon, 20 Feb 2023 13:16:35 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/842369695id22355gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>Open Source</category>
+      
+      <category>Simulation</category>
+      
+    </item>
+    
+    <item>
+      <title>OpenRA has another test release improving Dune 2000, Red Alert and major bug fixes</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>OpenRA is closing in on another big new release to improve the experience of playing Command &amp; Conquer, Red Alert and Dune 2000.</p>
+<p>As a brief reminder: OpenRA is a very flexible RTS game engine, primarily aimed at getting the likes of Command &amp; Conquer, Red Alert and Dune 2000 easily playable cross-platform with a number of enhancements while keeping the core gameplay intact but it's also used for a few other games now too. They're working towards Tiberian Sun support too.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6416788991676897242gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6416788991676897242gol1.jpg"/></a><em>Pictured - Red Alert on Fedora KDE Linux.</em></p>
+<p>Available now with Playtest 20230218:</p>
+<blockquote>
+<ul>
+<li>Multiple nuisance crash bugs fixed.</li>
+<li>Fixed the map editor not being able to resave .oramap files with subfolders.</li>
+<li>Red Alert:
+<ul>
+<li>Fixed the descriptions of the parabomb and paradrop support powers.</li>
+</ul>
+</li>
+<li>Dune 2000:
+<ul>
+<li>Fixed Deviators being able to take over friendly vehicles.</li>
+<li>Polished the Encyclopedia.</li>
+</ul>
+</li>
+<li>+ More.</li>
+</ul>
+</blockquote>
+<p>This is all in addition to the previous <a href="https://www.gamingonlinux.com/2022/12/openra-for-classic-command-a-conquer-dune-2000-red-alert-has-a-new-playtest/" target="_blank">Playtest from late 2022</a> that had lots of big improvements. See more on the <a href="https://www.openra.net/" target="_blank">OpenRA website</a>.</p>
+<p>I'll be the first to admit that when OpenRA finally gets Tiberian Sun support, you might not hear from me for a while. I'm far too excited about that.</p>
+<p><em>Want to try a great game with it? Take a look at <a href="https://www.gamingonlinux.com/2023/02/command-conquer-combined-arms-adds-the-start-of-a-campaign-mode/" target="_blank">Command &amp; Conquer - Combined Arms</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/openra-has-another-test-release-improving-dune-2000-red-alert-and-major-bug-fixes/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/openra-has-another-test-release-improving-dune-2000-red-alert-and-major-bug-fixes/</guid>
+      <pubDate>Mon, 20 Feb 2023 12:49:34 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1049695190id22354gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Beta</category>
+      
+      <category>Free Game</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Free 2D space exploration sim Endless Sky v0.10.0 adds new factions, gets better AI</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you love free and open source games keep an eye on the 2D space sim Endless Sky, which just got a new Beta release with version 0.10.0 giving some fresh gameplay improvements. Currently in Beta, so it's not quite a full release yet.</p>
+<p>As a reminder on what it is: Endless Sky is a 2D space trading and combat game inspired by the classic Escape Velocity series. Work your way up from a relatively wimpy shuttle, cargo ship, or fighter, to a highly upgraded and customized flagship or to a massive fleet of warships or freighters.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19497636901676896048gol1.jpg"/></p>
+<p>Here's an overview of what's new in v0.10.0 Beta:</p>
+<blockquote>
+<p class="plain-list-title">Breaking changes:</p>
+<ul>
+<li>The accompany objective on mission npcs no longer implicitly sets the save objective. Plugin missions that had "accompany" but not "save" should be changed to include "save" if the intention of the mission is that the npcs live.
+<ul>
+<li>This is a change that was made in v0.9.16, reverted in v0.9.16.1, and has been reintroduced.</li>
+</ul>
+</li>
+</ul>
+<p class="plain-list-title">Content and features:</p>
+<ul>
+<li>Two new alien factions, the Gegno and Bunrodea.</li>
+<li>A plethora of new conditions and new ways to use them, including the introduction of "global conditions" that can be set and accessed across save files.</li>
+<li>Improvements to how ship AI behaves, more intelligently making use of the range of their weapons. More AI improvements will come in the future.</li>
+<li>An overhaul to how cargo and outfit scanners function, causing scanning to take overall longer to complete.</li>
+<li>The jobs board can now be sorted on various metrics, including how much the job pays or whether it has a deadline.</li>
+<li>Improved mouse control while in flight, including the ability to select secondary weapons by clicking on their ammo icons, and a toggle for controlling flagship aiming and firing with the mouse.</li>
+<li>Reverted the heat damage change from v0.9.15, and reduced the buffs provided to afterburners from that same update.</li>
+<li>Added a deadline to bounty jobs so that they cannot be stacked infinitely and finished passively. In exchange, bounty ships now don't spawn as far away, and bounty job payments are increased.</li>
+</ul>
+</blockquote>
+<p>If you want to download Endless Sky you can grab it as a <a href="https://flathub.org/apps/details/io.github.endless_sky.endless_sky" target="_blank">Flatpak</a>, an AppImage from <a href="https://github.com/endless-sky/endless-sky/releases/tag/v0.9.12" target="_blank">GitHub</a> or from <a href="https://store.steampowered.com/app/404410/Endless_Sky/?curator_clanid=4218320" target="_blank">Steam</a>. You can grab the Beta from their GitHub or from the Betas section on Steam.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/free-2d-space-exploration-sim-endless-sky-v0100-adds-new-factions-gets-better-ai/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/free-2d-space-exploration-sim-endless-sky-v0100-adds-new-factions-gets-better-ai/</guid>
+      <pubDate>Mon, 20 Feb 2023 12:29:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1862823040id22353gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Exploration</category>
+      
+      <category>Free Game</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux kernel 6.2 is out now, here&#39;s a feature highlight</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>You can have a little Linux kernel update, as a treat. The Linux kernel 6.2 is officially out now so here's some notes on some of what's new. In the release <a href="https://lkml.org/lkml/2023/2/19/309" target="_blank">announcement</a> Linus Torvalds requested people to "please do give 6.2 a testing" and that it may not be a "sexy LTS release like 6.1 ended up being, but all those regular pedestrian kernels want some test love too".</p>
+<p>Some of what's new and improved includes:</p>
+<ul>
+<li>Intel Arc Graphics improvements.</li>
+<li>Optional Splitlock changes to help gaming.</li>
+<li>Initial NVIDIA Ampere (RTX 30) support in nouveau.</li>
+<li>Various work and drivers for Wi-Fi 7 support.</li>
+<li>Improvements to Sony controller support like DualShock 4 and DualSense.</li>
+<li>OneXPlayer mini (AMD) and AOK ZOE A1 sensor support.</li>
+<li>Btrfs file system performance improvements.</li>
+<li>Various exFAT file system improvements.</li>
+<li>Apple Apple M1 Pro / Ultra / Max support.</li>
+<li>Power management improvements for Alder Lake N and Raptor Lake P.</li>
+<li>Performance improvement for Intel Skylake.</li>
+<li>A driver for the ChromeOS human presence sensor.</li>
+</ul>
+<p>The full changelog is available over <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.2" target="_blank">here</a> and as usual <a href="https://www.phoronix.com/review/linux-62-features" target="_blank">Phoronix</a> does a nice overview.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/linux-kernel-62-is-out-now-heres-a-feature-highlight/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/linux-kernel-62-is-out-now-heres-a-feature-highlight/</guid>
+      <pubDate>Mon, 20 Feb 2023 11:56:57 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
+      
+      <category>Kernel</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Minecraft 1.20 adding Archaeology, Cherry Blossom Biome and a Sniffer mob</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>There's lots to be excited for in the upcoming Minecraft 1.20 update, with many previously announced features finally landing like Archaeology. Yes, it's finally being added. <em>Want to get Minecraft on Steam Deck? <a href="https://www.gamingonlinux.com/2022/10/minecraft-on-steam-deck-guide-with-prism-launcher-and-gamepad-support/" target="_blank">Check out my guide</a>!</em></p>
+<p>Archaeology was originally announced for the Caves &amp; Cliffs Update which got delayed but hooray it's still going to be a thing. Seems like a natural fit for a sandbox digging game like this too. In their official <a href="https://www.minecraft.net/en-us/article/archeology-coming-minecraft-120" target="_blank">blog post</a> the team at Mojang mentioned it's currently enabled for deserts where you can pick a plot inside a desert temple and get digging but they do plan to add more dig site areas over time. Eventually you'll find some suspicious sand, and then get a brush out to extract whatever is hiding inside.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17017700151676892050gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/17017700151676892050gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16871071781676892051gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16871071781676892051gol1.jpg"/></a></p>
+<p>Another big addition is a new rare Cherry Blossom Biome. Mojang <a href="https://www.minecraft.net/en-us/article/cherry-blossom-biome-coming-minecraft-120" target="_blank">say</a> it will be filled with cherry blossom trees, that can be broken down into a full set of wood and a new hanging sign. You'll even get saplings for them, to spread them wherever you want. Sounds sweet.</p>
+<p><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20399670171676892221gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/20399670171676892221gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2501530331676892223gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2501530331676892223gol1.jpg"/></a></p>
+<p>Finally as another big addition the Sniffer mob is <a href="https://www.minecraft.net/en-us/article/sniffer-coming-minecraft-120" target="_blank">coming</a>, this is what won the mob vote at Minecraft Live 2022. They will require some exploring to find as their eggs may be hidden in suspicious sand and apparently the hatching process is a little more interesting so you will need to keep watch. Once a Snifflet grows up into a Sniffer, it will be rather large and also helpful since it will sniff out special kinds of seeds to give you unique decorative plants.</p>
+<p><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5272648291676892490gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5272648291676892490gol1.jpg"/></a></p>
+<p>I think I really am due for another Minecraft play-through soon. They've added some really great stuff in the last couple of updates, but I think I'll be waiting for this update to really get the most out of my time with it.</p>
+<p>Have you built anything fun in it lately?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/minecraft-120-adding-archaeology-cherry-blossom-biome-and-a-sniffer-mob/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/minecraft-120-adding-archaeology-cherry-blossom-biome-and-a-sniffer-mob/</guid>
+      <pubDate>Mon, 20 Feb 2023 11:31:16 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1020854134id22351gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Casual</category>
+      
+      <category>Java</category>
+      
+      <category>Open World</category>
+      
+    </item>
+    
+    <item>
+      <title>CryoUtilities 2.0 helps boost Steam Deck performance</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>CryoUtilities has a big new 2.0 release out now, with plenty of tweaks to help you get the most out of your Steam Deck. Previously it simply offered some Swap sizing tweaks but now it can do more, and makes it easier than ever to use.</p>
+<p>I'm hoping that Valve are at least investigating some of these changes, since they can often boost game performance. In fact, some of these tweaks are absolutely essential to stop certain games just hard-crashing and rebooting the Steam Deck like God of War and Horizon Zero Dawn (amongst others — although not everyone encounters the issue).</p>
+<p><em>Screenshots, click to enlarge:</em></p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1638522751676890796gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/1638522751676890796gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1678745421676890798gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/1678745421676890798gol1.png"/></a></p>
+<p>Features now available with the 2.0 release includes:</p>
+<blockquote>
+<ul>
+<li>One-click set-to-recommended settings.</li>
+<li>One-click revert-to-stock settings.</li>
+<li>Swap Tuner.
+<ul>
+<li>Swap File Resizer.</li>
+<li>Swappiness Changer.</li>
+</ul>
+</li>
+<li>Memory Parameter Tuning.
+ <ul>
+<li>HugePages Toggle.</li>
+<li>Compaction Proactiveness Changer.</li>
+<li>HugePage Defragmentation Toggle.</li>
+<li>Page Lock Unfairness Changer.</li>
+<li>Shared Memory (shmem) Toggle.</li>
+</ul>
+</li>
+<li>Storage Manager.
+<ul>
+<li>Sync shadercache and compatdata to the same location the game is installed.</li>
+<li>Delete shadercache and compatdata for whichever games you select.</li>
+</ul>
+</li>
+<li>Full CLI mode.</li>
+</ul>
+</blockquote>
+<p>See their full video below where they explain the changes and show some benchmark comparisons:</p>
+<div class="hidden_video" data-video-id="C9EjXYZUqUs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/411183380331d60150730a1fbc9c8493.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/C9EjXYZUqUs" target="_blank">See video</a></div></div>
+<p>Have you used it? What is your experience with it? I think I'm going to look into testing it out and seeing if it can boost a few problematic games soon.</p>
+<p>Check it out on the <a href="https://github.com/CryoByte33/steam-deck-utilities" target="_blank">GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/cryoutilities-2-boosts-steam-deck-performance/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/cryoutilities-2-boosts-steam-deck-performance/</guid>
+      <pubDate>Mon, 20 Feb 2023 11:02:57 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/591905815id22350gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Counter-Strike: Global Offensive keeps breaking player records</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>One Valve game that is clearly unstoppable is Counter-Strike: Global Offensive, their first-person shooter from 2012 just keeps growing. Being free to play certainly helps too of course.</p>
+<p>Hitting a new all-time high for online players at ~1,320,219 on February 11th, it just smashed it again at 1,324,800 players online on February 19th. You can see all the info on <a href="https://steamdb.info/app/730/charts/" target="_blank">SteamDB</a> charts, which clearly shows it's doing well. Before that, the last time it broke the record was back in April at 1,308,963 players online.</p>
+<p>No doubt a continued nice earner for Valve (not that they need it…) with all the cases you can buy, and while free to play it still has a Prime Status Upgrade for £11.99 which is needed for Ranked Matchmaking and earning XP.</p>
+<p>Valve also just recently released the Revolution Case, featuring 17 weapon finishes from community artists and the gloves from the Clutch Case as rare special items. On top of that there's also the new Espionage Sticker Capsule, with 21 unique stickers from Steam Workshop artists. Additionally they also added in the Denzel Curry ULTIMATE music kit, featuring Denzel’s hits "Walkin", "ULTIMATE" and more from his 2022 album "Melt My Eyez See Your Future".</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15992569871676889988gol1.png"/></p>
+<p>CS:GO truly has some impressive staying power for what's quite an old game now.</p>
+<p>Are you still playing CS:GO? How many hours do you have in it now?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/counter-strike-global-offensive-keeps-breaking-player-records/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/counter-strike-global-offensive-keeps-breaking-player-records/</guid>
+      <pubDate>Mon, 20 Feb 2023 10:48:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1071004616id22349gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Free Game</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>The upcoming Team Fortress 2 update may not be as big as expected</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Remember all the hype over the announced <a href="https://www.gamingonlinux.com/2023/02/valve-proper-big-team-fortress-2-update-is-coming/" target="_blank">Team Fortress 2 update</a>? Well, it seems Valve edited the announcement silently and hoped no one would notice.</p>
+<p>Originally the <a href="https://steamcommunity.com/games/TF2/announcements/detail/3669906790333865368" target="_blank">announcement</a> mentioned it would be an "update-sized update" and now it says it's a "holiday-sized update". It also said before "and who knows what else?!" which has been completely removed, which significantly downplays the excitement over it. </p>
+<p>Still should be quite fun for TF2 players with the new "items, maps, taunts, unusual effects, war paints, and other community-contributed fixes" but still — a little odd to have such a silent edit. Perhaps the original writer of the announcement was themselves a bit too excited about it, with someone else at Valve gave them a quiet word to not hype people up over it too much?</p>
+<p>We'll find out later this year when it releases. Hopefully it won't be the last, would be nice to see Valve continue to upgrade their classics like TF2 don't you think?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/the-upcoming-team-fortress-2-update-may-not-be-as-big-as-expected/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/the-upcoming-team-fortress-2-update-may-not-be-as-big-as-expected/</guid>
+      <pubDate>Mon, 20 Feb 2023 10:36:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2122879345id22348gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Steam</category>
+      
+      <category>Upcoming</category>
+      
+    </item>
     
     <item>
       <title>Steam now allows transferring games between PCs and Steam Deck too</title>
@@ -1095,7 +1467,7 @@
 <p>You play a similar if more brain damaged protagonist, fighting the forces of a large megacorporation in a cyberpunk future. The maps are more dynamic than found in <em>Quake</em>, featuring scripted set pieces and even pilotable vehicles and probes. The enemies are largely hitscanners, most of your weapons now need to be reloaded, and both <em>Malice </em>and <em>SiN</em> even have pistols that can serve as your main reliable. All of this, as well as the bugs brought on by bloated ambition.</p>
 <p>By abusing the demo feature in <em>Quake</em> they were even able to add cutscenes to <em>Malice,</em> although the CD music would often overwhelm the dialogue; both total conversions feature all new soundtracks which lean heavier on electronica. I also found while playing either <em>Malice</em> or <em>Shrak</em> that many of the switches would appear too dark when rendered through glquake.glx, but would look fine in software mode. <em>Malice</em> spouts garbage to the console when using OpenGL as well.</p>
 <p>Quantum Axcess were far from the only distributor to dip their toes into the waters of unofficial <em>Quake</em> expansion content, with even the sequel <em>Quake II</em> seeing a number of companion CD-ROMs released for use alongside it. Some of those I intend to cover at some point, but I think I have had my fill of <em>Quake</em> again for now. Instead, I have found an old CD-R disc which I am curious to see if it can still be read after all these years. Time to move from rocket jumping to distro hopping.</p>
-<p><strong>Carrying on in Part 26: Coming to You Live</strong></p>
+<p><strong>Carrying on in <a href="https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-26-coming-to-you-live/" target="_blank">Part 26: Coming to You Live</a></strong></p>
 <p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
@@ -3776,423 +4148,6 @@ Budgie 10.7 screenshot - credit to the Budgie devs</p>
       <category>Godot Engine</category>
       
       <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>SurrounDead looks like a mix of DayZ and Project Zomboid</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>It's early days for the game yet with it in Early Access but SurrounDead could be a promising one to play online with some friends.</p>
-<p>From the description and footage shown from the developer, it looks like an odd blending of DayZ and Project Zomboid. However, it also seems to be heavily inspired by another called DeadPoly which is lesser known than the two aforementioned bigger games but if you've seen that you'll know what to expect.</p>
-<div class="hidden_video" data-video-id="jP121rIaaQw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4849daf089fbd9ede70cb8e0bea0d9bd.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/jP121rIaaQw" target="_blank">See video</a></div></div>
-<p>What makes this different then? Why am I mentioning it? Well, I initially thought it actually had a Native Linux version whereas DeadPoly does not. It has the SteamOS icon on Steam but checking SteamDB, there's no Linux content or launch configuration. Only after I checked the system requirements, did I spot something that's somewhat unique, as it directly lists Proton for Linux as what they support.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8549866651675182317gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8549866651675182317gol1.jpg"/></a></p>
-<p>It might not exactly be the first time, my memory escapes me on who did it first, but it's in the single digits on the number of developers noting support being official for Proton in this way so I thought it was interesting to highlight.</p>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Travel through a desolate post apocalyptic landscape.</li>
-<li>Fight zombies and possibly worse.</li>
-<li>Find many different firearms, melee weapons and equipment.</li>
-<li>Trade with survivors in trader hideouts or safe zones to get that one piece of equipment you need.</li>
-<li>Barricade buildings or find your self somewhere in the wilderness to escape to.</li>
-<li>Loot varied locations to improve yourself, but be aware of your surroundings.</li>
-<li>Weather and day/night cycles, be careful.</li>
-<li>Manage your stats to stay alive.</li>
-</ul>
-</blockquote>
-<p>Available on <a href="https://store.steampowered.com/app/1645820/SurrounDead/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/surroundead-looks-like-a-mix-of-dayz-and-project-zomboid/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/surroundead-looks-like-a-mix-of-dayz-and-project-zomboid/</guid>
-      <pubDate>Tue, 31 Jan 2023 16:28:42 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1871556292id22255gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Steam Play</category>
-      
-      <category>FPS</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Free strategy shooter game Unvanquished v0.54 is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Free, open source and full of bugs (the squishable kind) — Unvanquished is a mixture of strategy and an FPS with a new release v0.54 out now. Unvanquished is a fork of Tremulous, for those don't know it's similar in style to Natural Selection with aliens versus humans fighting it out with each having a little base to build.</p>
-<p>This release brings with it official ARM support for Linux, so you can now play Unvanquished on your Raspberry Pi and many other ARM systems. Some of course might be too slow but it also means you can now run a server for it on ARM too.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9447110311675181444gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9447110311675181444gol1.jpg"/></a><em>Unvanquished v0.54 screenshot.</em></p>
-<p>More polishing work went into the UI this time around too with the map load screen now showing the map name and author name and map authors can be a little creative with the level shots now too. On top of the modded servers can also be a little more creative, as they can have their own welcome screen.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17000929741675180516gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17000929741675180516gol1.jpg"/></a><em>Welcome screen example shot.</em></p>
-<p>Speaking of online play, the developers improved colour code support for things like usernames, so it doesn't count towards the character count limit.</p>
-<p>Other improvements include an update to the lucifer cannon model, there's no negative momentum anymore impacting players as the game goes on, rockets no longer follow dead players and a bug affecting Marauder zap chains is fixed. There's also a bunch of new icons , spectator mode fixes and numerous fixes to bots to improve how they play so they should actually be a bit more menacing and fun to play against. Bot navigation got the biggest upgrade, with their navigation mesh (what they use to pathfind) now being generated in-game solving many problems.</p>
-<p>Plenty of changes to the graphics rendering was added like the ability to disable light styles, files for optional features when disabled are no longer loaded, serious issues with dynamic lights were solved along with many crash bugs being fixed.</p>
-<p><em>Seems like 2023 is going to be a good year for Unvanquished.</em></p>
-<p>See more on the <a href="https://unvanquished.net/" target="_blank">official site</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/free-strategy-shooter-game-unvanquished-v054-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/free-strategy-shooter-game-unvanquished-v054-is-out-now/</guid>
-      <pubDate>Tue, 31 Jan 2023 16:13:04 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/256404477id22254gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>FPS</category>
-      
-      <category>Free Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck and desktop Beta fix up more on-screen keyboard bugs</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Bugs! Kill 'em all! Would you like to know more? Valve have a new Steam Deck and Desktop Steam Beta available with a few bugs being stomped. As per usual, there's some shared between them since they mostly use the same bits of the Steam client now.</p>
-<p>For the Steam Deck here's <a href="https://steamcommunity.com/games/1675200/announcements/detail/3635002625426139933" target="_blank">what's changed</a>:</p>
-<blockquote>
-<p class="plain-list-title">General</p>
-<ul>
-<li>
-<p class="plain-list-title">Fixed right-shift and nearby keys of onscreen keyboard sometimes not working.</p>
-</li>
-<li>Fixed "a" and "c" keys triggering an animation on the game details page.</li>
-<li>Fixed controller guide button shortcut summary showing an incorrect icon.</li>
-</ul>
-<p class="plain-list-title">Steam Input</p>
-<ul>
-<li>
-<p class="plain-list-title">Fixed an issue where the deadzone slider would get clipped in the controller configurator.</p>
-</li>
-</ul>
-</blockquote>
-<p class="plain-list-title">And then a few differences for Desktop Steam so here's <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/3659772423378761673" target="_blank">what's changed</a> there:</p>
-<blockquote>
-<p class="plain-list-title">New Big Picture Mode</p>
-<ul>
-<li>
-<p class="plain-list-title">Fixed right-shift and nearby keys of onscreen keyboard sometimes not working.</p>
-</li>
-<li>Fixed "a" and "c" keys triggering an animation on the game details page.</li>
-<li>Big Picture Mode only supports modifying network settings when running on SteamOS / Steam Deck.</li>
-<li>Hid button to view Steam Deck manual in Quick Access on non-Deck devices.</li>
-</ul>
-<p class="plain-list-title">Steam Input</p>
-<ul>
-<li>
-<p class="plain-list-title">Fixed an issue where the deadzone slider would get clipped in the controller configurator.</p>
-</li>
-</ul>
-</blockquote>
-<p class="plain-list-title">One day this year, I really hope I get to excitedly write about how either Valve or NVIDIA fix the terrible performance of the New Big Picture Mode on Desktop. Apparently one does not simply <s>walk into Mordor</s> make it work well. I'm sure if it was easy, it would have been sorted by now.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/steam-deck-and-desktop-beta-fix-up-more-on-screen-keyboard-bugs/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/steam-deck-and-desktop-beta-fix-up-more-on-screen-keyboard-bugs/</guid>
-      <pubDate>Tue, 31 Jan 2023 14:20:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1080490470id22252gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Apps</category>
-      
-      <category>Beta</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Forspoken gets an update to improve Steam Deck performance</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://store.steampowered.com/app/1680880/Forspoken/" target="_blank">Forspoken</a> has been controversial for quite a lot of a reasons but also a title many were looking forward to. The release was a <a href="https://www.gamingonlinux.com/2023/01/forspoken-desktop-linux-spoof-steam-deck/" target="_blank">bit rough</a> but the developers are cleaning it up now and it has some Steam Deck fixes.</p>
-<p>Here's the patch notes:</p>
-<blockquote>
-<ul>
-<li>Adjustments have been made to HDR mode.</li>
-<li>Localization and spelling fixes.</li>
-<li>Various minor fixes.</li>
-<li>Certain technical issues occurring on Steam Deck has been fixed.</li>
-<li>Performance and stability has been improved on Steam Deck.  </li>
-</ul>
-</blockquote>
-<p>Amazing to see games from publishers like Square Enix pay attention to a Linux gaming device, we're going to see a lot more of this over the next year. Although, it would be great if developers did these things before release, especially with the <a href="https://www.gamingonlinux.com/2023/01/steam-deck-in-stock-japan-hong-kong-south-korea-taiwan/" target="_blank">roll-out of the Steam Deck in Asia</a> going strong, there's going to be a lot more people using it now.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8463547201675173182gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8463547201675173182gol1.jpg"/></a></p>
-<p>I still personally think £64.99 is a crazy price for it, so I won't be going into any depth on it myself. It currently has a Mixed user rating on Steam from over 2,000 people and the peak player count dropped pretty harshly quickly after release so it's not exactly popular.</p>
-<p>They did update the demo too, so for those of you who wish to try it out that might give you a good idea now.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/forspoken-update-improves-steam-deck-performance/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/forspoken-update-improves-steam-deck-performance/</guid>
-      <pubDate>Tue, 31 Jan 2023 13:54:36 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/701738095id22253gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Exploration</category>
-      
-      <category>Open World</category>
-      
-    </item>
-    
-    <item>
-      <title>AMD GPU driver on Linux and Steam Deck to get big improvement on stuttering problems</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The work to improve gaming performance on Steam Deck and Linux desktops for AMD GPUs is always ongoing, and it seems we're set for another nice improvement to how smooth games are.</p>
-<p>One of the biggest problems is shader compile stutter, where you play through a game first-time and see it stuttering about all over the place until the shaders get built. It's less of a problem in plenty of games if Valve have them ready for download but that's not always possible, and doesn't always solve it. Some games also update a lot and need shader cache updates often, this will again help with those times where it’s not yet available. For games not on Steam, it will also be a huge bonus win for performance.</p>
-<p><a href="https://www.gamingonlinux.com/2022/11/vulkan-based-d3d9-10-and-11-translation-layer-dxvk-version-20-out-now/" target="_blank">DXVK 2.0</a> released back in November 2022 included some major changes to work around it, and work is ongoing in the AMD GPU driver RADV to make use it what's needed. Later NVIDIA drivers have it and the improvements there are quite impressive but the current experimental work in the AMD GPU driver needed work.</p>
-<p>As Valve contractor Mike Blumenkrantz <a href="https://www.supergoodcode.com/through-the-loop/" target="_blank">blogged about</a> recently going over work they and others have done regarding the VK_EXT_graphics_pipeline_library Vulkan API extension, and the blog post is well worth a read for some background into it but to cut to the chase — the result of the work is a "50,000%" improvement in fast-linking which for <em>gamers</em> should result in a much improved experience for certain games.</p>
-<p>The work should hopefully come in Mesa 23.1 due later this year where use of the noted Vulkan extension above should hopefully be turned on by default, and then for Steam Deck players specifically hopefully in something like SteamOS 3.5.</p>
-<p>This and more was covered in my recent video:</p>
-<div class="hidden_video" data-video-id="3_X2LV-LA2E"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b0620f36ce649043d216ab3188154bdf.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3_X2LV-LA2E" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/amd-gpu-driver-linux-steam-deck-big-improvement-stuttering-problems/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/amd-gpu-driver-linux-steam-deck-big-improvement-stuttering-problems/</guid>
-      <pubDate>Tue, 31 Jan 2023 12:45:05 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1711824904id22251gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>AMD</category>
-      
-      <category>Drivers</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Building a Retro Linux Gaming Computer - Part 23: Ready, Set, Go!</title>
-      <author>Hamish</author>
-      <description><div class="content group e-content">
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-22-happy-hacking/" target="_blank">Part 22: Happy Hacking</a></strong></p>
-<p>If you look at the commercial Linux gaming catalogue at the turn of the millennium, in amongst all of the 3D shooters and strategic simulations being released, one glaring omission seems to have been the lack of any racing games. Loki Software never ported any to Linux, nor did any of the other porting houses. This left a void for the free gaming community to fill. One of the first be off to the races was <em>Trophy</em>, whose development started in March 2000.</p>
-<p>The latest version of <em>Trophy</em> I can run from Red Hat Linux 7.3 is version 1.1.3 from before the game was ported to ClanLib 0.8 and beyond. To do this, I first had to grab the ClanLib-0.6.1-fr1.i386.rpm, ClanLib-sound-0.6.1-fr1.i386.rpm, and Hermes-1.3.2-fr3.i386.rpm pacakges from freshrpms. Even then, the included binary that came bundled with the 1.1.3 source tarball would still not load, as it was built against libstdc++5 which is too new.</p>
-<p>This is the same problem I had when attempting to launch later versions of <em>Cube</em>, but since I could satisfy all the other build dependencies in this case, I was able to compile my own binary linked to my older version of glibc. To do this, all I had to do was run "make clean" followed by "make" in the trophy directory. This did mean I also had to install all of the ClanLib and Hermes development packages, which from freshrpms came to a whopping eleven packages in total.</p>
-<p>Even then the game window still came up labelled as "Trophy 1.0.6" instead, but both the "Snake" and "Rally" tracks were present and correct, so I know I built the right version. Beyond that the only other bug I encountered was that I was unable to change the colour of my car using the arrow keys as the menu suggests, with the new game screen only seeming to allow me to input my name. That said, I am also unsure what the "Hall Of Fame" is even for at this point.</p>
-<p><em>Trophy </em>is a top down racer which distinguishes itself by having an emphasis on using extras such as vehicular combat to get ahead of your rivals. You can fire a machine gun at other cars by pressing the "x" key, drop bombs with the "c" key, and give yourself a turbo boost by holding down the "a" key. All of these are powered by collectibles found scattered about the track, right up until you finish the fifth and final lap. The result is a strong arcade feel without being a kart racer.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14509378931674772712gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/14509378931674772712gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2622579241674772713gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2622579241674772713gol6.png"/></a></p>
-<p>The graphics are appealing if a little compressed, with the tracks themselves being large for the time 1200x1200px bitmaps created in several layers through use of the GNU Image Manipulation Program. In fact, an entire track designer manual was written that goes over the process of building a track, all to encourage <em>Trophy </em>players to make a submit their own creations. This manual can still be read from the <em>Trophy </em>website hosted on SourceForge.</p>
-<p>Work on <em>Trophy</em> advanced in fits in starts, with the latest 2.0.4 release from 2019 still depending on the ancient ClanLib 1.0 software development kit. But while <em>Trophy</em> ossified from a technical perspective over the last decade or so, the gameplay became deeply enriched starting with the 2.0.0 release. This was the first to feature a championship mode as well as a shop where you can buy vehicle upgrades and new cars, giving the money you collect a real purpose at long last.</p>
-<p>With all of these additions in particular, <em>Trophy</em> reminds me very much of <em>Mini-Car Racing</em> as published by eGames, one of my brother's favourite games growing up. Whether this a coincidence or not is hard to say, as both games first released in the same year, but they do both have you race on the moon. <em>Mini-Car Racing</em>, incidentally, is also one of many older games which are far easier to get working with WINE than on modern versions of Windows today.</p>
-<p>Looking at the TODO list included alongside <em>Trophy </em>shows that<em> </em>the similarities were planned to go even deeper than that, with the inclusion of oil slicks, rockets, and jump points on the tracks. All of which compounds the feeling that <em>Trophy</em> does still have a great deal of unfulfilled potential, with networked multiplayer also having been mooted at one point. There is a legacy here that would be great for someone to build upon, should the right contributor be found.</p>
-<p>Which free and open source game projects take off and which stagnant often seems to be at the gift of chance, but at least here there is always the option that some new life can be breathed into them, if given enough interest. The same can even be said for what is to this day my mother's favourite computer game, a free software title which for most of the 2000s was one of the most lauded Linux games to ever be released for the platform.</p>
-<p><strong>Carrying on in <a href="https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-24-mother-knows-best" target="_blank">Part 24: Mother Knows Best</a></strong></p>
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-23-ready-set-go/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-23-ready-set-go/</guid>
-      <pubDate>Mon, 30 Jan 2023 19:35:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/627165796id22211gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Editorial</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Marvel&#39;s Midnight Suns gets an update to help Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Marvel's Midnight Suns is a great strategy game from the developer of XCOM, and now it should actually much better on Steam Deck and Linux desktop.</p>
-<p>Two major problems were broken Cloud Saves and a crash for plenty of people at certain points, with both now hopefully solved! Always nice to see such major titles getting some special attention for my favourite gaming platform and the stability fixes specifically should also help players on Linux desktop too!</p>
-<p>In the latest <a href="https://store.steampowered.com/news/app/368260/view/3678912721785348966" target="_blank">update</a> they noted this:</p>
-<blockquote>
-<p class="plain-list-title">General</p>
-<ul>
-<li>General performance improvements</li>
-<li>General stability fixes</li>
-</ul>
-<p class="plain-list-title">Steam Deck:</p>
-<ul>
-<li>Steam Deck Virtual Keyboard fixes</li>
-<li>Steam/Deck/Link save fixes, including cloud syncing</li>
-<li>Steam Deck stability fixes</li>
-</ul>
-</blockquote>
-<p>You can see my previous video on the game below:</p>
-<div class="hidden_video" data-video-id="69g7N0celto"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1440839a02821bab3953221a0b90c044.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/69g7N0celto" target="_blank">See video</a></div></div>
-<p>Definitely looking forward to playing more of it, although I really hate that it has micro-transactions, that still feels gross. They already have a Season Pass, which actually gives you everything extra with the micro-transactions to buy extras individually, it just feels completely stupid to have both and confuse players. Aside from that, I don't have a lot to complain about, the battles are a whole lot of fun.</p>
-<p>Deadpool just arrived recently too:</p>
-<div class="hidden_video" data-video-id="QFGohawKKNE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7d1bbb0e6cddac0a283b6b9cc70601fb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/QFGohawKKNE" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/marvels-midnight-suns-update-helps-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/marvels-midnight-suns-update-helps-steam-deck-linux/</guid>
-      <pubDate>Mon, 30 Jan 2023 16:33:42 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/488739160id22250gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>RPG</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Free Minecraft-like game MineClone2 v0.82.0 for Minetest out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A free and open source survival sandbox game pack for the voxel game engine <a href="https://www.minetest.net/" target="_blank">Minetest</a>, <a href="https://content.minetest.net/packages/Wuzzy/mineclone2/" target="_blank">MineClone2</a> is as close to Minecraft as you can get without playing Minecraft. A big new release has rolled out with version 0.82.0 with lots added.</p>
-<p>For those of you who dislike Minecraft and want something just like it, this is what you want. There's a reason it has <em>clone</em> in the name. Some of what's new in the latest release includes:</p>
-<ul>
-<li>Bamboo and bamboo blocks added.</li>
-<li>Added game music.</li>
-<li>Light blocks added.</li>
-<li>Japanese translation.</li>
-<li>Overworld Biome Sky And Fog Colours.</li>
-<li>Villager pathfinding improvement.</li>
-<li>Villages spawn more effectively in desert and snow.</li>
-<li>Performance improvements.</li>
-<li>Lots of bug fixes.</li>
-</ul>
-<p>The developers did their own overview video to showcase some of it:</p>
-<div class="hidden_video" data-video-id="c8qo-F4IK2w"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1a0db8256e3c7766df79d5f7502b53a3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/c8qo-F4IK2w" target="_blank">See video</a></div></div>
-<p>If any of my readers play MineClone2 — why do you choose it over Minecraft?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/mineclone2-minecraft-clone-new-release-free/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/mineclone2-minecraft-clone-new-release-free/</guid>
-      <pubDate>Mon, 30 Jan 2023 13:26:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/798270147id22249gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Free Game</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Slavic fantasy-adventure The End of the Sun gets a demo</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>In the mood for something just a bit different? The End of the Sun is a Slavic-fantasy adventure and you can try it out now. At release it will have Native Linux support and the demo has a Linux version ready too.</p>
-<p>About the game: "The End of the Sun is a first-person exploration and adventure story-based game, set in the world of Slavic rites, beliefs and legends. The small village becomes a place of mysterious events, through which the line between myth and reality begins to fade perilously. As the ashter (Slavic sorcerer) who is gifted with the ability to travel in time and knowledge about Navia (the otherworld where human fates shape), following the trail of the unusual fugitive, you come to a mysterious village. Unfortunately, you cannot find anyone there, at least not in a way you expected to. All you can see around are burned hearths."</p>
-<p>The developers say you can expect around an hour gameplay from the demo, with English and Polish full audio with 9 languages planned for the full release that will be sometime in Q4 2023.</p>
-<p>You can see their new teaser below:</p>
-<div class="hidden_video" data-video-id="nNNLW-_-LQs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8e18f0f6ea124cdb84b039d475caa308.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/nNNLW-_-LQs" target="_blank">See video</a></div></div>
-<p>Try out The End of the Sun <a href="https://store.steampowered.com/app/912840/The_End_of_the_Sun/" target="_blank">demo on Steam</a>. </p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/slavic-fantasy-adventure-the-end-of-the-sun-demo/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/slavic-fantasy-adventure-the-end-of-the-sun-demo/</guid>
-      <pubDate>Mon, 30 Jan 2023 12:23:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2018238087id22248gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Demo</category>
-      
-      <category>Exploration</category>
-      
-    </item>
-    
-    <item>
-      <title>Wolfenstein: Enemy Territory open source project ET: Legacy has a new release</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://www.etlegacy.com/" target="_blank">ET: Legacy</a> continues carrying the torch of the classic multiplayer title Wolfenstein: Enemy Territory, with a new release out that has lots of fixes. The original release was planned as an expansion to Return to Castle Wolfenstein, and later it came as a standalone thing that was later open sourced and now ET: Legacy keeps it going.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15034753051675080814gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15034753051675080814gol1.jpg"/></a></p>
-<p>Some of the biggest changes noted are:</p>
-<blockquote>
-<p class="plain-list-title"><strong>Notable ENGINE changes</strong></p>
-<ul>
-<li>Renamed Unix binaries (e.g. etl/etlded.x86 and etl/etlded.x86_64)</li>
-<li>Added cJSON support for future use in internal configuration files</li>
-<li>Fixed precision in patch collision to avoid "MAX_PATCH_PLANES" errors</li>
-<li>Added x64 support for Windows platform (only compatible with Legacy 2.81 mod)</li>
-</ul>
-<p class="plain-list-title"><strong>Client</strong></p>
-<ul>
-<li>Added cl_extrapolationMargin (default: 1; allowed range: 0-10) to reduce client latency due to incorrect serverTime values caused by adjustments to serverTimeDelta on the client</li>
-<li>Scaled UI mouse movement to match the window manager mouse movement </li>
-<li>Added new default console font (JetBrainsMono-SemiBold) and an icon font for the custom ET font icons</li>
-<li>Fixed SDL2 sounds were played at incorrect range distance</li>
-<li>Fixed OpenAl incorrect ambient and entity sounds volume</li>
-<li>Fixed s_volume and s_alGain not affecting volume on OpenAl</li>
-</ul>
-<p class="plain-list-title"><strong>Server</strong></p>
-<ul>
-<li>Fixed sv_ipMaxClients cvar incorrectly limiting the total amount of clients allowed on server instead of max clients per IP</li>
-<li>Added sv_userInfoFloodProtect cvar to protect against userinfo flooding, so sv_floodProtect can be off and server can still be protected against user info flooding.</li>
-<li>Blocked connection from IP with engine temp bans (exclude ports to fix issue with clients changing net_port and reconnecting after a kick, circumventing temp ban)</li>
-<li>Added sv_serverTimeReset cvar for resetting svs.time on map change to avoid various issues related to high server uptime</li>
-<li>--&gt; Potentially improves game feeling as big server time is known to cause a lot trouble</li>
-</ul>
-<p><br/>
-<strong>Notable MOD changes</strong></p>
-<p class="plain-list-title"><strong>General</strong></p>
-<ul>
-<li>Added in-game and cvar-based HUD editor allowing full customisation of HUD components</li>
-<li>Fixed prone collision issues causing players to get stuck on or glitching through certain walls and smooth out crawling on uneven surfaces</li>
-<li>Added window flashing on game init and match starting</li>
-<li>Added option to visualise major and minor spawnpoints in maps supporting this feature with cg_drawSpawnpoints</li>
-<li>Added func_fakebrush drawing with railbox when debugging by setting g_debugHitboxes func_fakebrush</li>
-</ul>
-<p class="plain-list-title"><strong>Stability/Performance</strong></p>
-<ul>
-<li>Fixed a bug in antiwarp code causing players to warp when they had no user input but still had velocity</li>
-<li>Fixed general prediction on multiple game elements</li>
-</ul>
-<p class="plain-list-title"><strong>UI</strong></p>
-<ul>
-<li>Added cg_customFont1/2 cvars to change fonts</li>
-<li>Improved text readability by scaling text shadow/outline based on text size</li>
-<li>Enhanced map vote windows on map vote game type by adding map popularity and history of last 333 played maps and reduced vote count from 3 to 1 per player</li>
-</ul>
-<p class="plain-list-title"><strong>Weapons</strong></p>
-<ul>
-<li>Fixed zoom level for FG42</li>
-<li>Increased FG42 scoped recoil pitch</li>
-<li>Reduced speed from 127 to 80 (crouch speed) while scoping and standing</li>
-<li>Reintroduced weapon unscoping while in air more than 250 ms</li>
-<li>Fixed alt weapon switch exploit</li>
-<li>Fixed arty/airstrike bombs potentially spawning indoors</li>
-<li>Fixed inconsistent explosion hit registration by sorting players depending of distance from the explosion origin in ascending order</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/01/wolfenstein-enemy-territory-et-legacy-new-release/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/01/wolfenstein-enemy-territory-et-legacy-new-release/</guid>
-      <pubDate>Mon, 30 Jan 2023 12:14:58 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/828982130id22247gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>FPS</category>
-      
-      <category>Free Game</category>
-      
-      <category>New Release</category>
       
     </item>
     
