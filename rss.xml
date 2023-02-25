@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-02-24 07:26:32.638447</pubDate>
+    <pubDate>2023-02-25 07:25:38.821153</pubDate>
 
     
     <image>
@@ -18,6 +18,131 @@
     </image>
 
     
+    
+    <item>
+      <title>X-Plane 12 now uses the open source Zink driver to help Plugins</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Well, this is certainly fun to see. X-Plane 12 now makes use of the open source Zink driver, for doing OpenGL over Vulkan.</p>
+<p>As Zink developer Mike Blumenkrantz mentioned in their <a href="https://www.supergoodcode.com/monumental/" target="_blank">blog post</a> "Zink has been commercialized" and they sound very happy about that. Zink is now a driver that "runs real games in production for real, existing people". A pretty impressive milestone for the project.</p>
+<p>So what's this all about? As per the X-Plane 12 <a href="https://developer.x-plane.com/2023/02/addressing-plugin-flickering/" target="_blank">announcement</a>, the game developers have added Zink into the game. They're using it for their plugin system, which currently has some long-standing issues with native OpenGL drivers at times being rubbish. It's all highly technical stuff, and most normal players probably won't understand a lot of it.</p>
+<p>X-Plane nowadays uses the Vulkan API or Metal (on macOS) but the problem is, they have a long history of plugins and plugin developers using OpenGL. So what they're now doing is using Zink as a go-between, having it sit "between plugins and X-Plane and translates plugin OpenGL rendering into native Vulkan commands that get executed by the same Vulkan device that X-Plane is using for rendering" — clever stuff.</p>
+<p>The result they're going for is to have their plugin system work better than before, and potential performance improvements. There's the added bonus that they have a lot more control over everything too, and plugin developers also now have more power and better debugging options.</p>
+<p>If you're interested in the finer details I suggest reading their <a href="https://developer.x-plane.com/2023/02/addressing-plugin-flickering/" target="_blank">announcement</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/x-plane-12-now-uses-the-open-source-zink-driver-to-help-plugins/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/x-plane-12-now-uses-the-open-source-zink-driver-to-help-plugins/</guid>
+      <pubDate>Fri, 24 Feb 2023 20:30:21 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/216587534id22374gol.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+      <category>OpenGL</category>
+      
+    </item>
+    
+    <item>
+      <title>Flycast emulator for Dreamcast, Naomi, Naomi 2 gets a big upgrade</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Oh wow, I loved my old SEGA Dreamcast before it sadly ended up at a tech graveyard. For fans of emulation, the Flycast emulator has a new release out. I must gives this a try, maybe good for Steam Deck in bed…</p>
+<p>The developer mentions it was "derived" from another project called Reicast, which is no longer updated. Supporting the Sega Dreamcast, Naomi, Naomi 2 and Atomiswave. Here's the highlights of Flycast 2.1:</p>
+<blockquote>
+<ul>
+<li>Full framebuffer emulation (Densha de Go 2, homebrew)</li>
+<li>Linux AppImage builds</li>
+<li>Automatic crash reporting with <a href="https://sentry.io/" target="_blank">Sentry</a></li>
+<li>Broadcast arcade digital outputs (lights, force feedback) over the network</li>
+<li>Android keyboard support</li>
+<li>Various GDB fixes and improvements, CPU graphs, Profiler by <a href="https://github.com/BigEvilCorporation" target="_blank">@BigEvilCorporation</a> in <a href="https://github.com/flyinghead/flycast/pull/832" target="_blank">#832</a></li>
+<li>Texture Upscaling for iOS by <a href="https://github.com/vkedwardli" target="_blank">@vkedwardli</a> in <a href="https://github.com/flyinghead/flycast/pull/805" target="_blank">#805</a></li>
+<li>And many, many, many bug fixes and performance improvements</li>
+</ul>
+</blockquote>
+<p>See more about it on <a href="https://github.com/flyinghead/flycast" target="_blank">GitHub</a>.</p>
+<p>Nice to see another open source project coming along well! Have you been using Flycast? Let me know what you think in the comments and what your favourite games are to play with it.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/flycast-emulator-for-dreamcast-naomi-naomi-2-gets-a-big-upgrade/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/flycast-emulator-for-dreamcast-naomi-naomi-2-gets-a-big-upgrade/</guid>
+      <pubDate>Fri, 24 Feb 2023 20:12:00 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/932497854id22373gol.jpg" type="image/jpeg"/>
+      
+      <category>Emulation</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Get some awesome puzzle games in this latest game bundle</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Busy weekend? No? How about some fresh games! Humble Bundle has put up a pretty darn good collection in the latest bundle. The <a href="https://www.humblebundle.com/games/unparalleled-puzzlers?partner=gamingonlinux" target="_blank">Unparalleled Puzzlers Bundle</a> is live for 14 days and you don't want to miss it.</p>
+<p>As usual, I'll go over what to expect on Linux Desktop and Steam Deck for compatibility. Noting if something is Native Linux or ProtonDB ratings (which goes: Platinum - Gold - Silver - Bronze - Broken) to save you some clicking around.</p>
+<p><em>Here's what's inside:</em></p>
+<p class="plain-list-title"><strong>Baba is You</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>Linux Native</li>
+</ul>
+<p class="plain-list-title"><strong>Dorfromantik</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>DARQ: Complete Edition</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Monument Valley: Panoramic Edition</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Monument Valley 2: Panoramic Edition</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>The Last Campfire</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Creaks</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p>See <a href="https://www.humblebundle.com/games/unparalleled-puzzlers?partner=gamingonlinux" target="_blank">the bundle here</a>.</p>
+<p>Baba is You is probably one of my all-time favourite puzzle games, worth it for that alone and the full bundle costs less than just that game by itself at normal price. Solid bundle.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/get-some-awesome-puzzle-games-in-this-latest-game-bundle/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/get-some-awesome-puzzle-games-in-this-latest-game-bundle/</guid>
+      <pubDate>Fri, 24 Feb 2023 19:52:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/943731699id22372gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Bundle</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Meta</category>
+      
+      <category>Puzzle</category>
+      
+    </item>
     
     <item>
       <title>Check out the Safe in Our World Charity Bundle 2023</title>
@@ -3892,133 +4017,6 @@ Splittown is a point-and-click adventure game inspired by 90s classics such as D
       <category>Indie Game</category>
       
       <category>Racing</category>
-      
-    </item>
-    
-    <item>
-      <title>Wine 8.1 released starting another year of Windows to Linux translation work</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The <a href="https://www.winehq.org/announce/8.1" target="_blank">Wine 8.1</a> development release is now available, starting off another year of new features landing usually bi-weekly for the Windows translation layer used in Proton.</p>
-<p>Only two notable changes were highlighted for this release as they start the work again on pulling in more code, after freezing the features they added in for the Wine 8.0 release. The highlighted items for Wine 8.1 are:</p>
-<blockquote>
-<ul>
-<li>Windows version set to Windows 10 for new prefixes.</li>
-<li>Many code cleanups that were deferred during code freeze.  </li>
-</ul>
-</blockquote>
-<p>For bug fixes they noted 27 solved including issues with: Dungeons &amp; Dragons Online, Multiple Blizzard games (Diablo III, World of Warcraft etc), Anno 1800, GOG Galaxy and issues to various miscellaneous parts of Wine.</p>
-<p>Want help managing Wine on Linux? You can try <a href="https://usebottles.com/" target="_blank">Bottles</a>, <a href="https://lutris.net/" target="_blank">Lutris</a> and the <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Launcher</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/wine-8-1-released-another-year-of-windows-to-linux-translation/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/wine-8-1-released-another-year-of-windows-to-linux-translation/</guid>
-      <pubDate>Fri, 03 Feb 2023 12:01:47 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-      <category>Wine</category>
-      
-    </item>
-    
-    <item>
-      <title>OBS Studio 29.0.1 rolls out with many bug fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>OBS Studio 29.0.1 is out now and a worthwhile upgrade for any of you doing video content on Linux, as it fixes many problems from the previous release.</p>
-<p>Here's some Linux specific problems that were solved:</p>
-<blockquote>
-<ul>
-<li>Fixed a bug where overriding the theme on Linux could cause the program not to start up.</li>
-<li>Fixed software rendering not working properly on Linux.</li>
-<li>Fixed a bug where Linux captures would not work correctly on X11.</li>
-<li>Fixed a crash on Linux when using Wayland and trying to use the automatic scene switcher.</li>
-</ul>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16997329481675422298gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16997329481675422298gol1.jpg"/></a></p>
-<p>The rest of the fixes are:</p>
-<blockquote>
-<ul>
-<li>Fixed the "NVIDIA AUDIO Effects SDK is outdated" message appearing on the noise reduction filter properties when the SDK wasn't installed.</li>
-<li>Fixed a crash that could happen if you use NVIDIA's audio effect filters and then later uninstall the SDK.</li>
-<li>Fixed the expander and upward compressor audio filters sounding distorted.</li>
-<li>Added "Knee Width" option to the upward compressor audio filter to improve quality.</li>
-<li>Fixed a bug where the Stats window/panel would show an incorrect disk space calculation when pausing recordings.</li>
-<li>Fixed a bug on Windows where the "Force SDR" setting in window capture wasn't showing up.</li>
-<li>Fixed a bug on macOS where the virtual camera would show up red.</li>
-<li>Fixed a bug where alpha wouldn't output properly when setting OBS to use BGRA color format.</li>
-<li>Fixed a crash on startup when OBS was minimized.</li>
-<li>Fixed a bug where projectors could look washed out when projecting SDR content while using an HDR display.</li>
-<li>Fixed a bug on Windows where secondary displays could sometimes not show up in the display capture properties.</li>
-<li>Fixed a crash when using the virtual camera as an OBS source and changing the canvas resolution.</li>
-<li>Fixed a bug on macOS where the properties window would go behind the main window after opening a file selection dialog.</li>
-<li>Fixed a bug where profile encoder settings would not properly update when switching between services that require a different encoder.</li>
-<li>Fixed a bug in custom ffmpeg output mode where RTMP would force certain encoders.</li>
-</ul>
-</blockquote>
-<p>See more on <a href="https://github.com/obsproject/obs-studio" target="_blank">GitHub</a> and the <a href="https://obsproject.com/" target="_blank">official site</a>.</p>
-<p>Are there any particular issues you're wanting to see solved? It seems the recent 29.0.0 release at least solved my audio sometimes being completely broken on recordings from USB capture so that's been a big improvement for me.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/obs-studio-2901-rolls-out-with-many-bug-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/obs-studio-2901-rolls-out-with-many-bug-fixes/</guid>
-      <pubDate>Fri, 03 Feb 2023 11:06:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1002059363id22272gol.jpg" type="image/jpeg"/>
-      
-      <category>Apps</category>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Nordic Ashes: Survivors of Ragnarok is a Norse inspired horde survival rogue-lite</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Nordic Ashes: Survivors of Ragnarok is yet another survivor game in the spirit of Vampire Survivors, except this has a Nordic theme to it and it's now on Steam with Native Linux support. It's also Steam Deck Verified.</p>
-<p>The developer sent a copy to my Steam Curator and I've been playing it a fair bit since I love these <a href="https://www.gamingonlinux.com/2022/09/a-genre-is-born-horde-games/" target="_blank">horde games</a>, and being a huge <a href="https://www.gamingonlinux.com/2022/12/my-game-of-the-year-2022-is-the-steam-deck/" target="_blank">Brotato</a> fan I was keen to see more variations on it. </p>
-<p>Here it's has the similar mechanics of running around an arena, collecting things from enemies to level up and buffing up your character. However, unlike most others in the genre, it's not about building up a big assortment of weapons to unleash hell on your screen. Nordic Ashes is a bit more tame, with more of a focus on surviving and boosting your main weapon.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/21252723791675357208gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21252723791675357208gol1.jpg"/></a><em>Runs great out of the box on Fedora Linux.</em></p>
-<p>As you go through each map you level up, upgrade skills and when you die or finish a level there's some meta-progression to on the legendary Norse tree Yggdrasil but building that up can take quite a few hours of grindy gameplay. This is a lot more based on movement skill to avoid enemies and carefully picking your upgrades, compared with trying to be a truly overwhelming force like other similar titles where half the screen is covered by special effects. To some it might be better, but if you're really into the insane over-the-top action of the other titles this may not be for you. But for a somewhat slower and calmer experience it may be a good match.</p>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Explore the 9 Realms, each of them based on a world connected by Yggdrasil, the legendary Norse Tree.</li>
-<li>Different characters, with exclusive abilities and weapons depending on their role.</li>
-<li>Constellation Ability Trees to upgrade your survivor’s powers.</li>
-<li>Design the most powerful builds.</li>
-<li>Bosses with their own behaviours to make battles more epic.</li>
-<li>Dozens of Relics to unlock.</li>
-<li>Yggdrasil upgrades as a meta-progress.</li>
-<li>Exclusive Early Access skins!</li>
-<li>Play using mouse &amp; keyboard or controller.</li>
-</ul>
-</blockquote>
-<div class="hidden_video" data-video-id="EGH0AroHPa8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b02e75b91f68213401b4f45a7f9fcaaa.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/EGH0AroHPa8" target="_blank">See video</a></div></div>
-<p>Available on <a href="https://store.steampowered.com/app/2068280/Nordic_Ashes_Survivors_of_Ragnarok/" target="_blank">Steam in Early Access</a> with Native Linux support.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/nordic-ashes-survivors-of-ragnarok-norse-horde-survival-rogue-lite/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/nordic-ashes-survivors-of-ragnarok-norse-horde-survival-rogue-lite/</guid>
-      <pubDate>Thu, 02 Feb 2023 17:06:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1136448801id22271gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-      <category>Rogue-lite</category>
       
     </item>
     
