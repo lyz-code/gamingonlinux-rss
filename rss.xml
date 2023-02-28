@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-02-27 07:27:09.537440</pubDate>
+    <pubDate>2023-02-28 07:27:08.877889</pubDate>
 
     
     <image>
@@ -18,6 +18,290 @@
     </image>
 
     
+    
+    <item>
+      <title>Building a Retro Linux Gaming Computer - Part 27: Lost Souls</title>
+      <author>Hamish</author>
+      <description><div class="content group e-content">
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-26-coming-to-you-live/" target="_blank">Part 26: Coming to You Live</a></strong></p>
+<p>I have mentioned before how I was unable to get Dave Taylor's original port of <em>Doom</em> to work as it was built as an outdated a.out binary rather than ELF. Since then, I stumbled on an article by Jason Heiss that describes how to load the binfmt_aout kernel module to attain a.out binary support, as well as installing the ld.so-1.9.5-13.i386.rpm and aout-libs-1.4-9.i386.rpm packages from earlier Red Hat Linux releases to provide the necessary libraries.</p>
+<p>Sure enough, with those in place the primordial Linux port of <em>Doom</em> works, albeit from an XFree86 server configured to run at only 8 bit colour depth. The other expected limitations apply such as the lack of any music, but the strangest issue I had was with the sound effects. On first launch I was hearing <em>Heretic</em> noises, as <em>Doom</em> was using the sndserver binary from the Linux Heretic source port installed in /usr/local/bin rather than its own. Replacing the sndserver solved the issue.</p>
+<p>Another spanner in the works is that the X11 version of <em>Doom</em> is in effect keyboard only. A launch parameter does exist to grab the mouse, but this is bugged; I did get my Perixx PERIMICE-209 WP working with SVGALib by modifying the ~/.doomrc file to have mousdev set to "/dev/psaux" and mousetype set to "PS2". Under X11 the game runs in a 320x200 window with no full screen option, but you can double or triple the pixels using the "-2" and "-3" parameters.</p>
+<p>The shareware release of <em>Doom</em> is included inside the linux-doom-1.8.tar.gz archive I used to install the xdoom and sdoom binaries. Explicit support is offered for the registered <em>Doom</em> and <em>Doom II</em>, with <em>Final Doom </em>possible as a set of add-on WADs. Demo playback only works with the shareware, producing version errors everywhere else. A mixed bag to be sure, but even before the <em>Doom</em> source code was opened, hackers were making improvements to the Linux version.</p>
+<p>A fan patch included in the udoom-1.1.tar.gz archive adds support for <em>The Ultimate Doom</em> and seems to fix the demos, while musserver.tgz even hacks in MIDI music through a separate musserver binary. I had to fake the /dev/sndstat device file, but it works. These changes would be mainlined after Bernd Kreimeier tidied up the Linux code for public release, but thanks to Dave Taylor's other studio Crack dot Com, I have another example of a.out insanity I can try as well.</p>
+<p style="text-align:center"> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7211078341676962040gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7211078341676962040gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13113369781676962061gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13113369781676962061gol6.png"/></a></p>
+<p>Several iterations of the Linux binaries for <em>Abuse</em> are available, but I opted to install the abuse-1.10-5.i386.rpm package as distributed by Red Hat. This provides a few niceties such as custom launch scripts installed into the /usr/games directory, as well as the original <em>Abuse</em> shareware data with the alien ants storyline. The X11 version<em> </em>launches in a 320x200 window also at 8 bit colour depth<em>,</em> but you can stop the cursor leaving the window with the "-grab_pointer" launch parameter.</p>
+<p>This is how <em>Abuse</em> was intended to be played, but you can toggle higher resolutions by using the "-size" parameter. This will disable the lighting engine, as well as exposing more of the level to the point of being considered a cheat by the developers. Due to this they also included a pixel doubling mode using the "-2" parameter that preserves the original viewing area and lighting at resolutions of 640x400 or above. I ran with 640x480 so I could hack full screen like I did with <em>Quake</em>.</p>
+<p>A few effects will still only flash in the 320x200 area, and I did have some redrawing issues when loading saved games, but these always resolved themselves on the second attempt. The other problem I had was with the sound effects, which only worked when abuse.x11 was launched with root privileges. Speaking of needing root, abuse.svga which uses SVGALib starts fine but then stalls at the cursor; I even tried using an old Mouse Systems serial mouse with it but no dice.</p>
+<p>If this sounds insecure, it is because it is. In fact, known privilege escalation exploits exist due to how the SVGALib version of <em>Abuse</em> executes its undrv and sndrv binaries. In some ways we should be grateful for such sloppiness, as it is how we got the SVGALib version of <em>Quake</em>. Dave Taylor only ported the game to X11, but thanks to the <em>Quake</em> source code being stolen from the Crack dot Com server, coder Greg Alexander was able to finish a port to SVGALib in just twenty four hours.</p>
+<p>Alexander even had the chutzpah to submit the patches to John Carmack, who graciously accepted them without the threat of legal action. Crack dot Com would show the same community spirit by opening up the <em>Abuse</em> source code and releasing most of the <em>Abuse</em> shareware assets into the public domain. This allowed for the creation of enhanced source ports to Linux such as Abuse-SDL, as well as the fRaBs level set using the shareware assets. If only all games could be as lucky.</p>
+<p><strong>Carrying on in Part 28: Losing My Marbles</strong></p>
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a> </strong></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-27-lost-souls/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-27-lost-souls/</guid>
+      <pubDate>Mon, 27 Feb 2023 19:30:02 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1979633915id22340gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Demo</category>
+      
+      <category>Editorial</category>
+      
+    </item>
+    
+    <item>
+      <title>Flathub seeks funding to add payments, donations and subscriptions</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Making the rounds recently is a proposal being made to add in payments, donations and subscriptions options to <a href="https://flathub.org" target="_blank">Flathub</a>.</p>
+<p>The proposal is available on the Plaintext Group <a href="https://github.com/PlaintextGroup/oss-virtual-incubator/blob/main/proposals/flathub-linux-app-store.md" target="_blank">GitHub</a>, which was submitted by Robert McQueen, who is CEO of the Endless OS Foundation and GNOME Board President. For some context here Plaintext Group are "a nonpartisan, technology innovation policy initiative being developed by Schmidt Futures" (Schmidt Futures was founded by ex Google CEO Eric Schmidt).</p>
+<p>As per the proposal they're trying to incentivize more "participation in the Linux application ecosystem, and remove financial barriers that prevent diverse participation" and they've already been working on adding in donations and payments on Flathub via Stripe and verify developers too with this year moving onto adding in subscriptions, reoccurring donations, new review tools to prevent abuse, automated security scanning and more to eventually have Flathub become self-sustaining. This is a joint effort between GNOME and KDE.</p>
+<p>What they're trying to do is get extra funding to help towards their goal of expanding Flathub, as explained in the proposal they're seeking $100,000 USD from the Plaintext Group to cover the remaining budget needed to enable all this.</p>
+<p>To note: this proposal has actually been there since November 2022, when the proposal itself was accepted into the GitHub repository for consideration.</p>
+<p>What do you think to this? Especially interesting with Canonical recently going on the opposite direction by having Ubuntu <a href="https://www.gamingonlinux.com/2023/02/ubuntu-flavours-to-drop-flatpak-by-default-and-stick-to-snaps/" target="_blank">flavours remove Flatpak by default</a>.</p>
+<p><em>Flathub is also going through a <a href="https://blog.jimmac.eu/2023/flathub-brand-refresh/" target="_blank">rebranding</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/flathub-seeks-funding-to-add-payments-donations-and-subscriptions/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/flathub-seeks-funding-to-add-payments-donations-and-subscriptions/</guid>
+      <pubDate>Mon, 27 Feb 2023 12:35:12 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1567823203id22381gol.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Kubuntu Focus announce the second-gen mini desktop Focus NX</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Need some power in a small box with full Linux support? The Kubuntu Focus team recently revealed their second-generation Focus NX. This is a small form factor desktop that comes with Kubuntu (KDE Plasma desktop) 22.04 LTS.</p>
+<p>Coming with either a Intel Core i7-1240P or i7-1260P (base model), it can be fitted with up to 64GB 3200Mhz RAM (8GB base model) and 2TB NVMe (250GB base model). Seems overall like a nice unit, and when you take into account pricing on all the parts together with dedicated Linux support. Pricing starts at $795 and it's basically a branded a pre-configured Intel Wallstreet Canyon NUC.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20746527091677498438gol1.jpeg"/></p>
+<p>It comes filled with these ports:</p>
+<ul>
+<li>1 x Intel Wi-Fi 6E AX211 Gig+, up to 2.4 Gbit/s 802.11 ax</li>
+<li>1 x Bluetooth 5.3</li>
+<li>3 x USB-A 3.2 (2 in front, one in rear)</li>
+<li>1 x USB-A 2.0 (rear)</li>
+<li>1 x Audio Jack 3.5mm Headphone + Mic (front)</li>
+<li>2 x Thunderbolt™ 4 / USB-C with DisplayPort 1.4a (rear)</li>
+<li>2 x HDMI 2.1 (rear)</li>
+<li>1 x RJ-45 Intel i225-V 2.5 GbE LAN (rear)</li>
+<li>1 x Kensington Lock Mount</li>
+<li>1 x Cable Management Bracket</li>
+<li>1 x VESA Monitor-Mount Bracket</li>
+</ul>
+<p>From their Press Release:</p>
+<p>“We feel the NX GEN 2 is a great replacement for 2- or 3-year-old high-performance systems: its CPU performance is excellent, yet it is far quieter and uses much less space and power,” says Michael Mikowski, General Manager. “The second generation improves on the first with better single- and multi-core performance, greater expandability, and updated ports.”</p>
+<p>“Of course, the excellent hardware is only half of the story. Like with all our systems, we constantly test and distribute hardware optimizations through regular package upgrades. For example, the hardware-support subsystem for the NX GEN 2 adjusts the iGPU configuration to minimize flicker and maximize performance. We also ensure the system and kernel configuration is eGPU-ready and tested.”</p>
+<p>They currently only ship to the US and Canada. </p>
+<p>See more on <a href="https://kfocus.org/spec/spec-nx.html" target="_blank">their website</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/kubuntu-focus-announce-the-second-gen-mini-desktop-focus-nx/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/kubuntu-focus-announce-the-second-gen-mini-desktop-focus-nx/</guid>
+      <pubDate>Mon, 27 Feb 2023 12:00:25 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1999434734id22380gol.jpg" type="image/jpeg"/>
+      
+      <category>Hardware</category>
+      
+      <category>KDE</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Wayland driver for Wine is getting closer</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Back <a href="https://www.gamingonlinux.com/2022/12/wine-on-wayland-sounds-like-its-coming-along-nicely/" target="_blank">late last year</a>, Collabora developer Alexandros Frantzis blogged about a whole lot of work going into getting full Wayland support for Wine and now a big first step towards it being included in Wine is happening.</p>
+<p>Frantzis has now put up a <a href="https://gitlab.winehq.org/wine/wine/-/merge_requests/2275" target="_blank">Merge Request</a>, to have the first of many parts begin to be included in Wine. This first part "introduces the Wayland driver PE and unixlib components with some basic code, and prepares the makedep tool to be able to handle Wayland protocol files".</p>
+<p>So right now, it's not too exciting for end-users but a big step in the right direction and will lead to more being included, to then eventually having a full Wayland driver for Wine included. Frantzis mentioned Part 2 will include "basic Wayland wl_output (i.e., display) events and populate the Wine monitor information".</p>
+<p>It's being done in parts since it's quite large and their goal is just to make it easier for people to review the code and suggest improvements as they go along. Seems like a sane idea.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/wayland-driver-for-wine-is-getting-closer/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/wayland-driver-for-wine-is-getting-closer/</guid>
+      <pubDate>Mon, 27 Feb 2023 11:41:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+      <category>Upcoming</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Beat Hazard 3 gets a &#34;Huge&#34; optimization for Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Beat Hazard 3 is a music-driven twin-stick shooter currently in Early Access, and it should now play a whole lot better on Steam Deck. Released initially back in November 2022, it still has a good while left in Early Access so more work is to be done but some fun stuff landed recently.</p>
+<p>In an update released on February 23rd, Steam Deck owners will enjoy the <a href="https://steamcommunity.com/games/1493520/announcements/detail/3637256961022123671" target="_blank">patch</a> notes:</p>
+<blockquote>
+<ul>
+<li>Huge fps optimisation for Steam Deck. The game should now run at 60fps on Steam Deck. Please use the 'Steam Deck Optimised' launch option.</li>
+<li>Added option to disable motion blur.</li>
+<li>Graphic detail setting should now have a marked effect on lower spec machines without compromising visual quality so much.</li>
+</ul>
+</blockquote>
+<p>I'm going to have to take a look at this one…it looks absolutely crazy.</p>
+<div class="hidden_video" data-video-id="bocs5IZb1Ww"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cae440d070014453d58f0f2c94cee972.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/bocs5IZb1Ww" target="_blank">See video</a></div></div>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li>Awesome arcade action powered by YOUR music! It's time to explore and relive the joy of listening to your music collection, each song will have its own unique ebb and flow based on the music.</li>
+<li>Use your music to create a vast explorable galaxy of music! Discover new ships and upgrades as you journey through the cosmos.</li>
+<li>Build and upgrade your mothership and travel the stars. Your galactic fortress awaits.</li>
+<li>Unreal Engine: Upgraded blistering visuals that pump and blast to the beat of the music.</li>
+<li>Boss and Player ships are procedurally created by your music! Taking music powered gameplay to the next level.</li>
+<li>Compatible with any premium music service via 'Open Mic' mode allowing you to play to any music source, e.g. Spotify, Amazon Music.</li>
+</ul>
+</blockquote>
+<p>You can buy it on <a href="https://www.humblebundle.com/store/beat-hazard-3?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1493520/Beat_Hazard_3/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/beat-hazard-3-gets-a-huge-optimization-for-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/beat-hazard-3-gets-a-huge-optimization-for-steam-deck/</guid>
+      <pubDate>Mon, 27 Feb 2023 11:28:39 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1221983328id22378gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Humble Store</category>
+      
+    </item>
+    
+    <item>
+      <title>ScummVM 2.7.0 &#39;The Real Slim Shader&#39; supports even more classics</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://www.scummvm.org/" target="_blank">ScummVM</a> 2.7.0, The Real Slim Shader, is officially out now bringing more compatibility for retro titles to modern platforms so here's what's new. What exactly is ScummVM? To put it simply: it's a whole set of different open source game engines under one roof, with each focusing on a different type of retro games.</p>
+<p>First up, there's some fresh titles that had support added in 2.7.0 including:</p>
+<ul>
+<li>Soldier Boyz</li>
+<li>Obsidian</li>
+<li>Pink Panther: Passport to Peril</li>
+<li>Pink Panther: Hokus Pokus Pink</li>
+<li>Adibou 2 "Environment", "Read/Count 4 &amp; 5" and "Read/Count 6 &amp; 7"</li>
+<li>Driller/Space Station Oblivion</li>
+<li>Halls of the Dead: Faery Tale Adventure II</li>
+<li>Chop Suey, Eastern Mind, and 16 other Director 3 and Director 4 titles</li>
+</ul>
+<p>On top of that they've improved support for the Broken Sword series and there's new translations including support added for: Chinese, Japanese and Korean versions of many games. Portability was also a focus this time around with a bunch of platforms revived to work with it including: RetroMini RS90 (using OpenDingux), 1st generation Miyoo (New BittBoy, Pocket Go and PowKiddy Q90-V90-Q20) with TriForceX MiyooCFW, Miyoo Mini, KolibriOS, 26-bit versions of RISC OS and Nintendo 3DS.</p>
+<p>There's new shader-based scalers, going with their codename "The Real Slim Shader", so they say you can now again enjoy the "warm glow of CRTs shining on your face" and they ship with a curated set of shaders taken from LibRetro.</p>
+<p>Lastly another highlight is pre-defined random number seeds so people can have reproducible runs in certain games, useful for speedrunners.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/scummvm-270-the-real-slim-shader-supports-even-more-classics/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/scummvm-270-the-real-slim-shader-supports-even-more-classics/</guid>
+      <pubDate>Mon, 27 Feb 2023 11:18:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/scummvm.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+      <category>Retro</category>
+      
+    </item>
+    
+    <item>
+      <title>Open source tabletop game simulator gets a second Beta release</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Free, open source and getting better all the time. Tabletop Club has a fresh Beta release available with a whole lot of fixes and improvements.</p>
+<p>A way to play various tabletop games and do what you want with it because it's FOSS, what's not to love? No account registration needed either — that might be one of the greatest things about it, no fussing around to get people together to play a few games.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16639459441677495592gol1.jpg"/></p>
+<p>Here's just some of what's been added:</p>
+<blockquote>
+<ul>
+<li>Added 32-bit executables for Windows and Linux.</li>
+<li>Can now connect to a custom master server using the --master-server and --ssl-certificate arguments. </li>
+<li>Added blank square-shaped tokens to the default asset pack. </li>
+<li>Added screenshots to the README, and the index page of the documentation. </li>
+<li>Added the name property for assets, allowing them to be imported under a name different to that of the file name. </li>
+<li>Can now use wildcards at the beginning of section names in config.cfg. </li>
+<li>Added a shortcut for shuffling stacks. </li>
+<li>Can now double-click items in menus to activate them, e.g. objects, save files. </li>
+<li>Added an “All” option for the pack and type drop-downs in the objects menu. </li>
+<li>Added a degree symbol and tooltip text to the rotation drop-down. </li>
+<li>Can now flip, reset the orientation of, and rotate objects that are not being hovered. </li>
+<li>More operations now create undo states. </li>
+<li>Added a shortcut for rotating objects. </li>
+<li>Added an option to make speakers and timers emit sound non-positionally, which is the new default. </li>
+<li>Can now set the value of die on the table from the context menu. </li>
+<li>Added a separate directory in asset packs for boards to distinguish them from pieces. </li>
+<li>Added the name of objects to the tooltip when hovering over them in the objects menu. </li>
+<li>Updated the Cabin font to include more Latin characters. </li>
+<li>Updated translations from the community.</li>
+<li>Can now play the game in Esperanto and Italian.</li>
+<li>Old asset and cache files that are no longer used are now removed from the user:// directory. </li>
+<li>Added a details button to the context menu. </li>
+<li>Added a way to configure the automatic centre-of-mass adjustment for 3D models. </li>
+</ul>
+</blockquote>
+<p>See more on <a href="https://drwhut.itch.io/tabletop-club" target="_blank">itch.io</a> and <a href="https://github.com/drwhut/tabletop-club" target="_blank">GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/open-source-tabletop-game-simulator-gets-a-second-beta-release/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/open-source-tabletop-game-simulator-gets-a-second-beta-release/</guid>
+      <pubDate>Mon, 27 Feb 2023 11:08:26 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2042592567id22376gol.jpg" type="image/jpeg"/>
+      
+      <category>Beta</category>
+      
+      <category>Board Game</category>
+      
+      <category>DRM-Free</category>
+      
+      <category>Free Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Reminder: Update your PC info for the next round of statistics updates</title>
+      <author>gamingonlinux</author>
+      <description><div class="content group e-content">
+<p>This is the public once a month reminder to make sure your PC information is correct on your user profiles. A fresh batch of statistics is generated on the 1st of each month. Also a good reminder of our stats system for people who don't know about it.</p>
+<p><em>You need to be logged in to see when you last updated your PC info!</em></p>
+<p>You can see the statistics any time <a href="https://www.gamingonlinux.com/users/statistics" target="_blank">on this page</a>.</p>
+<p>PC Info is automatically purged if it hasn't been updated, or if you don't click the link to remain in for 5 years. This way we prevent too much stale data and don't hold onto your data for longer than required. If this is still correct and it has been a long time since you updated, you can simply <strong><a href="#" id="pc_info_update" target="_self">click here to continue</a> to be included</strong>. If this isn't correct, <a href="/usercp.php?module=pcinfo" target="_blank">click here to go to your User Control Panel to update it!</a></p>
+<div class="all-ok" id="pc_info_done"></div>
+<p>While you're here: is there anything you want to see from this? Any big changes you think should be done? Things to make it more useful? Comment away.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/update-pc-info-202302/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/update-pc-info-202302/</guid>
+      <pubDate>Mon, 27 Feb 2023 10:54:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Site Info</category>
+      
+      <category>Survey</category>
+      
+    </item>
     
     <item>
       <title>X-Plane 12 now uses the open source Zink driver to help Plugins</title>
@@ -757,7 +1041,7 @@
 <p>Having gotten 3D acceleration to work, I decided to do my usual OpenGL test by loading <em>Quake III Arena</em> from the hard drive, which launched without complaint. I did encounter the same graphical glitches with shadows and marks on walls that I had experienced with Red Hat Linux 9 however, demonstrating beyond a doubt that there was a regression introduced into the driver upstream. Beyond this <em>Quake III Arena</em> ran beautifully from Knoppix.</p>
 <p>This qualified success got me wondering if could at long last also play the ultimate 2005 release of <em>Cube</em>, which did indeed also start up just fine. No graphical glitches were apparent, although the performance did seem to suffer in comparison to the earlier <em>Cube</em> release I had been playing. Whether this was due to increased graphical demands in the latest version of the game, or simply the fact I was running it from a live environment, I am unsure.</p>
 <p>While my principle interest in playing around with Knoppix was that of nostalgia, having a later Linux distribution on hand with support for applications on the other side of the glibc 2.3 boundary may well come in handy going forward. This is far from the only compatibility issue to have frustrated my attempts to get certain games to work in the past, but after having just previously dismissed the possibility of getting one of them running, I suddenly had a major breakthrough.</p>
-<p><strong>Carrying on in Part 27: Lost Souls</strong></p>
+<p><strong>Carrying on in <a href="https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-27-lost-souls/" target="_blank">Part 27: Lost Souls</a></strong></p>
 <p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a> </strong></p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
@@ -950,7 +1234,7 @@
 <li>OneXPlayer mini (AMD) and AOK ZOE A1 sensor support.</li>
 <li>Btrfs file system performance improvements.</li>
 <li>Various exFAT file system improvements.</li>
-<li>Apple Apple M1 Pro / Ultra / Max support.</li>
+<li>More work on Apple Apple M1 Pro / Ultra / Max support.</li>
 <li>Power management improvements for Alder Lake N and Raptor Lake P.</li>
 <li>Performance improvement for Intel Skylake.</li>
 <li>A driver for the ChromeOS human presence sensor.</li>
@@ -3710,313 +3994,6 @@ Splittown is a point-and-click adventure game inspired by 90s classics such as D
       <category>Arcade</category>
       
       <category>Emulation</category>
-      
-    </item>
-    
-    <item>
-      <title>Superfluous Returnz is an unnecessary video game of a useless superhero</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>French comedy point and click adventure Superfluous Returnz is all about a useless superhero and it's releasing on May 15th. Coming with Native Linux support, I must admit one particular scene in the trailer made me laugh a bit, probably more than it should have.</p>
-<p>An interesting thing about this one, is that it has a free and open source game engine made for it too named <a href="https://framagit.org/Gee/sosage" target="_blank">Sosage</a> (Superfluous Open Source Adventure Game Engine).</p>
-<div class="hidden_video" data-video-id="8-ksx13Q84A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ae9d0e5b0e77c5d62d80145a9b812f40.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/8-ksx13Q84A" target="_blank">See video</a></div></div>
-<blockquote>
-<p>The action takes place in Fochougny, a very quiet French village where billionaire Harpagon Lonion resides. He regularly disguises himself as Superfluous, a very useless superhero in such a peaceful countryside ...</p>
-<p>Helped by his assistant Sophie, who tries to somehow temper the enthusiasm of his employer, he will try to apprehend the mysterious apple thief who is terrorizing the orchards of Fochougny ...</p>
-</blockquote>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Immerse yourself in a colorful universe in the style of a 2D cartoon.</li>
-<li>Wander quietly through the village of Fochougny, an open world.</li>
-<li>Solve puzzles, pick up items, combine them, talk to people from Fochougny to try to figure out what happened.</li>
-<li>Play with the mouse in the best tradition of point-and-click games, or choose gamepad or keyboard controls.</li>
-<li>Enjoy finely cut dialogues and omnipresent humor (the quality of the jokes is non-contractual).</li>
-<li>Relax playing a game where you can't lose, die or get stuck (but where you can to tear your hair trying to solve some puzzles - hair implants are not provided).</li>
-<li>Text dialogues available in English and French.</li>
-</ul>
-</blockquote>
-<p>You can follow it on <a href="https://ptilouk.itch.io/superfluous-returnz" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1753370/Superfluous_Returnz/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/superfluous-returnz-unnecessary-video-game-of-a-useless-superhero/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/superfluous-returnz-unnecessary-video-game-of-a-useless-superhero/</guid>
-      <pubDate>Mon, 06 Feb 2023 13:07:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1764640779id22281gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Comedy</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>touchHLE is a new emulator for iPhone OS apps</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Want a way to emulate old Apple iOS apps and games? Well, <a href="https://github.com/hikari-no-yume/touchHLE" target="_blank">touchHLE</a> just had its first release to prevent some more things being lost to time.</p>
-<p>Platforms change and move on, often cutting off what came before. We've seen it time and time again with games consoles and with iOS being the closed platform it is plenty will get lost from it too. Perhaps not so much now if projects like touchHLE can keep advancing.</p>
-<blockquote>
-<p>touchHLE is a high-level emulator (HLE) for iPhone OS apps. It runs on modern desktop operating systems, and is written in Rust.</p>
-<p>As an HLE, touchHLE is radically different from a low-level emulator (LLE) like QEMU. The only code the emulated CPU executes is the app binary and a handful of libraries; touchHLE takes the place of iPhone OS and provides its own implementations of the system frameworks (Foundation, UIKit, OpenGL ES, OpenAL, etc).</p>
-</blockquote>
-<p>Currently it doesn't seem to have fully working Linux support, and it has been a solo effort so far but now it has a release up and it's available on <a href="https://github.com/hikari-no-yume/touchHLE" target="_blank">GitHub</a> I'm sure it won't be long until someone else hacks away at it to get Linux support into shape.</p>
-<p>Right now their main goal for the project is to support the earlier days of iOS like iPhone OS 2.x and mainly later 32bit versions with modern 64bit apps a non-goal and unlikely to be prioritised due to the complexity of it.</p>
-<p>You can see their example video below:</p>
-<div class="hidden_video" data-video-id="Blz7qJrZ-s8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f23b7120679539eb6a477944ad1ba5ca.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Blz7qJrZ-s8" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/touchhle-is-a-new-emulator-for-iphone-os-apps/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/touchhle-is-a-new-emulator-for-iphone-os-apps/</guid>
-      <pubDate>Mon, 06 Feb 2023 12:50:28 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/687476781id22280gol.jpg" type="image/jpeg"/>
-      
-      <category>Emulation</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Open source Transport Tycoon Deluxe remake OpenTTD v13.0 is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another classic free and open source game continues getting better, with the Transport Tycoon Deluxe remake OpenTTD version 13.0 out now. A business sim where you make money by  transporting passengers and cargo via road, rail, water, and air.</p>
-<p>Only a few months since the last major update, it's nice to see development so active on a quality game! This is also one of the biggest updates they've done for some time.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18777525491675686917gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18777525491675686917gol1.jpg"/></a></p>
-<p>Here's the highlights of what's new:</p>
-<blockquote>
-<ul>
-<li>Variable interface scaling at whatever size you want (not just 2x and 4x), with optional chunky bevels for that retro feel. This includes better automatic scaling when using HiDPI or mixed DPI setups.</li>
-<li>Direct access to NewGRF/AI/GS settings from the new game window.</li>
-<li>Various small tweaks and improvements to several windows.</li>
-<li>NewGRFs can now provide engine variants that are shown hierarchically in the purchase list.</li>
-<li>Multi-track level crossings to keep road vehicles from stopping in the middle of the crossing.</li>
-<li>Custom league tables for GameScripts.</li>
-<li>More natural rivers which get wider as they flow downstream.</li>
-<li>And much more including lots of bug fixes.</li>
-</ul>
-</blockquote>
-<p>I'm definitely looking forward to the scaling options, now being on a 1440p monitor. </p>
-<p>You can grab it from the <a href="https://www.openttd.org/" target="_blank">official site</a> and <a href="https://store.steampowered.com/app/1536610/OpenTTD/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/open-source-transport-tycoon-deluxe-remake-openttd-v130-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/open-source-transport-tycoon-deluxe-remake-openttd-v130-is-out-now/</guid>
-      <pubDate>Mon, 06 Feb 2023 12:38:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2103566436id22279gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Building Sim</category>
-      
-      <category>Dating Sim</category>
-      
-      <category>Free Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton 7.0-6 out now fixing EA App, Ubisoft Connect and games on Steam Deck / Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>More weekend goodies from Valve have arrived! Proton 7.0-6 is officially out now, fixing up many bugs like with the EA App and Ubisoft Connect. Pulling over a bunch of changes from Proton Experimental, this is a smaller release mainly aimed at fixing up issues across a bunch of games that appeared over the last few months.</p>
-<p>Here's a quick video overview with the full changelog below:</p>
-<div class="hidden_video" data-video-id="3MzMv8dK96E"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a25609696eb41cad69db8c741380a03d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3MzMv8dK96E" target="_blank">See video</a></div></div>
-<p>The full list of changes are:</p>
-<ul>
-<li>Now playable:
-<ul>
-<li>Gotham Knights</li>
-<li>UNCHARTED: Legacy of Thieves Collection</li>
-<li>Heroes of the Dark</li>
-<li>Super Arcade Racing</li>
-<li>Crazy Machines 3</li>
-<li>King under the Mountain</li>
-<li>NinNinDays2</li>
-<li>雀姬 (Mahjong ladies)</li>
-</ul>
-</li>
-<li>Fix Ubisoft Connect launcher failure caused by launcher update.</li>
-<li>Fix Septerra Core hanging on redistributables installation.</li>
-<li>Fix Persona 5 Royal crashing when creating game save data.</li>
-<li>Fix Vampire Survivors intermittent error message.</li>
-<li>Fix Super House of Dead Ninjas, Enemy Mind, and Out There Somewhere frame hitching every few seconds.</li>
-<li>Fix Zeepkist freezing when using controller.</li>
-<li>Fix Overcooked! All You Can Eat being unable to add a second controller-using player.</li>
-<li>Fix Quake III: Arena and Quake III: Team Arena displaying weird texture over the menu.</li>
-<li>Fix the new EA launcher displaying a blank window.</li>
-<li>Fix Marvel Snap not being able connect to online services.</li>
-<li>Fix Microsoft Flight Simulator crashing during longer flights.</li>
-<li>Fix Microsoft Flight Simulator not displaying live traffic.</li>
-<li>Fix Microsoft Flight Simulator not starting after a recent game update.</li>
-<li>Fix Microsoft Flight Simulator crashing when starting next to big cities.</li>
-<li>Fix Sackboy: A Big Adventure failing to start the first time it's launched.</li>
-<li>Fix Spyro Reignited Trilogy playing intro video in a wrong language.</li>
-<li>Fix Jurassic World Evolution 2 bad performance with recent Proton versions.</li>
-<li>Fix multiple monitor support in Project Cars 2 and Project Cars 3.</li>
-<li>Fix Korean not being rendered correctly in Romance of the Three Kingdoms XIII launcher.</li>
-<li>Fix multiple languages not rendering correctly in Sins of a Solar Empire: Rebellion.</li>
-<li>Fix Lost Lands: Dark Overlord, Lost Lands: Dark Lord, Lost Lands: Redemption, and Haunted Hotel: Silent Waters Collector's Edition crashing when trying to set a wallpaper.</li>
-<li>Fix video playback regression with Chronos: Before the Ashes.</li>
-<li>Improve video playback with OUTRIDERS and ToGather: Island.</li>
-<li>Update wine-mono to <a href="https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-7.4.0" target="_blank">7.4.0</a>.</li>
-<li>Update dxvk-nvapi to <a href="https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.6" target="_blank">v0.6</a>.</li>
-</ul>
-<p>All changes can be seen on the official Valve <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">Proton GitHub</a> page.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/steam-deck-linux-proton-7-0-6-ea-ubisoft/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/steam-deck-linux-proton-7-0-6-ea-ubisoft/</guid>
-      <pubDate>Fri, 03 Feb 2023 20:52:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1212298650id22278gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Handshakes is a free sokoban puzzler about two hands meeting</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Sometimes a good firm handshake is what's needed and someone decided to turn that idea into a free puzzle game with Handshakes.</p>
-<p>Released back in January, this delightful little puzzler has 30 levels of arm-stretching that ranges from easy at the start up to palm-sweaty brain-teasingly difficult. Always playful though, I ended up cutting off one of my hands in some levels — woops. A genuine delight to randomly come across when looking for something new to play through. It won't take you too long to beat unless you're an idiot like me.</p>
-<p>It's clever, because you're controlling multiple hands that need to meet, and you need to push boxes out of the way, open doors and more. Simple ideas but wonderfully made, what a gem.</p>
-<div class="hidden_video" data-video-id="DO1U9nyjUqs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/966762e399571b94b9ebd648d1989540.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/DO1U9nyjUqs" target="_blank">See video</a></div></div>
-<p>It gets a firm shake from me.</p>
-<p><em>Lots of people seem to like this one too with an Overwhelmingly Positive rating on Steam!</em></p>
-<p>Go shake some hands over on <a href="https://petpumpkin.itch.io/handshakes" target="_blank">itch.io</a> or <a href="https://store.steampowered.com/app/2171690/Handshakes/" target="_blank">Steam</a>. It has a Native Linux version too.</p>
-<p>The developer is also making an expanded version now too named <a href="https://store.steampowered.com/app/2245130/Handshakes_Hands_On/" target="_blank">Handshakes: Hands On</a> that will have lots of new levels and plenty of new game mechanics to tickle those fingers with.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/handshakes-free-sokoban-puzzler-about-two-hands-meeting/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/handshakes-free-sokoban-puzzler-about-two-hands-meeting/</guid>
-      <pubDate>Fri, 03 Feb 2023 14:58:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1286866086id22277gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Free Game</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Itch.io</category>
-      
-    </item>
-    
-    <item>
-      <title>Prison Architect: Jungle Pack releases soon with another free update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Paradox continue the DLC train here with Prison Architect: Jungle Pack announced for release on February 7th along with a free update for all players.</p>
-<p>For the free update named The Jailhouse, they said it will include quality of life improvements including changes to guard behaviour, improvements to quick build materials, a small makeover of the deployment scheduler and the addition of Toby, a Yorkshire Terrier dog. The update also re-balances the Identity Thief reputation and other in-game effects.</p>
-<p>As for the DLC here's what you can expect from it:</p>
-<blockquote>
-<ul>
-<li><strong>It’s a prison, in a jungle! - </strong>Enjoy some wooden furniture, five new flooring types (one specific for water!), one outdoor cinema plus new walls and doors: all is set to thrive in the jungle.</li>
-<li><strong>Tropical fever (and how to survive it) - </strong>Tropical fever can spread among inmates. Luckily, you can fight and manage it with netted beds, fire pits, and a new, cutting-edge medical program.</li>
-<li><strong>A different environment - </strong>In the jungle, you will find new trees, which you can farm and sell, or chop down for lumber. Some wood variants for guard towers, drains, etc. are also available.</li>
-</ul>
-</blockquote>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="01PrSv2ZXPw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/29ee41f36e0095ed0cdb5f7db21a98f5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/01PrSv2ZXPw" target="_blank">See video</a></div></div>
-<p>You can buy Prison Architect from <a href="https://af.gog.com/game/prison_architect?as=1636858786" target="_blank">GOG</a>, <a href="https://www.humblebundle.com/store/prison-architect?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/233450/Prison_Architect/?curator_clanid=4218320" target="_blank">Steam</a>. It has Native Linux support and Valve tagged it as Steam Deck Playable (but not fully Verified).</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/prison-architect-jungle-pack-releases-soon-with-another-free-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/prison-architect-jungle-pack-releases-soon-with-another-free-update/</guid>
-      <pubDate>Fri, 03 Feb 2023 14:25:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1572427215id22276gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Building Sim</category>
-      
-      <category>DLC</category>
-      
-      <category>GOG</category>
-      
-    </item>
-    
-    <item>
-      <title>Inspired by the classic SimTower, build up high with Property Pro</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Property Pro is an upcoming game from SimDevs, with an aim to capture the classic feel of SimTower from the 90s. With a hint of the character styling from Prison Architect and RimWorld, the idea sounds good.</p>
-<p>You'll get to build a properly from scratch or purchase a used one, which may came with a whole bunch of hidden issues you need to deal with. Lots of different types of rooms to build, special guests, surprise inspects and many other challenges are planned to be included.</p>
-<p>See some screenshots below, click them to make them bigger:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16210584961675428759gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16210584961675428759gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12879636771675428761gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/12879636771675428761gol1.jpg"/></a></p>
-<p>Writing on <a href="https://twitter.com/SimDevs/status/1618340598624440322" target="_blank">Twitter</a>, the developer said:</p>
-<blockquote>
-<p> </p>
-</blockquote>
-<blockquote>
-<p>As a child, I was captivated by SimTower even though I didn't fully understand how to play the #game. Now that I'm older, my goal is to recreate what it felt like playing the game from those cherished memories.</p>
-</blockquote>
-<p><em>That really spoke to me, I remember enjoying what little of it I understood back then too…</em></p>
-<p>Seems like it's worth keeping an eye on, if you love management style games.</p>
-<p>You can <a href="https://store.steampowered.com/app/1721000/Property_Pro/" target="_blank">follow it on Steam</a>. It will have Native Linux support just like their previous game <a href="https://store.steampowered.com/app/810590/Area_86/" target="_blank">Area 86</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/inspired-by-the-classic-simtower-build-up-high-with-property-pro/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/inspired-by-the-classic-simtower-build-up-high-with-property-pro/</guid>
-      <pubDate>Fri, 03 Feb 2023 12:55:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1280679794id22275gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Building Sim</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Simulation</category>
-      
-    </item>
-    
-    <item>
-      <title>Going to live my dream of Fifth Element flying cars in MiLE HiGH TAXi</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Remember the classic sci-fi movie Fifth Element? I sure do and I only watched it <em>again</em> recently, where memories came flowing back of how I used to want those flying cars. Well, one game developer clearly loved it too and they're soon releasing MiLE HiGH TAXi.</p>
-<p>The developer mentions it shouldn't take players long to get to grips with the controls, and you can expect a "pulse-pounding ride" where you'll "encounter a cast of hilarious and chatty pedestrians, as well as impatient and over-the-top passengers" as you try to avoid all sorts of obstacles.</p>
-<p>It's a mixture of Crazy Taxi, with mechanics inspired by Fifth Element and I honestly can't wait to try it out. Created by solo dev Cassius John-Adams, it's looking impressive as you'll see in the below trailer:</p>
-<div class="hidden_video" data-video-id="Xzs46WdaMkg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b0a20d05eef4f561a76f6edaa9f54f23.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Xzs46WdaMkg" target="_blank">See video</a></div></div>
-<p>It has a few different game modes too:</p>
-<blockquote>
-<ul>
-<li>In regular mode, strategize to pick up and drop off passengers in efficient ways, maximizing your earnings and extending your game time and career.</li>
-<li>In Challenge mode, you'll face increasingly difficult challenges as you deliver passengers sequentially to level up.</li>
-<li>In Free Roam mode, you'll be able to explore the city with no time limits or passenger pickups, discovering hidden shortcuts and other secrets as you go.</li>
-</ul>
-</blockquote>
-<p>The developer plans to release it on March 13th, with Native Linux support and it is Steam Deck Verified ahead of release.</p>
-<p>Follow it <a href="https://store.steampowered.com/app/1366560/MiLE_HiGH_TAXi/" target="_blank">on Steam now</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/going-to-live-my-dream-of-fifth-element-flying-cars-in-mile-high-taxi/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/going-to-live-my-dream-of-fifth-element-flying-cars-in-mile-high-taxi/</guid>
-      <pubDate>Fri, 03 Feb 2023 12:13:39 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2128130723id22274gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Racing</category>
       
     </item>
     
