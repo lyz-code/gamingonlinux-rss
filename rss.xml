@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-02-28 07:27:08.877889</pubDate>
+    <pubDate>2023-03-01 07:26:44.326495</pubDate>
 
     
     <image>
@@ -18,6 +18,295 @@
     </image>
 
     
+    
+    <item>
+      <title>JSAUX makes more Steam Deck backplate colours available</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Want to give your Steam Deck a bit more colour and customization? The new coloured translucent backplates from JSAUX are <a href="https://jsaux.com/products/transparent-back-plate-for-steam-deck-pc0106?variant=43781193269468" target="_blank">available</a> to order.</p>
+<p>They're now available in: Brown, Purple, Blue, Green and Red at $29.99 with a Crystal (Clear) version coming sometime later. They're also offering a discount to people who already picked up the original Brown version. All of them come with a set of buttons you can pick from, anti-static finger gloves, screws, a screwdriver and a stick to help you get the backplate off.</p>
+<p>This and a whole lot more, including a first-look at the backplate they sent me, is in my below news round-up video:</p>
+<div class="hidden_video" data-video-id="LetMI8G3tcE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/85ee7b5d92dc1e125c7fd7dc1ef271ad.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/LetMI8G3tcE" target="_blank">See video</a></div></div>
+<p>The backplate does look great but the metal pad on it does get very warm. If you want it to properly reduce temperatures other than the real small amount it does by itself, it really would need something additional on top of it to keep pulling the heat away. Still, seems really nice overall. Would be interesting if they eventually did a version without the metal plate on the back and a frontplate too.</p>
+<p><em>I've reached out to their PR team to see if I will be getting the other colours to take a look at too.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/jsaux-makes-more-steam-deck-backplate-colours-available/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/jsaux-makes-more-steam-deck-backplate-colours-available/</guid>
+      <pubDate>Tue, 28 Feb 2023 16:51:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1642919755id22389gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Hardware</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA 530.30.02 mainline Beta driver rolls out, plus a new Vulkan Beta driver</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA has released two new Beta drivers for Linux recently, so here's your usual rundown of what's new and changed.</p>
+<p>First up is the <a href="https://www.nvidia.co.uk/download/driverResults.aspx/200095/en-uk" target="_blank">Beta 530.30.02</a>, which is for their normal mainline consumer drivers. Here's all that's changed:</p>
+<blockquote>
+<ul>
+<li>Added an application profile to avoid performance problems in Xfce 4 when the OpenGL compositor backend is enabled along with G-SYNC.</li>
+<li>Added support for suspend and resume when using GSP firmware.</li>
+<li>Moved the nvidia-settings application icon into the 'hicolor' icon theme, which allows it to be customized by other icon themes selected in the desktop environment.</li>
+<li>Fixed a bug that prevented PRIME render offload from working for Wayland applications when running on a system with an AMD iGPU.</li>
+<li>Fixed a bug that prevented nvidia-installer from recording kernel log output to the installer log in some module loading failure paths.</li>
+<li>Changed nvidia-installer to no longer use the $XDG_DATA_DIRS environment variable. XDG data files are now installed to a path specified by the --xdg-data-dir option, or /usr/share if not specified.<br/>
+This fixes a problem when Flatpak is installed that caused the installer to place the nvidia-settings.desktop file in /root/.local/share/flatpak/exports/share/applications.</li>
+<li>Changed the behavior of glXGetRefreshRateSGI() for non-integer refresh rates to round to the nearest whole number rather than truncating.</li>
+<li>Changed the compression format of the .run installer package from xz to zstd. This results in a smaller compressed package, and faster decompression performance. A fallback zstd decompressor is embedded into the installer package for systems which do not already have a zstd decompression program installed.</li>
+<li>Fixed a bug that caused nvidia-installer to mistakenly unload some already loaded non-NVIDIA kernel modules.</li>
+<li>Added compatibility for Linux kernels with Indirect Branch Tracking (IBT).</li>
+</ul>
+</blockquote>
+<p>NVIDIA <em>also</em> just recently released the Vulkan <a href="https://developer.nvidia.com/vulkan-driver" target="_blank">Beta 525.47.11</a> for <em>developers</em> that includes these changes:</p>
+<blockquote>
+<ul>
+<li>New:
+<ul>
+<li><a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_EXT_image_sliced_view_of_3d.html" target="_blank">VK_EXT_image_sliced_view_of_3d</a></li>
+</ul>
+</li>
+<li>Fixes:
+<ul>
+<li>Fixed issue with line stipple pattern when line stipple enable is dynamic.</li>
+<li>Vulkan Video fixes:
+<ul>
+<li>Fix an issue where the driver is incorrectly padded in-place the API provided bitstream buffer when the size of the buffer is smaller than 16 bytes.</li>
+<li>Fix an h.264 encoder bug with handling IDR pictures when the coded picture resolution changes.</li>
+<li>Fix an issue where in some session configuration cases an incorrect size is being reported for the required memory heap for the h.264 encoder session.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>That extension noted above was worked on by people from Valve, Igalia, Google and NVIDIA and it's described as allowing "creating 3D views of 3D images such that the views contain a subset of the slices in the image, using a Z offset and range, for the purpose of using the views as storage image descriptors. This matches functionality in D3D12 and is primarily intended to support D3D12 emulation" — so it's another that was created to help the likes of Proton.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/nvidia-5303002-mainline-beta-driver-rolls-out-plus-a-new-vulkan-beta-driver/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/nvidia-5303002-mainline-beta-driver-rolls-out-plus-a-new-vulkan-beta-driver/</guid>
+      <pubDate>Tue, 28 Feb 2023 16:24:45 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Beta</category>
+      
+      <category>Drivers</category>
+      
+      <category>Meta</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Collabora announce &#39;Mercury&#39; hand-tracking for open source XR runtime Monado</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After working on it for a while, Collabora developer Moses Turner has <a href="https://www.collabora.com/news-and-blog/news-and-events/monados-mercury-hand-tracking-now-ready-for-use.html" target="_blank">announced</a> that their "Mercury" hand-tracking for Monado, their open source XR runtime, is now ready for use.</p>
+<p>Since it's been a while after last talking about Monado: "Monado is an open source XR runtime delivering immersive experiences such as VR and AR on mobile, PC/desktop, and other devices. Monado aims to be a complete and conformant implementation of the OpenXR API made by Khronos. The project is currently being developed for GNU/Linux and aims to support other operating systems such as Windows in the near future."</p>
+<p>Work on the hand-tracking system has been going for over a year, and now ready for public use. Currently it works on the Valve Index, Windows Mixed Reality headsets (Reverb G2 v2 video below), Oculus Rift S (early support), and Luxonis cameras (video shows a OAK-D Pro W Dev mounted on a North Star). They said it "estimates hand pose accurately, supports limited hand-over-hand interactions, tracks fast hand movements, and is useable for drawing, typing and UI interaction".</p>
+<div class="hidden_video" data-video-id="dwJLUOj27eI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/88a5dec1ffad33e4f7ddb858e206f773.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/dwJLUOj27eI" target="_blank">See video</a></div></div>
+<p>Makes me continue to wonder if Valve will be using Monado for the <a href="https://www.gamingonlinux.com/2022/06/looks-like-valve-are-gearing-up-for-a-new-vr-headset/" target="_blank">long rumoured Deckard VR HMD</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/collabora-mercury-hand-tracking-open-source-xr-runtime-monado/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/collabora-mercury-hand-tracking-open-source-xr-runtime-monado/</guid>
+      <pubDate>Tue, 28 Feb 2023 15:29:35 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/630695613id22387gol.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+      <category>Virtual Reality</category>
+      
+    </item>
+    
+    <item>
+      <title>Paradox plan announcements next week, like a new game from Cities Skylines dev</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Paradox Interactive announced that on Monday, March 6th they will be announcing a whole bunch of new games and expansions.</p>
+<p>I'm cautiously excited as they said it will include new games from Harebrained Schemes (Shadowrun / BATTLETECH), Colossal Order (Cities Skylines) and Paradox Tectonic (led by industry veteran Rod Humble). Not just that there will also be new expansions for existing games, free updates and news from their own Paradox Arc publishing initiative.</p>
+<div class="hidden_video" data-video-id="HCbJZqnuNYg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5ca49cb654a786421aa04c32f81798c4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/HCbJZqnuNYg" target="_blank">See video</a></div></div>
+<p>From the press release:</p>
+<p>“I don’t want to say we have too many announcements, but it’s hard to choose which one has me most thrilled,” said Fredrik Wester, CEO of Paradox Interactive. “Talking directly with our players about our games, sharing their excitement for what’s coming next, comparing how many hours we’ve played - it’s something everyone at Paradox profoundly enjoys. I’m also eager not to have to keep these announcements secret for much longer.”</p>
+<p>Their show will start at March 6, 2023 at 18:00 CET / 17:00 UTC. You'll be able to watch on their <a href="https://www.youtube.com/c/paradoxinteractive" target="_blank">YouTube</a> and <a href="https://www.twitch.tv/paradoxinteractive" target="_blank">Twitch</a>.</p>
+<p>Will you be tuning in? What are you hoping to see announced?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/paradox-plan-announcements-next-week-like-a-new-game-from-cities-skylines-dev/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/paradox-plan-announcements-next-week-like-a-new-game-from-cities-skylines-dev/</guid>
+      <pubDate>Tue, 28 Feb 2023 15:13:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1217630040id22386gol.jpg" type="image/jpeg"/>
+      
+      <category>Event</category>
+      
+      <category>Meta</category>
+      
+      <category>Paradox Interactive</category>
+      
+      <category>Upcoming</category>
+      
+    </item>
+    
+    <item>
+      <title>Inventory management roguelike Backpack Hero releases 1.0 in May</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Currently in Early Access with Native Linux support and rated Steam Deck Playable, the inventory management roguelike Backpack Hero is releasing in full in May.</p>
+<p>This is actually a surprising amount of fun thanks to the inventory sorting mechanic, and something I didn't expect to really like overall originally but it clearly <a href="https://www.gamingonlinux.com/2022/08/backpack-hero-is-an-inventory-management-roguelike-and-my-new-favourite-game/" target="_blank">won me over easily</a> when I first started with it. The way it's designed really keeps you constantly thinking about all of your equipment, since the position in your bag is key and can really affect your power. Plenty of others agree since it has a Very Positive rating on Steam too.</p>
+<p>Now the developer has <a href="https://store.steampowered.com/news/app/1970580/view/3646264166717131984" target="_blank">announced</a> they plan to have a 1.0 release in May along with major upgrades. Some of what's coming to it include a big Town Update adding in some more depth, Twitch integration and more.</p>
+<div class="hidden_video" data-video-id="fZLcGOJxGaw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/989aee7a52490447fe52f6a4fa88adf1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/fZLcGOJxGaw" target="_blank">See video</a></div></div>
+<p>Available to <a href="https://store.steampowered.com/app/1970580/Backpack_Hero/?curator_clanid=4218320" target="_blank">buy on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/inventory-management-roguelike-backpack-hero-releases-in-may/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/inventory-management-roguelike-backpack-hero-releases-in-may/</guid>
+      <pubDate>Tue, 28 Feb 2023 14:59:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1665897936id22385gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>OpenRA gets a big new stable release, lots of fun for classic RTS fans</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After multiple testing releases, <a href="https://www.openra.net/" target="_blank">OpenRA</a> for the playing the classics Red Alert, Command &amp; Conquer and Dune 2000 has now released a major upgrade.</p>
+<p>This includes major work towards supporting the game assets from the Command &amp; Conquer Remastered Collection. While not finished (so expect plenty of issues), they have release a Tiberian Dawn HD development preview too. Great to see! More work also went into supporting the likes of Command &amp; Conquer: Tiberian Sun but it's not ready yet.</p>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6090485331677594753gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6090485331677594753gol1.jpg"/></a>Pictured: OpenRA - Red Alert on Fedora 37.</em></p>
+<p>Just some of the improvements to expect in the new release include:</p>
+<ul>
+<li>New pathfinding for better performance.</li>
+<li>Online play netcode improvements.</li>
+<li>New Red Alert missions support.</li>
+<li>New Tiberian Dawn missions support.</li>
+<li>New text notifications for playing without sound.</li>
+<li>Lots of smaller improvements to Dune 2000 (thanks to the film's popularity).</li>
+<li>The ability to mute other players.</li>
+<li>Lots of bug fixes.</li>
+<li>It's a <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/dc394e2f3532e7fe830118716ebdbaaa4e945eaf" target="_blank">long list</a> of improvements.</li>
+</ul>
+<p>Modders also got some improvements to documentation, they have a VS Code plugin now for their scripting and a VS Code plugin for their Lua too.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/openra-gets-a-big-new-stable-release-lots-of-fun-for-classic-rts-fans/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/openra-gets-a-big-new-stable-release-lots-of-fun-for-classic-rts-fans/</guid>
+      <pubDate>Tue, 28 Feb 2023 14:33:16 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/334073805id22384gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Fury Unleashed got a nice update to get it Steam Deck Verified</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Fury Unleashed, a fast-paced action roguelike from Awesome Games Studio, recently had a rather nice upgrade for Steam Deck players. It has full Linux support with a Native Linux version too, and it is now Steam Deck Verified using that Native build.</p>
+<p>The <a href="https://steamcommunity.com/games/465200/announcements/detail/5663873078633332449" target="_blank">update</a> released February 24th included these changes:</p>
+<blockquote>
+<ul>
+<li>Better controller type detection for the in-game prompts.</li>
+<li>Some UI elements, story segments &amp; text were enlarged for better readability.</li>
+<li>The UI scaling option now defaults to 200% when the game is launched on Steam Deck.</li>
+<li>When playing on Steam Deck in handheld mode, the "Auto" graphics settings no longer reduce the quality of the related options when the game's FPS/refresh rate is locked to a value lower than 60.</li>
+<li>Other minor improvements &amp; bug/stability fixes.</li>
+</ul>
+</blockquote>
+<p>If you've not seen it before, the original trailer is below:</p>
+<div class="hidden_video" data-video-id="XcOnFLxfau8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f5bc21695e361a619c3c6ae2eb8bbd7a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/XcOnFLxfau8" target="_blank">See video</a></div></div>
+<p>Nice to see such continued support for my favourite Linux gaming device.</p>
+<p>You can buy Fury Unleashed on <a href="https://www.gog.com/en/game/fury_unleashed" target="_blank">GOG</a>, <a href="https://www.humblebundle.com/store/fury-unleashed?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/465200/Fury_Unleashed/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/fury-unleashed-got-a-nice-update-to-get-it-steam-deck-verified/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/fury-unleashed-got-a-nice-update-to-get-it-steam-deck-verified/</guid>
+      <pubDate>Tue, 28 Feb 2023 13:58:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/400944547id22383gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental fixes up Wo Long: Fallen Dynasty, No Man&#39;s Sky</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Proton Experimental from Valve has been upgraded fixing up some more problematic games for Steam Deck and Linux Desktop.</p>
+<p>Here's what's changed for the February 27th update:</p>
+<blockquote>
+<ul>
+<li>Fix No Man's Sky VR mode not working after a recent game update.</li>
+<li>Fix No Man's Sky crashing when using a controller after a recent game update.</li>
+<li>Fix intro video not playing in Wo Long: Fallen Dynasty demo.</li>
+<li>Fix Pentiment not working on desktop.</li>
+<li>Fix Locoland rendering main menu incorrectly.</li>
+<li>Fix Deus Ex: Human Revolution Director's Cut hanging indefinitely on exit.</li>
+</ul>
+</blockquote>
+<p><em>Changelog available <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">here</a>.</em></p>
+<p>If you're confused on Proton and all the different versions, see <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">my original guide on Proton</a>. Proton Experimental gets automatically installed if Valve set it on a game, or you can just search for Proton Experimental in your Steam Library (not the Steam Store) to install it. </p>
+<p>Need to know how to change the Proton version used? See the below video:</p>
+<div class="hidden_video" data-video-id="f1GvONkE9S0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6bb07ac6333f611978e50464915ff76b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/f1GvONkE9S0" target="_blank">See video</a></div></div>
+<p><strong>Text guide</strong></p>
+<p>Change it per game (Steam Deck)</p>
+<ul>
+<li>Pick a game and head to the little cog icon on the right.</li>
+<li>Click Properties, then Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<p>On a Linux desktop:</p>
+<ul>
+<li>Right click a game, go to Properties.</li>
+<li>Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/02/proton-experimental-fixes-up-wo-long-fallen-dynasty-no-mans-sky/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/proton-experimental-fixes-up-wo-long-fallen-dynasty-no-mans-sky/</guid>
+      <pubDate>Tue, 28 Feb 2023 13:31:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Open Source</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>Building a Retro Linux Gaming Computer - Part 27: Lost Souls</title>
@@ -84,7 +373,7 @@
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
 <p>Need some power in a small box with full Linux support? The Kubuntu Focus team recently revealed their second-generation Focus NX. This is a small form factor desktop that comes with Kubuntu (KDE Plasma desktop) 22.04 LTS.</p>
-<p>Coming with either a Intel Core i7-1240P or i7-1260P (base model), it can be fitted with up to 64GB 3200Mhz RAM (8GB base model) and 2TB NVMe (250GB base model). Seems overall like a nice unit, and when you take into account pricing on all the parts together with dedicated Linux support. Pricing starts at $795 and it's basically a branded a pre-configured Intel Wallstreet Canyon NUC.</p>
+<p>Coming with either a Intel Core i7-1240P or i7-1260P (base model), it can be fitted with up to 64GB 3200Mhz RAM (8GB base model) and 2TB NVMe (250GB base model). Seems overall like a nice unit, and when you take into account pricing on all the parts together with dedicated Linux support. Pricing starts at $795 and it's basically a branded pre-configured Intel Wallstreet Canyon NUC.</p>
 <p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20746527091677498438gol1.jpeg"/></p>
 <p>It comes filled with these ports:</p>
 <ul>
@@ -3627,373 +3916,6 @@ Splittown is a point-and-click adventure game inspired by 90s classics such as D
       <category>Exploration</category>
       
       <category>GOG</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Next Fest - February 2023 edition brings lots of demos</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Running until February 13th, you've again got a while to cram in trying out as many demos as possible in <a href="https://store.steampowered.com/sale/nextfest" target="_blank">Steam Next Fest - February 2023 edition</a>. Not only is there plenty to play but this also kicks off a full week of developer livestreams and chat, which you can see on the event page.</p>
-<p>Valve also did a fresh trailer for the event:</p>
-<div class="hidden_video" data-video-id="vWIlLFY6SnU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/772fa2020aaa2e01ab1d1c5ddb70df00.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/vWIlLFY6SnU" target="_blank">See video</a></div></div>
-<p>Just a few of the demos that are worth looking at. As always I try to push out some of the less-obvious stuff, to give some gems a chance to shine. These <em>all</em> have Native Linux support too:</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/2081080/Capes/" target="_blank">Capes</a> - superhero turn-based strategy.</li>
-<li><a href="https://store.steampowered.com/app/1659360/Townseek/" target="_blank">Townseek</a> - a relaxing exploration-trading game.</li>
-<li><a href="https://store.steampowered.com/app/1709870/Spirited_Thief/" target="_blank">Spirited Thief</a> - a tactical stealth game.</li>
-<li><a href="https://store.steampowered.com/app/1651490/Tiny_Life/" target="_blank">Tiny Life</a> - a pixel-art take on The Sims.</li>
-<li><a href="https://store.steampowered.com/app/2140100/Whisker_Squadron_Survivor/" target="_blank">Whisker Squadron: Survivor</a> - imagine a repeatable shooter like Star Fox 64 with upgrades.</li>
-<li><a href="https://store.steampowered.com/app/1814690/Zid_Journey/" target="_blank">Zid Journey</a> - a hand-drawn adventure game with a strong, classic 90's vibe.</li>
-<li><a href="https://store.steampowered.com/app/2197360/Hot_Heat_Reset/" target="_blank">Hot Heat Reset</a> - a maze action game.</li>
-<li><a href="https://store.steampowered.com/app/1842350/Octane_Remix/" target="_blank">Octane Remix</a> - a fast paced, non-stop Obstacle Hell Roguelite Racing Game.</li>
-</ul>
-<p>Now for some more personal picks (playable with Proton):</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/1608230/Planet_of_Lana/" target="_blank">Planet of Lana</a> - a cinematic puzzle adventure framed by an epic sci-fi saga that stretches across centuries and galaxies.</li>
-<li><a href="https://store.steampowered.com/app/1450900/Desynced/" target="_blank">Desynced</a> - a sci-fi survival strategy game where you gather, build, explore and fight to survive using fully customizable units and behaviors.</li>
-<li><a href="https://store.steampowered.com/app/1894430/Plan_B_Terraform/" target="_blank">Plan B: Terraform</a> - Terraform a lifeless rock into a lush and habitable world.</li>
-</ul>
-<p>Be sure to leave a comment if you find a particularly good demo for Linux Desktop and/or Steam Deck!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/steam-next-fest-february-2023-edition-brings-lots-of-demos/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/steam-next-fest-february-2023-edition-brings-lots-of-demos/</guid>
-      <pubDate>Tue, 07 Feb 2023 12:06:32 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1142374006id22289gol.jpg" type="image/jpeg"/>
-      
-      <category>Event</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam and Steam Deck Beta fixes pages not rendering, plus GE-Proton 7-49 out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve put out another small Beta update for Steam Desktop and Steam Deck that fixes some more annoying bugs. Changelog again the same across both, since it's mainly about New Big Picture Mode that Desktop and Steam Deck now share.</p>
-<p>Here's what's changed:</p>
-<blockquote>
-<p class="plain-list-title">General</p>
-<ul>
-<li>Fixed a cause of Steam library, chat and Big Picture Mode browser windows showing all black or not rendering.</li>
-<li>Added fast jump by letter to the library.</li>
-<li>Added settings for initial location to show keyboard on desktop and in Steam overlay.</li>
-</ul>
-<p class="plain-list-title">Steam Input</p>
-<ul>
-<li>Fix several instances of Left Bumper/Trigger glyphs having the wrong background image.</li>
-</ul>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16130362991675769434gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16130362991675769434gol1.jpg"/></a><em>Steam New Big Picture - Fedora Desktop</em></p>
-<p>Additionally, a new release of the community-built GE-Proton translation layer has released. <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton7-49" target="_blank">Version 7-49</a> is mainly a small hotfix that deals with the Ubisoft fix from Valve's official Proton. It changes these components:</p>
-<blockquote>
-<ul>
-<li>Updated proton-wine bleeding edge.</li>
-<li>Updated vkd3d-proton.</li>
-<li>Updated dxvk.</li>
-<li>Updated proton steamclient.</li>
-</ul>
-</blockquote>
-<p>Here's an example guide on installing GE-Proton</p>
-<div class="hidden_video" data-video-id="6doaQNnHR60"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37b4fc871ab3188f385a1c60a2e0949c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6doaQNnHR60" target="_blank">See video</a></div></div>
-<p><strong>Text Guide to install GE-Proton:</strong></p>
-<ul>
-<li>Download
-<ul>
-<li><u>Desktop</u>: head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>.</li>
-<li><u>Steam Deck</u>: simply download ProtonUp-Qt from Discover in Desktop Mode (Steam Button -&gt; Power - Switch to Desktop).</li>
-</ul>
-</li>
-<li>Load ProtonUp-Qt.</li>
-<li>Make sure it's set to Steam at the top and select to install GE-Proton.</li>
-<li>Reload Steam to update the compatibility layer list.</li>
-<li>In Steam:
-<ul>
-<li><u>Desktop</u>: right click a game and go to Properties.</li>
-<li><u>Steam Deck</u>: find the game in your library, go to the little COG on the right and then select Properties.</li>
-</ul>
-</li>
-<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down</li>
-</ul>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/steam-deck-beta-fixes-pages-not-rendering-plus-ge-proton-7-49-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/steam-deck-beta-fixes-pages-not-rendering-plus-ge-proton-7-49-out-now/</guid>
-      <pubDate>Tue, 07 Feb 2023 11:33:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1122049110id22288gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Beta</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Building a Retro Linux Gaming Computer - Part 24: Mother Knows Best</title>
-      <author>Hamish</author>
-      <description><div class="content group e-content">
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/01/building-a-retro-linux-gaming-computer-part-23-ready-set-go/" target="_blank">Part 23: Ready, Set, Go!</a></strong></p>
-<p>My mother's favourite game on Linux is without a doubt <em>Frozen Bubble</em>. It is a casual game in all of the best ways; one you can dive into and learn at your own pace thanks to its simple but repeatable formula. The stakes are never too high, with each level just being repeated until you beat it; the worst possible outcome being seeing a cartoon penguin cry over the fleeting loss of its igloo home. You will have them all jumping for joy again soon enough.</p>
-<p>Searching online, I came across both the frozen-bubble-0.9.2-fr1.i386.rpm package alongside its perl-SDL-1.12-fr1.i386.rpm package dependency from freshrpms. I did try building the final 1.0.0 release from source, but it requires a newer version of SDL than is packaged for Red Hat Linux 7.3 which explains why no RPM packages were available. Consider this to be a snapshot in time back to 2002, from right before the game was to take the world by storm.</p>
-<p>In terms of limitations it is hard to believe this was not the final release. The degree of polish on display with <em>Frozen Bubble</em> even at this early stage is already leagues ahead of most of its other contemporary free gaming fare. The game has its own unique identity, with a custom soundtrack, polar atmosphere, and recognizable characters. While the gameplay at its core may be a straight lift from <em>Puzzle Bobble</em>, it is in the implementation that <em>Frozen Bubble</em> excels.</p>
-<p>One complaint I did have with <em>Frozen Bubble</em> over the years is how the blue and purple bubbles, as well as the yellow and green bubbles, can look very much alike to someone who is colourblind like myself. It was not until I was consulting the changelog that I discovered that a special option was included which makes the bubbles also contain geometric shapes, activated using the -cb launch flag. This did not come until the following 0.9.3 release of the game.</p>
-<p>While appreciated, this solution does still comes across as bit of an underexposed hack. The situation is still far better than what I encountered with <em>Theocracy</em>, where I missed spotting the Teotitlans entirely on the province view map, as their cyan colour code was almost indistinguishable to the beige given to neutral non-aligned provinces. Version 0.9.3 also has <em>Frozen Bubble</em> remember to ask for your high score after completing all 50 levels, about the only other complaint I had.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16386212461675316432gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16386212461675316432gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9582936901675318969gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/9582936901675318969gol6.png"/></a></p>
-<p>The milestone 1.0.0 release of <em>Frozen Bubble</em> in 2003 would expand the game to have 100 levels as well as retooling the graphics and including a built-in level editor. Following that, the game would be rebranded as <em>Frozen Bubble 2</em> starting with the 2.0.0 release in 2006, with the final stable 2.2.0 version coming out in 2008. <em>Frozen Bubble 2</em> features the ability to play multiplayer over the network, as well as showcasing brand new 3D assets created with Blender.</p>
-<p>Some work would continue on the game up until 2010, but from there the project became dormant. It was never ported to SDL2 or had support added for widescreen or modern high definition displays. <em>Frozen Bubble</em> did see a number of forks to allow it to run in a web browser, with both a Java and JavaScript version being produced by Glenn Sanson. Considering how often the title is to this day held as a standard bearer of Linux gaming, an update does seem to be in order.</p>
-<p>I would also tweak the game's difficulty curve just a little. While skill does play a role, often a successful play is dependent on the order of bubbles you get fed to your launcher. With luck some levels are made ridiculously easy, while others can be near impossible. As a veteran of the game, my mother agrees with me that level 70 as still featured in the final release can kill your momentum dead, and should at the very least be moved to be the ultimate level. Food for thought.</p>
-<p>In the years following its release <em>Frozen Bubble</em> would stay the darling of Readers' and Editors' Choice Awards from a wide variety of Linux publications and websites, owing much to its wide demographic appeal. Consider how the lead developer Guillaume Cottenceau was inspired to start work on the game because he remembered how the original <em>Puzzle Bobble</em> was one of the few games he would play with his sister. Or how much my mother loves the game.</p>
-<p>This also gave <em>Frozen Bubble</em> the distinction of being one of the oddest of <em>Quake</em> killers. With the exception of <em>XBill</em>, which I suspect garnered favour for political reasons, the Readers' Choice Awards for the <em>Linux Journal</em> magazine had always been dominated by <em>Quake</em> games. Then <em>Frozen Bubble</em> wins in 2003 and goes on to hold the "Best Linux Game" title for all of the next eight years surveyed. I, on the other hand, do still feel the urge to play <em>Quake</em> again.</p>
-<p><strong>Carrying on in <a href="https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-25-quantum-axcess/" target="_blank">Part 25: Quantum Axcess</a></strong></p>
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-24-mother-knows-best/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-24-mother-knows-best/</guid>
-      <pubDate>Mon, 06 Feb 2023 19:30:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1370431875id22197gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Casual</category>
-      
-      <category>Family Friendly</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Get some laid-back life sims and builders in this latest game bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The <a href="https://www.humblebundle.com/games/simple-life?partner=gamingonlinux" target="_blank">Sim-ple Life Bundle</a> from Humble Bundle is another that has a few good looking indie gems you might want to relax with. As usual, I'll go over what to expect on Linux desktop and Steam Deck for compatibility. Noting if something is Native Linux or ProtonDB ratings (which goes: Platinum - Gold - Silver - Bronze - Broken) to save you some clicking around.</p>
-<p>Here's what's in it:</p>
-<p class="plain-list-title"><strong>Townscraper</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><strong>Luna's Fishing Garden</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>Native Linux</li>
-</ul>
-<p class="plain-list-title"><strong>Staxel</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Playable</li>
-<li>Native Linux</li>
-</ul>
-<p class="plain-list-title"><strong>Summer in Mara</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Deck Unsupported (but works in Proton Experimental)</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><strong>Garden Paws</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p class="plain-list-title"><strong>Winkeltje: The Little Shop</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><strong>Lake</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><strong>Yonder: The Cloud Catcher Chronicles</strong></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p>See <a href="https://www.humblebundle.com/games/simple-life?partner=gamingonlinux" target="_blank">the bundle here</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/get-some-laid-back-life-sims-and-builders-in-this-latest-game-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/get-some-laid-back-life-sims-and-builders-in-this-latest-game-bundle/</guid>
-      <pubDate>Mon, 06 Feb 2023 17:22:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/427888978id22286gol.jpg" type="image/jpeg"/>
-      
-      <category>Casual</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Superhero strategy game Capes now being published by Daedalic Entertainment</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Daedalic Entertainment have now teamed up with Spitfire Interactive to help their work on the superhero strategy game Capes. It's a turn-based strategy game where you assemble a team of unique heroes who are fighting to take back their city, which is now controlled by evildoers. </p>
-<p>Twenty years ago these nasty people won and the city has turned into something terrible, where having a super power is now a crime. </p>
-<div class="hidden_video" data-video-id="3b1XfO9tf1I"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c5bb818c86608dbf149d0f5e562e6cdc.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3b1XfO9tf1I" target="_blank">See video</a></div></div>
-<p>You play across a series of dark and gritty campaigns and patrol assignments, push the story forward, or take time to explore with side missions that unlock more heroes. Complete challenges to earn skill points to increase your hero's powers and abilities while you learn more about the hero's lives and backstories.</p>
-<p><strong>Features:</strong></p>
-<blockquote>
-<ul>
-<li><strong>Be Mighty</strong>: Play as heroic protectors of the innocent, each with unique skills and powers. Master your hero and unleash devastating ultimate abilities!</li>
-<li><strong>Assemble Your Team:</strong> Select the right team for the right mission. Combat isn’t based on random numbers, so choose wisely to win the day!</li>
-<li><strong>Level Up: </strong>Complete challenging missions and side-quests to improve your heroes with new abilities and powerful upgrades!</li>
-<li><strong>Defeat Evil: </strong>Face down vile villains and criminal corporate henchmen. Do you have what it takes to free your city from the clutches of villainy?</li>
-</ul>
-</blockquote>
-<p>It has a demo available right now that was updated today, along with Native Linux support. Check it out <a href="https://store.steampowered.com/app/2081080/Capes/" target="_blank">on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/superhero-strategy-game-capes-daedalic-entertainment/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/superhero-strategy-game-capes-daedalic-entertainment/</guid>
-      <pubDate>Mon, 06 Feb 2023 15:18:08 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/528722397id22285gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Steam</category>
-      
-      <category>Strategy</category>
-      
-    </item>
-    
-    <item>
-      <title>NVIDIA Vulkan Beta 525.47.07 supports extension to help VKD3D-Proton DXR</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Seems like a future update of VKD3D-Proton that translates Direct3D 12 to Vulkan for <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>, for Windows games on Linux desktop and Steam Deck, will make use of a newer extension available in the new NVIDIA Vulkan Beta 525.47.07 release.</p>
-<p>From the <a href="https://developer.nvidia.com/vulkan-driver" target="_blank">release notes</a> for the new NVIDIA driver:</p>
-<blockquote>
-<ul>
-<li>New:
-<ul>
-<li>VK_EXT_pipeline_library_group_handles</li>
-</ul>
-</li>
-<li>Vulkan Video driver experiments:
-<ul>
-<li>Internally synchronize the picture VkVideoSessionParametersKHR while during parameter updates with vkUpdateVideoSessionParametersKHR</li>
-<li>Allow for Picture Parameters like StdVideoH264PictureParameterSet, StdVideoH264SequenceParameterSet, StdVideoH265SequenceParameterSet, StdVideoH265PictureParameterSet and StdVideoH265VideoParameterSet to be optionally passed within vkCmdBeginVideoCodingKHR() and/or vkCmdDecodeVideoKHR() within VkVideoSessionParametersUpdateInfoKHR as an inlined extension structure</li>
-</ul>
-</li>
-<li>Fixes:
-<ul>
-<li>Ignore VkPipelineColorBlendStateCreateInfo.pAttachments when all state is dynamic</li>
-<li>Fix an issue with the video session picture parameters creation where the max PPS/SPS/VPS size is set to 1</li>
-</ul>
-</li>
-<li>open-gpu-kernel-modules release:
-<ul>
-<li><a href="https://github.com/NVIDIA/open-gpu-kernel-modules/releases/tag/525.47.07" target="_blank">https://github.com/NVIDIA/open-gpu-kernel-modules/releases/tag/525.47.07</a></li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<p>When you look into what that new extension does the <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_pipeline_library_group_handles.html" target="_blank">documentation</a> says:</p>
-<blockquote>
-<p>When using pipeline libraries in ray tracing pipelines, a library might get linked into different pipelines in an incremental way. An application can have a strategy where a ray tracing pipeline is comprised of N pipeline libraries and is later augumented by creating a new pipeline with N + 1 libraries. Without this extension, all group handles must be re-queried as the group handle is tied to the pipeline, not the library. This is problematic for applications which aim to decouple construction of record buffers and the linkage of ray tracing pipelines.</p>
-<p>To aid in this, this extension enables support for querying group handles directly from pipeline libraries. Group handles obtained from a library <strong>must</strong> remain bitwise identical in any <code class="inline-code">VkPipeline</code> that links to the library.</p>
-<p>With this feature, the extension also improves compatibility with DXR 1.1 AddToStateObject(), which guarantees that group handles returned remain bitwise identical between parent and child pipelines. In addition, querying group handles from COLLECTION objects is also supported with that API.</p>
-</blockquote>
-<p>The key point being the last paragraph, making it able to more closely match with DirectX Ray Tracing (DXR) does. VKD3D-Proton added in support for it just <a href="https://github.com/HansKristian-Work/vkd3d-proton/commit/6f56e02354622b28041f8baaa2e201c950c0f7f5" target="_blank">recently</a> too. Seems like support for this extension is not yet in the Mesa drivers for Intel and AMD just yet.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/nvidia-vulkan-beta-5254707-supports-extension-to-help-vkd3d-proton-dxr/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/nvidia-vulkan-beta-5254707-supports-extension-to-help-vkd3d-proton-dxr/</guid>
-      <pubDate>Mon, 06 Feb 2023 15:05:42 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Drivers</category>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Gorgeous puzzler Bonfire Peaks getting a 3-part DLC starting March 2nd</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Easily one of the best puzzle games to release back in 2021 and frankly it's criminally overlooked (only 140 use reviews on Steam?!), is set to get a whole lot bigger with the Lost Memories 3-part DLC. <em>The gorgeous blocky-voxel world with great lighting and bite-sized puzzles won me over easily.</em></p>
-<p>The first part of this DLC releases March 2nd, and the developer said it's already around one quarter the size of the original game, so it's going to have quite a bit in it and the 2nd and 3rd parts are under development. Each part will bring entirely new puzzles and game mechanics to go along with it so it should be real interesting to see what they have cooking up.</p>
-<div class="hidden_video" data-video-id="C4aYKw0ae2M"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4e07d8bc1d84e09f298009ba3a66a383.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/C4aYKw0ae2M" target="_blank">See video</a></div></div>
-<p>Created by Pipe Push Paradise and Hiding Spot developer Corey Martin, co-designed with Alan Hazelden (Draknek), and with art by Mari Khaleghi and Zach Soares. If you want a good puzzle game, look no further, seriously it's wonderful and you'll have a bit of time to complete it before the DLC releases.</p>
-<p>The full game is currently available via <a href="https://coreymartin.itch.io/bonfire-peaks" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1147890/Bonfire_Peaks/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/gorgeous-puzzler-bonfire-peaks-getting-a-3-part-dlc-starting-march-2nd/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/gorgeous-puzzler-bonfire-peaks-getting-a-3-part-dlc-starting-march-2nd/</guid>
-      <pubDate>Mon, 06 Feb 2023 13:38:54 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1324991244id22283gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>DLC</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Puzzle</category>
-      
-    </item>
-    
-    <item>
-      <title>Zero Wing, Twin Cobra and other Toaplan classics get upgraded for PC</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>All your base are belong to us. Toaplan are having some absolute classics revived including Zero Wing, Out Zone, Twin Cobra and Truxton with a PC release and enhancements. Oh, and Native Linux support to ensure they're great on Steam Deck too.</p>
-<p>Working with Bitwave Games, they've confirmed to me Native Linux support is a go for the release on February 14 for all of the games in this first collection. Well, <em>Native</em> being an interesting word to use because it's clearly old games with emulation but you get the idea — they're ensuring it all works properly including the enhancements within it and it's all set up correctly.</p>
-<p>Some true classics too! Zero Wing was one of the few full-games I had on SEGA Mega Drive when I was younger and that intro scene stuck with me forever.</p>
-<div class="hidden_video" data-video-id="AlNWV4QQYgk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a2fc4a952a76e0a3b6967ac4c1b189c4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/AlNWV4QQYgk" target="_blank">See video</a></div></div>
-<p>Some of the enhancements includes:</p>
-<blockquote>
-<ul>
-<li>Minimal Input Lag: Emulation, input processing, and rendering all complete on the same frame.</li>
-<li>Quick Save using F1-F10, Reload with Shift+ F1-F10.</li>
-<li>Online leaderboards for Single Credit, No Assist, and Assisted plays.</li>
-<li>Instrument panels with extra gameplay information and artwork.</li>
-<li>Rewind the game between 10-18 minutes, depending on the action.</li>
-<li>Capture sharable replays to immortalize your interstellar victories (or funny moments).</li>
-<li>Assist Features such as auto-fire at multiple rates.</li>
-<li>Very Easy Mode: Lower the difficulty to breeze through the adventure.</li>
-<li>Pixel perfect or full-screen scaling in windowed or full-screen mode.</li>
-<li>Rotate the gameplay in 90-degree increments.</li>
-<li>Steam Achievements.</li>
-<li>Choose between Raw Input on Windows or Steam Input.</li>
-<li>Hone your skills in the ultra customizable practice mode!</li>
-</ul>
-</blockquote>
-<p>You can follow / wishlist each of them on <a href="https://www.gog.com/en/games?publishers=bitwave-games" target="_blank">GOG</a> and <a href="https://store.steampowered.com/publisher/Bitwave" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/zero-wing-twin-cobra-and-other-toaplan-classics-get-upgraded-for-pc/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/zero-wing-twin-cobra-and-other-toaplan-classics-get-upgraded-for-pc/</guid>
-      <pubDate>Mon, 06 Feb 2023 13:22:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/360801708id22282gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Arcade</category>
-      
-      <category>Emulation</category>
       
     </item>
     
