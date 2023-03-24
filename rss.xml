@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-03-23 07:24:28.863864</pubDate>
+    <pubDate>2023-03-24 07:24:28.037078</pubDate>
 
     
     <image>
@@ -18,6 +18,259 @@
     </image>
 
     
+    
+    <item>
+      <title>Framework reveal new laptop with modular graphics, plus an AMD Ryzen model</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Framework Computer Inc have done it again! They've announced multiple big exciting things for their modular laptops today. Here's what's coming.</p>
+<p>If you've not heard of them before, you're going to want to keep a close eye on what they're doing. Giving you a laptop that you can build and upgrade yourself, along with pre-built options and good Linux support too. They even send hardware to Linux distribution developers to make sure they get hooked up nicely.</p>
+<p>Firstly, they announced today they're upgrading to 13th Gen Intel (i5-1340P / i7-1360P or i7-1370P) and​​​​ now including an AMD Ryzen (7040 series 5 / 7) option for their 13 inch model. They're also releasing an upgraded battery from 55Wh to 61Wh that's compatible with the previous models. There's a new Matte screen, improved hinges, a more powerful speaker (taken from their Chromebook model) and it will be more customizable than ever with you being able to change the frame around the screen.</p>
+<p>Even more exciting is their entirely new 16 inch model, which has more expansion slots for the various modules available to slide into it. The special bit about this model: it has a whole new expansion bay that supports a <em>modular</em> GPU (amongst other things). That's right, finally a proper customizable laptop where you can slot in a new GPU easily.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4185922831679592591gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/4185922831679592591gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20925854051679592592gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/20925854051679592592gol1.jpg"/></a></p>
+<p>In the shots above, the first is without the expansion, the second with it. As you can see, it gets a bit of a bigger bottom, so a more powerful GPU might extend a fair bit. They designed it this way so it's easier to replace, since it's not buried deep inside, and to allow for more space for future GPUs. They've designed the expansion modules much like the motherboard, so these expansion bay modules can be used in their own case outside the laptop for other things, including turning it into an eGPU enclosure to use on another laptop (like the newer Framework 13).</p>
+<p>This larger 16 inch Framework is also even more customizable, since the whole input deck (the keyboard area) can be customized too. You could put in a numpad, have an RGB keyboard, another small display and so on.</p>
+<p>Framework are also expanding shipping into Belgium, Italy, Spain, and Taiwan later this year.</p>
+<p>Finally, they teamed up with Cooler Master to produce a transparent case for the Framework 13 Mainboard, so you can easily turn it into a standalone system.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/977700141679593363gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/977700141679593363gol1.png"/></a></p>
+<p>The live <a href="https://www.youtube.com/watch?v=ccpsyRipHlk" target="_blank">event</a>, which really didn't have great audio and video quality, was overall fun to watch. Lots of love for Linux from Framework, with plenty of what they're doing open source for developers to work with and create things for.</p>
+<p>See more on <a href="https://frame.work" target="_blank">their website</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/framework-reveal-new-laptop-with-modular-graphics-plus-an-amd-ryzen-model/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/framework-reveal-new-laptop-with-modular-graphics-plus-an-amd-ryzen-model/</guid>
+      <pubDate>Thu, 23 Mar 2023 17:46:17 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/409080290id22483gol.jpg" type="image/jpeg"/>
+      
+      <category>Hardware</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA 530.41.03 driver out now for Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA has today released their latest stable driver <a href="https://www.nvidia.co.uk/download/driverResults.aspx/200492/en-uk" target="_blank">530.41.03</a> update for Linux users, following on from the 530.30.02 Beta last month.</p>
+<p>Here's everything that's changed:</p>
+<blockquote>
+<ul>
+<li>Added an application profile to avoid performance problems in Xfce 4 when the OpenGL compositor backend is enabled along with G-SYNC.</li>
+<li>Added support for suspend and resume when using GSP firmware.</li>
+<li>Moved the nvidia-settings application icon into the 'hicolor' icon theme, which allows it to be customized by other icon themes selected in the desktop environment.</li>
+<li>Fixed a bug that prevented PRIME render offload from working for Wayland applications when running on a system with an AMD iGPU.</li>
+<li>Fixed a bug that prevented nvidia-installer from recording kernel log output to the installer log in some module loading failure paths.</li>
+<li>Changed nvidia-installer to no longer use the $XDG_DATA_DIRS environment variable. XDG data files are now installed to a path specified by the --xdg-data-dir option, or /usr/share if not specified.<br/>
+This fixes a problem when Flatpak is installed that caused the installer to place the nvidia-settings.desktop file in /root/.local/share/flatpak/exports/share/applications.</li>
+<li>Changed the behavior of glXGetRefreshRateSGI() for non-integer refresh rates to round to the nearest whole number rather than truncating.</li>
+<li>Changed the compression format of the .run installer package from xz to zstd. This results in a smaller compressed package, and faster decompression performance. A fallback zstd decompressor is embedded into the installer package for systems which do not already have a zstd decompression program installed.</li>
+<li>Fixed a bug that caused nvidia-installer to mistakenly unload some already loaded non-NVIDIA kernel modules.</li>
+<li>Added compatibility for Linux kernels with Indirect Branch Tracking (IBT).</li>
+<li>Added NV-CONTROL attributes NV_CTRL_FRAMELOCK_MULTIPLY_DIVIDE_MODE and NV_CTRL_FRAMELOCK_MULTIPLY_DIVIDE_VALUE to allow syncing a Quadro Sync II card to different House Sync signal rates. This feature requires firmware version 2.18 or later; to download the latest firmware version, please visit:<br/>
+<a href="https://www.nvidia.com/en-us/drivers/firmware/quadro-sync-firmware-driver/" target="_blank">https://www.nvidia.com/en-us/drivers/firmware/quadro-sync-firmware-driver/</a></li>
+<li>Added support for the VK_KHR_video_queue, VK_KHR_video_decode_queue, VK_KHR_video_decode_h264 and VK_KHR_video_decode_h265 extensions.</li>
+<li>Fixed a bug that could cause the nvidia-settings control panel to crash when resetting the display layout.</li>
+<li>Fixed a bug that could cause excessive GPU power consumption at idle when driving multiple displays with a high refresh rate.</li>
+<li>Fixed a bug in nvidia-powerd which could cause excessive CPU usage.</li>
+<li>Fixed an issue which could cause applications to run at 1 FPS when using an NVIDIA PRIME Display Offload sink as the only active display.</li>
+</ul>
+</blockquote>
+<p>NVIDIA also recently released the <a href="https://developer.nvidia.com/vulkan-driver" target="_blank">Vulkan Beta</a> 525.47.14 and 525.47.15 for developers which include:</p>
+<blockquote>
+<ul>
+<li>New:
+<ul>
+<li><a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_KHR_map_memory2.html" target="_blank">VK_KHR_map_memory2</a></li>
+<li>VK_NV_displacement_micromap
+<ul>
+<li><a href="https://github.com/NVIDIAGameWorks/Displacement-MicroMap-Toolkit" target="_blank">NVIDIA Displacement Micro-Map Toolkit</a></li>
+</ul>
+</li>
+<li>Update VK_NV_displacement_micromap to work better on pre-Ada RTX GPUs</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/nvidia-530-41-03-driver-out-now-for-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/nvidia-530-41-03-driver-out-now-for-linux/</guid>
+      <pubDate>Thu, 23 Mar 2023 16:47:18 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Xwayland Video Bridge created to improve Linux screen sharing</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>With the move between X11 and Wayland still ongoing, and likely won't finish for years, problems keep coming up like screen sharing but <em>XwaylandVideoBridge</em> may help solve this.</p>
+<p>This new tool written by Aleix Pol and David Edmundson is designed to allow much easier sharing of screens and windows between X11 and Wayland, which should help to ease the transition from X11 to Wayland. The problem is that currently in the likes of Discord, MS Teams, Slack, Zoom and others that you run through Xwayland, you may end up with a black screen and no windows listed — this should solve it.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19119635461679584274gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19119635461679584274gol1.png"/></a><br/>
+<em>Picture credit: David Edmundson</em></p>
+<p>Hopefully in future things like this won't be needed, as everything moves over to Wayland. Still, it's good to have tools available for legacy apps that won't get updated and great for the next few transition years. </p>
+<p>As the developers on it say it should work "on any desktop that supports the Xdg desktop portals and pipewire streaming and have a working system tray".</p>
+<p>Read more in the <a href="https://blog.davidedmundson.co.uk/blog/xwaylandvideobridge/" target="_blank">blog post</a> and see it on <a href="https://invent.kde.org/davidedmundson/xwaylandvideobridge" target="_blank">GitLab</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/xwayland-video-bridge-created-to-improve-linux-screen-sharing/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/xwayland-video-bridge-created-to-improve-linux-screen-sharing/</guid>
+      <pubDate>Thu, 23 Mar 2023 15:20:26 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1132214190id22481gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Squad-based tactical RPG Zoria: Age of Shattering releasing April 27th</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Squad-based tactical RPG Zoria: Age of Shattering from Tiny Trinket Games is set to hit Early Access on April 27th and they have a new trailer.</p>
+<p>Zoria: Age of Shattering is a squad-based tactical RPG with fluid turn-based combat, outpost, and followers management, set in the expansive fantasy world of Zoria. You will lead a team of four heroes with unique skills and perks, with every team member contributing to each battle. </p>
+<div class="hidden_video" data-video-id="xiaxUtG0KbI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3daae76b1a7a3e7969dbaa07abdebba8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/xiaxUtG0KbI" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<blockquote>
+<ul>
+<li><strong>You are the Commander </strong>- Lead your diverse team through the fantasy lands of a Uram continent and challenge countless groups of monsters and bosses.</li>
+<li><strong>Explore the world of Zoria</strong> - Zoria has now fallen prey to the sheer brutality of the hellspawn that roams its land. Its lush forests, mysterious caves, and majestic buildings have transformed into haunting locations. Explore these mysterious lands to uncover the mysteries within.</li>
+<li><strong>Dynamic Turn Based combat </strong>- Use the unique skills of all of your party members to fight your way through the land. Attack from close range or distance with different attack patterns and directions; heal or shield allies with various spells and commands and use your surroundings to your advantage.</li>
+<li><strong>Craft, rest and survive</strong> - Keep a keen eye on your equipment and vitality as they both deteriorate over time. A bonfire in Zoria's provides a safe spot to restock your resources and prepare for the next battle.</li>
+<li><strong>Class based accessibility </strong>- Take care of each of your warriors' skill development, and it will repay you on the battlefield. Having an individual with the right skills can get you into previously inaccessible places and quests. Specific characters interacting with various objects in the world of Zoria may lead you to discover hidden treasures or make your travel easier, so explore all the options!</li>
+<li><strong>Base management </strong>- You have to be wise in and out of the battle. Players can regularly update the base by unlocking new wings to the buildings, which will reward you with resources, quests, or items.</li>
+<li><strong>Follow missions</strong> - In your outpost, you can plan and assign tasks to your companions. Send selected party members on an autonomic mission, in which you won't participate but will receive what they find along the way. Never forget that their lives are in your hands!</li>
+</ul>
+</blockquote>
+<p>It will be available with Native Linux support on <a href="https://www.gog.com/en/game/zoria_age_of_shattering" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/1159090/Zoria_Age_of_Shattering/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/squad-based-tactical-rpg-zoria-age-of-shattering-releasing-april-27th/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/squad-based-tactical-rpg-zoria-age-of-shattering-releasing-april-27th/</guid>
+      <pubDate>Thu, 23 Mar 2023 14:59:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1668866id22479gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>GOG</category>
+      
+      <category>Indie Game</category>
+      
+      <category>RPG</category>
+      
+    </item>
+    
+    <item>
+      <title>XE Gen 2 Linux Laptop announced by Kubuntu Focus</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Kubuntu Focus have announced their next laptop with the XE Gen 2, here's the details on what's new and improved. The 14 inch laptop sounds like a pretty sweet deal.</p>
+<p>It ships with Kubuntu and Plasma 5.24 LTS out of the box. With an Intel 12th Gen i7-1260P or i5-1240P. You can spec it up to 64GB RAM (8GB 3200Mhz base model), up to 2TB Samsung SSD either a 3500 MB/s model or a 7450 MB/s model. Featuring a 14 inch 1920x1080 IPS screen and Intel IRIS Xe graphics. They claim it gives a "real world" 8 hour battery life. You also get WiFi 6, Bluetooth 5.2, HDMI 1.4, USB-A 3.2, USB-C 3.2, Thunderbolt 4, a 6-in-1 card reader, another USB-A 3.2 and gigabit Ethernet.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1567817411679576698gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1567817411679576698gol1.png"/></a></p>
+<p>With a large centred touchpad and LED back-lit keys, overall it seems quite nice.</p>
+<p>From the press release:</p>
+<p>“We started the Kubuntu Focus Project over 3 years ago with a focus on adding value to an already great Kubuntu distribution and community. Instead of reinventing wheels, we created new tools and optimizations so everyone can have a great out-of-the-box experience and save time and hassle every day. Many of these solutions have already been upstreamed, and many more are on the way. Our team has also rigorously tested, reported, and helped fix bugs with KDE, Kubuntu, and Ubuntu. This collaboration benefits our customers and the entire community, and we thank all the wonderful people on these teams that make it all possible," stated Michael Mikowski, General Manager.</p>
+<p>See more on the Kubuntu Focus <a href="https://kfocus.org/" target="_blank">website</a>. Available starting at $895 shipping to US and Canada is free as standard but they will ship worldwide if you contact them first to arrange it.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/xe-gen-2-linux-laptop-announced-by-kubuntu-focus/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/xe-gen-2-linux-laptop-announced-by-kubuntu-focus/</guid>
+      <pubDate>Thu, 23 Mar 2023 13:06:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1412070247id22480gol.jpg" type="image/jpeg"/>
+      
+      <category>Hardware</category>
+      
+      <category>KDE</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Atari are acquiring Night Dive Studios</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Well that is certainly unexpected news. Atari has entered into an agreement to buy up Night Dive Studios. Night Dive Studios are responsible for the upcoming System Shock remake, Forsaken Remastered, Turok and Turok 2 remasters, Blood Fresh Supply, Quake remaster and many more.</p>
+<p>Atari already owned a minority stake in Night Dive and they will now have 100%.</p>
+<p>From the press release:</p>
+<p>Wade Rosen, Chairman and CEO of Atari, commented: “Night Dive’s proven expertise and successful track record in commercializing retro IP is well-aligned with Atari’s strategy and I am confident that their combined talent, technology and IP portfolio will contribute to Atari’s future success.”</p>
+<p>Stephen Kick and Larry Kuperman, principals of Night Dive commented: “Night Dive and Atari have a long history together and we know that Atari shares our passion for retro games and our focus on producing high-quality new and remastered games that do justice to the original IP. As we look to grow our business and expand our capabilities, we could think of no better long-term partner than Atari.”</p>
+<p>According to <a href="https://finance.yahoo.com/news/atari-enters-agreement-acquire-night-220300554.html" target="_blank">Yahoo Finance</a>, Night Dive Studios reported a revenue of $3 million USD for 2022, and Atari will acquire them for an initial $10 million USD half in cash and half in Atari shares, plus an "earn-out" of up to $10 million USD in cash over the next three years based on Night Dive's performance. <em>This means if Night Dive do well, they'll get more money.</em></p>
+<p>The acquisition is expected to be completed in April 2023.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/atari-are-acquiring-night-dive-studios/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/atari-are-acquiring-night-dive-studios/</guid>
+      <pubDate>Thu, 23 Mar 2023 10:48:44 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1770125243id22478gol.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental fixes up Call of Duty: Black Ops III videos</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another fresh small update to Proton Experimental has landed on March 22nd, here's what's new and changed for Steam Deck and Linux desktop.</p>
+<p>From the release notes:</p>
+<blockquote>
+<ul>
+<li>Fix graphical issues in Call of Duty: Black Ops III while playing videos</li>
+<li>Fix PooShooter: Toilet Invaders starting to a black screen.</li>
+</ul>
+</blockquote>
+<p>This should mean that Call of Duty: Black Ops III is truly click and play now for Steam Deck and Linux desktop — awesome!</p>
+<p>I'll admit I had to look up that second one, it is a <a href="https://store.steampowered.com/app/514390/PooShooter_Toilet_Invaders/" target="_blank">real</a> game and someone working for Valve had to fix an issue for it, kind of hilarious. While funny, it's also a good example of how often Valve doesn't just focus on the biggest names in gaming to get them working in Proton. Bugs in one game, even a small game, can affect others.</p>
+<p>Changelog can be found <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">here</a>.</p>
+<p>For an explanation of all the different Proton versions see <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">my original guide on Proton</a>. Proton Experimental gets automatically installed if Valve set it on a game, or you can just search for Proton Experimental in your Steam Library (<em>not</em> the Steam Store) to install it. </p>
+<p>Need to know how to change the Proton version used? See the below video:</p>
+<div class="hidden_video" data-video-id="f1GvONkE9S0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6bb07ac6333f611978e50464915ff76b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/f1GvONkE9S0" target="_blank">See video</a></div></div>
+<p><strong>Text guide</strong></p>
+<p>Change it per game (Steam Deck)</p>
+<ul>
+<li>Pick a game and head to the little cog icon on the right.</li>
+<li>Click Properties, then Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<p>On a Linux desktop:</p>
+<ul>
+<li>Right click a game, go to Properties.</li>
+<li>Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/proton-experimental-fixes-up-call-of-duty-black-ops-iii-videos/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/proton-experimental-fixes-up-call-of-duty-black-ops-iii-videos/</guid>
+      <pubDate>Thu, 23 Mar 2023 10:23:27 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1192950222id22477gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>Counter-Strike 2 from Valve releasing Summer 2023, Limited Test starts today</title>
@@ -3702,257 +3955,6 @@ This fixes a problem when Flatpak is installed that caused the installer to plac
       <category>Steam Deck</category>
       
       <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>OpenRA gets a big new stable release, lots of fun for classic RTS fans</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After multiple testing releases, <a href="https://www.openra.net/" target="_blank">OpenRA</a> for the playing the classics Red Alert, Command &amp; Conquer and Dune 2000 has now released a major upgrade.</p>
-<p>This includes major work towards supporting the game assets from the Command &amp; Conquer Remastered Collection. While not finished (so expect plenty of issues), they have release a Tiberian Dawn HD development preview too. Great to see! More work also went into supporting the likes of Command &amp; Conquer: Tiberian Sun but it's not ready yet.</p>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6090485331677594753gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6090485331677594753gol1.jpg"/></a>Pictured: OpenRA - Red Alert on Fedora 37.</em></p>
-<p>Just some of the improvements to expect in the new release include:</p>
-<ul>
-<li>New pathfinding for better performance.</li>
-<li>Online play netcode improvements.</li>
-<li>New Red Alert missions support.</li>
-<li>New Tiberian Dawn missions support.</li>
-<li>New text notifications for playing without sound.</li>
-<li>Lots of smaller improvements to Dune 2000 (thanks to the film's popularity).</li>
-<li>The ability to mute other players.</li>
-<li>Lots of bug fixes.</li>
-<li>It's a <a href="https://github.com/OpenRA/OpenRA/wiki/Changelog/dc394e2f3532e7fe830118716ebdbaaa4e945eaf" target="_blank">long list</a> of improvements.</li>
-</ul>
-<p>Modders also got some improvements to documentation, they have a VS Code plugin now for their scripting and a VS Code plugin for their Lua too.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/openra-gets-a-big-new-stable-release-lots-of-fun-for-classic-rts-fans/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/openra-gets-a-big-new-stable-release-lots-of-fun-for-classic-rts-fans/</guid>
-      <pubDate>Tue, 28 Feb 2023 14:33:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/334073805id22384gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Free Game</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Fury Unleashed got a nice update to get it Steam Deck Verified</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Fury Unleashed, a fast-paced action roguelike from Awesome Games Studio, recently had a rather nice upgrade for Steam Deck players. It has full Linux support with a Native Linux version too, and it is now Steam Deck Verified using that Native build.</p>
-<p>The <a href="https://steamcommunity.com/games/465200/announcements/detail/5663873078633332449" target="_blank">update</a> released February 24th included these changes:</p>
-<blockquote>
-<ul>
-<li>Better controller type detection for the in-game prompts.</li>
-<li>Some UI elements, story segments &amp; text were enlarged for better readability.</li>
-<li>The UI scaling option now defaults to 200% when the game is launched on Steam Deck.</li>
-<li>When playing on Steam Deck in handheld mode, the "Auto" graphics settings no longer reduce the quality of the related options when the game's FPS/refresh rate is locked to a value lower than 60.</li>
-<li>Other minor improvements &amp; bug/stability fixes.</li>
-</ul>
-</blockquote>
-<p>If you've not seen it before, the original trailer is below:</p>
-<div class="hidden_video" data-video-id="XcOnFLxfau8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f5bc21695e361a619c3c6ae2eb8bbd7a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/XcOnFLxfau8" target="_blank">See video</a></div></div>
-<p>Nice to see such continued support for my favourite Linux gaming device.</p>
-<p>You can buy Fury Unleashed on <a href="https://www.gog.com/en/game/fury_unleashed" target="_blank">GOG</a>, <a href="https://www.humblebundle.com/store/fury-unleashed?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/465200/Fury_Unleashed/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/fury-unleashed-got-a-nice-update-to-get-it-steam-deck-verified/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/fury-unleashed-got-a-nice-update-to-get-it-steam-deck-verified/</guid>
-      <pubDate>Tue, 28 Feb 2023 13:58:29 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/400944547id22383gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton Experimental fixes up Wo Long: Fallen Dynasty, No Man&#39;s Sky</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Proton Experimental from Valve has been upgraded fixing up some more problematic games for Steam Deck and Linux Desktop.</p>
-<p>Here's what's changed for the February 27th update:</p>
-<blockquote>
-<ul>
-<li>Fix No Man's Sky VR mode not working after a recent game update.</li>
-<li>Fix No Man's Sky crashing when using a controller after a recent game update.</li>
-<li>Fix intro video not playing in Wo Long: Fallen Dynasty demo.</li>
-<li>Fix Pentiment not working on desktop.</li>
-<li>Fix Locoland rendering main menu incorrectly.</li>
-<li>Fix Deus Ex: Human Revolution Director's Cut hanging indefinitely on exit.</li>
-</ul>
-</blockquote>
-<p><em>Changelog available <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">here</a>.</em></p>
-<p>If you're confused on Proton and all the different versions, see <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">my original guide on Proton</a>. Proton Experimental gets automatically installed if Valve set it on a game, or you can just search for Proton Experimental in your Steam Library (not the Steam Store) to install it. </p>
-<p>Need to know how to change the Proton version used? See the below video:</p>
-<div class="hidden_video" data-video-id="f1GvONkE9S0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6bb07ac6333f611978e50464915ff76b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/f1GvONkE9S0" target="_blank">See video</a></div></div>
-<p><strong>Text guide</strong></p>
-<p>Change it per game (Steam Deck)</p>
-<ul>
-<li>Pick a game and head to the little cog icon on the right.</li>
-<li>Click Properties, then Compatibility on the left.</li>
-<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
-</ul>
-<p>On a Linux desktop:</p>
-<ul>
-<li>Right click a game, go to Properties.</li>
-<li>Compatibility on the left.</li>
-<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
-</ul>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/proton-experimental-fixes-up-wo-long-fallen-dynasty-no-mans-sky/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/proton-experimental-fixes-up-wo-long-fallen-dynasty-no-mans-sky/</guid>
-      <pubDate>Tue, 28 Feb 2023 13:31:38 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Open Source</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Building a Retro Linux Gaming Computer - Part 27: Lost Souls</title>
-      <author>Hamish</author>
-      <description><div class="content group e-content">
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-26-coming-to-you-live/" target="_blank">Part 26: Coming to You Live</a></strong></p>
-<p>I have mentioned before how I was unable to get Dave Taylor's original port of <em>Doom</em> to work as it was built as an outdated a.out binary rather than ELF. Since then, I stumbled on an article by Jason Heiss that describes how to load the binfmt_aout kernel module to attain a.out binary support, as well as installing the ld.so-1.9.5-13.i386.rpm and aout-libs-1.4-9.i386.rpm packages from earlier Red Hat Linux releases to provide the necessary libraries.</p>
-<p>Sure enough, with those in place the primordial Linux port of <em>Doom</em> works, albeit from an XFree86 server configured to run at only 8 bit colour depth. The other expected limitations apply such as the lack of any music, but the strangest issue I had was with the sound effects. On first launch I was hearing <em>Heretic</em> noises, as <em>Doom</em> was using the sndserver binary from the Linux Heretic source port installed in /usr/local/bin rather than its own. Replacing the sndserver solved the issue.</p>
-<p>Another spanner in the works is that the X11 version of <em>Doom</em> is in effect keyboard only. A launch parameter does exist to grab the mouse, but this is bugged; I did get my Perixx PERIMICE-209 WP working with SVGALib by modifying the ~/.doomrc file to have mousdev set to "/dev/psaux" and mousetype set to "PS2". Under X11 the game runs in a 320x200 window with no full screen option, but you can double or triple the pixels using the "-2" and "-3" parameters.</p>
-<p>The shareware release of <em>Doom</em> is included inside the linux-doom-1.8.tar.gz archive I used to install the xdoom and sdoom binaries. Explicit support is offered for the registered <em>Doom</em> and <em>Doom II</em>, with <em>Final Doom </em>possible as a set of add-on WADs. Demo playback only works with the shareware, producing version errors everywhere else. A mixed bag to be sure, but even before the <em>Doom</em> source code was opened, hackers were making improvements to the Linux version.</p>
-<p>A fan patch included in the udoom-1.1.tar.gz archive adds support for <em>The Ultimate Doom</em> and seems to fix the demos, while musserver.tgz even hacks in MIDI music through a separate musserver binary. I had to fake the /dev/sndstat device file, but it works. These changes would be mainlined after Bernd Kreimeier tidied up the Linux code for public release, but thanks to Dave Taylor's other studio Crack dot Com, I have another example of a.out insanity I can try as well.</p>
-<p style="text-align:center"> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7211078341676962040gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7211078341676962040gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13113369781676962061gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13113369781676962061gol6.png"/></a></p>
-<p>Several iterations of the Linux binaries for <em>Abuse</em> are available, but I opted to install the abuse-1.10-5.i386.rpm package as distributed by Red Hat. This provides a few niceties such as custom launch scripts installed into the /usr/games directory, as well as the original <em>Abuse</em> shareware data with the alien ants storyline. The X11 version<em> </em>launches in a 320x200 window also at 8 bit colour depth<em>,</em> but you can stop the cursor leaving the window with the "-grab_pointer" launch parameter.</p>
-<p>This is how <em>Abuse</em> was intended to be played, but you can toggle higher resolutions by using the "-size" parameter. This will disable the lighting engine, as well as exposing more of the level to the point of being considered a cheat by the developers. Due to this they also included a pixel doubling mode using the "-2" parameter that preserves the original viewing area and lighting at resolutions of 640x400 or above. I ran with 640x480 so I could hack full screen like I did with <em>Quake</em>.</p>
-<p>A few effects will still only flash in the 320x200 area, and I did have some redrawing issues when loading saved games, but these always resolved themselves on the second attempt. The other problem I had was with the sound effects, which only worked when abuse.x11 was launched with root privileges. Speaking of needing root, abuse.svga which uses SVGALib starts fine but then stalls at the cursor; I even tried using an old Mouse Systems serial mouse with it but no dice.</p>
-<p>If this sounds insecure, it is because it is. In fact, known privilege escalation exploits exist due to how the SVGALib version of <em>Abuse</em> executes its undrv and sndrv binaries. In some ways we should be grateful for such sloppiness, as it is how we got the SVGALib version of <em>Quake</em>. Dave Taylor only ported the game to X11, but thanks to the <em>Quake</em> source code being stolen from the Crack dot Com server, coder Greg Alexander was able to finish a port to SVGALib in just twenty four hours.</p>
-<p>Alexander even had the chutzpah to submit the patches to John Carmack, who graciously accepted them without the threat of legal action. Crack dot Com would show the same community spirit by opening up the <em>Abuse</em> source code and releasing most of the <em>Abuse</em> shareware assets into the public domain. This allowed for the creation of enhanced source ports to Linux such as Abuse-SDL, as well as the fRaBs level set using the shareware assets. If only all games could be as lucky.</p>
-<p><strong>Carrying on in <a href="https://www.gamingonlinux.com/2023/03/building-a-retro-linux-gaming-computer-part-28-losing-my-marbles/" target="_blank">Part 28: Losing My Marbles</a></strong></p>
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a> </strong></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-27-lost-souls/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-27-lost-souls/</guid>
-      <pubDate>Mon, 27 Feb 2023 19:30:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1979633915id22340gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Demo</category>
-      
-      <category>Editorial</category>
-      
-    </item>
-    
-    <item>
-      <title>Flathub seeks funding to add payments, donations and subscriptions</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Making the rounds recently is a proposal being made to add in payments, donations and subscriptions options to <a href="https://flathub.org" target="_blank">Flathub</a>.</p>
-<p>The proposal is available on the Plaintext Group <a href="https://github.com/PlaintextGroup/oss-virtual-incubator/blob/main/proposals/flathub-linux-app-store.md" target="_blank">GitHub</a>, which was submitted by Robert McQueen, who is CEO of the Endless OS Foundation and GNOME Board President. For some context here Plaintext Group are "a nonpartisan, technology innovation policy initiative being developed by Schmidt Futures" (Schmidt Futures was founded by ex Google CEO Eric Schmidt).</p>
-<p>As per the proposal they're trying to incentivize more "participation in the Linux application ecosystem, and remove financial barriers that prevent diverse participation" and they've already been working on adding in donations and payments on Flathub via Stripe and verify developers too with this year moving onto adding in subscriptions, reoccurring donations, new review tools to prevent abuse, automated security scanning and more to eventually have Flathub become self-sustaining. This is a joint effort between GNOME and KDE.</p>
-<p>What they're trying to do is get extra funding to help towards their goal of expanding Flathub, as explained in the proposal they're seeking $100,000 USD from the Plaintext Group to cover the remaining budget needed to enable all this.</p>
-<p>To note: this proposal has actually been there since November 2022, when the proposal itself was accepted into the GitHub repository for consideration.</p>
-<p>What do you think to this? Especially interesting with Canonical recently going on the opposite direction by having Ubuntu <a href="https://www.gamingonlinux.com/2023/02/ubuntu-flavours-to-drop-flatpak-by-default-and-stick-to-snaps/" target="_blank">flavours remove Flatpak by default</a>.</p>
-<p><em>Flathub is also going through a <a href="https://blog.jimmac.eu/2023/flathub-brand-refresh/" target="_blank">rebranding</a>.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/flathub-seeks-funding-to-add-payments-donations-and-subscriptions/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/flathub-seeks-funding-to-add-payments-donations-and-subscriptions/</guid>
-      <pubDate>Mon, 27 Feb 2023 12:35:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1567823203id22381gol.jpg" type="image/jpeg"/>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Kubuntu Focus announce the second-gen mini desktop Focus NX</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Need some power in a small box with full Linux support? The Kubuntu Focus team recently revealed their second-generation Focus NX. This is a small form factor desktop that comes with Kubuntu (KDE Plasma desktop) 22.04 LTS.</p>
-<p>Coming with either a Intel Core i7-1240P or i7-1260P (base model), it can be fitted with up to 64GB 3200Mhz RAM (8GB base model) and 2TB NVMe (250GB base model). Seems overall like a nice unit, and when you take into account pricing on all the parts together with dedicated Linux support. Pricing starts at $795 and it's basically a branded pre-configured Intel Wallstreet Canyon NUC.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20746527091677498438gol1.jpeg"/></p>
-<p>It comes filled with these ports:</p>
-<ul>
-<li>1 x Intel Wi-Fi 6E AX211 Gig+, up to 2.4 Gbit/s 802.11 ax</li>
-<li>1 x Bluetooth 5.3</li>
-<li>3 x USB-A 3.2 (2 in front, one in rear)</li>
-<li>1 x USB-A 2.0 (rear)</li>
-<li>1 x Audio Jack 3.5mm Headphone + Mic (front)</li>
-<li>2 x Thunderbolt™ 4 / USB-C with DisplayPort 1.4a (rear)</li>
-<li>2 x HDMI 2.1 (rear)</li>
-<li>1 x RJ-45 Intel i225-V 2.5 GbE LAN (rear)</li>
-<li>1 x Kensington Lock Mount</li>
-<li>1 x Cable Management Bracket</li>
-<li>1 x VESA Monitor-Mount Bracket</li>
-</ul>
-<p>From their Press Release:</p>
-<p>“We feel the NX GEN 2 is a great replacement for 2- or 3-year-old high-performance systems: its CPU performance is excellent, yet it is far quieter and uses much less space and power,” says Michael Mikowski, General Manager. “The second generation improves on the first with better single- and multi-core performance, greater expandability, and updated ports.”</p>
-<p>“Of course, the excellent hardware is only half of the story. Like with all our systems, we constantly test and distribute hardware optimizations through regular package upgrades. For example, the hardware-support subsystem for the NX GEN 2 adjusts the iGPU configuration to minimize flicker and maximize performance. We also ensure the system and kernel configuration is eGPU-ready and tested.”</p>
-<p>They currently only ship to the US and Canada. </p>
-<p>See more on <a href="https://kfocus.org/spec/spec-nx.html" target="_blank">their website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/kubuntu-focus-announce-the-second-gen-mini-desktop-focus-nx/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/kubuntu-focus-announce-the-second-gen-mini-desktop-focus-nx/</guid>
-      <pubDate>Mon, 27 Feb 2023 12:00:25 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1999434734id22380gol.jpg" type="image/jpeg"/>
-      
-      <category>Hardware</category>
-      
-      <category>KDE</category>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Wayland driver for Wine is getting closer</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Back <a href="https://www.gamingonlinux.com/2022/12/wine-on-wayland-sounds-like-its-coming-along-nicely/" target="_blank">late last year</a>, Collabora developer Alexandros Frantzis blogged about a whole lot of work going into getting full Wayland support for Wine and now a big first step towards it being included in Wine is happening.</p>
-<p>Frantzis has now put up a <a href="https://gitlab.winehq.org/wine/wine/-/merge_requests/2275" target="_blank">Merge Request</a>, to have the first of many parts begin to be included in Wine. This first part "introduces the Wayland driver PE and unixlib components with some basic code, and prepares the makedep tool to be able to handle Wayland protocol files".</p>
-<p>So right now, it's not too exciting for end-users but a big step in the right direction and will lead to more being included, to then eventually having a full Wayland driver for Wine included. Frantzis mentioned Part 2 will include "basic Wayland wl_output (i.e., display) events and populate the Wine monitor information".</p>
-<p>It's being done in parts since it's quite large and their goal is just to make it easier for people to review the code and suggest improvements as they go along. Seems like a sane idea.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/wayland-driver-for-wine-is-getting-closer/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/wayland-driver-for-wine-is-getting-closer/</guid>
-      <pubDate>Mon, 27 Feb 2023 11:41:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-      <category>Upcoming</category>
-      
-      <category>Wine</category>
       
     </item>
     
