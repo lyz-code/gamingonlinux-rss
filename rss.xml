@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-03-24 07:24:28.037078</pubDate>
+    <pubDate>2023-03-25 07:24:21.258122</pubDate>
 
     
     <image>
@@ -18,6 +18,358 @@
     </image>
 
     
+    
+    <item>
+      <title>Get a bunch of horror games in this latest game bundle</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Humble Bundle just launched<a href="https://www.humblebundle.com/games/scary-games-to-play-in-dark?partner=gamingonlinux" target="_blank"> another bundle full of games</a>, and it looks like many are compatible with Steam Deck and Linux desktop with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>. I'll be going over the compatibility rating for each title, saving you some clicking around.</p>
+<p>Games included are:</p>
+<p class="plain-list-title"><strong>Visage</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><strong>The Mortuary Assistant</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>SCP: 5K</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>The Blackout Club</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><strong>Them and Us</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unrated</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Labyrinthine</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><strong>Propnight</strong></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</li>
+<li>ProtonDB Silver</li>
+</ul>
+<p><em>Reportedly it actually works with Proton 6.3-8</em></p>
+<p>See <a href="https://www.humblebundle.com/games/scary-games-to-play-in-dark?partner=gamingonlinux" target="_blank">the bundle here</a>.</p>
+<p>There's also 9 days left for the <a href="https://www.humblebundle.com/games/humble-heroines-warriors-dreamers-and-god-slayers?partner=gamingonlinux" target="_blank">Humble Heroines Bundle</a> that has Control, Hellblade and more. They also have a <a href="https://www.humblebundle.com/books/linux-mega-bundle-packt-books?partner=gamingonlinux" target="_blank">Linux Mega Bundle of books</a> some of you might be interested in.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/get-a-bunch-of-horror-games-in-this-latest-game-bundle/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/get-a-bunch-of-horror-games-in-this-latest-game-bundle/</guid>
+      <pubDate>Fri, 24 Mar 2023 18:25:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2128397693id22490gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Bundle</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>AMD detail more on FSR 3 and their new open source FidelityFX SDK</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>AMD had plenty to show off at GDC, and they've done a bit of a summary and some of it is quite exciting for future games.</p>
+<p>FidelityFX Super Resolution (FSR) is open source and they will be sticking to that with the MIT license, with FSR 3 getting some more early details but they said it's still too early to show a lot of it. As explained in their <a href="https://gpuopen.com/gdc-2023-fidelityfx-sdk-fsr3/" target="_blank">GPUOpen</a> post they're introducing "interpolated frames" which has allow them to get a "2x framerate boost". It's more complex though with some challenges:</p>
+<blockquote>
+<ul>
+<li>We can’t rely on color clamping to correct the color of outdated samples.</li>
+<li>Non-linear motion interpolation is hard with 2D screen space motion vectors, which is why we recommend at least 60fps input.</li>
+<li>If the final frames are interpolated, then the UI and all post-processing will also need to interpolated.</li>
+</ul>
+<p>However, there is good news!</p>
+<ul>
+<li>There’s a high probability there will be at least one sample for every interpolated pixel.</li>
+<li>There’s no feedback loop as the interpolated frame will only be shown once – any interpolation artifact would only remain for one frame.</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19997125221679670271gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19997125221679670271gol1.jpg"/></a></p>
+<p>With FSR 3 you're going to get better framerates at the cost of latency. However, they said they will be including "latency reduction techniques to FSR 3". AMD also said it should be easier to integrate FSR 3 if developers already support FSR 2.</p>
+<p>Additionally they've announced the FidelityFX SDK, also open source, which combines together their multiple effects libraries giving developers an easier way to integrate it. As previously their stuff has all been spread-out, causing problems for developers with "inconsistencies in coding and documentation standards, limited platform/API support" and so this SDK is their attempt to to "do better".</p>
+<div class="hidden_video" data-video-id="YOvYsEVkFXE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/50715923ed1708f077a0216649aba39a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/YOvYsEVkFXE" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/amd-detail-more-on-fsr-3-and-their-new-open-source-fidelityfx-sdk/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/amd-detail-more-on-fsr-3-and-their-new-open-source-fidelityfx-sdk/</guid>
+      <pubDate>Fri, 24 Mar 2023 15:16:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/754767771id22489gol.jpg" type="image/jpeg"/>
+      
+      <category>AMD</category>
+      
+      <category>Game Dev</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Fanatical have another fantastic game bundle for Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Fanatical are doing some great bundles lately! They have another <a href="https://www.tkqlhce.com/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fpick-and-mix%2Fbuild-your-own-play-on-the-go-bundle" target="_blank">Build your own Play On The Go Bundle</a> for Spring 2023 now available. The point of these bundles, is to provide you options to pick and get a bigger discount across 3, 5 and 8 games together and all of them are Steam Deck Verified!</p>
+<p>Here's what you can get in it:</p>
+<ul>
+<li>198X</li>
+<li>Creepy Tale 1 &amp; 2 Double Pack</li>
+<li>Cyber Hook</li>
+<li>Dead Island: Riptide Definitive Edition</li>
+<li>Door Kickers: Action Squad</li>
+<li>Evan's Remains</li>
+<li>Ghost 1.0</li>
+<li>Gone Home + Original Soundtrack</li>
+<li>Horizon Chase Turbo</li>
+<li>Hunted: The Demon's Forge</li>
+<li>Iconoclasts</li>
+<li>Legends of Kingdom Rush</li>
+<li>Nickelodeon Kart Racers 2: Grand Prix</li>
+<li>PC Building Simulator</li>
+<li>Pile Up! Box by Box</li>
+<li>Snooker 19</li>
+<li>Speed Limit</li>
+<li>Splasher</li>
+<li>Thunder Wolves</li>
+<li>Totally Reliable Delivery Service</li>
+<li>Youtubers Life</li>
+</ul>
+<p>See the <a href="https://www.tkqlhce.com/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fpick-and-mix%2Fbuild-your-own-play-on-the-go-bundle" target="_blank">full bundle here</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/fanatical-have-another-fantastic-gamebundle-for-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/fanatical-have-another-fantastic-gamebundle-for-steam-deck/</guid>
+      <pubDate>Fri, 24 Mar 2023 14:08:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1658252161id22488gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Fanatical</category>
+      
+      <category>Game Bundle</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>vkd3d 1.7 is out now for the Wine translation layer</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The <a href="https://www.winehq.org/" target="_blank">Wine</a> team just announced the release of vkd3d version 1.7, their Direct3D 12 to Vulkan translation layer. Not to be confused with VKD3D-Proton, Valve's own fork of it with a focus on gaming with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>.</p>
+<p>Here's the main highlights of vkd3d 1.7:</p>
+<blockquote>
+<ul>
+<li>Support for many more HLSL features and intrinsics.</li>
+<li>Much improved support for the Direct3D shader model 1/2/3 HLSL profiles.</li>
+<li>Public vkd3d-shader API for parsing and serialising DXBC blobs.</li>
+<li>Miscellaneous bug fixes.</li>
+</ul>
+</blockquote>
+<p>The full changes:</p>
+<blockquote>
+<p>*** libvkd3d-shader<br/>
+<br/>
+- New features for the HLSL source type:<br/>
+  - Support for calling user-defined functions.<br/>
+  - Support for array parameters to user-defined functions.<br/>
+  - Much improved support for the Direct3D shader model 1/2/3 profiles.<br/>
+  - Support for the SV_DispatchThreadID, SV_GroupID, and SV_GroupThreadID<br/>
+    compute shader system-value semantics.<br/>
+  - Support for the optional "offset" parameter of the texture object Load()<br/>
+    method.<br/>
+  - Support for the all() intrinsic function.<br/>
+  - Support for the distance() intrinsic function.<br/>
+  - Support for the exp() and exp2() intrinsic functions.<br/>
+  - Support for the frac() intrinsic function.<br/>
+  - Support for the lit() intrinsic function.<br/>
+  - Support for the reflect() intrinsic function.<br/>
+  - Support for the sin() and cos() intrinsic functions.<br/>
+  - Support for the smoothstep() intrinsic function.<br/>
+  - Support for the sqrt() and rsqrt() intrinsic functions.<br/>
+  - Support for the step() intrinsic function.<br/>
+  - Support for the transpose() intrinsic function.<br/>
+  - Support for the case-insensitive variants of the "float" and "dword" data<br/>
+    types.<br/>
+  - Partial support for minimum precision data types like "min16float". These<br/>
+    are currently interpreted as their regular counterparts.<br/>
+  - Improved constant propagation support, in particular to constant<br/>
+    propagation through swizzles.<br/>
+<br/>
+- HLSL static variables are now properly zero-initialised.<br/>
+<br/>
+- The Direct3D shader model 4 and 5 disassembler outputs sample counts for<br/>
+  multi-sampled resource declarations.<br/>
+<br/>
+- New interfaces:<br/>
+  - vkd3d_shader_parse_dxbc() provides support for parsing DXBC blobs.<br/>
+  - vkd3d_shader_serialize_dxbc() provides support for serialising DXBC blobs.<br/>
+  - vkd3d_shader_free_dxbc() is used to free vkd3d_shader_dxbc_desc<br/>
+    structures, as returned by vkd3d_shader_parse_dxbc().<br/>
+  - The VKD3D_SHADER_COMPILE_OPTION_WRITE_TESS_GEOM_POINT_SIZE compile option<br/>
+    can be used to specify whether SPIR-V shaders targeting Vulkan<br/>
+    environments should write point sizes for geometry and tessellation<br/>
+    shaders. If left unspecified, point sizes will be written.</p>
+</blockquote>
+<p><em>Want help managing Wine on Linux? You can try <a href="https://usebottles.com/" target="_blank">Bottles</a>, <a href="https://lutris.net/" target="_blank">Lutris</a> and the <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Launcher</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/vkd3d-17-is-out-now-for-the-wine-translation-layer/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/vkd3d-17-is-out-now-for-the-wine-translation-layer/</guid>
+      <pubDate>Fri, 24 Mar 2023 14:03:02 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Rogue: Genesia is another horde survivor (Vampire-like?) game worth a look</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>These Vampire Survivor-like horde survival games are still all the rage, and I keep discovering more. Rogue: Genesia is another, with Native Linux support and it is rated Steam Deck Playable.</p>
+<p>While the basics of the game are Survivor-like with you facing off against various waves of enemies, auto-firing weapons, picking up gems to eventually level up and pick from randomised powers / equipment it does have some major differences too. The main mode is set up more like Slay the Spire, where you pick locations to explore through a map which could be a normal fight spawning lots of enemies, a boss fight, a chest and so on. However there is also a plain endless survival mode too.</p>
+<div class="hidden_video" data-video-id="8ooEvLDmViM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/89d66f4c783c58b8c959b45c107f2dbf.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/8ooEvLDmViM" target="_blank">See video</a></div></div>
+<p>In terms of artwork it looks a lot more like the Octopath Traveler series from Square Enix. I genuinely love the style to this one, it's so different to all the rest.</p>
+<p>As you go through it, you also unlock more locations and there's lots of different builds you can make. It's in Early Access so it's not finished and seems like it won't be finished for quite some time. Even so, it's a lot of fun to play through even now and worked pretty great on both Desktop Linux and Steam Deck (with settings turned down to Low).</p>
+<p>I also still don't know what to call these types of games. Has the industry settled in a term for it yet? Horde survival? Vamp-like? Survivor-like? There <a href="https://www.gamingonlinux.com/2022/09/a-genre-is-born-horde-games/" target="_blank">sure is a lot of them</a>.</p>
+<p>You can find <a href="https://store.steampowered.com/app/2067920/Rogue_Genesia/" target="_blank">Rogue: Genesia on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/rogue-genesia-is-another-horde-survivor-vampire-like-game-worth-a-look/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/rogue-genesia-is-another-horde-survivor-vampire-like-game-worth-a-look/</guid>
+      <pubDate>Fri, 24 Mar 2023 13:51:09 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/762176605id22486gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+    </item>
+    
+    <item>
+      <title>Build your own racecar in Revhead, now with added Steam Deck support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Revhead, a racing sim all about actually building your own vehicle, recently had an upgrade with the developer now supporting the Steam Deck. It also has Native Linux support. Not one I've actually written about at all before, somehow the original release was missed in a sea of games back in 2017.</p>
+<p>About it: "Revhead is a car racing simulation game, where you have to build your own race car. You have a friend Charlie, who is busy with building race cars. He would need some help from you and he invites you to Australia. You start your journey somewhere in a small town in Australia, where the only way to get recognised if you are able to build the fastest and best racing car around. You have Charlie, his expertise and his garage. The rest is up to you!"</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14631829551679664669gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14631829551679664669gol1.jpg"/></a></p>
+<p>From the March 22nd patch:</p>
+<blockquote>
+<ul>
+<li>Added new race location to the Airport (only open at late night).</li>
+<li>Added some new brand limited race for night race at Airport.</li>
+<li>Fixed some AI related braking issue at drag races.</li>
+<li>Fixed duplicated controller issues.</li>
+<li>Fixed some localizations.</li>
+<li>Game now supports Steam Deck.</li>
+</ul>
+</blockquote>
+<p>For Steam Deck support, Valve tested it on the Native Linux build and gave it a Playable rating recently, as some text can be a bit small and you need to manually bring up the keyboard (STEAM + X).</p>
+<p>You can <a href="https://store.steampowered.com/app/589760/Revhead/" target="_blank">find it on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/build-your-own-racecar-in-revhead-now-with-added-steam-deck-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/build-your-own-racecar-in-revhead-now-with-added-steam-deck-support/</guid>
+      <pubDate>Fri, 24 Mar 2023 13:32:44 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1874122729id22485gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Racing</category>
+      
+    </item>
+    
+    <item>
+      <title>GE-Proton 7-53 is out now fixing up Star Citizen, Diablo IV and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another fresh tasty release of GE-Proton is now available, two actually were released in the last day so here's what's new as of GE-Proton 7-53 for Steam Deck and Linux desktop gaming. GE-Proton is built and maintained by the community, it is not affiliated with Valve and the official Proton. See <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">my full Proton guide for more</a>.</p>
+<p>Here's what's changed:</p>
+<blockquote>
+<ul>
+<li>Diablo IV proper fix from proton upstream added.</li>
+<li>Halo Infinite fix/patches from proton upstream added/updated.</li>
+<li>protonfix for Outlaws + A Handful of Missions (thanks Stereophonick).</li>
+<li>protonfix for Underdog Detective (thanks Neodamode).</li>
+<li>dxvk updated to git.</li>
+<li>vkd3d-protonupdated to git.</li>
+<li>wine updated to bleeding edge.</li>
+<li>*Star Citizen specific EAC patch.</li>
+</ul>
+</blockquote>
+<p>*Star Citizen needs other adjustments too including:</p>
+<blockquote>
+<p>Before running Star Citizen<br/>
+(1) You must set <code class="inline-code">SteamGameId=starcitizen</code> environment variable to trigger the EAC workaround<br/>
+(2) this script should be run to remove existing EAC files:</p>
+<p><code>#!/bin/sh<br/>
+if [ -d \"$WINEPREFIX/drive_c/users/$USER/AppData/Roaming/EasyAntiCheat\" ]; then rm -rf \"$WINEPREFIX/drive_c/users/$USER/AppData/Roaming/EasyAntiCheat\"; fi</code></p>
+</blockquote>
+<p>See more on the <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases" target="_blank">GitHub releases page</a>. </p>
+<p>Here's an example guide on installing GE-Proton:</p>
+<div class="hidden_video" data-video-id="6doaQNnHR60"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37b4fc871ab3188f385a1c60a2e0949c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6doaQNnHR60" target="_blank">See video</a></div></div>
+<p><strong>Text Guide to install GE-Proton:</strong></p>
+<ul>
+<li>Download
+<ul>
+<li><u>Desktop</u>: head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>.</li>
+<li><u>Steam Deck</u>: simply download ProtonUp-Qt from Discover in Desktop Mode (Steam Button -&gt; Power - Switch to Desktop).</li>
+</ul>
+</li>
+<li>Load ProtonUp-Qt.</li>
+<li>Make sure it's set to Steam at the top and select to install GE-Proton.</li>
+<li>Reload Steam to update the compatibility layer list.</li>
+<li>In Steam:
+<ul>
+<li><u>Desktop</u>: right click a game and go to Properties.</li>
+<li><u>Steam Deck</u>: find the game in your library, go to the little COG on the right and then select Properties.</li>
+</ul>
+</li>
+<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/ge-proton-7-53-is-out-now-fixing-up-star-citizen-diablo-iv-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/ge-proton-7-53-is-out-now-fixing-up-star-citizen-diablo-iv-and-more/</guid>
+      <pubDate>Fri, 24 Mar 2023 13:23:24 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+    </item>
     
     <item>
       <title>Framework reveal new laptop with modular graphics, plus an AMD Ryzen model</title>
@@ -3696,265 +4048,6 @@ This fixes a problem when Flatpak is installed that caused the installer to plac
       <category>Family Friendly</category>
       
       <category>GOG</category>
-      
-    </item>
-    
-    <item>
-      <title>Apex Legends banning some Linux players, keep an eye out Steam Deck players</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>It appears that Apex Legends from Respawn and EA has started banning some players on Linux, and while the Steam Deck uses Linux too it seems nearly all the bans were desktop Linux players.</p>
-<p>The bans started appearing just before the weekend, and I waited to see what happened here instead of jumping the gun. As we've seen in the past when only a couple mention a ban, it turned out to be actual cheaters. In this case though, more ban reports are gradually appearing on this.</p>
-<p>Currently it's <em>not</em> clear what the issue is or what's causing it and the overall number is still really low when talking about the overall Apex player-base, even taking into account the lower amount of players on Linux Desktop and Steam Deck, the number is still pretty small. However, now there's quite a few noting a ban, it's worth perhaps waiting to see what happens if you value your Apex Legends account (especially if you've spent money on it…).</p>
-<p>Looking over the reports on the <a href="https://answers.ea.com/t5/Technical-Issues/Linux-players-getting-banned/m-p/12338557#M166472" target="_blank">EA Forum</a>, at least one person was using a Steam Deck while the rest were on Desktop Linux and on the <a href="https://github.com/ValveSoftware/Proton/issues/4350" target="_blank">GitHub</a> post all reports there were seemingly on Desktop Linux too. Seems the players were using a mixture of different Proton versions too including Proton Experimental and GE-Proton so there's not a clear cause.</p>
-<p>Apex Legends uses Easy Anti-Cheat, and they have the support turned on for Linux / Steam Deck with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>, so this shouldn't happen to legitimate players regardless of how many it is but accidentally bans do happen. It is also a Steam Deck Verified title.</p>
-<p>EA is at least looking into it as of a few hours ago, as a Community Manager <a href="https://answers.ea.com/t5/Technical-Issues/Linux-players-getting-banned/m-p/12345698#M166642" target="_blank">replied</a> to say they've passed the information on.</p>
-<p><em>I've been playing a good few hours over last night and today with no issue on Steam Deck so far.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/apex-legends-banning-linux-players-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/apex-legends-banning-linux-players-steam-deck/</guid>
-      <pubDate>Wed, 01 Mar 2023 13:52:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/68576336id22391gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Anti-Cheat</category>
-      
-      <category>Battle Royale</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck hits over 8,000 games Playable or Verified, plus February&#39;s most-played</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve's popular Linux-powered gaming handheld, the Steam Deck, has officially crossed over the 8,000 mark for games noted to be Playable or Verified.</p>
-<p>Going by the list on <a href="https://steamdb.info/instantsearch/?refinementList%5Boslist%5D%5B0%5D=Steam%20Deck%20Verified&amp;refinementList%5Boslist%5D%5B1%5D=Steam%20Deck%20Playable" target="_blank">SteamDB</a>, which includes those titles no longer listed for sale on Steam but still playable if you own them the current count at time of writing is 8,003. Here's a breakdown by category:</p>
-<ul>
-<li>Verified: 2980</li>
-<li>Playable: 5023</li>
-<li>Unsupported: 2571</li>
-</ul>
-<p>I should note, that even plenty of Unsupported games do in fact work and those numbers only include what have been through Valve's formal Deck Verified system — you can still install and attempt to play anything you want.</p>
-<p>Some notable games that recently became Playable or Verified include:</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/1815780/Asphalt_9_Legends/" target="_blank">Asphalt 9: Legends</a></li>
-<li><a href="https://store.steampowered.com/app/668580/Atomic_Heart/" target="_blank">Atomic Heart</a> (see <a href="https://www.youtube.com/watch?v=Yb1igzYFKXc" target="_blank">my video</a>)</li>
-<li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">Cyberpunk 2077</a></li>
-<li><a href="https://store.steampowered.com/app/1273400/Construction_Simulator/" target="_blank">Construction Simulator</a> (see <a href="https://www.youtube.com/watch?v=KsAgEZr7kME" target="_blank">my video</a>)</li>
-<li><a href="https://store.steampowered.com/app/262060/Darkest_Dungeon/" target="_blank">Darkest Dungeon</a></li>
-<li><a href="https://store.steampowered.com/app/1971650/OCTOPATH_TRAVELER_II/" target="_blank">OCTOPATH TRAVELER II</a></li>
-<li><a href="https://store.steampowered.com/app/952060/Resident_Evil_3/" target="_blank">Resident Evil 3</a></li>
-<li><a href="https://store.steampowered.com/app/1295500/Warhammer_40000_Battlesector/" target="_blank">Warhammer 40,000: Battlesector</a></li>
-</ul>
-<p>Additionally, Valve just recently <a href="https://twitter.com/OnDeck/status/1630638044922658816" target="_blank">revealed</a> the top most played games on Steam Deck for February based on play-time and the list is:</p>
-<ul>
-<li>Hogwarts Legacy</li>
-<li>ELDEN RING</li>
-<li>Vampire Survivors</li>
-<li>Stardew Valley</li>
-<li>Red Dead Redemption 2</li>
-<li>The Witcher 3: Wild Hunt</li>
-<li>Grand Theft Auto V</li>
-<li>The Elder Scrolls V: Skyrim Special Edition</li>
-<li>Hades</li>
-<li>Brotato</li>
-<li>Persona 5 Royal</li>
-<li>MONSTER HUNTER RISE</li>
-<li>The Binding of Isaac: Rebirth</li>
-<li>Fallout 4</li>
-<li>Cyberpunk 2077</li>
-<li>Valheim</li>
-<li>Slay the Spire</li>
-<li>Marvel's Midnight Suns</li>
-<li>NBA 2K23</li>
-<li>Project Zomboid </li>
-</ul>
-<p>In case you missed it check out my recent Steam Deck news round-up video:</p>
-<div class="hidden_video" data-video-id="LetMI8G3tcE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/85ee7b5d92dc1e125c7fd7dc1ef271ad.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/LetMI8G3tcE" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/steam-deck-hits-over-8000-games-playable/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/steam-deck-hits-over-8000-games-playable/</guid>
-      <pubDate>Wed, 01 Mar 2023 13:21:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>JSAUX makes more Steam Deck backplate colours available</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Want to give your Steam Deck a bit more colour and customization? The new coloured translucent backplates from JSAUX are <a href="https://jsaux.com/products/transparent-back-plate-for-steam-deck-pc0106?variant=43781193269468" target="_blank">available</a> to order.</p>
-<p>They're now available in: Brown, Purple, Blue, Green and Red at $29.99 with a Crystal (Clear) version coming sometime later. They're also offering a discount to people who already picked up the original Brown version. All of them come with a set of buttons you can pick from, anti-static finger gloves, screws, a screwdriver and a stick to help you get the backplate off.</p>
-<p>This and a whole lot more, including a first-look at the backplate they sent me, is in my below news round-up video:</p>
-<div class="hidden_video" data-video-id="LetMI8G3tcE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/85ee7b5d92dc1e125c7fd7dc1ef271ad.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/LetMI8G3tcE" target="_blank">See video</a></div></div>
-<p>The backplate does look great but the metal pad on it does get very warm. If you want it to properly reduce temperatures other than the real small amount it does by itself, it really would need something additional on top of it to keep pulling the heat away. Still, seems really nice overall. Would be interesting if they eventually did a version without the metal plate on the back and a frontplate too.</p>
-<p><em>I've reached out to their PR team to see if I will be getting the other colours to take a look at too.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/jsaux-makes-more-steam-deck-backplate-colours-available/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/jsaux-makes-more-steam-deck-backplate-colours-available/</guid>
-      <pubDate>Tue, 28 Feb 2023 16:51:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1642919755id22389gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Hardware</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>NVIDIA 530.30.02 mainline Beta driver rolls out, plus a new Vulkan Beta driver</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>NVIDIA has released two new Beta drivers for Linux recently, so here's your usual rundown of what's new and changed.</p>
-<p>First up is the <a href="https://www.nvidia.co.uk/download/driverResults.aspx/200095/en-uk" target="_blank">Beta 530.30.02</a>, which is for their normal mainline consumer drivers. Here's all that's changed:</p>
-<blockquote>
-<ul>
-<li>Added an application profile to avoid performance problems in Xfce 4 when the OpenGL compositor backend is enabled along with G-SYNC.</li>
-<li>Added support for suspend and resume when using GSP firmware.</li>
-<li>Moved the nvidia-settings application icon into the 'hicolor' icon theme, which allows it to be customized by other icon themes selected in the desktop environment.</li>
-<li>Fixed a bug that prevented PRIME render offload from working for Wayland applications when running on a system with an AMD iGPU.</li>
-<li>Fixed a bug that prevented nvidia-installer from recording kernel log output to the installer log in some module loading failure paths.</li>
-<li>Changed nvidia-installer to no longer use the $XDG_DATA_DIRS environment variable. XDG data files are now installed to a path specified by the --xdg-data-dir option, or /usr/share if not specified.<br/>
-This fixes a problem when Flatpak is installed that caused the installer to place the nvidia-settings.desktop file in /root/.local/share/flatpak/exports/share/applications.</li>
-<li>Changed the behavior of glXGetRefreshRateSGI() for non-integer refresh rates to round to the nearest whole number rather than truncating.</li>
-<li>Changed the compression format of the .run installer package from xz to zstd. This results in a smaller compressed package, and faster decompression performance. A fallback zstd decompressor is embedded into the installer package for systems which do not already have a zstd decompression program installed.</li>
-<li>Fixed a bug that caused nvidia-installer to mistakenly unload some already loaded non-NVIDIA kernel modules.</li>
-<li>Added compatibility for Linux kernels with Indirect Branch Tracking (IBT).</li>
-</ul>
-</blockquote>
-<p>NVIDIA <em>also</em> just recently released the Vulkan <a href="https://developer.nvidia.com/vulkan-driver" target="_blank">Beta 525.47.11</a> for <em>developers</em> that includes these changes:</p>
-<blockquote>
-<ul>
-<li>New:
-<ul>
-<li><a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_EXT_image_sliced_view_of_3d.html" target="_blank">VK_EXT_image_sliced_view_of_3d</a></li>
-</ul>
-</li>
-<li>Fixes:
-<ul>
-<li>Fixed issue with line stipple pattern when line stipple enable is dynamic.</li>
-<li>Vulkan Video fixes:
-<ul>
-<li>Fix an issue where the driver is incorrectly padded in-place the API provided bitstream buffer when the size of the buffer is smaller than 16 bytes.</li>
-<li>Fix an h.264 encoder bug with handling IDR pictures when the coded picture resolution changes.</li>
-<li>Fix an issue where in some session configuration cases an incorrect size is being reported for the required memory heap for the h.264 encoder session.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<p>That extension noted above was worked on by people from Valve, Igalia, Google and NVIDIA and it's described as allowing "creating 3D views of 3D images such that the views contain a subset of the slices in the image, using a Z offset and range, for the purpose of using the views as storage image descriptors. This matches functionality in D3D12 and is primarily intended to support D3D12 emulation" — so it's another that was created to help the likes of Proton.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/nvidia-5303002-mainline-beta-driver-rolls-out-plus-a-new-vulkan-beta-driver/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/nvidia-5303002-mainline-beta-driver-rolls-out-plus-a-new-vulkan-beta-driver/</guid>
-      <pubDate>Tue, 28 Feb 2023 16:24:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Drivers</category>
-      
-      <category>Meta</category>
-      
-      <category>NVIDIA</category>
-      
-    </item>
-    
-    <item>
-      <title>Collabora announce &#39;Mercury&#39; hand-tracking for open source XR runtime Monado</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After working on it for a while, Collabora developer Moses Turner has <a href="https://www.collabora.com/news-and-blog/news-and-events/monados-mercury-hand-tracking-now-ready-for-use.html" target="_blank">announced</a> that their "Mercury" hand-tracking for Monado, their open source XR runtime, is now ready for use.</p>
-<p>Since it's been a while after last talking about Monado: "Monado is an open source XR runtime delivering immersive experiences such as VR and AR on mobile, PC/desktop, and other devices. Monado aims to be a complete and conformant implementation of the OpenXR API made by Khronos. The project is currently being developed for GNU/Linux and aims to support other operating systems such as Windows in the near future."</p>
-<p>Work on the hand-tracking system has been going for over a year, and now ready for public use. Currently it works on the Valve Index, Windows Mixed Reality headsets (Reverb G2 v2 video below), Oculus Rift S (early support), and Luxonis cameras (video shows a OAK-D Pro W Dev mounted on a North Star). They said it "estimates hand pose accurately, supports limited hand-over-hand interactions, tracks fast hand movements, and is useable for drawing, typing and UI interaction".</p>
-<div class="hidden_video" data-video-id="dwJLUOj27eI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/88a5dec1ffad33e4f7ddb858e206f773.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/dwJLUOj27eI" target="_blank">See video</a></div></div>
-<p>Makes me continue to wonder if Valve will be using Monado for the <a href="https://www.gamingonlinux.com/2022/06/looks-like-valve-are-gearing-up-for-a-new-vr-headset/" target="_blank">long rumoured Deckard VR HMD</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/collabora-mercury-hand-tracking-open-source-xr-runtime-monado/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/collabora-mercury-hand-tracking-open-source-xr-runtime-monado/</guid>
-      <pubDate>Tue, 28 Feb 2023 15:29:35 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/630695613id22387gol.jpg" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-      <category>Virtual Reality</category>
-      
-    </item>
-    
-    <item>
-      <title>Paradox plan announcements next week, like a new game from Cities Skylines dev</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Paradox Interactive announced that on Monday, March 6th they will be announcing a whole bunch of new games and expansions.</p>
-<p>I'm cautiously excited as they said it will include new games from Harebrained Schemes (Shadowrun / BATTLETECH), Colossal Order (Cities Skylines) and Paradox Tectonic (led by industry veteran Rod Humble). Not just that there will also be new expansions for existing games, free updates and news from their own Paradox Arc publishing initiative.</p>
-<div class="hidden_video" data-video-id="HCbJZqnuNYg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5ca49cb654a786421aa04c32f81798c4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/HCbJZqnuNYg" target="_blank">See video</a></div></div>
-<p>From the press release:</p>
-<p>“I don’t want to say we have too many announcements, but it’s hard to choose which one has me most thrilled,” said Fredrik Wester, CEO of Paradox Interactive. “Talking directly with our players about our games, sharing their excitement for what’s coming next, comparing how many hours we’ve played - it’s something everyone at Paradox profoundly enjoys. I’m also eager not to have to keep these announcements secret for much longer.”</p>
-<p>Their show will start at March 6, 2023 at 18:00 CET / 17:00 UTC. You'll be able to watch on their <a href="https://www.youtube.com/c/paradoxinteractive" target="_blank">YouTube</a> and <a href="https://www.twitch.tv/paradoxinteractive" target="_blank">Twitch</a>.</p>
-<p>Will you be tuning in? What are you hoping to see announced?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/paradox-plan-announcements-next-week-like-a-new-game-from-cities-skylines-dev/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/paradox-plan-announcements-next-week-like-a-new-game-from-cities-skylines-dev/</guid>
-      <pubDate>Tue, 28 Feb 2023 15:13:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1217630040id22386gol.jpg" type="image/jpeg"/>
-      
-      <category>Event</category>
-      
-      <category>Meta</category>
-      
-      <category>Paradox Interactive</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Inventory management roguelike Backpack Hero releases 1.0 in May</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Currently in Early Access with Native Linux support and rated Steam Deck Playable, the inventory management roguelike Backpack Hero is releasing in full in May.</p>
-<p>This is actually a surprising amount of fun thanks to the inventory sorting mechanic, and something I didn't expect to really like overall originally but it clearly <a href="https://www.gamingonlinux.com/2022/08/backpack-hero-is-an-inventory-management-roguelike-and-my-new-favourite-game/" target="_blank">won me over easily</a> when I first started with it. The way it's designed really keeps you constantly thinking about all of your equipment, since the position in your bag is key and can really affect your power. Plenty of others agree since it has a Very Positive rating on Steam too.</p>
-<p>Now the developer has <a href="https://store.steampowered.com/news/app/1970580/view/3646264166717131984" target="_blank">announced</a> they plan to have a 1.0 release in May along with major upgrades. Some of what's coming to it include a big Town Update adding in some more depth, Twitch integration and more.</p>
-<div class="hidden_video" data-video-id="fZLcGOJxGaw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/989aee7a52490447fe52f6a4fa88adf1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/fZLcGOJxGaw" target="_blank">See video</a></div></div>
-<p>Available to <a href="https://store.steampowered.com/app/1970580/Backpack_Hero/?curator_clanid=4218320" target="_blank">buy on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/02/inventory-management-roguelike-backpack-hero-releases-in-may/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/02/inventory-management-roguelike-backpack-hero-releases-in-may/</guid>
-      <pubDate>Tue, 28 Feb 2023 14:59:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1665897936id22385gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Indie Game</category>
       
     </item>
     
