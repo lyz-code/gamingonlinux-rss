@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-03-30 07:24:46.444576</pubDate>
+    <pubDate>2023-03-31 07:24:32.465482</pubDate>
 
     
     <image>
@@ -18,6 +18,249 @@
     </image>
 
     
+    
+    <item>
+      <title>NVIDIA release details of security issues and release new drivers</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA issued a new Security Bulletin, to advise you to update your GPU drivers due to multiple security issues discovered. This bulletin went out today with the email arriving in my inbox moments ago, so here's the details of the issues that affect Linux.</p>
+<p>Firstly all driver versions <em>below</em> these are effected: 530.41.03, 525.105.17, 515.105.01 and 470.182.03. So make sure you upgrade if you're on a driver below the version number listed there in each series. The driver actual series doesn't matter, they fixed it it all listed.</p>
+<p>Here's what issues affected just Linux or Windows and Linux together:</p>
+<ul>
+<li>CVE-2023-0189 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer handler, which may lead to code execution, denial of service, escalation of privileges, information disclosure, and data tampering.;</li>
+<li>CVE‑2023‑0184 - NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer handler, which may lead to denial of service, escalation of privileges, information disclosure, and data tampering.</li>
+<li>CVE-2023-0181 - NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in a kernel mode layer handler, where memory permissions are not correctly checked, which may lead to denial of service and data tampering.</li>
+<li>CVE-2023-0191 - NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer handler, where an out-of-bounds access may lead to denial of service or data tampering.</li>
+<li>CVE-2023-0183 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer where an out-of-bounds write can lead to denial of service and data tampering.</li>
+<li>CVE-2023-0180 - NVIDIA GPU Display Driver for Linux contains a vulnerability in a kernel mode layer handler, which may lead to denial of service or information disclosure.</li>
+<li>CVE-2023-0185 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer, where sign conversion issues may lead to denial of service or information disclosure.</li>
+<li>CVE-2023-0198 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer, where improper restriction of operations within the bounds of a memory buffer can lead to denial of service, information disclosure, and data tampering.</li>
+<li>CVE-2023-0187 - NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer handler, where an out-of-bounds read can lead to denial of service.</li>
+<li>CVE-2023-0199 - NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer handler, where an out-of-bounds write can lead to denial of service and data tampering.</li>
+<li>CVE-2023-0190 - NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer, where a NULL pointer dereference may lead to denial of service.</li>
+<li>CVE-2023-0188 - NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer handler, where an unprivileged user can cause an out-of-bounds read, which may lead to denial of service.</li>
+<li>CVE-2023-0194 - NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer driver, where an invalid display configuration may lead to denial of service.</li>
+<li>CVE-2023-0195 - NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer driver, where an invalid display configuration may lead to information disclosure.</li>
+</ul>
+<hr/>
+<p>Driver versions <a href="https://www.nvidia.co.uk/Download/driverResults.aspx/202484/en-uk" target="_blank">525.105.17</a> and <a href="https://www.nvidia.co.uk/Download/driverResults.aspx/200663/en-uk" target="_blank">470.182.03</a> were released today, which along with the security fixes also address other issues (other drivers already out had the fixes). For driver 525.105.17 this is the changelog:</p>
+<ul>
+<li>Fixed a bug that could cause the nvidia-settings control panel to crash when resetting the display layout.</li>
+<li>Fixed a bug that could cause excessive GPU power consumption at idle when driving multiple displays with a high refresh rate.</li>
+<li>Fixed a bug in nvidia-powerd which could cause excessive CPU usage.</li>
+<li>Fixed an issue which could cause applications to run at 1 FPS when using an NVIDIA PRIME Display Offload sink as the only active display.</li>
+<li>Added compatibility for Linux kernels with Indirect Branch Tracking (IBT).</li>
+<li>Fixed a bug that could cause fullscreen PRIME Render Offload applications and/or X to crash when an NVIDIA GPU is driving multiple displays with Reverse PRIME.</li>
+<li>Added support for console restoration when using simpledrm.</li>
+<li>Updated nvidia-modprobe to create symbolic links in /dev/char when creating the /dev/nvidia* device nodes. This resolves an issue that prevented the device nodes from working with newer versions of runc:<br/>
+<a href="https://github.com/opencontainers/runc/issues/" target="_blank">https://github.com/opencontainers/runc/issues/</a></li>
+</ul>
+<p>And for 470.182.03:</p>
+<ul>
+<li>Fixed an issue where HDMI audio output was not working in some cases, especially with high display refresh rates (120Hz, 100Hz, etc.) using Fixed Rate Link (FRL) transmission mode.</li>
+</ul>
+<hr/>
+<p>See the full details in their <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5452" target="_blank">new announcement</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/nvidia-release-details-of-security-issues-and-release-new-drivers/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/nvidia-release-details-of-security-issues-and-release-new-drivers/</guid>
+      <pubDate>Thu, 30 Mar 2023 19:26:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Drivers</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Story-driven emotional action-adventure RPG &#39;Dreamed Away&#39; gets a demo</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Dreamed Away from Nicolas Petton and Pineapple Works is an upcoming emotional action-adventure RPG with psychological horror elements. There's now a demo available to try. While the full game isn't due out until next year, this is your chance to try it before release and it will have full Native Linux support.</p>
+<p>"On a rainy summer night, Théo wakes up in his bedroom and realizes his parents and his sister Louise have disappeared. The true nature of the world lays itself bare. Ghosts, Phantoms and Revenants haunt Théo inside the catacombs and dark places where he searches for his sister. Always a step behind and never able to catch up.</p>
+<p>What happened? What does it mean? Why is this place so familiar?</p>
+<p>That's how his journey begins."</p>
+<div class="hidden_video" data-video-id="UX6n6n2LAWU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/50ab9601d1e3ef1cd3470d40153dadaf.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/UX6n6n2LAWU" target="_blank">See video</a></div></div>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li>Immersive storytelling that takes you on a journey to solve Théo's dark and unsettling mystery.</li>
+<li>Diverse setting: varied colors and environments that bring you from a vibrant, peaceful atmosphere to those dark and mysterious places.</li>
+<li>Detailed and aesthetic pixel art setting that is worth exploring.</li>
+<li>An original soundtrack by Nicolas Petton.</li>
+<li>Unique skill-based combat system.</li>
+<li>Challenge awaits you as every encountered enemy has different variations of dodging and time-based mini-games of increasing complexity.</li>
+<li>No magic, no weapons. Use your skill and strategy to defeat enemies.</li>
+<li>No random encounters.</li>
+</ul>
+</blockquote>
+<p>You can <a href="https://store.steampowered.com/app/1919900/Dreamed_Away/" target="_blank">find it on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/story-driven-emotional-action-adventure-rpg-dreamed-away-gets-a-demo/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/story-driven-emotional-action-adventure-rpg-dreamed-away-gets-a-demo/</guid>
+      <pubDate>Thu, 30 Mar 2023 16:10:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2095677950id22512gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Adventure</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Stories from the Outbreak, a zombie roguelike RPG out in Early Access</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Stories from the Outbreak from Coldwild Games, an indie game development company from Latvia, creators of "Merchant of the Skies", "Luna's Fishing Garden" and the "Lazy Galaxy" series hits Early Access.</p>
+<p>The game is set in 2020, with a new disease sweeping through the world (huh — sounds familiar). Zombies rise up, attack and you get the rest, everything goes to hell. You wake up and hear on the radio there's one last ferry to get away, and so it begins.</p>
+<p>With it now in Early Access (along with Native Linux support), the developer mentioned the current version has a shorter scenario than what will be featured in the full game. You'll get to see 11 unique characters, more than 15 enemies, and three expansive maps to explore. Planned features:</p>
+<blockquote>
+<ul>
+<li>Form a team of survivors, hoping to escape the doomed city. Decide the fates of your team members as you go.</li>
+<li>Characters talk between themselves, showing polarization in views. Not every team is going to reach the ferry, but their stories matter. Will different views prevent them from reaching their goals?</li>
+<li>Escape the dying world: traverse the area maps in search of shelter and supplies.</li>
+<li>Fight zombies when necessary: there are more than 15 unique enemy types in the game.</li>
+</ul>
+</blockquote>
+<div class="hidden_video" data-video-id="pWdMg5iY2-0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3904e7eacb015cd2f85ce93a782377f4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/pWdMg5iY2-0" target="_blank">See video</a></div></div>
+<p>You can check it <a href="https://store.steampowered.com/app/1968630/Stories_from_the_Outbreak/" target="_blank">out on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/stories-from-the-outbreak-a-zombie-roguelike-rpg-out-in-early-access/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/stories-from-the-outbreak-a-zombie-roguelike-rpg-out-in-early-access/</guid>
+      <pubDate>Thu, 30 Mar 2023 13:56:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/554810782id22511gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Europa Universalis IV: Domination releasing April 18th</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Paradox has confirmed the Europa Universalis IV: Domination expansion is now releasing on April 18th. This is a full add-on too, not a small story pack.</p>
+<p>In this add-in for the popular grand strategy game you will get a bunch of additions for some of the most popular and powerful nations available. This includes entirely new mission trees, historical government reforms, estate challenges and units to add greater variety and sometimes, tough choices.</p>
+<p><strong><em>Some of what's new:</em></strong></p>
+<ul>
+<li><strong>The Ottoman Empire: </strong>A revised conquest tree with new rewards for pushing Ottoman dominance, including expansion through the new Eyalet system, and new internal changes, such as the new Janissary estate, the new Ottoman Decadence mechanic, and the ‘Ottoman Power Struggle’ disaster.</li>
+<li><strong>China: </strong>Different mission trees for the Han Ming and invader empires like the Qing. Choose between expansion and Inward Perfection, and counter the power of the Eunuchs to build a more stable empire.</li>
+<li><strong>Japan: </strong>Unite Japan as you deal with the power of the Shogun and the independent Daimyos. Choose to open the country to foreign influence or keep it isolated, while deciding upon different paths of expansion and reform.</li>
+<li><strong>Russia: </strong>Free your country of the Tatar Yoke, and transform it into a Great Empire. Choose the path of Peter’s reforms to modernize the state, so your mission tree as well as your mechanics will change and evolve as the game progresses. Use the power of Cossacks and Streltsy to expand your Empire to East and West.</li>
+<li><strong>Spain: </strong>Expanded mission trees for Castile and Aragon, with different paths to form Spain, a new mechanic available for the new ‘System of Councils’ government, and decisions about the Army and Navy to get the mighty Tercios and Spanish Armada.</li>
+<li><strong>France: </strong>Fight the end of the Hundred Years War, centralize France into an absolute monarchy while dealing with the Wars of Religion, expand into Italy and the Holy Roman Empire, and lead the Revolution through an expanded mission tree.</li>
+<li><strong>Great Britain: </strong>Separate paths for either a British Empire or an Angevin Britain, as well as a deeper internal gameplay, with unique features for the English Parliament  and changes to the English Civil War disaster.</li>
+<li><strong>Minor nations: </strong>Mission changes, new government mechanics and expanded flavor for Prussia, Portugal and Korea.</li>
+</ul>
+<div class="hidden_video" data-video-id="Ty-svFTmUUc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/205b02b123ffb4644ae9037d3f4afbe7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Ty-svFTmUUc" target="_blank">See video</a></div></div>
+<p>You can buy Europa Universalis IV from <a href="https://www.gog.com/en/game/europa_universalis_iv" target="_blank">GOG</a>, <a href="https://www.humblebundle.com/store/europa-universalis-iv?partner=gamingonlinux&amp;charity=12277" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/236850/Europa_Universalis_IV/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<p>Will you be picking it up? Paradox said it will be $19.99 / £16.75 / €19.99 at release and anyone who pre-orders will receive a free bonus music pack.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/europa-universalis-iv-domination-releasing-april-18th/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/europa-universalis-iv-domination-releasing-april-18th/</guid>
+      <pubDate>Thu, 30 Mar 2023 13:43:06 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1521390726id22510gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>DLC</category>
+      
+      <category>Paradox Interactive</category>
+      
+      <category>Strategy</category>
+      
+    </item>
+    
+    <item>
+      <title>Retro racer Super Indie Karts got upgraded with Steam Deck support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>While Super Indie Karts already had Native Linux support, it's nice to see another developer making improvements for Steam Deck too.</p>
+<p>More about it: "Super Indie Karts is a classic retro '90s style karting game featuring a large curation of Indiegame karts and Indiegame themed race tracks, in both the 16-bit flat Super style and the 64-bit low poly Ultra style. With Time Trials, Grand Prix, Splitscreen GP, Quick Race, and a few Battle Modes.. there's plenty of ways to tackle the tracks!"</p>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20751910441680176570gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20751910441680176570gol1.jpeg"/></a>Screenshot of me testing it on Steam Deck</em></p>
+<p>In their March 2023 <a href="https://store.steampowered.com/news/app/323670/view/6383330087928345070" target="_blank">update</a> the developer made these improvements and it's now Steam Deck Verified too:</p>
+<blockquote>
+<ul>
+<li>Added 16:10 ratio resolutions to the settings, giving a better view on devices such as Steam Deck.</li>
+<li>New resolutions include: 640x400, 960x600, 1280x800, 1440x900, 1680x1050, 1920x1200, 2560x1600, and 3840x2400.</li>
+<li>Added Steam Deck controller glyphs.</li>
+<li>Improvements to First Person View giving much tighter feeling of control.</li>
+<li>Moved camera a little further away from kart in mode7 tracks, less cramped feeling now.</li>
+<li>Added more freedom to the splitscreen cameras so multiplayer feels more like single player again, still more work to do here on drifting.</li>
+<li>Fixed rapid selection problem changing resolution from settings menu in races.</li>
+<li>Fixed some navigation help in TeslaTowerII.</li>
+<li>Fixed TeslaTower64 being near impossible on 200cc.</li>
+<li>Fixed lighting issues in TeslaTowerII and Burrito Bison's Candyland Arena.</li>
+<li>Added colour navigation hint to stairwell windows in BattleMania track FourFloors.</li>
+<li>Raised/lowered music volume level in a few tracks.</li>
+<li>Fixed trophies not having reflections in their material on the podium screen.</li>
+<li>Various under-the-hood bug fixes, far too many to mention.</li>
+</ul>
+</blockquote>
+<p>It's actually available for the next 6 days in the <a href="https://www.humblebundle.com/games/kart-racers-games-bundle?partner=gamingonlinux" target="_blank">Kart Racers Humble Bundle</a> too. Or you can get it direct <a href="https://store.steampowered.com/app/323670/Super_Indie_Karts/" target="_blank">from Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/retro-racer-super-indie-karts-got-a-big-update-with-steam-deck-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/retro-racer-super-indie-karts-got-a-big-update-with-steam-deck-support/</guid>
+      <pubDate>Thu, 30 Mar 2023 11:43:34 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1012178356id22509gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>The Pale Beyond sold 10% of copies on Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Here's an interesting data point for you, The Pale Beyond a polar exploration game set in an unforgiving frozen wasteland managed to do well on the Steam Deck. Released back in February from Bellular Studios, it is Steam Deck Verified and on desktop Linux it has a Platinum rating on <a href="https://www.protondb.com/app/1266030" target="_blank">ProtonDB</a>.</p>
+<p>Not seen it before, do check out their trailer:</p>
+<div class="hidden_video" data-video-id="PvvkUPPJc_E"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/43b8bf455e2b842c9ddac4ce293696c6.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/PvvkUPPJc_E" target="_blank">See video</a></div></div>
+<p>More about the game: "When its sister ship failed to return from a dangerous polar expedition, a crew is assembled for a perilous rescue mission aboard The Temperance. When the Captain mysteriously disappears after the ship becomes stuck in the ice, players will be forced into Captaincy and manage the 24 crewmates (and 12 sled dogs!). Keeping the crew and sled dogs safe, fed, and warm is key. However, surviving the ice will matter little in the face of mutiny. Every vote will count, so keep the crew on your side."</p>
+<p>They also run the Bellular News YouTube channel, where they talk about the gaming industry. In a video posted up on March 29th, a section talked a bit about the game and mentioned clearly how it had sold 10% of copies on the Steam Deck. The Steam Deck part starts at 5:10 to quote: "I can actually give you a very interesting number from our game, The Pale Beyond and it really shocked me. So 10% of The Pale Beyond sales are actually Steam Deck".</p>
+<div class="hidden_video" data-video-id="e3sZRzUHbPc?rel=0&amp;start=312"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3516fc8230b94ca9b269c828d8f39ea1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/e3sZRzUHbPc?rel=0&amp;start=312" target="_blank">See video</a></div></div>
+<p>Certainly looks interesting, going to have to take a look at this one myself!</p>
+<p>You can buy a copy on <a href="https://www.humblebundle.com/store/the-pale-beyond?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1266030/The_Pale_Beyond/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/03/the-pale-beyond-sold-10-of-copies-on-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/the-pale-beyond-sold-10-of-copies-on-steam-deck/</guid>
+      <pubDate>Thu, 30 Mar 2023 10:13:18 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/367597054id22508gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Sales Numbers</category>
+      
+    </item>
     
     <item>
       <title>Get some glorious Boomer Shooters in this new bundle</title>
@@ -938,7 +1181,7 @@
   - Support for the distance() intrinsic function.<br/>
   - Support for the exp() and exp2() intrinsic functions.<br/>
   - Support for the frac() intrinsic function.<br/>
-  - Support for the lit() intrinsic function.<br/>
+  - Support for the lit() intrinsic function.<br/> 
   - Support for the reflect() intrinsic function.<br/>
   - Support for the sin() and cos() intrinsic functions.<br/>
   - Support for the smoothstep() intrinsic function.<br/>
@@ -3915,234 +4158,6 @@ This fixes a problem when Flatpak is installed that caused the installer to plac
       <category>Meta</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Building a Retro Linux Gaming Computer - Part 28: Losing My Marbles</title>
-      <author>Hamish</author>
-      <description><div class="content group e-content">
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/02/building-a-retro-linux-gaming-computer-part-27-lost-souls/" target="_blank">Part 27: Lost Souls</a></strong></p>
-<p>One of the titles that Loki Software released for Linux was <em>Tribes 2,</em> an online multiplayer shooter which was the first game to be released using the Torque Game Engine. Torque 3D would go on prove to be a favourite of a number of independent developers over the next decade, with the engine's maintainer GarageGames stepping in to distribute several of the games produced with it for Linux themselves. This included a game of their own devising, <em>Marble Blast Gold</em>.</p>
-<p><em>Marble Blast </em>was first released in 2002, before being updated to <em>Marble Blast Gold</em> in 2003. A six level playable Linux demo was released through the MarbleBlastGoldDemo-1.4.1.sh.bin installer. The goal of the game is to navigate an autonomous marble through a 3D playing world, collecting all of the gems needed and using the power ups provided to overcome the obstacles preventing you from progressing on to the next level.</p>
-<p>Anyone who has ever played the free software title <em>Neverball </em>should be familiar with the basic concept, the main difference being that with <em>Marble Blast</em> you control the marble directly, rather than shifting around the floor to roll a ball. These kinds of high reflex games have a way of trying both my nerves and patience before long, but the appeal sure is there for some. The graphics are bright and colourful, while the music and narration remain jovial.</p>
-<p>To its credit <em>Marble Blast Gold</em> and the Torque Game Engine powering it do run rather well, even on a computer which would have been well into its operating life by the time the game came out. <em>Marble Blast Gold</em> stayed performant even when set to display at higher screen resolutions such as 1024x768 or when using 32 bit colour depth; the only exception being enabling Stencil Shadows, which does hammer the frame rate something fierce.</p>
-<p>I also find the selection of levels in the demo to be puzzling. I would have just included all of the early beginner levels, which introduce all of the mechanics before letting you tackle your first real challenge. The demo can also be a bit obnoxious, with it showing a begging screen imploring you to buy the full game after completing each and every level. Considering the state of the registered version as it exists now, this can feel more than a bit galling.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17659680751676232867gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/17659680751676232867gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7656394871676232828gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7656394871676232828gol6.png"/></a></p>
-<p><em>Marble Blast Gold</em> never saw a retail release, with it just being sold as a digital download through the GarageGames website. The game has been unavailable for purchase since being removed from their store in 2011, and even if you had purchased the full version back in the day, you can no longer verify your key as the registration server is down. While both Windows and Mac saw versions which had the Ignition DRM stripped out, on Linux the game is left unplayable.</p>
-<p>Thankfully the <em>Marble Blast</em> community has provided Linux users with a couple of alternate ways to keep playing the game. Marble Blast Web is a port of both <em>Marble Blast Gold </em>and the community made <em>Marble Blast Platinum</em> that allows both games to launch inside a modern web browser. While appearing almost identical, the physics are actually quite different to those found in the original game, having been optimized instead with a view to reaching a wider audience.</p>
-<p>A more faithful web version of the game is the Marble Blast Haxe Port, which boasts 99% identical physics, although it gave me some issues with inputting my name. Either gives you access to what amounts to the full version of the game along with full source code available from GitHub, both being the product of clean room reverse engineering. Some interest has even been shown in using these to make new native Linux binaries, but the web versions are more universal.</p>
-<p>GarageGames sold alongside <em>Marble Blast Gold</em> another ten games for Linux on their website, including <em>Bridge Construction Set</em>, <em>Orbz</em>, <em>ThinkTanks</em>, <em>Gish</em>, <em>Dark Horizons: Lore Invasion</em>, <em>Zap!</em>, <em>Tribal Trouble</em>, <em>Toribash</em>, <em>FizzBall</em>, and <em>Kachinko,</em> almost all made with the Torque Game Engine. Following the closure of their store in 2011 GarageGames would at least open up the source code to Torque, allowing the engine to continue to enjoy success in Indie and free gaming circles.</p>
-<p>The more I explore these early independent Linux games that were distributed and sold through the internet, the more dismayed I have become at how easily they seem to be succumbing to the digital dark age without a physical release to anchor them. Thanks to a tip from one of my readers however, and the help of the original developer, I can now shine a light on another title which otherwise would appear to have been lost to history.</p>
-<p><strong>Carrying on in Part 29: The Odyssey</strong></p>
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a> </strong></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/building-a-retro-linux-gaming-computer-part-28-losing-my-marbles/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/building-a-retro-linux-gaming-computer-part-28-losing-my-marbles/</guid>
-      <pubDate>Mon, 06 Mar 2023 19:30:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/257940880id22313gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>DRM</category>
-      
-      <category>Editorial</category>
-      
-      <category>Puzzle</category>
-      
-    </item>
-    
-    <item>
-      <title>Paradox announce Cities: Skylines 2, plus a The Sims-like game and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Paradox Interactive just held their own announcement show, and there will be quite a few interesting upcoming games, so here's a round-up.</p>
-<p>First up, no doubt many are excited at the idea of it, <strong><a href="https://store.steampowered.com/app/949230/Cities_Skylines_II/" target="_blank">Cities: Skylines II</a></strong> is official although they did not show off any gameplay it just had a fancy trailer. So nothing to really show there, and no release date hint yet either. Even the Steam page doesn't have in-game screenshots, just screenshots from their own trailer.</p>
-<div class="hidden_video" data-video-id="WdD66WGBVHM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2c4091888a52af853ea09f831223f9d9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/WdD66WGBVHM" target="_blank">See video</a></div></div>
-<p>“Cities: Skylines reset the bar for city building games when it launched eight years ago, and we are incredibly proud of its impact. We built a thriving community around Cities and introduced many to city building for the first time,” said Mariina Hallikainen, CEO of Colossal Order. "Now, we’ve brought the years of experience we’ve gained to take a new step forward in the city builder genre, again, for our community and new players".</p>
-<p>“The Cities brand has been an important part of Paradox’s catalog of games for over a decade. Cities: Skylines is a profound success, selling millions of copies, welcoming more than 5.5 million new players just last year, and setting the foundation for Cities: Skylines II,” said Fredrik Wester, CEO of Paradox Interactive. “With unprecedented amounts of customization and player control, Cities: Skylines II will continue to push boundaries for the city-building franchise.”</p>
-<hr/>
-<p>They're also now doing their own game like The Sims called <strong>Life By You</strong>, which is not a big surprise because the studio Paradox Tectonic is working with Rod Humble who previously worked on The Sims 2 &amp; 3.</p>
-<p>Life By You also only got a short teaser, because it's going to have its own event on March 20th.</p>
-<div class="hidden_video" data-video-id="ZNhV-Gnjdy8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/616725781bcab584a441a260af08f683.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ZNhV-Gnjdy8" target="_blank">See video</a></div></div>
-<hr/>
-<p>Harebrained Schemes, known for BATTLETECH and Shadowrun, announced <strong><a href="https://store.steampowered.com/app/1167750/The_Lamplighters_League/" target="_blank">The Lamplighters League</a></strong>, a tactical turn-based strategy game set in an alternate 1933.</p>
-<div class="hidden_video" data-video-id="JnTjWoFvmzg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f7267b105aec4dc144a0dd8d4e5780a4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/JnTjWoFvmzg" target="_blank">See video</a></div></div>
-<p>“Harebrained Schemes is all about weaving tactical gameplay that challenges your mind with narrative and characters that engage your heart,” said Christopher Rogers, Game Director of The Lamplighters League at Harebrained Schemes. “For years, we’ve been privileged to tell stories in cherished settings like Shadowrun and BATTLETECH. Because The Lamplighters League is set in a new world, it allows us the creative freedom to simultaneously create narrative that supports gameplay and gameplay that supports narrative. We love these characters and hope that players and fans enjoy getting to know them while exploring each one's unique abilities the way we did. I cannot wait to share everything we’ve been working on.”</p>
-<hr/>
-<p>Since it's Paradox, there were of course going to be some DLC announcements like…</p>
-<p><strong><a href="https://store.steampowered.com/app/2311920/Crusader_Kings_III_Tours__Tournaments/" target="_blank">Crusader Kings III: Tours &amp; Tournaments</a></strong> was announced, releasing in "late Spring":</p>
-<div class="hidden_video" data-video-id="YUpC4IdfXuE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/338f1b11baedbf36e0defc5ec216bacd.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/YUpC4IdfXuE" target="_blank">See video</a></div></div>
-<p></p>
-<p><strong><a href="https://store.steampowered.com/app/2223660/Europa_Universalis_IV_Domination/" target="_blank">Europa Universalis IV: Domination</a></strong> was also announced:</p>
-<div class="hidden_video" data-video-id="dDYjhgXeXBw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/757fcc4d791c9d213396f415514b2970.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/dDYjhgXeXBw" target="_blank">See video</a></div></div>
-<p></p>
-<p><em>Then there's a few indies from their Paradox Arc publishing team.</em></p>
-<p>One I'm quite excited to try is <strong><a href="https://store.steampowered.com/app/669330/Mechabellum/" target="_blank">Mechabellum</a></strong>, a new auto-battler where you're commander of a big mechanized army, releasing May 11th. Take a look below:</p>
-<div class="hidden_video" data-video-id="jo5SIIxsQxg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cfe5ffe01d8eeb2dbea8de9d5feef913.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/jo5SIIxsQxg" target="_blank">See video</a></div></div>
-<p></p>
-<p><strong><a href="https://store.steampowered.com/app/2129470/Knights_of_Pen_and_Paper_3/" target="_blank">Knights of Pen and Paper 3</a></strong> was also announced launching tomorrow:</p>
-<div class="hidden_video" data-video-id="fctsu2hZOXE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/21b594bd90da9d43f69b2bad71cbed10.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/fctsu2hZOXE" target="_blank">See video</a></div></div>
-<p></p>
-<p>Across The Obelisk is set to get DLC with <strong><a href="https://store.steampowered.com/app/2325780/Across_The_Obelisk_The_Wolf_Wars/" target="_blank">Across The Obelisk: The Wolf Wars</a></strong>:</p>
-<div class="hidden_video" data-video-id="VjpOT3maWrU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/723ab746ca4e6f142d0754afc0b8034a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/VjpOT3maWrU" target="_blank">See video</a></div></div>
-<p>The rest of it was trailers for stuff <em>already</em> announced with dates like <strong>Stellaris: First Contact </strong>and <strong>Age of Wonders 4</strong>.</p>
-<p>The full show can be seen on <a href="https://www.twitch.tv/paradoxinteractive" target="_blank">Twitch</a> and <a href="https://www.youtube.com/c/paradoxinteractive" target="_blank">YouTube</a>.</p>
-<p>Was there anything announced that you're particularly excited about? Let us know in the comments.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/paradox-cities-skylines-2-plus-the-sims-like-game/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/paradox-cities-skylines-2-plus-the-sims-like-game/</guid>
-      <pubDate>Mon, 06 Mar 2023 17:56:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/683863216id22413gol.jpg" type="image/jpeg"/>
-      
-      <category>Paradox Interactive</category>
-      
-      <category>Steam</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Get a free copy of Figment, plus lots of other deals going on right now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>In the mood for a free game? How about a whole bunch of cheap games on sale? Come and have a look at what's going on.</p>
-<p>First up you can grab a free copy of Figment from <a href="https://www.gog.com/" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/493540/Figment/" target="_blank">Steam</a>. Figment is an action-adventure game that invites you to explore a unique surreal universe filled with music, humor and multi layered narrative. I quite enjoyed it when I played it and it has Native Linux support too.</p>
-<p>Next up the <a href="https://www.dpbolvw.net/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2F" target="_blank">Fanatical store</a> has just launched their Spring Sale, with 1000's of games going cheap. They're also offering a bonus to anyone who spends $12 / £12 / €12 or more, with a scratchcard that might give you something fun. A recent favourite being <a href="https://www.anrdoezrs.net/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fgame%2Fwreckfest" target="_blank">Wreckfest</a> has 60% off, and Fanatical even have a handy <a href="https://www.jdoqocy.com/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fsteam-deck-games" target="_blank">Steam Deck compatible category</a>.</p>
-<p>Fanatical also still have their <a href="https://www.tkqlhce.com/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fpick-and-mix%2Fbuild-your-own-play-on-the-go-bundle-bundlefest-edition" target="_blank">Steam Deck Build Your Own Bundle</a> that has some good stuff. You can build up your own <a href="https://www.tkqlhce.com/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fpick-and-mix%2Fbethesda-favorites-build-your-own-bundle" target="_blank">bundle of Bethesda</a> games including the likes of Wolfenstein: The New Order and The Evil Within, plus their <a href="https://www.kqzyfj.com/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fpick-and-mix%2Fprestige-collection-build-your-own-bundle" target="_blank">Prestige Collection</a> has some fun titles in it too like Roguebook and DOOM Eternal.</p>
-<p>GOG also recently launched their <a href="https://www.gog.com/en/promo/20230306_female_protagonist" target="_blank">Female Protagonist sale</a>, and their <a href="https://www.gog.com/en/promo/20230306_break_the_loop" target="_blank">Break The Loop sale</a> has some great rogue-likes and rogue-lites in it for cheaps like Loop Hero and Inscryption.</p>
-<p>There's also a few days left to get some awesome puzzle games on <a href="https://www.humblebundle.com/games/unparalleled-puzzlers?partner=gamingonlinux" target="_blank">Humble Bundle</a> like my favourite Baba is You, plus their huge <a href="https://www.humblebundle.com/games/turkiye-syria-earthquake-relief-bundle" target="_blank">Türkiye and Syria charity bundle</a> has a couple days left.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/get-a-free-copy-of-figment-plus-lots-of-other-deals-going-on-right-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/get-a-free-copy-of-figment-plus-lots-of-other-deals-going-on-right-now/</guid>
-      <pubDate>Mon, 06 Mar 2023 16:04:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/557044019id22412gol.jpg" type="image/jpeg"/>
-      
-      <category>Fanatical</category>
-      
-      <category>Free Game</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Giveaway</category>
-      
-    </item>
-    
-    <item>
-      <title>Base-building, tower defense and digging — Lumencraft has it all</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Lumencraft is a pretty gorgeous top-down blending of base-building, where you need to set up defensive towers and a whole lot of digging. Developed with full Linux and Steam Deck support using <a href="https://godotengine.org/" target="_blank">Godot Engine</a>, it's easily one of my indie favourites from this year and it just left Early Access as a full game.</p>
-<p>Imagine a bit of Deep Rock Galactic top-down with base-building, and that sort-of sums up the kind of experience to expect from it. Honestly it's good, and you can end up seemingly just blinking and hours have gone by while you're playing. The new update to the full release also brings with it a full single-player campaign with various missions, a new hub area between missions and lots more.</p>
-<div class="hidden_video" data-video-id="LC29HveHImg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5aa734381af715457c857655d4e251f0.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/LC29HveHImg" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Multiple game modes - a story campaign, custom maps created by the developers and the community or procedurally generated levels. The choice is yours!</li>
-<li>Defending the underground settlement by direct combat and the use of diversified turrets.</li>
-<li>Highly efficient and satisfying digging mechanics (just listen to the sweet sound of crushed rocks and Lumen).</li>
-<li>Explosive weapons. Yes, we have dynamite.</li>
-<li>Dynamic lights and pixel-perfect interaction with a fully destructible terrain.</li>
-<li>Dread atmosphere created through an impactful sound design and a unique 2Dynamic lighting system.</li>
-<li>Realistic simulations. Just look at the lava!</li>
-<li>Play with your friends in co-op mode either using Steam Remote Play or locally on a shared screen.</li>
-</ul>
-</blockquote>
-<p>You can buy Lumencraft on <a href="https://www.gog.com/en/game/lumencraft" target="_blank">GOG</a>, <a href="https://www.humblebundle.com/store/lumencraft?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1713810/Lumencraft/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/base-building-tower-defense-and-digging-lumencraft-has-it-all/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/base-building-tower-defense-and-digging-lumencraft-has-it-all/</guid>
-      <pubDate>Mon, 06 Mar 2023 11:02:15 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2130701455id22411gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Godot Engine</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Rhythm mini-game collection Bits &amp; Bops gets Linux support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Bits &amp; Bops looks sweet! A fun collection of rhythm mini-games, and the developer has upgraded the demo to include Linux support for this upcoming game.</p>
-<p>In the update announcement they said: "This release brings the custom engine to Linux! We've tested it for you on the Steam Deck and built in some tailored settings for the best experience straight out of the box. If you're on Linux and you were previously running the Windows build, you may need to manually disable Proton to get the native Linux build (check your compatibility settings)."</p>
-<div class="hidden_video" data-video-id="ibijA6QPGn0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/58832a2668effa94c65c8058d24681df.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ibijA6QPGn0" target="_blank">See video</a></div></div>
-<p>It was crowdfunded on <a href="https://www.kickstarter.com/projects/tempolabgames/bits-and-bops/description" target="_blank">Kickstarter</a>, where the developer pulled in AU$ 173,833 towards development. Linux support was not a sure thing, as back then they initially mentioned it would be tricky to do with their custom game engine but it seems they managed to do it anyway — nice!</p>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Over 20 unique rhythm mini-games to entertain and challenge you.</li>
-<li>Super fun gameplay with simple controls that anyone can learn.</li>
-<li>Catchy, upbeat original tunes sure to have you bopping along.</li>
-<li>Gorgeous hand-drawn 2D animation that brings everything to life.</li>
-<li>A custom game engine with lightning fast response times.</li>
-<li>An adorable dog-bear named Bop to keep you company.</li>
-</ul>
-</blockquote>
-<p>Try the <a href="https://store.steampowered.com/app/1929290/Bits__Bops/" target="_blank">demo up on Steam</a> and <a href="https://tempolabgames.itch.io/bits-and-bops" target="_blank">also itch.io</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/rhythm-mini-game-collection-bits-bops-gets-linux-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/rhythm-mini-game-collection-bits-bops-gets-linux-support/</guid>
-      <pubDate>Mon, 06 Mar 2023 10:51:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/444283421id22410gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Demo</category>
-      
-      <category>Itch.io</category>
-      
-      <category>Music</category>
-      
-    </item>
-    
-    <item>
-      <title>Your Only Move Is HUSTLE gets a Linux version</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Your Only Move Is HUSTLE, a very popular online turn-based fighting game and super-powered fight scene simulator now has Linux support. On Steam, it has an Overwhelmingly Positive rating from over 4,000 user reviews. The new Native Linux build landed on <a href="https://steamcommunity.com/games/2212330/announcements/detail/3655271993670427685" target="_blank">March 2nd</a> in a short announcement, seems this was to get it working better on Steam Deck where it has a Steam Deck Playable rating with multiple issues noted.</p>
-<p>Developed by one person they describe it as: "Equal parts deep, rewarding online turn-based PVP experience and creative sandbox for creating intense, shareable fight scenes, Your Only Move Is HUSTLE takes the classic fighting formula and turns it on its head. Take control of an over-powered fighter and use the power of precognition to plan out your every move, down to each moment. Accessible by design, gone are the days of memorizing complicated combos in training mode; now you can execute them all first try."</p>
-<div class="hidden_video" data-video-id="YHJkGNhgtX4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2a89266d796d7882c607af9974e85752.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/YHJkGNhgtX4" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Accessible turn-based gameplay that sacrifices no depth.</li>
-<li>Unprecedented spectacle in anime-inspired lighting-fast battle simulations.</li>
-<li>TAS-inspired controls for maximum precision.</li>
-<li>Expressive combo system to foster unique and creative gameplay.</li>
-<li>Explosive, freestyle rushdown that leaves your opponent guessing.</li>
-<li>Strong defensive options to put control in the player's hands even during disadvantage.</li>
-<li>Ever-growing movesets that make each character feel deep and unique.</li>
-<li>Online lobby system to easily play with friends and strangers across the world.</li>
-</ul>
-</blockquote>
-<p>You can <a href="https://store.steampowered.com/app/2212330/Your_Only_Move_Is_HUSTLE/" target="_blank">buy it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/your-only-move-is-hustle-gets-a-linux-version/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/your-only-move-is-hustle-gets-a-linux-version/</guid>
-      <pubDate>Mon, 06 Mar 2023 10:42:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/746814438id22409gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Fighting</category>
-      
-      <category>Indie Game</category>
       
     </item>
     
