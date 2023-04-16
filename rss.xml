@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-04-15 07:24:33.306588</pubDate>
+    <pubDate>2023-04-16 07:24:32.448833</pubDate>
 
     
     <image>
@@ -18,6 +18,167 @@
     </image>
 
     
+    
+    <item>
+      <title>The Last of Us has more Steam Deck improvements and lots of other fixes</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Fires continue to be put out by Naughty Dog and Iron Galaxy as they fix up The Last of Us, with a new patch landing with lots of fixes.</p>
+<p>Available in v1.0.3 are these <a href="https://store.steampowered.com/news/app/1888930/view/3730711090586078092" target="_blank">changes</a> just for the Steam Deck:</p>
+<blockquote>
+<ul>
+<li>Fixed an issue where the native UI overlapped the ‘Look’ prompt.</li>
+<li>Fixed an issue where the DualSense™ motion sensor function may not register the player shaking the camera to fix the flashlight when prompted.</li>
+<li>[Left Behind] Increased the size of the Arcade’s mini-game button user interface.</li>
+</ul>
+</blockquote>
+<p>Performance hasn't really been fixed up yet for Steam Deck, with it still pretty messy in lots of places and it's currently rated as Unsupported by Valve through Deck Verified. As Naughty Dog's Neil Druckmann said <a href="https://twitter.com/Neil_Druckmann/status/1643305179901739008" target="_blank">previously</a> "Getting VERIFIED isn’t a priority. Optimization &amp; stability (on the Steam Deck &amp; other pc platforms) is!".</p>
+<p>So eventually, once it's had more optimizations and fixes across the whole game, it might eventually be a reasonable experience on Steam Deck. At least on desktop Linux last I checked it worked reasonably well and this patch does include numerous crash bug fixes, texture problems and lots of other fixes.</p>
+<p>You can buy it on <a href="https://www.humblebundle.com/store/the-last-of-us-part-i?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<p><em>If you're playing it or attempting to, how has your experience been?</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/04/the-last-of-us-has-more-steam-deck-improvements-and-lots-of-other-fixes/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/the-last-of-us-has-more-steam-deck-improvements-and-lots-of-other-fixes/</guid>
+      <pubDate>Sat, 15 Apr 2023 11:55:25 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1180845123id22563gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>Humble Store</category>
+      
+    </item>
+    
+    <item>
+      <title>MangoHud performance overlay version v0.6.9 is out now as a nice update</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It's been a while since the last release but a nice update to the performance hud and benchmarking tool MangoHud is out now. This is the tool used for the performance stats on Steam Deck.</p>
+<p>Something I'm a big fan of, because I use it plenty on desktop Linux too, it's one of the most useful open source projects for gaming. An example of a pretty basic layout for performance:</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14976972521681555066gol1.jpg"/></p>
+<p>Version 0.6.9 brings these changes:</p>
+<blockquote>
+<h2>Changes</h2>
+<ul>
+<li>Added support for it8603 sensor</li>
+<li>Conform to <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkDeviceCreateInfo.html" target="_blank">VUID-VkDeviceCreateInfo-pNext-00373</a></li>
+<li>Add GalaxyClient, RedLauncher, Amazon Games and gamescope to blacklist</li>
+<li>Add Artix and Nobara to build.sh</li>
+</ul>
+<h2>Bug fixes</h2>
+<ul>
+<li>Fixed a crash when using zink, and certain games using DXVK e.g. FarCry 3/4</li>
+<li>Fixed reporting amdgpu clock speed</li>
+<li>Fixed an issue with <code class="inline-code">exec</code> causing certain games to crash</li>
+<li>Fixed incorrect metrics for ryzen 7000 series iGPUs</li>
+<li>Fixed discovery of wine binary when using wine64 build</li>
+</ul>
+</blockquote>
+<p>There's also the addition of additional options to further tweak the experience how you want it:</p>
+<blockquote>
+<ul>
+<li><code class="inline-code">exec_name</code> - Display current exec name.</li>
+<li><code class="inline-code">hud_compact</code> - Display compact version of MangoHud.</li>
+<li><code class="inline-code">hud_no_margin</code> - Remove margins around MangoHud.</li>
+<li><code class="inline-code">horizontal</code> - Display Mangohud in a horizontal position.</li>
+<li><code class="inline-code">toggle_hud_position</code> Toggle MangoHud postion. Default is R_Shift + F11</li>
+<li><code class="inline-code">fps_limit_method</code> If FPS limiter should wait before or after presenting a frame. Choose <code class="inline-code">late</code> (default) for the lowest latency or <code class="inline-code">early</code> for the smoothest frametimes.</li>
+<li><code class="inline-code">picmip</code> Mip-map LoD bias. Negative values will increase texture sharpness (and aliasing). Positive values will increase texture blurriness (-16 to 16)</li>
+<li><code class="inline-code">af</code> Anisotropic filtering level. Improves sharpness of textures viewed at an angle (0 to 16)</li>
+<li><code class="inline-code">bicubic</code> Force bicubic filtering</li>
+<li><code class="inline-code">trilinear</code> Force trilinear filtering</li>
+<li><code class="inline-code">retro</code> Disables linear texture filtering. Makes textures look blocky</li>
+<li><code class="inline-code">position</code> new option: <code class="inline-code">bottom_center</code></li>
+</ul>
+</blockquote>
+<p>An example of a nice clean horizontal layout I tested today with Everspace 2:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11788481951681555489gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11788481951681555489gol1.jpg"/></a></p>
+<p>See more on the <a href="https://github.com/flightlessmango/MangoHud/releases" target="_blank">GitHub page</a>. </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/04/mangohud-performance-overlay-version-v069-is-out-now-as-a-nice-update/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/mangohud-performance-overlay-version-v069-is-out-now-as-a-nice-update/</guid>
+      <pubDate>Sat, 15 Apr 2023 10:45:34 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1089831457id22562gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 8.6 out now with bundled Musl math library</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After another ~2 weeks, the latest development release is out for the Windows translation layer with Wine 8.6. Part of what makes <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Steam Play Proton</a> run some of the most popular games around! This is the usual fortnightly release with the latest work, and then once a year they put up a new stable release that will be Wine 9.0.</p>
+<p>Here's the highlights of <a href="https://www.winehq.org//announce/8.6" target="_blank">Wine 8.6</a>:</p>
+<blockquote>
+<ul>
+<li>Bundled math library from Musl libc.</li>
+<li>Gecko engine updated to version 2.47.4.</li>
+<li>Improved spool file support in the PostScript driver.</li>
+<li>Various bug fixes.</li>
+</ul>
+</blockquote>
+<p>Bug fixes are also included for Chromium sandbox, Team Fortress Arcade &amp; Pixel Force: Left 4 Dead, Inquisitor, DiRT Rally 2.0, Matrix Awakens MegaCity Unreal Engine 5.1 demo, Hogwarts Legacy, Pro Evolution Soccer 2008 and more.</p>
+<p><em>Want help managing Wine on Linux? You can try <a href="https://usebottles.com/" target="_blank">Bottles</a>, <a href="https://lutris.net/" target="_blank">Lutris</a> and the <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Launcher</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/04/wine-86-out-now-with-bundled-musl-math-library/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/wine-86-out-now-with-bundled-musl-math-library/</guid>
+      <pubDate>Sat, 15 Apr 2023 09:52:09 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Ubisoft hiring Linux developer talent for XDefiant</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>XDefiant is an upcoming free-to-play, first-person arena shooter from Ubisoft and it seems they need a bit more Linux talent. In an advert on their <a href="https://www.ubisoft.com/en-us/company/careers/search/743999879479053-linux-systems-engineer-xdefiant" target="_blank">careers website</a> there's one noted for "Linux Systems Engineer - XDefiant", with the option to work remotely too.</p>
+<p>The placement reads:</p>
+<blockquote>
+<p>We are looking for a highly talented, motivated, and experienced person to work with us on XDefiant, a new multiplatform online multiplayer action game based in our San Francisco studio. XDefiant is a free-to-play, fast-paced arena shooter that combines intense gunplay with personalized loadouts and specialized factions, as teams of gunfighters battle for domination.</p>
+<p>You’ll be working to extend and improve our game’s services running on Linux. You’ll be adding functionality and features, improving performance, and improving the Snowdrop engine’s support for Linux. As we all know, Linux is an extremely stable and performance-oriented OS, and you’ll be able to make XDefiant really shine there. You will work on a small, collaboration-oriented team where you will have the opportunity to contribute in meaningful ways.</p>
+<p>You’ll also be part of the diverse Ubisoft San Francisco team. We embrace a variety of work situations based on what is best for the team, and we welcome people working in our SF office, <strong>remotely within the continental US</strong>, or some combination of the two. We put a priority on supporting our team members and what makes them happiest and most productive.</p>
+</blockquote>
+<p>What you'll be doing:</p>
+<ul>
+<li>Expand and improve the Snowdrop engine’s presence on Linux.</li>
+<li>Optimize engine and game code.</li>
+<li>Debug and refactor systems as needed to take the best advantage of Linux.</li>
+<li>Work with the rest of the engineering staff to help them expand their cross-platform mindset.</li>
+<li>Coordinate with other developers to ensure smooth roll out of new features.</li>
+<li>Create and maintain technical design documents and best practices.</li>
+</ul>
+<p><em>Could be a good one to try for some of our more experienced readers perhaps. Who knows, maybe it will even result in getting it working on Steam Deck and Linux desktop.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/04/ubisoft-hiring-linux-developer-talent-for-xdefiant/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/ubisoft-hiring-linux-developer-talent-for-xdefiant/</guid>
+      <pubDate>Sat, 15 Apr 2023 09:44:52 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1005876637id22560gol.jpg" type="image/jpeg"/>
+      
+      <category>Jobs</category>
+      
+      <category>Meta</category>
+      
+    </item>
     
     <item>
       <title>Landnama gives a non-violent exploration city-builder roguelike</title>
@@ -3842,170 +4003,6 @@ This fixes a problem when Flatpak is installed that caused the installer to plac
       <category>Indie Game</category>
       
       <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Striving for Light: Survival blends popular horde survivor games with a big skill tree</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Do you enjoy games like Vampire Survivors, Brotato and the other horde survival games? You may want to look at Striving for Light: Survival. <u>Note</u>: developer sent a key to my <a href="https://store.steampowered.com/curator/4218320-GamingOnLinux/" target="_blank">Steam Curator</a>.</p>
-<p>Created by Igniting Spark Games, it's now in Early Access with Native Linux support and it is Steam Deck Verified. It's actually a sort-of spin-off from their previous game Striving for Light.</p>
-<p>Their idea was to blend the ideas together from the likes of other popular arena survival games (of which there's now many), while giving you a big skill tree that is procedurally generated. The result is an experience that is certainly similar to Vampire Survivors, Brotato, Soulstone Survivors, Boneraiser Minions and the list goes on and on but different enough that it's quite exciting to play. The amount of combinations you can do during a run is just ridiculous, it's a lot more like Path of Exile.</p>
-<div class="hidden_video" data-video-id="IBzyTPzB6PE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c115134795d448c018fb910e74946323.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/IBzyTPzB6PE" target="_blank">See video</a></div></div>
-<p>Feature Highlight:</p>
-<blockquote>
-<ul>
-<li>Experiment with more than 50 skills in an procedurally expanding skilltree.</li>
-<li>10 maps with different enemies, traps and multiple difficulties to unlock.</li>
-<li>8 different player characters.</li>
-<li>Over 30 weapons to unlock.</li>
-<li>Over 20 unique enemies, over 20 unique bosses and 10 unique endbosses.</li>
-<li>Use dodge skillfully to avoid and escape attacks.</li>
-<li>Everything is hand drawn, self-composed soundtrack with about 1 hour playtime.</li>
-<li>Compete in multiple online leaderboards with seasons and private league system.</li>
-</ul>
-</blockquote>
-<p>Definitely one you should take a look at, if you love repeatable games like this. It gets pretty intense. Quite a big surprise actually to me as I wasn't sold on the graphical style they went for it, but that minor point faded away very quickly once I got into the action of it and started customizing my character as I went through the skill tree.</p>
-<p>At only £2.49 this is an absolute steal.</p>
-<p>Find it <a href="https://store.steampowered.com/app/2286450/Striving_for_Light_Survival/" target="_blank">on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/striving-for-light-survival-blends-popular-horde-survivor-games-with-a-big-skill-tree/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/striving-for-light-survival-blends-popular-horde-survivor-games-with-a-big-skill-tree/</guid>
-      <pubDate>Mon, 20 Mar 2023 13:00:48 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1824174825id22464gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-    </item>
-    
-    <item>
-      <title>Here&#39;s how to run Diablo 4 on Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Diablo 4 is currently in Beta and due to launch soon, so here's how to get it working on Steam Deck. The same steps can be used to get it working on Linux desktop too.</p>
-<p>You can see the video here, with the text guide below it:</p>
-<div class="hidden_video" data-video-id="ESXTxFYFa48"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4efd2a7065a2e16ad23ae13281f44a26.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ESXTxFYFa48" target="_blank">See video</a></div></div>
-<p><strong>Text Guide</strong></p>
-<ul>
-<li>Go into Desktop Mode (Steam button - Power - Switch to Desktop).</li>
-<li>Download the <a href="http://battle.net" target="_blank">Battle.net</a> launcher in your web browser (Chrome / Firefox etc).</li>
-<li>Download <a href="https://davidotek.github.io/protonup-qt/" target="_blank">ProtonUp-Qt</a> from the Discover app.</li>
-<li>Inside ProtonUp-Qt, download the new "GE-Proton7-51-diablo_4_beta". Once done, close ProtonUp-Qt.</li>
-<li>Inside Steam: hit Add A Game in the bottom left, select Add a non-Steam Game and hit Browse.</li>
-<li>Go into your Downloads folder in the file browser, select All Files from the bottom and then select the "Battle.net-Setup.exe" file.</li>
-<li>Once added, search for the Battle.Net installer shortcut in Steam. Right click -&gt; Properties -&gt; Compatibility -&gt; Tick the box and select GE-Proton7-51-diablo_4_beta.</li>
-<li>Now run it and install it. Once installed, close it, do not login.</li>
-<li>Right click on the shortcut again, go to Properties, hit Browse and update the shortcut to point to the "Battle.net Launcher.exe". It's location will depend on where you installed it.
-<ul>
-<li><u>SD Card</u>: <em>/run/media/mmcblk0p1/Battle.net/</em></li>
-<li><u>SSD</u>: <em>/home/deck/.steam/root/steamapps/compatdata/ (then find the most recently created id) /pfx/drive_c/Program Files (x86)/Battle.net/</em></li>
-</ul>
-</li>
-</ul>
-<p>Now you will have Battle.Net set up and you can launch it in Gaming Mode, in the Non-Steam section of your Steam Library. You may need to manually bring up the on-screen keyboard with STEAM + X, and you can use a mouse cursor by holding the STEAM button and using the Right Trackpad with Right Trigger as a mouse button.</p>
-<p>The Battle.Net UI is cut off, but if you click about along the top of it, the app will flicker into focus giving you the install buttons at the bottom.</p>
-<p>After that, you're free to install and run Diablo 4. If you get a GPU error message, just hit OK and it will run.</p>
-<hr/>
-<p>This is just one possible way to do it. You could also use <a href="https://lutris.net/" target="_blank">Lutris</a> to install Battle.Net but I personally prefer on Steam Deck specifically to keep everything inside Steam if I can.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/heres-how-to-run-diablo-4-on-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/heres-how-to-run-diablo-4-on-steam-deck/</guid>
-      <pubDate>Mon, 20 Mar 2023 12:15:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1310817321id22462gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Beta</category>
-      
-      <category>HOWTO</category>
-      
-    </item>
-    
-    <item>
-      <title>Stellaris: First Contact Story Pack and the free 3.7 update are out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Paradox have released the latest DLC for Stellaris with the First Contact Story Pack, along with a free update for all players. Since this is a Story Pack, it's not a full expansion. The idea really is to give dedicated players just that little bit more, good for role-playing and for building up those stories sci-fi fans love so much. This is the kind of thing I've been personally wanting.</p>
-<p>The main highlights of it are:</p>
-<blockquote>
-<ul>
-<li>New Origins:
-<ul>
-<li><em>Broken Shackles: </em>You didn’t take to the stars; you were taken <em>to </em>the stars as an alien captive! Now, you and your fellow prisoners have overtaken the ship and found yourselves banding together to survive and thrive as a diverse new community. Can you rise to greatness from this humble origin… and will your former captors take notice?</li>
-<li><em>Payback:</em> No one would have believed your world was being watched keenly by intelligences greater than your own - until they actually showed up. But you did not go quietly into the night! Your civilization has repelled a would-be conqueror from space, and with sudden access to their advanced technology, you’re about to discover just what else is out there beyond the stars!</li>
-<li><em>Fear of the Dark:</em> As you’ve explored your home system, you’ve always suspected you weren’t alone in the galaxy… especially when one of your planets suddenly suffered an “incident” a while back. A very large faction of your own people have long advocated against tempting fate out in the dark abyss of the unknown. What path will you choose as you find yourself needing room to grow?</li>
-</ul>
-</li>
-<li>New Pre-FTL Interaction Options: What will your role be when the next member of the galactic community tells their origin story? New mechanics allow for a broader range of interactions with pre-FTL civilizations, depending on their level of technology and their awareness of your presence. Will your arrival be celebrated, or met with violent panic?</li>
-<li>Cloaking Technology: Nobody saw this feature coming! Equip your ships with cloaking devices to survey in secret or catch a foe unaware; keep subtle tabs on your pre-FTL neighbors with cloaked observation posts. Just be sure your own scanners and intel are strong… you never know which of your neighbors might be lurking in the shadows!</li>
-</ul>
-</blockquote>
-<div class="hidden_video" data-video-id="_ZyJWy2yhOI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/721683e79fb4016f754bcac4276233cd.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/_ZyJWy2yhOI" target="_blank">See video</a></div></div>
-<p>While I am a fan, and I genuinely appreciate Paradox's commitment to the long-term support of their games, the price is a bit steep for what it offers. Enjoyable? Yes. But, I have to say that even as big a fan as I am of Stellaris, the price just doesn't feel like it matches up to the additions this time around. Origins are, for the most part, statistics tweaks and an adjustment to your start and the politics of your civ. Then we have some new interactions (which are great) for pre-FTL and then cloaking. It's not exactly a lot for £12.79, a price that could get you some entire games, and even Stellaris itself (the whole game) has been priced below that constantly and for a few pounds / dollars more you could get a full Stellaris expansion.</p>
-<p>Mechanically with the theme of this DLC, it would have been a much better fit to be in a slightly bigger mini-expansion. Especially with the cloaking tech, which is a fantastic addition and one that no doubt players will love to play with.</p>
-<p>Overall, this is one for the most dedicated of fans. It is a good set of additions, don't get me wrong, but not enough that I would suggest a purchase right now unless you're going to buy a bundle of this and other DLC together to get the full experience.</p>
-<p>Plus the free update version 3.7 "Canis Minor" was also released.</p>
-<div class="hidden_video" data-video-id="8vsr5c1H61Y"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1818844a2be7aebba546a389fba97e1f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/8vsr5c1H61Y" target="_blank">See video</a></div></div>
-<p>Stellaris is available from <a href="https://af.gog.com/game/stellaris?as=1636858786" target="_blank">GOG</a>, <a href="https://www.humblebundle.com/store/stellaris?partner=gamingonlinux&amp;charity=12277" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/281990/Stellaris/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/stellaris-first-contact-story-pack-and-the-free-37-update-are-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/stellaris-first-contact-story-pack-and-the-free-37-update-are-out-now/</guid>
-      <pubDate>Sat, 18 Mar 2023 15:29:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1609709813id22461gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>DLC</category>
-      
-      <category>New Release</category>
-      
-      <category>Paradox Interactive</category>
-      
-    </item>
-    
-    <item>
-      <title>Wine 8.4 rolls out with initial Wayland graphics driver work</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The Wine 8.4 development release is out now for this Windows translation layer, part of what makes Steam Play Proton tick. Every two weeks (ish), they put out a new release with the latest code like this. Once a year they then produce a stable version. We're currently waiting to see when Valve upgrade Proton to the 8 series, no word on it yet.</p>
-<p>Here's the highlights of Wine 8.4:</p>
-<blockquote>
-<ul>
-<li>Initial step of the Wayland graphics driver.</li>
-<li>Cleanups in IME support.</li>
-<li>A number of test fixes.</li>
-<li>Various bug fixes.</li>
-</ul>
-</blockquote>
-<p>For the bug fixes they mentioned issues solved for: Thief: The Dark Project, Hard Truck 2: King of The Road, Amazon Games Client, SPORE, WRC 4: FIA World Rally Championship, Crysis 2 Maximum Edition, Starcraft Remastered and more.</p>
-<p>See it all in the <a href="https://www.winehq.org/announce/8.4" target="_blank">release announcement</a>.</p>
-<p><em>Want help managing Wine on Linux? You can try <a href="https://usebottles.com/" target="_blank">Bottles</a>, <a href="https://lutris.net/" target="_blank">Lutris</a> and the <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Launcher</a>.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/wine-84-rolls-out-with-initial-wayland-graphics-driver-work/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/wine-84-rolls-out-with-initial-wayland-graphics-driver-work/</guid>
-      <pubDate>Sat, 18 Mar 2023 15:08:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-      <category>Wine</category>
       
     </item>
     
