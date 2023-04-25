@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-04-24 07:25:02.805985</pubDate>
+    <pubDate>2023-04-25 07:24:25.292074</pubDate>
 
     
     <image>
@@ -18,6 +18,205 @@
     </image>
 
     
+    
+    <item>
+      <title>Valve moves ELDEN RING back to Proton 7 as it has issues with newer Proton</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Certain games on Steam that you play across either Linux desktop or Steam Deck get a specific version of Proton set by Valve, and at times they don't quite work right like ELDEN RING.</p>
+<p>In this case Valve had set Proton Experimental to be the default to run ELDEN RING, where it did work previously, however they just recently <a href="https://www.gamingonlinux.com/2023/04/proton-experimental-for-steam-deck-linux-upgraded-with-proton-8/" target="_blank">upgraded Proton Experimental</a> basing it upon the newly released <a href="https://www.gamingonlinux.com/2023/04/valve-rolls-out-proton-80-to-further-improve-steam-deck-and-linux-gaming/" target="_blank">Proton 8</a>. With any new Proton version can come breakage as the translation layer isn't quite perfected just yet and in this case the popular game is having issues with the Proton upgrades.</p>
+<p>As mentioned on <a href="https://twitter.com/Plagman2/status/1650299941699596288" target="_blank">Twitter</a> by Valve developer Pierre-Loup Griffais:</p>
+<blockquote>
+<p>The launch issue with ELDEN RING has been addressed by temporarily reverting the game to using Proton 7 while the Proton 8 update issue is being investigated. Restarting Steam will pick up the fix.</p>
+</blockquote>
+<p>So if you're forcing a compatibility option on ELDEN RING, you might want to uncheck it to pick up what Valve set or change it yourself back to Proton 7 to have it work again.</p>
+<p>Nice to see Valve continue to keep on top of compatibility like this.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/04/valve-moves-elden-ring-back-to-proton-7-as-it-has-issues-with-newer-proton/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/valve-moves-elden-ring-back-to-proton-7-as-it-has-issues-with-newer-proton/</guid>
+      <pubDate>Mon, 24 Apr 2023 16:57:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/131707149id22601gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux and Steam Deck compatibility tool Luxtorpeda gets upgraded in v63</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://github.com/luxtorpeda-dev/luxtorpeda" target="_blank">Luxtorpeda</a> is a very interesting project. It's a compatibility layer (like Proton) but designed to help you run Native Linux game engines for various Steam games.</p>
+<p>Why? Well, quite a number of games on Steam actually have much more modern community-made game engines, that can give all sorts of quality enhancements. Luxtorpeda allows you to easily download these and run them directly through Steam.</p>
+<p>Version 63 was recently released and here's the main technical changes:</p>
+<blockquote>
+<ul>
+<li>Switch to using Steam Linux Runtime - Sniper for the built engines. This provides newer tooling for builds, which should make future development easier, for example being able to build qt 5.15 and have gcc 10 available. The 100+ engines have been re-built. Note that previous clients should still work on the older soldier, but any new updates will only happen to sniper (this client and above). If you run into any issues with the engines, please open a new issue in the <a href="https://github.com/luxtorpeda-dev/packages/issues/new/choose" target="_blank">packages</a> repo.</li>
+<li>Rust panics, if they occur, should now be caught and displayed in the Godot UI.</li>
+<li>[dreamer] Use steamlocate v2 alpha</li>
+<li>Bump h2 from 0.3.15 to 0.3.17</li>
+</ul>
+</blockquote>
+<p>Aside from that, there's been numerous <a href="https://github.com/luxtorpeda-dev/packages/blob/master/CHANGELOG.md#630-2023-04-13" target="_blank">upgrades</a> to the various game engines it offers up to help you get the most out of your gaming. You can see a full list of <a href="https://luxtorpeda-dev.github.io/" target="_blank">supported titles here</a>, along with any notes on the supported status of each one and there's quite a lot now.</p>
+<p>I previously <a href="https://www.gamingonlinux.com/2022/03/steam-deck-using-luxtorpeda-for-morrowind-warzone-2100-and-x-com/" target="_blank">did a guide</a> on how to use it, and while focused on the Steam Deck the same applies to using it on a Linux desktop:</p>
+<div class="hidden_video" data-video-id="BxIKfWGdSh0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2e793555e6ab33bed36d08111e87bfb2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/BxIKfWGdSh0" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/04/linux-and-steam-deck-compatibility-tool-luxtorpeda-gets-upgraded-in-v63/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/linux-and-steam-deck-compatibility-tool-luxtorpeda-gets-upgraded-in-v63/</guid>
+      <pubDate>Mon, 24 Apr 2023 15:33:46 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/790445510id22600gol.jpg" type="image/jpeg"/>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Pixel-art Sims styled game Tiny Life hits Early Access on May 3rd</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Ellpeck Games have announced their pixel-art game inspired by The Sims, Tiny Life will be releasing with Linux support on May 3rd. From what I've played of some of the earlier builds, it showed a huge amount of promise.</p>
+<p>"Tiny Life is a fun simulation game that aims to capture the essence of games like The Sims series, but in an isometric pixelart style. In the game, you control a set of people that live together in a household. You take care of their daily needs, build their skills, forge new relationships... or just mess up their entire life in whatever way you can think of!"</p>
+<p>Their current trailer is a little old but gives you a good idea on what to expect:</p>
+<div class="hidden_video" data-video-id="iw-D7queVUI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/897b57f5d30bca7e02888d7f82dfd714.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/iw-D7queVUI" target="_blank">See video</a></div></div>
+<p>At the Early Access date the developer said it will contain this:</p>
+<blockquote>
+<ul>
+<li>Everything that is currently in the Tiny Life Demo.</li>
+<li>Three free, always-installed Sets of content: The Familiar Attire Set, the Woodworking Set and the Fitness Set, two of which come with lots of additional stuff to do!</li>
+<li>The large Maple Plains City map which was featured in the Tiny Life Beta.</li>
+<li>The ability for adult Tinies to get pregnant, and give birth to babies.</li>
+<li>The baby life stage, which features unique interactions, personalities, and skills.</li>
+<li>The ability to export, share and import lots, households and custom maps, both manually and on the Steam Workshop.</li>
+<li>The ability to create and share custom mods for Tiny Life using the official C# Modding API, both manually and on the Steam Workshop.</li>
+</ul>
+</blockquote>
+<p>In the <a href="https://store.steampowered.com/news/app/1651490/view/5306971121514693921" target="_blank">announcement</a> the developer mentioned they've seen around 15,000 people wishlist it, so clearly there's been a good amount of interest in this one.</p>
+<p>You can follow <a href="https://store.steampowered.com/app/1651490/Tiny_Life/" target="_blank">Tiny Life on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/04/pixel-art-sims-styled-game-tiny-life-hits-early-access-on-may-3rd/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/pixel-art-sims-styled-game-tiny-life-hits-early-access-on-may-3rd/</guid>
+      <pubDate>Mon, 24 Apr 2023 14:30:47 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/48559275id22599gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Pixel Graphics</category>
+      
+      <category>Simulation</category>
+      
+    </item>
+    
+    <item>
+      <title>Fanatical team up with JSAUX again and you can win a Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Feeling lucky? Fanatical and accessory brand JSAUX have teamed up for a bundle of games, and with it a chance to win a Steam Deck and a whole lot of extras.</p>
+<p>It's a bit of an odd one though, as it's for their Mystery Egg Bundle where you don't actually know what games will be included, so this is really spinning the wheel here. You can select up to 20 mystery items they say features AAA titles and hidden indie gems. Plus there's a chance to find a golden egg where you get an extra helping of games worth "$1,000". On top of that there's the chance to also win a 512GB Steam Deck plus over $100 of accessories from JSAUX.</p>
+<p>You can select to buy the bundle with 1, 5, 10, 15 or 20 games. The pricing is:</p>
+<ul>
+<li>1 - £1</li>
+<li>5 - £4.39</li>
+<li>10 - £6.99</li>
+<li>15 - £10.29</li>
+<li>20 - £13.49</li>
+</ul>
+<p>Check out <a href="https://www.dpbolvw.net/click-100721639-13797872?url=https%3A%2F%2Fwww.fanatical.com%2Fen%2Fbundle%2Fmystery-egg-bundle" target="_blank">the bundle here if interested</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/04/fanatical-team-up-with-jsaux-again-and-you-can-win-a-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/fanatical-team-up-with-jsaux-again-and-you-can-win-a-steam-deck/</guid>
+      <pubDate>Mon, 24 Apr 2023 14:13:30 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1732624984id22598gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Fanatical</category>
+      
+      <category>Game Bundle</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux kernel 6.3 is out now here&#39;s some quick highlights</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Linus Torvalds <a href="https://lkml.org/lkml/2023/4/23/284" target="_blank">announced</a> the full release of Linux kernel 6.3, and with it plenty of the usual improvements everywhere.</p>
+<p>"It's been a calm release this time around, and the last week was really no different. So here we are, right on schedule, with the 6.3 release out and ready for your enjoyment." — Linus Torvalds</p>
+<p>As you might expect from a new release of the Linux kernel, there's support for various new hardware and work towards supporting upcoming hardware too.</p>
+<p>Some quick highlights:</p>
+<ul>
+<li>Improved Steam Deck hardware support.</li>
+<li>Improved support for the Logitech G923 Xbox Edition steering wheel.</li>
+<li>Work towards Intel Meteor Lake support.</li>
+<li>Automatic IBRS for AMD Zen 4, to improve Spectre V2 mitigations.</li>
+<li>Logitech B910 and C910 improvements for autosuspend functionality.</li>
+<li>Support for the Logitech MX Master 3S mouse.</li>
+<li>ASUS B650/B660/X670 board support improvements.</li>
+<li>Support for the 8BitDo Pro 2 Wired Controller.</li>
+</ul>
+<p>Naturally there's lots more everywhere, the changelog will have you scroll for hours, that's just a few bits that jumped out.</p>
+<p>The full changelog is available over <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.3" target="_blank">here</a> and as usual <a href="https://www.phoronix.com/review/linux-63-features" target="_blank">Phoronix</a> does a nice overview.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/04/linux-kernel-6-3-out-now-some-quick-highlights/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/linux-kernel-6-3-out-now-some-quick-highlights/</guid>
+      <pubDate>Mon, 24 Apr 2023 13:51:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
+      
+      <category>Kernel</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>HDR and Colour Management patches for Steam Deck + AMD GPUs under review</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Developer Melissa Wen recently sent in <a href="https://lists.freedesktop.org/archives/amd-gfx/2023-April/092215.html" target="_blank">patches</a> to improve HDR and Colour Management on Linux for Steam Deck and potentially other AMD GPUs. The work is being done by Melissa Wen, Joshua Ashton and collaboration with Harry Wentland.</p>
+<p>Exciting stuff, as eventually with this we should see some HDR fun on Linux with the likes of Gamescope. In the RFC (Request For Comments) patches, it was also specifically mentioned that SteamOS 3.5 is aiming to have "gamut mapping, HDR, SDR on HDR, HDR on SDR, and much more".</p>
+<p>Excerpts from the RFC:</p>
+<blockquote>
+<p>Joshua Ashton and I (with the great collaboration of Harry Wentland - thanks) have been working on KMS color pipeline enhancement for Steam Deck/SteamOS by exposing the large set of color caps available in AMD display HW.<br/>
+[…]<br/>
+So far, we keep these properties' usage under an AMD display config option (STEAM_DECK). However, we are fine with having them fully available to other DCN HW generations. In the current proposal, we are already checking ASICs before exposing a color feature. We can work on 3D LUT resource acquisition details to fit them to DCN 3+ families that support them. Indeed, before moving to these config boundaries, we started working on an open solution for any AMD HW.</p>
+<p>The userspace case here is Gamescope which is the compositor for SteamOS. It's already using all of this functionality (although with a VALVE1_ prefix instead of AMD) to implement its color management pipeline right now.</p>
+</blockquote>
+<p>Sounds like developers on KDE are interested in the work too, with Wen noting that Xaver Hugl from KDE was interested in experimenting with it for their HDR / colour bring-up too.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/04/hdr-and-colour-management-patches-for-steam-deck-amd-gpus-under-review/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/hdr-and-colour-management-patches-for-steam-deck-amd-gpus-under-review/</guid>
+      <pubDate>Mon, 24 Apr 2023 13:27:44 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1415466634id22596gol.jpg" type="image/jpeg"/>
+      
+      <category>AMD</category>
+      
+      <category>Drivers</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Roblox intentionally blocking Linux with Wine in their new update</title>
@@ -3858,229 +4057,6 @@ Featuring remastered music from original composer Yoko Shimomura and produced by
       <category>Meta</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Short underwater survival game FarSky now free on itch.io</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After closing up shop back in 2022, Farsky Interactive have now revived their game FarSky and made it free on itch.io.</p>
-<p>With FarSky, you take the role of Nathan who got lost in the Ocean after the crash of his submarine. You need to learn how to survive in the depths of the Ocean. Your end goal is to gather up all the pieces of your submarine, to fix it and finally reach the surface.</p>
-<div class="hidden_video" data-video-id="NzG9YqUaMCE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/10a567cefc3253f2267d4b16e6968048.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/NzG9YqUaMCE" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Use the environment to gather resources.</li>
-<li>Build a base to refill your oxygen and manage your items.</li>
-<li>Craft equipment and weapons to explore and protect yourself in the Ocean depths.</li>
-<li>Create an in-base farm or go fish hunting to feed yourself.</li>
-</ul>
-</blockquote>
-<p>It might seem like a smaller version of Subnautica and in a way it is. So much so in fact, that the developer of FarSky publicly <a href="https://steamcommunity.com/games/286340/announcements/detail/3087787366398826689" target="_blank">called out</a> developers of Unknown Worlds Entertainment for pretty much poaching the entire idea, here's an excerpt:</p>
-<p>"In January 2014, as I was looking for underwater inspiration visuals, I found an image on google that caught my attention. I clicked on it and was redirected to a game page called… « Subnautica ». My first reaction was to think « damn, I made a game way too closed to another one without knowing about it ». Then I realized the game was not even in development yet, there were only some concept arts and ideas. When I saw the name of the project director, I knew I saw this name somewhere … I went on my Twitter account and discovered he was following me as well as his coworkers. At that time, I was devastated. My game was not even out yet, maybe I showed it too early ? I did not expect that, and I knew I could not compete a bigger company like this one. I also found the Subnautica’s director email in the buyers of the game in Beta stage. I felt I needed to quickly finish the game. As I published the Steam Greenlight trailer on Youtube (you needed to put the game on Greenlight before it gets on Steam at that moment), Subnautica project’s leader put a comment with a link to his website. I removed that comment."</p>
-<p>Check it out <a href="https://farsky-interactive.itch.io/farsky" target="_blank">free on itch.io</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/short-underwater-survival-game-farsky-now-free-on-itchio/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/short-underwater-survival-game-farsky-now-free-on-itchio/</guid>
-      <pubDate>Wed, 29 Mar 2023 15:23:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2133517019id22501gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Free Game</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Itch.io</category>
-      
-    </item>
-    
-    <item>
-      <title>The Last of Us on Steam Deck is not great</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Here we are, another big release on Steam and sadly it's just seemingly not a good experience from my early testing. Even though it <a href="https://www.gamingonlinux.com/2022/12/the-last-of-us-part-i-on-steam-deck-gets-support-from-valve-and-naughty-dog-co-president/" target="_blank">seemed like</a> we might see good support, the result is nothing of the sort.</p>
-<p>Starting with the big nuisance: even though you've just downloaded it, you won't be ready to play. It will take around an hour to build the shaders on the main menu, something you'll need to do, otherwise you're likely to see worse performance. In my testing, you definitely want to wait on that being done too. Before it was done the performance was far more erratic and it ended up slowing down to a 1FPS crawl during one attempt.</p>
-<p>Apart from that, it has the same issue some other bigger games have where the RAM will fill up to around 14/14.1GB as noted on the Steam Deck's performance HUD and then crash completely, often taking the Steam Deck with it for a full reboot.</p>
-<div class="hidden_video" data-video-id="5Zlbl9sGRss"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/71cd9332c2414d67c7e761672d2573f8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/5Zlbl9sGRss" target="_blank">See video</a></div></div>
-<p>Valve did give it a special Proton <a href="https://steamdb.info/app/1888930/history/?changeid=18233564" target="_blank">Hotfix</a>, which doesn't seem to have done enough to make it properly playable or be something I can recommend at this time.</p>
-<p>As for how it runs on desktop Linux? On my Ryzen 7 5800X and NVIDIA 2080 Ti (Fedora KDE), it gives an out of date driver warning that can be ignored to begin with. Then it took a good 30 minutes (almost to the dot) to do the shaders even with this clearly much more powerful system. When you only have a 2 hour refund window on Steam, that's not good. Now think about people who do genuinely swap between PC and Steam Deck, practically the entire refund window gone to see if you have issues with it.</p>
-<p>For desktop though, you can of course get much better performance and at least on the Linux side, it actually seems to run reasonably well even at 2560x1440 with FSR set to Balanced it can mostly stick around 60FPS.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4350159611680033048gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/4350159611680033048gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14808559401680033049gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/14808559401680033049gol1.jpg"/></a><br/>
-<em>Both shots were actually 60FPS, but Plasma screenshot spikes the FPS down.</em></p>
-<p>Seems it's quite a problematic port overall, as the Steam user reviews instantly went down to Mixed (Edit: and now "Mostly Negative"), with many people on Windows reporting problematic performance and constant crashes.</p>
-<p>You can buy it on <a href="https://www.humblebundle.com/store/the-last-of-us-part-i?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/the-last-of-us-on-steam-deck-is-not-great/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/the-last-of-us-on-steam-deck-is-not-great/</guid>
-      <pubDate>Tue, 28 Mar 2023 19:52:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/415122965id22500gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>New Release</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>GOG giving away another game during their Spring Sale</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://www.gog.com/game/alwas_awakening" target="_blank">Alwa's Awakening</a> is now up for grabs if you're in need of a free game, plus there's a whole lot of discounts in GOG's Spring Sale. To claim the free game, you need to be logged in. Scroll down a bit and you'll see the giveaway banner where you can grab it. You have until March 30th 2PM UTC to grab it.</p>
-<p>GOG also had a few more retro game releases recently too:</p>
-<blockquote>
-<ul>
-<li><a href="https://www.gog.com/game/silver_box_classics" target="_blank">Dungeon and Dragons Silver Box Classics</a> (including Heroes of the Lance, Dragons of Flame, War of the Lance and Shadow Sorcerer, -15% discounted).</li>
-<li><a href="https://www.gog.com/game/deathkeep" target="_blank">DeathKeep</a> (-15%).</li>
-<li><a href="https://www.gog.com/game/dragonstrike" target="_blank">DragonStrike</a> (-15%).</li>
-<li><a href="https://www.gog.com/game/spelljammer_pirates_of_realmspace" target="_blank">Spelljammer: Pirates of Realmspace</a> (-15%).</li>
-<li><a href="https://www.gog.com/game/fantasy_empires" target="_blank">Fantasy Empires</a> (-15%).</li>
-</ul>
-</blockquote>
-<p>A reminder on some of the interesting lists you can browse of games on sale:</p>
-<ul>
-<li><a href="https://www.gog.com/en/promo/2023_spring_sale_indie" target="_blank">Indies</a> – the best selection of independent titles.</li>
-<li><a href="https://www.gog.com/en/promo/2023_spring_sale_rpg" target="_blank">RPG’s</a> – enjoy the rich storytelling and embark on a great adventure.</li>
-<li><a href="https://www.gog.com/en/promo/2023_spring_sale_classics" target="_blank">Classics</a> – evoke nostalgia with a large collection of Good Old Games and classics.</li>
-<li><a href="https://www.gog.com/en/promo/2023_spring_sale_highest_discount" target="_blank">Highest Discounts</a> - speaks for itself.</li>
-<li><a href="https://www.gog.com/en/promo/2023_spring_sale_best_deals" target="_blank">Best Sellers</a> - popular stuff.</li>
-</ul>
-<p>See more on <a href="https://www.gog.com/en" target="_blank">GOG.com</a> and the full <a href="https://www.gog.com/en/promo/2023_spring_sale" target="_blank">Spring Sale list here</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/gog-giving-away-another-game-during-their-spring-sale/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/gog-giving-away-another-game-during-their-spring-sale/</guid>
-      <pubDate>Tue, 28 Mar 2023 15:04:47 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1643769729id22499gol.jpg" type="image/jpeg"/>
-      
-      <category>Free Game</category>
-      
-      <category>Game Sale</category>
-      
-      <category>Giveaway</category>
-      
-      <category>GOG</category>
-      
-    </item>
-    
-    <item>
-      <title>AMD RADV driver will soon stop eating RAM with some games</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Developer Mike Blumenkrantz has continued blogging about Linux graphics driver improvements, with a fix from developer Samuel Pitoiset landing to stop the AMD RADV (Vulkan) driver eating up RAM.</p>
-<p>In a blog titled "<a href="https://www.supergoodcode.com/oom/" target="_blank">Oom</a>", Blumenkrantz mentioned how it was discovered that Dota 2 was using far too much RAM. Using massif-visualizer and GFXReconstruct, they noticed how Dota 2 was eating up 3GB of RAM "just from the driver" and "nearly all of it just from in-memory shader IR". Turns out this was caused in part by using the new Graphics Pipeline Library, ongoing work to make games smoother using the <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_graphics_pipeline_library.html" target="_blank">VK_EXT_graphics_pipeline_library</a> extension.</p>
-<p>Thanks to the effort, the issue was properly identified and <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/22143" target="_blank">a fix</a> for the problem resulted in an "85% reduction in memory utilization" in Dota 2 that was being tested.</p>
-<p>Since this could have potentially hit other games too, and with Graphics Pipeline Library hopefully going to be enabled by default in the next major release of the Mesa drivers, it's good to see.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/amd-radv-driver-will-soon-stop-eating-ram-with-some-games/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/amd-radv-driver-will-soon-stop-eating-ram-with-some-games/</guid>
-      <pubDate>Tue, 28 Mar 2023 09:06:29 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/690671946id22498gol.jpg" type="image/jpeg"/>
-      
-      <category>AMD</category>
-      
-      <category>Drivers</category>
-      
-      <category>Mesa</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Dolphin Emulator for GameCube and Wii is coming to Steam</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Giving you another easy way to download and keep it up to date, the Dolphin Emulator for GameCube and Wii is coming to Steam. Even though it's going to be on Steam, they don't dare mention Nintendo directly on the Steam page: "Dolphin is an emulator for the big N's 6th and 7th generation consoles, featuring enhancements such as increased resolution, save states, and netplay."</p>
-<p>In their official <a href="https://dolphin-emu.org/blog/2023/03/28/coming-soon-dolphin-steam/" target="_blank">blog post</a>, they said to expect a feature article going over the features of the Steam release later, as this has been a "product of many months of work". This will make getting it on Steam Deck easier than ever, and they've even <a href="https://twitter.com/Dolphin_Emu/status/1640589915082887168" target="_blank">confirmed</a> it will support Cloud Saves too.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15068793831679993069gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15068793831679993069gol1.jpg"/></a></p>
-<p>Naturally, the Steam release is just the emulator, you will still need to have your own copy of games to run in it.</p>
-<p>They haven't given an exact date, other than the plan is to have it in Early Access on Steam by the end of 2023. They're going with Early Access as some Steam specific features aren't finished yet, plus they want to gather feedback on what people want from the Steam release.</p>
-<p>You can <a href="https://store.steampowered.com/app/1941680/Dolphin_Emulator/" target="_blank">follow it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/dolphin-emulator-for-gamecube-and-wii-is-coming-to-steam/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/dolphin-emulator-for-gamecube-and-wii-is-coming-to-steam/</guid>
-      <pubDate>Tue, 28 Mar 2023 08:46:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1162081333id22497gol.jpg" type="image/jpeg"/>
-      
-      <category>Emulation</category>
-      
-      <category>Meta</category>
-      
-      <category>Open Source</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Fresh Steam Deck and Steam desktop Beta, Valve dropping old Windows support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Steam Deck and Steam desktop both got a fresh Beta release, with plenty of bug fixing involved and Valve are dropping support for older versions of Windows.</p>
-<p>The <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/3684547474477817940" target="_blank">changelog</a> as expected, continues being basically the same across both, now Valve has merged the Steam Deck UI into the Desktop client, with only one changed being specific to the Steam Deck and there's no noted Linux desktop specific changes this time around.</p>
-<p>Here's what's changed:</p>
-<blockquote>
-<p class="plain-list-title">General</p>
-<ul>
-<li>Added "End of Life" alert for Windows 7/8/8.1. Steam Client support for these operating systems will end on Jan 1st, 2024 at 10am. See <a href="https://help.steampowered.com/en/faqs/view/4784-4F2B-1321-800A" target="_blank">here</a> for additional details.</li>
-<li>Display an error if the user is trying to log in anonymously in the client. This mode is only supported for steamcmd.</li>
-<li>Uninstalling a game no longer displays a modal dialog</li>
-<li>Fixed "Manage Storage" button opening the storage settings page</li>
-<li>Fix soundtrack cover art not appearing in content management panel</li>
-<li>Fixed popup menus opening at the wrong DPI in multi-monitor mixed-DPI configurations.</li>
-</ul>
-<p class="plain-list-title">Big Picture Mode</p>
-<ul>
-<li>Removed support for -oldbigpicture command-line option</li>
-<li>Fixed some styling issues in the Quick Access Menu &gt; Friends List</li>
-<li>Fixed some issues with notification toasts appearing in the wrong location in multi-monitor setups or with different DPI settings</li>
-<li>Apply text filtering preferences in Guides in the Overlay</li>
-<li>Removed soundtracks from All Collections since it has its own tab</li>
-<li>Fixed an issue where two settings pages could be visible at once</li>
-<li>Fixed the switching of monitors when going in/out of BPM at start up</li>
-<li>Fixed overflowing friends list when sharing a screenshot</li>
-<li>Expand the hitbox of buttons in the footer to make them easier to click</li>
-</ul>
-<p class="plain-list-title">Steam Deck</p>
-<ul>
-<li>Fixed issue where a game's specific uninstall UI was not visible</li>
-</ul>
-<p class="plain-list-title">Steam Input</p>
-<ul>
-<li>Increase responsiveness of the "Joystick Deadzone" visualization</li>
-<li>Gyro As Joystick can now optionally output to Left Joystick</li>
-<li>Fixed Gyro's Left/Right Stick Deflection Modifier not working</li>
-<li>Fixed Modeshift bindings not being removable when viewing the command on the input</li>
-</ul>
-<p class="plain-list-title">macOS</p>
-<ul>
-<li>Fix Steam Overlay crash in some games using Metal graphics API</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/03/fresh-steam-deck-and-steam-desktop-beta-valve-dropping-old-windows-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/03/fresh-steam-deck-and-steam-desktop-beta-valve-dropping-old-windows-support/</guid>
-      <pubDate>Tue, 28 Mar 2023 08:39:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
       
     </item>
     
