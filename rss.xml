@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-05-12 07:24:26.508209</pubDate>
+    <pubDate>2023-05-13 07:24:30.316943</pubDate>
 
     
     <image>
@@ -18,6 +18,268 @@
     </image>
 
     
+    
+    <item>
+      <title>Nintendo Switch emulator yuzu gets a huge performance boost</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Emulation coding is tricky business done by some people that are clearly 100x smarter than I am, and now the Nintendo Switch emulator yuzu devs are just showing off.</p>
+<p>In their <a href="https://yuzu-emu.org/entry/yuzu-progress-report-apr-2023/" target="_blank">April 2023 progress report</a>, they talked about a big performance improvement landing thanks to a rewrite of most of their old buffer cache code, plus work in other areas. The result is that you could see up to 87% better performance, although they said for most people it will probably be about 50%.</p>
+<p>Just look at these differences (click to enlarge):</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13408787661683900749gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13408787661683900749gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16967125741683900750gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16967125741683900750gol1.png"/></a></p>
+<p>They said nothing special is needed to get this boost, you just need to be up to date and set GPU accuracy to "Normal".</p>
+<p>Plenty more was mentioned like asynchronous presentation with Vulkan, which is behind a tickbox, because in some cases it might make frametimes less consistent but for a lot of people it might actually make things smoother. It needs more testing for them to be sure where to enable it.</p>
+<p>The Linux side of yuzu got some nice improvements too like fixing up the initialization of the Vulkan swapchain on Wayland, making it work better for NVIDIA GPU owners and also a crash with Flatpak was solved too.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/05/nintendo-switch-emulator-yuzu-gets-a-huge-performance-boost/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/nintendo-switch-emulator-yuzu-gets-a-huge-performance-boost/</guid>
+      <pubDate>Fri, 12 May 2023 14:21:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2093463206id22686gol.jpg" type="image/jpeg"/>
+      
+      <category>Emulation</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>ChimeraOS 42, the Linux distro for handhelds and consoles v42 is out</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Want to get Linux onto your handheld PC or your living room PC console? <a href="https://chimeraos.org/" target="_blank">ChimeraOS</a> is probably what you're going to want and version 42 has just been released. Since Valve haven't yet released SteamOS 3 currently used on the Steam Deck for everyone, this is probably the next best thing.</p>
+<p>It comes with Linux kernel version 6.1.27, Mesa 23.0.2 patched for Intel ANV + Gamescope compatibility and NVIDIA 530.41.03.</p>
+<p>For device support, there's plenty of improvements to be found like: support for the GPD WIN 4 with controller, it adds support for the AYANEO 2's TDP controls and launching their Chimera App directly for managing lots of different things like GOG and Epic Games, support for managing the LED's on the AYANEO AIR, AIR Pro, 2, and GEEK devices <em>and</em> there's also fan control support for the AYANEO2 and AYANEO Geek.</p>
+<p>They also have a new OpenGamepadUI display session option, which gives their own special custom UI (since the default is the new Steam Big Picture). This is "early Alpha" stuff but it sounds quite interesting as a multi-library launcher system with plugin support.</p>
+<p>All changes:</p>
+<blockquote>
+<ul>
+<li>Removed Old Big Picture Mode session and steamos-compositor-plus. It served us well. <em>Valeo.</em></li>
+<li>Formatting and mounting of all secondary storage devices has been fixed. For real this time.</li>
+<li>Improved the usability and aesthetics of the disk management utility in the chimera app</li>
+<li>Added controller support for GPD Win4. (HandyGCCS)</li>
+<li>The Chimera App can now be launched locally on the AYANEO 2 using the LC button. (HandyGCCS)</li>
+<li>The Chimera App now has built-in TDP controls for AYANEO 2</li>
+<li>The Chimera App can now be launched locally from the desktop</li>
+<li>The Chimera App now shows app/game titles on the Flathub, GOG, and Epic Games Store pages for easy searchability</li>
+<li>Fixed the ChimeraOS boot splash screen</li>
+<li>Fixed a bug in the bootloader generator that failed to pickup additional kernel options</li>
+<li>Fixed a race condition with suspend that could cause a device to immediately re-suspend after wake. (HandyGCCS)</li>
+<li>Fixed a bug on AYANEO 2 and AYANEO Geek devices that could cause duplicate key-presses. (HandyGCCS)</li>
+<li>Fixed some issues with button mapping in RetroArch emulators for devices managed by HandyGCCS.</li>
+<li>Updated the device-quirks script for the AOKZOE A1 for systemd-boot. See the <a href="https://github.com/ChimeraOS/chimeraos/wiki/Device-Specific-Configurations#aokzoe-a1" target="_blank">guide</a> on usage.</li>
+<li>Added two experimental sessions for OpenGamepadUI. These sessions should be considered alpha software and are included for testing purposes only. They are not currently recommended for "daily driving".</li>
+<li>Added the AYALED service for control of LED's on AYANEO AIR, AIR Pro, 2, and GEEK devices. See the <a href="https://github.com/ChimeraOS/chimeraos/wiki/Device-Specific-Configurations" target="_blank">guide</a> for usage.</li>
+<li>Fixed a bug where Mangohud would display in the center of the screen for left-rotated displays.</li>
+<li>Fixed a bug where Mangohud would not display the overlay correctly with systems with multiple CPU cores/threads.</li>
+<li>Switched from sudo to polkit for brightness control.</li>
+<li>Added the pikaur AUR helper for simpler troubleshooting and development usage. The filesystem must be unlocked in order to use pikaur and it is not recommended for general usage in ChimeraOS.</li>
+<li>Exposed fan control support for AYANEO2 and AYANEO Geek in sysfs via the oxp-sensors-dkms driver.</li>
+<li>Added <code class="inline-code">export-gpu</code> CLI utility to manage Multi-GPU systems (Useful for Nvidia systems paired with a CPU with an iGPU). See the <a href="https://github.com/ChimeraOS/chimeraos/wiki/General-Configuration#multi-gpu-management-utility-egpu-and-igpu--dedicated-gpu-configurations" target="_blank">guide</a> for usage.</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/05/chimeraos-42-the-linux-distro-for-handhelds-and-consoles-v42-is-out/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/chimeraos-42-the-linux-distro-for-handhelds-and-consoles-v42-is-out/</guid>
+      <pubDate>Fri, 12 May 2023 12:45:39 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/684835244id22681gol.jpg" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA open sources more of RTX Remix with v0.2</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA has released version 0.2 of RTX Remix today, which on top of lots of improvements also opens up their NVIDIA RTX Remix Bridge.</p>
+<p>What is it? A modding platform that allows people to make "RTX remasters" of various older games enhancing them with Ray Tracing and DLSS. It does this with thanks to the DXVK translation layer, which NVIDIA now have their own fork of just for this. This is the same tech NVIDIA used for Portal with RTX.</p>
+<p>As of the 0.2 release they've now also open source the Remix Runtime Bridge, from the <a href="https://github.com/NVIDIAGameWorks/bridge-remix/" target="_blank">GitHub</a>:</p>
+<blockquote>
+<p>The NVIDIA RTX Remix project allows bringing high quality pathtraced rendering, lighting, shadows etc. into classic games. This repo contains the NVIDIA RTX Remix Bridge client and server components required for enabling a 32-bit game to interact with the 64-bit Remix Runtime dll.</p>
+</blockquote>
+<p>So eventually we might see a whole bunch of mods for older DirectX 8 and 9 games, to give them fancy new rendering features. Although, NVIDIA do say on their roadmap they eventually plan to support OpenGL games as well. They should all be easy enough to get running on Linux, since Remix ends up with Vulkan thanks to their use of DXVK.</p>
+<p>All the changes from the 0.2 release:</p>
+<blockquote>
+<ul>
+<li>The Remix Runtime Bridge is now open source on GitHub! You can find the repo <a href="https://github.com/NVIDIAGameWorks/bridge-remix" target="_blank">here</a>!</li>
+<li>Many Bridge improvements have gone into this release to address various game compatibility issues:
+<ul>
+<li>Fixed issues with shader parser logic that helps with Shader Model 2+ games.</li>
+<li>Fixed surface data pitch issue that was leading to crashes in some games.</li>
+<li>Added support for games that change the main window handle on <code class="inline-code">Reset()</code>.</li>
+<li>Allow <code class="inline-code">null</code> vertex declaration on server to fix unnecessary failures in some situations.</li>
+<li>Properly initialize render state according to the official DirectX9 documentation to fix geometry corruption in some games.</li>
+<li>Handle <code class="inline-code">CreateTextureXXX()</code> calls with <code class="inline-code">levels = 0</code> to fix geometry corruption in some games.</li>
+<li>Fixed mouse input processing for games where the mouse pointer would not move in the game or with the Remix menu opened, and added other DirectInput fixes for games using different exclusive modes. Also added optional input message pump hook that is needed for some games.</li>
+<li>Better matching of the native D3D9 behavior when dealing with shaders and swapchain initialization.</li>
+<li>Added more input validation on client and server side – the server is now properly returning failure codes to the client where failure is allowable.</li>
+<li>Added DPI awareness to the bridge client so that the game window gets scaled and mouse input is handled properly on displays with higher than 100% DPI.</li>
+<li>Optimized how the <code class="inline-code">SharedHeap</code> works to reduce crashes at launch and require less finetuning of its settings. Since the <code class="inline-code">SharedHeap</code> can still lead to issues in certain games we switched it to be turned off by default, but it can be enabled in <code class="inline-code">bridge.conf</code> with the <code class="inline-code">useSharedHeap</code> setting.</li>
+<li>Added forced window client option <code class="inline-code">client.forceWindowed</code> to <code class="inline-code">bridge.conf</code>.</li>
+</ul>
+</li>
+<li>DXVK-Remix improvements and game compatibility fixes:
+<ul>
+<li>Improvements to culling issues–Remix now includes an initial set of heuristics to work around engine-side culling.</li>
+<li>Improved handling of alpha-tested geometry that uses fractional ("feathered") alpha.</li>
+<li>Improved detection of shadow volumes.</li>
+<li>Support for capturing normals in vertex capture path.</li>
+</ul>
+</li>
+<li>Improvements to RTX Remix menus and documentation: expanded and clarified the existing documentation, and added tooltips in the UI to make it more accessible.</li>
+<li>Debug symbols for the release are now available in a separate <code class="inline-code">remix-0.2.0-symbols.zip</code> package to make debugging the source code from the compiled binaries easier.</li>
+</ul>
+</blockquote>
+<p>See more on the NVIDIA <a href="https://www.nvidia.com/en-gb/geforce/rtx-remix/" target="_blank">website</a> and <a href="https://github.com/NVIDIAGameWorks/rtx-remix" target="_blank">GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/05/nvidia-open-sources-more-of-rtx-remix-with-v02/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/nvidia-open-sources-more-of-rtx-remix-with-v02/</guid>
+      <pubDate>Fri, 12 May 2023 12:42:02 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1270005204id22685gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Dev</category>
+      
+      <category>Meta</category>
+      
+      <category>Mod</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Mechabellum is an auto-battling Supreme Commander - I&#39;m completely hooked</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Mechabellum is a new Early Access release from Game River and Paradox Arc (the publishing arm of Paradox Interactive). It's an auto-battler like say Dota Underlords and Auto Chess, but with big mech units with battles like Supreme Commander.</p>
+<p>Safe to say, it is absolutely my sort of thing. Quick games, lots of explosions and plenty of strategy. So TriplePoint PR sent over a key and I've been playing it to see if this may be the next big thing. Working out of the box on desktop Linux with Proton 8.0-2, this is absolutely going to be my next multiple-hundred hour game. I can already feel it's teeth sinking into my brain as I just want to play one more game constantly.</p>
+<div class="hidden_video" data-video-id="4Rj3sgSQLdU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1a852bb365d0e49a5397cb237e89e309.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/4Rj3sgSQLdU" target="_blank">See video</a></div></div>
+<p>After blasting through a few of the solo tutorials to get me started, I quickly jumped into online games doing 1v1 battles and honestly, I was impressed with it very quickly. It takes the basic idea of an auto-battler, but just makes it so much more entertaining than any that came before. Who doesn't love lots of explosions, lasers and missiles firing everywhere while you sit back and watch the fireworks hoping your idea will work for this round?</p>
+<p><em>I don't want to put it down. I might even have to cancel my dinner plans tonight, I need to play more.</em></p>
+<p>I'm not very good at it yet mind you, I've been repeatedly stomped into the ground by everyone having much better ideas on what units to unlock and deploy each round but I'm having fun and that's the main thing. It really does look quite a bit like the classic RTS Supreme Commander, but on a much smaller scale with games that aren't hours long. Exactly what I want right now.</p>
+<p>You have a really great mixture of units to deploy to from tiny nuisances, which are great to pull the attention from bigger enemies, to massive mechs and everything in between. Everything has a strength and weakness, although there are some balancing issues the developer needs to sort. Starting off by picking your commander to get your first units and bonuses, it's then a tug of war each round as you pick a new unit to unlock, deploy up to 2 additional units and then position them. Plus, you get to sprinkle in some especial abilities like a bombing run, sneaky units you can place behind enemy lines and even big storms to really screw with your opponent.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7429491881683893492gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7429491881683893492gol1.jpg"/></a></p>
+<p>The idea is just to destroy all the enemy units, or as many as you can until the 60 second round timer ends. How many units you have left will be how much health you take away from your opponent, so you want as many as possible left. Once your opponent or you reach zero health, it's then game over. Taking down one or both of the enemy towers is a safe bet, if you can get there, as it then gives a momentary slowdown to enemy units and that can be quite devastating but they get put back each round.</p>
+<p>At the start of each round you get to upgrade units to give them an overall buff, plus give them additional upgrade which affects other similar units. You also have your two towers, which also have upgrades available on each, to buff up all your units. Everything you do has a cost though, with the game having a single resource for everything so it means you really have to think between new units and what to upgrade.</p>
+<p>Since it's an auto-battler, one you've finished deploying and upgrading, it's down to the AI to hopefully crush the other side and it's quite <em>epic </em>to watch.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4543147071683893914gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4543147071683893914gol1.jpg"/></a></p>
+<p>Rarely does a brand new release get such intense excitement from me, I only hope the community sticks around for it to give it a longer life than other auto-battlers. It has all the makings of a great game. I'm off to go play some more now.</p>
+<p><em>Early Access is planned to last around 12 months.</em></p>
+<p>You can buy <a href="https://store.steampowered.com/app/669330/Mechabellum/" target="_blank">Mechabellum on Steam</a> but it will be eventually free to play.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/05/mechabellum-is-an-auto-battling-supreme-commander-im-completely-hooked/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/mechabellum-is-an-auto-battling-supreme-commander-im-completely-hooked/</guid>
+      <pubDate>Fri, 12 May 2023 12:22:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1922938748id22684gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Initial Thoughts</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>DXVK 2.2 released supporting D3D11On12, plus improvements for game launchers</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>DXVK translates Direct3D 9 / 10 and 11 into Vulkan for Proton and Wine, used on Linux desktop and Steam Deck for gaming. The new DXVK 2.2 release sounds like quite a big one, and just shows how awesome open source is. Once it's ready and in a new Proton release, we should see another nice little bump in game compatibility.</p>
+<p>The first big one is support for D3D11On12, Microsoft's own layer "which maps graphics commands from D3D11 to D3D12". DXVK does this with the help of VKD3D-Proton (the Direct3D 12 to Vulkan translation layer) and is required for D3D12 support in recent Unity Engine titles such as Lego Builder's Journey according to the DXVK team. To test that right now you need a recent build of VKD3D-Proton.</p>
+<p>Another nice addition is support for D3D9 Partial Presentation, which should improve compatibility with various game launchers, "particularly those based on Microsoft's WPF toolkit, and some visual novels". The downside is that it has a noticeable "performance hit".</p>
+<p>There's also some specific game fixes for:</p>
+<ul>
+<li>Jade Empire.</li>
+<li>Sid Meier's Pirates.</li>
+<li>Total War: Shogun 2.</li>
+<li>Battle Fantasia Revised Edition.</li>
+<li>Cold Fear.</li>
+<li>Dawn of Magic 2.</li>
+<li>DC Universe Online.</li>
+<li>Far Cry 2.</li>
+<li>Halo: The Master Chief Collection.</li>
+<li>Warhammer 40k: Space Marine.</li>
+</ul>
+<p>Plus these other fixes:</p>
+<ul>
+<li>Recent RE Engine games performance fixes.</li>
+<li>Fixed an issue wherein threads were not properly destroyed.</li>
+<li>Fixed Vulkan validation errors caused by incorrect layout tracking when enabling feedback loops for a texture.</li>
+<li>Fixed Vulkan validation errors caused by 0x0 sized clears in D3D9.</li>
+<li>Improved usage of some VK_EXT_extended_dynamic_state3 features to avoid hitting slow paths on some drivers.</li>
+<li>Significantly reduced memory usage in situations where games create unused D3D11 devices.</li>
+</ul>
+<p>Changelog can be <a href="https://github.com/doitsujin/dxvk/releases/tag/v2.2" target="_blank">seen here</a>.</p>
+<p>No doubt an upcoming Proton Experimental release will include it, as always I'll let you know when that happens.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/05/dxvk-22-released-supporting-d3d11on12-plus-improvements-for-game-launchers/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/dxvk-22-released-supporting-d3d11on12-plus-improvements-for-game-launchers/</guid>
+      <pubDate>Fri, 12 May 2023 10:58:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>World Turtles is a city-builder on the back of a space turtle out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>City-builders come in all shapes and sizes and now you can build on the back of a massive turtle flying through space in World Turtles.</p>
+<p>Now in Early Access released on May 1st, it's certainly an interesting idea, and reminds me on the basic idea found in <a href="https://www.gamingonlinux.com/2023/01/the-wandering-village-gets-gamepad-and-steam-deck-support/" target="_blank">The Wandering Village</a> which I very much loved. While you're dealing with building up your city, you're also dealing with the fact that you're in space and your turtle friend might go into some dangerous areas. Check out the launch trailer:</p>
+<div class="hidden_video" data-video-id="y8DBSWXQkYA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1b646cf2ce75267163d192b539decb9c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/y8DBSWXQkYA" target="_blank">See video</a></div></div>
+<p>The developer said they expect Early Access to last at least 1 year, possibly longer depending on feedback and just how much they decide to add into the game.</p>
+<p>Right now it has the basic core mechanics of resources gathering, climate issues, research, health, terrain interaction and so on. Plus different characteristics of space but it all needs to be fleshed-out with more of everything and just making your decisions have more impact to the overall journey. Some of what they plan to add includes:</p>
+<blockquote>
+<ul>
+<li>Populating more of the existing game systems and mechanics, especially the interaction of the Turtle and the Meeps with Space. A part of this lies in the already kicked-off Space Resources that are obtained through various interactions with Space.</li>
+<li>Adding a Culture / Art mechanic similar to the current Research mechanic, where different building types can contribute to industry-specific progress.</li>
+<li>Expanding the random map generator and map builder to include more variety and randomness that actually change the way a map plays out.</li>
+<li>Expanding into higher tier buildings, moving into the services industry rather than raw resource gathering.</li>
+<li>Adding more focused challenges with a variety of clearly defined goals. Also, mini-challenges with certain risks and rewards will liven up normal free-play games.</li>
+<li>Eventually, making a map editor with ever-increasing functionality available to players. I already use a crude editor for development.</li>
+<li>Possibly adding a Campaign - this requires game mechanics, systems and behind the scenes data structures to be largely settled.</li>
+<li>I would love to eventually add some multiplayer / Co-op functionality so players could interact with each other's worlds, but that's a while away...</li>
+</ul>
+</blockquote>
+<p>Available on <a href="https://store.steampowered.com/app/1512050/World_Turtles/" target="_blank">Steam</a> with Native Linux support.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/05/world-turtles-is-a-city-builder-on-the-back-of-a-space-turtle-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/world-turtles-is-a-city-builder-on-the-back-of-a-space-turtle-out-now/</guid>
+      <pubDate>Fri, 12 May 2023 10:46:36 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/125797852id22682gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>City Builder</category>
+      
+      <category>New Release</category>
+      
+    </item>
     
     <item>
       <title>Mesa graphics drivers 23.1.0 out now with RADV GPL enabled</title>
@@ -4115,278 +4377,6 @@ cookies from Firefox</li>
       <category>Meta</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Ubuntu 23.04 is out now with GNOME 44 and a stable Steam Snap </title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Canonical has today released Ubuntu 23.04, their latest short-term new-feature release (it's not an LTS) that will be supported until January 2024.</p>
-<p>One of the big user-facing additions is the new installer that they say offers a "streamlined and more intuitive user experience". While it offers up a refreshed look the code behind the scenes is the biggest change - since it now shares the code-base with Ubuntu Server so they can give a more consistent experience.</p>
-<p>This release also has GNOME 44, so you get all the latest enhancements there but Canonical also updated Ubuntu font, and they mentioned some big Snap update behaviour changes too. Instead of notifying you an update for a Snap was available and then making you go somewhere to update it, you will now get a background download and then it will be applied when the app is closed. You can also now pause Snap updates for as long as you want.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17882932881682006886gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17882932881682006886gol1.png"/></a></p>
-<p>There's plenty more like their Snap of Steam being promoted to stable. Canonical said over 150,000 people downloaded the preview version, so there was plenty of interest in it. This Snap bundles a bunch of dependencies needed allowing you to run new and old titles without messing with PPAs.</p>
-<p>On top of that Ubuntu Cinnamon and a resurrected Edubuntu join as official flavours.</p>
-<p>Canonical also did a video about their new installer:</p>
-<div class="hidden_video" data-video-id="oqohY6wKtcs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f3568caefb35a13a0860cbbd593653cc.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/oqohY6wKtcs" target="_blank">See video</a></div></div>
-<p>See the <a href="https://ubuntu.com/blog/ubuntu-desktop-23-04-release-roundup" target="_blank">release announcement</a> for more.</p>
-<p>You can <a href="https://ubuntu.com/download/desktop" target="_blank">download it here</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/04/ubuntu-2304-is-out-now-with-gnome-44-and-a-stable-steam-snap/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/ubuntu-2304-is-out-now-with-gnome-44-and-a-stable-steam-snap/</guid>
-      <pubDate>Thu, 20 Apr 2023 16:18:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/220989231id22586gol.png" type="image/jpeg"/>
-      
-      <category>Distro News</category>
-      
-      <category>Meta</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Stellaris 3.8 will add two co-op modes now in Beta</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I can safely say co-op is not something I ever expected for a strategy game like Stellaris but it's coming. You can even test it now. Version 3.8 is now in Open Beta on Steam, you just opt into the 3.8 version in the Properties -&gt; Beta window.</p>
-<p>The two modes it will add in:</p>
-<blockquote>
-<ul>
-<li>Cooperative PvE can be initiated from the main menu - all players that hotjoin the hosted game will join the primary player’s empire. This mode is primarily intended for teaching new players or for lower intensity cooperative gameplay.</li>
-<li>Cooperative PvP can be allowed by the host of a standard multiplayer game. When enabled, empires can open themselves up to allow other players to help control their empire. We expect this game mode to be useful for competitive team play.</li>
-</ul>
-</blockquote>
-<p>These actually sound really great. I can think of numerous games I've had where a helping hand would have made things a lot easier, especially in the late game where you're controlling so much and there's constantly things happening. Great stuff from Paradox.</p>
-<div class="hidden_video" data-video-id="79WxfMJSzWM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c77d58a750d4d5793abd5bb8745a68ba.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/79WxfMJSzWM" target="_blank">See video</a></div></div>
-<p>Some of the other improvements coming in Stellaris 3.8:</p>
-<blockquote>
-<ul>
-<li>Added unique textures for Mercury, Venus, Neptune and Uranus for the Sol system.</li>
-<li>Added unique textures for Earth and Mars when terraformed based off of available heightmap data.</li>
-<li>Added new anomaly The Orb</li>
-<li>Added a special solar system protected by the Lone Defender.</li>
-<li>Added a decision to clear the wreckage on a Broken Shackles starting planet in the event that they are conquered before they enact the Memorial to the Unshackled decision.</li>
-<li>Improved accuracy of tooltips on the galaxy setting screen and implemented experimental nested tooltip functionality.</li>
-<li>The mind-wiped species from On the Shoulders of Giants will now have the Forcefully Devolved trait.</li>
-<li>The Observation Insight Situation now remembers what approach you had when it last finished.</li>
-<li>There is now a 1% chance that a pre-ftl civilization will spawn with the Forcefully Devolved trait.</li>
-</ul>
-</blockquote>
-<p>Plus all the usual bug and balance fixes that Stellaris updates bring.</p>
-<p>Stellaris is available from <a href="https://af.gog.com/game/stellaris?as=1636858786" target="_blank">GOG</a>, <a href="https://www.humblebundle.com/store/stellaris?partner=gamingonlinux&amp;charity=12277" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/281990/Stellaris/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/04/stellaris-38-will-add-two-co-op-modes-now-in-beta/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/stellaris-38-will-add-two-co-op-modes-now-in-beta/</guid>
-      <pubDate>Thu, 20 Apr 2023 15:50:15 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2129265101id22585gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Beta</category>
-      
-      <category>GOG</category>
-      
-      <category>Humble Store</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton Hotfix gets Minecraft Legends working on Steam Deck &amp; Linux desktop</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Minecraft Legends just recently released on Steam and sadly at release it just wouldn't run, a quick bug report later and Valve has already <a href="https://twitter.com/Plagman2/status/1648890302621683712" target="_blank">solved</a> it with Proton Hotfix.</p>
-<p>Initially trying through any Proton version tested it just wouldn't load, and it was the exact same problem on Steam Deck and my Fedora Linux desktop. It would just bring you right back to your Steam Library. I opened a <a href="https://github.com/ValveSoftware/Proton/issues/6696" target="_blank">bug report</a> and now thankfully it's solved. So now as long as it's set to Proton Hotfix, you're good to go. Valve have set Proton Hotfix on it, so as long as you're not forcing a different version, it will pick it up automatically.</p>
-<div class="hidden_video" data-video-id="S58JyK-lXck"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3169862688b668401478236e3bcd429b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/S58JyK-lXck" target="_blank">See video</a></div></div>
-<p>Once again, Valve and their developers working on Proton have reacted very quickly to a brand new release, which is really good to see. I have found that sometimes it will just randomly crash though. Not overly often but it does happen.</p>
-<p>For Steam Deck, you'll want to drop it from High to Medium in the graphics settings, which seems to give overall a rather stable 60FPS and it's very smooth apart from minor loading hiccups. On High settings on Steam Deck, it will dip down to 40FPS and sometimes below, so still doable but honestly it's perfectly fine on Medium and looks great.</p>
-<p>Another issue I noted, specifically on desktop Linux with the Stable Steam Client, is that the Microsoft Account login was just a blank window in the Steam browser that pops up. However, if you simply resize the window, it then renders correctly. There's an existing <a href="https://github.com/ValveSoftware/steam-for-linux/issues/9014" target="_blank">bug report</a> for this for the main client. The login there worked fine.</p>
-<p>For Steam Deck, the login may seemingly not work getting stuck after entering a password, but reloading the game showed me logged in just fine. You can also try the login on Desktop Mode on Steam Deck but for me in Gaming Mode simply restarting after waiting a minute after entering password worked.</p>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10023681001681994731gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10023681001681994731gol1.jpg"/></a>Pictured - Ultra settings on Fedora KDE 38</em></p>
-<p>So a few quirks but overall once you in, it performs great and looks great with Proton Hotfix.</p>
-<p>You can buy it on <a href="https://store.steampowered.com/app/1928870/Minecraft_Legends/" target="_blank">Steam</a>.</p>
-<p><u><strong>ICYMI</strong></u>: <a href="https://www.gamingonlinux.com/2023/04/valve-rolls-out-proton-80-to-further-improve-steam-deck-and-linux-gaming/" target="_blank">Valve recently released Proton 8</a>!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/04/proton-hotfix-gets-minecraft-legends-working-on-steam-deck-linux-desktop/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/proton-hotfix-gets-minecraft-legends-working-on-steam-deck-linux-desktop/</guid>
-      <pubDate>Thu, 20 Apr 2023 12:51:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2120995830id22584gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Action</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>If You Like… Slay the Spire</title>
-      <author>scaine</author>
-      <description><div class="content group e-content">
-<p>When Slay the Spire launched, back in January 2019, it represented the pinnacle in what became a well recognised genre - Deck Builders. Let’s delve into that genre and see lies beneath the surface.</p>
-<p><em>IYL (If You Like) will be a short series of articles delving into various genres and looking at the best examples in each. I’ll follow a standard layout. I’ll start with a bit of history about the most famous game representing the genre. Next, I’ll cover a game that’s very similar to the original, then (hopefully!) any games that have surpassed it since, and finally any games that do things in a unique way, but still tipping their hat to the original. Then it’s over to you to tell me how wrong I am, in the comments!</em></p>
-<p>Note: I did a <a href="https://www.gamingonlinux.com/2022/05/deck-builders-round-up/" target="_blank"><u>very similar article last year</u></a>, so there will be serious overlap! Future IYL articles will of course cover different genres!</p>
-<p>Before we start, let me be clear that while Megacrits’ game “represented the pinnacle” on its launch, it didn’t define the genre exactly. There were many predecessors that led to its creation and it would do several fine games a disservice to suggest that StS was first.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/208485801681923722gol573.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/208485801681923722gol573.png"/></a></p>
-<p>If you fancy a dip into what must surely be the inspiration for StS, you could look at Deep Sky Derelicts, The Guild of Dungeoneering, Ironclad Tactics or even the excellent Hand of Fate games. But it was Megacrits’ game that rolled all the elements into a compelling package. It sold 1.5M copies at a recent count, half a million in early access alone.</p>
-<p>I’m not going to pick bones about “Deck Builders” vs “Engine Builders” vs “Card Battlers” here. Let’s just dive in.</p>
-<p></p>
-<h4><strong>A direct clone - Neoverse [</strong><a href="https://store.steampowered.com/app/994220/NEOVERSE/" target="_blank"><u>Steam</u></a><strong>]</strong></h4>
-<p>What happens when you take Slay the Spire’s three wonderfully constructed character choices and replace them with scantily clad female alternatives? Well, if the developer is Tinogames, you get an original take on StS with well thought out unique decks and mechanics, but with gorgeous, fully animated graphics thrown in. Playing Neoverse is very similar to playing StS, but sometimes feels more like a Final Fantasy game due to the gorgeous wind-ups and cinematic take downs.</p>
-<p>Whether you play as Naya with her radioactivity, Clare with her shield and blocks, or Helena with her summons, each fight feels fair and crucially, just like StS, some enemies are easy as one character, but brutally difficult as another.</p>
-<p>It might be unfair to call this a StS clone, since Neoverse launched only around three months later, so presumably started development pretty much alongside its famous rival, but I can’t find any developer retros and later is later, so here we are.</p>
-<p>Should you buy it? Mostly yes - it has a lot of nuance that grows on you over time, like the parry, combo and precision systems that reward careful gameplay. Just be aware that it’ll look like you’re playing a dodgy porn game while you’re taking down those demons.</p>
-<p></p>
-<h4><strong>Games that do it better - Roguebook (</strong><a href="https://store.steampowered.com/app/1076200/Roguebook/" target="_blank"><strong><u>Steam</u></strong></a><strong>, </strong><a href="https://www.gog.com/en/game/roguebook" target="_blank"><strong><u>GOG</u></strong></a><strong>) and Breach Wanderers (</strong><a href="https://store.steampowered.com/app/1394130/Breach_Wanderers/" target="_blank"><strong><u>Steam</u></strong></a><strong>)</strong></h4>
-<p>Oh boy, this’ll get me into trouble, I’m sure. But what it boils down to, for me, is that I’d rather play either of these games, than even one more run of StS.</p>
-<p>Roguebook is set in the world of Faeria (<a href="https://store.steampowered.com/app/397060/Faeria/" target="_blank"><u>Steam</u></a>, <a href="https://www.gog.com/forum/general_archive/faeria_an_amazing_strategy_trading_card_game_scg" target="_blank"><u>GOG</u></a>), by Abrakam Entertainment, a game I couldn’t get into. But other than tapping into the Faeria lore, the two games are very different. Roguebook takes the StS formula, then gives you two characters to play with. Block is shared, only the first character takes damage (usually), and cards have a simple mechanic to swap your characters around - if you block, or play a <em>charge</em> card, you go to the front. And it works amazingly well, opening up a huge series of tactics around positioning, blocking and healing.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4846536321681925186gol573.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/4846536321681925186gol573.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15536601561681925188gol573.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/15536601561681925188gol573.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17879619341681925189gol573.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/17879619341681925189gol573.png"/></a></p>
-<p>But that’s not all - each of the four characters have their own decks and own unique capability which means that the synergies between these decks can be amongst the most game-breakingly satisfying that I’ve ever come across. Like in StS when you get your Ironclad to 999 block and draw a <em>Body Slam</em>. Seriously. Endorphin city.</p>
-<p>The overworld map is beautiful, the sound design is endearing, enemies are diverse and (for the most part) fun to battle, and the attention to detail is just wonderful. It’s a masterpiece.</p>
-<p>As for Breach Wanderers, the recommendation is just as heartfelt, but… murkier. Launching at Steam Next Fest back in Q3 2020, and still in Early Access today, the developers are two friends in Montreal with a vision. That vision is that their unique take on the Deck Builder puts the emphasis on the building. In Breach Wanderers, you can choose (with a few well considered restrictions) what your opening deck will consist of AND what will be in the pool of available cards throughout your run.</p>
-<p>Having grown up on first edition Magic the Gathering, the ability to customise your opening deck is simply wonderful. After 110 hours of Slay the Spire’s opening four or five fights being absolutely identical in nearly every way, here was a game that gave me a choice of four opening fights with a custom deck tailored to <em>exactly</em> how I wanted to play the game. Throw in around 8 characters, interesting new game mechanics and a very grindy (in a good way) meta game and it’s plain that this one has some serious longevity beyond simply throwing Ascensions at you until you fall over.</p>
-<p>It’s early days for me with the game, but so far the combination of the familiarity of StS, but with the freshness of actual deck building is an absolute winner. Highly recommended.</p>
-<p></p>
-<h4><strong>Something a little different: Hadean Tactics (</strong><a href="https://store.steampowered.com/app/1260590/Hadean_Tactics/" target="_blank"><strong><u>Steam</u></strong></a><strong>) or Monster Train (</strong><a href="https://store.steampowered.com/app/1102190/Monster_Train/" target="_blank"><strong><u>Steam</u></strong></a><strong>, </strong><a href="https://www.gog.com/en/game/monster_train" target="_blank"><strong><u>GOG</u></strong></a><strong>)</strong></h4>
-<p>Remember Dota Underlords (<a href="https://store.steampowered.com/app/1046930/Dota_Underlords/" target="_blank"><u>Steam</u></a>)? God I loved that game. Until I didn’t anymore, but that was after 150 hours, so not bad for a freebie! Anyway, so did the developers of Hadean Tactics, a husband and wife team from Brazil. So much so, that the base game involves choosing your core hero, recruiting two to four followers, then throwing them into a grid-based auto-battler which could be easily mistaken for Valve’s PvP timesink.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3155545701681929992gol573.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/3155545701681929992gol573.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2738531461681929991gol573.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2738531461681929991gol573.png"/></a></p>
-<p>The differences wrack up pretty quickly though. To start with, this is PvE. Also, every 7 seconds, the game pauses and you have the familiar three mana to spend playing a choice of five cards. These can be straight up damage dealers, but the most interesting cards reposition the board, or can buff or debuff a few seconds of the fight. There’s a StS-style progress map, and of course, relics and upgrades for each of your units along the way.</p>
-<p>It’s slick, it’s different and it’s definitely worth checking out.</p>
-<p>Next up, Monster Train - often cited as one of the best deck builders out there, I was excited to finally give it a try a few months ago. And yep, it’s excellent. The basic format is almost like a tower defence, as enemies enter your four-level train at the bottom and work their way upwards toward the train’s core on the top level. That gives you three levels to place your “heroes” and buff them with your deck options.</p>
-<p>The graphics are absolutely stunning, the overworld map is simple but fun and the fights are usually very fair. Variety is bolstered by having around 5 or 6 factions that you can play, each with their own deck, and each run is a combination of two of these factions to further mix up possible synergies.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19748689721681932986gol573.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/19748689721681932986gol573.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/757381731681932984gol573.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/757381731681932984gol573.png"/></a></p>
-<p>But while it is a truly excellent game, I have a similar problem with Monster Train as I do with Slay the Spire - after a certain point, the only replayability is in Ascensions, which simply rank up, introducing harder bosses and more punishing runs. That’s fine to a point, but it feels a little bit lazy, especially compared to Roguebook’s excellent mix-and-match challenge system which affects not just difficulty, but even how the core game is played.</p>
-<p>I have no regrets though, as my nearly 60 hours in the game will attest.</p>
-<h4><strong>And the rest</strong></h4>
-<p>And wow, this is a big list. I’m too lazy to link all of these to their various stores, but if you’re serious about your deck builders, you don’t want to miss out on…</p>
-<p><strong>Griftlands</strong> - two decks, one for fighting, one for diplomacy, all wrapped up in a story-driven series of missions. It’s out of Early Access now, and highly rated on Steam, but something didn’t quite click for me on this, particularly odd since it’s made by the awesome Klei team.</p>
-<p><strong>Nowhere Prophet</strong> - guide your fledging army across the wasteland to find them a new home. Hints of base building in this one, with a Darkest Dungeon vibe at times.</p>
-<p><strong>Across the Obelisk</strong> - Four heroes, four times the fun, with a story-driven overworld map. Some complicated mechanics on show here, but it’s highly-rated on Steam. I only played a handful of hours during Early Access and it’s one I’ll be going back to, for sure.</p>
-<p><strong>Trials of Fire</strong> - One of my favourites due to the lovely table-top feel the fights have. A really interesting open-world over-world map and a loose set of mission objectives to drive you forward. More tactical than the others, since the fights factor in position, range and line of sight.</p>
-<p><strong>Deep Sky Derelicts</strong> - one the daddies I mentioned earlier, this is a sloooow starter, but worth sticking with as you build your team to take on the sci-fi themed enemies. Your deck is defined by a combination of your equipment and your character, giving some nice customisation.</p>
-<p><strong>Card Hunter</strong> - a freebie, and like Trials of Fire, this introduces tactical positioning and elements like area of effect. Gets a bit naggy about buying a subscription eventually, but there’s tens of hours of enjoyment to be had first and the Dungeons &amp; Dragons vibe is hard to resist.</p>
-<p><strong>Inscryption</strong> - part deck builder, part escape room, this dark, creepy adventure will keep you guessing throughout its three story-driven acts. I can genuinely say that it’s the first game in which pulling out your own tooth with a pair of pliers is a good thing!</p>
-<p><strong>Tainted Grail</strong> - some unique takes on familiar mechanics and a 3D third-person overworld based around the idea of a torch slowly burning down gives this one great tension. I need to play more, as there are heaps of characters to unlock.</p>
-<p><strong>Hellcard</strong> - only a couple of months old this one, but already showing promise as you put three adventures up against the army of darkness. It’s co-operative, apparently, but I don’t know how effectively that works. In single player, each character takes a slice of “pie” on the battlefield as the enemies surge towards you, each character playing their own decks, with their own special capability. One to keep an eye on.</p>
-<p>Room for one more? Check out Liam's recent article on <a href="https://www.gamingonlinux.com/2023/04/takara-cards-is-a-unique-space-sci-fi-deckbuilding-tactical-strategy-game/" target="_blank">Takara Cards</a>, a new Early Access, space-themed deck builder.</p>
-<p>And that’s it for deck builders. Did I miss any? Is Slay the Spire still the king for you? I haven’t mentioned its various excellent mods, such as Downfall, so perhaps you’re all still enjoying the champion of deck builders through its total conversions, or fan-made characters &amp; decks! Let me know in the comments!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/04/if-you-like-slay-the-spire/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/if-you-like-slay-the-spire/</guid>
-      <pubDate>Thu, 20 Apr 2023 11:40:28 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/673804938id22577gol.jpg" type="image/jpeg"/>
-      
-      <category>Deck-builder</category>
-      
-      <category>Editorial</category>
-      
-      <category>GOG</category>
-      
-      <category>Listicle</category>
-      
-    </item>
-    
-    <item>
-      <title>POSTAL 2 got a surprise 20th anniversary update with Steam Deck support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>POSTAL 2 from Running With Scissors just had a big upgrade for the 20th anniversary and there's lots of improvements to this classic violent first-person adventure.</p>
-<p>Quite possibly one of the most ridiculous games ever made, there's so many terrible things you can do in it which is great if you love a bit of dark humour. Not me of course, you would never find me laughing at the ability to give yourself the middle finger in a mirror.</p>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17069294231681918390gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17069294231681918390gol1.jpg"/></a><br/>
-The Native Linux release appears to work just fine on Fedora 38</em></p>
-<p>Here's all the new stuff they added:</p>
-<blockquote>
-<ul>
-<li>Fully compatible with Steam Deck!</li>
-<li>'Two Weeks In Paradise' game mode! (Paradise Lost)</li>
-<li>Classic Mode! (+ 'Options' Menu)</li>
-<li>Reworked New Game menu with brand new Day Selection and Skip Intro options!</li>
-<li>New “Ludicrous” difficulty!</li>
-<li>Added Quit to Desktop option!</li>
-<li>David Eddings (The original voice of Claptrap from the Borderlands series) as the voice of Pisstrap in Paradise Lost!</li>
-<li>Crackola (dual-wield power-up) and Weapons Vending Machines added to P2 levels!</li>
-<li>The Flipping the Bird feature from PL is now available in P2! This can be performed with a new dedicated button ('G' by default) or by pressing Fire with Empty Hands or Alt Fire with the Petition and other weapons that replace the hands</li>
-<li>Added a few new cheats: ChugIt, ParadiseIsLost, SeekritWeaponzPls, DoubleTheGun, PeeAll, PukeAll, HereKittyKitty!</li>
-<li>Added unique behavior for Cat Silencers made out of experimental cats! (Apocalypse Weekend)</li>
-<li>When you pick up a thrown Scythe or Sledgehammer, it will now auto-switch back to this weapon!</li>
-<li>Added support for customizable Weapon Selector and Inventory Menu!</li>
-<li>NPCs weapon variety option! (random chance of using Eternal Damnation guns)</li>
-<li>Restored some unused POSTAL Dude voice lines!</li>
-<li>Expanded Crosshair Customization!</li>
-<li>Saves with * mark for cheating or Workshop Game are now displayed in yellow color to be more noticeable!</li>
-<li>New effects for Catnip and food use!</li>
-<li>Added Cat Launcher! (Super-fun cheat only weapon)</li>
-</ul>
-</blockquote>
-<p>There's various other improvements too including plenty of bug fixes. Really nice to see this update land, should make it feel a lot better on modern systems.</p>
-<p>On Steam Deck specifically, they seem to have done some nice touches like giving a customized controls screen and overall it seems to work great out of the box now. <em>Click screenshots to enlarge.</em></p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4572934051681919091gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/4572934051681919091gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/900382731681919092gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/900382731681919092gol1.jpeg"/></a></p>
-<p>Full update notes can be seen on <a href="https://store.steampowered.com/news/app/223470/view/3690178693938892431" target="_blank">Steam</a>.</p>
-<p>You can buy it on <a href="https://www.humblebundle.com/store/postal-2?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/223470/POSTAL_2/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/04/postal-2-got-a-surprise-20th-anniversary-update-with-steam-deck-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/postal-2-got-a-surprise-20th-anniversary-update-with-steam-deck-support/</guid>
-      <pubDate>Wed, 19 Apr 2023 15:45:24 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1602559223id22583gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Adventure</category>
-      
-    </item>
-    
-    <item>
-      <title>Takara Cards is a unique space sci-fi deckbuilding tactical strategy game</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Fusing together the best elements of deckbuilders and tactical turn-based battles, Takara Cards is a little unusual to get into but full of charm to keep you wanting more. It feels like an evolved idea from their previous game, NEXT JUMP: Shmup Tactics, which was also a lot of fun.</p>
-<p>It's showing a huge amount of promise for the rather quirky story to it, one that sees you chasing Dragons through space as you build up your deck of abilities, progress through various turn-based battles and encounter various strange events. The combat is certainly interesting, with your deck being both your pilot and your ship and the battles are you travelling through space with your aim to destroy as much as possible and survive to continue on.</p>
-<blockquote>
-<p></p>
-</blockquote>
-<div class="hidden_video" data-video-id="ZeRWSJFddPs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/56bbafaaf4d526e2258cd9d14fea07d9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ZeRWSJFddPs" target="_blank">See video</a></div></div>
-<p>Currently in Early Access and available now on Steam, it comes with full Native Linux support and the developer mentioned they're ensuring it works nicely on Steam Deck as well. It's made with Godot Engine and other open source tooling as well.</p>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Play cards in a <strong>DEEP tactical turn-based Combat.</strong></li>
-<li>Over <strong>70 cards</strong> and 34 unique units (so far).</li>
-<li><strong>Create your character</strong> by choosing Cards and Reputation, among other things!</li>
-<li>Your Deck is your Pilot and your Ship: <strong>Build it by venturing </strong>through the Cosmos and Events.</li>
-<li><strong>Exoteric Karma System</strong> that influences your Character and Ship.</li>
-<li><strong>Synergize between</strong> dozens of UNIQUE cards to <em>clear</em> the board of enemies <strong>in one Turn.</strong></li>
-</ul>
-</blockquote>
-<p>Go and <a href="https://store.steampowered.com/app/1932210/Takara_Cards/" target="_blank">check it out on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/04/takara-cards-is-a-unique-space-sci-fi-deckbuilding-tactical-strategy-game/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/04/takara-cards-is-a-unique-space-sci-fi-deckbuilding-tactical-strategy-game/</guid>
-      <pubDate>Wed, 19 Apr 2023 14:07:29 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1209920681id22582gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Deck-builder</category>
-      
-      <category>Godot Engine</category>
       
     </item>
     
