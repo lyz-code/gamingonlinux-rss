@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-05-27 07:24:25.219504</pubDate>
+    <pubDate>2023-05-28 07:24:26.818206</pubDate>
 
     
     <image>
@@ -18,6 +18,36 @@
     </image>
 
     
+    
+    <item>
+      <title>Nintendo hits Valve with DMCA against the Dolphin emulator release</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Back in March the plan was announced for the Wii and GameCube emulator Dolphin to release on Steam, along with some useful Steam features but now that seems unlikely to happen.</p>
+<p>The Dolphin team has now announced that their Steam page was taken down, as Nintendo sent a DMCA takedown notice to Valve about it. Here's the <a href="https://dolphin-emu.org/blog/2023/05/27/dolphin-steam-indefinitely-postponed/" target="_blank">statement</a> they released:</p>
+<blockquote>
+<p>It is with much disappointment that we have to announce that the Dolphin on Steam release has been indefinitely postponed. We were notified by Valve that Nintendo has issued a cease and desist citing the DMCA against Dolphin's Steam page, and have removed Dolphin from Steam until the matter is settled. We are currently investigating our options and will have a more in-depth response in the near future.</p>
+<p>We appreciate your patience in the meantime.</p>
+</blockquote>
+<p>Such a shame. </p>
+<p>Why now though? Dolphin has been around since 2003 for GameCube, adding basic Wii support in 2007, so Dolphin was there during the time the Wii was still being fully supported. Nintendo also only went after the Steam page, not the project as a whole as it can still be found on <a href="https://github.com/dolphin-emu/dolphin" target="_blank">GitHub</a> and <a href="https://dolphin-emu.org/" target="_blank">official site</a>. According to a comment from the Citra developer on <a href="https://www.reddit.com/r/emulation/comments/13ss1o9/comment/jlry1kq/" target="_blank">Reddit</a>, it's due to Dolphin including decryption keys with the project.</p>
+<p>Really, it's not going to do Nintendo much good, it's put Dolphin all over the news and even more people will now know about it and end up using it.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/05/nintendo-hits-valve-with-dmca-against-the-dolphin-emulator-release/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/nintendo-hits-valve-with-dmca-against-the-dolphin-emulator-release/</guid>
+      <pubDate>Sat, 27 May 2023 10:24:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1955774338id22756gol.jpg" type="image/jpeg"/>
+      
+      <category>Emulation</category>
+      
+      <category>Meta</category>
+      
+      <category>Open Source</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>Stone Age farming life-sim Roots of Pacha has returned to Steam</title>
@@ -4493,81 +4523,6 @@ Hollow Knight: Silksong is the epic sequel to Hollow Knight, the award winning a
       <category>Beta</category>
       
       <category>Initial Thoughts</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam will now scale better with KDE and GNOME</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>In the latest Beta release for Steam from May 5th, Valve finally did some more work on scaling the UI of the Steam Client. Quite overdue isn't it?</p>
-<p>From the release notes they mentioned Steam will now use the global scale factor as configured via KDE or GNOME settings, specifically from <code class="inline-code">org.gnome.desktop.interface/text-scaling-factor</code>. Valve has also re-introduced GDK_SCALE as a fallback, and there's also a command line switch to let you override it with <code class="inline-code">-forcedesktopscaling float</code> now available.</p>
-<p>Other fixes in the Beta from <a href="https://store.steampowered.com/news/group/4397053/view/3705943193607193985" target="_blank">May 5th</a> include:</p>
-<blockquote>
-<p class="plain-list-title"><strong>General</strong></p>
-<ul>
-<li>Fixed big black rectangle sometimes showing up in small mode at start time.</li>
-<li>Fixed context menus sometimes getting squashed in small mode.</li>
-</ul>
-<p class="plain-list-title"><strong>Steam Input</strong></p>
-<ul>
-<li>Fix Right Trackpad Click in the controller binding listening page being bound to Left Stick Click.</li>
-<li>Improved digital navigation in GamePad Action Binding Tab when selecting LED Color Action.</li>
-</ul>
-</blockquote>
-<p>All these changes also apply to the Steam Deck.</p>
-<p>There was also an update on May 4th that I missed as well, as Valve are working to fix up all the issues that came along with the newer UI and the new Steam Overlay. For desktop here's the <a href="https://store.steampowered.com/news/group/4397053/view/3705943193600581522" target="_blank">changes</a>:</p>
-<blockquote>
-<p class="plain-list-title"><strong>General</strong></p>
-<ul>
-<li>Fixed issues with navigating forward and back when the client's start page is the Library</li>
-<li>Tweaked the order and presentation of some items in the account menu</li>
-<li>Fixed library artwork not automatically updating in some cases</li>
-<li>Fixed developer, publisher, and franchise links not working in game info panel</li>
-<li>Fixed some formatting issues on downloads page</li>
-<li>Made download throttle setting field honor the bits-per-second/bytes-per-second toggle setting</li>
-<li>Changed default display of download rate to bits per second.</li>
-<li>LED Personalization now has has dedicated sub-page in Controller Calibration page</li>
-<li>Fixed issue where the cursor position would be reset in Game Notes after auto-saving</li>
-</ul>
-<p class="plain-list-title"><strong>Friends List</strong></p>
-<ul>
-<li>Fixed Send Trade Offer opening in the system browser</li>
-<li>Fixed Add to Favorites / Remove from Favorites not dismissing the context menu in some instances</li>
-</ul>
-<p class="plain-list-title"><strong>Screenshot Manager</strong></p>
-<ul>
-<li>Fixed screenshots failing to upload when certain privacy settings were selected</li>
-<li>Fixed UI glitch when deleting a local screenshot's caption</li>
-</ul>
-<p class="plain-list-title"><strong>In-Game Overlay</strong></p>
-<ul>
-<li>Added cloud sync status icon to Game Notes dialog. If there's a Steam Cloud conflict, clicking on that icon will display a cloud conflict resolution dialog.</li>
-<li>Fixed issue with Friends List context menu items not opening links in the overlay web browser (e.g. "View Profile" or "Send Trade Offer")</li>
-<li>Fixed issue where some dialogs were not appearing correctly (e.g. Invite Friend to Game, Add Friend, etc.)</li>
-</ul>
-<p class="plain-list-title"><strong>Linux</strong></p>
-<ul>
-<li>Fixed the file picker dialog not showing any files when browsing for an app icon</li>
-<li>Fixed the Steam Runtime info dialog not showing any information</li>
-</ul>
-</blockquote>
-<p>The majority of that was also on Steam Deck too, although most of it is for desktop mode.</p>
-<p>The new design is starting to feel quite a lot more stable now, as it was a bit rough with the recent major Beta upgrade.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/05/steam-will-now-scale-better-with-kde-and-gnome/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/steam-will-now-scale-better-with-kde-and-gnome/</guid>
-      <pubDate>Mon, 08 May 2023 10:29:21 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Meta</category>
-      
-      <category>Steam</category>
       
     </item>
     
