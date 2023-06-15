@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-06-14 07:24:35.994812</pubDate>
+    <pubDate>2023-06-15 07:24:42.494230</pubDate>
 
     
     <image>
@@ -18,6 +18,315 @@
     </image>
 
     
+    
+    <item>
+      <title>Total War: WARHAMMER III for Linux updated to v3.1</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After entirely skipping the 3.0 update for Linux, Feral Interactive has now upgraded their Linux port of Total War: WARHAMMER III to version 3.1. The 3.0 update originally released for Windows in April, with 3.1 landing in May. While it is nice to see we got the 3.1 update a bit quicker, two months between updates is not a good look if you're sticking to their Native build.</p>
+<p>Main changes for 3.1 and 3.0 are:</p>
+<ul>
+<li>Chaos Dwarfs Endgame Crisis</li>
+<li>Regiments of Renown IV</li>
+<li>Bretonnia changes and rebalancing</li>
+<li>Event notifications fixed</li>
+<li>Forge of the Chaos Dwarfs</li>
+<li>Mirror of Madness</li>
+<li>Free Legendary Hero: Ulrika Magdova</li>
+</ul>
+<p>You can get an overview on what's changed in the two below videos:</p>
+<div class="hidden_video" data-video-id="IyJS1x2SeC4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/141b49ae4808b9943d21d5de31d8397b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/IyJS1x2SeC4" target="_blank">See video</a></div></div>
+<div class="hidden_video" data-video-id="V7VpGc1JDmU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a08748a58c0aa76c2abcd05ef78e880c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/V7VpGc1JDmU" target="_blank">See video</a></div></div>
+<p>This update also brings support for the Forge of the Chaos Dwarfs DLC.</p>
+<p><em>Full patch notes can be found for <a href="https://www.totalwar.com/blog/tww3-update-300/" target="_blank">3.0 here</a> and <a href="https://www.totalwar.com/blog/tww3-update-310/" target="_blank">3.1 here</a>.</em></p>
+<p>You can grab Total War: Warhammer III on <a href="https://www.fanatical.com/en/game/total-war-warhammer-iii?ref=gol" target="_blank">Fanatical</a>, <a href="https://www.humblebundle.com/store/total-war-warhammer-iii?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1142710/Total_War_WARHAMMER_III/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<p>ICYMI: seems like Feral won't be doing any more Linux ports, after <a href="https://www.gamingonlinux.com/2023/05/total-war-pharaoh-announced-linux-port-from-feral-interactive/" target="_blank">Total War: PHARAOH</a> was initially announced with Linux support Feral quickly clarified this was in fact wrong and they're only doing it for macOS.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/06/total-war-warhammer-iii-for-linux-updated-to-v31/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/06/total-war-warhammer-iii-for-linux-updated-to-v31/</guid>
+      <pubDate>Wed, 14 Jun 2023 20:50:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2069916204id22834gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Feral Interactive</category>
+      
+      <category>Steam</category>
+      
+      <category>Strategy</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA driver 535.54.03 stable rolls out for Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA has today released their latest stable driver for Linux version <a href="https://www.nvidia.co.uk/download/driverResults.aspx/205541/en-uk" target="_blank">535.54.03</a>, following on from their recent <a href="https://www.gamingonlinux.com/2023/05/nvidia-535-43-02-beta-for-linux-wayland-vulkan/" target="_blank">535.43.02 Beta driver in late May</a>.</p>
+<p>Compared with the Beta, NVIDIA added in these extra bug fixes:</p>
+<blockquote>
+<ul>
+<li>Fixed a bug that caused modesets to fail in some Wayland configurations.</li>
+<li>Fixed a bug that caused head-mounted displays (HMDs) to display black after a modeset.</li>
+<li>Fixed a bug that prevented SLI Mosaic controls from being displayed in the nvidia-settings control panel when using GSP Firmware.</li>
+<li>Fixed a bug that could cause image corruption when unbinding Vulkan sparse textures.</li>
+<li>Fixed a bug that caused head-mounted displays (HMDs) to display black after a modeset.</li>
+</ul>
+</blockquote>
+<p>The rest of the changes are as follows:</p>
+<blockquote>
+<ul>
+<li>Added support for the VK_EXT_memory_priority, and VK_EXT_pageable_device_memory extensions for Turing+ GPUs.</li>
+<li>Improved the performance of Minecraft Java Edition on RTX 3000 series GPUs.</li>
+<li>Fixed a memory leak in the NVIDIA GLX driver, as reported at: <a href="https://forums.developer.nvidia.com/t/222697" target="_blank">https://forums.developer.nvidia.com/t/222697</a></li>
+<li>Added support for driving very high pixel clock mode timings such as 8K @ 60Hz. Please see the "MaxOneHardwareHead" X11 ModeValidation token in the README for details.</li>
+<li>Extended Dynamic Boost support on notebooks to include older Renoir and Cezanne chipsets, in addition to Rembrandt and newer AMD chipsets.</li>
+<li>Fixed a bug that caused Vulkan X11 swapchain creation to fail on GPUs without a display engine when the VK_KHR_present_id extension is used.</li>
+<li>Fixed console restore on legacy VGA consoles when using the NVIDIA Open GPU Kernel Modules.</li>
+<li>Added nvoptix.bin to the driver package. This data file is used by the OptiX ray tracing engine library, libnvoptix.so.1.</li>
+<li>Removed libnvidia-compiler.so.VERSION from the driver package. This functionality is now provided by other driver libraries.</li>
+<li>Added power usage and power limits information to nvidia-settings PowerMizer page.</li>
+<li>Updated NV_CTRL_GPU_POWER_SOURCE NV-CONTROL API to report undersized power source.</li>
+<li>Add support for version 4 of the linux-dmabuf wayland protocol.</li>
+<li>Added NV-CONTROL attributes NV_CTRL_FRAMELOCK_MULTIPLY_DIVIDE_MODE and NV_CTRL_FRAMELOCK_MULTIPLY_DIVIDE_VALUE to allow syncing a Quadro Sync II card to different House Sync signal rates. This feature requires firmware version 2.18 or later; to download the latest firmware version, please visit: <a href="https://www.nvidia.com/en-us/drivers/firmware/quadro-sync-firmware-driver/" target="_blank">https://www.nvidia.com/en-us/drivers/firmware/quadro-sync-firmware-driver/</a></li>
+<li>Added support for the VK_KHR_video_queue, VK_KHR_video_decode_queue, VK_KHR_video_decode_h264 and VK_KHR_video_decode_h265 extensions.</li>
+<li>Added an application profile to avoid performance problems in Xfce 4 when the OpenGL compositor backend is enabled along with G-SYNC.</li>
+<li>Added support for suspend and resume when using GSP firmware.</li>
+<li>Moved the nvidia-settings application icon into the 'hicolor' icon theme, which allows it to be customized by other icon themes selected in the desktop environment.</li>
+<li>Fixed a bug that prevented PRIME render offload from working for Wayland applications when running on a system with an AMD iGPU.</li>
+<li>Fixed a bug that prevented nvidia-installer from recording kernel log output to the installer log in some module loading failure paths.</li>
+<li>Changed nvidia-installer to no longer use the $XDG_DATA_DIRS environment variable. XDG data files are now installed to a path specified by the --xdg-data-dir option, or /usr/share if not specified.</li>
+<li>This fixes a problem when Flatpak is installed that caused the installer to place the nvidia-settings.desktop file in /root/.local/share/flatpak/exports/share/applications.</li>
+<li>Changed the behavior of glXGetRefreshRateSGI() for non-integer refresh rates to round to the nearest whole number rather than truncating.</li>
+<li>Changed the compression format of the .run installer package from xz to zstd. This results in a smaller compressed package, and faster decompression performance. A fallback zstd decompressor is embedded into the installer package for systems which do not already have a zstd decompression program installed.</li>
+<li>Fixed a bug that caused nvidia-installer to mistakenly unload some already loaded non-NVIDIA kernel modules.</li>
+<li>Fixed a bug which caused incorrect reporting of presentation times when using the VK_NV_present_barrier Vulkan extension.</li>
+</ul>
+</blockquote>
+<p>You can download it direct <a href="https://www.nvidia.co.uk/download/driverResults.aspx/205541/en-uk" target="_blank">here</a>, or wait for your usual Linux distribution packaging updates. How and when you get it will depend on whatever distribution you're on.</p>
+<p>Was there something you're happy to see added or fixed here? Are you waiting on NVIDIA fixing something else? Let me know in the comments.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/06/nvidia-driver-535-54-03-stable-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/06/nvidia-driver-535-54-03-stable-linux/</guid>
+      <pubDate>Wed, 14 Jun 2023 19:14:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Meta</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>AMD GPUs to get Ray Tracing turned on for Mesa 23.2</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The RADV driver in Mesa for AMD GPUs on Linux and Steam Deck is set to get Ray Tracing turned on by default for the upcoming Mesa 23.2 release.</p>
+<p>Previously you could try it in certain titles, and there were ways to enable it manually but now you won't have to do anything as the code to turn it on has been <a href="https://gitlab.freedesktop.org/mesa/mesa/-/commit/374bd4e1bef25ba2aeef6016ac35b41df07f3a99" target="_blank">merged</a>. Once you upgrade to Mesa 23.2 after release (scheduled for August 2nd at the earliest) with an AMD GPU, you should find games able to use it.</p>
+<p>This has been a long time coming, so it's really great to see Ray Tracing really getting into shape for those with an AMD GPU. It also means it will be doable on Steam Deck whenever Valve upgrade SteamOS to have the newer Mesa version, although it likely won't run too well there in many titles.</p>
+<p>You can read more on the behind the scenes work from developer Friedrich Vock on <a href="https://pixelcluster.github.io/RADV-Raytracing-ON/" target="_blank">their blog post</a>.</p>
+<p>What are you looking forward to trying with it?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/06/amd-gpus-to-get-ray-tracing-turned-on-for-mesa-232/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/06/amd-gpus-to-get-ray-tracing-turned-on-for-mesa-232/</guid>
+      <pubDate>Wed, 14 Jun 2023 18:59:18 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/amd-logo.jpg" type="image/jpeg"/>
+      
+      <category>AMD</category>
+      
+      <category>Drivers</category>
+      
+      <category>Mesa</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Get a bunch of sporty games like NBA 2K23 and OlliOlli World in this bundle</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Ready for even more games to load up on your desktop or Steam Deck? <a href="https://www.humblebundle.com/games/summer-sports-spectacular-nba-2k23-more?partner=gamingonlinux" target="_blank">Humble's Summer Sports Spectacular Bundle</a> has some good stuff in it. As per usual I will list expected compatibility across desktop Linux and Steam Deck, using a <a href="https://www.protondb.com/" target="_blank">ProtonDB</a> / Native and Steam Deck Verified details. Plus each is a Steam link to go look them up in more detailed if you need to first.</p>
+<p>Here's what you can get:</p>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/1190170/OlliOlli_World/" target="_blank">OlliOlli World</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/1919590" target="_blank">NBA 2K23</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/761010" target="_blank">Wave Break</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>Linux Native</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/553310" target="_blank">Lethal League Blaze</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>Linux Native</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/1566200" target="_blank">Tape to Tape</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/726590" target="_blank">NBA 2K Playgrounds 2</a></p>
+<ul>
+<li><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/1142100" target="_blank">WWE 2K BATTLEGROUNDS</a></p>
+<ul>
+<li><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported (<em>but</em> reportedly works fine)</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p>See the <a href="https://www.humblebundle.com/games/summer-sports-spectacular-nba-2k23-more?partner=gamingonlinux" target="_blank">full bundle here</a> if interested.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/06/get-a-bunch-of-sporty-games-like-nba-2k23-and-olliolli-world-in-this-bundle/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/06/get-a-bunch-of-sporty-games-like-nba-2k23-and-olliolli-world-in-this-bundle/</guid>
+      <pubDate>Wed, 14 Jun 2023 18:49:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1199762366id22831gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Bundle</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Meta</category>
+      
+    </item>
+    
+    <item>
+      <title>Upload VR Showcase bundle has some good picks for VR fans</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Have a fancy VR headset and fancy picking up some new games? The <a href="https://www.humblebundle.com/games/upload-vr?partner=gamingonlinux" target="_blank">Humble Upload VR Showcase Bundle</a> has some interesting titles worth a look. I'll list each title along with any expected compatibility thanks to <a href="https://www.protondb.com/" target="_blank">ProtonDB</a>, with each being a Steam link if you need to go get more info first.</p>
+<p>Included in the bundle are:</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/916840/The_Walking_Dead_Saints__Sinners/" target="_blank">The Walking Dead: Saints &amp; Sinners</a> - ProtonDB Platinum.</li>
+<li><a href="https://store.steampowered.com/app/1947500/The_Walking_Dead_Saints__Sinners__Chapter_2_Retribution/" target="_blank">The Walking Dead: Saints &amp; Sinners - Chapter 2: Retribution</a> - No Reports.</li>
+<li><a href="https://store.steampowered.com/app/1481780/Dragon_Fist_VR_Kung_Fu/" target="_blank">Dragon Fist: VR Kung Fu</a> - One report note it works fine.</li>
+<li><a href="https://store.steampowered.com/app/1079800/Pistol_Whip/" target="_blank">Pistol Whip</a> - ProtonDB Gold (worked great last I checked).</li>
+<li><a href="https://store.steampowered.com/app/1782330/Green_Hell_VR/" target="_blank">Green Hell VR</a> - ProtonDB Platinum</li>
+<li><a href="https://store.steampowered.com/app/1337100/Warhammer_Age_of_Sigmar_Tempestfall/" target="_blank">Warhammer Age of Sigmar: Tempestfall</a> - You may need GE-Proton for cutscenes.</li>
+<li><a href="https://store.steampowered.com/app/1337530/Maskmaker/" target="_blank">Maskmaker</a> - ProtonDB Platinum.</li>
+</ul>
+<p>See the <a href="https://www.humblebundle.com/games/upload-vr?partner=gamingonlinux" target="_blank">full bundle here</a>.</p>
+<p>Frustratingly, SteamVR is currently just not working for me on Fedora KDE 38. When I load SteamVR it gives this error and the headset just flashes at me with no game output:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3517784281686744032gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3517784281686744032gol1.png"/></a></p>
+<p>If anyone has any good tips to solve it I would love to read your thoughts in the comments as I want to get back into it with my Valve Index. Once the summer heat has died off a bit at least… Used to work well in games for the most part before this, but now I can't get it to work at all.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/06/upload-vr-showcase-bundle-has-some-good-picks-for-vr-fans/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/06/upload-vr-showcase-bundle-has-some-good-picks-for-vr-fans/</guid>
+      <pubDate>Wed, 14 Jun 2023 12:03:10 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/523477379id22830gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Game Bundle</category>
+      
+      <category>Meta</category>
+      
+      <category>Virtual Reality</category>
+      
+    </item>
+    
+    <item>
+      <title>LISA: The Painful is getting a Definitive Edition in July</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>One of the most well-reviewed games on Steam from an indie developer and quite a tragic game, it's getting a Definitive Edition on July 18th.</p>
+<p>What is it? "Lisa is a quirky side-scrolling RPG set in a post-apocalyptic wasteland. Beneath the charming and funny exterior is a world full of disgust and moral destruction. Players will learn what kind of person they are by being FORCED to make choices. These choices permanently effect the game play. If you want to save a party member from death, you will have to sacrifice the strength of your character. Whether it's taking a beating for them, or chopping off limbs, or some other inhuman way. You will learn that in this world being selfish and heartless is the only way to survive..."</p>
+<p>The new version will bring remastered HD graphics, an updated UI, new quests, new boss battles, new secrets, bonus content and more. Check out the new trailer:</p>
+<div class="hidden_video" data-video-id="5yq25GLKuKI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/97b9dc309618ef4658105c373a3a4d73.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/5yq25GLKuKI" target="_blank">See video</a></div></div>
+<p>A bigger list of what's to come:</p>
+<blockquote>
+<ul>
+<li>HD graphics and pixel-perfect int scaling.</li>
+<li>120 FPS mode for PC and current-gen consoles.</li>
+<li>Brand-new campfire conversations, allowing you to mourn the deaths of party members even more.</li>
+<li>New enemy and boss fights.</li>
+<li>New quests featuring never before seen battles and dialogue.</li>
+<li>Brand-new stories with multiple endings.</li>
+<li>Updated battle systems introducing new “Warlord Skills,” updated timed attacks and UI overhaul.</li>
+<li>New border art overlays for wide-screen viewing.</li>
+<li>A new music player to listen to your favorite tracks and 20+ new Definitive Edition-exclusive songs.</li>
+<li>Painless (easy) mode for players looking for an easier time.</li>
+<li>12 new localized languages.</li>
+<li>And even more secrets to explore.</li>
+</ul>
+</blockquote>
+<p>You can buy it right <a href="https://store.steampowered.com/app/335670/LISA_The_Painful/" target="_blank">now from Steam</a>. The Definitive Edition will be a free update. It has Native Linux support and Valve rated it as Steam Deck Playable.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/06/lisa-the-painful-is-getting-a-definitive-edition-in-july/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/06/lisa-the-painful-is-getting-a-definitive-edition-in-july/</guid>
+      <pubDate>Wed, 14 Jun 2023 11:36:14 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/720201691id22829gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>RPG</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>The Last of Us Part I upgraded and now Steam Deck Verified</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Last of Us Part I is finally getting to a level that's actually good, and the latest update is out now including bumping it up to Steam Deck <a href="https://twitter.com/naughty_dog/status/1668682177964556288" target="_blank">Verified</a> status.</p>
+<p>Quite a surprise to see, considering multiple parts of the game previously on Steam Deck would drop pretty hard below 30FPS and it was not good to play. There were also issues I showcased in previous videos, where it would completely lock up the system.</p>
+<p>So what have they done? For Steam Deck specifically here's the main changes:</p>
+<blockquote>
+<ul>
+<li>Overall improvements to performance while playing on Steam Deck.</li>
+<li>Addressed a memory leak issue that could cause crashes.</li>
+<li>Fixed an issue where certain button prompts would be misaligned.</li>
+<li>Fixed an issue where changing (Options &gt; Graphics &gt; Graphics Preset) could trigger an intense lighting effect.</li>
+<li>Fixed an issue where in-game HUD did not match Steam Deck Performance Overlay FPS value.</li>
+<li>Fixed a crash that could occur during loading screens.</li>
+<li>Effects Density now defaults to Very Low instead of Low.</li>
+<li>[Lakeside Resort] Fixed a crash that could occur at the start of a cutscene.</li>
+<li>[Pittsburgh] Fixed a crash that could occur at certain checkpoints.</li>
+<li>[The Outskirts] Fixed an issue where locked FPS could make it difficult to move pushable objects.</li>
+</ul>
+</blockquote>
+<p>Additionally they also added in a very low graphics preset, a new AI quality setting and a new dynamic light quality setting - all of which add up to make it a better fit on Steam Deck thanks to more tweaks. So it's not surprising it was able to get Steam Deck Verified.</p>
+<p>What does that result in? Have a look in my video:</p>
+<div class="hidden_video" data-video-id="k4t21Z28Vgc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9a77c987f41ea274a0006b961249a0dd.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/k4t21Z28Vgc" target="_blank">See video</a></div></div>
+<p>As noted in the video, unfortunately, there are still locations that will end up causing the RAM use to spike up to about 14.1GB drop the FPS down to basically nothing and completely lock up the Steam Deck. So that issue isn't <em>yet</em> solved but it's also an issue in <em>multiple</em> other games. Not everyone sees it (which can cause some confusion) but for Steam Deck and bigger games, it's quite problematic when it happens. <a href="https://github.com/CryoByte33/steam-deck-utilities" target="_blank">CryoUtilities</a> can work around it in some cases but not always. I'm hoping SteamOS 3.5 will help this issue and will be testing when Valve drop it into Preview.</p>
+<p><em>Full <a href="https://feedback.naughtydog.com/hc/en-us/articles/16476165410836" target="_blank">patch notes here</a>.</em></p>
+<p>You can buy it on <a href="https://www.humblebundle.com/store/the-last-of-us-part-i?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/06/the-last-of-us-part-i-upgraded-and-now-steam-deck-verified/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/06/the-last-of-us-part-i-upgraded-and-now-steam-deck-verified/</guid>
+      <pubDate>Wed, 14 Jun 2023 11:24:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1628017585id22828gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Update</category>
+      
+      <category>Video</category>
+      
+    </item>
     
     <item>
       <title>Moonstone Island set to release this Summer with a new trailer</title>
@@ -92,13 +401,16 @@ Spend a year away from home on an island in the sky! Following your village's tr
       <title>SMITE now works on Linux and Steam Deck in the latest update</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
+<p><strong>Update 14/06/23</strong>: after some <em>more</em> testing, one thing I have found on Steam Deck is that you <em>can</em> use the built-in gamepad controls. However, they only work correctly in battles. The entire menu / lobby and god selection seems to not work with gamepad controls. So you can use touch screen, emulated mouse input or hold the STEAM button to activate mouse cursor. Seems this is a problem even on Windows going back <a href="https://www.reddit.com/r/Smite/comments/lmrwnd/controller_doesnt_work_on_main_menu_or_god_select/" target="_blank">years</a>. It does <em>not</em> have "Full controller support" as advertised on Steam, only Partial.</p>
+<hr/>
+<p><em>Original article below:</em></p>
 <p>Titan Forge Games and Hi-Rez Studios have updated their popular MOBA game SMITE, and with it an improvement to allow it to now work on Linux with Easy Anti-Cheat.</p>
 <p>After playing a couple of games myself today, I can confirm it is working very nicely on my Fedora KDE 38 desktop. No performance issues anywhere that I could see and no kicking due to anti-cheat. This change to the Linux support status was mentioned officially in the <a href="https://www.smitegame.com/news/the-season-of-souls-10-6-update-notes/" target="_blank">release notes</a>, where they said:</p>
 <blockquote>
 <p>SMITE will now run on Linux systems – Special thanks to the SMITE community for helping with this. A group of players in the r/smite discord made a big impact on this change</p>
 </blockquote>
 <p><em>So that's some great news for gamers on Linux!</em></p>
-<p>However, when it comes to the Steam Deck, there it's a bit different. SMITE's controller support doesn't seem to work as far as I could see. Even on desktop Linux just to double-check, it didn't work there either. So you'll need to use a Community Layout in Steam Input that sets keyboard and mouse controls up or make a layout it yourself. And make sure you keep it set to keyboard and mouse with the <em>in-game</em> settings, otherwise it gets confused and just doesn't seem to work when in a battle. Trying out the most upvoted "Xbox One Style Controls" on Steam Deck - it actually worked quite well.</p>
+<p>However, when it comes to the Steam Deck, there it's a bit different. SMITE's controller support doesn't seem to work properly as far as I could see. Even on desktop Linux just to double-check, it didn't work right there either. So you'll need to use a Community Layout in Steam Input that sets keyboard and mouse controls up or make a layout it yourself. And make sure you keep it set to keyboard and mouse with the <em>in-game</em> settings, otherwise it gets confused and just doesn't seem to work when in a battle. Trying out the most upvoted "Xbox One Style Controls" on Steam Deck - it actually worked quite well.</p>
 <p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19467179251686677332gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19467179251686677332gol1.jpeg"/></a></p>
 <p>A bit annoying needing to learn the binds manually but doable certainly and after a few games once you get the controls down, it really does seem to work quite well on Steam Deck (and really smooth on Medium settings too). But hopefully the game developer can fix the issue, or perhaps Valve can with Proton to get controller support directly working. Given how many thumbs up the community layout has though, it's likely controller support is iffy on Windows too with so many using the custom layouts.</p>
 <p>You can see some Steam Deck footage in my below video:</p>
@@ -3503,234 +3815,6 @@ RX 7600</td>
       <category>Metroidvania</category>
       
       <category>Monster Catching</category>
-      
-    </item>
-    
-    <item>
-      <title>Duke Nukem Forever: Restoration Project got a big upgrade</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Remember Duke Nukem Forever? You would be forgiven if you don't. As usual though, modders to the rescue. With the release of the Duke It Out update for the <a href="https://www.moddb.com/mods/dnf2001-restoration-project" target="_blank">Duke Nukem Forever: Restoration Project</a>. This project has a simple goal: to complete Duke Nukem Forever as it was originally intended back in 2001.</p>
-<p>Not a native game of course but this update included lots to be interested about. Lots of performance improvements to the rendering system, along with a note that they're continuing to work on an OpenGL port as well. The update includes HUD upgrades, the single-player was improved, multiplayer gained 9 new maps and so much more.</p>
-<div class="hidden_video" data-video-id="H0l9Rhv-7DA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4d0ebb6a3b0e8ccf4f218dae8006b1c5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/H0l9Rhv-7DA" target="_blank">See video</a></div></div>
-<p>They even talked about running it on Steam Deck in their news post on <a href="https://www.moddb.com/mods/dnf2001-restoration-project/news/get-ready-to-duke-it-out" target="_blank">Mod DB</a>, as they've streamlined the process a fair bit and there's also now a Steam Input layout just for it.</p>
-<p>Nice to see modders work to make something of it.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/05/duke-nukem-forever-restoration-project-got-a-big-upgrade/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/duke-nukem-forever-restoration-project-got-a-big-upgrade/</guid>
-      <pubDate>Tue, 23 May 2023 13:33:37 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1453843525id22733gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>FPS</category>
-      
-      <category>Mod</category>
-      
-    </item>
-    
-    <item>
-      <title>Cities: Skylines gets a final expansion with Hotels &amp; Retreats out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>That's it, the development and expansions to the hit city-builder Cities: Skylines are over with the release of Hotels &amp; Retreats. With the developer moving onto the sequel.</p>
-<p>What they say is more of a "mini" expansion adding in the ability to build holiday and tourist spots, giving you an element of hotel management too. Cities: Skylines - Hotels &amp; Retreats Key Features:</p>
-<ul>
-<li>Hotel Buildings: Hostels, cabins, hotels, luxurious resorts… you name it! Add a series of hotel buildings to your city on a range of budgets.</li>
-<li>Hotel Management: Start with one-star hotels and unlock new options as your business revenue and popularity booms.</li>
-<li>Tourism Buildings: New structures will support your hotels: parks, restaurants, playgrounds, and cafès.</li>
-<li>Location: Matching hotels with good locations will be paramount, as differing locations will attract different tourist groups. We added 5 new maps for your hotels (3 European-inspired maps, 1 tropical map, and 1 temperate map)</li>
-</ul>
-<div class="hidden_video" data-video-id="iInfL55QyTQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ad2551dd72f237b9e2d553f7137e4a80.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/iInfL55QyTQ" target="_blank">See video</a></div></div>
-<p>“Looking back on the incredible journey of Cities: Skylines, it’s clear to see that it has become more than just a game. It's a community of passionate and creative individuals who have built intricate and magnificent cities with their own unique visions,” said Mariina Hallikainen, CEO of Colossal Order. “Hotels &amp; Retreats is the last expansion for Cities: Skylines and celebrates its legacy by introducing ways for players to express their creativity.”</p>
-<p>In addition they also released a few content creator packs:</p>
-<ul>
-<li>Industrial Evolution: Walk the path of history with “Industrial Evolution”, from Community Creator Samantha “Avanya” Woods. This Content Creator Pack includes a new set of growable buildings that span different eras of industrial building styles, from red brick walls to modern, sleek industrial complexes.</li>
-<li>Industrial Evolution includes a total of 70 new buildings inspired by both historic and contemporary industrial buildings.</li>
-<li>Railroads of Japan: Fun discoveries await with “Railroads of Japan” from Content Creator Ryuichi Kaminogi, adding authentic Japanese railroad scenery to Cities: Skylines with stations, trains, buses, and more!</li>
-<li>Watch your citizens travel using the metro, bus, and railroad. Decorate your commutes with networks, props, and police stations.</li>
-<li>Brooklyn &amp; Queens: This pack from Content Creator Prosper, is a set of medium-rise high-density residential buildings and props inspired by the neighborhoods of Brooklyn and Queens for decorating your city’s facade and rooftops.</li>
-<li>Brooklyn &amp; Queens includes 60+ growable buildings and props, such as rental signs, window air conditioners, exhaust fans, stairways, and more!</li>
-</ul>
-<p>Even though official development is over, Cities: Skylines has a huge modding scene that will no doubt keep the game alive for years to come yet. Tens of thousands of maps, thousands of mods and much more can be easily added into the game to keep it fresh.</p>
-<p>You can buy Cities Skylines on <a href="https://www.humblebundle.com/store/cities-skylines?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/255710/Cities_Skylines/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/05/cities-skylines-gets-a-final-expansion-with-hotels-retreats-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/cities-skylines-gets-a-final-expansion-with-hotels-retreats-out-now/</guid>
-      <pubDate>Tue, 23 May 2023 13:24:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/762072692id22732gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>City Builder</category>
-      
-      <category>DLC</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>D-Corp, the couch multiplayer game with cute robots gets a new versus mode</title>
-      <author>hardpenguin</author>
-      <description><div class="content group e-content">
-<p>Remember the <a href="https://store.steampowered.com/app/1285040/DCorp/?curator_clanid=4218320" target="_blank">couch multiplayer game D-Corp</a>? On the top of its co-op campaign mode it now features <a href="https://store.steampowered.com/news/app/1285040/view/3647391328048122627" target="_blank">a full-fledged versus mode called Arena</a>.</p>
-<p>Short reminder: D-Corp is a couch multiplayer game for up to 4 players. Co-operate on tasks such as turret maintenance and harvesting natural resources while being under continuous attack by alien cacti! Whack your friends in the versus mode. It is also Steam Verified <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> with a native Linux version.</p>
-<p>The new versus (PvP) mode can be accessed through the level select menu. In this update you will see 8 new levels taking place in a completely fresh setting called Explosion Factory. Your goal is to get most scrap and keep it to win. The fun part is that you can now hit your competitors to make them lose scrap!</p>
-<p>The game has also recently <a href="https://store.steampowered.com/news/app/1285040/view/3719453359656318847" target="_blank">added German language</a> support as well as <a href="https://store.steampowered.com/app/1937740/DCorp_Soundtrack/?curator_clanid=4218320" target="_blank">released its soundtrack on Steam</a>.</p>
-<p>Here is the trailer of the new Arena mode:</p>
-<div class="hidden_video" data-video-id="hMXs9YbdAfs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ab6ab1a93dddde42907fe1b0eab03fc7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/hMXs9YbdAfs" target="_blank">See video</a></div></div>
-<p><em>Editor note: this article was submitted by the Marketing Manager of Frogsong Studios. We welcome developers that support Linux to post about their games here.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/05/d-corp-the-couch-multiplayer-game-with-cute-robots-gets-a-new-versus-mode/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/d-corp-the-couch-multiplayer-game-with-cute-robots-gets-a-new-versus-mode/</guid>
-      <pubDate>Mon, 22 May 2023 13:17:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/969852105id22731gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Casual</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Local co-op</category>
-      
-    </item>
-    
-    <item>
-      <title>Inspired by Japanese folklore, Bo: Path of the Teal Lotus looks gorgeous</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>An upcoming 2.5D action platformer with some gorgeous visuals inspired by Japanese folklore? Sign me up, this sounds great but it's a little while away yet.</p>
-<p>Seems I completely missed this one originally, as it was funded on <a href="https://www.kickstarter.com/projects/squidshockstudios/bo-a-hand-drawn-2d-adventure-based-on-japanese-folklore/description" target="_blank">Kickstarter</a> back in early 2022 and Linux is a confirmed release platform for the game. It surfaced again recently, as they've now teamed up with Humble Games (the publishing arm of Humble Bundle).</p>
-<p>Check out the new trailer:</p>
-<div class="hidden_video" data-video-id="NGCzrmMHAHw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1b514e90911c8bc6b3aecce4e9780a57.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/NGCzrmMHAHw" target="_blank">See video</a></div></div>
-<p>"Flow with acrobatic grace and agility through a mysterious world of myth and legend in Bō: Path of the Teal Lotus, a colorful hand-drawn adventure inspired by Japanese folklore.</p>
-<p>Undertake a mystical journey as Bō, a celestial blossom (fox tentaihana) descended from the heavens to play a key role in an ancient and mysterious ritual. Use your legendary bō staff to bounce and glide fluidly through an otherworldly realm of hand-drawn, dreamlike landscapes, strange and adorable yokai, and massive monsters summoned from ancient legends of Japan."</p>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>A genre that will feel familiar yet fresh to many players. A 2.5D side-scrolling action platformer with metroidvania elements that merges classic hand-drawn animation and scenery with new atmo- spheric bells and whistles that make the experience wondrously novel yet cozily familiar.</li>
-<li>Tight platforming controls. Bō feels amazing to control and players will feel great agency as they enter a flow state navigating the challenging platforming puzzles.</li>
-<li>Explore a mysterious world based on Japanese folklore! The world of Bō is open and interconnected. Explore everything from haunted bathhouses to a thriving Japanese-inspired metropolis. Find ways to travel back to areas that you thought you explored fully and unlock new paths and surprises.</li>
-<li>Gather and collect ingredients and relics. Mine the valuable resources in the Kagayaki Cave or harvest bizarre flora in Midori Forest.</li>
-<li>Unlock powerful new abilities! Brew and drink arcane teas to unlock Bō’s shapeshifting staff abilities. Including the Mochi Mallet, Blossom Dash and the Grappling Gun.</li>
-<li>Daruma doll sidekicks! Collect daruma dolls throughout your journey to tune your abilities and give you advantages (or even disadvantages) in unique ways. All daruma dolls begin with 1 eye filled in. They can be upgraded to a 2-eyed daruma that enhances the original daruma’s perk. These loveable daruma dolls will be by your side throughout your journey.</li>
-<li>A colorful cast of bizarre and adorable yokai (Mischievous monsters from Japanese folklore) as well as original characters based on Japanese cultural archetypes. All of these characters and enemies are animated with charming detail in traditional hand-drawn 2D frame-by-frame animation. Help them with their side quests or just stop by for a chat and a cup of tea.</li>
-<li>Epic Boss Battles! On your journey you will encounter many massive monsters from Japanese folklore. Use your gained knowledge and skill to vanquish them and advance further in your quest.</li>
-<li>Beautiful hand-drawn and immersive areas and landscapes with traditional Japanese inspired trimmings.</li>
-<li>An absolutely gorgeous original musical score composed by Moises Camargo (Moixhka) that beautifully blends traditional Japanese instrumentation with modern orchestral music.</li>
-</ul>
-</blockquote>
-<p>You can <a href="https://store.steampowered.com/app/1614440/Bo_Path_of_the_Teal_Lotus/" target="_blank">follow it on Steam</a>, due for release in 2024.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/05/inspired-by-japanese-folklore-bo-path-of-the-teal-lotus-looks-gorgeous/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/inspired-by-japanese-folklore-bo-path-of-the-teal-lotus-looks-gorgeous/</guid>
-      <pubDate>Mon, 22 May 2023 10:45:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/111614720id22730gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Platformer</category>
-      
-    </item>
-    
-    <item>
-      <title>Portal Reloaded team announced The Cooperative Update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Currently available in Beta on Steam for you to test out, the <a href="https://portalreloaded.com/coop/" target="_blank">Cooperative Update</a> for Portal Reloaded sounds like a lot of fun. For those who haven't played before: it's a free, community made modification for Portal 2. Building on the original concepts in the game by giving you a third portal allowing you to travel between different timelines.</p>
-<p>The Cooperative Update is planned to arrive sometime in the Summer bringing with it 20 new puzzles, which you can play either online or via split-screen. It also gives new music, new menu backgrounds, new subtitle options and various upgrades to the single-player time travel logical to solve some bugs.</p>
-<p>"The Cooperative Testing Initiative is sent back to the past to retrieve some very important data that has been lost to time. One of you is in charge of shooting regular portals while the other takes care of placing time portals. This creates some very interesting gameplay mechanics, as both players rely on their partner to travel through space and time respectively."</p>
-<div class="hidden_video" data-video-id="DH7uT5JBAn0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a81cc08bcaa4faf9207bd6854adaab78.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/DH7uT5JBAn0" target="_blank">See video</a></div></div>
-<p>Find it <a href="https://store.steampowered.com/app/1255980/Portal_Reloaded/" target="_blank">free on Steam</a> but you need to own Portal 2 to play.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/05/portal-reloaded-team-announced-the-cooperative-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/portal-reloaded-team-announced-the-cooperative-update/</guid>
-      <pubDate>Mon, 22 May 2023 10:33:15 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1667588844id22729gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Mod</category>
-      
-      <category>Puzzle</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Odencat announced surreal adventure Dream Channel Zero</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Odencat (Meg's Monster, Bear's Restaurant, Fishing Paradiso) and Fuming have announced Dream Channel Zero, a rather surreal sounding adventure about a boy who gets sucked into the world of a mysterious video game.</p>
-<p>"Dream Channel Zero tells the tale of a boy named Akira, who one day gets suddenly and inexplicably sucked into the world of a mysterious video game. There, he meets Rumiko—a seemingly normal girl in a teal blue hoodie—and the two team up to conquer whatever perils this strange virtual world might throw at them, and hopefully find a way out."</p>
-<p>Check out the first teaser trailer:</p>
-<div class="hidden_video" data-video-id="Jy6kg8BZoNU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e2f9769b4ad095a628421f02d5b1ca21.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Jy6kg8BZoNU" target="_blank">See video</a></div></div>
-<p>Sounds just as unique as games previously from Odencat, so no surprise to see them teaming up with Fuming on this one. The battle system sounds interesting too, as the world is filled with strange creatures and all of them will stand in your way but they say "in many cases, a single well-timed punch to the face will be enough to send them to their graves" with each battle having its own unique trick to beat it and no repeat encounters.</p>
-<p>It will release sometime in 2024 and you can <a href="https://store.steampowered.com/app/2382810/Dream_Channel_Zero/" target="_blank">follow it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/05/odencat-announced-surreal-adventure-dream-channel-zero/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/odencat-announced-surreal-adventure-dream-channel-zero/</guid>
-      <pubDate>Mon, 22 May 2023 10:27:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1330741375id22728gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Pixel Graphics</category>
-      
-    </item>
-    
-    <item>
-      <title>Erra: Exordium is a 2D action adventure blending mythology and Dieselpunk</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Sumerian-Akkadian mythology blended together with Dieselpunk, certainly quite a unique setting in Erra: Exordium which released with Linux support recently. Along with Native Linux support, they said they're also working to ensure it gets Steam Deck Verified.</p>
-<p>"Erra: Exordium is a 2D action adventure game in Dieselpunk setting. Explore a world based on Sumerian-Akkadian mythology. Take the role of a scientist who was able to cheat death and fight the rebellious army of mechatrons."</p>
-<p>The world and character design definitely looks good in this one, check it out:</p>
-<div class="hidden_video" data-video-id="iwwVXNPSM88"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/dd4d91492d1df3168a29aaad7d0fe1a1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/iwwVXNPSM88" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Become a hero whose consciousness has been transferred to a mechanical shell.</li>
-<li>Explore a detailed 2D world. Unique architecture and traditional frame-by-frame animation awaits you.</li>
-<li>Ammo and resources are limited, use them wisely.</li>
-<li>Find out the truth behind the death of an entire Archipelago.</li>
-<li>Engage in an unequal battle with the rebellious mechatrons army.</li>
-</ul>
-</blockquote>
-<p>Available in <a href="https://store.steampowered.com/app/1224030/Erra_Exordium/" target="_blank">Early Access on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/05/erra-exordium-is-a-2d-action-adventure-blending-mythology-and-dieselpunk/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/05/erra-exordium-is-a-2d-action-adventure-blending-mythology-and-dieselpunk/</guid>
-      <pubDate>Mon, 22 May 2023 10:18:14 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1190535181id22727gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Exploration</category>
       
     </item>
     
