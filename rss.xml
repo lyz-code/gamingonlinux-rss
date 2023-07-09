@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-07-08 07:24:28.990274</pubDate>
+    <pubDate>2023-07-09 07:24:53.043359</pubDate>
 
     
     <image>
@@ -18,6 +18,158 @@
     </image>
 
     
+    
+    <item>
+      <title>Fedora considering adding in &#39;privacy-preserving&#39; telemetry</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Quite a controversial topic currently floating around is that a <a href="https://discussion.fedoraproject.org/t/f40-change-request-privacy-preserving-telemetry-for-fedora-workstation-system-wide/85320" target="_blank">change proposal</a> has been made for Fedora Workstation 40 to have some "privacy-preserving" telemetry to "enable limited data collection of anonymous Fedora Workstation usage metrics".</p>
+<p>This has generated quite the buzz across pretty much everywhere I look, with many people on both sides jumping in to argue about it. One thing to remember though, is that this is a proposal, nothing has been set in stone and the whole idea could be scrapped or changed a lot as discussions go on.</p>
+<p>In summary:</p>
+<blockquote>
+<p>Fedora is an open source community project, and nobody is interested in violating user privacy. We do not want to collect data about individual users. We want to collect only aggregate usage metrics that are actually needed to achieve specific Fedora improvement objectives, and no more. We understand that if we violate our users’ trust, then we won’t have many users left, so if metrics collection is approved, we will need to be very careful to roll this out in a way that respects our users at all times. (For example, we should not collect users’ search queries, because that would be creepy.).</p>
+<p>We believe an open source community can ethically collect limited aggregate data on how its software is used without involving big data companies or building creepy tracking profiles that are not in the best interests of users. Users will have the option to disable data upload before any data is sent for the first time. Our service will be operated by Fedora on Fedora infrastructure, and will not depend on Google Analytics or any other controversial third-party services. And in contrast to proprietary software operating systems, you can redirect the data collection to your own private metrics server instead of Fedora’s to see precisely what data is being collected from you, because the server components are open source too.</p>
+</blockquote>
+<p>As for what they might actually be collecting there's all sorts but they're not yet being exactly clear on what, because approval for it hasn't happened as it's early days for the proposal. If they do get approval, it seems then they will work out a clear idea of what to collect. They did suggest some of it may be things like what IDEs are popular, the click-through rate of recommended banners in GNOME Software, what panels are most used in gnome-control-center, what type of hard drive you have, count how many users use a particular locale so they can optimize language support and so on.</p>
+<p>Telemetry is <em>not</em> actually a bad thing but the way it has been used in the past is what gives it a bad name. Some companies absolutely abused data collection in the past, and plenty <em>still</em> do. There <em>are</em> ways to do it properly though which they seem to be trying to do by fully informing people here.</p>
+<p>What's a little <em>confusing</em> though is their part about opt-in versus opt-out. The way it has been explained could have been better. It seems they want to go for opt-out, with it turned on to collect the data by default but <em>not</em> actually upload anything until you've gone through a privacy page when installing Fedora to confirm it. Disabling it will then send them nothing but it will still collect it locally ready for if you turn it on later. For existing users upgrading, it will be opt-in though, as they don't currently have a mechanism for getting user consent through upgrades. This opt-in / opt-out also has <a href="https://discussion.fedoraproject.org/t/opt-in-opt-out-a-breakout-topic-for-the-f40-change-request-on-privacy-preserving-telemetry-for-fedora-workstation/85395" target="_blank">it's own discussion</a> area since it's a big thing.</p>
+<p><em>How do you feel about this idea? Let me know in the comments.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/07/fedora-considering-adding-in-privacy-preserving-telemetry/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/fedora-considering-adding-in-privacy-preserving-telemetry/</guid>
+      <pubDate>Sat, 08 Jul 2023 15:55:55 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1676701081id22931gol.jpg" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>Fedora</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Meta announced &#39;IGL&#39;, a high-performance cross-platform graphics library</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Available under the MIT license, Meta (as in Facebook) have released IGL (Intermediate Graphics Library) for developers. This was officially <a href="https://www.khronos.org/blog/meta-uses-khronos-open-standards-in-new-intermediate-graphics-library" target="_blank">announced</a> on The Khronos Group blog (who oversee various open standards), written by Meta developers.</p>
+<p>Supporting OpenGL, OpenGL ES, WebGL, Vulkan and Metal and it's cross-platform for Android, iOS, Linux, macOS, Windows and WebAssembly. They hope to see developers using it across the industry whether you're "working on a game, a 3D modeling application or any other project that requires top-notch graphics" they say that "IGL has got you covered".</p>
+<p>Key features of Meta's IGL:</p>
+<blockquote>
+<ul>
+<li><strong>Cross-platform compatibility:</strong> In addition to the functionality mentioned above, IGL also provides a shell library, allowing users to compile and run on the most popular platforms including Windows, Linux, Mac OS, iOS, Android and WebAssembly.</li>
+<li><strong>High-performance rendering:</strong> IGL is optimized to provide lightning-fast rendering, even when dealing with complex and detailed graphics.</li>
+<li><strong>Easy-to-use API:</strong> An intuitive and easy-to-use API means that IGL is simple and straightforward to work with. Rather than introducing RHI as part of the high-level engine abstraction or mimicking one graphics interface behind another, IGL takes a new approach to abstracting RHI by creating a new modern interface, which is close to Vulkan or WebGPU on the abstraction layer, but general enough to avoid being engine-specific.</li>
+<li><strong>Extensibility:</strong> IGL was built with extensibility in mind, allowing users to easily add new features and functionality as their needs evolve.</li>
+<li><strong>Open source:</strong> IGL is completely open source and can be used for any project, commercial or otherwise, without any licensing restrictions.</li>
+</ul>
+</blockquote>
+<p>They have an interesting <a href="https://github.com/facebook/igl/blob/main/ROADMAP.md" target="_blank">roadmap</a> of what they hope to bring to it too including a multi-threading API, asynchronous loading of resources, a synchronization primitives API and more. Going by the GitHub page they say it has already been "battle-tested" used with Android, Quest 2 / 3 / Pro with OpenGL / Vulkan and their own apps.</p>
+<p>You can find it on <a href="https://github.com/facebook/igl" target="_blank">GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/07/meta-announced-igl-a-high-performance-cross-platform-graphics-library/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/meta-announced-igl-a-high-performance-cross-platform-graphics-library/</guid>
+      <pubDate>Sat, 08 Jul 2023 15:19:06 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1652023233id22930gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Dev</category>
+      
+      <category>Meta</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental brings fixes for Gears 5, Overwatch 2, Phasmophobia</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve released a fresh upgrade to Proton Experimental to get more games like Gears 5, Overwatch 2 and Phasmophobia working better on Linux and Steam Deck.</p>
+<p>This update was released July 7th and here's what changed:</p>
+<ul>
+<li>Fixed game stutter in Lara Croft and the Temple of Osiris.</li>
+<li>Fixed keyboard input registering with a delay and getting stuck in Wild Hearts.</li>
+<li>Fixed Escape from Monkey Island getting minimized on a mouse click.</li>
+<li>Fixed Overwatch 2 stopping to register controller inputs after an online match has started.</li>
+<li>Implemented English speech recognition for Phasmophobia.</li>
+<li>Fixed Age of Empires II: Definitive Edition failing to launch after a recent game update.</li>
+<li>Fixed Microsoft Flight Simulator crashing in accessibility settings.</li>
+<li>Fixed a few Proton 8.0 regressions:
+<ul>
+<li>Logging in online in Gears 5 works again.</li>
+<li>Doom Eternal no longer crashes with ray-tracing enabled on AMDVLK / Nvidia.</li>
+</ul>
+</li>
+</ul>
+<p>The changelog can be <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">found here</a>.</p>
+<hr/>
+<p><strong>How to change your Proton version:</strong></p>
+<p>Steam Deck:</p>
+<ul>
+<li>Pick a game in your Library and head to the little cog icon on the right.</li>
+<li>Click Properties, then Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<p>On a Linux desktop:</p>
+<ul>
+<li>Right click a game, go to Properties.</li>
+<li>Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/07/proton-experimental-brings-fixes-for-gears-5-overwatch-2-phasmophobia/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/proton-experimental-brings-fixes-for-gears-5-overwatch-2-phasmophobia/</guid>
+      <pubDate>Sat, 08 Jul 2023 14:50:03 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 8.12 brings more Wayland work and performance improvements</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another biweekly release of the compatibility layer Wine is out now! As the developers continue the progress towards getting Wine working fully with Wayland in version <a href="https://www.winehq.org/announce/8.12" target="_blank">8.12</a>. Reminder: once a year a new stable release is made with the next being Wine 9.0, and Wine is just one part of what allows <a href="http://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Steam Play Proton</a> to play some of the biggest games around on Linux desktop and Steam Deck.</p>
+<p>The main highlights of this release:</p>
+<blockquote>
+<ul>
+<li>Initial support for painting windows in the Wayland driver.</li>
+<li>Command stream performance improvements in WineD3D.</li>
+<li>Various bug fixes.</li>
+</ul>
+</blockquote>
+<p>31 bugs were noted as solved with this release including fixes for: Combat Mission Shock Force (a bug from 2007!), Starcraft II, Flutter SDK, Excel 2016, Harry Potter Magic Awakened and plenty more miscellaneous fixes for expected behaviour of Windows apps.</p>
+<p><em>Want help managing Wine on Linux? You can try <a href="https://usebottles.com/" target="_blank">Bottles</a>, <a href="https://lutris.net/" target="_blank">Lutris</a> and the <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Launcher</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/07/wine-812-brings-more-wayland-work-and-performance-improvements/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/wine-812-brings-more-wayland-work-and-performance-improvements/</guid>
+      <pubDate>Sat, 08 Jul 2023 14:43:42 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
     
     <item>
       <title>MicroProse now publishing Dying Breed a retro RTS like Command &amp; Conquer</title>
@@ -85,7 +237,7 @@
       
       <category>Beta</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>New Release</category>
       
@@ -117,7 +269,7 @@
       
       <category>Hardware</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Open Source</category>
       
@@ -160,7 +312,7 @@
       
       <category>Godot Engine</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
     </item>
     
@@ -231,7 +383,7 @@
       
       <category>Hardware</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>New Release</category>
       
@@ -346,7 +498,7 @@
       
       <category>Apps</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Open Source</category>
       
@@ -384,7 +536,7 @@
       
       <category>Community</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Site Info</category>
       
@@ -502,7 +654,7 @@
       
       <category>Humble Store</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
     </item>
     
@@ -808,7 +960,7 @@
       
       <category>Hardware</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Retro</category>
       
@@ -848,7 +1000,7 @@
       
       <category>Steam Deck</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Steam</category>
       
@@ -940,7 +1092,7 @@
       
       <category>Game Bundle</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
     </item>
     
@@ -1111,7 +1263,7 @@
       
       <category>Steam Play</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>New Release</category>
       
@@ -1182,7 +1334,7 @@
       
       <category>Listicle</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Round-up</category>
       
@@ -1256,7 +1408,7 @@
       
       <category>Steam Deck</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Steam</category>
       
@@ -1286,7 +1438,7 @@
       <pubDate>Fri, 30 Jun 2023 12:57:28 +0000</pubDate>
       <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Open Source</category>
       
@@ -1336,7 +1488,7 @@
       
       <category>Game Dev</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Steam</category>
       
@@ -1391,7 +1543,7 @@
       
       <category>Game Sale</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Steam</category>
       
@@ -1443,7 +1595,7 @@
       
       <category>Hardware</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>New Release</category>
       
@@ -1477,7 +1629,7 @@
       
       <category>Hardware</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
     </item>
     
@@ -1561,7 +1713,7 @@
       
       <category>Hardware</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>New Release</category>
       
@@ -1635,7 +1787,7 @@
       
       <category>Steam Deck</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Round-up</category>
       
@@ -1666,7 +1818,7 @@
       
       <category>Game Dev</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Open Source</category>
       
@@ -1853,7 +2005,7 @@
       
       <category>Steam Play</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Open Source</category>
       
@@ -1950,7 +2102,7 @@
       
       <category>Steam Play</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Upcoming</category>
       
@@ -1974,7 +2126,7 @@
       
       <category>Drivers</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Open Source</category>
       
@@ -2057,7 +2209,7 @@
       
       <category>Steam Deck</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
     </item>
     
@@ -2230,7 +2382,7 @@
       
       <category>Kernel</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>New Release</category>
       
@@ -2382,7 +2534,7 @@
       
       <category>Steam Play</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Open Source</category>
       
@@ -2455,7 +2607,7 @@
       <pubDate>Sun, 25 Jun 2023 19:22:41 +0000</pubDate>
       <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>New Release</category>
       
@@ -2513,7 +2665,7 @@
       
       <category>Emulation</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>New Release</category>
       
@@ -2558,7 +2710,7 @@
       
       <category>Game Bundle</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
     </item>
     
@@ -2619,7 +2771,7 @@
       
       <category>Linux Mint</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
     </item>
     
@@ -2679,7 +2831,7 @@
       
       <category>Game Dev</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Open Source</category>
       
@@ -2807,7 +2959,7 @@
       
       <category>Emulation</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Open Source</category>
       
@@ -2911,7 +3063,7 @@
       
       <category>Game Bundle</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Steam</category>
       
@@ -2992,7 +3144,7 @@
       
       <category>Event</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Steam</category>
       
@@ -3032,7 +3184,7 @@
       
       <category>GOG</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
     </item>
     
@@ -3265,7 +3417,7 @@ So, if you like to game on the go, you can play Zool Redimensioned safe in the k
       
       <category>Humble Store</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
     </item>
     
@@ -3345,7 +3497,7 @@ So, if you like to game on the go, you can play Zool Redimensioned safe in the k
       
       <category>Beta</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Steam</category>
       
@@ -3436,7 +3588,7 @@ So, if you like to game on the go, you can play Zool Redimensioned safe in the k
       
       <category>Apps</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Steam</category>
       
@@ -3495,7 +3647,7 @@ So, if you like to game on the go, you can play Zool Redimensioned safe in the k
       
       <category>Hardware</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Open Source</category>
       
@@ -3578,7 +3730,7 @@ Linux players can still access the game using Proton, we’ll keep testing new u
       
       <category>Apps</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>Steam</category>
       
@@ -3681,7 +3833,7 @@ Linux players can still access the game using Proton, we’ll keep testing new u
       
       <category>Drivers</category>
       
-      <category>Meta</category>
+      <category>Misc</category>
       
       <category>New Release</category>
       
@@ -3712,186 +3864,6 @@ Linux players can still access the game using Proton, we’ll keep testing new u
       <category>Mesa</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Get a bunch of sporty games like NBA 2K23 and OlliOlli World in this bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Ready for even more games to load up on your desktop or Steam Deck? <a href="https://www.humblebundle.com/games/summer-sports-spectacular-nba-2k23-more?partner=gamingonlinux" target="_blank">Humble's Summer Sports Spectacular Bundle</a> has some good stuff in it. As per usual I will list expected compatibility across desktop Linux and Steam Deck, using a <a href="https://www.protondb.com/" target="_blank">ProtonDB</a> / Native and Steam Deck Verified details. Plus each is a Steam link to go look them up in more detailed if you need to first.</p>
-<p>Here's what you can get:</p>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1190170/OlliOlli_World/" target="_blank">OlliOlli World</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1919590" target="_blank">NBA 2K23</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/761010" target="_blank">Wave Break</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>Linux Native</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/553310" target="_blank">Lethal League Blaze</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>Linux Native</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1566200" target="_blank">Tape to Tape</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/726590" target="_blank">NBA 2K Playgrounds 2</a></p>
-<ul>
-<li><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1142100" target="_blank">WWE 2K BATTLEGROUNDS</a></p>
-<ul>
-<li><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported (<em>but</em> reportedly works fine)</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p>See the <a href="https://www.humblebundle.com/games/summer-sports-spectacular-nba-2k23-more?partner=gamingonlinux" target="_blank">full bundle here</a> if interested.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/06/get-a-bunch-of-sporty-games-like-nba-2k23-and-olliolli-world-in-this-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/06/get-a-bunch-of-sporty-games-like-nba-2k23-and-olliolli-world-in-this-bundle/</guid>
-      <pubDate>Wed, 14 Jun 2023 18:49:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1199762366id22831gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Meta</category>
-      
-    </item>
-    
-    <item>
-      <title>Upload VR Showcase bundle has some good picks for VR fans</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Have a fancy VR headset and fancy picking up some new games? The <a href="https://www.humblebundle.com/games/upload-vr?partner=gamingonlinux" target="_blank">Humble Upload VR Showcase Bundle</a> has some interesting titles worth a look. I'll list each title along with any expected compatibility thanks to <a href="https://www.protondb.com/" target="_blank">ProtonDB</a>, with each being a Steam link if you need to go get more info first.</p>
-<p>Included in the bundle are:</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/916840/The_Walking_Dead_Saints__Sinners/" target="_blank">The Walking Dead: Saints &amp; Sinners</a> - ProtonDB Platinum.</li>
-<li><a href="https://store.steampowered.com/app/1947500/The_Walking_Dead_Saints__Sinners__Chapter_2_Retribution/" target="_blank">The Walking Dead: Saints &amp; Sinners - Chapter 2: Retribution</a> - No Reports.</li>
-<li><a href="https://store.steampowered.com/app/1481780/Dragon_Fist_VR_Kung_Fu/" target="_blank">Dragon Fist: VR Kung Fu</a> - One report note it works fine.</li>
-<li><a href="https://store.steampowered.com/app/1079800/Pistol_Whip/" target="_blank">Pistol Whip</a> - ProtonDB Gold (worked great last I checked).</li>
-<li><a href="https://store.steampowered.com/app/1782330/Green_Hell_VR/" target="_blank">Green Hell VR</a> - ProtonDB Platinum</li>
-<li><a href="https://store.steampowered.com/app/1337100/Warhammer_Age_of_Sigmar_Tempestfall/" target="_blank">Warhammer Age of Sigmar: Tempestfall</a> - You may need GE-Proton for cutscenes.</li>
-<li><a href="https://store.steampowered.com/app/1337530/Maskmaker/" target="_blank">Maskmaker</a> - ProtonDB Platinum.</li>
-</ul>
-<p>See the <a href="https://www.humblebundle.com/games/upload-vr?partner=gamingonlinux" target="_blank">full bundle here</a>.</p>
-<p>Frustratingly, SteamVR is currently just not working for me on Fedora KDE 38. When I load SteamVR it gives this error and the headset just flashes at me with no game output:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3517784281686744032gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3517784281686744032gol1.png"/></a></p>
-<p>If anyone has any good tips to solve it I would love to read your thoughts in the comments as I want to get back into it with my Valve Index. Once the summer heat has died off a bit at least… Used to work well in games for the most part before this, but now I can't get it to work at all.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/06/upload-vr-showcase-bundle-has-some-good-picks-for-vr-fans/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/06/upload-vr-showcase-bundle-has-some-good-picks-for-vr-fans/</guid>
-      <pubDate>Wed, 14 Jun 2023 12:03:10 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/523477379id22830gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Meta</category>
-      
-      <category>Virtual Reality</category>
-      
-    </item>
-    
-    <item>
-      <title>LISA: The Painful is getting a Definitive Edition in July</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>One of the most well-reviewed games on Steam from an indie developer and quite a tragic game, it's getting a Definitive Edition on July 18th.</p>
-<p>What is it? "Lisa is a quirky side-scrolling RPG set in a post-apocalyptic wasteland. Beneath the charming and funny exterior is a world full of disgust and moral destruction. Players will learn what kind of person they are by being FORCED to make choices. These choices permanently effect the game play. If you want to save a party member from death, you will have to sacrifice the strength of your character. Whether it's taking a beating for them, or chopping off limbs, or some other inhuman way. You will learn that in this world being selfish and heartless is the only way to survive..."</p>
-<p>The new version will bring remastered HD graphics, an updated UI, new quests, new boss battles, new secrets, bonus content and more. Check out the new trailer:</p>
-<div class="hidden_video" data-video-id="5yq25GLKuKI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/97b9dc309618ef4658105c373a3a4d73.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/5yq25GLKuKI" target="_blank">See video</a></div></div>
-<p>A bigger list of what's to come:</p>
-<blockquote>
-<ul>
-<li>HD graphics and pixel-perfect int scaling.</li>
-<li>120 FPS mode for PC and current-gen consoles.</li>
-<li>Brand-new campfire conversations, allowing you to mourn the deaths of party members even more.</li>
-<li>New enemy and boss fights.</li>
-<li>New quests featuring never before seen battles and dialogue.</li>
-<li>Brand-new stories with multiple endings.</li>
-<li>Updated battle systems introducing new “Warlord Skills,” updated timed attacks and UI overhaul.</li>
-<li>New border art overlays for wide-screen viewing.</li>
-<li>A new music player to listen to your favorite tracks and 20+ new Definitive Edition-exclusive songs.</li>
-<li>Painless (easy) mode for players looking for an easier time.</li>
-<li>12 new localized languages.</li>
-<li>And even more secrets to explore.</li>
-</ul>
-</blockquote>
-<p>You can buy it right <a href="https://store.steampowered.com/app/335670/LISA_The_Painful/" target="_blank">now from Steam</a>. The Definitive Edition will be a free update. It has Native Linux support and Valve rated it as Steam Deck Playable.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/06/lisa-the-painful-is-getting-a-definitive-edition-in-july/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/06/lisa-the-painful-is-getting-a-definitive-edition-in-july/</guid>
-      <pubDate>Wed, 14 Jun 2023 11:36:14 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/720201691id22829gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>RPG</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>The Last of Us Part I upgraded and now Steam Deck Verified</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The Last of Us Part I is finally getting to a level that's actually good, and the latest update is out now including bumping it up to Steam Deck <a href="https://twitter.com/naughty_dog/status/1668682177964556288" target="_blank">Verified</a> status.</p>
-<p>Quite a surprise to see, considering multiple parts of the game previously on Steam Deck would drop pretty hard below 30FPS and it was not good to play. There were also issues I showcased in previous videos, where it would completely lock up the system.</p>
-<p>So what have they done? For Steam Deck specifically here's the main changes:</p>
-<blockquote>
-<ul>
-<li>Overall improvements to performance while playing on Steam Deck.</li>
-<li>Addressed a memory leak issue that could cause crashes.</li>
-<li>Fixed an issue where certain button prompts would be misaligned.</li>
-<li>Fixed an issue where changing (Options &gt; Graphics &gt; Graphics Preset) could trigger an intense lighting effect.</li>
-<li>Fixed an issue where in-game HUD did not match Steam Deck Performance Overlay FPS value.</li>
-<li>Fixed a crash that could occur during loading screens.</li>
-<li>Effects Density now defaults to Very Low instead of Low.</li>
-<li>[Lakeside Resort] Fixed a crash that could occur at the start of a cutscene.</li>
-<li>[Pittsburgh] Fixed a crash that could occur at certain checkpoints.</li>
-<li>[The Outskirts] Fixed an issue where locked FPS could make it difficult to move pushable objects.</li>
-</ul>
-</blockquote>
-<p>Additionally they also added in a very low graphics preset, a new AI quality setting and a new dynamic light quality setting - all of which add up to make it a better fit on Steam Deck thanks to more tweaks. So it's not surprising it was able to get Steam Deck Verified.</p>
-<p>What does that result in? Have a look in my video:</p>
-<div class="hidden_video" data-video-id="k4t21Z28Vgc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9a77c987f41ea274a0006b961249a0dd.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/k4t21Z28Vgc" target="_blank">See video</a></div></div>
-<p>As noted in the video, unfortunately, there are still locations that will end up causing the RAM use to spike up to about 14.1GB drop the FPS down to basically nothing and completely lock up the Steam Deck. So that issue isn't <em>yet</em> solved but it's also an issue in <em>multiple</em> other games. Not everyone sees it (which can cause some confusion) but for Steam Deck and bigger games, it's quite problematic when it happens. <a href="https://github.com/CryoByte33/steam-deck-utilities" target="_blank">CryoUtilities</a> can work around it in some cases but not always. I'm hoping SteamOS 3.5 will help this issue and will be testing when Valve drop it into Preview.</p>
-<p><em>Full <a href="https://feedback.naughtydog.com/hc/en-us/articles/16476165410836" target="_blank">patch notes here</a>.</em></p>
-<p>You can buy it on <a href="https://www.humblebundle.com/store/the-last-of-us-part-i?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/06/the-last-of-us-part-i-upgraded-and-now-steam-deck-verified/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/06/the-last-of-us-part-i-upgraded-and-now-steam-deck-verified/</guid>
-      <pubDate>Wed, 14 Jun 2023 11:24:28 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1628017585id22828gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Update</category>
-      
-      <category>Video</category>
       
     </item>
     
