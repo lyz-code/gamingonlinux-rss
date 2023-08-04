@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-08-03 07:24:23.286867</pubDate>
+    <pubDate>2023-08-04 07:24:30.846851</pubDate>
 
     
     <image>
@@ -18,6 +18,444 @@
     </image>
 
     
+    
+    <item>
+      <title>Baldur&#39;s Gate 3 out now and works on Steam Deck and desktop Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>For those interested in the latest big RPG from Larian Studios, here's my quick initial report on Baldur's Gate 3 running on Steam Deck and desktop Linux. Keep in mind this is just some initial testing thoughts - it's a <em>very</em> big game.</p>
+<p>The first and most important thing: right now it appears you're going to want <strong>Proton Experimental</strong> set on it. You can install it from your Steam Library, and then go into the game's Properties -&gt; Compatibility -&gt; Tick the box and select Proton Experimental from the drop-down that appears. Otherwise, you're likely to see a bunch of crashing issues. Currently Valve has it set to Proton 7 which is somewhat old now as that was tested for verification back in September 2022 when it was in Early Access.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19133090351691088005gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19133090351691088005gol1.jpg"/></a><em>Pictured - Baldur's Gate 3 on openSUSE Linux, Ultra Details (Frametiming spikes from screenshots).</em></p>
+<p>After setting the right Proton, the game will launch and run properly. From my initial testing though, one problem I have seen currently is that the audio is at times just a bit out of sync and the narrator can get cut-off before finishing a sentence. Not <em>all</em> the time but it <em>is</em> an issue I've noticed on desktop.</p>
+<p>One issue in the launcher you may see is a message about outdated drivers on Linux, which can safely be ignored because it's looking for Windows drivers and we have different version numbers. Aside from that, the launcher works as expected.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6374929001691085625gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6374929001691085625gol1.jpg"/></a></p>
+<p>I also see this error every time I launch that appears, but it can safely be clicked away without an issue.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7686019481691085624gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7686019481691085624gol1.jpg"/></a></p>
+<p>With my AMD Ryzen 5800x and NVIDIA 2080 Ti, performance has been pretty good. Sticking with it on DirectX 11 as Vulkan (from what I've seen) can be problematic, I've been playing it on the Ultra details preset and the majority of the time it's above 60FPS at 2560x1440. In less intense areas, the FPS has been much higher between 90-100FPS. So far I'm pretty happy with the performance level of running it on Linux with Proton! That said, there's plenty of random stutter, which is most likely the shader cache building up, which will be less of a problem over time.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16932035271691089963gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16932035271691089963gol1.jpg"/></a><em>Pictured - Baldur's Gate 3 on openSUSE Linux, Ultra Details (Frametiming spikes from screenshots).</em></p>
+<p>When it comes to the Steam Deck the developers said they were "aiming" for Steam Deck Verified by launch but it seems they didn't quite make it since it's still noted as Playable right now. It does have full controller support ready but they have disabled split-screen on Steam Deck. Additionally, Larian are working on adding AMD FSR 2.2 for September 6th, so performance is likely to be quite a bit better when that's added in. So I'll be taking another proper look at Baldur's Gate 3 on Steam Deck then as well.</p>
+<p>So how is it on Steam Deck? Well, it's a bit rough actually. Playable? Yes but performance is <strong>not</strong> great. The defaults set for it on Steam Deck are poor too, with their FSR making it quite blurry. Performance is also all over the place, some parts might shoot up to ~40FPS but <em>lots</em> of it will dip below 30FPS even with various settings turned down to Low.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1557563331691100257gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1557563331691100257gol1.jpeg"/></a><em>Pictured: Baldur's Gate 3 on Steam Deck.</em></p>
+<p>I will <em>suggest</em> setting the Maximum Framerate Cap to 30FPS, VSync to Double Buffering, FSR to Ultra Quality, Model Quality on Low, Texture Filtering to Trilinear, Shadows / Fog and Clouds on Low, Ambient Occlusion turned Off and God Rays turned Off. A lot of the settings are based on what you feel is best though, these are just initial suggestions. You're also only looking at about an hour and a half on the battery.</p>
+<p>The user interface on Steam Deck is looking <em>great</em> though, their new controller support is really nice.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4930942971691099559gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4930942971691099559gol1.jpeg"/></a><em>Pictured: Baldur's Gate 3 on Steam Deck.</em></p>
+<p>Nice to see another <em>massive</em> launch, quite possibly one of the biggest launches of the year, working same-day on Linux and Steam Deck thanks to the power of the Proton compatibility layer. I don't think I can overstate just how important it is for Linux desktop and Steam Deck to have such releases working so promptly, and looking at the player numbers just before hitting publish on release day Baldur's Gate 3 saw around 450,000 people playing it on Steam — that's crazy.</p>
+<p>Hopefully their switch over to FSR 2 in September will improve it on Steam Deck though, as it could use a bit of a boost. Still, around 30FPS is pretty okay for a game like this on a handheld with a small screen.</p>
+<p>Do you need to have played the previous games to enjoy Baldur's Gate 3? Simply put: no. Thankfully. It's an entirely new adventure with new characters but you will see some familiar faces and places if you have played the previous games but no knowledge of them is needed.</p>
+<p>You can buy <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" target="_blank">Baldur's Gate 3 on Steam</a>.</p>
+<div class="hidden_video" data-video-id="XuCfkgaaa08"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f70e9a9bc928cd8c0a9ee8baecadc0cf.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/XuCfkgaaa08" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/08/baldurs-gate-3-steam-deck-and-desktop-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/baldurs-gate-3-steam-deck-and-desktop-linux/</guid>
+      <pubDate>Thu, 03 Aug 2023 22:08:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2142596447id23054gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Initial Thoughts</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Warhammer 40,000: Gladius devs new game ZEPHON has a demo up</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>ZEPHON is the upcoming strategy game from Proxy Studios who created Warhammer 40,000: Gladius - Relics of War and Pandora: First Contact. For a limited time you can check out the first demo for ZEPHON. It has full Native Linux support just like their previous games too!</p>
+<p>"Control the survivors of humanity in a near-future apocalypse of alien origin. Pick a path between the indifferent abominations of the Voice and the uncaring automata of ZEPHON, with city management, turn-based tactical combat, unholy research, diplomatic maneuvering, and branching narrative quests. Gather your allies and pick your actions wisely. On the planet Earth, that was once a cradle of life, the extinction of humanity is at hand."</p>
+<div class="hidden_video" data-video-id="DPD4MiGc2g0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bc1ac8fea864939ac2780eeb0ece3d63.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/DPD4MiGc2g0" target="_blank">See video</a></div></div>
+<p>Crazy sci-fi setting with city-building, exploration and combat? Sign me up. I'm very much looking forward to the full release on this one, especially as Proxy Studios actually sent over an early preview build that I had a chance to play with and I came away thoroughly impressed. Although the demo and preview build are rather limited, it's a good slice of what to expect from it. Very similar to their previous games, since it's again another 4x strategy game, but they've turned the production values up a notch on this one and it looks absolutely <strong>gorgeous</strong>.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19570811731691078717gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19570811731691078717gol1.jpg"/></a><em>Pictured - Zephon on OpenSUSE Linux, max details. Click it to enlarge.</em></p>
+<p>If the performance and action of this early build are anything to go by, the full release is going to be <em>awesome</em>. It left my itching all over for more. The full release is due sometime in 2024.</p>
+<p>Check out the <a href="https://store.steampowered.com/app/1481170/ZEPHON/" target="_blank">demo on Steam now</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/08/warhammer-40000-gladius-devs-new-game-zephon-has-a-demo-up/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/warhammer-40000-gladius-devs-new-game-zephon-has-a-demo-up/</guid>
+      <pubDate>Thu, 03 Aug 2023 16:13:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1815191621id23053gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>4x</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Kingdom Come, The Ascent, Oblivion, Rain World + more in Fanatical&#39;s Platinum Collection</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Oh now this looks like it has some good picks for you. Fanatical have launched their latest <a href="https://www.fanatical.com/en/pick-and-mix/platinum-collection-build-your-own-bundle?ref=gol" target="_blank">build it yourself Platinum Collection bundle</a> full of games. You can pick between 3 games for £9.99, 5 for $14.99 and 7 for £19.99.</p>
+<p>Using the usual rating system of Deck Verified, <a href="http://protondb.com/" target="_blank">ProtonDB</a> and Native Linux notes to save you clicking around. Each game title is also a Steam link in case you need more info first.</p>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/379430" target="_blank">Kingdom Come: Deliverance + Band of Bastards DLC</a></p>
+<ul>
+<li><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/614570" target="_blank">Dishonored: Death of the Outsider</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/22330/The_Elder_Scrolls_IV_Oblivion_Game_of_the_Year_Edition/" target="_blank">The Elder Scrolls IV: Oblivion Game of the Year Edition Deluxe</a></p>
+<ul>
+<li><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/1656780" target="_blank">Hero's Hour</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/2168150/Teslagrad_Remastered/" target="_blank">Teslagrad Remastered</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>Native Linux</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/1698220/Teslagrad_2/" target="_blank">Teslagrad 2</a></p>
+<ul>
+<li><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unrated</li>
+<li>Native Linux (but use Proton, Native build seems broken) - Platinum on ProtonDB</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/979690" target="_blank">The Ascent</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/312520" target="_blank">Rain World</a></p>
+<ul>
+<li><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/1347970" target="_blank">Patch Quest</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/115800" target="_blank">Owlboy</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>Native Linux</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/1056840" target="_blank">Arcanium: Rise of Akhan</a></p>
+<ul>
+<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/1710540" target="_blank">Fall of Porcupine</a></p>
+<ul>
+<li>No Ratings</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/1920100" target="_blank">Backfirewall_</a></p>
+<ul>
+<li><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unrated</li>
+<li>ProtonDB Platinum</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/809230" target="_blank">Unity of Command II</a></p>
+<ul>
+<li><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/620590" target="_blank">Ancestors Legacy</a></p>
+<ul>
+<li><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</li>
+<li>ProtonDB Gold</li>
+</ul>
+<p class="plain-list-title"><a href="https://store.steampowered.com/app/748020" target="_blank">TERRACOTTA</a></p>
+<ul>
+<li>No Ratings</li>
+</ul>
+<p>There's a good few titles I personally want in this, so I might even have to pick it up, seems like pretty good value if there's a few you want compared to normal pricing. Be sure to <a href="http://www.fanatical.com/en/pick-and-mix/platinum-collection-build-your-own-bundle?ref=gol" target="_blank">check out the bundle here</a>.</p>
+<hr/>
+<p>Additionally we have a discount code for <a href="https://www.fanatical.com/en/game/f-1-manager-2023?ref=gol" target="_blank">F1 Manager 2023</a> if you want 19% off use code "F1GOL".</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/08/kingdom-come-the-ascent-oblivion-rain-world-fanatical-platinum-collection/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/kingdom-come-the-ascent-oblivion-rain-world-fanatical-platinum-collection/</guid>
+      <pubDate>Thu, 03 Aug 2023 15:27:31 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/410687064id23052gol.jpg" type="image/jpeg"/>
+      
+      <category>Fanatical</category>
+      
+      <category>Game Bundle</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Age of Empires III: Definitive Edition gets a free starter edition</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Oh how I do love a good RTS. Age of Empires III: Definitive Edition now has a special free starter edition available on Steam. From my own testing, it works great on desktop Linux with Proton too.</p>
+<p>This new free starter edition gives you three civilizations to play as, with them being rotated around every 2 weeks and you can play in both single player and multiplayer games. Seems like quite a nice intro into it, especially if you've been on the fence about it.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8833248881691074485gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8833248881691074485gol1.jpg"/></a><em>Pictured - Age of Empires III: Definitive Edition on OpenSUSE Linux, Ultra Details level.</em></p>
+<p>Looks like it has a decent player-base on Steam as well with it regularly seeing between 3-4 thousand people but thanks to this and the latest update, it's rocketed back up to over 12 thousand! An update just released also added in these:</p>
+<blockquote>
+<p></p>
+<ul>
+<li>Online status for friends.</li>
+<li>Unique Explorer bonuses.</li>
+<li>Tons of new balance updates.</li>
+<li>Reworks for Royal Guard and Church technologies.</li>
+<li>Enhanced Civilizations &amp; Revolutions.</li>
+</ul>
+</blockquote>
+<p>I grew up playing lots the original, and then AoE 2 and never really got to properly try the the third one. So perhaps now with this deal I might dive in a whole lot more. While it's pretty much a glorified demo, it <em>is</em> a good thing to have. </p>
+<p>Check it <a href="https://store.steampowered.com/app/933110/Age_of_Empires_III_Definitive_Edition/" target="_blank">out on Steam</a>.</p>
+<p><em>Will you be checking it out thanks to this? It has a Platinum rating on <a href="https://www.protondb.com/app/933110" target="_blank">ProtonDB</a> and it's Steam Deck Playable.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/08/age-of-empires-iii-definitive-edition-gets-a-free-starter-edition/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/age-of-empires-iii-definitive-edition-gets-a-free-starter-edition/</guid>
+      <pubDate>Thu, 03 Aug 2023 14:55:43 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1223463742id23051gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Free Game</category>
+      
+      <category>Microsoft</category>
+      
+    </item>
+    
+    <item>
+      <title>More retro goodies coming in the Toaplan Arcade Shoot ‘Em Up Collection Vol.2</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Ready for another blast from the past? After the success of the first set, Toaplan Arcade Shoot ‘Em Up Collection Vol.2 has been announced from Bitwave Games and Toaplan.</p>
+<p>This time around we're getting these:</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/2237190/Hellfire/" target="_blank">Hellfire</a> - Toaplan's first side-scrolling shooter, Hellfire features stunning graphics and a rock-heavy soundtrack, so if you can’t handle the heat at least you’ll go down in headbanging style.</li>
+<li><a href="https://store.steampowered.com/app/2022990/Flying_Shark/" target="_blank">Flying Shark</a> - Ride through the skies as they burn in a rain of armor-piercing bullets and experience Toaplan's arcade shooter Flying Shark (AKA Sky Shark).</li>
+<li><a href="https://store.steampowered.com/app/2022980/Slap_Fight/" target="_blank">Slap Fight</a> - Buckle up and fight computing power with the only power that counts: FIREPOWER! Toaplan's 1986 vertical shooter Slap Fight (AKA Alcon) boasts gauge-based power-ups and strategic gameplay.</li>
+<li><a href="https://store.steampowered.com/app/2237200/Fire_Shark/" target="_blank">Fire Shark</a> - An evil powerful military force is about to take over not only a small country, but the whole world... so get ready for classic shoot-'em-up action in Toaplan's Fire Shark.</li>
+</ul>
+<div class="hidden_video" data-video-id="-wR5tEUTFDA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/34c9a5ac4b6afd4c074e3266ca2b322b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-wR5tEUTFDA" target="_blank">See video</a></div></div>
+<p>Just like the first set they will come with various improvements but coming new with this set is a "Mirror Mode". Their added features include:</p>
+<ul>
+<li>Minimal Input Lag: Emulation, input processing, and rendering all complete on the same frame.</li>
+<li>Online leaderboards for Single Credit, No Assist, and Assisted plays.</li>
+<li>Instrument panels with extra gameplay information and artwork.</li>
+<li>Rewind the game between 10-18 minutes, depending on the action.</li>
+<li>Experience the game in Mirror Mode.</li>
+<li>Assist Features such as auto-fire at multiple rates.</li>
+<li>Very Easy Mode: Lower the difficulty to breeze through the adventure.</li>
+<li>Rotate the gameplay in 90-degree increments.</li>
+<li>Choose between Raw Input on Windows or Steam Input.</li>
+<li>Hone your skills in the ultra-customizable practice mode.</li>
+</ul>
+<p>From the press release:</p>
+<p>“The response we had to Toaplan Arcade Shoot ‘Em Up Collection Vol.1 was incredible, so we’ve been looking forward to sharing more about the next volume in the collection” said Niklas Istenes, CEO of Bitwave Games, “We listened to the community’s feedback and used it to bring back these iconic shooter titles as players wish, whether that’s with our accurate emulation or the help of practice and easy modes. We can’t wait to see players go back in time with these superb games.”</p>
+<p>Just like the first set of games they will have Linux support too. Nice to see!</p>
+<p>The games will be available on <a href="https://store.steampowered.com/search/?developer=Toaplan" target="_blank">Steam</a> and <a href="https://www.gog.com/en/games?publishers=bitwave-games" target="_blank">GOG</a> at release on August 24th.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/08/more-retro-goodies-coming-in-the-toaplan-arcade-shoot-em-up-collection-vol2/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/more-retro-goodies-coming-in-the-toaplan-arcade-shoot-em-up-collection-vol2/</guid>
+      <pubDate>Thu, 03 Aug 2023 13:45:18 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/828714411id23050gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Emulation</category>
+      
+      <category>GOG</category>
+      
+      <category>Retro</category>
+      
+    </item>
+    
+    <item>
+      <title>First-person co-op dungeon crawler &#39;Barony&#39; has major upgrade and Steam Deck Verified</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Barony from developer Turning Wheel LLC recently had quite a lovely big upgrade, and thanks to that it's also now Steam Deck Verified with the Native Linux version available.</p>
+<p>The "Quality of Death Update" came thanks to a lot of work they put into the Nintendo Switch port, which thankfully the PC version didn't get left out from. This includes:</p>
+<blockquote>
+<ul>
+<li>All New UI.</li>
+<li>2-4 Player Split-Screen.</li>
+<li>Overhauled lighting solution.</li>
+<li>Full Steam Deck and gamepad support.</li>
+<li>Enhanced content, gameplay tweaks, and bugfixes.</li>
+</ul>
+</blockquote>
+<p>The above is really just the basic highlights, there's absolutely loads new for the game. The entire you way you set it up and play through looks massively different. From reduced friendly hitboxes for less friendly fire to a new death box system containing all of a dead players belongings for easier pickup. The game as a whole should look a lot flashier too with a new lighting system that looks better and should perform better too.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7391375391691062550gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7391375391691062550gol1.jpg"/></a></p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1676457211691062724gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1676457211691062724gol1.jpg"/></a></p>
+<p>The full details on the big upgrade can be found in the <a href="https://www.baronygame.com/blog/qod-update-launched" target="_blank">patch notes</a>.</p>
+<p>Main Game Features:</p>
+<blockquote>
+<ul>
+<li>Put your skills to the test with perma-death, cryptic dungeons, and no handholding</li>
+<li>Cooperate with 1-4 players via split-screen, wireless play between Switch consoles, and the internet including crossplay with other platforms!</li>
+<li>Master 13 classes ranging from familiar warrior, wizard, and rogue classes to unique sexton, joker, and arcanist classes</li>
+<li>Conquer or be killed by surprises around every corner in a new dungeon every time you play</li>
+<li>Invest in deep RPG systems with loads of loot and stats to analyze and synergize</li>
+<li>Discover and utilize tons of adventuring weapons, equipment, lore, spells, &amp; legendary artifacts</li>
+<li>Experience ongoing free updates from an active team that loves the game and is active in the Barony community</li>
+<li>Go deeper with 2 DLCs offering alternate ways to play with new character classes and monster races which offer even more playstyles!</li>
+</ul>
+</blockquote>
+<p>You can buy Barony from <a href="https://www.humblebundle.com/store/barony?partner=gamingonlinux" target="_blank">Humble Store</a>, <a href="https://www.gog.com/en/game/barony" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/371970/Barony/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/08/first-person-co-op-dungeon-crawler-barony-has-major-upgrade-and-steam-deck-verified/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/first-person-co-op-dungeon-crawler-barony-has-major-upgrade-and-steam-deck-verified/</guid>
+      <pubDate>Thu, 03 Aug 2023 11:39:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/586700987id23049gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Dungeon Crawler</category>
+      
+      <category>GOG</category>
+      
+    </item>
+    
+    <item>
+      <title>Challenging survival city-builder Landnama is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Landnama from developer Sonderland scratches a very weird itch as it mixes exploration, survival and city-building into one and it's quite a challenge too. <u>Note</u>: the developer sent me a key.</p>
+<p>The developers say it gives you the "thrill of a dungeon crawler with the vibe of a city builder" and they're not wrong there. You start off with a single tile and a mostly empty map, with you needing to explore tile-by-tile to expand and hopefully survive the coming winter. You have a single resource, heart, which is used for everything and there's no second chances for failure here with an ever-increasing challenge.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19827490591691059195gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19827490591691059195gol1.jpg"/></a></p>
+<p>It's a real-time game too, so it's not quite like Civilization although you can pause any time. You need to stock up hearts because when Winter hits, it will take a whole bunch away. Shown in the screenshot above, at that point I had 18/25 hearts and winter will cost somewhere between 9-14. When Winter does hit, it will flick between 9 and 14 and you hit a button to lock in a number (hopefully a lower one). You could attempt to chance the Winter toll, but it can get pretty difficult to land it on a good number.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20935190201691059726gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20935190201691059726gol1.jpg"/></a></p>
+<p>The problem is deciding where to explore and what buildings to put down, so that you can increase your gradual heart production while also keeping enough back for the Winter. Landnama sprinkles in random events too, some of them can be pretty devastating but others are just a mild inconvenience. Either way, you need to try and be prepared for anything but easier said than done with the randomness of it.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3046095951691059414gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3046095951691059414gol1.jpg"/></a></p>
+<p>It will take quite a while before you really get somewhere, and you're quite likely to have complete failure on your first few runs. Thankfully, each run doesn't actually take that long and you get multiple chances to play through it each time. When one civ fails, you pick another to carry on your saga.</p>
+<p>Eventually you'll get to a run where you've got the exploration and survival aspects down, and you'll start getting a decent amount of heart in each time so that you can expand and not worry too much about Winter. One of the keys is the adjacency bonus of buildings. As you explore, you'll want to salvage some buildings and move them to a better location to allow you to get more heart production so it's a constant game of studying the map.</p>
+<div class="hidden_video" data-video-id="eSUjA_QYFjc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/02d23cc68c97bfc4a899a5fd91422c5b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/eSUjA_QYFjc" target="_blank">See video</a></div></div>
+<p>With it now released the developer has been listening closely to feedback on the difficulty and replay value, and they've said they do plan to add in a bunch of extras to address having more to do on repeat runs and they've already addressed one problematic point of the difficulty so I look forward to seeing what they add in future.</p>
+<p>The Linux version of Landnama worked great with no issues at all. If you're after a game that will challenge you but still remain somewhat relaxing to play then it's a good choice.</p>
+<p><a href="https://store.steampowered.com/app/2339040/Landnama/" target="_blank">Available on Steam</a> with Native Linux support.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/08/challenging-survival-city-builder-landnama-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/challenging-survival-city-builder-landnama-is-out-now/</guid>
+      <pubDate>Thu, 03 Aug 2023 11:23:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/234616138id23048gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>City Builder</category>
+      
+      <category>New Release</category>
+      
+      <category>Review</category>
+      
+    </item>
+    
+    <item>
+      <title>The 8BitDo Retro Mechanical Keyboard looks awesome</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>While their software for programming it only officially supports Windows and Android, the 8BitDo Retro Mechanical Keyboard sure does look awesome. I need this. Supporting connecting up via USB, Wireless 2.4G and Bluetooth it has a range of options for whatever way you wish to use it.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16577410881691056004gol1.jpg"/></p>
+<p>Features:</p>
+<blockquote>
+<ul>
+<li>87 keys</li>
+<li>Kailh Box White Switches V2</li>
+<li>Hot-swappable PCB</li>
+<li>Support n-key rollover</li>
+<li>Dye-sublimation PBT keycaps with MDA-like height</li>
+<li>Programmable buttons</li>
+<li>Fast-mapping on programmable buttons (no software needed)</li>
+<li>Top mount style</li>
+</ul>
+</blockquote>
+<p>Hopefully at some point someone will be able to provide proper drivers for it on Linux, just like we've seen for various other vendors (like <a href="https://www.gamingonlinux.com/2023/05/openrazer-v36-brings-support-for-11-more-razer-devices/" target="_blank">OpenRazer</a> and <a href="https://www.gamingonlinux.com/2023/06/ckb-next-for-configuring-corsair-keyboards-and-mice-v06-out-now/" target="_blank">ckb-next</a>) to get the full use out of it. I always love the build quality of 8BitDo too and their 8BitDo Ultimate Controller is my current favourite gamepad.</p>
+<p>It will actually be available in two different versions with the "N" and "Fami" editions:</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21196209671691056717gol1.jpg"/></p>
+<p><em>Plus there's also those two huge red buttons you can connect up with it but they're an extra.</em></p>
+<p>See more on <a href="https://www.8bitdo.com/retro-mechanical-keyboard/" target="_blank">their website</a>. </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/08/the-8bitdo-retro-mechanical-keyboard-looks-awesome/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/the-8bitdo-retro-mechanical-keyboard-looks-awesome/</guid>
+      <pubDate>Thu, 03 Aug 2023 09:53:48 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/573513313id23047gol.jpg" type="image/jpeg"/>
+      
+      <category>Hardware</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Voxel Doom II is out now for GZDoom</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Spice up your next play-through of Doom II with the new Voxel Doom II mod now available, bringing with it fancy new monster models. Voxel Doom II is the follow up to 2022's award-winning Voxel Doom. This is a new graphics mod that replaces all monsters, weapons, props and items with fully 3d voxel models. It replaces all monsters from both Doom and Doom II.</p>
+<div class="hidden_video" data-video-id="IQK8m41daAk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f7645572cd55829ca521f532740d5760.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/IQK8m41daAk" target="_blank">See video</a></div></div>
+<p>You can grab the <a href="https://www.moddb.com/mods/voxel-doom-ii" target="_blank">mod from Mod DB</a>.</p>
+<p>To use it on Linux you will need a <a href="https://www.gog.com/en/game/doom_1993" target="_blank">Doom</a> / <a href="https://www.gog.com/en/game/doom_ii" target="_blank">Doom II</a> set up with GZDoom in your usual way by placing the doom.wad or doom2.wad into the config folder which is usually <code class="inline-code">~/.config/gzdoom/</code> on a standard install or if you're installing GZDoom from Flathub put them in <code class="inline-code">~/.var/app/org.zdoom.GZDoom/.config/gzdoom/</code>. You'll need to place the Voxel Doom II mod files in there too and then you'll be able to run it.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/08/voxel-doom-ii-is-out-now-for-gzdoom/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/voxel-doom-ii-is-out-now-for-gzdoom/</guid>
+      <pubDate>Thu, 03 Aug 2023 09:10:39 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/533754337id23046gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Mod</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux continues hitting above 3% desktop user share on Statcounter</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another month down and we can see that the Linux desktop user share is continuing to rise and not just on the recent Steam Survey. While we have Linux hitting close to 2% and <a href="https://www.gamingonlinux.com/2023/08/linux-overtakes-macos-users-on-steam-thanks-to-steam-deck/" target="_blank">above macOS on the Steam Survey</a> for the first time, it's nice to see it continuing to rise elsewhere too!</p>
+<p>Just as a reminder the data for June on Statcounter showed Linux <a href="https://www.gamingonlinux.com/2023/07/linux-hit-over-3-desktop-user-share/" target="_blank">hitting above 3%</a> for the first time at 3.07%. Well, this month it's smashed that record once again at <strong>3.12%</strong>.</p>
+<p>Across this year their stats show for Linux:</p>
+<ul>
+<li>January - 2.91%</li>
+<li>February - 2.94%</li>
+<li>March - 2.85%</li>
+<li>April - 2.83%</li>
+<li>May - 2.7%</li>
+<li>June - 3.07%</li>
+<li><strong>July - 3.12%</strong></li>
+</ul>
+<p>It's worth noting that's with the Windows share also rising, and the macOS share dropping.</p>
+<p>Technically, ChromeOS <em>is</em> also a Linux distribution (although people like to argue on that). Quite a different one compared with <em>traditional</em> distributions like Ubuntu, Fedora, OpenSUSE and others but it's still Linux and it's at 3.24% for July so together it's more like 6.36% desktop share for Linux overall.</p>
+<p>See the details on <a href="https://gs.statcounter.com/os-market-share/desktop/worldwide" target="_blank">Statcounter</a>.</p>
+<p><em>What are your thoughts? Be sure to leave a note in the comments!</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/08/linux-continues-hitting-above-3-desktop-user-share/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/linux-continues-hitting-above-3-desktop-user-share/</guid>
+      <pubDate>Thu, 03 Aug 2023 08:51:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/565206509id23045gol.jpg" type="image/jpeg"/>
+      
+      <category>Editorial</category>
+      
+      <category>Misc</category>
+      
+      <category>Survey Results</category>
+      
+    </item>
     
     <item>
       <title>Deceive Inc. quickly became a favourite multiplayer game</title>
@@ -297,7 +735,8 @@
 </blockquote>
 <p>Changelogs: <a href="https://store.steampowered.com/news/app/1675200/view/3678929205883183352" target="_blank">Steam Deck</a> / <a href="https://store.steampowered.com/news/app/593110/view/3691314104878358313" target="_blank">Desktop</a>.</p>
 <p>The new timer feature on the desktop overlay sounds very useful. Allowing you to set any time you want and then when it's done you'll get a ping and a pop-up notifying you time is up. Could be incredibly useful for reminding you to take an actual break.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4627081671690971579gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/4627081671690971579gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/367030961690971580gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/367030961690971580gol1.jpg"/></a><em>Pictured - setting a timer, and then the timer going off in the top right.</em></p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4627081671690971579gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/4627081671690971579gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/367030961690971580gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/367030961690971580gol1.jpg"/></a><br/>
+<em>Pictured - setting a timer, and then the timer going off in the top right.</em></p>
 <p>I'm sure plenty of people who have both a PC and Steam Deck will also appreciate being able to see Steam Deck Verified ratings in their Steam Library as well. Available to turn on in Settings -&gt; Library -&gt; Show Steam Deck compatibility information in library. You can then hover over items or expand the details view on individual games.</p>
 <p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2821923371690971769gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2821923371690971769gol1.jpg"/></a>Pictured - showing Steam Deck rating on Apex Legends</em></p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
@@ -2215,7 +2654,7 @@ Deploy a wide variety of offensive and defensive tactics at close and long range
 <li style="text-align:justify">1x SD card slot</li>
 <li style="text-align:justify">1x DisplayPort 1.4</li>
 </ul>
-<p style="text-align:justify">JSAUX also mention the 12 in 1 supports <a class="__cf_email__" data-cfemail="9da9d6ddacafadd5e7" href="/cdn-cgi/l/email-protection">[email protected]</a>, providing that one only HDMI or DP port is used.</p>
+<p style="text-align:justify">JSAUX also mention the 12 in 1 supports <a class="__cf_email__" data-cfemail="1f2b545f2e2d2f5765" href="/cdn-cgi/l/email-protection">[email protected]</a>, providing that one only HDMI or DP port is used.</p>
 <p style="text-align:justify">The other release is their new transparent backplate that comes with RGB lighting as well ($39.99 / €35.63). This backplate comes with it's own battery and light switch, with a USB-C port to charge it up so it won't mess with the power from the Steam Deck itself. It also comes with some slide-over silicone grips for the sides of the Steam Deck.</p>
 <p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5619429931689960411gol1.jpg"/></p>
 <p style="text-align:justify">See all on the <a href="https://jsaux.com/" target="_blank">JSAUX website</a>.</p>
@@ -3775,458 +4214,6 @@ Deck.</li>
       <category>Misc</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Team Fortress 2 - Summer 2023 Event is live as it smashes player records</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Finally it's here! Valve has updated Team Fortress 2 with a Summer Event for 2023 and it appears to have exploded the player counts. Going from around 100-125 thousand players at time to a record-breaking <strong>253,997</strong> peak as of 2 hours ago. Seems TF2 has plenty of life left in it, if only Valve gave it a bit more regular attention huh?</p>
-<p>Here's what's been added for the event:</p>
-<ul>
-<li>Featuring 14 new community maps: Sharkbay, Rotunda, Phoenix, Cashworks, Venice, Reckoner, Sulfur, Hardwood, Pelican Peak, Selbyen, VSH Tiny Rock, VSH Distillery, VSH Skirmish, and VSH Nucleus</li>
-<li>Added the Summer 2023 Cosmetic Case
-<ul>
-<li>Contains 25 new community-contributed items</li>
-</ul>
-</li>
-<li>Added 6 new community-contributed taunts to the Mann Co. Store
-<ul>
-<li>Taunt: Killer Joke</li>
-<li>Taunt: Star-Spangled Strategy</li>
-<li>Taunt: The Head Doctor</li>
-<li>Taunt: Tuefort Tango</li>
-<li>Taunt: The Road Rager</li>
-<li>Taunt: The Killer Signature</li>
-</ul>
-</li>
-<li>Added 20 new community-created Unusual effects
-<ul>
-<li>12 new effects for Unusual hats</li>
-<li>8 new effects for Unusual taunts</li>
-</ul>
-</li>
-<li>Added the Summer 2023 War Paint Case
-<ul>
-<li>Contains 10 new community-created War Paints that make-up the Summer 2023 Collection</li>
-<li>Has a chance to give a taunt Unusualifier as a bonus item</li>
-</ul>
-</li>
-<li>All cosmetic and taunt cases will grant Summer 2023 Unusual effects instead of their normal Unusual effects during the Summer event. This does not include crates.</li>
-</ul>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15287559541689261855gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15287559541689261855gol1.jpg"/></a>Pictured - the new Reckoner map, taken on Fedora.</em></p>
-<p>Valve said the event will run until September 15th, 2023.</p>
-<p>However Valve also did a standard update to the game too including these improvements and fixes:</p>
-<ul>
-<li>Security and stability improvements</li>
-<li>Fixed the Mann vs. Machine upgrade panel closing after receiving a matchmaking party invite</li>
-<li>Fixed an exploit related to the ConTracker and being able to move/shoot while it's deployed</li>
-<li>Fixed the Strange Count Transfer Tool not being able to transfer stats for Sandvich items</li>
-<li>Fixed the Engineer not being able to move for a short period of time after doing The High Five taunt</li>
-<li>Fixed missing No Headphones style for the Universal Translator</li>
-<li>Fixed Engineer teleporter audio that was referencing the dispenser by mistake in Spanish</li>
-<li>Fixed incorrect alpha channels for the Smissmas 2021/2022 Cosmetic Case models</li>
-<li>Fixed the Winter 2019 War Paint Case not being shown in the Mann Co. Store</li>
-<li>Updated/Added some tournament medals</li>
-<li>Updated pl_enclosure_final to fix localization issues</li>
-<li>Updated cp_gravelpit_snowy
-<ul>
-<li>Boosted volume of snowman explosions</li>
-<li>Added occluders to C to improve performance</li>
-<li>Improved clipping</li>
-</ul>
-</li>
-<li>Updated cp_steel
-<ul>
-<li>Prop collision cleanup and improved player clipping</li>
-<li>Explosive splash bug collisions on stairs, props, etc., around the map</li>
-<li>Spawn point issues (collision, prop blocking, clipping, etc.)</li>
-<li>Fix Pyro door exploit on A</li>
-<li>Fix choke and spam issues into Blu &amp; Red spawns</li>
-<li>Fix Pixel walk collision issues</li>
-<li>Fixing ceiling clipping and stuck spots including exploits</li>
-<li>Clean up geometry in spawns, the spawn locations and their exits</li>
-<li>Fix roof readability issues, with sticky and rocket jumping</li>
-<li>Fix rare double death bug when falling into pit</li>
-<li>Fix Cliff stuck spots and ledges in E pit</li>
-<li>Removed head glitch tele spawn on A-B connector</li>
-<li>Fix rare overtime cap bug</li>
-<li>Fix Red team getting stuck in spawn door to A</li>
-</ul>
-</li>
-<li>Updated cp_mossrock
-<ul>
-<li>Fixed numerous perch points</li>
-<li>Fixed players being able to get under Blu spawn</li>
-<li>Fixed a location where a teleporter could be build out of the map</li>
-<li>Fixed collision on rock near final point so it is more accurate to the visuals</li>
-<li>Fixed lots of small visual bugs</li>
-<li>Fixed some small exploits</li>
-<li>Improved optimisation</li>
-</ul>
-</li>
-</ul>
-<p>You can play <a href="https://store.steampowered.com/app/440/Team_Fortress_2/" target="_blank">TF2 free on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/07/team-fortress-2-summer-2023-event-live-as-it-smashes-player-records/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/team-fortress-2-summer-2023-event-live-as-it-smashes-player-records/</guid>
-      <pubDate>Thu, 13 Jul 2023 15:24:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1246306518id22953gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>FPS</category>
-      
-      <category>Free Game</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Get a bunch of cyberpunk games in this latest bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Love the whole cyberpunk theme? Humble have put up the <a href="https://www.humblebundle.com/games/cyberpunk-playground?partner=gamingonlinux" target="_blank">Cyberpunk Playground bundle</a>. Here's what to expect for compatibility on Steam Deck and desktop Linux.</p>
-<p>Using the usual rating system of Deck Verified, <a href="http://protondb.com/" target="_blank">ProtonDB</a> and Native Linux notes to save you clicking around. Each game title is also a Steam link in case you need more info first. </p>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1368030" target="_blank">ANNO: Mutationem</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/746850" target="_blank">Cloudpunk</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1386900" target="_blank">Observer: System Redux</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1630110" target="_blank">Gungrave G.O.R.E</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1139900" target="_blank">Ghostrunner</a></p>
-<ul>
-<li><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p><em>+ 40% off Ghostrunner - Project_Hel</em></p>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1227690" target="_blank">Severed Steel</a></p>
-<ul>
-<li><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/2063480" target="_blank">Voltage High Society</a></p>
-<ul>
-<li><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> No Ratings </li>
-</ul>
-<p>Check out the <a href="https://www.humblebundle.com/games/cyberpunk-playground?partner=gamingonlinux" target="_blank">full bundle here</a> if you want to grab it.</p>
-<p>Overall pretty great compatibility there and some good choices too.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/07/get-a-bunch-of-cyberpunk-games-in-this-latest-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/get-a-bunch-of-cyberpunk-games-in-this-latest-bundle/</guid>
-      <pubDate>Wed, 12 Jul 2023 18:51:39 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1167433024id22952gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>After being removed from Steam, Betrayer is now free on GOG</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After vanishing from Steam quite a while ago in 2021, Betrayer from Blackpowder Games has <a href="https://www.gog.com/game/betrayer" target="_blank">resurfaced on GOG</a> and it's free to add to your account.</p>
-<p>This is a bit of an odd one. The developer seemed to go silent, and then have it delisted on Steam. Their official Twitter account was also silent on it. However, the <a href="https://web.archive.org/web/20220818035044/https://www.blackpowdergames.com/blog/blackpowder-games-acquired-by-john-ruth/" target="_blank">Wayback Machine</a> shows that Blackpowder Games via their own official blog was acquired by John Ruth and then got turned into some odd news website.</p>
-<p>However two days ago it resurfaced as a free game on GOG.com, with no explanation as to why. The official GOG <a href="https://www.gog.com/en/news/release_betrayer_available_to_play_for_free" target="_blank">news post</a> doesn't clarify anything either, it just thanked Tyler "tfishell" for helping bring it to GOG and that's it. Weird.</p>
-<blockquote>
-<p></p>
-</blockquote>
-<div class="hidden_video" data-video-id="2v6TkgkUdNE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/166fc69a3467ac8da0d340d50128ebe1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/2v6TkgkUdNE" target="_blank">See video</a></div></div>
-<p>Testing it on desktop Linux with Fedora KDE 38, thanks to the use of <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Games Launcher</a> to easily download GOG games it appears to work quite well with Wine-GE. Although, with my NVIDIA GPU I do see a few minor graphical glitches with shiny things like the water having weird spots over them. Apart from that, it performs well and looks good. Another free game to add to your collection - why not.</p>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Explore large, open environments teeming with danger and discovery. Chart your own course in search of clues and treasures.</li>
-<li>Switch between two distinct worlds featuring different enemies, obstacles, and threats.</li>
-<li>Wield early 17th century weaponry including muskets, bows, crossbows, and tomahawks. Upgrade your arsenal by purchasing or finding faster, deadlier, longer-ranged weapons.</li>
-<li>Charge headlong into battle with guns blazing or pick enemies off quietly. A novel, movement-based stealth system lets you hide in plain sight or use the wind to mask your footsteps.</li>
-<li>Equip ability-enhancing Charms to complement your play style, granting anything from extra health to faster movement to improved stealth.</li>
-<li>Play with the default visual style for maximum eeriness and tension or customize the color and contrast settings to suit your tastes.</li>
-</ul>
-</blockquote>
-<p>Get it <a href="https://www.gog.com/game/betrayer" target="_blank">free on GOG</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/07/after-being-removed-from-steam-betrayer-is-now-free-on-gog/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/after-being-removed-from-steam-betrayer-is-now-free-on-gog/</guid>
-      <pubDate>Wed, 12 Jul 2023 16:38:06 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/709761233id22951gol.jpg" type="image/jpeg"/>
-      
-      <category>FPS</category>
-      
-      <category>Free Game</category>
-      
-      <category>GOG</category>
-      
-      <category>Wine</category>
-      
-    </item>
-    
-    <item>
-      <title>Infinity Engine replacement GemRB 0.9.2 improves Planescape: Torment support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>GemRB is a free and open source game engine reimplementation for Infinity Engine games including Baldur’s Gate, Planescape: Torment, Icewind Dale 1 and more.</p>
-<p>The latest release went out recently with version 0.9.2 giving numerous improvements to Planescape: Torment support. The developers mentioned it also has "onfigurable AI speed, improved performance and others. Notably GemRB now also supports PVR(Z) based formats, making content creation easier, most new opcodes/actions/triggers and together with some infrastructural changes, BG2EE games can now be loaded (still not playable though!)".</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11760538471689177519gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11760538471689177519gol1.png"/></a><br/>
-<em>Pictured - Planescape: Torment</em></p>
-<p>From the 0.9.2 release:</p>
-<blockquote>
-<p><strong>New features:</strong><br/>
-  - PVR(Z), BAM2, MOS2 and TIS2 support<br/>
-  - support for higher AI speeds ("FPS") and VSync<br/>
-  - support for EE-style saves, TLK locations and many more tables<br/>
-  - PST's floating text and personalized pc comments<br/>
-  - optional smooth fog of war on SDL &gt;= 2.0.18<br/>
-  - 3e-style sneak attack and crippling strike from HoW/iwdee<br/>
-  - Anbernic device support</p>
-<p><strong>Improved features:</strong><br/>
-  - PST effect durations<br/>
-  - performance, pathfinding, formations<br/>
-  - combat, opcodes, EE compat, hp handling, demo<br/>
-  - bugfixes</p>
-</blockquote>
-<p>Another great cross-platform open source project that will keep some classics alive forever. </p>
-<p>See more on <a href="https://gemrb.org/" target="_blank">the website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/07/infinity-engine-replacement-gemrb-092-improves-planescape-torment-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/infinity-engine-replacement-gemrb-092-improves-planescape-torment-support/</guid>
-      <pubDate>Wed, 12 Jul 2023 15:59:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1658562106id22950gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-      <category>Reimplementation</category>
-      
-    </item>
-    
-    <item>
-      <title>Realms Deep returns with more explosive games on September 30th</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Ready for more first-person shooter goodies? 3D Realms announced last week that the event is set to return on September 30th. A really nice event for fans of retro / boomer shooters, as there will be some fun stuff announced.</p>
-<p>They will be bringing updates from various games (and actually not just FPS') like the hotly anticipated classic RTS <em>Tempest Rising</em>, action-adventure FPS <em>Phantom Fury</em>, immersive sim <em>Core Decay</em>, sci-fi horror FPS <em>RIPOUT</em>, dark-fantasy FPS <em>GRAVEN</em>, dieselpunk action-rpg <em>Combustion</em>, the <em>Ion Fury: Aftershock</em> expansion and some surprises.</p>
-<p>Additionally this year some other partners will appear including New Blood Interactive, Running With Scissors, Slipgate Ironworks, HYPERSTRANGE, Dread XP, Hellforge Studios, Fulqrum, and Retrovibe, as well as THQ Nordic, Prismatika Games and many more making their debut into the show. They also said to expect some interviews and maybe "a bit of the ol’ ultraviolence".</p>
-<p>Check out the event trailer:</p>
-<div class="hidden_video" data-video-id="M82cCqf-pn4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9ada9fbc280ecfb823c801f5ddbd609d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/M82cCqf-pn4" target="_blank">See video</a></div></div>
-<p>More on their <a href="https://www.realmsdeep.game/" target="_blank">event website</a>. </p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/07/realms-deep-returns-with-more-explosive-games-on-september-30th/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/realms-deep-returns-with-more-explosive-games-on-september-30th/</guid>
-      <pubDate>Wed, 12 Jul 2023 14:04:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1887273814id22949gol.jpg" type="image/jpeg"/>
-      
-      <category>Event</category>
-      
-      <category>Misc</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Tabletop inspired roguelike adventure Abalon adds Linux &amp; SteamOS support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Abalon (formerly known as Summoners Fate), a roguelike adventure game inspired by tabletop classics recently <a href="https://store.steampowered.com/news/app/1681840/view/3647401472403677755" target="_blank">announced</a> official Linux and SteamOS support. They mentioned the Native port should offer "a dramatic performance increase and better build stability over running via Proton".</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7547245921689169987gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7547245921689169987gol1.jpg"/></a></p>
-<p>More about it: "Abalon draws its inspiration from classic tabletop games like Hero Quest, Dungeons and Dragons, and Magic: The Gathering, combining tactical combat with thoughtful events decided with the trusty roll of a D20. Exploring Abalon is done in real-time, allowing you to uncover lore scrolls, shop for powerful cards and even attend a goblin's birthday party (don't forget your gold).</p>
-<p>Combat brings Abalon into a turn-based game where unit positioning is as important as your spell casting. These tense encounters play out in arena-style maps where the environment isn't just for show, it's a key part of the battlefield. Equip powerful armor from a statue mid-fight. Slam your foes into a wall of spikes. Transform a tree behind enemy lines into an allied fighter. How you control the battlefield is your choice."</p>
-<p>Nice to see more developers go for Native Linux support where it makes sense for them and they're able to do it easily enough. Seems the developer had requests from a few players so they decided to just do it. The developer also mentioned a major update is coming soon adding in Challenge Modifiers, new artifacts and thematic shops.</p>
-<p>Check out the trailer below:</p>
-<div class="hidden_video" data-video-id="d-QIuAAUW_k"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7cc451585aa14a5703a4970d6ddb12ea.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/d-QIuAAUW_k" target="_blank">See video</a></div></div>
-<p>Will you be picking it up?</p>
-<p><span style="background-color:var(--article-main-background); color:var(--font-color); font-size:16px">You can buy it on </span><a href="https://store.steampowered.com/app/1681840/Abalon_formerly_Summoners_Fate/" style="background-color:var(--article-main-background); font-size:16px" target="_blank">Steam</a><span style="background-color:var(--article-main-background); color:var(--font-color); font-size:16px">.</span></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/07/tabletop-inspired-roguelike-adventure-abalon-adds-linux-steamos-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/tabletop-inspired-roguelike-adventure-abalon-adds-linux-steamos-support/</guid>
-      <pubDate>Wed, 12 Jul 2023 13:55:18 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1225139934id22948gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Deathbulge: Battle of the Bands releasing August 8</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Following the Kickstarter success in 2019, Deathbulge: Battle of the Bands finally has a released date and it's coming soon on August 8th. The Kickstarter pulled in 2,247 backers pledging $59,202 - so hopefully we're about to see another great game.</p>
-<p>What is it: A role-playing game featuring musical themes with an affinity for the sick and righteous. The story revolves around a deadly battle of the bands contest, where entrants can attack and be attacked with music. Based on the <a href="https://deathbulge.com/comics" target="_blank">Deathbulge comic</a> from Dan Martin.</p>
-<p>Check out the new trailer:</p>
-<div class="hidden_video" data-video-id="hXEP4cm7Res"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/de3f7bdec9ee22fbfa7b9e8b05f1dc04.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/hXEP4cm7Res" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Customise the band with 9 musically-themed classes to choose from, each with their own attacks, perks and sensational appearance.</li>
-<li>Kick down every single door you come across, regardless of how unlocked they might be.</li>
-<li>Some doors will be too strong to kick down. That's why you gotta kick down weaker doors to level up your door kicking skill until you're strong enough.</li>
-<li>Fancy combat system that focuses on BAR EFFECTS. What happens BETWEEN turns makes all the difference, bringing real-time elements into the turn-based combat.</li>
-<li>Sew patches of band logos onto your BATTLE JACKET for extra perks in BATTLE.</li>
-<li>No Random Encounters! Monsters will be shown on the field for your avoiding leisure.</li>
-<li>Original soundtrack that'll make you say things like SIIICK and OH RIGHT ON.</li>
-<li>Bursting at the seams with humour, absurdity and a wide variety of colourful characters, armed with an abundance of dialogue faces to express themselves TO THE MAX.</li>
-<li>A rich world packed with well over 100 unique NPCs.</li>
-<li>Even the ITEMS have personality. Say bye bye to the generic "HEALTH POTION". Local NPC Barry Friendly is taking care of the soothing beverages around here. Sink into a warm cup of BARRY FRIENDLY'S TEA whenever your health is low. Maybe you'll even have the pleasure of meeting Barry at some point.</li>
-<li>One of the enemies you fight is a skateboarding platypus.</li>
-</ul>
-</blockquote>
-<p>Follow <a href="https://store.steampowered.com/app/1083790/Deathbulge_Battle_of_the_Bands/" target="_blank">it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/07/deathbulge-battle-of-the-bands-releasing-august-8/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/deathbulge-battle-of-the-bands-releasing-august-8/</guid>
-      <pubDate>Wed, 12 Jul 2023 08:30:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1752370032id22947gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Comedy</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Music</category>
-      
-    </item>
-    
-    <item>
-      <title>Vampire Survivors switching to new game engine on August 17</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The smash indie hit Vampire Survivors is planning to finally move over to their newer and upgraded game engine on August 17th.</p>
-<p>A big change for the game to go from Phaser to Unity but it should hopefully be well worth it. This will bring with it better cross-platform support, big performance improvements and give the developers a better platform to continue expanding the game as time goes on - like for the upcoming local co-op mode.</p>
-<p>The news was announced on <a href="https://steamcommunity.com/games/1794680/announcements/detail/3650779172120262146" target="_blank">Steam</a> where they've also noted that Steam Trading Cards are now live, plus <a href="https://steamcommunity.com/linkfilter/?url=https://www.youtube.com/watch?v=7muK6D2Mvfk&amp;t=5870s" target="_blank">IGN</a> recently got a co-op hands on with an unfinished build that might answer some questions for you. The developers say they're still working on it, trying to put in as many co-op options as possible along with a special item only in co-op.</p>
-<p>On top of that they're also hosting a real-world co-op event hands-on in early August in London (UK). More details on that when they announce it.</p>
-<p>The original co-op trailer if you missed it:</p>
-<div class="hidden_video" data-video-id="-j2budq0Qpo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f6c3fac23889a68c971fddc53dabb366.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-j2budq0Qpo" target="_blank">See video</a></div></div>
-<p>Available to <a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/?curator_clanid=4218320" target="_blank">buy on Steam</a>. It is Steam Deck Verified and works great on desktop Linux with Proton too. It does have a Native Linux version in Beta but it's not really clear what they plan to do with it there.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/07/vampire-survivors-switching-to-new-game-engine-on-august-17/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/vampire-survivors-switching-to-new-game-engine-on-august-17/</guid>
-      <pubDate>Wed, 12 Jul 2023 08:08:00 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1186597916id22946gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Action</category>
-      
-      <category>Bullet Hell</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>NVIDIA Vulkan Beta driver 525.47.31 released</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>NVIDIA has released a fresh update to their Vulkan Beta driver for developers with version 525.47.31 now available for testing.</p>
-<p>This is their special developer-focused driver series, meant for those who really need the very latest Vulkan extensions and features. Or, for the rare occasion for gamers where they add a Vulkan extension used by say a newer version of Proton / DXVK / VKD3D-Proton. For most gamers, just stick with their mainline driver series.</p>
-<p>Here's what's been added:</p>
-<blockquote>
-<p class="plain-list-title"><strong>New:</strong></p>
-<ul>
-<li><a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_KHR_cooperative_matrix.html" target="_blank">VK_KHR_cooperative_matrix</a></li>
-<li><a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_EXT_depth_bias_control.html" target="_blank">VK_EXT_depth_bias_control</a></li>
-<li><a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_EXT_dynamic_rendering_unused_attachments.html" target="_blank">VK_EXT_dynamic_rendering_unused_attachments</a></li>
-<li>VK_MESA_video_decode_av1 preliminary implementation for Ada GPUs</li>
-<li><a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_NV_displacement_micromap.html" target="_blank">VK_NV_displacement_micromap</a> updated to version 2</li>
-<li>Vulkan video updates:
-<ul>
-<li><a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_encode_queue.html" target="_blank">VK_KHR_video_encode_queue</a> version update 8-&gt;9</li>
-<li><a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_EXT_video_encode_h264.html" target="_blank">VK_EXT_video_encode_h264</a> version update 10-&gt;11</li>
-</ul>
-</li>
-</ul>
-<p class="plain-list-title"><strong>Fixes:</strong></p>
-<ul>
-<li>Fix for VK_DYNAMIC_STATE_RASTERIZATION_SAMPLES_EXT</li>
-<li>Fix 64-bit shader disk cache issues</li>
-</ul>
-</blockquote>
-<p>See more on the <a href="https://developer.nvidia.com/vulkan-driver" target="_blank">Vulkan Beta driver page</a>.</p>
-<p>Are you waiting on anything specific being added / fixed in NVIDIA's drivers?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/07/nvidia-vulkan-beta-driver-5254731-released/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/nvidia-vulkan-beta-driver-5254731-released/</guid>
-      <pubDate>Wed, 12 Jul 2023 07:38:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Drivers</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Microsoft wins against FTC to buy Activision Blizzard</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Well, the results are here. In the USA the FTC was trying to block Microsoft from acquiring Activision Blizzard but Microsoft has won the fight. Now Microsoft are one big step closer to actually properly closing the deal, and a rather big consolidation of the gaming industry given how big Activision Blizzard are.</p>
-<p>As per the <a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.413969/gov.uscourts.cand.413969.305.0_1.pdf" target="_blank">decision</a>:</p>
-<blockquote>
-<p>Microsoft’s acquisition of Activision has been described as the largest in tech history. It deserves scrutiny. That scrutiny has paid off: Microsoft has committed in writing, in public, and in court to keep Call of Duty on PlayStation for 10 years on parity with Xbox. It made an agreement with Nintendo to bring Call of Duty to Switch. And it entered several agreements to for the first time bring Activision’s content to several cloud gaming services.</p>
-<p>This Court’s responsibility in this case is narrow. It is to decide if, notwithstanding these current circumstances, the merger should be halted—perhaps even terminated—pending resolution of the FTC administrative action. For the reasons explained, the Court finds the FTC has not shown a likelihood it will prevail on its claim this particular vertical merger in this specific industry may substantially lessen competition. To the contrary, the record evidence points to more consumer access to Call of Duty and other Activision content. The motion for a preliminary injunction is therefore DENIED.</p>
-</blockquote>
-<p>This means the temporary restraining order against the acquisition will be removed on July 14th, unless the FTC obtains a "stay pending appeal from the Ninth Circuit Court of Appeals".</p>
-<p>Microsoft still have a fight ahead in the UK though, since the CMA (Competition and Markets Authority) blocked the deal but naturally Microsoft is appealing the decision with a hearing set to begin on July 28th. So they're not completely out of the woods yet but it's probable Microsoft will end up winning there too. <strong>Update</strong> 16:21 UTC - Brad Smith, Vice Chair and President Microsoft, put a statement on <a href="https://twitter.com/BradSmi/status/1678796043545350144/photo/1" target="_blank">Twitter</a>:</p>
-<blockquote>
-<p>After today's court decision in the U.S., our focus now turns back to the UK. While we ultimately disagree with the CMA’s concerns, we are considering how the transaction might be modified in order to address those concerns in a way that is acceptable to the CMA. In order to prioritize work on these proposals, Microsoft and Activision have agreed with the CMA that a stay of the litigation in the UK would be in the public interest and the parties have made a joint submission to the Competition Appeal Tribunal to this effect.</p>
-</blockquote>
-<p>What do you think to this outcome?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/07/microsoft-wins-against-ftc-to-buy-activision-blizzard/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/07/microsoft-wins-against-ftc-to-buy-activision-blizzard/</guid>
-      <pubDate>Tue, 11 Jul 2023 15:44:28 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/365091225id22944gol.jpg" type="image/jpeg"/>
-      
-      <category>Activision Blizzard</category>
-      
-      <category>Microsoft</category>
-      
-      <category>Misc</category>
       
     </item>
     
