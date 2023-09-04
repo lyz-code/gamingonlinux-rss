@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-09-03 07:24:46.227453</pubDate>
+    <pubDate>2023-09-04 07:24:31.320984</pubDate>
 
     
     <image>
@@ -209,7 +209,7 @@
 <p>I've started using optimus-manager after I noticed some performance improvements of nearly 10% more frames per second when using my dedicated GPU only from the boot rather than using some GPU delegation tool like Prime Rendering. But that is something to be discussed in another article. This software basically works by probing well-known PCI output for GPUs using <code class="inline-code"><tt>lspci</tt></code> auto generating a Xorg configuration for one of the three following modes depending on your setup before loading your login manager:</p>
 <ul>
 <li>Hybrid: iGPU is the primary, offload to dGPU when needed</li>
-<li>Dedicated: X an applications will always run on dGPU</li>
+<li>Dedicated: X and applications will always run on dGPU</li>
 <li>Integrated: iGPU will be the only GPU available(alias to Intel mode).</li>
 </ul>
 <p>It also comes with a nice Qt-based system tray applet for those who want to change the configuration on the go and relogin on X to apply it. My current <a href="https://gitlab.com/nwildner/dotfiles/-/blob/master/etc/optimus-manager/optimus-manager.conf?ref_type=heads" target="_blank">configuration</a> is: Hybrid mode when booting on battery, Dedicated mode when booting with a power cord attached.</p>
@@ -221,9 +221,9 @@
 0000:00:02.0 VGA compatible controller: Intel Corporation Alder Lake-P GT1 [UHD Graphics] (rev 0c)<br/>
 0000:01:00.0 VGA compatible controller: NVIDIA Corporation GA104M [GeForce RTX 3070 Mobile / Max-Q] (rev a1)</code></p>
 <p>To make things harder, Xorg has some arcane configuration where Domain ID and BUS ID need to be swapped in order(first 2 columns of <code class="inline-code"><tt>lspci</tt></code> output), and running <code class="inline-code"><tt>lspci</tt></code> in compatibility mode to suppress the Domain ID will generate a broken Xorg configuration crashing X.</p>
-<p>While this isn't a deal breaker because I already have a workaround in place, I was wondering it this issue was ever going to be fixed. Tried to download to submit myself some patches that would handle the PCI Domain ID stuff, but to my surprise I'm not the only one not really familiarized with the software. The lead developer is also struggling on this one.</p>
+<p>While this isn't a deal breaker because I already have a workaround in place, I was wondering it this issue was ever going to be fixed. Tried to download to submit some patches myself that would handle the PCI Domain ID stuff, but to my surprise I'm not the only one not really familiarized with the software. The lead developer is also struggling on this one.</p>
 <p>Since there wasn't much activity on optimus-manager repository lately, I decided to google keywords like "is optimus manager active?", "is optimus manager abandoned" , "state of optimus manager" and unfortunately I've found an announcement from the lead developer of this tool that it is a little saddening: <a href="https://github.com/Askannz/optimus-manager/issues/543" target="_blank">[Discussion] The state of optimus-manager</a>. Basically the developer stated that he does not have the energy, the hardware neither the knowledge to keep up with such a big project that looked simpler at first place when forked from Ubuntu. <strong>And that is OK</strong>.</p>
-<p>While it is sad that optimus-manager is not being actively maintained anymore, it is nice to see the official feedback from the lead developer, admitting that he might have felt into the trap where the project seemed to be simpler that he thought.</p>
+<p>While it is sad that optimus-manager is not being actively maintained anymore, it is nice to see the official feedback from the lead developer, admitting that he might have fell into the trap where the project seemed to be simpler that he thought.</p>
 <p><strong>Some lessons to be learned here are:</strong></p>
 <ul>
 <li>For those who want to use optimus-manager, there could be other alternatives like Prime and stay on hybrid mode always. Don't take my word for granted on performance and try it by yourself.</li>
