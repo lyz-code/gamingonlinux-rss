@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-09-04 07:24:31.320984</pubDate>
+    <pubDate>2023-09-05 07:24:33.486697</pubDate>
 
     
     <image>
@@ -18,6 +18,178 @@
     </image>
 
     
+    
+    <item>
+      <title>Building a Retro Linux Gaming Computer Part 32: Two Steps Forward, One Step Back</title>
+      <author>Hamish</author>
+      <description><div class="content group e-content">
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/08/building-a-retro-linux-gaming-computer-part-31-the-fear-of-loss/" target="_blank">Part 31: The Fear of Loss</a></strong></p>
+<p>Over the past few months I have been making a number of upgrades and changes to Dianoga, and the time has come to lay them all out. The first upgrade I purchased at the start of the year was a simple one, and is one I have already made an allusion to in passing. German peripheral manufacturer Perixx still makes optical mice sporting a PS/2 connector, letting me experience the best of both worlds with their PERIMICE-209 WP model.</p>
+<p>A cranky old ball mouse would indeed be more period accurate, but there are still some limits to what I am willing to go through for the sake of nostalgia. The only problem I encountered was not having the scroll wheel work on Linux, but this was resolved by using the mouseconfig utility and identifying the mouse as an MS Intellimouse, which is actually suggested in the official Red Hat Linux 7.3 documentation. Besides, my next upgrade would bring Dianoga more in line with the late 1990s.</p>
+<p>While perusing the wares at the Barrhead Thrift Shoppe on 46th Street my brother found an AcerView 34T UVGA 13" CRT monitor selling for just $2 Canadian Dollars, allowing me to retire the LEN L151p LCD I had been using. As well as not being in keeping with the aesthetic, the LCD also had the annoying habit of showing a warning about being out of range on top of what otherwise looked to be a workable display, especially when playing games that utilized SVGAlib for graphics.</p>
+<p>I could get around this by launching certain more pliant SVGAlib games such as the final build of <em>LinCity</em> before starting up the offending applications, as for whatever reason this would seem to soothe the nerves of the display, but I was more than happy to leave those headaches behind. Things were not all clear sailing with the AcerView CRT, however; Windows 98 would always default to shifting the image to the far right, beyond the bounds of the screen.</p>
+<p>Compensating for this in the ATI control panel helped somewhat, but it was never perfect, and would not stay persistent upon changing screen resolutions. Linux under XFree86 also showed similar problems, but by using the xvidtune application I was able to produce workable modelines I could then add to my XF86Config-4 file to keep them preserved. I resolved that fiddling with the sizing knobs was just part of the experience, but a solution would come after something else went wrong.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7528814021693852457gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7528814021693852457gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2290804621693852458gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2290804621693852458gol6.png"/></a></p>
+<p>It was then that the inevitable happened, and the Fujitsu 10.25 GB IDE hard drive the computer came with started to show disk failures in ScanDisk. While the Hitachi 6.01 GB 9.5MM PATA hard drive I had installed Red Hat Linux 7.3 on was still working, albiet with a few quirks of its own, it was becoming clear that I was reaching the end of the road with my older platter media, and would need to go with either an SD or Compact Flash solution instead.</p>
+<p>I already had in my possession a Syba 2.5" IDE to Dual Compact Flash Drive intended for use in laptops, and since I already had a PATA to IDE converter in place for the Hitachi, this proved to be no barrier to using it in Dianoga. I also had a set of two cheap Onefavor 8 GB compact flash cards on hand. Before installing Windows 98 I found I had to first format the card as fat32 with the LBA file system flag set, but it otherwise installed fine, and actually sorted my issues with the CRT display.</p>
+<p>When moving on to installing Red Hat Linux 7.3 I would get a warning about the partition table being inconsistent if I had more than one compact flash card installed. The simplest solution was just to pull the other compact flash card for the install, which at least gives the benefit of ensuring Windows 98 would be unharmed while partitioning. While the performance was acceptable under Windows 98, the slow read speeds of the Onefavor card would cause the system to stall at times under Linux.</p>
+<p>My QDI Advance 5/133 motherboard places a strict limit on the size of hard drive I can use, but I figured I would chance buying another cheap Cloudisk 16 GB 133x compact flash card in the hopes that I could at least make it work by flashing a later BIOS. This proved to be a mistake, but not because of the BIOS, which actually had no complaints. Red Hat Linux 7.3 literally took all night to install, and was crawling worse than it had with the Onefavor card, giving me a rude awakening.</p>
+<p>In this case the problem was really on me, as the read and write speeds are displayed on the Cloudisk card label, showing off my lack of due diligence. In the end I bit the bullet and bought a more expensive but far faster Transcend 16 GB compact flash card running at 1066x speeds, which brought down the install time in Anaconda to just shy of half an hour. I now had more than doubled the amount of hard drive space Linux had available, and could enjoy more games with my CRT monitor.</p>
+<p><strong>Carrying on in Part 33: I Hate Mondays</strong></p>
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a> </strong></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/building-a-retro-linux-gaming-computer-part-32-two-steps-forward-one-step-back/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/building-a-retro-linux-gaming-computer-part-32-two-steps-forward-one-step-back/</guid>
+      <pubDate>Mon, 04 Sep 2023 22:17:36 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1873732892id23205gol.jpg" type="image/jpeg"/>
+      
+      <category>Editorial</category>
+      
+      <category>Misc</category>
+      
+      <category>Retro</category>
+      
+    </item>
+    
+    <item>
+      <title>Here&#39;s the most popular Steam Deck games for August 2023</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another fresh month and Valve has revealed what were the most played games on Steam Deck. Plenty of them are of course quite obvious based on what released recently.</p>
+<p>With the list sorted by hours played top to bottom the Steam Deck top 20 for August 2023 are:</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" target="_blank">Baldur's Gate 3</a></li>
+<li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank">ELDEN RING</a></li>
+<li><a href="https://store.steampowered.com/app/1868140/DAVE_THE_DIVER/" target="_blank">DAVE THE DIVER</a></li>
+<li><a href="https://store.steampowered.com/app/413150/Stardew_Valley/" target="_blank">Stardew Valley</a></li>
+<li><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/" target="_blank">Vampire Survivors</a></li>
+<li><a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank">Grand Theft Auto V</a></li>
+<li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank">Red Dead Redemption 2</a></li>
+<li><a href="https://store.steampowered.com/app/1942280/Brotato/" target="_blank">Brotato</a></li>
+<li><a href="https://store.steampowered.com/app/377160/Fallout_4/" target="_blank">Fallout 4</a></li>
+<li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">Cyberpunk 2077</a></li>
+<li><a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" target="_blank">The Elder Scrolls V: Skyrim Special Edition</a></li>
+<li><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank">The Witcher 3: Wild Hunt</a></li>
+<li><a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/" target="_blank">The Binding of Isaac: Rebirth</a></li>
+<li><a href="https://store.steampowered.com/app/1888160/ARMORED_CORE_VI_FIRES_OF_RUBICON/" target="_blank">ARMORED CORE VI FIRES OF RUBICON</a></li>
+<li><a href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/" target="_blank">Hogwarts Legacy</a></li>
+<li><a href="https://store.steampowered.com/app/646570/Slay_the_Spire/" target="_blank">Slay the Spire</a></li>
+<li><a href="https://store.steampowered.com/app/1145360/Hades/" target="_blank">Hades</a></li>
+<li><a href="https://store.steampowered.com/app/2420510/HoloCure__Save_the_Fans/" target="_blank">HoloCure - Save the Fans!</a></li>
+<li><a href="https://store.steampowered.com/app/1282100/Remnant_II/" target="_blank">Remnant II</a></li>
+<li><a href="https://store.steampowered.com/app/2218750/Halls_of_Torment/" target="_blank">Halls of Torment</a></li>
+</ul>
+<p>Some recent Steam Deck videos from the above list:</p>
+<div class="hidden_video" data-video-id="b8gNCg3GbbQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/443a77282c24fbc5915edfbfdc73f603.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/b8gNCg3GbbQ" target="_blank">See video</a></div></div>
+<div class="hidden_video" data-video-id="zwZTeLCa6pk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b431d8c84e510911f136057a4691559f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/zwZTeLCa6pk" target="_blank">See video</a></div></div>
+<p>Be sure to <a href="https://www.youtube.com/@gamingonlinux" target="_blank">follow GamingOnLinux on YouTube</a> for more!</p>
+<p>I have no doubt that <strong>Starfield</strong> will be appearing near-top of the list for September 2023, which Valve will give out early next month. Even though <a href="https://www.gamingonlinux.com/2023/09/heres-how-starfield-runs-on-steam-deck-and-desktop-linux/" target="_blank">Starfield doesn't run particularly well on Steam Deck</a>, plenty of people will be brute-forcing their way through it without a doubt.</p>
+<p>What have you been playing lately?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/most-popular-steam-deck-games-august-2023/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/most-popular-steam-deck-games-august-2023/</guid>
+      <pubDate>Mon, 04 Sep 2023 17:37:44 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1462531952id23204gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Listicle</category>
+      
+      <category>Misc</category>
+      
+      <category>Round-up</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA Vulkan Beta 535.43.09 and stable 535.104.05 drivers out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA recently released two fresh driver upgrades for Linux, although one of them we have no idea what they actually changed. Here's what's up.</p>
+<p>Firstly, NVIDIA launched the stable driver update <a href="https://www.nvidia.com/download/driverResults.aspx/210649/en-uk/" target="_blank">535.104.05</a> on August 22nd. However, for the second time recently, they seem to have copy-pasted the driver changelog from the previous release. This driver has the <em>same</em> changelog as 535.98, and when 535.98 released it had the same changelog as 535.86.05 but they later corrected it. I tried to contact NVIDIA this time but here we are nearly two weeks later and they haven't fixed it. So what did they change in 535.104.05? No idea.</p>
+<p>On September 2nd they also released a fresh <a href="https://developer.nvidia.com/vulkan-driver" target="_blank">Vulkan Beta</a> Driver 535.43.09 for developers with these changes:</p>
+<blockquote>
+<ul>
+<li>New:
+<ul>
+<li><a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_NV_descriptor_pool_overallocation.html" target="_blank">VK_NV_descriptor_pool_overallocation</a></li>
+</ul>
+</li>
+<li>Fixes:
+<ul>
+<li>Bug fixes for <a href="https://www.khronos.org/registry/vulkan/specs/1.3-extensions/man/html/VK_NV_device_generated_commands_compute.html" target="_blank">VK_NV_device_generated_commands_compute</a></li>
+<li>Correctly clear fragment shading rate attachments with LOAD_OP_CLEAR</li>
+<li>Fix potential device lost with vkCmdBlitImage when fragment shading rate is used</li>
+<li>Correctly restore pipeline static state if previously overwritten by dynamic state set calls and pipeline is rebound</li>
+<li>Fix dual-source blending when output is written to an array variable</li>
+<li>Fix VK_KHR_cooperative_matrix bug with variable pointer shared memory CTS tests</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/nvidia-vulkan-beta-535-43-09-and-stable-535-104-05-drivers-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/nvidia-vulkan-beta-535-43-09-and-stable-535-104-05-drivers-out-now/</guid>
+      <pubDate>Mon, 04 Sep 2023 17:24:43 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Here&#39;s how Starfield runs on Steam Deck and desktop Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Want to know how <strong>Starfield</strong> runs on Steam Deck? Or desktop Linux? Well, I've given it a run to see what I think of it and here's some early info for you.</p>
+<p>For Steam Deck, Valve released <em>two</em> Steam Deck OS upgrades to solve some issues, so you'll want to make sure you check for system updates first to get Steam Deck OS 3.4.10 to fix a GPU driver crash and a black screen problem. Once you update, Starfield <em>will</em> run on Steam Deck with Proton Experimental but the performance <em>is</em> an issue. Additionally, weirdly, the Start / Select buttons on Steam Deck with Proton Experimental are swapped - but you can change them over in Steam Input (noted in video 2 below).</p>
+<p>On the lowest possible details with FSR set ON, some sections are fine but when things heat up, and just being in certain areas, the performance will repeatedly drop hard below 30FPS. So right now, it's far less than <em>properly</em> playable.</p>
+<p>Here's two Steam Deck videos of the early game:</p>
+<div class="hidden_video" data-video-id="zPVzHbNwnN4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f0d272858c248912c2871b81a836f894.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/zPVzHbNwnN4" target="_blank">See video</a></div></div>
+<p>The next video showcases the performance issues you can see quite well, in the city of New Atlantis:</p>
+<div class="hidden_video" data-video-id="JznnRzCjGKc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f8352bad67f62c60ac66652060a6b1ee.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/JznnRzCjGKc" target="_blank">See video</a></div></div>
+<p>If Bethesda manage to do some performance patches, where we can get it to a stable 30FPS then it would be pretty great because the gameplay would hold up quite well on Steam Deck at a static 30. Or perhaps Valve have some boosts waiting in Proton and SteamOS upgrades to come, we can hope anyway. This screenshot sums up the experience when running around a city on Steam Deck:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6113035261693828313gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6113035261693828313gol1.jpeg"/></a></p>
+<p>There's already a number of performance mods out there, including one noted to be for Steam Deck, but in my own testing they don't work particularly well on Steam Deck and one in particular doing the rounds really breaks the lighting.</p>
+<p>As for desktop Linux the situation is a little more complicated. As per what the developer of VKD3D-Proton (the Direct3D to Vulkan translation in Proton) <a href="https://github.com/HansKristian-Work/vkd3d-proton/issues/1678#issuecomment-1702489043" target="_blank">posted</a> on GitHub there's big issues for NVIDIA and slightly less so for AMD:</p>
+<blockquote>
+<p>NV 535 stable is clearly bugged here. 525.47.35 at least seems to work though ...</p>
+<p>Performance on NV currently is known to be extremely poor due to being completely CPU bound. This is caused by lack of us enabling NV_device_generated_compute on NV due to a driver bug. <a href="https://github.com/HansKristian-Work/vkd3d-proton/pull/1639" target="_blank">#1639</a> for details. When the beta driver updates, it should start running much better.</p>
+<p>On Mesa desktop, please ensure that:</p>
+<ul>
+<li>You're running kernels 5.15.121+, 6.1.40+ or 6.4.5+ to fix a kernel regression that affected Starfield. Without it, GPU will hang randomly.</li>
+<li>You're running mesa from git to get VK_NV_device_generated_commands_compute for optimal performance.</li>
+<li>Proton Experimental</li>
+</ul>
+</blockquote>
+<p>I've been unable to use Mesa-git on Kubuntu in my testing, because the current build from <a href="https://launchpad.net/~oibaf/+archive/ubuntu/graphics-drivers" target="_blank">Oibaf</a> seems to break Vulkan. So sticking with Kisak's <a href="https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa" target="_blank">fresh Mesa PPA</a> for 23.1.6 here's how it ran for me:</p>
+<div class="hidden_video" data-video-id="CQYYrE8HPUc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4ed9f425ba68a16762898961a14da200.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/CQYYrE8HPUc" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/heres-how-starfield-runs-on-steam-deck-and-desktop-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/heres-how-starfield-runs-on-steam-deck-and-desktop-linux/</guid>
+      <pubDate>Mon, 04 Sep 2023 17:02:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1711993686id23195gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Initial Thoughts</category>
+      
+      <category>New Release</category>
+      
+    </item>
     
     <item>
       <title>Linux user share remains above macOS in the latest Steam Survey</title>
@@ -3834,133 +4006,6 @@ Join familiar faces from <em>To the Moon, Finding Paradise, </em>and <em>Impo
       <category>Misc</category>
       
       <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Comic book adventure Penny Larceny: Gig Economy Supervillain is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Enjoy comics and visual novels? How about super heroes? You should take a look at the recently released Penny Larceny: Gig Economy Supervillain which looks great. This comes from the same team who created Arcade Spirits, which was also pretty good!</p>
-<p>More about it: "It's a world of heroes and villains, masks and capes, and Penny Larceny -- grifter, con artist, catburglar -- is barely scraping by. Life's hard for a young mask trying to make it big, but now she's gained access to Crimr, the gig-economy service for henchpersons looking to help supervillains with their evil, evil schemes! Guide Penny through her new career, pull off daring heists, and unravel the conspiracies which allow the rich and powerful to maintain their profitable status quo."</p>
-<div class="hidden_video" data-video-id="dorZuRoG_s4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ad741502f4a8bafa6c09c9e5dc90c227.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/dorZuRoG_s4" target="_blank">See video</a></div></div>
-<p>Feature Highlight:</p>
-<blockquote>
-<ul>
-<li><strong>A Gigaverse of Timelines:</strong> With multiple paths and endings, every playthrough is a new adventure. Will you save the world, or will you rule over it?</li>
-<li><strong>Play Your Way:</strong> The power's in your hands -- choose your own pronouns, your sneaky alias, comfortable naughtiness levels, and even whether you want romance or not! Accessibility options abound as well, including OpenDyslexia fonts and text-to-speech for visual impairment.</li>
-<li><strong>The Rogue's Gallery:</strong> From your allies to your enemies, meet a diverse cast spanning good to evil and all between. Forge friendships and realize relationships!</li>
-<li><strong>Pet a Cat and/or Destroy Capitalism:</strong> I mean, you'll probably do at least one of those things.</li>
-</ul>
-</blockquote>
-<p>Available <a href="https://store.steampowered.com/app/2227030/Penny_Larceny_Gig_Economy_Supervillain/" target="_blank">on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/comic-book-adventure-penny-larceny-gig-economy-supervillain-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/comic-book-adventure-penny-larceny-gig-economy-supervillain-is-out-now/</guid>
-      <pubDate>Tue, 15 Aug 2023 18:30:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1588207613id23104gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>LGBTQ+</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>We Stay Behind is the next game from Unforeseen Incidents developer</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Did you enjoy Unforeseen Incidents from Backwoods Entertainment? They've revealed their new title We Stay Behind, a single-player third-person mystery between dreams and reality. It's currently funding on Kickstarter, and they've again teamed up with Application Systems Heidelberg for the publishing and marketing.</p>
-<p>More about it: "A comet is on course to obliterate the small town of Laburnum Creek. Renowned writer Laura Tanner visits the former health resort to interview several inhabitants who are refusing to leave. But there’s something rotten at the heart of this picturesque town. Curious characters and surreal encounters await Laura in an enigmatic journey between dreams and reality. Will Laburnum Creek cast its spell over her too? Or will she jeopardize everything to uncover the truth?"</p>
-<div class="hidden_video" data-video-id="qTs4U8Q0TTA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9de9e3e4496f89d381914b44dbfd5034.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/qTs4U8Q0TTA" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<ul>
-<li>Experience a surreal tale of mystery where dreams and reality intersect.</li>
-<li>Explore an interactive story about repressed trauma and buried secrets.</li>
-<li>Guide the protagonist’s choices and re-shape her perception of the world.</li>
-<li>Enjoy a puzzle-free experience in a beautiful, stylized 3D environment.</li>
-<li>Meet compelling and quirky characters, fully voiced by talented actors.</li>
-</ul>
-<p>In regards to Native Linux support they said:</p>
-<blockquote>
-<p>We're making builds for macOS and Linux all the time and we hope that we will be able to optimize the game to release it for these platforms with reasonable system requirements. We'll see what we can do later in the development process and we are convinced that there is some room for improvement.</p>
-<p>We did release Unforeseen Incidents on Mac and Linux and those two platforms are highly important to us.</p>
-</blockquote>
-<p>You can follow it on <a href="https://www.kickstarter.com/projects/westaybehind/we-stay-behind/description" target="_blank">Kickstarter</a> and <a href="https://store.steampowered.com/app/1142570/We_Stay_Behind/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/we-stay-behind-is-the-next-game-from-unforeseen-incidents-developer/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/we-stay-behind-is-the-next-game-from-unforeseen-incidents-developer/</guid>
-      <pubDate>Tue, 15 Aug 2023 18:24:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1983524078id23103gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Crowdfunding</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Overwatch 2 becomes the worst user-reviewed game on Steam</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>While other developers like Larian are riding high with Baldur's Gate 3, it seems Blizzard are not doing so well with the recent Steam release of Overwatch 2 becoming the worst user-reviewed game of all time on Steam (via <a href="https://steam250.com/bottom100" target="_blank">Steam 250</a>). <em>Overwatch 2 is <a href="https://www.gamingonlinux.com/2023/08/overwatch-2-out-on-steam-works-fine-on-steam-deck-and-desktop-linux/" target="_blank">playable on Linux and Steam Deck</a> thanks to Proton.</em></p>
-<p>This hasn't stopped it pulling in plenty of players though, with it hitting an all-time high of 75,608 playing <em>just</em> on Steam 3 days ago according to <a href="https://steamdb.info/app/2357570/charts/" target="_blank">SteamDB</a>. As I type this it still has 61,702 playing, so even though plenty of people are making themselves heard in Steam reviews - a lot of people are still playing it and likely enjoying their time with it. This puts it currently as the 15th most played game on Steam for peak player counts.</p>
-<p>You don't have to look far into why the reaction has been so severe though. Steam gives players a real feeling of power thanks to the user review system, that certain other stores don't have, so it was expected this would happen due to the missteps Blizzard have made with Overwatch 2.</p>
-<p>So what's happened?</p>
-<p>Well it was supposed to be a <em>sequel</em>, but the reality is far different. Blizzard removed the original paid game, and turned the new version into a free to play version while continuing the live service model. Blizzard also cancelled the PvE content that was one of the bigger (biggest?) selling points of Overwatch 2. There is now a small amount of PvE available in the Invasion update - but you have to pay extra for it.</p>
-<p>A <em>lot</em> of the negative reviews are Chinese players too, since Blizzard <a href="https://investor.activision.com/news-releases/news-release-details/blizzard-entertainment-and-netease-suspending-game-services" target="_blank">ended</a> their agreement with NetEase which suspended their ability to play Overwatch and other titles officially. Now being on Steam though, Chinese players can make their voices heard (if they use a VPN to get onto normal Steam).</p>
-<p><em>There's currently around 117,446 reviews on Steam with 106,596 being Negative.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/overwatch-2-becomes-the-worst-user-reviewed-game-on-steam/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/overwatch-2-becomes-the-worst-user-reviewed-game-on-steam/</guid>
-      <pubDate>Mon, 14 Aug 2023 14:28:35 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1968792312id23102gol.jpg" type="image/jpeg"/>
-      
-      <category>Activision Blizzard</category>
-      
-      <category>Editorial</category>
-      
-      <category>FPS</category>
-      
-      <category>Free Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Check out this modern rewrite of the classic racer wipEout</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Do you remember the original wipEout? An absolute classic racer originally released 1995 for Sony PlayStation, DOS and later the SEGA Saturn. Now there's a modern cross-platform remake available to try out.</p>
-<p>This wipEout Remaster comes thanks to developer Dominic Szablewski, who used the code leak from 2022. This does mean it's something of a legal uncertainty because leaked code could be nuked by rights holders at any time. Although, we are talking about a really <em>old</em> game no longer sold and supported.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12624739471692021213gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12624739471692021213gol1.jpg"/></a></p>
-<p>Some of the benefits of this remake include cross-platform support with SDL2, better memory management, better performance along with high FPS support, rewritten and upgraded physics and much more. There's still work to be done though with some features missing but it's very playable.</p>
-<p>I have some really fond memories of playing the original on an actual PlayStation. Seeing it run in my browser, on a laptop is just - wow. I love how technology moves on and enables things like this, and I especially love seeing classics remade in such a way so more people can experience them and learn from them.</p>
-<p>Check out the writeup from the developer <a href="https://phoboslab.org/log/2023/08/rewriting-wipeout" target="_blank">here</a>, the code is on <a href="https://github.com/phoboslab/wipeout-rewrite" target="_blank">GitHub</a> and you can play it in your <a href="https://phoboslab.org/wipegame/" target="_blank">browser</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/check-out-this-modern-rewrite-of-the-classic-racer-wipeout/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/check-out-this-modern-rewrite-of-the-classic-racer-wipeout/</guid>
-      <pubDate>Mon, 14 Aug 2023 13:55:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/175498956id23101gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Racing</category>
-      
-      <category>Retro</category>
-      
-      <category>Source Available</category>
       
     </item>
     
