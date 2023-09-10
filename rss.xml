@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-09-09 07:24:31.720768</pubDate>
+    <pubDate>2023-09-10 07:24:29.631955</pubDate>
 
     
     <image>
@@ -18,6 +18,55 @@
     </image>
 
     
+    
+    <item>
+      <title>Here&#39;s how to get PAYDAY 3 Beta to work on Steam Deck &amp; Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>PAYDAY 3 has a technical Beta currently live, as they're testing out their servers ready for the full release on September 21st. Getting it running on Steam Deck and desktop Linux needs a little fix to work so here's how.</p>
+<p>It's quite simple but does require a few steps and just a little patience.</p>
+<p>First of all, I would suggest signing up for their <a href="https://nebula.starbreeze.com/" target="_blank">Nebula account</a> system and then doing the Steam account linking. This will then allow the game to just auto log in. This third-party account is necessary right now. </p>
+<p>Now, when you try to launch the game you'll be greeted by an error that will look a bit like this:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5732671451694243437gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5732671451694243437gol1.png"/></a></p>
+<p>Thankfully it's easy to get around but here is where you need a little patience, as some parts can take a little while to load. You'll need to install <em>Protontricks</em>, which is available as a Flatpak from <a href="https://flathub.org/apps/com.github.Matoking.protontricks" target="_blank">Flathub</a> (via Discover on Steam Deck in desktop mode). You <em>may</em> need to give Protontricks permissions to read the drive PAYDAY 3 is installed on, like an SD Card for Steam Deck or a different Steam Library drive on desktop. Run these in terminal:</p>
+<p>For Desktop Linux:</p>
+<p><code class="inline-code">flatpak override --user --filesystem=/mnt/MySSD/SteamLibrary com.github.Matoking.protontricks</code></p>
+<p>Steam Deck SD Cards:</p>
+<p><code class="inline-code">flatpak override --user --filesystem=/run/media/mmcblk0p1 com.github.Matoking.protontricks</code></p>
+<p>After that, reload Protontricks.</p>
+<p>Next you'll need to scroll to select PAYDAY 3:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16344433851694244059gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16344433851694244059gol1.png"/></a></p>
+<p>Then you'll need to go through a few different screens to select the default wineprefix:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6766787161694244060gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6766787161694244060gol1.png"/></a></p>
+<p>Next up is select the top option to install a Windows DLL or component:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5313593341694244060gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5313593341694244060gol1.png"/></a></p>
+<p>Then scroll down to find <em>vcrun2019</em> or <em>vcrun2022</em>:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3789849101694244061gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3789849101694244061gol1.png"/></a></p>
+<p><em>Oddly, vcrun2022 showed up on Steam Deck for me but not desktop Linux but regardless both 2019 and 2022 work.</em></p>
+<p>Then you'll see a few installer screens for vcrun like this:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15765998051694244061gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15765998051694244061gol1.png"/></a></p>
+<p>Just go through these, there's at least two and once finished it will bring back the Protontricks screen and you're then good to go. PAYDAY 3 will now run.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13142836351694244465gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13142836351694244465gol1.jpg"/></a><br/>
+<em>Pictured - PAYDAY 3 on Kubuntu Linux</em></p>
+<p>Here's a video going over the steps and some footage on Steam Deck:</p>
+<div class="hidden_video" data-video-id="bDGx3Z_o85U"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/13b1e87a1929df51ff63dde6f9162b9b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/bDGx3Z_o85U" target="_blank">See video</a></div></div>
+<p>You can follow <a href="https://store.steampowered.com/app/1272080/PAYDAY_3/" target="_blank">PAYDAY 3 on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/heres-how-to-get-payday-3-beta-to-work-on-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/heres-how-to-get-payday-3-beta-to-work-on-steam-deck-linux/</guid>
+      <pubDate>Sat, 09 Sep 2023 07:28:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/250189411id23234gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Beta</category>
+      
+      <category>FPS</category>
+      
+    </item>
     
     <item>
       <title>Get some slick stealth games like Shadow Tactics in this new bundle</title>
@@ -3878,54 +3927,6 @@ RX 7700 XT</td>
       <category>Open Source</category>
       
       <category>Wine</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck recently had two Beta releases, here&#39;s what&#39;s changed</title>
-      <author>Smellbringer</author>
-      <description><div class="content group e-content">
-<p>Valve has rolled out two updates for the Beta Branch of the Steam Deck within two days, <a href="https://store.steampowered.com/news/app/1675200/view/3677805209172214743?l=english" target="_blank">August 17th</a> and <a href="https://store.steampowered.com/news/app/1675200/view/3677805209175800795?l=english" target="_blank">August 19th</a>. The <a href="https://store.steampowered.com/news/app/1675200/view/3677805209172214743?l=english" target="_blank">August 17th</a> update addresses General, Library, and Desktop mode issues. While the <a href="https://store.steampowered.com/news/app/1675200/view/3677805209175800795?l=english" target="_blank">August 19th</a> update addresses Desktop Mode and Steam Input issues. Full list of changes will be added below, separated by day with links to each list.</p>
-<h4><a href="https://store.steampowered.com/news/app/1675200/view/3677805209172214743?l=english" target="_blank">August 17th:</a></h4>
-<div class="bbcodes_Bold_1opdq"><strong>General</strong></div>
-<ul>
-<li>Fixed a case where non-steam games could disappear from the library.</li>
-</ul>
-<div class="bbcodes_Bold_1opdq"><strong>Library</strong></div>
-<ul>
-<li>Fixed some screenshot thumbnails on the activity feed not being properly obscured when marked as spoiler</li>
-</ul>
-<div class="bbcodes_Bold_1opdq"><strong>Desktop Mode</strong></div>
-<ul>
-<li>Fixed windows being able to set minimum sizes larger than their display dimensions.</li>
-<li>Possible fix for a case where the On-Screen Keyboard could break controller input in games using the desktop overlay.</li>
-</ul>
-<h4><a href="https://store.steampowered.com/news/app/1675200/view/3677805209175800795?l=english" target="_blank">August 19th:</a></h4>
-<div class="bbcodes_Bold_1opdq"><strong>Desktop Mode</strong></div>
-<ul>
-<li>The overlay tabbed browser will now wait until the overlay has been activated for the first time before restoring saved tabs.</li>
-<li>Added an option to In Game settings that allows toggling whether overlay browser tabs will be restored when starting a game.</li>
-</ul>
-<div class="bbcodes_Bold_1opdq"><strong>Steam Input</strong></div>
-<ul>
-<li>Reduced lag when switching between pages in the "Edit Layout" view for configurations with large numbers of action sets/layers/mode-shifts</li>
-</ul>
-<p>Keep in mind that these changes are for Beta and Preview Branch users only. So if you're on Stable you'll need to change your Branch to one of those two. If you do choose to update however, sound off below if these changes have fixed any issues you've been having.</p>
-<p>The <em>desktop</em> Steam Beta client also had similar updates.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/steam-deck-recent-betas-whats-changed/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/steam-deck-recent-betas-whats-changed/</guid>
-      <pubDate>Sun, 20 Aug 2023 08:43:35 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
       
     </item>
     
