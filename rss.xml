@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-09-11 07:24:10.594993</pubDate>
+    <pubDate>2023-09-12 07:24:22.823363</pubDate>
 
     
     <image>
@@ -18,6 +18,399 @@
     </image>
 
     
+    
+    <item>
+      <title>VKD3D-Proton v2.10 brings various game fixes, DirectStorage additions and lots more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>VKD3D-Proton, the tool that translates Direct3D 12 to Vulkan for Steam Play Proton, has a brand new release out with version 2.10 and it's an exciting one. And hey, I'm actually on time with this news unlike <a href="https://www.gamingonlinux.com/2023/09/dxvk-2-3-has-game-fixes-for-the-sims-2-tomb-raider-anniversary-far-cry-2/" target="_blank">DXVK v2.3</a>…</p>
+<p>There's some pretty great stuff included in this release including DirectStorage MetaCommands, which brings support for GPU accelerated GDeflate compression, which they said has been shown to work in Ratchet &amp; Clank: Rift Apart.</p>
+<p>Also hooked up is NV_device_generated_commands_compute, that helps with Starfield since its use of ExecuteIndirect "hammers multi-dispatch COMPUTE + root parameter changes", previously they were using a "very slow" workaround. So Starfield should work better with this, although it's only enabled on AMD RADV right now due to driver issues.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3986140631694442461gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3986140631694442461gol1.jpg"/></a><em>Pictured - Starfield on Kubuntu Linux with Proton Experimental</em></p>
+<p>Also included is in this release is Enhanced Barriers, but there's no games shipping with it so it's not well tested yet.</p>
+<p>There's plenty of fixes and workarounds for games and game engines too including issues solved for: Star Wars Battlefront II, Ashes of the Singularity, fixed mesh shaders in Unreal Engine 5, fixes for some Xenia bugs (xbox 360 emulator), Armored Core VI, Age of Wonders 4, Starfield, Halo Infinite, Street Fighter 6, Resident Evil 4, Monster Hunter Rise and others.</p>
+<p>Some of the other stuff included:</p>
+<blockquote>
+<p><strong>Misc</strong></p>
+<ul>
+<li>Support Root Signature version 1.2</li>
+<li>Implement Shader Model 6.7
+<ul>
+<li>Includes all SM 6.7 features like AdvancedTextureOps, WaveOpsIncludeHelperLanes</li>
+<li>Caveat: Technically not Vulkan spec compliant implementation, but works fine on at least NV and RADV. Currently implemented as an opt-in option for now in case some game relies on it to work</li>
+</ul>
+</li>
+<li>Implement CreateSampler2</li>
+<li>Expose inverted viewport / height feature</li>
+<li>Implement RelaxedFormatCasting feature from Enhanced Barriers</li>
+<li>Implement support for adjacency topologies</li>
+<li>Support A8_UNORM format properly by using <code class="inline-code">VK_KHR_maintenance5</code>, allowing A8_UNORM UAVs to work correctly</li>
+<li>Handle range checked index buffers correctly with <code class="inline-code">VK_KHR_maintenance5</code></li>
+</ul>
+<p><strong>New extension use</strong></p>
+<ul>
+<li>VK_EXT_dynamic_rendering_unused_attachments</li>
+<li>VK_KHR_maintenance5</li>
+<li>VK_NV_device_generated_commands_compute</li>
+</ul>
+<p><strong>Performance</strong></p>
+<ul>
+<li>Batch acceleration structure builds. Massively improves build performance on at least RADV.</li>
+<li>Massively improve ExecuteIndirect performance when using COMPUTE + root parameter changes when <code class="inline-code">VK_NV_device_generated_commands_compute</code> is enabled.</li>
+</ul>
+</blockquote>
+<p>From what I've been told, this update for VKD3D-Proton is already in Proton Experimental as of the <a href="https://www.gamingonlinux.com/2023/09/proton-experimental-fixes-up-metro-exodus-sword-art-online-integral-factor-and-more/" target="_blank">recent update from September 7th</a>.</p>
+<p>See the <a href="https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.10" target="_blank">VKD3D-Proton release notes here</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/vkd3d-proton-v2-10-various-game-fixes-directstorage/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/vkd3d-proton-v2-10-various-game-fixes-directstorage/</guid>
+      <pubDate>Mon, 11 Sep 2023 14:27:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1458197805id23242gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Toaplan Arcade Shoot &#39;Em Up Collection Vol.2 definitely delivers</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you're a fan of retro games and you love your shoot 'em ups, you should check out Toaplan Arcade Shoot 'Em Up Collection Vol.2.</p>
+<p>As the name suggests, it's the second in a set of revivals from classic Toaplan games as they work with Bitwave Games to get them on Steam. They all come with various enhancements thanks to emulation along with Linux and Steam Deck support. If you played Volume 1, you will know what to expect as it's more of the same goodness here.</p>
+<p>The games included are:</p>
+<ul>
+<li>Hellfire: Toaplan's first side-scrolling shooter, known for its blazing graphics and strategic gameplay. Save the galaxy by burning aliens to ashes with the ultimate firepower!</li>
+<li>Slap Fight (AKA Alcon): A brain-melting vertical shooter with gauge-based power-ups that'll get your blood pumping!</li>
+<li>Fire Shark: Set the skies ablaze and endure white-knuckle shmup action in this no-nonsense aerial trial! Fly solo or play in co-op.</li>
+<li>Flying Shark (AKA Sky Shark): A military shmup adventure with destructive power-ups, stunning graphics, and evil enemy forces to destroy!</li>
+</ul>
+<p>What makes these great, is that they haven't just slapped on a nice menu with an emulated game. They went the full mile to ensure they work well on modern systems with all sorts of enhancements including:</p>
+<ul>
+<li>Minimal Input Lag: Emulation, input processing, and rendering all complete on the same frame.</li>
+<li>Online leaderboards for Single Credit, No Assist, and Assisted plays.</li>
+<li>Instrument panels with extra gameplay information and artwork.</li>
+<li>Rewind the game between 10-18 minutes, depending on the action.</li>
+<li>Experience the game in Mirror Mode.</li>
+<li>Assist Features such as auto-fire at multiple rates.</li>
+<li>Very Easy Mode: Lower the difficulty to breeze through the adventure.</li>
+<li>Rotate the gameplay in 90-degree increments.</li>
+<li>Choose between Raw Input on Windows or Steam Input.</li>
+<li>Hone your skills in the ultra-customizable practice mode.</li>
+</ul>
+<p>Thanks to a key to each being sent over by Embracer Freemode, I've been attempting to play them through. Key word here is attempting, because wow — they're certainly difficult. I don't know if my reaction time has just gotten slower, or if game design has just changed a lot but I really struggled with these. They can be quite fast, and the limited space really adds to the challenge. Thankfully, the ability to slow down time at any point (or speed it up) at the touch of a button is a really useful feature.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8806255841694439045gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8806255841694439045gol1.jpeg"/></a><em>Pictured - Fire Shark on Steam Deck</em></p>
+<p>Being able to rewind whenever you want is also my absolute favourite feature, and something I made great use of. Every time you think you're doing well, and you're having a good run, there's just that one stray bullet that comes along to annihilate you. However, they do include various accessibility assist options too that you can enable whenever you feel like it including auto fire that you can tweak in "button presses per second", the ability to auto dodge fire and enemies, give yourself health so it's not instant death, make your hitbox smaller and showing your hitbox on-screen.</p>
+<p>I've not encountered any issues, they all work beautifully and they feel perfectly at home on Steam Deck too. Performance is perfect, and the controls feel great too. I've no doubt they will get Steam Deck Verified sometime soon because of how great they run. </p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19574332751694440280gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19574332751694440280gol1.jpeg"/></a><em>Pictured - Hellfire on Steam Deck</em></p>
+<p>While I didn't get quite the nostalgia hit as I did from <a href="https://www.gamingonlinux.com/2023/02/all-your-base-are-belong-to-us-zero-wing-and-other-classics-hit-steam/" target="_blank">Volume 1</a>, which included my favourite Zero Wing, these are all still great shoot 'em ups to pick up. The detail in the artwork in these games is still often unmatched by newer generation shoot 'em ups, they just don't often have the same kind of charm.</p>
+<p>The attention to detail to not only bring these games back to life, but to make them more playable and accessible than ever is to be truly commended here. This is how you do it! I hope to see a lot more developers go back through their older games like this, as too many end up getting lost with no easy way to get them so Toaplan and Bitwave are doing some truly great work here for game preservation.</p>
+<p>If you think you have what it takes to beat these classics the store links are below:</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/2237190/Hellfire/" target="_blank">Hellfire</a></li>
+<li><a href="https://store.steampowered.com/app/2022980/Slap_Fight/" target="_blank">Slap Fight (AKA Alcon)</a></li>
+<li><a href="https://store.steampowered.com/app/2237200/Fire_Shark/" target="_blank">Fire Shark</a></li>
+<li><a href="https://store.steampowered.com/app/2022990/Flying_Shark/" target="_blank">Flying Shark (AKA Sky Shark)</a></li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/toaplan-arcade-shoot-em-up-collection-vol2-definitely-delivers/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/toaplan-arcade-shoot-em-up-collection-vol2-definitely-delivers/</guid>
+      <pubDate>Mon, 11 Sep 2023 13:52:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1232472390id23241gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Arcade</category>
+      
+      <category>Emulation</category>
+      
+    </item>
+    
+    <item>
+      <title>DXVK 2.3 has game fixes for The Sims 2, Tomb Raider Anniversary, Far Cry 2</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Somehow, I missed that <a href="https://github.com/doitsujin/dxvk/releases/tag/v2.3" target="_blank">DXVK 2.3</a> went out last week. So here's a run over what's new for this Vulkan-based translation layer that converts Direct3D 9/10/11 for Wine and Proton.</p>
+<p>One of the headline improvements here is presentation improvements. If you have support for the <code class="inline-code">VK_KHR_present_wait</code> extension, and have  vertical synchronization is enabled, you might end up seeing reduced input latency in some games. However, on some platforms and compositors frame latency may be higher than expected. Currently it's only supported on Gamescope when <code class="inline-code">ENABLE_GAMESCOPE_WSI=1</code> is set.</p>
+<p>There's also some configuration changes with <code class="inline-code">dxgi.nvapiHack</code> deprecated in favour of <code class="inline-code">dxgi.hideNvidiaGpu</code>, along with similar options for AMD and Intel GPUs that allows them to put in targeted application workarounds for issues. On top of that <code class="inline-code">dxgi.tearFree</code> and <code class="inline-code">d3d9.tearFree</code> were merged into <code class="inline-code">dxvk.tearFree</code>.</p>
+<p>Lots more improvements and fixes including:</p>
+<blockquote>
+<ul>
+<li>Configuration options can now be specified via an environment variable, <code class="inline-code">DXVK_CONFIG</code>. See the README for details (PR <a href="https://github.com/doitsujin/dxvk/pull/3581" target="_blank">#3581</a>).</li>
+<li>If <code class="inline-code">VK_EXT_depth_bias_control</code> is supported, depth bias scaling will now be correct in most situations. This fixes shadow rendering artifacts in various D3D9 games and is especially important on GPUs that do not support 24-bit depth formats. This affects games such as F.E.A.R. (<a href="https://github.com/doitsujin/dxvk/issues/1461" target="_blank">#1461</a>), Far Cry 2 (<a href="https://github.com/doitsujin/dxvk/issues/2941" target="_blank">#2941</a>) and Assassin's Creed Brotherhood (<a href="https://github.com/doitsujin/dxvk/issues/2642" target="_blank">#2642</a>).</li>
+<li>If <code class="inline-code">VK_EXT_line_rasterization</code> and its relevant features are supported, smooth or rectangular lines will now be used if requested by the application. This functionality is generally not used by games, but may be useful for applications such as level editors.</li>
+<li>If <code class="inline-code">VK_KHR_maintenance5</code> is supported, <code class="inline-code">DXGI_FORMAT_A8_UNORM</code> images will now use the corresponding Vulkan format.</li>
+<li>D3D9 command submission now works the same way as it does for D3D11, which will lead to more submissions but generally reduces resource readback latency. This may improve performance in games that frequently synchronize with the GPU.</li>
+<li>Fixed a minor issue with D3D9 feedback loop tracking.</li>
+<li>Fixed a minor issue with D3D11 stream output (<a href="https://github.com/doitsujin/dxvk/issues/3634" target="_blank">#3634</a>).</li>
+<li>Fixed a bug and performance issues with the implementation of D3D11 tiled resources.</li>
+<li>Fixed various issues with reporting HDR metadata.</li>
+<li>Fixed a crash when compiling D3D9 shaders generated by the vkd3d HLSL compiler. (PR <a href="https://github.com/doitsujin/dxvk/pull/3616" target="_blank">#3616</a>)</li>
+<li>Implemented keyed mutex synchronization on top of newly added winevulkan functionality (PR <a href="https://github.com/doitsujin/dxvk/pull/3601" target="_blank">#3601</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/3635" target="_blank">#3635</a>).<br/>
+<strong>Note:</strong> This will only work with recent Proton builds.</li>
+<li>Added stubs for various D3D9On12 interop interfaces. This is needed for <strong>Train Simulator Classic</strong> (<a href="https://github.com/doitsujin/dxvk/issues/3445" target="_blank">#3445</a>).</li>
+<li>Added an interface to allow external libraries, such as NVAPI, to enable HDR in various D3D11 games as well as Elden Ring (PR <a href="https://github.com/doitsujin/dxvk/pull/3625" target="_blank">#3625</a>).<br/>
+<strong>Note:</strong> This will only work in combination with <a href="https://github.com/jp7677/dxvk-nvapi/commit/c3a1c48eebdef1d0f9f030ebd57e2c40625dc542" target="_blank">jp7677/dxvk-nvapi@<tt>c3a1c48</tt></a> or newer. This will <strong>not</strong> work on Windows.</li>
+<li><strong>A Total War Saga: TROY</strong>: Fixed trees not rendering when MSAA is enabled.</li>
+<li><strong>Far Cry 2:</strong> Fixed crash when using D3D10.</li>
+<li><strong>Halo Online</strong>: Fixed water rendering. (<a href="https://github.com/doitsujin/dxvk/issues/3594" target="_blank">#3594</a>, PR: <a href="https://github.com/doitsujin/dxvk/pull/3627" target="_blank">#3627</a>)</li>
+<li><strong>Lara Croft and the Temple of Osiris</strong>: Fixed deadlock when using Exclusive Fullscreen (<a href="https://github.com/doitsujin/dxvk/issues/3458" target="_blank">#3458</a>).</li>
+<li><strong>RaceRoom Racing Experience</strong>: Fixed a crash when starting a race. (<a href="https://github.com/doitsujin/dxvk/issues/3386" target="_blank">#3386</a>, PR: <a href="https://github.com/doitsujin/dxvk/pull/3389" target="_blank">#3389</a>)</li>
+<li><strong>Spider Man: Shattered Dimensions</strong>: Fixed a regression that caused blocky shadows. (<a href="https://github.com/doitsujin/dxvk/issues/3593" target="_blank">#3593</a>, PR: <a href="https://github.com/doitsujin/dxvk/pull/3624" target="_blank">#3624</a>)</li>
+<li><strong>Test Drive Unlimited 2</strong>: Fixed shadows on grass. (<a href="https://github.com/doitsujin/dxvk/issues/3469" target="_blank">#3469</a>, PR: <a href="https://github.com/doitsujin/dxvk/pull/3471" target="_blank">#3471</a>)</li>
+<li><strong>The Sims 2</strong>: Fixed a regression in DXVK 2.2 that affected terrain rendering. (<a href="https://github.com/doitsujin/dxvk/issues/3474" target="_blank">#3474</a>, PR: <a href="https://github.com/doitsujin/dxvk/pull/3476" target="_blank">#3476</a>)</li>
+<li><strong>Titanfall:</strong> Fixed a crash caused by a miscompiled shader.</li>
+<li><strong>Tomb Raider Anniversary</strong>: Improved performance. (<a href="https://github.com/doitsujin/dxvk/issues/3438" target="_blank">#3438</a>, PR: <a href="https://github.com/doitsujin/dxvk/pull/3439" target="_blank">#3439</a>)</li>
+</ul>
+</blockquote>
+<p>Remember if I miss something you can <a href="https://www.gamingonlinux.com/email-us/" target="_blank">email me</a> any time or post into the suggested news channel in <a href="https://discord.gg/AghnYbMjYg" target="_blank">Discord</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/dxvk-2-3-has-game-fixes-for-the-sims-2-tomb-raider-anniversary-far-cry-2/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/dxvk-2-3-has-game-fixes-for-the-sims-2-tomb-raider-anniversary-far-cry-2/</guid>
+      <pubDate>Mon, 11 Sep 2023 11:26:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Deckbuilding RPG &#39;Gordian Quest&#39; gets Steam Deck Verified</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Need some more deckbuilding? Gordian Quest looks great and it recently became Steam Deck Verified, with the developer talking about the work involved in it. Nice to see more developers improving their older games like this!</p>
+<p>What is it? Gordian Quest is an epic deckbuilding RPG inspired by old-school classics like Ultima and D&amp;D, using modern gaming concepts like roguelite elements and turn-based strategic combat. You will form parties of heroes whom you will have to lead and manage on grueling missions. Help them forge bonds and discover new skills among them. Be fearless and unwavering as you work to unravel the curses laid upon the lands and defeat the ultimate evil at the heart of it all.</p>
+<div class="hidden_video" data-video-id="NLJ3PsbwGAk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7d1bdf92f0386597cd7b3d46f6d3c2de.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/NLJ3PsbwGAk" target="_blank">See video</a></div></div>
+<p>Here's what they said about Steam Deck support:</p>
+<blockquote>
+<p>Challenges in our Journey</p>
+<br/>
+Adapting a game primarily designed for keyboard and mouse to the Steam Deck was no small feat. The main hurdle? Completely rethinking our controls and UI flow. Ensuring that the game felt intuitive and fluid with a controller was paramount, but we also encountered other technical challenges:<br/>
+ 
+<ul>
+<li>Button Mapping: Making sure each action, from navigating the menu to selecting a card, felt natural on a controller.</li>
+<li>Visual Feedback: Optimizing the graphics for a smaller screen</li>
+<li>Performance Optimization: Tweaking the game's performance to ensure it runs smoothly on the Steam Deck's hardware.</li>
+</ul>
+<p><br/>
+Yet, each challenge was a learning curve and that's also part of what makes game development such an adventure. We're truly grateful for your continued support, patience, and feedback during this process. It has paved the way for us to explore bringing Gordian Quest to more consoles like the Switch or PS5 in the future, reaching out to even more fans of the genre.<br/>
+<br/>
+If you're a Steam Deck user, we hope you could try Gordian Quest on your handheld and let us know how it runs!</p>
+</blockquote>
+<p>You can see some of their own quick footage below:</p>
+<div class="hidden_video" data-video-id="rhXOl_esSto"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/83b5d1033bac359eebb2d2ef8a4a0e15.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/rhXOl_esSto" target="_blank">See video</a></div></div>
+<p>If you like Slay the Spire and other deckbuilders, this could be a good one to add to your collection! For gamers on desktop Linux it's also rated Platinum on ProtonDB.</p>
+<p>Available to buy on <a href="https://www.fanatical.com/en/game/gordian-quest?ref=gol" target="_blank">Fanatical</a>, <a href="https://www.humblebundle.com/store/gordian-quest?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/981430/Gordian_Quest/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/deckbuilding-rpg-gordian-quest-gets-steam-deck-verified/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/deckbuilding-rpg-gordian-quest-gets-steam-deck-verified/</guid>
+      <pubDate>Mon, 11 Sep 2023 11:02:31 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/842865217id23239gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Deck-builder</category>
+      
+      <category>RPG</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>PSP emulator PPSSPP adds RetroAchievements support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>PPSSPP is a free and open source emulator for the Sony PSP, with release 1.16 out now adding in support for the popular RetroAchievements project.</p>
+<p>RetroAchievements, as the name suggests, adds in support for an achievements system much like you might see on Steam or games consoles. Currently 202 games are supported with it but they said that in some cases only one or two regions of a game are supported.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19249558301694428327gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19249558301694428327gol1.jpg"/></a><em>Pictured - Soulcalibur PSP</em></p>
+<p>Some of what else is new:</p>
+<blockquote>
+<ul>
+<li>A lot of people on Android 13 devices ended up in a situation where the choose-a-folder dialog during set up didn't work correctly. This has been fixed.</li>
+<li>Multiple input event handling fixes, should help with external joysticks</li>
+<li>Perf improvements on lower end devices by disabling ubershaders</li>
+<li>Multiple fixes for glitches like flicker in WWE vs Smackdown 2006, shadows in Motorstorm, etc.</li>
+<li>Lots of additional performance improvements and fixes</li>
+<li>Multiple bugfixes around texture replacement, fixing Tactics Ogre fonts among other things</li>
+</ul>
+</blockquote>
+<p>They also added new IR-based JIT compiler backends, which should have long-term performance benefits in addition to compatibility with more CPU architectures. Plus more work towards reverse engineering "some of the more obscure math instructions of the PSP's VFPU, a custom little SIMD coprocessor".</p>
+<p>See the release <a href="https://www.ppsspp.org/blog/1-16-release-announcement/" target="_blank">announcement here</a>. The Linux version can be grabbed from <a href="https://flathub.org/apps/org.ppsspp.PPSSPP" target="_blank">Flathub</a> but it's not yet at time of article publishing updated to the 1.16 release.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/psp-emulator-ppsspp-adds-retroachievements-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/psp-emulator-ppsspp-adds-retroachievements-support/</guid>
+      <pubDate>Mon, 11 Sep 2023 10:33:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1851407586id23238gol.jpg" type="image/jpeg"/>
+      
+      <category>Emulation</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Sony</category>
+      
+    </item>
+    
+    <item>
+      <title>DXVK-NVAPI 0.6.4 out now expanding HDR support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>DXVK-NVAPI is an alternative NVAPI (NVIDIA API) implementation used with DXVK and VKD3D-Proton for running Windows games on Linux and Steam Deck through Proton.</p>
+<p>The latest release went out on September 9th with <a href="https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.6.4" target="_blank">version 0.6.4</a>. Here's the full changelog:</p>
+<blockquote>
+<ul>
+<li>Update NVAPI headers to R535.</li>
+<li>Update NVML headers to R535.</li>
+<li>Implement HDR support by forwarding the relevant calls into DXVK. This needs DXVK version <a href="https://github.com/doitsujin/dxvk/releases/tag/v2.3" target="_blank">DXVK 2.3</a> or newer. Note that the same requirements for HDR on DXVK apply to DXVK-NVAPI. Thus HDR is currently not possible on Linux with an NVIDIA GPU, but requires a.o. an AMD GPU, kernel patches, Gamescope and DXVK-NVAPI configured to initialize for other drivers.</li>
+<li>Initialize NVAPI when <code class="inline-code">DXVK_ENABLE_NVAPI=1</code> is set, regardless of the reported PCI vendor ID. This still needs <code class="inline-code">DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1</code> when not running on the NVIDIA proprietary driver.</li>
+<li>Restore logging output on the console which was lost in certain circumstances.</li>
+<li>Closer match Windows behavior when reporting CUDA capabilities, this fixes a crash in Call of Duty: Ghosts.</li>
+</ul>
+</blockquote>
+<p>It's worth noting and clarifying here for those confused: the HDR support noted is only for legacy NVAPI, as <a href="https://twitter.com/phys_ballsocket/status/1700533163565441294" target="_blank">mentioned</a> by developer Joshua-Ashton (who works on DXVK and VKD3D-Proton) on X:</p>
+<blockquote>
+<p>FWIW this is only for games that use the legacy NVAPI for HDR, I implemented the same for the AMDAGS path. Eg. Sekiro, Elden Ring, Armoured Core use this. Modern games should really use the DXGI path which I implemented earlier this year.</p>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/dxvk-nvapi-064-out-now-expanding-hdr-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/dxvk-nvapi-064-out-now-expanding-hdr-support/</guid>
+      <pubDate>Mon, 11 Sep 2023 09:50:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Sid Meier&#39;s Alpha Centauri gets an in-development open source remake</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Seems like another classic is getting revived with the power of open source. Sid Meier's Alpha Centauri from 1999 has a remake in progress called GLSMAC. All unofficial, like most open source reimplementations and it's early days for the project but it's showing a lot of promise.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10104957661694424054gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10104957661694424054gol1.png"/></a></p>
+<p>Their plan is to use the original data files, just like other open source remakes (OpenMW for Morrowind for example), while it's a full rework of the graphics engine, networking and pretty much everything else. So plenty will be a bit different like the random map generation, AI and so on while they try to keep it similar to the original logic they are creating the code from scratch.</p>
+<p>According to their roadmap they're at stage v0.2+ so they still have quite some ways to go:</p>
+<blockquote>
+<ul>
+<li>
+<p>v0.1: fundamental engine functions, such as: rendering, UI, netcode, sound system</p>
+</li>
+<li>
+<p>v0.2: basic map functions, such as: tiles, mapgen, creating/saving/loading games, map rendering</p>
+</li>
+<li>
+<p>v0.3: basic multiplayer: ability to host and join games, lobby, save/load games with same players. multiplayer support will be maintained during further steps from now on</p>
+</li>
+<li>
+<p>v0.4: game processing, such as: game turns, units (only scout patrols, formers and colony pods), buildings (only recycling tanks), technologies (only centauri ecology), building of bases (only land bases), terraforming (only farms, mines and solar arrays), unit combat, victory by conquest</p>
+</li>
+<li>
+<p>v0.5: all remaining SMAC units, buildings, terraformings, technologies, etc</p>
+</li>
+<li>
+<p>v0.6: all remaining victory types</p>
+</li>
+<li>
+<p>v0.7: AI (computer opponents, cities automation, units automation, etc) and diplomacy</p>
+</li>
+<li>
+<p>v0.8: alien lifeforms, ecology</p>
+</li>
+<li>
+<p>v0.9: all remaining in-game UI, including game settings</p>
+</li>
+<li>
+<p>v0.10: non-crucial things like movies, interludes, dynamic music</p>
+</li>
+<li>
+<p>v0.11: final polishing and bugfixing</p>
+</li>
+</ul>
+</blockquote>
+<p>Looking forward to watching this one grow, Alpha Centauri was absolutely one of my favourites. I remember spending so many hours playing it through.</p>
+<p>Sid Meier's Alpha Centauri can be picked up with the Alien Crossfire expansion <a href="https://www.gog.com/en/game/sid_meiers_alpha_centauri" target="_blank">on GOG.com</a>. You can follow the remake <a href="https://github.com/afwbkbc/glsmac" target="_blank">project on GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/sid-meiers-alpha-centauri-open-source-remake/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/sid-meiers-alpha-centauri-open-source-remake/</guid>
+      <pubDate>Mon, 11 Sep 2023 09:28:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/97820193id23236gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Open Source</category>
+      
+      <category>Strategy</category>
+      
+      <category>Turn-based strategy</category>
+      
+    </item>
+    
+    <item>
+      <title>RollerCoaster Tycoon 2 reimplementation OpenRCT2 gets a new title theme</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The team and community behind OpenRCT2, the open source re-implementation of RollerCoaster Tycoon 2 have a brand new update out which includes some fun changes like a whole new title theme.</p>
+<p>For this update they commissioned Allister Brimble, who worked on the original soundtrack, to compose a new official piece for OpenRCT2. To go along with that, the developers held a contest to include a bunch of new parks in the background of the menu to spruce it up a bit.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7497278911694423377gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7497278911694423377gol1.jpg"/></a></p>
+<p>Some of the main additions in OpenRCT2 0.4.6 include:</p>
+<blockquote>
+<ul>
+<li>Feature: [<a href="https://github.com/OpenRCT2/OpenRCT2/discussions/15660" target="_blank">#15660</a>] Ability to show window buttons on the left.</li>
+<li>Feature: [<a href="https://github.com/OpenRCT2/OpenRCT2/pull/20680" target="_blank">#20680</a>] New title sequences (<a href="https://github.com/OpenRCT2/title-sequences/releases/tag/v0.4.6" target="_blank">https://github.com/OpenRCT2/title-sequences/releases/tag/v0.4.6</a>).</li>
+<li>Feature: [OpenMusic#41] Official Title Theme by Allister Brimble.</li>
+<li>Improved: [<a href="https://github.com/OpenRCT2/OpenRCT2/pull/20119" target="_blank">#20119</a>, <a href="https://github.com/OpenRCT2/OpenRCT2/pull/20243" target="_blank">#20243</a>] Add new colour presets to several roller coasters (using the new colours).</li>
+<li>Improved: [<a href="https://github.com/OpenRCT2/OpenRCT2/pull/20393" target="_blank">#20393</a>, <a href="https://github.com/OpenRCT2/OpenRCT2/pull/20410" target="_blank">#20410</a>] Add Cyrillic characters Ґґ, Ѕѕ, Єє, Іі, Її, and Јј to the sprite font.</li>
+<li>Change: [<a href="https://github.com/OpenRCT2/OpenRCT2/pull/19785" target="_blank">#19785</a>] OpenMusic is now selected by default when opening SC4/SC6 - or creating new - scenarios.</li>
+<li>Change: [<a href="https://github.com/OpenRCT2/OpenRCT2/pull/20110" target="_blank">#20110</a>] Fix a few RCT1 build height parity discrepancies.</li>
+</ul>
+</blockquote>
+<p>Plus the usual assorted bug fixes. Like the Camera and UI are no longer locked at 40 Hz, providing a smoother experience which is actually quite a big change for it and really should make it feel a lot better. And for those of you who appreciate the screams of your guests, they're no longer cut off on steep diagonal drops.</p>
+<p>The developers also mentioned to me over email that "OpenRCT2 had RISC-V port for 6 years now, well before any hardware was available" and that with "real CPUs becoming available, some people have started trying it" which you can see on <a href="https://www.youtube.com/watch?v=8V02yYMsVIY" target="_blank">YouTube</a>.</p>
+<p>You need the data files to actually play it. You can buy a copy from <a href="https://af.gog.com/game/rollercoaster_tycoon_2?as=1636858786" target="_blank">GOG</a> or <a href="https://store.steampowered.com/app/285330/RollerCoaster_Tycoon_2_Triple_Thrill_Pack/?curator_clanid=4218320" target="_blank">Steam</a>. See more on the <a href="https://openrct2.org/" target="_blank">OpenRCT2 website</a>.</p>
+<p>Getting it running on Linux is nice and simple too since they offer an official AppImage and there's also a Flatpak available via <a href="https://flathub.org/apps/details/io.openrct2.OpenRCT2" target="_blank">Flathub</a>. Just run it, and then it will ask you to point it to where you installed the original and that's all you need to do! Nice and easy.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/rollercoaster-tycoon-2-reimplementation-openrct2-gets-a-new-title-theme/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/rollercoaster-tycoon-2-reimplementation-openrct2-gets-a-new-title-theme/</guid>
+      <pubDate>Mon, 11 Sep 2023 09:13:53 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1099194246id23235gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Building Sim</category>
+      
+      <category>Open Source</category>
+      
+      <category>Reimplementation</category>
+      
+    </item>
     
     <item>
       <title>Here&#39;s how to get PAYDAY 3 Beta to work on Steam Deck &amp; Linux</title>
@@ -3573,360 +3966,6 @@ RX 7700 XT</td>
       <category>Hardware</category>
       
       <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>JSAUX launch a Steam Deck Anti-Glare screen replacement</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>While we have <a href="https://www.deckhd.com/" target="_blank">DeckHD</a> launching their higher-resolution Steam Deck screen replacement, we also now have <a href="https://jsaux.com/products/anti-glare-screen-for-steam-deck-gp0300" target="_blank">JSAUX</a> who have launched their own Steam Deck Anti-Glare screen replacement.</p>
-<p>Unlike DeckHD, the team at JSAUX decided to stick with the normal 800p Steam Deck resolution. The only minor difference is that JSAUX claim their screen has 70% sRGB coverage versus 67% on the original. Could be a good little upgrade mod for anyone with a 64GB or 256GB Steam Deck to get the anti-glare screen.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3791624981692699558gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3791624981692699558gol1.jpg"/></a></p>
-<p>A difficult mod to do though, that requires taking the entire Steam Deck apart. Not something beginners should think about, as a lot of small things can go wrong that could end up becoming a big expense. Even the JSAUX store page has a warning on this (nice to see).</p>
-<p>Still, it's nice to continue to see more and more hardware mods appearing for the Steam Deck because of how open it is.</p>
-<p>Available for $89.99 via <a href="https://jsaux.com/products/anti-glare-screen-for-steam-deck-gp0300" target="_blank">JSAUX</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/jsaux-launch-a-steam-deck-anti-glare-screen-replacement/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/jsaux-launch-a-steam-deck-anti-glare-screen-replacement/</guid>
-      <pubDate>Tue, 22 Aug 2023 10:20:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1997482586id23141gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Roblox support is coming back to Wine on Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Good news for Roblox fans, as the game will soon start working in Wine again as the developers have been working to update it since the big breakage with the new client.</p>
-<p>A few days ago on their developer forum, one of their staff members <a href="https://devforum.roblox.com/t/why-did-roblox-stop-supporting-linux-users/2444335/61?u=sirsquiddybob" target="_blank">replied</a> (you have to be signed in to read) noting "shoutout to the Grapejuice community - this one is for you". <em>Grapejuice being a tool that configures Wine and Roblox together. </em>The staff member also included a screenshot of Roblox running on Manjaro Linux:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9904814361692696327gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9904814361692696327gol1.jpeg"/></a></p>
-<p>Roblox has multiple version channels, and it seems you're actually able to play it right now with Wine on the "zintegration" or "zcanary" channel. Although you should really wait until it rolls out properly, because switching around channels can cause all sorts of <strong>issues</strong> (like getting stuck on a particular channel) because it's all in <em>testing</em>.</p>
-<p>That same staff member did also <a href="https://devforum.roblox.com/t/why-did-roblox-stop-supporting-linux-users/2444335/100?u=sirsquiddybob" target="_blank">note</a> that "There will be an official announcement regarding unofficial support for Wine. As for an ETA, let’s just say soon™."</p>
-<p>Just for science, testing it myself it does indeed work again when testing using the zcanary channel with the <a href="https://flathub.org/en-GB/apps/io.github.vinegarhq.Vinegar" target="_blank">Vinegar</a> wrapper for Roblox and Wine:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8422098541692697297gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8422098541692697297gol1.jpg"/></a><br/>
-<em>Pictured - BIG Paintball in Roblox on Kubuntu</em></p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11939633871692697513gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11939633871692697513gol1.jpg"/></a><br/>
-<em>Pictured - Pet Simulator in Roblox on Kubuntu</em></p>
-<p>If you <em>really</em> want to try it out, again I <strong>wouldn't</strong> suggest so (really just wait until it hits stable Roblox), but it is possible if you use Vinegar linked above. You will need to switch it over to the zcanary update branch and use Vulkan, which you can do via this in terminal:</p>
-<p><code class="inline-code">mkdir -p ~/.var/app/io.github.vinegarhq.Vinegar/config/vinegar/ &amp;&amp; { echo "[player]"; echo "dxvk = false"; echo "renderer = \"Vulkan\""; echo "channel = \"zcanary\""; } &gt;&gt; ~/.var/app/io.github.vinegarhq.Vinegar/config/vinegar/config.toml</code></p>
-<p>After that you'll be able to just login on the website, and run games or use the Vinegar Roblox App it gives you.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/roblox-support-is-coming-back-to-wine-on-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/roblox-support-is-coming-back-to-wine-on-linux/</guid>
-      <pubDate>Tue, 22 Aug 2023 09:52:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/630628376id23140gol.jpg" type="image/jpeg"/>
-      
-      <category>Anti-Cheat</category>
-      
-      <category>Beta</category>
-      
-      <category>Upcoming</category>
-      
-      <category>Wine</category>
-      
-    </item>
-    
-    <item>
-      <title>5 years ago Valve released Proton forever changing Linux gaming</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Has it really been that long? Apparently so. Valve originally announced their <em>rebranding</em> of Steam Play with Proton back on August 21st, 2018. Seems like a good time for a quick reflection being halfway to a decade old now.</p>
-<p>The problem: before, during and just after the original Steam Machine push developers just weren't porting many games to Linux, and on the whole really when you look back Linux gaming was in a period of mostly stagnation. Nothing much was happening. A lot of the early porting work that came along was slowly dying off since the Steam Machines didn't provide the boost Valve and Linux gamers were hoping for. </p>
-<p>Originally, “<a href="https://web.archive.org/web/20190204114909/https://support.steampowered.com/kb_article.php?ref=9439-QHKN-1308" target="_blank">Steam Play</a>” simply meant you could buy a game on Steam and get access to all versions of it. So if you purchased a game on Windows, you could play it on Linux if it had a Native Linux version (same again for macOS). Clearly though, that wasn't enough for what Valve had planned. So if Valve wanted to make Linux a <em>better</em> platform for people to actually use it, they needed <em>something</em> more.</p>
-<p>Popular games needed to be able to run on Linux if more people were to use it, because what good is a platform for gaming if tons of the most played games weren’t compatible? As Valve saw with the Steam Machines (not the only reason of course) it doesn’t end well.</p>
-<p>I remember being sat in my office at the time, going over my TODO list of various articles and games to cover, planning the week ahead. Ready to then probably go to bed and then <em>BAM</em> — out of nowhere this <a href="https://steamcommunity.com/games/221410/announcements/detail/1696055855739350561" target="_blank">announcement</a> comes along from Valve that basically said <em>“you're going to be hella busy, better get a lot of coffee”. </em>Valve had partnered up with <a href="https://www.codeweavers.com/" target="_blank">CodeWeavers</a> and <strong>Proton</strong> was the answer. </p>
-<p>Proton being the name Valve gave to their fork of <a href="https://www.winehq.org/" target="_blank">Wine</a> with a bunch of added extras, and it has changed Linux gaming forever. Steam Play is more than just Proton though, be sure to <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">read my full Steam Play Proton guide</a>. <em>Side-note: John Carmack (id Software / Oculus VR / Keen Technologies) even thought Wine was the solution</em><a href="https://twitter.com/id_aa_carmack/status/298628243630723074" target="_blank"><em> </em><em>back in 2013</em></a><em>.</em></p>
-<p>Of course Proton wouldn't have been possible without all the many years of work that went into the Wine project in the first place, and everyone who contributed to Wine should be applauded for their effort. Valve has funded a lot of extra work though to get things like<a href="https://github.com/doitsujin/dxvk" target="_blank"> DXVK</a> and<a href="https://github.com/HansKristian-Work/vkd3d-proton" target="_blank"> VKD3D-Proton</a> for the translation from Direct3D to Vulkan into a state where performance can be really great! <em>Valve also funds work on Linux graphics drivers, Linux kernel work and the list goes on.</em></p>
-<p>Just how much has Proton changed things though? Well, we certainly <em>wouldn't</em> have the Steam Deck if it wasn't for Proton. There's no way Valve would have released their handheld without as many games as possible, clearly learning their lesson on the failure of the Steam Machines. But as we all know, the Steam Machines burned so Proton and the Steam Deck could rise from the ashes.</p>
-<p>Proton just makes a <em>lot</em> of sense. It didn't take long for Valve to expand Proton to go initially from a few select Valve-approved titles, to being able to run anything we choose to try with it. From there, Linux gaming just seemingly <em>exploded</em>. And then eventually we saw <em>why</em> Valve made Proton with the Steam Deck announcement coming less than three years later in July 2021.</p>
-<p>When you look at the crowd-sourced reports on<a href="https://www.protondb.com/" target="_blank"> ProtonDB</a> over 11,000 titles are reported to work by multiple people. It's a small fraction of Steam's overall game count but ProtonDB relies on people actually going and writing a report.</p>
-<p>Valve's own Deck Verified rating system <em>just</em> for the Steam Deck hit plenty of milestones since the Steam Deck's release too, now having over<a href="https://www.gamingonlinux.com/2023/06/steam-deck-hits-over-10000-verified-and-playable-games/" target="_blank"> 10,000 titles rated to be Playable or Verified</a>. Although both ProtonDB and Deck Verified include a mixture of Native Linux releases and Windows games run with Proton. The <em>point</em> is - being on Linux now for a gamer means quite often a huge amount of your games do actually "just work". It's <em>almost</em> magical.</p>
-<p>The real number of games playable on Linux will never be truly known though, because on Steam there's many tens of thousands of games and a lot of them will likely "just work" with Proton if they don’t have a Native Linux build available…and many more are releasing every week. This is a truly incredible place to be in. When you think about Linux and Steam Deck together having <a href="https://www.gamingonlinux.com/2023/08/linux-overtakes-macos-users-on-steam-thanks-to-steam-deck/" target="_blank">just less than a 2%</a> user share on Steam overall — these are some insane numbers for game compatibility for a niche platform.</p>
-<p>Thanks to Proton, I've been able to discover a <em>ton</em> of new favourite games, some I would never have played before. Games like Deep Rock Galactic, God of War, Death Stranding, Baldur’s Gate 3, Brotato, Beat Saber and so on. You get the idea, there’s a truly ridiculous selection of games available and at times it’s a little <em>paralysing</em> scrolling through my Steam Library deciding what to play — a delightfully annoying problem to have huh?</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18291519851692554532gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18291519851692554532gol1.jpg"/></a><em>Pictured - Baldur's Gate 3, shot taken on Kubuntu</em></p>
-<p>Gamers using Linux (be it desktop or Steam Deck) in 2023 are now in a place where they can get <strong>excited</strong> alongside friends who use Windows or traditional consoles, because they know there's a good probable chance at release that whatever new exciting game coming out will work without much trouble.</p>
-<p>Proton is far from perfect though and it does mean in a few ways that Valve, CodeWeavers and everyone else working on it are playing catch-up with Microsoft on compatibility and whatever changes Microsoft suddenly decides to announce that affects gaming. That, and how many different ways game developers can abuse various APIs to do things in weird ways. Valve and co are a dedicated bunch though, <em>constantly</em> fixing up issues from AAA games like<a href="https://www.gamingonlinux.com/2022/02/proton-experimental-beta-gets-steam-deck-performance-fix-for-elden-ring/" target="_blank"> ELDEN RING</a> where Valve quickly worked to implement optimizations, same again for problems with <a href="https://www.gamingonlinux.com/2023/01/valve-fix-dead-space-steam-deck/" target="_blank">Dead Space</a> to the likes of<a href="https://www.gamingonlinux.com/2023/07/codeweavers-blog-about-their-linux-steam-deck-work-on-proton-with-pooshooter/" target="_blank"> PooShooter: Toilet Invaders</a> (what a fun highlight that was eh?). There's also the constant third-party launcher breakage, that Valve are also fixing up each time it happens.</p>
-<p>Valve produce updates to Proton <em>constantly</em> to improve compatibility, with over 300 revisions to the main <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">changelog</a> (although some a minor text corrections) it's clear to see how much work goes into it. With various new main versions of Proton through 4, 5, 6, 7 now onto 8 and multiple updates to Proton Experimental almost <em>every</em> month.</p>
-<p>So here's to Proton, the magnificent tech that allows playing all kinds of games across Linux systems from desktop to Steam Deck and wherever else you decide to stick Linux. Nice one Valve. Cheers.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/5-years-ago-valve-released-proton-forever-changing-linux-gaming/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/5-years-ago-valve-released-proton-forever-changing-linux-gaming/</guid>
-      <pubDate>Mon, 21 Aug 2023 11:08:09 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/988392806id22804gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Editorial</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Open-world colony-building survival game &#39;Necesse&#39; gets a HUGE expansion</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Necesse is a very interesting genre-blending game that mixes in colony-building, adventuring, sandbox survival and a whole lot more. With the latest free update, it's also become a lot bigger. Currently in Early Access it has gained quite a following too with a Very Positive user review score so clearly they're onto something good here.</p>
-<p>The major update just landed adding in the first iteration of their end-game system where you defeat a powerful wizard, giving access to new mission types and biomes. Solo adventurers can now invite NPC settlers to join their party and explore with, there's ten new music tracks and various magical weapons and gear have been overhauled.</p>
-<p>Other features of the update include:</p>
-<ul>
-<li>A new Miner settler that can go on mining trips that’ll make acquiring precious ores easier</li>
-<li>A Cartographer Table for sharing maps with other players</li>
-<li>Better island generation with more natural formations</li>
-<li>New buffs for settlers from food</li>
-<li>And more balancing and quality-of-life tweaks</li>
-</ul>
-<p>Check out the new trailer:</p>
-<div class="hidden_video" data-video-id="iZsGIWWouow"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d052b267936f5f5122c31bd9aca4f969.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/iZsGIWWouow" target="_blank">See video</a></div></div>
-<p>It has Native Linux support and it is Steam Deck Verified!</p>
-<p>Necesse has been localized from English into German, French, Spanish (Spain), Czech, Hungarian, Ukrainian, Turkish, Russian, Brazilian Portuguese, Spanish (Latin America), Simplified Chinese, Traditional Chinese, Korean, and Japanese.</p>
-<p>You can buy it from <a href="https://www.humblebundle.com/store/necesse?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1169040/Necesse/" target="_blank">Steam</a>. Available for $9.99 / £6.99 / €9.99 / ¥980.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/open-world-colony-building-survival-game-necesse-gets-a-huge-expansion/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/open-world-colony-building-survival-game-necesse-gets-a-huge-expansion/</guid>
-      <pubDate>Mon, 21 Aug 2023 10:46:54 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/667880269id23139gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Humble Store</category>
-      
-    </item>
-    
-    <item>
-      <title>The &#39;Into Games Bundle&#39; from Fanatical helps get people into game development</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Fanatical has a new charity <a href="https://www.fanatical.com/en/bundle/into-games-bundle?ref=gol" target="_blank">Into Games Bundle</a> live, with a fun selection of games and with all proceeds going towards the UK's leading national non-profit for skills and careers in games. Seems like quite an interesting choice to help fund, while also getting something back.</p>
-<p>More about them: "Into Games was launched in 2019 to connect the dots between education and industry, making a career in the video games sector more accessible to young people in the UK, no matter their background."</p>
-<p>Using the usual rating system of Deck Verified, <a href="http://protondb.com/" target="_blank">ProtonDB</a> and Native Linux notes to save you clicking around. Each game title is also a Steam link in case you need more info first. It's $7.99 / €7.99 / £7.99 for the full bundle this time.</p>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/700600" target="_blank">Evil Genius 2: World Domination</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Silver</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/757310" target="_blank">Sable</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1016790" target="_blank">West of Dead</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/448510" target="_blank">Overcooked</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/360830" target="_blank">Yooka-Laylee</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>Linux Native</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/910630" target="_blank">Arcade Spirits</a></p>
-<ul>
-<li><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
-<li>Linux Native</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/621930" target="_blank">Attack of the Earthlings</a></p>
-<ul>
-<li>No Deck Rating</li>
-<li>Linux Native</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/979120" target="_blank">Autonauts</a></p>
-<ul>
-<li><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/373650" target="_blank">The Assembly</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</li>
-<li>No ProtonDB Rating</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1558930" target="_blank">Little Orpheus</a></p>
-<ul>
-<li>No Deck Rating</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/276730" target="_blank">Tango Fiesta</a></p>
-<ul>
-<li>No Ratings</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/793360" target="_blank">Big Crown: Showdown</a></p>
-<ul>
-<li>No Deck Rating</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p>See the <a href="https://www.fanatical.com/en/bundle/into-games-bundle?ref=gol" target="_blank">full bundle here</a>.</p>
-<p><em>While I am a Fanatical partner, I don't get anything from this bundle since all proceeds go to the charity. Just to be clear.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/the-into-games-bundle-from-fanatical-helps-get-people-into-game-development/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/the-into-games-bundle-from-fanatical-helps-get-people-into-game-development/</guid>
-      <pubDate>Mon, 21 Aug 2023 10:38:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2048201801id23138gol.jpg" type="image/jpeg"/>
-      
-      <category>Charity</category>
-      
-      <category>Fanatical</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>GE-Proton 8-13 and 8-12 released, FSR no longer default and many game fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The community maintained GE-Proton has two new releases available, so here's what's changed and improved with the latest versions. This is the version of Proton <em>not</em> supported by Valve, so it may have issues at times the official Proton does not. However, it also at times pulls in fixes a bit quicker and can do things sometimes that Valve cannot do. To sum up: use it if you need it for specific games, otherwise sticking with the official Proton is the best idea. More about Proton can be found in <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">my Proton beginner's guide</a>.</p>
-<p>For <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton8-12" target="_blank">GE-Proton 8-12</a> they've now disabled FSR by default. It's still there but you'll once again need to use Steam launch options like WINE_FULLSCREEN_FSR=1 to set it as they found using it actually limits in-game resolutions in some games.</p>
-<p>There's also patches and fixes for these games:</p>
-<ul>
-<li>Farlight 84.</li>
-<li>Guilty Gear Xrd.</li>
-<li>Escape from Monkey Island.</li>
-<li>Memento Mori.</li>
-<li>Titanfall with northstar.</li>
-<li>DCS World steam edition.</li>
-<li>Assetto Corsa.</li>
-<li>Persona 5 Strikers.</li>
-<li>Shin Megami Tensei III Nocturne HD Remaster.</li>
-<li>Tex Murphy: Overseer.</li>
-<li>Alternativa.</li>
-<li>The Big Secret of a Small Town.</li>
-</ul>
-<p>Plus other back-end work:</p>
-<ul>
-<li>Import upstream proton fixes.</li>
-<li>Updated wine bleeding edge.</li>
-<li>Updated dxvk git.</li>
-<li>Updated vkd3d-proton git.</li>
-</ul>
-<p>While <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton8-13" target="_blank">GE-Proton 8-13</a> was a hotfix to clean up other issues:</p>
-<ul>
-<li>steam helper MR <a href="https://github.com/ValveSoftware/Proton/pull/6555" target="_blank">ValveSoftware#6555</a> re-added and updated. Allows -northstar to work with Titanfall 2 while not breaking other games that use bash script launchers. This also allows other launch options to be used alongside -northstar option, regardless of arguement ordering (ie -northstar -novid, or -novid -northstar). This MR also allows launch options to be used with EA games (link2ea commands).</li>
-<li>Updated Titanfall 2 protonfix to restore original Titanfall2.exe if NorthstarLauncher.exe symlink was previously used. (the -northstar option does not use/need NorthstarLauncher.exe, it works instead via wsock32 override).</li>
-</ul>
-<hr/>
-<p><strong>Text Guide to install GE-Proton:</strong></p>
-<ul>
-<li>Download
-<ul>
-<li><u>Desktop</u>: head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>.</li>
-<li><u>Steam Deck</u>: simply download ProtonUp-Qt from Discover in Desktop Mode (Steam Button -&gt; Power - Switch to Desktop).</li>
-</ul>
-</li>
-<li>Load ProtonUp-Qt.</li>
-<li>Make sure it's set to Steam at the top and select to install GE-Proton.</li>
-<li>Reload Steam to update the compatibility layer list.</li>
-<li>In Steam:
-<ul>
-<li><u>Desktop</u>: right click a game and go to Properties.</li>
-<li><u>Steam Deck</u>: find the game in your library, go to the little cog on the right and then select Properties.</li>
-</ul>
-</li>
-<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down</li>
-</ul>
-<p>My original video of how to do it on Steam Deck:</p>
-<div class="hidden_video" data-video-id="6doaQNnHR60"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37b4fc871ab3188f385a1c60a2e0949c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6doaQNnHR60" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/ge-proton-8-13-and-8-12-released-fsr-no-longer-default-and-many-game-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/ge-proton-8-13-and-8-12-released-fsr-no-longer-default-and-many-game-fixes/</guid>
-      <pubDate>Mon, 21 Aug 2023 10:20:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Dwarf Fortress gets a Linux Beta on Steam</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Ready to dig deep? Dwarf Fortress now has a Linux Beta available on Steam, so you can get testing and see what all the fuss is about with this new version. While it was already playable with Proton, we knew for a while that Bay 12 Games planned Native Linux support as well.</p>
-<p>As they said in the Steam <a href="https://store.steampowered.com/news/app/975370/view/3660916710568153375" target="_blank">announcement</a> "The Linux version is almost ready, and in about two weeks we will be looking for beta testers, after Tarn gets back from Germany... in fact, it's already on the Public Beta Branch!" — so even though technically right now they're not looking for testers they put it up for you anyway.</p>
-<p>Simply opt into the main Beta for it on Steam and you'll be able to play and test it. However, if you find you can't get it because it keeps using Proton, you can select the Steam Linux Runtime from the Compatibility menu which will then make sure it grabs the Linux version.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18209411421692612541gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/18209411421692612541gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12872830061692612543gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/12872830061692612543gol1.jpg"/></a><br/>
-<em>Shots taken from the Linux Beta.</em></p>
-<p>So far so good it's all working as expected, although the game still intimidates the heck out of me.</p>
-<p>You can <a href="https://store.steampowered.com/app/975370/Dwarf_Fortress/" target="_blank">buy it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/dwarf-fortress-gets-a-linux-beta-on-steam/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/dwarf-fortress-gets-a-linux-beta-on-steam/</guid>
-      <pubDate>Mon, 21 Aug 2023 10:09:48 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1253370599id23136gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Beta</category>
-      
-      <category>Building Sim</category>
-      
-    </item>
-    
-    <item>
-      <title>Wine 8.14 is out now and here&#39;s what&#39;s new</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The open source compatibility layer Wine has a brand new development release available. Here's what's new and changed in <a href="https://www.winehq.org/announce/8.14" target="_blank">Wine 8.14</a>. We're over half-way through the year now, so in around another ~5 months we're likely to see the stable Wine 9.0 release.</p>
-<p>The main changes listed are:</p>
-<blockquote>
-<ul>
-<li>PCSC framework used on macOS for smart card support.</li>
-<li>Dumping of Windows registry files in WineDump.</li>
-<li>Fixes for Wow64 window messages.</li>
-<li>Various bug fixes.</li>
-</ul>
-</blockquote>
-<p>30 bugs were also noted now to be fixed including issues for the likes of: DiRT 2 Demo, Candytron Demo, The Settlers II: 10th Anniversary, Civilization 6, Freelancer with the Crossfire mod, Spider-Man: Shattered Dimensions, Warframe, Steam client, Yuzu and more.</p>
-<p><em>Want help managing Wine on Linux? You can try <a href="https://usebottles.com/" target="_blank">Bottles</a>, <a href="https://lutris.net/" target="_blank">Lutris</a> and the <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Launcher</a>.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/08/wine-814-is-out-now-and-heres-whats-new/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/08/wine-814-is-out-now-and-heres-whats-new/</guid>
-      <pubDate>Sun, 20 Aug 2023 09:29:15 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-      <category>Wine</category>
       
     </item>
     
