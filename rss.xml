@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-09-24 07:24:45.406186</pubDate>
+    <pubDate>2023-09-25 07:24:46.545662</pubDate>
 
     
     <image>
@@ -18,6 +18,114 @@
     </image>
 
     
+    
+    <item>
+      <title>GE-Proton 8-16 released with tweaks for Genshin Impact, Resident Evil and Wine upgrades</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>While Valve continues working towards <a href="https://www.gamingonlinux.com/2023/09/proton-80-4-is-now-in-testing-with-a-release-candidate/" target="_blank">Proton 8.0-4 that has a Release Candidate</a> available, a small but useful update to the community-maintained GE-Proton has been released. GE-Proton 8-16 is on the smaller side but contains some of the usual upgrades to various components.</p>
+<p>This is the version of Proton <em>not</em> supported by Valve, so it may have issues at times the official Proton does not. However, it also at times pulls in fixes a bit quicker and can do things sometimes that Valve cannot do. To sum up: use it if you need it for specific games, otherwise sticking with the official Proton is the best idea. More about Proton can be found in <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">my Proton beginner's guide</a>.</p>
+<p>The changes in <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton8-16" target="_blank">GE-Proton 8-16</a>:</p>
+<div class="markdown-body my-3" data-pjax="true" data-test-selector="body-content" data-view-component="true">
+<blockquote>
+<ul>
+<li>imported build changes from upstream proton</li>
+<li>update wine to latest bleeding edge</li>
+<li>updated dxvk to latest git</li>
+<li>updated vkd3d-proton to latest git</li>
+<li>added patch to fix genshin impact crash on opening long urls (thanks iglu47 and Awekening on discord)</li>
+<li>protonfixes: removed various no longer needed video playback fixes for resident evil games (thanks Bitwolfies)</li>
+</ul>
+</blockquote>
+<hr/>
+<p><strong>Text Guide to install GE-Proton:</strong></p>
+<ul>
+<li>Download
+<ul>
+<li><u>Desktop</u>: head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>.</li>
+<li><u>Steam Deck</u>: simply download ProtonUp-Qt from Discover in Desktop Mode (Steam Button -&gt; Power - Switch to Desktop).</li>
+</ul>
+</li>
+<li>Load ProtonUp-Qt.</li>
+<li>Make sure it's set to Steam at the top and select to install GE-Proton.</li>
+<li>Reload Steam to update the compatibility layer list.</li>
+<li>In Steam:
+<ul>
+<li><u>Desktop</u>: right click a game and go to Properties.</li>
+<li><u>Steam Deck</u>: find the game in your library, go to the little cog on the right and then select Properties.</li>
+</ul>
+</li>
+<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down</li>
+</ul>
+<p>My original video of how to do it on Steam Deck:</p>
+<div class="hidden_video" data-video-id="6doaQNnHR60"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37b4fc871ab3188f385a1c60a2e0949c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6doaQNnHR60" target="_blank">See video</a></div></div>
+</div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/ge-proton-8-16-released-with-tweaks-for-genshin-impact-resident-evil-and-wine-upgrades/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/ge-proton-8-16-released-with-tweaks-for-genshin-impact-resident-evil-and-wine-upgrades/</guid>
+      <pubDate>Sun, 24 Sep 2023 14:31:10 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Mesa getting Vulkan performance upgrades for submission merging</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Developer Mike Blumenkrantz, who is one of many under contract by Valve, has released another blog post highlighting another fun optimization from their ongoing Mesa driver work.</p>
+<p>The post as usual is highly technical, so if you want to full info <a href="https://www.supergoodcode.com/tis-the-season/" target="_blank">give it a read</a>. The issue is with how Mesa was dealing with the Vulkan <a href="https://registry.khronos.org/vulkan/site/guide/latest/queues.html" target="_blank">Queue</a> system, and what they were doing originally seemed to be a bit of a problem where it was "splitting the batched submits into individual ones, each submit also allocates a struct to contain the submit info so that the drivers can use the same interface. So it’s increasing the kernel overhead by performing multiple submits and also increasing memory allocations" with Blumenkrantz mentioning multiple tests that "showcase some driver pain points".</p>
+<p>The result is a <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/25352" target="_blank">pull request</a> (not yet merged) that gives a performance improvement on RADV GFX11 (RDNA3) of 1000% in one case and 50% in another. An impressive win but it continues. On Lavapipe (a CPU-based Software Vulkan driver) it saw a 3000% improvement in one case and a 1000% improvement in another, Intel Arc (Intel DG2) one case saw a 5000% improvement and Turnip A740 had a 4000% improvement and a 3000% improvement for another point.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/mesa-getting-vulkan-performance-upgrades-for-submission-merging/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/mesa-getting-vulkan-performance-upgrades-for-submission-merging/</guid>
+      <pubDate>Sun, 24 Sep 2023 13:24:42 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/mesa.png" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Mesa</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Godot Engine hits over 50K euros per month in funding</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>One of the big winners of the <a href="https://www.gamingonlinux.com/2023/09/unity-announced-big-changes-following-the-hated-runtime-fee/" target="_blank">Unity debacle</a> is the free and open source <a href="https://godotengine.org/" target="_blank">Godot Engine</a>, which has seen its funding soar to a much more impressive level as Unity basically gave them free advertising. Certainly helps that Godot ended up launching their <a href="https://fund.godotengine.org/" target="_blank">new funding platform</a> on the same day Unity announced their hated Runtime Fee system.</p>
+<p>Initially when the Godot developers announced their new funding platform they only had around €25K per month from 438 members. This has now exploded up to €50,323 per month from 1,458 members. A much better and more sustainable amount considering they're building an entire game engine.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3126412501695557841gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3126412501695557841gol1.jpg"/></a></p>
+<p>They also recently gained Terraria developer <a href="https://www.gamingonlinux.com/2023/09/terraria-developer-re-logic-donates-100k-to-godot-engine-and-fna/" target="_blank">Re-Logic as a Platinum sponsor</a>, as Re-Logic donated $100K along with $1,000 a month in ongoing funding. On top of that developer <a href="https://www.gamingonlinux.com/2023/09/robot-gentleman-dev-of-60-seconds-blasts-unity-switches-to-godot-and-increases-funding/" target="_blank">Robot Gentleman of 60 Seconds!</a> has also upped their support of Godot and no doubt plenty of others.</p>
+<p>Hopefully this is going to be a turning point, where developers look more to open source tools where feasible instead of locking themselves into proprietary game engines with predatory business practices. Unity has proven multiple times now they're willing to break developer's trust like their <a href="https://www.gamingonlinux.com/2023/09/unity-nuked-their-terms-of-service-on-github-as-views-were-so-low/" target="_blank">messing around with Terms of Services</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/godot-engine-hits-over-50k-euros-per-month-in-funding/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/godot-engine-hits-over-50k-euros-per-month-in-funding/</guid>
+      <pubDate>Sun, 24 Sep 2023 12:23:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/godot.jpg" type="image/jpeg"/>
+      
+      <category>Game Dev</category>
+      
+      <category>Godot Engine</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Unity nuked their Terms of Service on GitHub as &#39;views were so low&#39;</title>
@@ -4190,129 +4298,6 @@ If you're a Steam Deck user, we hope you could try Gordian Quest on your handhel
       <category>Steam</category>
       
       <category>Video</category>
-      
-    </item>
-    
-    <item>
-      <title>Humble Choice has Tiny Tina&#39;s Wonderlands, Patch Quest, Deceive Inc + more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another pretty great sounding bundle of games, with the monthly <a href="https://humblebundle.com/choice?partner=gamingonlinux" target="_blank">Humble Choice live for September</a>. Here's a run over the compatibility for Steam Deck and desktop Linux.</p>
-<p>Using the usual rating system of Deck Verified, <a href="http://protondb.com/" target="_blank">ProtonDB</a> and Native Linux notes to save you clicking around. Each game title is also a Steam link in case you need more info first. Humble Choice is a monthly curated selection of games, and if you stick around with it long enough you get a Humble Store discount too.</p>
-<p>Here's what's inside it this time:</p>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1286680" target="_blank">Tiny Tina's Wonderlands</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1347970" target="_blank">Patch Quest</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>ProtonDB Gold</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/820520" target="_blank">Deceive Inc.</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>ProtonDB Gold</li>
-<li>+ 50% off Black Tie DLC</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/874260" target="_blank">The Forgotten City</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1170080" target="_blank">Foretales</a></p>
-<ul>
-<li><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1907720" target="_blank">Autonauts vs Piratebots</a></p>
-<ul>
-<li><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1628130" target="_blank">Who Pressed Mute on Uncle Marcus?</a></p>
-<ul>
-<li><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</li>
-<li>No ProtonDB Rating</li>
-</ul>
-<p class="plain-list-title"><a href="https://store.steampowered.com/app/1815570" target="_blank">Aces &amp; Adventures</a></p>
-<ul>
-<li><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</li>
-<li>ProtonDB Platinum</li>
-</ul>
-<p>Check out <a href="https://humblebundle.com/choice?partner=gamingonlinux" target="_blank">Humble Choice here</a>.</p>
-<p>Also don't miss out on their <a href="https://www.gamingonlinux.com/2023/09/get-a-bunch-of-live-action-fmv-games-from-humble-bundle/" target="_blank">bundle of excellent FMV games</a>, plenty to like in that bundle too.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/09/humble-choice-tiny-tinas-wonderlands-patch-quest-deceive-inc/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/humble-choice-tiny-tinas-wonderlands-patch-quest-deceive-inc/</guid>
-      <pubDate>Tue, 05 Sep 2023 17:55:36 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/293110139id23213gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Broken Sword - Shadow of the Templars getting remastered, plus a whole new adventure</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Revolution Software recently announced two huge bits of news for adventure game fans! Not only will there be a whole new game with Broken Sword - Parzival's Stone but Broken Sword - Shadow of the Templars: Reforged is coming too.</p>
-<p><em>Yes I totally missed the original announcements.</em></p>
-<div class="hidden_video" data-video-id="Y_s5p_rBIjE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bdfd93e6d5e39b86bd7d50d401a36bdf.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Y_s5p_rBIjE" target="_blank">See video</a></div></div>
-<p>From the press release:</p>
-<p>“This is the start of what we’re calling the ‘Broken Sword Renaissance’,” says Charles Cecil, Founder and CEO of Revolution Software. “With both Parzival’s Stone and Shadow of the Templars: Reforged, we’re making a big, bold, and broad offer both to those who have walked in the shoes of George &amp; Nico before and hunger for a new adventure, and also just as crucially people who have never even heard of the franchise. As with all Broken Sword games, both titles exist as independent adventures with no prior knowledge required, though naturally for those invested in the world we’ve created, there’s a lot to tap into under the surface.”</p>
-<p>One thing to note, is that Broken Sword - Shadow of the Templars: Reforged is <a href="https://www.polygon.com/23842925/broken-sword-6-bs1-remaster-charles-cecil" target="_blank">making use of AI Art</a> to help it along. Speaking to Polygon the founder of Revolution, Charles Cecil, mentioned they simply couldn't afford to remake it without the help of an AI trained using their own sprites. This did result in some backlash, with Cecil <a href="https://www.gamedeveloper.com/business/broken-sword-designer-charles-cecil-says-criticism-of-bespoke-ai-tool-is-frankly-ludicrous-" target="_blank">speaking to Game Developer</a> to try and clear it up noting they own <em>all</em> the data, it's trained with their own work, and it saves time on tedious tasks to let their artists then add the human touch after for "facial expressions, correct animations, and finesse the details" and so on.</p>
-<p>There's a lot of fuss over AI art, especially because plenty of it is trained by using artwork from others, but in this case it simply sounds like a useful time-saving tool for their artists.</p>
-<p>Both games are due out next year, and according to the Steam pages for each they will have Linux support too.</p>
-<p>Steam pages:</p>
-<p><a href="https://store.steampowered.com/app/2544110/Broken_Sword__Shadow_of_the_Templars_Reforged/" target="_blank">Broken Sword - Shadow of the Templars: Reforged</a></p>
-<p><a href="https://store.steampowered.com/app/2546810/Broken_Sword__Parzivals_Stone/" target="_blank">Broken Sword - Parzival's Stone</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/09/broken-sword-shadow-of-the-templars-getting-remastered-plus-a-whole-new-adventure/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/broken-sword-shadow-of-the-templars-getting-remastered-plus-a-whole-new-adventure/</guid>
-      <pubDate>Tue, 05 Sep 2023 17:37:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/762835951id23212gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Point & Click</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Linux updates tease Valve &#39;Galileo&#39; and &#39;Sephiroth&#39; - Steam Deck refresh? Or new VR?</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Here's something that could be exciting but also could be a whole lot of nothing. So keep expectations firmly in check, but work submitted for Linux kernel 6.6 show something interesting from Valve. Potentially a Steam Deck refresh or their new VR headset perhaps?</p>
-<p>The note comes from <a href="https://www.phoronix.com/news/Linux-6.6-Sound" target="_blank">Phoronix</a>, who as usual goes over basically every little thing Linux kernel related. They found work <a href="https://lore.kernel.org/lkml/87msy8hicb.wl-tiwai@suse.de/" target="_blank">being pulled in</a> for Linux kernel 6.6 sound updates, that includes additions for AMD Van Gogh, the chip used in the Steam Deck. However, when you look into the <a href="https://git.kernel.org/pub/scm/linux/kernel/git/tiwai/sound.git/commit/?id=692f5510159c79bfa312a4e27a15e266232bfb4c" target="_blank">full updates</a> and scroll down for a while there's this interesting little bit:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4266316911693918404gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4266316911693918404gol1.png"/></a></p>
-<p>So here we have <em>Galileo</em> and <em>Sephiroth</em> being added for Valve - the question is <em>what</em> are they? They're being added under "Valve Jupiter device", with Jupiter being one of the names Valve seems to use for SteamOS. Considering the current SoC in the Steam Deck is named Aerith, a refresh of Sephiroth would continue their fun Final Fantasy inspired naming.</p>
-<p>They <em>could</em> point to a lot of things: a Steam Deck refresh, the new VR headset we know they're working on, some developer boards they use in-house or anything really. We really have no idea but it's always fun to wonder about what it could turn out to be.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/09/linux-updates-tease-valve-galileo-and-sephiroth-steam-deck-refresh-or-new-vr/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/linux-updates-tease-valve-galileo-and-sephiroth-steam-deck-refresh-or-new-vr/</guid>
-      <pubDate>Tue, 05 Sep 2023 13:00:58 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Kernel</category>
-      
-      <category>Misc</category>
-      
-      <category>Speculation</category>
       
     </item>
     
