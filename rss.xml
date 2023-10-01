@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-09-30 07:24:30.869668</pubDate>
+    <pubDate>2023-10-01 07:24:35.029523</pubDate>
 
     
     <image>
@@ -18,6 +18,106 @@
     </image>
 
     
+    
+    <item>
+      <title>Wine 8.17 is out with vkd3d v1.9 and initial Wayland window management</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The compatibility layer <a href="https://www.winehq.org/announce/8.17" target="_blank">Wine version 8.17</a> is officially out now that brings with it some exciting new features, along with some bug fixes so here's what's new.</p>
+<p>What's new:</p>
+<blockquote>
+<ul>
+<li>Bundled vkd3d upgraded to version 1.9.</li>
+<li>Initial window management in the Wayland driver.</li>
+<li>SoundFont support in DirectMusic.</li>
+<li>Various bug fixes.</li>
+</ul>
+</blockquote>
+<p>The bug fixes include problems solved for The Elder Scrolls: Oblivion, Cemu, RageMP, Dwarf Fortress (Steam) and other miscellaneous fixes. Nice to see the Wayland work continuing to progress so eventually Wine will be able to run fully native on Wayland directly.</p>
+<p><a href="https://gitlab.winehq.org/wine/vkd3d/-/releases/vkd3d-1.9" target="_blank">vkd3d version 1.9</a> was only released on September 21st with these highlights:</p>
+<blockquote>
+<ul>
+<li>Yet more improvements to the HLSL compiler.</li>
+<li>A new utility to inspect the contents of DXBC blobs.</li>
+<li>Miscellaneous bug fixes.</li>
+</ul>
+</blockquote>
+<p>Not to be confused with VKD3D-Proton, which comes from Valve devs. This is the Wine project's own Direct3D to Vulkan translation library, that will focus on everything whereas Valve has a focus on gaming.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/wine-817-is-out-with-vkd3d-v19-and-initial-wayland-window-management/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/wine-817-is-out-with-vkd3d-v19-and-initial-wayland-window-management/</guid>
+      <pubDate>Sat, 30 Sep 2023 20:31:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental adds fixes for Crysis 2 &amp; 3, Starfield, Deep Rock Galactic and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A nice update for Proton Experimental from Valve landed September 29th with a good amount of fixes for games on Steam Deck and desktop Linux. This is the special version of Proton that Valve regularly add fixes into for testing, before being rolled out to the main stable Proton release that's currently Proton 8.0-3, with <a href="https://www.gamingonlinux.com/2023/09/proton-80-4-is-now-in-testing-with-a-release-candidate/" target="_blank">Proton 8.0-4 currently in testing</a>.</p>
+<p>First up noted as now playable is <em>Red Tie Runner</em>. Plus all these fixes:</p>
+<blockquote>
+<ul>
+<li>Fixed crash in Remnant: From The Ashes and Deep Rock Galactic and possibly other games with too many audio devices connected.</li>
+<li>Fixed Hogwarts Legacy crashing on Intel GPUs.</li>
+<li>Fixed Starfield not saving photos in photo mode.</li>
+<li>Fixed Resident Evil 2 crashing for some users during gameplay.</li>
+<li>Fixed Crysis 3 being unable to launch properly due to failed authorization.</li>
+<li>Fixed Crysis 3 Administrative Approval EA App Window being corrupted on Nvidia.</li>
+<li>Fixed Crysis 2 Remastered showing only black screen for some users.</li>
+<li>Fixed video playback in Out of Ore and Wayfinder.</li>
+<li>Fixed Steam Workshop interface randomly not working in Trivia Tricks.</li>
+<li>Fixed a memory leak when playing videos in VRchat using AVPro.</li>
+<li>Fixed recent Proton Experimental regressions:
+<ul>
+<li>Crysis 2 Remastered and Crysis 3 Remastered no longer hangs when going in game when raytracing is enabled.</li>
+<li>Mouse now works correctly in the main menu in Death Loop.</li>
+<li>MechWarrior Online camera no longer behaves weirdly in communication menu on KDE Wayland.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>Changelog can be found <a href="http://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">over here</a>. </p>
+<hr/>
+<p><strong>How to change your Proton version:</strong></p>
+<p>Steam Deck:</p>
+<ul>
+<li>Pick a game in your Library and head to the little cog icon on the right.</li>
+<li>Click Properties, then Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<p>On a Linux desktop:</p>
+<ul>
+<li>Right click a game, go to Properties.</li>
+<li>Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/09/proton-experimental-adds-fixes-for-crysis-2-3-starfield-deep-rock-galactic-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/proton-experimental-adds-fixes-for-crysis-2-3-starfield-deep-rock-galactic-and-more/</guid>
+      <pubDate>Sat, 30 Sep 2023 15:14:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/794233899id23353gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>AMD FSR 3 arrived today in two games - source code later</title>
@@ -4027,103 +4127,6 @@ Pictured - LMDE 6 "Faye"</p>
       <category>Misc</category>
       
       <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Unity introduces new fees for game devs based on revenue and game installs</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Unity Technologies have announced an overhaul to their fees for game developers, which now includes tracking game installs and revenue. <em>Update notes: future updates will be at the bottom of the article.</em></p>
-<p>In the <a href="https://blog.unity.com/news/plan-pricing-and-packaging-updates" target="_blank">announcement</a> they call it the Unity Runtime Fee, which is based upon a qualifying game being downloaded by users. They said they chose it because they believe "an initial install-based fee allows creators to keep the ongoing financial gains from player engagement, unlike a revenue share". Given that it's a flat-fee though, this will likely sting game devs who sell games at a lower cost since this fee will be on top of all their other fees (like Steam's 30% cut for example).</p>
-<p>What games will be hit? As they explained:</p>
-<ul>
-<li><strong>Unity Personal </strong> and <strong>Unity Plus: </strong>Those that have made $200,000 USD or more in the last 12 months AND have at least 200,000 lifetime game installs.</li>
-<li><strong>Unity Pro</strong> and <strong>Unity Enterprise</strong>: Those that have made $1,000,000 USD or more in the last 12 months AND have at least 1,000,000 lifetime game installs.</li>
-</ul>
-<p>This plan comes into place on January 1st, 2024 and they gave this breakdown of it:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10657751081694524453gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10657751081694524453gol1.png"/></a></p>
-<p>Note: Unity said it won't be applied retroactively when you hit the cap, the install fee is charged after the threshholds have been met for additional installs. However, it <em>will</em> apply to games already on the market. However, games that do not hit the thresholds or aren't monetised at all will <em>not</em> be required to pay the fees.</p>
-<p>This is on top of the Unity subscription developers already pay, although Unity will be removing the annual revenue limit on the Unity Personal plan when this launches. For anyone on Unity Pro though, for example, the above is on top of the subscription cost which is $2,040 per year or $185 a month per-person.</p>
-<p>One of the concerns with this is from a privacy standpoint: how exactly will they be tracking this? Since they will be invoicing developers directly based on their install tracking. They don't really make that clear. There's various other problems that Unity need to make clear. As just one example - what about keys for a game in a charity bundle, how are they going to be counted if the game is paid but they're given away? What about if there's a pirated version, how are they tracking legit paid installs? There's probably numerous other examples where it may cause problems.</p>
-<p>Another change buried in the FAQ is that people on the Unity Personal plan need internet access to continue to use Unity. If you lose internet, you can only continue using it for 3 days while offline. </p>
-<p><strong>Update</strong>: since there's been a huge uproar from Unity developers, especially on their official Unity forum, one of their team has <a href="https://forum.unity.com/threads/unity-plan-pricing-and-packaging-updates.1482750/page-2#post-9289318" target="_blank">clarified</a> some details about the monthly rate:</p>
-<blockquote>
-<p>Ya, sorry, I get how this wording is confusing. So, let's say you have your 1,000,001th install, officially pushing you over the cap. You will have a fee of 15 cents. You will not pay that 15cents every month. Just a single time. The monthly thing is to indicate a monthly assessment to see where your installs are and revenue is to see if you had more installs or dropped below the cap. Does that help?</p>
-</blockquote>
-<p>In another post, they also <a href="https://forum.unity.com/threads/unity-plan-pricing-and-packaging-updates.1482750/page-9#post-9290938" target="_blank">clarified</a> it's "Per game / project".</p>
-<p><strong>Update #2</strong>: On social network X, Unity put up this <a href="https://twitter.com/unity/status/1701650081403842851" target="_blank">statement</a> I've copied below in case you can't access X:</p>
-<blockquote>
-<p>Today we announced a change to our business model which includes new additions to our subscription plans, and the introduction of a Runtime fee. We wanted to provide clarifying answers to the top questions most of you are asking.</p>
-<p>Yes, this is a price increase and it will only affect a small subset of current Unity Editor users.</p>
-<p>Today, a large majority of Unity Editor users are currently not paying anything and will not be affected by this change. The Unity Runtime fee will not impact the majority of our developers.</p>
-<p>The developers who will be impacted are generally those who have successful games and are generating revenue way above the thresholds we outlined in our blog. This means that developers who are still building their business and growing the audience of their games will not pay a fee. The program was designed specifically this way to ensure developers could find success before the install fee takes effect.</p>
-<p>We want to be clear that the counter for Unity Runtime fee installs starts on January 1, 2024 - it is not retroactive or perpetual. We will charge once for a new install; not an ongoing perpetual license royalty, like revenue share.</p>
-<p>We looked for ways to lessen the impact on developers, and provide ways to bring the Runtime fee to zero. If you’re using any of our ad products, Unity Gaming Services or cloud services, etc. please contact us to discuss discounts.</p>
-<p>We are actively listening to and following your questions closely. Please review our FAQ (<a href="https://on.unity.com/3PAiqHH" target="_blank">https://on.unity.com/3PAiqHH</a>) on today’s announcement. We also invite you to continue to discuss these changes with us on our forums: <a href="https://on.unity.com/3RmyLRx" target="_blank">https://on.unity.com/3RmyLRx</a>.</p>
-</blockquote>
-<p><strong>Update #3 13/09/2023</strong>: Unity have now compiled a list of common questions and answers in their <a href="https://forum.unity.com/threads/unity-plan-pricing-and-packaging-updates.1482750/" target="_blank">official forum post</a>, which doesn't seem to have made things any better. In fact, it only confirmed some of the worst fears from developers. Like this for example:</p>
-<blockquote>
-<p>Q: If a user reinstalls/redownloads a game / changes their hardware, will that count as multiple installs?<br/>
-A: Yes. The creator will need to pay for all future installs. The reason is that Unity doesn’t receive end-player information, just aggregate data.</p>
-</blockquote>
-<p>So, at the current time with their plan, developers need to pay each time you uninstall and re-install. And each time you install on a different device. As they briefly explained there, they have no way to tell the actual difference on reinstalls since it's just aggregate data.</p>
-<p>Then there's this too:</p>
-<blockquote>
-<p>Q: If a game that's made enough money to be over the threshold has a demo of the same game, do installs of the demo also induce a charge?<br/>
-A: If it's early access, Beta, or a demo of the full game then yes. If you can get from the demo to a full game then yes. If it's not, like a single level that can't upgrade then no.</p>
-</blockquote>
-<p>What this means is that if developers have a demo for their game, and this game is over both the install and revenue threshold, if the demo progress carries over into the full game the demo itself is classed as another install that will cost developers money (even if the demo player doesn't buy the game).</p>
-<p>As for how Unity are tracking installs, especially for things like pirated installs and people having a grudge against a developer to spin up lots of reinstalls (it will happen…), Unity basically tell you to trust their black-box proprietary tech on that (from their FAQ):</p>
-<blockquote>
-<p>We do already have fraud detection practices in our Ads technology which is solving a similar problem, so we will leverage that know-how as a starting point. We recognize that users will have concerns about this and we will make available a process for them to submit their concerns to our fraud compliance team.</p>
-</blockquote>
-<p>Also from their <a href="https://twitter.com/unity/status/1701689241456021607" target="_blank">replies</a> on X:</p>
-<blockquote>
-<p>We leverage our own proprietary data model, so you can appreciate that we won’t go into a lot of detail, but we believe it gives an accurate determination of the number of times the runtime is distributed for a given project.</p>
-</blockquote>
-<p><em>So it's just a "trust me bro" situation here for developers.</em></p>
-<p>A lot of developers are absolutely furious at Unity. Not just because it has been communicated so badly, and because even just based on that one answer above the cost to developers will be ridiculous, but because Unity just pulled the rug from under developers with entirely new terms even for existing games. Even if they reverse course, it shows that Unity are willing to change anything at any time which is incredibly risky for developers embarking on multi-year game development. <a href="https://twitter.com/tha_rami/status/1701864575031775516" target="_blank">This thread</a> on X from respected developer Rami Ismail highlights things quite well.</p>
-<p><em>Perhaps it's time to take a look at the free and open source <a href="https://godotengine.org/" target="_blank">Godot Engine</a>?</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/09/unity-introduces-new-fees-for-game-devs-based-on-revenue-and-game-installs/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/unity-introduces-new-fees-for-game-devs-based-on-revenue-and-game-installs/</guid>
-      <pubDate>Tue, 12 Sep 2023 13:24:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/unity.png" type="image/jpeg"/>
-      
-      <category>Game Dev</category>
-      
-      <category>Misc</category>
-      
-      <category>Unity</category>
-      
-    </item>
-    
-    <item>
-      <title>Happy Birthday to Steam as it turned 20 today</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Where has all that time gone? It's pretty hard to believe that it was 20 years ago that Steam arrived, and with it that glorious green interface.</p>
-<p>They weren't even close to being the first digital store to provide games, but requiring Steam to run Half-Life 2 regardless of digital purchase or a boxed copy was likely the defining moment that helped push it to success for Valve. This was likely my own introduction to Steam as well, back in the day where my PC could only <em>just</em> about run Half-Life 2 when you had long loading screens between sections. How time flies huh?</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10139832541694519337gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10139832541694519337gol1.jpg"/></a><em>Pictured - Steam homepage back in 2004 after Half-Life 2 released</em></p>
-<p>Valve has a long colourful history of expanding Steam from a basic launcher to a full store and later adding in the Steam Workshop, Early Access, Greenlight, Steam Direct, User Reviews, Virtual Reality, Steam Machines, Steam Deck, Remote Play, Points Shop, Movies and TV, Soundtracks and the list goes on and on.</p>
-<p>Not everything Valve has tried went well like the original Steam Machines, and killing off their ambitions for non-gaming video content but they keep on trying and expanding and it seems there's really no stopping it. It grows every year with Valve's <a href="https://www.gamingonlinux.com/2023/02/steam-had-83000-new-customers-every-day-in-2022/" target="_blank">2022 overview</a> noting they had seen 83,000 new first-time purchasers every day of the year.</p>
-<p>Naturally, without Steam and Valve, Linux gaming wouldn't be where it is today so we're doubly thankful for its existence. Just look at how <a href="https://www.gamingonlinux.com/2023/08/5-years-ago-valve-released-proton-forever-changing-linux-gaming/" target="_blank">Valve's Proton has changed things</a> in the last 5 years.</p>
-<p>Whatever will they announce next — more <a href="https://www.gamingonlinux.com/2023/09/more-teasers-appear-for-upcoming-valve-hardware/" target="_blank">new hardware perhaps</a>?</p>
-<p><em>Do you have any especially fond memories of Steam over the years? Share them in the comments.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/09/happy-birthday-to-steam-as-it-turned-20-today/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/happy-birthday-to-steam-as-it-turned-20-today/</guid>
-      <pubDate>Tue, 12 Sep 2023 11:53:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
       
     </item>
     
