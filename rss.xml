@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-10-15 07:24:18.637182</pubDate>
+    <pubDate>2023-10-16 07:24:25.044067</pubDate>
 
     
     <image>
@@ -20,10 +20,146 @@
     
     
     <item>
+      <title>Forza Horizon 5 gets a Proton Hotfix to work again on Steam Deck / Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>While Valve <a href="https://www.gamingonlinux.com/2023/10/valve-investigating-forza-motorsport-issues-on-steam-deck-linux/" target="_blank">continue investigating</a> the launch issues with the new Forza Motorsport, at least Forza Horizon 5 should work again on Steam Deck and desktop Linux after also breaking recently. Valve continues chasing compatibility, since it seems some developers aren't testing their games for updates. Hopefully more developers will test Steam Deck at least before launching updates.</p>
+<p>Valve developer Pierre-Loup Griffais <a href="https://twitter.com/Plagman2/status/1712965569681723472" target="_blank">mentioned</a> on X on October 13th: "A Proton Hotfix has been deployed for the Forza Horizon 5 launch failure post-update, and will be automatically selected."</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11278420721697395759gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11278420721697395759gol1.jpg"/></a></p>
+<p>If you find Proton Hotfix is not automatically selected for it here's how to change it below:</p>
+<p class="plain-list-title"><strong>Steam Deck</strong></p>
+<ul>
+<li>Pick a game in your Library and head to the little cog icon on the right.</li>
+<li>Click Properties, then Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Hotfix from the dropdown.</li>
+</ul>
+<p class="plain-list-title"><strong>On a Linux desktop</strong></p>
+<ul>
+<li>Right click a game, go to Properties.</li>
+<li>Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Hotfix from the dropdown.</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/10/forza-horizon-5-gets-a-proton-hotfix-to-work-again-on-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/10/forza-horizon-5-gets-a-proton-hotfix-to-work-again-on-steam-deck-linux/</guid>
+      <pubDate>Sun, 15 Oct 2023 18:50:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/75764392id23430gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>GE-Proton 8-17 brings fixes for Alan Wake, Batman Arkham Asylum and more (updated)</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A fresh release of the community-maintained GE-Proton for Steam Deck and Linux desktop is out! GE-Proton 8-17 has some nice sounding fixes for running various games.</p>
+<p>Reminder: this is the version of Proton <em>not</em> supported by Valve. It may have issues at times the official Proton does not. However, it also at times pulls in fixes a bit quicker and can do things sometimes that Valve cannot do. To sum up: use it if you need it for specific games, otherwise sticking with the official Proton is the best idea. More about Proton can be found in <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">my Proton beginner's guide</a>.</p>
+<p>Here's all that's changed in GE-Proton 8-17:</p>
+<blockquote>
+<ul>
+<li>Added protonfix for Alan Wake (thanks FozziHi)</li>
+<li>Added protonfix for Batman Arkham Asylum (thanks FozziHi)</li>
+<li>Added protonfix for Tokyo Necro (thanks R1kaB3rN)</li>
+<li>Added protonfix for The Song of Saya (thanks R1kaB3rN)</li>
+<li>Added protonfix for YOU and ME and HER: A Love Story (thanks R1kaB3rN)</li>
+<li>Added upstream patch to allow R6 Siege to launch again (https://gitlab.winehq.org/wine/wine/-/merge_requests/3777) (multiplayer still does not work due to anticheat)</li>
+<li>Added fixup for resolution calculation when WINE_FULLSCREEN_FSR is used (thanks Ph42oN and loathingKernel)</li>
+<li>Import upstream proton build changes</li>
+<li>Import upstream VR changes</li>
+<li>Update vkd3d-proton</li>
+<li>Update dxvk</li>
+<li>Update wine to bleeding-edge</li>
+</ul>
+</blockquote>
+<p>See the <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton8-17" target="_blank">changelog here</a>.</p>
+<p><strong>Update 20:50 UTC</strong>: <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton8-18" target="_blank">GE-Proton 8-18</a> was released as a hotfix as the Alan Wake protonfix was missing.</p>
+<hr/>
+<p><strong>Text Guide to install GE-Proton:</strong></p>
+<ul>
+<li>Download
+<ul>
+<li><u>Desktop</u>: head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>.</li>
+<li><u>Steam Deck</u>: simply download ProtonUp-Qt from Discover in Desktop Mode (Steam Button -&gt; Power - Switch to Desktop).</li>
+</ul>
+</li>
+<li>Load ProtonUp-Qt.</li>
+<li>Make sure it's set to Steam at the top and select to install GE-Proton.</li>
+<li>Reload Steam to update the compatibility layer list.</li>
+<li>In Steam:
+<ul>
+<li><u>Desktop</u>: right click a game and go to Properties.</li>
+<li><u>Steam Deck</u>: find the game in your library, go to the little cog on the right and then select Properties.</li>
+</ul>
+</li>
+<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down</li>
+</ul>
+<p>My original video of how to do it on Steam Deck:</p>
+<div class="hidden_video" data-video-id="6doaQNnHR60"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37b4fc871ab3188f385a1c60a2e0949c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6doaQNnHR60" target="_blank">See video</a></div></div>
+<p>Don't forget you can grab<a href="https://www.gamingonlinux.com/2023/10/get-alan-wake-pathologic-2-stasis-bone-totem-and-more-in-this-bundle/" target="_blank"> Alan Wake and more right now in a Humble Bundle</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/10/ge-proton-8-17-brings-fixes-for-alan-wake-batman-arkham-asylum-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/10/ge-proton-8-17-brings-fixes-for-alan-wake-batman-arkham-asylum-and-more/</guid>
+      <pubDate>Sun, 15 Oct 2023 18:41:45 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/81104891id23429gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 8.18 brings more Wayland work</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Wine 8.18 is the latest development release of Wine now available, bringing with it the continued work to provide full Wayland support but still plenty of work ahead on that.</p>
+<p>The highlights of <a href="https://www.winehq.org/announce/8.18" target="_blank">Wine 8.18</a> are:</p>
+<blockquote>
+<ul>
+<li>Bundled FluidSynth library for DirectMusic.</li>
+<li>More window management in the Wayland driver.</li>
+<li>More effect support in Direct3D 10.</li>
+<li>Various bug fixes.</li>
+</ul>
+</blockquote>
+<p>44 bug fixes were noted including issues solved for: Patrician 4, Unreal Tournament 2004, Battle Bugs, Shadow of Memories demo, Inner Chains, Feeding Frenzy 2, Genshin Impact, Sniper Elite 5 and lots of miscellaneous issues solved.</p>
+<p>Are there any particular issues you're waiting on being solved in a future Wine release?</p>
+<p><em>Want help managing Wine on Linux? You can try <a href="https://usebottles.com/" target="_blank">Bottles</a>, <a href="https://lutris.net/" target="_blank">Lutris</a> and the <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Launcher</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/10/wine-818-brings-more-wayland-work/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/10/wine-818-brings-more-wayland-work/</guid>
+      <pubDate>Sun, 15 Oct 2023 18:33:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
       <title>Get Alan Wake, Pathologic 2, STASIS: BONE TOTEM and more in this bundle</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
-<p>There's some seriously spooky stuff going in the latest from Humble Bundle. Inside the <a href="https://www.humblebundle.com/games/fright-your-life?partner=gamingonlinux" target="_blank">Fight of your Life Bundle</a> you'll get some pretty great games. Here's a run over Steam Deck / Linux desktop compatibility.</p>
+<p>There's some seriously spooky stuff going in the latest from Humble Bundle. Inside the <a href="https://www.humblebundle.com/games/fright-your-life?partner=gamingonlinux" target="_blank">Fright of your Life Bundle</a> you'll get some pretty great games. Here's a run over Steam Deck / Linux desktop compatibility.</p>
 <p>To save you clicking around below you'll see the expected compatibility for each title on Steam Deck and Linux desktop, along with any <a href="https://www.protondb.com/" target="_blank">ProtonDB</a> rating and noting any Native Linux versions available. Plus each is a Steam link, so you can go see more info on each if you need to.</p>
 <p class="plain-list-title"><a href="https://store.steampowered.com/app/108710" target="_blank">Alan Wake Collector's Edition</a></p>
 <ul>
@@ -4054,130 +4190,6 @@ so far as it related to it.</p>
       <category>Bullet Hell</category>
       
       <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Super-chilled beekeeping sim APICO 3.0 update out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Can you beelieve it? Apparently there's secret bees that live underwater? The 3.0 update for APICO is out now and it's a real gem of a game to relax with. Easily one of my favourite casual game that you should add to your collection, now even more true with a huge free update expanding the content a <em>lot</em>.</p>
-<p><em>Buying it also supports real-world bee conservation!</em></p>
-<div class="hidden_video" data-video-id="telb_fncWwg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/420958f81f78aa9de40550ca6f3ea812.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/telb_fncWwg" target="_blank">See video</a></div></div>
-<p>Some of what the 3.0 update adds includes:</p>
-<blockquote>
-<ul>
-<li><strong>New areas: </strong>Dive deep down to the bottom of the ocean and discover a new bee-ome with new areas to explore that include deep-sea flora and fauna, a coral reef system, and more!</li>
-<li><strong>New Bees:</strong> Discover, collect, build homes and breed new species of bees found only at the furthest depths of the ocean, and collect their resources for craftables and quests.</li>
-<li><strong>New Quests:</strong> Harness the help of your newfound bee friends to restore the damaged coral reef system, and clean up underwater pollution to help the bee-cosystem and its inhabitants thrive.</li>
-<li><strong>New Fishing Mechanic:</strong> Skipper’s dad, Captain, arrives at the archipelago to teach you the ins and outs of a new mechanic — fishing!</li>
-<li><strong>And More: </strong>New quality-of-life improvements, including a newly added trash can and nearby chest auto-deposit, will help your beekeeping bee-come more efficient than ever!</li>
-</ul>
-</blockquote>
-<p>APICO has Native Linux support and it is Steam Deck Verified.</p>
-<p>There will also be a discount on September 28th with 45% off. It was supposed to be live now but the developer said they messed it up. So if you want it at a discount keep a note otherwise grab it now via <a href="https://www.humblebundle.com/store/apico?partner=gamingonlinux" target="_blank">Humble Store</a>, <a href="https://tngineers.itch.io/apico" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1390190/APICO/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/09/properly-chilled-beekeeping-sim-apico-30-update-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/properly-chilled-beekeeping-sim-apico-30-update-out-now/</guid>
-      <pubDate>Tue, 26 Sep 2023 14:39:48 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/575665452id23329gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Tropico 6 adds modding support with mod.io, and a new DLC next month</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Tropico 6 from Realmforge Studios and Kalypso Media just had a nice upgrade that gives official modding support, with <a href="https://mod.io/" target="_blank">mod.io</a> integration. Interesting to see more games go for mod.io (from the Mod DB crew), which gives the same access to modding across all platforms and stores whereas the Steam Workshop is of course locked to Steam.</p>
-<p>Nice to see, since modding support can expand the life of a game nearly forever, and we've seen truly amazing mods for other games and Tropico 6 seems like a great fit to have it. Some of the things you can do with mods:</p>
-<blockquote>
-<ul>
-<li>
-<div class="bbcodes_Bold_1opdq">Create your own maps - Get ready to create your own maps based on existing or randomly generated ones.</div>
-</li>
-<li>
-<div class="bbcodes_Bold_1opdq">The whole world at your fingertips - Modify, tweak or replace every asset in the game. Or create your own.</div>
-</li>
-<li>
-<div class="bbcodes_Bold_1opdq">All the debug-tools you need - Access to all debug modes that the developers are using.</div>
-</li>
-<li>
-<div class="bbcodes_Bold_1opdq">It's in the blueprints - Use Unreal Blueprints to add gameplay or new UI elements.</div>
-</li>
-</ul>
-</blockquote>
-<p>They have various videos on <a href="https://www.youtube.com/playlist?list=PLITnGW6b6ufBeXc9xVylvL_9utI6HspBV" target="_blank">YouTube</a> going over how to do the modding.</p>
-<p>Additionally a new "Going Viral" DLC is planned to launch on October 12th.</p>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2529175031695733526gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2529175031695733526gol1.jpg"/></a>Pictured - Tropico 6 - Going Viral DLC</em></p>
-<p>Going Viral DLC Features:</p>
-<blockquote>
-<ul>
-<li><strong>Find the cure, with Tropico 6 – Going Viral: 4 different diseases</strong> hit Tropico and disrupt daily life; some may severely harm your citizens, others may be just a mild cough *cough*.</li>
-<li><strong>Pull the strings &amp; keep control</strong> in a <strong>4 mission-campaign</strong> or fight the diseases on a <strong>new multiplayer map</strong>.</li>
-<li><strong>Stay calm… or don’t!</strong> Influence the masses with the new <strong>“Panic” mechanic</strong>. The <strong>panic meter</strong> measures how the Tropican citizens feel about the diseases. High panic allows for more powerful edicts to be enacted. Should you raise the alarm in order to exploit the situation with powerful edicts, or keep the population calm in the face of a potentially deadly threat?</li>
-<li><strong>Inject first, ask later:</strong> A host of <strong>16 exciting new edicts</strong> will be unlocked as your <strong>panic meter</strong> rises and will give you different ways in which to exploit the disease in Tropico: <strong>Inject first</strong>, ask questions later, mandate <strong>masks</strong>, or choose to gear up for a <strong>viral palace party</strong>, it’s all up to you, El Presidente!</li>
-<li><strong>Managing the disease: 9 new buildings</strong> will change the way you manage Tropico and how you deal with outbreaks and diseases. Use the <strong>Healing Howitzer</strong> to speedily distribute the cure to your Tropicans or build the new <strong>Colossal Hospital</strong> to increase your medical capacities and place <strong>Medical Checkpoints</strong> on the streets to find infected people.<br/>
-In addition, during the campaign a curious <strong>quack</strong> will also help you manage the disease in <strong>Ambrosius’ Magic Hut</strong>.</li>
-<li><strong>Fight the plague in style with new design options for El Presidente &amp; the palace!</strong> With new accessories like the plague doctor for El Presidente or the Medical Fencing for your palace, you'll be perfectly prepared.</li>
-</ul>
-</blockquote>
-<p>Tropico 6 has Native Linux support and it is rated Steam Deck Playable. You can find Tropico 6 on <a href="https://www.humblebundle.com/store/tropico-6?partner=gamingonlinux" target="_blank">Humble Store</a>, <a href="https://af.gog.com/game/tropico_6?as=1636858786" target="_blank">GOG.com</a> and <a href="https://store.steampowered.com/app/492720/Tropico_6/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/09/tropico-6-adds-modding-support-with-modio-and-a-new-dlc-next-month/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/tropico-6-adds-modding-support-with-modio-and-a-new-dlc-next-month/</guid>
-      <pubDate>Tue, 26 Sep 2023 13:06:04 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1557578787id23328gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>City Builder</category>
-      
-      <category>Mod</category>
-      
-    </item>
-    
-    <item>
-      <title>2.5D puzzle platformer Seedlings has some great photography-based visuals</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Seedlings really is a visual treat, and quite a fun puzzle-platformer too that released on 22nd September from Bardsley Creative. If you're after something a little unusual, this is it. <em>Note: key provided by the developer to <a href="https://store.steampowered.com/curator/4218320-GamingOnLinux/" target="_blank">our Steam Curator</a>. Go give it a follow for game recommendations!</em></p>
-<p>Not only is it a treat for your eyes, it's a treat for your ears to. The audio work on this is wonderful too. Really just beautiful, and while it is a puzzle-platformer it's surprisingly relaxing too thanks to the setting. This is the type of game where you need to grab a cuppa, get cozy and just play it through. The creature design is interesting too, with you being a seed that takes over various tree/twig-like <em>things</em>.</p>
-<div class="hidden_video" data-video-id="8yFGDQ3EMy0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f79c6c232e0da2447b080029a2504543.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/8yFGDQ3EMy0" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Take control of several unique creatures, each with their own abilities.</li>
-<li>Solve intriguing puzzles through beautifully hand crafted levels.</li>
-<li>Collect hidden secrets strewn across the photo-realistic environment.</li>
-<li>Relax with the beautiful ambient soundtracks and nature sounds.</li>
-<li>Learn more about the origins of the Seedlings through a narrative driven story.</li>
-</ul>
-</blockquote>
-<p>Available to <a href="https://store.steampowered.com/app/1575510/Seedlings/" target="_blank">buy on Steam</a>. It has Native Linux support made with <a href="https://godotengine.org/" target="_blank">Godot</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/09/25d-puzzle-platformer-seedlings-has-some-great-photography-based-visuals/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/09/25d-puzzle-platformer-seedlings-has-some-great-photography-based-visuals/</guid>
-      <pubDate>Tue, 26 Sep 2023 12:42:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1936228884id23327gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Godot Engine</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
       
     </item>
     
