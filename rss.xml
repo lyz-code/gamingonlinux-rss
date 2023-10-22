@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-10-21 07:24:33.153989</pubDate>
+    <pubDate>2023-10-22 07:24:36.679531</pubDate>
 
     
     <image>
@@ -20,11 +20,113 @@
     
     
     <item>
+      <title>Proton gets upgrades for TEKKEN 8, Burnout Paradise Remastered, Cyberpunk 2077</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve released two separate Proton upgrades recently with Proton Hotfix and Proton Experimental both seeing releases. Here's what's new for Steam Deck and desktop Linux gaming.</p>
+<p>Firstly, Proton Hotfix was updated for the TEKKEN 8 Closed Beta, so that online matches should now work on Steam Deck. Valve developer Pierre-Loup Griffais <a href="https://twitter.com/Plagman2/status/1715500758387544259" target="_blank">mentioned</a> it should be automatically selected for it now if you restart.</p>
+<p>On top of that Proton Experimental saw an update on October 20th with Burnout Paradise Remastered mentioned as a newly playable game plus these fixes:</p>
+<ul>
+<li>Fixed Mighty Switch Force! Collection crashing when no controllers are plugged in.</li>
+<li>Fixed Forza Horizon 5 not working after a recent game update.</li>
+<li>Support Virpil Constellation ALPHA-R and VKB Gladiator NXT EVO controllers when hidraw is accessible.</li>
+<li>Fixed Cyberpunk 2077 crashing with DualSense plugged in after a recent game update.</li>
+<li>Fixed fonts not rendering in the main menu of Aveyond 4: Shadow of the Mist.</li>
+<li>Fixed Old School Runescape and other games on systems with 128+ virtual cores.</li>
+</ul>
+<p>Changelog can be seen <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">here</a>.</p>
+<hr/>
+<p>The Proton updates will show up in your Steam Downloads, as Proton updates just like games do, so keep an eye out for it. Want more info about Steam Play and Proton? Check out <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">my beginner's guide</a>.</p>
+<p><strong>How to change your Proton version:</strong></p>
+<p>Steam Deck:</p>
+<ul>
+<li>Pick a game in your Library and head to the little cog icon on the right.</li>
+<li>Click Properties, then Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<p>On a Linux desktop:</p>
+<ul>
+<li>Right click a game, go to Properties.</li>
+<li>Compatibility on the left.</li>
+<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
+</ul>
+<p><em>Let me know what you think in the comments.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/10/proton-gets-upgrades-for-tekken-8-burnout-paradise-remastered-cyberpunk-2077/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/10/proton-gets-upgrades-for-tekken-8-burnout-paradise-remastered-cyberpunk-2077/</guid>
+      <pubDate>Sat, 21 Oct 2023 09:58:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/766953741id23471gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Deck Beta gets some essential bug fixes and new Gyro options</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve put up some nice bug fixes in the latest Preview and Beta updates for the Steam Deck, here's a run over what's new and improved for you.</p>
+<p>Some of you may have noticed, at times, the Steam and Quick Access menu would refuse to appear and just instantly vanish. Something that was annoying me a fair bit recently but this latest update should solve it. It's been a problem for quite a while, so good to see it finally solved!</p>
+<p>From the October 20th <a href="https://steamcommunity.com/games/1675200/announcements/detail/3717217413234947322?snr=2_9_100015_" target="_blank">changelog</a>:</p>
+<blockquote>
+<p><strong>General</strong></p>
+<ul>
+<li>Fixed a case where the Main Menu or the Quick Access Menu would be immediately dismissed after opening.</li>
+<li>Fix a case where the client would fail to handle some open URL requests.</li>
+</ul>
+<p><strong>Desktop Mode</strong></p>
+<ul>
+<li>Fixed small mode dimensions not restoring correctly if previously sized smaller than the minimum large mode dimensions</li>
+<li>Fixed resize grip showing sometimes when windows are maximized</li>
+</ul>
+<p><strong>Steam Input</strong></p>
+<ul>
+<li>Fix for new Gyro to Joystick modes not applying Horizontal/Vertical settings, or Axis inversion settings or Rotation Output settings.</li>
+</ul>
+</blockquote>
+<p>Valve also continues expanding the Gyro options for Steam Input from the October 19th <a href="https://steamcommunity.com/games/1675200/announcements/detail/3717217413227884230?snr=2_9_100015_" target="_blank">changelog</a>:</p>
+<blockquote>
+<p><strong>Steam</strong></p>
+<ul>
+<li>Modal dialogs now dismiss when you click the background.</li>
+</ul>
+<p><strong>Steam Input</strong></p>
+<ul>
+<li>Fix for PlayStation DualShock 4 gyro sensitivity over Bluetooth for new Gyro Modes.</li>
+<li>New Gyro Mode: "Gyro to Joystick (Deflection)". This is most appropriate for simulating Steering and Flight Yokes. This mode will eventually replace Gyro "Joystick". It is the last replacement mode for Gyro functionality. It shares the common Gyro Natural angles system.</li>
+<li>Added "Joystick Power Curve" slider to both "Gyro to Joystick (Camera)" and the new "Gyro to Joystick (Deflection)" modes. This allows you to counteract the response curve that many games employ for better precision.</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/10/steam-deck-beta-gets-some-essential-bug-fixes-and-new-gyro-options/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/10/steam-deck-beta-gets-some-essential-bug-fixes-and-new-gyro-options/</guid>
+      <pubDate>Sat, 21 Oct 2023 09:49:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
       <title>Mosa Lina is pure physics puzzle-platforming chaos</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
 <p>Well this is certainly an unexpected pleasure to appear. Mosa Lina is pure physics puzzle-platforming chaos and it's out now along with Native Linux support and works great on Steam Deck.</p>
-<p>The developer said the created it as a response to all the games that are carefully designed in a way that everything fits together perfectly. Instead, Mosa Lina is "aggressively random". So the level order you get each time is random, as are the item abilities it gives you to beat each level. You get a list of three items each time, and each item has a limited amount of times you can use them. The idea of each level is just to touch the fruit or launch the fruit off the level map somehow and then make it back to the portal.</p>
+<p>The developer said they created it as a response to all the games that are carefully designed in a way that everything fits together perfectly. Instead, Mosa Lina is "aggressively random". So the level order you get each time is random, as are the item abilities it gives you to beat each level. You get a list of three items each time, and each item has a limited amount of times you can use them. The idea of each level is just to touch the fruit or launch the fruit off the level map somehow and then make it back to the portal.</p>
 <p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18707690301697824013gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18707690301697824013gol1.jpg"/></a></p>
 <p>Easier said than done, and this is where the chaos comes in. Some levels might not even be beatable with the random generation, there’s no specific solution to each puzzle level, just your attempts to beat it with whatever it decides to give you. An interesting idea and it’s completely ridiculous some of the time, but actually a lot of fun to play through and very unusual. If you’re a puzzle-platformer fan, you’re probably going to enjoy this.</p>
 <p>It reminds me of the puzzle game Baba is You, where you push around logic blocks to change the rules of the level. Here you’re using whatever tools you have like a rocket to get up high, a ladder to climb, bombs, jumping frogs, abilities that warp the existing blocks on the map, bouncing mushrooms that will bounce anything around and all sorts.</p>
@@ -4142,105 +4244,6 @@ Man the ramparts</p>
       <category>Casual</category>
       
       <category>Family Friendly</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Beta and VR updated, &#39;it&#39;s now safe to take off your headset&#39; - Valve</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has pushed out more Steam Client Beta and SteamVR updates, along with a funny note about the SteamVR update for a bit of a woops in the UI.</p>
-<p>You see, Valve recently gave <a href="https://www.gamingonlinux.com/2023/09/steamvr-20-bet-released-with-a-big-ui-overhaul/" target="_blank">SteamVR a big 2.0 Beta upgrade</a> but they forgot to add an exit button. I know, the horror right? Being trapped in VR like something out of Sword Art Online. Don't panic though because Valve has once again begun allowing you to leave the VR world as it's back in the most recent <a href="https://steamcommunity.com/games/250820/announcements/detail/3726223344808421297" target="_blank">update</a> as noted:</p>
-<blockquote>
-<div class="bbcodes_Bold_1opdq">General:</div>
-<ul>
-<li>Support for multi-gpu system (e.g. laptops) which was causing the new Steam UI to not show up.</li>
-</ul>
-<div class="bbcodes_Bold_1opdq">Steam Dashboard overlay:</div>
-<ul>
-<li>Filtered out vr overlay apps from recent games list.</li>
-<li>Fixed auto switching to game details page on launch.</li>
-<li>Never auto switch to app details page on launch for vr overlay apps.</li>
-</ul>
-<div class="bbcodes_Bold_1opdq">Dashboard:</div>
-<ul>
-<li>Restored the dashboard button to exit VR. It's now safe to take off your headset.</li>
-</ul>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18258244511696420181gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18258244511696420181gol1.jpg"/></a><br/>
-<em>Yes, it's a joke about classic Windows.</em></p>
-<p>The rest of the recent Steam Beta Client <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/3718341410781068036" target="_blank">update</a> is as follows:</p>
-<blockquote>
-<div class="bbcodes_Bold_1opdq">General</div>
-<ul>
-<li>Fixed an issue with art for some games not properly updating. A client restart may be required for some art changes to fully appear.</li>
-<li>Fixed some DLC art displaying in the wrong language.</li>
-</ul>
-<div class="bbcodes_Bold_1opdq">Linux</div>
-<ul>
-<li>Include 64 bit openvr_api.so, enabling the new VR gamepad UI in SteamVR beta.</li>
-<li>Improve screen reader support.</li>
-</ul>
-<div class="bbcodes_Bold_1opdq">Steam Input</div>
-<ul>
-<li>Added "World Space" Experimental Gyro Conversion Mode. This modes feels similar to using a laser pointer. It monitors rotation about the gravity axis to determine both horizontal and vertical output. Some may prefer "Player Space" which is a hybrid of world yaw and local pitch.</li>
-<li>Fix for "Player Space" Gyro Conversion Mode. Gravity axis is now reliable.</li>
-<li>"Pixels Per 360°" Setting value is now copied within the current Action Set rather than across the entire steam input config. This is an accommodation for games with different turning rates in different gameplay states (i.e. Vehicle Mode vs On Foot mode may have a different camera turn rate).</li>
-<li>Partial Regression fix for older Gyro "As Joystick" modes, but there are still known issues. Renovation is planned.</li>
-</ul>
-</blockquote>
-<p>So now the new SteamVR UI should work properly on Linux. If you can get the SteamVR Beta to work at all that is, because for me and others it is <a href="https://github.com/ValveSoftware/SteamVR-for-Linux/issues/618" target="_blank">entirely broken</a> and won't launch at all now.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/10/steam-beta-and-vr-updated-its-now-safe-to-take-off-your-headset-valve/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/10/steam-beta-and-vr-updated-its-now-safe-to-take-off-your-headset-valve/</guid>
-      <pubDate>Wed, 04 Oct 2023 12:12:24 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/310935499id23371gol.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Update</category>
-      
-    </item>
-    
-    <item>
-      <title>Tony Hawk&#39;s Pro Skater 1+2 Shreds On Steam Deck, But With Two Massive Caveats</title>
-      <author>Smellbringer</author>
-      <description><div class="content group e-content">
-<p>In case you missed <a href="https://www.gamingonlinux.com/2023/09/tony-hawks-pro-skater-1-2-finally-coming-to-steam/" target="_blank">the news</a> from last week, Tony Hawk's Pro Skater 1+2 launched on Steam this week after three years in Epic Games Store limbo. While it is currently listed as unverified on Steam Deck, testing on my behalf has shown the game to run smoothly out of the box with no need to change proton version or modify launch options. Honestly I wouldn't be shocked if Valve slaps it with a Steam Deck Playable badge in the future. I would actually highly recommend THPS 1+2 for any PC Gamer or Deck owner, if it weren't for two massive glaring issues.</p>
-<p>Before we get to that, we should talk about the performance on Steam Deck. Which initially worried me as the main menu hovered around 50fps. There also aren't a lot of graphical settings to change in order to optimize performance. Though the game does give you an auto-detect tool to allow the game to auto-tailor the settings to your hardware, in this case the Steam Deck. Using this gave the Deck settings almost identical to the medium preset with the exception of anti-aliasing being set to TAA as opposed to FXAA.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2562284581696376062gol15416.jpg" target="_blank"><img alt="THPS 1+2's Autodetect Config For Steam Deck" src="https://uploads.golmedia.net/uploads/articles/article_media/2562284581696376062gol15416.jpg"/></a></p>
-<p style="text-align:center"><em>Pictured: THPS 1+2's Autodetect Settings For Steam Deck</em></p>
-<p>Luckily the menu is either glitched or intentionally frame-limited, as starting a skate park run caused an immediate jump to 60fps and it didn't drop with few exceptions. Those exceptions would be Unreal Engine 4's dreaded shader compilation, though I was unable to replicate those dips on subsequent runs. THPS 1+2 ran smooth as butter afterwards and it was  basically a non-issue by the time I was ready to stress test the game on Deck.</p>
-<p>For the stress test I wanted to run the Skater Heaven level that's exclusive to the remake as it is full of various effects that would surely tax performance. But that requires finishing the entirety of a Skate Tour in THPS 2, which would take too long for our purposes. So I settled for using THPS 1's Downhill Jam and hitting every valve on my way down, which causes water to come gushing out in various locations.</p>
-<p>And to my surprise, the game barely dropped below 60fps. The Deck managing to maintain a lock even as I was speeding downhill with water gushing out of the walls. The only time it did drop was, you guessed it, shader compilation. The good news there being that attempts to replicate the dips proved unsuccessful so it really is just a one time thing. But it is worth being aware of.</p>
-<p>Once you overcome the shader compilation, the Deck version of THPS 1+2 body slams the Switch version, which was the only portable way to play out of the box until now. The Switch couldn't maintain a 30fps lock while the Deck shreds through a 60fps lock.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6542728911696376086gol15416.jpg" target="_blank"><img alt="THPS1's Downhill Jam On Steam Deck" src="https://uploads.golmedia.net/uploads/articles/article_media/6542728911696376086gol15416.jpg"/></a></p>
-<p style="text-align:center"><em>Pictured: THPS 1's Downhill Jam On Steam Deck</em></p>
-<p>Sadly, the shader compilation is neither of the major caveats I mentioned earlier. I would be more than happy to recommend THPS 1+2 to every Steam Deck owner and PC Gamer if minor shader compilation was the only issue. No, the real issues are a constant always online requirement combined with, bizarrely enough, the fact that the actual online features for this game haven't worked for almost a year. And this isn't a PC issue either, every platforms online is broken despite the official site <a href="https://support.activision.com/fi/onlineservices.Tony%20Hawk%27s%20Pro%20Skater%201%20+%202.html" target="_blank">claiming the servers are up</a>. That's right, Activision created Schrodinger's online server; where it is both alive and dead. Although, in this case, the Steam release from Steam forum reports <em>seems</em> better (other platforms still broken) but it doesn't work on Linux / Steam Deck still.</p>
-<p>The worst part is that we have a good idea as to what's causing the problem; NAT Type 2 is blocked from accessing everything but the online check in. You can get around this by doing a <a href="https://www.thegamer.com/tony-hawks-pro-skater-1-2-unplayable-servers/" target="_blank">complicated maneuver on your phone</a>, which you shouldn't have to do. Honestly, this issue should have been fixed months ago and the fact that the online doesn't work for most people holds me back from a glowing recommendation. I was hoping they would fix it for the Steam release but no, it's still not fixed. Frankly, it is a massive bummer on an otherwise stellar release. Just to rub salt in the wound there's also an achievement for playing a multiplayer match.</p>
-<p>If the bugged online doesn't worry you, or if it's fixed in the future, then I would highly recommend Tony Hawk's Pro Skater 1+2. It's an excellent remake of two excellent games and on Steam Deck it is easier than ever to pick up and do a quick skate park run. THPS 1+2 has the Persona 5 Royal effect where you can quickly hop in for 5 minutes and feel like you accomplished something.</p>
-<p>If you can look past its online issues, Tony Hawk's Pro Skater 1+2 is a Steam Deck killer app. Pick it up on <a href="https://store.steampowered.com/app/2395210/Tony_Hawks_Pro_Skater_1__2/" target="_blank">Steam</a>.</p>
-<p>A video from Liam is below on the subject:</p>
-<div class="hidden_video" data-video-id="l_497IFyqE4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/db9445470f37b89606371cf55c2c9d9e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/l_497IFyqE4" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/10/tony-hawks-pro-skater-1-2-shreds-on-steam-deck-but-with-two-massive-caveats/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/10/tony-hawks-pro-skater-1-2-shreds-on-steam-deck-but-with-two-massive-caveats/</guid>
-      <pubDate>Wed, 04 Oct 2023 11:40:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1848744923id23370gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>New Release</category>
-      
-      <category>Sports</category>
       
     </item>
     
