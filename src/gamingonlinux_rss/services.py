@@ -29,7 +29,11 @@ log = logging.getLogger(__name__)
 def get(url: str) -> BeautifulSoup:
     """Request an url and parse it."""
     log.debug(f"Fetching page {url}")
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/115.0'}
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/115.0"
+        )
+    }
     request = requests.get(url, timeout=10, headers=headers)
     if request.status_code != 200:
         raise FetchError(f"{url} returned an {request.status_code} code")
