@@ -1,3 +1,20 @@
+## 0.2.0 (2023-11-23)
+
+### Feat
+
+- support Python 3.11
+
+### Fix
+
+- drop support Python 3.7
+- use pdm-backend
+- set useragent
+- remove dependency with py
+
+### Perf
+
+- improve robustness of requests call
+
 ## 0.1.5 (2022-07-06)
 
 ### Fix
