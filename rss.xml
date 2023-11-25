@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2023-11-24 07:22:37.665429</pubDate>
+    <pubDate>2023-11-25 07:22:46.302038</pubDate>
 
     
     <image>
@@ -18,6 +18,325 @@
     </image>
 
     
+    
+    <item>
+      <title>VKD3D-Proton 2.11 released with DirectX Raytracing enabled by default</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>An exciting release of VKD3D-Proton has arrived! VKD3D-Proton 2.11 brings with it some big improvements for the Direct3D 12 to Vulkan translation layer used in Valve's Proton for Linux PC and Steam Deck.</p>
+<p>First big change is that DXR is now enabled by default, no more needing to set "VKD3D_CONFIG=dxr" as that is the default. However they note a few special cases where it is not. Sampler feedback is also now supported through emulation, and thanks to this DX Ultimate (FL 12.2) is also now exposed by default on RDNA2+ and Turing+.</p>
+<p>There's also various performance fixes, new workarounds for game issues and a few general bug fixes. All the rest available below in the full changelog:</p>
+<details class="spoiler_container"><summary class="spoiler_header">Changelog, click me</summary>
+<div class="spoiler-content">
+<h3>Features</h3>
+<h5>DXR enabled by default</h5>
+<p><code class="inline-code">VKD3D_CONFIG=dxr</code> is default now, and no longer needed.<br/>
+There are some special cases where DXR is not enabled by default. The only such current example is<br/>
+"Hellblade: Senua's Sacrifice" on Deck which force-enables DXR if it is supported, even on Deck.<br/>
+New semantics are:</p>
+<ul>
+<li><code class="inline-code">dxr</code>: Force-enable DXR, even when it is considered unsafe</li>
+<li><code class="inline-code">nodxr</code>: Disable DXR</li>
+<li><code class="inline-code">dxr11</code>: Removed. <code class="inline-code">dxr</code> already implied DXR 1.1 anyway</li>
+</ul>
+<h5>Sampler feedback</h5>
+<p>This feature was the last feature required for FL 12.2 and is implemented through emulation.<br/>
+As demonstrated in the <a href="https://github.com/HansKristian-Work/vkd3d-proton/blob/master/docs/sampler_feedback.md" target="_blank">implementation docs</a>, all<br/>
+native implementations of this feature are fundamentally broken in some way.<br/>
+There's also no known game that ships requiring this feature, so we just consider this a checkbox feature.</p>
+<h5>DX Ultimate (FL 12.2) now exposed by default</h5>
+<p>On RDNA2+ and Turing+ we can finally expose the DX Ultimate feature set!</p>
+<h5>Misc</h5>
+<ul>
+<li>Implement a bunch of missing "Vulkan-on-D3D12" features
+<ul>
+<li>IndependentFrontAndBackStencilRefMaskSupported</li>
+<li>TriangleFanSupported</li>
+<li>DynamicIndexBufferStripCutSupported</li>
+<li>DynamicDepthBiasSupported</li>
+<li>NonNormalizedCoordinateSamplersSupported</li>
+<li>MismatchingOutputDimensionsSupported</li>
+<li>PointSamplingAddressesNeverRoundUp</li>
+<li>RasterizerDesc2Supported
+<ul>
+<li>Explicit line rasterization mode</li>
+</ul>
+</li>
+<li>NarrowQuadrilateralLinesSupported</li>
+<li>AnisoFilterWithPointMipSupported</li>
+</ul>
+</li>
+<li>Implement missing MSAD instruction in DXIL, allowing FSR3 to run</li>
+<li>Implement some esoteric DXR features
+<ul>
+<li>Implement support for multiple mismatching global root signatures in DXR
+<ul>
+<li>Fixes crash in Battlefield V</li>
+</ul>
+</li>
+<li>Implement support for LOCAL_ON_EXTERNAL dependencies in DXR
+<ul>
+<li>Fixes DXR in Warhammer: Darktide</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Implement support for ExecuteIndirect + Mesh shaders with state changes
+<ul>
+<li>Currently unused by games</li>
+</ul>
+</li>
+</ul>
+<h5>Performance</h5>
+<ul>
+<li>Improve performance of NV_device_generated_commands and NV_device_generated_commands_compute by<br/>
+reordering and batching command preprocessing
+<ul>
+<li>We have observed 15% FPS gains in Halo Infinite on RADV</li>
+<li>1-2% in Starfield in some test locations</li>
+<li>Needs pending Mesa work to land to take advantage of this improvement</li>
+</ul>
+</li>
+<li>Tune memory allocation patterns for DGC preprocess buffers
+<ul>
+<li>Avoids a lot of allocation churn</li>
+<li>Greatly reduces CPU overhead on NV</li>
+</ul>
+</li>
+</ul>
+<h5>Workarounds</h5>
+<ul>
+<li>Work around RADV bug causing GPU hang in RE4: Separate Ways DLC</li>
+<li>Work around RADV bug causing GPU hang in Lords of the Fallen</li>
+<li>Work around Witcher 3 bug causing broken shadows and GPU hangs when enabling DXR</li>
+<li>Work around Cyberpunk 2077 bug when RT is enabled, where game would cause spurious GPU hangs due to accessing descriptor heap out of bounds</li>
+<li>Work around Windjammers 2 bug causing random crashes on startup</li>
+<li>Add support for VK_EXT_image_compression_control to allow for more fine-grained workarounds for broken games running on RADV</li>
+<li>Enable NV_device_generated_commands_compute on latest NV beta drivers
+<ul>
+<li>545.x drivers are still disabled until a fix can be confirmed on shipping drivers</li>
+</ul>
+</li>
+<li>Remove CURB_MEMORY_PSO_CACHE workaround on Mesa 23.2+
+<ul>
+<li>Should reduce overhead in PSO creation</li>
+</ul>
+</li>
+</ul>
+<h5>Fixes</h5>
+<ul>
+<li>Misc dxil-spirv changes to fix various bugs in game shaders as usual</li>
+<li>Fix Jurassic World Evolution 2 crashing when enabling DXR</li>
+<li>Fix some deprecation warnings in Meson build system
+<ul>
+<li>Some submodule locations moved, which may cause minor disruption</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+<p>Full <a href="https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.11" target="_blank">release notes here</a>.</p>
+<p>Amazing how far Direct3D to Vulkan translation has come. The power of open source right here! Helping to get tens of thousands of games running on Linux / Steam Deck.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/11/vkd3d-proton-211-released-with-directx-raytracing-enabled-by-default/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/vkd3d-proton-211-released-with-directx-raytracing-enabled-by-default/</guid>
+      <pubDate>Fri, 24 Nov 2023 23:07:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 8.21 brings High-DPI scaling and initial Vulkan support for Wayland</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Wine 8.21 has rolled out as the latest development release and brings with it some nice sounding stuff, readying up for Wine 9.0 early next year.</p>
+<p>From the <a href="https://www.winehq.org/announce/8.21" target="_blank">release notes</a>:</p>
+<blockquote>
+<ul>
+<li>High-DPI scaling and initial Vulkan support in the Wayland driver.</li>
+<li>Beginnings of support for ARM64EC target.</li>
+<li>Updates to the locale database.</li>
+<li>Various bug fixes.</li>
+</ul>
+</blockquote>
+<p>From the bug fix lists there's 29 solved as of this release including one from <a href="https://bugs.winehq.org/show_bug.cgi?id=9127" target="_blank">2007</a> with game improvements overall to Drome Racers, Ninki Seiyuu no Tsukukurikata, Age of Empires II Definitive Edition, Death Stranding, ModOrganizer, Port Royale 2 and other miscellaneous apps.</p>
+<p><em>Want help managing Wine on Linux? You can try <a href="https://usebottles.com/" target="_blank">Bottles</a>, <a href="https://lutris.net/" target="_blank">Lutris</a> and the <a href="https://heroicgameslauncher.com/" target="_blank">Heroic Launcher</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/11/wine-821-brings-high-dpi-scaling-and-initial-vulkan-support-for-wayland/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/wine-821-brings-high-dpi-scaling-and-initial-vulkan-support-for-wayland/</guid>
+      <pubDate>Fri, 24 Nov 2023 22:56:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Upcoming bullet hell shooter Cosmic Carnage looks wild</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Need more bullet hell goodness for your Linux PC or Steam Deck? Good news, Cosmic Carnage looks pretty wild and it will have Native Linux support.</p>
+<p>No, I'm not talking about the fighting game Cosmic Carnage from 1994 but a space shooter filled with action and glorious upgrades from developer LionSword Studios. Looks like they've learned a lot from their 2016 game <a href="https://store.steampowered.com/app/366010/Generic_Space_Shooter/" target="_blank">Generic Space Shooter</a> because this looks far more interesting. Check out the trailer below:</p>
+<div class="hidden_video" data-video-id="abfbWyCVlzM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f44d7c48a6f62f3136875790a4e36c1c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/abfbWyCVlzM" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<blockquote>
+<ul>
+<li>Battle endless waves of alien spaceships. Fight against a variety of enemies with different behaviours and attack patterns</li>
+<li>Collect EXP to level up and upgrade your ship to help you survive the onslaught. 80+ upgrades available making each run unique and interesting</li>
+<li>With a roguelite progression system, no run is ever a fail. Gather more points and unlock new upgrades and weapons to add to the pool to create overpowered builds!</li>
+<li>Upgrade your build by unlocking new astronauts and ships. Each astronaut has unique abilities and stats. Each ship has a unique weapon and stats. Synchronize astronauts and ships to unlock hidden synergies.</li>
+</ul>
+</blockquote>
+<p>It has a demo <a href="https://store.steampowered.com/app/2440650/Cosmic_Carnage/" target="_blank">available on Steam</a> and with Native Linux support the <a href="https://steamcommunity.com/app/2440650/discussions/0/7342618062800321868/" target="_blank">developer said</a> it's "100% compatible with the steam deck". No current set release date while they're still working on it but they have been regularly updating the demo so be sure to check it out. Looks like they may also have a <a href="https://store.steampowered.com/app/2704660/Cosmic_Carnage_Prologue/" target="_blank">Prologue</a> coming as well.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/11/upcoming-bullet-hell-shooter-cosmic-carnage-looks-wild/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/upcoming-bullet-hell-shooter-cosmic-carnage-looks-wild/</guid>
+      <pubDate>Fri, 24 Nov 2023 18:52:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1870451732id23637gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Bullet Hell</category>
+      
+      <category>Demo</category>
+      
+    </item>
+    
+    <item>
+      <title>Explore secrets in a sacred operating system in Crossroad OS</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>There's something wrong with this operating system. Crossroad OS is a single-player adventure where you solve puzzles, meet strange creatures and explore a sacred operating system created as a junction between the human and spirit world.</p>
+<p>According to the developer it's a bit of a weird mixture between a puzzle and a horror game and that "Crossʀoad OS was created with noble intentions, however approaching the spirits without a stable mind is a risky undertaking. What secrets are hiding in the system's partitions?". Don't go expecting any jump-scares though it's more about the spooky and unsettling atmosphere. Looks like a rather odd one but it has me curious to see more from it.</p>
+<p>Check out the initial teaser below:</p>
+<div class="hidden_video" data-video-id="_NAwAIi5l9A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6884bbcf5dd851439f7986b7abd99551.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/_NAwAIi5l9A" target="_blank">See video</a></div></div>
+<p>There's a demo available on <a href="https://store.steampowered.com/app/1783800/Crossroad_OS/" target="_blank">Steam </a>and it releases December 8th.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/11/explore-secrets-in-a-sacred-operating-system-in-crossroad-os/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/explore-secrets-in-a-sacred-operating-system-in-crossroad-os/</guid>
+      <pubDate>Fri, 24 Nov 2023 18:41:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/541307778id23636gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Demo</category>
+      
+      <category>Godot Engine</category>
+      
+      <category>Horror</category>
+      
+    </item>
+    
+    <item>
+      <title>Please save me I have discovered Leaf Blower Revolution</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It's cold and blowy outside, there's leaves everywhere and so the obvious solution to keep warm is to stay inside and play a game about blowing away leaves. Apparently that's what I'm doing with my life now, playing a free to play Steam game where I throw my mouse around the screen like a maniac to get all these damn leaves off my lawn.</p>
+<p>Leaf Blower Revolution is a peculiar game. Released back in 2020 it's gone onto be rather popular too, with over 20,000 user reviews and an Overwhelmingly Positive rating. Clearly they're onto something, and I can see why. I want to keep going and I don't exactly know why.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1421276971700834197gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1421276971700834197gol1.jpg"/></a></p>
+<p>It's very much a game of watching numbers go up, or not, just leaf it alone and come back later and see what's happened. Since it's an idle game, you can just leave it on a second monitor or in the background, to dive in for a few minutes to take an active role whenever you want.</p>
+<p>The game trickles in little treats for you too. There's many different types of leaves to blow away you'll find drop onto your lawn, and as you blow them away you'll get a leaf currency to go and buy some special tools. I must admit, the game gave me a chuckle the first time I closed and opened it, <a href="https://uploads.golmedia.net/uploads/articles/article_media/2674673571700831763gol1.jpg" target="_blank">noting how</a> I shouldn't be rewarded for doing nothing but it did so anyway and gave me a ton of basic leaves to go and buy stuff with. Okay Leaf Blower Revolution, I see what you're doing, you're trying to get me to play more.</p>
+<p>When you start playing more, and buying more (with the in-game currency), it only gets bigger and funnier too. Starting off with nothing but your hands, moving onto rakes and leaf blowers, automatic leaf blowers that travel around the screen like little robots and more. You can even buy nuclear fuel to power-up your devices, what could possibly go wrong there?</p>
+<p>After you accrue enough leaves you can buy the ability to get different leaves, which then opens up other types of shops to buy more different quirky tools and abilities. Each shop gives you the ability to buy the next level leaf too and — repeat. Glorious number-go-up repetition while leaves fly around the screen. It's weirdly therapeutic. There's over 30 different leaves, over 38 different shops, over 40 areas, there's even some pets you can get.</p>
+<p>The Steam reviews make me laugh too, <a href="https://steamcommunity.com/id/Sockman21/recommended/1468260/" target="_blank">someone</a> with over 1,000 hours in it wrote "Still need just another hour or two to see if I really like it....", and yeah — that about sums this game up I think. Apparently at some point my Tea went cold, I'll warm it up later, gotta blow away some more leaves.</p>
+<p>Unless you want it to take over your life don't download Leaf Blower Revolution.</p>
+<p>Works great on desktop Linux with Proton 8, and Valve rated it Steam Deck Playable. Worked fine on Steam Deck with my testing but the font can be a little small. You can turn up the font size, but the font itself is not very clear but thankfully you can choose an alternative font too which is much clearer.</p>
+<p>Check it out <a href="https://store.steampowered.com/app/1468260/Leaf_Blower_Revolution__Idle_Game/" target="_blank">free to play on Steam</a>.</p>
+<div class="hidden_video" data-video-id="ZQuuw0EX0R4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2b35911c80c9051c15e59c8a8515eb62.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ZQuuw0EX0R4" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/11/please-save-me-i-have-discovered-leaf-blower-revolution/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/please-save-me-i-have-discovered-leaf-blower-revolution/</guid>
+      <pubDate>Fri, 24 Nov 2023 14:17:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1735575397id23635gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Casual</category>
+      
+      <category>Free Game</category>
+      
+      <category>Idle</category>
+      
+    </item>
+    
+    <item>
+      <title>Hell Let Loose now works on Linux / Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Here's a fun one I managed to somehow miss recently, but it seems that Hell Let Loose has hooked up Easy Anti-Cheat to work on Linux / Steam Deck.</p>
+<p>Not a big surprise though, considering they clearly stated <a href="https://www.gamingonlinux.com/2023/04/hell-let-loose-planning-steam-deck-support/" target="_blank">it was in their roadmap</a>, but it appears the addition came without any proper announcement I can find. Seems it was added around a 1-2 months ago. You just need to ensure you have the "Proton EasyAntiCheat Runtime" installed in your Steam Library, and then it should work with Proton 8.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3818444321700829459gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3818444321700829459gol1.jpg"/></a></p>
+<p>More about it:</p>
+<blockquote>
+<p>Take to the battlefield in this squad-based, 50v50 multiplayer game, and choose one of our 14 roles available within the Command, Infantry, Recon and Armour unit types. Play as an Officer, Spotter, Medic, Tank Commander and more, to experience every aspect of World War II combat. Each role is equipped with different historical weapons, vehicles, and equipment that are intricately detailed, bringing the realism to the brutal and bloody warfare. Unit focussed gameplay is crucial and when done well can command the tide of battle.</p>
+</blockquote>
+<p>There's plenty of reports of it working well on <a href="https://www.protondb.com/app/686810?device=pc" target="_blank">ProtonDB</a>.</p>
+<p>It's 45% off on <a href="https://www.fanatical.com/en/game/hell-let-loose?ref=gol" target="_blank">Fanatical</a>, and 35% off on <a href="https://www.humblebundle.com/store/hell-let-loose?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/686810/Hell_Let_Loose/" target="_blank">Steam</a> until November 28th.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/11/hell-let-loose-now-works-on-linux-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/hell-let-loose-now-works-on-linux-steam-deck/</guid>
+      <pubDate>Fri, 24 Nov 2023 12:39:27 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1137940009id23634gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>FPS</category>
+      
+    </item>
+    
+    <item>
+      <title>Deckmate, my favourite Steam Deck accessory is discounted for Black Friday</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Your Steam Deck deserves a Deckmate. It's easily one of my most used and favourite accessories to pair up with a Steam Deck and now it's discounted so go grab it. They've actually done a bit of a rebrand recently, since they now offer up similar accessories for the ROG Ally too, so they're now known as <a href="https://getmechanism.com/" target="_blank">Mechanism</a>.</p>
+<p>For those who haven't seen it before: it's an attachment system giving you a mounting system to basically mount…well, anything to it. Valve even used it for their video of the Steam Deck OLED orb in the <a href="https://www.youtube.com/watch?v=_vTsZMvjJ-A" target="_blank">official trailer</a>, all those OLED's were mounted with the Deckmate.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11197497451700828392gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11197497451700828392gol1.png"/></a></p>
+<p>It simply hooked over the top and bottom, and the mount itself is thin enough that it really doesn't get in the way of anything. Then you just hook whatever you want into the back of it. That could be a battery pack, a stand, a USB-C hub, attach it to a wall (because why not?) or whatever else you can think of that might need to be attached to it.</p>
+<p>For Black Friday there's discount on the <a href="https://getmechanism.com/products/deck-mate-entire-system" target="_blank">full system</a>, the <a href="https://getmechanism.com/products/the-essentials-bundle" target="_blank">essentials bundle</a>, just as a <a href="https://getmechanism.com/products/kickstand-bundle" target="_blank">kickstand</a> and <a href="https://getmechanism.com/" target="_blank">more</a>. The discounts last until Tuesday 28th November.</p>
+<p>You can see my quick-take year-old video on it below:</p>
+<div class="hidden_video" data-video-id="nl2o0mFkLzA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4addbdfd5d591374080bb47cc64e8957.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/nl2o0mFkLzA" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2023/11/deckmate-my-favourite-steam-deck-accessory-is-discounted-for-black-friday/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/deckmate-my-favourite-steam-deck-accessory-is-discounted-for-black-friday/</guid>
+      <pubDate>Fri, 24 Nov 2023 12:23:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1146023088id23633gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Hardware</category>
+      
+      <category>Misc</category>
+      
+      <category>On Sale</category>
+      
+    </item>
     
     <item>
       <title>Fanatical&#39;s Play on the Go Winter Edition Bundle has some Steam Deck goodies</title>
@@ -3869,287 +4188,6 @@ Sometimes things happen beyond your control that change the available options an
       <category>Indie Game</category>
       
       <category>MMO</category>
-      
-    </item>
-    
-    <item>
-      <title>Heroic Games Launcher 2.10.0 released with plenty of essential fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Heroic Games Launcher has a big UI upgrade coming in the 3.0 update which isn't quite ready yet, but they have just released Heroic Games Launcher 2.10.0 which has some essential fixes for this popular multi-platform game manager.</p>
-<p>Making multiple stores easy on Steam Deck and desktop Linux, Heroic is definitely an essential tool to keep in your box. Heroic supports installing games from GOG, Epic Games, Amazon and you can use it as a Wine manager to install other things manually too.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8223882891699276918gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8223882891699276918gol1.jpg"/></a></p>
-<p>Here's all that's changed:</p>
-<blockquote>
-<p><strong>Highlights</strong></p>
-<ul>
-<li>[Linux] Added a new Gamescope Setting to the game settings <a class="notranslate user-mention" href="https://github.com/Nocccer" target="_blank">@Nocccer</a></li>
-<li>[General] Changed the Game Settings UI to use Tabs instead of collapsible elements. The latest used tab will be remembered as well. <a class="notranslate user-mention" href="https://github.com/flavioislima" target="_blank">@flavioislima</a></li>
-<li>[General] It is now possible to use Custom User Agents for Browser apps; <a class="notranslate user-mention" href="https://github.com/flavioislima" target="_blank">@flavioislima</a></li>
-<li>[Linux] Fixed Epic Login and the download of Wine, Proton and other tools on the Linux Snap Package; <a class="notranslate user-mention" href="https://github.com/flavioislima" target="_blank">@flavioislima</a></li>
-<li>[General] Heroic will now remember the last visited URL for all stores, making navigation a lot better. <a class="notranslate user-mention" href="https://github.com/arielj" target="_blank">@arielj</a></li>
-<li>[General] A warning will be shown when using non-supported commands or env variables on their inputs; <a class="notranslate user-mention" href="https://github.com/arielj" target="_blank">@arielj</a></li>
-<li>[General] Fixed How long to beat information; <a class="notranslate user-mention" href="https://github.com/CommandMC" target="_blank">@CommandMC</a></li>
-<li>[General] Added a new experimental frameless window option <a class="notranslate user-mention" href="https://github.com/0xCmdrKeen" target="_blank">@0xCmdrKeen</a>;</li>
-<li>[General] Added a new experimental feature to use a redesigned GamePage;</li>
-<li>[Linux] Several fixes and improvements on the DXVK, VKD3D, Anti-Cheat runtimes <a class="notranslate user-mention" href="https://github.com/Etaash-mathamsetty" target="_blank">@Etaash-mathamsetty</a> and <a class="notranslate user-mention" href="https://github.com/arielj" target="_blank">@arielj</a></li>
-<li>[General] Several UI fixes and performance improvements <a class="notranslate user-mention" href="https://github.com/arielj" target="_blank">@arielj</a></li>
-<li>[General] GOG fixes and other improvements <a class="notranslate user-mention" href="https://github.com/imLinguin" target="_blank">@imLinguin</a></li>
-<li>[General] Improved Logs screen showing all available logs <a class="notranslate user-mention" href="https://github.com/arielj" target="_blank">@arielj</a></li>
-<li>[Linux/Mac] New widget to simply installing Winetricks components and fonts <a class="notranslate user-mention" href="https://github.com/arielj" target="_blank">@arielj</a></li>
-</ul>
-<p><strong>Bug Fixes</strong></p>
-<ul>
-<li>Missing resume download button when returning to downloads (<a class="issue-link js-issue-link" href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pull/3171" target="_blank">#3171</a>)</li>
-<li>Repair not working for Epic games (<a class="issue-link js-issue-link" href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pull/3165" target="_blank">#3165</a>)</li>
-<li>Downloads shouldn't be started when opening a game in CLI mode (<a class="issue-link js-issue-link" href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pull/3161" target="_blank">#3161</a>)</li>
-<li>"Run Game Offline" mode not working on windows and mac (<a class="issue-link js-issue-link" href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pull/3106" target="_blank">#3106</a>)</li>
-<li>Launching games through steam on windows not working (<a class="issue-link js-issue-link" href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pull/3131" target="_blank">#3131</a>)</li>
-<li>Games not starting due to System Information command error (<a class="issue-link js-issue-link" href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pull/3070" target="_blank">#3070</a>)</li>
-<li>The XDG_CONFIG_HOME is set by Heroic, causing Mangohud to use the wrong config (<a class="issue-link js-issue-link" href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pull/3074" target="_blank">#3074</a>)</li>
-</ul>
-</blockquote>
-<p><a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.10.0" target="_blank">Changelog here</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/11/heroic-games-launcher-2-10-0-released-with-plenty-of-essential-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/heroic-games-launcher-2-10-0-released-with-plenty-of-essential-fixes/</guid>
-      <pubDate>Mon, 06 Nov 2023 13:23:55 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/968651776id23539gol.jpg" type="image/jpeg"/>
-      
-      <category>Amazon</category>
-      
-      <category>Apps</category>
-      
-      <category>Epic Games</category>
-      
-      <category>GOG</category>
-      
-    </item>
-    
-    <item>
-      <title>RPG &#39;Black Geyser: Couriers of Darkness&#39; is set to get a big DLC and free upgrade</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Inspired by classic isometric RPGs, Black Geyser: Couriers of Darkness released back in 2022 and the developers are coming back for a DLC expansion and a free update.</p>
-<p>Sounds like things weren't going too well, as they mentioned back in <a href="https://store.steampowered.com/news/app/1374930/view/3667656892651069125" target="_blank">March</a> how they were struggling as sales weren't what they were expecting. The good news though is that thanks to their <a href="https://www.kickstarter.com/projects/grapeocean/black-geyser-dlc-tales-of-the-moon-cult/description" target="_blank">Kickstarter campaign</a> that ends in a few days they've managed to pull in close to €26,000 towards finishing the Tales of the Moon Cult DLC and free update.</p>
-<p>This new DLC will add in</p>
-<ul>
-<li>Major questline focusing on the Cult of Zoria and their answer to the corruption of greed affecting the world.</li>
-<li>Indoor, outdoor and underground areas with new side quests and riddles.</li>
-<li>Brand-new spells and magical items.</li>
-</ul>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4519502851699275188gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4519502851699275188gol1.jpg"/></a></p>
-<p>Plus their free update coming will also add:</p>
-<ul>
-<li>Dual wielding for Warrior and Outlaw classes.</li>
-<li>Strongholds.</li>
-<li>Travel to quest giver directly from journal UI (one loading screen).</li>
-<li>Already known recipes are marked in shop UI.</li>
-<li>Steam Cloud Save (GOG is already supported).</li>
-<li>GOG Achievements.</li>
-<li>Item descriptions display which classes can use the item.</li>
-<li>Full personal questline for Helgenhar.</li>
-</ul>
-<p>The original game trailer:</p>
-<div class="hidden_video" data-video-id="a9gpXAgwezY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/79160a63e754318a576f1f8dd5d66026.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/a9gpXAgwezY" target="_blank">See video</a></div></div>
-<p>The game is available on <a href="https://www.gog.com/game/black_geyser_couriers_of_darkness" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/1374930/Black_Geyser_Couriers_of_Darkness/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/11/rpg-black-geyser-couriers-of-darkness-is-set-to-get-a-big-dlc-and-free-upgrade/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/rpg-black-geyser-couriers-of-darkness-is-set-to-get-a-big-dlc-and-free-upgrade/</guid>
-      <pubDate>Mon, 06 Nov 2023 12:53:20 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1947531523id23538gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Crowdfunding</category>
-      
-      <category>DLC</category>
-      
-      <category>GOG</category>
-      
-    </item>
-    
-    <item>
-      <title>Snacktorio: a factory-cooking simulator for feeding unspeakable horrors</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Not satisfied enough by creating the chilled beekeeping sim <a href="https://www.gamingonlinux.com/2023/09/properly-chilled-beekeeping-sim-apico-30-update-out-now/" target="_blank">APICO</a>, and their plans for frog-breeding in <a href="https://www.gamingonlinux.com/2023/10/mudborne-is-an-upcoming-laid-back-nature-sim-about-breeding-collecting-frogs/" target="_blank">Mudborne</a>, TNgineers recently announced Snacktorio, a factory-cooking simulator where you must satisfy the appetites of unspeakable horrors.</p>
-<p>"Snacktorio is a factory-cooking simulator where you must satisfy the appetites of unspeakable horrors... with food! Build and manage sprawling networks of machines &amp; pipes to mass produce delicious meals that can satiate the endless hunger of the beasts that are invading your home. Order Up!</p>
-<p>As one of the remaining chefs in your tribe, the responsibility of maintaining the balance with the monsters through the tasty medium of food has fallen on your grubby lil hands. Can you turn the tide on the ever growing threat of invasion, and also maybe get a nice 5-star review on Just ConsumeTM?"</p>
-<p><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/236533271699273710gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/236533271699273710gol1.jpg"/></a>Features Planned:</p>
-<ul>
-<li>Factory simulation in a 2D platforming setting</li>
-<li>Explore and mine for ores, resources, and spices</li>
-<li>Mass-produce food through automated cooking machines</li>
-<li>Take &amp; fufill orders from all sorts of insatiable hangry beasts</li>
-<li>Build and manage networks of pipes to get ingredients where they need to be</li>
-<li>Experience all the stress of managing a restaurant without any of the pay!</li>
-</ul>
-<p>Speaking about why they decided to create it they said they wanted to make something satisfyingly complex without using the "same tired sci-fi theme for the genre, and dive into how different recipes could be made in interesting ways when using an RPG-esque setting". Certainly seems like an interesting idea, and a nice twist on the factory-building and crafting genre.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17693435271699273726gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17693435271699273726gol1.jpg"/></a></p>
-<p>A demo is coming at some point soon to <a href="https://tngineers.itch.io/snacktorio" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1902940/Snacktorio/" target="_blank">Steam</a> so give it a follow.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/11/snacktorio-a-factory-cooking-simulator-for-feeding-unspeakable-horrors/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/snacktorio-a-factory-cooking-simulator-for-feeding-unspeakable-horrors/</guid>
-      <pubDate>Mon, 06 Nov 2023 12:30:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/145283773id23537gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Exploration</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Itch.io</category>
-      
-    </item>
-    
-    <item>
-      <title>CodeWeavers are hiring for a Wine / Proton developer</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you're a programmer looking for your next challenge - how about this! CodeWeavers are hiring a full-time position for a developer to work on Wine, Proton and their own CrossOver product. Could be a good chance to work on something awesome.</p>
-<p>For those who don't know: CodeWeavers are the company that works with Valve on <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>, and they also sponsor Wine development directly. The position is available remote or local, so even if you don't live in the USA, you can still apply for it as long as you feel you have the necessary skills which includes strong C language skills, excellent debugging, you need to be good with Linux, good with build systems, and no exposure to Microsoft code or reverse-engineering of Microsoft software.</p>
-<p>From the job advert:</p>
-<blockquote>
-<p>[Who we are]<br/>
-CodeWeavers is a small company based in St Paul, Minnesota that enables customers to run Windows programs on macOS, Linux and Android using the <a class="underline" href="https://www.winehq.org" target="_blank">open source Wine technology</a>. We are looking for a handful of talented programmers that are willing to learn how to improve Wine. We have developers all around the globe and are happy to hire remote workers.</p>
-<p>[About the position]<br/>
-CodeWeavers needs new, full-time developers to improve Wine's ability to run games and other types of software and integrate well with the native operating system and other system components. Positions are available to work on a variety of Wine-based software, including CodeWeavers's own CrossOver product; the Proton project for Valve software; and projects for other clients and software internal to CodeWeavers.</p>
-<p>[Why it's interesting]<br/>
-CodeWeavers prides itself on four tenets. Do challenging and meaningful work, work with people we respect, have fun at work and of course make money. CodeWeavers is filled with capable developers who believe in the technical and moral strengths of open source software. We thrive by working in an environment with competent co workers, little management hassle, and a sensible approach to work-life balance. We need developers with strong C skills who will enjoy the exciting and varied challenges Wine brings. Most Wine developers work on all areas of Wine, including file I/O, device input, audio/video, graphics, Windows shell and GUI programming, and much more. This requires self-motivation and an ability to learn quickly and work within existing code.</p>
-</blockquote>
-<p>Interested? Check out <a href="https://www.codeweavers.com/about/jobs#job-dev" target="_blank">the job here</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/11/codeweavers-are-hiring-for-a-wine-proton-developer/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/codeweavers-are-hiring-for-a-wine-proton-developer/</guid>
-      <pubDate>Mon, 06 Nov 2023 12:19:36 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Jobs</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Mini story modes coming to Vampire Survivors in the Adventures Update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Well this sounds rather exciting and different. Vampire Survivors is going to launch the Adventures Update in a few weeks and it will bring some new ways to play with mini story modes.</p>
-<p>The developer mentions these Adventures are " self-contained miniature story modes that reset and remix the game's content, following the Survivors cast on a series of wacky sidequests". Each of them will offer its own unique progression path, giving you the chance to begin fresh again and face special challenges with a limited arsenal. This won't affect the main game either. Each Adventure will be split into Chapters that having a specific set-up, win conditions and offer up a little bit of actual lore.</p>
-<p>How much will it be? Free! Although some of the Adventures will be for the existing DLC.</p>
-<div class="hidden_video" data-video-id="BUZazZKH-sU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/901659d7042ca2baba1803992ba1e2d2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/BUZazZKH-sU" target="_blank">See video</a></div></div>
-<p>Overall it sounds like a lot of fun for the game, and with their plans to regularly add in new Adventures, it will keep it ticking over for some time. You'll be able to play them in co-op too, although they're not available right away, you will need to play some of the game to unlock them.</p>
-<p>Full <a href="https://poncle.games/adventures-faq" target="_blank">FAQ over here</a>.</p>
-<p>Vampire Survivors is Steam Deck Verified, plus it has a Native Linux version (which isn't actually advertised).</p>
-<p>Available on <a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/11/mini-story-modes-coming-to-vampire-survivors-in-the-adventures-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/mini-story-modes-coming-to-vampire-survivors-in-the-adventures-update/</guid>
-      <pubDate>Fri, 03 Nov 2023 16:41:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1745602279id23535gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Bullet Hell</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Here&#39;s the Steam Deck most played for October 2023</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another month is over and Valve has <a href="https://twitter.com/OnDeck/status/1720178150125322268" target="_blank">revealed</a> what you've all been playing on Steam Deck for October 2023, so here's the most popular games. Sorted from highest to lowest, based on hours played, each is also a Steam link if you want to go and check them out.</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" target="_blank">Baldur's Gate 3</a></li>
-<li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">Cyberpunk 2077</a></li>
-<li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank">ELDEN RING</a></li>
-<li><a href="https://store.steampowered.com/app/413150/Stardew_Valley/" target="_blank">Stardew Valley</a></li>
-<li><a href="https://store.steampowered.com/app/1716740/Starfield/" target="_blank">Starfield</a></li>
-<li><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/" target="_blank">Vampire Survivors</a></li>
-<li><a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank">Grand Theft Auto V</a></li>
-<li><a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/" target="_blank">The Binding of Isaac: Rebirth</a></li>
-<li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank">Red Dead Redemption 2</a></li>
-<li><a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" target="_blank">The Elder Scrolls V: Skyrim Special Edition</a></li>
-<li><a href="https://store.steampowered.com/app/2344520/Diablo_IV" target="_blank">Diablo IV</a></li>
-<li><a href="https://store.steampowered.com/app/275850/No_Mans_Sky/" target="_blank">No Man's Sky</a></li>
-<li><a href="https://store.steampowered.com/app/1868140/DAVE_THE_DIVER/" target="_blank">DAVE THE DIVER</a></li>
-<li><a href="https://store.steampowered.com/app/1942280/Brotato/" target="_blank">Brotato</a></li>
-<li><a href="https://store.steampowered.com/app/646570/Slay_the_Spire/" target="_blank">Slay the Spire</a></li>
-<li><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank">The Witcher 3: Wild Hunt</a></li>
-<li><a href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/" target="_blank">Hogwarts Legacy</a></li>
-<li><a href="https://store.steampowered.com/app/377160/Fallout_4/" target="_blank">Fallout 4</a></li>
-<li><a href="https://store.steampowered.com/app/1145360/Hades/" target="_blank">Hades</a></li>
-<li><a href="https://store.steampowered.com/app/582010/Monster_Hunter_World/" target="_blank">Monster Hunter: World</a></li>
-</ul>
-<p>I expect that with the <a href="https://www.gamingonlinux.com/2023/11/baldurs-gate-3-patch-4-brings-amd-fsr-22-looking-better-on-steam-deck/" target="_blank">AMD FSR 2.2 update for Baldur's Gate 3</a> it will stay pretty high over the next month, since it does look better on Steam Deck now. I'm still surprised at the amount of people doing Starfield on it though, because it really is rough on Steam Deck but then again people play a lot on Nintendo Switch where even first-party games have big issues without a care so…</p>
-<p>What have you been playing lately?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/11/heres-the-steam-deck-most-played-for-october-2023/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/heres-the-steam-deck-most-played-for-october-2023/</guid>
-      <pubDate>Fri, 03 Nov 2023 11:20:18 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/673643592id23534gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Listicle</category>
-      
-      <category>Misc</category>
-      
-      <category>Round-up</category>
-      
-    </item>
-    
-    <item>
-      <title>Counter-Strike 2 sees the return of community maps</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve continue expanding Counter-Strike 2 now its released, and the latest update overhauls the community map system along with enabling it again in the Steam Workshop. We've also seen quite a big drop in players overall.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/759143791699008696gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/759143791699008696gol1.jpg"/></a><br/>
-Pictured - <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3070290240&amp;searchtext=" target="_blank">Brewery</a> map from Steam Workshop</p>
-<p>From the <a href="https://www.counter-strike.net/news/updates" target="_blank">changelog</a>:</p>
-<blockquote>
-<ul>
-<li>Enabled uploading CS2 maps to the workshop.</li>
-<li>Community Servers can host workshop maps.</li>
-<li>Added paint metalness and roughness by color features to Solid Color, Hydrographic, and Spray-Paint finishes in the Item Editor.</li>
-<li>Added option to toggle "Automatic PBR Color Correction" to all sticker types in Item Editor.</li>
-<li>Various Item Editor help system updates including "mat_fullbright 10" to test PBR.</li>
-<li>Various updates to workshop tools.</li>
-</ul>
-</blockquote>
-<p>If you want to try a custom map offline you can just find one in the Steam Workshop, subscribe to it and then head directly into the game in the Play menu.</p>
-<p>Nice to see this back as custom maps were really popular for CS:GO. Hopefully we will see other parts cut from CS:GO return to CS 2 soon. Going by what Valve said in an <a href="https://www.pcgamer.com/counter-strike-2-interview/" target="_blank">interview</a> with PC Gamer modes like Arms Race and other popular stuff will return at some point as Valve say they haven't been forgotten.</p>
-<p>The release of CS 2 also caused quite a dip in the player-count. <a href="https://steamcharts.com/app/730" target="_blank">Steam Charts</a> reports a 18.85% drop in the average player count for October, the biggest drop on record for it. We're still talking averages of nearly 800,000 though so it's not like CS 2 is in trouble with it seeing peak player counts regularly of over 1 million.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/11/counter-strike-2-sees-the-return-of-community-maps/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/11/counter-strike-2-sees-the-return-of-community-maps/</guid>
-      <pubDate>Fri, 03 Nov 2023 10:56:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/645271108id23533gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>FPS</category>
-      
-      <category>Free Game</category>
-      
-      <category>Steam</category>
       
     </item>
     
