@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-01-16 07:23:25.259575</pubDate>
+    <pubDate>2024-01-17 07:24:07.830464</pubDate>
 
     
     <image>
@@ -18,6 +18,384 @@
     </image>
 
     
+    
+    <item>
+      <title>Ubisoft think gamers need to get comfortable with not owning games</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://www.gamesindustry.biz/the-new-ubisoft-and-getting-gamers-comfortable-with-not-owning-their-games" target="_blank">GamesIndustry.biz</a> recently spoke to Ubisoft, and something said during the interview seems to have created some sparks across the industry about game ownership.</p>
+<p>What was said is not all that surprising really. Ubisoft, like multiple others, run subscription services with theirs being Ubisoft+ that just had a bit of a change into multiple tiers. These services are everywhere now like Xbox Game Pass, EA Play and others. That, and GI.biz spoke to Philippe Tremblay, director of subscriptions at Ubisoft so obviously they're going to be somewhat biased on what they think — it's their job.</p>
+<p>From the interview, the bit in question:</p>
+<blockquote>
+<p>One of the things we saw is that gamers are used to, a little bit like DVD, having and owning their games. That's the consumer shift that needs to happen. They got comfortable not owning their CD collection or DVD collection. That's a transformation that's been a bit slower to happen [in games]. As gamers grow comfortable in that aspect… you don't lose your progress. If you resume your game at another time, your progress file is still there. That's not been deleted. You don't lose what you've built in the game or your engagement with the game. So it's about feeling comfortable with not owning your game.</p>
+</blockquote>
+<p><em>The GOG team certainly took notice, <a href="https://twitter.com/GOGcom/status/1747335663995818251" target="_blank">mentioning</a> on X (formerly Twitter): "You should feel extremely comfortable with owning your games on GOG (they're DRM-free) :)".</em></p>
+<p>It's worth noting that clearly it's going well for Ubisoft, as Tremblay mentioned October 2023 was their biggest month in Ubisoft+ history. So people are clearly buying into game subscriptions more and more. And related, Microsoft said back in 2022 that Xbox Game Pass had 25 million subscribers. Subscriptions are clearly here to stay.</p>
+<p>Also worth noting, to be clear, Ubisoft don't plan to force you into one way or another noting:</p>
+<blockquote>
+<p>"The point is not to force users to go down one route or another," he explains. "We offer purchase, we offer subscription, and it's the gamer's preference that is important here. We are seeing some people who buy choosing to subscribe now, but it all works."</p>
+</blockquote>
+<p>Given how services can just entirely remove your paid-for content, this whole issue of ownership is a concerning one. Like how Sony were going to just remove previously purchased Discovery content from users, although they've since <a href="https://www.playstation.com/en-us/legal/psvideocontent/" target="_blank">backtracked</a> on that after public outcry.</p>
+<p>The thing is, you have to remember, you don't actually own your games on Steam either. This has been well-known for a long time now. As per Steam's <a href="https://store.steampowered.com/subscriber_agreement/" target="_blank">Subscriber Agreement</a> under the "A. General Content and Services License" section:</p>
+<blockquote>
+<p>[…] The Content and Services are licensed, not sold. Your license confers no title or ownership in the Content and Services. To make use of the Content and Services, you must have a Steam Account and you may be required to be running the Steam client and maintaining a connection to the Internet.</p>
+</blockquote>
+<p>I'll admit, it's not <em>entirely</em> the same. Valve won't take away your games if you don't pay them every month, it's not a subscription in the same way, and plenty of games on Steam are actually <em>entirely</em> DRM-free and can be run outside of Steam. But still, it's something to remember, ownership has been on the decline for a long time.</p>
+<p>A lot of it simply comes down to convenience though right? Plenty of us pay for Netflix, Disney+, Amazon Prime and so on and so on — so we can just quickly jump into a show or a movie they have available. But then the problem there is, again, everyone wants their own service. There's more popping up all the time, and rights on various shows end up split between them and you end up paying more and more (look at <a href="https://www.pokemon.com/us/animation/where-to-watch-pokemon-episodes-movies" target="_blank">the mess</a> of Pokémon streaming) and never owning a damn thing.</p>
+<p>Over to you in the comments: what are your thoughts? </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/ubisoft-think-gamers-need-to-get-comfortable-with-not-owning-games/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/ubisoft-think-gamers-need-to-get-comfortable-with-not-owning-games/</guid>
+      <pubDate>Tue, 16 Jan 2024 22:46:45 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1554136296id23857gol.jpg" type="image/jpeg"/>
+      
+      <category>Editorial</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 9.0 brings much improved Windows app and game compatibility to Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It's here! The official release of Wine 9.0 has now been made available, bringing the next-generation of Windows compatibility to Linux for apps and games. This is the tech that forms a major part of <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Steam Play Proton</a>.</p>
+<p>This release has been a year in the making, with a new stable Wine release done once a year with many development releases in between bringing over 7,000 individual changes. There's some truly big stuff in this release too and some of the highlights include:</p>
+<ul>
+<li>An experimental Wayland graphics driver, not enabled by default yet.</li>
+<li>Lots of WoW64 work including the completion of converting modules to PE format to "introduce a proper boundary between the Windows and Unix worlds". They say it's now possible to run 32-bit Windows applications on a purely 64-bit Unix installation but this new WoW64 mode is not yet enabled by default.</li>
+<li>The completion of the PE/Unix separation means that it's possible to run existing Windows binaries on ARM64.</li>
+<li>The Vulkan driver supports up to version 1.3.272 of the Vulkan spec.</li>
+<li>Various optimizations have been made to core WineD3D and the Vulkan backend.</li>
+<li>A number of GdiPlus functions are optimized for better graphics performance.</li>
+<li>The Windows Media Video (WMV) decoder DirectX Media Object (DMO) is implemented.</li>
+<li>DirectInput action maps are implemented, improving compatibility with many old games that use this to map controller inputs to in-game actions.</li>
+<li>URL/URI protocol associations are exported as URL handlers to the Linux desktop.</li>
+<li>Lots of Internationalization improvements including updates for Unicode and better support for native Windows IME implementations.</li>
+</ul>
+<p>The list goes on for a while, that's just some cherry-picked big additions.</p>
+<p>As a result of all the changes many more applications and games designed for Windows will now run on Linux (and other platforms where Wine can run).</p>
+<p>See the <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-9.0" target="_blank">full release notes</a> for all the changes.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/wine-9-0-brings-much-improved-windows-app-and-game-compatibility-to-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/wine-9-0-brings-much-improved-windows-app-and-game-compatibility-to-linux/</guid>
+      <pubDate>Tue, 16 Jan 2024 22:01:27 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Prison Architect 2 announced from Paradox Interactive and Double Eleven</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>As soon as I saw a Prison Architect teaser recently, I knew this was about to come! Prison Architect 2 has now been formally announced from Paradox Interactive with Double Eleven on developer duty.</p>
+<p>This was expected anyway, since <a href="https://www.gamingonlinux.com/2019/01/paradox-interactive-have-purchased-the-rights-to-prison-architect-from-introversion/" target="_blank">Paradox purchased the rights to Prison Architect</a> back in early 2019, and then in March 2023 <a href="https://www.gamingonlinux.com/2023/05/prison-architect-has-a-final-free-update-out-now/" target="_blank">the original had its final upgrade</a>. So of course Paradox weren't going to sit on it.</p>
+<div class="hidden_video" data-video-id="LiymA3jw0fQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5dc737c78cfd0d25e41c759b22357956.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/LiymA3jw0fQ" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<blockquote>
+<ul>
+<li><strong>The World’s Greatest Prison Simulation Game - Now in 3D! </strong>Use your resources to build, manage, and control your prison in classic Prison Architect playstyle—now in 3 glorious dimensions! Design every corner of your prison and manage everything from daily schedules to policies, and ensure your prison is safe, self-sustaining, and secure.</li>
+<li><strong>Build the Ultimate Penitentiary: </strong>Establish all of your prison infrastructure over multiple floors, and use tons of snazzy new tools that allow you to build a state-of-the-art correctional facility. The design of your prison will affect every aspect of your inmates’ lives, so make your schemes accordingly!</li>
+<li><strong>The Smartest Inmates Ever: </strong>Unique inmates have schemes of their own – they now form distinct relationships that influence behavior, make decisions based on wants and needs, and plot their paths better than ever. Watch as they interact and attempt to navigate the daily trials of your prison. Remember that every choice you make might either help or hinder your inmates' correctional journey. What type of relationships will your inmates have with your prison?</li>
+<li><strong>The Prison Magnate: </strong>Establish and run a true institution from the top, building up unique correctional facilities in a freshly upgraded Career Mode that will take you across a brand new world map. Will your prisons end up being monuments to rehabilitation or retribution? Most importantly, will they pay the bills?</li>
+<li><strong>Every Action has a Reaction: </strong>Choices matter and yours will determine the fate of your prison. More control than ever—over inmates, prison policies, architecture and more—means more ways for things to go well… or not! Plan carefully or you may have to cope with escapes, gang wars, and all sorts of expensive and destructive problems.</li>
+</ul>
+</blockquote>
+<p>From the press release: “In Prison Architect 2, our team set out to create the next level in management gameplay. A greater degree of player freedom, impactful choices, and inmate simulation come together to provide an enhanced presentation of prison management, in a 3D world. Much loved features make a return to help you manage your inmates, quell riots, prevent escapes and share your prisons, but now cross-platform! In addition to a new upgrade system, a new Career Mode, and more.” said Gareth Wright, Game Director at Double Eleven. “We look forward to seeing how players get creative with multiple floors and catwalks to finally construct and expand in 3D. And then optimize and balance their prison’s safety, security and self-betterment.”</p>
+<p>Currently, it seems much like Cities: Skylines 2 that Paradox also publishes, that the Native Linux and macOS support has been dropped. I've reached out to Paradox PR to clarify. Hopefully (and quite likely) it will run with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Steam Play Proton</a>, and if not, no doubt future Proton updates could get it running like we've seen with the tens of thousands of games that run on desktop Linux and Steam Deck.</p>
+<p>It's due out on March 26th.</p>
+<p>You can follow / pre-order on <a href="https://store.steampowered.com/app/1257610/Prison_Architect_2/" target="_blank">Steam</a> for $39.99 / £34.99 / €39.99.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/prison-architect-2-announced-from-paradox-interactive-and-double-eleven/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/prison-architect-2-announced-from-paradox-interactive-and-double-eleven/</guid>
+      <pubDate>Tue, 16 Jan 2024 17:13:53 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1469570328id23855gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Building Sim</category>
+      
+      <category>Paradox Interactive</category>
+      
+      <category>Simulation</category>
+      
+    </item>
+    
+    <item>
+      <title>S.T.A.L.K.E.R. 2: Heart of Chornobyl releases September 5th, 2024</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>GSC Game World announced that S.T.A.L.K.E.R. 2: Heart of Chornobyl has moved from its Q1 2024 release plan, to have a final release date of September 5th, 2024. While we don't know yet how it will run on Steam Deck or desktop Linux with Proton, it's likely to be one of the most popular releases on PC this year so it's worth keeping an eye on.</p>
+<p>Speaking about the delay, GSC said "While there is absolutely no way to make another delay sound less dim, we decided to be clear about our reasons to postpone the game for the sake of yet another wave of polishing". Continuing they mentioned showing it off at Gamescom 2023 to a small set of people, but it showed the game needed more time in the oven for technical issues to be solved.</p>
+<div class="hidden_video" data-video-id="6o6D_a3PAHw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0d7468dd999d2555e011eebbbf571c9d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6o6D_a3PAHw" target="_blank">See video</a></div></div>
+<p>You can also see their previous trailer below:</p>
+<div class="hidden_video" data-video-id="XNGbS0fY80s"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/04af652b1c31e25e03abed950ef42f86.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/XNGbS0fY80s" target="_blank">See video</a></div></div>
+<p>S.T.A.L.K.E.R. 2: Heart of Chornobyl is available for pre-order via:</p>
+<p><a href="https://www.gog.com/en/game/stalker_2_heart_of_chornobyl_standard_edition" target="_blank">GOG</a></p>
+<p><a href="https://www.humblebundle.com/store/stalker-2-heart-of-chornobyl?partner=gamingonlinux" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/1643320/STALKER_2_Heart_of_Chornobyl/" target="_blank">Steam</a> </p>
+<p>So if you've not played the originals, you've now got a bit of extra time to jump into them and they all work on Linux desktop with Proton. Some work okay on Steam Deck too. Although, for Call of Pripyat, you may get a better experience with OpenXRay.</p>
+<p>It's worth noting also that recently the <a href="https://www.gamingonlinux.com/2024/01/stalker-game-engine-openxray-gets-taken-down-on-github/" target="_blank">S.T.A.L.K.E.R. game engine OpenXRay got taken down on GitHub</a>, but it was later reinstated since the DMCA was fraudulent and GSC actually gave it their blessing. Nice to see another company look after their players and understand projects like that are actually good for their older games.</p>
+<p><em>Will this be something you'll be checking out at release? Let me know in the comments. </em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/stalker-2-heart-of-chornobyl-releases-september-5th-2024/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/stalker-2-heart-of-chornobyl-releases-september-5th-2024/</guid>
+      <pubDate>Tue, 16 Jan 2024 16:49:14 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/340498502id23854gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Delayed</category>
+      
+      <category>FPS</category>
+      
+    </item>
+    
+    <item>
+      <title>winesapOS, the portable SteamOS-like Linux distro gets improved hardware support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you have a system you wish to try out Linux on for gaming be it an Apple Mac, a PC with Windows or anything else - perhaps give winesapOS a little try as you might find this SteamOS-like distribution to your liking. It offers up a portable solution with persistent storage, so you can load it up on a USB drive and take it anywhere</p>
+<p>The main developer, Luke Short, emailed in about some major changes and improvements that have arrived with winesapOS version 3.4.0.</p>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17417539781705414006gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17417539781705414006gol1.jpg"/></a>Pictured - The KDE Plasma Desktop Mode in winesapOS, just like SteamOS</em></p>
+<p>Highlights of some improvements in v3.4.0 include:</p>
+<ul>
+<li>Game Mode (Gamescope session - Steam Big Picture) support for Steam and Open Gamepad UI.</li>
+<li>Improved hardware support:
+<ul>
+<li>Lots of new hardware support: Intel Arc dGPUs, Lenovo Legion Go, GPD Win 4, iPhone tethering, racing wheels, Razer accessories, and improved support for older AMD dGPUs.</li>
+</ul>
+</li>
+<li>Downloading the operating system has been simplified:
+<ul>
+<li>Instead of extracting 3 to 7 parts of a split-up zip file (due to GitHub Release hosting constraints), we now provide a single zip file for each image type. This has been the biggest complaint that they finally addressed.</li>
+</ul>
+</li>
+<li>A Recovery console to help you fix boot problems.</li>
+<li>+ much more in the <a href="https://github.com/LukeShortCloud/winesapOS/releases/tag/3.4.0" target="_blank">release notes</a>.</li>
+</ul>
+<p>Check it out on the <a href="https://github.com/LukeShortCloud/winesapOS" target="_blank">GitHub page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/winesapos-the-portable-steamos-like-linux-distro-gets-improved-hardware-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/winesapos-the-portable-steamos-like-linux-distro-gets-improved-hardware-support/</guid>
+      <pubDate>Tue, 16 Jan 2024 14:07:35 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/788489565id23853gol.jpg" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Framework email customers for data breach from accounting partner getting phished</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>No one is safe from data breaches, and at times it won't even be the company you've directly interacted and purchased from but their partners, like what recently happened to Framework. <em>Framework are the company that make the modular Framework laptop, which is really cool!</em></p>
+<p>From what I can tell, Framework have not announced this in public but sent it in an email to affected customers which one decided to copy and paste on to the Framework Forum <a href="https://community.frame.work/t/framework-data-breach/43408" target="_blank">in a post</a>.</p>
+<p>The email notes how their accounting partner, Keating Consulting, had a staff member fall victim to a "phishing email that utilized social engineering tactics to obtain customer PII (Personal Identifiable Information) associated with outstanding balances for Framework purchases" and anyone getting the email was affected by it. For those hit their full name, email address and balance owed would have been gained by the attackers.</p>
+<p>Framework said about the list that it was "primarily of a subset of open pre-orders, but some completed past orders with pending accounting syncs were also included in this list".</p>
+<p>One thing that has confused multiple people, is that even people who <em>don't</em> have an outstanding balance were emailed, which was cleared up in a <a href="https://community.frame.work/t/framework-data-breach/43408/5" target="_blank">later post</a> by a moderator forwarding information from the Framework team. There may not be a customer-facing balance, but their system may have a slight difference due to changes in taxes since an order.</p>
+<p>It's just another reminder to be seriously careful on clicking links to ensure they really go to where they say, especially in emails, and not entering any information into a form you're not 100% sure on. It can happen to anyone. Always check the full URL.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/framework-email-customers-for-data-breach-from-accounting-partner-getting-phished/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/framework-email-customers-for-data-breach-from-accounting-partner-getting-phished/</guid>
+      <pubDate>Tue, 16 Jan 2024 12:27:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1997104560id23852gol.jpg" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Hardware</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Check out these Steam Deck Verified highlights for January 2024</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It's been quite chilly here in the UK, so I've been spending a lot more time sat under a blanket with my Steam Deck OLED. If you're looking for some more Steam Deck Verified games to pick up and keep warm with too, here's a January 2024 overview of some new entries.</p>
+<p>All of the titles listed below have full <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified ratings from Valve that have been given the rating only recently.</p>
+<p><strong><a href="https://store.steampowered.com/app/601360/Portal_Revolution/" target="_blank">Portal: Revolution</a></strong> (Native Linux)</p>
+<p>"The Portal Mod you've been waiting for. Delve into a new story with original characters, spanning over 8 hours of gameplay and featuring over 40 new challenging test chambers which make use of new mechanics."</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1518927891705405321gol1.jpg"/></p>
+<p><strong><a href="https://store.steampowered.com/app/1031460/Sail_Forth/" target="_blank">Sail Forth</a></strong> (Native Linux)</p>
+<p>"Sail a fleet of customizable ships across an ocean whose ancient depths have swallowed the key to the mysterious past. Befriend fishfolk to expand your boat crews, take up arms against petulant pirates, and chart a course across an expansive watery world. Will you answer the call of High Adventure?"</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13724337351705405374gol1.jpg"/></p>
+<p><strong><a href="https://store.steampowered.com/app/1240060/A_Highland_Song/" target="_blank">A Highland Song</a></strong> (ProtonDB Platinum)</p>
+<p>"Moira McKinnon is running away. A wild adventure through the Scottish Highlands, with open platforming and dynamic storytelling, maps and music. From the creators of Heaven's Vault and 80 Days."</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15172618961705405247gol1.jpg"/></p>
+<p><strong><a href="https://store.steampowered.com/app/2072450/Like_a_Dragon_Infinite_Wealth/" target="_blank">Like a Dragon: Infinite Wealth</a></strong></p>
+<p>"Two larger-than-life heroes, Ichiban Kasuga and Kazuma Kiryu are brought together by the hand of fate, or perhaps something more sinister… Live it up in Japan and explore all that Hawaii has to offer in an RPG adventure so big it spans the Pacific."</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1797058411705405421gol1.jpg"/></p>
+<p><strong><a href="https://store.steampowered.com/app/638510/dotAGE/" target="_blank">dotAGE</a></strong> (Native Linux)</p>
+<p>"Village elder, help us! The Apocalypse is approaching, and we need your guidance to survive. Assign your workers and build a thriving village against the pending doom. DotAGE is the merciless survival roguelite turn-based city builder. Will you fulfill the Prophecy?"</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17749787261705405459gol1.jpg"/></p>
+<p><strong><a href="https://store.steampowered.com/app/70300/VVVVVV/" target="_blank">VVVVVV</a></strong> (Native Linux)</p>
+<p>"VVVVVV is a platform game all about exploring one simple mechanical idea - what if you reversed gravity instead of jumping?"</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12867589101705405489gol1.jpg"/></p>
+<p><strong><a href="https://store.steampowered.com/app/1924430/Cookie_Cutter/" target="_blank">Cookie Cutter</a></strong> (ProtonDB Gold)</p>
+<p>"Love turns to rage and chainsaws in Cookie Cutter, a totally unique hand-drawn 2D Metroidvania. Become Cherry, a violent android on a rage-filled quest to save her creator."</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18395168081705405058gol1.jpg"/></p>
+<hr/>
+<p>Something else interesting for you: the Steam Deck has been in Steam's global Top 5 sellers (based on revenue) for the last 10 weeks in a row now. Of those 10 weeks it's spent 6 of them as number 1! While we don't know exact numbers, since Valve don't give any out, it's nice to see it continue to do so well.</p>
+<p>What have you been playing recently on Steam Deck or Linux Desktop? What are your latest recommendations that people pick up and play?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/check-out-these-steam-deck-verified-highlights-for-january-2024/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/check-out-these-steam-deck-verified-highlights-for-january-2024/</guid>
+      <pubDate>Tue, 16 Jan 2024 11:46:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/43303816id23851gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Listicle</category>
+      
+      <category>Misc</category>
+      
+      <category>Round-up</category>
+      
+    </item>
+    
+    <item>
+      <title>X.Org and Xwayland get new releases due to security issues</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Here's another reminder that checking regularly for updates is always a good thing, because there's new releases available for both the X.Org X and Xwayland due to multiple reported security issues.</p>
+<p>First up, here's the actual listed issues reported and fixed:</p>
+<blockquote>
+<ul>
+<li>CVE-2023-6816 can be triggered by passing an invalid array index to DeviceFocusEvent or ProcXIQueryPointer.</li>
+<li>CVE-2024-0229 can be triggered if a device has both a button and a key class and zero buttons.</li>
+<li>CVE-2024-21885 can be triggered if a device with a given ID was removed and a new device with the same ID added both in the same operation.</li>
+<li>CVE-2024-21886 can be triggered by disabling a master device with disabled slave devices.</li>
+<li>CVE-2024-0409 can be triggered by enabling SELinux xserver_object_manager and running a client.</li>
+<li>CVE-2024-0408 can be triggered by enabling SELinux xserver_object_manager and creating a GLX PBuffer.</li>
+</ul>
+</blockquote>
+<p>This security advisory went public on the X.Org <a href="https://lists.x.org/archives/xorg/2024-January/061525.html" target="_blank">mailing list</a> this morning.</p>
+<p>The issues are present in X.Org X server prior to 21.1.11 and Xwayland prior to 23.2.4, both of which were just announced and released. The <a href="https://lists.x.org/archives/xorg/2024-January/061526.html" target="_blank">xorg-server 21.1.11</a> release additionally "also contains a fix for XRandR to allow for multiple virtual monitors on a physical display" plus <a href="https://lists.x.org/archives/xorg/2024-January/061527.html" target="_blank">xwayland 23.2.4</a> additionally "also contains several other fixes for glamor, libEI support, and FreeBSD".</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/xorg-and-xwayland-get-new-releases-due-to-security-issues/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/xorg-and-xwayland-get-new-releases-due-to-security-issues/</guid>
+      <pubDate>Tue, 16 Jan 2024 11:21:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/225575151id23850gol.jpg" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Open source re-implementation of Tomb Raider 1 (1996) TR1X gets a big bug-fix release</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After adding in <a href="https://www.gamingonlinux.com/2023/11/open-source-re-implementation-of-tomb-raider-1-tr1x-gets-linux-builds/" target="_blank">Linux support in the 3.0 release</a>, the Open source re-implementation of Tomb Raider 1 (1996) project TR1X has a fresh release out with lots of bug fixes.</p>
+<p>Offering a huge amount of improvements over the original game from UI improvements to modern adjustments of the gameplay mechanics to feel better, no doubt this is currently the best way to play through the original Tomb Raider. Well, at least until the <a href="https://www.gamingonlinux.com/2023/09/tomb-raider-i-iii-remastered-heads-to-steam-from-aspyr/" target="_blank">remasters of Tomb Raider 1-3 release next month</a>, although we've seen before many remasters aren't particularly great.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5785418621705402872gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5785418621705402872gol1.jpg"/></a></p>
+<p>Here's all that's changed in TR1X version 3.1:</p>
+<blockquote>
+<ul>
+<li>added the option to use "shell(s)" to give shotgun ammo in the developer console (<a href="https://github.com/LostArtefacts/TR1X/issues/1096" target="_blank">#1096</a>)</li>
+<li>added the restart level option to the passport in save crystal mode (<a href="https://github.com/LostArtefacts/TR1X/issues/1099" target="_blank">#1099</a>)</li>
+<li>added the ability to back out of menus with the circle and triangle buttons when using a gamepad (cross acts as confirm) (<a href="https://github.com/LostArtefacts/TR1X/issues/1104" target="_blank">#1104</a>)</li>
+<li>changed <code class="inline-code">force_enable_save_crystals</code> to <code class="inline-code">force_save_crystals</code> for custom level authors to force enable or disable the save crystals setting (<a href="https://github.com/LostArtefacts/TR1X/issues/1102" target="_blank">#1102</a>)</li>
+<li>changed <code class="inline-code">force_disable_game_modes</code> to <code class="inline-code">force_game_modes</code> for custom level authors to force enable or disable the game modes setting (<a href="https://github.com/LostArtefacts/TR1X/issues/1102" target="_blank">#1102</a>)</li>
+<li>changed the Scion in The Great Pyramid from spawning blood when hit to a richochet effect if texture fixes enabled (<a href="https://github.com/LostArtefacts/TR1X/issues/1121" target="_blank">#1121</a>)</li>
+<li>changed the gamepad control menu's 'reset all buttons' bind to held R1 (was held triangle) (<a href="https://github.com/LostArtefacts/TR1X/issues/1104" target="_blank">#1104</a>)</li>
+<li>changed the number of visible enemies from 8 to 32 (<a href="https://github.com/LostArtefacts/TR1X/issues/1122" target="_blank">#1122</a>)</li>
+<li>fixed FMVs always playing at 100% volume – now they'll play at the game sound volume (<a href="https://github.com/LostArtefacts/TR1X/issues/1110" target="_blank">#1110</a>)</li>
+<li>fixed bugs when trying to stack multiple movable blocks (<a href="https://github.com/LostArtefacts/TR1X/issues/1079" target="_blank">#1079</a>)</li>
+<li>fixed Lara's meshes being swapped in the gym level when using the console to give guns (<a href="https://github.com/LostArtefacts/TR1X/issues/1092" target="_blank">#1092</a>)</li>
+<li>fixed Midas's touch having unrestricted vertical range (<a href="https://github.com/LostArtefacts/TR1X/issues/1094" target="_blank">#1094</a>)</li>
+<li>fixed flames not being drawn when Lara is on fire but leaves the room where she caught fire (<a href="https://github.com/LostArtefacts/TR1X/issues/1106" target="_blank">#1106</a>)</li>
+<li>fixed being able to deselect the passport in quick save, quick load, save crystal, and death modes (<a href="https://github.com/LostArtefacts/TR1X/issues/1108" target="_blank">#1108</a>)</li>
+<li>fixed inability to save in Unfinished Business in crystals mode as UB doesn't have crystals (<a href="https://github.com/LostArtefacts/TR1X/issues/1102" target="_blank">#1102</a>)</li>
+<li>fixed items not being added to inventory if the sprite is missing from the level file (<a href="https://github.com/LostArtefacts/TR1X/issues/1130" target="_blank">#1130</a>)</li>
+<li>fixed differences when looking at items from triggers that do not use fixed cameras when the enhanced look option is enabled (<a href="https://github.com/LostArtefacts/TR1X/issues/1026" target="_blank">#1026</a>)</li>
+</ul>
+</blockquote>
+<p>See more on the <a href="https://github.com/LostArtefacts/TR1X" target="_blank">GitHub page</a>.</p>
+<p>You do need assets from the original game which you can grab from <a href="https://af.gog.com/en/game/tomb_raider_123?as=1636858786" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/224960/Tomb_Raider_I_1996/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/open-source-re-implementation-of-tomb-raider-1-1996-tr1x-gets-a-big-bug-fix-release/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/open-source-re-implementation-of-tomb-raider-1-1996-tr1x-gets-a-big-bug-fix-release/</guid>
+      <pubDate>Tue, 16 Jan 2024 11:02:35 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/684069284id23849gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Adventure</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Open source PlayStation Remote Play app for Steam Deck &#39;chiaki4deck&#39; gets a big upgrade</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Want to do some Remote Play from a PlayStation onto a Steam Deck? The unofficial community-made chiaki4deck is exactly what you want, and the latest release brings some great sounding enhancements to make it easier to use.</p>
+<p>For all the times when someone is hogging the TV and you just want to play a little more PlayStation 4 or PlayStation 5, and you have a Steam Deck - this is it. With the latest updates it should be easier to navigate the app with better controls, and finally being able to login to your PlayStation account via GUI to grab the ID it needs sound great.</p>
+<p>Release v1.6.0 brings all these changes:</p>
+<blockquote>
+<ul>
+<li>New touch-friendly and semi-controller navigable GUI.</li>
+<li>MacOS support and Windows libplacebo renderer support.</li>
+<li>Resume connection from sleep mode on Steam Deck.</li>
+<li>Ability to login to PlayStation for account ID via GUI.</li>
+<li>Fix Senkusha, lowering time for console connection and properly setting MTU.</li>
+<li>Audio Switch to SDL including fixing audio lag building over session.</li>
+<li>New Logo.</li>
+<li>Qt6 support.</li>
+</ul>
+</blockquote>
+<p>Available via an AppImage from the <a href="https://github.com/streetpea/chiaki4deck/releases/tag/v1.6.0" target="_blank">release page</a> or <a href="https://flathub.org/apps/io.github.streetpea.Chiaki4deck" target="_blank">Flathub</a>.</p>
+<p>See more on the <a href="https://streetpea.github.io/chiaki4deck/" target="_blank">official site</a> and <a href="https://github.com/streetpea/chiaki4deck" target="_blank">GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/open-source-playstation-remote-play-app-for-steam-deck-chiaki4deck-gets-a-big-upgrade/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/open-source-playstation-remote-play-app-for-steam-deck-chiaki4deck-gets-a-big-upgrade/</guid>
+      <pubDate>Tue, 16 Jan 2024 10:40:24 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1505128115id23848gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Huge fantasy city-builder Songs of Syx latest massive update is out</title>
@@ -144,6 +522,15 @@
 </ul>
 </blockquote>
 <p>Find out more on the <a href="https://lutris.net" target="_blank">official site</a> and <a href="https://github.com/lutris/lutris" target="_blank">GitHub</a>. </p>
+<hr/>
+<p><strong>Update</strong>: a quick bug-fix release was put up shortly after with <a href="https://github.com/lutris/lutris/releases/tag/v0.5.16" target="_blank">v0.5.16</a> having these changes:</p>
+<blockquote>
+<ul>
+<li>Fix bug that prevented installers to complete.</li>
+<li>Better handling of Steam configurations for the Steam account picker.</li>
+<li>Load game library in a background thread.</li>
+</ul>
+</blockquote>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
       <link>https://www.gamingonlinux.com/2024/01/lutris-game-manager-v0515-brings-lots-of-overall-improvements-for-game-installs/</link>
@@ -4624,344 +5011,6 @@ There are similarities to Stellaris, such as the fleet management and fleets in 
       <category>Steam Play</category>
       
       <category>RPG</category>
-      
-    </item>
-    
-    <item>
-      <title>War Thunder has another major update with &#39;Air Superiority&#39;</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>War Thunder, one of my most played games from 2023, had another major free update released with the War Thunder update out now bringing various new top-tier jets into the game. As a reminder first of all: did you know the War Thunder game engine, Dagor Engine, <a href="https://www.gamingonlinux.com/2023/11/war-thunder-game-engine-dagor-engine-from-gaijin-now-open-source/" target="_blank">recently became open source</a>? A moved that surprised many!</p>
-<p>No doubt exciting to air battle enthusiasts to see new stuff in like the F-15, the Su-27 and J-11, the Mirage 4000, plus the JAS39 there's rather a lot more to this update than just that. There's also new ground vehicles, new naval units, a new Volcano Valley map for air battles based on the Kamchatka Peninsula, a complete rework of fire graphics, tanks exploding may now have a chance of fuel leakage and a subsequent fire, various new effects for aircraft landing gear with various surfaces, ultra-low frequencies have been added to the sounds of: explosions, gun shots, and aircraft engines to give more richness to the game mix and much more.</p>
-<p>Check out the update trailer below:</p>
-<div class="hidden_video" data-video-id="DSfa6S06pmE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/665aa057113b43c8f7d9869a73848f73.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/DSfa6S06pmE" target="_blank">See video</a></div></div>
-<p>Full changelog <a href="https://warthunder.com/en/game/changelog/current/1562" target="_blank">available here</a>.</p>
-<p>Any other War Thunder players here? How many hours do you have in it now?</p>
-<p>You can play for <a href="https://store.steampowered.com/app/236390/War_Thunder/" target="_blank">free on Steam</a>. It has Native Linux support and is Steam Deck Verified too.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/war-thunder-has-another-major-update-with-air-superiority/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/war-thunder-has-another-major-update-with-air-superiority/</guid>
-      <pubDate>Tue, 19 Dec 2023 11:49:08 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/804579458id23757gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Free Game</category>
-      
-      <category>Online Multiplayer</category>
-      
-    </item>
-    
-    <item>
-      <title>Check out your 2023 Year In Review on Steam</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>With 2023 coming to a close Valve have refreshed their <a href="https://store.steampowered.com/yearinreview" target="_blank">Steam Year In Review page</a>, so you can dive in and see everything you did and how it stacks up against others.</p>
-<p>It's a rather fancy page that will list how many games you played, how many achievements you unlocked, your most played games, what platforms you played on, the types of games you mostly played and so much more nerdy details that you all love to go over right?</p>
-<p>Valve even put up a clearly big-budget trailer for the event too:</p>
-<div class="hidden_video" data-video-id="2f_0fx2hAO4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4fb1571bcda5a995ab6b6a65dfbfa704.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/2f_0fx2hAO4" target="_blank">See video</a></div></div>
-<p>You can also share your page directly with others, so feel free to drop a link to your own in the comments if that's your sort of thing.</p>
-<p>What were your most played games in 2023? Mine very much expectedly were War Thunder and Baldur's Gate 3, although Bloons TD 6 certainly crept up the list for me this year. With a whole lot of my time spent on Steam Deck across various other games like Halls of Torment, Brotato and Dave the Diver.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/check-out-your-2023-year-in-review-on-steam/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/check-out-your-2023-year-in-review-on-steam/</guid>
-      <pubDate>Tue, 19 Dec 2023 11:05:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/120378370id23756gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Workshop gets even better with shareable Workshop Collections</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve are really doing some good stuff with the updates to the Steam Workshop. On top of the <a href="https://www.gamingonlinux.com/2023/12/valve-upgrades-the-steam-workshop-plus-various-steam-deck-improvements-in-new-beta/" target="_blank">new features added recently</a>, they've also now put in Workshop Collections you can switch between and share around.</p>
-<p>In the latest update <a href="https://steamcommunity.com/games/SteamWorkshop/announcements/detail/3889485345756435017" target="_blank">posted today</a>, Valve highlighted this new Workshop Collections feature that allows you to make separate lists of mods. So you can create, save and load different subscription lists using this new collections feature - giving you the ability to make preset mods lists and swap between them. On top of that, you can also share them for others to use (you have to save them first before you can share them).</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17809221721702935864gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17809221721702935864gol1.png"/></a><br/>
-<em>Image Credit - Valve</em></p>
-<p></p>
-<p>You can access your collections via the game's Properties -&gt; Workshop page under the Advanced Options.</p>
-<p>Some other bits Valve updated for it:</p>
-<blockquote>
-<ul>
-<li>Added the ability to sort items by Time Created or Time Updated.</li>
-<li>Added the ability to sort items in ascending or descending order.</li>
-<li>Added the ability to add or remove all items from the selected section (e.g. item's you've published, favorited, or subscribed to).</li>
-<li>Added ability to quickly remove all items or linked collections.</li>
-</ul>
-</blockquote>
-<p>You need to be in the latest Steam Beta Client to get the Steam Workshop updates.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/steam-workshop-gets-even-better-with-shareable-workshop-collections/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/steam-workshop-gets-even-better-with-shareable-workshop-collections/</guid>
-      <pubDate>Mon, 18 Dec 2023 21:47:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Building a Retro Linux Gaming Computer Part 37: Dashing Through the Snow</title>
-      <author>Hamish</author>
-      <description><div class="content group e-content">
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/12/building-a-retro-linux-gaming-computer-part-36-entertainment-for-x-windows/" target="_blank">Part 36: Entertainment for X Windows</a></strong></p>
-<p></p>
-<p>By the end of 2002 things were starting to look bleak when it came to commercial Linux gaming. Both Loki Software and even the smaller porting house Tribsoft had closed their doors for good, while new firms such as Linux Game Publishing born out of the turmoil were struggling to find their feet. Some relief was on the horizon thanks to the work of independent contractors such as Ryan "icculus" Gordon, but he was far from alone in finding creative ways to bring more games to Linux.</p>
-<p>A common refrain has always been that if developers would just provide access to their source code, then the Linux community would be happy to step in and do the heavy lifting for them. This has not always proven to be the case in actual fact, but when Slingshot Game Technology decided to call our bluff and released the source code to their snowboarding simulation <em>Soul Ride</em> under the GNU General Public License in 2003, the Linux community did indeed rise to the challenge.</p>
-<p>They even provided a professional looking Loki Setup installer for owners of the <em>Soul Ride</em> CD-ROM to download by use of the soulride-1.1a-x86.run install script. This will grab the data right off the disc as well as providing the option of installing a number of Virtual Resorts which were provided for free on the <em>Soul Ride</em> website. That being said, you must ensure your user account has write permissions to the install directory, as otherwise you will be unable to save your player settings.</p>
-<p>Not doing so will also cause other weirdness such as not being able to change mountains as well as the game not ceasing to play the CD audio on exit. Besides this I also encountered a graphical error where my shadow would be drawn multiple times in a grid underneath my character; that is, unless the weather was set to be snowing or whiteout conditions. This proved to not be much of a compromise, as obscuring the distance in snow also gives a much needed framerate boost.</p>
-<p>The controls also came with a learning curve. <em>Soul Ride</em> was intended to be experienced with Slingshot Game Technology's own proprietary Catapult snowboard game controller, but as next to no one has that, I had to settle for using either the mouse or keyboard. You do not steer so much as shift your weight on the snowboard, with the forward and backward axis not even coming into play unless you are airborne. A full breakdown of the controls can be found on the <em>Soul Ride</em> Support FAQ.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18312333501702928053gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/18312333501702928053gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16830749341702928054gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16830749341702928054gol6.png"/></a></p>
-<p>Outside of the Catapult controller, the main selling point of <em>Soul Ride</em> was its recreation of real mountains made possible by the use of satelite topography data. The CD-ROM features simulations of two American ski areas, Mammoth Mountain in California as well as Tuckerman Ravine found on Mount Washington in New Hampshire. The Virtual Resort addons provide recreations of both Stratton and Jay Peak in Vermont, as well as the Breckenridge resort in Colorado.</p>
-<p>You can either play through the included trail scenarios or Heli-Drop yourself anywhere on the slopes. <em>Soul Ride</em> also has one more trick up its sleeve, allowing you to record your runs and various stunts on a simulated VCR. This feeds into the final novel mechanic of allowing you to rewind up to three times during a descent, giving you some leeway if you wipe out. I found these to often rewind further than I would like, but they do help stop the game from being too unforgiving.</p>
-<p></p>
-<p><em>Soul Ride</em> does show its age in the lack of ragdoll physics, with you often looking as stiff as the snowboard you ride on when getting into trouble; the way you just fall over looking dejected if you run out of momentum is comical. You can also still gain point bonuses while you are wiping out, which does seem to be rubbing in your failure a touch. This is all accompanied by a licensed soundtrack sporting a number of bands provided by Bloodshot Records, Mint Records, and Ringing Ear Records.</p>
-<p>Linux Game Publishing would later craft their own packaged Linux release of <em>Soul Ride</em> in 2005, which based on the free demo functioned much the same as the source port outside of a few improvements such as saving player data in your home directory and supporting a few more launch parameters. It still showed the same graphical error with the player's shadow, and just like with the source port, does not allow me to force either the display settings or the weather conditions at launch.</p>
-<p>Outside of comparing scores between player profiles there is no competitive aspect to <em>Soul Ride</em>, which is a shame as being able to play hot seat against another player and potentially wipe each other out could have been a lot of fun. Of course with it being released under the GPL nothing is stopping someone from adding these features, and the game built and ran fine for me from source even on my modern Linux computer. By now I am getting to know my way around a compiler.</p>
-<p><strong>Carrying on in Part 38: Beyond Heretic</strong></p>
-<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/building-a-retro-linux-gaming-computer-part-37-dashing-through-the-snow/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/building-a-retro-linux-gaming-computer-part-37-dashing-through-the-snow/</guid>
-      <pubDate>Mon, 18 Dec 2023 20:30:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1712383908id23754gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Editorial</category>
-      
-      <category>Hardware</category>
-      
-      <category>Retro</category>
-      
-    </item>
-    
-    <item>
-      <title>Claim a free copy of Lost Ruins during the GOG Winter Sale</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The next free giveaway is live on GOG.com for their Winter Sale, so you've got 72 hours to grab it for keeps and it's quite a good one. It also has a Native Linux version.</p>
-<p>What is it? <a href="https://www.gog.com/game/lost_ruins" target="_blank">Lost Ruins</a> is a 2D side-scrolling survival action game, where you play as a young girl that has awoken in a strange and foreign place without her memories. Explore a dark and dangerous world, battle hideous monsters, and topple incredible bosses.</p>
-<div class="hidden_video" data-video-id="mjbjhI_i5co"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d162d0a6bdcceae7cf6a4ddd8b4c922b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/mjbjhI_i5co" target="_blank">See video</a></div></div>
-<p>How to claim? Scroll down on the <a href="https://www.gog.com/en" target="_blank">GOG Homepage</a> when logged in to find the giveaway banner.</p>
-<p>Some other good deals they have going:</p>
-<ul>
-<li><a href="https://af.gog.com/game/psychonauts_2?as=1636858786" target="_blank" title="">Psychonauts 2</a> (Native Linux) - 80% off.</li>
-<li><a href="https://af.gog.com/en/game/inscryption?as=1636858786" target="_blank">Inscryption</a> (Native Linux) - 50% off</li>
-<li><a href="https://af.gog.com/en/game/terra_nil?as=1636858786" target="_blank">Terra Nil</a> (Native Linux) -  30% off</li>
-<li><a href="https://af.gog.com/game/dragon_age_origins?as=1636858786" target="_blank" title="">Dragon Age: Origins - Ultimate Edition</a> - 80% off.</li>
-<li><a href="https://af.gog.com/game/the_elder_scrolls_v_skyrim_special_edition?as=1636858786" target="_blank" title="">The Elder Scrolls V: Skyrim Special Edition</a> - 80% off.</li>
-<li><a href="https://af.gog.com/game/kingdom_come_deliverance_royal_edition?as=1636858786" target="_blank" title="">Kingdom Come: Deliverance Royal Edition</a> - 80% off.</li>
-<li><a href="https://af.gog.com/game/fallout_4_game_of_the_year_edition?as=1636858786" target="_blank" title="">Fallout 4: Game of the Year Edition</a> - 75% off.</li>
-<li><a href="https://af.gog.com/game/yakuza_complete_series?as=1636858786" target="_blank" title="">Yakuza Complete Series</a> - 75% off.</li>
-<li><a href="https://af.gog.com/game/divinity_original_sin_2?as=1636858786" target="_blank" title="">Divinity: Original Sin 2 - Definitive Edition</a> - 70% off.</li>
-<li><a href="https://af.gog.com/game/pathfinder_wrath_of_the_righteous_mythic_edition?as=1636858786" target="_blank" title="">Pathfinder: Wrath of the Righteous - Mythic Edition</a> - 70% off.</li>
-<li><a href="https://af.gog.com/game/mortal_kombat_123?as=1636858786" target="_blank" title="">Mortal Kombat 1+2+3</a> - 75% off.</li>
-<li><a href="https://af.gog.com/game/mount_blade_ii_bannerlord?as=1636858786" target="_blank" title="">Mount &amp; Blade II: Bannerlord</a> - 40% off.</li>
-</ul>
-<p>The sale runs until January 4th, 2024.</p>
-<p>Just a reminder that if you need help installing games from GOG on Linux you can try apps like <a href="https://heroicgameslauncher.com/" target="_blank">Heroic</a> and <a href="https://lutris.net/" target="_blank">Lutris</a>. They work pretty great for keeping things nice and tidy.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/claim-a-free-copy-of-lost-ruins-during-the-gog-winter-sale/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/claim-a-free-copy-of-lost-ruins-during-the-gog-winter-sale/</guid>
-      <pubDate>Mon, 18 Dec 2023 14:42:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2127964441id23753gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Free Game</category>
-      
-      <category>Giveaway</category>
-      
-      <category>GOG</category>
-      
-    </item>
-    
-    <item>
-      <title>Brocula is a life sim with a dark side - grow crops, go fishing, grow a cult as a Vampire</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I'm all for playing more life-sims but they're all just a bit too cute aren't they? Brocula looks like it's going to be the opposite, with you being a Vampire.</p>
-<p>All the usual suspects are here like tending to your crops, building up your farm, selling your wares for a profit and going fishing. But there's a dark side to it. You'll also be managing a cult, restoring a church to gather people for the all important blood you crave. There's also an ever-changing forest to explore with strange creatures and treasures to find.</p>
-<p>You can see some brief footage in the demo trailer below:</p>
-<div class="hidden_video" data-video-id="1IHpeCHkYEc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3b300fb2c8a57b2ed652f17d443f0ed3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/1IHpeCHkYEc" target="_blank">See video</a></div></div>
-<p>A much longer look the developer posted up a few days ago:</p>
-<div class="hidden_video" data-video-id="TiqKA45fVHw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ce48c684f9fb026f4589f8203d1c866e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/TiqKA45fVHw" target="_blank">See video</a></div></div>
-<p>It's set for release on February 1st, 2024 but there's a demo available on the <a href="https://store.steampowered.com/app/1364740/Brocula/" target="_blank">Steam page</a>. The demo has a Linux version too, built with Unity. Looks like the developer is going for full Steam Deck support with it mentioned in the Steam page system requirements.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/brocula-is-a-life-sim-with-a-dark-side-grow-crops-go-fishing-grow-a-cult-as-a-vampire/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/brocula-is-a-life-sim-with-a-dark-side-grow-crops-go-fishing-grow-a-cult-as-a-vampire/</guid>
-      <pubDate>Mon, 18 Dec 2023 14:01:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/788885805id23752gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Casual</category>
-      
-      <category>Demo</category>
-      
-    </item>
-    
-    <item>
-      <title>God-sim city-builder The Universim releases 1.0 on January 22, 2024</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After a good few years in Early Access, The Universim from Crytivo is finally set to hit the big 1.0 with some fun new features. This was announced along with a new trailer (below) that the 1.0 release will happen on January 22nd, 2024.</p>
-<p>"The Universim 1.0 isn't just a game; it's a living, breathing universe at your fingertips. Prepare to immerse yourself in an experience where your choices shape the destiny of entire civilizations and the balance of entire planets. You’ll be able to launch Nuggets into the space age! This update brings end-game content to life with more technology to unlock in the research tree, new planets to explore (or exploit for resources), and so much more!" — Crytivo</p>
-<div class="hidden_video" data-video-id="o3r2rB3eH2s"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/824f661c38c5a06384fb080e243586f4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/o3r2rB3eH2s" target="_blank">See video</a></div></div>
-<p>Some of what's coming with the 1.0 release:</p>
-<blockquote>
-<ul>
-<li>Unlimited Space Exploration: Unlock the space map and colonize any number of planets you desire. Each planet, from Toxic and Ice to Lava or Terrestrial, presents unique conditions and challenges.</li>
-<li>Resource-Rich Planets: Discover planets teeming with valuable resources essential for the expansion and prosperity of your Nugget civilization.</li>
-<li>Enhanced Narration: More voice-over lines add fun and functionality, providing entertaining commentary and critical updates on your civilization's status. More than 600 new voiced lines by our favorite narrator.</li>
-<li>Complete Storyline: Embark on a journey to discover your true self with a fully developed storyline, adding depth and context to your gameplay. Even after the story concludes, continue to expand and evolve in the endless universe.</li>
-<li>Space Age and Advanced Technologies: Launch your Nuggets into the space age and unlock more technology in the research tree, expanding your reach across the cosmos.</li>
-<li>Enhanced User Interface: Enjoy a more intuitive and user-friendly UI, making your journey through space and time smoother and more enjoyable.</li>
-<li>Game Balance Changes: We've fine-tuned game mechanics for a balanced and rewarding experience, ensuring each decision has meaningful impact.</li>
-<li>Bug Fixes and Optimizations: We've squashed bugs and optimized performance for a seamless gaming experience.</li>
-</ul>
-</blockquote>
-<p>I've been playing it on and off for years, always intrigued by the setting and every time it sucked me in with quite a few hours so it's going to be fantastic to see it finally finished after waiting so long. The Universim was originally funded on Kickstarter too all the way back in 2014!</p>
-<p>You can find The Universim on <a href="https://www.humblebundle.com/store/the-universim?partner=gamingonlinux" target="_blank">Humble Store</a>, <a href="https://af.gog.com/game/the_universim?as=1636858786" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/352720/The_Universim/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/god-sim-city-builder-the-universim-releases-10-on-january-22-2024/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/god-sim-city-builder-the-universim-releases-10-on-january-22-2024/</guid>
-      <pubDate>Mon, 18 Dec 2023 13:11:09 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2135657297id23751gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>City Builder</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>HDR support for KDE Plasma 6 seems to be shaping up nicely</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>While it's far from finished, and still needs some manual effort to get properly working, HDR support for KDE Plasma 6 has made great progress. While HDR is already available in SteamOS on Steam Deck, getting it hooked up on traditional Linux desktops is still in-progress.</p>
-<p>Developer Xaver Hugl wrote up a <a href="https://zamundaaa.github.io/wayland/2023/12/18/update-on-hdr-and-colormanagement-in-plasma.html" target="_blank">fresh blog post</a> going over the current status for those interested. You're now able to enable HDR in Plasma settings that gives you new options, and it even includes a "SDR Color Intensity" slider inspired by the colour slider on Steam Deck that was introduced in <a href="https://www.gamingonlinux.com/2023/11/steamos-355-rolls-out-to-all-steam-deck-owners-plus-new-steam-client-update/" target="_blank">SteamOS 3.5</a>. The blog post goes over their work, along with all the Gamescope additions done by Joshua Ashton from Valve, to get it into a state where it's reasonably simple to actually get HDR working for games and other media now.</p>
-<p>Plasma 6 Beta already has the work in KWin, and after a few additional steps noted in the blog post (like using Gamescope) you can "play most HDR capable games in the Wayland session" as long as you use Proton 8 or newer, with Hugl noting games they've tested working fine include Ori and the Will of the Wisps, Cyberpunk 2077, God of War, Doom Eternal, Jedi: Fallen Order and Quake II RTX. Spider-Man: Remastered and Spider-Man: Miles Morales also work, but don't look particularly good with HDR, which might not actually be a Linux problem specifically.</p>
-<p>Ending the blog post to round it up:</p>
-<blockquote>
-<p>Obviously there is still a lot to do. Color management is limited to either sRGB or full-blown rec.2020, you shouldn’t have to install stuff from Github yourself, and certainly shouldn’t have to mess around with the command line to play games and watch videos in HDR, HDR screenshots and HDR screen recording aren’t a thing yet, and many other small and big things need implementing or fixing. There’s a lot of work needed to make these things just work™ as they should outside of special cases like the gamescope embedded session.</p>
-<p>Things are moving fast though, and I’m pretty happy with the progress we made so far.</p>
-<cite>Xaver Hugl</cite></blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/hdr-support-for-kde-plasma-6-seems-to-be-shaping-up-nicely/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/hdr-support-for-kde-plasma-6-seems-to-be-shaping-up-nicely/</guid>
-      <pubDate>Mon, 18 Dec 2023 12:44:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2006428129id23750gol.jpg" type="image/jpeg"/>
-      
-      <category>Desktop Environment</category>
-      
-      <category>KDE</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>ScummVM expands support for Macromedia Director</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>ScummVM is an awesome project bringing new life to absolutely loads of classic games through the power of open source, and now they're expanding support for Macromedia Director games too.</p>
-<p>Currently it can open Director titles from 1995 and earlier, but titles released after 1995 use Director versions that aren't yet supported. The team mentioned there's about 1,595 of these games that ScummVM can detect from the original up to Director 11. With the 2.8.0 release adding in preliminary support for Director 5.</p>
-<blockquote>
-<p>Adding support for a new Director version is a tricky process. First we need to check for any changes to the movie file format, then add in any new engine and Lingo features, and finally start working through issues in a bunch of candidate games. Because of the difficulty of keeping track of facts vs. assumptions, we only enable features for an engine version once they have been confirmed with testing. This is why D6 and higher games will not open at all, even if the code we have would somewhat work.</p>
-<p>Support for the D2, D3 and D4 versions of Director has steadily improved. We are building up a suite of unit tests, both for Lingo and for the various drawing modes in the renderer. Most of the remaining bugs are related to undefined or incidental behavior: consider how two types in Lingo are compared, or the precise order that events are processed in, or how functions respond when you pass them nonsense data? All of these things are relied upon by thousands of Director products! And ScummVM must support all of them as closely as possible.</p>
-<cite>ScummVM Team</cite></blockquote>
-<p>Planned to happen in the upcoming ScummVM 2.8.0 release they have these newly supported titles available for testing:</p>
-<ul>
-<li>Alice: An Interactive Museum</li>
-<li>Ape Odyssey</li>
-<li>Classical Cats</li>
-<li>Gadget: Invention, Travel and Adventure</li>
-<li>The Cute Machine</li>
-<li>The Dark Eye</li>
-<li>Wrath of the Gods</li>
-</ul>
-<p>You do need to have a copy of the original games though.</p>
-<p>See their <a href="https://www.scummvm.org/news/20231214/" target="_blank">announcement here</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/scummvm-expands-support-for-macromedia-director/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/scummvm-expands-support-for-macromedia-director/</guid>
-      <pubDate>Mon, 18 Dec 2023 12:10:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/783106608id23749gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Engine</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Check out the demo for Hive Jump Survivors a new action roguelite</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another survivors-styled game? Yes! You wanted more right? And this one will also have full Linux support too. Check out the demo for Hive Jump Survivors. Set in the same universe as the 2017 sci-fi action platformer Hive Jump.</p>
-<p>"Tear through alien hordes and become unstoppable in this action roguelite set in the Hive Jump universe. Use your jetpack to out-maneuver enemies and traverse hostile planets. Upgrade your Jumper with powerful weapons and abilities to take down bosses and exterminate the Hives."</p>
-<p>Have a look at the demo trailer below:</p>
-<div class="hidden_video" data-video-id="kbnVSYIk5bM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7f2bf3552d0d640d7e386ead484cdea9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/kbnVSYIk5bM" target="_blank">See video</a></div></div>
-<p>Main Features:</p>
-<blockquote>
-<ul>
-<li><strong>Build your Jumper</strong> - Earn weapons, upgrades, and abilities to create the ultimate soldier.</li>
-<li><strong>Jetpacks</strong> - Utilize your jetpack to dodge enemies and traverse the environment in search of Hives.</li>
-<li><strong>Permanent upgrades</strong> - Unlock permanent abilities to give your Jumper an edge from the start of every run.</li>
-<li><strong>Auto and manual aiming</strong> - Auto-fire at enemies to focus on movement, or take aim yourself at any time.</li>
-</ul>
-</blockquote>
-<p>The demo is currently up on <a href="https://graphitelab.itch.io/hive-jump-survivors" target="_blank">itch.io</a> and you can follow on <a href="https://store.steampowered.com/app/2545740/Hive_Jump_Survivors/" target="_blank">Steam</a> for the upcoming Early Access release.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/check-out-the-demo-for-hive-jump-survivors-a-new-action-roguelite/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/check-out-the-demo-for-hive-jump-survivors-a-new-action-roguelite/</guid>
-      <pubDate>Mon, 18 Dec 2023 11:58:25 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1776025276id23748gol.jpg" type="image/jpeg"/>
-      
-      <category>Demo</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Itch.io</category>
-      
-      <category>Rogue-lite</category>
       
     </item>
     
