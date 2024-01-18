@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-01-17 07:24:07.830464</pubDate>
+    <pubDate>2024-01-18 07:23:36.762902</pubDate>
 
     
     <image>
@@ -18,6 +18,236 @@
     </image>
 
     
+    
+    <item>
+      <title>Valve seeing increasing bug reports due to Steam Snap - other methods recommended</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Canonical announced some time ago their Steam Snap which was promoted as <a href="https://www.gamingonlinux.com/2023/04/ubuntu-2304-is-out-now-with-gnome-44-and-a-stable-steam-snap/" target="_blank">stable with Ubuntu 23.04</a>, as they continue to push their own packaging format with Snap but it seems this has been causing problems for Valve.</p>
+<p>Writing on Mastodon, developer Timothee "TTimo" Besset, who works on various things for Valve <a href="https://mastodon.social/@TTimo/111772575146054328" target="_blank">posted</a> asking people to consider using the official Valve .deb package or at least consider using the <a href="https://flathub.org/apps/com.valvesoftware.Steam" target="_blank">Flatpak</a>:</p>
+<blockquote>
+<p>Valve is seeing an increasing number of bug reports for issues caused by Canonical's repackaging of the Steam client through snap.</p>
+<p>The best way to install Steam on Debian and derivative operating systems is to follow the instructions at <a href="http://repo.steampowered.com/steam/" target="_blank" title="http://repo.steampowered.com/steam/">http://repo.steampowered.com/steam/</a> and use the official .deb</p>
+<p>We are not involved with the snap repackaging. It has a lot of issues.</p>
+<p>If you don't want the .deb, please at least consider the flatpak version.</p>
+<cite>Timothee "TTimo" Besset</cite></blockquote>
+<p>So if you've been having various problems with Steam on Ubuntu (or a derivative like Kubuntu), it may be because you've installed it as a Snap. Worth trying out the official .deb or Flatpak to see if it runs better for you. You can also give Canonical feedback in your issues on their <a href="https://discourse.ubuntu.com/tag/gaming" target="_blank">Discourse Forum</a> and report issues to Valve on <a href="https://github.com/ValveSoftware/steam-for-linux/issues" target="_blank">GitHub</a> (if you're using their official packages).</p>
+<p><em>Hopefully Canonical can look into any issues.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/valve-seeing-increasing-bug-reports-due-to-steam-snap-other-methods-recommended/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/valve-seeing-increasing-bug-reports-due-to-steam-snap-other-methods-recommended/</guid>
+      <pubDate>Wed, 17 Jan 2024 18:11:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>Ubuntu</category>
+      
+    </item>
+    
+    <item>
+      <title>GStreamer gets funding from the Sovereign Tech Fund to rewrite parts in Rust</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>While <a href="https://gstreamer.freedesktop.org" target="_blank">GStreamer</a> may not be something that generates a lot of headlines, it's a much loved and well-used bit of open source tech for handling media on Linux and many other systems and it just got a big funding boost from the Sovereign Tech Fund.</p>
+<p>The announcement today from the STF mentions they're investing €203,000 in the project via <a href="https://www.centricular.com/" target="_blank">Centricular</a>, a company that specialises in working on open source software. </p>
+<p>What are they actually funding:</p>
+<blockquote>
+<p>STF has commissioned work from <a href="https://www.centricular.com/" target="_blank">Centricular</a> to enhance the GStreamer multimedia framework by implementing critical components in Rust for improved security, maintainability, and sustainability. These include RTCP parsing, RTP session handling, real-time communication enhancements, and comprehensive support for audio and video formats, ensuring GStreamer's continued versatility and compatibility across a range of applications.</p>
+<ol>
+<li><strong>Re-writing Foundational GStreamer Components in Rust</strong>
+<ul>
+<li>Real-Time Control Protocol (RTCP) Parsing and Real-Time Transport Protocol (RTP) Session Handling.</li>
+<li>RTP/AVPF profile support.</li>
+</ul>
+</li>
+<li><strong>Real-Time Communication Enhancements</strong>
+<ul>
+<li>GStreamer RTP Jitterbuffer and Synchronization in Rust.</li>
+</ul>
+</li>
+<li><strong>Comprehensive Audio and Video Support</strong>
+<ul>
+<li>RTP Payloaders and Depayloaders in Rust for basic audio and video formats.</li>
+<li>Including RTP support for H.264, H.265, VP8, VP9, and container/meta formats.</li>
+</ul>
+</li>
+<li><strong>Re-writing Real-Time Streaming Protocol (RTSP) Handling in Rust</strong>
+<ul>
+<li>GStreamer RTSP protocol client element in Rust, focusing on essential features, live playback, and RTSP 1.0 support</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<p>Check out <a href="https://www.sovereigntechfund.de/tech/gstreamer" target="_blank">the announcement</a> for more info.</p>
+<p>Who are the STF? From the website: "The Sovereign Tech Fund started in October 2022 and is financed by the German Federal Ministry for Economic Affairs and Climate Action. It is currently incubated at SPRIND GmbH". They also announced <a href="https://www.gamingonlinux.com/2023/11/gnome-gets-1m-funding-from-the-sovereign-tech-fund/" target="_blank">funding for GNOME late last year</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/gstreamer-gets-funding-from-the-sovereign-tech-fund-to-rewrite-parts-in-rust/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/gstreamer-gets-funding-from-the-sovereign-tech-fund-to-rewrite-parts-in-rust/</guid>
+      <pubDate>Wed, 17 Jan 2024 16:42:06 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1106731296id23862gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Against the Storm 1.1 (and later hotfixes) bring various Steam Deck improvements</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Against the Storm is a dark fantasy city builder where you must rebuild civilization in the face of apocalyptic rains, and the recent 1.0 release came with it being Steam Deck Verified but the developer hasn't stopped making improvements for Steam Deck in <a href="https://store.steampowered.com/news/app/1336490/view/5797888151160865057" target="_blank">version 1.1</a> out now.</p>
+<p>While version 1.1 did bring some new content like unique portraits for all traders, new decorations, new orders, new sound effects, notifications with auto-pause, UI improvements and more it's nice to see them also focus on Steam Deck too. For the v1.1 update the Steam Deck changes are:</p>
+<blockquote>
+<ul>
+<li>Changed the way the trackpad works in the Steam Deck version of the game when using the controller layout. Instead of acting like an analog stick, it now behaves like a real mouse trackpad.</li>
+<li>When starting fresh on the Steam Deck, the game will now automatically load the medium graphics preset and have uncapped FPS by default for a smoother experience.</li>
+</ul>
+</blockquote>
+<p>However, they've also subsequently released a couple of hotfixes with more changes including in v1.1.2:</p>
+<blockquote>
+<ul>
+<li>Fixed an issue with the Enter key not committing changes on the Steam Deck's virtual keyboard.</li>
+<li>We temporarily reversed the recent changes to the default Steam Deck controller layout to avoid the cursor issues.</li>
+</ul>
+</blockquote>
+<p>Here they also noted they were aware of an issue "that prevents Steam Deck players from starting a new settlement from the World Map" that they were looking into. Following that, version 1.1.4 was released and further noted these Steam Deck improvements:</p>
+<blockquote>
+<ul>
+<li>Fixed a bug where the Right Trigger would stop working when using the trackpad (when playing with the official controller layout).</li>
+<li>Fixed a bug where the controller pointer would disappear in the embarkation panel and citadel.</li>
+</ul>
+</blockquote>
+<p>Really nice to see the developer, Eremite Games, really pay attention to their Steam Deck support and fix issues as they get found. It's one thing to get Steam Deck Verification from Valve's own testing, it's another to directly support it like this.</p>
+<p>Against the Storm is Steam Deck Verified and has a Platinum rating on ProtonDB. It also has an Overwhelmingly Positive rating on Steam and has proven to be very popular.</p>
+<p>Original release trailer:</p>
+<div class="hidden_video" data-video-id="MtA1BAeeOAE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/eb40ad651ab01566c1da8ae040fb9396.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/MtA1BAeeOAE" target="_blank">See video</a></div></div>
+<p>Against the Storm is available to buy from:</p>
+<p><a href="https://www.humblebundle.com/store/against-the-storm?partner=gamingonlinux" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/1336490/Against_the_Storm/?curator_clanid=4218320" target="_blank">Steam</a></p>
+<p><a href="https://af.gog.com/en/game/against_the_storm?as=1636858786" target="_blank">GOG</a> </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/against-the-storm-1-1-and-later-hotfixes-bring-various-steam-deck-improvements/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/against-the-storm-1-1-and-later-hotfixes-bring-various-steam-deck-improvements/</guid>
+      <pubDate>Wed, 17 Jan 2024 14:47:55 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/320779031id23861gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>City Builder</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>NonSteamLaunchers for other stores on Steam Deck adds automatic game shortcuts</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NonSteamLaunchers is an application <a href="https://www.gamingonlinux.com/2023/05/get-battlenet-ea-epic-games-and-more-on-steam-deck-the-easy-way/" target="_blank">I showed off a while ago</a>, that gives you a helping hand in installing other game stores and launchers on Steam Deck. The latest update, version 3.2, adds in some really useful helpful features.</p>
+<p>There's a lot of stores and streaming services supported including Amazon Games, Battle.net, EA App, Epic Games, GOG Galaxy, Rockstar, Ubisoft, Minecraft and more.</p>
+<p>In the latest update they added a feature to the app the automatically scans and adds your games installed via Epic Games and Ubisoft Connect, with more services planned to be supported on that soon. All you need to do is install a game via one of them, and then you can restart Steam to have them be picked up. They also added in proper artwork for launchers, games and supported streaming services so it all looks neat and tidy.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12094501301705502113gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12094501301705502113gol1.jpg"/></a></p>
+<p>They also said it should hopefully now support multiple Steam accounts, they fixed up the SD Card path for the SteamOS 3.5 update, plus various other small fixes and improvements.</p>
+<p>Overall it sounds like a great update.</p>
+<p>See more on the <a href="https://github.com/moraroy/NonSteamLaunchers-On-Steam-Deck" target="_blank">GitHub Page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/nonsteamlaunchers-for-other-stores-on-steam-deck-adds-automatic-game-shortcuts/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/nonsteamlaunchers-for-other-stores-on-steam-deck-adds-automatic-game-shortcuts/</guid>
+      <pubDate>Wed, 17 Jan 2024 14:36:30 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1754833970id23860gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>THE FINALS big 1.5.0 update out with new mode - continues working on Linux / Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://www.gamingonlinux.com/2024/01/the-finals-now-appears-to-work-on-steam-deck-and-desktop-linux/" target="_blank">I recently reported on THE FINALS</a> now working on Steam Deck and Desktop Linux, and it seems even with the latest major update just released with version 1.5.0 bringing a new game mode it continues working.</p>
+<p>With it using Easy Anti-Cheat, it's still quite a surprise to see it actually working. Especially since there's been no official word from the developer, and they have not replied to my previous email about it. Easy Anti-Cheat does support Linux both Native Linux and Windows games in <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>, but developers need to enable it manually — so it seems they have. But it's still odd not to see any official word on it around 5 days later.</p>
+<p>Screenshots of it on Kubuntu 23.10 with MangoHud, click shots to enlarge:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3237735761705499959gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/3237735761705499959gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13597075261705499960gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13597075261705499960gol1.jpg"/></a></p>
+<p>On Linux Desktop / Steam Deck, just ensure you've set it to Proton Experimental in the Properties -&gt; Compatibility menu in your Steam Library to have it work. There's some issues though like with voice chat and certain graphical options that may cause crashes - but for me it's been smooth sailing.</p>
+<p>One issue that has come up is if your CPU support AVX512, you will need to add "clearcpuid=304" to your GRUB boot menu (thanks <a href="https://www.reddit.com/r/linux_gaming/comments/194yurj/comment/khkscq3/?utm_source=reddit&amp;utm_medium=web2x&amp;context=3" target="_blank">Reddit</a>).</p>
+<p>Version 1.5.0 brings with it a new limited-time solo mode "Solo Bank It":</p>
+<blockquote>
+<p>Today we are introducing our very first limited-time mode (LTM): Solo Bank It!<br/>
+This experimental twist on Bank It pits contestants against each other in a fight for individual glory in a 12-player arena. Just like Bank It, the first to amass 40,000 and deposit in the cash-out station wins. Solo queuers, rejoice!</p>
+</blockquote>
+<p>There's plenty of other fixes and improvements you can see in the <a href="https://store.steampowered.com/news/app/2073850/view/3963797741108613372" target="_blank">release notes</a>.</p>
+<p>Latest update video is below:</p>
+<div class="hidden_video" data-video-id="etpFbuVapb0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6edc56a5be5caf20ce77956a872bc758.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/etpFbuVapb0" target="_blank">See video</a></div></div>
+<p>Really great to see such a popular game like this working so well now!</p>
+<p>See more on the <a href="https://store.steampowered.com/app/2073850/THE_FINALS/" target="_blank">Steam page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/the-finals-big-150-update-out-with-new-mode-continues-working-on-linux-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/the-finals-big-150-update-out-with-new-mode-continues-working-on-linux-steam-deck/</guid>
+      <pubDate>Wed, 17 Jan 2024 14:10:40 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/416372977id23859gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>FPS</category>
+      
+    </item>
+    
+    <item>
+      <title>PlayStation Remote Play app for Steam Deck &#39;chiaki4deck&#39; can now put the system to sleep</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Just recently the open source PlayStation Remote Play app for Steam Deck, chiaki4deck, <a href="https://www.gamingonlinux.com/2024/01/open-source-playstation-remote-play-app-for-steam-deck-chiaki4deck-gets-a-big-upgrade/" target="_blank">got a big update</a> but it came with a few issues that needed solving and a new v1.6.1 is out now. Plus a fun new feature was added.</p>
+<p>This is a great app for those of you who have either a PlayStation 4 or PlayStation 5 and a Steam Deck, especially when you want to continue gaming but someone else wants the TV it's connected to. This is actually a fork of the original Chiaki, with enhancements to make it work better directly on the Steam Deck along with better documentation.</p>
+<p>New features and fixes in v1.6.1:</p>
+<blockquote>
+<ul>
+<li>Fixes console registration.</li>
+<li>Fixes fullscreen double-click and F11 shortcuts.</li>
+<li>Don't close main window when closing stream session on MacOS.</li>
+<li>Adds option to sleep PlayStation when sleeping Steam Deck.</li>
+</ul>
+</blockquote>
+<p>Available via an AppImage from the <a href="https://github.com/streetpea/chiaki4deck/releases/tag/v1.6.1" style="outline-width:0px !important; user-select:auto !important" target="_blank">release page</a> or <a href="https://flathub.org/apps/io.github.streetpea.Chiaki4deck" target="_blank">Flathub</a>.</p>
+<p>See more on the <a href="https://streetpea.github.io/chiaki4deck/" target="_blank">official site</a> and <a href="https://github.com/streetpea/chiaki4deck" target="_blank">GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/playstation-remote-play-app-for-steam-deck-chiaki4deck-can-now-put-the-system-to-sleep/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/playstation-remote-play-app-for-steam-deck-chiaki4deck-can-now-put-the-system-to-sleep/</guid>
+      <pubDate>Wed, 17 Jan 2024 13:38:06 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/675562187id23858gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Ubisoft think gamers need to get comfortable with not owning games</title>
@@ -4770,247 +5000,6 @@ NVK open source driver</p>
       <category>Metroidvania</category>
       
       <category>Pixel Graphics</category>
-      
-    </item>
-    
-    <item>
-      <title>4x space strategy game New Stars hits Early Access</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Are you a fan of titles like Stellaris and other space strategy games? You may want to take a look at New Stars, which just entered Early Access with Linux support.</p>
-<p>"New Stars is a 4X strategy game, on a galactic scale. Explore new worlds, build mega-structures, and found prosperous interstellar colonies. Go head-to-head with alien empires and build the greatest empire to survive the test of time, or be the last remaining in the galaxy to succeed."</p>
-<div class="hidden_video" data-video-id="1TPh2GLhDgQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e74471b11a2cec659ecd593e850159c2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/1TPh2GLhDgQ" target="_blank">See video</a></div></div>
-<p>When asked on Steam about differences to the likes of Stellaris the developer <a href="https://steamcommunity.com/app/2231270/discussions/0/6689578676484932301/#c3833171785700971082" target="_blank">gave a little explainer</a>:</p>
-<blockquote>
-<p>1) Relatively fast-paced - Each games last a few hours on average.<br/>
-2) Straightforward mechanics - (Should be) Easy to learn with a new tutorial system.<br/>
-3) Graphics - galaxy has improved since screenshots, with optimization for low-end devices.<br/>
-4) UI - unique with elements inspired from a wide range of games.<br/>
-<br/>
-There are similarities to Stellaris, such as the fleet management and fleets in general, however the gameplay, mechanics, and pacing is a lot different. Civilization and Stellaris were originally the main inspirations for the game, but New Stars is it's own game.</p>
-</blockquote>
-<p>Explaining more in the <a href="https://store.steampowered.com/news/app/2231270/view/3871469509823929285" target="_blank">release post</a> it seems the length of Stellaris games was quite the sticking point for this developer noting:</p>
-<blockquote>
-<p>One reason I made this game is because Stellaris games took me 100 hours on average, and every time I wanted to start a game, it was a major life decision - do I sacrifice 1-2 weeks just to finish this?</p>
-</blockquote>
-<p>Really sounds like a game designed for me, and anyone else who loves the idea but doesn't have endless hours to dedicate to just one game. Nice to see more like this.</p>
-<p>Check out <a href="https://store.steampowered.com/app/2231270/New_Stars/" target="_blank">New Stars on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/4x-space-strategy-game-new-stars-hits-early-access/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/4x-space-strategy-game-new-stars-hits-early-access/</guid>
-      <pubDate>Wed, 20 Dec 2023 12:06:42 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1064251890id23763gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Dark fantasy city-builder Against the Storm 1.0 out and now Steam Deck Verified</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Against the Storm is a city-builder with a sprinkle of rogue-lite, in a dark fantasy setting and now only has it recently left Early Access to hit 1.0 but it's also now Steam Deck Verified!</p>
-<p>"You are the Viceroy – a leader charged by the Scorched Queen to reclaim the wilderness and discover lost riches for the Smoldering City, civilization's last bastion against the Blightstorm that destroyed the old world. Unlike most survival city builders where your focus is on a single city, in Against the Storm you must build a vast, prosperous network of settlements populated by diverse fantasy races, each with their own specializations and needs."</p>
-<div class="hidden_video" data-video-id="MtA1BAeeOAE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/eb40ad651ab01566c1da8ae040fb9396.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/MtA1BAeeOAE" target="_blank">See video</a></div></div>
-<p>For the Steam Deck support, the developer did make numerous changes to make it properly fit and look good including:</p>
-<blockquote>
-<ul>
-<li>The Steam Deck version can now read gamepad input and display controller glyphs.</li>
-<li>Changed UI elements so the game is more readable in 16:10 resolutions, with maximum supported UI size enabled.</li>
-<li>The Steam Deck version of the game now automatically launches with the maximum supported UI size.</li>
-<li>Increased the font size in numerous UI panels to help with readability on the Steam Deck.</li>
-<li>Adjusted multiple elements on the HUD to reduce instances of overlapping UI when playing with maximum supported UI size and 16:10 resolution (perks, species panel, resources, embarkation panel, etc.).</li>
-<li>The virtual keyboard is now automatically invoked when selecting a text box on the Steam Deck.</li>
-<li>Added the “Input Auto Focus” setting to the in-game Options. It’s enabled by default and it allows you to start typing values immediately on the PC keyboard and opens a virtual keyboard on Steam Deck. If you don’t like the virtual keyboard appearing automatically when opening panels with text fields (e.g. in the Trading Post panel), you can disable this option.</li>
-</ul>
-</blockquote>
-<p>However, in the Steam Deck <a href="https://store.steampowered.com/news/app/1336490/view/3895114845299634789" target="_blank">announcement</a>, they made it clear it's not designed and doesn't look like a console-styled game with only basic controller support but they said they will keep looking to make it work better. Clearly it was enough to play well though being Steam Deck Verified.</p>
-<p>For desktop Linux players, it has a Platinum rating on <a href="https://www.protondb.com/app/1336490" target="_blank">ProtonDB</a> and should work just fine with Proton 8.</p>
-<p>The publisher, Hooded Horse, previously offered me a key so hopefully I will be able to take a look sometime soon.</p>
-<p>Against the Storm is available to buy from:</p>
-<p><a href="https://www.humblebundle.com/store/against-the-storm?partner=gamingonlinux" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/1336490/Against_the_Storm/" target="_blank">Steam</a></p>
-<p><a href="https://www.gog.com/en/game/against_the_storm" target="_blank">GOG</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/dark-fantasy-city-builder-against-the-storm-10-out-and-now-steam-deck-verified/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/dark-fantasy-city-builder-against-the-storm-10-out-and-now-steam-deck-verified/</guid>
-      <pubDate>Wed, 20 Dec 2023 11:30:28 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1926006674id23762gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>City Builder</category>
-      
-      <category>GOG</category>
-      
-    </item>
-    
-    <item>
-      <title>Vibrant fantasy retro magical FPS &#39;Wizordum&#39; is a joy to blast through</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Wizordum is a new retro FPS that puts you in the role of a Mage on a quest to track down the source of Chaos. If you adored early first-person shooters, you're going to really enjoy this one. Note: key provided by Stride PR.</p>
-<p>My time with it has been spent on Kubuntu using Proton 8, and it has worked great without any issues. It looks awesome, and runs perfectly with my AMD GPU (6800 XT) on Mesa 23.2.1. Valve have also now rated it Steam Deck Playable, as it has a few minor controls issues (only partial controller support).</p>
-<p>It's in Early Access, so what I've played is but a slice of things to come but even so it's thoroughly impressive. It has a full episode included, with an additional two episodes to come. Once you've blasted through it though, the level editor with online sharing thanks to mod.io (which is all built-in) gives you access to extra content. The level editor also works perfectly on Linux as far as I can tell after messing around building some test levels.</p>
-<div class="hidden_video" data-video-id="jcMhyxqLMOY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8943f8a2b66d324a17fb35190564e4a5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/jcMhyxqLMOY" target="_blank">See video</a></div></div>
-<p>It's an absolute joy to blast through this one. I adore the vibrant visuals and the chunky pixels in it! Blending the 3D environments with the 2D sprites looks fab. Simply a must-play (or a must-watch until it's finished) for any fans of classic shooters with a magical edge to them. It's like a glorious blending of really early shooters and dungeon crawlers but feels and looks modern enough that anyone can enjoy it. The levels are nice and spacious filled with enemies to crush, secrets to find, barrels to smash apart and traps to avoid.</p>
-<p>A surprising game that's initially rather simple, but the more you play and go through it, the more it opens up and really shines in the later levels with design and it will take you some time to get through.</p>
-<p>The level editor is ridiculously easy to use too! Since it's using mod.io for the integration and sharing you can <a href="https://mod.io/g/wizordum" target="_blank">view it online</a> and while there's not much for it yet, given the clear high quality of the game mixed with how easy it is to make and test levels so smoothly, I've no doubt it will fill up soon.</p>
-<p>Really thoroughly looking forward to seeing the additional coming episodes for this.</p>
-<p>Main Game Features:</p>
-<blockquote>
-<ul>
-<li>A vast arsenal of magic weapons &amp; items.</li>
-<li>Search for secret places filled with treasures.</li>
-<li>Solve puzzles and avoid traps.</li>
-<li>Embark on a single-player campaign to find the source of Chaos, traveling from the Town of Grimbrook through swamps over the snowy mountains and beyond.</li>
-<li>Collect bonus items and beat the hardest difficulty levels to climb to the top of the leaderboards.</li>
-<li>Beat challenges at each level.</li>
-<li>Compete online for the best time.</li>
-<li>Create and share custom levels, all from inside the game.</li>
-</ul>
-</blockquote>
-<p>You can buy it on <a href="https://store.steampowered.com/app/1715590/Wizordum/" target="_blank">Steam</a> and <a href="https://www.gog.com/en/game/wizordum" target="_blank">GOG</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/vibrant-fantasy-retro-magical-fps-wizordum-is-a-joy-to-blast-through/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/vibrant-fantasy-retro-magical-fps-wizordum-is-a-joy-to-blast-through/</guid>
-      <pubDate>Tue, 19 Dec 2023 15:41:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/98188197id23761gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Action</category>
-      
-      <category>FPS</category>
-      
-    </item>
-    
-    <item>
-      <title>The gorgeous Tails of Iron just got a free expansion</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Tails of Iron is an epic RPG adventure with punishingly brutal combat and a very bold style, and the developers just surprise-dropped a whole new free expansion to the end-game.</p>
-<p>"Set after the climactic events of the base campaign (straight after the credits), ‘Bright Fir Forest’, a new free end-game expansion, sees our noble Rat King Redgi invited by the Squirrels to celebrate the Festival of Leaf Fall… However, a new foul and revenge-seeking adversary stands to ruin the celebrations."</p>
-<p>With the expansion there's 13 new quests, adds 3 new challengers to the arena mode and add in more character customization with new weapons and armour, includes eight cosmetic upgrades for the Crimson Keep, and more. Seems like quite a nice addition to the game!</p>
-<div class="hidden_video" data-video-id="ZtBxqQAI0Yw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3c9071addf15abe2e9874b4bfb8d368e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ZtBxqQAI0Yw" target="_blank">See video</a></div></div>
-<p>Full game features:</p>
-<blockquote>
-<ul>
-<li>Master brutal combat, inspired by the souls-like genre, featuring dodge-rolls, parry bashes, and fatal executions!</li>
-<li>Explore a vast and treacherous Kingdom, comprising six distinct biomes, each with its own hidden paths and secrets.</li>
-<li>Immerse yourself in a compelling story, narrated by the deep, raspy vocals of the legendary Doug Cockle.</li>
-<li>Customise your attack style with a vast array of distinct weapons and armour.</li>
-<li>Assemble a band of brave companions, ready to aid you on select missions.</li>
-<li>Complete side quests to earn additional gold-on-the-side.</li>
-<li>Unearth special blueprints to forge new and powerful weapons.</li>
-<li>Collect rare ingredients to cook up health-boosting feasts.</li>
-<li>Overcome savage boss fights against the Frog Clan’s deadly, oversized generals.</li>
-<li>Lose yourself in the gorgeous and lovingly-crafted 2D hand-drawn art style.</li>
-</ul>
-</blockquote>
-<p>Tails of Iron has Native Linux support and it is Steam Deck Verified!</p>
-<p>You can buy Tails of Iron from:</p>
-<p><a href="https://www.humblebundle.com/store/tails-of-iron?partner=gamingonlinux" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/1283410/Tails_of_Iron/" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/the-gorgeous-tails-of-iron-just-got-a-free-expansion/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/the-gorgeous-tails-of-iron-just-got-a-free-expansion/</guid>
-      <pubDate>Tue, 19 Dec 2023 14:36:29 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/101281981id23760gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Humble Store</category>
-      
-    </item>
-    
-    <item>
-      <title>Vampire Survivors: Emergency Meeting is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Vampire Survivors: Emergency Meeting is the latest DLC available for the popular bullet-heaven horde survival game thingy from poncle and it's a lot of fun. Giving a cross-over of Among Us in Vampire Survivors was certainly an odd choice though, as two very opposite games but it works.</p>
-<p>The DLC adds in a new Among Us inspired map, complete with various Crewmates you can rescue that will give you various bonuses during your run (that you can also upgrade) and you also get to deal with map events that require you to run across the map to press a button which adds another level of panic to Vampire Survivors. The design as a whole is pretty fun!</p>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8169318331702989418gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8169318331702989418gol1.jpeg"/></a>Picture taken on my Steam Deck.</em></p>
-<p>I still think it's a bit naughty all the enemies can just phase-through the walls, and we're left to walk around them. At least once you grab the map it's easier to get around.</p>
-<p>Main DLC content:</p>
-<blockquote>
-<ul>
-<li>9 playable characters.</li>
-<li>15 new weapons (of which 7 evolutions).</li>
-<li>A new large stage.</li>
-<li>A new Adventure.</li>
-<li>6 brand new music tracks.</li>
-<li>20 in-game-only achievements (not Steam Acheivements).</li>
-</ul>
-</blockquote>
-<p>At only £1.99 (and 20% off until December 25th), it's an easy pick if you're a Vampire Survivors fan itching for more content to blast your way though.</p>
-<div class="hidden_video" data-video-id="77H7LzPqF9E"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3764d6dfc3544a9d6a8db1063dfffd0c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/77H7LzPqF9E" target="_blank">See video</a></div></div>
-<p>It has Native Linux support (not actually advertised) and is Steam Deck Verified.</p>
-<p>Grab it <a href="https://store.steampowered.com/app/2690330/Vampire_Survivors_Emergency_Meeting/" target="_blank">on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/vampire-survivors-emergency-meeting-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/vampire-survivors-emergency-meeting-is-out-now/</guid>
-      <pubDate>Tue, 19 Dec 2023 12:43:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/407634656id23759gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>DLC</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Songs of Conquest now Steam Deck Verified with full gamepad support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Need a new turn-based strategy game with an infusion of RPG mechanics that looks beautiful? Play on Steam Deck or with a gamepad mostly? Check out the latest update to Songs of Conquest!</p>
-<p>Thanks to the most recent update which developer Lavapotion worked with Bitwave Games on, the game has been expanded and overhauled to work fully on Steam Deck with full gamepad support. As they said it has "a complete overhaul of controls and menus, ensuring native integration with Steam Deck and gamepad controls" and that "A major part of this includes adding a large-font UI, guaranteeing no awesome dialogue or tooltip goes unnoticed".</p>
-<p>On top of that there's new tooltips just for the Steam Deck, to go along with the new control scheme making it a natural fit for Steam Deck and gamepad players.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12527153271702987339gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12527153271702987339gol1.jpg"/></a><em>Image Credit - Lavapotion</em></p>
-<p>With all those changes done and live, the game has been checked over by Valve and given the Steam Deck Verified badge of approval. For Destop Linux players, it runs great with Proton 8!</p>
-<p>Currently it has a Very Positive user rating on Steam.</p>
-<p>You can buy from:</p>
-<p><a href="https://www.humblebundle.com/store/songs-of-conquest?partner=gamingonlinux" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/867210/Songs_of_Conquest/" target="_blank">Steam</a></p>
-<p>Check out the trailer if you've not played before:</p>
-<div class="hidden_video" data-video-id="TaMheQOX9yY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/197b3ba2e0f44dc1965ebaf67d906687.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/TaMheQOX9yY" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/songs-of-conquest-now-steam-deck-verified-with-full-gamepad-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/songs-of-conquest-now-steam-deck-verified-with-full-gamepad-support/</guid>
-      <pubDate>Tue, 19 Dec 2023 12:03:55 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/310329186id23758gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>RPG</category>
       
     </item>
     
