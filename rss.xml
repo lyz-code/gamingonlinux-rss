@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-01-18 07:23:36.762902</pubDate>
+    <pubDate>2024-01-19 07:23:21.607358</pubDate>
 
     
     <image>
@@ -18,6 +18,317 @@
     </image>
 
     
+    
+    <item>
+      <title>GPU Reshape is a fancy new open source tool for developers</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A fresh announcement for developers today is GPU Reshape, a free and open source tool that could be really useful for game developers working with Vulkan and DirectX 12 to deal with potentially undefined behaviour. </p>
+<p>According to the post it's a collaboration between AMD and Avalanche Studios Group, which then continued externally with Miguel Petersen of Striking Distance Studios (prev at Avalanche) who is the author of GPU Reshape with help from various other developers. Great to see AMD and more game developers value open source.</p>
+<p>What is it actually for? If you're not a game developer, it's probably complicated to understand. It's not my expertise either, but I love seeing game developer toolkits like this release as open source. Petersen even clearly states in the post that Linux support is <em>planned</em> for it! For more games to support Linux / Steam Deck well — developers need the tools too. As per the blog post Petersen explained it as:</p>
+<blockquote>
+<p>A toolset that leverages on-the-fly instrumentation of GPU operations with instruction-level validation of potentially undefined behavior, supporting both DX12 and Vulkan. A standalone desktop application with no integration required, all open source (MIT), is now available in Beta.</p>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17463430641705595383gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17463430641705595383gol1.jpg"/></a><em>Pictured - GPU Reshape, credit to Miguel Petersen</em></p>
+<p>Features:</p>
+<blockquote>
+<p>GPU Reshape brings powerful features typical of CPU tooling to the GPU, providing validation of dynamic behaviour, such as:</p>
+<ul>
+<li><strong>Resource Bounds</strong> Validation of resource read / write coordinates against its bounds.</li>
+<li><strong>Export Stability</strong> Numeric stability validation of floating point exports (UAV writes, render targets, vertex exports), e.g. NaN / Inf.</li>
+<li><strong>Descriptor Validation</strong> Validation of descriptors, potentially dynamically indexed. This includes undefined, mismatched (compile-time to runtime), out of bounds descriptor indexing, and missing table bindings.</li>
+<li><strong>Concurrency Validation</strong> Validation of resource concurrency, i.e. single-producer or multiple-consumer, between queues and events.</li>
+<li><strong>Resource Initialization</strong> Validation of resource initialization, ensures any read was preceded by a write. (*1)</li>
+<li><strong>Infinite Loops</strong> Detection of infinite loops. <em>Experimental</em>.</li>
+</ul>
+</blockquote>
+<p>There's a number of other planned additions, as they hope to see it evolve into a general purpose tool including:</p>
+<blockquote>
+<ul>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>Shader debugging, providing the ability to inspect live data as the shader sees it.</li>
+<li>Shader assertions, in source assertions typical of CPU code.</li>
+<li>Branch hot spots, live hot spot profiling of all branches.</li>
+<li>Branch coherence, live coherence analysis of all branches.</li>
+<li>And more!</li>
+</ul>
+</blockquote>
+<p>See more on the <a href="https://gpuopen.com/learn/introducing-gpu-reshape-shader-instrumentation-toolset/" target="_blank">AMD blog post</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/gpu-reshape-is-a-fancy-new-open-source-tool-for-developers/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/gpu-reshape-is-a-fancy-new-open-source-tool-for-developers/</guid>
+      <pubDate>Thu, 18 Jan 2024 16:30:32 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/474884857id23871gol.jpg" type="image/jpeg"/>
+      
+      <category>AMD</category>
+      
+      <category>Game Dev</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Deep survival game Vintage Story adds cave-ins, improved first-person, lots more animals</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Vintage Story is a brutal deep survival game that I just love to watch expand, because it's so filled full of content it's spilling over the sides. The latest release, v1.19.0 Dejank Redux brings in even more content.</p>
+<p>When it comes to content additions there's 11 new species of deer, 11 types of goats, you can now catch animals with a basket, antlers and horns you can mount on walls, a rework of ruins, new accessibility settings, snowballs, more character customization options, tule and sedge plants, an overhauled first-person mode, a cave-in system when digging and so much more.</p>
+<p>This game is really quite something, and pretty darn challenging too.</p>
+<div class="hidden_video" data-video-id="gOxrrp2MAug"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8ea03c2a275e8852f9f45c3ab3ef4495.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/gOxrrp2MAug" target="_blank">See video</a></div></div>
+<p>See the <a href="https://www.vintagestory.at/blog.html/news/v1190-dejank-redux-stable-r374/" target="_blank">release notes</a> for more and buy from:</p>
+<p><a href="https://www.humblebundle.com/store/vintage-story?partner=gamingonlinux" target="_blank">Humble Store</a></p>
+<p><a href="https://tyronx.itch.io/vintage-story" target="_blank">itch.io</a></p>
+<p><a href="https://www.vintagestory.at" target="_blank">Direct</a></p>
+<p>Have you checked it out yet? What do you think to Vintage Story?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/deep-survival-game-vintage-story-adds-cave-ins-improved-first-person-lots-more-animals/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/deep-survival-game-vintage-story-adds-cave-ins-improved-first-person-lots-more-animals/</guid>
+      <pubDate>Thu, 18 Jan 2024 15:48:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1976380856id23870gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Itch.io</category>
+      
+    </item>
+    
+    <item>
+      <title>Tomb Raider I-III Remastered gets Steam Deck Verified</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Tomb Raider I-III Remastered is releasing from Aspyr and Crystal Dynamics on February 14th, and now Valve have given it the green tick of approval as it is now Steam Deck Verified. It was tested on the latest stable Proton 8 release, so as long as you use that across Steam Deck / Desktop Linux you should be good to go.</p>
+<p>With this bundle you'll get Tomb Raider I + Unfinished Business, Tomb Raider II + Golden Mask and Tomb Raider III + The Lost Artifact. Aspyr say it has upgraded graphics, with the option to switch to the original polygon look at any time.</p>
+<div class="hidden_video" data-video-id="68hISohBKmI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b5ec2a583843ecf225dac38e2674861b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/68hISohBKmI" target="_blank">See video</a></div></div>
+<p>You can pre-order via:</p>
+<p><a href="https://www.gog.com/en/game/tomb_raider_i_to_iii_remastered" target="_blank">GOG</a> (you can use Lutris / Heroic)</p>
+<p><a href="https://www.humblebundle.com/store/tomb-raider-iiii-remastered?partner=gamingonlinux" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/2478970/Tomb_Raider_IIII_Remastered_Starring_Lara_Croft/" target="_blank">Steam</a></p>
+<p>Will you be picking it up to have a nostalgia blast? Worth pointing out the <a href="https://www.gamingonlinux.com/2024/01/open-source-re-implementation-of-tomb-raider-1-1996-tr1x-gets-a-big-bug-fix-release/" target="_blank">open source re-implementation of Tomb Raider 1 (1996) TR1X</a> also exists. Remasters can be a pretty great thing to bring new audiences to older games, although they don't always hit, so hopefully Aspyr were careful with the Tomb Raider I-III Remastered collection.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/tomb-raider-i-iii-remastered-gets-steam-deck-verified/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/tomb-raider-i-iii-remastered-gets-steam-deck-verified/</guid>
+      <pubDate>Thu, 18 Jan 2024 14:29:19 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1354144114id23869gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>Adventure</category>
+      
+    </item>
+    
+    <item>
+      <title>Exiled is a new compact puzzle thriller from the director of My Friendly Neighborhood</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Up for being puzzled and thrilled at the same time in a compact setting? John Szymanski, director of My Friendly Neighborhood, has released a standalone version of Exiled.</p>
+<p>The developer said to expect an experience sort-of like Myst and The Room:</p>
+<blockquote>
+<p>A note has been left on her desk talking of "the ancient evil" and "banishment to a different realm." The eldritch tome and an untranslated scrap she had been studying act as the only clues to her disappearance. Use clues found in the book to translate an ancient language, evade the lurking horrors, and solve the mystery of the strange objects around you!</p>
+</blockquote>
+<div class="hidden_video" data-video-id="UNBYgBHS_e0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/82925969cbd0892222bffa3fea01d923.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/UNBYgBHS_e0" target="_blank">See video</a></div></div>
+<p>The original was part of Dread X Collection 2 but now you can buy it standalone, and with Native Linux support too. It's had a few upgrades since then for this version including new voice acting, a re-written narrative, updated visuals, better scares and so on. <a href="https://steamcommunity.com/app/2741620/discussions/0/4139437492717265200/#c4139437492723453667" target="_blank">According to the dev</a> it's "significantly more engaging for a new player".</p>
+<p class="plain-list-title">Features:</p>
+<ul>
+<li>Solve ancient puzzles, decode an eldritch language, and avoid the lurking horror all while sitting at a single desk.</li>
+<li>Tense and foreboding atmosphere where the stillness of the library can be shattered at any moment.</li>
+<li>High level of interactivity.</li>
+<li>Multiple endings.</li>
+<li>Good for a single play session.</li>
+<li>Voiceover by Tom Schalk.</li>
+</ul>
+<p>Available to <a href="https://store.steampowered.com/app/2741620/Exiled/" target="_blank">buy on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/exiled-is-a-new-compact-puzzle-thriller-from-the-director-of-my-friendly-neighborhood/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/exiled-is-a-new-compact-puzzle-thriller-from-the-director-of-my-friendly-neighborhood/</guid>
+      <pubDate>Thu, 18 Jan 2024 13:24:26 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/886722659id23868gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+      <category>Puzzle</category>
+      
+    </item>
+    
+    <item>
+      <title>Need more Left 4 Dead 2? Check out the huge Cold Front mod</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Inspired by Fuze Studios' Left 2 Die for Roblox, Left 4 Dead 2 just got a huge new mod campaign for you to play through with Cold Front and it looks great. Released on January 9th it's quite impressive and supports co-op, versus and mutations too.</p>
+<p>"After fighting their way North through ravenous hordes, Nick, Coach, Ellis, and Rochelle abandon their boat at a nearby dock due to a collapsed bridge. With nowhere else to go, the survivors head inland in hopes of finding rescue. Unbeknownst to them, the frostbite will be the least of their worries."</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17971268861705582399gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17971268861705582399gol1.jpeg"/></a></p>
+<p>Features:</p>
+<p></p>
+<blockquote>
+<p>Cold Front features many new ideas and overhauls of established concepts found in the base game.</p>
+<ul>
+<li>5 full-length maps, on par with the longest campaigns from the base game.</li>
+<li>Varied and interesting environments; Each map takes you through different locations.</li>
+<li>A fresh new theme not often seen; Brace the storm before the horde.</li>
+<li>Fully customized talker scripts for brand new conversations and reactions.</li>
+<li>An interactable world: Various things around the map can actually be used!</li>
+<li>Dynamic finale; Influenced by your skills, you have multiple ways to escape.</li>
+<li>Enhanced storm mechanic - Just like Hard Rain, but more impactful.</li>
+<li>Custom soundtracks created specifically for this project by talented musicians.</li>
+<li>Hundreds of custom and unique Infected that match the campaign’s theme.</li>
+<li>Over 300 custom voicelines recorded by skilled voice actors.</li>
+<li>Thorough balancing for all difficulties - You won’t need director tips, just follow the flow.</li>
+<li>Plenty of eastereggs and references to search for and discover.</li>
+<li>And lots more.</li>
+</ul>
+</blockquote>
+<p>Check it out on <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3135451698?ref=gamingonlinux" target="_blank">the Steam Workshop</a>.</p>
+<p>Looks like a really good one to check out while the never-ending waiting for Left 4 Dead 3 continues. Come on Valve, give us what we want!</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/need-more-left-4-dead-2-check-out-the-huge-cold-front-mod/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/need-more-left-4-dead-2-check-out-the-huge-cold-front-mod/</guid>
+      <pubDate>Thu, 18 Jan 2024 12:55:19 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/156038864id23867gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Mod</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Popular mobile puzzle game classic Threes! is launching on PC for its 10th anniversary</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Threes! took the mobile world by storm back in 2014 winning the Apple Design Award, and finally for its 10th anniversary it will be coming to Steam so we can all get in on the fun. Releasing on February 6th, it appears it will have Native Linux support too!</p>
+<p>It's been through a few upgrades it seems for the Steam version too with controller support and Steam Cloud support too. Might be a good one to chill out with in your coffee breaks at your desk, or on your Steam Deck too (if mobile is not your thing…). A puzzle game that just keeps on going and going until you get tired of it, ready to pick up again another day.</p>
+<p>Original trailer:</p>
+<div class="hidden_video" data-video-id="rgpJUj7GUFQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/dc70115a16cb419fa8a9d7ba39980d84.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/rgpJUj7GUFQ" target="_blank">See video</a></div></div>
+<p>The Steam page is light on details, because not much is needed. You slide around numbers to make more numbers. Brilliant in its simplicity.</p>
+<p>Much like the more recent hit Wordle, Threes! ended up with a huge amount of games just entirely copying the idea. One that went viral was 2048 (<a href="https://github.com/gabrielecirulli/2048" target="_blank">open source</a>) although technically a clone of another similar game (it gets complicated), which <a href="https://www.theverge.com/22914955/threes-2048-ketchapp-copycats-clones-mobile-games" target="_blank">The Verge</a> wrote a bit of a round-up about back in 2022. This happens a <em>lot</em> on mobile though, as game-farms see an idea and copy it as quickly as they can. Somewhat reminds me of how Vampire Survivors made a few mechanics popular, and now it has a growing amount of similar games.</p>
+<p>Have a look and <a href="https://store.steampowered.com/app/1818570/Threes/" target="_blank">wishlist Threes! on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/popular-mobile-puzzle-game-classic-threes-is-launching-on-pc-for-its-10th-anniversary/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/popular-mobile-puzzle-game-classic-threes-is-launching-on-pc-for-its-10th-anniversary/</guid>
+      <pubDate>Thu, 18 Jan 2024 12:36:25 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1739898836id23866gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Puzzle</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Time Survivors is the most completely absurd Vampire Survivors-like yet</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Time Survivors just released on Steam and like many horde survival games it takes the idea of Vampire Survivors, and puts a few little different ideas into the mix and it's probably the most insane one yet. My time has been testing it with Proton 8 where it works great on Desktop Linux (Kubuntu 23.10) and Steam Deck.</p>
+<p>Lunar Chili, the developer, say it is the "most historically inaccurate roguelike ever made", although they're stretching the term roguelike there. Apart from some odd wording (probably translation issues) and some balancing needing to be done, it's actually a whole lot of fun — and really quite challenging, more so than most in the VS knock-off genre. I say knock-off lovingly, because I do enjoy all these games very much, but VS clearly started a whole specific thing here.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10506505891705577572gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10506505891705577572gol1.jpg"/></a></p>
+<p>The characters of course are completely ridiculous, as are some of their abilities. The enemies make absolutely <em>no</em> sense either. You'll be coming up against flying skulls, giant multi-headed fire-breathing dogs, dinosaurs, big flying golden gargoyles, massive flesh-eating plants and it seems <em>whatever</em> the hell they felt like putting in the game. Don't go into this one expecting anything to make sense, and that's what I love about this one. It's so ridiculous and stupid with the setting it just works, it's fun and that's the important thing.</p>
+<p>Not many games you can say you played as Abraham Lincoln fighting off zombies and rats while throwing around a Yo-yo and a Flail. Oh and your special ability as Abe is to throw down some Cherry Blossom trees to block enemies, because yeah - that makes sense? Everything in the game is like that just pure absurdity.</p>
+<p>Upgrades for days too, with quite an interesting system. You can upgrade each character, each weapon...and so on. And certain types of upgrades need different resources, so you'll be on the hunt on each map for more than just gold.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18257844401705579642gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18257844401705579642gol1.jpg"/></a></p>
+<p>You even have map-based mini-events to do as well, like a Time Circle where you have to stay inside a blue zone while a big clock hand moves around it. However, invincible Time Guardians that look suspiciously like butterflies are flying around trying to hit you while you're in the zone. On top of that there's special challenges that you get by finding relics, that will give you a boost if you manage to purge their effects like killing 200 creatures, but each creature death shoots out a bunch of deadly petals. Or survive for 60 seconds while giant snakes made of skulls filling up the screen come after you.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1855596851705578623gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1855596851705578623gol1.jpeg"/></a></p>
+<p><em>Total madness.</em></p>
+<p>At one point I turned into a giant. Giant Abe! Stomping all over everything.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7943437171705578479gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7943437171705578479gol1.jpeg"/></a></p>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li>Play as epic historic characters, each with their unique ability.</li>
+<li>Historically inaccurate stages such as the Stone Age, the Dark Age, Ancient Egypt, and more full of enemies, secrets, mini bosses and end-stage boss.</li>
+<li>Skill-tree based meta progression for all elements in the game.</li>
+<li>Hundreds of different weapons, buffs, Cursed Relics, Powerups, and unlockables to choose from for a unique experience every run.</li>
+<li>Casual quick 20 minute play sessions + plenty of quests and secrets to discover.</li>
+<li>A Sandbox mode to test any overpowered build and train against any enemy.</li>
+</ul>
+</blockquote>
+<p>If you love these survivor-like horde survival games, it seems Time Survivors is one you need to try.</p>
+<p>For desktop Linux everything worked as expected, but for Steam Deck (and gamepads) the experienced needs to be improved. The developers say they test it themselves, and on their Steam forum they <a href="https://steamcommunity.com/app/2211390/discussions/0/3766732914510239086/" target="_blank">claim</a> "Yes, Time Survivors is compatible with Steam Deck." but it only has <em>partial</em> controller support with some parts like the unlock screen not working with gamepad at all. I had to switch Steam Input to keyboard+mouse for it to work well on Steam Deck and be playable. Which is fine, as the controls are incredibly simple. Apart from that though, on Steam Deck (OLED), the only time I saw performance drop was taking down a big enemy where <em>lots</em> of gold spawned, while there were <em>tons</em> of other enemies but that came back up quickly.</p>
+<p>You can <a href="https://store.steampowered.com/app/2211390/Time_Survivors/" target="_blank">buy it on Steam</a>.</p>
+<div class="hidden_video" data-video-id="GDFq1sCPeq4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b938f3b6e370b7279c83b172019339c9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/GDFq1sCPeq4" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/time-survivors-is-the-most-completely-absurd-vampire-survivors-like-yet/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/time-survivors-is-the-most-completely-absurd-vampire-survivors-like-yet/</guid>
+      <pubDate>Thu, 18 Jan 2024 12:07:34 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1942869043id23865gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA 535.154.05 for Linux brings a few bug fixes</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><strong>Update</strong>: it turns out, once again, NVIDIA released a new driver and copy-pasted the changelog from a previous version. This is <em>at least</em> the third time they've done this now. The changelog below is actually from the <a href="https://www.nvidia.com/Download/driverResults.aspx/216728/en-uk/" target="_blank">535.146.02</a> driver, that was released in December. I've contacted NVIDIA to find out what's actually in the 535.154.05 driver. The only actual change that can be seen right now is this new driver notes it supports the new GeForce RTX 4070 SUPER in the Supported Products section, but the actual changelog <em>hasn't</em> changed.</p>
+<hr/>
+<p>NVIDIA released driver version 535.154.05 for Linux on January 16th bringing with it a few useful sounding bug fixes, so here's what's new for the first NVIDIA update of 2024. Quite a small one to start the year!</p>
+<p>From the <a href="https://www.nvidia.co.uk/Download/driverResults.aspx/217862/en-uk" target="_blank">release page</a>:</p>
+<blockquote>
+<ul>
+<li>Fixed a bug that could cause some multi-GPU systems to crash on suspend.</li>
+<li>Fixed a bug that could cause the system to crash when an application is run with __NV_PRIME_RENDER_OFFLOAD=1.</li>
+<li>Fixed a bug which prevented application profiles from getting applied to PRIME Render Offloaded applications running via Wine.</li>
+<li>Disabled PRIME Display Offload Sink support for virtual displays on datacenter GPUs. This prevents unusable desktop layouts from getting automatically configured on systems with a mix of physical and virtual displays.</li>
+<li>Fixed a bug that caused high CPU usage during system suspend, which could lead to the system not entering s2idle in some cases.</li>
+<li>Fixed a bug that caused the nvidia-settings control panel to crash when running on Wayland with newer versions of libwayland-client.</li>
+</ul>
+</blockquote>
+<p>This release is from their "Production Branch", so anyone should be good to go on upgrading to it as it's a normal stable driver release.</p>
+<p>Is there an NVIDIA driver bug that you're currently waiting on being solved? Does this driver cause issues for you? Let me know in the comments.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/nvidia-53515405-for-linux-brings-a-few-bug-fixes/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/nvidia-53515405-for-linux-brings-a-few-bug-fixes/</guid>
+      <pubDate>Thu, 18 Jan 2024 10:00:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
     
     <item>
       <title>Valve seeing increasing bug reports due to Steam Snap - other methods recommended</title>
@@ -186,7 +497,7 @@
 <p>With it using Easy Anti-Cheat, it's still quite a surprise to see it actually working. Especially since there's been no official word from the developer, and they have not replied to my previous email about it. Easy Anti-Cheat does support Linux both Native Linux and Windows games in <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>, but developers need to enable it manually — so it seems they have. But it's still odd not to see any official word on it around 5 days later.</p>
 <p>Screenshots of it on Kubuntu 23.10 with MangoHud, click shots to enlarge:</p>
 <p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3237735761705499959gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/3237735761705499959gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13597075261705499960gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13597075261705499960gol1.jpg"/></a></p>
-<p>On Linux Desktop / Steam Deck, just ensure you've set it to Proton Experimental in the Properties -&gt; Compatibility menu in your Steam Library to have it work. There's some issues though like with voice chat and certain graphical options that may cause crashes - but for me it's been smooth sailing.</p>
+<p>On Linux Desktop / Steam Deck, just ensure you've set it to Proton Experimental in the Properties -&gt; Compatibility menu in your Steam Library to have it work. There's some issues though like with voice chat (turn it off) and certain graphical options that may cause crashes - but for me it's been smooth sailing.</p>
 <p>One issue that has come up is if your CPU support AVX512, you will need to add "clearcpuid=304" to your GRUB boot menu (thanks <a href="https://www.reddit.com/r/linux_gaming/comments/194yurj/comment/khkscq3/?utm_source=reddit&amp;utm_medium=web2x&amp;context=3" target="_blank">Reddit</a>).</p>
 <p>Version 1.5.0 brings with it a new limited-time solo mode "Solo Bank It":</p>
 <blockquote>
@@ -4698,308 +5009,6 @@ NVK open source driver</p>
       <category>NVIDIA</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>KDE Plasma 6.0 Beta 2 is available for testing</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Getting exciting now! We're closing in on the final release of KDE Plasma 6.0 with a <a href="https://kde.org/announcements/megarelease/6/beta2/" target="_blank">second Beta</a> now available for testing to ensure it's ready for your Linux desktops and eventually Steam Deck too.</p>
-<p>Coming nearly a month after the first Beta, the KDE team have been powering through lots of bug reports to get it ready for release but naturally since it's still in Beta it's not quite ready yet but they could use some more testers to jump in and report across a wide variety of hardware.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5571517121703168574gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5571517121703168574gol1.jpg"/></a></p>
-<p>"As with versions <a href="https://kde.org/announcements/megarelease/6/alpha/" target="_blank">Alpha</a> and the <a href="https://kde.org/announcements/megarelease/6/beta1/" target="_blank">first Beta</a>, this is a preview intended for developers and testers. The software in this second beta release is reaching stability fast, but it is still not 100% safe to use in a production environment. We still recommend you continue using stable versions of Plasma, Frameworks and apps for your everyday work. But if you do use this, watch out for bugs and <a href="https://bugs.kde.org" target="_blank">report them</a> promptly, so we can solve them." — KDE Plasma Team.</p>
-<p>A reminder on the rest of the roadmap:</p>
-<ul>
-<li>10 January 2024: Release Candidate 1</li>
-<li>31 January 2024: Release Candidate 2</li>
-<li>21 February 2024: Private Tarball Release</li>
-<li>28 February 2024: Public Release</li>
-</ul>
-<p>Have you been testing Plasma 6? What are your thoughts on it so far?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/kde-plasma-60-beta-2-is-available-for-testing/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/kde-plasma-60-beta-2-is-available-for-testing/</guid>
-      <pubDate>Thu, 21 Dec 2023 14:29:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1805958695id23771gol.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Desktop Environment</category>
-      
-      <category>KDE</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Fedora Asahi Remix 39 brings Linux to Apple Silicon Macs</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Have one of those fancy Apple Silicon Macs? Want to pop Linux on it? Check out Fedora Asahi Remix 39, the newly released <a href="https://asahilinux.org/" target="_blank">Asahi Linux</a> flagship distribution.</p>
-<p>What is Asahi? Asahi Linux is a project and community with the goal of porting Linux to Apple Silicon Macs. Their team announced <a href="https://asahilinux.org/2023/08/fedora-asahi-remix/" target="_blank">back in August</a> their intent to have Fedora as the base for it and now that has been made generally available in a new <a href="https://fedoramagazine.org/introducing-fedora-asahi-remix-39/" target="_blank">announcement</a> from Fedora.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17127877131703166770gol1.png"/></p>
-<p>From what they said it supports all MacBook Air, MacBook Pro, Mac Mini, Mac Studio and iMac systems with M1 and M2 chips.</p>
-<p>Interestingly though, even though Fedora are generally all about GNOME, the Asahi remix by default is KDE Plasma but there is a GNOME version also available. With full Wayland support, non-conformant OpenGL 3.3 support (as well as the world's first and only certified conformant OpenGL ES 3.1 implementation for Apple Silicon), high-quality audio and what should be a pretty great overall experience.</p>
-<p>Really good to see Apple Silicon support for Linux continue to improve - stellar work from everyone involved.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/fedora-asahi-remix-39-brings-linux-to-apple-silicon-macs/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/fedora-asahi-remix-39-brings-linux-to-apple-silicon-macs/</guid>
-      <pubDate>Thu, 21 Dec 2023 13:54:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1930597684id23770gol.jpg" type="image/jpeg"/>
-      
-      <category>Distro News</category>
-      
-      <category>Fedora</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton Experimental brings more HDR + Steam Overlay hack for Easy Anti-Cheat from EOS</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve put up a new release of Proton Experimental today and it has some interesting changes, so here's all the latest on what's new for Steam Deck and Desktop Linux gaming. If you need a guide on <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Steam Play Proton check out this article</a>.</p>
-<p>As of this update for December 20th here's all that's changed:</p>
-<p><strong>Newly playable:</strong></p>
-<ul>
-<li><a href="https://store.steampowered.com/app/2052410/WITCH_ON_THE_HOLY_NIGHT/" target="_blank">WITCH ON THE HOLY NIGHT</a>.</li>
-</ul>
-<p><strong>Improvements:</strong></p>
-<ul>
-<li>Added hack to allow Steam Overlay to function with EAC EOS (Easy Anti-Cheat from Epic Online Services) games.</li>
-<li>Improved video playback in <a href="https://store.steampowered.com/app/597820/BIOMUTANT/" target="_blank">BIOMUTANT</a>.</li>
-</ul>
-<p><strong>HDR now available for:</strong></p>
-<ul>
-<li><a href="https://store.steampowered.com/app/601150/Devil_May_Cry_5/" target="_blank">Devil May Cry 5</a>.</li>
-<li><a href="https://store.steampowered.com/app/2395210/Tony_Hawks_Pro_Skater_1__2/" target="_blank">Tony Hawk's Pro Skater 1 + 2</a>.</li>
-</ul>
-<p>Additionally, Valve updated the HDR list to note a bunch of titles that had HDR fixed and enabled before the Steam Deck OLED released but weren't previously noted and so in addition to the above there's also HDR for: <a href="https://store.steampowered.com/app/883710/Resident_Evil_2/" target="_blank">Resident Evil 2</a>, <a href="https://store.steampowered.com/app/952060/Resident_Evil_3/" target="_blank">Resident Evil 3</a>, <a href="https://store.steampowered.com/app/418370/Resident_Evil_7_Biohazard/" target="_blank">Resident Evil 7 Biohazard</a>, <a href="https://store.steampowered.com/app/1196590/Resident_Evil_Village/" target="_blank">Resident Evil Village</a>, <a href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/" target="_blank">Hogwarts Legacy</a>, <a href="https://store.steampowered.com/app/1328670/Mass_Effect_Legendary_Edition/" target="_blank">Mass Effect Legendary Edition</a>, <a href="https://store.steampowered.com/app/627270/Injustice_2/" target="_blank">Injustice 2</a> and Alan Wake 2.</p>
-<p><strong>Bug fixes:</strong></p>
-<ul>
-<li>Fixed crash in <a href="https://store.steampowered.com/app/1250410/Microsoft_Flight_Simulator_40th_Anniversary_Edition/" target="_blank">Microsoft Flight Simulator</a> when live weather is enabled.</li>
-<li>Proton 8 regression fix:
-<ul>
-<li><a href="https://store.steampowered.com/app/2279330/Savant__Ascent_REMIX/" target="_blank">Savant - Ascent REMIX</a> no longer hitches during certain animations.</li>
-</ul>
-</li>
-<li>Proton Experimental regression fixes:
-<ul>
-<li>Fixed crash with <a href="https://store.steampowered.com/app/244850/Space_Engineers/" target="_blank">Space Engineers</a> multiplayer/server options.</li>
-<li>Fixed intermittent crash in <a href="https://store.steampowered.com/app/620980/Beat_Saber/" target="_blank">Beat Saber</a>.</li>
-<li>Improved <a href="https://store.steampowered.com/app/359870/FINAL_FANTASY_XX2_HD_Remaster/" target="_blank">Final Fantasy X/X-2 HD</a> Remaster hack to avoid running out of address space while also not crashing during combat.</li>
-<li><a href="https://store.steampowered.com/app/637670/Secret_of_Mana/" target="_blank">Secret of Mana</a> videos now play correctly again.</li>
-<li>Able to interact with menus again in <a href="https://store.steampowered.com/app/428080/Racket_Nx/" target="_blank">Racket NX</a>.</li>
-</ul>
-</li>
-</ul>
-<p>Full changelog is available on <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">GitHub</a>.</p>
-<hr/>
-<p>It will just show up in your Steam Downloads as an update for Proton Experimental, as Proton updates just like games do, so keep an eye out for it.</p>
-<p><strong>How to change your Proton version:</strong></p>
-<p>Steam Deck:</p>
-<ul>
-<li>Pick a game in your Library and head to the little cog icon on the right.</li>
-<li>Click Properties, then Compatibility on the left.</li>
-<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
-</ul>
-<p>Desktop Linux:</p>
-<ul>
-<li>Right click a game, go to Properties.</li>
-<li>Compatibility on the left.</li>
-<li>Make sure the tickbox is done, then select Proton Experimental from the dropdown.</li>
-</ul>
-<p><em>Let me know what you think in the comments.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/proton-experimental-brings-more-hdr-steam-overlay-hack-for-easy-anti-cheat-from-eos/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/proton-experimental-brings-more-hdr-steam-overlay-hack-for-easy-anti-cheat-from-eos/</guid>
-      <pubDate>Wed, 20 Dec 2023 22:32:18 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/334375571id23769gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Open Source</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>You can finally hide your naughty games on Steam</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve released a Steam Beta update to bring in some tweaks to the shopping cart, and finally allowing you to properly set certain games as private so no one can snoop on your gaming habits.</p>
-<p>For the shopping cart there's these new features:</p>
-<blockquote>
-<ul>
-<li>
-<div class="bbcodes_Bold_1opdq">Inline gifting - just in time for the holidays, you can now purchase gifts for multiple friends (and yourself) without having to make multiple purchases. Plus gift messaging has been simplified to speed up the checkout process.</div>
-</li>
-<li>
-<div class="bbcodes_Bold_1opdq">One cart across all devices - items in your shopping cart will now follow you across all devices where you're signed in to Steam. Note that during the beta, the cart will only be accessible within the beta client.</div>
-</li>
-<li>
-<div class="bbcodes_Bold_1opdq">Private purchasing - keeping your games private starts before you even make a purchase, so the new cart lets you mark a game as private before you check out.</div>
-</li>
-</ul>
-</blockquote>
-<p>The private feature isn't just for when purchasing though. You can also, once updated, set individual games as private so they will disappear for everyone else. That includes hiding your ownership, in-game status, playtime, and activity in that game. At last, you can <em>finally</em> enjoy all your <em>naughty</em> games in total peace.</p>
-<p>All you have to do is right click -&gt; manage -&gt; mark as private in your Steam Library. Either in the games list, or on the bigger box-art pictures in the main part of your library.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10509489581703109828gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10509489581703109828gol1.jpg"/></a></p>
-<p>You can do the same on Steam Deck if you're in the beta. Just go into the properties -&gt; manage -&gt; mark as private on any game in your library anywhere:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4317617651703110102gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4317617651703110102gol1.jpeg"/></a></p>
-<p>See the <a href="https://steamcommunity.com/games/593110/announcements/detail/3901870709962551196" target="_blank">news post here</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/you-can-finally-hide-your-naughty-games-on-steam/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/you-can-finally-hide-your-naughty-games-on-steam/</guid>
-      <pubDate>Wed, 20 Dec 2023 22:08:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>MineClone2 &#39;The Fire and Stone release&#39; is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>MineClone2 is a free and open source survival sandbox game built to resemble Minecraft on the Minetest game engine, and their latest release Fire and Stone is out now.</p>
-<p>This update includes numerous enhancements to the gameplay including the Stonecutter now actually being usable so you can "cut every kind of stone into slabs, stairs, and decorated variants with unprecedented ease". Campfires can now cook items and you can see it being done too which sounds fun. Fancy a little customization? Armour can now be decorated with colourful gems and metals, there's improvements to the AI of various mobs and various other improvements found in the <a href="https://git.minetest.land/MineClone2/MineClone2/src/branch/master/releasenotes/0_85-the_fire_and_stone_release.md" target="_blank">release notes</a>.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13678666291703086397gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13678666291703086397gol1.png"/></a></p>
-<p>This update actually came a few days after the <a href="https://www.gamingonlinux.com/2023/12/minetest-580-is-out-now-with-improved-settings-minetest-game-no-longer-default/" target="_blank">latest Minetest update</a>! How to get it? Simply install Minetest and then look for MineClone2 in the Content -&gt; Browse Online Content section.</p>
-<p>You can also see more info on the <a href="https://content.minetest.net/packages/Wuzzy/mineclone2/" target="_blank">ContentDB page</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/mineclone2-the-fire-and-stone-release-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/mineclone2-the-fire-and-stone-release-is-out-now/</guid>
-      <pubDate>Wed, 20 Dec 2023 15:38:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1714841821id23767gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Casual</category>
-      
-      <category>Free Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Streets of Rogue 2 might be my most anticipated title for 2024</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I spent a ridiculous amount of time running around the small levels in Streets of Rogue, it was absolutely brilliant chaos and Streets of Rogue 2 going open-world is looking mighty fine in this first developer video.</p>
-<p>What exactly is it? Streets of Rogue 2 gives you an open-world where practically anything is possible. You'll be able to play solo or with a few friends online to "embark on a wild adventure to take down a corrupt president – any way you want". In the video developer Matt Dabrowski goes over all the inspiration like AAA games from Rockstar, Bethseda and Ubisoft to survival crafting games like Minecraft and Valheim with a sprinkle of the freedom from Dwarf Fortress and Cataclysm Dark Days wrapped up in an interface that's welcoming and accessible so anyone can pick up. It's also more than 10,000 times bigger than a level from the first game with a fully destructible environment.</p>
-<p>Developer Dabrowski notes in the video it's clearly still a work in progress, with their chat going over various bits of the game and plenty of footage we've not seen until now.</p>
-<p>Check out their video below:</p>
-<div class="hidden_video" data-video-id="Mc0r7QddldI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5e9c533189b199497b49554eee1e40b0.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Mc0r7QddldI" target="_blank">See video</a></div></div>
-<p>I absolutely love everything explained in the video, especially as another busy person, jumping into other open-world games is often too time-consuming and Streets of Rogue 2 looks like it will be fun and chaos from the moment you jump in. Exactly what I want to see and I've no doubt this will end up being one of 2024's most popular games — and one I'm certainly hyped to try.</p>
-<p>As far as I know it's going to have Native Linux support like the first game.</p>
-<p>You can follow <a href="https://store.steampowered.com/app/2165810/Streets_of_Rogue_2/" target="_blank">Streets of Rogue 2 on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/streets-of-rogue-2-might-be-my-most-anticipated-title-for-2024/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/streets-of-rogue-2-might-be-my-most-anticipated-title-for-2024/</guid>
-      <pubDate>Wed, 20 Dec 2023 14:24:11 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/381642796id23766gol.jpg" type="image/jpeg"/>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Open World</category>
-      
-      <category>Pixel Graphics</category>
-      
-    </item>
-    
-    <item>
-      <title>Vulkan API update brings Video Extensions for Accelerated H.264 and H.265 Encode</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The Khronos Group have announced the release of the Vulkan 1.3.274 API, which brings with it the finalized extensions for encoding and decoding of video streams using a variety of video coding standards.</p>
-<p>It was back in April 2021 that the provisional extensions were released as "Vulkan Video", and later in December 2022 with Vulkan 1.3.238 they finalized the decode extensions for H.264 and H.265. Now with Vulkan 1.3.274 the counterpart extensions to enable encoding H.264 and H.265 are available.</p>
-<p>"Leveraging the Vulkan framework, they provide a standardized, seamless, low-overhead, and highly controllable way to produce H.264 and H.265 video via hardware accelerators, with applications ranging from real-time, low-latency streaming to offline server-scale transcoding."</p>
-<p>Details about the Vulkan Video API extensions at the below links::</p>
-<ul>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_queue.html" target="_blank">VK_KHR_video_queue</a></li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_decode_queue.html" target="_blank">VK_KHR_video_decode_queue</a></li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_decode_h264.html" target="_blank">VK_KHR_video_decode_h264</a></li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_decode_h265.html" target="_blank">VK_KHR_video_decode_h265</a></li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_encode_queue.html" target="_blank">VK_KHR_video_encode_queue</a></li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_encode_h264.html" target="_blank">VK_KHR_video_encode_h264</a></li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_encode_h265.html" target="_blank">VK_KHR_video_encode_h265</a></li>
-<li><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_video_maintenance1.html" target="_blank">VK_KHR_video_maintenance1</a></li>
-</ul>
-<p>NVIDIA already have <a href="https://developer.nvidia.com/vulkan-driver" target="_blank">Beta driver 535.43.22</a> out with expanded support, while work on AMD / Intel continues.</p>
-<p>Read the <a href="https://www.khronos.org/blog/khronos-finalizes-vulkan-video-extensions-for-accelerated-h.264-and-h.265-encode" target="_blank">full blog post here</a>. The ongoing status of Vulkan Video can be seen on <a href="https://github.com/KhronosGroup/Vulkan-Docs/issues/2284" target="_blank">GitHub</a>.</p>
-<p>Nice to see the modern Vulkan API continue to evolve for the needs of modern developers across all industries. Hopefully this will improve video across the Linux desktop and gaming too.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/vulkan-api-update-brings-video-extensions-for-accelerated-h264-and-h265-encode/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/vulkan-api-update-brings-video-extensions-for-accelerated-h264-and-h265-encode/</guid>
-      <pubDate>Wed, 20 Dec 2023 13:52:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/vulkan.png" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-      <category>Vulkan</category>
-      
-    </item>
-    
-    <item>
-      <title>Enter the mind of a game dev on the brink in The Prisoning: Fletcher&#39;s Quest</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Elden Pixels who previously made Alwa's Awakening and <a href="https://www.gamingonlinux.com/2020/06/alwas-legacy-is-an-incredibly-charming-retro-action-adventure-out-now/" target="_blank">Alwa's Legacy</a>, and who are also working on <a href="https://www.gamingonlinux.com/2023/06/a-void-hope-looks-like-a-fun-atmospheric-adventure-with-a-synthwave-soundtrack/" target="_blank">A Void Hope</a> also just announced The Prisoning: Fletcher's Quest. Looks and sounds like a good one for classic metroidvania fans here!</p>
-<p>"The Prisoning: Fletcher’s Quest is a procedurally generated metroidvania where you enter a game developer’s mental prison after an intense project (totally based on a real story). Take control of his dream persona Fletcher, a slightly overweight 43 year old divorcee, craft beer enthusiast and cowboy hat-wearer and escape the mental prison to save the day!"</p>
-<div class="hidden_video" data-video-id="EEMSYDApSCk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/60e044c87d0be9b902a301777e0b046c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/EEMSYDApSCk" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Progress through randomized levels.</li>
-<li>Defeat or befriend gang leaders.</li>
-<li>Upgrade weapons, defeat bosses, find collectibles and all that jazz.</li>
-</ul>
-</blockquote>
-<p>You can follow <a href="https://store.steampowered.com/app/2725470/The_Prisoning_Fletchers_Quest/" target="_blank">The Prisoning: Fletcher's Quest on Steam</a>.</p>
-<p>It will release in 2024 with Native Linux support just like their previous games.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2023/12/enter-the-mind-of-a-game-dev-on-the-brink-in-the-prisoning-fletchers-quest/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2023/12/enter-the-mind-of-a-game-dev-on-the-brink-in-the-prisoning-fletchers-quest/</guid>
-      <pubDate>Wed, 20 Dec 2023 13:17:41 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/903002466id23764gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Metroidvania</category>
-      
-      <category>Pixel Graphics</category>
       
     </item>
     
