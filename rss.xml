@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-01-29 07:22:23.405663</pubDate>
+    <pubDate>2024-01-30 07:23:12.013696</pubDate>
 
     
     <image>
@@ -18,6 +18,347 @@
     </image>
 
     
+    
+    <item>
+      <title>Building a Retro Linux Gaming Computer Part 38: The Stagnant Demesne</title>
+      <author>Hamish</author>
+      <description><div class="content group e-content">
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<p><strong>Continued from <a href="https://www.gamingonlinux.com/2023/12/building-a-retro-linux-gaming-computer-part-37-dashing-through-the-snow/" target="_blank">Part 37: Dashing Through the Snow</a></strong></p>
+<p></p>
+<p>When I first got the original Linux port of <em>Doom</em> working it was done to satisfy my curiosity, as at that point, I had no intention of playing through the whole game yet again. This being <em>Doom</em> though I soon found myself drawn in, and before long I was back facing the Icon of Sin at the end of <em>Doom II</em>. There were some oddities I encountered. I was unable to complete "E4M6: Against Thee Wickedly" without the no clipping cheat, as the bars blocking the exit failed to rise even after defeating the Cyberdemon.</p>
+<p><em>The Ultimate Doom</em> was only supported on Linux through the use of a fan patch, but <em>Doom II</em> proved buggier. While perched on a ledge towards the end of "MAP14: The Inmost Dens" I saved, causing me to clip into the floor on reload. Then there was that one area in "MAP24: The Chasm" that segfaulted every time I entered it. Finally the boss battle on "MAP30: Icon of Sin" broke when I loaded my save file, with no new enemies spawning in allowing me to snipe the demon's brain at my leisure.</p>
+<p>Most documentation on this bug suggests the game should instead crash, but I was able to continue playing and win the game. Doubtless none of these problems would have happened had I been using LxDoom, which also has proper binary compatibility with <em>Final Doom</em>, but it was more interesting this way. This also made me inclined to try playing all of <em>Heretic</em> and <em>HeXen</em>, a feat I had never managed up to that point. Would I encounter any more issues with these early source ports?</p>
+<p>Andre Werthmann's Linux Heretic proved solid with just a couple of exceptions. Every time I reached one of the boss levels the soundscape descended into a cacophony that could not be tamed even by fiddling with the volume slider in the sound settings. The only solution I found was going outside of the game to lower the system volume from Aumix, and then raising the volume slider inside <em>Heretic</em> to compensate as best I could. This did not break the game, but it did make things unpleasant.</p>
+<p>The other snag I encountered was with moving platforms that loop the "stnmov" sound effect, as they could also cause all of the other sound effects in the vicinity to break. This only came up a few times during the course of the campaign, but it created a great deal of chaos with the crushers in the starting room of "E4M3: Ambulatory". I notice that the Linux <em>Doom</em> source code has a function that forces the "stnmov" sound among others to play one at a time, but Linux Heretic lacks this.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4763627131706556764gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/4763627131706556764gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6185772191706556766gol6.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/6185772191706556766gol6.png"/></a></p>
+<p>Beyond that I just have a few gripes with a couple of the changes that Werthmann made, the most irksome being the decision to remap the keys used to scroll through the inventory to "K" and "L" as opposed to the square brackets that are still listed on the help screen. Thankfully this can be reversed by uncommenting the "-DORIG_INVKEYS" flag in the Makefile while building your own Linux Heretic binaries. I also disabled the text blurb on launch by removing it from the d_main.c file.</p>
+<p>My abiding observation of <em>Heretic</em> is that it is the rare shareware game where the second and third episodes are in fact greater than the first. It was from here that I was having enough fun to bother looking for all of the marked secrets, which was the right move; getting familiar with how Raven Software likes to hide secret areas and how to read the automap becomes a necessary skill for solving the puzzle hubs in <em>HeXen</em>, but the automap colour scheme does leave something to be desired.</p>
+<p>This goodwill sadly does not carry through to the final two retail expansion episodes, which descend into tedium far too quickly. "E4M1: Catafalque" gives "E4M1: Hell Beneath" from Thy Flesh Consumed a run for its money in terms of punishing the player, giving as unwelcoming an introduction as you could ever hope to find. Beyond that the expansion just becomes a slog, having nothing new other than the sheer vastness of the hordes of monsters on offer to bring to the table.</p>
+<p>The drawn out Maulotaur fights can at least be subverted by using the Tome of Power and the Gauntlets of the Necromancer to leech off the Maulotaur's health, cushioning his blows to the point you just have to hold down the fire key and wait. You will also develop a special hatred of the Ophidians by the end of the campaign, a role the Slaughtaurs in <em>HeXen</em> are more than happy to fill come the sequel; the Disciples of D'Sparil though are far more aggravating than the Bishops in <em>HeXen</em> could ever aspire.</p>
+<p>Perhaps it was just due to my lack of prior exposure, but the <em>Heretic</em> soundtrack also seemed to carry over to "VoxWare Synth" even better than the <em>Doom</em> music did, although this may just be due to the work of composer Kevin Schilder being more blaring and bombastic than what Bobby Prince came up with. Kevin Schilder would return to craft the MIDI soundtrack for <em>HeXen</em>, and thanks to an unassuming tarball on an archived website, I will get to actually experience that under Linux.</p>
+<p><strong>Carrying on in Part 39: Beyond Heretic</strong></p>
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<p></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/building-a-retro-linux-gaming-computer-part-38-the-stagnant-demesne/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/building-a-retro-linux-gaming-computer-part-38-the-stagnant-demesne/</guid>
+      <pubDate>Mon, 29 Jan 2024 19:40:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/972447722id23920gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Editorial</category>
+      
+      <category>Hardware</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Eidos-Montréal cut nearly 100 staff with new Deus Ex reportedly cancelled</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Hopes for a new Deus Ex have been dashed, with the Embracer Group owned Eidos-Montréal confirming that they've cut 97 people go as the mass-layoffs continue. This is just another in a long list of developers and publishers cutting staff and cancelling projects, all while the Embracer Group try to reduce their costs. It's also another in a long list of just industry-wide layoffs lately.</p>
+<p>Confirming the staff news <a href="https://twitter.com/EidosMontreal/status/1752027685293801632" target="_blank">on X</a> in an image post below:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20070624461706555850gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20070624461706555850gol1.png"/></a><br/>
+<em>Image Credit: Eidos-Montréal</em></p>
+<p>Here's the text if you have trouble reading the image:</p>
+<blockquote>
+<p>For the last 17 years, our teams at Eidos have worked on some of the most beloved brands in the industry, combining deep storytelling and innovation into unique games. We have created memorable multi awarded experiences that we are proud of and we know our teams members have put their heart and soul in all of them.</p>
+<p>The global economic context, the challenges of our industry and the comprehensive restructuring announced by Embracer have finally impacted our studio. The difficult decision has been made to let go 97 people from development teams, administration, and support services.</p>
+<p>We are working to support all impacted personnel through this transition. These very talented, highly experienced people are entering the employment market, and we want them to find their next projects and are helping to do so.</p>
+<p>As we navigate these difficult times, the well-being of our team is our priority and the continuous commitment to creating games that players will be able to enjoy in the nearby future.</p>
+<p>To our players... it's often times not just the games but the game makers as well that we all celebrate and admire. Our commitment is always to making the best games for our amazing fans and even with this restructuring change, we continue to fight on to deliver those awesome experiences for us to share together. Thank you for your continuing support and well wishes.</p>
+</blockquote>
+<p>While they didn't say anything about a new Deus Ex game being canned, <a href="https://www.bloomberg.com/news/articles/2024-01-29/embracer-group-cancels-deus-ex-video-game" target="_blank">Bloomberg</a> originally reported on it today that claims the new game was already two years into development.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/eidos-montreal-cut-nearly-100-staff-with-new-deus-ex-reportedly-cancelled/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/eidos-montreal-cut-nearly-100-staff-with-new-deus-ex-reportedly-cancelled/</guid>
+      <pubDate>Mon, 29 Jan 2024 19:23:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2000563752id23919gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>First world war turn-based strategy RPG &#39;All Quiet in the Trenches&#39; hits Early Access</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Here's something a little different for you: All Quiet in the Trenches recently hit Early Access on Steam, blending together a narrative turn-based strategy RPG with a first world war setting. It has Native Linux support but no Steam Deck rating just yet.</p>
+<p>More about it: "In the game, you're playing as a German Unteroffizier - a sergeant - on the Western Front of World War One. You're responsible for a handful of soldiers and have to make meaningful decisions. You lead them in battle trying to strike a precarious balance between the ambitions of your superiors and the survival of your men. Your actions will not change the war. They will however change the lives of your soldiers. You cannot win, but maybe they can survive."</p>
+<div class="hidden_video" data-video-id="mF16Xw-9K3w"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5995696edd96bc3866d9519a15e95a8e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/mF16Xw-9K3w" target="_blank">See video</a></div></div>
+<p>The developer, Totally Not Aliens, are based in Bamberg, Germany and say it's meant to be taken as an anti-war game. They plan to keep it in Early Access for 1-2 years as they expand it to cover up to the end of the war in November 1918 with it currently having from early 1915 to early 1916.</p>
+<p>Check it out on <a href="https://store.steampowered.com/app/863500/All_Quiet_in_the_Trenches/" target="_blank">the Steam page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/first-world-war-turn-based-strategy-rpg-all-quiet-in-the-trenches-hits-early-access/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/first-world-war-turn-based-strategy-rpg-all-quiet-in-the-trenches-hits-early-access/</guid>
+      <pubDate>Mon, 29 Jan 2024 17:26:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1322661617id23918gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Never Grave from the Palworld developer looks a lot like Hollow Knight</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Pocketpair formed another studio called Frontside 180 that are working on Never Grave: The Witch and The Curse, which looks a whole lot like Hollow Knight. This might ease the wait for Silksong huh?</p>
+<p>While it may look a lot like Hollow Knight for the style it's actually quite a different game overall. Plenty of elements of it feel like Dead Cells, but there's a hint of Skul: The Hero Slayer with a possession mechanic too and there's even a whole village-building element to it. There's also going to be online co-op support for up to 4 players. Overall it does actually look quite good:</p>
+<div class="hidden_video" data-video-id="rE6bcrTWOVo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c26f23b9b997193a9fc19ea53e53f26e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/rE6bcrTWOVo" target="_blank">See video</a></div></div>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li>Metroidvania x Roguelite with an emphasis on exploration.</li>
+<li>Sophisticated and tactilely designed player character controls.</li>
+<li>Possession system where hats can possess enemies and use their unique abilities.</li>
+<li>Traditional Japanese hand-drawn limited animation is used for character 2D animation.</li>
+<li>Thickly painted backgrounds with depth, as if you are travelling through a world of picture books and cut-out pictures.</li>
+<li>Learn actions such as double-jump from artefacts to explore new areas.</li>
+<li>Constantly changing play style depending on the synergy of "traits" associated with magic and items.</li>
+<li>Intense battles with tough bosses. It will take more than just memorizing boss patterns to defeat them without taking damage...</li>
+<li>Rebuild your village. Strengthen yourself through building and production to prepare for the next adventure.</li>
+<li>Explore different terrain each time you play through procedurally generated dungeons.</li>
+<li>Multiplayer support. Up to four players can delve into the dungeon together!</li>
+</ul>
+</blockquote>
+<p>Due to enter Early Access sometime in Q1 2024. This will make Pocketpair's 4th game to be in Early Access following Craftopia, AI: Art Impostor and Palworld that are all currently in development.</p>
+<p>There's a demo available now which in my testing seemed to work quite well on Desktop Linux with Proton 8.0-5.</p>
+<p>Check it <a href="https://store.steampowered.com/app/2395770/Never_Grave_The_Witch_and_The_Curse/" target="_blank">out on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/never-grave-from-the-palworld-developer-looks-a-lot-like-hollow-knight/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/never-grave-from-the-palworld-developer-looks-a-lot-like-hollow-knight/</guid>
+      <pubDate>Mon, 29 Jan 2024 13:21:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1359040265id23917gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>KONAMI update the METAL GEAR SOLID Steam collection with Steam Deck support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>As KONAMI continue to improve the recent releases of METAL GEAR SOLID - Master Collection Version, METAL GEAR SOLID 2: Sons of Liberty - Master Collection Version and METAL GEAR SOLID 3: Snake Eater - Master Collection Version they've now added Steam Deck support.</p>
+<p style="text-align:center"><em><img src="https://uploads.golmedia.net/uploads/articles/article_media/6001752471706529403gol1.jpg"/><br/>
+Pictured - METAL GEAR SOLID 2: Sons of Liberty - Master Collection Version, Credit: Konami</em></p>
+<p>Currently, only 2 and 3 have been updated to note it, but the 1st may not be far behind.</p>
+<p>METAL GEAR SOLID 2: Sons of Liberty - Master Collection Version and METAL GEAR SOLID 3: Snake Eater - Master Collection Version have updates that note:</p>
+<blockquote>
+<p>Ver.1.4.1/Ver.1.4.1D releases Jan. 29th, 2024.<br/>
+The version for users playing on Steam Deck™ will be noted as Ver.1.4.1D in the game.</p>
+<p>Ver.1.4.1/Ver.1.4.1D Patch Notes<br/>
+Please check the list of changes below for details on the main improvements and fixes in this patch.<br/>
+Fixes of previously known issues are marked with an asterisk.</p>
+<p>- Added Steam Deck™ support</p>
+<p>-  Fixed an issue where inputs via the keyboard were registered for the game even when the Alt key was held down*</p>
+<p>- Fixed some other minor issues</p>
+</blockquote>
+<p>It's not clear <em>exactly</em> what they've done for Steam Deck support, as annoyingly they don't say. Although we can see on SteamDB (<a href="https://steamdb.info/app/2131650/depots/" target="_blank">example</a>) that they now have dedicated content depots for the Steam Deck so they've likely tweaked some in-game resources to work better. Valve has also put them back through verification and they're now showing up as Deck Verified.</p>
+<p>Where to buy</p>
+<p>METAL GEAR SOLID - Master Collection Version - <a href="https://www.humblebundle.com/store/metal-gear-solid-master-collection-version?partner=gamingonlinux" target="_blank">Humble Store</a> / <a href="https://store.steampowered.com/app/2131630/METAL_GEAR_SOLID__Master_Collection_Version/" target="_blank">Steam</a></p>
+<p>METAL GEAR SOLID 2: Sons of Liberty - Master Collection Version - <a href="https://www.humblebundle.com/store/metal-gear-solid-2-sons-of-liberty-master-collection-version?partner=gamingonlinux" target="_blank">Humble Store</a> / <a href="https://store.steampowered.com/app/2131640/METAL_GEAR_SOLID_2_Sons_of_Liberty__Master_Collection_Version/" target="_blank">Steam</a></p>
+<p>METAL GEAR SOLID 3: Snake Eater - Master Collection Version - <a href="https://www.humblebundle.com/store/metal-gear-solid-3-snake-eater-master-collection-version?partner=gamingonlinux" target="_blank">Humble Store</a> / <a href="https://store.steampowered.com/app/2131650/METAL_GEAR_SOLID_3_Snake_Eater__Master_Collection_Version/" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/konami-update-the-metal-gear-solid-steam-collection-with-steam-deck-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/konami-update-the-metal-gear-solid-steam-collection-with-steam-deck-support/</guid>
+      <pubDate>Mon, 29 Jan 2024 11:56:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1320570922id23916gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>Adventure</category>
+      
+    </item>
+    
+    <item>
+      <title>GE-Proton 8-28 released with ULWGL support for non-steam games</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>We recently had the announcement of the new <a href="https://www.gamingonlinux.com/2024/01/unified-linux-wine-game-launcher-aims-to-improve-windows-games-on-linux-steam-deck/" target="_blank">Unified Linux Wine Game Launcher (ULWGL) project</a>, and now GE-Proton has been upgraded to make use of it with GE-Proton 8-28 out now.</p>
+<p>This is the version of Proton built by the community and not supported by Valve. Sometimes needed for specific games, before Valve fix them up in the official Proton. It's generally advisable to stick with the official Valve Proton unless you need the fixes in GE-Proton for specific games.</p>
+<p>Main additions:</p>
+<blockquote>
+<ul>
+<li>fixed <code class="inline-code">[S_API FAIL] SteamAPI_Init() failed; no appID found.</code> from being reported when running non-steam games</li>
+<li>non-steam games will now run using wine inside proton rather than calling steam.exe with wine then the game inside steam -- this goes alongside the API failure fix</li>
+<li>controller axis patch added from 8-27 has been removed as it is now properly upstreamed</li>
+<li>added ULWGL support for non-steam games (<a href="https://github.com/Open-Wine-Components/ULWGL" target="_blank">https://github.com/Open-Wine-Components/ULWGL</a>)</li>
+<li>beamng VR patch removed per request by developers, they have stated they will fix the issue in 0.32 (<a href="https://www.beamng.com/threads/experimental-virtual-reality.94206/page-27#post-1674152" target="_blank">https://www.beamng.com/threads/experimental-virtual-reality.94206/page-27#post-1674152</a>)</li>
+<li>black desert online now works</li>
+<li>wine updated to latest bleeding edge</li>
+<li>dxvk updated to latest git</li>
+<li>vkd3d-proton updated to latest git</li>
+</ul>
+</blockquote>
+<p>Proton Fixes changes:</p>
+<blockquote>
+<ul>
+<li>now using ULWGL-protonfixes</li>
+<li>can now call the winetricks gui using util.protontricks('gui')</li>
+<li>winetricks now performs an internet check before attempting any downloads</li>
+<li>fixed long standing issue with protontricks not being able to install dotnet4* using anything newer than proton 5. works now and no longer requires proton 5.</li>
+<li>fixed dll overwrites in winetricks, no longer need to maintain a massive list of specific overwriteable dlls in proton</li>
+<li>protonfixes added for Catherine Classic -- videos now fully working</li>
+<li>protonfixes added for Ys Origin -- videos now fully working</li>
+<li>protonfixes for Age of Wonders -- videos now fully working</li>
+<li>protonfixes added for Model 2 emulator</li>
+<li>protonfixes added for Alien Breed: Impact</li>
+<li>protonfixes added for Alien Breed 2: Assault</li>
+<li>protonfixes added for Alien Breed 3: Descent</li>
+<li>protonfixes added for Black Desert Online NOSTEAM=1 option. Launch game like <code class="inline-code">NOSTEAM=1 %command%</code> to launch non-steam standalone version.</li>
+</ul>
+</blockquote>
+<hr/>
+<p>Here's a text guide on how to install GE-Proton.</p>
+<p><strong>Download ProtonUp-Qt</strong></p>
+<p>For Steam Deck, make sure you're in Desktop Mode. Steam Button -&gt; Power - Switch to Desktop.</p>
+<ul>
+<li><u>Steam Deck</u> / <u>KDE Plasma</u> - Open the Discover store, in the search box (top left) type in "ProtonUp-Qt", click it and hit Install (top right). Alternatively on Steam Deck if you have <a href="https://www.gamingonlinux.com/2023/01/decky-loader-makes-steam-deck-plugins-even-easier-with-new-installer/" target="_blank">Decky Loader</a>, you can also try the "Wine Cellar" plugin.</li>
+<li><u>Manual install</u> / <u>GNOME</u> - head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>. On GNOME desktops, you can also download via GNOME Software.</li>
+</ul>
+<p><strong>Using ProtonUp-Qt:</strong></p>
+<ul>
+<li>Launch ProtonUp-Qt.</li>
+<li>Make sure it's set to Steam at the top and select to install GE-Proton.</li>
+<li>Reload Steam to update the compatibility layer list.</li>
+<li>In Steam:
+<ul>
+<li><u>Desktop</u>: right click a game and go to Properties.</li>
+<li><u>Steam Deck</u> / <u>Big Picture Mode</u>: find the game in your library, go to the little cog on the right and then select Properties.</li>
+</ul>
+</li>
+<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down menu.</li>
+</ul>
+<p>My original video of how to do it on Steam Deck:</p>
+<div class="hidden_video" data-video-id="6doaQNnHR60"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37b4fc871ab3188f385a1c60a2e0949c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6doaQNnHR60" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/ge-proton-8-28-released-with-ulwgl-support-for-non-steam-games/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/ge-proton-8-28-released-with-ulwgl-support-for-non-steam-games/</guid>
+      <pubDate>Mon, 29 Jan 2024 11:22:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>The original SteamOS-like Linux distro HoloISO now dead, replaced with immutable version</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After a while of no updates to the actual ISO download of HoloISO, the creator of this SteamOS-like Linux distribution has announced the original is now dead. As it's being replaced by the newer immutable HoloISO.</p>
+<p>The developer put up a <a href="https://github.com/HoloISO/holoiso/releases/tag/6-psa" target="_blank">PSA</a> (public service announcement) on the original HoloISO GitHub page, and archived it so it will no longer see any updates at all and you cannot get support for it. They said the new immutable HoloISO is now "ready to be used as a daily-driving distribution".</p>
+<p>What is an immutable operating system? Think like SteamOS and Fedora Silverblue. The idea is to give a read-only filesystem that gets replaced on updates. It's supposed to keep things more secure and stable, plus easier updates since it just replaces the main system.</p>
+<p>HoloISO itself is designed to give you a close-enough version of SteamOS to use on other systems, and so the new immutable HoloISO should <em>hopefully</em> be more reliable. <em>It's what AYANEO were going to put on the AYANEO NEXT LITE but <a href="https://www.gamingonlinux.com/2024/01/ayaneo-next-lite-no-longer-ships-with-steamos-like-holoiso-linux-windows-11-instead/" target="_blank">they've since backtracked</a>.</em></p>
+<p>There's no current way to upgrade an existing HoloISO system to the new way it's run, but the developer mentioned they're currently figuring out the best approach to it.</p>
+<p>New releases will be on <a href="https://github.com/holoiso-staging/releases" target="_blank">this GitHub</a> with issues reporting on a <a href="https://github.com/holoiso-staging/issuetracker" target="_blank">separate GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/the-original-steamos-like-linux-distro-holoiso-now-dead-replaced-with-immutable-version/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/the-original-steamos-like-linux-distro-holoiso-now-dead-replaced-with-immutable-version/</guid>
+      <pubDate>Mon, 29 Jan 2024 11:14:35 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1647554559id23914gol.jpg" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>SteamOS-like ChimeraOS 45 released with HDR &amp; controller support for many more handhelds</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>ChimeraOS is a top choice for people who want a SteamOS-like Linux distribution to run on gaming handhelds, or a couch gaming PC. The latest release is out now with ChimeraOS 45 bringing big changes.</p>
+<p>The developer mentioned it took extra long since the Steam Deck OLED had released and that "many changes in gamescope and Steam that caused unexpected behavior in a lot of devices". So they needed time to go through all the issues.</p>
+<p>This release comes with Linux kernel 6.6.10, Mesa 23.3.3 and has Open Gamepad UI v0.28.0-3. Some of the other big inclusions in this release:</p>
+<blockquote>
+<ul>
+<li>Implemented HDR for supported games.</li>
+<li>Kernel carries patches made by our awesome community, thanks everyone!</li>
+<li>Redesigned the gamescope-session package to simplify implementing quirks and bug fixes across all sessions. All sessions now use a common session script and device-quirks file. The session names have changed as well, so when downgrading from v45 to v44-1 and below, a chimera-session command is required. Upgrading should have no issues. <code class="inline-code">gamepadui</code> is now <code class="inline-code">steam</code>, <code class="inline-code">gamepadui-with-qam</code> is now <code class="inline-code">steam-plus</code>. The log for each session is now <code class="inline-code">~/.<session-name>-stdout.log</session-name></code>.</li>
+<li>Included distrobox for awesome new possibilities.</li>
+<li>Removed Feral <code class="inline-code">gamemode</code> daemon.</li>
+<li>Added cpupower CLI tool for managing cpu power profiles.</li>
+<li>Added controller support for AYANEO Kun, AYANEO Slide, Lenovo Legion Go, OXP OneXFly, OXP 2, OXP2 Pro, AYN Loki MiniPro, and GPD Win Mini.</li>
+<li>Added optional event configuration for HandyGCCS that supports putting the controller into "Nintendo" mode. Users will need to manually edit their handygccs.conf to enable this.</li>
+<li>Added EDID override for the AIR plus that enables more refresh rates. Enable firmware overrides to use this.</li>
+<li>Added equalizer settings for Lenovo Legion Go and ROG Ally that drastically improves the sound stage. For both devices, a new "device" will be present in the audio menu. Ensure the default audio device is at maximum volume before switching for the best performance.</li>
+<li>Enabled the hid-steam driver. Steam Deck and Steam Controller users can now use their controllers on the desktop in "Lizard Mode", emulating a keyboard and mouse automatically.</li>
+<li>Enabled Vulkan support for some older intel iGPU's. YMMV.</li>
+<li>Added PowerStation Daemon to manage power settings and switched OpenGamepadUI to using it as a backend. Changing settings and loading power profiles in OpenGamepadUI should now be much faster and more reliable.</li>
+<li>Improved support in OpenGamepadUI for PlayStation controllers. This change may cause duplicate input devices in some situations. If this occurs, manually update to v0.29.2 or above using the settings menu in OpenGamepadUI.</li>
+</ul>
+</blockquote>
+<p style="text-align: center;"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10173167921706525552gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10173167921706525552gol1.jpg"/></a><br/>
+Steam Big Picture Mode</em></p>
+<p><strong>Bug Fixes:</strong></p>
+<blockquote>
+<ul>
+<li>Added support for ROG Ally BIOS 330+. The ROG Ally no longer needs firmware overrides for audio to work on any BIOS version.</li>
+<li>Removed xpadneo and xone drivers and replaced them with xpad and created xonedo (xone dongle only) for managing xinput devices. This should resolve many of the input related bugs users were experiencing.</li>
+<li>Fixed night mode.</li>
+<li>Fixed game artwork overrides not being applied in some cases.</li>
+<li>Fixed error in the Chimera web app when Epic Games credentials expire.</li>
+<li>Fixed multiple crash conditions in HandyGCCS.</li>
+<li>Various fixes for devices that don't detect as "card0" have been made.</li>
+<li>Fixed some scripting errors in controller-wake. This is still disabled by default. If you have this enabled and are experiencing issues with sleep, try disabling it.</li>
+<li>Fixed an issue with some network cards.</li>
+</ul>
+</blockquote>
+<p>See the <a href="https://github.com/ChimeraOS/chimeraos/wiki/Release-Notes#chimeraos-45-2024-01-27" target="_blank">full release notes</a> for more and the <a href="https://chimeraos.org" target="_blank">official site</a>.</p>
+<p>Have you been using ChimeraOS on your devices? Let me know what you think in the comments.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/01/steamos-like-chimeraos-45-released-with-hdr-controller-support-for-many-more-handhelds/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/steamos-like-chimeraos-45-released-with-hdr-controller-support-for-many-more-handhelds/</guid>
+      <pubDate>Mon, 29 Jan 2024 10:54:00 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1947723449id23913gol.jpg" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Wine 9.1 released starting off another year of development</title>
@@ -3881,400 +4222,6 @@ Live it up in Japan and explore all that Hawaii has to offer in an adventure so 
       <category>Misc</category>
       
       <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Cross-distribution support improvements coming for Canonical&#39;s Snap packages</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Well, 2024 should be interesting for Linux packaging! While many distributions use different packaging formats like deb, rpm and others there's also Flatpak for cross-distro support. But we also have Canonical's Snap - which is going to get <em>improved</em> cross-distro support.</p>
-<p>Writing on Mastodon, developer Zygmunt Krynicki <a href="https://mastodon.social/@zygoon@fosstodon.org/111703074889722934" target="_blank">mentioned</a> "I will be returning as a snap developer later this month. My main focus will be cross-distribution support. Unlike in the past this will be my full time job. I'm very excited for what is ahead for snaps.". It's interesting to see Canonical paying developers to work on this (and it's a good thing too)!</p>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2274750401704805502gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2274750401704805502gol1.jpg"/></a>Pictured - <a href="https://snapcraft.io/store" target="_blank">The Snap Store</a></em></p>
-<p>Packaging is always a real sore spot for Linux, and it leads to a fair amount of confusion. Just like with how many Linux distributions there are there's upsides and downsides to it though of course. You don't get innovation and improvements by always sticking to one single thing, and the power of open source is people can often just work on whatever they want.</p>
-<p>Still, it would be nice no matter what distribution of Linux you pick, if we can just tell people to "go here" to get whatever app it is they're after rather than having to do a support-dance to find out their specific distribution and version to see what's available to find out how they can grab something.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/cross-distribution-support-improvements-coming-for-canonicals-snap-packages/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/cross-distribution-support-improvements-coming-for-canonicals-snap-packages/</guid>
-      <pubDate>Tue, 09 Jan 2024 13:10:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1706077324id23819gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>OpenAI say it would be &#39;impossible&#39; to train AI without pinching copyrighted works</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I really fear for the internet and what it will become in even just another year, with the rise of AI writing and AI art being used in place of real people. And now OpenAI openly state they need to use copyrighted works for training material.</p>
-<p>As reported by <a href="https://www.theguardian.com/technology/2024/jan/08/ai-tools-chatgpt-copyrighted-material-openai" target="_blank">The Guardian</a>, the New York Times sued OpenAI and Microsoft over copyright infringement and just recently OpenAI sent a <a href="https://committees.parliament.uk/writtenevidence/126981/pdf/" target="_blank">submission</a> to the UK House of Lords Communications and Digital Select Committee where OpenAI said pretty clearly:</p>
-<blockquote>
-<p>Because copyright today covers virtually every sort of human expression– including blog posts, photographs, forum posts, scraps of software code, and government documents–it would be impossible to train today’s leading AI models without using copyrighted materials. Limiting training data to public domain books and drawings created more than a century ago might yield an interesting experiment, but would not provide AI systems that meet the needs of today’s citizens.</p>
-</blockquote>
-<p>Worth noting OpenAI put up their own news post "<a href="https://openai.com/blog/openai-and-journalism" target="_blank">OpenAI and journalism</a>" on January 8th.</p>
-<hr/>
-<p>Why am I writing about this here? Well, the reasoning is pretty simple. AI writing is (on top of other things) increasing the race to the bottom of content for clicks. Search engines have quickly become a mess to find what you actually want, and it's only going to continue getting <em>far worse</em> thanks to all these SEO (Search Engine Optimisation) bait content farms, with more popping up all the time, and we've already seen some bigger websites trial AI writing. The internet is a <em>mess</em>.</p>
-<p>As time goes on, and as more people use AI to pinch content and write entire articles, we're going to hand off profitable writing to a select few big names only who can weather the storm and handle it. A lot of smaller scale websites are just going to die off. Any time you search for something, it will be those big names sprinkled in between the vast AI website farms all with very similar robotic plain writing styles.</p>
-<p>Many (most?) websites make content for search engines, <em>not</em> for people. <a href="https://www.theverge.com/c/23998379/google-search-seo-algorithm-webpage-optimization" target="_blank">The Verge</a> recently did a rather fascinating piece on this showing how websites are designed around Google, and it really is something worth scrolling through and reading.</p>
-<p>One thing you can count on: my perfectly <em>imperfect</em> writing full of <em>terrible</em> grammar continuing without the use of AI. At least it's <em>natural</em> right? I write as I speak, for better or worse. By humans, for humans — a tagline I plan to stick with until AI truly takes over and I have to go find a job flipping burgers or something. But then again, there will be robots for that too. <em>I think I need to learn how to fish…</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/openai-say-it-would-be-impossible-to-train-ai-without-pinching-copyrighted-works/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/openai-say-it-would-be-impossible-to-train-ai-without-pinching-copyrighted-works/</guid>
-      <pubDate>Tue, 09 Jan 2024 12:47:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1174422406id23818gol.jpg" type="image/jpeg"/>
-      
-      <category>Editorial</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Unity cutting 25% of staff (about 1,800 people) as part of restructuring</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Ouch. We're only just into week 2 of 2024 and Unity Software are cutting away a huge amount of their staff, as things aren't looking great for the Unity game engine.</p>
-<p>As reported by <a href="https://www.reuters.com/technology/unity-software-cutting-25-staff-company-reset-continuation-2024-01-08/" target="_blank">Reuters</a> who picked up the <a href="https://www.sec.gov/ix?doc=/Archives/edgar/data/1810806/000181080624000006/unity-20240108.htm" target="_blank">filing</a>, Unity announced "it plans to reduce approximately 1,800 employee roles, or approximately 25% of its current workforce, as it restructures and refocuses on its core business, and to position itself for long-term and profitable growth".</p>
-<p>According to the interim CEO Jim Whitehurst: "We are reducing the number of things we are doing in order to focus on our core business and drive our long-term success and profitability".</p>
-<p>Plenty of this is still from the ongoing fallout of the <a href="https://www.gamingonlinux.com/2023/09/unity-attempt-to-clarify-new-install-fees-as-developers-revolt/" target="_blank">absolute mess</a> that was runtime fee, that caused <a href="https://www.gamingonlinux.com/2023/10/unity-ceo-john-riccitiello-is-leaving-effective-immediately/" target="_blank">John Riccitiello to leave as CEO</a>. </p>
-<hr/>
-<p>Unity is used by some of the most popular games around and according to SteamDB over 40,000 games on Steam use Unity. This includes hits like Vampire Survivors, Lethal Company, Hollow Knight, Valheim, Rust, Cities: Skylines, RimWorld and the list just goes on and on to name only a semi-recent popular few that you likely know of.</p>
-<p>Hopefully Unity will stabilise soon, because I can't imagine what the atmosphere is like to work there right now, imagine having all this like a black cloud over your head? With a probability of more to come as the restructuring continues. Game developers need things to calm down too, since many thousands rely on it for upcoming and existing games still being supported.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/unity-cutting-25-of-staff-about-1800-people-as-part-of-restructuring/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/unity-cutting-25-of-staff-about-1800-people-as-part-of-restructuring/</guid>
-      <pubDate>Tue, 09 Jan 2024 12:15:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/unity.png" type="image/jpeg"/>
-      
-      <category>Editorial</category>
-      
-      <category>Game Dev</category>
-      
-      <category>Game Engine</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>GE-Proton 8-26 and 8-27 released with various game fixes for Steam Deck / Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>GE-Proton has received two new versions with GE-Proton 8-26 and GE-Proton 8-27 shortly after, mostly focusing on fixing up issues in some games and pulling in new versions of various parts of Proton like Wine and DXVK.</p>
-<p>This is the community-made compatibility layer, so it's not supported by Valve, and should be used only really when you need it for specific games.</p>
-<p>The changes for GE-Proton 8-26 are:</p>
-<blockquote>
-<ul>
-<li>updated wine to bleeding edge</li>
-<li>updated dxvk to git</li>
-<li>updated vkd3d-proton to git</li>
-<li>updated dxvk-nvapi to latest upstream proton</li>
-<li>pulled in latest upstream proton bleeding edge changes</li>
-<li>added farlight 84 patch update</li>
-<li>VR fix for Beam.NG.Drive added (<a href="https://github.com/GloriousEggroll/proton-ge-custom/pull/106" target="_blank">#106</a> thanks gamingdoom)</li>
-<li>NVIDIA Reflex implemented (<a href="https://github.com/GloriousEggroll/proton-ge-custom/pull/104" target="_blank">#104</a> thanks loathingKernel)</li>
-</ul>
-<p>protonfixes:</p>
-<ul>
-<li>unified fix for cpu topology workaround (<a href="https://github.com/GloriousEggroll/protonfixes/pull/167" target="_blank">GloriousEggroll/protonfixes#167</a> thanks Root-Core)</li>
-<li>unified fix for protonaudioconv workaround (<a href="https://github.com/GloriousEggroll/protonfixes/pull/168" target="_blank">GloriousEggroll/protonfixes#168</a> thanks R1kaB3rN)</li>
-<li>unified fix for xliveless xlive workaround added (<a href="https://github.com/GloriousEggroll/protonfixes/pull/170" target="_blank">GloriousEggroll/protonfixes#170</a> thanks Root-Core)</li>
-<li>unified fix for esync/fsync enable/disable added (<a href="https://github.com/GloriousEggroll/protonfixes/pull/169" target="_blank">GloriousEggroll/protonfixes#169</a> thanks R1kaB3rN)</li>
-<li>cutscene audio in BlazBlue Centralfiction workaround added (thanks spifferoo)</li>
-<li>game fix added for Renegade Ops (thanks Root-Core)</li>
-<li>cleanup of deprecated LAA, dxvk-async, and win32 helper functions (thanks R1kaB3rN)</li>
-<li>cutscene audio fix for The Great Ace Attorney Chronicles workaround added (thanks eagleflo)</li>
-<li>game fix added for The Forest (thanks Root-Core)</li>
-<li>updated fix for Super Naughty Maid 2 (thanks R1kaB3rN)</li>
-</ul>
-</blockquote>
-<p>And then for GE-Proton 8-27:</p>
-<blockquote>
-<ul>
-<li>Disabled Nvidia Latency Reflex patches. After discussion with dxvk devs they are currently deemed problematic and need more work, and are known to currently cause stutters in games even when the feature is disabled. We will re-enable the patches when they are ready.</li>
-<li>Fixed Farlight 84 patch that was missing a lock causing problems in SDL games</li>
-<li>Backported a fix for HID devices with more than 8 axis <a href="https://bugs.winehq.org/show_bug.cgi?id=55660" target="_blank">https://bugs.winehq.org/show_bug.cgi?id=55660</a></li>
-</ul>
-</blockquote>
-<p>Release changelogs can be seen on the <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases" target="_blank">GE-Proton GitHub</a>. </p>
-<hr/>
-<p>Here's a text guide on how to install GE-Proton.</p>
-<p><strong>Download ProtonUp-Qt</strong></p>
-<p>For Steam Deck, make sure you're in Desktop Mode. Steam Button -&gt; Power - Switch to Desktop.</p>
-<ul>
-<li><u>Steam Deck</u> / <u>KDE Plasma</u> - Open the Discover store, in the search box (top left) type in "ProtonUp-Qt", click it and hit Install (top right). Alternatively on Steam Deck if you have <a href="https://www.gamingonlinux.com/2023/01/decky-loader-makes-steam-deck-plugins-even-easier-with-new-installer/" target="_blank">Decky Loader</a>, you can also try the "Wine Cellar" plugin.</li>
-<li><u>Manual install</u> / <u>GNOME</u> - head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>. On GNOME desktops, you can also download via GNOME Software.</li>
-</ul>
-<p><strong>Using ProtonUp-Qt:</strong></p>
-<ul>
-<li>Launch ProtonUp-Qt.</li>
-<li>Make sure it's set to Steam at the top and select to install GE-Proton.</li>
-<li>Reload Steam to update the compatibility layer list.</li>
-<li>In Steam:
-<ul>
-<li><u>Desktop</u>: right click a game and go to Properties.</li>
-<li><u>Steam Deck</u> / <u>Big Picture Mode</u>: find the game in your library, go to the little cog on the right and then select Properties.</li>
-</ul>
-</li>
-<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down menu.</li>
-</ul>
-<p>My original video of how to do it on Steam Deck:</p>
-<div class="hidden_video" data-video-id="6doaQNnHR60"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37b4fc871ab3188f385a1c60a2e0949c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6doaQNnHR60" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/ge-proton-8-26-and-8-27-released-with-various-game-fixes-for-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/ge-proton-8-26-and-8-27-released-with-various-game-fixes-for-steam-deck-linux/</guid>
-      <pubDate>Tue, 09 Jan 2024 11:52:09 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Celebrate Economic Strategy with the Steam Capitalism and Economy Fest</title>
-      <author>Smellbringer</author>
-      <description><div class="content group e-content">
-<p>Economy simulation and city management may not be the first thing most people think of when they think about video games. But it is one of the most longstanding genres in gaming, going all the way back to the 1980's. And if you've been looking to get into the genre or just check something new out, now's a great time with an entire sale highlighting some of the most noteworthy modern simulation games.</p>
-<p>From the beloved Cities: Skylines to obscure stuff like Recettear: An Item Shop's Tale, there's a little something for everyone in this sale. As my expertise in game genres is more blowing stuff up than planning economies; I'll instead be going through a sampler platter and determining the best games in the sale based on reviews, how interesting it looks to me, and how good a deal it is.</p>
-<p>It should be noted these aren't games that optimally fit into the Steam Deck's normal control format, but we'll list Deck support anyway.</p>
-<p><a href="https://store.steampowered.com/app/255710/Cities_Skylines/" target="_blank">Cities Skylines</a> ($<s>29.99</s> $8.99) <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable / Native Linux Support</p>
-<p><a href="https://store.steampowered.com/app/285310/RollerCoaster_Tycoon_Deluxe/" target="_blank">RollerCoaster Tycoon: Deluxe</a> ($<s>5.99</s> $2.99) <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/1139980/Travellers_Rest/" target="_blank">Travellers Rest - EARLY ACCESS</a> ($<s>14.99</s> $11.24) <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/70400/Recettear_An_Item_Shops_Tale/" target="_blank">Recettear: An Item Shop's Tale</a> ($<s>19.99</s> $3.99)  <img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported/ ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/916440/Anno_1800/" target="_blank">Anno 1800</a> ($<s>59.99</s> $14.99) <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable / ProtonDB Gold</p>
-<p>Like I've said, my economy simulator knowledge isn't great. So I welcome any additional game suggestions in the comments I might have missed that you love. You can check out the sale <a href="https://store.steampowered.com/category/capitalism_economy" target="_blank">here </a>and keep in mind that it runs until January 15 at 10 AM PST / 6PM UTC.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/celebrate-economic-strategy-with-the-steam-captialism-and-economy-fest/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/celebrate-economic-strategy-with-the-steam-captialism-and-economy-fest/</guid>
-      <pubDate>Tue, 09 Jan 2024 11:42:54 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1044230286id23815gol.jpg" type="image/jpeg"/>
-      
-      <category>Event</category>
-      
-      <category>Misc</category>
-      
-      <category>On Sale</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>NVIDIA reveal Half-Life 2 RTX, plus GeForce RTX 40 SUPER Series GPUs</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Much like <a href="https://www.gamingonlinux.com/2024/01/amd-announces-radeon-rx-7600-xt-ryzen-8000g-series-and-new-ryzen-5000-series-cpus/" target="_blank">AMD did today for CES 2024</a>, much of NVIDIA's event was also all about AI but there's a few bits in there for normal consumers like the announcement of Half-Life 2 RTX, plus GeForce RTX 40 SUPER Series GPUs.</p>
-<p>Half-Life 2 RTX is using RTX Remix, just like Portal with RTX and Portal: Prelude RTX, and it's community-made by "four of Half-Life 2’s top mod teams, now working together under the banner of Orbifold Studios" who are "rebuilding materials with Physically Based Rendering (PBR) properties, adding extra geometric detail via Valve’s Hammer editor, and leveraging NVIDIA technologies including full ray tracing, DLSS 3, Reflex, and RTX IO to deliver a fantastic experience for GeForce RTX gamers".</p>
-<p>First look video below:</p>
-<div class="hidden_video" data-video-id="aM_gzfAMdNs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1e56751632013bf42dd4b7a5800a3a35.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/aM_gzfAMdNs" target="_blank">See video</a></div></div>
-<p>NVIDIA have announced that RTX Remix will hit Open Beta on January 22nd.</p>
-<p>As for the new GPUs coming they are they GeForce RTX 4080 SUPER, GeForce RTX 4070 Ti SUPER and GeForce RTX 4070 SUPER which NVIDIA say "supercharge the latest games and form the core of AI-powered PCs":</p>
-<blockquote>
-<p><strong>A 4K Monster: The GeForce RTX 4080 SUPER</strong><br/>
-The GeForce RTX 4080 SUPER powers fully ray-traced games in 4K resolution. At 1.4x faster than the GeForce RTX 3080 Ti without DLSS Frame Generation, the RTX 4080 SUPER delivers blistering performance with traditional rasterization. With 836 AI TOPS, DLSS Frame Generation delivers an extra performance boost, making the RTX 4080 SUPER twice as fast as the RTX 3080 Ti. The RTX 4080 SUPER features more cores and faster memory for a performance edge. It will be available starting Jan. 31 from $999.</p>
-<p><strong>Precision Gaming: The GeForce RTX 4070 Ti SUPER</strong><br/>
-The RTX 4070 Ti SUPER is the ideal GPU for maxing out games at super-high frame rates at 1440p, and up to 4K. Compared to the RTX 4070 Ti, it has more cores, an increased frame buffer to 16GB, and a 256-bit memory bus, providing a significant memory bandwidth increase to 672 GB/sec. It is 1.6x faster than a RTX 3070 Ti and 2.5x with DLSS 3. The GeForce RTX 4070 Ti SUPER will be available starting Jan. 24 at $799.</p>
-<p><strong>Perfectly Balanced: The GeForce RTX 4070 SUPER</strong><br/>
-The RTX 4070 SUPER arrives with 20% more cores than the RTX 4070, making it faster than an RTX 3090 at a fraction of the power. With DLSS 3, its lead stretches to 1.5x faster. It will be available starting Jan. 17 at $599.</p>
-</blockquote>
-<p>Something else they did a demo of during the event was NVIDIA Avatar Cloud Engine (<a href="https://developer.nvidia.com/ace" target="_blank">ACE</a>), a "suite of technologies that help developers bring digital avatars to life with generative AI", and showed off a scene of two characters giving entirely dynamic chat (although pretty robotic sounding). No doubt over the next few years we're going to see a lot more AI like this implemented into games to have randomly generated conversations with voice over and lip syncing all together.</p>
-<p>See all on <a href="https://www.nvidia.com" target="_blank">NVIDIA.com</a>. </p>
-<p>Full event can be viewed below:</p>
-<div class="hidden_video" data-video-id="-JbSg2UnK2k"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0a2dfa5f119517703097aa9dcd59bd40.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-JbSg2UnK2k" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/nvidia-reveal-half-life-2-rtx-plus-geforce-rtx-40-super-series-gpus/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/nvidia-reveal-half-life-2-rtx-plus-geforce-rtx-40-super-series-gpus/</guid>
-      <pubDate>Mon, 08 Jan 2024 16:59:37 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1518414459id23814gol.jpg" type="image/jpeg"/>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>NVIDIA</category>
-      
-    </item>
-    
-    <item>
-      <title>AMD announces Radeon RX 7600 XT, Ryzen 8000G series and new Ryzen 5000 series CPUs</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Amongst a whole lot of technobabble about AI AI and more AI, AMD today announced the Radeon RX 7600 XT, Ryzen 8000G series and new Ryzen 5000 series CPUs. For any normal consumer, their event was a hard boring watch with business people patting each-other on the back about AI advancements but here's the gist of what was actually revealed today.</p>
-<p>Firstly of all they announced the Radeon RX 7600 XT GPU with 16GB GDDR6 for 1080p gaming, starting at $329 releasing January 24th. Nothing really special here, it's a slight bump over the RX 7600 with more RAM, slightly boosted clock speeds and a higher typical board power at 190 W.</p>
-<p>Now onto the processors, starting with the new AMD Ryzen 8000G Series desktop processors for the AM5 platform, which bring forth AMD's new dedicated AI neural processing unit (NPU) to desktop PC processors, built on top of Zen 4. All of the 8000G Series processors include a Radeon 700M series graphics too.</p>
-<p>Here's the models available starting January 31st for SI partners and for OEMs in "Q2 2024":</p>
-<table class="table-stripes-tbody">
-<tbody>
-<tr>
-<td><strong>Model</strong></td>
-<td><strong>Cores/Threads</strong></td>
-<td><strong>Boost</strong><strong> / Base Frequency</strong></td>
-<td><strong>Total Cache</strong></td>
-<td><strong>TDP</strong></td>
-<td><strong>NPU</strong></td>
-<td colspan="2"><strong>SEP</strong></td>
-</tr>
-<tr>
-<td>AMD Ryzen 7 8700G<br/>
-+ Radeon 780M</td>
-<td>8C/16T</td>
-<td>Up to 5.1GHz / 4.2GHz</td>
-<td>24MB</td>
-<td>65W</td>
-<td>Yes</td>
-<td colspan="2">$329</td>
-</tr>
-<tr>
-<td>AMD Ryzen 5 8600G<br/>
-+ Radeon 760M</td>
-<td>6C/12T</td>
-<td>Up to 5.0GHz / 4.3GHz</td>
-<td>22MB</td>
-<td>65W</td>
-<td>Yes</td>
-<td colspan="2">$229</td>
-</tr>
-<tr>
-<td>AMD Ryzen 5 8500G<br/>
-+ Radeon 740M</td>
-<td>6C/12T</td>
-<td>Up to 5.0GHz / 3.5GHz</td>
-<td>22MB</td>
-<td>65W</td>
-<td>N/A</td>
-<td colspan="2">$179</td>
-</tr>
-<tr>
-<td>AMD Ryzen 3 8300G<br/>
-+ Radeon 740M</td>
-<td>4C/8T</td>
-<td>Up to 4.9GHz / 3.4GHz</td>
-<td>12MB</td>
-<td>65W</td>
-<td>N/A</td>
-<td colspan="2">N/A</td>
-</tr>
-</tbody>
-</table>
-<p>Here's the new Zen 3 Ryzen 5000 series CPUs for socket AM4 announced that will become available from January 31st:</p>
-<table class="table-stripes-tbody">
-<tbody>
-<tr>
-<td><strong>Model</strong></td>
-<td><strong>Cores/Threads</strong></td>
-<td><strong>Boost</strong> <strong>/ Base Frequency</strong></td>
-<td><strong>Total Cache</strong></td>
-<td><strong>TDP</strong></td>
-<td colspan="2"><strong>SEP</strong></td>
-</tr>
-<tr>
-<td>AMD Ryzen 7 5700X3D</td>
-<td>8C/16T</td>
-<td>Up to 4.1GHz / 3.0GHz</td>
-<td>100MB</td>
-<td>105W</td>
-<td colspan="2">$249</td>
-</tr>
-<tr>
-<td>AMD Ryzen 7 5700</td>
-<td>8C/16T</td>
-<td>Up to 4.6GHz / 3.7GHz</td>
-<td>20MB</td>
-<td>65W</td>
-<td colspan="2">$175</td>
-</tr>
-<tr>
-<td>AMD Ryzen 5 5600GT</td>
-<td>6C/12T</td>
-<td>Up to 4.6GHz / 3.6GHz</td>
-<td>19MB</td>
-<td>65W</td>
-<td colspan="2">$140</td>
-</tr>
-<tr>
-<td>AMD Ryzen 5 5500GT</td>
-<td>6C/12T</td>
-<td>Up to 4.4GHz / 3.6GHz</td>
-<td>19MB</td>
-<td>65W</td>
-<td colspan="2">$125</td>
-</tr>
-</tbody>
-</table>
-<p>Full event can be viewed below:</p>
-<div class="hidden_video" data-video-id="LlTpLD0whIo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1e59b15d0e4e79bc04b2022c20d75474.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/LlTpLD0whIo" target="_blank">See video</a></div></div>
-<p>All details can be found on <a href="https://www.amd.com" target="_blank">AMD.com</a>. </p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/amd-announces-radeon-rx-7600-xt-ryzen-8000g-series-and-new-ryzen-5000-series-cpus/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/amd-announces-radeon-rx-7600-xt-ryzen-8000g-series-and-new-ryzen-5000-series-cpus/</guid>
-      <pubDate>Mon, 08 Jan 2024 15:53:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/260207988id23813gol.jpg" type="image/jpeg"/>
-      
-      <category>AMD</category>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Heroic Games Launcher v2.12.0 brings lots of improvements and some fun experiments</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Heroic Games Launcher is the best way to manage games from Epic Games, GOG and Amazon on Linux and Steam Deck and Heroic Games Launcher v2.12.0 is out now. This new release brings with it a whole bunch of improvements across the entire app.</p>
-<p>One exciting experimental feature is the automatic install of tweak from Winetricks, enabling more games to work properly out of the box without you needing to mess with anything. It's available via Settings &gt; Advanced &gt; Experimental Features, as they're currently testing it and building up a list of games that needs the tweaks done.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4568321704725351gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4568321704725351gol1.jpg"/></a></p>
-<p>Some of the other improvements include:</p>
-<ul>
-<li>Sorting favourites alphabetically.</li>
-<li>Add an 'only' action to select one store/platform only.</li>
-<li>Showing a progress bar in the task bar for various app activity.</li>
-<li>Show Genres and Release date on Game Page.</li>
-<li>Fixed up DXVK-NVAPI installation.</li>
-<li>A fix to ignore Gamescope if enabled and <em>not</em> found instead of just failing.</li>
-<li>A new offline support filter.</li>
-<li>Open main window when clicking the Tray icon.</li>
-<li>Install EOS overlay by default to prevent some game errors.</li>
-<li>+ Various other UI improvements and bug fixes.</li>
-</ul>
-<p>Full <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.12.0" target="_blank">release notes here</a>.</p>
-<p>From one what of their developers said, the big <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pull/3020" target="_blank">overhaul</a> to their GOG support will arrive in the next major version 2.13.</p>
-<p>Check out more about Heroic on <a href="https://heroicgameslauncher.com" target="_blank">the official site</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/heroic-games-launcher-v2120-brings-lots-of-improvements-and-some-fun-experiments/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/heroic-games-launcher-v2120-brings-lots-of-improvements-and-some-fun-experiments/</guid>
-      <pubDate>Mon, 08 Jan 2024 14:49:21 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1862791866id23812gol.jpg" type="image/jpeg"/>
-      
-      <category>Amazon</category>
-      
-      <category>Apps</category>
-      
-      <category>Epic Games</category>
-      
-      <category>GOG</category>
       
     </item>
     
