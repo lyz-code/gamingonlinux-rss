@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-02-08 07:22:22.223388</pubDate>
+    <pubDate>2024-02-09 07:22:26.804255</pubDate>
 
     
     <image>
@@ -18,6 +18,222 @@
     </image>
 
     
+    
+    <item>
+      <title>You&#39;re going to need to take mining-shooter BORE BLASTERS away from me</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>BORE BLASTERS is a mining-shooter from Scottish studio 8BitSkull, the same developer that also made Void Scrappers and Fates of Ort, two other games I also quite liked. It seems they're onto something again here!</p>
+<p>This could easily end up replacing all those horde survival games I've been playing like Vampire Survivors, Brotato and all the others. It gives a similar sort-of feeling with repeated runs, as you gather upgrades and watch lots of numbers go up but in a rather different setting. Here you're given a gyrocopter with a machine-gun drill to mine underground across various random islands, many with different biomes and creatures and special item blocks to blast through. It's simply delicious and with full Native Linux and Steam Deck support — you need to try it out.</p>
+<div class="hidden_video" data-video-id="HH-QHeuJBj0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/13997febf9ae7d2488363f0878e09bcb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/HH-QHeuJBj0" target="_blank">See video</a></div></div>
+<p>I like that it's not particularly punishing either. While the fuel mechanic may need some tweaks, if you fail a run you at least get to keep your rewards to continue unlocking more permanent upgrades to just dive in and try some more mining. Nice and accessible.</p>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li><strong>Fast-paced mining action</strong> - Mining has never been so intense and rewarding; the satisfaction of blasting through the depths would make any dwarf grin with delight.</li>
+<li><strong>Bite-sized runs</strong> - Runs can be over quickly or last longer, if you’re able to survive. Play for a few minutes or up to 10-15 if you’re an experienced player.</li>
+<li><strong>Un-punishing progress</strong> - If you fail a run or need to cancel early for whatever reason, you keep your rewards and resources to spend on upgrades and abilities.</li>
+<li><strong>Unlockable characters</strong> - Dive into the narrative of this dwarven steampunk world to complete quests and unlock playable characters with new and unique abilities.</li>
+<li><strong>Upgrade your gyrocopter</strong> - Visit the Techsmith and spend your earnings on permanent upgrades to make mining faster, safer, and more satisfying, or discover temporary upgrades buried in the mines to help you out in a pinch.</li>
+<li><strong>Endless replayability</strong> - No two runs will be the same, a diverse range of biomes and procedurally generated mineshafts mean you’ll never know what’s ahead.</li>
+</ul>
+</blockquote>
+<p>Try out the <a href="https://store.steampowered.com/app/2398170/BORE_BLASTERS/" target="_blank">demo on Steam</a> as part of Steam Next Fest.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/youre-going-to-need-to-take-mining-shooter-bore-blasters-away-from-me/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/youre-going-to-need-to-take-mining-shooter-bore-blasters-away-from-me/</guid>
+      <pubDate>Thu, 08 Feb 2024 18:20:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/212741911id23977gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux gaming performance display MangoHud v0.7.1 is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>MangoHud is the fantastic tool you can use to display various amounts of performance information while gaming on Linux, it's also what the Steam Deck uses for the HUD too. A new version 0.7.1 is out now!</p>
+<p>For reference, it can look a little like this at the top:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8778636231707412724gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8778636231707412724gol1.jpg"/></a></p>
+<p>If you like my horizontal layout you can find it on my <a href="https://gist.github.com/LiamDawe/199a3341f0d91d2f306375a76ab4e7f3" target="_blank">GitHub Gist</a>, just copy it into a text file and name it "MangoHud.conf" and place it into "~/.config/MangoHud/".</p>
+<p>In the new release these parameters have been changed:</p>
+<ul>
+<li><code class="inline-code">gamepad_battery</code> has been reworked to <code class="inline-code">device_battery</code>. This parameter currently supports the values <code class="inline-code">gamepad</code> and <code class="inline-code">mouse</code>.</li>
+<li><code class="inline-code">time</code> now has a title.</li>
+<li><code class="inline-code">fps_metrics</code> takes a decimal value or "avg". e.g <code class="inline-code">avg,0.001</code> and displays the metrics.</li>
+<li><code class="inline-code">winesync</code> shows the current implementation of synchronization primitives. E.g ESYNC/FSYNC etc.</li>
+<li><code class="inline-code">present_mode</code> shows the current Vulkan present mode or vsync status in OpenGL.</li>
+</ul>
+<p>Other changes and fixes:</p>
+<ul>
+<li>Added support for gpu load on Adreno GPUs.</li>
+<li>Added cpu temp for zenpower3 module.</li>
+<li>Meson option: mangoplot.</li>
+<li>xnvctrl: fix an issue that could cause crashing when accessing GPU fan speed.</li>
+<li>Fixed an issue where no config present wouldn't use default mangohud presets.</li>
+<li>Fixed a crashing issue with CS2.</li>
+<li>Reworked intel code. Should resolve some issues where mangohud didn't shut down properly when using an Intel GPU.</li>
+<li>Fix OpenGL runtime on musl libc systems <a href="https://github.com/flightlessmango/MangoHud/pull/1133" target="_blank">#1133</a>.</li>
+<li>Fixed <code class="inline-code">text_outline_color</code> incorrectly using BGR instead of RGB.</li>
+</ul>
+<p>See all on the <a href="https://github.com/flightlessmango/MangoHud" target="_blank">Github Page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/linux-gaming-performance-display-mangohud-v071-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/linux-gaming-performance-display-mangohud-v071-is-out-now/</guid>
+      <pubDate>Thu, 08 Feb 2024 17:22:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1724162054id23976gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Heroes of Might and Magic II game engine fheroes2 v1.0.12 released</title>
+      <author>fheroes2</author>
+      <description><div class="content group e-content">
+<p>Dear fans of Heroes of Might and Magic 2 and fheroes2 project supporters! The team is excited to announce a new version of the <em><strong>fheroes2</strong></em> project - <strong><a href="https://github.com/ihhub/fheroes2/releases/tag/1.0.12" target="_blank">1.0.12</a></strong> as the first update of this year! The team have made many changes in several aspects of the engine since the last release, and we are happy to share the details with you.</p>
+<p>One of the biggest areas where the team has made huge improvements is the <em><strong>AI</strong></em>.</p>
+<p>First of all, we have made important adjustments to the AI's performance according to the difficulty level. This is especially noticeable on Easy and Normal difficulties, and this will help players who are struggling with these difficulty levels.</p>
+<p>Secondly, the behaviour of the AI heroes has been updated for several Adventure Map objects: for most objects the information available to the AI is now much more fair. Additionally, the AI will now expand its territory much more efficiently.</p>
+<p>Lastly, the team made significant improvements concerning the AI's defensive battle tactics and surrender logic. The AI will apply more sophisticated tactics during battles, increasing the challenge for players. Also, now the AI will decide between surrendering or retreating from battles, just like human players do.</p>
+<p>All of these changes will make the AI a more formidable opponent for many players.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1390172451707405646gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1390172451707405646gol1.png"/></a></p>
+<p>The second biggest area of progress is of course the <em><strong>Editor</strong></em>. The team has finished adding all of the objects present within the game into the Editor. We have also updated the new map format to accommodate for future changes and to expand it with new features. Most of the work is now done, but there are several tasks remaining before releasing the brand-new reworked Editor to players and map makers. The fheroes2 Editor is being built with the aim to be much more accessible and easier to work with compared to the original Editor.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12204111821707405667gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12204111821707405667gol1.png"/></a></p>
+<p>On top of this, the team spent time polishing multiple <em><strong>UI dialogs</strong></em>, improving <em><strong>performance </strong></em>of image and resource loading, fixing <em><strong>logic issues</strong></em> of Adventure Map objects, and updating several <em><strong>translations</strong></em>. In total, more than <strong>50</strong> issues have been fixed in this release.</p>
+<p>Thank you so much for your invaluable support, and we hope you will enjoy this release!</p>
+<p><a href="https://github.com/ihhub/fheroes2/wiki/Change-Log" target="_blank">Full change log</a>.</p>
+<p><a href="https://github.com/ihhub/fheroes2/blob/master/docs/INSTALL.md" target="_blank">Installation guide</a>.</p>
+<p>You do also need to grab the data from <a href="https://af.gog.com/game/heroes_of_might_and_magic_2_gold_edition?as=1636858786" target="_blank">GOG.com</a> which it requires to run.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/heroes-of-might-and-magic-ii-game-engine-fheroes2-v1012-released/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/heroes-of-might-and-magic-ii-game-engine-fheroes2-v1012-released/</guid>
+      <pubDate>Thu, 08 Feb 2024 15:21:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/173888453id23975gol." type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Reimplementation</category>
+      
+    </item>
+    
+    <item>
+      <title>Driving survival game Pacific Drive is very cool - here&#39;s the fix for Steam Deck / Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Pacific Drive is a first-person driving-survival game with a demo now available, it's really interesting and nice to see something different but for Steam Deck and Desktop Linux it needs a fix to get working.</p>
+<p>More about the game: "Pacific Drive is a first-person driving survival game with your car as your only companion. Navigate a surreal reimagining of the Pacific Northwest, and face supernatural dangers as you venture into the Olympic Exclusion Zone. Each excursion into the wilderness brings unique and strange challenges as you restore and upgrade your car from an abandoned garage that acts as your home base. Gather precious resources and investigate what’s been left behind in the Zone; unravel a long-forgotten mystery while learning exactly what it takes to survive in this unpredictable, hostile environment."</p>
+<p>When you try to launch it will give you an error about Microsoft Visual C++ Runtime, but it's easy to install using Protontricks. The method is the same across Steam Deck and Desktop Linux.</p>
+<p>For Steam Deck, make sure you're in Desktop Mode. Steam Button -&gt; Power - Switch to Desktop.</p>
+<ul>
+<li><u>Steam Deck</u> / <u>KDE Plasma</u> - Open the Discover store, in the search box (top left) type in "Protontricks", click it and hit Install (top right). </li>
+<li><u>Manual install</u> / <u>GNOME</u> - available via <a href="https://flathub.org/apps/com.github.Matoking.protontricks" target="_blank">Flathub</a>. On GNOME desktops, you can also download via GNOME Software.</li>
+</ul>
+<p>Then go through these steps once you've loaded it. First, select the game in the list:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11546786881707402762gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11546786881707402762gol1.jpg"/></a></p>
+<p>In the next menu just select the default:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1087961421707402796gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1087961421707402796gol1.jpg"/></a></p>
+<p>After that select to install a Windows DLL or component:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17266234021707402829gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17266234021707402829gol1.jpg"/></a></p>
+<p>Then finally on the next screen scroll down to vcrun2019 or vcrun2022 (either should work fine):</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5325736261707402893gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5325736261707402893gol1.jpg"/></a></p>
+<p>It will bring up an extra installer window for vcrun, just go through it and once finished you can close it all and then the game will run just fine.</p>
+<p>Check out <a href="https://store.steampowered.com/app/1458140/Pacific_Drive/" target="_blank">Pacific Drive on Steam</a>. The demo is well-worth a go and the full game launches February 22nd, and apart from the above issue the demo works really well with the current stable Proton 8.</p>
+<p>Trailer below:</p>
+<div class="hidden_video" data-video-id="JOj9hHMQR_8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/templates/default/images/youtube_cache_default.png"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/JOj9hHMQR_8" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/driving-survival-game-pacific-drive-is-very-cool-heres-the-fix-for-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/driving-survival-game-pacific-drive-is-very-cool-heres-the-fix-for-steam-deck-linux/</guid>
+      <pubDate>Thu, 08 Feb 2024 14:44:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1093543558id23974gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Demo</category>
+      
+      <category>HOWTO</category>
+      
+    </item>
+    
+    <item>
+      <title>HELLDIVERS 2 is out - here&#39;s how to run it on Steam Deck / Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>HELLDIVERS 2 from Arrowhead Game Studios and PlayStation PC has arrived, and it's causing issues for players on Steam Deck and Desktop Linux. Here's some ways you may be able to get it to work.</p>
+<p>What's the issue? It's using kernel-level nProtect GameGuard anti-cheat, which seems to be the cause of the problems. It's also causing issues for people on Windows too it seems going by some of the Steam forum posts on it. The developer has even had to put up a <a href="https://steamcommunity.com/app/553850/discussions/2/4206994023681287288/" target="_blank">statement</a> on it and open a dedicated Steam forum for it.</p>
+<p>On my Desktop Linux install with Kubuntu 23.10, it actually <em>worked</em> right out of the box with Proton 8.0-5. However, others have been reporting issues with it not launching. While on Steam Deck (current latest Preview), my testing there showed it simply <em>wouldn't</em> launch with Proton 8, Proton 7 or Proton Experimental.</p>
+<p>Going by the Proton <a href="https://github.com/ValveSoftware/Proton/issues/7486" target="_blank">GitHub report</a> that's open for it, a user <a href="https://github.com/ValveSoftware/Proton/issues/7486#issuecomment-1933869055" target="_blank">mentioned</a> they got it to work on their Desktop Linux install with GE-Proton 7-55. So, even though for my desktop it works on Proton 8, trying out GE-Proton 7-55 on Steam Deck and — yep, it works!</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10950898721707399746gol1.jpg"/></p>
+<p>The big <u>caveat</u>: you <em>need</em> to launch it with this GE-Proton 7-55 in <u>Desktop Mode</u>, something about nProtect GameGuard doesn't run in Gaming Mode. You also need to tap the screen to get controls on Steam Deck to actually work.</p>
+<p>So regardless of being on Desktop Linux or Steam Deck, if you try out GE-Proton 7-55 you <em>should</em> be able to get in-game.</p>
+<p><em>I have not tested online play with a group yet, only solo play.</em></p>
+<hr/>
+<p>How to install GE-Proton:</p>
+<p><strong>Download ProtonUp-Qt</strong></p>
+<p>For Steam Deck, make sure you're in Desktop Mode. Steam Button -&gt; Power - Switch to Desktop.</p>
+<ul>
+<li><u>Steam Deck</u> / <u>KDE Plasma</u> - Open the Discover store, in the search box (top left) type in "ProtonUp-Qt", click it and hit Install (top right). Alternatively on Steam Deck if you have <a href="https://www.gamingonlinux.com/2023/01/decky-loader-makes-steam-deck-plugins-even-easier-with-new-installer/" target="_blank">Decky Loader</a>, you can also try the "Wine Cellar" plugin.</li>
+<li><u>Manual install</u> / <u>GNOME</u> - head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>. On GNOME desktops, you can also download via GNOME Software.</li>
+</ul>
+<p><strong>Using ProtonUp-Qt:</strong></p>
+<ul>
+<li>Launch ProtonUp-Qt.</li>
+<li>Make sure it's set to Steam at the top, click Add version and scroll down to select to install GE-Proton7-55.</li>
+<li>Reload Steam to update the compatibility layer list.</li>
+<li>In Steam:
+<ul>
+<li><u>Desktop</u>: right click a game and go to Properties.</li>
+<li><u>Steam Deck</u> / <u>Big Picture Mode</u>: find the game in your library, go to the little cog on the right and then select Properties.</li>
+</ul>
+</li>
+<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down menu.</li>
+</ul>
+<p>My original video of how to do it on Steam Deck:</p>
+<div class="hidden_video" data-video-id="6doaQNnHR60"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37b4fc871ab3188f385a1c60a2e0949c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6doaQNnHR60" target="_blank">See video</a></div></div>
+<hr/>
+<p>Given how much effort it is to get working, and with absolutely no guarantee it will continue working due to this kernel-level anti-cheat that could update and break it any time (as really, it shouldn't work at all), it's <strong>not</strong> something I will actually recommend anyone purchase. I would consider going for a different game for sure.</p>
+<p>If you do want to buy it's available from:</p>
+<p><a href="https://www.humblebundle.com/store/helldivers-2?partner=gamingonlinux" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/helldivers-2-is-out-heres-how-to-run-it-on-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/helldivers-2-is-out-heres-how-to-run-it-on-steam-deck-linux/</guid>
+      <pubDate>Thu, 08 Feb 2024 13:46:53 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1204559014id23973gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>Anti-Cheat</category>
+      
+    </item>
     
     <item>
       <title>Proton Experimental gets improvements for The Finals, TEKKEN 8, Black Desert Online</title>
@@ -150,6 +366,7 @@
 <ul>
 <li>Legends of the Dead - Turn yourself into a figure of legend in this Core Expansion, where great feats and effective propaganda can enhance the power of your bloodline through the centuries. Direct the course of your dynastic legend through Court Chroniclers, and use your growing reputation to build a lasting material legacy. But beware of the growing threat from distant lands as the Black Death builds a legendary legacy of its own. This will be arriving on March 4th.</li>
 </ul>
+<p>Trailer for the expansion is below:</p>
 <div class="hidden_video" data-video-id="vWUlPnbXUW4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/afa33680c44dc2fb3b9b733cad77d547.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/vWUlPnbXUW4" target="_blank">See video</a></div></div>
 <p>And more…</p>
 <ul>
@@ -3858,244 +4075,6 @@ We apologize for any inconvenience this may have caused.</p>
       <category>Linux Mint</category>
       
       <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>31% of devs already using AI and the PC platform looks strong from GDC Survey</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The annual GDC Survey is out now and it's an interesting look into what developers are up to and how the industry is changing, and some of the info this time around is pretty eyebrow raising.</p>
-<p>Firstly, to note, this survey ran between Oct. 11 to Oct. 29, 2023 and contains answers polled from over 3,000 developers working in the games industry. As with all surveys, a pinch of salt is needed but it's a great overall look at the state of things.</p>
-<p>Scanning through the PDF with my Mark I Eyeball, the first real interesting result is on what platform the developers are developing for with 66% of responses for PC. This is a good showing, and clearly PC gaming is stronger than it ever has been before when you take into account the growth of Steam as well. <em>Remember Valve even said<a href="https://www.gamingonlinux.com/2023/02/steam-had-83000-new-customers-every-day-in-2022/" target="_blank"> Steam had 83,000 new customers every day in 2022</a>, but we haven't seen a 2023 overview yet.</em></p>
-<p>For Linux specifically, only 7% said they were developing for it. </p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3005878181705926042gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/3005878181705926042gol1.jpg"/></a><br/>
-<em>Image credit: GDC, click to enlarge.</em></p>
-<p>The really interesting bit though is when it comes to generative AI. The <a href="https://www.gamingonlinux.com/2024/01/valve-announces-new-rules-for-games-with-ai-content-on-steam/" target="_blank">AI flood gates have been opened by Valve for Steam</a> with their new rules, and no doubt many developers will be looking into using it, and some already are. According to the survey 49% of developers overall are using it or they have colleagues using it. That's split across many departments though from finance to programming and all sorts. But AI generation is <em>clearly</em> already popular.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11520891591705926432gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/11520891591705926432gol1.jpg"/> </a><br/>
-<em>Image credit: GDC, click to enlarge.</em></p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1401013201705926432gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/1401013201705926432gol1.jpg"/></a><br/>
-<em>Image credit: GDC, click to enlarge.</em></p>
-<p>The survey also showed that indie developers were more likely to be the ones using AI at 37%, and not the bigger AAA lot at 21%. Although no doubt this will change over time as AI generation continues improving. When asked about how developers think the impact of generative AI will be only 21% were positive about it, with 57% feeling mixed and 18% having a negative opinion of it. Only 1% thought it would have no impact and another 3% didn't know.</p>
-<p>You can register to see the survey on the <a href="https://gdconf.com/news/gdc-2024-state-game-industry-devs-discuss-layoffs-generative-ai-and-more?ref=gamingonlinux" target="_blank">GDC website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/31-of-devs-already-using-ai-pc-platform-is-healthy-overall/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/31-of-devs-already-using-ai-pc-platform-is-healthy-overall/</guid>
-      <pubDate>Mon, 22 Jan 2024 12:38:06 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/18962728id23876gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Survey</category>
-      
-      <category>Survey Results</category>
-      
-    </item>
-    
-    <item>
-      <title>MONSTER HUNTER RISE adds new DRM that breaks it on Steam Deck (UPDATED)</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><strong>Update 19:06 UTC</strong> - Valve have now fixed it in Proton Hotfix. To select it go into the game Properties -&gt; Compatibility, tick the box and select Proton Hotfix from the drop-down box. If you do not see Proton Hotfix in the drop-down box, search for Proton Hotfix in your Steam Library and install it. It <em>might</em> sometimes still crash on launch, just try again.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3492013371705955048gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3492013371705955048gol1.jpeg"/></a></p>
-<hr/>
-<p><em>Original article below:</em></p>
-<p>Capcom have rolled out an update to MONSTER HUNTER RISE, and sadly it has broken it on Steam Deck. As they continue attempting to change their DRM in older games.</p>
-<p>They're swapping from Denuvo over to Enigma which seems to be the cause of the problems, and it's not the first title they've tried this with. In the patch notes for <a href="https://store.steampowered.com/news/app/1446780/view/3970553140557253784" target="_blank">Ver.16.0.2.0</a> Capcom updated it to note:</p>
-<blockquote>
-<p>There have been reports of the game not running on Steam Deck after updating to Ver.16.0.2.0.<br/>
-The dev team is currently investigating this issue.<br/>
-We will let you know as soon as we find out more, so please hold on for further information.<br/>
-<br/>
-We apologize for any inconvenience this may cause.</p>
-</blockquote>
-<p>In the actual changes list, Capcom didn't even state the change to the DRM, they're clearly trying to keep it quiet. This bugs me. Any form of anti-cheat and DRM should be clearly noted not just on Steam pages - but in update notes too. Consumers should be <em>properly</em> informed.</p>
-<p>Shame that Capcom didn't think to test their game considering it's Steam Deck Verified. Although, verification is done by Valve directly, it doesn't actually mean a game developer supports it.</p>
-<p>Hopefully Capcom will reverse the change, or Valve will find a solution in <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a> to get it working again. From reports I've seen it affects Linux desktop too, not just Steam Deck.</p>
-<p>Previously, Capcom added Enigma DRM to Resident Evil Revelations (released on Steam in 2013), which caused problems for players and Capcom ended up <a href="https://store.steampowered.com/news/app/222480/view/3990818705013251073" target="_blank">reversing</a> the update (but said they would fix it and re-release it). This caused players to review-bomb the title with the most recent review score showing as Overwhelmingly Negative.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/monster-hunter-rise-adds-new-drm-that-breaks-it-on-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/monster-hunter-rise-adds-new-drm-that-breaks-it-on-steam-deck/</guid>
-      <pubDate>Mon, 22 Jan 2024 11:43:32 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1892040706id23875gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Capcom</category>
-      
-      <category>DRM</category>
-      
-    </item>
-    
-    <item>
-      <title>Palworld is Steam Deck Playable and runs on Desktop Linux with Proton</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Palworld is a new release on Steam in Early Access from Pocketpair. A fusion of Pokémon with monster catching, farming, building and much more. It is Steam Deck Playable and does work on Desktop Linux too. Note: personal purchase.</p>
-<p>What has often been referred to as Pokémon with guns, it's already proving to be a <em>big</em> hit with a current peak player count of <s>250,553</s> <strong>294,826</strong> (it keeps going up every refresh) on Steam and a Very Positive user rating. So it seems like it might be the first big indie hit of 2024. So it's great news that it works right away!</p>
-<p>Valve has already put it through Deck Verified and gave it a Steam Deck Playable rating, and Valve set Proton Experimental for it by default on Steam Deck, so for best experience on Desktop Linux make sure you set Proton Experimental in the Properties -&gt; Compatibility menu.</p>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/153125261705670783gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/153125261705670783gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3959857031705670782gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/3959857031705670782gol1.jpg"/></a><br/>
-Pictured: Palworld on Kubuntu 23.10. Click them to enlarge.</em></p>
-<p>For Steam Deck the performance does have some issues and Valve noted various problems in their testing including: small text, graphics needing to be configured manually, you need to manually bring up the on-screen keyboard and some functionality may not be accessible with the default controller configuration.</p>
-<p>It was designed as a multiplayer game clearly in many ways with support for 4 player co-op and 32 players on dedicated servers. You can play solo without issues though.</p>
-<p>In my own testing on a Steam Deck OLED I've been using these settings:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18217485191705673122gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18217485191705673122gol1.jpeg"/></a></p>
-<p>So far, this has given a somewhat acceptable performance level. It ranges from 25-45 FPS depending on what I am doing which is very playable - most of the time above 30FPS. Some spots in the open world I've seen bring it down to 25FPS, especially during bigger combat sections. However, one clear problem is the menu system. Some of the in-game menus bring the performance down pretty hard to around 20FPS but it will come back up when you close the menus.</p>
-<p>Text is definitely small too, I've had to pull the Steam Deck closer to my face to actually read some of the on-screen details, so it's quite annoying. It's going to need some text scaling quite urgently as it's really <em>not</em> comfortable to read a lot of it. The icons are tiny too.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16525324941705673400gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16525324941705673400gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13046520741705673720gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13046520741705673720gol1.jpeg"/></a><br/>
-<em>Pictured - Palworld on Steam Deck. Click them to enlarge.</em></p>
-<p>For battery life on the Steam Deck OLED, you're looking at around ~2 hours from a full charge with a 60FPS frame limit.</p>
-<p>Meanwhile on Desktop Linux (Kubuntu 23.10) with an AMD Ryzen 5800X and Radeon 6800XT the experience has been overall pretty great. Testing on the highest possible graphics settings it's always been above 60FPS so far. Most of the time between 80-120FPS depending on where I am in the open world and what I'm doing. For a <em>big</em> open world game in Early Access running through Proton, that's actually pretty good.</p>
-<p>This is only an early preliminary test as i haven't had too long with it, so keep that in mind. It's also Early Access, so everything is subject to change but it's an incredibly promising start for Palworld.</p>
-<p>One thing I will address directly, since this always comes up in comments whenever there's a new monster catching game, the elephant in the room — Nintendo. They don't (and can't) own the rights to an entire genre, but Pokémon is obviously popular and so there's always comparisons but Nintendo can't just go after developers of other similar games. However, in <em>this</em> case, <em>plenty</em> of the creatures <em>do</em> have a striking similarity to various Pokémon designs and some even look like colour-flips with a few tweaks. So it will be very interesting to see what happens for this one specifically.</p>
-<p>Something else that needs noting, is that the developer still has other games in Early Access while launching this also into Early Access. <a href="https://store.steampowered.com/app/1307550/Craftopia/" target="_blank">Craftopia</a>, for example, looks largely similar. Like they took their own game, and added these creatures into it to make it a different game.</p>
-<p>To sum up what I've seen of it so far it feels very much like a blending of ARK Survival Evolved, Pokémon and Zelda: Breath of the Wild mechanically. One or two sounds even seemed like they were right out of Zelda (very close at least). It's <em>very</em> derivative. But then so are a lot of survival games. The small human of mine is going to <em>freak</em> when they see it. I can definitely see why people are enjoying it so much already and I fear it's going to take over my life for a while.</p>
-<p>You can buy <a href="https://store.steampowered.com/app/1623730/Palworld/" target="_blank">Palworld on Steam</a>.</p>
-<p>Original Early Access trailer below:</p>
-<div class="hidden_video" data-video-id="IltMIJeK-1M"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/668d16e398da8cc774efcbf01df33843.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/IltMIJeK-1M" target="_blank">See video</a></div></div>
-<p>Update 21/01/24: the article originally said Palworld had an internet requirement for single-player, as <a href="https://uploads.golmedia.net/uploads/articles/article_media/5416795271705868918gol1.jpeg" target="_blank">Valve state it</a> on their Deck Verified rating. Valve's notice is incorrect so the article text was updated. Additionally here's a new Steam Deck video of the game and some quick thoughts:</p>
-<div class="hidden_video" data-video-id="UiP56BeG0sk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c371e68af4ddea1e2c9961977b800c04.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/UiP56BeG0sk" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/palworld-is-steam-deck-playable-and-runs-on-desktop-linux-with-proton/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/palworld-is-steam-deck-playable-and-runs-on-desktop-linux-with-proton/</guid>
-      <pubDate>Fri, 19 Jan 2024 14:15:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/598588012id23874gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Initial Thoughts</category>
-      
-    </item>
-    
-    <item>
-      <title>VCMI, open-source engine for Heroes of Might and Magic III v1.4.3 brings lots of bug fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you want to play the classic Heroes of Might and Magic III, the open source engine VCMI is easily the best way on modern platforms and version 1.4.3 is out now with plenty of bug fixes.</p>
-<p>While the <a href="https://www.gamingonlinux.com/2023/12/heroes-of-might-and-magic-iii-game-engine-vcmi-gets-some-huge-improvements/" target="_blank">previous release</a> pulled in support for simultaneous turns support for multiplayer, it came with a few issues that should be solved in this release.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5934351031705666043gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5934351031705666043gol1.jpg"/></a></p>
-<p>Some of the main changes include:</p>
-<blockquote>
-<h3>General</h3>
-<ul>
-<li>Fixed the synchronisation of the audio and video of the opening movies.</li>
-<li>Fixed a bug that caused spells from mods to not show up in the Mage's Guild.</li>
-<li>Changed the default SDL driver on Windows from opengl to autodetection</li>
-<li>When a hero visits a town with a garrisoned hero, they will now automatically exchange spells if one of them has the Scholar skill.</li>
-<li>Movement and mana points are now replenished for new heroes in taverns.</li>
-</ul>
-<h3>Multiplayer</h3>
-<ul>
-<li>Simturn contact detection will now correctly check for hero moving range</li>
-<li>Simturn contact detection will now ignore wandering monsters</li>
-<li>Right-clicking the Simturns AI option now displays a tooltip</li>
-<li>Interaction attempts with other players during simturns will now have more concise error messages</li>
-<li>Turn timers are now limited to 24 hours in order to prevent bugs caused by an integer overflow.</li>
-<li>Fixed delays when editing turn timer duration</li>
-<li>Ending a turn during simturns will now block the interface correctly.</li>
-</ul>
-<h3>Campaigns</h3>
-<ul>
-<li>Player will no longer start the United Front of Song for the Father campaign with two Nimbuses.</li>
-<li>Fixed missing campaign description after loading saved game</li>
-<li>Campaign completion checkmarks will now be displayed after the entire campaign has been completed, rather than just after the first scenario.</li>
-<li>Fixed positioning of prologue and epilogue text during campaign scenario intros</li>
-</ul>
-</blockquote>
-<p>Plus, lots of bug fixes elsewhere and there's some modding improvements to the engine too for people to build upon it and keep expanding the game. See more in the <a href="https://github.com/vcmi/vcmi/blob/master/ChangeLog.md#142---143" target="_blank">player release notes</a>.</p>
-<p>Check out the <a href="https://vcmi.eu/" target="_blank">official site</a> and their <a href="https://github.com/vcmi/vcmi" target="_blank">GitHub</a>.</p>
-<p>You do need the original game for the data files which you can <a href="https://af.gog.com/en/game/heroes_of_might_and_magic_3_complete_edition?as=1636858786" target="_blank">grab on GOG.com</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/vcmi-open-source-engine-for-heroes-of-might-and-magic-iii-v143-brings-lots-of-bug-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/vcmi-open-source-engine-for-heroes-of-might-and-magic-iii-v143-brings-lots-of-bug-fixes/</guid>
-      <pubDate>Fri, 19 Jan 2024 12:08:25 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2126932778id23873gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-      <category>Strategy</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Beta adds explainers to Steam Deck performance menu - plus fixes for Desktop too</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has released a new Beta for the Steam Deck and Steam Desktop that improved numerous bugs, and for Steam Deck makes the performance menu a little easier to understand.</p>
-<p><a href="https://store.steampowered.com/news/app/1675200/view/3944657442696228020" target="_blank">Changes</a> for the Steam Deck:</p>
-<blockquote>
-<p><strong>General</strong></p>
-<ul>
-<li>Updated embedded Chromium build in Steam to 109.0.5414.120.</li>
-<li>Updated the quick access performance menu with descriptions for each setting, including how they affect the system and the expected power/performance/visual quality tradeoffs.</li>
-<li>Fixed a case where the sdcard was set as the default install location on reboot.</li>
-<li>Fixed a case where the network status icon would fail to render for virtual networks.</li>
-<li>Fixed store button on main menu remaining disabled in Family View even if store permissions were granted to the account.</li>
-</ul>
-<p><strong>Steam Input</strong></p>
-<ul>
-<li>Fixed occasionally creating an extra virtual controller that is non-responsive.</li>
-</ul>
-</blockquote>
-<p>Here's an example of the new performance menu descriptions:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6371681281705663639gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6371681281705663639gol1.jpeg"/></a></p>
-<p>This is really great, because the option names by themselves are not easy for a lot of people to understand, and this should just help make the features more accessible. The menu itself also has fancy new icons:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10109357821705663644gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10109357821705663644gol1.jpeg"/></a></p>
-<p>For Steam Desktop here's the Beta <a href="https://store.steampowered.com/news/group/4397053/view/3966049540915750443" target="_blank">changes</a>:</p>
-<blockquote>
-<p><strong>General</strong></p>
-<ul>
-<li>Updated embedded Chromium build in Steam to 109.0.5414.120</li>
-<li>Fixed issue where clicking on Voice Chat invitation notifications did not open chat</li>
-</ul>
-<p><strong>Big Picture Mode</strong></p>
-<ul>
-<li>Improved the display in the "Controller Configuration" tab when there are no controllers attached or the active controller is opted out of Steam Input</li>
-</ul>
-<p><strong>Remote Play</strong></p>
-<ul>
-<li>Greatly improved performance when using hardware encoding with AMD video cards on Windows</li>
-</ul>
-<p><strong>SteamVR</strong></p>
-<ul>
-<li>Improve layout and imagery for some of the dialogs that show up when launching VR games.</li>
-<li>Clicking on items in the control bar (e.g. a download in progress) will correctly switch to the Steam tab</li>
-<li>Show reloading message when SteamVR quits before reloading the Steam window</li>
-<li>Steam now only reloads every fifth time that SteamVR quits</li>
-</ul>
-<p><strong>Linux</strong></p>
-<ul>
-<li>Known issue: when dismissing a dropdown menu, the steam client may incorrectly start blocking mouse input.</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/01/steam-beta-adds-explainers-to-steam-deck-performance-menu-plus-fixes-for-desktop-too/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/01/steam-beta-adds-explainers-to-steam-deck-performance-menu-plus-fixes-for-desktop-too/</guid>
-      <pubDate>Fri, 19 Jan 2024 11:27:55 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
       
     </item>
     
