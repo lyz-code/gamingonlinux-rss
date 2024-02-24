@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-02-23 07:24:26.465498</pubDate>
+    <pubDate>2024-02-24 07:22:46.064512</pubDate>
 
     
     <image>
@@ -18,6 +18,284 @@
     </image>
 
     
+    
+    <item>
+      <title>Discord Overlay for Linux v0.7.0 should improve idling and on battery power </title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Discover, not to be confused with the KDE Discover software store, is a Discord overlay for Linux and the first update in a while is out now with version 0.7.0.</p>
+<p>What does it actually do? It allows you to easily have a configurable on-screen Discord overlay to show who is currently talking, or to display text and images from selected channels.</p>
+<p>In the <a href="https://github.com/trigg/Discover/releases/tag/v0.7.0" target="_blank">release notes</a> for 0.7.0 the developers mentioned: "This update brings in a bunch of changes which remove our previous reliance on timeouts. For most users this will seem to do absolutely nothing, but for users where this program is idling and on battery power it will allow the OS to scale down battery usage much further than previously able."</p>
+<p>Here's all the changes:</p>
+<blockquote>
+<ul>
+<li>Fix rendering title with incorrect font.</li>
+<li>Fix accidentally using None in dud voice data.</li>
+<li>Included a lot of RPC documentation to README.</li>
+<li>Differentiate Text &amp; Notification window titles for better catching by window managers.</li>
+<li>Catch monitors layout change and monitor resolution change and re-render overlays.</li>
+<li>Reduce reconnect rate when local discord goes away.</li>
+<li>Cache user access token and attempt to reconnect quicker using it.</li>
+<li>Changed connection origin to localhost.</li>
+<li>Rewrote entire connection handler core to remove timeouts that never stopped.
+<ul>
+<li>Removed 60hz tick for reading local connection to discord.</li>
+<li>Removed 1hz tick for re-rendering voice overlay even if data remained the same.</li>
+<li>Removed 1hz tick for re-rendering notification overlay even if data remained the same.</li>
+<li>Add a one-off timeout after render where data is expected to auto-hide itself.</li>
+<li>Implemented socket read and reconnect login in GLib main loop.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>It's a community made project, not affiliated with Discord, made due to "the shortcomings in support on Linux by the official discord client".</p>
+<p>See more on <a href="https://github.com/trigg/Discover" target="_blank">the GitHub page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/discord-overlay-for-linux-v0-7-0-should-improve-idling-and-on-battery-power/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/discord-overlay-for-linux-v0-7-0-should-improve-idling-and-on-battery-power/</guid>
+      <pubDate>Fri, 23 Feb 2024 18:19:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2105587593id24053gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Palworld has now sold over 15 million copies on Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Palworld continues to be an insane success, as Pocketpair just <a href="https://twitter.com/Palworld_EN/status/1760682105171062876" target="_blank">revealed</a> it has now seen over 25 million players for their Early Access game. 15 million of those copies were on Steam, with another 10 million on Xbox.</p>
+<p>As we saw from the recent <a href="https://www.gamingonlinux.com/2024/02/steam-users-redeemed-over-80-million-in-physical-wallet-cards-in-december-2023/" target="_blank">Steam 2023 Overview</a>, a lot of games are managing to find success. It has slipped down the Steam charts a bit now though thanks to the recent releases of Helldivers 2, Last Epoch, Pacific Drive and others. And it was only natural it would calm down after the initial rush and hype period but no doubt it will rank back up again on the first major content update.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10584836511708711592gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10584836511708711592gol1.jpg"/></a></p>
+<p>It's funny really when you see Ubisoft makes <a href="https://www.videogameschronicle.com/news/ubisoft-ceo-defends-skull-and-bones-70-price-despite-its-live-service-leanings-calls-it-quadruple-a/" target="_blank">claims</a> about their Skull and Bones being a "quadruple-A game", when for the price of that one game you could almost afford <em>both</em> Palworld and Helldivers 2, which have seen glowing reviews and huge player numbers.</p>
+<p>Have you been playing Palworld? What are your thoughts on it now after many hours?</p>
+<p>Also, in case you missed it, some <a href="https://www.gamingonlinux.com/2024/02/palworld-is-getting-external-anti-cheat-but-it-will-be-mostly-optional/" target="_blank">anti-cheat for Palworld is on the way</a>.</p>
+<p>Palworld is currently rated Steam Deck Playable and works great on Desktop Linux thanks to <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>. You can find it in <a href="https://store.steampowered.com/app/1623730/Palworld/?curator_clanid=4218320" target="_blank">Early Access on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/palworld-has-now-sold-over-15-million-copies-on-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/palworld-has-now-sold-over-15-million-copies-on-steam/</guid>
+      <pubDate>Fri, 23 Feb 2024 18:10:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/509379065id24052gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA 550.54.14 driver released as stable</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA today launched the 550.54.14 Linux driver as stable coming with a whole bunch of fixes and improvements, so here's all that's changed.</p>
+<p>Seems NVIDIA took on what I said to them about their recent changelogs being confusing for end-users (noted in <a href="https://www.gamingonlinux.com/2024/01/nvidia-550-40-07-beta-driver-released-with-fixes-for-vrr-and-wayland/" target="_blank">the previous NVIDIA Beta article</a>), so now they're including a note on changes between this version and the last in the same series. </p>
+<p>So the changes from the previous 550.40.07 Beta to this stable version are:</p>
+<blockquote>
+<ul>
+<li>Fixed a bug that caused HDMI FRL displays to flicker or blank when enabling VRR with 8 bits per color channel.</li>
+<li>Fixed a regression introduced with the 550.40.07 beta driver which caused corrupted window decorations in some applications when running on GNOME.</li>
+<li>Fixed a bug where vkAcquireNextImageKHR() was not returning VK_ERROR_OUT_OF_DATE_KHR when it should with WSI X11 swapchains.</li>
+<li>Fixed a bug where fences passed to VkSwapchainPresentFenceInfoEXT could signal earlier than expected when a WSI X11 swap chain becomes out of date.</li>
+<li>Fixed Xid errors on Hogwarts Legacy and Forza Horizon 4.</li>
+<li>Added support for the VK_KHR_video_encode_queue, VK_KHR_video_encode_h264, VK_KHR_video_encode_h265 and VK_KHR_video_maintenance1 extensions.</li>
+<li>Fixed a regression which prevented some Vulkan applications from receiving VK_DEVICE_LOST upon a VT switch, which could lead to the application hanging or behaving incorrectly.</li>
+<li>Fixed a bug that prevented nvidia-installer from honoring the --gbm-backend-dir command line option.</li>
+</ul>
+</blockquote>
+<p>Meanwhile the changes on top of that when going from the 545.29.06 driver to this version are:</p>
+<blockquote>
+<ul>
+<li>Fixed an issue that sometimes caused Wayland applications to run at less than one frame per second on Maxwell, Volta, and Pascal series GPUs.</li>
+<li>Fixed a bug that caused an intermittent drop in desktop framerate.</li>
+<li>Fixed a bug that caused “Flip event timeout” messages to be printed to the system log when displays are hotplugged when nvidia-drm is loaded with the <code class="inline-code">fbdev=1</code> kernel module parameter.</li>
+<li>Fixed intermittent Xid errors on Horizon Zero Dawn, Metro Exodus, Forza Horizon 5, and Halo Infinite.</li>
+<li>Fixed a bug which prevented the “NoMaxPClkCheck” mode validation token from working on single-link TMDS (e.g. DVI, HDMI) outputs.</li>
+<li>Fixed a bug that allowed VRR displays to be driven below their minimum refresh rate, resulting in a blank or flickering image.</li>
+<li>Added an application profile to improve Kwin performance on hybrid GPU systems by setting <code class="inline-code">OGL_DEDICATED_HW_STATE_PER_CONTEXT=ENABLE_ROBUST</code>.</li>
+<li>Updated the build process for NVIDIA kernel modules to honor the <code class="inline-code">INSTALL_MOD_DIR</code> Kbuild environment variable.</li>
+<li>Added support for R8, GR88 and YCbCr GBM formats.</li>
+<li>Optimized the X driver headless framerate limiter to more closely mimic upstream behavior and prevent it from activating in inconvenient situations. Added a new X config option <code class="inline-code">LimitFrameRateWhenHeadless</code> to disable the headless framerate limiter.</li>
+<li>Fixed a bug that prevented Gamescope from running when using the NVIDIA Open GPU Kernel modules.</li>
+<li>Fixed a bug that prevented the installer package from being unpacked on systems where zstd is not installed, when /tmp is mounted noexec.</li>
+<li>Use transparent huge pages when available for the .text section. This is done through <code class="inline-code">madvise()</code> calls, and requires <code class="inline-code">CONFIG_READ_ONLY_THP_FOR_FS</code>.</li>
+<li>Changed the name visible in /proc/devices of NVIDIA devices and the NVIDIA control device from “nvidia-frontend” to “nvidia” and “nvidiactl”. Scripts which parse /proc/devices (such as udev rules) may need to be updated. Note that the conventional /dev device paths like /dev/nvidia0 and /dev/nvidiactl remain unchanged.</li>
+<li>Fixed a bug that could cause some multi-GPU systems to crash on suspend.</li>
+<li>Fixed a bug that could cause the system to crash when an application is run with <code class="inline-code">__NV_PRIME_RENDER_OFFLOAD=1</code>.</li>
+<li>Fixed a bug which prevented application profiles from getting applied to PRIME Render Offloaded applications running via Wine.</li>
+<li>Disabled PRIME Display Offload Sink support for virtual displays on datacenter GPUs. This prevents unusable desktop layouts from getting automatically configured on systems with a mix of physical and virtual displays.</li>
+<li>Fixed a bug that caused high CPU usage during system suspend, which could lead to the system not entering s2idle in some cases.</li>
+<li>Fixed a bug that caused the nvidia-settings control panel to crash when running on Wayland with newer versions of libwayland-client.</li>
+</ul>
+</blockquote>
+<p>There's <em>more</em> listed on the official changelog, but a bunch of those were available in older NVIDIA driver releases, as NVIDIA list all changes since the previous Production release.</p>
+<p>See the full <a href="https://www.nvidia.co.uk/Download/driverResults.aspx/220735/en-uk" target="_blank">changelog here</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/nvidia-550-54-14-driver-released-as-stable/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/nvidia-550-54-14-driver-released-as-stable/</guid>
+      <pubDate>Fri, 23 Feb 2024 17:17:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/878824640id24051gol.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA open source driver to use NVK + Zink for OpenGL on newer GPUs</title>
+      <author>nwildner</author>
+      <description><div class="content group e-content">
+<p>A <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/27628" target="_blank">recent merge</a> request on the Mesa Git repository added the initial support for allowing drivers to chose Zink as the translation layer for handling OpenGL. This basically does an OpenGL-on-Vulkan implementation making it easier for newer cards to support OpenGL through a generic implementation, reducing duplicate code and making it easier to keep OpenGL around since while not yet deprecated it is being less used on modern games.</p>
+<p>The merge allows owners of the NVIDIA GeForce RTX 20xx series GPUs and newer to opt to use Zink instead of relying on the default NVC0 Gallium3D implementation to handle OpenGL requests. Those who want to give it a try, it should be as simple as setting the <code class="inline-code">NOUVEAU_USE_ZINK=1</code> environment variable after updating Mesa 24.1 when your distribution receives the update that is currently only on the main branch of Mesa repository.</p>
+<p>Since the merge from branch <code class="inline-code">airlied/zink-driver-choice</code> to <code class="inline-code">main</code> was merged <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/27628#note_null" target="_blank">2 days ago</a>, most distros might not be distributing those patches yet. For those who use source-based distros or any source-base package building system like AUR, the package <code class="inline-code">mesa-git</code> is <a href="https://aur.archlinux.org/packages/mesa-git" target="_blank">available</a> as a means of tracking the main branch and testing these bleeding-edge features.</p>
+<p>While NVK as a technology is still in-development with plenty left to do, there has been lots of improvements being implemented on the last year. Related articles:</p>
+<ul>
+<li><a href="https://www.gamingonlinux.com/2024/02/mesa-240-out-now-with-amd-radv-ray-tracing-improvements-more-nvidia-nvk-improvements/" target="_blank">Mesa 24.0 out now with AMD RADV ray-tracing improvements, more NVIDIA NVK improvements</a></li>
+<li><a href="https://www.gamingonlinux.com/2023/12/check-out-this-great-overview-of-nvk-the-open-source-nvidia-vulkan-driver/" target="_blank">Check out this great overview of NVK, the open source NVIDIA Vulkan driver </a></li>
+<li><a href="https://www.gamingonlinux.com/2023/11/mesa-233-is-out-now-with-the-nvk-vulkan-driver-for-nvidia/" target="_blank">Mesa 23.3 is out now with the NVK Vulkan driver for NVIDIA</a></li>
+</ul>
+<p>Additionally, developer Mike Blumenkrantz recently put up another <a href="https://www.supergoodcode.com/woof/" target="_blank">blog post</a> about NVK work and thanks to some recent changes mentioned that "As a result, all GL games now work on NVK. No hyperbole. They just work".</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/nvidia-open-source-driver-to-use-nvk-zink-for-opengl-on-newer-gpus/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/nvidia-open-source-driver-to-use-nvk-zink-for-opengl-on-newer-gpus/</guid>
+      <pubDate>Fri, 23 Feb 2024 14:55:45 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Mesa</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Snap store from Canonical (Ubuntu) hit with another crypto scam app</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://www.gamingonlinux.com/2023/10/snap-store-from-canonical-hit-with-malicious-apps/" target="_blank">Not the first time</a> this has happened, but recently the Snap store from Canonical hosted a scam bitcoin app that claimed to be "Exodus wallet" that caused a user to lose money.</p>
+<p>Posting on the Snapcraft <a href="https://forum.snapcraft.io/t/exodus-movement-exod/38904" target="_blank">forum</a> an unfortunate user noted their wallet has been emptied after using it, and a day later a Canonical staffer <a href="https://forum.snapcraft.io/t/exodus-movement-exod/38904/5" target="_blank">mentioned</a> it had now been removed and they were investigating the incident.</p>
+<p>Mark Shuttleworth, CEO of Canonical, has now jumped into the discussion in another <a href="https://forum.snapcraft.io/t/should-unverified-cryptocurrency-apps-be-banned/38919/4" target="_blank">forum post</a> to note that while "cryptocurrency is largely a cesspit of ignoble intentions even if the mathematics are interesting", Shuttleworth doesn't think that "banning cryptocurrency apps helps" as "If anything, it would make using Linux much worse.".</p>
+<p>Additionally, Shuttleworth also opened an additional <a href="https://forum.snapcraft.io/t/stronger-identity-verification-for-all-publishers/39061" target="_blank">forum post</a> to discuss requiring "more comprehensive proof of publisher identity for every publisher" for Snaps. So if you have good ideas for them to implement, to make Snap publishing more secure - drop a reply in the linked post.</p>
+<p>Hopefully Canonical come up with a good solution, because repeating issues like this reflect pretty poorly on Snap, Canonical and Ubuntu.</p>
+<p>Alan Pope (formerly of Canonical, now Axiom) wrote up two blog posts on it "<a href="https://popey.com/blog/2024/02/exodus-bitcoin-wallet-490k-swindle/" target="_blank">Exodus Bitcoin Wallet: $490K Swindle</a>" and the follow-up "<a href="https://popey.com/blog/2024/02/exodus-bitcoin-wallet-follow-up/" target="_blank">Exodus Bitcoin Wallet: Follow up 2.0</a>" that you may want to read for a little more background.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/snap-store-from-canonical-ubuntu-hit-with-another-crypto-scam-app/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/snap-store-from-canonical-ubuntu-hit-with-another-crypto-scam-app/</guid>
+      <pubDate>Fri, 23 Feb 2024 14:21:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1492798135id24049gol.jpg" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Misc</category>
+      
+      <category>Ubuntu</category>
+      
+    </item>
+    
+    <item>
+      <title>Fanatical Bundle Fest launched with a new Steam Deck game bundle</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Fanatical has recently launched Bundle Fest again, where a new bundle has been launched each day and there's some good stuff you can grab for cheap like the latest <a href="https://www.fanatical.com/en/pick-and-mix/play-on-the-go-premium-edition-build-your-own-bundle?ref=gol" target="_blank">Play on the Go Bundle</a> with all Steam Deck Verified games.</p>
+<p>Since all the games are <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified, I'll just additionally list any <a href="https://www.protondb.com" target="_blank">ProtonDB</a> rating or Native Linux versions available for you. I've also additionally made each game a Steam link, if you need to go check out more first. For this bundle you can get 2 games for £6.99, 3 for £9.99 or 5 for £14.99.</p>
+<p><a href="https://store.steampowered.com/app/1283410/Tails_of_Iron/" target="_blank">Tails of Iron</a> - Native Linux</p>
+<p><a href="https://store.steampowered.com/app/1599020/Tinykin/" target="_blank">Tinykin</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/1038370/Trials_of_Fire/" target="_blank">Trials of Fire</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/1354830/Cat_Cafe_Manager/" target="_blank">Cat Cafe Manager</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/1709050/Nitro_Kid/" target="_blank">Nitro Kid</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/601430/The_Evil_Within_2/" target="_blank">The Evil Within 2</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/614570/Dishonored_Death_of_the_Outsider/" target="_blank">Dishonored: Death of the Outsider</a> - ProtonDB GOld</p>
+<p class="plain-list-title">Escape Room Double Pack:</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/1580150/Between_Time_Escape_Room/" target="_blank">Between Time: Escape Room</a></li>
+<li><a href="https://store.steampowered.com/app/1374290/Palindrome_Syndrome_Escape_Room/" target="_blank">Palindrome Syndrome: Escape Room</a></li>
+</ul>
+<p><a href="https://store.steampowered.com/app/1302240/Labyrinthine/" target="_blank">Labyrinthine</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/1333470/Alex_Kidd_in_Miracle_World_DX/" target="_blank">Alex Kidd in Miracle World DX</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/1531250/Defend_the_Rook/" target="_blank">Defend the Rook</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/1123050/GRIME/" target="_blank">GRIME</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/1433340/Happys_Humble_Burger_Farm/" target="_blank">Happy's Humble Burger Farm</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/1213700/Spirit_of_the_North/" target="_blank">Spirit of the North</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/1004490/Tools_Up/" target="_blank">Tools Up!</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/729000/Wytchwood/" target="_blank">Wytchwood</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/1184480/Inertial_Drift/" target="_blank">Inertial Drift</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/2300300/Growth/" target="_blank">Growth</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/1042490/Call_of_the_Sea/" target="_blank">Call of the Sea</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/701160/Kingdom_Two_Crowns/" target="_blank">Kingdom Two Crowns</a> - Native Linux</p>
+<p><a href="https://store.steampowered.com/app/1293180/SuchArt_Genius_Artist_Simulator/" target="_blank">SuchArt: Genius Artist Simulator</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/1207650/Suzerain/" target="_blank">Suzerain</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/1158220/Kraken_Academy/" target="_blank">Kraken Academy!!</a> - Native Linux</p>
+<p><a href="https://store.steampowered.com/app/1374840/Dark_Deity/" target="_blank">Dark Deity</a> - ProtonDB Gold</p>
+<p>Check out the <a href="https://www.fanatical.com/en/pick-and-mix/play-on-the-go-premium-edition-build-your-own-bundle?ref=gol" target="_blank">Play on the Go Bundle on Fanatical</a>.</p>
+<hr/>
+<p>There's multiple other bundles that look pretty good like the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-rpg-bundle?ref=gol" target="_blank">RPG Bundle</a> that has the likes of The Ascent and Mortal Shell, the <a href="https://www.fanatical.com/en/bundle/killer-bundle-very-positive-edition?ref=gol" target="_blank">Killer Bundle: Very Positive Edition</a> that has goodies including Dread Templar and Valfaris: Mecha Therion, another <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-premiere-bundle?ref=gol" target="_blank">Premier Bundle</a> with games like Insurmountable and Deflector. All current bundles can seen on the <a href="https://www.fanatical.com/en/bundle?ref=gol" target="_blank">Fanatical Bundle Page</a>.</p>
+<p>Plus loads more - see all on <a href="https://www.fanatical.com/en/?ref=gol" target="_blank">Fanatical</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/fanatical-bundle-fest-launched-with-a-new-steam-deck-game-bundle/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/fanatical-bundle-fest-launched-with-a-new-steam-deck-game-bundle/</guid>
+      <pubDate>Fri, 23 Feb 2024 13:52:18 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/860701628id24048gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Fanatical</category>
+      
+      <category>Game Bundle</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Cross-platform development library SDL3 gets a Vulkan Renderer and camera API</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>With development work ongoing for SDL3, some recent exciting improvements include a Vulkan Render backend and a camera API.</p>
+<p>What is SDL? Simple DirectMedia Layer is an open source cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, graphics hardware and more. It's popular and used by quite a lot of games, even Valve use it. See more on the <a href="https://www.libsdl.org" target="_blank">official site</a>.</p>
+<p>SDL3 is going to be a pretty <em>big</em> release and just recently Valve developer Dan Ginsburg had their Vulkan Renderer merged into the project. From the <a href="https://github.com/libsdl-org/SDL/pull/9114" target="_blank">pull request</a>:</p>
+<blockquote>
+<p>This pull request adds an implementation of a Vulkan Render backend to SDL. I have so far tested this primarily on Windows, but also smoke tested on Linux and macOS (MoltenVK). I have not tried it yet on Android, but it should be usable there as well (sans any bugs I missed). This began as a port of the SDL Direct3D12 Renderer, which is the closest thing to Vulkan as existed in the SDL codebase. The shaders are more or less identical (with the only differences being in descriptor bindings vs root descriptors). The shaders are built using the HLSL frontend of glslang.</p>
+<p>Everything in the code is pure Vulkan 1.0 (no extensions), with the exception of HDR support which requires the Vulkan instance extension VK_EXT_swapchain_colorspace. The code could have been simplified considerably if I used dynamic rendering, push descriptors, extended dynamic state, and other modern Vulkan-isms, but I felt it was more important to make the code as vanilla Vulkan as possible so that it would run on any Vulkan implementation.</p>
+</blockquote>
+<p>On top of that developer Ryan Gordon also posted on <a href="https://www.patreon.com/posts/project-sdl3-api-98889512" target="_blank">Patreon</a> about the new camera API, which enables SDL3 to access cameras across many platforms and a quick rough video was shown of it in action on Linux below:</p>
+<div class="hidden_video" data-video-id="MKM6-03iOPs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f292fc0dea6567ef3feab369fb3f0a7b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/MKM6-03iOPs" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/cross-platform-development-library-sdl3-gets-a-vulkan-renderer-and-camera-api/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/cross-platform-development-library-sdl3-gets-a-vulkan-renderer-and-camera-api/</guid>
+      <pubDate>Fri, 23 Feb 2024 13:24:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/vulkan.png" type="image/jpeg"/>
+      
+      <category>Game Dev</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+      <category>Vulkan</category>
+      
+    </item>
     
     <item>
       <title>CrossOver 24 released with Wine 9.0 - plus CodeWeavers still hiring developers</title>
@@ -3736,245 +4014,6 @@ Dual thumbsticks with RGB</td>
       <category>Misc</category>
       
       <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Deep Rock Galactic: Survivor hits Early Access on February 14th</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>What could be my next favourite horde survival game and an off-shoot of one of the best online co-op games around, Deep Rock Galactic: Survivor is launching in Early Access on February 14th.</p>
-<p>Taking the basics of Deep Rock Galactic and merging them in with the auto-shooting horde survival elements from Vampire Survivors, their previous demos were a lot of fun to play through so I'm pretty excited for this one. It's somewhat unique for this genre too being set across multiple stage runs with you needing to extract from each map, and then dive down deeper.</p>
-<div class="hidden_video" data-video-id="nBvTr3nBN5A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0ce1e383884a33d96312107541b0a0e5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/nBvTr3nBN5A" target="_blank">See video</a></div></div>
-<p>At the initial Early Access release they will have 4 classes, 40 weapons, 20 enemy types, 3 biomes and a deep progression system with plans to continue expanding on all of it for the 6-12 months of the planned development.</p>
-<p>The previous demo worked great with Proton!</p>
-<p><span style="background-color:var(--article-main-background); color:var(--font-color); font-size:16px">You can </span><a href="https://store.steampowered.com/app/2321470/Deep_Rock_Galactic_Survivor/" style="background-color:var(--article-main-background); font-size:16px" target="_blank">follow it on Steam</a><span style="background-color:var(--article-main-background); color:var(--font-color); font-size:16px">.</span></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/deep-rock-galactic-survivor-hits-early-access-on-february-14th/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/deep-rock-galactic-survivor-hits-early-access-on-february-14th/</guid>
-      <pubDate>Mon, 05 Feb 2024 11:16:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1329461107id23950gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>The top Steam Deck games for January 2024 have been revealed - Palworld hits 2nd place</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has released the latest most-played list for Steam Deck for January 2024 and as expected, Palworld has managed to jump right near the top.</p>
-<p>These lists always amaze me because it shows just how ridiculously versatile the Steam Deck is from massive AAA games to small indie games — there really is something for everyone. Also shows how amazing SteamOS Linux and <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a> are to be able to run them all.</p>
-<p>Sorted by hours played from top to bottom here are the winners for players on Steam Deck through January 2024:</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" target="_blank">Baldur's Gate 3 </a></li>
-<li><a href="https://store.steampowered.com/app/1623730/Palworld/" target="_blank">Palworld</a></li>
-<li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank">ELDEN RING</a></li>
-<li><a href="https://store.steampowered.com/app/582010/Monster_Hunter_World/" target="_blank">Monster Hunter: World</a></li>
-<li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">Cyberpunk 2077</a></li>
-<li><a href="https://store.steampowered.com/app/413150/Stardew_Valley/" target="_blank">Stardew Valley</a></li>
-<li><a href="https://store.steampowered.com/app/1868140/DAVE_THE_DIVER/" target="_blank">DAVE THE DIVER</a></li>
-<li><a href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/" target="_blank">Hogwarts Legacy</a></li>
-<li><a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank">Grand Theft Auto V</a></li>
-<li><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/" target="_blank">Vampire Survivors</a></li>
-<li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank">Red Dead Redemption 2</a></li>
-<li><a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" target="_blank">The Elder Scrolls V: Skyrim Special Edition</a></li>
-<li><a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/" target="_blank">The Binding of Isaac: Rebirth</a></li>
-<li><a href="https://store.steampowered.com/app/2344520/Diablo_IV/" target="_blank">Diablo IV</a></li>
-<li><a href="https://store.steampowered.com/app/1145360/Hades/" target="_blank">Hades</a></li>
-<li><a href="https://store.steampowered.com/app/1313140/Cult_of_the_Lamb/" target="_blank">Cult of the Lamb</a></li>
-<li><a href="https://store.steampowered.com/app/1687950/Persona_5_Royal/" target="_blank">Persona 5 Royal</a></li>
-<li><a href="https://store.steampowered.com/app/230410/Warframe/" target="_blank">Warframe</a></li>
-<li><a href="https://store.steampowered.com/app/377160/Fallout_4/" target="_blank">Fallout 4</a></li>
-<li><a href="https://store.steampowered.com/app/646570/Slay_the_Spire/" target="_blank">Slay the Spire</a></li>
-</ul>
-<p>What have you been playing mostly over the last month?</p>
-<p>Be sure to also check out my <a href="https://www.gamingonlinux.com/2024/01/check-out-these-freshly-picked-steam-deck-verified-games/" target="_blank">recent Steam Deck Verified picks</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/the-top-steam-deck-games-for-january-2024-have-been-revealed-palworld-hits-2nd-place/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/the-top-steam-deck-games-for-january-2024-have-been-revealed-palworld-hits-2nd-place/</guid>
-      <pubDate>Sat, 03 Feb 2024 12:01:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/488521983id23949gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Listicle</category>
-      
-      <category>Misc</category>
-      
-      <category>Round-up</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck SteamOS 3.5.14 Preview - Persona 3 Reload improvements and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has released SteamOS 3.5.14 Preview for Steam Deck, which comes with performance improvements for the new Persona 3 Reload amongst other things.</p>
-<p>Since it's currently in Preview if you wish to try it you need to go into the System settings, and change the System Update Channel to Preview in the drop-down box. Here's what's changed (<a href="https://store.steampowered.com/news/app/1675200/view/4064004264594106055" target="_blank">changelog</a>):</p>
-<blockquote>
-<ul>
-<li>Improved performance of ray-traced reflections in Persona 3 Reload.</li>
-<li>Slightly improved corner tracking on Steam Deck OLED trackpads.</li>
-<li>Fixed a possible session crash when connecting an HDR display.</li>
-<li>Fixed a rare session crash on application exit.</li>
-</ul>
-</blockquote>
-<p>Don't go expecting some kind of miracle though, ray tracing on Steam Deck is pretty tough.</p>
-<p>Additionally a Steam Deck Beta update was also released with these changes (<a href="https://store.steampowered.com/news/app/1675200/view/4064004264594243144" target="_blank">changelog</a>):</p>
-<blockquote>
-<ul>
-<li>Fixed misc. regressions in the screenshot manager.</li>
-<li>Fixed transparency and blur on header and app details play bar.</li>
-<li>Fixed graph height on downloads page.</li>
-<li>Fixed wide game images sometimes failing to load.</li>
-<li>Fix custom logo positions sometimes not applying on app details pages.</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/steam-deck-steamos-3514-preview-persona-3-reload-improvements-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/steam-deck-steamos-3514-preview-persona-3-reload-improvements-and-more/</guid>
-      <pubDate>Sat, 03 Feb 2024 10:56:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1443003454id23948gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Preview</category>
-      
-    </item>
-    
-    <item>
-      <title>Get some Exceptional Indie Allies in this Humble Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Some glorious indie games available to grab in the new <a href="https://www.humblebundle.com/games/exceptional-indie-allies?partner=gamingonlinux" target="_blank">Exceptional Indie Allies Humble Bundle</a>, if you need to build up that collection. As usual I will give you easy to read compatibility for Steam Deck and Desktop Linux via Deck Verified, <a href="https://www.protondb.com/" target="_blank">ProtonDB</a> and Native Linux listings. Each is also a Steam link to grab more info if you need before purchasing.</p>
-<p>Here's what's in the bundle:</p>
-<p><a href="https://store.steampowered.com/app/898890" target="_blank">Endling - Extinction is Forever</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/1221250" target="_blank">NORCO</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/729000/Wytchwood/" target="_blank">Wytchwood</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/1390190" target="_blank">APICO</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / Native Linux</p>
-<p><a href="https://store.steampowered.com/app/1080750" target="_blank">Mutazione</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / Native Linux</p>
-<p><a href="https://store.steampowered.com/app/960690" target="_blank">One Step From Eden</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / Native Linux</p>
-<p><a href="https://store.steampowered.com/app/1147550" target="_blank">Not For Broadcast</a> - Deck Playable / ProtonDB Silver</p>
-<p>Check out <a href="https://www.humblebundle.com/games/exceptional-indie-allies?partner=gamingonlinux" target="_blank">the full bundle here</a>.</p>
-<p><em>The bundle supports the <a href="https://www.npower.org/about/" target="_blank">NPower</a> charity.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/get-some-exceptional-indie-allies-in-this-humble-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/get-some-exceptional-indie-allies-in-this-humble-bundle/</guid>
-      <pubDate>Fri, 02 Feb 2024 20:21:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/63351956id23947gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Horde shooter Black Dragon Mage now has a demo, plus developer blog on Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Black Dragon Mage is an upcoming dark fantasy, action-roguelite, top-down horde shooter (think like Vampire Survivors) and there's a demo out now. Plus the developer had some words to say on developing with the Steam Deck in mind.</p>
-<p>Fans of any of these bullet-heaven horde games will likely enjoy this one, and from my time spent playing the demo it was a lot of fun unlocking various upgrades and weapons to become god-like with power. A little rough around the edges, with some balancing needed to be done but very promising so far!</p>
-<p>Writing about developing the game to ensure it works great on Steam Deck, the developer <a href="https://handheld.quest/posts/why-indie-devs-should-get-a-steam-deck/" target="_blank">wrote up a blog post</a> going over it talking about how the "Steam Deck is a Dev Dream come true", and it was interesting to read from a non-dev perspective too, on how they used the performance tools to help emulate lower-performance systems quickly and easy for testing. They even discovered a Proton <a href="https://github.com/ValveSoftware/Proton/issues/6861" target="_blank">bug</a> which affected even the likes of Starfield. Worth a read!</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="gEwq9Jhulrk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1e317236a365ee0982f65076b6938e0c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/gEwq9Jhulrk" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li><strong>Decimate legions of demonic enemies</strong> with magic projectiles and area damage that only grows more powerful. Decipher the weaknesses of <strong>ancient and mysterious boss enemies</strong>, and bring them to their fall.</li>
-<li><strong>Grow your might!</strong> Launch increasingly large volleys of fireballs, or icy orbs that leave frosty mines and freeze foes on contact, blast the undead with your arcane beam staff or harness the dark and chaotic power of the void itself! All primary weapons can be modified through stats, but also offer special upgrade paths called <em>Masteries</em> to unlock their full strategic potential and add to build variety.</li>
-<li><strong>Forge your own path</strong> by experimenting with your own combinations of your core arsenal &amp; powerful <strong>ARPG-style defensive and offensive abilities</strong> such as the <em>Shield of Frost</em>, <em>Summoned Flameswords</em>, <em>Spiral Strike</em>, <em>Fiery Pentagram!</em> and more!</li>
-<li><strong>Level-up</strong> your attributes, weapons and abilities with every character level during a run, customize and tweak your build until it reaches dizzying heights of power; every run marks a new beginning!</li>
-<li><strong>Turn the environment to your favor</strong> using your <em>(often outrageously explosive!)</em> strategic genius, outmaneuver your foes by leading them into deadly traps! Laugh as you watch them hurl across the battlefield... <em>Fools!</em></li>
-<li><strong>Endure</strong> the relentless waves, or...</li>
-<li><strong>Perish</strong> and return stronger by unlocking <strong>meta-upgrades and fresh weaponry</strong> in the <em>Hall of Relics</em> with the gold you've gathered during your tireless runs! Grab a new hat for your mage! One even lets you turn a portion of fallen enemies into bombs that can chain-explode...</li>
-</ul>
-</blockquote>
-<p>Right now it's being tested worked well in Proton, but it <em>might</em> have a Native Linux build at launch but the developer said right now it runs better with Proton due to input issues.</p>
-<p>Check out the <a href="https://store.steampowered.com/app/2207230/Black_Dragon_Mage/" target="_blank">demo on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/horde-shooter-black-dragon-mage-now-has-a-demo-plus-developer-blog-on-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/horde-shooter-black-dragon-mage-now-has-a-demo-plus-developer-blog-on-steam-deck/</guid>
-      <pubDate>Fri, 02 Feb 2024 12:56:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/268123232id23946gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Action</category>
-      
-      <category>Demo</category>
-      
-    </item>
-    
-    <item>
-      <title>They really did it - Valve added Dwarf as an official Steam tag</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After a little mini-campaign from the likes of the crew behind Dwarf Fortress and Deep Rock Galactic, Valve added some new official Steam store tags for games.</p>
-<p>Releasing a <a href="https://twitter.com/KitfoxGames/status/1752723419500560601" target="_blank">statement</a> on X (formerly Twitter) the Kitfox Games account (who publish Dwarf Fortress) put up an image post on January 30th noting how Valve initially said no to adding a Dwarf tag. However, Valve would add it officially if people started using it on Steam. In the post Kitfox also mentioned how the likes of elf, centaur, wizard and more aren't tags.</p>
-<p>Well, fast-forward to February 1st, and Valve did an initial little <a href="https://twitter.com/KitfoxGames/status/1753167600836816941" target="_blank">joke</a> adding <a href="https://store.steampowered.com/tags/en/Elf/" target="_blank">Elf</a> as a full Steam tag and the official Steam account quickly <a href="https://twitter.com/Steam/status/1753194307815920031" target="_blank">replied</a> to joke "Oh whoops, wrong button!" and then linked to the also new <a href="https://store.steampowered.com/tags/en/Dwarf/" target="_blank">Dwarf</a> tag.</p>
-<p>So there we have it, now as of February 1st have both Dwarf and Elf as official Steam tags.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4159692521706876531gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4159692521706876531gol1.jpg"/></a></p>
-<p>You can see a list of tags along with the dates they were officially added on <a href="https://steamdb.info/tags/time/" target="_blank">SteamDB</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/they-really-did-it-valve-added-dwarf-as-an-official-steam-tag/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/they-really-did-it-valve-added-dwarf-as-an-official-steam-tag/</guid>
-      <pubDate>Fri, 02 Feb 2024 12:23:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/233901252id23945gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Atmospheric narrative adventure A Void Hope launches February 29th</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>From the team that gave us Alwa's Awakening and Alwa's Legacy, Elden Pixels have announced the release date for their latest gorgeous looking adventure platformer with A Void Hope launching February 29th.</p>
-<p>"A Void Hope takes you on an atmospheric narrative adventure to find a cure for a collapsed city. Follow the story of a tormented couple as they try to decipher reality from nightmares and evade the shadowy threats lurking in the dark."</p>
-<p><span style="background-color:var(--article-main-background); color:var(--font-color); font-size:16px">I really enjoyed their first time games, some tightly designed platforming in wonderful looking worlds. And it seems with each new game they've been upping the production values too and this looks like it could be really interesting to run through. </span><span style="background-color:var(--article-main-background); color:var(--font-color); font-size:16px">There's also a new trailer:</span></p>
-<div class="hidden_video" data-video-id="HB6M_C-dz4U"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7c7636d29cf209aa1b2239433a79b44e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/HB6M_C-dz4U" target="_blank">See video</a></div></div>
-<p>At release they said it will be available on <a href="https://store.steampowered.com/app/2438090/A_Void_Hope/" target="_blank">Steam</a> and <a href="https://www.gog.com" target="_blank">GOG</a>. It will have full Native Linux support and there's a demo available on Steam right now too. The developer also said they've already tested it working great on Steam Deck so they're hoping to see it be Steam Deck Verified.</p>
-<p>Will you be checking this one out?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/atmospheric-narrative-adventure-a-void-hope-launches-february-29th/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/atmospheric-narrative-adventure-a-void-hope-launches-february-29th/</guid>
-      <pubDate>Fri, 02 Feb 2024 12:07:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1360525415id23944gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Pixel Graphics</category>
       
     </item>
     
