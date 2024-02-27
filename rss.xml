@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-02-26 07:23:42.763411</pubDate>
+    <pubDate>2024-02-27 07:24:08.419326</pubDate>
 
     
     <image>
@@ -18,6 +18,230 @@
     </image>
 
     
+    
+    <item>
+      <title>Proton Experimental updated with Proton 9 - adds fixes for Helldivers 2 and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Now that the <a href="https://www.gamingonlinux.com/2024/02/proton-9-now-in-beta-with-improved-game-compatibility-for-steam-deck-linux/" target="_blank">testing is open for Proton 9</a>, Valve have now updated Proton Experimental to move over to Proton 9 along with a bunch of extra game fixes for Steam Deck / Linux. Confused about the different versions and want to learn more about Proton? Check <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">my beginner's guide</a>.</p>
+<p>On top of all the changes from Proton 9, these are what were newly added with the Proton Experimental update for February 26th. First up, noted as now playable:</p>
+<blockquote>
+<ul>
+<li>Hero's Land</li>
+<li>Onimusha: Warlords</li>
+</ul>
+</blockquote>
+<p>The other fixes and improvements:</p>
+<blockquote>
+<ul>
+<li>Made Helldivers 2 work more reliably on different setups.</li>
+<li>Fixed Halo Infinite somtimes crashing during "initalizing data".</li>
+<li>Fixed Russian language rendering in Brothers: A Tale of Two Sons launcher.</li>
+<li>Fixed green stripe in Greedfall video playback.</li>
+<li>Fixed launch failure with STORY OF SEASONS: A Wonderful Life configuration tool.</li>
+<li>Updated Wine-Mono to <a href="https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-9.0.0" target="_blank">9.0.0</a>.</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16809937701708962820gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16809937701708962820gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/793059711708962857gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/793059711708962857gol1.jpg"/></a><br/>
+Pictured - Helldivers 2 on Linux</p>
+<p>And the Wine Mono 9.0.0 changes are:</p>
+<blockquote>
+<ul>
+<li>macOS-related updates:
+<ul>
+<li>Fixed Mono using direct GS access to read the win32 "last error" value, which does not work in 64-bit Wine on macOS.</li>
+<li>Mono now ignores the TMPDIR environment variable, which is not normally set on Windows, but in Wine on macOS it's inherited from the host environment. This had caused errors creating temporary files.</li>
+<li>The test suite now has macOS-specific and Linux-specific expected results, and I have verified that the tests pass on macOS with this release. (Full CI for macOS coming soon, I hope.)</li>
+</ul>
+</li>
+<li>Many System.Configuration improvements, with much of Mono's code replaced with code from referencesource.</li>
+<li>Assemblies installed in the GAC can now use SkipVerification. Mono didn't allow this for reasons that were unclear, and it's hard to test whether .NET Framework matches. This had caused "invalid IL code" errors in 8.0.0 with assemblies installed to the Windows GAC, because that was the first version to inform Mono that those assemblies were in the GAC. Those regressions should be fixed now.</li>
+<li>Added Microsoft.VisualBasic.Compatibility.dll.</li>
+<li>Fixed the PDB filenames embedded in PE dll's.</li>
+<li>FNA now uses D3D11 by default instead of OpenGL. This should fix hangs in some games that use multiple threads with XNA.</li>
+<li>Changed the <code class="inline-code">List<t>.Sort(Comparison<t>)</t></t></code> method to not count as a modification. This is a bug in .NET Framework that Shenzhen I/O depends on.</li>
+<li>Updated the registry information with a new .NET Framework Release number, which helps the XSplit Broadcaster Installer (but XSplit still doesn't work).</li>
+<li>GC invocations and traced methods are now logged to <code class="inline-code">WINE_FTRACE_FILE</code> if it is set in the environment.</li>
+<li>The DriveInfo.VolumeLabel property has been imported from referencesource.</li>
+<li>Upstream updates:
+<ul>
+<li>Mono to main branch as of 2024-01-26</li>
+<li>FNA to 24.01</li>
+<li>FNA.NetStub to master branch as of 2023-10-27</li>
+<li>llvm-mingw to 20231128</li>
+<li>SDL to 2.28.5</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>See the <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">full changelog</a> for more.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/proton-experimental-updated-with-proton-9-adds-fixes-for-helldivers-2-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/proton-experimental-updated-with-proton-9-adds-fixes-for-helldivers-2-and-more/</guid>
+      <pubDate>Mon, 26 Feb 2024 15:54:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1902036238id24061gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Windowkill is a clever multi-window twin-stick shooter that moves around your screen</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>This might be one of the most unique games I've ever played. Windowkill from torcado just released on Steam with Native Linux support and its use of multiple moving windows really changes the bullet-hell genre. <em>Note: personal purchase.</em></p>
+<p><em>Made with <a href="https://godotengine.org" target="_blank">Godot Engine</a>, it's not just a great game but another fun example of what Godot devs can do.</em></p>
+<p>An experimental game where the play area is constantly shrinking around you, and you need to move all over your screen in this little window to get at enemies, or away from them. You shoot the window borders to expand it, making it quite chaotic and challenging to do that on top of firing at enemies to not get swarmed. Other windows will spawn on your desktop, with bosses and all sorts. It's just so exceptionally clever and surprisingly works really well too.</p>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15918868961708957805gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15918868961708957805gol1.jpg"/></a>Pictured - Windowkill on Kubuntu - KDE Plasma (X11)</em></p>
+<p><em>I did also test it on Wayland too with KDE Plasma, and it works fine there too.</em></p>
+<p>Part of what makes it challenging, is that your bullets stop at the window edge which is how you expand the window. So to take down bosses like one pictured above, you <em>need</em> to get the windows to overlap. It's a game of <em>constant</em> movement, you're always thinking of where you want to go next and how to get there while avoiding enemies darting at you, bosses firing at you, other enemies sneaking in behind you and more. Pure chaotic fun.</p>
+<p>Mechanically it's a twin-stick bullet-hell, that throws in a sprinkle of Vampire Survivor-like popularised gem drops to pick up, to then continually upgrade your little character. Here though, you can power-up <em>whenever</em> you want. The shop is always open at the tap of a button to jump in and spend some purple dots to upgrade. You can get more health, multi-shots, shots that pierce through multiple enemies, splash damage from your bullets and so on.</p>
+<div class="hidden_video" data-video-id="vA60y3bpKBs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7afdfb35287f999ccdc8f713894bbf48.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/vA60y3bpKBs" target="_blank">See video</a></div></div>
+<p>Defeating each boss will drop down a special upgrade item too, allowing you to pick something extra. There's some fun options here too like an an extra window that will have an area on it that just constantly damages enemies, or giving you the ability (on a cool down) to enlarge the main window to temporarily make it a bit easier and give you more space and so on. So many options that makes it such a fun game to repeatedly jump back into for one more run.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13593976271708959844gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13593976271708959844gol1.jpg"/></a><br/>
+<em>Pictured - Windowkill on Kubuntu - KDE Plasma (X11)</em></p>
+<p>How about on the Steam Deck? So it works quite well on Desktop Linux but I was curious how it would go there. Considering the type of game, I didn't think it would actually really work. Curiously, the Native Linux version would show a Godot logo screen and then my device just reboots. Proton 8 at least got it to launch but the multi-window system didn't work well in Gaming Mode and I couldn't actually do anything. Looking on <a href="https://www.protondb.com/app/2726450#8CHrZ1K2cS" target="_blank">ProtonDB</a> someone else mentioned the reboot issue too. For now, seems you'll need Desktop Mode on Steam Deck to make it work. So I'll just stick to playing this one on my desktop, where I'm massively enjoying it.</p>
+<p>This game deserves many more eyes on it and much success. Wonderful idea. This is probably going to take over my free time for a while (when I'm not constantly dying in Helldivers 2). A nice coffee-break game that will make you play a bit too long and have your coffee go cold.</p>
+<p>Check out <a href="https://store.steampowered.com/app/2726450/Windowkill/" target="_blank">Windowkill on Steam</a> or <a href="https://torcado.itch.io/windowkill" target="_blank">itch.io</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/windowkill-is-a-clever-multi-window-twin-stick-shooter-that-moves-around-your-screen/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/windowkill-is-a-clever-multi-window-twin-stick-shooter-that-moves-around-your-screen/</guid>
+      <pubDate>Mon, 26 Feb 2024 15:05:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2132603118id24060gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Bullet Hell</category>
+      
+      <category>Godot Engine</category>
+      
+    </item>
+    
+    <item>
+      <title>Stealthy platformer Kiyo in need of Linux testers</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Developer Pixel Rats emailed in about their stealthy platformer that now has a Playtest available on Steam, and they're requesting backup from Linux players to see how it runs across different systems.</p>
+<p>More about it: "Sneak, fight and sabotage an evil bunny corporation in this stealthy platformer. Join a resistance group of animals trying to get their home planet back from the paws of evil rabbits. Master stealth, swing with ninja ropes, crack tricky puzzles and enjoy satirical humour!"</p>
+<p>The developer mentioned they wrote their game engine from scratch, so it's vital they get as many people as possible to give it a go to ensure the eventual release works well. Check out the trailer showcase below:</p>
+<div class="hidden_video" data-video-id="mADnyzF0XYw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a595df95fc9718d43c780f45b01c386b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/mADnyzF0XYw" target="_blank">See video</a></div></div>
+<p>Game Features (from Steam):</p>
+<blockquote>
+<ul>
+<li>Semi-open overworld.</li>
+<li>A complex story with a narrative alluding to real-life societal issues.</li>
+<li>Stealth gameplay.</li>
+<li>Dynamic lights and shadows that influence the gameplay.</li>
+<li>Enemy AI that responds to visual, audio and environmental inputs (important while sneaking).</li>
+<li>Physics-based ninja rope and archery.</li>
+<li>Original synthwave soundtrack and immersive audio design.</li>
+<li>Proprietary engine.</li>
+<li>Pole dancing.</li>
+</ul>
+</blockquote>
+<p>You can join the <a href="https://store.steampowered.com/app/2466790/Kiyo/" target="_blank">Playtest on Steam</a>. Just scroll down to the banner when logged in to request access.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/stealthy-platformer-kiyo-in-need-of-linux-testers/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/stealthy-platformer-kiyo-in-need-of-linux-testers/</guid>
+      <pubDate>Mon, 26 Feb 2024 13:30:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1210824989id24059gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Platformer</category>
+      
+      <category>Stealth</category>
+      
+    </item>
+    
+    <item>
+      <title>We can probably say a final goodbye to Roblox on Linux with Wine soon</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After Roblox recently introduced Hyperion anti-tamper, there were some issues running it on Linux, but there's been workarounds and some of the Roblox staff made it to work on Linux with Wine again, but it seems not for much longer.</p>
+<p>This ongoing saga of Roblox working, then not working, then working again and so on looks like it's about to end and not in a good way for people playing it on Linux with Wine. The info comes from the Roblox developer forum (login required), spread across a few posts in the topic "<a href="https://devforum.roblox.com/t/why-isnt-hyperion-an-anti-cheat/2840095/1" target="_blank">Why isn’t Hyperion an anti-cheat?</a>".</p>
+<p>Roblox staff member Bitdancer once again answering lots of questions, and then <a href="https://devforum.roblox.com/t/why-isnt-hyperion-an-anti-cheat/2840095/22?u=sirsquiddybob" target="_blank">this</a> was noted:</p>
+<blockquote>
+<p>We have a similar issue with our unofficial Wine support. We see it being used for cheating, which is heartbreaking, to be honest, as this was a personal effort of our developers under the assumption that folks out there would understand and not misuse it.</p>
+</blockquote>
+<p>In reply to a user asking if "Roblox on Linux is likely not gonna last much longer?", Bitdancer <a href="https://devforum.roblox.com/t/why-isnt-hyperion-an-anti-cheat/2840095/27?u=sirsquiddybob" target="_blank">replied</a>:</p>
+<blockquote>
+<p>I am very sorry, but you are correct. Unfortunately, we have exhausted our options.</p>
+</blockquote>
+<p>Further <a href="https://devforum.roblox.com/t/why-isnt-hyperion-an-anti-cheat/2840095/29?u=sirsquiddybob" target="_blank">expanding</a> on the why:</p>
+<blockquote>
+<p>Wine is an excellent tool for reverse engineering. Additionally, we had to disable many antitamper checks to make Hyperion run on Wine. This has allowed interested parties to learn a lot about the internal workings of Hyperion, relevant to both Win32 and UWP. As the initial shock of Hyperion’s release started wearing off, many people have begun discovering the various angles through which one can learn more about the inner workings of Hyperion. Apparently, many have done just that, necessitating us to become more strict.</p>
+</blockquote>
+<p>Continuing across <a href="https://devforum.roblox.com/t/why-isnt-hyperion-an-anti-cheat/2840095/33?u=sirsquiddybob" target="_blank">another</a> post:</p>
+<blockquote>
+<p>The reason I gave above is one, rather significant, reason but not the only one. There have been many contributing factors. For example, the increased detection of cheating on Wine, the floundering of Wine-based Roblox exploits on different Discord servers, and the question of maintainability. Hyperion is a complex piece of software; we introduced more than one bug in Hyperion because we wanted to make something work on Wine. Ultimately, every responsible company must ask whether it is worth the effort. Who is responsible when things go wrong? What does unofficial support really mean? How many users of other platforms will be inconvenienced by our decision to support Wine? How can we make features such as kernel components work, and so much more.</p>
+</blockquote>
+<p>As they explained in the quotes above, it doesn't necessarily mean Linux players specifically are the ones actually cheating, but the way they enabled it to work has allowed cheat makers to look a bit more behind the scenes to enable cheats even on Windows.</p>
+<p>So, if you are playing it on Linux, or you were wanting to, it certainly sounds like it will be entirely blocked at some point. A shame, considering how massive a platform Roblox is. It's good to see their team be so clear and open about the issues though, rather than just blocking it and not giving an answer like plenty of other games do.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/we-can-probably-say-a-final-goodbye-to-roblox-on-linux-with-wine-soon/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/we-can-probably-say-a-final-goodbye-to-roblox-on-linux-with-wine-soon/</guid>
+      <pubDate>Mon, 26 Feb 2024 13:03:40 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/145261771id24058gol.jpg" type="image/jpeg"/>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>Misc</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Upcoming GZDoom shooter Selaco will have Steam Workshop support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Selaco looks absolutely incredible, a first-person shooter built on GZDoom that I've covered a few times because the demos were so much fun. And at the Early Access release in May, it's going to have Steam Workshop support.</p>
+<p>Building up some more excitement for what I fully expect to be quite a big hit in the shooter space, the official Selaco X account posted about the upcoming modding support via Steam Workshop. Noting in a <a href="https://twitter.com/SelacoGame/status/1761426428170494456" target="_blank">thread</a> that Selaco will have support for new maps, weapons, enemies, gameplay changes and more — a lot of it thanks to GZDoom already having such an active modding scene so it's modding support in general is great. Can't wait to see what people create for it!</p>
+<p>Check out the trailer below if you missed it:</p>
+<div class="hidden_video" data-video-id="nUbF8Ytadx0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f9d495c1130ff6c161a0637adada5e7c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/nUbF8Ytadx0" target="_blank">See video</a></div></div>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li>A lengthy story-driven campaign - Selaco is a story-driven experience, and we don't say that lightly. A dedicated writer has been brought on board to assist with creating an engaging and believable sci-fi story and world.</li>
+<li>Intense Action set pieces - Turn the entire world into confetti with the destructive power of your weapons. Every single bullet will react properly with any materials or objects you hit. Our artists have created many different variations for each (voxel)object to ensure that the aftermath of each encounter is palpable. That once lavish office space now nothing but a pile of rubble with broken paintings, smashed tables, screen, chairs, smoke, and chunks of debris.</li>
+<li>Custom AI - With our FEAR influence, writing proper AI was a goal from the get go. The enemy is fully aware of each other's presence and work together to take you down. They will keep their distance if you apply constant pressure on them, will rush you if you hide or run out of bullets, toss grenades if you use the same cover for too long, and much more. Hundreds of custom lines have been written and acted out, providing hints to the player about their current plans and tactics.</li>
+<li>Full soundtrack - Selaco is accompanied by a full length original soundtrack composed by an experienced musician who has worked on many games in the past.</li>
+<li>Professional voice-acting - To help immerse players in the story and atmosphere of Selaco, professional voice actors have been brought on board. Dawn will be voiced by the incredibly talented Melissa Medina, with other casting choices revealed at a later date.</li>
+<li>Extra Gamemodes - Completing levels allows you to replay that level in Incursion Mode, an expanded version of that map where your skills will be tested against a near endless onslaught of enemies. Win incursion maps to gain bonuses to aid you throughout the campaign. New exclusive Incursion Levels and new mutators will also be unlocked as the campaign progresses.</li>
+</ul>
+</blockquote>
+<p>You can follow Selaco along on <a href="https://store.steampowered.com/app/1592280/Selaco/" target="_blank">the Steam page</a>. It will have full Native Linux support at the Early Access release on May 31st.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/upcoming-gzdoom-shooter-selaco-will-have-steam-workshop-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/upcoming-gzdoom-shooter-selaco-will-have-steam-workshop-support/</guid>
+      <pubDate>Mon, 26 Feb 2024 12:47:46 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1498253392id24057gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
     
     <item>
       <title>Wine 9.3 out now with Internet Proxy support improvements, New HID pointer device driver</title>
@@ -3830,176 +4054,6 @@ Add: [Script] Create own Randomizer per instance (#10349)</p>
       <category>RPG</category>
       
       <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Next Fest returns with more demos and livestreams</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Time load up that Steam downloads list because Steam Next Fest is here once again, and there's a whole lot of demos for you to try out. Not only are there plenty of demos but various livestreams will be happening during the event too with developers showing off their games.</p>
-<p>Event trailer below:</p>
-<div class="hidden_video" data-video-id="D2K6OpHsBP4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/82bfab10c2ed2d0791eff5d923861e47.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/D2K6OpHsBP4" target="_blank">See video</a></div></div>
-<p>I've gone through and picked out a few that may be worth your time that I thought seemed really interesting, also noting those that have a Native Linux demo but I'm sure most will run just fine with Proton:</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/2398170/BORE_BLASTERS/" target="_blank">BORE BLASTERS</a> (Native Linux) - underground mining with a helicopter. Yep, that's a thing.</li>
-<li><a href="https://store.steampowered.com/app/1840080/Homeworld_3/" target="_blank">Homeworld 3 - War Games Demo</a> - The space sci-fi strategy game Homeworld returns! </li>
-<li><a href="https://store.steampowered.com/app/1677110/Lightyear_Frontier/" target="_blank">Lightyear Frontier</a> - a peaceful open-world farming adventure with upgradable mechs, whatever will they think of to combine next? </li>
-<li><a href="https://store.steampowered.com/app/2471970/Planetary_Life/" target="_blank">Planetary Life</a> - a quirky looking planet and life sandbox simulation game.</li>
-<li><a href="https://store.steampowered.com/app/1510470/PRIM/" target="_blank">PRIM</a> (Native Linux) - a creepy-but-cute point’n’click adventure game full of dark humour.</li>
-<li><a href="https://store.steampowered.com/app/1482380/Maniac/" target="_blank">Maniac</a> (Native Linux) - GTA meets Vampire Survivors for some real chaos.</li>
-<li><a href="https://store.steampowered.com/app/1268590/Millennia/" target="_blank">Millennia</a> - could this be the next big Civilization-like? It just might be.</li>
-<li><a href="https://store.steampowered.com/app/2162800/shapez_2/" target="_blank">shapez 2</a> (Native Linux) - a huge factory building sim that's good for beginners. Cut up lots of shapes and just keep expanding.</li>
-<li><a href="https://store.steampowered.com/app/2012510/Stormgate/" target="_blank">Stormgate</a> - a new RTS from former Blizzard developers.</li>
-</ul>
-<p><em>As usual, if I find anything especially good / fun, they may see their own articles to highlight them directly.</em></p>
-<p>Check out the whole <a href="https://store.steampowered.com/sale/nextfest" target="_blank">event on Steam</a>.</p>
-<p>It's live until February 12th at 10AM PT / 8PM UTC.</p>
-<p>If you find some great demos, be sure to come back and give over your suggestions in the comments. Sharing is caring as they say.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/steam-next-fest-returns-with-more-demos-and-livestreams/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/steam-next-fest-returns-with-more-demos-and-livestreams/</guid>
-      <pubDate>Mon, 05 Feb 2024 20:35:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1838765014id23957gol.jpg" type="image/jpeg"/>
-      
-      <category>Event</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Life by You the Sims-like from Paradox delayed until June</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Life by You from Paradox Tectonic / Paradox Interactive has suffered a fresh delay and will now not hit Early Access until June. Originally planned to launch in September last year, it moved to March this year and now moved again to June 4th.</p>
-<p>What actually is it: very much a The Sims like game but designed for a fully open-world and highly moddable. The full open-world with no loading screens and real-language conversations set it quite apart from EA's long-running series.</p>
-<p>Paradox Tectonic's General Manager, Rod Humble, announced it in a video below</p>
-<div class="hidden_video" data-video-id="QQLu09M_YGY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b2dfb6dc5eda42e56960b46d1e086a8a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/QQLu09M_YGY" target="_blank">See video</a></div></div>
-<p>You can see their previous Let's Play below for an early look:</p>
-<div class="hidden_video" data-video-id="ocqPVeN0QYA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/496333bf55a6d108990831f1eb28fe52.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ocqPVeN0QYA" target="_blank">See video</a></div></div>
-<p>Like a lot of recent Paradox games, it will only be officially available for Windows. Hopefully it will run nicely with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a> so we can get some Life by You on Linux / Steam Deck without too much fuss. Although since it will be Early Access, rough edges are to be expected.</p>
-<p>Will it dethrone The Sims 4 though? It still sees regular content updates and on Steam it sees well over 40,000 players peak each day but I'm sure plenty of The Sims fans will be checking it out eager for something different.</p>
-<p>Is it something you'll be trying?</p>
-<p>Follow the <a href="https://store.steampowered.com/app/2358660/Life_by_You/" target="_blank">game on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/life-by-you-the-sims-like-from-paradox-delayed-until-june/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/life-by-you-the-sims-like-from-paradox-delayed-until-june/</guid>
-      <pubDate>Mon, 05 Feb 2024 14:05:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/438904322id23956gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Paradox Interactive</category>
-      
-      <category>Simulation</category>
-      
-    </item>
-    
-    <item>
-      <title>The new Skate from EA will be coming to Steam</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The next-generation Skate is now confirmed to getting a PC release on Steam, so thankfully you won't have to deal with the EA App directly. It was already <a href="https://twitter.com/skate/status/1430938091834023941" target="_blank">confirmed</a> some time ago to be coming to PC (a first for the series), but confirmation that it will be on Steam means it should be nice and smooth to get running on Desktop Linux and Steam Deck.</p>
-<p>News about it coming to Steam though only appeared recently in the below video from December 21st, which it seems went largely unnoticed until recently when the team also <a href="https://twitter.com/skate/status/1753116400061682070" target="_blank">posted</a> about it on X (formerly Twitter) to confirm it there as well with a clip from the longer video.</p>
-<div class="hidden_video" data-video-id="iXdQp0fmhCE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37cde28076dd2e2bbe22ef459dbd42fe.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/iXdQp0fmhCE" target="_blank">See video</a></div></div>
-<p>Also announced in the video is that it will have cross-platform and cross-progression play, good news for players (or if you have friends) across multiple platforms.</p>
-<p>Technically Skate 4, it's just going to be called <em>Skate</em>. (the dot is included). It will be free to play at release, so I'll likely give it a go and report back on what compatibility to expect for Linux / Steam Deck.</p>
-<p>We do have a few skating games on PC nowadays including Tony Hawk's Pro Skater 1 + 2, Session: Skate Sim, Skater XL but no doubt many will be looking forward to <em>skate</em>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/the-new-skate-from-ea-will-be-coming-to-steam/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/the-new-skate-from-ea-will-be-coming-to-steam/</guid>
-      <pubDate>Mon, 05 Feb 2024 13:42:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/769166674id23955gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Sports</category>
-      
-      <category>Steam</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>NonSteamLaunchers for Steam Deck expands automatic game shortcuts for more stores</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>NonSteamLaunchers is a project to help you easily install various external launchers / game stores on Steam Deck like EA App, Battle.net, Amazon, GOG Galaxy, Ubisoft and more. Recent releases have much improved automatic shortcut creation in your Steam Library.</p>
-<p>It can be a bit of a nuisance to set up all these extra stores, and remembering what games you actually have available so NonSteamLaunchers can make it all just that little bit easier.</p>
-<p>The feature first <a href="https://www.gamingonlinux.com/2024/01/nonsteamlaunchers-for-other-stores-on-steam-deck-adds-automatic-game-shortcuts/" target="_blank">introduced in January</a>, NonSteamLaunchers now has a scanning system to automatically add game shortcuts into your Steam Library from all these launchers. Initially quite limited, the last few releases have expanded what launchers / stores it's able to do it for. As of version 3.8 released a couple of days ago it can now scan and add shortcuts for Epic Games, Ubisoft Connect, EA App, Gog Galaxy, Battle.net and Amazon Games.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19742232301707138643gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19742232301707138643gol1.jpg"/></a></p>
-<p>See more on the <a href="https://github.com/moraroy/NonSteamLaunchers-On-Steam-Deck" target="_blank">GitHub page</a>.</p>
-<p>They also have a <a href="https://www.gamingonlinux.com/2023/01/decky-loader-makes-steam-deck-plugins-even-easier-with-new-installer/" target="_blank">Decky Loader</a> plugin they're working on, which you can test from their <a href="https://github.com/moraroy/NonSteamLaunchersDecky" target="_blank">GitHub</a> while they await approval to be included in the Decky Loader store.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/nonsteamlaunchers-for-steam-deck-expands-automatic-game-shortcuts-for-more-stores/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/nonsteamlaunchers-for-steam-deck-expands-automatic-game-shortcuts-for-more-stores/</guid>
-      <pubDate>Mon, 05 Feb 2024 13:12:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2140924499id23954gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Apps</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Super Pocket Taito Edition Review - Licensed Linux Retro-gaming on a Budget</title>
-      <author>Pengling</author>
-      <description><div class="content group e-content">
-<p>Blaze Entertainment's latest Evercade-compatible device makes for an excellent entry to licensed emulation on Linux. <em><strong>NOTE:</strong> Personal purchase.</em></p>
-<p>Originally launched in 2020, the <a href="https://evercade.co.uk/" target="_blank">Evercade</a> line is seemingly not often mentioned in Linux-gaming circles, even though the consoles are Linux-based - I find this curious, since in my experience Linux gamers generally tend to be supportive of projects that make use of our software of choice. With a focus on (usually multi-game) cartridge releases instead of digital ones, specifically covering retro and retro-style titles, the platform has seen steady support over the last few years, and now has a sister-brand called <a href="https://www.hypermegatech.com/" target="_blank">Hyper Mega Tech!</a>. This new offshoot offers a line of lower-priced Evercade-compatible handhelds that contain a selection of officially-licensed pre-loaded games, under the name of Super Pocket. I discovered these devices whilst perusing videos about interesting and unusual handhelds recently, and when I saw that they're Evercade-compatible I was intrigued - and, of course, I ended up getting one. I couldn't resist - I might just have an addiction to portables...</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9589767191707132506gol12971.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9589767191707132506gol12971.jpg"/></a><br/>
-<em>The iconic Space Invaders monster looms forth!</em></p>
-<p>At the time of writing there are two versions of the Super Pocket - the Capcom Edition (containing 12 games) and the Taito Edition (containing 18). Though both versions of the Super Pocket offer excellent game-collections, for me the Taito one has more titles overall that are my sort of thing - and the fact that it includes both Bubble Bobble and The NewZealand Story on the same device is a <em>big</em> selling-point for me. Reason being, for Brits who grew up during the 1980s and 1990s home-microcomputer boom, these two Taito titles occupy the same cultural-space that Super Mario Bros. and Super Mario Bros. 3 do for gamers in North America and Japan, except they were available on just about every system going. With the exception of Space Invaders '91, the included titles are all the original arcade versions, not any of the later home-console conversions that so often appear in licensed collections like this, which is really nice to see!</p>
-<p>The Taito handheld includes <em>Bubble Bobble</em>, <em>Cadash</em>, <em>Chack'n Pop</em>, <em>Don Doko Don</em>, <em>Elevator Action</em>, <em>Football Champ</em>, <em>Growl</em>, <em>KiKi KaiKai</em>, <em>The Legend of Kage</em>, <em>Liquid Kids</em>, <em>Operation Wolf</em>, <em>Puzzle Bobble</em>, <em>Rastan</em>, <em>Space Invaders</em>, <em>Space Invaders '91</em>, <em>The Fairyland Story</em>, <em>The NewZealand Story</em>, and <em>Volfied</em> (all arcade games, except for Space Invaders '91, which is a Mega Drive title). Meanwhile, the Capcom device includes <em>1942</em>, <em>1943</em>, <em>1944: The Loop Master</em>, <em>Bionic Commando</em>, <em>Captain Commando</em>, <em>Final Fight</em>, <em>Forgotten Worlds</em>, <em>Ghouls 'n' Ghosts</em>, <em>Mega Man</em>, <em>Street Fighter II': Hyper Fighting</em>, <em>Strider</em>, and <em>Wolf of the Battlefield: MERCS</em> (also all arcade games, except for Mega Man, which was originally released for the NES).</p>
-<p>Compared to the pricing of the other currently-available Evercade machines (£130 for the Evercade EXP handheld which offers TATE mode for vertical games, and £90 for the Evercade VS home-console which supports up to four players), the Super Pocket at £50 makes for the cheapest way <em>by far</em> to get into much of the Evercade library if you're interested in doing so. The Super Pocket is compatible with most Evercade cartridges (which cost £18 each), though at the time of writing, the game Cathedral, on the Alwa's Awakening/Cathedral twin-pack does not work on these machines, and Future Wars on the Delphine Collection 1 cartridge has been reported not to work on at least some units, as well. Even with those caveats, you still get access to the vast majority of the library.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13968035391707132507gol12971.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13968035391707132507gol12971.jpg"/></a><br/>
-<em>The console itself.</em></p>
-<p>The machine is made from a nice-feeling matte-plastic with a black front panel and a green back, with the buttons on the front and back contrasting in line with this colour-scheme. I'm not quite sure why they went with black-and-green for the Taito machine - it looks more like something that I would associate with Gremlin Graphics' Zool than with Taito, whose classic logo typically used red, yellow, or orange with a splash of white, and whose later iconic triangular logo was blue-and-white. Still, it looks really nice, and evokes a strong 1980s/1990s feel, which is clearly what they're going for considering the release-years of the included games. It's compact but feels good in the hand, and the controls are mostly excellent; The d-pad is superb and feels very definite when you push a direction, and the buttons are somewhat clicky and rather reminiscent of those of the Game Boy Advance SP.</p>
-<p>The only real issue is with the L1/L2 and R1/R2 "shoulder" buttons on the back, which are incredibly awkward to press, and would be much better if they stuck out a little more and were less firm and clicky than the buttons on the front of the unit - however, as far as the built-in games go, you're not likely to be using the shoulder-buttons, so it's only a potential issue when using certain Evercade cartridges (and, indeed, on the Super Pocket Capcom Edition, which I'm told does use the rear buttons for some of its games). That said, these buttons are bad, and not fit for purpose if you're planning for this to be your only Evercade-compatible device and intend to pick up games that use them. This is quite surprising considering how good the rest of the controls are, which makes this particular element feel like an afterthought. Since the Super Pocket handhelds are numbered, implying more to come, hopefully future revisions can fix these buttons in some way.</p>
-<p>The battery lasts for 4 hours, which is about the baseline for most handhelds today. I was pleasantly surprised to find that it lives up to the claimed time exactly! It's always nice to see a company not exaggerating this - well done, Blaze.</p>
-<p>The screen is pretty good for a device that only costs £50. It's not top-of-the-line or anything (there's a tiny bit of light-bleed at the top-left edge on my unit, but this sort of thing doesn't tremendously bother me for a device in this price-bracket, and I never notice it during gameplay and barely notice it in the menus), but it doesn't need to be considering that the hardware is intended for very old games that were made for displays that weren't perfect themselves. The only feature, or rather lack thereof, that makes it stand out is that there's no way to change the brightness, which is something I've never seen before on any backlit display. Luckily, it's not set either too bright or too dim - it's perfectly fine for the task at hand. Games look nice on it, although even if you use the system's "Pixel Perfect" display option, there are always some soft-edged scaling artifacts (which is particularly noticeable on the vertical titles that are included) and "shimmering" when scrolling, which I presume is because the Super Pocket's 320x240 resolution is lower than any of the other Evercade consoles out there; Again, though, for £50 I'm much more willing to let it slide than I would be if a more expensive device did this.</p>
-<p>It's worth pointing out that the price-point of the Super Pocket also means that there's no multiplayer or TV-out functionality, as other Evercade consoles have - this is purely a single-player console.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4396064371707132507gol12971.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4396064371707132507gol12971.jpg"/></a><br/>
-<em>Remember these games? They're back, in cartridge form!</em></p>
-<p>I picked up a handful of cartridges with my device, some of which (particularly the arcade-game collections) include titles that have not seen a re-release on current PC-gaming platforms at the time of writing, and they're an ideal fit for a device like this, especially since most Evercade cartridges include multiple games. Unlike the retro systems that inspired the Evercade line, you can hot-swap cartridges while the system is powered on, as long as a game isn't running at the time, which is very convenient and something that I became accustomed to back in the days of the Nintendo 3DS. However, it's probably worth being somewhat cautious after saving and exiting a game, just to be on the safe side, as, much like the cartridges of the NeoGeo Pocket Colour, Nintendo 3DS, and Nintendo Switch, they're flash-based rather than using mask-ROMs.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6930365091707132508gol12971.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6930365091707132508gol12971.jpg"/></a><br/>
-<em>Retro presentation for retro games.</em></p>
-<p>For those who remember Ocean Software's famous home-microcomputer budget tape range, The Hit Squad, the way that the cartridges are packaged is something of a callback to that - they come in cute little boxes with co-ordinating artwork and collectible numbering, to hook you if you're inclined towards collecting and displaying them all. They're also colour-coded, with red boxes representing retro console/handheld and native titles, purple representing arcade games, and blue representing software originally made for home computers. And, unlike full-priced releases for major platforms, you also get a full-colour manual as well, which contains details about the games and those behind them. (Note that, though Evercade cartridges on the standard consoles display an information-page replicating the relevant part of the manual before you jump into a game, this does not happen on the Super Pocket machines - on those, your chosen game loads immediately without showing anything else first.)</p>
-<p>Just like those curated collections of tapes, so too are the Evercade's cartridges curated, and this is one of their great strengths. You'll typically select a cartridge on the basis of a few games that interest you, and end up discovering other games you like along the way. This has happened to me with every single cartridge I've picked up so far. Moreover, not only do the collections sometimes include games that were never released in English before, or finished versions of "lost" titles that weren't released at all during their time, sometimes they'll also come with little bonus surprises like art-cards and posters (I've also heard that some offer stickers too, though I haven't come across any of those myself yet), which I was absolutely delighted by - it reminded me of when older games would include these little goodies, which of course is the intent. I'll definitely be displaying these!</p>
-<p>When you load up a cartridge, the menus are well-presented, displaying the games using either their original key-art or arcade-flyer in a scrolling horizontal format; This reminded me of the likes of EmulationStation, though it's not quite as snappy and responsive (it feels like there's some room for improvement here, but it's not a huge issue). It's easy to switch between the Super Pocket's selection of built-in games and those on a cartridge by pressing the Menu button located just under the screen, which will let you access either one of the gaming options, as well as the system's Settings menu.</p>
-<p>The emulation is, as anyone who's familiar with <a href="https://evercade.co.uk/credits/" target="_blank">the usual suspects from the Linux emulation scene</a> will already know, pretty much spot-on. I'm actually pickier about this than most, because even though I'm an emulation enthusiast, at one point I was also a major real-hardware-only stickler whilst waiting for the emulation of certain systems I knew well to improve (I'm the sort who wouldn't put up with inaccurate SNES audio emulation or incorrect Z-fighting in PlayStation emulators); Those improvements became reality before too long, and what's presented by the Super Pocket (and by extension the wider Evercade line) is more than good enough for me. I suspect that folks without specialised emulation knowledge would never notice any difference compared to their memories of the real thing. The only downside I found is that you can't remap the controls on this device, though given the price, size, and form-factor this didn't bother me like it otherwise would - they're aiming for a no-fuss console experience, after all.</p>
-<p>The Super Pocket (and its Evercade kin) won't be for everyone, especially in a world where it's competing against low-cost emulation handhelds that seem to multiply by the month and don't require cartridges, but if you're looking for a simple Linux-based way to get into retro-gaming (plus some modern indies made in the retro style), where some of the money goes back to the rights-holders for the games and you get some neat little artifacts to use and display, then this is a damn fine place to start. Even with the awful shoulder-buttons, I've been left very impressed by the entire experience and its presentation, inside and out.</p>
-<p>If you're interested in picking one up, Blaze Entertainment lists their worldwide retailers for the Evercade and Super Pocket lines <a href="https://evercade.co.uk/retailers/" target="_blank">here (Evercade)</a> and <a href="https://www.hypermegatech.com/retailers/" target="_blank">here (Super Pocket)</a>.</p>
-<p>Did you know that the Evercade devices are Linux-based? Are you interested in grabbing one? And are there any retro or indie games that you'd like to see come to the platform? Please share in the comments, below!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/super-pocket-taito-edition-review-licensed-linux-retro-gaming-on-a-budget/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/super-pocket-taito-edition-review-licensed-linux-retro-gaming-on-a-budget/</guid>
-      <pubDate>Mon, 05 Feb 2024 12:25:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/935949480id23953gol.jpg" type="image/jpeg"/>
-      
-      <category>Emulation</category>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>Retro</category>
       
     </item>
     
