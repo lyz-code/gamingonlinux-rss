@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-02-27 07:24:08.419326</pubDate>
+    <pubDate>2024-02-28 07:22:17.574011</pubDate>
 
     
     <image>
@@ -18,6 +18,385 @@
     </image>
 
     
+    
+    <item>
+      <title>Nintendo goes after Switch emulator yuzu in new lawsuit</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Well, here we go. Nintendo have formally filed a lawsuit against the creators of the popular open source Switch emulator <a href="https://yuzu-emu.org" target="_blank">yuzu</a>. <em>Nintendo certainly aren't holding back on this one either.</em></p>
+<p>Looking over the <a href="https://www.scribd.com/document/709016504/Nintendo-of-America-Inc-v-Tropic-Haze-LLC-1-24-Cv-00082-No-1-D-R-I-Feb-26-2024" target="_blank">document</a> filed February 26th, Nintendo give an example in their complaint with The Legend of Zelda: Tears of the Kingdom saying that it was "unlawfully distributed a week and a half before its release by Nintendo" and that copies of it were "successfully downloaded from pirate websites over one million times before the game was published and made available for lawful purchase by Nintendo".</p>
+<p>A major part of the argument is how Nintendo say that "Yuzu unlawfully circumvents the technological measures on Nintendo Switch games and allows for the play of encrypted Nintendo Switch games on devices other than a Nintendo Switch". Nintendo go on to talk about how yuzu allows working around all the protections they put in place, and that "to be clear, there is no lawful way to use Yuzu to play Nintendo Switch games, including because it must decrypt the games’ encryption".</p>
+<p>To work yuzu needs certain things from a Switch console, of which the early models had an exploit where this was possible. The yuzu install guide mentions specifically you need a "HACKABLE Nintendo Switch", which Nintendo argue in the suit that "Users obtain the prod.keys either through unlawful websites or by unlawfully hacking a Nintendo Switch console". Because of how yuzu works Nintendo state it "turns general computing devices into tools for massive intellectual property infringement of Nintendo and others’ copyrighted works".</p>
+<p>What's not particularly great for the yuzu team is a quote included in the suit from the project lead Bunnei, where Nintendo quote Bunnei saying "users probably just pirate a yuzu folder with everything" when replying to another user about the Quickstart Guide as it can be confusing for people. For context, this is a quote from the yuzu Discord server, but a follow-up post from another developer mentions directly after it "just to clarify on that last statement, we do not endorse, nor support piracy and the users who do won't receive assistance". Still, it's giving Nintendo easy ammo.</p>
+<p>Nintendo are going after damages (which look to be quite high in monies), plus they want the yuzu website domain transferred to Nintendo control and the total shut down of yuzu as a whole.</p>
+<p>This is going to get messy for yuzu, and for the future of emulation.</p>
+<p style="text-align:right"><em>Via <a href="https://twitter.com/stephentotilo/status/1762576284817768457" target="_blank">Stephen Totilo</a> on X.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/nintendo-goes-after-switch-emulator-yuzu-in-new-lawsuit/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/nintendo-goes-after-switch-emulator-yuzu-in-new-lawsuit/</guid>
+      <pubDate>Tue, 27 Feb 2024 22:56:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2117023214id24070gol.jpg" type="image/jpeg"/>
+      
+      <category>Emulation</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve release big stable Steam Client update for Steam / Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After a little while of many Beta releases, Valve has today launched the latest stable update to the Steam Client for Steam Deck and Desktop PCs.</p>
+<p>Since this is a Steam Client update a lot of what's changed is shared between the Steam Deck version and the Desktop version (this is not a SteamOS update). To save you clicking around though you can find the full update notes below.</p>
+<p>Steam Deck <a href="https://store.steampowered.com/news/app/1675200/view/4157455695153534562" target="_blank">changelog</a>:</p>
+<blockquote>
+<p><strong>General</strong></p>
+<ul>
+<li>Updated embedded Chromium build in Steam, clearing path for further updates soon.</li>
+<li>Improved UI performance while navigating Steam interface.</li>
+<li>Updated the quick access performance menu with descriptions for each setting, including how they affect the system and the expected power/performance/visual quality tradeoffs.</li>
+<li>Triggering a Factory Reset will now install a clean version of the OS in addition to deleting user data if the OS image has been modified.</li>
+<li>Improved performance when adding/removing multiple games to/from Family View in the library.</li>
+<li>Corrected height of low battery notification.</li>
+<li>Removed duplicate friend counter on game capsules.</li>
+<li>Fixed a case where the sdcard was set as the default install location on reboot.</li>
+<li>Fixed a case where the network status icon would fail to render for virtual networks.</li>
+<li>Fixed store button on main menu remaining disabled in Family View even if store permissions were granted to the account.</li>
+<li>Fixed creation of erroneous steamwebhelper processes when steamwebhelper crashes.</li>
+<li>Fixed on-screen text input to show the game in the background.</li>
+<li>Fixed downloading content with long file names in some cases.</li>
+<li>Fixed a case where the client could get stuck in the shutting down screen.</li>
+<li>Fixed a case where no element would be selected in the UI when closing the quick access menu.</li>
+<li>Fixed CD Keys popup not appearing during launch for games that request it.</li>
+<li>Fixed failing to switch to Japanese keyboard layout.</li>
+<li>Fixed some extraneous disk reads that could impact performance.</li>
+<li>Fixed game news sometimes appearing out of order in game details activity feed.</li>
+<li>Fixed miscellaneous regressions in the screenshot manager.</li>
+<li>Fixed wide game images sometimes failing to load.</li>
+<li>Fixed custom logo positions sometimes not applying on app details pages.</li>
+</ul>
+<p><strong>Steam Input</strong></p>
+<ul>
+<li>Added a setting for the player LED for DualSense controllers.</li>
+<li>Controllers can be used to dismiss/continue when controller support information panels appear before a game's launch.</li>
+<li>QoL: Gyro Calibration button available in Controller Config Quick settings, and in the Gyro section of the Controller Layout Editor.</li>
+<li>Fixed styling of the controller mode settings page.</li>
+<li>Fixed Gyro enable button not being respected.</li>
+<li>Fixed occasionally creating an extra virtual controller that is non-responsive.</li>
+</ul>
+<p><strong>Friends &amp; Chat</strong></p>
+<ul>
+<li>Fixed a case where group chats could get stuck on "Requesting Group Chat Information" after reconnecting to Steam.</li>
+</ul>
+<p><strong>Remote Play</strong></p>
+<ul>
+<li>Fixed missing performance graph while streaming.</li>
+</ul>
+<p><strong>Desktop Mode</strong></p>
+<ul>
+<li>Stopped showing ready-to-play icon on Recent Games shelf, which does not filter to ready-to-play.</li>
+<li>Fixed user avatar in title bar momentarily switching back to default during startup.</li>
+<li>Fixed a case where mouse click input could stop working when starting to drag operation on a steam window.</li>
+<li>Fixed main Steam window re-opening when closed if small mode has been entered or exited.</li>
+<li>Fixed Steam windows sometimes freezing until resized.</li>
+<li>Fixed maximize/restore button and window resize grip not updating properly.</li>
+<li>Fixed "My Games" collection also including games borrowed from other users.</li>
+<li>Fixed opacity of play bar on game details pages.</li>
+<li>Fixed overlay notes window controls scrolling off the top and new note/delete note buttons not being visible.</li>
+<li>Fixed mouse cursor jumping when some browser windows are closed or hidden.</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1299578191709073122gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1299578191709073122gol1.jpg"/></a><br/>
+<em>Pictured - Steam Big Picture Mode on Linux Desktop</em></p>
+<p>Desktop <a href="https://store.steampowered.com/news/app/593110/view/4161959294800836361" target="_blank">changelog</a>:</p>
+<blockquote>
+<p><strong>General</strong></p>
+<ul>
+<li>Updated embedded Chromium build in Steam, clearing path for further updates soon.</li>
+<li>Added support for saving uncompressed HDR screenshots as AVIF.</li>
+<li>Improved performance when adding/removing multiple games to/from Family View in the library.</li>
+<li>Removed duplicate friend counter on game capsules.</li>
+<li>Stopped showing ready-to-play icon on Recent Games shelf, which does not filter to ready-to-play.</li>
+<li>Fixed bug which would sometimes cause Steam to show UI and take focus if configured to run at system startup.</li>
+<li>Fixed bug which would sometimes cause Update News window to take focus from other Steam windows.</li>
+<li>Fixed issue where clicking on Voice Chat invitation notifications did not open chat.</li>
+<li>Fixed maximize/restore button and window resize grip not updating properly.</li>
+<li>Fixed "My Games" collection also including games borrowed from other users.</li>
+<li>Fixed opacity of play bar on game details pages.</li>
+<li>Fixed window border sometimes showing around full screen videos on Windows 11.</li>
+<li>Fixed settings UI showing the wrong default state for the "Guide button focuses Steam" setting.</li>
+<li>Fixed miscellaneous regressions in the screenshot manager.</li>
+<li>Fixed wide game images sometimes failing to load.</li>
+<li>Fixed custom logo positions sometimes not applying on app details pages.</li>
+<li>Fixed double notifications when friends go online or in-game.</li>
+<li>Fixed collapse state of friends list and chat group sections not being properly remembered.</li>
+<li>Fixed game news sometimes appearing out of order in game details activity feed.</li>
+<li>Fixed a crash when launching a VR game while using SteamVR v1.27.5.</li>
+<li>Fixed CD Keys popup not appearing during launch for games that request it.</li>
+<li>Fixed main Steam window re-opening when closed if small mode has been entered or exited.</li>
+<li>Fixed some extraneous disk reads that could impact performance.</li>
+<li>Fixed detection of whether you have used a VR device in order to improve a few warning messages.</li>
+<li>Fixed downloading content with long file names in some cases.</li>
+<li>Fixed creation of erroneous steamwebhelper processes when steamwebhelper crashes.</li>
+<li>Fixed user avatar in title bar momentarily switching back to default during startup.</li>
+<li>Fixed opening a friend's wishlist in game page activity feed events.</li>
+<li>Fixed explorer window not being brought to foreground when Browse local files is selected on Windows.</li>
+</ul>
+<p><strong>Big Picture Mode</strong></p>
+<ul>
+<li>Added Interface panel to settings</li>
+<li>Improved the display in the "Controller Configuration" tab when there are no controllers attached or the active controller is opted out of Steam Input.</li>
+<li>Fixed a case where no element would be selected in the UI when closing the quick access menu.</li>
+<li>Fixed Steam notifications not showing while in-game.</li>
+</ul>
+<p><strong>Remote Play</strong></p>
+<ul>
+<li>Enable VA-API DRM hardware decoding on Linux.</li>
+<li>Greatly improved performance when using hardware encoding with AMD video cards on Windows.</li>
+<li>Fixed black screen and missing performance graph when starting a stream.</li>
+</ul>
+<p><strong>SteamVR</strong></p>
+<ul>
+<li>Improve layout and imagery for some of the dialogs that show up when launching VR games.</li>
+<li>Clicking on items in the control bar (e.g. a download in progress) will correctly switch to the Steam tab.</li>
+<li>Show reloading message when SteamVR quits before reloading the Steam window.</li>
+<li>Notifications in VR look much better. Requires SteamVR beta, otherwise notifications will not appear.</li>
+<li>Steam now only reloads every fifth time that SteamVR quits.</li>
+<li>Fixed a case where Steam could prevent SteamVR from properly detecting a USB connected headset and/or controllers.</li>
+</ul>
+<p><strong>Steam Input</strong></p>
+<ul>
+<li>Added a setting for the player LED for DualSense controllers.</li>
+<li>QoL Gyro Calibration button available in Controller Config Quick settings, and in the Gyro section of the Controller Layout Editor.</li>
+<li>Controllers can be used to dismiss/continue when controller support information panels appear before a Desktop game's launch.</li>
+<li>Fixed Gyro enable button not being respected.</li>
+<li>Fixed styling of the controller mode settings page.</li>
+<li>Possible fix for cases where configuration edits would be dropped when toggling in and out of the overlay.</li>
+</ul>
+<p><strong>Steam Overlay</strong></p>
+<ul>
+<li>Corrected Steam overlay colors when games have HDR enabled.</li>
+<li>Fixed middle-click panning not working in overlay browser on Windows.</li>
+<li>Fixed notes window controls scrolling off the top and new note/delete note buttons not being visible.</li>
+</ul>
+<p><strong>Friends &amp; Chat</strong></p>
+<ul>
+<li>Fixed a case where group chats could get stuck on "Requesting Group Chat Information" after reconnecting to Steam.</li>
+</ul>
+<p><strong>Linux</strong></p>
+<ul>
+<li>Fixed a case where the client could get stuck in the shutting down screen.</li>
+<li>Fixed rare crashes during window creation.</li>
+<li>Fixed controller input inconsistently working in Big Picture mode windows.</li>
+</ul>
+<p><strong>macOS</strong></p>
+<ul>
+<li>Fixed intermittent Steam API crash in some Apple Silicon games.</li>
+</ul>
+</blockquote>
+<p>Did this update fix some issues you were having? Or are you waiting on Valve fixing something else? Let me know what in the comments.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/valve-release-big-stable-steam-client-update-for-steam-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/valve-release-big-stable-steam-client-update-for-steam-steam-deck/</guid>
+      <pubDate>Tue, 27 Feb 2024 22:32:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2123940725id24069gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>Update</category>
+      
+    </item>
+    
+    <item>
+      <title>shapez 2 demo is sticking around for another month - you need to try this</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>shapez 2 is absolutely going to be a big success when it hits Early Access later this year, and you can try out the demo for a good while longer now so the developer can ensure they get it right.</p>
+<p>It's a <em>pure</em> factory-building game. No aliens, no combat, just you and your conveyor belts spreading across a huge map. The first game in the series had a great idea with you cutting up shapes to make different shapes, and this simply builds upon the basics of it in a much more visually rich setting, along with plenty of new game mechanics.</p>
+<p>Check out the trailer below if you haven't seen it before:</p>
+<div class="hidden_video" data-video-id="0VO_52LJ268"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/95d1a2afb300507942c52c325258bf32.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/0VO_52LJ268" target="_blank">See video</a></div></div>
+<p>Currently no changes are planned for the demo, as the developer continues working on the full game. They are working through feedback to improve various areas of the game like the reusability of shapes and production lines. Thankfully the dev said there was "very little negative feedback" so overall they're onto something good.</p>
+<p>As of late last week, the demo had been played by over 109,477 unique people - impressive.</p>
+<p>The Native Linux demo is <a href="https://store.steampowered.com/app/2162800/shapez_2/" target="_blank">available on Steam</a> until March 25th.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/shapez-2-demo-is-sticking-around-for-another-month-you-need-to-try-this/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/shapez-2-demo-is-sticking-around-for-another-month-you-need-to-try-this/</guid>
+      <pubDate>Tue, 27 Feb 2024 15:25:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1374421739id24068gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Building Sim</category>
+      
+      <category>Demo</category>
+      
+    </item>
+    
+    <item>
+      <title>Streets of Rogue 2 is going to be massive and I&#39;m hyped</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Developer Matt Dabrowski recently did a fresh developer video on the upcoming Streets of Rogue 2, and it's really going to be massive.</p>
+<p>What is it: Streets of Rogue 2 is a crazy, immersive RPG sandbox set in a vast randomly generated open world where freedom and fun are dialed up to 11. Fight, sneak, hack, farm, build, steal, or talk your way to power as you try to topple a corrupt president in countless possible ways – solo or with friends.</p>
+<p>The sequel is going to be a much bigger game, with the developer mentioning in the latest developer video below that even the default map size is "meant to be like a scaled down version of a very small country, which still ends up kind of enormous". Dabrowski then talks a bit about how that's actually done using various algorithms for random generation, a fun look behind the curtain. It all sounds pretty complicated but Dabrowski does a really fun job of breaking it down into the basics to show how the world map is actually built, and shows a little on how you'll be building your own stuff.</p>
+<div class="hidden_video" data-video-id="nGahQVeBoTY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ecb88b3e077bd2a72745641de687d287.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/nGahQVeBoTY" target="_blank">See video</a></div></div>
+<p>The first is one of my favourites to play with others so I really can't wait to play Streets of Rogue 2. It's due out sometime later this year. Will you be picking it up?</p>
+<p>You can <a href="https://store.steampowered.com/app/2165810/Streets_of_Rogue_2/" target="_blank">wishlist / follow on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/streets-of-rogue-2-is-going-to-be-massive-and-im-hyped/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/streets-of-rogue-2-is-going-to-be-massive-and-im-hyped/</guid>
+      <pubDate>Tue, 27 Feb 2024 13:31:27 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/26352185id24066gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Open World</category>
+      
+    </item>
+    
+    <item>
+      <title>PC and handheld gaming with Linux levels up with Bazzite v2.3.0</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Bazzite version 2.3.0 has been released, and it should make installing it a whole lot easier across different devices from PCs to handhelds. The developers think it's the "next generation of Linux Gaming".</p>
+<p>Reminder on what it is: Bazzite is a custom image of <a href="https://fedoraproject.org/atomic-desktops/" target="_blank">Fedora Atomic Linux</a> utilizing Universal Blue's image framework designed to bring users the best in Linux gaming for their PCs, including the Steam Deck and other handhelds. So think of it like a <em>much</em> fancier more customizable version of SteamOS.</p>
+<p>With the new release of Bazzite version 2.3.0 it includes offline ISOs, which should be faster and fix issues people had where it wouldn't boot and they've also managed to get <a href="https://ventoy.net" target="_blank">Ventoy</a> support in too (which is a great tool for booting almost any ISO). More installer improvements are planned too, this is just the start.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9600528121709038514gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9600528121709038514gol1.jpg"/></a><br/>
+<em>Pictured - Steam Big Picture Mode.</em></p>
+<p>Some of the other improvements in Bazzite 2.3.0 include:</p>
+<ul>
+<li>A warning when the currently booted image is over a month old.</li>
+<li>Automatic nested desktop resolution handling for a number of handhelds.</li>
+<li>Improvement to support for GPD Win Mini, GPD Max 2, GPD Win 4.</li>
+<li>Added joystickwake to keep screen alive from controller input.</li>
+<li>Added support for the AYANEO Air Plus.</li>
+<li>Defaults to X11 on NVIDIA now.</li>
+<li>Support for REALTEK RTL8814AU and RTLXXAU devices.</li>
+<li>BoxBuddy included pre-installed for a Distrobox UI.</li>
+<li>Improvements to the upgrade system.</li>
+<li>Lots of bug fixes everywhere.</li>
+<li>+ plenty more.</li>
+</ul>
+<p>The developers said they also plan to support the MSI Claw and Orange Pi Neo, with Steam Deck OLED support currently stuck due to issues with newer Linux kernels (but the original Steam Deck LCD is supported).</p>
+<p>You can see all the 2.3.0 changes on <a href="https://github.com/ublue-os/bazzite/releases/tag/v2.3.0" target="_blank">GitHub</a> and check out their <a href="https://universal-blue.discourse.group/t/bazzite-buzz-12/688" target="_blank">overview post</a>. See the <a href="https://bazzite.gg" target="_blank">official site</a> for downloads.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/pc-and-handheld-gaming-with-linux-levels-up-with-bazzite-v230/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/pc-and-handheld-gaming-with-linux-levels-up-with-bazzite-v230/</guid>
+      <pubDate>Tue, 27 Feb 2024 12:56:03 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2145161232id24065gol.jpg" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>Fedora</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Dinos vs. Robots Fest is live with more demos and discounts</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Dinosaurs and Robots, what more could you want? Valve has put up the Steam Dinos vs. Robots Fest which runs until March 4th with plenty more demos and game discounts.</p>
+<p>There's some pretty fantastic discounts going on like 75% off <a href="https://store.steampowered.com/app/1151640/Horizon_Zero_Dawn_Complete_Edition/" target="_blank">Horizon Zero Dawn Complete Edition</a>, 60% off <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/" target="_blank">Detroit: Become Human</a>, 85% off <a href="https://store.steampowered.com/app/257510/The_Talos_Principle/" target="_blank">The Talos Principle</a> (also available in the <a href="https://www.gamingonlinux.com/2024/02/humble-bundle-has-some-awesome-puzzle-games-in-this-latest-bundle/" target="_blank">Mind-Bending Humble Bundle</a>) and 75% off <a href="https://store.steampowered.com/app/637090/BATTLETECH/" target="_blank">BATTLETECH</a>. A great time to pick up Horizon Zero Dawn considering the sequel <a href="https://www.gamingonlinux.com/2024/01/horizon-forbidden-west-complete-edition-launches-on-pc-on-march-21st/" target="_blank">arrives on Steam in March</a> and it's well worth playing through!</p>
+<p>Valve also made a silly trailer again for the event:</p>
+<div class="hidden_video" data-video-id="5vG9DJqfTkM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e3082f61acfd49a8f231571dc5155f9f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/5vG9DJqfTkM" target="_blank">See video</a></div></div>
+<p>Check out the <a href="https://store.steampowered.com/category/dinos_robots" target="_blank">event page on Steam</a>. There's also new free stuff in the <a href="https://store.steampowered.com/points/shop/event/sale_dinos_robots" target="_blank">Points Shop</a>.</p>
+<p>If you see anything worth trying be sure to leave a comment!</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/steam-dinos-vs-robots-fest-is-live-with-more-demos-and-discounts/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/steam-dinos-vs-robots-fest-is-live-with-more-demos-and-discounts/</guid>
+      <pubDate>Tue, 27 Feb 2024 12:07:06 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1329488205id24064gol.jpg" type="image/jpeg"/>
+      
+      <category>Event</category>
+      
+      <category>Misc</category>
+      
+      <category>On Sale</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Free and open source evolution sim Thrive gets big new gameplay features in v0.6.5</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Thrive is a free and open source evolution sim from Revolutionary Games Studio that's currently in-development, and a new release has rolled out with v0.6.5 bringing some gameplay additions.</p>
+<p>What many people like to compare to the cell stage in the classic Spore, not many games have attempted anything really like this so it's great to see it continue to expand.</p>
+<p>One of the major new features in this release is a part unlock system, so some of the organelles are locked behind specific conditions giving you more to actually do to progress in the game. There's also a fog of war on the patch map, which is where you see different biomes / areas in the early parts of the game. Some big performance improvements have come along too including more multi-threading and they say they've reduced overall memory allocations by about 75% during gameplay. You'll also find more tutorials and an expanded Thriveopedia for in-game info.</p>
+<p>See their new overview trailer:</p>
+<div class="hidden_video" data-video-id="Hg6jv75cbgU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ee8ec4eb6bc5e183f64c9be7f1380e87.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Hg6jv75cbgU" target="_blank">See video</a></div></div>
+<p>See their <a href="https://revolutionarygamesstudio.com/devblog-40-unlocking-potential/" target="_blank">blog post</a> for more on the update.</p>
+<p>The developers also mentioned they're about to update from <a href="https://godotengine.org" target="_blank">Godot Engine</a> 3 to 4, so that should hopefully come with various improvements too.</p>
+<p>You can grab it free from <a href="https://github.com/Revolutionary-Games/Thrive-Launcher" target="_blank">GitHub</a> or buy it to support the developer on <a href="https://revolutionarygames.itch.io/thrive" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1779200/Thrive/" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/free-and-open-source-evolution-sim-thrive-gets-big-new-gameplay-features-in-v065/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/free-and-open-source-evolution-sim-thrive-gets-big-new-gameplay-features-in-v065/</guid>
+      <pubDate>Tue, 27 Feb 2024 11:50:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1374217024id24063gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>Godot Engine</category>
+      
+      <category>Itch.io</category>
+      
+    </item>
+    
+    <item>
+      <title>Stardew Valley v1.6 confirmed to release in March, hits over 30 million sales</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The next big free upgrade for Stardew Valley now has a release date in March and there's plenty to look forward to. Stardew Valley also just celebrated its 8th anniversary.</p>
+<p>Confirmation of a March 19th release date comes from creator ConcernedApe (Eric Barone), who <a href="https://twitter.com/ConcernedApe/status/1762192764899627457" target="_blank">posted</a> on X:</p>
+<p style="text-align:center"><img alt="It's the 8th anniversary of Stardew Valley. Thank you for all the support over the years! Today I am announcing the PC Release date for the 1.6 update: --March 19th--. Console &amp; Mobile will follow as soon as possible." src="https://uploads.golmedia.net/uploads/articles/article_media/3051831401709033225gol1.jpg"/></p>
+<p>Not only that but in a follow up <a href="https://twitter.com/ConcernedApe/status/1762195335936627147" target="_blank">post</a> Barone mentioned that Stardew Valley has also now sold over 30 million copies, which is simply incredible. Last time I remember seeing a sales count it was 20 million <a href="https://www.gamingonlinux.com/2022/05/stardew-valley-hits-20-million-sales/" target="_blank">back in May 2022</a>. The official <a href="https://www.stardewvalley.net/press/" target="_blank">press page</a> has also been updated to note the 30 million milestone as of February 2024, with over 19 million of those being on PC.</p>
+<p>What to expect from the 1.6 update? Barone previously <a href="https://twitter.com/ConcernedApe/status/1707155027914035542" target="_blank">teased</a> in a post on X that it will have a major new festival, two new mini festivals, new late-game content to expand each of the skill areas, new items and crafting recipes, 100+ new lines of dialogue, winter outfits for villagers, 8 player support for multiplayer, a new farm type, new secrets and more.</p>
+<p>Will you be jumping back in for the 1.6 update? </p>
+<p>Stardew Valley has Native Linux support and it is Steam Deck Verified.</p>
+<p>You can buy a copy from <a href="https://af.gog.com/game/stardew_valley?as=1636858786" target="_blank">GOG</a>, <a href="https://www.humblebundle.com/store/stardew-valley?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/413150/Stardew_Valley/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/stardew-valley-v16-confirmed-to-release-in-march-hits-over-30-million-sales/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/stardew-valley-v16-confirmed-to-release-in-march-hits-over-30-million-sales/</guid>
+      <pubDate>Tue, 27 Feb 2024 11:34:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1004564826id24062gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Casual</category>
+      
+      <category>GOG</category>
+      
+    </item>
     
     <item>
       <title>Proton Experimental updated with Proton 9 - adds fixes for Helldivers 2 and more</title>
@@ -3721,339 +4100,6 @@ In this roguelike narrative card game, what you find may transform you forever. 
       <category>Steam</category>
       
       <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Half-Life remake Black Mesa hits over 100,000 Steam reviews to Overwhelmingly Positive</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Quite an impressive milestone for an incredible game overall! The Half-Life remake Black Mesa has managed to cross over 100,000 user reviews on Steam. It's rated Overwhelmingly Positive thanks to everyone leaving their thoughts. And going by the <a href="https://steam250.com/top250" target="_blank">Steam Top 250</a> list it's currently number 155 of the most highly rated games on Steam ever.</p>
-<p>Not exactly surprising though, given how loved Half-Life is and Black Mesa is a pretty incredible remake all-around with some fantastic attention to detail.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5885837401707309954gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5885837401707309954gol1.jpg"/></a></p>
-<p>Black Mesa is rated Steam Deck Playable, and it has a Native Linux version - but you're better off using Proton as it's been left with numerous bugs.</p>
-<p>Would you say people first starting off in Half-Life should jump into Black Mesa? Or are you a die-hard for the actual original which recently <a href="https://www.gamingonlinux.com/2023/11/half-life-25th-anniversary-update-brings-half-life-uplink-steam-deck-support/" target="_blank">had its own big 25th Anniversary Update</a>? I'm still amazed Valve actually allowed Crowbar Collective to do a remake like this.</p>
-<p>Find <a href="https://store.steampowered.com/app/362890/Black_Mesa/" target="_blank">Black Mesa on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/half-life-remake-black-mesa-hits-over-100000-steam-reviews-to-overwhelmingly-positive/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/half-life-remake-black-mesa-hits-over-100000-steam-reviews-to-overwhelmingly-positive/</guid>
-      <pubDate>Wed, 07 Feb 2024 12:47:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1823447223id23966gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>FPS</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Humble Choice for February has Scorn, Life is Strange: True Colors, Destroy All Humans 2</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A rather nice assortment of games this month for <a href="https://humblebundle.com/choice?partner=gamingonlinux" target="_blank">Humble Choice</a>, so here's your usual run over what's new for subscribers of Humble's special monthly bundle.</p>
-<p>This is the monthly bundle that you can subscribe to allowing you to claim all of the games included each month with a fresh set, and it also gives you a Humble Store discount (bigger discount up to 20% if you stay subscribed to it for longer). Below I will note each game you can get included plus the Steam Deck rating, any <a href="https://www.protondb.com/" target="_blank">ProtonDB</a> rating if there is one and each is a Steam link if you need more info first.</p>
-<p><a href="https://store.steampowered.com/app/936790" target="_blank">Life is Strange: True Colors</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/698670" target="_blank">Scorn</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/1266700" target="_blank">Destroy All Humans! 2 - Reprobed</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/1269640" target="_blank">Beacon Pines</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/1132980" target="_blank">There Is No Light: Enhanced Edition</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/1108000" target="_blank">Children of Silentown</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</p>
-<p><a href="https://store.steampowered.com/app/1348690" target="_blank">Oaken</a> - <img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> No Deck Rating / Native Linux</p>
-<p><a href="https://store.steampowered.com/app/1124260" target="_blank">Snowtopia: Ski Resort Builder</a> - <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable / ProtonDB Platinum</p>
-<p>See the <a href="https://humblebundle.com/choice?partner=gamingonlinux" target="_blank">full Humble Choice for more</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/humble-choice-for-february-has-scorn-life-is-strange-true-colors-destroy-all-humans-2/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/humble-choice-for-february-has-scorn-life-is-strange-true-colors-destroy-all-humans-2/</guid>
-      <pubDate>Tue, 06 Feb 2024 18:17:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1830963265id23964gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Open source simulation game OpenTTD has a big new v14 update coming </title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>OpenTTD, an open source simulation games based on Transport Tycoon Deluxe is getting close to a big new release, with version 14 bringing many new features and improvements. <em>The second Beta was released on February 4th.</em></p>
-<p>While it was originally based on Transport Tycoon Deluxe and retains the familiar feel of the classics, it's very much expanded into its own game. It's also entirely standalone, so you don't need anything extra to play it. Just grab OpenTTD and away you go.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/21074746351707228568gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21074746351707228568gol1.jpg"/></a></p>
-<p>With v14 on the way now one of the new features includes an infinite money mode, so you can really play around as much as you want and basically do anything at that point. There's a new properly scalable font, shading added to river slopes to make them looks nice, a plugin framework for social integrations with Steam / Discord and others and rather a lot of gameplay-specific additions of which you can see below:</p>
-<blockquote>
-<p>Feature: Order option to unbunch vehicles at depot (#11945)<br/>
-Feature: Infinite money mode (#11902)<br/>
-Feature: Setting to disable the loading speed penalty for trains longer than the station (#11682)<br/>
-Feature: Plugin framework for Social Integration with Steam, Discord, GOG, etc (#11628)<br/>
-Feature: Scalable OpenTTD TrueType font made by Zephyris (#11593)<br/>
-Feature: Toyland-specific river graphics (#11523)<br/>
-Feature: Add zoom level buttons to sprite aligner (#11518)<br/>
-Feature: Add shading to river slopes (#11491)<br/>
-Feature: Place cargo icon on cargo filter dropdowns (#11487)<br/>
-Feature: Mode to display timetable in seconds (#11435)<br/>
-Feature: Setting to influence how many minutes a calendar year takes (#11428)<br/>
-Feature: Base graphics can offer parameters for additional settings (#11347)<br/>
-Feature: Sandbox option to lock station ratings at 100% (#11346)<br/>
-Feature: Setting to use real-time "wallclock" as timekeeping units (#11341)<br/>
-Feature: Setting to automatically restart server based on hours played (#11142)<br/>
-Feature: Add config option to set default company secondary colour for new games (#11068)<br/>
-Feature: Transparency option for cost and income indicators (#11001)<br/>
-Feature: Create group of vehicles from manage vehicle list button (#10890)<br/>
-Feature: Show coverage highlight the same as stations when adding waypoints (#10875)<br/>
-Feature: Show the number of industries already built in the Fund New Industry window (#10806)<br/>
-Feature: Add search filter and name text to build waypoint window (#10786)<br/>
-Feature: Setting to disallow level crossings with competitors (#10755)<br/>
-Feature: Opt-in survey when leaving a game (#10719)<br/>
-Feature: Replace buying/selling company shares with hostile takeovers of AI companies (#10709, #10914)<br/>
-Feature: Settings to scale cargo production of towns and industries (#10606)<br/>
-Feature: Separate rail/road and sea/air velocity units, and add knots (#10594)<br/>
-Feature: Region-based pathfinder for ships (#10543)<br/>
-Feature: Filter engine build menu by name and NewGRF extra text (#10519)<br/>
-Feature: Industry directory text filter (#10518)<br/>
-Feature: Ctrl+Click to reset late counter for the entire vehicle group (#10464)<br/>
-Feature: Orientation of rail and road depots can be changed (#9642)<br/>
-Feature: Display help and manuals in-game (#7786)<br/>
-Feature: [NewGRF] Town production effect and multiplier (#11947)<br/>
-Feature: [NewGRF] Randomize direction of rail vehicle on build based on probability callback (#11489)<br/>
-Feature: [NewGRF] Related Act2 objects for airports and airport tiles (#11282)<br/>
-Feature: [NewGRF] Allow higher max speeds for ships (#10734)<br/>
-Feature: [NewGRF] Increase limit of objects/stations/roadstops per NewGRF (#10672)<br/>
-Feature: [NewGRF] Road stops (#10144)<br/>
-Feature: [Script] Goal destination can be updated (#10817)<br/>
-Add: Argument for console command "restart" to use either current or newgame settings (#11962, #11963)<br/>
-Add: {CURRENCY_SHORT} only did k / m suffix. Add bn / tn and make translatable (#11921)<br/>
-Add: Show in multiplayer the amount of hours a game has been unpaused (#11886)<br/>
-Add: Allow loading heightmaps from command-line (#11870)<br/>
-Add: List_[scenario|heightmap] and load_[scenario|height] console commands (#11867)<br/>
-Add: Latvian Lats currency (#11691)<br/>
-Add: Horizontal scroll for script debug log (#11597)<br/>
-Add: GUI options to select sprite font and AA mode for all fonts (#11593)<br/>
-Add: Website button for basesets in Game Options window, the Game Script settings window and AI settings window (#11512)<br/>
-Add: [Emscripten] Support for bootstrapping (#11109)<br/>
-Add: Hotkey to focus town / industry directory filter box (#11030)<br/>
-Add: Maximum number of companies allowed to the client list (#10523)<br/>
-Add: Use specific error message when vehicle cannot go to station/waypoint (#10494)<br/>
-Add: Show NewGRF name in NewGRF-created errors (#10457)<br/>
-Add: Alternative setting for right-click close window option to exclude pinned windows (#10204)<br/>
-Add: Allow autoreplace with same model vehicle (#7729)<br/>
-Add: [NewGRF] Allow inspection of road tiles and airports (#11282, #11323)<br/>
-Add: [NewGRF] Station variable 6B to get extended station id of nearby tiles (#10953)<br/>
-Add: [NewGRF] String code "9A 21" to display force from textstack (#10782)<br/>
-Add: [NewGRF] Station property 1C/1D to set name/classname (#10672)<br/>
-Add: [Script] Optional filter parameter to ScriptXXXList constructors (#11698,#11663)<br/>
-Add: [Script] AI/GS Time Mode to choose between economy (default) and calendar time (#11603)<br/>
-Add: [Script] Allow to set max loan for each company separately (#11224)<br/>
-Add: [Script] GSIndustry.GetConstructionDate() method (#11145)<br/>
-Add: [Script] Game script control of industry production level and news messages (#11141)<br/>
-Add: [Script] GSAsyncMode to set async mode of gamescript commands (#10913)<br/>
-Add: [Script] GSCompanyMode::IsValid and IsDeity, and enforce valid company/deity mode where applicable (#10536, #10529)<br/>
-Add: [Script] Allow GS to found town with random road layout (#10442)<br/>
-Add: [Script] Create own Randomizer per instance (#10349)</p>
-</blockquote>
-<p>That's…a lot of goodies. And of course there's various other smaller changes and numerous bug fixes.</p>
-<p>See the full current <a href="https://cdn.openttd.org/openttd-releases/14.0-beta2/changelog.txt" target="_blank">v14 changelog for more</a>.</p>
-<p>OpenTTD is completely free available from the <a href="https://www.openttd.org" target="_blank">official site</a> and <a href="https://store.steampowered.com/app/1536610/OpenTTD/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/open-source-simulation-game-openttd-has-a-big-new-v14-update-coming/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/open-source-simulation-game-openttd-has-a-big-new-v14-update-coming/</guid>
-      <pubDate>Tue, 06 Feb 2024 14:13:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1238252075id23963gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Building Sim</category>
-      
-      <category>Free Game</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Safe In Our World Charity Bundle 2024 has some real treats inside</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>With all the proceeds going to charity, the <a href="https://www.fanatical.com/en/bundle/safe-in-our-world-charity-bundle-2024?ref=gol" target="_blank">Safe In Our World Charity Bundle 2024</a> on Fanatical overall looks like a pretty darn sweet deal with some really fun games included.</p>
-<p>Below you'll find a list of all the games along with the Steam Deck and Desktop Linux compatibility. Listing Deck Verified, <a href="https://www.protondb.com" target="_blank">ProtonDB</a> ratings / Native Linux (if any ratings exist). Each is also a Steam link if you want a quick look before deciding on any of them but you get all the games in the bundle - you just need to pay at least £15.</p>
-<p>Here's all of it:</p>
-<p><a href="https://store.steampowered.com/app/1190170" target="_blank">OlliOlli World</a> - Deck Verified / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/1794680" target="_blank">Vampire Survivors</a> - Deck Verified / ProtonDB Gold &amp; Native Linux</p>
-<p><a href="https://store.steampowered.com/app/1295500" target="_blank">Warhammer 40,000: Battlesector</a> - Deck Verified / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/2206210" target="_blank">GYLT</a> - Deck Verified / ProtonDB Silver</p>
-<p><a href="https://store.steampowered.com/app/1769980" target="_blank">Mask of the Rose</a> - Deck Verified / Native Linux</p>
-<p><a href="https://store.steampowered.com/app/1647730" target="_blank">Zool Redimensioned</a> - Deck Verified / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/2360020" target="_blank">Kao the Kangaroo (2000 re-release)</a> - Deck Playable / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/1388870" target="_blank">Arcade Paradise</a> - Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/1191900" target="_blank">Say No! More</a> - Deck Playable / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/1066900" target="_blank">qomp</a> - Native Linux</p>
-<p><a href="https://store.steampowered.com/app/2005680" target="_blank">Akka Arrh</a> - Deck Unsupported / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/2213980" target="_blank">Caverns of Mars: Recharged</a> - Deck Playable / Native Linux</p>
-<p><a href="https://store.steampowered.com/app/1630960" target="_blank">Centipede: Recharged</a> - Native Linux</p>
-<p><a href="https://store.steampowered.com/app/1714190" target="_blank">Breakout: Recharged</a> - Deck Verified / Native Linux</p>
-<p><a href="https://store.steampowered.com/app/2132540" target="_blank">Mr. Run and Jump</a> - Native Linux</p>
-<p><a href="https://store.steampowered.com/app/674940" target="_blank">Stick Fight: The Game</a> - Deck Verified / ProtonDB</p>
-<p><a href="https://store.steampowered.com/app/1195420" target="_blank">Filthy Animals | Heist Simulator</a></p>
-<p><a href="https://store.steampowered.com/app/1356280" target="_blank">Kitaria Fables</a> - Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/1178210" target="_blank">Stirring Abyss</a> - Deck Unsupported / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/1867520" target="_blank">Homestead Arcana</a> - Deck Playable</p>
-<p><a href="https://store.steampowered.com/app/1112890" target="_blank">Calico</a> - Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/1049710" target="_blank">Minute of Islands</a> - Deck Playable / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/273960" target="_blank">Mechs &amp; Mercs: Black Talons</a></p>
-<p><a href="https://store.steampowered.com/app/1635590" target="_blank">My Friend Peppa Pig</a> - Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/758730" target="_blank">Paw Patrol: On A Roll!</a> - Deck Playable / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/1770500" target="_blank">Gigantosaurus: Dino Kart</a></p>
-<p>See the <a href="http://www.fanatical.com/en/bundle/safe-in-our-world-charity-bundle-2024?ref=gol" target="_blank">full bundle here</a>.</p>
-<p><em>While we are Fanatical partner, as a 100% charity bundle we do not get anything from it. Just to be clear.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/safe-in-our-world-charity-bundle-2024-has-some-real-treats-inside/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/safe-in-our-world-charity-bundle-2024-has-some-real-treats-inside/</guid>
-      <pubDate>Tue, 06 Feb 2024 13:32:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2037497806id23962gol.jpg" type="image/jpeg"/>
-      
-      <category>Charity</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>From Glory To Goo is a new base-building RTS where you defend against gooey aliens</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>From Glory To Goo is a new upcoming real-time strategy game from Stratagem Blue that has me a little excited, and so far the demo seems to work quite well on Linux. Specifically, you'll need <a href="https://www.gamingonlinux.com/2024/01/ge-proton-8-29-and-ge-proton-8-30-released-with-eac-fix-and-tekken-8-fix/" target="_blank">GE-Proton</a>, because otherwise the tutorial videos don't work.</p>
-<p>I'm a huge sucker for these types of RTS games! You start off on a random world with nothing but your starting building that drops down from space, and then continue to expand across the map for resources. Eventually waves of little Goo enemies will appear, so you have to encase your base in walls and turrets to keep them at bay, while you build up an army to take the fight to the Goo directly.</p>
-<div class="hidden_video" data-video-id="OlMu4XIrGJ0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e7cc5a2583eb94ec397bb1de5c31dc26.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/OlMu4XIrGJ0" target="_blank">See video</a></div></div>
-<p>While the UI could use a little work, the basics are all there and it seems like a great idea.</p>
-<p>As you expand across the map you can find wreckage from previous planetary expeditions, native Aliens you can ally with or destroy and various other secrets. Not only that but there's plenty of feature additions outside of just the planetary building an exploration. There's an upgrade system where you need to send resources back up to your colony ship to eventually unlock more to build, there's different captains to pick with various buffs, multiple factions to choose with different units and buildings and more.</p>
-<p>Definitely worth keeping an eye on and trying out the demo, which the developer keeps improving based on feedback from various players.</p>
-<p><em>The developer plans to launch into Early Access sometime early this year.</em></p>
-<p>Check out the <a href="https://store.steampowered.com/app/2607060/From_Glory_To_Goo/" target="_blank">demo on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/from-glory-to-goo-is-a-new-base-building-rts-where-you-defend-against-gooey-aliens/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/from-glory-to-goo-is-a-new-base-building-rts-where-you-defend-against-gooey-aliens/</guid>
-      <pubDate>Tue, 06 Feb 2024 13:15:39 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2033871490id23961gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Demo</category>
-      
-      <category>RTS</category>
-      
-    </item>
-    
-    <item>
-      <title>World War Z disables Vulkan on Steam Deck (but you can get it back)</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Saber Interactive have updated the co-op zombie shooter World War Z, and now they've disabled being able to pick the Vulkan API on Steam Deck.</p>
-<p>It seems some users were reporting crashing issues with the game, as noted on the Steam <a href="https://steamcommunity.com/app/699130/discussions/0/4032476411664147690/" target="_blank">forum post</a>. A user emailed into GamingOnLinux to note they noticed that just recently after this forum post that now they can no longer pick Vulkan. And after contacting Saber Interactive support they said it was "disabled to improve the stability of the game".</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4518233931707221235gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4518233931707221235gol1.jpg"/></a></p>
-<p>So somewhere along the lines either an update to the game, <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a> or the Mesa graphics drivers introduced issues for the game. For now out of the box, Vulkan just can't be picked on Steam Deck. This also means you <em>can't</em> use the in-game FSR 2.2 either, because it's only available with Vulkan in World War Z. Well, until you <em>disable</em> the Steam Deck check that is. Like you <a href="https://www.gamingonlinux.com/2023/12/skyrim-special-edition-updated-with-steam-deck-support-ultrawide-res-bug-fixes/" target="_blank">can do with Skyrim</a>, you can set this launch option in the game Properties to get it all back:</p>
-<p><code class="inline-code">SteamDeck=0 %command%</code></p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15877342631707222009gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15877342631707222009gol1.jpeg"/></a></p>
-<p>As for some people, it seems Vulkan <em>is</em> actually more stable.</p>
-<p>This change only affects Steam Deck. Testing it myself on Desktop Linux and you can still pick Vulkan normally with the default being DirectX 11.</p>
-<p>World War Z is available from:</p>
-<p><a href="https://www.humblebundle.com/store/world-war-z-aftermath?partner=gamingonlinux" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/699130/World_War_Z/" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/world-war-z-disables-vulkan-on-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/world-war-z-disables-vulkan-on-steam-deck/</guid>
-      <pubDate>Tue, 06 Feb 2024 12:20:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/565627391id23960gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Online Co-op</category>
-      
-      <category>Vulkan</category>
-      
-    </item>
-    
-    <item>
-      <title>Apple&#39;s 2014 Game of the Year puzzler Threes! now on Steam with Steam Deck support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another great game to add to your collection is here with Threes!, originally a mobile game now upgraded an enhanced for the PC and it's available now on Steam.</p>
-<p>This was Apple's 2014 Game of the Year, and it won a Apple Design Award too. It was quite a big thing back when it released. It was so popular in fact, that like a lot of mobile games, there was a bit of Attack of the Clones that went on. The developers even wrote their own <a href="https://asherv.com/threes/threemails/#letter" target="_blank">blog post</a> to address it. If you've heard of 2048 — it cloned this. This is the <em>original</em>.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20910090771707219956gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20910090771707219956gol1.jpg"/></a></p>
-<p>It's a number swiping game that just keeps on going, as you move number blocks around you try to make multiples of three (see what they did there?). It just gets bigger and bigger, a game for calming the mind and you can spend as much or as little time with it as you want. No timers or any nonsense.</p>
-<p>Coming with full Steam Deck support too which the developer <a href="https://twitter.com/AsherVo/status/1752782105678070101" target="_blank">mentioned</a> on X (formerly Twitter):</p>
-<p style="text-align:center"><img alt="Whew, Threes for Steam is DONE!  It's got: + Full Controller/Keyboard Support + Full Steam Deck Compatibility + Cloud Saving + Achievements + New Night Mode Music" src="https://uploads.golmedia.net/uploads/articles/article_media/15964431231707219571gol1.png"/></p>
-<p>So we can expect it to run great on desktop Linux too with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>.</p>
-<p>Check it <a href="https://store.steampowered.com/app/1818570/Threes/" target="_blank">out on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/apples-2014-game-of-the-year-puzzler-threes-now-on-steam-with-steam-deck-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/apples-2014-game-of-the-year-puzzler-threes-now-on-steam-with-steam-deck-support/</guid>
-      <pubDate>Tue, 06 Feb 2024 11:51:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1576492224id23959gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton Hotfix gets Persona 3 Reload performance improvements for Steam Deck / Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you find the performance of Persona 3 Reload to be a little lacking, perhaps try out the latest Proton Hotfix update that Valve just released. For Steam Deck players, you may also want to be on the Preview update branch which also <a href="https://www.gamingonlinux.com/2024/02/steam-deck-steamos-3514-preview-persona-3-reload-improvements-and-more/" target="_blank">recently had a performance fix too</a>.</p>
-<p>Valve's Pierre-Loup Griffais <a href="https://twitter.com/Plagman2/status/1754673249399767359" target="_blank">posted</a> on X (formerly Twitter):</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19706842071707218690gol1.png"/></p>
-<p>Post text: "A Proton Hotfix with additional performance improvements for Persona 3 Reload has just been deployed."</p>
-<p>To change the Proton version used for a game:</p>
-<ul>
-<li>In Steam:
-<ul>
-<li><u>Desktop</u>: right click a game and go to Properties.</li>
-<li><u>Steam Deck</u> / <u>Big Picture Mode</u>: find the game in your library, go to the little cog on the right and then select Properties.</li>
-</ul>
-</li>
-<li>Compatibility menu -&gt; Tick the box, select Proton Hotfix from the drop-down menu.</li>
-</ul>
-<p>You can buy Persona 3 Reload from:</p>
-<p><a href="https://www.humblebundle.com/store/persona-3-reload?partner=gamingonlinux" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/2161700/Persona_3_Reload/" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/proton-hotfix-gets-persona-3-reload-performance-improvements-for-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/proton-hotfix-gets-persona-3-reload-performance-improvements-for-steam-deck-linux/</guid>
-      <pubDate>Tue, 06 Feb 2024 11:28:20 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/558122041id23958gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>RPG</category>
-      
-      <category>Steam</category>
       
     </item>
     
