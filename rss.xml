@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-02-28 07:22:17.574011</pubDate>
+    <pubDate>2024-02-29 07:23:40.816784</pubDate>
 
     
     <image>
@@ -18,6 +18,288 @@
     </image>
 
     
+    
+    <item>
+      <title>5 years later Valve finally gives Windows compatibility tool Proton a logo</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Can you believe it? <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>, the compatibility layer that allows Windows games to run on Steam Deck / Linux PCs didn't actually have a proper logo for over 5 years.</p>
+<p>Not everything actually <em>needs</em> a logo of course, but it did feel somewhat odd for a piece of software so essential to Valve's plans to just be completely blank on that. With all the entries of Proton in Steam just showing up blank with their name and version, it was about time Valve made it at least a tiny bit <em>prettier</em> don't you think?</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7085450281709146217gol1.jpg"/><br/>
+<em>Pictured - Proton logo - Valve</em></p>
+<p>Proton has been around <a href="https://www.gamingonlinux.com/2018/08/valve-officially-confirm-a-new-version-of-steam-play-which-includes-a-modified-version-of-wine/" target="_blank">since August 2018</a>! 5 and a half years! Hard to imagine trying to game on Linux without it now, it's so incredibly useful and just amazing tech. The Steam Deck obviously wouldn't have been such a success without it, and it's crazy to think the original Steam Machines launched as they did with so few popular games. Proton is a true blessing, enabling tens of thousands of games to work on Linux systems like the Steam Deck.</p>
+<p>I guess I can finally retire the silly little <a href="http://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" target="_blank">placeholder</a> logo I threw out a long time ago when I needed <em>something</em> for it. Rest easy my child, your time is over.</p>
+<p>Also, in case you missed it, Valve also recently launched the <a href="https://www.gamingonlinux.com/2024/02/proton-9-now-in-beta-with-improved-game-compatibility-for-steam-deck-linux/" target="_blank">first Beta of Proton 9.0</a> and a <a href="https://www.gamingonlinux.com/2024/02/proton-experimental-updated-with-proton-9-adds-fixes-for-helldivers-2-and-more/" target="_blank">new Proton Experimental version</a>. Be sure to also read the <a href="https://www.gamingonlinux.com/2023/08/5-years-ago-valve-released-proton-forever-changing-linux-gaming/" target="_blank">overview I did back when Proton turned 5</a> which nicely sums things up.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/5-years-later-valve-finally-gives-windows-compatibility-tool-proton-a-logo/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/5-years-later-valve-finally-gives-windows-compatibility-tool-proton-a-logo/</guid>
+      <pubDate>Wed, 28 Feb 2024 19:08:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1922724614id24077gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA disclose new driver security issues - Feb 28</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA has revealed new GPU driver security issues in their latest bulletin, so here's what you need to know if you're using an NVIDIA GPU on Linux. <em>This was announced February 28th.</em></p>
+<p>To make sure you're not affected by the issues listed below you need to have a driver version at a minimum of either 550.54.14 (released 23rd February), 535.161.07 (released February 22nd) or 470.239.06 (released February 22nd) as all prior versions are affected.</p>
+<p>The issues that affect Linux are:</p>
+<div class="scrolling-table">
+<table border="1" class="table-stripes-tbody">
+<thead>
+<tr>
+<th><strong>CVE ID</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Severity</strong></th>
+<th><strong>CWE</strong></th>
+<th><strong>Impacts</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CVE‑2024‑0074</td>
+<td>NVIDIA GPU Display Driver for Linux contains a vulnerability where an attacker may access a memory location after the end of the buffer. A successful exploit of this vulnerability may lead to denial of service and data tampering.</td>
+<td>High</td>
+<td><a href="https://cwe.mitre.org/data/definitions/788.html" target="_blank">CWE‑788</a></td>
+<td>Denial of service, data tampering</td>
+</tr>
+<tr>
+<td>CVE‑2024‑0078</td>
+<td>NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer, where a user in a guest can cause a NULL-pointer dereference in the host, which may lead to denial of service.</td>
+<td>Medium</td>
+<td><a href="https://cwe.mitre.org/data/definitions/476.html" target="_blank">CWE‑476</a></td>
+<td>Denial of service</td>
+</tr>
+<tr>
+<td>CVE‑2024‑0075</td>
+<td>NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability where a user may cause a NULL-pointer dereference by accessing passed parameters the validity of which has not been checked. A successful exploit of this vulnerability may lead to denial of service and limited information disclosure.</td>
+<td>Medium</td>
+<td><a href="https://cwe.mitre.org/data/definitions/476.html" target="_blank">CWE-476</a></td>
+<td>Denial of service, limited information disclosure</td>
+</tr>
+<tr>
+<td>CVE‑2022‑42265</td>
+<td>NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer handler, where an unprivileged regular user can cause integer overflow, which may lead to denial of service, information disclosure, and data tampering.</td>
+<td>Medium</td>
+<td><a href="https://cwe.mitre.org/data/definitions/190.html" target="_blank">CWE‑190</a></td>
+<td>Denial of service, information disclosure, and data tampering</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>There's also a few issues that affected just Windows too and the NVIDIA Virtual GPU Manager / Driver.</p>
+<p>See the <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5520" target="_blank">full NVIDIA security bulletin</a> for more. </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/nvidia-disclose-new-driver-security-issues-feb-28/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/nvidia-disclose-new-driver-security-issues-feb-28/</guid>
+      <pubDate>Wed, 28 Feb 2024 18:28:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Lots more content is coming to Last Epoch and controller support improvements</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Last Epoch recently released on Steam with Native Linux support, an offline mode and controller support but the developers at Eleventh Hour Games plan to keep improving it all.</p>
+<p>In an update posted on <a href="https://store.steampowered.com/news/app/899770/view/4194610392091503963" target="_blank">Steam</a> the developer noted that there's patches due soon for lots of reported issues, and they plan to continue weekly updates to keep fixing up issues and acting on player feedback.</p>
+<p>There were quite a number of server issues though, as it was a lot more popular than expected. It's another early 2024 Steam hit, seeing a peak player count of 264,708 players online at the same time 3 days ago. Things are calmer now but it did show up some "unanticipated bottlenecks" in their backend and they said to expect more information later about the cause. </p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18224783921709140675gol1.jpg"/></p>
+<p>Some more good news is that we can expect to see more localization improvements, major content planned for a 1.1 update including more work from player feedback and a "heavy emphasis on expanding end-game content" as they said they are "wholly committed to making the best ARPG in the genre, and listening to our amazing community is a big part of that".</p>
+<p>For players on Steam Deck or PC with a gamepad, expect more improvements there. While the 1.0 release had an "immense amount of gamepad updates" they have "a lot of updates coming before 1.1 that will improve the experience even further, including better navigation of certain panels" as they plan to release LE on consoles so they're going to ensure gamepad is a "top notch" experience.</p>
+<p>You can buy Last Epoch from:</p>
+<p><a href="https://www.fanatical.com/en/game/last-epoch?ref=gol" target="_blank">Fanatical</a></p>
+<p><a href="https://store.steampowered.com/app/899770/Last_Epoch/" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/lots-more-content-is-coming-to-last-epoch-and-controller-support-improvements/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/lots-more-content-is-coming-to-last-epoch-and-controller-support-improvements/</guid>
+      <pubDate>Wed, 28 Feb 2024 17:18:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/283646380id24074gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>nullptr is an action puzzle hacking game where every second counts</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Due to release sometime in Q3 2024, developer Jeferson Silva has recently put up a demo for their action puzzle hacking game nullptr.</p>
+<p>A fast paced action puzzle game where you play the role of a hacker. Take down megacorporations by invading their servers, downloading their data and getting out without being detected. Outwit defensive sentry programs and expose the perfect route to access the databases. Once you're connected to one of the servers ports, you have 20 seconds to hack security systems, reprogram the server to evade sentinel programs and download data. Your goal is to find or create safe routes to download all databases in each server without being traced.</p>
+<p>Check out the gameplay teaser:</p>
+<div class="hidden_video" data-video-id="chUGrRxo2Gk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/720ed83000b546321f3a89bfe2b6ecbb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/chUGrRxo2Gk" target="_blank">See video</a></div></div>
+<p>This could be a good one for those of you who love puzzle games, and like having your ability to think quickly on your feet tested.</p>
+<p>Check out the <a href="https://store.steampowered.com/app/1579650/nullptr/" target="_blank">demo on Steam</a>. It has Native Linux support.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/nullptr-is-an-action-puzzle-hacking-game-where-every-second-counts/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/nullptr-is-an-action-puzzle-hacking-game-where-every-second-counts/</guid>
+      <pubDate>Wed, 28 Feb 2024 17:07:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/46179303id24073gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Puzzle</category>
+      
+    </item>
+    
+    <item>
+      <title>Lots of exciting updates coming to the free &amp; open source RPG Veloren</title>
+      <author>nwildner</author>
+      <description><div class="content group e-content">
+<p>Veloren, the free and open source action-adventure role-playing voxel game made in Rust keeps evolving. Since its last public <a href="https://www.gamingonlinux.com/2023/07/multiplayer-voxel-rpg-veloren-v015-is-out-adding-the-first-world-boss/" target="_blank">v0.15 release in July 2023</a>, much has changed and lots of improvements were made so far.</p>
+<p>This is a compilation of what is considered important by the core contributors on the game so far:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13106773381709124909gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13106773381709124909gol1.jpg"/></a></p>
+<ul>
+<li>Discord links and Gitlab merge requests to have bi-directional linking for better tracking of feature requests.</li>
+<li>A draft version of a Roadmap was added to Gitlab defining priorities and project focus.</li>
+<li>Translation can now be done through <a href="https://translate.codeberg.org/engage/veloren/" target="_blank">Weblate</a>, and it is fully integrated with the project Gitlab.</li>
+<li>A branch was created for food diversification so, expect a lot of new foods to be implemented in-game.</li>
+<li>Craftable shovels used to dig up mud and graves for loot.</li>
+<li>Network Library update.</li>
+<li>Locations now available during character selection.</li>
+<li>Better cursor locking on Wayland.</li>
+<li>Singleplayer map GUI with map selection for easier world selection.</li>
+<li>Frost Giga boss rework and testing.</li>
+<li>Toolchain update to keep it as compatible as possible with all OSs supported.</li>
+<li>Melee, Projectile and Beam attacks benefit on critical by precision when attacking from behind, or partial precision when attacking from sides. Aiming for the head with projectiles can also trigger precision events that will lead to critical hits.</li>
+<li>Server configuration settings moved from<code class="inline-code"> server/server_config/settings.ron:metrics_address</code> to <code class="inline-code">server-cli/settings.ron:web_address</code></li>
+<li>A merge was made to enable plugin-defined items for those who want to modify the game.</li>
+<li><code class="inline-code">WGPU</code> added support to OpenGL3.3 so, if you have a more modest PC with no Vulkan support, you might be able to run Veloren, while modern PCs running Vulkan or DirectX 12 will see a slightly increase in performance.</li>
+<li>Cliff towns and mesa biomes (those look beautiful),</li>
+<li>More potions were added to the game.</li>
+<li>Fixes related to armor buffs. </li>
+<li>Re-enabling kelp on sea and crustaceous taming. </li>
+<li>Wiki tool integration to track drop related data from mobs showing item name, rarity (percentage) and quantity.</li>
+<li>Over the shoulder aiming for ranged attacks, customizable in the game settings. This was done because the contributors didn't like the way third person camera handled aiming. This implementation ended up fixing some crosshair issues as well.</li>
+</ul>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8678306741709125315gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8678306741709125315gol1.jpg"/></a></p>
+<p>While it is hard to provide a curated list of everything that was implemented, these are some "minor" implementations that are scattered throughout all the blog updates and reflect the constant maintenance of the project and their continuous effort in making this game awesome:</p>
+<ul>
+<li>Mob related improvements: new mobs, AI, models, code refactor, random bugfixes like "division by zero", item quantity display, animations, pet bugs, etc).</li>
+<li>Updates in scenario related stuff (points of interest, outpost, abandoned ruins, vampire castles, terracota ruins, airships, textures, etc).</li>
+<li>World generation overall fixes.</li>
+<li>Seasonal events like Halloween and Christmas.</li>
+<li>Shaders, test on rendering algorithms, faster colour mapping, screenshot conversion optimization, performance optimizations overall.</li>
+<li>Loads of translation fixes, group and NPC chat fixes, death message improvements.</li>
+<li>Unmerged fixes, which are the ones that might land in game soon or need further testing.</li>
+</ul>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6543669351709125393gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6543669351709125393gol1.jpg"/></a></p>
+<p>Truly amazing how quickly this game is evolving lately and the passion of the contributors to keep improving the game in every aspect.</p>
+<p><strong>Source</strong>: Compilation of the "<a href="https://veloren.net/blog/" target="_blank">Two Weeks In Veloren</a>" blog series up to week 226.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/lots-of-exciting-updates-coming-to-the-free-open-source-rpg-veloren/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/lots-of-exciting-updates-coming-to-the-free-open-source-rpg-veloren/</guid>
+      <pubDate>Wed, 28 Feb 2024 13:03:57 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/848010279id24071gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>Open Source</category>
+      
+      <category>Open World</category>
+      
+    </item>
+    
+    <item>
+      <title>Remote Play broken on Steam Deck with the February stable update</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve <a href="https://www.gamingonlinux.com/2024/02/valve-release-big-stable-steam-client-update-for-steam-steam-deck/" target="_blank">just recently launched</a> a big stable update to the Steam Client for both Steam Deck and Desktop PCs, which has come with one big issue for Steam Deck.</p>
+<p>Sadly, it seems Remote Play on Steam Deck is now broken. Trying to play a game from a Linux or Windows host just results in a spinning Steam logo screen on the Steam Deck. Weirdly, in my testing, the Steam Deck did get audio but no visual or input — the only choice is to press B to exit the stream.</p>
+<p>The thing is, this has been a <a href="https://github.com/ValveSoftware/steam-for-linux/issues/10461" target="_blank">reported bug</a> since at least February 3rd, when it was noticed from people on the Preview / Beta update channels with multiple confirmed reports.</p>
+<p>Hopefully Valve will solve it. Although, other reports have noted that it does work again in the current Release Candidate update available via Developer Options (for the next upcoming major update), which is not meant for any normal users so I <em>wouldn't</em> recommend changing it as enabling the advanced update channels could cause future problems.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3289557211709123917gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3289557211709123917gol1.jpg"/></a><br/>
+<em>Pictured - Steam Big Picture Mode</em></p>
+<p>A shame to see such a useful feature broken in this way. Hopefully Valve will ensure this feature is fully tested when rolling out future updates to the Steam Deck. Remote Play has always bin a bit iffy in my testing, something with it always seems to be broken but this is the first time I've seen it entirely broken like this.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/remote-play-broken-on-steam-deck-with-the-february-stable-update/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/remote-play-broken-on-steam-deck-with-the-february-stable-update/</guid>
+      <pubDate>Wed, 28 Feb 2024 12:40:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/82095770id24072gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>The future has arrived - KDE Plasma 6 desktop released</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The KDE team announced "MegaRelease 6", a big upgrade that includes Plasma 6, Frameworks 6 and Gear 24.02 with tons of improvements to this popular desktop environment that's used on the Steam Deck for Desktop Mode. <em>Hopefully we will see Valve give it an update in the next major SteamOS release.</em></p>
+<p>Bringing the future to a desktop near you, the tech under the hood has gone through some <strong>major</strong> upgrades with updates to Qt and Wayland support (with Wayland also now the default). The developers say "We have done our best to ensure that these changes are as smooth and unnoticeable to the users as possible, so when you install this update, you will see the same familiar desktop environment that you know and love" and that the upgrades "benefit Plasma's security, efficiency, and performance, and improve support for modern hardware".</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1228818921709045295gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1228818921709045295gol1.png"/></a></p>
+<p>There's a lot of big stuff on top of Qt and Wayland upgrades including:</p>
+<ul>
+<li>New Desktop Overview effect that combines the Overview and Desktop Grid.</li>
+<li>Partial support for High Dynamic Range (HDR).</li>
+<li>Refreshed Breeze theme.</li>
+<li>Improved system settings app to make it more user friendly.</li>
+<li>Improved fingerprint unlock from lockscreen.</li>
+<li>Plasma Search now lets you customize the ordering of search results. Plus it's faster and performs better.</li>
+<li>Lots of improvements to various apps like the popular video editor Kdenlive.</li>
+</ul>
+<p>Oh and my favourite, the Cube has returned! All hail hypnocube!</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1861896241709045623gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1861896241709045623gol1.jpg"/></a></p>
+<p>Lots of smaller but still useful changes have made it in too, like the controversial single-click to open files and folders has been moved to a double-click which better matches Windows and other desktop environments.</p>
+<p>Probably one of the most exciting Plasma updates I've ever seen, and I can't wait to get my Kubuntu install on my desktop upgraded. I'm <em>really</em> keen to see how much Wayland support has improved, and should hopefully properly make it my own default now too.</p>
+<p>See the <a href="https://kde.org/announcements/megarelease/6/" target="_blank">full release page</a> for all the info. There's simply far too many goodies to list here.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/02/the-future-has-arrived-kde-plasma-6-desktop-released/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/the-future-has-arrived-kde-plasma-6-desktop-released/</guid>
+      <pubDate>Wed, 28 Feb 2024 11:56:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2018239655id24067gol.jpg" type="image/jpeg"/>
+      
+      <category>Desktop Environment</category>
+      
+      <category>KDE</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
     
     <item>
       <title>Nintendo goes after Switch emulator yuzu in new lawsuit</title>
@@ -3820,286 +4102,6 @@ In this roguelike narrative card game, what you find may transform you forever. 
       <category>Action</category>
       
       <category>Anti-Cheat</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton Experimental gets improvements for The Finals, TEKKEN 8, Black Desert Online</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve released a new update to Proton Experimental for Steam Deck and Desktop Linux, bringing in some fixes for various games. Here's what you need to know. There's a few different versions of Proton so if you're confused check the <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton beginner's guide</a>.</p>
-<p>First of all, Valve are noting that <strong>Black Desert Online</strong> (although now it's just called <strong>Black Desert</strong>) is now playable as of this release.</p>
-<p>On top of that both <strong>The Finals</strong> and <strong>TEKKEN 8</strong> have some fixes that were previously <em>only</em> available via Proton Hotfix, so they're now in Proton Experimental too.</p>
-<p>A few Proton Experimental regressions were also fixed including:</p>
-<ul>
-<li><strong>Space Enginners</strong> is again able to connect to a server.</li>
-<li><strong>Diablo IV</strong> no longer has window focus issues after opening a browser on a Steam Deck.</li>
-<li><strong>Disgaea 5</strong> no longer crashes during intro cinematic if MovieType was set to 2.</li>
-<li><strong>Resident Evil 2</strong> no longer behaves weirdly when the window dragged around in windowed mode.</li>
-</ul>
-<p>With this release Valve also improved support for input devices with 8+ axes.</p>
-<p>There's also an improvement in compatibility noted for <strong>OpenComposite</strong>, something I hadn't heard of before but the <a href="https://gitlab.com/znixian/OpenOVR" target="_blank">project page</a> describes it as: "OpenComposite OpenXR (previously known as OpenOVR - OpenVR for OculusVR - but renamed due to confusion with OpenVR) is an implementation of SteamVR's API - OpenVR, forwarding calls directly to the OpenXR runtime. Think of it as a backwards version of ReVive, for the OpenXR compatible headsets."</p>
-<p>Full changelog for Proton can <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">seen on GitHub</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/proton-experimental-gets-improvements-for-the-finals-tekken-8-black-desert-online/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/proton-experimental-gets-improvements-for-the-finals-tekken-8-black-desert-online/</guid>
-      <pubDate>Wed, 07 Feb 2024 19:55:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/3146321id23972gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Get lots of Mega Man games in this Humble Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>There's a new big <a href="https://www.humblebundle.com/games/mega-man-franchise-pack?partner=gamingonlinux" target="_blank">Mega Man Humble Bundle live</a> and plenty of them work just fine across Linux Desktop and Steam Deck, so here's all the info you need.</p>
-<p>Included in the bundle are:</p>
-<p><a href="https://store.steampowered.com/app/999020" target="_blank">Mega Man Zero/ZX Legacy Collection</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/742300" target="_blank">Mega Man 11</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/743900" target="_blank">Mega Man X Legacy Collection 2</a> - <img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Deck Unsupported / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/743890" target="_blank">Mega Man X Legacy Collection</a> - <img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Deck Unsupported / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/495050" target="_blank">Mega Man Legacy Collection 2</a> - <img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Deck Unsupported / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/363440" target="_blank">Mega Man Legacy Collection</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Gold</p>
-<p>+ 34% off MEGA MAN X DiVE Offline and 50% off Mega Man Battle Network Legacy Collection Vol. 1 and Vol. 2.</p>
-<p>Valve's ratings on some for Steam Deck are quite <em>old</em>, so those that are Unsupported on Steam Deck <em>may</em> now work fine.</p>
-<p>Check the <a href="https://www.humblebundle.com/games/mega-man-franchise-pack?partner=gamingonlinux" target="_blank">full bundle here</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/get-lots-of-mega-man-games-in-this-humble-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/get-lots-of-mega-man-games-in-this-humble-bundle/</guid>
-      <pubDate>Wed, 07 Feb 2024 19:20:58 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/922222663id23971gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Beta now lets you actually close controller info panels with controllers</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A bit of an oversight in the Steam Client is that their newer Controller info panels that appear before a game launches couldn't be dismissed with a controller - but now they can. </p>
-<p>Valve updated both Steam Desktop and Steam Deck with the new Beta, but to be clear, you could always dismiss panels on the Steam Deck (Gaming Mode) and Big Picture Mode - this is mainly for Steam Desktop (and when in Desktop Mode on Steam Deck). Specifically, panels like this:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/842988271707327220gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/842988271707327220gol1.jpg"/></a></p>
-<p>Kick back! Huh? When you plugged a controller in, you still needed to wrestle your mouse to click okay. But not any more. It can now be dismissed properly via controller. <em>The above screen was added back in the stable <a href="https://www.gamingonlinux.com/2023/11/valve-gives-steam-a-nice-upgrade-for-controller-friendly-games/" target="_blank">November 2023 update</a>.</em></p>
-<p>Main Steam Client Beta (<a href="https://store.steampowered.com/news/group/4397053/view/4047116236901935091" target="_blank">changelog</a>):</p>
-<blockquote>
-<p>General</p>
-<ul>
-<li>Fixed double notifications when friends go online or in-game</li>
-<li>Fixed collapse state of friends list and chat group sections not being properly remembered.</li>
-</ul>
-<p>Big Picture Mode</p>
-<ul>
-<li>Fixed issues with popup menus and other popup dialogs</li>
-</ul>
-<p>Steam Input</p>
-<ul>
-<li>Controllers can be used to dismiss/continue when controller support information panels appear before a game's launch.</li>
-<li>Fix for Gyro enable button not being respected.</li>
-<li>QoL Gyro Calibration button available in Controller Config Quick settings, and in the Gyro section of the Controller Layout Editor.</li>
-</ul>
-</blockquote>
-<p>There's a fresh problem though that's been around for a few weeks in the Steam Beta on Linux, where Big Picture Mode just doesn't seem to actually grab controller input for some people. It was <a href="https://github.com/ValveSoftware/steam-for-linux/issues/10406" target="_blank">reported on GitHub</a>, and testing today with my Xbox controller only the Xbox button works - no other button does. So BPM is a bit broken right now. Hopefully Valve will fix that soon.</p>
-<p>Steam Deck got an extra fix for some broken pop-up menus like in the game Properties menu (<a href="https://store.steampowered.com/news/app/1675200/view/4064004735504576851" target="_blank">changelog</a>):</p>
-<blockquote>
-<p>General</p>
-<ul>
-<li>Fixed issues with popup menus and other popup dialogs</li>
-</ul>
-<p>Steam Input</p>
-<ul>
-<li>Controllers can be used to dismiss/continue when controller support information panels appear before a game's launch.</li>
-<li>Fix for Gyro enable button not being respected.</li>
-<li>QoL: Gyro Calibration button available in Controller Config Quick settings, and in the Gyro section of the Controller Layout Editor.</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/steam-beta-now-lets-you-actually-close-controller-info-panels-with-controllers/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/steam-beta-now-lets-you-actually-close-controller-info-panels-with-controllers/</guid>
-      <pubDate>Wed, 07 Feb 2024 17:58:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Crusader Kings III is about to get a lot of extra exciting content</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Paradox Interactive have announced Chapter III of Crusader Kings III, a set of expansions that will bring in some rather exciting sounding additions to the popular grand strategy game.</p>
-<p>Chapter III comes in the form of a cosmetic pack, two main expansions and an event pack that will be released across 2024. The first part, Couture of the Capets, is available <em>now</em> that adds in new fashions and styles inspired by French royal culture in the High Middle Ages (13th century).</p>
-<p>What else is coming:</p>
-<ul>
-<li>Legends of the Dead - Turn yourself into a figure of legend in this Core Expansion, where great feats and effective propaganda can enhance the power of your bloodline through the centuries. Direct the course of your dynastic legend through Court Chroniclers, and use your growing reputation to build a lasting material legacy. But beware of the growing threat from distant lands as the Black Death builds a legendary legacy of its own. This will be arriving on March 4th.</li>
-</ul>
-<p>Trailer for the expansion is below:</p>
-<div class="hidden_video" data-video-id="vWUlPnbXUW4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/afa33680c44dc2fb3b9b733cad77d547.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/vWUlPnbXUW4" target="_blank">See video</a></div></div>
-<p>And more…</p>
-<ul>
-<li>Roads to Power - The majesty of the Byzantine Empire takes center stage in this Major Expansion. Rule from Constantinople through a new Administrative Government form and experience various Byzantine-themed events and flavors. Or, be truly daring and live a life where your noble reputation is not tied to the land, roaming the map as an adventurer for hire. </li>
-<li>Wandering Nobles - Building on the travel system introduced with Tours &amp; Tournaments, this event pack introduces a new Travel Lifestyle and new ways and reasons to travel - incidents and stories related to roaming far from the safety of your court.</li>
-</ul>
-<p>“It’s very exciting to be able to talk about our plans for 2024,” says Crusader Kings III Game Director Alex Oltner. “We’ve been working hard on trying to find ways to introduce major historical content like the Black Death and the Byzantine Empire’s distinct form of government into CKIII, and we know that our fans have been wanting these as well. Chapter III promises to be one of the biggest phases in the game’s history.”</p>
-<p>Looks like you can't buy them individually, as they're all bundled together as Chapter III. It's going to cost you a bit too with it set at $43.98 / £38.48 / €43.98 for the full bundle.</p>
-<p>You can buy Crusader Kings III from <a href="https://www.humblebundle.com/store/crusader-kings-iii?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/1158310/Crusader_Kings_III/?curator_clanid=4218320" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/crusader-kings-iii-is-about-to-get-a-lot-of-extra-exciting-content/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/crusader-kings-iii-is-about-to-get-a-lot-of-extra-exciting-content/</guid>
-      <pubDate>Wed, 07 Feb 2024 14:44:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1927358981id23969gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>DLC</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Paradox Interactive</category>
-      
-    </item>
-    
-    <item>
-      <title>Diablo game engine devilutionX fixes up multiplayer in v1.5.2</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The modern cross-platform Diablo game engine devilutionX has a new release available, and although small it does have some important fixes. What does it do? DevilutionX is a port of Diablo and Hellfire that strives to make it simple to run the game while providing engine improvements, bugfixes, and some optional quality of life features.</p>
-<p>A bonus for Linux / Steam Deck fans of course is that it has a Native Linux version - so hopefully a better experience.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10869421641707313531gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10869421641707313531gol1.jpg"/></a></p>
-<p>The fixes in v1.5.2 are:</p>
-<blockquote>
-<p>Multiplayer</p>
-<ul>
-<li>Unable to join game due to invalid player data</li>
-</ul>
-<p>Translations</p>
-<ul>
-<li>Improve rendering of Chinese/Japanese/Korean texts</li>
-</ul>
-<p>Gameplay</p>
-<ul>
-<li>Hellfire items not saving their identified state</li>
-</ul>
-<p>Stability / Performance / System</p>
-<ul>
-<li>Stash corrupting when converting a hero between Diablo and Hellfire</li>
-<li>Amiga: Incorrect rendering of things behind transparent elements</li>
-<li>Android: Game locking up when switching sound output</li>
-<li>Fedora: Unable to locate BZIP2</li>
-<li>Manjaro: Unable to locate libsodium</li>
-<li>Xbox: Game crashing unexpectedly</li>
-<li>Xbox: Improve performance</li>
-</ul>
-</blockquote>
-<p>See more on the <a href="https://github.com/diasurgical/devilutionX" target="_blank">GitHub page</a>. But you do need to buy a copy of Diablo to run the full game with it - which you can <a href="https://af.gog.com/en/game/diablo?as=1636858786" target="_blank">purchase from GOG.com</a>. For Linux you can install the game engine via <a href="https://flathub.org/apps/org.diasurgical.DevilutionX" target="_blank">Flathub</a>.</p>
-<p>Is it now the best way to play the original Diablo? Let me know what you think in the comments.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/diablo-game-engine-devilutionx-fixes-up-multiplayer-in-v152/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/diablo-game-engine-devilutionx-fixes-up-multiplayer-in-v152/</guid>
-      <pubDate>Wed, 07 Feb 2024 13:45:55 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1553981718id23968gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Activision Blizzard</category>
-      
-      <category>Reimplementation</category>
-      
-      <category>Retro</category>
-      
-    </item>
-    
-    <item>
-      <title>Arms Race returns to Counter-Strike 2, custom sticker placement, Zeus skin and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve finally put out a big update to Counter-Strike 2, bringing with it a much needed boost with a new game mode, new types of skins and more.</p>
-<p>Arms Race has officially returned! The quick-fire mode where you get two kills to progress onto a new weapon, or steal opponents progress with a knife kill (and now the Zeus too) and eventually get to the final knife to get that winning kill. Good fun so it's nice to see it back.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5637588211707312048gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5637588211707312048gol1.jpg"/></a><br/>
-<em>Pictured - CS2 Arms Race on Linux</em></p>
-<p>On top of that there's a new weapon sticker system, allowing you to place stickers by dragging and dropping them around the weapon to get your perfect placement. Plus you can add up to five stickers to a weapon now too.</p>
-<p>There's more. The first CS2 case has arrived, The Kilowatt Case, adding 17 community-designed weapon finishes and the all-new Kukri knife. No dobut that knife will excite a lot of CS2 fans! Heck, even the Zeus now has its first weapon finish, something players have been begging for. Additionally the Zeus now recharges in 30 seconds in all game modes.</p>
-<p>What else? Oh there's a new Ambush Sticker Capsule (featuring 21 community-created stickers), the NIGHTMODE Music Kit Box (featuring six new Music Kits), an XP Overload icon next to player names if they have earned all their normal weekly XP and Agents with unique end-of-match animations now do their thing during victory and defeat.</p>
-<p>According to developer Timothee "TTimo" Besset on <a href="https://mastodon.social/@TTimo/111890512855786311" target="_blank">Mastodon</a> "the update also ships with continued performance improvements to the vulkan render path", so that's great too!</p>
-<p>See all on the <a href="https://store.steampowered.com/sale/armsrace" target="_blank">special update page</a>.</p>
-<p>What do you think to this update? Let me know in the comments! Personally, I'm looking forward to the next-generation Danger Zone, I really hope they bring it back. With all the updates to the base game of CS2, they could do a lot more with Danger Zone now.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/arms-race-returns-to-counter-strike-2-custom-sticker-placement-zeus-skin-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/arms-race-returns-to-counter-strike-2-custom-sticker-placement-zeus-skin-and-more/</guid>
-      <pubDate>Wed, 07 Feb 2024 13:21:21 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/395329636id23965gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>FPS</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam surprise launches Lunar New Year Sale 2024 - after previously stopping it</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Well, that was a bit of a surprise. Valve has once again put up a <a href="https://store.steampowered.com/sale/lunarnewyear2024" target="_blank">Lunar New Year Sale</a>, even though they <a href="https://www.gamingonlinux.com/2022/09/steam-drops-the-lunar-new-year-sale-were-getting-a-big-spring-sale-instead/" target="_blank">previously announced they wouldn't be doing one</a>. Although, Valve don't always stick to what they say, like last year they did a specific Chinese New Year Sale. </p>
-<p>Anyway, that means you can once again get some easy discounts, if you need to fill up your library. Lucky you!</p>
-<p>Browsing through here's a few fun suggestions for you:</p>
-<p><strong><a href="https://store.steampowered.com/app/666140/My_Time_at_Portia/" target="_blank">My Time at Portia</a></strong> (Deck Playable / ProtonDB Platinum) - 80% off<br/>
-"Start a new life in the enchanting town of Portia! Restore your Pa's neglected workshop to its former glory by fulfilling commissions, growing crops, raising animals, and befriending the quirky inhabitants of this charming post-apocalyptic land!"</p>
-<p><strong><a href="https://store.steampowered.com/app/870780/Control_Ultimate_Edition/" target="_blank">Control Ultimate Edition</a></strong> (Deck Verified / ProtonDB Platinum) - 75% off<br/>
-"A corruptive presence has invaded the Federal Bureau of Control…Only you have the power to stop it. The world is now your weapon in an epic fight to annihilate an ominous enemy through deep and unpredictable environments. Containment has failed, humanity is at stake. Will you regain control?"</p>
-<p><strong><a href="https://store.steampowered.com/app/1286280/Pronty/" style="outline-width:0px !important; user-select:auto !important" target="_blank">Pronty</a> </strong>(Deck Verified) - 66% off<br/>
-"Guide Pronty and its Javelin partner Bront as it defends the once great city of Royla. Explore the deep sea, fight mutant sea creatures, and discover the secrets behind this new Atlantis in this beautiful action-packed adventure."</p>
-<p><strong><a href="https://store.steampowered.com/app/1210320/Potion_Craft_Alchemist_Simulator/" target="_blank">Potion Craft: Alchemist Simulator </a></strong>(Deck Verified / ProtonDB Gold) - 55% off<br/>
-"Potion Craft is an alchemist simulator where you physically interact with your tools and ingredients to brew potions. You're in full control of the whole shop: invent new recipes, attract customers and experiment to your heart's content. Just remember: the whole town is counting on you."</p>
-<p><strong><a href="https://store.steampowered.com/app/1637320/Dome_Keeper/" target="_blank">Dome Keeper</a></strong> (Deck Verified / Native Linux) - 51% off<br/>
-"Defend against waves of alien attackers in this innovative roguelike survival miner. Dig for resources and choose from powerful upgrade paths. Is there enough time to mine a little deeper and get back to defend before the monsters attack your dome?"</p>
-<p><strong><a href="https://store.steampowered.com/app/1850570/DEATH_STRANDING_DIRECTORS_CUT/" target="_blank">DEATH STRANDING DIRECTOR'S CUT</a></strong> (Deck Verified / ProtonDB Gold) - 50% off<br/>
-"In the future, a mysterious event known as the Death Stranding has opened a doorway between the living and the dead, leading to grotesque creatures from the afterlife roaming the fallen world marred by a desolate society."</p>
-<p><em>You can also claim a free daily reward like a sticker each day.</em></p>
-<p>Check out the <a href="https://store.steampowered.com/sale/lunarnewyear2024" target="_blank">Lunar New Year Sale 2024 on Steam</a>. It runs until February 15th.</p>
-<p>Are you picking anything up? Let me know in the comments if you think something is a particularly good deal.</p>
-<p></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/steam-surprise-launches-lunar-new-year-sale-2024-after-previously-stopping-it/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/steam-surprise-launches-lunar-new-year-sale-2024-after-previously-stopping-it/</guid>
-      <pubDate>Wed, 07 Feb 2024 13:08:21 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/96009986id23967gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>On Sale</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
       
     </item>
     
