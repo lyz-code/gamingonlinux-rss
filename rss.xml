@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-03-04 08:01:02.696142</pubDate>
+    <pubDate>2024-03-05 07:22:28.353046</pubDate>
 
     
     <image>
@@ -18,6 +18,287 @@
     </image>
 
     
+    
+    <item>
+      <title>Yuzu agrees to pay Nintendo $2.4 million and will entirely shut down</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After Nintendo <a href="https://www.gamingonlinux.com/2024/02/nintendo-goes-after-switch-emulator-yuzu-in-new-lawsuit/" target="_blank">recently filed</a> a lawsuit against the Yuzu team, it was pretty much inevitable this was going to happen wasn't it. <em>The end of Yuzu is officially here.</em></p>
+<p>Nintendo and Tropic Haze LLC (Yuzu) filed a <a href="https://storage.courtlistener.com/recap/gov.uscourts.rid.56980/gov.uscourts.rid.56980.10.0.pdf" target="_blank">joint motion</a> for the court to enter Final Judgment and Permanent Injunction, so as I understand it's not quite final until the judge stamps it.</p>
+<p>As a result the Yuzu team have announced their intention to shut <em>everything</em> down, and have agreed to pay Nintendo $2.4M USD in damages. As per the <a href="https://storage.courtlistener.com/recap/gov.uscourts.rid.56980/gov.uscourts.rid.56980.10.1.pdf" target="_blank">other document</a>, Yuzu will also transfer the <a href="https://yuzu-emu.org" target="_blank">domain name</a> used over to Nintendo and they have agreed to delete <em>every single thing</em> related to Yuzu that they have.</p>
+<p>Writing in the yuzu Discord (and <a href="https://twitter.com/yuzuemu/status/1764733659444064671" target="_blank">posted</a> on X) the developer bunnei said:</p>
+<blockquote>
+<p>Hello yuz-ers and Citra fans:</p>
+<p>We write today to inform you that yuzu and yuzu’s support of Citra are being discontinued, effective immediately.</p>
+<p>yuzu and its team have always been against piracy. We started the projects in good faith, out of passion for Nintendo and its consoles and games, and were not intending to cause harm. But we see now that because our projects can circumvent Nintendo’s technological protection measures and allow users to play games outside of authorized hardware, they have led to extensive piracy. In particular, we have been deeply disappointed when users have used our software to leak game content prior to its release and ruin the experience for legitimate purchasers and fans.</p>
+<p>We have come to the decision that we cannot continue to allow this to occur. Piracy was never our intention, and we believe that piracy of video games and on video game consoles should end. Effective today, we will be pulling our code repositories offline, discontinuing our Patreon accounts and Discord servers, and, soon, shutting down our websites. We hope our actions will be a small step toward ending piracy of all creators’ works.</p>
+<p>Thank you for your years of support and for understanding our decision.</p>
+</blockquote>
+<p>Considering it's open source though, and has been out in the wild for some time now, it's unlikely this is <em>truly</em> the end because it's been so widely circulated. However, it will make it a lot harder for anyone seeking it out, and no doubt put off anyone from doing anything with Yuzu code they might still have.</p>
+<p>For now, the <a href="https://ryujinx.org" target="_blank">Ryujinx</a> project at least still exists and as far as I know hasn't had Nintendo come knocking — yet.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/yuzu-agrees-to-pay-nintendo-2-4-million-and-will-entirely-shut-down/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/yuzu-agrees-to-pay-nintendo-2-4-million-and-will-entirely-shut-down/</guid>
+      <pubDate>Mon, 04 Mar 2024 19:56:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/14436675id24100gol.jpg" type="image/jpeg"/>
+      
+      <category>Emulation</category>
+      
+      <category>Misc</category>
+      
+      <category>Nintendo</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Sunshine game streaming v0.22.0 adds HDR on Linux, Wayland + NVIDIA improvements</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Sunshine along with Moonlight are popular ways to run your own game streaming system (as say an alternative to Steam Remote Play), and the latest Sunshine release sounds great for Linux gamers.</p>
+<p>You would use Sunshine to host the stream, like on a good PC, and then run Moonlight on the system you wish to actually play the game on. Moonlight for example works on Linux, macOS, Windows, Android, iOS and more. It does take some setup, but when going it can be vastly better than other solutions and it's open source.</p>
+<p>In the latest release of Sunshine v0.22.0 there's some nice additions including:</p>
+<ul>
+<li>(Input/Linux) Add native/pen touch support for Linux.</li>
+<li>(Capture/Linux) Add HDR streaming support for Linux using KMS capture backend.</li>
+<li>(Capture/Linux) Add KMS capture support for Nvidia GPUs running Wayland.</li>
+<li>(Build/Linux) Add Fedora 39 docker image and rpm package.</li>
+<li>(Capture/Linux) Display monitor indexes in logs for wlroots and KMS capture backends.</li>
+<li>(Capture/Linux) Improve VAAPI encoding performance on Intel GPUs.</li>
+<li>(Linux) Updated desktop files.</li>
+<li>(Build/Linux) Optionally, allow using the system installation of wayland-protocols.</li>
+<li>(Build/Linux) Make vaapi optional.</li>
+</ul>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17559160191709559259gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17559160191709559259gol1.jpg"/></a>Pictured - Helldivers 2</em></p>
+<p>And then some nice bug fixes for Linux too:</p>
+<ul>
+<li>(Capture/Linux) Fix missing mouse cursor when using KMS capture on a GPU with hardware cursor support.</li>
+<li>(Capture/Linux) Fix GL errors or corrupt video output on GPUs that use aux planes such as Intel Arc.</li>
+<li>(Capture/Linux) Fix GL errors or corrupt video output on GPUs that use DRM modifiers on YUV buffers.</li>
+<li>(Input/Linux) Fix scrolling in applications that don't support high-resolution scrolling.</li>
+<li>(Input/Linux) Fix absolute mouse input being interpreted as touch input.</li>
+<li>(Capture/Linux) Fix wlroots capture causing GL errors and crashes.</li>
+<li>(Capture/Linux) Fix wlroots capture failing when the display scale factor was not 1.</li>
+<li>(Capture/Linux) Fix excessive CPU usage when using wlroots capture backend.</li>
+<li>(Capture/Linux) Fix capture of virtual displays created by the amdgpu kernel driver.</li>
+<li>(Capture/Linux) Fix corrupt video output or stream disconnections if the display resolution changes while streaming.</li>
+<li>(Capture/Linux) Fix color of aspect ratio padding in the capture image with VAAPI.</li>
+<li>(Capture/Linux) Fix NVENC initialization error when using X11 capture with some GPUs.</li>
+<li>(Capture/Linux) Replace vaTerminate method with dl handle.</li>
+<li>(Capture/Linux) Fix capture when DRM is enabled and x11 is disabled.</li>
+<li>(Tray/Linux) Fix random crash when the tray icon is updating.</li>
+<li>(Linux) Use XDG spec for fetching config directory.</li>
+</ul>
+<p>See more on the <a href="https://github.com/LizardByte/Sunshine" target="_blank">Sunshine GitHub</a> and the <a href="https://moonlight-stream.org" target="_blank">Moonlight website</a>.</p>
+<p>Have you been using Sunshine and Moonlight? What's your experience with it?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/sunshine-game-streaming-v0220-adds-hdr-on-linux-wayland-nvidia-improvements/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/sunshine-game-streaming-v0220-adds-hdr-on-linux-wayland-nvidia-improvements/</guid>
+      <pubDate>Mon, 04 Mar 2024 13:35:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/447753786id24098gol.jpg" type="image/jpeg"/>
+      
+      <category>Cloud Gaming</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve reveals schedule of sales events for the rest of 2024</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Are you saving up for a particular game, or just want to know what sales events are coming up on Steam? Got you covered here, as Valve have now revealed all.</p>
+<p>There's an event for all occasions now, some big and some small but developers can get involved in many of them to show off demos and give discounts to hook more players in.</p>
+<p>So here's all the upcoming events in one easy list:</p>
+<ul>
+<li>Spring Sale: March 14 - 21 (major seasonal sale)</li>
+<li>Deckbuilders Fest: March 25 - April 1</li>
+<li>FPS Fest: April 15 - 22</li>
+<li>Farming Fest: April 29 - May 6</li>
+<li>Endless Replayability Fest: May 13 - 20</li>
+<li>Open World Survival Crafting Fest: May 27 - June 3</li>
+<li>Next Fest: June 10 - 17</li>
+<li>Summer Sale: June 27 - July 11 (major seasonal sale)</li>
+<li>Tower Defense Fest: July 29 - August 5</li>
+<li>Fighting Games Fest: August 5 - 12</li>
+<li>Rhythm Fest: August 19 - 26</li>
+<li>Space Exploration Fest: September 2 - 9</li>
+<li>Planes, Trains, and Automobiles Fest: September 16 - 23</li>
+<li>Turn-based RPG Fest: September 30 - October 7</li>
+<li>Next Fest: October Edition: October 14 - 21</li>
+<li>Steam Scream Fest 3 (cheekier name pending): October 28 - November 4</li>
+<li>Cooking Fest: November 11 - 18</li>
+<li>Steam Autumn Sale (major seasonal sale): November 27 - December 4</li>
+<li>Steam Winter Sale (major seasonal sale): December 19 - January 2</li>
+</ul>
+<p><em>That's a lot of chances to bag some good discounts.</em></p>
+<p>All details taken from the <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/3970553774441642999" target="_blank">Steamworks Post</a>, and some others from the <a href="https://store.steampowered.com/news/group/4145017/view/3788151013299508611" target="_blank">previous post</a>.</p>
+<p>So maybe it's time to fill up that wishlist? Are you waiting on a particular game? I've got a few in mind I still want to pick up. Okay, more than a few. I have over 300 games in my Steam wishlist at this point…</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/valve-reveals-schedule-of-sales-events-for-the-rest-of-2024/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/valve-reveals-schedule-of-sales-events-for-the-rest-of-2024/</guid>
+      <pubDate>Mon, 04 Mar 2024 13:01:39 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/gol-logo-money.png" type="image/jpeg"/>
+      
+      <category>Event</category>
+      
+      <category>Misc</category>
+      
+      <category>On Sale</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine pulls in code to eliminate a Vulkan performance issue for wow64</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Wine is about to get just that little bit sweeter, with new code recently merged into the project that should work around a performance issue with Vulkan. Specifically it relates to how Wine was previously implementing wow64, a way of supporting 32-bit applications on 64bit.</p>
+<p>As per the <a href="https://gitlab.winehq.org/wine/wine/-/merge_requests/5128" target="_blank">Merge Request</a> titled "winevulkan: Use VK_EXT_map_memory_placed for memory mapping on wow64" that was accepted:</p>
+<blockquote>
+<p>With the new extension, we may implement wow64 correctly, without <code class="inline-code">VK_EXT_external_memory_host</code> hacks. This is both more correct and more performant (essentially eliminating Vulkan wow64 performance penalty).</p>
+</blockquote>
+<p>The <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_map_memory_placed.html" target="_blank">VK_EXT_map_memory_placed</a> extension was released with Vulkan 1.3.278 spec update on February 16, 2024. The extension "allows a client to request that <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/vkMapMemory2KHR.html" target="_blank">vkMapMemory2KHR</a> attempt to place the memory map at a particular virtual address" and was worked on by Collabora, AMD, NVIDIA, Valve and CodeWeavers.</p>
+<p>So once all graphics drivers are released with support for it, and Wine gets a release with it in (along with any needed Proton updates), it should work that little bit better.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/wine-pulls-in-code-to-eliminate-a-vulkan-performance-issue-for-wow64/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/wine-pulls-in-code-to-eliminate-a-vulkan-performance-issue-for-wow64/</guid>
+      <pubDate>Mon, 04 Mar 2024 12:53:42 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+      <category>Vulkan</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam smashes its peak players online record to over 34 million</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Starting 2024 off strong, Valve has seen Steam smash the all-time record once again for users actually online showing that weekends are a busy time for gamers.</p>
+<p>According to <a href="https://steamdb.info/app/753/charts/" target="_blank">SteamDB</a> the record of 34,649,583 people online was hit Sunday, March 3rd at 2PM UTC and at the time 11,146,564 players were actually in game too. Steam has been regularly hitting over 33 million since January, but managed to first hit over 34 million on Saturday, March 2nd and then smashed the record again on Sunday.</p>
+<p>Going by the stats the most popular games were:</p>
+<ul>
+<li>Counter-Strike 2</li>
+<li>Dota 2</li>
+<li>PUBG: BATTLEGROUNDS</li>
+<li>Apex Legends</li>
+<li>Helldivers 2</li>
+</ul>
+<p>Seems like 2024 is going to be another massive year for Valve. 2023 was already pretty crazy with <a href="https://www.gamingonlinux.com/2024/02/steam-users-redeemed-over-80-million-in-physical-wallet-cards-in-december-2023/" target="_blank">Steam users redeeming over $80 million in physical wallet cards</a>.</p>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12512220921709555607gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12512220921709555607gol1.jpg"/></a>Pictured - Helldivers 2 on Linux. I'm doing my part.</em></p>
+<p>What were you playing this weekend? As you might have gathered, I was playing plenty of Helldivers 2. Freedom isn't going to bring itself to the galaxy.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/steam-smashes-its-peak-players-online-record-to-over-34-million/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/steam-smashes-its-peak-players-online-record-to-over-34-million/</guid>
+      <pubDate>Mon, 04 Mar 2024 12:34:31 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1335025545id24095gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux on the desktop breaks 4% for the first time on Statcounter</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another month down according to Statcounter at least, Linux on the desktop is doing better than ever. Take it with your usual little pinch of salt like any survey sampling though.</p>
+<p>We've finally cracked 4%, which for Linux is a pretty big thing. How do they do it? They collect stats from over 1.5 million websites, so they have a pretty good sample size for it.</p>
+<p>Here's how things have looked over the last year+</p>
+<ul>
+<li>January 23 - 2.91%</li>
+<li>February 23 - 2.94%</li>
+<li>March 23 - 2.85%</li>
+<li>April 23 - 2.83%</li>
+<li>May 23 - 2.7%</li>
+<li>June 23 - 3.07%</li>
+<li>July 23 - 3.12%</li>
+<li>August 23 - 3.18%</li>
+<li>September 23 - 3.02%</li>
+<li>October 23 - 2.92%</li>
+<li>November 23 - 3.22%</li>
+<li>December 23 - 3.82%</li>
+<li>January 24 - 3.77%</li>
+<li><strong>February 24 - 4.03%</strong></li>
+</ul>
+<p>Here's a look at it since 2009:</p>
+<p><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18295733011709554105gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18295733011709554105gol1.png"/></a></p>
+<p>See the worldwide desktop stats on <a href="https://gs.statcounter.com/os-market-share/desktop/worldwide" target="_blank">Statcounter</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/linux-on-the-desktop-breaks-4-for-the-first-time-on-statcounter/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/linux-on-the-desktop-breaks-4-for-the-first-time-on-statcounter/</guid>
+      <pubDate>Mon, 04 Mar 2024 12:09:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/477479594id24094gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Survey</category>
+      
+      <category>Survey Results</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Survey for February 2024 shows a big bump in Simplified Chinese</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Seems like once again we're seeing an Asia influx on Steam, as the February 2024 Steam Hardware &amp; Software Survey showed a big +7.62% bump in Simplified Chinese. This month also saw a +2.76% rise in Windows 10 64 bit.</p>
+<p>As a result this pushed down the totals for both macOS and Linux, which always happens when there's a rise in Simplified Chinese so the overall operating system stats on Steam for February 2024 are:</p>
+<ul>
+<li>Windows 96.91% +0.39%</li>
+<li>Linux 1.76% -0.19%</li>
+<li>OSX 1.32% -0.22%</li>
+</ul>
+<p>The Linux share over time from <a href="https://www.gamingonlinux.com/steam-tracker/" target="_blank">our Steam Tracker</a>:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8645505331709553071gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8645505331709553071gol1.jpg"/></a></p>
+<p style="text-align:center">When you filter to Linux-only here's the most popular Linux distributions:</p>
+<ul>
+<li>SteamOS Holo 64 bit (Steam Deck) 43.55% +1.43%</li>
+<li>Arch Linux 64 bit 8.15% +0.39%<img src="https://store.akamai.steamstatic.com/public/images/trans.gif"/></li>
+<li>Freedesktop SDK 23.08 (Flatpak runtime) 64 bit 5.52% -0.30%</li>
+<li>Ubuntu 22.04.3 LTS 64 bit 5.09% -1.71%</li>
+<li>Linux Mint 21.3 64 bit 3.56% +3.56%</li>
+<li>Manjaro Linux 64 bit 3.35% -0.13%</li>
+<li>Other 30.78% +3.14%</li>
+</ul>
+<p>All the details can be seen on the <a href="https://store.steampowered.com/hwsurvey/?platform=combined" target="_blank">Steam Survey</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/steam-survey-for-february-2024-shows-a-big-bump-in-simplified-chinese/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/steam-survey-for-february-2024-shows-a-big-bump-in-simplified-chinese/</guid>
+      <pubDate>Mon, 04 Mar 2024 11:54:43 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>Survey</category>
+      
+      <category>Survey Results</category>
+      
+    </item>
     
     <item>
       <title>Proton 9.0 for Steam Deck / Linux got a small Beta update, plus Proton Experimental too</title>
@@ -3861,275 +4142,6 @@ In this roguelike narrative card game, what you find may transform you forever. 
       <category>Steam Play</category>
       
       <category>Action</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck SteamOS 3.5.16 Preview improves Persona 3 Reload performance</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>SteamOS 3.5.16 Preview is available now for testing on Steam Deck, as Valve continue improving performance for the recently released Persona 3 Reload.</p>
-<p>This is on top of the improved performance of ray-traced reflections in Persona 3 Reload from <a href="https://www.gamingonlinux.com/2024/02/steam-deck-steamos-3514-preview-persona-3-reload-improvements-and-more/" target="_blank">SteamOS 3.5.14 Preview</a>, and a <a href="https://www.gamingonlinux.com/2024/02/proton-hotfix-gets-persona-3-reload-performance-improvements-for-steam-deck-linux/" target="_blank">recent Proton Hotfix update</a> also improving performance overall.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10215677771707820218gol1.jpg"/></p>
-<p>SteamOS 3.5.16 Preview simply has a one-liner <a href="https://steamcommunity.com/games/1675200/announcements/detail/4064004735526102920?snr=2___" target="_blank">changelog</a> that notes "Further improved performance in Persona 3 Reload". Confusingly, updating to it in Preview didn't actually change the SteamOS version from the recent <a href="https://www.gamingonlinux.com/2024/02/steam-deck-steamos-3-5-15-preview-hdr-improvement-gpu-crash-improvements/" target="_blank">3.5.15 Preview</a>. I was already on 3.5.15, and it gave me the update. So it's possible Valve forgot to update the actual version string.</p>
-<p>To test it out go into Settings &gt; System &gt; System Update Channel and pick Preview from the drop-down box.</p>
-<p>You can buy Persona 3 Reload from:</p>
-<p><a href="https://www.humblebundle.com/store/persona-3-reload?partner=gamingonlinux" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/2161700/Persona_3_Reload/?curator_clanid=4218320" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/steam-deck-steamos-3516-preview-improves-persona-3-reload-performance/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/steam-deck-steamos-3516-preview-improves-persona-3-reload-performance/</guid>
-      <pubDate>Tue, 13 Feb 2024 10:31:48 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/917112621id23994gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Adventure</category>
-      
-      <category>Preview</category>
-      
-      <category>RPG</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Remote Play Together 2024 Fest is live to celebrate gaming together anywhere</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Celebrating the ability to play games together wherever you are, Valve has launched the Steam Remote Play Together 2024 Fest. Giving you plenty of discounts on games you might want to pick up.</p>
-<p>Remote Play is one of the sweetest features of Steam, although it doesn't always quite work right, when it <em>does</em> it opens up a lot more options. Streaming from one device to another for solo play, or the <em>together</em> part of it where you share  games with friends so they can join in from anywhere, which is especially good for co-op / multiplayer games that usually only support local play (and only the host needs to own the game!).</p>
-<div class="hidden_video" data-video-id="Xia-MsSgfMM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/346abbe667a98bcd9750b866ba1f8407.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Xia-MsSgfMM" target="_blank">See video</a></div></div>
-<p>There's a lot that's discounted during this event, a bit of everything from AAA to tiny indies and everything in between. I don't actually play a lot of co-op games myself, but some fun titles to guarantee a good time with discounts include:</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/728880/Overcooked_2/" target="_blank">Overcooked! 2</a> - 75% off - Deck Verified / Native Linux</li>
-<li><a href="https://store.steampowered.com/app/512900/Streets_of_Rogue/" target="_blank">Streets of Rogue</a> - 75% off - Deck Playable / Native Linux</li>
-<li><a href="https://store.steampowered.com/app/238460/BattleBlock_Theater/" target="_blank">BattleBlock Theater</a> - 70% off - Deck Verified / Native Linux</li>
-<li><a href="https://store.steampowered.com/app/252110/Lovers_in_a_Dangerous_Spacetime/" style="outline-width:0px !important; user-select:auto !important" target="_blank">Lovers in a Dangerous Spacetime</a> - 50% off - Deck Verified / Native Linux</li>
-<li><a href="https://store.steampowered.com/app/763890/Wildermyth/" target="_blank">Wildermyth</a> - 30% off - Deck Verified / Native Linux</li>
-</ul>
-<p><em>All of those are especially great games!</em></p>
-<p>Are you going to be picking up anything? Let me know your best picks in the comments!</p>
-<p>The event runs until February 19th at 10 AM PT / 6PM UTC. There's also some new entries in the <a href="https://store.steampowered.com/points/shop/app/2831890" target="_blank">Steam Points Shop</a>.</p>
-<p>Check out the <a href="https://store.steampowered.com/remoteplay_together" target="_blank">event page on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/steam-remote-play-together-2024-fest-is-live-to-celebrate-gaming-together-anywhere/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/steam-remote-play-together-2024-fest-is-live-to-celebrate-gaming-together-anywhere/</guid>
-      <pubDate>Mon, 12 Feb 2024 21:40:37 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1920787107id23993gol.jpg" type="image/jpeg"/>
-      
-      <category>Event</category>
-      
-      <category>Local co-op</category>
-      
-      <category>Local multiplayer</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Bazzite Linux adds support for the Lenovo Legion Go handheld</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Want to get Linux on your Lenovo Legion Go? Bazzite Linux was recently updated and now should be feature complete for the Legion Go so you can get a more SteamOS-like experience for it just like the Steam Deck.</p>
-<p>Bazzite also recently gained a rather <a href="https://bazzite.gg" target="_blank">fancy looking website</a> dedicated to it. Making it much easier and clearer to see exactly what it is: the next generation of Linux Gaming, well they think so anyway.</p>
-<p>What exactly is it? As they explain: Bazzite is a custom image built on Fedora Atomic technology that brings the best of Linux gaming to all of your devices (yep, even your favorite handheld). Featuring a rock-solid base with automatic updates and ninety days of rollbacks.". It's some really clever stuff, and includes plenty of added extras for gaming.</p>
-<p>Posting on the official forum, one of the Bazzite team <a href="https://universal-blue.discourse.group/t/lenovo-legion-go-support/584" target="_blank">mentioned</a>: "the Lenovo Legion Go is now <strong>feature complete</strong> as of the latest update" and that "assuming you’ve followed the <a href="https://github.com/ublue-os/bazzite#alternative-handhelds" target="_blank">alternative handheld section of our readme</a> that you can now enjoy full feature-parity with the Steam Deck on your Lenovo Legion Go".</p>
-<p style="text-align:center"><img alt="Lenovo Legion Go" src="https://uploads.golmedia.net/uploads/articles/article_media/17026334041707752295gol1.png"/></p>
-<p style="text-align:center"><em>Pictured - Lenovo Legion Go</em></p>
-<p>Valve really did light a fire under various hardware vendors with the Steam Deck didn't they! Nice to see more of them now having easyish ways to get Linux on them too for a more open experience.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/bazzite-linux-adds-support-for-the-lenovo-legion-go-handheld/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/bazzite-linux-adds-support-for-the-lenovo-legion-go-handheld/</guid>
-      <pubDate>Mon, 12 Feb 2024 15:40:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1541293122id23992gol.jpg" type="image/jpeg"/>
-      
-      <category>Distro News</category>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Dead Cells will be finished with the upcoming Update 35</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Motion Twin have announced that the upcoming Update 35 for Dead Cells will be the end, so it will be actually finished and complete with no more content updates.</p>
-<p>They shared the news in a post on <a href="https://store.steampowered.com/news/app/588650/view/4020094639145168178" target="_blank">Steam</a> saying that "Update 35 for Dead Cells marks the end of our creative journey on the game. After an incredible 5-year collaboration in bringing additional content to Dead Cells' live-ops, Evil Empire will be pursuing new adventures and we can't wait to see what they come up next.".</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6760930921707750920gol1.jpg"/></p>
-<p>One of the issues noted is they didn't want to fall into the "more of the same" trap, as they didn't want to "overextend and risk diminishing the unique charm that makes Dead Cells special to us all". This is part of why things have been quieter around Dead Cells recently, as they said "concluding such a partnership required careful planning to ensure a smooth process for everyone, including the community" as Evil Empire and Motion Twin both move onto new things.</p>
-<p>Probably the right move. Dead Cells as it is right now, with the multiple DLC released, is excellent and packed full of content to explore and fight through. Not everything needs to be expanded upon forever. There's currently no date for the final update yet though.</p>
-<p>You can buy Dead Cells from <a href="https://www.humblebundle.com/store/dead-cells?partner=gamingonlinux" target="_blank">Humble Store</a>, <a href="https://af.gog.com/game/dead_cells?as=1636858786" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/588650/Dead_Cells/?curator_clanid=4218320" target="_blank">Steam</a>. It has Native Linux support and it's Steam Deck Verified with the Native Linux version too.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/dead-cells-will-be-finished-with-the-upcoming-update-35/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/dead-cells-will-be-finished-with-the-upcoming-update-35/</guid>
-      <pubDate>Mon, 12 Feb 2024 15:18:06 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/290691560id23991gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Craftomation 101 combines crafting, programming and tiny robots to unfreeze a planet</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Hitting Early Access on February 19th, Craftomation 101 is a spiritual successor to Luden.io's previous game "while True: learn()" and it sounds like a really fun combination of ideas.</p>
-<p>You've played various survival games, crafting games, automation sims and all that but have you played one where you're trying to bring a planet back to life? Apparently it's going to take over 9,000 years! Well, good job you can do some visual programming to get tiny robots to do your bidding huh? Sounds like a really fun idea for a programming automation sandbox game.</p>
-<div class="hidden_video" data-video-id="NQv6b22HTeE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6cfc8cb7b6029a9b517059f016cdb8d5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/NQv6b22HTeE" target="_blank">See video</a></div></div>
-<p>The developer kindly sent over a key, so I'll be checking it out. Just like their previous games it has Native Linux support.</p>
-<p>They said the plan for Early Access is for at least one year of extra development to include various extras like debug tools, an educational mode, fishing, a trading factory, additional functions to the programming and so on. You <a href="https://store.steampowered.com/app/1724140/Craftomation_101_Programming__Craft/" target="_blank">can follow it on Steam</a>.</p>
-<p><em>What do you think? Something you might pick up? Let me know in the comments!</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/craftomation-101-combines-crafting-programming-and-tiny-robots-to-unfreeze-a-planet/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/craftomation-101-combines-crafting-programming-and-tiny-robots-to-unfreeze-a-planet/</guid>
-      <pubDate>Mon, 12 Feb 2024 14:57:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1545190412id23990gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Programming</category>
-      
-    </item>
-    
-    <item>
-      <title>Puzzle game Sokobond Express releases February 22nd</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Sokobond Express is a beautifully minimalist puzzle game that combines chemical bonds and puzzling pathfinding in novel ways. The developers say it's a bit of a mashup of the ideas from Sokobond and Cosmic Express.</p>
-<p>Developed by Jose Hernandez, from Venezuela, this is their first commercial release. Based upon a free game called <a href="https://josehzz.itch.io/subatomic-wire" target="_blank">Subatomic Wire</a>, which was developed over six weeks and launched on itch.io. Draknek &amp; Friends noticed the game and "immediately loved its deep and perplexing mechanics as well as how it integrated Cosmic Express and the original Sokobond game in such an engaging and innovative way" and so decided to pick it up for publishing.</p>
-<div class="hidden_video" data-video-id="8RNkbEBczag"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2c4c87b8263a4e46dc7006f338cb2f22.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/8RNkbEBczag" target="_blank">See video</a></div></div>
-<p>More about it:</p>
-<ul>
-<li>The minimalist mashup sequel to award-winning puzzle games Sokobond and Cosmic Express.</li>
-<li>Ambient and relaxing soundtrack to provide zen-vibes while puzzle solving.</li>
-<li>Created by up-and-coming puzzle designer Jose Hernandez, and published by renowned puzzle experts Draknek &amp; Friends (A Monster's Expedition, Bonfire Peaks).</li>
-</ul>
-<p>If you love puzzle games it looks like a rather nice one with Native Linux support.</p>
-<p>You can <a href="https://store.steampowered.com/app/1701330/Sokobond_Express/" target="_blank">follow it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/puzzle-game-sokobond-express-releases-february-22nd/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/puzzle-game-sokobond-express-releases-february-22nd/</guid>
-      <pubDate>Mon, 12 Feb 2024 14:44:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/721523id23989gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Puzzle</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>GE-Proton 8-31 and 8-32 bring fixes for Helldivers 2, Dark and Darker, Agarest</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Two new versions of GE-Proton have been released pulling in some extra fixes for various games for Steam Deck / Linux, so here's what's new and improved. Since there's so many different versions of Proton be sure to check <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">my beginner's guide</a> if you're confused. This is the community-maintained version, not affiliated with Valve.</p>
-<p>For GE-Proton 8.31 the changes are:</p>
-<blockquote>
-<p>Proton:</p>
-<ul>
-<li>updated wine to latest bleeding edge, allows helldivers to run</li>
-<li>updated vkd3d-proton to latest git</li>
-<li>updated dxvk to latest git</li>
-</ul>
-<p>ULWGL:</p>
-<ul>
-<li>added fix for older games to properly set CWD (current working directory) if executable is not inside the wine prefix</li>
-</ul>
-<p>GStreamer:</p>
-<ul>
-<li>fixed this annoying ass unclosable wayland window from popping up when a game uses gstreamer:<br/>
-<a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/803296011707744729gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/803296011707744729gol1.png"/></a></li>
-</ul>
-<p>Original upstream bugs + fix:<br/>
-<a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/2997" target="_blank">https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/2997</a><br/>
-<a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5511" target="_blank">https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5511</a><br/>
-<a href="https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5509" target="_blank">https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/5509</a></p>
-<p>Protonfixes:</p>
-<ul>
-<li>added fixes for Dark and Darker (thanks nmlynch94)</li>
-<li>updated BDO fixes to work with standalone</li>
-<li>updated yakuza 5 cutscenes fixes to work on non-steam versions</li>
-</ul>
-<p>General:</p>
-<ul>
-<li>cleaned up various no longer required patches (either upstreamed or already fixed)</li>
-</ul>
-</blockquote>
-<p>In the above quoted changelog, they specifically meant the newly released <strong>Helldivers 2</strong>, not the original which already worked fine. You <em>don't</em> need GE-Proton for Helldivers 2 though as it <a href="https://www.gamingonlinux.com/2024/02/proton-hotfix-updated-to-support-helldivers-2-on-steam-deck-linux/" target="_blank">works with Proton Hotfix</a>. And ULWGL refers to the new <a href="https://www.gamingonlinux.com/2024/01/unified-linux-wine-game-launcher-aims-to-improve-windows-games-on-linux-steam-deck/" target="_blank">Unified Linux Wine Game Launcher</a>.</p>
-<p>And then the follow-up release GE-Proton 8-32:</p>
-<blockquote>
-<p>HOTFIX:</p>
-<ul>
-<li>fix wine subcommands not working using ulwgl (winecfg, console, etc)</li>
-</ul>
-<p>Protonfixes:</p>
-<ul>
-<li>Add video playback fixes for all Agarest games (Generations of War/Zero/2/Mariage)</li>
-</ul>
-</blockquote>
-<p>See more on the <a href="https://github.com/GloriousEggroll/proton-ge-custom" target="_blank">GE-Proton GitHub</a>.</p>
-<hr/>
-<p>Here's a text guide on how to install GE-Proton.</p>
-<p><strong>Download ProtonUp-Qt</strong></p>
-<p>For Steam Deck, make sure you're in Desktop Mode. Steam Button -&gt; Power - Switch to Desktop.</p>
-<ul>
-<li><u>Steam Deck</u> / <u>KDE Plasma</u> - Open the Discover store, in the search box (top left) type in "ProtonUp-Qt", click it and hit Install (top right). Alternatively on Steam Deck if you have <a href="https://www.gamingonlinux.com/2023/01/decky-loader-makes-steam-deck-plugins-even-easier-with-new-installer/" target="_blank">Decky Loader</a>, you can also try the "Wine Cellar" plugin.</li>
-<li><u>Manual install</u> / <u>GNOME</u> - head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>. On GNOME desktops, you can also download via GNOME Software.</li>
-</ul>
-<p><strong>Using ProtonUp-Qt:</strong></p>
-<ul>
-<li>Launch ProtonUp-Qt.</li>
-<li>Make sure it's set to Steam at the top and select to install GE-Proton.</li>
-<li>Reload Steam to update the compatibility layer list.</li>
-<li>In Steam:
-<ul>
-<li><u>Desktop</u>: right click a game and go to Properties.</li>
-<li><u>Steam Deck</u> / <u>Big Picture Mode</u>: find the game in your library, go to the little cog on the right and then select Properties.</li>
-</ul>
-</li>
-<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down menu.</li>
-</ul>
-<p>My original video of how to do it on Steam Deck:</p>
-<div class="hidden_video" data-video-id="6doaQNnHR60"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37b4fc871ab3188f385a1c60a2e0949c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6doaQNnHR60" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/ge-proton-8-31-and-8-32-bring-fixes-for-helldivers-2-dark-and-darker-agarest/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/ge-proton-8-31-and-8-32-bring-fixes-for-helldivers-2-dark-and-darker-agarest/</guid>
-      <pubDate>Mon, 12 Feb 2024 13:39:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1530852201id23988gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
       
     </item>
     
