@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-03-09 07:22:47.391177</pubDate>
+    <pubDate>2024-03-10 07:23:03.089078</pubDate>
 
     
     <image>
@@ -20,6 +20,180 @@
     
     
     <item>
+      <title>GE-Proton 9-1 brings a whole lot of fixes for Linux / Steam Deck gaming</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The first release of GE-Proton based on Wine 9.0 / Proton 9.0 is here with GE-Proton 9-1 bringing in a lot of fixes for various games and new games added to ULWGL (Unified Linux Wine Game Launcher).</p>
+<p>As a reminder: ULWGL is a new unified launcher for running Windows games on Linux, it's basically a copy of how the Steam Linux Runtime/Steam Runtime Tools work to allow Proton to properly run outside of Steam, along with various specific game tweaks. It's not a standalone launcher like Lutris or Heroic, they would instead use it directly. GE-Proton itself is a community-built version of Proton, not supported by Valve, that often has fixes Valve can't distribute (sometimes for legal reasons, other times for more QA testing time).</p>
+<p>Here's all the changes for <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-1" target="_blank">GE-Proton 9-1</a>:</p>
+<blockquote>
+<p>Proton:</p>
+<ul>
+<li>Pulled in upstream changes from proton 9 bleeding edge</li>
+<li>wine updated to Proton 9 bleeding edge</li>
+<li>dxvk updated to latest git</li>
+<li>vkd3d updated to latest git</li>
+</ul>
+<p>Wine:</p>
+<ul>
+<li>All previous proton-ge patches rebased to proton 9 (thanks for the FSR rebase loathingKernel)</li>
+<li>Star Citizen EAC patch removed, no longer needed, instead currently uses protonfix with EOS_USE_ANTICHEATCLIENTNULL=1</li>
+<li>Wine-staging rebased on top of proton 9 bleeding edge wine</li>
+</ul>
+<p>Protonfixes:</p>
+<ul>
+<li>core count fix added for farcry primal (allows game to run)</li>
+<li>added ulwgl entry for egs version of farcry primal</li>
+<li>core count fix added for farcry 2</li>
+<li>added ulwgl entry for uplay and egs versions of farcry 2</li>
+<li>core count fix added for far cry blood dragon</li>
+<li>added ulwgl entries for uplay and egs versions of far cry blood dragon</li>
+<li>added ulwgl entries for uplay and egs version of farcry 3</li>
+<li>added ulwgl entries for uplay and egs versions of farcry 4</li>
+<li>added ulwgl entry for egs version of uncharted legacy of thieves collection</li>
+<li>added fixes for Trails in the Sky 1-3 and ulwgl entries for the gog versions (thanks keenanweaver)</li>
+<li>added core count fix for New World</li>
+<li>added zoom games platform for ulwlgl</li>
+<li>added fix for duke nukem manhatten project zoom edition</li>
+<li>added fixes and ulwgl entries for the gog version of Soldier of Fortune II (thanks keenanweaver)</li>
+<li>added fix for Street Racing Syndicate (thanks doZennn)</li>
+<li>added fix and ulwgl entry for zoom version of hardwar (thanks keenanweaver)</li>
+<li>added fix for They Are Billions and ulwgl entry for gog version (thanks zocker-160)</li>
+<li>added fix for black screen in Grim Dawn and add ulwgl entry for gog version (thanks Aqa-Ib)</li>
+<li>added fix for Dirt 3 complete edition</li>
+<li>added fix for Postal III (thanks doZennn)</li>
+<li>added fixes for Incoming trilogy (thanks doZennn)</li>
+<li>fixed assetto corsa dotnet not installing (game runs again)</li>
+<li>added fix and ulwgl entry for GOG version of Silent Hill 4 (thanks keenanweaver)</li>
+<li>added fix and ulwgl entry for GOG version of Wheel of Time (thanks keenanweaver)</li>
+<li>added fix for Gabriel Knight 3 (thanks marianoag)</li>
+<li>added fix for Gobliiins 5 (thanks marianoag)</li>
+<li>added fix for Ceville (thanks marianoag)</li>
+<li>added fix for Nine Witches: Family Disruption (thanks marianoag)</li>
+<li>xrandr added to protonfixes for screen resolution detection -- this is needed for some games like gothic/gothic 2 (fixes for those those games are still a work in progress)</li>
+<li>added fix which wil skip running winetricks in protonfixes if no internet connection is available. A winetricks check is performed on every run. If a winetrick is found to be missing it tries to install it. During that time it will check if there is an internet connection available. If there is not one, the winetrick is skipped until the next time the game is run and subsequently the winetrick.)</li>
+</ul>
+<p>Known Issue:</p>
+<ul>
+<li>wmv video playback regression in some games (one example being Ultimate Marvel vs Capcom 3). This is a known regression in upstream proton and they are aware/working on it.</li>
+</ul>
+</blockquote>
+<hr/>
+<p>Here's a text guide on how to install GE-Proton.</p>
+<p><strong>Download ProtonUp-Qt</strong></p>
+<p>For Steam Deck, make sure you're in Desktop Mode. Steam Button -&gt; Power - Switch to Desktop.</p>
+<ul>
+<li><u>Steam Deck</u> / <u>KDE Plasma</u> - Open the Discover store, in the search box (top left) type in "ProtonUp-Qt", click it and hit Install (top right). Alternatively on Steam Deck if you have <a href="https://www.gamingonlinux.com/2023/01/decky-loader-makes-steam-deck-plugins-even-easier-with-new-installer/" target="_blank">Decky Loader</a>, you can also try the "Wine Cellar" plugin.</li>
+<li><u>Manual install</u> / <u>GNOME</u> - head to the <a href="https://davidotek.github.io/protonup-qt/" target="_blank">official website</a>, scroll down and pick your favourite download option either AppImage or <a href="https://flathub.org/apps/details/net.davidotek.pupgui2" target="_blank">Flathub</a>. On GNOME desktops, you can also download via GNOME Software.</li>
+</ul>
+<p><strong>Using ProtonUp-Qt:</strong></p>
+<ul>
+<li>Launch ProtonUp-Qt.</li>
+<li>Make sure it's set to Steam at the top and select to install GE-Proton.</li>
+<li>Reload Steam to update the compatibility layer list.</li>
+<li>In Steam:
+<ul>
+<li><u>Desktop</u>: right click a game and go to Properties.</li>
+<li><u>Steam Deck</u> / <u>Big Picture Mode</u>: find the game in your library, go to the little cog on the right and then select Properties.</li>
+</ul>
+</li>
+<li>Compatibility menu -&gt; Tick the box, select GE-Proton from the drop-down menu.</li>
+</ul>
+<p>My original video of how to do it on Steam Deck:</p>
+<div class="hidden_video" data-video-id="6doaQNnHR60"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/37b4fc871ab3188f385a1c60a2e0949c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6doaQNnHR60" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/ge-proton-9-1-brings-a-whole-lot-of-fixes-for-linux-steam-deck-gaming/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/ge-proton-9-1-brings-a-whole-lot-of-fixes-for-linux-steam-deck-gaming/</guid>
+      <pubDate>Sat, 09 Mar 2024 11:42:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1085219785id24133gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental fixes up Apex Legends, Epic Games Store, Warlords Battlecry III</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve has released an update to Proton Experimental to further improve the Windows game compatibility on Steam Deck and Linux PCs. Here's all that's changed for the March 8th update.</p>
+<blockquote>
+<p>Now Playable: Warlords Battlecry III.</p>
+<ul>
+<li>Fixed a few 9.0 regressions:
+<ul>
+<li>Epic Game Store is able to launch again.</li>
+<li>Gungrave G.O.R.E no longer has hitching video playback.</li>
+</ul>
+</li>
+<li>Fixed Apex Legends hanging on a black screen after a recent game update.</li>
+<li>Fixed Descent 3 not being playable on system using long Steam Library paths.</li>
+</ul>
+</blockquote>
+<p>While Valve also recently did a <a href="https://www.gamingonlinux.com/2024/03/proton-hotfix-updated-for-apex-legends-to-work-again-on-steam-deck-linux/" target="_blank">Proton Hotfix for Apex Legends</a>, it should no longer be needed, as you can just use Proton Experimental now.</p>
+<p>Also interesting to see Valve fix up the Epic Games Store in Proton like this. While it's not available on Steam obviously, plenty of people do run it with Proton on Steam Deck to get more games. And the thing is, often fixes for one app will fix issues in something else - so it's always worth doing.</p>
+<p>You can just select Proton Experimental in the Properties -&gt; Compatibility menu on each game.</p>
+<p><em>Full changelog on the <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">Proton GitHub</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/proton-experimental-fixes-up-apex-legends-epic-games-store-warlords-battlecry-iii/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/proton-experimental-fixes-up-apex-legends-epic-games-store-warlords-battlecry-iii/</guid>
+      <pubDate>Sat, 09 Mar 2024 11:31:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/332438360id24132gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 9.4 brings updated vkd3d, initial OpenGL support in the Wayland driver</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another biweekly release of the Windows compatibility layer Wine is here, with <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-9.4" target="_blank">Wine 9.4</a> bringing some new features and a few nice sounding bug fixes.</p>
+<p>Highlights of this release are:</p>
+<ul>
+<li>Bundled vkd3d upgraded to version 1.11.</li>
+<li>Initial OpenGL support in the Wayland driver.</li>
+<li>Support for elevating process privileges.</li>
+<li>More HID pointer improvements.</li>
+</ul>
+<p>They noted 25 bug fixes including fixes for the likes of: Total Commander, Minecraft Education Edition, Multiple .NET 4.x applications, VOCALOID, Battle.Net, EA App and various other fixes.</p>
+<p>From the vkd3d v1.11 release (<a href="https://www.gamingonlinux.com/2024/03/wine-direct3d-12-to-vulkan-translation-library-vkd3d-v1-11-released/" target="_blank">as covered recently</a>):</p>
+<ul>
+<li>Initial support for compiling legacy Direct3D bytecode to SPIR-V.</li>
+<li>Initial HLSL compiler support for compiling effect profiles.</li>
+<li>Miscellaneous bug fixes and performance improvements.</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/wine-94-brings-updated-vkd3d-initial-opengl-support-in-the-wayland-driver/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/wine-94-brings-updated-vkd3d-initial-opengl-support-in-the-wayland-driver/</guid>
+      <pubDate>Sat, 09 Mar 2024 11:24:09 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
       <title>Check out the Humble Heroines Bundle with A Plague Tale: Innocence, Chorus and more</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
@@ -28,14 +202,35 @@
 <p>Here's what you can get:</p>
 <p><a href="https://store.steampowered.com/app/752590" target="_blank">A Plague Tale: Innocence</a> - <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable / ProtonDB Platinum<br/>
 <em>+ 60% off A Plague Tale: Requiem</em></p>
+<blockquote>
+<p>Follow the grim tale of young Amicia and her little brother Hugo, in a heartrending journey through the darkest hours of history.</p>
+</blockquote>
 <p><a href="https://store.steampowered.com/app/1153640" target="_blank">Chorus</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Platinum</p>
+<blockquote>
+<p>Take control of Nara on a quest to destroy the dark cult that created her. Unlock devastating weapons &amp; mind-bending abilities in an evolution of the space-combat shooter. Along with Forsaken, her sentient starfighter, explore ancient temples, engage in zero-g combat &amp; venture beyond waking reality.</p>
+</blockquote>
 <p><a href="https://store.steampowered.com/app/977880" target="_blank">Eastward</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Platinum</p>
+<blockquote>
+<p>Welcome to the charming world of Eastward - population declining! Journey through a society on the brink of collapse. Discover delightful towns, strange creatures and even stranger people! Wield a trusty frying pan and mystic powers on an adventure into the unknown…</p>
+</blockquote>
 <p><a href="https://store.steampowered.com/app/1981610" target="_blank">Wanted: Dead</a> - <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable / ProtonDB Platinum</p>
+<blockquote>
+<p>Wanted: Dead is a new hybrid slasher/shooter from the makers of Ninja Gaiden and Dead or Alive. The game follows a week in life of the Zombie Unit, an elite Hong Kong police squad on a mission to uncover a major corporate conspiracy.</p>
+</blockquote>
 <p><a href="https://store.steampowered.com/app/1061910" target="_blank">Metal: Hellsinger</a> - <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable / ProtonDB Gold</p>
+<blockquote>
+<p>Slay to the rhythm of metal and vengeance on an infernal journey through the eight Hells. Make them fear the beat. Metal: Hellsinger is a rhythm FPS bursting with demons, badass weapons, and heavy metal music.</p>
+</blockquote>
 <p><a href="https://store.steampowered.com/app/335670/LISA_The_Painful/" target="_blank">LISA: Complete Edition</a> - <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable / Native Linux<br/>
 <em>Includes LISA the Joyful, LISA: Original Soundtrack + Art Collection, LISA: The Painful</em></p>
+<blockquote>
+<p>LISA: The Painful - Definitive Edition is the miserable, hilarious RPG of your wildest nightmares. Undertake a relentless journey through the post-apocalyptic wasteland of Olathe. Beneath its charming exterior is a world full of disgust and moral desolation, where you will learn what kind of person you are by being FORCED to make choices that permanently affect the gameplay.</p>
+</blockquote>
 <p><a href="https://store.steampowered.com/app/1196090" target="_blank">Scars Above</a> - <img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Deck Unsupported / ProtonDB Silver<br/>
 <em>Apparently it works quite well with GE-Proton.</em></p>
+<blockquote>
+<p>Scars Above is a challenging sci-fi third-person action adventure shooter combining the rewarding feel of overcoming difficulty with a compelling and intricate story, set in a mysterious alien world to explore.</p>
+</blockquote>
 <p>See <a href="http://www.humblebundle.com/games/humble-heroines-action-adventure-intrigue?partner=gamingonlinux" target="_blank">the full bundle</a> for more info.</p>
 <p>The charities for this bundle are <a href="https://girlswhocode.com" target="_blank">Girls Who Code</a> and <a href="https://www.girlsmakegames.com" target="_blank">Girls Make Games</a>.</p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
@@ -97,7 +292,7 @@
 <p>Inspired by the "Thief" series by Looking Glass Studios, The Dark Mod is a full standalone open source first-person stealth game. Technically, it's a toolkit allowing anyone to create their own stealth missions and campaigns in a Thief-like setting, and there's plenty of content available for it.</p>
 <p><a href="https://www.thedarkmod.com/posts/the-dark-mod-2-12-has-been-released/" target="_blank">The Dark Mod 2.12</a> sounds like a fantastic release, which includes a new culling system to increase performance. This is where your system won't waste resources rendering things that aren't currently seen. The developer said that while some people using TDM were able to achieve similar performance gains, this new system is built-in so all maps can work better. They said that "Players will immediately notice many missions that have made their system struggle with FPS now may be running much more smoothly!".</p>
 <p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7300744681709909936gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7300744681709909936gol1.jpg"/></a></p>
-<p>Not only that but controls should be "more seamless and accessible", mantling should bne smoother, faster and work more correctly, leaning works better, there's now more subtitles for "nearly all AI barks", improved text quality, and a nasty bug from the previous release that allowed arrows to pass through AI characters at certain angles was solved.</p>
+<p>Not only that but controls should be "more seamless and accessible", mantling should be smoother, faster and work more correctly, leaning works better, there's now more subtitles for "nearly all AI barks", improved text quality, and a nasty bug from the previous release that allowed arrows to pass through AI characters at certain angles was solved.</p>
 <p>Overall it seems like a good cleaning up release to make the game work better.</p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
@@ -3866,88 +4061,6 @@ Hero Assault is playable on all ground maps including: Death Star, Kashyyyk, Kam
       <category>Exploration</category>
       
       <category>Free Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Check out ChipWits, an upcoming remake of one of the first programming puzzle games</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Originally released back in 1984, ChipWits is a programming puzzle game and it's getting a modern remake in Unity that will be released on Steam. According to the Steam page, it will have Native Linux support too.</p>
-<p>"ChipWits is a robot coding game with no prior programming experience required. In this game, you use an icon-based language to guide your robot to solve open-ended puzzles and rescue the crew of a space station taken over by a rogue AI, Dr. Droog."</p>
-<p>The team working on ChipWits even includes one of the original co-creators, Doug Sharp. Sadly the other co-creator Mike Johnston died back in 2018 and a portion of the proceeds from the new game will go towards the <a href="http://oif.org/" target="_blank">Osteogenesis Imperfecta Foundation</a> in Johnston's memory (from their <a href="https://chipwits.com/2023/02/12/who-are-we/" target="_blank">Team page</a>). You can check the first trailer below:</p>
-<div class="hidden_video" data-video-id="d9ACRpytwGo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/62b256ac67c00625a733c5ed882441e2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/d9ACRpytwGo" target="_blank">See video</a></div></div>
-<p>Like any good programming puzzler, there's no one-size-fits-all, with there being multiple solutions. It's easy to learn, but you can go back and improve to maximise your score if you wish much like Zachtronics games.</p>
-<p>Follow <a href="https://store.steampowered.com/app/2330720/ChipWits/" target="_blank">ChipWits on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/check-out-chipwits-an-upcoming-remake-of-one-of-the-first-programming-puzzle-games/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/check-out-chipwits-an-upcoming-remake-of-one-of-the-first-programming-puzzle-games/</guid>
-      <pubDate>Tue, 20 Feb 2024 12:57:29 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1534552846id24029gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Programming</category>
-      
-      <category>Puzzle</category>
-      
-    </item>
-    
-    <item>
-      <title>Hazard Pay is an upcoming dark and mysterious block-pushing puzzler</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Want a puzzle game that's a little bit different to keep you wanting to find out more? Hazard Pay from Smitner Studio releases later this year and it sounds great.</p>
-<p>You've received another job, it pays well but something's not right. Pack up the truck and head to the location - Your task is to clean up an accident. In this dark and mysterious block-pushing puzzler you'll navigate through a secret, hazardous laboratory complex. Discover creative methods to destroy evidence and cover up the crimes of your employer.</p>
-<p>Check out the first teaser trailer:</p>
-<div class="hidden_video" data-video-id="Fp_gIsWwTHg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0532be07fae0efab80c7ecbed1a6967f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Fp_gIsWwTHg" target="_blank">See video</a></div></div>
-<p>It's another game being built with the free and open source <a href="https://godotengine.org" target="_blank">Godot Engine</a>. Love seeing more developers use it. This same developer also made <a href="https://github.com/arran-nz/RapidRescue" target="_blank">Rapid Rescue</a>, an open source reinvented Labyrinth game.</p>
-<p>The developer told me it will have Linux support and they're aiming to get it Steam Deck Verified too.</p>
-<p>You can <a href="https://store.steampowered.com/app/2692620/Hazard_Pay/" target="_blank">follow along on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/hazard-pay-is-an-upcoming-dark-and-mysterious-block-pushing-puzzler/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/hazard-pay-is-an-upcoming-dark-and-mysterious-block-pushing-puzzler/</guid>
-      <pubDate>Tue, 20 Feb 2024 12:36:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/59361890id24028gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Godot Engine</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Which Way Up: Space Olympics is anti-gravity party game chaos</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Turtle Flip Studio plan to launch their physics-based anti-gravity party game Which Way Up: Space Olympics sometime in Q1 2025 but there's a demo up on Steam you can try with Linux support.</p>
-<p>Which Way Up: Space Olympics is designed to be easy to pickup and play, allowing players of all ages to join in on the fun through a wide range of gravity-themed multiplayer minigames. In the demo, players can go hands-on with six Space Olympics events, which can be played with up to four players for maximum chaos. The game gives you unique freedom of movement by allowing you to run on walls and ceilings, orbit around planets, or fall across entire levels by manoeuvring through gravity fields and genuinely looks like a riot.</p>
-<div class="hidden_video" data-video-id="jjYRBbgw4NA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/95684eeabab63a2ee5754e5b1e9be483.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/jjYRBbgw4NA" target="_blank">See video</a></div></div>
-<p>If you enjoy chaos and need more casual laughs with a new party game it's one to keep an eye on. Be sure to try out the demo too, which they've said is now staying after initially appearing during Remote Play Together Fest 2024.</p>
-<p>"After receiving such fantastic and constructive feedback from those who played the demo over the last week, we've decided to make our demo permanently available!" lead developer Nick Cellini said, "That way, anyone can grab their friends, jump in, have fun and contribute their ideas to the final release of the game."</p>
-<p>Check <a href="https://store.steampowered.com/app/2318660/Which_Way_Up_Space_Olympics/" target="_blank">it out on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/which-way-up-space-olympics-is-anti-gravity-party-game-chaos/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/which-way-up-space-olympics-is-anti-gravity-party-game-chaos/</guid>
-      <pubDate>Tue, 20 Feb 2024 11:36:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1995277327id24027gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Casual</category>
-      
-      <category>Demo</category>
-      
-      <category>Local multiplayer</category>
       
     </item>
     
