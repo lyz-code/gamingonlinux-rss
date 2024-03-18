@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-03-17 07:22:12.242878</pubDate>
+    <pubDate>2024-03-18 07:22:27.813439</pubDate>
 
     
     <image>
@@ -18,6 +18,113 @@
     </image>
 
     
+    
+    <item>
+      <title>VKD3D-Proton version 2.12 adds NVIDIA Reflex support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The project that implements Direct3D 12 on top of Vulkan, VKD3D-Proton, has <a href="https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.12" target="_blank">version 2.12</a> out now bringing with it more new features like NVIDIA Reflex support! Technology like VKD3D-Proton is used directly by <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>, to enable Windows games to run on Linux / Steam Deck.</p>
+<p>New Features:</p>
+<ul>
+<li>Implement support for NVIDIA Reflex through <code class="inline-code">VK_NV_low_latency2</code>. Thanks to NVIDIA for contributing implementation.</li>
+<li>Implement D3D12 render pass API (tier 0).</li>
+<li>Implement ID3D12DeviceRemovedExtendedDataSettings stubs. Fixes some games that rely on this existing.</li>
+<li>Implement <code class="inline-code">VK_EXT_device_fault</code>. Makes it possible to grab fault information and vendor binary if supported.</li>
+<li>Implement <code class="inline-code">VK_EXT_swapchain_maintenance1</code>
+<ul>
+<li>Allows seamless transition between V-Sync and tearing present modes without stutter.</li>
+<li>Implemented on both Mesa and NV drivers.</li>
+</ul>
+</li>
+<li>Expose Shader Model 6.7 by default if<br/>
+<code class="inline-code">VK_KHR_shader_maximal_reconvergence</code> and <code class="inline-code">VK_KHR_shader_quad_control</code> are supported.</li>
+<li>Add optimized descriptor copy path on Intel Arc GPUs that support <code class="inline-code">VK_EXT_descriptor_buffer</code></li>
+<li>Implement fallback for compute shader derivatives on NVIDIA Pascal and older GPUs. Allows exposing Shader Model 6.7 by default on Pascal as well (albeit with some known cases where it does not work). The workaround is expected to work with any known use of SM 6.6 compute derivatives in the wild.</li>
+</ul>
+<p>There's also some game fixes for Atlas Fallen, Warhammer: Darktide, Resident Evil 4, multiple Unreal Engine 5 games, World of Warcraft and disabling of RT by default in Persona 3 Reload on Steam Deck.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5383427221710671671gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5383427221710671671gol1.jpg"/></a><em>Pictured - Resident Evil 4</em></p>
+<p>Additionally this release also implements VK_NV_raw_access_chains which they said "significantly" improves GPU performance on NVIDIA in some games.</p>
+<details class="spoiler_container"><summary class="spoiler_header">Full changelog, click me</summary>
+<div class="spoiler-content">
+<h3>Features</h3>
+<ul>
+<li>Implement support for NVIDIA Reflex through <code class="inline-code">VK_NV_low_latency2</code>. Thanks to NVIDIA for contributing implementation</li>
+<li>Implement D3D12 render pass API (tier 0)</li>
+<li>Implement ID3D12DeviceRemovedExtendedDataSettings stubs. Fixes some games that rely on this existing</li>
+<li>Implement <code class="inline-code">VK_EXT_device_fault</code>. Makes it possible to grab fault information and vendor binary if supported</li>
+<li>Implement <code class="inline-code">VK_EXT_swapchain_maintenance1</code>
+<ul>
+<li>Allows seamless transition between V-Sync and tearing present modes without stutter</li>
+<li>Implemented on both Mesa and NV drivers</li>
+</ul>
+</li>
+<li>Expose Shader Model 6.7 by default if<br/>
+<code class="inline-code">VK_KHR_shader_maximal_reconvergence</code> and <code class="inline-code">VK_KHR_shader_quad_control</code> are supported</li>
+<li>Add optimized descriptor copy path on Intel Arc GPUs that support <code class="inline-code">VK_EXT_descriptor_buffer</code></li>
+<li>Implement fallback for compute shader derivatives on NVIDIA Pascal and older GPUs.<br/>
+Allows exposing Shader Model 6.7 by default on Pascal as well (albeit with some known cases where it does not work).<br/>
+The workaround is expected to work with any known use of SM 6.6 compute derivatives in the wild</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>Fix Atlas Fallen black screen due to edge case with MinLODClamp</li>
+<li>Correctly disable alpha-to-coverage if sampler mask is exported</li>
+<li>Fix format feature reports for <code class="inline-code">DXGI_FORMAT_UNKNOWN</code></li>
+<li>Relax root signature compatibility rules when compiling Ray Tracing pipelines.<br/>
+Fixes GPU hang on NV in Warhammer: Darktide</li>
+<li>Fix GPU hang on NV in UE5 Lyra demo</li>
+<li>Explicitly validate stage IO signatures in PSO creation similar to native D3D12 runtime.<br/>
+Fixes some scenarios where a game attempts to create an invalid pipeline that should have failed creation<br/>
+on native D3D12</li>
+</ul>
+<h3>Workarounds</h3>
+<ul>
+<li>Workaround crash in Resident Evil 4 RT mode when tessellation is enabled</li>
+<li>Workaround mesh shader glitches on NVIDIA in several UE5 titles</li>
+<li>Workaround GPU hang on NVIDIA in World of Warcraft when MSAA is enabled</li>
+<li>Disable RT by default in Persona 3 Reload on Deck</li>
+</ul>
+<h3>Performance</h3>
+<ul>
+<li>Implement <code class="inline-code">VK_NV_raw_access_chains</code>. Significantly improves GPU performance on NV GPUs in some games.<br/>
+Games using DXBC instead of DXIL are expected to see more improvements.<br/>
+Not all games are expected to see an uplift</li>
+<li>Fix extremely poor GPU performance in some locations in Persona 3 Reload</li>
+</ul>
+<h3>Debug</h3>
+<ul>
+<li>Add support for <code class="inline-code">VKD3D_QUEUE_PROFILE</code>, a simple system profiling method
+<ul>
+<li>Includes <code class="inline-code">VK_NV_low_latency2</code> support to debug NVIDIA Reflex sleeps</li>
+</ul>
+</li>
+<li>Root signature blobs are also dumped when dumping shaders
+<ul>
+<li>A simple CLI tool to inspect the root-sig blobs is included in <code class="inline-code">programs/</code></li>
+</ul>
+</li>
+<li>Misc improvements to breadcrumbs, debug ring, etc</li>
+<li>Pipeline creation failure now dumps PSO creation commands in log</li>
+</ul>
+</div>
+</details>
+<p>Additionally, DXVK-NVAPI, the alternative implementation of NVIDIA's NVAPI library for usage with DXVK and VKD3D-Proton also had a new release with <a href="https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.7.0" target="_blank">version 0.7</a>. This added the NVIDIA Reflect support and improvements for NVIDIA NVK support.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/vkd3d-proton-version-212-adds-nvidia-reflex-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/vkd3d-proton-version-212-adds-nvidia-reflex-support/</guid>
+      <pubDate>Sun, 17 Mar 2024 10:34:55 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/900348705id24176gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Proton 9.0 Beta 15 released and Proton Experimental updated</title>
@@ -51,6 +158,8 @@
 </ul>
 </blockquote>
 <p>To change the version of Proton used go into the Properties on a game -&gt; Compatibility menu. Tick the box and then select the version you want from the drop-down box.</p>
+<p>No set date for the Proton 9.0 main release yet, just whenever Valve feel it's ready.</p>
+<p>For more info on Proton check out <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">the beginner's guide</a>.</p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
       <link>https://www.gamingonlinux.com/2024/03/proton-90-beta-15-released-and-proton-experimental-updated/</link>
@@ -4103,75 +4212,6 @@ pump profiles based on any available temperature sensor.</p>
       <category>Misc</category>
       
       <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>NVIDIA disclose new driver security issues - Feb 28</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>NVIDIA has revealed new GPU driver security issues in their latest bulletin, so here's what you need to know if you're using an NVIDIA GPU on Linux. <em>This was announced February 28th.</em></p>
-<p>To make sure you're not affected by the issues listed below you need to have a driver version at a minimum of either 550.54.14 (released 23rd February), 535.161.07 (released February 22nd) or 470.239.06 (released February 22nd) as all prior versions are affected.</p>
-<p>The issues that affect Linux are:</p>
-<div class="scrolling-table">
-<table border="1" class="table-stripes-tbody">
-<thead>
-<tr>
-<th><strong>CVE ID</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Severity</strong></th>
-<th><strong>CWE</strong></th>
-<th><strong>Impacts</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CVE‑2024‑0074</td>
-<td>NVIDIA GPU Display Driver for Linux contains a vulnerability where an attacker may access a memory location after the end of the buffer. A successful exploit of this vulnerability may lead to denial of service and data tampering.</td>
-<td>High</td>
-<td><a href="https://cwe.mitre.org/data/definitions/788.html" target="_blank">CWE‑788</a></td>
-<td>Denial of service, data tampering</td>
-</tr>
-<tr>
-<td>CVE‑2024‑0078</td>
-<td>NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer, where a user in a guest can cause a NULL-pointer dereference in the host, which may lead to denial of service.</td>
-<td>Medium</td>
-<td><a href="https://cwe.mitre.org/data/definitions/476.html" target="_blank">CWE‑476</a></td>
-<td>Denial of service</td>
-</tr>
-<tr>
-<td>CVE‑2024‑0075</td>
-<td>NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability where a user may cause a NULL-pointer dereference by accessing passed parameters the validity of which has not been checked. A successful exploit of this vulnerability may lead to denial of service and limited information disclosure.</td>
-<td>Medium</td>
-<td><a href="https://cwe.mitre.org/data/definitions/476.html" target="_blank">CWE-476</a></td>
-<td>Denial of service, limited information disclosure</td>
-</tr>
-<tr>
-<td>CVE‑2022‑42265</td>
-<td>NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability in the kernel mode layer handler, where an unprivileged regular user can cause integer overflow, which may lead to denial of service, information disclosure, and data tampering.</td>
-<td>Medium</td>
-<td><a href="https://cwe.mitre.org/data/definitions/190.html" target="_blank">CWE‑190</a></td>
-<td>Denial of service, information disclosure, and data tampering</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>There's also a few issues that affected just Windows too and the NVIDIA Virtual GPU Manager / Driver.</p>
-<p>See the <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5520" target="_blank">full NVIDIA security bulletin</a> for more. </p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/02/nvidia-disclose-new-driver-security-issues-feb-28/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/02/nvidia-disclose-new-driver-security-issues-feb-28/</guid>
-      <pubDate>Wed, 28 Feb 2024 18:28:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
-      
-      <category>Security</category>
-      
-      <category>Drivers</category>
-      
-      <category>Misc</category>
-      
-      <category>NVIDIA</category>
       
     </item>
     
