@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-03-19 07:22:40.492583</pubDate>
+    <pubDate>2024-03-20 07:22:46.990456</pubDate>
 
     
     <image>
@@ -18,6 +18,265 @@
     </image>
 
     
+    
+    <item>
+      <title>NVIDIA driver 550.67 released fixes for VKD3D (Proton), Wayland and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA has today released a fresh stable bug-fix driver with version 550.67 now available for Linux. So here's all the changes you'll find.</p>
+<p>From <a href="https://www.nvidia.co.uk/download/driverResults.aspx/223635/en-uk" target="_blank">the release notes</a>:</p>
+<blockquote>
+<ul>
+<li>Fixed a bug that could cause the GPU driver to hang when running some Vkd3d games, such as F1 2021.</li>
+<li>Fixed a bug that caused eglExportDMABUFImageQueryMESA() to return invalid DRM formats for the images that use the sRGB color space.</li>
+<li>Fixed a bug that caused wgpu applications to hang on Wayland.</li>
+<li>Fixed a bug that caused "Flip event timeout" messages to be printed to the system log when the system is suspended without using /usr/bin/nvidia-sleep.sh when nvidia-drm is loaded with the `fbdev=1` kernel module parameter.</li>
+<li>Updated the nvidia-settings control panel to ensure that the entire Display Configuration page can be used when the Layout window is shown.</li>
+<li>Updated the nvidia-settings control panel to allow the primary display to be set on any GPU in a multi-GPU system.</li>
+<li>Fixed Xid error when playing Alan Wake 2 with ray tracing enabled.</li>
+</ul>
+</blockquote>
+<p>Did this update solve an issue you were having, or are you waiting on NVIDIA fixing something else?</p>
+<p>On the subject of NVIDIA in case you missed it: the open-source Vulkan driver for NVIDIA hardware in Mesa, NVK, is <a href="https://www.gamingonlinux.com/2024/02/open-source-vulkan-driver-for-nvidia-hardware-in-mesa-nvk-is-now-ready-for-prime-time/" target="_blank">now ready for prime time</a>!</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/nvidia-driver-550-67-released-fixes-for-vkd3d-wayland-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/nvidia-driver-550-67-released-fixes-for-vkd3d-wayland-and-more/</guid>
+      <pubDate>Tue, 19 Mar 2024 14:01:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>CoreCtrl adds AMD RX 7000 series fan curve controls, Intel CPU temperature sensors</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>CoreCtrl is a useful application giving you a full GUI for adjusting your CPU and GPU profiles on Linux, and the latest release has expanded the hardware features supported.</p>
+<p>You can have it activate certain profiles when launching specific applications, games or have things be more manual with you adjusting fan curves, performance profiles and more.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12665968521710852269gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12665968521710852269gol1.jpg"/></a></p>
+<p>New features in version 1.4.0:</p>
+<blockquote>
+<ul>
+<li>Implement resizable graph and sensors regions. Both regions are configurable by dragging their split handles and the sizes persist between sessions.</li>
+<li>CPU usage sensor. </li>
+<li>Intel CPU temperature sensor for <code class="inline-code">coretemp</code> driver.</li>
+<li>Botan 3 compilation support. Botan 2 is still supported. Botan 3 takes precedence over Botan 2 when both versions are installed in the system.</li>
+<li>Manual profile activation at application startup using the command line argument <code class="inline-code">-m, --toggle-manual-profile</code>.</li>
+<li>Automatic and curve fan controls for AMD RX 7000 series.</li>
+<li>CPU Energy Performance Preference control. This feature is only available for hardware with active governing support and can be accessed by setting the CPU frequency scaling governor to <code class="inline-code">Powersave</code>.</li>
+<li>Swedish translation.</li>
+</ul>
+</blockquote>
+<p>See more on <a href="https://gitlab.com/corectrl/corectrl" target="_blank">the GitLab page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/corectrl-adds-amd-rx-7000-series-fan-curve-controls-intel-cpu-temperature-sensors/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/corectrl-adds-amd-rx-7000-series-fan-curve-controls-intel-cpu-temperature-sensors/</guid>
+      <pubDate>Tue, 19 Mar 2024 12:43:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/479041971id24192gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Read Only Memories: NEURODIVER releases May 16th</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Read Only Memories: NEURODIVER, the sequel to 2064: Read Only Memories finally has a release date as you'll be able to get your hands on it on May 16th.</p>
+<p>More about it: "Take on the role of ES88, a young esper employed by MINERVA, a powerful organization specializing in information science, neurotechnology, and extrasensory phenomena. She has been tasked with tracking down Golden Butterfly, a mysterious psychic entity hiding in and fragmenting the memories of Neo-San Francisco's citizens. Who are they? Why are they doing this? And how will you stop them?"</p>
+<div class="hidden_video" data-video-id="-ljJbTUUfBA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1bfd42f9d58734f780b84ab879d6f2e0.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-ljJbTUUfBA" target="_blank">See video</a></div></div>
+<p>As far as I know it's still having Native Linux support like the first game, and clearly lists it on Steam, although the demo is only available for macOS and Windows. The developer hasn't replied to my email about it. If they drop Native Linux support, it should at least run well in <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>.</p>
+<p>Features:</p>
+<blockquote>
+<ul>
+<li><strong>The Sequel to 2064: Read Only Memories</strong> - The long-awaited sequel to 2064: Read Only Memories takes you back to Neo-San Francisco in an all-new "psy-fi" adventure. Meet new inhabitants and reconnect with old favorites from the world of Read Only Memories.</li>
+<li><strong>A Mystery in Memories</strong> - Take on the the role of newly-qualified ESPer, ES88, to track down the mysterious Golden Butterfly. Work with the Neurodiver, ES88's psychic sidekick, to dive into people's minds and repair their wrecked recollections.</li>
+<li><strong>Anime-inspired Pixel Art</strong> - Immerse yourself in the beautiful pixel art world that takes you around Neo-SF, the halls of the secretive Minerva agency, and within the depths of people's memories.</li>
+<li><strong>A Cast to Remember</strong> - Beautifully drawn and animated characters are brought to life with superb voice-acting. New heroes and villains are joined by old favorites Lexi Rivers, Turing, and TOMCAT from 2064: Read Only Memories.</li>
+<li><strong>Retro Fm Synth Music</strong> - Indulge your senses in the sharp and glossy retro tones of Neo-SF's FM synth soundscape as you dive deep into people's minds to track down the cunning Golden Butterfly.</li>
+</ul>
+</blockquote>
+<p>Check it <a href="https://store.steampowered.com/app/1293910/Read_Only_Memories_NEURODIVER/" target="_blank">out on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/read-only-memories-neurodiver-releases-may-16th/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/read-only-memories-neurodiver-releases-may-16th/</guid>
+      <pubDate>Tue, 19 Mar 2024 12:30:03 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1365760370id24191gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Adventure</category>
+      
+      <category>Cyberpunk</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>chiaki4deck PlayStation to Steam Deck streaming app v1.6.4 adds a few useful options</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>chiaki4deck recently put up another small update, to add in a couple of new options that sound quite useful for those of you streaming a PlayStation to your Steam Deck.</p>
+<p>Here's what's new in version 1.6.4:</p>
+<ul>
+<li>Adds create Steam Shortcut option for Linux and Mac</li>
+<li>Allow setting console pin for console in settings</li>
+<li>Add window type option in settings (fullscreen, stretch, zoom)</li>
+<li>Fix issue causing extra blank ip manual console added when registering non-manual console</li>
+<li>Add option to adjust when Wifi connection symbol appears based on % of dropped packets in 200ms interval</li>
+</ul>
+<p>There's an easy to use AppImage download available on the release notes on <a href="https://github.com/streetpea/chiaki4deck/releases/tag/v1.6.4" target="_blank">GitHub</a>.</p>
+<p>Have you been using chiaki4deck? How's it looking now? I only have a rather old and dusty PS4, so I don't really have any need for it myself but I can imagine in a busier household with people hogging the TV this could be great to use.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/chiaki4deck-playstation-to-steam-deck-streaming-app-v164-adds-a-few-useful-options/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/chiaki4deck-playstation-to-steam-deck-streaming-app-v164-adds-a-few-useful-options/</guid>
+      <pubDate>Tue, 19 Mar 2024 12:09:02 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1576268799id24190gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>GOG team up with Amazon Luna for cloud gaming</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>GOG have <a href="https://www.gog.com/blog/more-ways-to-play-your-gog-games-were-teaming-up-with-luna-cloud-streaming-service/" target="_blank">announced</a> that they're teaming up with <a href="https://luna.amazon.co.uk" target="_blank">Amazon Luna</a>, to bring your existing GOG games over to their cloud gaming service.</p>
+<p>Amazon Luna is currently available across the USA, Canada, UK, Germany, France, Italy, and Spain. It runs on Linux too, although it will likely give you a browser warning, it will still let you actually play games on Luna if you're using a Chrome based browser. </p>
+<p>All you'll need is to own your games on GOG, and any that Amazon have on Luna will be yours to play in the cloud too on any compatible device. Seems like a great deal really. GOG also said you'll be able to buy games on Luna through GOG too, and they will stick in your GOG library. So really, this is the best of both worlds.</p>
+<p>They haven't given a public date yet on exactly when it will be live, only noting they will "share more updates about our collaboration in the future, and be sure that whether you enjoy timeless classics or modern hits, you’ll find such GOG titles on Luna soon".</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/gog-team-up-with-amazon-luna-for-cloud-gaming/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/gog-team-up-with-amazon-luna-for-cloud-gaming/</guid>
+      <pubDate>Tue, 19 Mar 2024 12:00:14 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1110673334id24189gol.png" type="image/jpeg"/>
+      
+      <category>Amazon</category>
+      
+      <category>Cloud Gaming</category>
+      
+      <category>GOG</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Superhero XCOM-like &#39;Capes&#39; releases in May, new gameplay trailer is up</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Capes is shaping up to be quite an interesting strategy game, where it blends XCOM style with superheros and now they have a release window and new trailer.They're still not giving an exact date but at least we know it will be sometime in May now.</p>
+<p>More about it: "Capes is a highly anticipated turn-based superhero strategy game where XCOM fans will feel right at home. Level up your heroes and combine their powers to access devastating team up attacks in strategically challenging missions. Master compelling tactical gameplay while uncovering a cinematic story: Twenty years ago, the supervillains won. Since then, they’ve created a dystopian city where developing superpowers is a crime and no one has dared oppose them. Until now! Assemble a ragtag team of young heroes and hone their skills and take back King City. Play across the dark and gritty campaign to reveal the truth behind the horrific Enhancement Program of supervillain Operator Alpha and complete optional side-missions to level up your heroes and learn more about their past."</p>
+<p>Check out the new gameplay trailer:</p>
+<div class="hidden_video" data-video-id="LTUXkQps27k"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f536959ca55f507a677edea3132b4c6b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/LTUXkQps27k" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<ul>
+<li><strong>Be Mighty:</strong> Play as a team of heroic protectors, each with unique skills and powers. Master each hero and unleash their devastating ultimate abilities!</li>
+<li><strong>Assemble Your Team:</strong> Combat isn't based on random numbers; knowing which hero Team Up abilities are best for the job will be key to your success!</li>
+<li><strong>Level Up:</strong> Complete challenging missions and side-quests to improve your heroes with new abilities and powerful upgrades!</li>
+<li><strong>Defeat Evil:</strong> Face down vile villains and criminal corporate henchmen. Do you have what it takes to free your city from the clutches of villainy!?</li>
+</ul>
+<p>It's being made by Spitfire Interactive, an Australian development studio founded by former team members of Defiant Development, who made the critically acclaimed Hand of Fate.</p>
+<p>As far as I know it will have Native Linux support and the demo is <a href="https://store.steampowered.com/app/2081080/Capes/" target="_blank">still up on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/superhero-xcom-like-capes-releases-in-may-new-gameplay-trailer-is-up/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/superhero-xcom-like-capes-releases-in-may-new-gameplay-trailer-is-up/</guid>
+      <pubDate>Tue, 19 Mar 2024 11:15:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1326747755id24188gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Steam</category>
+      
+      <category>Strategy</category>
+      
+    </item>
+    
+    <item>
+      <title>Knock knock. Who&#39;s there? More scam apps on Canonical&#39;s Snap Store!</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>No this isn't a joke, sadly. Canonical once again have an issue with scam apps appearing on the Snap Store, which is becoming a repeating problem. I wrote about this before <a href="https://www.gamingonlinux.com/2024/02/snap-store-from-canonical-ubuntu-hit-with-another-crypto-scam-app/" target="_blank">in February</a>, and again <a href="https://www.gamingonlinux.com/2023/10/snap-store-from-canonical-hit-with-malicious-apps/" target="_blank">previously in October 2023</a> and here we go again.</p>
+<p>After the last issue, Canonical seemed to be slowly moving on the subject, with discussions being opened on their Discourse forum to chat about implementing more checks. So they uh, might want to speed up actually checking on app publishers.</p>
+<p>Alan Pope has <a href="https://popey.com/blog/2024/03/exodus-wallet-part-three/" target="_blank">a great blog post</a> about the issue, talking about how another <em>ten</em> scam crypto wallet apps appeared from "digisafe00000". They were all removed, but uh, guess what? They're back again under a different publisher name this time it's "codeshield0x0000".</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16002331521710845009gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16002331521710845009gol1.png"/></a></p>
+<p>A weirdly named publisher putting up 10 crypto wallet apps? You know, if there was proper human review here, someone might have actually thought "hey this is a bit odd, maybe I should do a little digging first?".</p>
+<p>Since they're on the Snap Store, they will also show up in the Ubuntu Software app, which is quite a problem.</p>
+<p>Pope dives into one of the apps in the blog post, noting the create an account function (obviously) doesn't work, since they just want you to "log in" with your current wallet details so they can poach it. As Pope says "It’s trivially easy to publish scammy applications like this in the Canonical Snap Store, and for them to go unnoticed." and it seems it really is. So right now if you want to scam users on Ubuntu — just publish a Snap of something!</p>
+<p>Really not a good look for Canonical and Ubuntu. They need to get moving on this <strong>repeating</strong> problem.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/knock-knock-whos-there-more-scam-apps-on-canonicals-snap-store/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/knock-knock-whos-there-more-scam-apps-on-canonicals-snap-store/</guid>
+      <pubDate>Tue, 19 Mar 2024 10:51:02 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1076087145id24187gol.jpg" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Distro News</category>
+      
+      <category>Misc</category>
+      
+      <category>Ubuntu</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve tweaks WWE 2K24 for AMD GPUs like Steam Deck, looking into Red Alert 2 issues</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>WWE 2K24 released recently and at least for those with an AMD GPU (like the Steam Deck) there were various graphical issues, but it should now work better. Plus, Valve are looking into issues with Red Alert 2 in Proton.</p>
+<p>For WWE 2K24, Valve developer Pierre-Loup Griffais <a href="https://twitter.com/Plagman2/status/1769853844559949928" target="_blank">posted</a> on X:</p>
+<blockquote>
+<p>A mitigation fix has just been deployed for a graphics corruption issue in WWE2K24 and will be automatically deployed.</p>
+</blockquote>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14191888681710843898gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14191888681710843898gol1.jpg"/></a>Pictured - WWE 2K24</em></p>
+<p>I had to do a little searching around to figure out what was actually done, as it turns out they've set the "RADV_DEBUG=nodcc" Mesa environment variable by default which disables Delta Color Compression (DCC) on images. So hopefully that game should play better now.</p>
+<p>Recently the Command &amp; Conquer The Ultimate Collection<a href="https://www.gamingonlinux.com/2024/03/command-conquer-the-ultimate-collection-launched-on-steam-and-other-classics/" target="_blank"> also released on Steam</a> but multiple titles in it have problems running on Linux with Proton. For Red Alert 2 issues in Proton in reply to a user on X Griffais <a href="https://twitter.com/Plagman2/status/1769855852973113522" target="_blank">mentioned</a> that the blank screen for a main menu is "currently being investigated".</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/valve-tweaks-wwe-2k24-for-amd-gpus-like-steam-deck-looking-into-red-alert-2-issues/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/valve-tweaks-wwe-2k24-for-amd-gpus-like-steam-deck-looking-into-red-alert-2-issues/</guid>
+      <pubDate>Tue, 19 Mar 2024 10:27:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1253138397id24186gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>AMD</category>
+      
+      <category>Misc</category>
+      
+    </item>
     
     <item>
       <title>Steam Families announced with parental controls, no more library locking</title>
@@ -61,9 +320,12 @@
       <title>Playtron plan to launch PlaytronOS, a Linux-based system for gaming</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
+<p><strong>Update 13:34 UTC, 19/03/24</strong>: One of the videos Playtron supplied to The Verge, showcasing some tech used on mobile in the article linked below, wasn't even their own and was taken uncredited from <a href="https://www.youtube.com/watch?v=CH0E0Un2NPY&amp;lc=UgzW8RxoJ1RM5NVsgyV4AaABAg" target="_blank">another</a> person on YouTube, who hit them with a copyright claim and had it taken down. Not a good look.</p>
+<hr/>
+<p><em>Original article below:</em></p>
 <p>Playtron have teased their PlaytronOS, taking aim at the gaming space to compete with SteamOS with a Linux-powered system. Could be exciting times ahead.</p>
-<p>They've managed to pull in developers from ChimeraOS, Box64, Heroic Games Launcher and more so they have some people involved who certainly know their stuff when it comes to Linux gaming. Their CEO is also Kirt McMaster, a name some might recognise from Cyanogen. Many others are involved who have developer experience from the likes of Google, Amazon, Red Hat, Meta, Samsung, SEGA and more. So they've built up quite an experienced team overall.</p>
-<p>Unlike SteamOS, it's <em>not</em> going to be so tied to the Steam store. Although you can install pretty much anything in the SteamOS Desktop Mode, the Steam Deck is obviously a Steam-first device. Playtron say it aims to be "compatible with every game store" and to expect "many 3rd party integrations to come".</p>
+<p>They've managed to pull in developers from ChimeraOS, Box64, Heroic Games Launcher and more so they have some people involved who certainly know their stuff when it comes to Linux gaming. Their CEO is also Kirt McMaster, a name some might recognise from Cyanogen. Many others are involved who have developer experience previously from the likes of Google, Amazon, Red Hat, Meta, Samsung, SEGA and more. So they've built up quite an experienced team overall.</p>
+<p>Unlike SteamOS, it's <em>not</em> going to be so tied to the Steam store. Although you <em>can</em> install pretty much anything in the SteamOS Desktop Mode, the Steam Deck is obviously a Steam-first device. Playtron saying it's "Locked to the Valveverse" is simply false though. Playtron say PlaytronOS aims to be "compatible with every game store" and to expect "many 3rd party integrations to come". </p>
 <p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11888282231710775231gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11888282231710775231gol1.png"/></a>Pictured - device mock-up from the PLAYTRON website.</em></p>
 <p></p>
 <p>PlaytronOS plans to supports both ARM and X86 based PC architectures. And they say to expect "Playtron on Laptops &amp; PCs, TVs, XR and in Car in the coming years", so they're certainly aiming high with it. Potentially impossibly too high? Their current plan is to launch PlaytronOS for Steam Deck and other handheld gaming PCs "later this year" and that "Playtron 1st hand held PCs coming soon" — so we can expect to see some future handhelds launch with PlaytronOS.</p>
@@ -277,10 +539,15 @@
       <title>Apex Legends Global Series postponed due to mid-match hacks</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
-<p>Update 16:28 UTC — Easy Anti-Cheat release a <a href="https://twitter.com/TeddyEAC/status/1769725032047972566" target="_blank">statement</a> on X:</p>
+<p>Update 10:09 UTC, 19/03/24 — the official EOS Status account on X <a href="https://twitter.com/EOSStatus/status/1769841455193866367" target="_blank">posted</a> this:</p>
+<blockquote>
+<p>We have investigated recent reports of a potential RCE issue in Apex Legends, which we have confirmed to be unrelated to Easy Anti-Cheat. We are confident THERE IS NO RCE vulnerability within EAC being exploited.</p>
+</blockquote>
+<p>Update 16:28 UTC, 18/03/24 — Easy Anti-Cheat release a <a href="https://twitter.com/TeddyEAC/status/1769725032047972566" target="_blank">statement</a> on X:</p>
 <blockquote>
 <p>We have investigated recent reports of a potential RCE issue within Easy Anti-Cheat. At this time - we are confident that there is no RCE vulnerability within EAC being exploited. We will continue to work closely with our partners for any follow up support needed</p>
 </blockquote>
+<blockquote></blockquote>
 <p>So it's likely then that the issue is within Apex Legends directly. Will update when we have more info.</p>
 <hr/>
 <p><em>Original article below:</em></p>
@@ -3858,330 +4125,6 @@ pump profiles based on any available temperature sensor.</p>
       <category>Survey</category>
       
       <category>Survey Results</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Survey for February 2024 shows a big bump in Simplified Chinese</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Seems like once again we're seeing an Asia influx on Steam, as the February 2024 Steam Hardware &amp; Software Survey showed a big +7.62% bump in Simplified Chinese. This month also saw a +2.76% rise in Windows 10 64 bit.</p>
-<p>As a result this pushed down the totals for both macOS and Linux, which always happens when there's a rise in Simplified Chinese so the overall operating system stats on Steam for February 2024 are:</p>
-<ul>
-<li>Windows 96.91% +0.39%</li>
-<li>Linux 1.76% -0.19%</li>
-<li>OSX 1.32% -0.22%</li>
-</ul>
-<p>The Linux share over time from <a href="https://www.gamingonlinux.com/steam-tracker/" target="_blank">our Steam Tracker</a>:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8645505331709553071gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8645505331709553071gol1.jpg"/></a></p>
-<p style="text-align:center">When you filter to Linux-only here's the most popular Linux distributions:</p>
-<ul>
-<li>SteamOS Holo 64 bit (Steam Deck) 43.55% +1.43%</li>
-<li>Arch Linux 64 bit 8.15% +0.39%<img src="https://store.akamai.steamstatic.com/public/images/trans.gif"/></li>
-<li>Freedesktop SDK 23.08 (Flatpak runtime) 64 bit 5.52% -0.30%</li>
-<li>Ubuntu 22.04.3 LTS 64 bit 5.09% -1.71%</li>
-<li>Linux Mint 21.3 64 bit 3.56% +3.56%</li>
-<li>Manjaro Linux 64 bit 3.35% -0.13%</li>
-<li>Other 30.78% +3.14%</li>
-</ul>
-<p>All the details can be seen on the <a href="https://store.steampowered.com/hwsurvey/?platform=combined" target="_blank">Steam Survey</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/steam-survey-for-february-2024-shows-a-big-bump-in-simplified-chinese/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/steam-survey-for-february-2024-shows-a-big-bump-in-simplified-chinese/</guid>
-      <pubDate>Mon, 04 Mar 2024 11:54:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Survey</category>
-      
-      <category>Survey Results</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton 9.0 for Steam Deck / Linux got a small Beta update, plus Proton Experimental too</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has released the second public Beta for Proton 9.0, what will become the next stable version of Proton for running Windows games on Steam Deck and Desktop Linux.</p>
-<p>It's quite a small update with just these changes for March 1st:</p>
-<ul>
-<li>Enabled NVAPI for THE FINALS.</li>
-<li>Fixed a few 9.0 regressions and the following games are playable again:
-<ul>
-<li>Tom Clancy's The Division</li>
-<li>Warframe</li>
-<li>Steep</li>
-</ul>
-</li>
-</ul>
-<p>That's on top of all the other changes from the first public Beta of Proton 9.0 from February 23rd, which as a refresher to save you clicking around are:</p>
-<ul>
-<li>Now playable:
-<ul>
-<li>Dinogen Online</li>
-<li>Photography Simulator Demo</li>
-</ul>
-</li>
-<li>Previously playable on Proton Experimental:
-<ul>
-<li>George McGeehan Gamer Hero</li>
-<li>THE FINALS</li>
-<li>True Reporter. Mystery of Mistwood</li>
-<li>Road to Vostok Demo</li>
-<li>WITCH ON THE HOLY NIGHT</li>
-<li>Lord of the Rings: Gollum</li>
-</ul>
-</li>
-<li>Fixed Brawhalla showing a security certificate warning.</li>
-<li>Started ignoring system mouse acceleration when using raw input API.</li>
-<li>Fixed TouHou Makuka Sai ~ Fantastic Danmaku Festival Part I and II crashing during boss fights.</li>
-<li>Fixed crash in Disaster Report 4: Summer Memories epilogue.</li>
-<li>Improved video playback in BIOMUTANT.</li>
-<li>Fixed Imperiums: Greek Wars launcher.</li>
-<li>Fixed memory leaks that caused Final Fantasy XIV Online launcher crash over long time.</li>
-<li>Fixed crash in Microsoft Flight Simulator when live weather is enabled.</li>
-<li>Improved support for input devices with 8+ axes.</li>
-<li>Fixed Savant - Ascent REMIX hitching during certain animations.</li>
-<li>Fixed Super Robot Wars 30 crashing with languages other than English.</li>
-<li>Fixed Doom Eternal audio crackling on certain setups.</li>
-<li>Fixed Lethal Company, Phasmophobia and other Unity games crashing when a controller with a hat switch is plugged in.</li>
-<li>Improved video playback for the following titles: Lords of the Fallen, Harvestella, and Wayfinder, Sea of Thieves, KING OF FIGHTERS XV.</li>
-<li>Default scaling fixed for The Last Game on Steam Deck</li>
-<li>Fixed audio issues when playing intro video in Airborne Kingdom.</li>
-<li>Fixed Bayonetta crashing on certain systems.</li>
-<li>Fixed Escape from Monkey Island getting minimized on a mouse click.</li>
-<li>Fixed audio controls and spatialization in VRChat with AVPro.</li>
-<li>Updated file distribution method to save disk space.</li>
-<li>Rebased on top of upstream Wine 9.0.</li>
-<li>Updated vkd3d-proton to <a href="https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.11.1" target="_blank">v2.11.1</a>-49-<a href="https://github.com/HansKristian-Work/vkd3d-proton/commit/32ff676b9994de05b973e2b12063afbbfcb6cd38" target="_blank">g32ff676b</a>.</li>
-<li>Updated dxvk to <a href="https://github.com/doitsujin/dxvk/releases/tag/v2.3" target="_blank">v2.3</a>-47-<a href="https://github.com/doitsujin/dxvk/commit/e2a46a347d7193ee853bd8c75cbca5939f10a987" target="_blank">ge2a46a34</a>.</li>
-<li>Updated dxvk-nvapi to <a href="https://github.com/jp7677/dxvk-nvapi/releases/v0.6.4" target="_blank">v0.6.4</a>-48-<a href="https://github.com/jp7677/dxvk-nvapi/commit/0951afbe7e2bc72c671c1073b76abacfc3b4ae98" target="_blank">g0951afb</a>.</li>
-</ul>
-<hr/>
-<p>Additionally, Valve also did a <em>tiny</em> update to Proton Experimental today as well that simply fixed a Proton 9.0 regression to make Steep work again.</p>
-<p>You can see the full <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">changelog</a> for more. If you want to keep up with Proton changes be sure to keep an eye on the <a href="https://www.gamingonlinux.com/articles/category/Steam_Play/" target="_blank">Steam Play tag</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/proton-90-for-steam-deck-linux-got-a-small-beta-update-plus-proton-experimental-too/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/proton-90-for-steam-deck-linux-got-a-small-beta-update-plus-proton-experimental-too/</guid>
-      <pubDate>Fri, 01 Mar 2024 18:22:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/990497974id24092gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>All older games being sold in Germany on Steam now require a content rating</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>For game developers that want to continue selling games in Germany, they'll need to ensure they actually have a content rating, including for older games. Hopefully there won't be any disruption, but Steam has a <em>huge</em> amount of games going back a great many years, so there may be a few that get caught-out in this.</p>
-<p>Announced in a Steamworks Development <a href="https://store.steampowered.com/news/group/4145017/view/4183351393029705362" target="_blank">blog post by Valve</a>, they mentioned both Brazilian and German laws require content ratings for people to find age-appropriate content. However, there's been an ongoing legal debate as to whether that applied to new games only <em>or</em> to the back catalogue of older games too. Now the German regulatory authority BZKJ has "expressed to us their interpretation of the law applies to all games on Steam, including ones that were launched before the law came into effect".</p>
-<p>So developers will now need to ensure their games have a rating to continue to be sold in Germany. The good news for developers, is that Steam has its own built-in rating system they can go opt to use, or game devs can go directly through the BZKJ.</p>
-<p>For developers that released a game before January 2020, they may not have filled out the questionnaire for Valve's rating system, so they will need to go back and do it for their games.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/all-older-games-being-sold-in-germany-on-steam-now-require-a-content-rating/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/all-older-games-being-sold-in-germany-on-steam-now-require-a-content-rating/</guid>
-      <pubDate>Fri, 01 Mar 2024 18:04:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Game Dev</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Megacopter: Blades of the Goddess releases in June, inspired by classic Desert Strike</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Anyone remember Desert Strike? Jungle Strike? Urban Strike? Well, Megacopter: Blades of the Goddess is for you! Built like the classics, although it looks a lot more wild, like something out of a fever dream. The developer has announced it's releasing June 21st with full Linux and Steam Deck support.</p>
-<p>Pilot the sentient Megacopter while you battle Reptoid forces in the air and on the ground. Take off on an adventure with Jack the Pilot, Hobo Jones and his crew, and many more.</p>
-<div class="hidden_video" data-video-id="LJOc71H4ZPk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b4983a66ee09f766c087da8e85ecf8be.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/LJOc71H4ZPk" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Missions: Play a variety of mission types. Seek and destroy missions feature an escalating threat level as you penetrate enemy lines. Rescue missions allow you to save your comrades (choplifter style). Defense missions feature waves of enemies. Boss hunt missions feature a powerful enemy.</li>
-<li>Environments: Take the fight to the Reptoids across 4 different biomes and dozens of missions as you look to defeat the Reptoid scum and bring sanity back to the Tri-state area!</li>
-<li>Command the Weapons of Mortals: The Megacopter is a machine with huge guns, and an even bigger appetite for blood. Exchange Pizza Tokens at the armory, and unlock more guns, more firepower, and more…well….destruction.</li>
-<li>Unlock the Power of AZ-TECH: The Blades of the Goddess demand blood, and blood you will deliver. Through (somewhat willing) Greg sacrifices, you can unlock the powers of the Goddess that lives within Megacopter. Choose the perfect AZ-TECH pairing for your mission loadouts and you’ll be cutting through Reptoids like a knife through butter.</li>
-<li>Soundtrack: Original soundtrack by OGRE sound. These amazing retro tracks will get you in the mood to seek and destroy.</li>
-</ul>
-</blockquote>
-<p>Check it <a href="https://store.steampowered.com/app/1228360/Megacopter_Blades_of_the_Goddess/" target="_blank">out on Steam</a> when it releases on June 21st.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/megacopter-blades-of-the-goddess-releases-in-june-inspired-by-classic-desert-strike/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/megacopter-blades-of-the-goddess-releases-in-june-inspired-by-classic-desert-strike/</guid>
-      <pubDate>Fri, 01 Mar 2024 17:47:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/97828063id24090gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Here&#39;s the most played Steam Deck games for February 2024</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has revealed the list of the most popular games that were played on Steam Deck throughout February 2024, so let's take a look.</p>
-<p>Sorted by hours played from top to bottom the winners are, along with the current Steam Deck Verified rating notice:</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/1623730/Palworld/" target="_blank">Palworld</a> <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></li>
-<li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" target="_blank">Baldur's Gate 3</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/2161700/Persona_3_Reload/" target="_blank">Persona 3 Reload</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank">ELDEN RING</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/" target="_blank">HELLDIVERS 2</a> <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></li>
-<li><a href="https://store.steampowered.com/app/881020/Granblue_Fantasy_Relink/" target="_blank">Granblue Fantasy: Relink</a> <img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></li>
-<li><a href="https://store.steampowered.com/app/2072450/Like_a_Dragon_Infinite_Wealth/" target="_blank">Like a Dragon: Infinite Wealth</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/413150/Stardew_Valley/" target="_blank">Stardew Valley</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/2321470/Deep_Rock_Galactic_Survivor/" target="_blank">Deep Rock Galactic: Survivor</a> <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></li>
-<li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">Cyberpunk 2077</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/582010/Monster_Hunter_World/" target="_blank">Monster Hunter: World</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/2379780/Balatro/" target="_blank">Balatro</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank">Grand Theft Auto V</a> <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></li>
-<li><a href="https://store.steampowered.com/app/2344520/Diablo_IV/" target="_blank">Diablo IV</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/" target="_blank">The Binding of Isaac: Rebirth</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank">Red Dead Redemption 2</a> <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></li>
-<li><a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" target="_blank">The Elder Scrolls V: Skyrim Special Edition</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/" target="_blank">Hogwarts Legacy</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/1687950/Persona_5_Royal/" target="_blank">Persona 5 Royal</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-<li><a href="https://store.steampowered.com/app/1145360/Hades/" target="_blank">Hades</a> <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></li>
-</ul>
-<p>This list comes from the <a href="https://twitter.com/OnDeck/status/1763615487613931997" target="_blank">official</a> Steam Deck account on X. Interesting to finally see Vampire Survivors getting knocked off the list, which has been one of the most played games overall constantly since release and was one of the <a href="https://www.gamingonlinux.com/2023/12/heres-the-most-played-steam-deck-games-of-2023/" target="_blank">most played games in 2023</a> overall.</p>
-<hr/>
-<p>What have you been playing lately? Reveal your top in the comments!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/heres-the-most-played-steam-deck-games-for-february-2024/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/heres-the-most-played-steam-deck-games-for-february-2024/</guid>
-      <pubDate>Fri, 01 Mar 2024 17:40:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1866851186id24089gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Listicle</category>
-      
-      <category>Round-up</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Game over for Roblox on Linux / Steam Deck as it&#39;s now blocked</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Well, there it is, the update for Roblox has arrived that now forcefully blocks it from working with Wine on Linux systems (like Steam Deck).</p>
-<p>It's been a bit of a saga hasn't it? Roblox has always been somewhat iffy to play on Linux, at times being broken while people working on the likes of <a href="https://gitlab.com/brinkervii/grapejuice" target="_blank">Grapefruit</a> and <a href="https://vinegarhq.org" target="_blank">Vinegar</a> repeatedly kept up with changes to make it work. The Roblox developers then introduced Hyperion anti-cheat software, although they continued to make it work <em>unofficially</em> with Wine but that wasn't to last as a developer explained <a href="https://www.gamingonlinux.com/2024/02/we-can-probably-say-a-final-goodbye-to-roblox-on-linux-with-wine-soon/" target="_blank">that it has caused cheating</a>.</p>
-<p>Now if you try to run it, you will simply be told "Wine is not supported.":</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10797727231709299834gol1.png"/></p>
-<p>This is an <em>intentional</em> change by the Roblox dev team, to block Wine, as noted in the previous article linked above where a Roblox developer clearly replied to note it wouldn't work in future.</p>
-<p>Despite what you may think of Roblox (and it's historically had <a href="https://www.youtube.com/watch?v=_gXlauRB1EQ" target="_blank">plenty</a> of <a href="https://www.youtube.com/watch?v=vTMF6xEiAaY" target="_blank">problems</a>) as one of the biggest gaming platforms ever, it's certainly a shame to see it go. There's plenty of people out there that have Roblox as their main thing, and so not being able to do it on Linux is quite a loss.</p>
-<p>Any game that intentionally prevents it from working on Linux <em>is</em> a loss as it just increases the uphill battle Linux has as a gaming platform. There's not exactly many accessible alternatives to it for Linux fans.</p>
-<p>Know any alternatives for people looking? Let readers know in the comments.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/game-over-for-roblox-on-linux-steam-deck-as-its-now-blocked/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/game-over-for-roblox-on-linux-steam-deck-as-its-now-blocked/</guid>
-      <pubDate>Fri, 01 Mar 2024 13:38:56 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/956467854id24088gol.jpg" type="image/jpeg"/>
-      
-      <category>Anti-Cheat</category>
-      
-      <category>Misc</category>
-      
-      <category>Wine</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam had a bit of a scam problem with fakes of Helldivers 2 and Palworld</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Not the first time it has happened, and likely won't be the last unless Valve implement some more security checks, but recently a few games tried scamming players by renaming into other popular games.</p>
-<p>I've seen this a few times now, although it's suddenly coming into focus again because the games being imitated were current massive smash-hits.</p>
-<p>The CEO of developer Arrowhead and the Helldivers 2 Creative Director, wrote a <a href="https://twitter.com/Pilestedt/status/1763526653467144241" target="_blank">post</a> on X noting that they were aware of store dupes posing as Helldivers 2. There was also a <a href="https://twitter.com/Bucky_cm/status/1763498651517853709" target="_blank">post</a> on X from the Community Manager at Pocketpair, developer on Palworld, who also spoke about the recent fakers imitating Palworld too. They've now been removed and hidden from the Steam store, but thanks to SteamDB we can go back and look.</p>
-<p>A game that was previously called <a href="https://steamdb.info/app/2630550/history/" target="_blank">DO NOT SMILE</a> renamed to Helldivers 2, and even changed the publisher and developer to match, it's especially nefarious because the now hidden <a href="https://store.steampowered.com/app/2630550/HELLDIVERS_2/" target="_blank">Steam page</a> clearly looked like it was Helldivers 2. They even copied some of the recent news posts. Another game, <a href="https://steamdb.info/app/2607830/history/" target="_blank">Figurality</a>, did the exact same thing. Then there's the game <a href="https://steamdb.info/app/2607810/" target="_blank">Stolen Mushrooms</a>, which attempted to be Palworld. <em>There may be others, but those I could find quite easily as examples.</em></p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4819635471709296151gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4819635471709296151gol1.jpg"/></a><em>Image from SteamDB</em></p>
-<p>As you can see above from the shot of SteamDB, the developer changed basically everything they could to make it seem like their game was Helldivers 2. And when you look at the store page (hidden but still exists) it certainly would look like Helldivers 2 if you weren't properly clued up:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16168351011709296498gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16168351011709296498gol1.jpg"/></a></p>
-<p><em>Of course now there's no purchase button since it's been hidden, but you get the idea. The <a href="https://web.archive.org/web/20240301063242/store.steampowered.com/app/2630550/HELLDIVERS_2/" target="_blank">Wayback Machine</a> archive shows it did have purchases available before being hidden by Valve.</em></p>
-<p>It seems it's quite easy to do, as apparently Valve don't have checks in place against this. I've reached out to Valve to see if they have any comment to share on what they will do in future to protect developers <em>and</em> customers from scams like this. Quite a concerning issue.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/steam-had-a-bit-of-a-scam-problem-with-fakes-of-helldivers-2-and-palworld/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/steam-had-a-bit-of-a-scam-problem-with-fakes-of-helldivers-2-and-palworld/</guid>
-      <pubDate>Fri, 01 Mar 2024 12:39:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/339339247id24087gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton Experimental fixes up Tekken 8, Cosmoteer, Call of Cthulhu, Warframe and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After <a href="https://www.gamingonlinux.com/2024/02/proton-experimental-updated-with-proton-9-adds-fixes-for-helldivers-2-and-more/" target="_blank">recently updating</a> Proton Experimental to be based on the new <a href="https://www.gamingonlinux.com/2024/02/proton-9-now-in-beta-with-improved-game-compatibility-for-steam-deck-linux/" target="_blank">Proton 9</a>, Valve ended February 2024 with another bunch of bug fixes for Proton Experimental.</p>
-<p>Here's all that's changed for the February 29 update:</p>
-<ul>
-<li>Fixed audio stutter in Viking: Battle for Asgard.</li>
-<li>Fixed main menu not looping correctly in Call of Cthulhu.</li>
-<li>Fixed Wine's virtual desktop mode not working.</li>
-<li>Enabled NVAPI for THE FINALS.</li>
-<li>Fixed a few Proton 9.0 regressions and the following games are playable again:
-<ul>
-<li>Tom Clancy's The Division</li>
-<li>Warframe</li>
-</ul>
-</li>
-<li>Fixed Tekken 8 reporting wrong connection type if both WiFi and Ethernet are present.</li>
-<li>Fixed font rendering in Cosmoteer on Steam Deck.</li>
-<li>Fixed random crashes in Cosmoteer.</li>
-<li>Fixed Russian and Hebrew font rendering in Simon the Sorcerer: 25th Anniversary Edition.</li>
-</ul>
-<p>See the <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">full changelog</a> for more.</p>
-<p>Is there a current Proton issue you're waiting on being fixed? Or a game you're waiting on working? Let me know in the comments. Also, in case you missed it, <a href="https://www.gamingonlinux.com/2024/02/5-years-later-valve-finally-gives-windows-compatibility-tool-proton-a-logo/" target="_blank">Proton finally got an official logo</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/proton-experimental-fixes-up-tekken-8-cosmoteer-call-of-cthulhu-warframe-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/proton-experimental-fixes-up-tekken-8-cosmoteer-call-of-cthulhu-warframe-and-more/</guid>
-      <pubDate>Fri, 01 Mar 2024 12:05:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/822802638id24086gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
       
     </item>
     
