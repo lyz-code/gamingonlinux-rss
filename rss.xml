@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-03-29 07:24:42.271909</pubDate>
+    <pubDate>2024-03-30 07:23:25.479907</pubDate>
 
     
     <image>
@@ -18,6 +18,169 @@
     </image>
 
     
+    
+    <item>
+      <title>XZ tools and libraries compromised with a critical issue</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>There's been an urgent security bulletin sent out in a few places today in the Linux sphere that relates to the XZ tools and libraries with liblzma, as certain version have been compromised.</p>
+<p>From the <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4" target="_blank">OpenWall</a> security list:</p>
+<blockquote>
+<p>After observing a few odd symptoms around liblzma (part of the xz package) on Debian sid installations over the last weeks (logins with ssh taking a lot of CPU, valgrind errors) I figured out the answer:</p>
+<p>The upstream xz repository and the xz tarballs have been backdoored.</p>
+<p>At first I thought this was a compromise of debian's package, but it turns out to be upstream.</p>
+</blockquote>
+<p>From what they say the issue is present in version 5.6.0 and 5.6.1 of the libraries.</p>
+<p>This has led to Red Hat putting up an urgent <a href="https://www.redhat.com/en/blog/urgent-security-alert-fedora-41-and-rawhide-users" target="_blank">blog post</a> on the matter, noting that so far Fedora Linux 40 is okay but you should "immediately stop usage of any Fedora Rawhide instances" as they were updated but they're going to be reverting to an older version.</p>
+<p>For those not clear on what it is, as Red Hat noted: "xz is a general purpose data compression format present in nearly every Linux distribution, both community projects and commercial product distributions. Essentially, it helps compress (and then decompress) large file formats into smaller, more manageable sizes for sharing via file transfers".</p>
+<p>Red Hat also noted the "malicious build interferes with authentication in sshd via systemd" and so "Under the right circumstances this interference could potentially enable a malicious actor to break sshd authentication and gain unauthorized access to the entire system remotely".</p>
+<p>Debian also has a <a href="https://lists.debian.org/debian-security-announce/2024/msg00057.html" target="_blank">security advisory</a> up on it noting that "no Debian stable versions are known to be affected" but the compromised packages were part of "Debian testing, unstable and experimental distributions" which they have reverted as well.</p>
+<p>On the Ubuntu side they have a Discourse <a href="https://discourse.ubuntu.com/t/xz-liblzma-security-update/43714/3" target="_blank">forum post</a> noting the affected package was removed from "Ubuntu 24.04 LTS (Noble Numbat) proposed builds" and they're continuing to investigate.</p>
+<p>It has been assigned as <a href="https://access.redhat.com/security/cve/CVE-2024-3094" target="_blank">CVE-2024-3094</a> noting it is a critical issue.</p>
+<p>So you'll want to ensure any XZ packages are not at version 5.6.0 or 5.6.1, and check the news directly from your chosen distribution for updates on it.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/xz-tools-and-libraries-compromised-with-a-critical-issue/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/xz-tools-and-libraries-compromised-with-a-critical-issue/</guid>
+      <pubDate>Fri, 29 Mar 2024 18:54:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental updated for The Finals, Red Alert 2, deals with high core count CPUs</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve has released a new Proton Experimental update that pulls in some nice fixes for Linux Desktop and Steam Deck gamers, and this update should improve quite a few games!</p>
+<p class="plain-list-title">For the update released March 29th, they've noted these playable as of this release:</p>
+<ul>
+<li>Aisling and the Tavern of Elves</li>
+<li>Snares of Ruin 2</li>
+<li>Iragon</li>
+</ul>
+<p class="plain-list-title">Plus the rest of the improvements:</p>
+<ul>
+<li>Fixed The Finals not working on machines supporting AVX512 without <code class="inline-code">clearcpuid=304</code> in the kernel command line.</li>
+<li>Fixed garbled videos in The Finals.</li>
+<li>Enabled NVAPI for Horizon Forbidden West.</li>
+<li>Fixed Mars First Logistics not being able to upload to Steam Workshop.</li>
+<li>Fixed Command &amp; Conquer: Red Alert 2 crashing intermittently when switching between menu options.</li>
+<li>Fixed Joe Danger and Joe Danger 2: The Movie crashing on AMD GPUs.</li>
+<li>Limited number of cores seen by the following games making them playable on a high core count CPUs:
+<ul>
+<li>Far Cry 2</li>
+<li>Far Cry 4</li>
+<li>The Witcher 2: Assassins of Kings Enhanced Edition</li>
+<li>Lara Croft and the Guardian of Light</li>
+<li>Warhammer 40,000: Space Marine</li>
+<li>Warhammer 40,000: Dawn of War II</li>
+<li>Warhammer 40,000: Dawn of War II - Chaos Rising</li>
+<li>Warhammer 40,000: Dawn of War II - Retribution</li>
+<li>Outcast - Second Contact</li>
+<li>Prototype</li>
+</ul>
+</li>
+<li>Fixed a few Proton 9.0 regressions:
+<ul>
+<li>Sea of Thieves is able to play videos on Steam Deck.</li>
+<li>Borderlands GOTY Enhanced is playable again.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8192458721711737355gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8192458721711737355gol1.jpg"/></a>Pictured - Far Cry 4</em></p>
+<p>Full changelog available on <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" target="_blank">GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/proton-experimental-updated-for-the-finals-red-alert-2-deals-with-high-core-count-cpus/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/proton-experimental-updated-for-the-finals-red-alert-2-deals-with-high-core-count-cpus/</guid>
+      <pubDate>Fri, 29 Mar 2024 18:38:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2135858719id24253gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Maniac is classic GTA meets Vampire Survivors - out now on Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>From Transhuman Design we have the next survivor-like game with Maniac, that puts it into a classic GTA setting while you go on a bit of a frenzy. If you love a good bit of chaos with plenty of upgrades and characters to unlock, this may very well be what you need.</p>
+<p>If definitely reminds me of my earlier years playing the first and second Grand Theft Auto, complete with police car chases and helicopters flying around trying to catch you. Only here, you can keep levelling up to make everything all that bit more ridiculous.</p>
+<div class="hidden_video" data-video-id="Pzgopn35Gdk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7524d4e5a0e73a587bd29fe4089c82de.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Pzgopn35Gdk" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<ul>
+<li>Six insane characters with unique abilities. Cause chaos with Drunk Santa, Hot Dog Guy, and even clowns.</li>
+<li>Heart-pounding chase-driven action built on explosive physics and destruction.</li>
+<li>With each new crime, the law gets more ticked off - police, FBI, military, special forces and more will all be on your tail.</li>
+<li>Buy guns, explosives, and special items to keep your runs going longer.</li>
+<li>Unlockable items and upgrades across all characters - better guns, landmines, sturdier cars, and more cash-per-crime. The upgrade path is yours to choose!</li>
+</ul>
+<p>With the Linux version (personal purchase) it seemed to work really well, the only issue I noticed was the cursor in the menu being a bit too big which seems to be a common Unity game engine issue on Linux.</p>
+<p>It's a lot of fun but gamepad support in it is weird since you only get auto aim, or aiming in the direction you're facing, which for this type of game feels like an odd choice. Having actual twin-stick aiming would make it feel a lot better on gamepad. The developer has <a href="https://steamcommunity.com/app/1482380/discussions/0/4358995119363962504/#c4358995119364969201" target="_blank">said</a> they do plan to add that in as soon as possible which is nice to see. Apart from that though, it's pretty much <em>exactly</em> as you would expect such a game to be. Over the top action, lots of explosions and complete anarchy as you smash through everyone and everything in your way.</p>
+<p>If you love the idea then £4.29 is a great price for it.</p>
+<p><a href="https://store.steampowered.com/app/1482380/Maniac/" target="_blank">Available on Steam</a> with Native Linux support.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/maniac-is-classic-gta-meets-vampire-survivors-out-now-on-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/maniac-is-classic-gta-meets-vampire-survivors-out-now-on-steam/</guid>
+      <pubDate>Fri, 29 Mar 2024 16:22:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/811189549id24252gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Multiplayer comes to Cassette Beasts on May 20th</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The fantastic monster collection game Cassette Beasts is adding in online multiplayer, with a Beta available now with the full update due out on May 20th.</p>
+<p>What it will add:</p>
+<ul>
+<li>Party-up with up to 8 players, all visible in your world as you travel!</li>
+<li>Battle your friends in 1v1, and even assign custom rules to your battle such as enabling/disabling sticker attributes!</li>
+<li>Trade tapes with each other, including any stickers you’ve applied!</li>
+<li>Team up for raid battles against Rogue Fusions to receive Cyber Material to help you obtain Bootlegs faster!</li>
+</ul>
+<p>This was announced during their recent showcase, along with mobile ports coming too.</p>
+<p>Check it out below:</p>
+<div class="hidden_video" data-video-id="jN_IYdwoL_A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/671c6edee34c4e6de0dfb1d48aad1ba4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/jN_IYdwoL_A" target="_blank">See video</a></div></div>
+<p>If you're interested in the multiplayer Beta the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3200472133&amp;snr=1_5_9_" target="_blank">instructions are on Steam</a>.</p>
+<p>You can buy it from:</p>
+<p><a href="https://www.humblebundle.com/store/cassette-beasts?partner=gamingonlinux" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/1321440/Cassette_Beasts/?curator_clanid=4218320" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/03/multiplayer-comes-to-cassette-beasts-on-may-20th/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/multiplayer-comes-to-cassette-beasts-on-may-20th/</guid>
+      <pubDate>Fri, 29 Mar 2024 15:31:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/999608681id24251gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Godot Engine</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Monster Catching</category>
+      
+    </item>
     
     <item>
       <title>Humble Spring Screams Bundle has Amnesia: The Bunker and My Friendly Neighborhood</title>
@@ -196,6 +359,8 @@
       <title>Squad-based online shooter Enlisted: Reinforced now on Steam with Linux support</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
+<p><strong>Update 29/03/24</strong>: the Steam released has <a href="https://store.steampowered.com/news/app/2051620/view/4186732260754268307" target="_blank">been pulled</a> temporarily due to all the negative reviews about issues with account linking and the bundled DLC. </p>
+<hr/>
 <p>Gaijin Network (War Thunder) and Darkflow Software (CRSED: Cuisine Royale) have today released the online squad-based shooter Enlisted: Reinforced into Early Access on Steam. As they said they would <a href="https://www.gamingonlinux.com/2024/03/squad-based-shooter-enlisted-reinforced-from-gaijin-is-coming-to-steam/" target="_blank">when I covered it previously</a>, the release comes with Native Linux support.</p>
 <div class="hidden_video" data-video-id="69OwvpQAgIo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/25e94491de482a304a6d2b526052226d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/69OwvpQAgIo" target="_blank">See video</a></div></div>
 <p>While the game is free to play direct from their launcher the version on Steam costs £16.99 / $19.99 / 19,99€ which comes with two premium squads, 7 days of a premium account, 500 gold, a unique nickname decorator and 15 first aid kits for each squad. It <em>might</em> become free to play on Steam at some point after Early Access but it may not.</p>
@@ -3992,133 +4157,6 @@ pump profiles based on any available temperature sensor.</p>
       <category>New Release</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve fixes up Steam Remote Play - again</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Remote Play seems to be a constant problem for Valve to fix up on Steam / Steam Deck, as there's always something broken with it and the latest Steam Client Beta fixes it up again.</p>
-<p>It was only back at the <a href="https://www.gamingonlinux.com/2024/02/valve-fixes-remote-play-on-steam-deck/" target="_blank">end of February</a> that Valve patched the infinite loading screen specifically on Steam Deck, which they pushed out broken after the <a href="https://www.gamingonlinux.com/2024/02/valve-release-big-stable-steam-client-update-for-steam-steam-deck/" target="_blank">recent stable update</a> and here we are again. For both <a href="https://store.steampowered.com/news/group/4397053/view/4134938965490297092" target="_blank">Desktop</a> and <a href="https://store.steampowered.com/news/app/1675200/view/4122554066513984831" target="_blank">Steam Deck</a> there's another new Beta available that has these fixes:</p>
-<blockquote>
-<p><strong>Remote Play</strong></p>
-<ul>
-<li>Fixed missing audio while streaming.</li>
-<li>Fixed continually being prompted for the PIN when pairing a device.</li>
-</ul>
-</blockquote>
-<p>For such an incredibly useful feature, it sure is broken a lot isn't it. Every time I go to use it there's always something that causes an issue.</p>
-<p>Have you been having issues with Remote Play lately?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/valve-fixes-up-steam-remote-play-again/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/valve-fixes-up-steam-remote-play-again/</guid>
-      <pubDate>Wed, 13 Mar 2024 11:20:42 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Wonderful puzzle-adventure CLeM is out now &amp; Steam Deck Verified</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you're in need of a new puzzle-adventure game like the classics, CLeM looks like a wonderful game to add to your library and it's Steam Deck Verified now too. Release on February 6th, developer Mango Protocol has created something rather special here.</p>
-<p>The developers are calling it a "puzzlevania", where you explore (and re-explore) an ever-changing mansion as you solve various puzzles and piece together a story that explores themes of manipulation, forgiveness, and redemption. Overall it sounds quite a unique experience.</p>
-<div class="hidden_video" data-video-id="fx3h2Dtt-rA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/438618989b7648353a65197f59632e6d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/fx3h2Dtt-rA" target="_blank">See video</a></div></div>
-<p>More about it: "Your journey in CLeM may start in a dark, cold basement, but you’ll soon be exploring environments ranging from vibrant tropical greenhouses to grandiose studies, and each new location is packed with carefully constructed details and interactable elements to uncover. All of this is presented through a distinct hand-drawn art style that offers a distinctly unsettling aesthetic without compromising the player’s ability to recognise on-screen elements they can interact with."</p>
-<p>Game Features:</p>
-<ul>
-<li>A new genre, “Puzzlevania,” intertwines puzzles and exploration. Discover hidden secrets in each room as you delve deeper into the mysteries with every crafted magical toy.</li>
-<li>Unique and beautiful art style with hand-drawn elements.</li>
-<li>2D graphics with 3D environmental navigation.</li>
-<li>Challenging and diverse puzzles to solve.</li>
-<li>An enigmatic story with a dark turn.</li>
-</ul>
-<p>No reports currently on ProtonDB for Desktop Linux players, but since it's Steam Deck Verified it <em>should</em> work just fine thanks to <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>.</p>
-<p>Available to buy on <a href="https://store.steampowered.com/app/1861440/CLeM/" target="_blank">Steam</a> or <a href="https://www.gog.com/en/game/clem" target="_blank">GOG</a> if you prefer.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/wonderful-puzzle-adventure-clem-is-out-now-steam-deck-verified/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/wonderful-puzzle-adventure-clem-is-out-now-steam-deck-verified/</guid>
-      <pubDate>Wed, 13 Mar 2024 11:10:10 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1052959515id24152gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Adventure</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Racing game New Star GP is out now and Steam Deck Verified</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>New Star GP looks like it could be a lot of fun for motorsport fans! It just released on March 7th after a period in Early Access, and it is Steam Deck Verified.</p>
-<p>If you love racing games that aren't too serious, this could be one for you with a great low-poly style to it like some classics. You know what this reminds me of? Going to the arcade a lot when younger, seems like it gives off that same sort of feel.</p>
-<p>"NEW STAR GP is the arcade racing game where every decision counts - on and off the track! You take control of your own motorsport team, guide your team’s technological development, plan your race strategy, take the wheel, and drive to victory! With a simple but deep gameplay experience and appealing retro visuals, NEW STAR GP puts you in the driving seat for every twist and turn as you manage and race your team through decades of racing, from the 1980s all the way to the present day!"</p>
-<div class="hidden_video" data-video-id="A1NofjmEUxk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/aa3d6e9cdfc880280559670125165e0e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/A1NofjmEUxk" target="_blank">See video</a></div></div>
-<p>Lots of different race types including GPs, Elimination Races, Time Trials, Checkpoint Races, and one-on-one Rival Races and then you've got car upgrades, staff perks to deal with and much more. It's quite a feature-filled game.</p>
-<p>Something else that's great about it that we really don't see enough of in racing games is split-screen multiplayer, good for a laugh when you've got a few friends over. And since it's Steam Deck Verified, you can take it on the go to show off. No ProtonDB reports for it yet, but it should work just fine on Desktop Linux with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a> since it's Deck Verified.</p>
-<p>Available <a href="https://store.steampowered.com/app/2217580/New_Star_GP/" target="_blank">from the Steam store</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/racing-game-new-star-gp-is-out-now-and-steam-deck-verified/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/racing-game-new-star-gp-is-out-now-and-steam-deck-verified/</guid>
-      <pubDate>Wed, 13 Mar 2024 11:01:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1201897224id24151gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Triple-i Initiative teased by devs of Vampire Survivors, Darkest Dungeon, Risk of Rain</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Well well well, what do we have here then? A bunch of developers seem to have joined up for something called The Triple-i Initiative that could be quite exciting.</p>
-<p>This was stealthily teased today that I spotted the Vampire Survivor account on X <a href="https://twitter.com/poncle_vampire/status/1767581615528595597" target="_blank">posting</a> about, with nothing other than an eyes emoji pointing to The Triple-i Initiative <a href="https://iii-initiative.com" target="_blank">website</a>. The website also doesn't really give much away either noting simply that it's:</p>
-<blockquote>
-<p>A mysterious teasing page by the studios behind...</p>
-<p>Darkest Dungeon, Risk of Rain, Slay the Spire, Vampire Survivors, V Rising &amp; many others</p>
-</blockquote>
-<p>With a countdown timer to a new announcement due in just over 16 days.</p>
-<p>Doing a bit of digging on X there really is a <em>lot</em> of developers and publishers involved in this including others you may recognise like Evil Empire (prev worked on Dead Cells), Fellow Traveller (publisher), Humble Games (publisher), Fireshine Games (publisher), Dotemu (Streets of Rage 4), Thunder Lotus (Spiritfarer), Thorium (UnderMine), Pathea Games (My Time at Sandrock), Matt Dabrowski (Streets of Rogue) and the list goes on and on…</p>
-<p>And then there's the new official X account for The Triple-i Initiative that <a href="https://twitter.com/iii_initiative/status/1767580890870292807" target="_blank">posted</a> how this has been "In the works for months, coming to you in days.". Curious.</p>
-<p>Hmm. What could this be? A game that they're all part of somehow? A special indie game publisher? A game bundle? A new marketing push for indie games but not specifically a publisher? Something else entirely? A few months isn't a lot of time to prepare a new game, especially with so many involved, so I doubt it's that.</p>
-<p><em>Over to you in the comments, what do you think will be announced? Go on, give it your best shot.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/triple-i-initiative-teased-by-devs-of-vampire-survivors-darkest-dungeon-risk-of-rain/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/triple-i-initiative-teased-by-devs-of-vampire-survivors-darkest-dungeon-risk-of-rain/</guid>
-      <pubDate>Tue, 12 Mar 2024 16:23:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2090292771id24150gol.jpg" type="image/jpeg"/>
-      
-      <category>Indie Game</category>
-      
-      <category>Misc</category>
-      
-      <category>Speculation</category>
-      
-      <category>Teaser</category>
       
     </item>
     
