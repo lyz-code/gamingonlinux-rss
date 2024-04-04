@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-04-03 07:23:09.639867</pubDate>
+    <pubDate>2024-04-04 07:25:12.850405</pubDate>
 
     
     <image>
@@ -18,6 +18,285 @@
     </image>
 
     
+    
+    <item>
+      <title>MangoHud 0.7.2-rc1 adds Wayland keybinds, a time label and bug fixes</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The next version of the Linux performance overlay MangoHud is close, with a release candidate up now and ready for testing with MangoHud <a href="https://github.com/flightlessmango/MangoHud/releases/tag/v0.7.2-rc1" target="_blank">version 0.7.2-rc1</a>.</p>
+<p>What is it? A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more on top of games and applications. You can use it on Desktop Linux, and it's what forms the Steam Deck's performance HUD too.</p>
+<p>Here's all the <a href="https://github.com/flightlessmango/MangoHud/releases/tag/v0.7.2-rc1" target="_blank">improvements</a>:</p>
+<blockquote>
+<h3>Changes</h3>
+<ul>
+<li><code class="inline-code">time</code> now has a label (you can remove this label with <code class="inline-code">no_time_label</code>)</li>
+<li>Wayland keybinds have been added</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>frametime color wasn't being correctly inherited, the user was not able to change it's color</li>
+<li>fixed a crash when pressing Shift_R + F9</li>
+<li>config options now correctly override preset options</li>
+<li>fixed RPM and % being incorrectly assigned for GPU fan speeds</li>
+</ul>
+<h3>Parameters</h3>
+<ul>
+<li><code class="inline-code">no_time_label</code> removes the label before <code class="inline-code">time</code></li>
+<li><code class="inline-code">network</code> shows the throughput in kb/s for all interfaces or a specified list of interfaces e.g <code class="inline-code">network=eth0,wlo1</code></li>
+</ul>
+</blockquote>
+<p>Since it's a pre-release, there's no pre-compiled packages so you'll need to build it from source or wait for the full release after it's had some testing time.</p>
+<p>An example of MangoHud with a horizontal style (look at the top):</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1061428281712152345gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1061428281712152345gol1.jpg"/></a></p>
+<p>If you like that configuration for it here's my settings:</p>
+<blockquote>
+<p>horizontal<br/>
+legacy_layout=0<br/>
+hud_no_margin<br/>
+font_size=25<br/>
+table_columns=25<br/>
+background_alpha=0.5<br/>
+gpu_stats<br/>
+gpu_temp<br/>
+cpu_stats<br/>
+cpu_temp<br/>
+ram<br/>
+vram<br/>
+fps<br/>
+frame_timing<br/>
+frametime<br/>
+toggle_hud=F8<br/>
+version<br/>
+vulkan_driver<br/>
+text_outline<br/>
+text_outline_thickness=2<br/>
+custom_text=GamingOnLinux<br/>
+resolution</p>
+</blockquote>
+<p><em>Place that into ~/.config/MangoHud/MangoHud.conf</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/mangohud-072-rc1-adds-wayland-keybinds-a-time-label-and-bug-fixes/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/mangohud-072-rc1-adds-wayland-keybinds-a-time-label-and-bug-fixes/</guid>
+      <pubDate>Wed, 03 Apr 2024 13:53:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1311984335id24271gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux Mint 22 moves to Pipewire, will ship newer kernels after release</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Some good news coming out of camp Linux Mint, as the upcoming release of Linux Mint 22 is set to be quite a good one for bringing it up to standard like other distributions on newer tech.</p>
+<p>Announced in a <a href="https://blog.linuxmint.com/" target="_blank">blog post</a>, Mint's Clement Lefebvre mentioned various improvements coming like better localization support which will also use less disk space. Languages you don't pick will now <em>properly</em> be removed, and the ISO will actually have English, German, Spanish, French, Russian, Portuguese, Dutch and Italian requiring no extra downloads for those.</p>
+<p>Something big for audio fans is that Linux Mint 22 will also finally swap over to Pipewire as the default sound server, the Software Sources tool will feature support for the new Deb822 format and the next version of Pix (their image viewer) will support JXL images.</p>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7028874071712148126gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7028874071712148126gol1.jpg"/></a>Pictured - Linux Mint Cinnamon Desktop</em></p>
+<p>Another big change is their kernel versioning. Mint has always been quite reserved on using newer kernels, often sticking with older versions. They have been shipping EDGE ISOs with newer kernels for a while, but now they're going to follow Ubuntu with shipping new kernel series release after Linux Mint 22 is live. As Lefebvre mentioned "we didn’t observe significant differences in terms of stability between LTS and HWE series" and that a "growing number of users with new laptops/chipsets relied on EDGE images" so this move makes sense.</p>
+<p>They've also made a new XApp, <a href="https://github.com/linuxmint/gnome-online-accounts-gtk" target="_blank">GNOME Online Account GTK</a>, with a goal to work across any desktop environment to connect to online accounts like Google, Microsoft and so on. </p>
+<p>Snap is also another issue, as the Mint team continue to not particularly like Canonical's packaging format. With Ubuntu moving Thunderbird into a Snap, the Mint team will now be packaging it themselves as a .deb.</p>
+<p>They're also continuing to work on <a href="https://github.com/linuxmint/jargonaut" target="_blank">Jargonaut</a>, a modern chat application that uses IRC under the hood.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6717160861712147954gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6717160861712147954gol1.png"/></a></p>
+<p>They're also now working with <a href="https://www.fastly.com/" target="_blank">Fastly</a>, to support their packaging repositories which should provide better speeds and overall stability.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/linux-mint-22-moves-to-pipewire-will-ship-newer-kernels-after-release/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/linux-mint-22-moves-to-pipewire-will-ship-newer-kernels-after-release/</guid>
+      <pubDate>Wed, 03 Apr 2024 12:42:34 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/553737453id24270gol.jpg" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>Linux Mint</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Escape Simulator adds VR support in the latest free update</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Escape Simulator from Pine Studio has proven to be popular, so much in fact that they hit <a href="https://www.gamingonlinux.com/2022/05/escape-simulator-hits-1-million-sales-adds-voice-chat-and-new-map/" target="_blank">1 million sales</a> in less than a year and multiple expansions later there's another big free upgrade.</p>
+<p>They've had crossover DLC with Among Us and Portal, which are both free, as well as a few paid extra DLC with more levels and content. Now they're back with a free VR upgrade. As they said in the announcement: "Escape from the base game as well as the additional free rooms in a fully interactive 3D environment, either by yourself or with friends. Throwing items to each other has never felt so real!".</p>
+<p>You can even team up with players who don't have VR, which is a nice feature. To make all this work they said they actually "rebuilt the game from scratch for the VR version". However, the price will be increasing after April 14th, so picking it up now will get you it cheaper with all the updates.</p>
+<div class="hidden_video" data-video-id="fD5cxMeadws"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/77fea50d22f9a88e4cf5b61c04f6bb85.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/fD5cxMeadws" target="_blank">See video</a></div></div>
+<p>What can you actually play in VR? They said all 29 rooms in the base game and all of the DLC, according to their email "most of the 4.000 community-made rooms are now also available to enjoy in VR". This is great, because the level editor is one of the big pulls of the game and what helped make it so popular.</p>
+<p>Game Features:</p>
+<ul>
+<li>Solve puzzles. Face a growing collection of interactive escape rooms, spread across a variety of weird and wonderful locations such as the Labyrinth of Egypt, the Steampunk Airship, the Portal Escape Chamber or The Mini Skeld.</li>
+<li>Team up with friends. Every Escape Simulator room supports online co-op! Join forces with friends to test your teamwork &amp; tackle puzzles together.</li>
+<li>Powered by the community. Use the Room Editor to build your very own *dream* escape room. Or dive into one of the 4000+ custom rooms built by our creative community.</li>
+<li>Dress to impress. Wear silly hats, customize your character &amp; wear a series of themed outfits, tailor-made for each puzzle environment.</li>
+<li>Cause chaos! Smash vases. Melt locks. Rearrange the furniture. Make a mess! If it's not nailed down, you can pick it up (and inevitably throw it at your friends). Even more enjoyable in VR!</li>
+</ul>
+<p>Buy from:</p>
+<p><a href="https://www.humblebundle.com/store/escape-simulator?partner=gamingonlinux" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/1435790/Escape_Simulator/" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/escape-simulator-adds-vr-support-in-the-latest-free-update/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/escape-simulator-adds-vr-support-in-the-latest-free-update/</guid>
+      <pubDate>Wed, 03 Apr 2024 12:22:48 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1824212477id24269gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Online Co-op</category>
+      
+      <category>Puzzle</category>
+      
+    </item>
+    
+    <item>
+      <title>Cozy Space Survivors is a sweet time survival roguelite in space</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Cozy Space Survivors is an upcoming simple cozy time survival roguelite in space, a game for people who don't have all that much free time.</p>
+<p>The developer said they were inspired by the likes of Vampire Survivors for the general simple gameplay, Binding of Isaac for physicality of bullets, Halls of Torment for adding Quests to a Vampire Survivors-Like, Fallout for the story summary at the end of the game and Into the Breach for the little NPC dialog texts which add so much atmosphere and so they've blended all the basic ideas into a simple but sweet package with Cozy Space Survivors.</p>
+<p>About it: "Explore a colorful, tiny universe. Help its cute inhabitants solve their problems. Use satisfying weapons to defend you and your new friends against hordes of quirky enemies. You can focus on controlling your shipy while shooting happens automatically. There are unique landmarks to discover, and enemies leave experience points for level-ups to gain new skills. In addition, you can mine chocolate asteroids to unlock permanent upgrades."</p>
+<p>See their WIP trailer below:</p>
+<div class="hidden_video" data-video-id="1L55Z4t9QsA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7a404cc25efcb42eea155036ba53a149.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/1L55Z4t9QsA" target="_blank">See video</a></div></div>
+<p>The developer, Simon Trümpler, has previously worked on the likes of X:Rebirth, Sacred 2, RIME, The Invisible Hours and more and now they're making their own game.</p>
+<p>Try out the <a href="https://store.steampowered.com/app/2657850/Cozy_Space_Survivors/" target="_blank">demo on Steam</a> which has Native Linux support made with <a href="https://godotengine.org/" target="_blank">Godot Engine</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/cozy-space-survivors-is-a-sweet-time-survival-roguelite-in-space/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/cozy-space-survivors-is-a-sweet-time-survival-roguelite-in-space/</guid>
+      <pubDate>Wed, 03 Apr 2024 11:58:45 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1997756380id24268gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Demo</category>
+      
+      <category>Godot Engine</category>
+      
+    </item>
+    
+    <item>
+      <title>Stop Killing Games is a new campaign to stop developers making games unplayable</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>We've all been there right? You paid for a game, it required an active internet connection and a couple of years later the publisher decided they're done with it and shut it down leaving you with a broken game. Annoying.</p>
+<p>Very annoying. It repeatedly happens, mostly AAA publishers that do it and their games are often quite expensive too. One of the most recent is The Crew from Ubisoft, a game that until late December last year cost £25.99. The developers at Ubisoft Ivory Tower <a href="https://www.ubisoft.com/en-gb/game/the-crew/the-crew/news-updates/mOR3tviszkxfeQCUKxhOV/an-update-on-the-crew" target="_blank">announced</a> on December 14th that as of March 31st, 2024 the servers would be shut down and so it will no longer be playable for anyone. The Crew 2 is still online, and Ubisoft are about to launch The Crew Motorfest on Steam on April 18th.</p>
+<p>So now YouTuber Ross Scott of Accursed Farms, has launched the <a href="https://www.stopkillinggames.com/" target="_blank">Stop Killing Games</a> campaign to try and better highlight the issue. As noted on the campaign website: "An increasing number of videogames are sold as goods, but designed to be completely unplayable for everyone as soon as support ends. The legality of this practice is untested worldwide, and many governments do not have clear laws regarding these actions. It is our goal to have authorities examine this behavior and hopefully end it, as it is an assault on both consumer rights and preservation of media. We are pursuing this in two ways:"</p>
+<div class="hidden_video" data-video-id="w70Xc9CStoE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2b16c9ef99a758e1b97aad8bfe1f3159.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/w70Xc9CStoE" target="_blank">See video</a></div></div>
+<p>It's definitely an interesting and often frustrating issue, especially for games that could seemingly continue to let you play offline without too much trouble. It's a complicated issue though, and the campaign might not end up going anywhere, but it's certainly going to be interesting to watch.</p>
+<p>Unquestionably a campaign I can get behind though, because I've said for years it's a really poor situation for consumers to have your purchase suddenly stop working forever that you've not just put money into but often a ton of your time. It's a question of preservation too, the games are just — gone. <em>I miss the days where you could just host your own server.</em></p>
+<p><em>What are your thoughts? </em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/stop-killing-games-is-a-new-campaign-to-stop-developers-making-games-unplayable/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/stop-killing-games-is-a-new-campaign-to-stop-developers-making-games-unplayable/</guid>
+      <pubDate>Wed, 03 Apr 2024 11:18:40 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1182033699id24267gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Superstar Strategy is a turn-based tactical RPG you can play with or against friends</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Talberon Games have recently put up a brand new and improved demo for Superstar Strategy, a turn-based Tactical RPG that you can play alone, or brings friends along to play with <em>or</em> against them in split-screen.</p>
+<p>Currently the developer is also working on <a href="https://talberon.itch.io/steelbreakers" target="_blank">Steelbreakers</a>, a 4-player hack-and-slash party fighter, which had a few free releases I <a href="https://www.gamingonlinux.com/search-articles/?q=Steelbreakers&amp;title_only=on" target="_blank">covered previously</a> on itch.io. The free version of that will stick, but they're also expanding that into a full Steam release. However, they're also mixing their time between two games and as of April 1st, Superstar Strategy has a refreshed demo with lots of improvements that's worth taking a look at.</p>
+<div class="hidden_video" data-video-id="QSfLH3MR_FQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/fed5c835cba0dfea8d82c0cd74d72920.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/QSfLH3MR_FQ" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<ul>
+<li>Lead Your Troops into Battle - Engage in a battle of wits and strategy in this turn-based tactical RPG. Employ the distinctive abilities of each unit and leverage the battlefield's terrain to outsmart your adversaries and assert your dominance!</li>
+<li>Exploit the Battlefield Terrain - Manipulate the environment to your advantage – push, pull, teleport, and displace your foes onto traps, inflicting additional damage and status effects between turns. Escape traps before the next round begins to defy fate and evade harm.</li>
+<li>Solo Adventures, Cooperative Play, or Versus Challenges - Embark on a solitary journey through the Campaign and Solo Skirmishes, join forces with a friend in Cooperative play to combat menacing monsters, or engage in competitive scenarios and arenas in Versus mode!</li>
+<li>Draft Your Elite Army - Select from 14 distinct unit roles to forge your own army with unique combinations. Each unit class boasts individual skills, playstyles, and synergies. Experiment with diverse combinations to uncover potent combos and force multipliers, enhancing your chances of triumph.</li>
+<li>Strategic Mastery with Unit Skills - Unleash the power of each player-controlled unit's unique abilities, shaping their playstyle. Launch formidable attacks, rescue allies, intimidate enemies, and set the battlefield ablaze with awe-inspiring powers. Free actions can be seamlessly combined with other abilities for added potency and trickery.</li>
+<li>Achieve Your Goals - Navigate diverse maps with distinct primary objectives and multiple win conditions. Adapt your strategy on the fly – if defeat seems imminent, shift tactics and aim for an alternative victory to turn the tide of battle!</li>
+<li>Plan Your Moves - Order your units' movements strategically, sequencing actions until all have been exhausted for the round. Time your attacks between your opponent's turns to strike precisely when the moment is just right!</li>
+</ul>
+<p>If you're a fan of turn-based tactical RPGs, you might want to give it a shot.</p>
+<p>Check <a href="https://store.steampowered.com/app/1756730/Superstar_Strategy/" target="_blank">out the demo on Steam</a> with Native Linux support.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/superstar-strategy-is-a-turn-based-tactical-rpg-you-can-play-with-or-against-friends/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/superstar-strategy-is-a-turn-based-tactical-rpg-you-can-play-with-or-against-friends/</guid>
+      <pubDate>Wed, 03 Apr 2024 11:05:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1010108941id24266gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Local co-op</category>
+      
+    </item>
+    
+    <item>
+      <title>Screenbound is a platformer where you play in 2D and 3D together</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>An upcoming game from Crescent Moon Games and Those Dang Games is Screenbound, and it really does look interesting for blending together 2D and 3D gameplay.</p>
+<p>They say "Screenbound is a game about being distracted, but totally in control" and are claiming it's a "5D" game, since you have a Quantum boy device that transports you "into a weird dual dimensional space that occupies 5D = 3d + 2d". Now you've heard developers use 2D, 3D, 2.5D, 4D and so on but 5D? Okay then. Well, it does look genuinely interesting at least so I'll let 'em have it.</p>
+<div class="hidden_video" data-video-id="uR2K8InGAus"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6b0260dc6e8ad9695a96518515ac6889.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/uR2K8InGAus" target="_blank">See video</a></div></div>
+<p>More about it from the devs:</p>
+<blockquote>
+<p>Screenbound is a platformer unlike any other. You move in first person view at the same time while playing in 2d on the screen of your Qboy. Mind bending environmental puzzles will force you to test the limits of dimensional space. Your jumping and movements are mirrored - but certain things affect the opposite dimension. Combat is in 2d and you will receive your loot in 3d.</p>
+<p>Find and explore many hidden areas and weird ideas will be all around you.</p>
+<p>So how the heck did this happen? Your mom invented the device and you found it in the garage. She was keeping it secret all this time, and other dark secrets start to come out as you delve deeper. You'll find other stuff too. But let's not spoil the plot.</p>
+<p>Screenbound also has a level editor in a traditional 2d style - but here's another twist. It auto-generates the 3d level for you! Just imagine the possibilities.</p>
+</blockquote>
+<p>You can <a href="https://store.steampowered.com/app/2805070/Screenbound/" target="_blank">follow it on Steam</a>. </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/screenbound-is-a-platformer-where-you-play-in-2d-and-3d-together/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/screenbound-is-a-platformer-where-you-play-in-2d-and-3d-together/</guid>
+      <pubDate>Wed, 03 Apr 2024 10:50:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1197128116id24265gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Platformer</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Lemonade is an attempt to continue on the Nintendo 3DS emulator Citra</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>While <a href="https://www.gamingonlinux.com/2024/03/yuzu-agrees-to-pay-nintendo-2-4-million-and-will-entirely-shut-down/" target="_blank">Nintendo took down</a> the Nintendo Switch emulator yuzu, the collateral damage was the Nintendo 3DS emulator Citra which was also taken offline but Lemonade is an attempt to keep it going.</p>
+<p>They don't directly mention Citra, probably through fear of it getting nuked from orbit and instead refer to it as the original "base" as mentioned on their website: "Lemonade was started after the base, a previous Nintendo 3ds emulator, was discontinued. The Lemonade Project was created to continue the work of base, fixing its issues and improving its performance and compatibility."</p>
+<p>Most recently the Lemonade project put out a <a href="https://github.com/Lemonade-emu/Lemonade/releases/tag/Alpha-2" target="_blank">second</a> initial release which had initial support for Linux, macOS and Windows along with cleaning up a few issues. The Linux version is available as an easy AppImage.</p>
+<p>There will no doubt be others that attempt to continue Citra, just like there's multiple that are currently trying to continue yuzu like suyu, although suyu already had an issue where <a href="https://www.gamingonlinux.com/2024/03/gitlab-takes-down-nintendo-switch-emulator-suyu-due-to-the-dmca/" target="_blank">GitLab took it down</a> so now they self-host their own Git for it.</p>
+<p>Perhaps this one will stick around, maybe it won't, but for now it may be worth keeping an eye on it you're an emulation fan wanting to play some classic Nintendo 3DS games.</p>
+<p>For those interested you can follow on <a href="https://github.com/Lemonade-emu/Lemonade" target="_blank">GitHub</a> and the <a href="https://lemonade-emu.github.io/" target="_blank">website</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/lemonade-is-an-attempt-to-continue-on-the-nintendo-3ds-emulator/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/lemonade-is-an-attempt-to-continue-on-the-nintendo-3ds-emulator/</guid>
+      <pubDate>Wed, 03 Apr 2024 10:41:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/278252802id24264gol.jpg" type="image/jpeg"/>
+      
+      <category>Emulation</category>
+      
+      <category>Nintendo</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Humble Choice for April has Terraformers, Victoria 3, The Callisto Protocol</title>
@@ -84,7 +363,7 @@
 <p>For the impatient, it can be sped up quite a lot too with a 300x speed, a feature I quite appreciated when waiting for some necessary building resources to be gathered in the blink of an eye — nice. I wouldn't use that speed often though, unless you want your people to die off rapidly. </p>
 <p>There's a lot of little individual things you need to learn about and keep an eye on here. Each villager has stats for food, water, rest, heat, overall health points and energy. So you need to ensure all their individual needs are met, while continuing to expand your village and keep everyone alive together. Quite something seeing everyone run around once you've built up a decently sized village to start unlocking more advanced buildings to expand further again.</p>
 <p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16968560891712071269gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16968560891712071269gol1.jpg"/></a></p>
-<p>An interesting job system too. Each person can work multiple jobs, and they have a workload percentage, so you have to balance how many jobs they have and what jobs people do, to keep up with all your growing needs. Plus, on top of that, various buildings have multiple output types for you to pick your privatisations on. There's just so much of <em>everything</em>.</p>
+<p>An interesting job system too. Each person can work multiple jobs, and they have a workload percentage, so you have to balance how many jobs they have and what jobs people do, to keep up with all your growing needs. Plus, on top of that, various buildings have multiple output types for you to pick your priorities on. There's just so much of <em>everything</em>.</p>
 <p>You also have events to deal with too with more people joining your village, or not, if you send them packing. Sometimes they have specific building requests too and I've no doubt the developer will expand the quest system through Early Access.</p>
 <div class="hidden_video" data-video-id="md-g0UNTBV4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8675d6748f0e10d98ae4c673b24dfc5b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/md-g0UNTBV4" target="_blank">See video</a></div></div>
 <p>Features:</p>
@@ -3690,445 +3969,6 @@ Roomisode 3: Take a side-gig doing security consulting for Perducci!"</p>
       <category>Indie Game</category>
       
       <category>Platformer</category>
-      
-    </item>
-    
-    <item>
-      <title>Check out the demo for supernatural point-and-click adventure Shadows of the Afterland</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Shadows of the Afterland has you cross between the worlds of the living and the dead, and allows you to possess the living to hopefully unearth your haunting past. This seems like a really fun classic styled adventure, so worth a look! It also has Native Linux support.</p>
-<p>Set in 1960s Madrid, Shadows of the Afterland challenges you to unravel the mystery of a soul bearing the memories of Carolina, a woman who perplexingly has yet to be born. Embark on the first chapter of this unforgettable saga, stepping into the shoes of Carolina as you explore the enigmatic realms of the afterlife. Wield magic, shift between dimensions, and possess the living to solve puzzles woven into a compelling narrative.</p>
-<div class="hidden_video" data-video-id="HzYrK0lBP98"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/96e5a78101f0580f2cbe01f76093867d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/HzYrK0lBP98" target="_blank">See video</a></div></div>
-<p>Developed by Aruma Studios, founded by Silvia Izquierdo and Rubén López, "We’re thrilled to finally offer players a glimpse into the mystical and eerie universe we’ve crafted in Shadows of the Afterland. This demo presents a taste of the challenges and story waiting for them," shared Rubén López, the creative mind behind the story and puzzle design. "The team has poured their hearts into creating a vibrant, detailed world, designed with exquisite pixel art, stunning animations, and a soundtrack that perfectly complements the game’s atmosphere," added Silvia Izquierdo, who oversees production.</p>
-<p>Features:</p>
-<ul>
-<li>Investigate a supernatural murder mystery that blends themes of identity, courage and destiny with the afterlife, reincarnation and the connection between past and future lives.</li>
-<li>Take command of various playable characters using unique possession mechanics.</li>
-<li>Explore the intricate stories of the eccentric spirits of the afterlife through meaningful conversations.</li>
-<li>Apply your deduction skills to unravel clever and logical puzzles that are seamlessly woven into the storyline. Use magic and possession and move tactically between realms to crack them.</li>
-<li>Immerse yourself in meticulously crafted pixel art scenes and animations.</li>
-<li>Experience an original soundtrack that enhances the haunting atmosphere of the game.</li>
-<li>The classic point-and-click experience with a modern one-click user interface.</li>
-</ul>
-<p>Check out the <a href="https://store.steampowered.com/app/2506100/Shadows_of_the_Afterland/" target="_blank">demo on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/check-out-the-demo-for-supernatural-point-and-click-adventure-shadows-of-the-afterland/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/check-out-the-demo-for-supernatural-point-and-click-adventure-shadows-of-the-afterland/</guid>
-      <pubDate>Fri, 15 Mar 2024 11:23:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/815335384id24170gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Demo</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Half-Life remake Black Mesa gets a Beta to fix up crashes and graphics bugs</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The Half-Life remake Black Mesa from Crowbar Collective is about to get a patch to fix up lots of issues, and there's a public Beta available. This will be the first update the game has seen in quite a long time, so it's nice to see they're ensuring it's going to keep working smoothly.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19572222851710500501gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19572222851710500501gol1.jpg"/></a></p>
-<p>Crowbar are calling it a rolling beta, as they will presumably keep adding to it. You can try it out on Steam via the Properties -&gt; Betas -&gt; select "public-beta" in the dropdown menu.</p>
-<p>Info about the Beta:</p>
-<blockquote>
-<p></p>
-<p>We’ve pushed a patch to public beta. In this beta we are looking to confirm that:</p>
-<ol>
-<li>Nothing that was working before has broken.</li>
-<li>Save files are intact for all players.</li>
-<li>The Interloper A controller crash is fixed.</li>
-<li>Graphics options are set, and stay set in the options menu.</li>
-</ol>
- 
-<p>We’ve also:</p>
-<ul>
-<li>Fixed Moss shaders and direction control for both vertex lit shader and skin shader (for props with/without phong).</li>
-<li>Fixed halflambert/warp/specwarp related problems across all the shaders.</li>
-<li>Unlocked the even higher graphics setting in options menu.</li>
-<li>Fixed video settings not staying set.</li>
-<li>SpotLight cookies should now work on any orientation. Cookie sprite sheet no longer needs to be square.</li>
-<li>Local lights shadow sampling optimized. They now look better &amp; should be faster on the highest settings.</li>
-<li>Deferred lighting and NewPostProcess stability and support improved.</li>
-<li>Lots of misc graphics fixes.</li>
-<li>Updated translation files with community fixes.</li>
-<li>Added missing Italian translators Riccardo Rapuano and Andrea Franceschi.</li>
-</ul>
-</blockquote>
-<p>See more on <a href="https://store.steampowered.com/app/362890/Black_Mesa/" target="_blank">the Steam page</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/half-life-remake-black-mesa-gets-a-beta-to-fix-up-crashes-and-graphics-bugs/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/half-life-remake-black-mesa-gets-a-beta-to-fix-up-crashes-and-graphics-bugs/</guid>
-      <pubDate>Fri, 15 Mar 2024 11:02:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/539705007id24169gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Beta</category>
-      
-      <category>FPS</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>itch.io Spring Sale 2024 is live with lots of indie treats</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The small and scrappy store <a href="http://itch.io" target="_blank">itch.io</a> is also now running its own Spring Sale for 2024 and there's plenty of good deals to be found, if you manage to sift through lots of the weirdness on itch.</p>
-<p>Since itch is basically open to everyone, there's a lot of really random stuff on there but there are also plenty of really great indie games to be found. Going through the list here's some suggestions of interesting Linux games to pick up.</p>
-<p><a href="https://trampolinetales.itch.io/luck-be-a-landlord" target="_blank">Luck be a Landlord</a> - 55% off<br/>
-"Luck be a Landlord is a roguelike deckbuilder about using a slot machine to earn rent money and defeat capitalism. This game does not contain any real-world currency gambling or microtransactions."</p>
-<p><a href="https://terrycavanagh.itch.io/dicey-dungeons" target="_blank">Dicey Dungeons</a> - 50% off<br/>
-"In this fast-paced deckbuilding roguelike from Terry Cavanagh (Super Hexagon, VVVVVV), Chipzel, and Marlowe Dobbe, you'll fight monsters, find better loot, and level up your heroes as you work together to take down the Goddess of Fortune, Lady Luck herself. Balance your carefully planned strategies against the unknown of a dice roll."</p>
-<p><a href="https://pixeljam.itch.io/ex-zodiac" target="_blank">Ex-Zodiac</a> - 35% off<br/>
-Ex-Zodiac is a fast-paced rail shooter with a stylized look reminiscent of early 90's 3D games. Join protagonist Kyuu as she fights to free the worlds of the Sanzaru Star System, overrun by the intergalactic terrorist organization known as Zodiac.</p>
-<p><a href="https://unknownorigingames.itch.io/oddrealm" target="_blank">Odd Realm</a> - 30% off<br/>
-"Take control of a group of settlers to build a settlement that survives the passing seasons, roaming bandits, underground horrors, and gods from legend."</p>
-<p><a href="https://ellpeck.itch.io/tiny-life" target="_blank">Tiny Life</a> - 25% off<br/>
-"A simulation game that aims to capture the essence of games like The Sims series, but in an isometric pixelart style."</p>
-<p>On top of the individual game sales there's also a couple of game bundles including:</p>
-<p><a href="https://itch.io/b/2357/itchio-spring-selects-series-a" target="_blank">itch.io Spring Selects Series A</a> ($12.50) includes:</p>
-<ul>
-<li><a href="https://octavinavarro.itch.io/the-librarian" target="_blank">The Librarian (Special Edition)</a></li>
-<li><a href="https://danijmn.itch.io/cardinalchains" target="_blank">Cardinal Chains</a></li>
-<li><a href="https://terrycavanagh.itch.io/dicey-dungeons" target="_blank">Dicey Dungeons</a></li>
-<li><a href="https://mausgames.itch.io/eigengrau" target="_blank">Eigengrau</a></li>
-<li><a href="https://manekoware.itch.io/catlateral-damage-remeowstered" target="_blank">Catlateral Damage: Remeowstered</a></li>
-<li><a href="https://johnayliff.itch.io/beyond-the-chiron-gate" target="_blank">Beyond the Chiron Gate</a></li>
-<li><a href="https://quinnk.itch.io/an-outcry" target="_blank">An Outcry</a></li>
-<li><a href="https://johanpeitz.itch.io/hellgineers" target="_blank">Hellgineers</a></li>
-<li><a href="https://torcado.itch.io/windowkill" target="_blank">windowkill</a></li>
-<li><a href="https://bredfrown.itch.io/crystal-story-dawn-of-dusk" target="_blank">Crystal Story: Dawn of Dusk</a></li>
-</ul>
-<p>And also <a href="https://itch.io/b/2358/itchio-spring-selects-series-b" target="_blank">itch.io Spring Selects Series B</a> ($22) includes:</p>
-<ul>
-<li><a href="https://adriaan.itch.io/hidden-folks" target="_blank">Hidden Folks</a></li>
-<li><a href="https://thirdspiritgames.itch.io/ariettaofspirits" target="_blank">Arietta of Spirits</a></li>
-<li><a href="https://draknek.itch.io/sokobond" target="_blank">Sokobond</a></li>
-<li><a href="https://eniko.itch.io/midboss" target="_blank">MidBoss</a></li>
-<li><a href="https://ctmatthews.itch.io/duckys-delivery-service" target="_blank">Ducky's Delivery Service</a></li>
-<li><a href="https://spacesofplay.itch.io/future-unfolding" target="_blank">Future Unfolding</a></li>
-</ul>
-<p>The <a href="https://itch.io/sales" target="_blank">itch sale</a> ends in 6 days time. </p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/itchio-spring-sale-2024-is-live-with-lots-of-indie-treats/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/itchio-spring-sale-2024-is-live-with-lots-of-indie-treats/</guid>
-      <pubDate>Fri, 15 Mar 2024 10:54:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/220169482id24168gol.png" type="image/jpeg"/>
-      
-      <category>DRM-Free</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Itch.io</category>
-      
-      <category>On Sale</category>
-      
-    </item>
-    
-    <item>
-      <title>Bazzite Linux v2.4.0 fixes ASUS Ally and Lenovo Legion Go suspend issues</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The increasingly interesting Bazzite Linux has a new release out, and it's a good one for handheld gaming fans so here's what's new in v2.4.0. Bazzite is an alternative operating system you can use supported across multiple handhelds like the Steam Deck, GPD devices, AYN devices, Lenovo Legion Go, ROG Ally and desktops too.</p>
-<p>With the 2.4.0 release you'll find that it should work better on the ASUS Ally and Lenovo Legion Go, since they have a fix for recent suspend issues. On top of that the NVIDIA driver support got a nice version bump up to the 550 series bringing lots of fixes and improvements there too.</p>
-<p>There's also the addition of <a href="https://gitlab.com/coolercontrol/coolercontrol" target="_blank">CoolerControl</a>, a GUI for viewing all your system's sensors and for creating custom fan and<br/>
-pump profiles based on any available temperature sensor.</p>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9865492101710498814gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9865492101710498814gol1.jpeg"/></a>Pictured - Steam Big Picture Mode</em></p>
-<p>Full <a href="https://github.com/ublue-os/bazzite/releases/tag/v2.4.0" target="_blank">changelog</a> below:</p>
-<blockquote>
-<h3>Features</h3>
-<ul>
-<li>Add ujust command to install CoolerControl, an excellent GUI for controlling fan speeds on a wide array of hardware (<a href="https://github.com/ublue-os/bazzite/commit/30eac4aae913e8b3eacdac9571efa102ea9aeb8f" target="_blank">30eac4a</a>)</li>
-<li><strong>amd:</strong> Add LACT to topgrade (<a href="https://github.com/ublue-os/bazzite/commit/cf5e0f0f3d06bba93adc6653c3f4493a1e250d78" target="_blank">cf5e0f0</a>)</li>
-<li><strong>deck:</strong> Add HHD-UI (<a href="https://github.com/ublue-os/bazzite/commit/a8f5febcb282d2290b444ce4b014a7b8cd82957b" target="_blank">a8f5feb</a>)</li>
-<li><strong>just:</strong> add option to add user to libvirt group (<a href="https://github.com/ublue-os/bazzite/issues/865" target="_blank">#865</a>) (<a href="https://github.com/ublue-os/bazzite/commit/36388bc8ada8ae6b7b9f0c71f2388d4f2bf44a2e" target="_blank">36388bc</a>)</li>
-<li><strong>just:</strong> add option to disable vfio (<a href="https://github.com/ublue-os/bazzite/issues/830" target="_blank">#830</a>) (<a href="https://github.com/ublue-os/bazzite/commit/c86a56aee547b43f3990e6b010befa41299d85b6" target="_blank">c86a56a</a>)</li>
-<li><strong>nvidia:</strong> Update to Nvidia 550 drivers (<a href="https://github.com/ublue-os/bazzite/commit/95123e0d5d855e3c25790be440192343b4cb1e90" target="_blank">95123e0</a>)</li>
-<li>Update isogenerator to latest version (<a href="https://github.com/ublue-os/bazzite/issues/822" target="_blank">#822</a>) (<a href="https://github.com/ublue-os/bazzite/commit/fe48ae09067b44493e643a7ff905c07c4cab7098" target="_blank">fe48ae0</a>)</li>
-</ul>
-<h3>Bug Fixes</h3>
-<ul>
-<li>Fix for recent suspend issues on ASUS Ally and Lenovo Legion Go</li>
-<li>Add patch to avoid conflicts with Fedora's trim service (<a href="https://github.com/ublue-os/bazzite/commit/ed02a6526c2a49baa6f142702d44d451dca96624" target="_blank">ed02a65</a>)</li>
-<li>Add version gating for the fsync kernel (<a href="https://github.com/ublue-os/bazzite/commit/07e0e33efa7484be0d4aea9d6f5241861671812a" target="_blank">07e0e33</a>), closes <a href="https://github.com/ublue-os/bazzite/issues/873" target="_blank">#873</a></li>
-<li><strong>ci:</strong> issues with enrollment password (<a href="https://github.com/ublue-os/bazzite/issues/823" target="_blank">#823</a>) (<a href="https://github.com/ublue-os/bazzite/commit/1e26697007dfd22903d627bec1a3006c4ff26400" target="_blank">1e26697</a>)</li>
-<li>Correct issue with user setup script execution check (<a href="https://github.com/ublue-os/bazzite/commit/93bc12f3044b0e559f7edc3188d375521f238db8" target="_blank">93bc12f</a>)</li>
-<li>correct orientation for GPD Win Max 2 (2022) (<a href="https://github.com/ublue-os/bazzite/issues/819" target="_blank">#819</a>) (<a href="https://github.com/ublue-os/bazzite/commit/0f2fb7daee3b6cfc0b342c608a8d4e920a278049" target="_blank">0f2fb7d</a>)</li>
-<li>custom initramfs args actually get applied (<a href="https://github.com/ublue-os/bazzite/commit/2bef48a149944a62e0f854f35b1dfc58b3032758" target="_blank">2bef48a</a>)</li>
-<li><strong>deck:</strong> Correct the default display scale on KDE images (<a href="https://github.com/ublue-os/bazzite/commit/c86fc7dbd7274c9277b4675390469a2e75f2a049" target="_blank">c86fc7d</a>)</li>
-<li><strong>deck:</strong> Ensure the detected branch name is always lowercase (<a href="https://github.com/ublue-os/bazzite/commit/26b1d533b93e09bdbd052cde6a6e9d1d00b56001" target="_blank">26b1d53</a>)</li>
-<li><strong>deck:</strong> Replace die with finish 0, may correct update errors some users have been experiencing (<a href="https://github.com/ublue-os/bazzite/commit/e980853e3cce651e3476f5046784163ebd3d546e" target="_blank">e980853</a>)</li>
-<li><strong>desktop:</strong> Correct missing steamos-add-to-steam executable in KDE (<a href="https://github.com/ublue-os/bazzite/commit/a8e77d1731021fff27bf6b90a0a500783f880677" target="_blank">a8e77d1</a>)</li>
-<li>distrobox-export (<a href="https://github.com/ublue-os/bazzite/issues/803" target="_blank">#803</a>) (<a href="https://github.com/ublue-os/bazzite/commit/55cf1cb3b5df85b4f1845ed7293f2da0e5842811" target="_blank">55cf1cb</a>)</li>
-<li>dont remove waydroid-choose-gpu (<a href="https://github.com/ublue-os/bazzite/issues/856" target="_blank">#856</a>) (<a href="https://github.com/ublue-os/bazzite/commit/d58a511a0e023dcc5ab81b7bb131357f858e277b" target="_blank">d58a511</a>)</li>
-<li><strong>just:</strong> Add missing description (<a href="https://github.com/ublue-os/bazzite/issues/834" target="_blank">#834</a>) (<a href="https://github.com/ublue-os/bazzite/commit/080579142775482ca5e3930a4b8dfd7985795717" target="_blank">0805791</a>)</li>
-<li><strong>just:</strong> Create repo file with sudo (<a href="https://github.com/ublue-os/bazzite/commit/ba7261081a6e333e2c2cc293ad4b58b460d9307b" target="_blank">ba72610</a>)</li>
-<li>make sure custom initramfs args are set (<a href="https://github.com/ublue-os/bazzite/commit/6bd4949a87287327e443074e973c64e91bab2724" target="_blank">6bd4949</a>)</li>
-<li><strong>nvidia:</strong> Always reboot at the end of bazzite-hardware-setup, potentially fixes frozen screen that makes kargs appear to take an infinite amount of time. NVK soon? I want off Mr. Nvidia's wild ride. (<a href="https://github.com/ublue-os/bazzite/commit/c267cbe82e7dbae8844b1fccee01d702028cb0da" target="_blank">c267cbe</a>)</li>
-</ul>
-</blockquote>
-<p>See more on the <a href="https://bazzite.gg" target="_blank">Bazzite website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/bazzite-linux-v240-fixes-asus-ally-and-lenovo-legion-go-suspend-issues/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/bazzite-linux-v240-fixes-asus-ally-and-lenovo-legion-go-suspend-issues/</guid>
-      <pubDate>Fri, 15 Mar 2024 10:34:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1059863159id24167gol.jpg" type="image/jpeg"/>
-      
-      <category>Distro News</category>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Spring Sale 2024 live, Valve list the Top 100 games on Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has launched the Steam Spring Sale 2024 and with it, you know the drill, there's masses of discounts across all sorts of games. There's also a fresh list of the top 100 most played games on Steam Deck.</p>
-<p>Each day you can get a new sticker and there's new stuff in the <a href="https://store.steampowered.com/points/shop" target="_blank">Points Shop</a> too.</p>
-<div class="hidden_video" data-video-id="sqXjSeEL5I0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7746441c7603349b6a78e03256fd1223.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/sqXjSeEL5I0" target="_blank">See video</a></div></div>
-<p>As for the Top 100 most played Steam Deck games, in order of highest daily active player count between March of 2023 and March of 2024 are (along with any discount):</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3" target="_blank">BALDUR'S GATE 3</a> -10%</li>
-<li><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors" target="_blank">VAMPIRE SURVIVORS</a> -20%</li>
-<li><a href="https://store.steampowered.com/app/1868140/DAVE_THE_DIVER" target="_blank">DAVE THE DIVER</a> -25%</li>
-<li><a href="https://store.steampowered.com/app/990080/Hogwarts_Legacy" target="_blank">HOGWARTS LEGACY</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING" target="_blank">ELDEN RING</a></li>
-<li><a href="https://store.steampowered.com/app/1623730/Palworld" target="_blank">PALWORLD</a> -10%</li>
-<li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077" target="_blank">CYBERPUNK 2077</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V" target="_blank">GRAND THEFT AUTO V</a> -63%</li>
-<li><a href="https://store.steampowered.com/app/413150/Stardew_Valley" target="_blank">STARDEW VALLEY</a> -20%</li>
-<li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2" target="_blank">RED DEAD REDEMPTION 2</a> -67%</li>
-<li><a href="https://store.steampowered.com/app/1145360/Hades" target="_blank">HADES</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/1942280/Brotato" target="_blank">BROTATO</a> -25%</li>
-<li><a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition" target="_blank">THE ELDER SCROLLS V: SKYRIM SPECIAL EDITION</a> -75%</li>
-<li><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt" target="_blank">THE WITCHER® 3: WILD HUNT</a> -75%</li>
-<li><a href="https://store.steampowered.com/app/646570/Slay_the_Spire" target="_blank">SLAY THE SPIRE</a> -66%</li>
-<li><a href="https://store.steampowered.com/app/1313140/Cult_of_the_Lamb" target="_blank">CULT OF THE LAMB</a> -40%</li>
-<li><a href="https://store.steampowered.com/app/588650/Dead_Cells" target="_blank">DEAD CELLS</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth" target="_blank">THE BINDING OF ISAAC: REBIRTH</a> -33%</li>
-<li><a href="https://store.steampowered.com/app/582010/Monster_Hunter_World" target="_blank">MONSTER HUNTER: WORLD</a> -67%</li>
-<li><a href="https://store.steampowered.com/app/1687950/Persona_5_Royal" target="_blank">PERSONA 5 ROYAL</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/1817070/Marvels_SpiderMan_Remastered" target="_blank">MARVEL’S SPIDER-MAN REMASTERED</a> -40%</li>
-<li><a href="https://store.steampowered.com/app/1562430/DREDGE" target="_blank">DREDGE</a> -30%</li>
-<li><a href="https://store.steampowered.com/app/377160/Fallout_4" target="_blank">FALLOUT 4</a> -67%</li>
-<li><a href="https://store.steampowered.com/app/275850/No_Mans_Sky" target="_blank">NO MAN'S SKY</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/1446780/MONSTER_HUNTER_RISE" target="_blank">MONSTER HUNTER RISE</a> -60%</li>
-<li><a href="https://store.steampowered.com/app/1551360/Forza_Horizon_5" target="_blank">FORZA HORIZON 5</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/2050650/Resident_Evil_4" target="_blank">RESIDENT EVIL 4</a> -25%</li>
-<li><a href="https://store.steampowered.com/app/2379780/Balatro" target="_blank">BALATRO</a></li>
-<li><a href="https://store.steampowered.com/app/2344520/Diablo_IV" target="_blank">DIABLO® IV</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/367520/Hollow_Knight" target="_blank">HOLLOW KNIGHT</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/1151640/Horizon_Zero_Dawn_Complete_Edition" target="_blank">HORIZON ZERO DAWN™ COMPLETE EDITION</a> -75%</li>
-<li><a href="https://store.steampowered.com/app/2218750/Halls_of_Torment" target="_blank">HALLS OF TORMENT</a> -20%</li>
-<li><a href="https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection" target="_blank">HALO: THE MASTER CHIEF COLLECTION</a> -75%</li>
-<li><a href="https://store.steampowered.com/app/553850/HELLDIVERS_2" target="_blank">HELLDIVERS™ 2</a></li>
-<li><a href="https://store.steampowered.com/app/12210/Grand_Theft_Auto_IV_The_Complete_Edition" target="_blank">GRAND THEFT AUTO IV: THE COMPLETE EDITION</a> -70%</li>
-<li><a href="https://store.steampowered.com/app/1593500/God_of_War" target="_blank">GOD OF WAR</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI" target="_blank">SID MEIER’S CIVILIZATION® VI</a> -90%</li>
-<li><a href="https://store.steampowered.com/app/22380/Fallout_New_Vegas" target="_blank">FALLOUT: NEW VEGAS</a> -75%</li>
-<li><a href="https://store.steampowered.com/app/2321470/Deep_Rock_Galactic_Survivor" target="_blank">DEEP ROCK GALACTIC: SURVIVOR</a></li>
-<li><a href="https://store.steampowered.com/app/1172470/Apex_Legends" target="_blank">APEX LEGENDS™</a> (Free to play)</li>
-<li><a href="https://store.steampowered.com/app/1364780/Street_Fighter_6" target="_blank">STREET FIGHTER™ 6</a> -34%</li>
-<li><a href="https://store.steampowered.com/app/1971650/OCTOPATH_TRAVELER_II" target="_blank">OCTOPATH TRAVELER II</a> -42%</li>
-<li><a href="https://store.steampowered.com/app/105600/Terraria" target="_blank">TERRARIA</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/892970/Valheim" target="_blank">VALHEIM</a> -40%</li>
-<li><a href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2" target="_blank">EURO TRUCK SIMULATOR 2</a> -75%</li>
-<li><a href="https://store.steampowered.com/app/1716740/Starfield" target="_blank">STARFIELD</a> -33%</li>
-<li><a href="https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice__GOTY_Edition" target="_blank">SEKIRO™: SHADOWS DIE TWICE - GOTY EDITION</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/230410/Warframe" target="_blank">WARFRAME</a> (Free to play)</li>
-<li><a href="https://store.steampowered.com/app/108600/Project_Zomboid" target="_blank">PROJECT ZOMBOID</a> -33%</li>
-<li><a href="https://store.steampowered.com/app/2161700/Persona_3_Reload" target="_blank">PERSONA 3 RELOAD</a></li>
-<li><a href="https://store.steampowered.com/app/1172380/STAR_WARS_Jedi_Fallen_Order" target="_blank">STAR WARS JEDI: FALLEN ORDER™</a> -90%</li>
-<li><a href="https://store.steampowered.com/app/1244090/Sea_of_Stars" target="_blank">SEA OF STARS</a> -22%</li>
-<li><a href="https://store.steampowered.com/app/1966720/Lethal_Company" target="_blank">LETHAL COMPANY</a> -20%</li>
-<li><a href="https://store.steampowered.com/app/374320/DARK_SOULS_III" target="_blank">DARK SOULS™ III</a></li>
-<li><a href="https://store.steampowered.com/app/1919590/NBA_2K23" target="_blank">NBA 2K23</a></li>
-<li><a href="https://store.steampowered.com/app/368260/Marvels_Midnight_Suns" target="_blank">MARVEL'S MIDNIGHT SUNS</a> -75%</li>
-<li><a href="https://store.steampowered.com/app/620/Portal_2" target="_blank">PORTAL 2</a> -90%</li>
-<li><a href="https://store.steampowered.com/app/1462040/FINAL_FANTASY_VII_REMAKE_INTERGRADE" target="_blank">FINAL FANTASY VII REMAKE INTERGRADE</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition" target="_blank">DIVINITY: ORIGINAL SIN 2 - DEFINITIVE EDITION</a> -70%</li>
-<li><a href="https://store.steampowered.com/app/730/CounterStrike_2" target="_blank">COUNTER-STRIKE 2</a> (Free to play)</li>
-<li><a href="https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut" target="_blank">DISCO ELYSIUM - THE FINAL CUT</a> -75%</li>
-<li><a href="https://store.steampowered.com/app/1259420/Days_Gone" target="_blank">DAYS GONE</a> -75%</li>
-<li><a href="https://store.steampowered.com/app/1817190/Marvels_SpiderMan_Miles_Morales" target="_blank">MARVEL’S SPIDER-MAN: MILES MORALES</a> -40%</li>
-<li><a href="https://store.steampowered.com/app/1235140/Yakuza_Like_a_Dragon" target="_blank">YAKUZA: LIKE A DRAGON</a> -80%</li>
-<li><a href="https://store.steampowered.com/app/1332010/Stray" target="_blank">STRAY</a> -34%</li>
-<li><a href="https://store.steampowered.com/app/1158160/Coral_Island" target="_blank">CORAL ISLAND</a> -20%</li>
-<li><a href="https://store.steampowered.com/app/1401590/Disney_Dreamlight_Valley" target="_blank">DISNEY DREAMLIGHT VALLEY</a> -25%</li>
-<li><a href="https://store.steampowered.com/app/39210/FINAL_FANTASY_XIV_Online" target="_blank">FINAL FANTASY XIV ONLINE</a></li>
-<li><a href="https://store.steampowered.com/app/1888160/ARMORED_CORE_VI_FIRES_OF_RUBICON" target="_blank">ARMORED CORE™ VI FIRES OF RUBICON™</a></li>
-<li><a href="https://store.steampowered.com/app/883710/Resident_Evil_2" target="_blank">RESIDENT EVIL 2</a> -75%</li>
-<li><a href="https://store.steampowered.com/app/264710/Subnautica" target="_blank">SUBNAUTICA</a> -67%</li>
-<li><a href="https://store.steampowered.com/app/367500/Dragons_Dogma_Dark_Arisen" target="_blank">DRAGON'S DOGMA: DARK ARISEN</a> -84%</li>
-<li><a href="https://store.steampowered.com/app/238960/Path_of_Exile" target="_blank">PATH OF EXILE</a> (Free to play)</li>
-<li><a href="https://store.steampowered.com/app/236390/War_Thunder" target="_blank">WAR THUNDER</a> (Free to play)</li>
-<li><a href="https://store.steampowered.com/app/1293830/Forza_Horizon_4" target="_blank">FORZA HORIZON 4</a> -67%</li>
-<li><a href="https://store.steampowered.com/app/1328670/Mass_Effect_Legendary_Edition" target="_blank">MASS EFFECT™ LEGENDARY EDITION</a> -85%</li>
-<li><a href="https://store.steampowered.com/app/632360/Risk_of_Rain_2" target="_blank">RISK OF RAIN 2</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/638970/Yakuza_0" target="_blank">YAKUZA 0</a> -70%</li>
-<li><a href="https://store.steampowered.com/app/1222670/The_Sims_4" target="_blank">THE SIMS™ 4</a> (Free to play, various bundles discounted)</li>
-<li><a href="https://store.steampowered.com/app/208650/Batman_Arkham_Knight" target="_blank">BATMAN™: ARKHAM KNIGHT</a> -80%</li>
-<li><a href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED" target="_blank">DARK SOULS™: REMASTERED</a></li>
-<li><a href="https://store.steampowered.com/app/1113000/Persona_4_Golden" target="_blank">PERSONA 4 GOLDEN</a> -40%</li>
-<li><a href="https://store.steampowered.com/app/2334730/Death_Must_Die" target="_blank">DEATH MUST DIE</a> -10%</li>
-<li><a href="https://store.steampowered.com/app/294100/RimWorld" target="_blank">RIMWORLD</a> -20%</li>
-<li><a href="https://store.steampowered.com/app/1290000/PowerWash_Simulator" target="_blank">POWERWASH SIMULATOR</a> -20%</li>
-<li><a href="https://store.steampowered.com/app/550/Left_4_Dead_2" target="_blank">LEFT 4 DEAD 2</a> -90%</li>
-<li><a href="https://store.steampowered.com/app/1850570/DEATH_STRANDING_DIRECTORS_CUT" target="_blank">DEATH STRANDING DIRECTOR'S CUT</a> - 50% off</li>
-<li><a href="https://store.steampowered.com/app/397540/Borderlands_3" target="_blank">BORDERLANDS 3</a> -85%</li>
-<li><a href="https://store.steampowered.com/app/920210/LEGO_Star_Wars_The_Skywalker_Saga" target="_blank">LEGO® STAR WARS™: THE SKYWALKER SAGA</a> -70%</li>
-<li><a href="https://store.steampowered.com/app/381210/Dead_by_Daylight" target="_blank">DEAD BY DAYLIGHT</a> -60%</li>
-<li><a href="https://store.steampowered.com/app/548430/Deep_Rock_Galactic" target="_blank">DEEP ROCK GALACTIC</a> -67%</li>
-<li><a href="https://store.steampowered.com/app/899770/Last_Epoch" target="_blank">LAST EPOCH</a></li>
-<li><a href="https://store.steampowered.com/app/251570/7_Days_to_Die" target="_blank">7 DAYS TO DIE</a> -76%</li>
-<li><a href="https://store.steampowered.com/app/1659420/UNCHARTED_Legacy_of_Thieves_Collection" target="_blank">UNCHARTED™: LEGACY OF THIEVES COLLECTION</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/2072450/Like_a_Dragon_Infinite_Wealth" target="_blank">LIKE A DRAGON: INFINITE WEALTH</a> -20%</li>
-<li><a href="https://store.steampowered.com/app/356190/Middleearth_Shadow_of_War" target="_blank">MIDDLE-EARTH™: SHADOW OF WAR™</a> -85%</li>
-<li><a href="https://store.steampowered.com/app/881020/Granblue_Fantasy_Relink" target="_blank">GRANBLUE FANTASY: RELINK</a></li>
-<li><a href="https://store.steampowered.com/app/613100/House_Flipper" target="_blank">HOUSE FLIPPER</a> -50%</li>
-<li><a href="https://store.steampowered.com/app/287700/METAL_GEAR_SOLID_V_THE_PHANTOM_PAIN" target="_blank">METAL GEAR SOLID V: THE PHANTOM PAIN</a>-40%</li>
-<li><a href="https://store.steampowered.com/app/252950/Rocket_League" target="_blank">ROCKET LEAGUE®</a> (No longer on Steam, Epic Exclusive)</li>
-</ul>
-<p>It really does surprise me on the types of games that are popular on Steam Deck, just continuing to show what a ridiculously versatile device it is. </p>
-<p>As always, I am complete torn and overwhelmed on what to buy. I have hundreds of games still to complete, a massive pile of shame collecting dust and an unholy attachment to Helldivers 2 right now. So do I really need more games? Yes, of course I do.</p>
-<p>If you're a bit stuck an easy recommendation is <a href="https://store.steampowered.com/app/960090/Bloons_TD_6/" target="_blank">Bloons TD 6</a>, it's probably the most fun I've ever had with a tower defense game. It's flawless on Linux with Proton and at 50% off it's an easy purchase if you like TD games. <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" target="_blank">Baldur's Gate 3</a> also only has a tiny discount at 10% off but gosh — best RPG I've played in years and it's not likely to be cheaper any time soon.</p>
-<p>Check out everything on <a href="https://store.steampowered.com" target="_blank">the Steam store</a>. What will you be picking up?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/steam-spring-sale-2024-live-valve-list-the-top-100-games-on-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/steam-spring-sale-2024-live-valve-list-the-top-100-games-on-steam-deck/</guid>
-      <pubDate>Thu, 14 Mar 2024 18:24:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1577200213id24166gol.jpg" type="image/jpeg"/>
-      
-      <category>Event</category>
-      
-      <category>Misc</category>
-      
-      <category>On Sale</category>
-      
-      <category>Round-up</category>
-      
-    </item>
-    
-    <item>
-      <title>Sea of Thieves gets Easy Anti-Cheat - thankfully enabled for Steam Deck / Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Sea of Thieves just got a big upgrade and with it Easy Anti-Cheat (EAC) is now online. Thankfully the developers have ensured it's enabled for Steam Deck / Linux players using Proton.</p>
-<p>Anti-cheat <em>can</em> be a big issue for Steam Deck / Linux gamers, often blocking games from working, but EAC <em>does</em> support Linux developers just need to enable that support. Speaking in a previous <a href="https://www.youtube.com/watch?v=fjNoopIn-IY&amp;t=180s" target="_blank">developer video</a> announcing the change, they clearly said they would ensure it was enabled for <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a>. In the release <a href="https://store.steampowered.com/news/app/1172620/view/6098509125440254770" target="_blank">announcement</a> they did say that EAC would be "updated outside of Sea of Thieves’ regular update schedule to keep in sync with cheat developers", so hopefully they keep ensuring it works in Proton.</p>
-<div class="hidden_video" data-video-id="sfFgOw4cva4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8b1a63d73cad9910d5c771b680cbebc8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/sfFgOw4cva4" target="_blank">See video</a></div></div>
-<p>There's a lot of other improvements too including:</p>
-<ul>
-<li>Virtual Keyboard Support - Players summoning the Virtual Keyboard inside the game will now find that a range of new languages are supported: Simplified Chinese, Traditional Chinese, Thai, Japanese, Korean and Russian.</li>
-<li>Message of the Day - Players will now experience a Message of the Day when arriving in the front end menu, highlighting current Season features, upcoming content and other exciting news within the world of Sea of Thieves.</li>
-<li>Adventures Tab - The Adventures tab has been hidden from the Quick Menu for a more streamlined navigation experience.</li>
-<li>Report a Player - The in-game Report a Player tool has now been extended, providing players with easy access to a web-based route for making a more detailed report through the Sea of Thieves Support site.</li>
-</ul>
-<p>Plus they also added a Pirate Emporium for various new cosmetic items, lots of bug fixes, UI improvements, performance and stability improvements and so on.</p>
-<p>You can buy <a href="https://store.steampowered.com/app/1172620/Sea_of_Thieves_2024_Edition/" target="_blank">Sea of Thieves on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/sea-of-thieves-gets-easy-anti-cheat-thankfully-enabled-for-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/sea-of-thieves-gets-easy-anti-cheat-thankfully-enabled-for-steam-deck-linux/</guid>
-      <pubDate>Thu, 14 Mar 2024 16:39:14 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1694205695id24165gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Anti-Cheat</category>
-      
-      <category>Exploration</category>
-      
-    </item>
-    
-    <item>
-      <title>The Machine Age expansion announced for Stellaris</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Paradox Interactive today announced a brand new expansion to Stellaris with The Machine Age, that will have your society face new ethical and social dilemmas along with new threats.</p>
-<p>"A new age of galactic adventure begins. As your scientists discover ever more advanced means to commune with the machine, your society will face new ethical and social dilemmas. Biological species grapple with the effects of rapid augmentation, while the very nature of identity is thrown into question by the rise of synthetic consciousness. Meanwhile, in an otherwise unremarkable corner of the galaxy, a robotic empire has arisen with individualistic personalities. A democratically elected government now presides over the fate of these singular Machines."</p>
-<p>Check out the DLC trailer:</p>
-<div class="hidden_video" data-video-id="MSunS8wpU54"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5dde2fbd2c002658d7bc90ca9d8cd4ea.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/MSunS8wpU54" target="_blank">See video</a></div></div>
-<p>The main new features:</p>
-<ul>
-<li>NEW ENDGAME CRISIS AND CRISIS PATH - Players will face a new synthetic threat in a brand-new Endgame Crisis, or will themselves become the threat for the balance of the universe in a new Crisis Path.</li>
-<li>INDIVIDUALISTIC MACHINES - Your machine empires are no longer limited to gestalt consciousness and can have individual personalities and more diverse stories and origins. Further customize your empire with 3 new Machine Ascension Paths.</li>
-<li>NEW SITUATIONS AND ADVANCED AUTHORITY SWAP - As you delve ever closer to the mind of the machine, you will have to face new challenges for your society. Every decision matters and the only certainty is that your empire will not be the same after its Ascension.</li>
-<li>3 NEW ORIGINS
-<ul>
-<li>Cybernetic Creed: Your empire pursues a divine calling: the holy fusion of the body and cybernetics. Augmentation is worship.</li>
-<li>Synthetic Fertility: Once a thriving society, a novel genetic disease leaves your empire unable to reproduce biologically. Digital salvation seems the only option to avoid extinction.</li>
-<li>Arc Welders: Hailing from a world starved for space, a robotic society turns to the stars for resources. </li>
-</ul>
-</li>
-</ul>
-<p>Paradox said it will also have new reactive portraits, 6 new Civics, 2 new mid-game structures (the molten Arc Furnace and powerful Dyson Swarm), new Population Traits, and 7 brand new music tracks.</p>
-<p>It will launch along side the free Stellaris 3.12 'Andromeda' update, no exact release date announced other than sometime during "second quarter of 2024" (April - June).</p>
-<p>Stellaris is available from <a href="https://af.gog.com/game/stellaris?as=1636858786" target="_blank">GOG</a>, <a href="https://www.humblebundle.com/store/stellaris?partner=gamingonlinux" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/281990/Stellaris/?curator_clanid=4218320" target="_blank">Steam</a>. It has Native Linux support.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/the-machine-age-expansion-announced-for-stellaris/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/the-machine-age-expansion-announced-for-stellaris/</guid>
-      <pubDate>Thu, 14 Mar 2024 16:25:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1093929539id24164gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>DLC</category>
-      
-      <category>GOG</category>
-      
-      <category>Humble Store</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve COO on Epic&#39;s Tim Sweeney &#34;you mad bro?&#34; when launching the Epic Store</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>In the ongoing saga of the Wolfire versus Valve lawsuit, which is continuing, we've been able to see a funny little look behind the curtain and Tim Sweeney was not happy with Valve.</p>
-<p>Thanks to the work from Simon Carless of <a href="https://newsletter.gamediscover.co/p/revealed-tim-sweeneys-epic-rant-to" target="_blank">GameDiscoverCo</a> which has a great round-up of what's going on (definitely worth a read for some backstory here), we've managed to see some emails between Epic's Tim Sweeney to Valve's Gabe Newell and Scott Lynch.</p>
-<p>Back in 2017 an email from Newell to Sweeney <a href="https://drive.google.com/file/d/19_NC1ZskeN47LHaYJziotbA0sqLdjlgf/view" target="_blank">asked</a> "Anything we doing to annoy you? We’re guessing Sean Jenkins public dumbness might be part of it.", which is in reference to a leaked <a href="https://twitter.com/Steam_Spy/status/898208219675447296" target="_blank">post</a> where a Valve's Jenkins talked about restricting Steam keys. Sweeney replied to mention they've "never heard of Sean Jenkins" and then goes off talking about the 30% platform fee Valve charges and how it's "no longer justifiable" but there was a "good case for them in the early days" but due to scale costs "have been driven down".</p>
-<p>Sweeney's point here is that Valve make a <em>lot</em> of money from that 30% cut and goes on to say "If you subtract out the top 25 games on Steam, I bet Valve made more profit from most of the next 1000 than the developer themselves made" and complains that when you add together Valve's cut, marketing and so on that the cut for developers is small.</p>
-<p>After that we don't see anything until <a href="https://drive.google.com/file/d/1a-HLEOqbg7QQhUemQv0YyunxI7lN03w1/view" target="_blank">November 2018</a> in the documents where Sweeney emailed Newell again and also Valve's Erik Johnson, notifying Valve about the plans to announce the Epic Games Store with their lower cut of sales from developers. Sweeney also mentions here about their issues with Apple, and how Sweeney wants Apple to open up, and hopes that Valve would make a "timely move" to change their rates taken from developers. Sweeney also notes the opposite, hoping Valve don't have any "unannounced revenue-sharing changes that favored big publishers over indies" as it would basically tell the likes of Apple that they "can keep their closed platforms and just pay off big publishers to stay silent".</p>
-<p>It was <a href="https://www.gamingonlinux.com/2018/12/valve-have-adjusted-their-revenue-share-for-bigger-titles-on-steam/" target="_blank">only a few days later</a> (quite cheekily then), that Valve suddenly publicly announced their plan to reduce their take for the top-selling Steam games. Naturally, this annoyed Sweeney rather a lot, as the next email confirmed the Epic Games Store announcement was going live the next day and Sweeney says to Valve "Right now, you assholes are telling the world that the strong and powerful get special terms, while 30% is for the little people. We're all in for a prolonged battle if Apple tries to keep their monopoly and 30% by cutting backroom deals with big publishers to keep them quiet. Why not give ALL developers a better deal? What better way is there to convince Apple quickly that their model is now totally untenable?".</p>
-<p>The only reply to this we can see was from Valve COO (Chief Operating Officer) Scott Lynch sent internally at Valve to Johnson and Newell that simply says "You mad bro?".</p>
-<p>You can only imagine how truly mad Sweeney would be if they saw that with Valve just basically laughing it off completely. Well, Sweeney can see it now.</p>
-<p>As we know from Valve when they released <a href="https://www.gamingonlinux.com/2024/02/steam-users-redeemed-over-80-million-in-physical-wallet-cards-in-december-2023/" target="_blank">their 2023 yearly report</a>, they're continuing to print money and repeatedly <a href="https://www.gamingonlinux.com/2024/03/steam-broke-another-record-with-over-35-million-people-online/" target="_blank">break user records</a> and so the Epic Games Store hasn't seemingly made much of a dent at all. While Epic Games continue to try to pull developers over to their store with various <a href="https://www.gamingonlinux.com/2023/10/epic-games-launch-first-run-and-now-on-epic-with-100-revenue-for-devs/" target="_blank">exclusivity deals</a> and constant weekly free games.</p>
-<p style="text-align:right"><em>Update note: Clarified the "You mad bro?" email was internal at Valve, not to Sweeney directly.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/valve-coo-on-epics-tim-sweeney-you-mad-bro-when-launching-the-epic-store/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/valve-coo-on-epics-tim-sweeney-you-mad-bro-when-launching-the-epic-store/</guid>
-      <pubDate>Thu, 14 Mar 2024 15:36:08 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/epicgames.jpg" type="image/jpeg"/>
-      
-      <category>Epic Games</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
       
     </item>
     
