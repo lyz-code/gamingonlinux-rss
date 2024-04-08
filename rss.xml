@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-04-07 07:22:17.678928</pubDate>
+    <pubDate>2024-04-08 07:25:03.409787</pubDate>
 
     
     <image>
@@ -18,6 +18,69 @@
     </image>
 
     
+    
+    <item>
+      <title>Arch Linux changes vm.max_map_count to match Fedora, Ubuntu for better gaming </title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Nice to see more Linux distributions make changes to ensure the gaming experience is good. Arch Linux is now following Fedora and <a href="https://www.gamingonlinux.com/2024/03/ubuntu-2404-increases-vm-max-map-count-for-smoother-linux-gaming/" target="_blank">Ubuntu</a> on upping the vm.max_map_count value.</p>
+<p>The issue is the default from the upstreaming Linux kernel is just too low for some games like The Finals, Hogwarts Legacy, DayZ, Counter-Strike 2 and various others causing them to crash. Not a good experience for end-users.</p>
+<p>Announced in an official <a href="https://archlinux.org/news/increasing-the-default-vmmax_map_count-value/" target="_blank">news post</a>:</p>
+<blockquote>
+<p>The <a href="https://docs.kernel.org/admin-guide/sysctl/vm.html#max-map-count" target="_blank">vm.max_map_count</a> paramater will be increased from the default <code class="inline-code">65530</code> value to <code class="inline-code">1048576</code>.</p>
+<p>This change should help address performance, crash or start-up issues for a number of memory intensive applications, particularly for (but not limited to) <a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2057792/comments/5" target="_blank">some Windows games</a> played through Wine/Steam Proton. Overall, end users should have a smoother experience out of the box with no expressed concerns about potential downsides in <a href="https://lists.archlinux.org/archives/list/arch-dev-public@lists.archlinux.org/thread/5GU7ZUFI25T2IRXIQ62YYERQKIPE3U6E/" target="_blank">the related proposal on arch-dev-public mailing list</a>.</p>
+<p>This <code class="inline-code">vm.max_map_count</code> increase is introduced in the <code class="inline-code">2024.04.07-1</code> release of the <a href="https://archlinux.org/packages/core/any/filesystem/" target="_blank">filesystem package</a> and will be effective right after the upgrade.</p>
+<p>Before upgrading, in case you are already setting your own value for that parameter in a <code class="inline-code">sysctl.d</code> configuration file, either remove it (to switch to the new default value) or make sure your configuration file will be read <a href="https://man.archlinux.org/man/sysctl.8#SYSTEM_FILE_PRECEDENCE" target="_blank">with a higher priority</a> than the <code class="inline-code">/usr/lib/sysctl.d/10-arch.conf</code> file (to supersede the new default value).</p>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12681242501712560709gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12681242501712560709gol1.jpg"/></a><em>Pictured - DayZ</em></p>
+<p>Want to know what your current value is? You can run this in terminal <code class="inline-code">cat /proc/sys/vm/max_map_count</code></p>
+<p>If you want to test a different value, in terminal you can run <code class="inline-code">sudo sysctl -w vm.max_map_count=1048576</code> which will persist until a reboot.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/arch-linux-changes-vmmax-map-count-to-match-fedora-ubuntu-for-better-gaming/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/arch-linux-changes-vmmax-map-count-to-match-fedora-ubuntu-for-better-gaming/</guid>
+      <pubDate>Mon, 08 Apr 2024 07:19:55 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1473650248id24285gol.jpg" type="image/jpeg"/>
+      
+      <category>Arch Linux</category>
+      
+      <category>Distro News</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Heroic Games Launcher v2.14.1 Hotfix #1 fixes Proton on Linux and Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After the most recent main release of the Heroic Games Launcher, there was an issue people found where games using Proton on Linux / Steam Deck wouldn't run. This latest hotfix should solve it.</p>
+<p>What is Heroic? A cross-platform open source game launcher to manage games from GOG, Epic Games, Amazon and it can act as a Wine manager too for installing standalone apps and games.</p>
+<p>The changes are small, since it's a quick hotfix, but an essential update if you also saw games not running. v2.14.1 Hotfix #1 <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.14.1" target="_blank">changes</a>:</p>
+<blockquote>
+<ul>
+<li>[Fix] Proton with ESYNC/FSYNC by <a href="https://github.com/CommandMC" target="_blank">@CommandMC</a> in <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pull/3676" target="_blank">#3676</a>.</li>
+<li>[Chore] Use waitforexitandrun instead of run command for Proton by <a href="https://github.com/flavioislima" target="_blank">@flavioislima</a> in <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/pull/3680" target="_blank">#3680</a>.</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7633348261712560000gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7633348261712560000gol1.jpg"/></a></p>
+<p>More on the <a href="https://heroicgameslauncher.com/" target="_blank">official site</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/heroic-games-launcher-v2141-hotfix-1-fixes-proton-on-linux-and-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/heroic-games-launcher-v2141-hotfix-1-fixes-proton-on-linux-and-steam-deck/</guid>
+      <pubDate>Mon, 08 Apr 2024 07:06:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1241769003id24284gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Epic Games</category>
+      
+      <category>GOG</category>
+      
+    </item>
     
     <item>
       <title>Wine 9.6 released with more Direct2D effects work, support for RSA OAEP padding in BCrypt</title>
@@ -3753,78 +3816,6 @@ Also enabled the <code class="inline-code">dxvk.ignoreGraphicsBarriers</code> 
       <category>Misc</category>
       
       <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam now has over 100,000 games listed</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>There really are a <em>lot</em> of games, and with more releasing every year, Steam has gotten rather large as a platform with it now listing over 100,000 games.</p>
-<p>When you do a <a href="https://store.steampowered.com/search/?category1=998&amp;ndl=1&amp;ignore_preferences=1" target="_blank">search</a> specifically just for games on Steam the number Valve now give is 100,392, although on <a href="https://steamdb.info/instantsearch/?refinementList%5BappType%5D%5B0%5D=Game" target="_blank">SteamDB</a> that number is 104,727 as they still show games that were unlisted (which you can still download if you purchased them). That's kind of ridiculous isn't it?</p>
-<p>Going by the last few noted release years on SteamDB:</p>
-<ul>
-<li>2024 - 4,599</li>
-<li>2023 - 14,337</li>
-<li>2022 - 12,087</li>
-<li>2021 - 10,994</li>
-<li>2020 - 9,371</li>
-<li>2019 - 7,669</li>
-<li>2018 - 7,901</li>
-<li>2017 - 6,106</li>
-<li>2016 - 4,272</li>
-</ul>
-<p>How are developers supposed to get attention when there's tens of thousands of games being released on Steam each year now? When the release lists on Steam are constantly moving, like what happened with <a href="https://store.steampowered.com/app/378690/Potions_A_Curious_Tale/" target="_blank">Potions: A Curious Tale</a>, with it being bumped right down the list due to various <a href="https://www.gamingonlinux.com/2024/03/command-conquer-the-ultimate-collection-launched-on-steam-and-other-classics/" target="_blank">classic EA games being released</a> all in one go with the developer <a href="https://twitter.com/RikuKat/status/1766261499574776089" target="_blank">posting</a> about it on X. A little brutal perhaps, but then relying on showing up in a list like that on Steam hasn't been the best idea for a long time.</p>
-<p>I remember in earlier years, being able to quite easily follow the Steam overall news list every day, quite literally impossible to do so now.</p>
-<p>Even with Steam constantly adding games there's still plenty finding success though. <a href="https://www.gamingonlinux.com/2024/03/deep-rock-galactic-survivor-hits-1-million-copies-sold/" target="_blank">Deep Rock Galactic: Survivor</a> just hit 1 million, <a href="https://www.gamingonlinux.com/2024/02/palworld-has-now-sold-over-15-million-copies-on-steam/" target="_blank">Palworld</a> hit 15 million, <a href="https://www.gamingonlinux.com/2024/01/last-epoch-crosses-1-million-early-access-sales-new-trailer-and-pre-order-bonuses/" target="_blank">Last Epoch</a> hit 1 million, <a href="https://www.gamingonlinux.com/2023/11/core-keeper-10-planned-for-summer-2024-dev-says-its-had-2-million-downloads/" target="_blank">Core Keeper</a> around 2 million, <a href="https://www.gamingonlinux.com/2024/01/railway-network-designer-rail-route-releases-february-22nd-and-over-100k-copies-sold/" target="_blank">Rail Route</a> hit 100k and the list goes on and on that's just cherry-picking a few I've covered directly. There are plenty of ongoing success stories. So clearly some developers are doing well.</p>
-<p>This brings me to an opinion piece by GamesIndustry.biz titled "<a href="https://www.gamesindustry.biz/discoverability-is-a-problem-that-will-never-be-solved-opinion" target="_blank">Discoverability is a problem that will never be solved</a>", and it really does bring up some interesting questions. Worth a read! It also touches on the issue with Potions: A Curious Tale noted above. As Rob Fahey writes, "Discoverability is a battle that never ends", and Fahey is right. Valve do often tweak Steam, add new features and new ways to find games - but it won't ever end, and it will only get more complicated as more people make and release games seeing potential buyer attention spread ever-thinner.</p>
-<p>I don't have any answer of course, I'm not some marketing guru, but every platform will end up with this problem. GOG, Epic Games and so on. The more they add, the more difficult it will be for future releases. PR teams and marketing folks certainly have their work cut out for them. Looking at my own inbox, I get easily between 50-100 emails weekly, some days are absolutely crazy with announcements all for games wanting some kind of attention.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/steam-now-has-over-100000-games-listed/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/steam-now-has-over-100000-games-listed/</guid>
-      <pubDate>Mon, 18 Mar 2024 14:11:21 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Editorial</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Broken Sword - Shadow of the Templars remaster hits over £400k on Kickstarter</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Broken Sword - Shadow of the Templars is getting a big fancy remaster in Broken Sword: Reforged, and it's currently crowdfunding on Kickstarter by Revolution Software. It will have full Linux support too, as confirmed by the developer.</p>
-<p>Somehow I entirely missed the campaign had actually launched, with only 11 days left to go. Seems plenty of people are excited to replay one of the best point and click adventures around, in full 4K with the Kickstarter campaign noting a £50,000 base goal and it's currently on £404,303.</p>
-<p>You can pledge to get a digital code (GOG / Steam), or go for two different special Collector's Edition Boxes that include things like a figurine, a USB-C key, a manuscript, game manual and so on.</p>
-<div class="hidden_video" data-video-id="AC-C6giohUQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/82c1a69620f02b5e512d19791ecf4e1f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/AC-C6giohUQ" target="_blank">See video</a></div></div>
-<p>Interestingly, they <em>are</em> using AI for the remaster. Here's what they said about their use of AI for it:</p>
-<blockquote>
-<p><strong>What parts of your project will use AI generated content? Please be as specific as possible.</strong></p>
-<p>Disclaimer: All training data comes from within Revolution Software. We wanted to use tools that were trained exclusively on our own data, and so we opted to write our own bespoke program in collaboration with The University Of York. Outputs from this tool have received significant intervention by our art team, ensuring that the final product receives the same level of attention to detail as any other artwork befitting the polished standards of a Broken Sword game.</p>
-<p><strong>Do you have the consent of owners of the works that were (or will be) used to produce the AI generated portion of your projects? Please explain.</strong></p>
-<p>Yes - the training data is comprised of sprites drawn by our animators.</p>
-</blockquote>
-<p>Check it out on <a href="https://www.kickstarter.com/projects/revolution-software/broken-sword-reforged-collectors-edition/description" target="_blank">the Kickstarter</a>.</p>
-<p>You can also follow on <a href="https://store.steampowered.com/app/2544110/Broken_Sword__Shadow_of_the_Templars_Reforged/" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/03/broken-sword-shadow-of-the-templars-remaster-hits-over-400k-on-kickstarter/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/03/broken-sword-shadow-of-the-templars-remaster-hits-over-400k-on-kickstarter/</guid>
-      <pubDate>Mon, 18 Mar 2024 13:04:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1758826964id24182gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Crowdfunding</category>
-      
-      <category>DRM-Free</category>
       
     </item>
     
