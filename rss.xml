@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-04-22 07:23:05.746351</pubDate>
+    <pubDate>2024-04-23 07:23:19.411743</pubDate>
 
     
     <image>
@@ -18,6 +18,342 @@
     </image>
 
     
+    
+    <item>
+      <title>Win a Steam Deck OLED or a golden egg game bundle in Fanatical&#39;s Mystery Egg Bundle</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>While it's a bit like throwing some coins into a well and making a wish, I'm not going to stop you if you want to give it a shot to win a Steam Deck, or a big bundle of games if you manage to find a golden egg in the <a href="https://www.fanatical.com/en/bundle/mystery-egg-bundle?ref=gol" rel="noopener" target="_blank">Fanatical Mystery Egg Bundle</a>.</p>
+<p>So what's the deal? You can pay between £1 for one mystery game egg, or £13.99 for 20. Each egg is a random game that Fanatical say range from "highly acclaimed AAA games to captivating hidden indie gems".</p>
+<p>The juicy bit though is that you might find you get a special golden egg, which will give you "an exclusive assortment of games valued at a staggering $1,000" with titles including Last Epoch, Persona 3 Reload, Lies of P, Starfield, Hi-Fi RUSH, and many more.</p>
+<p>Buying the bundle also enters you in for a chance to win a 512GB Steam Deck OLED, which will be chosen at random during the week starting May 6th.</p>
+<p>You've got just over 13 days left on this bundle.</p>
+<p>If you do fancy your chances go take a <a href="https://www.fanatical.com/en/bundle/mystery-egg-bundle?ref=gol" rel="noopener" target="_blank">look on Fanatical</a>.</p>
+<p>Don't want to take any risk there? Well Fanatical have various other <a href="https://www.fanatical.com/en/bundle?ref=gol" rel="noopener" target="_blank">good full bundles</a> going too that are worth a look like the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-play-on-the-go-bundle?ref=gol" rel="noopener" target="_blank">Play on the Go Bundle Spring Edition Bundle</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/win-a-steam-deck-oled-or-a-golden-egg-game-bundle-in-fanaticals-mystery-egg-bundle/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/win-a-steam-deck-oled-or-a-golden-egg-game-bundle-in-fanaticals-mystery-egg-bundle/</guid>
+      <pubDate>Mon, 22 Apr 2024 16:44:25 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1807868573id24375gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Fanatical</category>
+      
+      <category>Game Bundle</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental brings initial D3D12 for OpenVR, fixes Overwatch 2 crashes</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A freshly squeezed cup of Proton Experimental was released today by Valve containing fixes for multiple games on Steam Deck and Desktop Linux like Overwatch 2.</p>
+<p>Firstly, they're listing Sonic Colors: Ultimate as now playable, with a lot of people using GE-Proton to play it previously. Plus there's now some initial D3D12 support for OpenVR which they note should work for Battlezone Gold Edition in DX12 mode.</p>
+<p class="plain-list-title">Other changes include:</p>
+<ul>
+<li>Horizon Forbidden West no longer displays warning about outdated drivers with Nvidia GPUs.</li>
+<li>Updated Wine Mono to <a href="https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-9.1.0" target="_blank">9.1.0</a>.</li>
+<li>Fixed Proton 9.0 regressions:
+<ul>
+<li>Overwatch 2 no longer randomly crashes.</li>
+<li>Video playback in Age of Empires II: Definitive Edition works again.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2757628091713802495gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2757628091713802495gol1.jpg"/></a><br/>
+Pictured - Overwatch 2</p>
+<p>And the changes for Wine Mono (replacement for the .NET Framework) v9.1.0 are:</p>
+<ul>
+<li>Due to a license change in Vagrant, the Vagrant build files have been removed in favor of Podman. The official build of this release was also made using Podman.</li>
+<li>Fixed a build error on systems that use a scheduling policy not in a hard-coded list.</li>
+<li>Fixed a crash when auto-generating a COM interface for some classes with array types in their signature (<a href="https://bugs.winehq.org/show_bug.cgi?id=55736" rel="nofollow" target="_blank">Winehq bug 55736</a>).</li>
+<li>Implemented String.Concat(object, object, object, object, __arglist) (<a href="https://bugs.winehq.org/show_bug.cgi?id=56248" rel="nofollow" target="_blank">Winehq bug 56248</a>).</li>
+<li>Fixed doubled characters when typing in Terraria.</li>
+<li>Added support for Joystick and Keyboard inputs in Managed DirectX/monoDX.</li>
+<li>Added support for the ApplyToOverrides property in System.Web.Extensions.</li>
+<li>Fixed System.Drawing.Icon incorrectly rejecting cursor handles, which was also breaking System.Windows.Forms.Cursor.Hotspot.</li>
+<li>Fixed hang when System.Environment.Exit is called while another thread is in a long-running native call.</li>
+<li>Upstream updates:
+<ul>
+<li>SDL2 to 2.30.2.</li>
+<li>FNA to 24.03.</li>
+<li>llvm-mingw to 20240320.</li>
+</ul>
+</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/proton-experimental-brings-initial-d3d12-for-openvr-fixes-overwatch-2-crashes/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/proton-experimental-brings-initial-d3d12-for-openvr-fixes-overwatch-2-crashes/</guid>
+      <pubDate>Mon, 22 Apr 2024 16:15:27 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1297585402id24374gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Dead Island 2 arrives on Steam boasting of Steam Deck support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Dambuster Studios and Deep Silver have now finally released Dead Island 2 on Steam, after previously being Epic Games exclusive and they're boasting about Steam Deck support.</p>
+<p>About the game:</p>
+<blockquote>
+<p>A deadly virus is spreading across Los Angeles, turning its inhabitants into ravenous zombies. The city is in quarantine and the military have retreated. Bitten, infected, but more than just immune, you learn to harness the zombie inside of you. Only you, and the handful of other swaggering assholes who happen to be resistant to the pathogen, hold the future of Los Angeles (and humanity), in the balance.  <br/>
+ <br/>
+As you uncover the truth behind the outbreak you’ll discover the truth of who – or <em>what –</em> you are. Survive, evolve, save the world – just another day in LA! </p>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5278328781713801633gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5278328781713801633gol1.jpg"/></a></p>
+<p>While it does look really good, I do want to touch on an issue. Their new <a href="https://www.youtube.com/watch?v=bOx07gV3thY" rel="noopener" target="_blank">Steam trailer</a>, which I can't embed here due to it being age-restricted on YouTube, boasts pretty clearly "Steam Deck Support". However, Valve has only given it a Steam Deck Playable rating which notes:</p>
+<ul>
+<li>This game sometimes shows mouse, keyboard, or non-Steam-Deck controller icons.</li>
+<li>Entering some text requires manually invoking the on-screen keyboard.</li>
+<li>Some in-game text is small and may be difficult to read.</li>
+</ul>
+<p><em>Why in 2024 is font sizing still an issue? It's such a basic accessibility feature.</em></p>
+<p>Additionally the first-time setup requires an active Internet connection (Denuvo Anti-tamper) and lesser so an issue since it is primarily a handheld, it doesn't default to external Bluetooth/USB controllers on Deck so you need to manually switch. Their own <a href="https://steamcommunity.com/app/934700/discussions/0/4368004468484074346/" rel="noopener" target="_blank">forum post</a> on it also goes over some other issues like the first launch of the game is likely to <em>fail</em> and cross-play with Epic Games needing some setup.</p>
+<p>If you're going to boast about Steam Deck support, I generally would expect a lot better, to actually have the game running properly from the first load without issues. Otherwise, it's not supported in any sense of the word. It's just another game released on Steam, that runs thanks to Valve's effort with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" rel="noopener" target="_blank">Proton</a>.</p>
+<p>Anyway, that aside, it will likely run quite well on Desktop Linux too thanks to Proton.</p>
+<p>Dead Island 2 can be purchased from:</p>
+<p><a href="https://www.fanatical.com/en/game/dead-island-2?ref=gol" rel="noopener" target="_blank">Fanatical</a></p>
+<p><a href="https://store.steampowered.com/app/934700/Dead_Island_2/" rel="noopener" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/dead-island-2-arrives-on-steam-boasting-of-steam-deck-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/dead-island-2-arrives-on-steam-boasting-of-steam-deck-support/</guid>
+      <pubDate>Mon, 22 Apr 2024 16:06:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1158307387id24373gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Ashlands update for Valheim has a new trailer and public test is live</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Finally! Valheim is getting close to the release of the big Ashlands update, and now you can go and actually test it.</p>
+<p>What can you expect from it? Well there is of course the entirely new Ashlands biome! Along with that there's over 30 new weapons, new bombs and ammunition, 3 new armour sets, 2 new capes, over 10 new creatures, over 70 new building items, 5 new crafting station upgrades, over 30 new crafting materials, over 15 new food items and potions, new locations, new music, new events and new game mechanics. </p>
+<p>So quite a lot basically. Check out the trailer:</p>
+<div class="hidden_video" data-video-id="XSVbXgBJIuI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/378e7ccf908298005eb78c2bd7fe1dbd.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/XSVbXgBJIuI" target="_blank">See video</a></div></div>
+<p>More info in the <a href="https://valheim.com/news/patch-0-218-9-ashlands-public-test/" rel="noopener" target="_blank">announcement</a> on how to join testing.</p>
+<p>Valheim has Native Linux support and it's Steam Deck Verified you can buy it on <a href="https://www.humblebundle.com/store/valheim?partner=gamingonlinux&amp;charity=12277" rel="noopener" target="_blank">Humble Store</a> or <a href="https://store.steampowered.com/app/892970/Valheim/?curator_clanid=4218320" rel="noopener" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/ashlands-update-for-valheim-has-a-new-trailer-and-public-test-is-live/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/ashlands-update-for-valheim-has-a-new-trailer-and-public-test-is-live/</guid>
+      <pubDate>Mon, 22 Apr 2024 11:12:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1259339585id24372gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Exploration</category>
+      
+    </item>
+    
+    <item>
+      <title>Embracer Group splitting into three companies</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Embracer Group have announced that after being the cause of many job losses, shutting down developers and selling some off - they're now splitting into three companies.</p>
+<p>These three will be <em>Asmodee Group</em>, <em>Coffee Stain &amp; Friends</em> and <em>Middle-earth Enterprises &amp; Friends</em>. Each of them will be separate, publicly listed companies which Embracer say enables " each entity to better focus on their respective core strategies and offer more differentiated and distinct equity stories for existing and new shareholders" that will enable them to "unlock value in the high-quality assets of Embracer Group following the successful completion of the restructuring program".</p>
+<p>Coffee Stain &amp; Friends will have a focus on a wide variety of games across PC, console and mobile across two distinct segments of premium and free to play. This includes some control over Deep Rock Galactic, Goat Simulator, Satisfactory, Wreckfest, Teardown, Valheim, Coffee Stain, Ghost Ship, Tarsier, Tuxedo Labs, as well as THQ Nordic and Amplifier Game Invest plus "more than 200 other IPs".</p>
+<p>Asmodee Group will focus on board games and digital board games including Ticket to Ride, 7 Wonders, Azul, CATAN, Dobble, Exploding Kittens plus they're also developing tabletop games for The Lord of the Rings, Marvel, Game of Thrones, Netflix, Lego and Star Wars. As part of this, Asmodee also <a href="https://embracer.com/releases/asmodee-secures-financing-agreement-of-eur-900-million-as-part-of-separation-deleveraging-the-remaining-embracer-group/" rel="noopener" target="_blank">secured</a> a new financing agreement of 900 million euros through JP Morgan, BNP Paribas, SEB, Societe Generale and Swedbank which Embracer said is "an important part of the debt refinancing of Embracer Group following its restructuring program".</p>
+<p>Middle-earth Enterprises &amp; Friends will be their "creative powerhouse in AAA game development" and will remain the "stewards of The Lord of the Rings and Tomb Raider intellectual properties" but they also control the likes of Crystal Dynamics, Dambuster Studios, Eidos-Montréal, Flying Wild Hog Studios, Tripwire, Vertigo Games, Warhorse Studios and 4A Games among many others. IPs includes Dead Island, Killing Floor, Kingdom Come Deliverance, The Lord of the Rings, Metro and Tomb Raider, among many others. The group will include PLAION, Freemode, Dark Horse and other businesses.</p>
+<p>I should note that both Coffee Stain &amp; Friends and Middle-earth Enterprises &amp; Friends aren't the official names, just what they're being referred to right now. As Embracer said the official names will be "decided at a later stage".</p>
+<p>More in their <a href="https://embracer.com/releases/embracer-group-announces-its-intention-to-transform-into-three-standalone-publicly-listed-entities-at-nasdaq-stockholm/" rel="noopener" target="_blank">press release</a> and the <a href="https://embracer.com/releases/open-letter-by-embracer-group-ceo-about-the-transformation-into-three-standalone-publicly-listed-entities/" rel="noopener" target="_blank">open letter</a> from the Embracer CEO.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/embracer-group-splitting-into-three-companies/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/embracer-group-splitting-into-three-companies/</guid>
+      <pubDate>Mon, 22 Apr 2024 10:45:52 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/654645652id24371gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Sunshine game streaming update has frame timing improvements for Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Sunshine when paired up with Moonlight offers a great way to stream games from your PC to pretty much any other system, and the latest release v0.23.1 should work better on Linux now.</p>
+<p>This is an alternative to the now defunct NVIDIA Gamestream, and you can use it as an alternative to things like Steam Link / Remote Play. The idea is that you set up Sunshine on your gaming PC, then use Moonlight to get the stream on your other devices. So you can play whatever you want across your many systems like Steam Deck, mobile and so on.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13097767681713780715gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13097767681713780715gol1.jpg"/></a>Pictured - War Thunder</p>
+<p>Here's what's new / changed in v0.23.1:</p>
+<blockquote>
+<p><strong>Fixed</strong></p>
+<ul>
+<li>(Capture/Windows) Disable HRD and CBR encoding options by default for AMD GPUs due to video quality regressions in v0.23.0</li>
+<li>(UI) Fix incorrect strings for QuickSync 'fast' and 'faster' presets</li>
+<li>(UI/Linux) Fix update prompt appearing even when running the latest version</li>
+<li>(Input) Fix crash when absolute input events are received prior to the display viewport being set</li>
+<li>(Input/Linux) Fix missing clamping of rumble intensity to valid range</li>
+<li>(Build/Tests) Fix error when attempting to disable compilation of tests</li>
+<li>(Build/Linux) Fix some compilation errors when using Musl libc</li>
+<li>(Logging) Fix broken debug messages for codec capability flags</li>
+<li>(Logging/Linux) Fix log messages to include the correct setcap command for resolving KMS permission errors</li>
+</ul>
+<p><strong>Added</strong></p>
+<ul>
+<li>(Capture/Linux) Improve frame time consistency for all capture backends</li>
+<li>(UI) Set focus to the PIN textbox when navigating to the PIN tab</li>
+</ul>
+<p><strong>Dependencies</strong></p>
+<ul>
+<li>Remove libavdevice dependency</li>
+</ul>
+<p><strong>Misc</strong></p>
+<ul>
+<li>(Linux) Prefer ayatana-appindicator3 over appindicator3 if both are available</li>
+</ul>
+</blockquote>
+<p>See more on the <a href="https://github.com/LizardByte/Sunshine" rel="noopener" target="_blank">GitHub page</a>. It takes a bit of setup time but can be worth it!</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/sunshine-game-streaming-update-has-frame-timing-improvements-for-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/sunshine-game-streaming-update-has-frame-timing-improvements-for-linux/</guid>
+      <pubDate>Mon, 22 Apr 2024 10:12:52 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/804833902id24370gol.jpg" type="image/jpeg"/>
+      
+      <category>Cloud Gaming</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Parking Garage Rally Circuit coming by dev of JellyCar with Linux / Steam Deck support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A game that is something of a homage to the days of the Sega Saturn, Walaber Entertainment who created the fun JellyCar series have announced Parking Garage Rally Circuit. This really looks like it would fit right at home on the Saturn! Complete with tasty low-poly, chunky textures.</p>
+<p>"The 'Parking Garage Rally Circuit' tour comes into a city, selects a parking garage, and temporarily turns it into an exciting rally course for a week-long competition. Each track in the game is styled as a unique parking garage that has been turned into a race course. Players will use a map of North America + UK to chart their course from track to track across the globe."</p>
+<p>You can see their announcement video below, although you may need to turn your speakers up a bit to actually hear the developer properly:</p>
+<div class="hidden_video" data-video-id="Skg6V3Up0BM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7ed99ca502ad6bc2956d7e5053bfb429.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Skg6V3Up0BM" target="_blank">See video</a></div></div>
+<p>In the video they said clearly it's been tested on Steam Deck and will have a Native Linux version. They also said it will offer multiple tracks, online leaderboards with ghost cars and even a simple online mode to race your friends.</p>
+<p><span style="background-color:var(--article-main-background); color:var(--font-color); font-size:17px">You can </span><a href="https://store.steampowered.com/app/2737300/Parking_Garage_Rally_Circuit/" rel="noopener" style="background-color:var(--article-main-background); font-size:17px" target="_blank">follow it on Steam</a><span style="background-color:var(--article-main-background); color:var(--font-color); font-size:17px">. It's due to release later this year.</span></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/parking-garage-rally-circuit-coming-by-dev-of-jellycar-with-linux-steam-deck-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/parking-garage-rally-circuit-coming-by-dev-of-jellycar-with-linux-steam-deck-support/</guid>
+      <pubDate>Mon, 22 Apr 2024 09:56:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1600055078id24369gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Racing</category>
+      
+    </item>
+    
+    <item>
+      <title>Over 10 years later 7 Days to Die is going to leave Early Access</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A long time coming after initially going live back in December 2013, developer The Fun Pimps has now announced that 7 Days to Die is going to be leaving Early Access. The release is currently planned for June, with an exact date to be given closer to the time No I can't quite believe it's finally happening either.</p>
+<p>Internally known as Alpha 22, they said they've always planned for that to be the "final" 1.0 release. Currently they do still plan to implement all their original Kickstarter goals, with further updates post-1.0 already planned with a preview <a href="https://uploads.golmedia.net/uploads/articles/article_media/6024237391713778691gol1.png" rel="noopener" target="_blank">roadmap</a> available.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19864774371713778832gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19864774371713778832gol1.jpg"/></a></p>
+<p>Some of what's to come after 1.0 include an overhaul to the weather system, a wardrobe system, cross-play for consoles, bandits, an event system, a story mode, Steam Workshop support and more.</p>
+<p>The do plan to raise the price as well for the 1.0 release, to match with the new console release too, although later today April 22nd until April 29th, they will be putting it on a 76% discount to give people one more chance to buy it cheap before the price rises.</p>
+<p>You can see their road to 1.0 video below:</p>
+<div class="hidden_video" data-video-id="jb5YCTDfB5k"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b42ee79dcdc881b8c4a18bcc81140d5c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/jb5YCTDfB5k" target="_blank">See video</a></div></div>
+<p>More info in <a href="https://7daystodie.com/alpha-exodus-leaving-early-access/" rel="noopener" target="_blank">the FAQ</a>.</p>
+<p>You can pick it up on <a href="https://www.humblebundle.com/store/7-days-to-die?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/251570?curator_clanid=4218320" rel="noopener" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/over-10-years-later-7-days-to-die-is-going-to-leave-early-access/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/over-10-years-later-7-days-to-die-is-going-to-leave-early-access/</guid>
+      <pubDate>Mon, 22 Apr 2024 09:44:34 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/643087884id24368gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Humble Store</category>
+      
+    </item>
+    
+    <item>
+      <title>A big Palestinian Relief Bundle is live on itch.io</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Supporting the Palestine Children's Relief Fund charity, the Palestinian Relief Bundle is live on itch.io.</p>
+<p>From the bundle page:</p>
+<blockquote>
+<p>Palestinians are being persecuted from their homes in an ongoing genocide. Due to the armed actions of Israel, they lack access to essentials such as food, water, electricity and medical care. </p>
+<p>In response to this crisis, all proceeds from the Palestinian Relief indie bundle will be donated to the <a href="https://pcrf1.app.neoncrm.com/forms/gaza-recovery" rel="nofollow noopener" target="_blank">PCRF</a> (Palestine Children's Relief Fund). PCRF describes itself as "the primary humanitarian organization in Palestine, delivering crucial and life-saving medical relief where it is needed most". By donating to the PCRF, Palestinians will have better access to medical relief, food and water. </p>
+</blockquote>
+<p>For a single purchase of $8 you will get access to 373 items that includes 213 games, 103 physical games, 15 game assets, 6 soundtracks, 5 tools, 13 comics, 11 books and more.</p>
+<p>There's some nice games in there too like A Short Hike, Lucah: Born of a Dream, Wandersong, Bleed 2, Underhero, A Monster's Expedition, Anodyne, They Bleed Pixels and so on.</p>
+<p>At time of writing the bundle has already raised over $200,000 and has over 6 days left to go.</p>
+<p>See the <a href="https://itch.io/b/2321/palestinian-relief-bundle" rel="noopener" target="_blank">bundle on itch.io</a> and more about the charity <a href="https://www.pcrf.net/" rel="noopener" target="_blank">on their website</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/a-big-palestinian-relief-bundle-is-live-on-itchio/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/a-big-palestinian-relief-bundle-is-live-on-itchio/</guid>
+      <pubDate>Mon, 22 Apr 2024 09:29:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1983083724id24367gol.jpg" type="image/jpeg"/>
+      
+      <category>Charity</category>
+      
+      <category>Game Bundle</category>
+      
+      <category>Itch.io</category>
+      
+    </item>
+    
+    <item>
+      <title>PSA: someone set up a fake Proton-GE website</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It seems <em>nothing</em> is safe from bogus websites and scams, with someone setting up a fake website for Proton-GE / GE-Proton. A warning note about it was added to the GE GitHub page readme <a href="https://github.com/GloriousEggroll/proton-ge-custom/commit/7bbf58654befd0c2f0856c5568f89f98ddc98ec6" rel="noopener" target="_blank">last month</a>, which I've only just been made aware of.</p>
+<p>The website in question protonge.com, which I am intentionally <em>not</em> making a clickable link, makes it seem like it's all official but the <em>only</em> official place is the <a href="https://github.com/GloriousEggroll/proton-ge-custom" rel="noopener" target="_blank">GitHub</a>. Cheekily, it even uses a screenshot of mine taken from <a href="https://www.gamingonlinux.com/2022/08/protonup-qt-for-easy-ge-proton-installs-on-linux-and-steam-deck-v270-out-now/" rel="noopener" target="_blank">an older article</a> about ProtonUp-Qt which is a completely different (but related) project.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7365448271713776782gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7365448271713776782gol1.jpg"/></a></p>
+<p>According to the website, Proton-GE has builds "tailored for various game genres", well that's a new one. Claiming they have "a customized Proton build to enhance your experience in each specific gaming category". That's just not how it works.</p>
+<p>No matter what industry you're in, or what tools you're making, even open source projects — there's always someone who will want to ride on its popularity to do something nefarious.</p>
+<p>This reminds me of a recent spate of emails going around claiming to be from the Kdenlive video editor team, where the official developers had to post up <a href="https://mastodon.social/@kdenlive@floss.social/112207013564456009" rel="noopener" target="_blank">warnings</a> across social media. These emails tried to get people to download things for partnerships, which of course is usually some form of malware.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/psa-someone-set-up-a-fake-proton-ge-website/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/psa-someone-set-up-a-fake-proton-ge-website/</guid>
+      <pubDate>Mon, 22 Apr 2024 09:19:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+    </item>
     
     <item>
       <title>SteamOS 3.5.18 Preview released for Steam Deck</title>
@@ -3519,358 +3855,6 @@ Yes I was on fire on the above screenshot, and the fire was burning every damn p
       <category>Adventure</category>
       
       <category>Indie Game</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>More security issues in X.Org and Xwayland revealed and new releases live</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://www.gamingonlinux.com/2024/01/xorg-and-xwayland-get-new-releases-due-to-security-issues/" target="_blank">Back in January</a> we had some security issues revealed in both X.Org and Xwayland, and here we are with a few more and so there's new versions available for both to fix them.</p>
-<p>The announcements came Wednesday, April 3rd with 4 issues noted in X.Org, 3 of which affected Xwayland too. You can see the details on each of the issues in the mailing list <a href="https://lists.x.org/archives/xorg/2024-April/061615.html" target="_blank">announcement</a>. The issues are as noted:</p>
-<ul>
-<li>CVE-2024-31080: Heap buffer overread/data leakage in ProcXIGetSelectedEvents - The ProcXIGetSelectedEvents() function uses the byte-swapped length of the return data for the amount of data to return to the client, if the client has a different endianness than the X server.</li>
-<li>CVE-2024-31081: Heap buffer overread/data leakage in ProcXIPassiveGrabDevice - The ProcXIPassiveGrabDevice() function uses the byte-swapped length of the return data for the amount of data to return to the client, if the client has a different endianness than the X server.</li>
-<li>CVE-2024-31082: Heap buffer overread/data leakage in ProcAppleDRICreatePixmap - The ProcAppleDRICreatePixmap() function uses the byte-swapped length of the return data for the amount of data to return to the client, if the client has a different endianness than the X server.  This function is only found in the Xquartz server for MacOS systems, and not in Xwayland, Xorg, or any other X servers.</li>
-<li>CVE-2024-31083: User-after-free in ProcRenderAddGlyphs - The ProcRenderAddGlyphs() function calls the AllocateGlyph() function to store new glyphs sent by the client to the X server.  AllocateGlyph() would return a new glyph with refcount=0 and a re-used glyph would end up not changing the refcount at all. The resulting glyph_new array would thus have multiple entries pointing to the same non-refcounted glyphs. ProcRenderAddGlyphs() may free a glyph, resulting in a use-after-free when the same glyph pointer is then later used.</li>
-</ul>
-<p>xorg-server 21.1.12 <a href="https://lists.x.org/archives/xorg/2024-April/061616.html" target="_blank">changelog</a>:</p>
-<blockquote>
-<p>This release addresses the following 4 security issues:</p>
-<p> * CVE-2024-31080<br/>
- * CVE-2024-31081<br/>
- * CVE-2024-31082<br/>
- * CVE-2024-31083</p>
-<p>Additionally it provides a way to disable byte-swapped clients either by command line flag or config option. This allows to turn off byte swapping code that has been a source of security problems lately. </p>
-</blockquote>
-<p>xwayland 23.2.5 <a href="https://lists.x.org/archives/xorg/2024-April/061614.html" target="_blank">changelog</a>:</p>
-<blockquote>
-<p>This release contains the 3 security fixes that actually apply to<br/>
-Xwayland reported in today's security advisory:</p>
-<p>  * CVE-2024-31080<br/>
-  * CVE-2024-31081<br/>
-  * CVE-2024-31083</p>
-<p>Additionally, it also contains a couple of other fixes, a copy/paste error in the DeviceStateNotify event and a fix to enable buttons with pointer gestures for backward compatibility with legacy X11 clients.</p>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/more-security-issues-in-xorg-and-xwayland-revealed-and-new-releases-live/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/more-security-issues-in-xorg-and-xwayland-revealed-and-new-releases-live/</guid>
-      <pubDate>Thu, 04 Apr 2024 16:51:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/xorg.jpg" type="image/jpeg"/>
-      
-      <category>Security</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Musical logic puzzler Beat &#39;N&#39; Path has a demo live now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Beat 'N' Path is a game that sees you combine together your creativity and logic to create machines to play music, it looks wonderful and there's now a demo available. It has Native Linux support from BitCutter Studios Inc., who previously made Groove Gunner and Balloonatics.</p>
-<p>In it you generate, direct, shift, and combine signals and notes by wiring components and instruments together so solve and create a wide variety of musical machines. So like, a musical Zachtronics-like perhaps? Maybe a little there. Check out the previous trailer if you missed it:</p>
-<div class="hidden_video" data-video-id="MhlYBncZO5Y"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/32e2d25ac337ffa0a7dfb0a0ed37463c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/MhlYBncZO5Y" target="_blank">See video</a></div></div>
-<p>Now there's a demo live which the developers said progress made in the demo will carry forward into the full game once released.</p>
-<p>Check it <a href="https://store.steampowered.com/app/2636350/Beat_N_Path/" target="_blank">out on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/musical-logic-puzzler-beat-n-path-has-a-demo-live-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/musical-logic-puzzler-beat-n-path-has-a-demo-live-now/</guid>
-      <pubDate>Thu, 04 Apr 2024 16:38:06 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/602295571id24273gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Demo</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Music</category>
-      
-    </item>
-    
-    <item>
-      <title>Battlefield V now broken on Steam Deck / Linux with EA anticheat live</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>That's all folks. EA anticheat has now been added into Battlefield V, so it's the end of being able to play it on Steam Deck and other Linux systems.</p>
-<p>This joins the likes of Plants vs. Zombies Garden Warfare 2: Deluxe Edition, EA SPORTS FC 24, EA SPORTS FIFA 23, Battlefield 2042 and Madden NFL 24 that all have EA's own homegrown anti-cheat that make them simply unplayable on systems running Linux.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19426081551712224696gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19426081551712224696gol1.jpg"/></a></p>
-<p>Now if you try to run it, you'll be greeted with an error. A shame to see a game that's multiple years old get broken like this and no doubt EA will continue to use their own EA anticheat in future online games. Battlefield 1 is still okay, and Apex Legends is also still running but perhaps it's only a matter of time before EA force it onto those too?</p>
-<p>Hopefully at some point Valve can find a way to work with EA on this, to get it somehow working with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" target="_blank">Proton</a> like we've seen support for Easy Anti-Cheat, BattleEye, GameGuard and others.</p>
-<p>What are some alternatives you can recommend for readers now looking to go elsewhere?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/battlefield-v-now-broken-on-steam-deck-linux-with-ea-anticheat-live/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/battlefield-v-now-broken-on-steam-deck-linux-with-ea-anticheat-live/</guid>
-      <pubDate>Thu, 04 Apr 2024 10:02:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1006360343id24272gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Anti-Cheat</category>
-      
-      <category>Electronic Arts</category>
-      
-    </item>
-    
-    <item>
-      <title>MangoHud 0.7.2-rc1 adds Wayland keybinds, a time label and bug fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The next version of the Linux performance overlay MangoHud is close, with a release candidate up now and ready for testing with MangoHud <a href="https://github.com/flightlessmango/MangoHud/releases/tag/v0.7.2-rc1" target="_blank">version 0.7.2-rc1</a>.</p>
-<p>What is it? A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more on top of games and applications. You can use it on Desktop Linux, and it's what forms the Steam Deck's performance HUD too.</p>
-<p>Here's all the <a href="https://github.com/flightlessmango/MangoHud/releases/tag/v0.7.2-rc1" target="_blank">improvements</a>:</p>
-<blockquote>
-<h3>Changes</h3>
-<ul>
-<li><code class="inline-code">time</code> now has a label (you can remove this label with <code class="inline-code">no_time_label</code>)</li>
-<li>Wayland keybinds have been added</li>
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>frametime color wasn't being correctly inherited, the user was not able to change it's color</li>
-<li>fixed a crash when pressing Shift_R + F9</li>
-<li>config options now correctly override preset options</li>
-<li>fixed RPM and % being incorrectly assigned for GPU fan speeds</li>
-</ul>
-<h3>Parameters</h3>
-<ul>
-<li><code class="inline-code">no_time_label</code> removes the label before <code class="inline-code">time</code></li>
-<li><code class="inline-code">network</code> shows the throughput in kb/s for all interfaces or a specified list of interfaces e.g <code class="inline-code">network=eth0,wlo1</code></li>
-</ul>
-</blockquote>
-<p>Since it's a pre-release, there's no pre-compiled packages so you'll need to build it from source or wait for the full release after it's had some testing time.</p>
-<p>An example of MangoHud with a horizontal style (look at the top):</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1061428281712152345gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1061428281712152345gol1.jpg"/></a></p>
-<p>If you like that configuration for it here's my settings:</p>
-<blockquote>
-<p>horizontal<br/>
-legacy_layout=0<br/>
-hud_no_margin<br/>
-font_size=25<br/>
-table_columns=25<br/>
-background_alpha=0.5<br/>
-gpu_stats<br/>
-gpu_temp<br/>
-cpu_stats<br/>
-cpu_temp<br/>
-ram<br/>
-vram<br/>
-fps<br/>
-frame_timing<br/>
-frametime<br/>
-toggle_hud=F8<br/>
-version<br/>
-vulkan_driver<br/>
-text_outline<br/>
-text_outline_thickness=2<br/>
-custom_text=GamingOnLinux<br/>
-resolution</p>
-</blockquote>
-<p><em>Place that into ~/.config/MangoHud/MangoHud.conf</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/mangohud-072-rc1-adds-wayland-keybinds-a-time-label-and-bug-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/mangohud-072-rc1-adds-wayland-keybinds-a-time-label-and-bug-fixes/</guid>
-      <pubDate>Wed, 03 Apr 2024 13:53:20 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1311984335id24271gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Linux Mint 22 moves to Pipewire, will ship newer kernels after release</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Some good news coming out of camp Linux Mint, as the upcoming release of Linux Mint 22 is set to be quite a good one for bringing it up to standard like other distributions on newer tech.</p>
-<p>Announced in a <a href="https://blog.linuxmint.com/" target="_blank">blog post</a>, Mint's Clement Lefebvre mentioned various improvements coming like better localization support which will also use less disk space. Languages you don't pick will now <em>properly</em> be removed, and the ISO will actually have English, German, Spanish, French, Russian, Portuguese, Dutch and Italian requiring no extra downloads for those.</p>
-<p>Something big for audio fans is that Linux Mint 22 will also finally swap over to Pipewire as the default sound server, the Software Sources tool will feature support for the new Deb822 format and the next version of Pix (their image viewer) will support JXL images.</p>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7028874071712148126gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7028874071712148126gol1.jpg"/></a>Pictured - Linux Mint Cinnamon Desktop</em></p>
-<p>Another big change is their kernel versioning. Mint has always been quite reserved on using newer kernels, often sticking with older versions. They have been shipping EDGE ISOs with newer kernels for a while, but now they're going to follow Ubuntu with shipping new kernel series release after Linux Mint 22 is live. As Lefebvre mentioned "we didn’t observe significant differences in terms of stability between LTS and HWE series" and that a "growing number of users with new laptops/chipsets relied on EDGE images" so this move makes sense.</p>
-<p>They've also made a new XApp, <a href="https://github.com/linuxmint/gnome-online-accounts-gtk" target="_blank">GNOME Online Account GTK</a>, with a goal to work across any desktop environment to connect to online accounts like Google, Microsoft and so on. </p>
-<p>Snap is also another issue, as the Mint team continue to not particularly like Canonical's packaging format. With Ubuntu moving Thunderbird into a Snap, the Mint team will now be packaging it themselves as a .deb.</p>
-<p>They're also continuing to work on <a href="https://github.com/linuxmint/jargonaut" target="_blank">Jargonaut</a>, a modern chat application that uses IRC under the hood.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6717160861712147954gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6717160861712147954gol1.png"/></a></p>
-<p>They're also now working with <a href="https://www.fastly.com/" target="_blank">Fastly</a>, to support their packaging repositories which should provide better speeds and overall stability.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/linux-mint-22-moves-to-pipewire-will-ship-newer-kernels-after-release/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/linux-mint-22-moves-to-pipewire-will-ship-newer-kernels-after-release/</guid>
-      <pubDate>Wed, 03 Apr 2024 12:42:34 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/553737453id24270gol.jpg" type="image/jpeg"/>
-      
-      <category>Distro News</category>
-      
-      <category>Linux Mint</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Escape Simulator adds VR support in the latest free update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Escape Simulator from Pine Studio has proven to be popular, so much in fact that they hit <a href="https://www.gamingonlinux.com/2022/05/escape-simulator-hits-1-million-sales-adds-voice-chat-and-new-map/" target="_blank">1 million sales</a> in less than a year and multiple expansions later there's another big free upgrade.</p>
-<p>They've had crossover DLC with Among Us and Portal, which are both free, as well as a few paid extra DLC with more levels and content. Now they're back with a free VR upgrade. As they said in the announcement: "Escape from the base game as well as the additional free rooms in a fully interactive 3D environment, either by yourself or with friends. Throwing items to each other has never felt so real!".</p>
-<p>You can even team up with players who don't have VR, which is a nice feature. To make all this work they said they actually "rebuilt the game from scratch for the VR version". However, the price will be increasing after April 14th, so picking it up now will get you it cheaper with all the updates.</p>
-<div class="hidden_video" data-video-id="fD5cxMeadws"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/77fea50d22f9a88e4cf5b61c04f6bb85.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/fD5cxMeadws" target="_blank">See video</a></div></div>
-<p>What can you actually play in VR? They said all 29 rooms in the base game and all of the DLC, according to their email "most of the 4.000 community-made rooms are now also available to enjoy in VR". This is great, because the level editor is one of the big pulls of the game and what helped make it so popular.</p>
-<p>Game Features:</p>
-<ul>
-<li>Solve puzzles. Face a growing collection of interactive escape rooms, spread across a variety of weird and wonderful locations such as the Labyrinth of Egypt, the Steampunk Airship, the Portal Escape Chamber or The Mini Skeld.</li>
-<li>Team up with friends. Every Escape Simulator room supports online co-op! Join forces with friends to test your teamwork &amp; tackle puzzles together.</li>
-<li>Powered by the community. Use the Room Editor to build your very own *dream* escape room. Or dive into one of the 4000+ custom rooms built by our creative community.</li>
-<li>Dress to impress. Wear silly hats, customize your character &amp; wear a series of themed outfits, tailor-made for each puzzle environment.</li>
-<li>Cause chaos! Smash vases. Melt locks. Rearrange the furniture. Make a mess! If it's not nailed down, you can pick it up (and inevitably throw it at your friends). Even more enjoyable in VR!</li>
-</ul>
-<p>Buy from:</p>
-<p><a href="https://www.humblebundle.com/store/escape-simulator?partner=gamingonlinux" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/1435790/Escape_Simulator/" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/escape-simulator-adds-vr-support-in-the-latest-free-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/escape-simulator-adds-vr-support-in-the-latest-free-update/</guid>
-      <pubDate>Wed, 03 Apr 2024 12:22:48 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1824212477id24269gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Online Co-op</category>
-      
-      <category>Puzzle</category>
-      
-    </item>
-    
-    <item>
-      <title>Cozy Space Survivors is a sweet time survival roguelite in space</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Cozy Space Survivors is an upcoming simple cozy time survival roguelite in space, a game for people who don't have all that much free time.</p>
-<p>The developer said they were inspired by the likes of Vampire Survivors for the general simple gameplay, Binding of Isaac for physicality of bullets, Halls of Torment for adding Quests to a Vampire Survivors-Like, Fallout for the story summary at the end of the game and Into the Breach for the little NPC dialog texts which add so much atmosphere and so they've blended all the basic ideas into a simple but sweet package with Cozy Space Survivors.</p>
-<p>About it: "Explore a colorful, tiny universe. Help its cute inhabitants solve their problems. Use satisfying weapons to defend you and your new friends against hordes of quirky enemies. You can focus on controlling your shipy while shooting happens automatically. There are unique landmarks to discover, and enemies leave experience points for level-ups to gain new skills. In addition, you can mine chocolate asteroids to unlock permanent upgrades."</p>
-<p>See their WIP trailer below:</p>
-<div class="hidden_video" data-video-id="1L55Z4t9QsA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7a404cc25efcb42eea155036ba53a149.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/1L55Z4t9QsA" target="_blank">See video</a></div></div>
-<p>The developer, Simon Trümpler, has previously worked on the likes of X:Rebirth, Sacred 2, RIME, The Invisible Hours and more and now they're making their own game.</p>
-<p>Try out the <a href="https://store.steampowered.com/app/2657850/Cozy_Space_Survivors/" target="_blank">demo on Steam</a> which has Native Linux support made with <a href="https://godotengine.org/" target="_blank">Godot Engine</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/cozy-space-survivors-is-a-sweet-time-survival-roguelite-in-space/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/cozy-space-survivors-is-a-sweet-time-survival-roguelite-in-space/</guid>
-      <pubDate>Wed, 03 Apr 2024 11:58:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1997756380id24268gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Demo</category>
-      
-      <category>Godot Engine</category>
-      
-    </item>
-    
-    <item>
-      <title>Stop Killing Games is a new campaign to stop developers making games unplayable</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>We've all been there right? You paid for a game, it required an active internet connection and a couple of years later the publisher decided they're done with it and shut it down leaving you with a broken game. Annoying.</p>
-<p>Very annoying. It repeatedly happens, mostly AAA publishers that do it and their games are often quite expensive too. One of the most recent is The Crew from Ubisoft, a game that until late December last year cost £25.99. The developers at Ubisoft Ivory Tower <a href="https://www.ubisoft.com/en-gb/game/the-crew/the-crew/news-updates/mOR3tviszkxfeQCUKxhOV/an-update-on-the-crew" target="_blank">announced</a> on December 14th that as of March 31st, 2024 the servers would be shut down and so it will no longer be playable for anyone. The Crew 2 is still online, and Ubisoft are about to launch The Crew Motorfest on Steam on April 18th.</p>
-<p>So now YouTuber Ross Scott of Accursed Farms, has launched the <a href="https://www.stopkillinggames.com/" target="_blank">Stop Killing Games</a> campaign to try and better highlight the issue. As noted on the campaign website: "An increasing number of videogames are sold as goods, but designed to be completely unplayable for everyone as soon as support ends. The legality of this practice is untested worldwide, and many governments do not have clear laws regarding these actions. It is our goal to have authorities examine this behavior and hopefully end it, as it is an assault on both consumer rights and preservation of media. We are pursuing this in two ways:"</p>
-<div class="hidden_video" data-video-id="w70Xc9CStoE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2b16c9ef99a758e1b97aad8bfe1f3159.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/w70Xc9CStoE" target="_blank">See video</a></div></div>
-<p>It's definitely an interesting and often frustrating issue, especially for games that could seemingly continue to let you play offline without too much trouble. It's a complicated issue though, and the campaign might not end up going anywhere, but it's certainly going to be interesting to watch.</p>
-<p>Unquestionably a campaign I can get behind though, because I've said for years it's a really poor situation for consumers to have your purchase suddenly stop working forever that you've not just put money into but often a ton of your time. It's a question of preservation too, the games are just — gone. <em>I miss the days where you could just host your own server.</em></p>
-<p><em>What are your thoughts? </em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/stop-killing-games-is-a-new-campaign-to-stop-developers-making-games-unplayable/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/stop-killing-games-is-a-new-campaign-to-stop-developers-making-games-unplayable/</guid>
-      <pubDate>Wed, 03 Apr 2024 11:18:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1182033699id24267gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Superstar Strategy is a turn-based tactical RPG you can play with or against friends</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Talberon Games have recently put up a brand new and improved demo for Superstar Strategy, a turn-based Tactical RPG that you can play alone, or brings friends along to play with <em>or</em> against them in split-screen.</p>
-<p>Currently the developer is also working on <a href="https://talberon.itch.io/steelbreakers" target="_blank">Steelbreakers</a>, a 4-player hack-and-slash party fighter, which had a few free releases I <a href="https://www.gamingonlinux.com/search-articles/?q=Steelbreakers&amp;title_only=on" target="_blank">covered previously</a> on itch.io. The free version of that will stick, but they're also expanding that into a full Steam release. However, they're also mixing their time between two games and as of April 1st, Superstar Strategy has a refreshed demo with lots of improvements that's worth taking a look at.</p>
-<div class="hidden_video" data-video-id="QSfLH3MR_FQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/fed5c835cba0dfea8d82c0cd74d72920.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/QSfLH3MR_FQ" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<ul>
-<li>Lead Your Troops into Battle - Engage in a battle of wits and strategy in this turn-based tactical RPG. Employ the distinctive abilities of each unit and leverage the battlefield's terrain to outsmart your adversaries and assert your dominance!</li>
-<li>Exploit the Battlefield Terrain - Manipulate the environment to your advantage – push, pull, teleport, and displace your foes onto traps, inflicting additional damage and status effects between turns. Escape traps before the next round begins to defy fate and evade harm.</li>
-<li>Solo Adventures, Cooperative Play, or Versus Challenges - Embark on a solitary journey through the Campaign and Solo Skirmishes, join forces with a friend in Cooperative play to combat menacing monsters, or engage in competitive scenarios and arenas in Versus mode!</li>
-<li>Draft Your Elite Army - Select from 14 distinct unit roles to forge your own army with unique combinations. Each unit class boasts individual skills, playstyles, and synergies. Experiment with diverse combinations to uncover potent combos and force multipliers, enhancing your chances of triumph.</li>
-<li>Strategic Mastery with Unit Skills - Unleash the power of each player-controlled unit's unique abilities, shaping their playstyle. Launch formidable attacks, rescue allies, intimidate enemies, and set the battlefield ablaze with awe-inspiring powers. Free actions can be seamlessly combined with other abilities for added potency and trickery.</li>
-<li>Achieve Your Goals - Navigate diverse maps with distinct primary objectives and multiple win conditions. Adapt your strategy on the fly – if defeat seems imminent, shift tactics and aim for an alternative victory to turn the tide of battle!</li>
-<li>Plan Your Moves - Order your units' movements strategically, sequencing actions until all have been exhausted for the round. Time your attacks between your opponent's turns to strike precisely when the moment is just right!</li>
-</ul>
-<p>If you're a fan of turn-based tactical RPGs, you might want to give it a shot.</p>
-<p>Check <a href="https://store.steampowered.com/app/1756730/Superstar_Strategy/" target="_blank">out the demo on Steam</a> with Native Linux support.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/superstar-strategy-is-a-turn-based-tactical-rpg-you-can-play-with-or-against-friends/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/superstar-strategy-is-a-turn-based-tactical-rpg-you-can-play-with-or-against-friends/</guid>
-      <pubDate>Wed, 03 Apr 2024 11:05:04 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1010108941id24266gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Demo</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Local co-op</category>
-      
-    </item>
-    
-    <item>
-      <title>Screenbound is a platformer where you play in 2D and 3D together</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>An upcoming game from Crescent Moon Games and Those Dang Games is Screenbound, and it really does look interesting for blending together 2D and 3D gameplay.</p>
-<p>They say "Screenbound is a game about being distracted, but totally in control" and are claiming it's a "5D" game, since you have a Quantum boy device that transports you "into a weird dual dimensional space that occupies 5D = 3d + 2d". Now you've heard developers use 2D, 3D, 2.5D, 4D and so on but 5D? Okay then. Well, it does look genuinely interesting at least so I'll let 'em have it.</p>
-<div class="hidden_video" data-video-id="uR2K8InGAus"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6b0260dc6e8ad9695a96518515ac6889.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/uR2K8InGAus" target="_blank">See video</a></div></div>
-<p>More about it from the devs:</p>
-<blockquote>
-<p>Screenbound is a platformer unlike any other. You move in first person view at the same time while playing in 2d on the screen of your Qboy. Mind bending environmental puzzles will force you to test the limits of dimensional space. Your jumping and movements are mirrored - but certain things affect the opposite dimension. Combat is in 2d and you will receive your loot in 3d.</p>
-<p>Find and explore many hidden areas and weird ideas will be all around you.</p>
-<p>So how the heck did this happen? Your mom invented the device and you found it in the garage. She was keeping it secret all this time, and other dark secrets start to come out as you delve deeper. You'll find other stuff too. But let's not spoil the plot.</p>
-<p>Screenbound also has a level editor in a traditional 2d style - but here's another twist. It auto-generates the 3d level for you! Just imagine the possibilities.</p>
-</blockquote>
-<p>You can <a href="https://store.steampowered.com/app/2805070/Screenbound/" target="_blank">follow it on Steam</a>. </p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/screenbound-is-a-platformer-where-you-play-in-2d-and-3d-together/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/screenbound-is-a-platformer-where-you-play-in-2d-and-3d-together/</guid>
-      <pubDate>Wed, 03 Apr 2024 10:50:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1197128116id24265gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Platformer</category>
       
       <category>Steam</category>
       
