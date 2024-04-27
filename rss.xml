@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-04-26 07:23:53.917247</pubDate>
+    <pubDate>2024-04-27 07:22:14.119335</pubDate>
 
     
     <image>
@@ -18,6 +18,259 @@
     </image>
 
     
+    
+    <item>
+      <title>Proton Hotfix update fixes Fallout 4 frame pacing issue on Steam Deck OLED</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Just recently we had the <a href="https://www.gamingonlinux.com/2024/04/fallout-4-next-gen-update-out-now-and-steam-deck-verified/" rel="noopener" target="_blank">Fallout 4 "next gen" update</a>, which came with some issues. Thankfully, Valve are on the case with Proton Hotfix.</p>
+<p>For those not aware: Proton Hotfix is a special version of Proton, the compatibility layer to run Windows games on Linux and Steam Deck, which gets updated at times for specific games. So when Valve aren't ready to roll out the changes to the main Proton version or even Proton Experimental, they use Proton Hotfix. It's all about getting a quick-fix out when needed.</p>
+<p>The main problem in the new Fallout 4 update is that it caused various frame pacing issues, making it quite <em>annoying</em> to play on the Steam Deck OLED model. Thankfully, as announced by Valve developer<br/>
+Pierre-Loup Griffais on X (formerly Twitter) this should no longer be an issue as they <a href="https://twitter.com/Plagman2/status/1783912978221568116" rel="noopener" target="_blank">said</a>: "A Proton Hotfix has been deployed for a Fallout 4 frame pacing issue on Deck OLED.".</p>
+<p style="text-align:center"><img 4="" a="" alt="Pierre-Loup Griffais said " been="" deck="" deployed="" fallout="" for="" frame="" has="" hotfix="" issue="" oled""="" on="" pacing="" proton="" src="https://uploads.golmedia.net/uploads/articles/article_media/16800148971714160292gol1.png"/></p>
+<p>Another issue as mentioned in our previous article, is just <a href="https://www.gamingonlinux.com/2023/12/skyrim-special-edition-updated-with-steam-deck-support-ultrawide-res-bug-fixes/" rel="noopener" target="_blank">like Bethesda did with Skyrim</a>, the launcher has been removed for Steam Deck so changing graphical options isn't possible. Unless you turn off the Steam Deck detection with this launch option: <code class="inline-code">SteamDeck=0 %command%</code>.</p>
+<p>You can buy Fallout 4 from:</p>
+<p><a href="https://www.fanatical.com/en/game/fallout-4-game-of-the-year-edition" rel="noopener" target="_blank">Fanatical</a> (also currently in the <a href="https://www.fanatical.com/en/bundle/fallout-bundle?ref=gol" rel="noopener" target="_blank">Fanatical Fallout Bundle</a>)</p>
+<p><a href="https://af.gog.com/en/game/fallout_4_game_of_the_year_edition?as=1636858786" rel="noopener" target="_blank">GOG</a></p>
+<p><a href="https://www.humblebundle.com/store/fallout-4?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/377160/Fallout_4/?curator_clanid=4218320" rel="noopener" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/proton-hotfix-update-fixes-fallout-4-frame-pacing-issue-on-steam-deck-oled/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/proton-hotfix-update-fixes-fallout-4-frame-pacing-issue-on-steam-deck-oled/</guid>
+      <pubDate>Fri, 26 Apr 2024 19:44:12 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2035842192id24407gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Open Source</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Factorio devs detail their &#39;Linux adventures&#39; in a new blog post</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Factorio from Wube Software currently has an expansion and big update on the way, with regular blog posts going over all that's coming. The latest has some fun behind the scenes info on their Linux adventures.</p>
+<p>The post is detailed in <a href="https://factorio.com/blog/post/fff-408" rel="noopener" target="_blank">Friday Facts #408</a>, which goes over all sorts of things but I felt it worth highlighting because one developer, raiguard, clearly puts a lot of effort and love into their official Native Linux version. As mentioned by raiguard they were originally making mods for the game since 2019 and eventually joined Wube Software in 2023 with their primary goals being "expansion programming and Linux support, as well as being an advocate for the modding community" and they daily-drive Linux on their own system too.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13834164771714140190gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13834164771714140190gol1.jpg"/></a></p>
+<p>And the subject of why don't more games support Linux comes up, here's what raiguard said:</p>
+<blockquote>
+<p>"Why don't most games support macOS and Linux?" is a sentiment I often see echoed across the internet. Supporting a new platform is a lot more than just changing some flags and hitting compile. Windows, macOS, Linux, and the Nintendo Switch all use different compilers, different implementations of the C++ standard library, and have different implementation quirks, bugs, and features. You need to set up CI for the new platform, expand your build system to support the new compiler(s) and architecture(s), and have at least one person on the team that cares enough about the platform to actively maintain it. If you are a video game, you will likely need to add support for another graphics backend (Vulkan or OpenGL) as well, since DirectX is Windows-exclusive.</p>
+<p>Many developers will take one look at the <a href="https://gs.statcounter.com/os-market-share/desktop/worldwide" rel="noopener" target="_blank">Windows market share</a> and decide that it is not worth the trouble to support other platforms. Also, with the meteoric rise of the Steam Deck and Proton, it is easier than ever for game developers to ignore Linux support because Valve does some black magic that lets their game run anyway.</p>
+<p>Factorio supports macOS and Linux so well because there has always been someone at Wube who actively uses these platforms and is willing to take on the burden of supporting it. Our native <a href="https://factorio.com/blog/post/fff-371" rel="noopener" target="_blank">Apple Silicon</a> support is a great example of this. Today, I will take you through some of the adventures I've had with maintaining Factorio's Linux support.</p>
+</blockquote>
+<p>After that raiguard goes over the fun of add Wayland support to the game, client-side window decorations, the game having seizures when the window was resized, dependency hell, clipboard issues and more.</p>
+<p>The blog post is worth a read for the more technical side of game development and Linux support, especially in an area where Linux is in quite a bit of flux due to Wayland, Pipewire and more.</p>
+<p>Factorio is available to buy on <a href="https://af.gog.com/game/factorio?as=1636858786" rel="noopener" target="_blank">GOG</a>, <a href="https://www.humblebundle.com/store/factorio?partner=gamingonlinux&amp;charity=12277" rel="noopener" target="_blank">Humble Store</a> and <a href="https://store.steampowered.com/app/427520/Factorio/?curator_clanid=4218320" rel="noopener" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/factorio-devs-detail-their-linux-adventures-in-a-new-blog-post/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/factorio-devs-detail-their-linux-adventures-in-a-new-blog-post/</guid>
+      <pubDate>Fri, 26 Apr 2024 14:03:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1068528961id24406gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Building Sim</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Lefties unite! Counter-Strike 2 now lets you swap hands</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>All you Lefties out there can finally get properly represented, in Counter-Strike 2 that is, as there's now the ability to swap your weapons into the other hand.</p>
+<p>The latest update to CS2 adds in weapon hand swapping, with an option to set your preferred hand. Plus there's a keybind to swap around mid-game too whenever you feel like it. Nice. I know, this isn't truly breaking news but hey - it's nice to see such a feature for those that want it right?</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8818294091714130943gol1.jpg"/></p>
+<p>The buy menu was also updated with some new tricks too like showing you the minimum amount of cash you'll have next round to make purchase planning a bit easier, and there's now a dropped weapons panel where you can see and actually pick up any weapons around you dropped by you or teammates. Sound quite useful!</p>
+<p>Other UI changes include a line-up reticle for grenade throwing, along with new hotkeys to adjust the radar map zoom level actually during a match. There's also a scoreboard on the ESC menu now, a kill feed icon for in-air kills and an icon to show bots on the scoreboard.</p>
+<p>Plus various other <a href="https://www.counter-strike.net/news/updates" rel="noopener" target="_blank">changes</a>.</p>
+<p>Personally, I'm just waiting for Danger Zone 2.0. I feel a bit lost with it, it was good fun. Do you think Valve will bring it back for Counter-Strike 2.0? With the big engine upgrades they could probably do a lot more with it now too.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/lefties-unite-counter-strike-2-now-lets-you-swap-hands/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/lefties-unite-counter-strike-2-now-lets-you-swap-hands/</guid>
+      <pubDate>Fri, 26 Apr 2024 11:30:32 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/350555862id24405gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Free Game</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Dome Keeper is getting a major content update and multiplayer is coming</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>An absolute indie gem released in 2022 is Dome Keeper from developer Bippinbits that has you mine underground for resources, while you also defend your dome above land from aliens. It's good fun and some big updates are on the way.</p>
+<p>Teased in a <a href="https://discord.com/invite/AxYpX7AaFP" rel="noopener" target="_blank">Discord</a> post the developer noted this upcoming update is "the biggest update dome has seen so far" with the focus on "increasing the replayability and run variety". They're going to be adding in "about as many new gadgets as there are already in the game and also make them much more powerful with supplements". That's only part of what's to come for the update.</p>
+<p>Also they're porting the game from <a href="https://godotengine.org/" rel="noopener" target="_blank">Godot Engine</a> v3 to v4 that will bring various improvements, and help towards their other big plan to at some point add in full multiplayer support. However, before multiplayer comes, their focus on adding in more content for replayability has been their most common feedback which is why that's the initial focus.</p>
+<div class="hidden_video" data-video-id="XJmhZdtudGw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/14d994ddb858221a3f38283750dd27b0.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/XJmhZdtudGw" target="_blank">See video</a></div></div>
+<p>You can pick it up on <a href="https://store.steampowered.com/app/1637320/Dome_Keeper/?curator_clanid=4218320" rel="noopener" target="_blank">Steam</a> with the <a href="https://af.gog.com/game/dome_keeper?as=1636858786" rel="noopener" target="_blank">GOG</a> version only being for Windows.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/dome-keeper-is-getting-a-major-content-update-and-multiplayer-is-coming/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/dome-keeper-is-getting-a-major-content-update-and-multiplayer-is-coming/</guid>
+      <pubDate>Fri, 26 Apr 2024 10:27:34 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/879655931id24404gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Godot Engine</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Rogue-lite</category>
+      
+    </item>
+    
+    <item>
+      <title>Check out the free spooky fan game Aliens: Redacted</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>To celebrate Alien Day, one developer decided to make a fan game with Aliens: Redacted now available on itch.io. Only officially available for Windows, I've confirmed it does run well with Wine 9.7.</p>
+<p>Giving some big Alien Trilogy vibes that was released back in 1996 for PlayStation, Sega Saturn, and MS-DOS this dark and spooky shooter is worth a run through if you're an Aliens fan and you love retro games. I put quite a few hours into Alien Trilogy on the Saturn and remember it terrifying me. I am also big Aliens nut, so this was an instant-play for me.</p>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20052705491714125682gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20052705491714125682gol1.jpg"/></a>Pictured: Aliens: Redacted on Linux</em></p>
+<p class="plain-list-title">Features:</p>
+<ul>
+<li>Battle against hordes of Xenomorphs using the iconic weaponry from the franchise.</li>
+<li>Explore unique and varied environments as you traverse through familiar locales from the movies such as the egg chamber and space jockey navigation room.</li>
+<li>Complete numerous objectives and attempt to escape with your life.</li>
+<li>Figure out what happened to the fate of the USS Boethiah's crew and prisoners.</li>
+<li>Prepare for an intense battle against the infamous Xenomorph Queen as you try to put a stop to the ferocious alien infestation on planet LV-059.</li>
+</ul>
+<div class="hidden_video" data-video-id="BnikShR3jAk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1cd491641bf57881182419e7a5a26f15.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/BnikShR3jAk" target="_blank">See video</a></div></div>
+<p>Check it <a href="https://polygonal-illusions.itch.io/aliens-redacted" rel="noopener" target="_blank">out on itch.io</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/check-out-the-free-spooky-fan-game-aliens-redacted/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/check-out-the-free-spooky-fan-game-aliens-redacted/</guid>
+      <pubDate>Fri, 26 Apr 2024 10:02:53 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/96446416id24403gol.jpg" type="image/jpeg"/>
+      
+      <category>FPS</category>
+      
+      <category>Free Game</category>
+      
+      <category>Itch.io</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Open source NVIDIA Vulkan driver NVK gets more enhancements</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Developer Faith Ekstrand has written up a fresh <a href="https://www.collabora.com/news-and-blog/blog/2024/04/25/re-converging-control-flow-on-nvidia-gpus/" rel="noopener" target="_blank">blog post on Collabora</a> which goes over implementing two extensions in NVK, the open source NVIDIA Vulkan driver, and how it ended up fixing actual games.</p>
+<p>It's quite a long technical post talking about the VK_KHR_shader_maximal_reconvergence and VK_KHR_shader_subgroup_uniform_control_flow extensions, and how the initial support from Ekstrand were flawed, but now the extensions have been completely re-done.</p>
+<p>I'm not going to quote much of the post, since unless you're doing driver development or you're about 100x smarter than me, it probably won't make a whole lot of sense. What I will do is sum it up for you to point out that this driver is getting more and more capable of actually playing games and displaying them properly. As Ekstrand showed, this work has actually fixed a real game.</p>
+<p>A screenshots was shown off of rendering corruptions in Genshin Impact:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19159138731714122854gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19159138731714122854gol1.jpg"/></a></p>
+<p>You'll notice some weird rendering artifacts in the image above, but now it looks much better:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8403527981714122896gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8403527981714122896gol1.jpg"/></a></p>
+<p>Why? Turns out fixing these new extensions also fixed "an ancient 3D graphics feature in an actual game". Since it fixes issues in one game, it no doubt fixes issues in others too.</p>
+<p>Great stuff. Can't wait to see how NVK continues to evolve. Especially as it seems NVIDIA themselves are now <a href="https://www.gamingonlinux.com/2024/04/nvidia-developer-contributing-to-the-open-source-nvk-driver/" rel="noopener" target="_blank">beginning to contribute to it too</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/open-source-nvidia-vulkan-driver-nvk-gets-more-enhancements/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/open-source-nvidia-vulkan-driver-nvk-gets-more-enhancements/</guid>
+      <pubDate>Fri, 26 Apr 2024 09:18:53 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1461754273id24402gol.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Microsoft open sources MS-DOS 4.0</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>More open source surprises for you today, coming from Microsoft too which is always interesting to see as they've now open sourced MS-DOS 4.0.</p>
+<p>Added into their existing MS-DOS repository on <a href="https://github.com/microsoft/MS-DOS" rel="noopener" target="_blank">GitHub</a> which already had MS-DOS v1.25 and v2.0, they've now expanded it to include MS-DOS v4.0 which was jointly developed by IBM and Microsoft. This is all available under the permissive MIT license.</p>
+<p>From the repo:</p>
+<blockquote>
+<p>The MS-DOS v1.25 and v2.0 files <a href="http://www.computerhistory.org/atchm/microsoft-ms-dos-early-source-code/" rel="nofollow" target="_blank">were originally shared at the Computer History Museum on March 25th, 2014</a> and are being (re)published in this repo to make them easier to find, reference-to in external writing and works, and to allow exploration and experimentation for those interested in early PC Operating Systems.</p>
+</blockquote>
+<p>They're doing this for "historical reference and will be kept static" so they're not accepting pull requests, but that doesn't stop someone forking them and doing pretty much whatever they want now it's all under the MIT license. Great news for preservation.</p>
+<p>It will be interesting to see if they eventually keep going adding in more later versions, and perhaps even get some earlier versions of Windows up too. Now that would truly be something don't you think?</p>
+<p>There's a fun little tidbit of history in the Microsoft <a href="https://cloudblogs.microsoft.com/opensource/2024/04/25/open-sourcing-ms-dos-4-0/" rel="noopener" target="_blank">blog post</a> on it with the code being found on some old floppy disks.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/microsoft-open-sources-ms-dos-40/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/microsoft-open-sources-ms-dos-40/</guid>
+      <pubDate>Fri, 26 Apr 2024 08:34:45 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1188315824id24401gol.jpg" type="image/jpeg"/>
+      
+      <category>Microsoft</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA developer contributing to the open source NVK driver</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another surprise from NVIDIA here. On top of <a href="https://www.gamingonlinux.com/2024/04/former-nouveau-driver-lead-joins-nvidia-and-sent-a-massive-patch-set/" rel="noopener" target="_blank">one developer contributing to Nouveau</a>, we have another developer now contributing to NVK.</p>
+<p>This time around it's Arthur Huillet, who opened a <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/28937" rel="noopener" target="_blank">Merge Request</a> titled "nvk: implement conservative rasterization (all GPUs)" which implements the VK_EXT_conservative_rasterization extension support, which is part of what's needed for Direct3D Feature Level 12.1 in VKD3D-Proton.</p>
+<p>From the MR:</p>
+<blockquote>
+<h4>Implement conservative rasterization</h4>
+<p>This is based on Benjamin's work in <a href="/mesa/mesa/-/merge_requests/25668" rel="noopener" target="_blank" title="nvk: implement VK_EXT_conservative_rasterization">!25668</a>, but with fixes.</p>
+<p>Not testing on pre-Volta yet, but matches Benjamin's code except for minor fixes.</p>
+<p>Our commits with the same name will need to be squashed before submission, but I left it as that for review in order to more clearly show the differences.</p>
+<p>AD102 testing:</p>
+<pre>
+deqp-vk --deqp-case='*conservative*'
+Test run totals:
+  Passed:        250/11777 (2.1%)
+  Failed:        0/11777 (0.0%)
+  Not supported: 11527/11777 (97.9%)
+  Warnings:      0/11777 (0.0%)
+  Waived:        0/11777 (0.0%)</pre>
+</blockquote>
+<p>Really fun to see more NVIDIA developers officially contribute to the open source drivers. Hopefully this really is a taste of what's to come. Imagine having AMD, Intel and NVIDIA <em>all</em> having good open source Linux drivers. That might not actually be a dream for too much longer it seems.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/04/nvidia-developer-contributing-to-the-open-source-nvk-driver/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/nvidia-developer-contributing-to-the-open-source-nvk-driver/</guid>
+      <pubDate>Fri, 26 Apr 2024 08:25:09 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Ubuntu 24.04 LTS (Noble Numbat) is now available</title>
@@ -178,7 +431,8 @@
       <description><div class="content group e-content">
 <p>Well, here it is Vault Dwellers, the big update to Fallout 4 you've been waiting on after binge-watching the Fallout show. The <a href="https://store.steampowered.com/news/app/377160/view/4182230563212382085" rel="noopener" target="_blank">announcement</a> goes over all the changes, which includes stuff for consoles we are of course not bothered about here but the rest of it sounds pretty good.</p>
 <p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7137613931714058369gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7137613931714058369gol1.jpg"/></a></p>
-<p>This update includes getting the game officially Steam Deck Verified, which Valve tested on Proton 9 that is now set as the default for it. There's also proper ultra-wide support, an "Installed Content" menu, along with new Creation Club items that has two quests attached. The "Echoes of the Past" quest that can give you:</p>
+<p>This update includes getting the game officially Steam Deck Verified, which Valve tested on Proton 9 that is now set as the default for it. The problem is that they've hidden the launcher, just <a href="https://www.gamingonlinux.com/2023/12/skyrim-special-edition-updated-with-steam-deck-support-ultrawide-res-bug-fixes/" rel="noopener" target="_blank">like they did with Skyrim</a>, but you can get it back in the same way with this Steam launch option: <code class="inline-code">SteamDeck=0 %command%</code> if you do wish to change some graphics settings.</p>
+<p>There's also proper ultra-wide support, an "Installed Content" menu, along with new Creation Club items that has two quests attached. The "Echoes of the Past" quest that can give you:</p>
 <ul>
 <li>X-02 Power Armor</li>
 <li>Hellfire Power Armor</li>
@@ -3394,285 +3648,6 @@ Return to the Spire and face friends and foes in this sequel to the quintessenti
       <category>Godot Engine</category>
       
       <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>The first handheld to use PlaytronOS is some Web3 thing - the SuiPlay0x1</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Remember <a href="https://www.gamingonlinux.com/2024/03/playtron-plan-to-launch-playtronos-a-linux-based-system-for-gaming/" rel="noopener" target="_blank">Playtron and PlaytronOS</a>? They made an attempt at a big splash recently with plans to create a Linux-powered system to rival SteamOS (Steam Deck) and Windows across various devices and multiple stores. The first device has been announced and it's some weird web3 thing.</p>
-<p>I should note, Playtron's CEO offered some details before the announcement, but didn't actually follow-up on providing me with <em>anything</em>. So I'm simply going by what has been announced and the seemingly <a href="https://sui.io/suiplay0x1" rel="noopener" target="_blank">official page</a> for it is mostly blank, with just a newsletter sign up box.</p>
-<p>It was announced at Sui Basecamp (Sui being a Web3 blockchain company) with the reveal from Mysten Labs. According to Sui it's called the SuiPlay0x1 and it will be released in 2025. As <a href="https://twitter.com/SuiNetwork/status/1777990300138393895" rel="noopener" target="_blank">noted</a> on X (formerly Twitter): "SuiPlay0X1 runs Playtron's device-agnostic gaming operating system, enabling gamers to play both Web3 and Web2 games across PC and mobile."</p>
-<p>And uh, it looks apparently like this:</p>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5521319781712764354gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5521319781712764354gol1.jpg"/></a>Picture credit: Sui/Mysten Labs/Playtron</em></p>
-<p>Those sticks and d-pad look rather terrible don't think? Why is it so flat? That does not look comfortable to game with. <a href="https://venturebeat.com/games/suiplay-0x1-is-an-open-steam-deck-like-gaming-handheld-with-multiple-game-stores/" rel="noopener" target="_blank">GamesBeat</a> have some more details, noting it will have "native Sui blockchain integration via zkLogin and Sui Kiosk SDKs, enabling asset ownership directly connected to a device’s account system for the first time in the gaming industry" and it might cost somewhere around $500 and while it seems to have deep integration with Sui blockchain stuff, it will support other stores too. Doesn't seem like any technical specifications have been given out yet.</p>
-<p>So if blockchain web3 stuff is your jam, then you might be interested in this I guess? Not one for me honestly.</p>
-<p>Until Playtron actually get some agreements to be on more…<em>normal</em> devices, I don't really see it going anywhere. At least once they eventually release the first public builds of the Linux-based PlaytronOS we might see what they're really up to.</p>
-<p>What are your thoughts? Let me know in the comments.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/the-first-handheld-to-use-playtronos-is-some-web3-thing-the-suiplay0x1/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/the-first-handheld-to-use-playtronos-is-some-web3-thing-the-suiplay0x1/</guid>
-      <pubDate>Wed, 10 Apr 2024 16:11:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/721911139id24307gol.jpg" type="image/jpeg"/>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Cute gravity-bending platformer ROTA is now free and open source</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Always nice to see more developers open up their games. ROTA released back in 2022 is now not only free, but it's also been made open source by the dev. It was made with <a href="https://godotengine.org/" rel="noopener" target="_blank">Godot Engine</a> too, so could be an interesting one for people to learn more from a fully released game.</p>
-<p>The developer didn't give any reasoning, their announcement on stores was short and to the point just mentioning it's free and open source now.</p>
-<div class="hidden_video" data-video-id="9QQe9FndXZo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cc8e94961470e82676b016caedeb6c95.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/9QQe9FndXZo" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<ul>
-<li>Rotate gravity as you walk over the edge!</li>
-<li>Push, pull and rotate gravity-blocks to traverse the stage and solve puzzles.</li>
-<li>Collect all 50 gems to unlock doors and explore 8 vibrant worlds!</li>
-<li>Listen to an original ambient soundtrack that will keep you relaxed while solving challenging puzzles. (:</li>
-<li>Watch out for spikes! 0:</li>
-</ul>
-</blockquote>
-<p>You can grab it free from <a href="https://harmonyhoney.itch.io/rota" rel="noopener" target="_blank">itch.io</a> or <a href="https://store.steampowered.com/app/1993830/ROTA/" rel="noopener" target="_blank">Steam</a> and find the source (GPL license) on <a href="https://github.com/HarmonyHoney/ROTA" rel="noopener" target="_blank">GitHub</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/cute-gravity-bending-platformer-rota-is-now-free-and-open-source/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/cute-gravity-bending-platformer-rota-is-now-free-and-open-source/</guid>
-      <pubDate>Wed, 10 Apr 2024 15:32:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/329313113id24306gol.jpg" type="image/jpeg"/>
-      
-      <category>Free Game</category>
-      
-      <category>Godot Engine</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Itch.io</category>
-      
-    </item>
-    
-    <item>
-      <title>The incredible pixel-smashing game Noita got a huge free update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Noita is something really special, a roguelite game where every pixel is physically simulated and it's easily one of the best games ever made. It's grown again with another big free upgrade out with the Noita Epilogue 2 Update.</p>
-<p>Here you get to fight, explore, melt, burn, freeze and evaporate your way through the procedurally generated world using spells you've created yourself thanks to numerous crazy wands. Explore a variety of environments ranging from coal mines to freezing wastelands while delving deeper in search for unknown mysteries. The interactivity at play with all the individual pixels in Noita always amazes me.</p>
-<p><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11886899501712762046gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11886899501712762046gol1.jpg"/></a><br/>
-Yes I was on fire on the above screenshot, and the fire was burning every damn pixel around the level exit. Woops. Had to wait a bit on that one. Or I could have found a little pool, or covered myself in blood pixels from enemies. You know, <em>something</em> to put my flames out. Look, you never know what's going to happen, it's such a dynamic game.</p>
-<p>So what's the new update all about? Well it adds in a whole bunch of new spells to add to your wands including some secret spells, 6 new enemies to tear into pixels, new chemical reactions (oh boy), new potion reactions, 3 new boss fights, a utility box item, new rare materials, a new easter egg, a new secret quest, a new small biome, new additional audio added in, various fixes for when you move really fast, lots of bug fixes and lots of improvements for modders. Plus more in the <a href="https://store.steampowered.com/news/app/881100/view/4212628592054084886" rel="noopener" target="_blank">changelog</a>.</p>
-<p>It's Steam Deck Verified and works great on Desktop Linux with Proton. Noita is absolutely not to be slept on.</p>
-<p>Available to buy from:</p>
-<p><a href="https://www.gog.com/en/game/noita" rel="noopener" target="_blank">GOG</a></p>
-<p><a href="https://www.humblebundle.com/store/noita?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/881100/Noita/" rel="noopener" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/the-incredible-pixel-smashing-game-noita-got-a-huge-free-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/the-incredible-pixel-smashing-game-noita-got-a-huge-free-update/</guid>
-      <pubDate>Wed, 10 Apr 2024 15:20:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/699070085id24305gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Tomb Raider 1 open source engine TR1X adds a 60FPS mode</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The open source TR1X engine for running Tomb Raider 1 continues to bring in lots of enhancements, making it easily one of the best ways to play the original on PC. It also has a Native Linux version.</p>
-<p>Just some of what's new in the 4.0 release includes an experimental 60 FPS mode, the ability to slow the game down, an option to change weapon targets by tapping the look key like in TR4+, three new targeting options, optional support for OpenGL 3.3 Core Profile, the ability to move the look camera while targeting an enemy in combat, support for animated room sprites in custom levels and an option to animate plant sprites in The Cistern and Tomb of Tihocan, on-screen messages for certain actions and much more.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5589083661712752953gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5589083661712752953gol1.jpg"/></a></p>
-<p>See more about it <a href="https://github.com/LostArtefacts/TR1X" rel="noopener" target="_blank">on GitHub</a>.</p>
-<p>You do need assets from the original game which you can grab from <a href="https://af.gog.com/en/game/tomb_raider_123?as=1636858786" rel="noopener" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/224960/Tomb_Raider_I_1996/?curator_clanid=4218320" rel="noopener" target="_blank">Steam</a>.</p>
-<p><em>There's also the recent <a href="https://www.gamingonlinux.com/2024/01/tomb-raider-i-iii-remastered-gets-steam-deck-verified/" rel="noopener" target="_blank">Tomb Raider I-III Remastered</a> which is Steam Deck Verified.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/tomb-raider-1-open-source-engine-tr1x-adds-a-60fps-mode/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/tomb-raider-1-open-source-engine-tr1x-adds-a-60fps-mode/</guid>
-      <pubDate>Wed, 10 Apr 2024 12:44:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1740950207id24304gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Adventure</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Aquapark Tycoon is a waterpark building sim from the dev of Avorion</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Boxelware, developer of space sim Avorion just revealed Aquapark Tycoon, that's set to deliver a unique fusion of creativity, strategic planning and park management offering you the chance to design, build, and oversee your very own water park. Quite a departure from their first game!</p>
-<p>Check out the first teaser:</p>
-<div class="hidden_video" data-video-id="nTeYZMK3vFg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/fb7cc8bd428ac4c37c62ce28e6b501f3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/nTeYZMK3vFg" target="_blank">See video</a></div></div>
-<p>Konstantin Kronfeldner, founder and CEO of Boxelware, says, "Following our success with Avorion, the creation of Aquapark Tycoon represents yet another dream come to fruition for us. The whole team is excited about the water park theme, recognizing the vast potential it brings to merge creative construction with the mechanics of tycoon gameplay. We are incredibly excited to share our passion with the community and to create a game that is both entertaining and challenging.”</p>
-<p>Features:</p>
-<ul>
-<li>Design stunning indoor pools and aquaparks with pool landscapes, slides, and saunas.</li>
-<li>Choose from over 10 types of pools to swim, splash and relax. </li>
-<li>Use a modular construction system to design unique water slides. </li>
-<li>10 types of saunas with customizable settings for temperature, humidity, and various infusions. </li>
-<li>Meet the needs of all guest groups, from teenagers and families to senior citizens. </li>
-<li>Seasonal attractions: Cool pools in the summer or heated pools and saunas in the winter as major draws. </li>
-<li>Optimize financial and staff management for smooth operations flow and maximum guest satisfaction. </li>
-<li>Tackle challenges in scenarios or set personal goals in sandbox mode.</li>
-</ul>
-<p>It's set for release in 2025 with Native Linux support.</p>
-<p>Follow it along on the <a href="https://store.steampowered.com/app/2819470/Aquapark_Tycoon/" rel="noopener" target="_blank">Steam page</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/aquapark-tycoon-is-a-waterpark-building-sim-from-the-dev-of-avorion/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/aquapark-tycoon-is-a-waterpark-building-sim-from-the-dev-of-avorion/</guid>
-      <pubDate>Wed, 10 Apr 2024 11:23:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1767225612id24303gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Building Sim</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Simulation</category>
-      
-    </item>
-    
-    <item>
-      <title>GE-Proton installer ProtonUp-Qt v2.9.2 released</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>ProtonUp-Qt is back for another update, remaining as one of the easiest ways to install extra compatibility tools on Steam Deck and Desktop Linux with version 2.9.2 out now. You can use this to install GE-Proton, Luxtorpeda and other tools to increase game compatibility for Steam, Heroic Games Launcher and Lutris.</p>
-<p>Changes in this release:</p>
-<blockquote>
-<ul>
-<li>Steam: Display which games are using a certain Anti-Cheat Runtime.</li>
-<li>Improvements were made to the Shortcut Editor.</li>
-<li>Updated the AppImage build to a more recent version. This may cause a problem if your OS version is from before the year 2022. Report that on GitHub and update your OS to a more recent version or use ProtonUp-Qt v2.9.1 in that case.</li>
-<li>Fixed a crash that occurs when a Steam installations is missing files, PR <a href="https://github.com/DavidoTek/ProtonUp-Qt/pull/356" rel="noopener" target="_blank">#356</a>.</li>
-<li>Fixed a crash when a game with the AWACY Denied status is detected, PR <a href="https://github.com/DavidoTek/ProtonUp-Qt/pull/354" rel="noopener" target="_blank">#354</a>.</li>
-<li>Fixed the dialog for custom launcher installations if no official launcher is installed, PR <a href="https://github.com/DavidoTek/ProtonUp-Qt/pull/371" rel="noopener" target="_blank">#371</a>.</li>
-</ul>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20624131961712739942gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20624131961712739942gol1.png"/></a></p>
-<p>See more on the <a href="https://github.com/DavidoTek/ProtonUp-Qt" rel="noopener" target="_blank">GitHub</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/ge-proton-installer-protonup-qt-v292-released/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/ge-proton-installer-protonup-qt-v292-released/</guid>
-      <pubDate>Wed, 10 Apr 2024 09:07:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/713579531id24302gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Apps</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>The Splintered Sea expansion announced for physics building game Besiege</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Besiege is good fun having you construct various mechanical machines for destruction, and now it's all going to get a bit wet in The Splintered Sea expansion. </p>
-<p>Announced for release on May 24th, In The Splintered Sea, players battle through a 10-level oceanic campaign, introducing new block types to bring more chaos to the high seas. Using elements of hydrodynamics, this expansion challenges players to explore new builds capable of above-water combat and undersea exploration. The developers said it was a huge technical challenge for them, one that's been multiple years in the making.</p>
-<p>It also brings with it a new sandbox environment, allowing you to sail through a vast archipelago, while you explore ancient ruins, and put your engineering to the test on water courses. Using The Splintered Sea’s eight new aquatic blocks, you can spread your destruction across land and sea!</p>
-<div class="hidden_video" data-video-id="sxedDR0REws"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/27ced6bf3cb398e39f88fd07b19173b1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/sxedDR0REws" target="_blank">See video</a></div></div>
-<p>DLC Features:</p>
-<ul>
-<li><strong><strong>Oceanic Campaign Challenges:</strong></strong> Dive into ten new water-themed campaign levels, pitting your creations against your enemy’s formidable fleet and treacherous sea creatures.</li>
-<li><strong>Building Aquatic Machines: </strong>Harness the power of 8 new blocks specially designed for maritime madness, including floats for buoyancy, a rudder for improved steering, a harpoon launcher for engaging enemies, and more.</li>
-<li><strong>Immersive Water Simulation: </strong>Play with hydrodynamics, including shape-dependent drag, density-based buoyancy, and higher-speed impacts, offering a realistic and engaging aquatic building experience.</li>
-<li><strong>Brand New Sandbox: </strong>Explore a rugged archipelago, challenge mighty galleons, terrorize local fishermen, and navigate treacherous waters in a sandbox built specifically for <em>The Splintered Sea.</em></li>
-<li>Multiplayer Madness: Engage in multiplayer combat with friends, create custom levels with the in-game editor, and unleash chaos in <em>Besiege</em>'s water-filled arenas.</li>
-</ul>
-<p>Besiege has Native Linux support and it's rated Steam Deck Playable by Valve. You can buy Besiege from:</p>
-<p><a href="https://www.gog.com/en/game/besiege" rel="noopener" target="_blank">GOG</a></p>
-<p><a href="https://www.humblebundle.com/store/besiege?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/346010/Besiege/" rel="noopener" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/the-splintered-sea-expansion-announced-for-physics-building-game-besiege/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/the-splintered-sea-expansion-announced-for-physics-building-game-besiege/</guid>
-      <pubDate>Wed, 10 Apr 2024 08:55:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1470265710id24301gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Building Sim</category>
-      
-      <category>DLC</category>
-      
-      <category>GOG</category>
-      
-    </item>
-    
-    <item>
-      <title>Toaplan Arcade Shoot &#39;Em Up Collection Vol.4 is out now with more classics</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you're a shoot 'em up fan you've been eating good recently, with another quality set of games out now in the Toaplan Arcade Shoot ‘Em Up Collection Vol.4. This is the last Toaplan collection coming from Bitwave Games, and so to go along with collection 4 they've also put up a bundle in the Toaplan Arcade Shoot ‘Em Up Ultimate Collection for all 16 games.</p>
-<p>The games included in this collection are:</p>
-<p><strong><em>Grind Stormer</em></strong></p>
-<p><img src="https://uploads.golmedia.net/uploads/articles/article_media/13755137541712738663gol1.jpg"/></p>
-<p>"Grind Stormer, aka ‘V・V’, is a vertically scrolling shooter with gorgeous pixel art graphics and an upbeat FM soundtrack. Developed by an all-star team at Toaplan, the game is a superb early example of a manic shooter, a precursor to the ‘bullet hell’ shoot ‘em up genre so popular today. The Japanese version of the game, called V・V (pronounced V Five), features a selectable power-up system with gauges, providing a strategic gameplay element where the key to success is to use the appropriate weapon for each level and enemy encounter."</p>
-<p><strong><em>Twin Hawk</em></strong></p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13859091961712738542gol1.jpg"/></p>
-<p>"Take on powerful tanks and battleships with in this military themed vertical arcade shoot ‘em up by Toaplan! Summon friendly fighter planes to avoid emergencies and increase firepower. A vertical scrolling shooter, gamers must defy the oncoming army and navy barrages, assisted by calling up a formation of six friendly fighters. In <strong><em>Twin Hawk</em></strong>, a strategic approach is the key to success, but the challenge ramps up when the last stage is cleared, entering Round Two of the conflict with the difficulty getting progressively harder with each loop of the game! Like the Japanese title of the game Daisenpu (Great Whirlwind) implies, the game will eventually come at you with full force, never letting go!"</p>
-<p><strong><em>Truxton II</em></strong></p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9779976981712738500gol1.jpg"/></p>
-<p>"The sequel to Toaplan’s shoot ‘em up masterpiece, <strong><em>Truxton II</em></strong> is a thrilling slice of space action with an unforgiving difficulty level. Enjoy the visually stunning pixel graphics and vibrant music as you dodge the high-speed bullet rain and take on tough bosses. Casual players who dare to play<strong><em> Truxton II </em></strong>can take solace in the added easy mode, and the modern features of rewind and quick save that gives players a fighting chance to advance through the quick bullet rain and tough bosses."</p>
-<p><strong><em>Dogyuun</em></strong></p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17781719201712738582gol1.jpg"/></p>
-<p>"A science fiction-themed vertically scrolling shoot 'em up game known for its stunning detailed pixel art, gigantic bosses, and menacing difficulty. Quite possibly the most rock n’ roll shooting game of all time, <strong><em>Dogyuun</em></strong> is packed with a huge enemy variety, providing a tough challenge even for hardened shmup’ veterans. <strong><em>Dogyuun </em></strong>is a visual spectacle of amazing pixel art graphics and detailed animation under the artistic vision of Hayashi Miho and Koetsu Iwabuchi and marks the debut of manga artist Junya Inoue as one of the graphic artists."</p>
-<p>And of course each comes with all the improvements Bitwave worked on like:</p>
-<ul>
-<li>Minimal Input Lag: Emulation, input processing, and rendering all complete on the same frame.</li>
-<li>Online leaderboards for Single Credit, No Assist, and Assisted plays.</li>
-<li>Rewind the game between 10-18 minutes, depending on the action.</li>
-<li>Experience the game in Mirror Mode.</li>
-<li>Assist Features such as auto-fire at multiple rates.</li>
-<li>Very Easy Mode: Lower the difficulty to breeze through the adventure.</li>
-<li>Rotate the gameplay in 90-degree increments.</li>
-<li>Choose between Raw Input on Windows or Steam Input.</li>
-<li>Hone your skills in the ultra-customizable practice mode.</li>
-</ul>
-<p>Available on <a href="https://store.steampowered.com/bundle/39256/Toaplan_Arcade_Shootem_Ups_4/" rel="noopener" target="_blank">Steam</a> and <a href="https://www.gog.com/game/toaplan_arcade_shootem_ups_4" rel="noopener" target="_blank">GOG</a> but looks like only Steam has the Linux versions.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/toaplan-arcade-shoot-em-up-collection-vol4-is-out-now-with-more-classics/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/toaplan-arcade-shoot-em-up-collection-vol4-is-out-now-with-more-classics/</guid>
-      <pubDate>Wed, 10 Apr 2024 08:45:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1993293679id24300gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Arcade</category>
-      
-      <category>Emulation</category>
-      
-      <category>GOG</category>
       
     </item>
     
