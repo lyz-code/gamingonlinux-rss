@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-05-02 07:23:19.068956</pubDate>
+    <pubDate>2024-05-03 07:22:50.718063</pubDate>
 
     
     <image>
@@ -18,6 +18,384 @@
     </image>
 
     
+    
+    <item>
+      <title>Proton 9.0-1 released with expanded game support for Steam Deck / Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve today released the first version of Proton 9.0, the newest stable version of the Windows compatibility layer to run games on Steam Deck and Desktop Linux. Building on top of the newer Wine 9.0, along with plenty of other patches and enhancements.</p>
+<p>Here's what Valve said were previously only playable on Proton Experimental:</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/2152990/Dinogen_Online/" rel="noopener" target="_blank">Dinogen Online</a></li>
+<li><a href="https://store.steampowered.com/app/1732910/Photography_Simulator/" rel="noopener" target="_blank">Photography Simulator Demo</a></li>
+<li><a href="https://store.steampowered.com/app/2539330/George_McGeehan_Gamer_Hero/" rel="noopener" target="_blank">George McGeehan Gamer Hero</a></li>
+<li><a href="https://store.steampowered.com/app/2073850/THE_FINALS/" rel="noopener" target="_blank">The Finals</a></li>
+<li><a href="https://store.steampowered.com/app/2682300/True_Reporter_Mystery_of_Mistwood/" rel="noopener" target="_blank">True Reporter. Mystery of Mistwood</a></li>
+<li><a href="https://store.steampowered.com/app/1963610/Road_to_Vostok/" rel="noopener" target="_blank">Road to Vostok Demo</a></li>
+<li><a href="https://store.steampowered.com/app/2052410/WITCH_ON_THE_HOLY_NIGHT/" rel="noopener" target="_blank">WITCH ON THE HOLY NIGHT</a></li>
+<li><a href="https://store.steampowered.com/app/1265780/The_Lord_of_the_Rings_Gollum/" rel="noopener" target="_blank">Lord of the Rings: Gollum</a></li>
+<li><a href="https://store.steampowered.com/app/2055290/Sonic_Colors_Ultimate/" rel="noopener" target="_blank">Sonic Colors: Ultimate</a></li>
+<li><a href="https://store.steampowered.com/app/2229850/Command__Conquer_Red_Alert_2_and_Yuris_Revenge/" rel="noopener" target="_blank">Command &amp; Conquer: Red Alert 2 and Yuri’s Revenge</a></li>
+<li><a href="https://store.steampowered.com/app/2229880/Command__Conquer_Tiberian_Sun_and_Firestorm/" rel="noopener" target="_blank">Command &amp; Conquer Tiberian Sun and Firestorm</a></li>
+<li><a href="https://store.steampowered.com/app/1444360/Aisling_and_the_Tavern_of_Elves/" rel="noopener" target="_blank">Aisling and the Tavern of Elves</a></li>
+<li><a href="https://store.steampowered.com/app/1111120/Snares_of_Ruin_2/" rel="noopener" target="_blank">Snares of Ruin 2</a></li>
+<li><a href="https://store.steampowered.com/app/334190/Insanitys_Blade/" rel="noopener" target="_blank">Insanity's Blade</a></li>
+<li><a href="https://store.steampowered.com/app/531960/Bloody_Walls/" rel="noopener" target="_blank">Bloody Walls</a></li>
+</ul>
+<p>Additionally, the number of CPU cores seen by these games have been limited, to make them actually playable on newer CPUs with high core counts:</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/19900/Far_Cry_2/" rel="noopener" target="_blank">Far Cry 2</a></li>
+<li><a href="https://store.steampowered.com/app/298110/Far_Cry_4/" rel="noopener" target="_blank">Far Cry 4</a></li>
+<li><a href="https://store.steampowered.com/app/20920/The_Witcher_2_Assassins_of_Kings_Enhanced_Edition/" rel="noopener" target="_blank">The Witcher 2: Assassins of Kings Enhanced Edition</a></li>
+<li><a href="https://store.steampowered.com/app/35130/Lara_Croft_and_the_Guardian_of_Light/" rel="noopener" target="_blank">Lara Croft and the Guardian of Light</a></li>
+<li><a href="https://store.steampowered.com/app/55150/Warhammer_40000_Space_Marine__Anniversary_Edition/" rel="noopener" target="_blank">Warhammer 40,000: Space Marine</a></li>
+<li><a href="https://store.steampowered.com/app/15620/Warhammer_40000_Dawn_of_War_II/" rel="noopener" target="_blank">Warhammer 40,000: Dawn of War II</a></li>
+<li><a href="https://store.steampowered.com/app/20570/Warhammer_40000_Dawn_of_War_II_Chaos_Rising/" rel="noopener" target="_blank">Warhammer 40,000: Dawn of War II - Chaos Rising</a></li>
+<li><a href="https://store.steampowered.com/app/56437/Warhammer_40000_Dawn_of_War_II_Retribution/" rel="noopener" target="_blank">Warhammer 40,000: Dawn of War II - Retribution</a></li>
+<li><a href="https://store.steampowered.com/app/618970/Outcast__Second_Contact/" rel="noopener" target="_blank">Outcast - Second Contact</a></li>
+<li><a href="https://store.steampowered.com/app/10150/Prototype/" rel="noopener" target="_blank">Prototype</a></li>
+</ul>
+<p>All the other changes:</p>
+<ul>
+<li>Enabled nvapi by default for most games.</li>
+<li>Started ignoring system mouse acceleration in games using raw input API.</li>
+<li>Fixed Brawhalla showing a security certificate warning.</li>
+<li>Fixed audio in BOOMEROAD, DORONKO WANKO, NOTTOLOT.</li>
+<li>Fixed Civilization V Touch Only option in the launcher not working.</li>
+<li>Improved cutscene synchronization in Immortals Fenyx Rising.</li>
+<li>Fixed TouHou Makuka Sai ~ Fantastic Danmaku Festival Part I and II crashing during boss fights.</li>
+<li>Fixed crash in Disaster Report 4: Summer Memories epilogue.</li>
+<li>Improved video playback in BIOMUTANT.</li>
+<li>Fixed Imperiums: Greek Wars launcher.</li>
+<li>Fixed memory leaks that caused Final Fantasy XIV Online launcher crash over long time.</li>
+<li>Fixed crash in Microsoft Flight Simulator when live weather is enabled.</li>
+<li>Improved support for input devices with 8+ axes.</li>
+<li>Fixed Savant - Ascent REMIX hitching during certain animations.</li>
+<li>Fixed Super Robot Wars 30 crashing with languages other than English.</li>
+<li>Fixed Doom Eternal audio crackling on certain setups.</li>
+<li>Fixed Lethal Company, Phasmophobia and other Unity games crashing when a controller with a hat switch is plugged in.</li>
+<li>Improved video playback for the following titles: Lords of the Fallen, Harvestella, Wayfinder, Sea of Thieves, and KING OF FIGHTERS XV.</li>
+<li>Fixed default scaling for The Last Game on Steam Deck.</li>
+<li>Fixed audio issues when playing intro video in Airborne Kingdom.</li>
+<li>Fixed Bayonetta crashing on certain systems.</li>
+<li>Fixed Escape from Monkey Island getting minimized on a mouse click.</li>
+<li>Fixed audio controls and spatialization in VRChat with AVPro.</li>
+<li>Fixed new prefix failing to initialize on filesystem that do not support <code class="inline-code">copy_file_range</code> syscall.</li>
+<li>Updated file distribution method to save disk space.</li>
+<li>Rebased on top of upstream Wine 9.0.</li>
+<li>Updated vkd3d-proton to <a href="https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.11.1" rel="noopener" target="_blank">v2.11.1</a>-49-<a href="https://github.com/HansKristian-Work/vkd3d-proton/commit/32ff676b9994de05b973e2b12063afbbfcb6cd38" rel="noopener" target="_blank">g32ff676b</a>.</li>
+<li>Updated dxvk to <a href="https://github.com/doitsujin/dxvk/releases/tag/v2.3" rel="noopener" target="_blank">v2.3</a>-47-<a href="https://github.com/doitsujin/dxvk/commit/e2a46a347d7193ee853bd8c75cbca5939f10a987" rel="noopener" target="_blank">ge2a46a34</a>.</li>
+<li>Updated dxvk-nvapi to <a href="https://github.com/jp7677/dxvk-nvapi/releases/v0.6.4" rel="noopener" target="_blank">v0.6.4</a>-48-<a href="https://github.com/jp7677/dxvk-nvapi/commit/0951afbe7e2bc72c671c1073b76abacfc3b4ae98" rel="noopener" target="_blank">g0951afb</a>.</li>
+<li>Added support for Steamworks SDK 1.59.</li>
+</ul>
+<p>As seen from the official <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener" target="_blank">changelog</a>.</p>
+<p><strong>How to update?</strong></p>
+<p>If you already had the Beta of Proton 9.0 downloaded, it will just show up as a normal update in your Steam Downloads. If you went to play a game that was verified on Proton 9.0, that would also get it to download automatically. Otherwise, you can search for Proton 9.0 in your Steam Library and select to install it there. Example on Steam Deck:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13310104671714668812gol1.jpeg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13310104671714668812gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10158961931714668813gol1.jpeg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/10158961931714668813gol1.jpeg"/></a><br/>
+<em>Click images to enlarge. Left: searching for Proton. Right: About to install Proton 9.</em></p>
+<p>Just before the weekend, giving you plenty of time to get testing all the latest. Excellent work from Valve and everyone else who works on Proton. That's a really great list of improvements there overall.</p>
+<p>Is there a specific game you're waiting on being compatible? Let me know in the comments!</p>
+<p><em>Also in case you missed it: <a href="https://www.gamingonlinux.com/2024/05/nvidia-make-it-easier-to-get-geforce-now-on-steam-deck/" rel="noopener" target="_blank">NVIDIA make it easier to get GeForce NOW on Steam Deck</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/proton-9-0-released-with-expanded-game-support-for-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/proton-9-0-released-with-expanded-game-support-for-steam-deck-linux/</guid>
+      <pubDate>Thu, 02 May 2024 16:57:24 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1710026948id24439gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA make it easier to get GeForce NOW on Steam Deck </title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Showing just how popular the Steam Deck is, NVIDIA are officially making it easier to get their cloud gaming service GeForce NOW on Steam Deck.</p>
+<p>While you've been able to get it working on Steam Deck for a while now, like <a href="https://www.gamingonlinux.com/2022/03/chrome-on-steam-deck-now-supports-the-deck-controller-with-geforce-now-working/" rel="noopener" target="_blank">I've showed off before previously</a>, it's still a bit of manual effort to do. Thankfully, it seems that's going to change.</p>
+<p>News comes from their <a href="https://blogs.nvidia.com/blog/geforce-now-thursday-may-games-list/" rel="noopener" target="_blank">latest blog post</a>, which mentions they have a new <a href="https://www.nvidia.com/en-us/geforce-now/download/" rel="noopener" target="_blank">install option</a> (scroll down) that's currently in Beta. This will "automatically configure GeForce NOW’s browser in Steam Deck’s Gaming Mode" that installs Google Chrome for you, and sorts out all the settings you need to get it working.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4356811171714662140gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4356811171714662140gol1.png"/></a></p>
+<p>Looking at the actual download specifically the readme notes it will install Chrome if it's not already installed, adjust the Flatpak settings for gamepad use, add a GeForce NOW shortcut to Steam, update the shortcut assets to look correct for their branding and set a default gamepad layout for it too. So pretty much what I expected there but great to see. Now it's just a simple script to download and run in Desktop Mode and all the little bits are done for you.</p>
+<p>An <a href="https://www.nvidia.com/en-us/geforce-now/release-highlights/" rel="noopener" target="_blank">update</a> they released last week (v2.0.62) for GeForce NOW also tweaked it so that you can more easily navigate the service using a gamepad too (like the Steam Deck). So with the two together, it's easier than ever to do some cloud gaming on the Steam Deck for those games that it just can't handle, especially good if you don't have a powerful PC to stream to it too.</p>
+<p>This will give you access to games from Steam, Battle.net, Epic Games, Ubisoft Connect, GOG and more.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/nvidia-make-it-easier-to-get-geforce-now-on-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/nvidia-make-it-easier-to-get-geforce-now-on-steam-deck/</guid>
+      <pubDate>Thu, 02 May 2024 15:02:39 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1748237326id24438gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Cloud Gaming</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Total War: WARHAMMER III gets the 5.0 update and Thrones of Decay for Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Feral Interactive have now ported over all the changes from the Total War: WARHAMMER III v5.0 update, along with support for the new Thrones of Decay DLCs. The update and 3 DLCs were released on April 30th, with the Linux port being updated today - pretty good turnaround from Feral there which is nice to see for one of their last Native Linux ports.</p>
+<p>The Thrones of Decay pack is actually 3 DLC, which you can buy together or individually. The Thrones of Decay pack introduces 3 new Legendary Lords, for Nurgle, the Empire, and the Dwarfs, usable in both the Realm of Chaos and Immortal Empires campaigns. Launch trailer below:</p>
+<div class="hidden_video" data-video-id="N_Pnd9fZGLw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7893353d74436eb2b50fd68d162a70c1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/N_Pnd9fZGLw" target="_blank">See video</a></div></div>
+<p>The 5.0 patch notes are <a href="https://community.creative-assembly.com/total-war/total-war-warhammer/blogs/17" rel="noopener" target="_blank">pretty long</a> but some of the highlights include:</p>
+<ul>
+<li>Both Empire and Dwarf have had a full sweep of their building trees to bring them up to date.</li>
+<li>Remastered and remade some of the old frontend videos for a variety of Legendary Lords.</li>
+<li>Gotrek and Felix have been reworked so that both of them are now legendary heroes.</li>
+<li>Ironman Mode.</li>
+<li>Lots and lots of bug fixes, various balance changes, UI updates and so on.</li>
+</ul>
+<p>If you have a linked Creative Assembly account then update 5.0 also adds an extra free Legendary Lord for the Nurgle race, Epidemius.</p>
+<p>You can buy the game and various DLC from:</p>
+<p><a href="https://www.fanatical.com/en/game/total-war-warhammer-iii?ref=gol" rel="noopener" target="_blank">Fanatical</a></p>
+<p><a href="https://www.humblebundle.com/store/total-war-warhammer-iii?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/1142710/Total_War_WARHAMMER_III/" rel="noopener" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/total-war-warhammer-iii-gets-the-50-update-and-thrones-of-decay-for-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/total-war-warhammer-iii-gets-the-50-update-and-thrones-of-decay-for-linux/</guid>
+      <pubDate>Thu, 02 May 2024 14:41:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/61002462id24437gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>DLC</category>
+      
+      <category>Fanatical</category>
+      
+      <category>Feral Interactive</category>
+      
+    </item>
+    
+    <item>
+      <title>Dark fantasy 2D platformer Saviorless is out now with a real unique style</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>In Saviorless, you'll explore treacherous landscapes, fight nightmarish monsters, unravel a mysterious narrative and experience dynamic gameplay as three unique characters all while bathed in an atmospheric soundtrack.</p>
+<p>A new Native Linux release I missed from early April, one that looks really good too. There's just too many games releasing but the style in this one looks great so it for sure deserves a bit of your attention. The creature and world design really looks interesting! Check out the trailer:</p>
+<div class="hidden_video" data-video-id="KalS5UDppXE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/890db704ff57f01f4a0eec03531fdfa9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/KalS5UDppXE" target="_blank">See video</a></div></div>
+<p>Created by Cuban indie gave developer, Empty Head Games and publisher Dear Villagers, developing a video game in Cuba presented challenges to Empty Head Games beyond those traditionally faced by developers worldwide, such as daily power outages, lack of technical equipment, very limited internet access (relying on public parks to connect to Wi-Fi networks), and the inability to access any form of international financing or promotion.</p>
+<p>From the developer: "Starting in 2016 we only hoped this day would come but it’s here and Saviorless is finally seeing the light of day! We are beyond excited and are thankful to all our friends, colleagues, partners and every single one of our supporters who helped us get here. We cannot wait for players to experience the unique game that is Saviorless!" – said Josuhe H. Pagliery, Game Designer at Empty Head Games.</p>
+<p>You can buy it from</p>
+<p><a href="https://www.fanatical.com/en/game/saviorless?ref=gol" rel="noopener" target="_blank">Fanatical</a></p>
+<p><a href="https://www.gog.com/en/game/saviorless" rel="noopener" target="_blank">GOG</a> (no Linux version)</p>
+<p><a href="https://store.steampowered.com/app/1438480/Saviorless/" rel="noopener" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/dark-fantasy-2d-platformer-saviorless-is-out-now-with-a-real-unique-style/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/dark-fantasy-2d-platformer-saviorless-is-out-now-with-a-real-unique-style/</guid>
+      <pubDate>Thu, 02 May 2024 11:56:55 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1326038126id24436gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Fanatical</category>
+      
+      <category>GOG</category>
+      
+    </item>
+    
+    <item>
+      <title>Promise Mascot Agency is an open world mascot management crime drama</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Okay, so what the heck is this then? Kaizen Game Works (Paradise Killer) recently announced Promise Mascot Agency and the setting sounds absolutely bizarre.</p>
+<p>Shown off during the ID@Xbox show it's what they're calling the "world's first and best open world mascot management crime drama". This is probably one of the most unique games I've seen for a while because of how it blends genres together like this. It also has a suitably weird trailer:</p>
+<div class="hidden_video" data-video-id="nOcz48bQlzg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3e996ec9f26a621dbe245e613d05fa39.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/nOcz48bQlzg" target="_blank">See video</a></div></div>
+<p>More about it:</p>
+<blockquote>
+<p>Michi, a disgraced yakuza lieutenant, is exiled to a cursed town to turn a bankrupt mascot agency into a profitable enterprise. As he struggles in his new life, can he manage to create a successful business and unravel the conspiracy behind his exile? He’s helped by Assistant Manager Pinky, who happens to be a mascot herself.</p>
+<p>Players will explore their new home of Kaso-Machi in Michi’s run-down (but upgradable!) truck. There’s plenty to discover in this forgotten Japanese town - new friends to make, collectibles to find (and destroy), other businesses to partner with and, most importantly, a variety of mascots to recruit.</p>
+<p>As we all know, mascots are living creatures that have coexisted with mankind since the dawn of history. Mascots have their own hopes, dreams and desires and you’ll need to negotiate to recruit them. Some mascots want money, some want fame, some want a rice ball from the local convenience store and some want to see the entire world burn to ashes in purifying hellfire.</p>
+</blockquote>
+<p>Kaizen Game Works collaborated with well-known Japanese developer Ikumi Nakamura (The Evil Within, Ghostwire: Tokyo) and concept artist Mai Mattori on concept and art direction for Promise Mascot Agency. The pair helped Kaizen design and develop the world and characters, working together to create a unique Yakuza family, a repurposed love hotel and a cast of memorable, occasionally-horrific mascots! </p>
+<p>To bring the concept art to life, Kaizen Game Works worked with Inko Ai Takita, a Japanese manga artist based in the UK who illustrated Promise Mascot Agency's band of freaks and weirdos in her signature manga style. </p>
+<p>This looks like one I absolutely have to try. So hopefully it works well enough with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" rel="noopener" target="_blank">Valve's Proton</a>. It's not due out until 2025, and I've spoken to the developer about a key when they become available so hopefully I'll be able to take a look.</p>
+<p>You can <a href="https://store.steampowered.com/app/2585830/Promise_Mascot_Agency/" rel="noopener" target="_blank">follow it on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/promise-mascot-agency-is-an-open-world-mascot-management-crime-drama/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/promise-mascot-agency-is-an-open-world-mascot-management-crime-drama/</guid>
+      <pubDate>Thu, 02 May 2024 11:35:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1297344021id24435gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Monster Catching</category>
+      
+      <category>Open World</category>
+      
+    </item>
+    
+    <item>
+      <title>Scribbly vicious action-RPG &#39;Death of a Wish&#39; releases for Linux on May 9th</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Developer melessthanthree has <a href="https://steamcommunity.com/games/2302080/announcements/detail/4221637059934547058" rel="noopener" target="_blank">announced</a> that Death of a Wish, their scribbly-art styled vicious hack-and-slash action-RPG, will be releasing a Linux version on May 9th.</p>
+<p>More: "Death of a Wish is a vicious action-RPG where style is salvation.</p>
+<p>Play as Christian as he unites with new comrades to challenge the cult that raised him. By taking down the four Sanctum Faiths: Father, Sister, Cardinal, and Priest, they will upend the order of the world.</p>
+<p>Fight your way through a nightmare filled with horrifying monsters and terrifying people. Master brutal attacks and flashy combos as you struggle against the Corruption consuming you with style and grace. Shine your light in this surreal sea of darkness."</p>
+<div class="hidden_video" data-video-id="tleiqAL6PiI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/415764af57d758ccc338dfcdab4d7fde.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/tleiqAL6PiI" target="_blank">See video</a></div></div>
+<p>The Linux (and macOS) versions will be coming along with the Randomizer Update that adds in a new randomized game mode, great for those who complete it and want something more. This mode randomizes the enemy and item placements, and also gives you randomized starting equipment.</p>
+<p>Game Features:</p>
+<blockquote>
+<ul>
+<li><strong>ENGAGE IN VICIOUSLY GRACEFUL COMBAT</strong> Unleash Christian’s cursed powers in a demanding and rewarding combat system. Be careful not to succumb to the ever-encroaching Corruption; achieve high ranks in combat and perform graceful combos to hold the Corruption at bay.</li>
+<li><strong>CUSTOMIZE YOUR MARKED POWERS</strong> Rend your foes asunder with magical combos called Arias. Enhance your abilities with powerful Virtues that alter your approach to battle and the rhythm of combat. With a limitless array of ways to fight stylishly, build your character with passion to destroy your foes.</li>
+<li><strong>DESCEND INTO THE NIGHTMARE</strong> In the dreamworld of Paradiso, repressed memories and unspeakable feelings come to life as the nightmarish city of Neo-Sanctum. Delve into the secret underworld of the esoteric and abandoned to meet new comrades who will aid you on your journey.</li>
+<li><strong>SURREAL AND SPECTACULAR</strong> Christian’s world is rendered with a surreal aesthetic like no other. Harsh, pulsating scratches upon a sea of darkness render a thick atmosphere brooding with emotion. Battles come to life in an animated spectacle of light and motion that remains easy to parse in play.</li>
+<li>For audio, Nicolo Telesca’s chilling score mixes electronic sounds with live instrumentation and complements the visuals by eliciting feelings of tense anxiety and electrifying catharsis.</li>
+</ul>
+</blockquote>
+<p>You can follow it on <a href="https://store.steampowered.com/app/2302080/Death_of_a_Wish/" rel="noopener" target="_blank">the Steam page</a>.</p>
+<p>It has a Very Positive user rating on Steam and has been reviewed well by critics. So I'm looking forward to seeing official support like this.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/scribbly-vicious-action-rpg-death-of-a-wish-releases-for-linux-on-may-9th/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/scribbly-vicious-action-rpg-death-of-a-wish-releases-for-linux-on-may-9th/</guid>
+      <pubDate>Thu, 02 May 2024 11:16:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/920923103id24434gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Indie Game</category>
+      
+      <category>RPG</category>
+      
+    </item>
+    
+    <item>
+      <title>TUXEDO recently revealed two more AMD Ryzen laptops</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>In the market for a new laptop? Maybe TUXEDO have what you need, especially if you're wanting something with AMD.</p>
+<p>The first is the TUXEDO Sirius 16 - Gen2, a refresh of their first full AMD Linux gaming notebook that came out last year. It has been given a specification bump up to the AMD Ryzen 7 8845HS. Coming in at €1,666 EUR this should give you all you need for work and play.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3100465171714645908gol1.png"/></p>
+<p>Main Specifications:</p>
+<ul>
+<li>16.1'' IPS 2560 x 1440 16:9 | 165 Hz | 100 % sRGB 300 nits.</li>
+<li>AMD Ryzen 7 8845HS (8 Core | 16 Threads | Max. 5.1 GHz | 24 MB Cache | 54 W TDP).</li>
+<li>16 GB (2x 8GB) DDR5 5600MHz Crucial.</li>
+<li>500 GB Samsung 980 (NVMe PCIe 3.0).</li>
+<li>AMD Radeon RX 7600M XT 8GB.</li>
+<li>Intel Wi-Fi 6E AX210 (802.11ax | 2.4, 5 &amp; 6 GHz | Bluetooth 5.3).</li>
+<li>80 Wh battery.</li>
+<li>Multicolor (RGB) backlit keyboard. TUX super-key on all layouts.</li>
+<li>Ports include: USB-A 3.2 Gen2 (10 Gbps), Headphone-out (compatible with combi-plugs), Microphone-in, Fingerprint reader (Windows-only), USB-C 4.0 Gen3x2 (Hardwired to: iGPU | 40 Gbps | DisplayPort 1.4 | PowerDelivery DC-In*), USB-A 3.2 Gen2 (10 Gbps), Power plug (DC-in), RJ45 1 Gbit LAN, HDMI 2.1 (Hardwired to: dGPU | HDCP 2.3 | AMD FreeSync), USB-C 3.2 Gen2×1 (Hardwired to: dGPU | 10 Gbps | DisplayPort 1.4 | AMD FreeSync).</li>
+</ul>
+<p>It can be configured a lot higher to have 96GB RAM, two 4TB drives and your choice of Linux between their own TUXEDO OS, Ubuntu, Kubuntu and Ubuntu Budgie.</p>
+<p>See more on <a href="https://www.tuxedocomputers.com/en/TUXEDO-Sirius-16-Gen2" rel="noopener" target="_blank">their store</a>. Shipping begins mid-June.</p>
+<p>The other is the new refreshed TUXEDO Pulse 14 - Gen4 coming in a bit cheaper at €1,249 EUR. Still has a pretty decent amount of power to it too!</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15367402351714646801gol1.png"/></p>
+<p>Main Specifications:</p>
+<ul>
+<li>14.0'' 2880 x 1800 16:10 | 120Hz | 100% sRGB 400nits.</li>
+<li>AMD Ryzen 7 8845HS (8 Core | 16 Threads | Max. 5,1 GHz | 24 MB Cache | 54 W TDP).</li>
+<li>32 GB (4x 8GB) LPDDR5X 6400Mbps.</li>
+<li>500 GB Samsung 980 (NVMe PCIe 3.0).</li>
+<li>AMD Radeon 780M (GPU Cores: 12 | Max. clock speed: 2.7 GHz).</li>
+<li>Intel Wi-Fi 6E AX210 (802.11ax | 2.4, 5 &amp; 6 GHz | Bluetooth 5.3).</li>
+<li>60 Wh battery.</li>
+<li>White backlit keyboard with TUX super-key.</li>
+<li>Ports include: USB-C 3.2 Gen2 (10 Gbps | DisplayPort 1.4a | Power Delivery DC-In | Charging peripherals also when shut off (requires power supply)), HDMI 2.0 (HDCP 2.2), USB-A 3.2 Gen1 (5 Gbps), USB-C 3.2 Gen2 (10 Gbps | DisplayPort 1.4a | Power Delivery DC-In | Charging peripherals also when shut off (requires power supply)), Kensington Lock (NanoSaver), microSD card reader, USB-A 3.2 Gen1 (5 Gbps), 2-in-1 audio (headphone + microphone).</li>
+</ul>
+<p>This one can be configured with up to two 4TB drives, RAM not configurable. Plus your choice of Linux between their own TUXEDO OS, Ubuntu, Kubuntu and Ubuntu Budgie.</p>
+<p>See more on <a href="https://www.tuxedocomputers.com/en/TUXEDO-Pulse-14-Gen4" rel="noopener" target="_blank">their store</a>. Shipping begging end of May.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/tuxedo-recently-revealed-two-more-amd-ryzen-laptops/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/tuxedo-recently-revealed-two-more-amd-ryzen-laptops/</guid>
+      <pubDate>Thu, 02 May 2024 10:48:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/443717887id24433gol.jpg" type="image/jpeg"/>
+      
+      <category>AMD</category>
+      
+      <category>Hardware</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>GTA 6 publisher Take-Two reportedly shutting Roll7 and Intercept Games</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Well, here's another blow for the gaming industry. It's being <a href="https://www.bloomberg.com/news/articles/2024-05-01/take-two-interactive-shuts-down-two-game-studios" rel="noopener" target="_blank">reported</a> that Take-Two Interactive are shutting down two studios.</p>
+<p>Roll7 are known for Rollerdrome and the OlliOlli series, while Intercept Games were the team working on Kerbal Space Program 2 which is still in Early Access. Part of the info also comes from a <a href="https://esd.wa.gov/about-employees/WARN" rel="noopener" target="_blank">WARN</a> notice, showing Take-Two closing an unnamed studio affecting 70 people in Seattle, which is where Intercept Games are based.</p>
+<p>It's worth <a href="https://www.gamesindustry.biz/take-two-doubled-its-executives-pay-last-year" rel="noopener" target="_blank">noting</a> at this point that Take-Two's CEO, Strauss Zelnick, was paid $42.1 million last year, which is more than two-and-a-half times the previous year. So once again, the people at the top are pulling in big numbers while cutting the people doing the work.</p>
+<p>This is all part of a "cost reduction program" from the Grand Theft Auto publisher, who <a href="https://taketwointeractivesoftwareinc.gcs-web.com/node/30301/html" rel="noopener" target="_blank">announced</a> last month their plan to reduce their staff by 5% along with cancelling various future titles. They expect to finish this cost-cutting by December this year, so expect more job losses to come yet.</p>
+<p>For anyone curious on the future of Kerbal Space Program 2, Game Developer has <a href="https://www.gamedeveloper.com/business/take-two-confirms-kerbal-space-program-2-is-safe-despite-seattle-layoffs" rel="noopener" target="_blank">confirmed</a> it's going to continue to be supported via Private Division.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/gta-6-publisher-take-two-reportedly-shutting-roll7-and-intercept-games/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/gta-6-publisher-take-two-reportedly-shutting-roll7-and-intercept-games/</guid>
+      <pubDate>Thu, 02 May 2024 09:56:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1536378789id24432gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Survey for April 2024 shows a small dip for Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve has now published the Steam Hardware &amp; Software Survey: April 2024, and overall the movements are pretty small but there is a small dip for Steam Deck.</p>
+<p>For the operating system numbers April 2024 shows:</p>
+<ul>
+<li>Windows 96.76% +0.09%</li>
+<li>Linux 1.90% -0.04%</li>
+<li>macOS 1.35% -0.03%</li>
+</ul>
+<p>Over time via our <a href="https://www.gamingonlinux.com/steam-tracker/" rel="noopener" target="_blank">Steam Tracker</a> for Linux:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4152528461714641120gol1.png" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4152528461714641120gol1.png"/></a></p>
+<p>When you filter over to the Linux details, we can see the small dip for Steam Deck this month:</p>
+<ul>
+<li>SteamOS Holo 64 bit (Steam Deck) 42.33% -1.89%</li>
+<li>Arch Linux 64 bit 8.24% +0.58%</li>
+<li>Ubuntu 22.04.4 LTS 64 bit 6.13% +0.59%</li>
+<li>Freedesktop SDK 23.08 (Flatpak runtime) 64 bit 6.01% +0.04%</li>
+<li>Linux Mint 21.3 64 bit 4.39% +0.62%<img src="https://store.akamai.steamstatic.com/public/images/trans.gif" style="height:1px; width:20px"/></li>
+<li>Manjaro Linux 64 bit 3.37% -0.05%</li>
+<li>Other 29.53% +0.12%</li>
+</ul>
+<p>This also shows on the GPU details with the AMD AMD Custom GPU 0405 (Steam Deck) seeing -2.77%. Overall though, the Steam Deck with SteamOS is still the most used system in for Linux gaming on Steam.</p>
+<p>See more on the <a href="https://store.steampowered.com/hwsurvey/" rel="noopener" target="_blank">Steam Survey</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/steam-survey-for-april-2024-shows-a-small-dip-for-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/steam-survey-for-april-2024-shows-a-small-dip-for-steam-deck/</guid>
+      <pubDate>Thu, 02 May 2024 09:14:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>Survey</category>
+      
+    </item>
     
     <item>
       <title>Pick up Golf With Your Friends, Trepang2, Gord, Neon Abyss and more in this bundle</title>
@@ -3351,331 +3729,6 @@ Which means you can take as long as you like exploring every possible path, chal
       <category>Action</category>
       
       <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Free Stars: Children of Infinity, sequel to The Ur-Quan Masters now on Kickstarter</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Pistol Shrimp Games, founded by Toys for Bob veterans, have today launched the Kickstarter campaign for Free Stars: Children of Infinity which is a direct sequel to The Ur-Quan Masters (Star Control 2).</p>
-<p>Developers include the original creators of The Ur-Quan Masters, Paul Reiche III and Fred Ford (the original founders of Toys for Bob), Ken Ford, and Dan Gerstein.</p>
-<div class="hidden_video" data-video-id="MqCnsE3hxP4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6d78a59f9c07693e23bcb30c95843152.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/MqCnsE3hxP4" target="_blank">See video</a></div></div>
-<p>From the press release: "Happy days and jubilation, captains! Traversing the universe may be an endless venture, but we have finally reached the next destination in our long quest to bring Free Stars: Children of Infinity to life," said Pistol Shrimp Games’ founders Fred Ford and Dan Gerstein in a joint statement. "Help us complete this journey through the stars, and — with enough backers, we might even get to infinity plus one."</p>
-<p>Even if you haven't played the original, which is free and open source and recently <a href="https://www.gamingonlinux.com/2024/02/free-stars-the-ur-quan-masters-open-source-star-control-2-now-available-on-steam/" rel="noopener" target="_blank">had a Steam release</a>, plenty of games you've likely played were in some parts inspired by it. The Ur-Quan Masters has been called "one of the greatest games of all time" and praised by the likes of Tim Cain (Fallout, Fallout 2) of Obsidian Entertainment, Ken Levine (BioShock, System Shock 2, JUDAS) of Ghost Story Games, and Mark Darrah (Mass Effect), alumni of BioWare. The Ur-Quan Masters inspired countless other creators in the video game industry, including the devs behind No Man’s Sky, Subnautica, and Stellaris — to name just a few.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6783281921713283553gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6783281921713283553gol1.jpg"/></a></p>
-<p>They plan to have it highly moddable, as they said it "supports modding out of the box", and accessibility is a key issue for them too as they hope to include keyboard and controller support, co-op play, multiple difficulty modes, avoidable or automated combat, generated voice-over for vision-impaired players and so on.</p>
-<p>They're seeking at least $100,000 on the Kickstarter campaign, with Native versions for Linux and macOS at a $220,000 stretch-goal. At time of writing, it already has over $80,000 and the Kickstarter has only been up for about 2 hours. So it's clearly got a lot of people excited.</p>
-<p>See more on <a href="https://www.kickstarter.com/projects/pistolshrimp/free-stars-children-of-infinity" rel="noopener" target="_blank">the Kickstarter</a>.</p>
-<p>I don't know about you, but I'm quite excited for this one!</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3591501591713283672gol1.gif" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3591501591713283672gol1.gif"/></a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/free-stars-children-of-infinity-sequel-to-the-ur-quan-masters-now-on-kickstarter/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/free-stars-children-of-infinity-sequel-to-the-ur-quan-masters-now-on-kickstarter/</guid>
-      <pubDate>Tue, 16 Apr 2024 16:08:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1128161794id24339gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Open World</category>
-      
-      <category>Space</category>
-      
-    </item>
-    
-    <item>
-      <title>PAC-MAN Mega Tunnel Battle: Chomp Champs launches in early May</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I know I'm going to be suckered into PAC-MAN Mega Tunnel Battle: Chomp Champs when it releases on May 8th, after previously being a Stadia exclusive. Good to see more ex-Stadia games actually come to PC properly like this. Although, the press releases said May 9th, but Steam say May 8th so the Steam date might change.</p>
-<p>After playing it myself on Stadia, before Google hit the dreaded killswitch, it actually was genuinely good fun. And unless they do something ridiculous with it, no doubt it will work really well with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" rel="noopener" target="_blank">Proton</a> on Steam Deck and Desktop Linux.</p>
-<p>This is no normal PAC-MAN, it's a battle royale styled game with 64-player battles and various colourful connected mazes.</p>
-<div class="hidden_video" data-video-id="ZGpZRuFKIKA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0c96be4a1ad719ceaf0dae0e4eba4278.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ZGpZRuFKIKA" target="_blank">See video</a></div></div>
-<p>From the press release:</p>
-<blockquote>
-<p>Ready to welcome players of varying skill levels, game modes include Elimination Mode with arcade-style action where players of any rank can compete and earn Tokens to redeem on customisation items, and Ranked Mode where players battle against similarly skilled opponents from around the world and gain Rank XP earning their place on the leaderboards. </p>
-<p>PAC-MAN MEGA TUNNEL BATTLE: CHOMP CHAMPS includes a Friend system that lets players drop into the same match with friends, track progress, and spectate the action when their friends – or foes – are playing the game.</p>
-</blockquote>
-<p>It has cross-platform multiplayer too, so finding a game with friends shouldn't be an issue.</p>
-<p>You can pre-order via:</p>
-<p><a href="https://www.fanatical.com/en/game/pac-man-mega-tunnel-battle-chomp-champs?ref=gol" rel="noopener" target="_blank">Fanatical</a> (17% off)</p>
-<p><a href="https://store.steampowered.com/app/2095950/PACMAN_Mega_Tunnel_Battle_Chomp_Champs/" rel="noopener" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/pac-man-mega-tunnel-battle-chomp-champs-launches-in-early-may/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/pac-man-mega-tunnel-battle-chomp-champs-launches-in-early-may/</guid>
-      <pubDate>Tue, 16 Apr 2024 12:39:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1308356312id24338gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Arcade</category>
-      
-      <category>Battle Royale</category>
-      
-    </item>
-    
-    <item>
-      <title>It took about 15 years but epic roguelike Caves of Qud is nearly done</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Caves of Qud from developer Freehold Games and publisher Kitfox Games is approaching the 1.0 finishing line, and so their roadmap towards the release has been put up and it sounds really exciting.</p>
-<p>A big part of the work they've been doing is on the UI (user interface) to make it a lot more modern, and the good news there is that it's complete! A fresh public pre-release is coming soon that will feature:</p>
-<blockquote>
-<p>- ALL NEW INTERFACE - The much-touted, transformational UI redesign is complete! Fully mouseable, fully gamepaddable, and gorgeous, but all carefully designed to maintain the essence of what makes Qud Qud.<br/>
-- A refresh of the starting town of Joppa, with as much texture &amp; lived-in feeling as the rest of the world.<br/>
-- Hundreds of new sound and visual effects.<br/>
-- 40 new achievements.<br/>
-- Several new narrative touches, big bug fixes, &amp; performance improvements.</p>
-</blockquote>
-<p>Some shots of the new interface (click them to enlarge):</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15860481791713269820gol1.png" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/15860481791713269820gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16458371921713269822gol1.png" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16458371921713269822gol1.png"/></a><br/>
-<a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19268815451713269822gol1.png" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/19268815451713269822gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6976148711713269822gol1.png" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/6976148711713269822gol1.png"/></a></p>
-<p>What's coming up next? Throughout the Summer and Fall they will be working to finish the main quest, and provide something for people who have finished it. That, plus a "more hands-on" tutorial. Then lots of smaller things like achievements, some missing sounds, visual effects, bug fixes and so on.</p>
-<p>As for when it will release? They don't have an exact date yet but it will be sometime in late 2024.</p>
-<p>How about after release though? They said they plan to keep updating it with major content and system releases, although how much they do " does depend on the financial realities of sales, but no matter what, we have two big DLCs planned already". They're not sure yet if the DLC will be free or paid just yet.</p>
-<p>See more in the <a href="https://store.steampowered.com/news/app/333640/view/4195740727955544983" rel="noopener" target="_blank">dev post</a>.</p>
-<p>You can buy it from:</p>
-<p><a href="https://www.gog.com/en/game/caves_of_qud" rel="noopener" target="_blank">GOG</a></p>
-<p><a href="https://freeholdgames.itch.io/cavesofqud" rel="noopener" target="_blank">itch.io</a></p>
-<p><a href="https://store.steampowered.com/app/333640/Caves_of_Qud/" rel="noopener" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/it-took-about-15-years-but-epic-roguelike-caves-of-qud-is-nearly-done/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/it-took-about-15-years-but-epic-roguelike-caves-of-qud-is-nearly-done/</guid>
-      <pubDate>Tue, 16 Apr 2024 12:22:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/148935985id24337gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>GOG</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Emulation tool RetroDECK brings in Ryujinx for Nintendo Switch, many other improvements</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>RetroDECK is one of the simplest options for getting various emulators set up on Steam Deck and Desktop Linux, and the latest release has lots of fun improvements to check out.</p>
-<p>What's the point of RetroDECK? It gives you an easy one-click install via Flatpak to get everything you need to play retro games. You just need to supply the games, they do all the configuration for you.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12684752391713269046gol1.jpeg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12684752391713269046gol1.jpeg"/></a></p>
-<p>In version 0.8.0b they've updated all available emulators to their latest versions, ES-DE (EmulationStation Desktop Edition) was also bumped up to version 3.0.1 and they pulled in some new system support too including:</p>
-<ul>
-<li>PSVita, trough Vita3K.</li>
-<li>Solarus.</li>
-<li>GZDoom that is now the DOOM system default engine.</li>
-<li>Ryujinx for Nintendo Switch.</li>
-<li>MAME (Standalone).</li>
-</ul>
-<p>There's also an overhaul to Steam controller layouts, there's controller configurations for 2-4 people multiplayer in Cemu, Duckstation, GZDoom, RPCS3 and Ryujinx.</p>
-<p>With their configurator tool they added the ability to swap the ABXY buttons for compatible systems, Steam Flatpak detection for controller profile install, RetroDECK now knows if it is running on a real Steam Deck or other Linux desktop, they disabled the "Desktop Mode" warning when not running on Steam Deck, plus various other fixes in the <a href="https://github.com/XargonWan/RetroDECK/releases/tag/0.8.0b" rel="noopener" target="_blank">changelog</a>.</p>
-<p>See more on the <a href="https://retrodeck.net/" rel="noopener" target="_blank">RetroDECK website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/emulation-tool-retrodeck-brings-in-ryujinx-for-nintendo-switch-many-other-improvements/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/emulation-tool-retrodeck-brings-in-ryujinx-for-nintendo-switch-many-other-improvements/</guid>
-      <pubDate>Tue, 16 Apr 2024 12:05:42 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/564765221id24336gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Emulation</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Ubuntu 24.04 LTS (Noble Numbat) Beta released</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Canonical is gearing up for the release of the next LTS (long term support) version of Ubuntu, with a first Beta now available for Ubuntu 24.04 LTS (Noble Numbat).</p>
-<p>While the Beta is not intended for production use the developers said that the Beta is "known to be reasonably free of showstopper image build or installer bugs, while representing a very recent snapshot of 24.04 LTS that should be representative of the features intended to ship with the final release expected on April 25, 2024".</p>
-<p>For gamers, you'll be pleased to know this release ships with the vm.max_map_count value boosted to 1048576, which is needed for certain games to run, this matches up with Fedora <a href="https://www.gamingonlinux.com/2024/04/arch-linux-changes-vmmax-map-count-to-match-fedora-ubuntu-for-better-gaming/" rel="noopener" target="_blank">and now Arch Linux too</a>.</p>
-<p>A Games page has also been added to the Ubuntu App Center, the mail app Thunderbird version 115 has been moved to a Snap package, GNOME upgraded to version 46, you also get Firefox 124 and LibreOffice 24.2 and various upgrades to other included software like Pipewire 1.04. You're also getting kernel 6.8 as standard.</p>
-<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4572079991713268176gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4572079991713268176gol1.jpg"/></a>Pictured - Ubuntu 24.04 LTS (Noble Numbat) Beta</em></p>
-<p>There's a few app changes too like the default install only being "minimal", but you can select "extended selection" to have stuff like LibreOffice and Thunderbird installed. GNOME Snapshot replaces Cheese for webcams and Games are no longer installed by default. Various improvements to the look and feel of their Flutter-based installer too with it being more customizable.</p>
-<p>Plenty of security improvements have been implemented too like some tweaks to the Ubuntu kernel to restrict the use of unprivileged user namespaces, TLS 1.0, 1.1 and DTLS 1.0 are forcefully disabled, they said that packages are now "built with security-hardening features which stop many undiscovered security vulnerabilities, rendering them unexploitable" and more.</p>
-<p>Various other upgrades included too like GCC 14, Python 3.12, OpenJDK 21, LLVM 18, Rust 1.75, Golang 1.22 and .NET 8.</p>
-<p>Ubuntu 24.04 is also the first LTS release that supports the Raspberry Pi 5 with both arm64 server and desktop images.</p>
-<p>Ubuntu 24.04 LTS will be supported for 5 years until June 2029. </p>
-<p>You can find the downloads on <a href="https://releases.ubuntu.com/24.04/" rel="noopener" target="_blank">the Ubuntu website</a>. Release notes on <a href="https://discourse.ubuntu.com/t/noble-numbat-release-notes/39890" rel="noopener" target="_blank">their forum</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/ubuntu-2404-lts-noble-numbat-beta-released/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/ubuntu-2404-lts-noble-numbat-beta-released/</guid>
-      <pubDate>Tue, 16 Apr 2024 11:51:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/982634535id24335gol.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Distro News</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Descent 3 has been made open source</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><strong>Update #2, 21/04/24 18:06</strong>: the code is now licensed under the GPL!</p>
-<p><strong>Update 18/04/24 15:11</strong>: there seems to be an issue with the licensing at the moment. The MIT license was not meant to be up on it, as this was <a href="https://github.com/kevinbentley/Descent3/issues/32#issuecomment-2061461160" rel="noopener" target="_blank">apparently</a> the default GitHub put on it. That license has now been removed, and so there's now <em>no</em> license on it. Hopefully this will be sorted soon so it can be clear for anyone who wishes to contribute.</p>
-<hr/>
-<p><em>Original article below:</em></p>
-<p>Another classic has been given the open source treatment, with Descent 3 from Outrage Entertainment now available under the MIT license. This release was put up on <a href="https://github.com/kevinbentley/Descent3" rel="noopener" target="_blank">GitHub</a> by Kevin Bentley, one of the original developers.</p>
-<p>It has a bit of an interesting history as it was originally ported to Linux way back in 2000 from Loki Entertainment, which didn't age particularly well. Then <a href="https://www.gamingonlinux.com/2020/02/descent-3-returns-to-linux-and-macos-with-an-official-modern-port/" rel="noopener" target="_blank">much later in 2020</a> developer Ryan "Icculus" Gordon did a re-port with various upgrades.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7721286881713266742gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7721286881713266742gol1.jpg"/></a></p>
-<p>From the GitHub:</p>
-<blockquote>
-<p>This is the latest version of the Descent 3 source code. This includes the '1.5' patch that Jeff Slutter and Kevin Bentley wrote several years ago. At the time, it worked for Windows, Linux, and Mac.</p>
-<p>Some proprietary sound and video libraries from Interplay have been stripped out (the ACM and MVE format). I have that code if someone wants to help make a converter so the old cutscenes work. It'll take some effort to stub out that code so it compiles.</p>
-<p>The first thing I want to do is get everything compiling again, and ideally some CI/CD actions. After that, the code needs to be cleaned up some, to remove old version control comments, etc. A lot of this code was written by a really great team, but keep in mind we were much younger and less experienced back then.</p>
-<p>If you're interested in helping maintain it, please send me a message. Otherwise, I'm happy to take pull requests.</p>
-<p>This is the last update I put out there showing different architectures playing along. Yikes, that was a long time ago, sorry we never released a 1.5 patch. Some logistics got in the way!</p>
-<p>Thanks to Jeff Slutter, who did most of the work modernizing the code from the 90's. I'm looking forward to seeing what the community does with it!</p>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/descent-3-has-been-made-open-source/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/descent-3-has-been-made-open-source/</guid>
-      <pubDate>Tue, 16 Apr 2024 11:26:11 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/933297892id24334gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>FPS</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Half-Life remake Black Mesa has a big upgrade with DXVK 2.3.1, optimizations and bug fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Crowbar Collective have released the Necro Patch for the Half-Life remake Black Mesa, which brings with it some essential bug fixes and some nice optimizations. If you had issues with it previously, you might want to give it another go as it sounds like they put a fair amount of work into this update.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20051272641713256700gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20051272641713256700gol1.jpg"/></a></p>
-<p>Main Update Highlights:</p>
-<blockquote>
-<ul>
-<li>Improved performance of the game (Vulkan, UI optimization, New Renderer/New Post Post Process Optimization).</li>
-<li>Fixed cases where game would crash on startup.</li>
-<li>Fixed UI flickering and artifacting.</li>
-<li>Fixed crash in the first map of Interloper that players were experiencing.</li>
-<li>Improved controller support using Steam Input (<a href="https://steamcommunity.com/app/362890/discussions/0/6733519291681971343/?snr=1_2108_9__2107" rel="noopener" target="_blank">more info</a>).</li>
-<li>Fixed hitch when weapon decals are first applied to gun.</li>
-<li>Re-enabled weapon decals by default.</li>
-</ul>
-</blockquote>
-<p>One thing to note is that they mentioned in the update that they may be looking into "more robust fixes that might break saves and switching over Linux support to Proton, but we don’t have a timeline for that". So eventually the Native Linux version may no longer be a thing. Presumably because it works better with Proton and they're already using a big part of Proton anyway (DXVK) for rendering on Windows (Linux still seems to use Valve's really old ToGL).</p>
-<p>See the <a href="https://store.steampowered.com/news/app/362890/view/4174347361777844150" rel="noopener" target="_blank">full update notes </a>for more.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/half-life-remake-black-mesa-has-a-big-upgrade-with-dxvk-231-optimizations-and-bug-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/half-life-remake-black-mesa-has-a-big-upgrade-with-dxvk-231-optimizations-and-bug-fixes/</guid>
-      <pubDate>Tue, 16 Apr 2024 08:42:42 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1666489176id24333gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Play</category>
-      
-      <category>FPS</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam FPS Fest 2024 is live with tons of great discounts</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another festival of games is live on Steam now with Steam FPS Fest 2024 running until April 22nd at 10am PT / 5pm UTC, and there's also plenty of demos for games to try too.</p>
-<p>For those of you building up thousands of Steam Points as well the <a href="https://store.steampowered.com/points/shop/event/sale_fps_fest" rel="noopener" target="_blank">Points Shop</a> also has a couple of new items for the event. Good, because I have nearly a <em>million</em> and need something to do with them…wait a minute, they're free?! </p>
-<div class="hidden_video" data-video-id="Cd4ffQlZnnc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c4d5034e3f700ea7704b09b96264a70d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Cd4ffQlZnnc" target="_blank">See video</a></div></div>
-<p>Looking through here's some of my quick-picks for under a tenner:</p>
-<p><a href="https://store.steampowered.com/app/233130/Shadow_Warrior/" rel="noopener" target="_blank">Shadow Warrior</a> - 90% off (Native Linux / Deck Verified)</p>
-<p><a href="https://store.steampowered.com/app/362890/Black_Mesa/" rel="noopener" target="_blank">Black Mesa</a> - 80% off (Native Linux / Deck Playable)</p>
-<p><a href="https://store.steampowered.com/app/1170060/Boomerang_X/" rel="noopener" target="_blank">Boomerang X</a> - 75% off (ProtonDB Gold / Deck Verified)</p>
-<p><a href="https://store.steampowered.com/app/1227690/Severed_Steel/" rel="noopener" target="_blank">Severed Steel</a> - 75% off (ProtonDB Platinum / Deck Verified)</p>
-<p><a href="https://store.steampowered.com/app/518790/theHunter_Call_of_the_Wild/" rel="noopener" target="_blank">theHunter: Call of the Wild</a> - 70% off (ProtonDB Gold / Deck Unsupported)<br/>
-<em>Valve really need to update the Steam Deck rating, it's worked fine for a long time.</em></p>
-<p><a href="https://store.steampowered.com/app/671860/BattleBit_Remastered/" rel="noopener" target="_blank">BattleBit Remastered</a> - 50% off (ProtonDB Gold / Deck Playable)</p>
-<p>Also, if you've been watching the Fallout show on Amazon Prime (which was fantastic by the way), you might want to grab some of the Fallout games which are on sale, although their sale ends on April 19th. They're all rated Steam Deck Playable, and ProtonDB Gold:</p>
-<p><a href="https://store.steampowered.com/app/1151340/Fallout_76/" rel="noopener" target="_blank">Fallout 76</a> - 80% off</p>
-<p><a href="https://store.steampowered.com/app/377160/Fallout_4/" rel="noopener" target="_blank">Fallout 4</a> - 75% off<br/>
-<em>Fallout 4 is <a href="https://www.gamingonlinux.com/2024/04/fallout-4-is-getting-a-fresh-update-and-will-be-steam-deck-verified/" rel="noopener" target="_blank">getting an update on April 25th</a> too!</em></p>
-<p><a href="https://store.steampowered.com/app/22380/Fallout_New_Vegas/" rel="noopener" target="_blank">Fallout: New Vegas</a> - 75% off</p>
-<p><a href="https://store.steampowered.com/app/22300/Fallout_3/" rel="noopener" target="_blank">Fallout 3</a> - 75% off</p>
-<p>See the full <a href="https://store.steampowered.com/category/action_fps" rel="noopener" target="_blank">event live on Steam</a>.</p>
-<p>I'm absolutely diving back into Fallout soon myself, after recently finishing up Alan Wake, as I don't like to play more than one story game at the same time. Can't wait! The show really gave me the itch to need more.</p>
-<p><em>Be sure to leave a comment for your own recommendations!</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/steam-fps-fest-2024-is-live-with-tons-of-great-discounts/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/steam-fps-fest-2024-is-live-with-tons-of-great-discounts/</guid>
-      <pubDate>Tue, 16 Apr 2024 08:29:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/492425558id24332gol.jpg" type="image/jpeg"/>
-      
-      <category>Event</category>
-      
-      <category>Misc</category>
-      
-      <category>On Sale</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Paradox announce Stellaris: Season 08, with Stellaris: The Machine Age launching May 7th</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After the success with the Crusader Kings III: Chapter III season pass, Paradox have decided to give the same treatment to Stellaris with Stellaris: Season 08. We also have a new trailer and release date for Stellaris: The Machine Age.</p>
-<p>Basically Stellaris: Season 08 will include Stellaris: The Machine Age, Stellaris: Cosmic Storms and Stellaris: The Grand Archive Story Pack for one single purchase. Plus you also get a Rick The Cube Species Portrait instantly when purchasing. Speaking about it they said "There’s a chance that we might experiment with some other ideas that might or might not come out later this year, but Stellaris: Season 08 will include all of the major releases of 2024."</p>
-<p>Stellaris: The Machine Age was also confirmed for release on May 7th with a new trailer:</p>
-<div class="hidden_video" data-video-id="jo9jpoHMO7A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/db3fbdd2e7abdb965614a96d7ce3a3ac.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/jo9jpoHMO7A" target="_blank">See video</a></div></div>
-<p>More about each upcoming addition:</p>
-<ul>
-<li>Stellaris: The Machine Age (Releases May 7 2024) - Explore the Cyberpunk Fantasies of technological augmentation and digitalization of consciousness by expanding the possibilities offered in game by the Cybernetics and Synthetics Ascension. Address the moral and social challenges that communing with the machine bring to your space-faring empire, and face a new threat looming over the galaxy… or become a new threat yourself, as you tear through time and space to shape reality to your image</li>
-<li>Stellaris: Cosmic Storms (Releases Q3 2024) - A new phenomenon has been observed around the Galaxy - storms are sweeping through system. Prepare your Empire and brace to face this new upcoming threat, and leverage possibilities that open when your opponents are weakened by it.</li>
-<li>Stellaris: The Grand Archive Story Pack (Releases Q4 2024) - The Galaxy is vast and full of wonders, and it is up to you to store records of all the unique lifeforms and marvels you will meet. Build a new megastructure, and collect examples of specimens you will meet in your space-faring adventures!</li>
-</ul>
-<p>This expansion pass will be available via <a href="https://store.steampowered.com/app/2863190/Stellaris_Season_08/" rel="noopener" target="_blank">Steam</a> and buying it gives you around a 20% overall discount versus buying each of them individually. More on that in their <a href="https://forum.paradoxplaza.com/forum/developer-diary/stellaris-dev-diary-340-a-new-crisis-a-release-date-and-announcing-the-stellaris-season-08.1662209/" rel="noopener" target="_blank">developer diary</a>. You can buy Stellaris from:</p>
-<p><a href="https://af.gog.com/game/stellaris?as=1636858786" rel="noopener" target="_blank">GOG</a></p>
-<p><a href="https://www.humblebundle.com/store/stellaris?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/281990/Stellaris/?curator_clanid=4218320" rel="noopener" target="_blank">Steam</a></p>
-<p>It has Native Linux support.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/paradox-announce-stellaris-season-08-with-stellaris-the-machine-age-launching-may-7th/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/paradox-announce-stellaris-season-08-with-stellaris-the-machine-age-launching-may-7th/</guid>
-      <pubDate>Mon, 15 Apr 2024 11:48:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1802430265id24331gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>DLC</category>
-      
-      <category>Paradox Interactive</category>
-      
-      <category>Space</category>
       
     </item>
     
