@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-05-11 07:23:52.991965</pubDate>
+    <pubDate>2024-05-12 07:22:31.057076</pubDate>
 
     
     <image>
@@ -18,6 +18,88 @@
     </image>
 
     
+    
+    <item>
+      <title>NVIDIA switching to open kernel modules by default in future driver update for Turing+</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA have announced some big changes are coming to their Linux drivers, which will start with the upcoming 560 series.</p>
+<p>Writing in an <a href="https://forums.developer.nvidia.com/t/unix-graphics-feature-deprecation-schedule/60588" rel="noopener" target="_blank">update </a>on the NVIDIA forum they said:</p>
+<blockquote>
+<p>Starting in the release 560 series, it will be recommended to use the <a href="http://us.download.nvidia.com/XFree86/Linux-x86_64/550.78/README/kernel_open.html" rel="noopener" target="_blank">open flavor of NVIDIA Linux Kernel Modules</a> wherever possible (Turing or later GPUs, or Ada or later when using GPU virtualization).</p>
+<p>If installing from the .run file, installation will detect what GPUs are present and default to installing the open kernel modules if all NVIDIA GPUs in the system can be driven by the open kernel modules. Distribution-specific repackaging of the NVIDIA driver may require additional steps, specific to that packaging, to choose the open flavor.</p>
+<p>In the release 560 series, it will still be possible to configure the .run file to install the proprietary flavor of kernel modules, with the <code class="inline-code">--kernel-module-type=proprietary</code> command line option. However, in the future, some GPUs may only be supported with the open flavor.</p>
+</blockquote>
+<p>We still have the 555 Beta to come this month which will bring Explicit Sync support. So this will be the update after that.</p>
+<p>Interesting though to see NVIDIA move more and more towards open source. We've seen recently how the<a href="https://www.gamingonlinux.com/2024/04/former-nouveau-driver-lead-joins-nvidia-and-sent-a-massive-patch-set/" rel="noopener" target="_blank"> former Nouveau driver lead joined NVIDIA</a> and sent a massive patch set, and then we had news that an <a href="https://www.gamingonlinux.com/2024/04/nvidia-developer-contributing-to-the-open-source-nvk-driver/" rel="noopener" target="_blank">NVIDIA developer contributed to the open source NVK driver</a> and even on top of that they put up a <a href="https://www.gamingonlinux.com/2024/05/nvidia-make-it-easier-to-get-geforce-now-on-steam-deck/" rel="noopener" target="_blank">script for GeForce NOW on Steam Deck</a>.</p>
+<p>Certainly an interesting time for the green camp.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/nvidia-switching-to-open-kernel-modules-by-default-in-future-driver-update-for-turing/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/nvidia-switching-to-open-kernel-modules-by-default-in-future-driver-update-for-turing/</guid>
+      <pubDate>Sat, 11 May 2024 14:24:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+      <category>Upcoming</category>
+      
+    </item>
+    
+    <item>
+      <title>GE-Proton 9-5 released with fixes for Star Citizen, Apex Legends, The Witcher 2</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>GE-Proton 9-5 has been released bringing in various upgrades from Valve's official Proton, plus various other patches to fix even more games on Steam Deck / Linux. This version is not supported by Valve, and ideally you should only use it when you need to for specific games.</p>
+<p>Here's all that's <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-5" rel="noopener" target="_blank">changed</a>:</p>
+<blockquote>
+<ul>
+<li>added TCP_KEEP patches needed for Star Citizen 2.0 launcher</li>
+<li>updated wine to latest bleeding edge (fixes Apex Legends)</li>
+<li>updated dxvk to latest git</li>
+<li>updated vkd3d-proton to latest git</li>
+<li>updated dxvk-nvapi to match upstream</li>
+<li>updated various build files to match upstream</li>
+<li>updated steam client to match upstream</li>
+<li>added upstream cpu topology fixes</li>
+<li>protonfixes: Add fix for The Witcher 2: Assassins of Kings Enhanced Edition (thanks R1kaB3rN)</li>
+<li>protonfixes: Add fix for COJ Gunslinger (thanks Tiagoquix)</li>
+<li>protonfixes: Add fix for Total War: Shogun 2 (thanks Crumb5)</li>
+<li>protonfixes: Update Oddworld: Munch's Oddysee fix (thanks doZenn)</li>
+<li>protonfixes: Add fix for Oddworld: Abe's Oddysee (thanks doZenn)</li>
+<li>protonfixes: Add fix for Overlord II (thanks doZenn)</li>
+<li>protonfixes: Add fix for Stranger's Wrath HD (thanks doZenn)</li>
+<li>protonfixes: Add fix for Ducati World Championship (thanks doZenn)</li>
+<li>protonfixes: Add fix for Add fix for Café Stella and the Reaper's Butterflies (thanks R1kaB3rN)</li>
+<li>protonfixes: Add fix for Add fix for Sabbat of the Witch (thanks R1kaB3rN)</li>
+<li>protonfixes: Add fix for Add fix for Riddle Joker (thanks R1kaB3rN)</li>
+<li>protonfixes: Add fix for Add fix for Senren * Banka (thanks R1kaB3rN)</li>
+<li>protonfixes: Add fix for (Newest) Many WMP9 Video Playback fixes for Yuzusoft VN's (thanks R1kaB3rN)</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4663723341715436867gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4663723341715436867gol1.jpg"/></a><br/>
+<em>Pictured - The Witcher 2</em></p>
+<p>The easiest way to install GE-Proton is with <a href="https://www.gamingonlinux.com/2024/04/ge-proton-installer-protonup-qt-v292-released/" rel="noopener" target="_blank">the latest ProtonUp-Qt</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/ge-proton-9-5-released-with-fixes-for-star-citizen-apex-legends-the-witcher-2/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/ge-proton-9-5-released-with-fixes-for-star-citizen-apex-legends-the-witcher-2/</guid>
+      <pubDate>Sat, 11 May 2024 14:15:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/19620789id24498gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
     
     <item>
       <title>Proton Experimental brings controller support for more launchers</title>
@@ -3952,87 +4034,6 @@ Test run totals:
       <category>New Release</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Create, Automate &amp; Manage in this Humble Bundle of games</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you love building sims with a sprinkle of management you should take a look at the new <a href="https://www.humblebundle.com/games/create-automate-manage?partner=gamingonlinux" rel="noopener" target="_blank">Create, Automate &amp; Manage Humble Bundle</a>.</p>
-<p>Below I will note each game you can get included plus the Steam Deck rating, any <a href="https://www.protondb.com/" rel="noopener" target="_blank">ProtonDB</a> rating if there is one (or if it has Native Linux support) and each is a Steam link if you need more info first.</p>
-<p><a href="https://store.steampowered.com/app/677340/The_Colonists/" rel="noopener" target="_blank">The Colonists</a> - Native Linux</p>
-<blockquote>
-<p>Build a new home for your team of robots as they begin a new life for themselves on a distant planet where they can fulfil their ultimate dream: to be human.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1614550/Astro_Colony/" rel="noopener" target="_blank">Astro Colony</a> - Deck Playable / ProtonDB Platinum</p>
-<blockquote>
-<p>Explore endless Universe and create the most efficient constellation of colonies. Build conveyor systems to automate production. Take care of Astronauts and their needs! Establish new colonies as part of intergalactic simulation.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/2198070/Cardboard_Town/" rel="noopener" target="_blank">Cardboard Town</a> - Deck Playable / Native Linux</p>
-<blockquote>
-<p>Cardboard Town is a city-building card game. Manage your resources, obtain upgrades, draw your cards and thrive! Random events, quest cards, and game modes make each run different.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/2182630/Mob_Factory/" rel="noopener" target="_blank">Mob Factory</a> - Deck Playable / ProtonDB Platinum</p>
-<blockquote>
-<p>Mob factory is an tower defense and automation game for the lazy adventurer. Smelt down enemy loot into turrets &amp; factories to automate an ever expanding dungeon from the comfort of your tower.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/860890/Factory_Town/" rel="noopener" target="_blank">Factory Town</a> - Deck Verified / ProtonDB Gold</p>
-<blockquote>
-<p>Build, automate, and optimize a giant factory on 3D terrain using conveyor belts, trains, chutes, pipes, and airships. Sell your goods to nearby villages to expand their borders, increase happiness, and unlock even better technology!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/789660/Buggos/" rel="noopener" target="_blank">Buggos</a> - Deck Playable / ProtonDB Platinum</p>
-<blockquote>
-<p>Lead your hive to victory in 'Buggos', an RTS Auto Battler! Customize your swarm with 120+ evolutions and conquer humanity. Strategy meets bug chaos!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1492360/Recipe_for_Disaster/" rel="noopener" target="_blank">Recipe for Disaster</a> - Deck Playable / ProtonDB Gold</p>
-<blockquote>
-<p>Recipe for Disaster is a management sim that captures the fast-paced, drama-filled environment of a professional kitchen and dining room. Build your dream restaurant, create recipes, design menus and manage your staff, all while contending with demanding customers and disastrous situations!</p>
-</blockquote>
-<p>If any of those take your fancy <a href="http://www.humblebundle.com/games/create-automate-manage?partner=gamingonlinux" rel="noopener" target="_blank">head over to Humble Bundle</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/create-automate-manage-in-this-humble-bundle-of-games/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/create-automate-manage-in-this-humble-bundle-of-games/</guid>
-      <pubDate>Thu, 25 Apr 2024 15:56:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/855564500id24398gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>SteamOS 3.5.19 for Steam Deck out now for everyone</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After two recent Preview releases of SteamOS for Steam Deck, Valve has now put out the latest Stable update for everyone with SteamOS 3.5.19 code-named "Grey Park Seagull".</p>
-<p>If you were hoping that Valve would actually explain what the recent "stability and security improvements" were from the last two preview releases, you'll be left disappointed. Valve has <em>not</em> detailed what they've changed there as the <a href="https://store.steampowered.com/news/app/1675200/view/4202497395509210057" rel="noopener" target="_blank">release notes</a> are just two lines:</p>
-<blockquote>
-<ul>
-<li>Fixed an issue causing no sound output in games that open and close audio devices quickly like Super Blood Hockey.</li>
-<li>Stability and security improvements.</li>
-</ul>
-</blockquote>
-<p>Your guess is as good as mine on that second line; why are Valve being so vague do you think? It's great to see continued updates to the operating system, but giving us more info on what has actually changed would be helpful. Usually Valve are a lot more clear in their release notes.</p>
-<p>Is there a Steam Deck bug you're hoping to see solved soon? Let me know in the comments.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/04/steamos-3-5-19-for-steam-deck-out-now-for-everyone/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/04/steamos-3-5-19-for-steam-deck-out-now-for-everyone/</guid>
-      <pubDate>Thu, 25 Apr 2024 15:42:47 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Steam</category>
       
     </item>
     
