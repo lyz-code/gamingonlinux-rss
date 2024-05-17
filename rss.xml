@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-05-16 07:22:28.072452</pubDate>
+    <pubDate>2024-05-17 07:23:03.856591</pubDate>
 
     
     <image>
@@ -18,6 +18,310 @@
     </image>
 
     
+    
+    <item>
+      <title>NVK driver gets DRM Format Modifiers to work with Gamescope in Mesa 24.1</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Just recently NVK, the open source Nvidia Vulkan driver, merged in a new Vulkan extension that is rather important and means it will work properly with Gamescope.</p>
+<p>The extension is <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_EXT_image_drm_format_modifier.html" rel="noopener" target="_blank">VK_EXT_image_drm_format_modifier</a> which was worked on by developers from Google, NVIDIA, Intel and Arm. That has now been <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/24795" rel="noopener" target="_blank">merged</a> into NVK in Mesa, and backported to the Mesa 24.1 staging branch ready for the Mesa 24.1 release that <em>should</em> arrive on May 22nd.</p>
+<p>Writing about the work involved in getting this into NVK, Collabora developer Faith Ekstrand wrote up a <a href="https://www.collabora.com/news-and-blog/news-and-events/implementing-drm-format-modifiers-in-nvk.html" rel="noopener" target="_blank">fresh blog post</a> going over the details of it. As said by Ekstrand:</p>
+<blockquote>
+<p>DRM format modifier support is one of the most important features we've landed in NVK in a while. Though it's not a very interesting feature to most Vulkan applications or game developers, it's very important to the Linux display pipeline. Importantly to users, this is the last piece required to support GameScope. It's also an important piece in making Zink+NVK a robust OpenGL solution.</p>
+</blockquote>
+<p>Sounds like it's been a bit of a complicated journey. The blog post is worth a read if you like the technical stuff.</p>
+<p>This is particularly exciting to see, given how popular Gamescope is and how useful it is. Additionally, Ekstrand mentioned how this was also "the last major piece required for competent OpenGL support through Zink" — awesome!</p>
+<p>It's just another step towards getting NVK in shape to be a fully-featured and performant driver on Linux, for those who wish to run their NVIDIA GPU with open source rather than NVIDIA's proprietary driver, although even NVIDIA have been making <a href="https://www.gamingonlinux.com/2024/05/nvidia-switching-to-open-kernel-modules-by-default-in-future-driver-update-for-turing/" rel="noopener" target="_blank">more open source steps lately</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/nvk-driver-gets-drm-format-modifiers-to-work-with-gamescope-in-mesa-24-1/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/nvk-driver-gets-drm-format-modifiers-to-work-with-gamescope-in-mesa-24-1/</guid>
+      <pubDate>Thu, 16 May 2024 18:35:25 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/mesa.png" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Athenian Rhapsody is a rather unhinged Undertale-like and stupidly funny</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Athenian Rhapsody might just be my new favourite release of 2024. Taking inspiration from the likes of Undertale and Earthbound and turning the ridiculousness up a few notches. Developer Nico Papalia has crafted something brilliant here. <em>Note: key provided by Top Hat Studios.</em></p>
+<p>I played it on Steam Deck (and a little on desktop Linux) using Proton 9 and it worked great and looks fantastic.</p>
+<p>While the inspiration is obvious for anyone who has played the aforementioned games, it's still a very unique experience. One that honestly had me laughing a fair bit even in the first few minutes. From the ridiculous personality quiz you do at the start to the completely unhinged dialogue between characters, it's total joy to play.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11096039601715865084gol1.jpeg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11096039601715865084gol1.jpeg"/></a></p>
+<p>You know you're in for a good time when you get this to start with…</p>
+<p>A top-down classic adventure RPG, that is a lot of fun, but it can get quite difficult with all the different mini-games you need to play. Each time you have a battle with a creature you get the option to fight them to level up, befriend them or to run. How you approach all the encounters will change a number of things in the game, like who will follow you along and the ending (there's multiple). It's one of those quirky adventures that you'll probably want to play more than once to see it all. Because certain decisions can prevent you doing certain things and no doubt your first run through will have you miss plenty.</p>
+<p>I just love the dialogue more than anything in this, it's such dumb-fun.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/21114629001715874736gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21114629001715874736gol1.jpeg"/></a></p>
+<p>The combat is more than a <em>little</em> Undertale inspired though. Imitation is the sincerest form of flattery as they say. With lots of mini-games, some of them really quite challenging too across multiple stages, with various attack patterns. Combat isn't always the best route, but then it does depend on what you want from it. Even if you don't choose to attack, you still have to defend as you often run around this little area while they attack you.</p>
+<p>It helps that you'll end up with multiple characters, and who you get depends on who you befriend and help along the way. Like a lost dog searching for a home. During combat, you will get to swap between characters, with each having their own special buffs available to help. You may be able to heal, speed yourself up, boost your attack or defence and so on.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10927703401715874876gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10927703401715874876gol1.jpeg"/></a></p>
+<p>As funny as it is, the game can be really difficult at certain points. It's <em>supposed</em> to be a challenge but thankfully there is what it calls the Chill Mode, which gives you a helping hand during the combat with a little invincible time between attacks. It just makes it that little bit more accessible while still being somewhat a challenge.</p>
+<p>There's no real guide as to what you're doing either. You're just aimlessly wandering through the world, talking to everyone you can to see their hilarious dialogue and continuing on your path with the help of a few weirdos, one of which keeps screwing with you and trying to kill you. <em>At one point early on they try to drop a piano on you.</em></p>
+<p>Here you just end up talking to everyone possible, which you probably wouldn't do in other similar RPGs. Which is why it helps that the writing is such an odd mixture of everything from telling you to slow down and take things in, to just straight-up insulting you and of course many stupid jokes.</p>
+<p>One of the key points to the game is the Rhapsody system. As you progress you're writing your own Rhapsody, which is a retelling of every choice you made and you can share these with friends online. Just a fun little bonus feature.</p>
+<div class="hidden_video" data-video-id="SLk4FajFGTI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c4e7e71c7112210d62ab30adc9962e72.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/SLk4FajFGTI" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<blockquote>
+<ul>
+<li>Explore the colorful world of Athens, and hop from town-to-circus-to-UFO-piloted-by-cats-in-the-sky as you write your Rhapsody.</li>
+<li>Answer a deep, meaningful personality test that reveals your deepest, darkest desires (such as wanting to be a bus driver).</li>
+<li>Party members galore! 16 potential companions await, each with a bold personality and some being a little bit more unhinged than others.</li>
+<li>Tons of enemies for you to FIGHT or BEFRIEND! This world has no shortage of intense battles with opponents that range from weird, wacky, tough, cute, and outright goofy!</li>
+<li>Figure out why everyone's crazy for hoarding EXP (hopefully it doesn't have any side effects) and engage in tough Souls-like dating mechanics(?).</li>
+<li>Minigames that'll challenge your limits, like having to spell your own name, dodging space invaders, copying the circus mimes, and paying your taxes.</li>
+<li>A branching narrative with different endings depending on your choices, friendships, and other stuff that just happens in life.</li>
+</ul>
+</blockquote>
+<p>It's pretty rare that I pick up a game and get pulled in <em>instantly</em> like this. The only part that <em>doesn't</em> work are the Steam Achievements which don't seem to unlock with Proton but the developer is looking into it. Even with Steam Achievements not currently working, it's a solid recommendation from me. Wonderful.</p>
+<p>Available to buy from:</p>
+<p><a href="https://www.gog.com/en/game/athenian_rhapsody" rel="noopener" target="_blank">GOG</a></p>
+<p><a href="https://store.steampowered.com/app/1671720/Athenian_Rhapsody/" rel="noopener" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/athenian-rhapsody-is-a-rather-unhinged-undertale-like-and-stupidly-funny/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/athenian-rhapsody-is-a-rather-unhinged-undertale-like-and-stupidly-funny/</guid>
+      <pubDate>Thu, 16 May 2024 16:13:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1858365767id24531gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Towerful Defense: Prologue is like Brotato and Vampire Survivors had a TD baby</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>I'm apparently a total and complete sucker for anything that allows for short rounds of gameplay, that mixes in elements of Brotato and Vampire Survivors to let me customize my run and Towerful Defense: Prologue has plenty of that.</p>
+<p>Available free on <a href="https://store.steampowered.com/app/2949250/Towerful_Defense_Prologue/" rel="noopener" target="_blank">Steam</a> ahead of the <a href="https://store.steampowered.com/app/2453610/Towerful_Defense_A_Rogue_TD/" rel="noopener" target="_blank">full game</a> releasing at some point later this year, it's definitely giving me that feeling of needing just one more run. It's really nothing to look at, with the most basic graphics possible but the key is in the gameplay here.</p>
+<p>It's a tower defense action roguelike where you control a single tower to fight against hordes of aliens coming from all directions. Pick your tower, equip up to 4 skills, and choose from a variety of traits and items to craft powerful builds that lead you to victory. So, it's a bit like the rather fun <a href="https://www.gamingonlinux.com/2023/09/heretics-fork-is-an-unholy-blending-of-deck-building-and-tower-defense/" rel="noopener" target="_blank">Heretic's Fork</a> but without the deck-building. Instead here you get the shop system after waves like you do in Brotato to build up your tower.</p>
+<div class="hidden_video" data-video-id="COBJMngzY_w"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bb58ab3f25662b7585a5fe933f0ab1cc.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/COBJMngzY_w" target="_blank">See video</a></div></div>
+<p>The Prologue (a glorified demo) gives you:</p>
+<ul>
+<li>Fast run roguelike tower defense (about 30 minutes for a run) with 19 normal waves and a partial boss wave.</li>
+<li>3 Towers with different buffs, and play-style-changing effects.</li>
+<li>3 Skills with upgrades, enhancements, and unique traits.</li>
+<li>100+ artifacts and support units to help you craft unique powerful builds.</li>
+<li>Auto Skill with customizable targeting behaviors.</li>
+</ul>
+<p>It has Native Linux support and is good fun to try out different combinations.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/towerful-defense-prologue-is-like-brotato-and-vampire-survivors-had-a-td-baby/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/towerful-defense-prologue-is-like-brotato-and-vampire-survivors-had-a-td-baby/</guid>
+      <pubDate>Thu, 16 May 2024 11:31:30 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/95489218id24530gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Ultimate Chicken Horse gets its biggest sale yet with a new content update</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Ultimate Chicken Horse is easily one of the funniest and stupidest party-platformers I've ever played, and it just had a free content update with a big discount.</p>
+<p>This is no ordinary platformer. You and friends build the level as you play, as you each try to reach the end of the level. You take it in turns to place down various different types of platforms and traps. It's all about scoring enough points to beat your friends. It gets weird.</p>
+<p>They just released the Pandamonium Update which brings in a new Panda character, 4 new skins, 2 new levels, 2 new outfits, 3 new music tracks and an assortment of other improvements and bug fixes.</p>
+<div class="hidden_video" data-video-id="YY76Of-9_F8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/379249b38b66b0e563d74699e0208609.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/YY76Of-9_F8" target="_blank">See video</a></div></div>
+<p>Really great fun and it has both local and cross-platform multiplayer so you can play with pretty much anyone. I don't have a single bad word to say about this one, it's well worth your time. I've played quite a lot with my own family and it's always a riot.</p>
+<p>Ultimate Chicken Horse has Native Linux support and is Steam Deck Verified.</p>
+<p>To go along with the update it's 65% off now, which is the biggest discount it's had since the 2016 release.</p>
+<p>You can buy it from:</p>
+<p><a href="https://www.humblebundle.com/store/ultimate-chicken-horse?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/386940/Ultimate_Chicken_Horse/" rel="noopener" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/ultimate-chicken-horse-gets-its-biggest-sale-yet-with-a-new-content-update/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/ultimate-chicken-horse-gets-its-biggest-sale-yet-with-a-new-content-update/</guid>
+      <pubDate>Thu, 16 May 2024 11:06:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/534535530id24529gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Casual</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Story-rich adventure Read Only Memories: NEURODIVER is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The sequel to 2064: Read Only Memories has finally arrived with Read Only Memories: NEURODIVER now available with Linux support. No rating for Steam Deck yet but it does have controller support so it <em>should</em> work well.</p>
+<blockquote>
+<p></p>
+<p>Take on the role of ES88, a young esper employed by MINERVA, a powerful organization specializing in information science, neurotechnology, and extrasensory phenomena. She has been tasked with tracking down Golden Butterfly, a mysterious psychic entity hiding in and fragmenting the memories of Neo-San Francisco's citizens. Who are they? Why are they doing this? And how will you stop them?</p>
+</blockquote>
+<p>While it is a sequel, you don't actually need to have played the first game. The developers said it's the same world but a whole new setting with new characters, but if you're familiar with the first game you'll notice plenty of familiar faces.</p>
+<div class="hidden_video" data-video-id="QSbbSlh8Rcg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/eea9bad39023750cca01565f320e7df0.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/QSbbSlh8Rcg" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<ul>
+<li><strong>The Sequel to 2064: Read Only Memories</strong> - The long-awaited sequel to 2064: Read Only Memories takes you back to Neo-San Francisco in an all-new "psy-fi" adventure. Meet new inhabitants and reconnect with old favorites from the world of Read Only Memories.</li>
+<li><strong>A Mystery in Memories</strong> - Take on the the role of newly-qualified ESPer, ES88, to track down the mysterious Golden Butterfly. Work with the Neurodiver, ES88's psychic sidekick, to dive into people's minds and repair their wrecked recollections.</li>
+<li><strong>Anime-inspired Pixel Art</strong> - Immerse yourself in the beautiful pixel art world that takes you around Neo-SF, the halls of the secretive Minerva agency, and within the depths of people's memories.</li>
+<li><strong>A Cast to Remember</strong> - Beautifully drawn and animated characters are brought to life with superb voice-acting. New heroes and villains are joined by old favorites Lexi Rivers, Turing, and TOMCAT from 2064: Read Only Memories.</li>
+<li><strong>Retro Fm Synth Music</strong> - Indulge your senses in the sharp and glossy retro tones of Neo-SF's FM synth soundscape as you dive deep into people's minds to track down the cunning Golden Butterfly.</li>
+</ul>
+<p>Available to <a href="https://store.steampowered.com/app/1293910/Read_Only_Memories_NEURODIVER/" rel="noopener" target="_blank">buy on Steam now</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/story-rich-adventure-read-only-memories-neurodiver-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/story-rich-adventure-read-only-memories-neurodiver-is-out-now/</guid>
+      <pubDate>Thu, 16 May 2024 10:32:02 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/757330711id24528gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Cyberpunk</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Caves of Qud gets a huge new Beta released with the big UI redesign</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>An update many have been waiting for, Caves of Qud, one of the best roguelikes ever has a Beta available that includes a huge overhaul to the UI. Much better for gamepad and Steam Deck players.</p>
+<blockquote>
+<p>Caves of Qud is a science fantasy roguelike epic steeped in retrofuturism, deep simulation, and swathes of sentient plants. Come inhabit a living, breathing world and chisel through layers of thousand-year-old civilizations. Decide: is it a dying earth, or is it on the verge of rebirth?</p>
+</blockquote>
+<p>They said this transformational UI design works fully with mouse or gamepad (on top of keyboard) and is much prettier. It's not entirely done with some more polish to come but it's fully functional. Also added in this update are Steam Cloud saves, good for those hopping between systems, they've refreshed the starting town, there's hundreds of new sound and visual effects plus new narrative touches, big bug fixes, &amp; performance improvements.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5399331831715852691gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5399331831715852691gol1.jpg"/></a></p>
+<p>More in the <a href="https://store.steampowered.com/news/app/333640/view/4196867895996866144" rel="noopener" target="_blank">update notes</a>.</p>
+<p>Caves of Qud has Native Linux support and is Steam Deck Verified.</p>
+<p>You can buy it from:</p>
+<p><a href="https://af.gog.com/en/game/caves_of_qud?as=1636858786" rel="noopener" target="_blank">GOG</a></p>
+<p><a href="https://freeholdgames.itch.io/cavesofqud" rel="noopener" target="_blank">itch.io</a></p>
+<p><a href="https://store.steampowered.com/app/333640/Caves_of_Qud/?curator_clanid=4218320" rel="noopener" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/caves-of-qud-gets-a-huge-new-beta-released-with-the-big-ui-redesign/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/caves-of-qud-gets-a-huge-new-beta-released-with-the-big-ui-redesign/</guid>
+      <pubDate>Thu, 16 May 2024 09:46:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/882838590id24527gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>GOG</category>
+      
+    </item>
+    
+    <item>
+      <title>Underground sandbox adventure Core Keeper hits 1.0 on August 27</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The award-winning mining sandbox adventure game Core Keeper is now getting ready to leave Early Access with the big 1.0 arriving on August 27th.</p>
+<p>With the 1.0 update it will bring with it new content, features and quality of life improvements. The Summer Update that was planned to arrive before that is now just going to focus on quality and bug fixes, with the new content left for the 1.0 update to ensure it's ready. They said to expect a 1.0 content reveal trailer later in June but for now they did put up this new trailer too:</p>
+<div class="hidden_video" data-video-id="ga6q6vUluzE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c12cc22431ca51081ed6a4d04c166509.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ga6q6vUluzE" target="_blank">See video</a></div></div>
+<p>"We are so excited for the full release of Core Keeper on consoles and PC this August," said Vincent Coates, Senior Brand Manager at Fireshine Games. "It's been amazing to see over 2 million players discover the charm, mystery and fun of Core Keeper throughout the game’s time during Steam Early Access, and we can't wait for even more to discover everything it has to offer with the full launch. From building, farming and fishing, to hatching pets, battling huge bosses and exploring mysterious lands, Core Keeper combines so much of what players love into a compelling package that they can play entirely as a single-player adventure or together online with friends."</p>
+<p>It has Native Linux support and is Steam Deck Verified.</p>
+<p>Currently it's 40% off in <a href="https://www.humblebundle.com/store/core-keeper?partner=gamingonlinux" rel="noopener" target="_blank">the Humble Store sale</a>. Otherwise check it out on <a href="https://store.steampowered.com/app/1621690/Core_Keeper/" rel="noopener" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/underground-sandbox-adventure-core-keeper-hits-10-on-august-27/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/underground-sandbox-adventure-core-keeper-hits-10-on-august-27/</guid>
+      <pubDate>Thu, 16 May 2024 09:32:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1892450314id24526gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>SAMURAI WARRIORS 4 DX arrives on Steam and it&#39;s Steam Deck Verified</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>SAMURAI WARRIORS 4 from Koei Tecmo is a hack and slash game originally released in 2014. And now the much expanded enhanced version is here with SAMURAI WARRIORS 4 DX. There was also SAMURAI WARRIORS 4-II that came to Steam in 2015, which was more of a side-story with DX directly building on 4.</p>
+<p>This version includes over 150 previously released DLC items like costumes, weapons, editable parts, scenarios, background music, and more. Plus it has full Steam Deck Verified support right out of the gate. This is basically the final definitive edition of the game.</p>
+<div class="hidden_video" data-video-id="psEN_sukaCI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0b6d1888a094ad3c70bfefe61b52458d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/psEN_sukaCI" target="_blank">See video</a></div></div>
+<p>SAMURAI WARRIORS 4 DX includes everything fans have been craving to play in one complete edition. In addition to the main “Story Mode” featuring “regional stories” and the “story of unification”, the DX version allows players to choose from a variety of different modes, including “Chronicle Mode”, a mode that enables players to travel around the SAMURAI WARRIORS world, accomplishing quests in various regions while meeting officers and collecting items. In addition, players can now discover over 50 playable officers in SAMURAI WARRIORS 4 DX along with exhilarating action systems such as “Hyper Attack” and “Rage” as they journey to the heart of Japan’s Sengoku period.</p>
+<p>SAMURAI WARRIORS 4 DX features:</p>
+<ul>
+<li>Over 150 downloadable pieces of content – Downloadable content initially available on other platforms at the original release of SAMURAI WARRIORS 4 has been integrated, including scenarios, costumes and weapons.</li>
+<li>Optimized for PC – The graphics settings can be adjusted to match the PC specifications of each player. Mouse and keyboard controls are supported and key assignments can be changed. Most controllers are supported.</li>
+<li>SAMURAI WARRIORS 4 DX is now available in English in addition to Japanese. The language can be changed in the settings.</li>
+</ul>
+<p>Since it's Steam Deck Verified, there should be no problems playing it on desktop Linux with Proton. For the verification Valve picked <a href="https://www.gamingonlinux.com/2024/05/proton-9-0-released-with-expanded-game-support-for-steam-deck-linux/" rel="noopener" target="_blank">the new Proton 9.0</a>.</p>
+<p>Check it out on <a href="https://store.steampowered.com/app/2719200/SAMURAI_WARRIORS_4_DX/" rel="noopener" target="_blank">the Steam page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/samurai-warriors-4-dx-arrives-on-steam-and-its-steam-deck-verified/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/samurai-warriors-4-dx-arrives-on-steam-and-its-steam-deck-verified/</guid>
+      <pubDate>Thu, 16 May 2024 09:22:18 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/213183951id24525gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Back 4 Blood gets Denuvo Anti-tamper removed and an anti-cheat fix for Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>For those of you who wait until Denuvo Anti-tamper gets removed from games, you'll be pleased to know Back 4 Blood is now free of it. Plus the developers fixed the anti-cheat recently.</p>
+<p>As shown on <a href="https://steamdb.info/app/924970/history/?changeid=U:48306347" rel="noopener" target="_blank">SteamDB</a>, the notice about it having Denuvo Anti-tamper was removed and it's no longer noted on the Steam page. Nice to see, especially for Linux / Steam Deck players because swapping around Proton versions can cause you to get locked out for a day.</p>
+<p>On top of that on May 15th the developers noted an <a href="https://store.steampowered.com/news/app/924970/view/4190114399255052787" rel="noopener" target="_blank">update</a> that "addresses an Easy Anti-Cheat issue for Steam Deck users where players could not access the game" (which would have affected desktop Linux players too). So it's good to see that Turtle Rock Studios care about their players on Linux systems.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19264848091715850234gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19264848091715850234gol1.jpg"/></a></p>
+<p>Back 4 Blood is currently 90% off in the <a href="https://www.humblebundle.com/store/back-4-blood?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store sale</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/back-4-blood-gets-denuvo-anti-tamper-removed-and-an-anti-cheat-fix-for-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/back-4-blood-gets-denuvo-anti-tamper-removed-and-an-anti-cheat-fix-for-steam-deck/</guid>
+      <pubDate>Thu, 16 May 2024 09:05:16 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/320230832id24524gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>DRM</category>
+      
+    </item>
     
     <item>
       <title>Check out Motordoom, a freestyle sports survivor-like horde shooter</title>
@@ -3625,373 +3929,6 @@ Signing in to PSN is optional when playing a PlayStation game on PC.</p>
       <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1536378789id24432gol.jpg" type="image/jpeg"/>
       
       <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Survey for April 2024 shows a small dip for Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve has now published the Steam Hardware &amp; Software Survey: April 2024, and overall the movements are pretty small but there is a small dip for Steam Deck.</p>
-<p>For the operating system numbers April 2024 shows:</p>
-<ul>
-<li>Windows 96.76% +0.09%</li>
-<li>Linux 1.90% -0.04%</li>
-<li>macOS 1.35% -0.03%</li>
-</ul>
-<p>Over time via our <a href="https://www.gamingonlinux.com/steam-tracker/" rel="noopener" target="_blank">Steam Tracker</a> for Linux:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4152528461714641120gol1.png" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4152528461714641120gol1.png"/></a></p>
-<p>When you filter over to the Linux details, we can see the small dip for Steam Deck this month:</p>
-<ul>
-<li>SteamOS Holo 64 bit (Steam Deck) 42.33% -1.89%</li>
-<li>Arch Linux 64 bit 8.24% +0.58%</li>
-<li>Ubuntu 22.04.4 LTS 64 bit 6.13% +0.59%</li>
-<li>Freedesktop SDK 23.08 (Flatpak runtime) 64 bit 6.01% +0.04%</li>
-<li>Linux Mint 21.3 64 bit 4.39% +0.62%<img src="https://store.akamai.steamstatic.com/public/images/trans.gif" style="height:1px; width:20px"/></li>
-<li>Manjaro Linux 64 bit 3.37% -0.05%</li>
-<li>Other 29.53% +0.12%</li>
-</ul>
-<p>This also shows on the GPU details with the AMD AMD Custom GPU 0405 (Steam Deck) seeing -2.77%. Overall though, the Steam Deck with SteamOS is still the most used system in for Linux gaming on Steam.</p>
-<p>See more on the <a href="https://store.steampowered.com/hwsurvey/" rel="noopener" target="_blank">Steam Survey</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/steam-survey-for-april-2024-shows-a-small-dip-for-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/steam-survey-for-april-2024-shows-a-small-dip-for-steam-deck/</guid>
-      <pubDate>Thu, 02 May 2024 09:14:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Survey</category>
-      
-    </item>
-    
-    <item>
-      <title>Pick up Golf With Your Friends, Trepang2, Gord, Neon Abyss and more in this bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>There's a new <a href="https://www.humblebundle.com/games/team17-from-golf-greens-to-battle-scenes?partner=gamingonlinux" rel="noopener" target="_blank">Team17 Humble Bundle</a> live and it includes a pretty interesting selection of games for you to begin stocking up for May.</p>
-<p>Below I will note each game you can get included plus the Steam Deck rating, any <a href="https://www.protondb.com/" rel="noopener" target="_blank">ProtonDB</a> rating if there is one (or if it has Native Linux support) and each is a Steam link if you need more info first. Overall this bundle has really great compatibility.</p>
-<p><a href="https://store.steampowered.com/app/1164940/Trepang2/" rel="noopener" target="_blank">Trepang2</a> - Deck Verified / ProtonDB Gold</p>
-<blockquote>
-<p>Become the ultimate badass in Trepang2: A gory, action-packed FPS set in the near future. Unleash all hell on your enemies, dodge bullets and leave a trail of destruction in this hardcore and frenetic shooter.</p>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/21192143211714590021gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21192143211714590021gol1.jpg"/></a><br/>
-<em>Pictured - Trepang2</em></p>
-<p><a href="https://store.steampowered.com/app/1761620/Headbangers_Rhythm_Royale/" rel="noopener" target="_blank">Headbangers: Rhythm Royale</a> - Deck Playable / ProtonDB Platinum</p>
-<blockquote>
-<p>Headbangers is a light-hearted, Rhythm Battle Royale Game where you and 29 other Pigeons compete against each other, all to complete your quest of claiming the title of Master Headbanger!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1351210/Gord/" rel="noopener" target="_blank">Gord</a> - Deck Unsupported / ProtonDB Platinum</p>
-<blockquote>
-<p>Gord is a single-player adventure strategy. To survive, you must build, but to prevail, you must conquer the darkness beyond the gates. In this dark fantasy world, you must complete quests while managing a populace whose personal stories and well-being decide the fate of your tribe.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/788100/Neon_Abyss/" rel="noopener" target="_blank">Neon Abyss</a> - Deck Verified / ProtonDB Platinum</p>
-<blockquote>
-<p>Neon Abyss is a frantic, roguelite action-platformer where you run ‘n’ gun your way into the Abyss. Featuring unlimited item synergies and a unique dungeon evolution system, each run diversifies the experience and every choice alters the ruleset.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/327030/Worms_WMD/" rel="noopener" target="_blank">Worms W.M.D</a> - Deck Playable / Native Linux (ProtonDB Gold)</p>
-<blockquote>
-<p>The worms are back in their most destructive game yet. With a gorgeous, hand-drawn 2D look, brand new weapons, the introduction of crafting, vehicles and buildings plus the return of some much-loved classic weapons and gameplay, Worms W.M.D is the best worms experience ever.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/641990/The_Escapists_2/" rel="noopener" target="_blank">The Escapists 2</a> - Deck Verified / Native Linux (ProtonDB Platinum)</p>
-<blockquote>
-<p>Craft, Steal, Brawl and Escape! It’s time to bust out of the toughest prisons in the world as you return to the life of an inmate in The Escapists 2, now with multiplayer! Have you got what it takes to escape?</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/431240/Golf_With_Your_Friends/" rel="noopener" target="_blank">Golf With Your Friends</a> - Deck Verified / Native Linux (ProtonDB Platinum)</p>
-<blockquote>
-<p>Why have friends if not to play Golf... With Your Friends! Nothing is out of bounds as you take on courses filled with fast paced, exciting, simultaneous mini golf for up to 12 players!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/996770/Moving_Out/" rel="noopener" target="_blank">Moving Out</a> - Deck Verified / ProtonDB Platinum</p>
-<blockquote>
-<p>Moving Out is a ridiculous physics-based moving simulator that brings new meaning to "couch co-op"! Are you ready for an exciting career in furniture? As a newly certified Furniture Arrangement &amp; Relocation Technician, you’ll take on moving jobs all across the busy town of Packmore.</p>
-</blockquote>
-<p>Plus you'll also get a coupon for 35% off <a href="https://store.steampowered.com/app/1562430/DREDGE/" rel="noopener" target="_blank">Dredge</a> (Deck Verified / ProtonDB Platinum), which is the biggest discount so far.</p>
-<p><a href="https://www.humblebundle.com/games/team17-from-golf-greens-to-battle-scenes?partner=gamingonlinux" rel="noopener" target="_blank">See the full bundle</a> for more.</p>
-<p>Also do check out the <a href="https://www.gamingonlinux.com/2024/04/create-automate-manage-in-this-humble-bundle-of-games/" rel="noopener" target="_blank">Create, Automate &amp; Manage Humble Bundle</a> that has The Colonists, Astro Colony and more.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/pick-up-golf-with-your-friends-trepang2-gord-neon-abyss-and-more-in-this-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/pick-up-golf-with-your-friends-trepang2-gord-neon-abyss-and-more-in-this-bundle/</guid>
-      <pubDate>Wed, 01 May 2024 19:00:56 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1587547782id24430gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck most played for April 2024 has plenty of Fallout</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve have revealed the most played Steam Deck games for April 2024, and to no surprise you've all be playing a whole lot of Fallout haven't you? Yes you have. Don't forget to pick up all those cups and everything else to sell to someone. Or is that just me? I end up being a hoarder in Fallout.</p>
-<p>Sorted by hours played from top to bottom here's the most played and they're all Steam links if you want to go and pick yourself up a new game:</p>
-<ul>
-<li><a href="https://store.steampowered.com/app/413150/Stardew_Valley/" rel="noopener" target="_blank">Stardew Valley </a></li>
-<li><a href="https://store.steampowered.com/app/377160/Fallout_4/" rel="noopener" target="_blank">Fallout 4 </a></li>
-<li><a href="https://store.steampowered.com/app/2379780/Balatro/" rel="noopener" target="_blank">Balatro</a></li>
-<li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" rel="noopener" target="_blank">Baldur's Gate 3</a></li>
-<li><a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/" rel="noopener" target="_blank">HELLDIVERS 2</a></li>
-<li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" rel="noopener" target="_blank">ELDEN RING</a></li>
-<li><a href="https://store.steampowered.com/app/22380/Fallout_New_Vegas/" rel="noopener" target="_blank">Fallout: New Vegas</a></li>
-<li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" rel="noopener" target="_blank">Cyberpunk 2077</a></li>
-<li><a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" rel="noopener" target="_blank">Grand Theft Auto V</a></li>
-<li><a href="https://store.steampowered.com/app/1151340/Fallout_76/" rel="noopener" target="_blank">Fallout 76</a></li>
-<li><a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/" rel="noopener" target="_blank">The Binding of Isaac: Rebirth</a></li>
-<li><a href="https://store.steampowered.com/app/582010/Monster_Hunter_World/" rel="noopener" target="_blank">Monster Hunter: World</a></li>
-<li><a href="https://store.steampowered.com/app/2321470/Deep_Rock_Galactic_Survivor/" rel="noopener" target="_blank">Deep Rock Galactic: Survivor</a></li>
-<li><a href="https://store.steampowered.com/app/646570/Slay_the_Spire/" rel="noopener" target="_blank">Slay the Spire</a></li>
-<li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" rel="noopener" target="_blank">Red Dead Redemption 2</a></li>
-<li><a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" rel="noopener" target="_blank">The Elder Scrolls V: Skyrim Special Edition</a></li>
-<li><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/" rel="noopener" target="_blank">Vampire Survivors</a></li>
-<li><a href="https://store.steampowered.com/app/1145360/Hades/" rel="noopener" target="_blank">Hades</a></li>
-<li><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" rel="noopener" target="_blank">The Witcher 3: Wild Hunt</a></li>
-<li><a href="https://store.steampowered.com/app/22370/Fallout_3_Game_of_the_Year_Edition/" rel="noopener" target="_blank">Fallout 3 - Game of the Year Edition</a></li>
-</ul>
-<p>I'm certainly looking forward to doing a complete Fallout 4 play-through, especially now <a href="https://www.gamingonlinux.com/2024/04/proton-hotfix-update-fixes-fallout-4-frame-pacing-issue-on-steam-deck-oled/" rel="noopener" target="_blank">Valve has fixed up the performance issues</a> on the Steam Deck OLED.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4450833801714587256gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4450833801714587256gol1.jpg"/></a><br/>
-<em>Pictured - Fallout 4</em></p>
-<p>Over to you in the comments, what have you been playing lately?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/steam-deck-most-played-for-april-2024-has-plenty-of-fallout/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/steam-deck-most-played-for-april-2024-has-plenty-of-fallout/</guid>
-      <pubDate>Wed, 01 May 2024 18:15:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/983833793id24429gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Listicle</category>
-      
-      <category>Misc</category>
-      
-      <category>Round-up</category>
-      
-    </item>
-    
-    <item>
-      <title>Bye Sweet Carole blends horror with what looks like classic Disney movies</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I've no idea how I missed Bye Sweet Carole being announced a good while ago, but maybe you did too and it deserves a look because it honestly looks pretty incredible. Created by Chris Darril of the Remothered series it looks like it really does blend classic Disney movies, with a more mature horror theme.</p>
-<p>The reveal trailer from last year:</p>
-<div class="hidden_video" data-video-id="KSd5hbRGYR4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/43147d8070260f3c3bd28785980fb945.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/KSd5hbRGYR4" target="_blank">See video</a></div></div>
-<p>More about it: "Set in the early 1900s, in an age where the phenomenon of the feminist political movement begins to shake the British nation, young Lana Benton, guest of the eerie Bunny Hall orphanage, is the only one to suspect that her best friend Carole didn’t just run away. The secret correspondence between Carole and a mysterious “French” pushes Lana to investigate enough to find herself surviving, poised between the real world and the fantastic kingdom of Corolla that, under the cruel influence of the terrifying Mr.Kyn, the insensitive owl Velenia, and the ravenous colonies of tar bunnies, is inexorably perishing."</p>
-<p>And then for some very early gameplay shown during Gamescom 2023:</p>
-<div class="hidden_video" data-video-id="YuM4LqSR_5A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7e3d5f49312c73dde393801a4a221cd3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/YuM4LqSR_5A" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Embark on a horrific journey through a dark tale set in the austere Bunny Hall and the mesmerizing world of Corolla.</li>
-<li>Immerse yourself in a hand-drawn universe brought to life using cinematographic techniques inspired by the greatest animated movies.</li>
-<li>Shape-shift into a rabbit and harness your various forms to conquer the deadly challenges that await you.</li>
-<li>Encounter a vibrant cast of characters, from your loyal friend Mr. Baesie to the malevolent owl Velenia and the terrifying Mr. Kyn.</li>
-</ul>
-</blockquote>
-<p>Right onto the wishlist it goes. Can't wait to give this one a run through. It releases later this year.</p>
-<p>You can <a href="https://store.steampowered.com/app/2428980/Bye_Sweet_Carole/" rel="noopener" target="_blank">follow it on Steam</a>. No doubt it will work well with Proton on Linux.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/bye-sweet-carole-blends-horror-with-what-looks-like-classic-disney-movies/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/bye-sweet-carole-blends-horror-with-what-looks-like-classic-disney-movies/</guid>
-      <pubDate>Wed, 01 May 2024 13:45:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/261645821id24428gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Horror</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Palworld is bringing in fun new Pals for you to put to work</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Pocketpair's absolute smash-hit Early Access game Palworld is set to expanding, with some new Pals being teased that will be coming sometime this Summer.</p>
-<p>This is a further tease on what the developer <a href="https://www.gamingonlinux.com/2024/04/palworld-is-getting-a-major-content-update-this-summer-plus-a-pvp-arena-mode-later/" rel="noopener" target="_blank">previously announced</a> recently for the big Summer update that will bring in a whole bunch of new content, including a new island and eventually a PvP mode too. Now we're getting our first glimpse at some of what to expect.</p>
-<p>We're going to see a frog with a stick, some sort of ostrich, a dog with long ears and a cute little dino-like creature with a silly-looking mushroom on its head. Do any look like Pokemon? That's been an ongoing complaint about Palworld's design since even before release. <em>I don't know </em>but<em> </em>they look fun though. </p>
-<div class="hidden_video" data-video-id="RrrRs7-gpzg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0552d51c271e020e464ecd4965f4664e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/RrrRs7-gpzg" target="_blank">See video</a></div></div>
-<p>Palworld is rated Steam Deck Playable and works great on Desktop Linux with Proton.</p>
-<p>You can buy <a href="https://store.steampowered.com/app/1623730/Palworld/?curator_clanid=4218320" rel="noopener" target="_blank">Palworld on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/palworld-is-bringing-in-fun-new-pals-for-you-to-put-to-work/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/palworld-is-bringing-in-fun-new-pals-for-you-to-put-to-work/</guid>
-      <pubDate>Wed, 01 May 2024 13:35:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1327182362id24427gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Monster Catching</category>
-      
-    </item>
-    
-    <item>
-      <title>Dr. Robotnik&#39;s Ring Racers v2.1 out with Linux support now available</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Dr. Robotnik's Ring Racers is an awesome free kart racing fan game, and not only is there a new release out but the Linux version is now ready to be downloaded and played too.</p>
-<p>Mentioned here on GOL <a href="https://www.gamingonlinux.com/2024/04/dr-robotniks-ring-racers-released-after-5-years-of-development/" rel="noopener" target="_blank">recently</a>, Dr. Robotnik’s Ring Racers is a big effort between developers across SRB2Kart, <a href="https://www.srb2.org/" rel="noopener" target="_blank">Sonic Robo Blast 2</a>, <a href="https://doomlegacy.sourceforge.net/" rel="noopener" target="_blank">Doom Legacy</a> and broader Doom communities. With the new 2.1 release out now there's a <a href="https://flathub.org/apps/org.kartkrew.RingRacers" rel="noopener" target="_blank">Flathub</a> package available for easy installs on Linux Desktop and Steam Deck!</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16992065381714568844gol1.png"/></p>
-<p>The <a href="https://www.kartkrew.org/news/2024-04-26_dr-robotniks-ring-racers-version-21.html" rel="noopener" target="_blank">2.1 update</a> is a "minor patch to clean up some of the most pervasive launch issues" but more updates are to come as they have plenty on their to-do list. </p>
-<p>Features include:</p>
-<ul>
-<li>A ludicrously long list of courses and playable characters.</li>
-<li>A complete Grand Prix mode with CPU opponents and multiple difficulty levels.</li>
-<li>New and revamped items.</li>
-<li>Unique game systems and mechanics.</li>
-<li>Local split-screen multiplayer up to 4 players, and online play up to 16.</li>
-<li>A comprehensive Time Attack mode with replay support.</li>
-<li>A wealth of secrets to find.</li>
-</ul>
-<div class="hidden_video" data-video-id="KvAJCrdhrrQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/428d22ac5bd0f35f6e68c9c4cccb986f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/KvAJCrdhrrQ" target="_blank">See video</a></div></div>
-<p>See more on the <a href="https://www.kartkrew.org" rel="noopener" target="_blank">official website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/dr-robotniks-ring-racers-v21-out-with-linux-support-now-available/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/dr-robotniks-ring-racers-v21-out-with-linux-support-now-available/</guid>
-      <pubDate>Wed, 01 May 2024 13:09:25 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2014689823id24426gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Fan Game</category>
-      
-      <category>Free Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Vampire Survivors gets a AAAA update with functional doors, a train and rail kart racing</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Poking a bit of fun at Ubisoft for calling Skull and Bones "AAAA", poncle have released a fresh free update to Vampire Survivors with the AAAA Laborratory update.</p>
-<p>That's right your favourite and the original survivor-like that spawned a great many clones is back to suck you in for many more hours. Yes, they did also spell it with the double r, it's the Laborratory update. The trailer is a real treat too poking fun at big publishers (and themselves) about "hyper realistic" characters, "immersive door opening action", trains and my favourite "fully rendered running animations". Oh there's also some go-karting on tracks because why not right?</p>
-<div class="hidden_video" data-video-id="Tgn_XyvtOro"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/80513b6415c0735e425870ef88f1d7be.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Tgn_XyvtOro" target="_blank">See video</a></div></div>
-<p>New content:</p>
-<ul>
-<li>7 new EXTRA achievements.</li>
-<li>1 new challenge stage.</li>
-<li>1 new bonus stage.</li>
-<li>1 new character.</li>
-<li>1 new weapon with its evolution.</li>
-<li>1 new passive weapon.</li>
-<li>1 new power-up, Seal III.</li>
-</ul>
-<p>They also said in the release <a href="https://store.steampowered.com/news/app/1794680/view/4104540932629694732" rel="noopener" target="_blank">announcement</a> that work for co-op online play support is going well, but it's too early for them to go into details on it. More Adventures are planned too, but for now they're working on something secret for the base game before coming back to releasing more.</p>
-<p>Vampire Survivors is Steam Deck Verified and also has a (unadvertised) Native Linux version.</p>
-<p>Check it out on <a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/?curator_clanid=4218320" rel="noopener" target="_blank">the Steam page</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/vampire-survivors-gets-a-aaaa-update-with-functional-doors-a-train-and-rail-kart-racing/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/vampire-survivors-gets-a-aaaa-update-with-functional-doors-a-train-and-rail-kart-racing/</guid>
-      <pubDate>Wed, 01 May 2024 12:57:14 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1885141569id24425gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Clothes Line is a sweet free little adventure game about a retired old lady</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you have half an hour free and fancy cozying up with a little something, check out the new free release of Clothes Line. This was developed for the 11th anniversary of adventure games website <a href="https://indiefence.miguelrfervenza.com/" rel="nofollow noopener" target="_blank">Indiefence</a>, started out during the <a href="https://itch.io/jam/advjam2023" rel="noopener" target="_blank">Adventure Jam 2023</a> but they didn't quite finish it in time but now it's here.</p>
-<p>Story: "Rita lives a happy retirement with no direct human contact. Her cat Cross is the only company she has (and wants). She sleeps whenever she feels like it, reads, enjoys cooking... Until something breaks her routine: garments appear hanging on the clothes line shared with the apartment opposite, which had been uninhabited for years.</p>
-<p>Who moved in? Will we be able to help Rita go back to her peaceful life?"</p>
-<div class="hidden_video" data-video-id="4ail6mlG6Nk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7affb7fbc7840d2014aedae39c990bc8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/4ail6mlG6Nk" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Simple and intuitive control.</li>
-<li>Half an hour of pleasant gaming (not a single "that doesn't work").</li>
-<li>Ideal to play in company (or alone).</li>
-<li>Puzzles that are part of the narrative.</li>
-<li>A cute cat.</li>
-<li>Hand drawn and animated graphics.</li>
-<li>Original music made up of 11 themes.</li>
-<li>Zero references to classic adventure games and zero fourth wall breaks.</li>
-</ul>
-</blockquote>
-<p>Check it out <a href="https://indiefence.itch.io/clothes-line" rel="noopener" target="_blank">free on itch.io</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/clothes-line-is-a-sweet-free-little-adventure-game-about-a-retired-old-lady/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/clothes-line-is-a-sweet-free-little-adventure-game-about-a-retired-old-lady/</guid>
-      <pubDate>Wed, 01 May 2024 12:31:38 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/910071290id24424gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Casual</category>
-      
-      <category>Free Game</category>
-      
-    </item>
-    
-    <item>
-      <title>The huge life-sim Life by You from Paradox hits Early Access on June 4</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>What could potentially be a The Sims killer, Paradox Interactive plan to finally launch Life by You into Early Access on June 4th after multiple delays.</p>
-<p>Surprisingly, Paradox didn't have another trailer ready for this new release date announcement. However, the team at Paradox Tectonic, which is led by Rod Humble formerly of Electronic Arts have been putting up regular development update videos on <a href="https://www.youtube.com/@lifebyyou/videos" rel="noopener" target="_blank">YouTube</a> going over various features. A few of the videos include partnering up with popular YouTuber FakeGamerGirl like this one going through some gameplay:</p>
-<div class="hidden_video" data-video-id="wXnAL_642Gc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/55e96b088a81c954ba0b74c64085a7e2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/wXnAL_642Gc" target="_blank">See video</a></div></div>
-<p>It definitely looks very much like The Sims, only clearly a bit rougher around the edges.</p>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Play in an open world: Live life with no loading screens. Strike up real-language conversations. Drive or bike to the countryside. Discover and complete quests to unlock new experiences.</li>
-<li>Tell stories through conversations: Every real-language conversation is generated based on your human’s unique situation. You can even craft your own conversations in-game.</li>
-<li>Expand your creativity: Make your own in-game content through mods. Utilize a variety of deep Creator Tools. Change the gameplay anytime. Life is yours to make -and break.</li>
-<li>Take direct control: Drag and drop your humans into their place - or drive them directly in third-person mode. Live the life of one or tell the stories of many. Climb a career ladder. Fall in love. Raise a family.</li>
-<li>Design your own world: Build your humans’ dream homes or businesses from scratch. Furnish them from top to bottom, inside to outside. Drag, demolish, and rearrange entire towns.</li>
-<li>Create fully customized humans: Design your families in the Human Creator, including deep personality and character traits. Style and restyle your humans at any time.</li>
-</ul>
-</blockquote>
-<p>You can <a href="https://store.steampowered.com/app/2358660/Life_by_You/" rel="noopener" target="_blank">follow it on Steam</a>.</p>
-<p>Will you be taking a look at it when it releases? Hopefully it will work well with Proton outside of the usual expected bugs from an Early Access game. </p>
-<p>Original announcement trailer below:</p>
-<div class="hidden_video" data-video-id="U9c3WEYTJIU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f492fce971eda7c9e0bd8ff3c0123254.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/U9c3WEYTJIU" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/the-huge-life-sim-life-by-you-from-paradox-hits-early-access-on-june-4/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/the-huge-life-sim-life-by-you-from-paradox-hits-early-access-on-june-4/</guid>
-      <pubDate>Wed, 01 May 2024 12:25:00 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2121360275id24423gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Paradox Interactive</category>
-      
-      <category>Simulation</category>
-      
-      <category>Steam</category>
       
     </item>
     
