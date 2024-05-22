@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-05-21 07:23:56.276330</pubDate>
+    <pubDate>2024-05-22 07:24:48.350123</pubDate>
 
     
     <image>
@@ -18,6 +18,355 @@
     </image>
 
     
+    
+    <item>
+      <title>NVIDIA 555.42.02 Beta driver out bringing Wayland explicit sync</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The driver release many NVIDIA fans have been waiting on is here today. NVIDIA released the NVIDIA 555.42.02 Beta driver with some necessary upgrades for Wayland support.</p>
+<p>Since it's a Beta driver, it should go without saying that there may still be some lingering issues and bugs. This is for testing, but it shouldn't be too long before NVIDIA push out a stable driver with a small version number bump for when it's ready for everyone. Not that this will stop you right? You all want to try it.</p>
+<p class="plain-list-title"><strong>The main changes are:</strong></p>
+<ul>
+<li>The GSP firmware is now used by default on all GPUs which support it. It can be disabled by setting the kernel module parameter `NVreg_EnableGpuFirmware=0`.</li>
+<li>Added support for the linux-drm-syncobj-v1 protocol for Wayland explicit sync in EGL.</li>
+<li>Added immediate presentation mode support to Vulkan Wayland WSI. This presentation mode instructs the compositors not to wait for a vertical blanking period to update the application's surface content, which may result in tearing.</li>
+<li>Removed support for Base Mosaic on GeForce, which was previously available only on select GPU boards with some motherboards, and limited to five display devices.</li>
+<li>Enabled HDMI 10 bits per component support by default; disable by loading nvidia-modeset with `hdmi_deepcolor=0`.</li>
+<li>Added an interactive prompt to nvidia-installer to allow selecting between the proprietary and open kernel modules, on systems where both kernel module types are supported.</li>
+<li>Added support for using EGL instead of GLX as the OpenGL ICD for NvFBC.</li>
+<li>Changed the minimum required Linux kernel version from 3.10 to 4.15.</li>
+</ul>
+<p class="plain-list-title"><strong>The bug fixes:</strong></p>
+<ul>
+<li>Fixed a bug that caused "Failed to apply atomic modeset" and "Flip event timeout" messages to be printed to the system log when a DRM client such as ddcutil drops "master" permissions while a framebuffer console is being initialized.</li>
+<li>Fixed a bug, when nvidia-drm is loaded with the fbdev=1 module parameter on some kernels, that caused incorrect colors to be displayed.</li>
+<li>Fixed a regression that led to Xid errors when loading the NVIDIA driver on some notebook systems with RTX 4xxx series GPUs.</li>
+<li>Fixed a bug that caused driver build failure when using separate kernel source and output directories on Linux v6.6 and later.</li>
+<li>Fixed a bug that incorrectly allowed `nvidia-smi -r` to reset the primary GPU when using the open kernel modules.</li>
+<li>Fixed a bug that caused vkGetPhysicalDeviceSurfaceSupportKHR to incorrectly report support for Wayland surfaces when nvidia-drm is not loaded with modeset=1.</li>
+<li>Fixed a bug that could cause the display to lock up when suspending on a kernel with CONFIG_FRAMEBUFFER_CONSOLE_DEFERRED_TAKEOVER enabled with nvidia-drm loaded with modeset=1 and fbdev=1.</li>
+<li>Fixed a bug that could lead to a system hang and "Idling display engine timed out" messages when VT switching on an HDMI Fixed Rate Link (FRL) display.</li>
+</ul>
+<p>See it on the <a href="https://www.nvidia.co.uk/download/driverResults.aspx/224793/en-uk" rel="noopener" target="_blank">NVIDIA website</a>.</p>
+<p>Let me know how you get on with it in the comments.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/nvidia-555-42-02-beta-driver-out-bringing-wayland-explicit-sync/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/nvidia-555-42-02-beta-driver-out-bringing-wayland-explicit-sync/</guid>
+      <pubDate>Tue, 21 May 2024 14:03:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Beta</category>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>King under the Mountain (Mountaincore) went open source as developer shuts</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><em>King under the Mountain</em> from developer Rocket Jump Technology, a simulation-based settlement-building strategy game, that was going through a big upgrade and re-brand with <em>Mountaincore</em> ended up shutting down and being open sourced.</p>
+<p>This is actually news from back in <em>January</em> that I missed (thanks for the tip, Sin), because there's just so much news all the time and smaller games end up getting a bit buried. Which, is actually part of the issue here, although only part of the problem though.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4387070301716294327gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4387070301716294327gol1.jpg"/></a><br/>
+<em>Pictured - King under the Mountain</em></p>
+<p>You see King under the Mountain was picked up by a unnamed publisher, who helped finance a big upgrade to the game. 9 months into expanding the game — the publisher <a href="https://steamcommunity.com/games/930230/announcements/detail/3684547928703321045?snr=2___" rel="noopener" target="_blank">backed out</a>. Why? As the developer said "They were worried that a number of similar games that have released in the time between would cause it to struggle to stand out.".</p>
+<p>The developer mentioned they were able to continue it on, and eventually re-released it as Mountaincore. That didn't go well either, as the developer <a href="https://store.steampowered.com/news/app/2370310/view/7217647935762367813" rel="noopener" target="_blank">posted</a> on Steam back in January, with the release being so small they didn't pull in enough revenue to "keep even a single dev employed working on the game".</p>
+<p>As a result the developer "had to be declared insolvent", and so they no longer exist to continue developing it in their free-time.</p>
+<p>In this case though, it's <em>somewhat</em> a happy ending, and probably one of the best endings you can hope for, as the original game King under the Mountain was made fully <a href="https://github.com/rossturner/king-under-the-mountain" rel="noopener" target="_blank">open source</a> under the MIT license. So anyone who wants to hack away on it, or build something from it, can now do so. The upgraded version with Mountaincore couldn't be released as "the legal ownership of Mountaincore itself is still unclear".</p>
+<p>Real shame this, as no one wants to see a developer have to shut due to low sales, but in this case it's also partly because the publisher backed-out after making them go silent on it for so long.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/king-under-the-mountain-mountaincore-went-open-source-as-developer-shuts/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/king-under-the-mountain-mountaincore-went-open-source-as-developer-shuts/</guid>
+      <pubDate>Tue, 21 May 2024 12:31:48 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1992302563id24556gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Building Sim</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>It&#39;s beeautiful! APICO 4.0 brings automation machines to the chilled beekeeping sim</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>APICO is a chilled beekeeping sim from TNgineers that just got a little bit more industrious, with the free APICO 4.0 update giving you some fun new tools. Update 4.0: A Hive of Industry, is the final update for the game and they're going out with a bang on this one with an automation system, seasonal events, new crafting materials and even pets.</p>
+<p>The developers supports bee, beekeeping, pollinator and conservation-based charities with a portion of proceeds from each sale too. Gotta save the bees right? Where would we bee without them. Anyway, check out the update trailer:</p>
+<div class="hidden_video" data-video-id="5WysLxj7yQU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/14028ccec353a5b13eed88ce69d47695.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/5WysLxj7yQU" target="_blank">See video</a></div></div>
+<p>Some of what's new includes:</p>
+<ul>
+<li><strong>Automation Machines: </strong>Craft the Auto-sawmill, Auto-centrifuge, and Auto-squeezer, along with eight new automation machines — Hoppers, Shredders, Loggers, Pickers, Sprinklers, Condensers, Ploppers, and Shippers — on your new Crystal Workbench, which can be purchased from Bobbee, to bring your thriving industry to new heights.</li>
+<li><strong>New Resource — Honeycore Crystals: </strong>Use the newly-added resonance meter and engage in its new mini-game to seek out different sounds throughout the various environments that will help you locate six different types of crystals. Melt them down in the forge and craft new crystal items, including Crystal chests, the Crystal axe, hammer, shovel, and more.</li>
+<li><strong>Pets:</strong> Choose from 16 different adorable little companions to accompany you on your expeditions, including your very own tiny dinosaur!</li>
+<li><strong>New Seasonal Events:</strong> Celebrate Hivemas, active during the month of December, and Hallowbeen, active during the month of October, in the world of APICO with the NPCs! Each event brings new decor, new paints, and secret easter egg items for you to enjoy. There’s no need to bee patient waiting for each event, as you’ll be able to toggle each event in the settings menu!</li>
+<li><strong>…and so much more:</strong> TNgineers have added ten new quests, new decor, paints, new environmental events, and of course, new bees and pollinators! There’s also a new 100% completion surprise that the most dedicated beekeepers can uncover through the Hive Mother’s door.</li>
+</ul>
+<p>Available with Native Linux support and it's Steam Deck Verified.</p>
+<p>Buy from: <a href="https://www.humblebundle.com/store/apico?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a>, <a href="https://tngineers.itch.io/apico" rel="noopener" target="_blank">itch.io</a>, <a href="https://store.steampowered.com/app/1390190/APICO/" rel="noopener" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/its-beeautiful-apico-4-0-brings-automation-machines-to-the-chilled-beekeeping-sim/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/its-beeautiful-apico-4-0-brings-automation-machines-to-the-chilled-beekeeping-sim/</guid>
+      <pubDate>Tue, 21 May 2024 11:19:06 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1903576562id24555gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Casual</category>
+      
+      <category>Exploration</category>
+      
+    </item>
+    
+    <item>
+      <title>BKOM Studios developer on Madzik are giving away a Steam Deck OLED</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>As BKOM Studios approach the launch of Madzik - Episode 1, a narrative-driven hack and slash adventure with a nostalgic 80s vibe, they're giving away a Steam Deck OLED.</p>
+<p>More about the game first: "Embark on an epic journey into the world of Zikverländ. Madzik pays a vibrant homage to the 80s, immersing players in a nostalgic world where every note of music and every pixel on the screen echoes the spirit of that iconic era.". Check out the trailer:</p>
+<div class="hidden_video" data-video-id="vL4Rgag2aEc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/498c6789caa9373059eb6a55c9923a5d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/vL4Rgag2aEc" target="_blank">See video</a></div></div>
+<p><u>Game Features</u>:</p>
+<ul>
+<li><strong>Seamless Hero Switching: </strong>Instantly switch between two heroes on the fly, each boasting unique and complementary combat roles.</li>
+<li><strong>Co-op Gameplay:</strong> Join forces with a friend, harnessing the power of Steam Remote Play Together, and rise to the challenge in unison as teamwork unfolds in real-time.</li>
+<li><strong>Moon Eclipses:</strong> Witness the environment and enemies transforming before your eyes, adapting their abilities and tactics with each lunar cycle. Face the Sun, Ice, Fire and Tempest moons.</li>
+<li><strong>Empowering Transformation:</strong> Channel the Madzik energy to morph into a more formidable and powerful version of yourself, unlocking new strengths and abilities.</li>
+<li><strong>Narrative Journey: </strong>Madzik unfurls a captivating tale that comes to life with every encounter. Dialogues between characters, enriched by voiceovers and cutscenes, weave a rich storytelling.</li>
+<li><strong>Elaborate Boss Fight:</strong> Complete your journey by facing Fhum, a monumental multiphase boss battle, where your skills, strategies and resilience will be tested, pushing you to the limits of your heroism.</li>
+<li><strong>Versatile Ability System:</strong> Dive into Madzik’s ability system, a core element of your journey, offering a wide range of diverse skills to tailor your gameplay experience.</li>
+</ul>
+<p><u>Giveaway</u>:</p>
+<p>As for the Steam Deck OLED giveaway. They announced it on <a href="https://store.steampowered.com/news/app/2193590/view/4178854771790482071" rel="noopener" target="_blank">Steam</a>, and it's being done through <a href="https://gleam.io/EBJ0C/madzik-steam-deck-giveaway" rel="noopener" target="_blank">Gleam</a>. Entries close on June 14 at 11:59 p.m. EST / June 15th 3:59 am UTC. There's multiple ways to improve your chances like joining their discord, following on X/Twitter and so on. So maybe some readers might want to jump in and potentially win a 1TB Steam Deck OLED.</p>
+<p>Presumably then, it will work great on Steam Deck with <a href="https://www.gamingonlinux.com/2019/07/a-simple-guide-to-steam-play-valves-technology-for-playing-windows-games-on-linux/" rel="noopener" target="_blank">Proton</a>.</p>
+<p>You can <a href="https://store.steampowered.com/app/2193590/Madzik__Episode_1/" rel="noopener" target="_blank">follow the game on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/bkom-studios-developer-on-madzik-are-giving-away-a-steam-deck-oled/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/bkom-studios-developer-on-madzik-are-giving-away-a-steam-deck-oled/</guid>
+      <pubDate>Tue, 21 May 2024 11:07:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/392899559id24554gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>Giveaway</category>
+      
+    </item>
+    
+    <item>
+      <title>Kingdom Two Crowns: Call of Olympus announced for this year</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Kingdom Two Crowns: Call of Olympus was just announced with a plan to launch later this year, a DLC expanding the side-scrolling micro strategy game into Ancient Greece.</p>
+<p>Set in a <em>fantastical</em> interpretation of Ancient Greece and its mythos. We're getting an all-new campaign experience they say "will evolve the classic Kingdom formula, including the ability to unlock powerful artefacts through quests that can be used to defend against the waves of Greed coming at night".</p>
+<p>In Call of Olympus, players must defend and conquer the Greed to find out what waits on top of Mount Olympus. As the Monarch, gain access to the divine mountaintop by earning the favor of several gods. Players will embark on an island-hopping journey packed with unique challenges and puzzles to appease the gods and rise to victory on the mountain. Check out the new trailer:</p>
+<div class="hidden_video" data-video-id="BfYKaobPkgs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/23a2e622c6df18a35ef11506d0933a52.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/BfYKaobPkgs" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<ul>
+<li>Greedified mythos and setting: Immerse yourself into an ancient Greek-inspired world in a pixel-perfect. experience</li>
+<li>Seek the favor of the gods: Fulfill divine quests and earn powerful rewards.</li>
+<li>Battle the Greed of epic scales: Build up to confront the threat that looms over Mount Olympus.</li>
+</ul>
+<p>The game is Steam Deck Verified and has Native Linux support.</p>
+<p>You can buy Kingdom Two Crowns from: <a href="https://www.fanatical.com/en/game/kingdom-two-crowns?ref=gol" rel="noopener" target="_blank">Fanatical</a> | <a href="https://www.humblebundle.com/store/kingdom-two-crowns?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a> | <a href="https://www.gog.com/en/game/kingdom_two_crowns" rel="noopener" target="_blank">GOG</a> | <a href="https://store.steampowered.com/app/701160/Kingdom_Two_Crowns/" rel="noopener" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/kingdom-two-crowns-call-of-olympus-announced-for-this-year/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/kingdom-two-crowns-call-of-olympus-announced-for-this-year/</guid>
+      <pubDate>Tue, 21 May 2024 10:57:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1885357141id24553gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>DLC</category>
+      
+      <category>Fanatical</category>
+      
+      <category>GOG</category>
+      
+    </item>
+    
+    <item>
+      <title>PERIMETER: Legate Edition released on Steam with Linux support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>K-D Lab have revived their classic RTS, with PERIMETER: Legate Edition now available on Steam with full Native Linux support and it's even open source. This latest version of the game includes numerous enhancements, along with bundling the Emperor’s Testament expansion.</p>
+<p>Nice to see more classic games getting a revival with some extra features!</p>
+<div class="hidden_video" data-video-id="-lrTdw7DSKc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1b7162d84d4a3eb9a3b9b1f9edf41713.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-lrTdw7DSKc" target="_blank">See video</a></div></div>
+<p>Features from the newer edition:</p>
+<blockquote>
+<ul>
+<li>Cross-platform compatibility: Windows, Linux.</li>
+<li>"Emperor’s Testament" add-on included in the main game.</li>
+<li>Support for widescreen monitors with almost any resolution. You can change the resolution without restarting the game, and in windowed mode, changing the window size dynamically adjusts the game resolution.</li>
+<li>Full support for online multiplayer gaming.</li>
+<li>Capability for multiplayer with more than 4 players (on special maps).</li>
+<li>Enhanced textures and models.</li>
+<li>Support for custom mods.</li>
+<li>Improved game balance.</li>
+<li>Availability of all frames from both Geometry of War and Emperor’s Testament, as well as electro-technologies in battles and multiplayer. New player colours added.</li>
+<li>Numerous minor improvements and bug fixes.</li>
+</ul>
+</blockquote>
+<p>Picking up a copy for myself, I can confirm it runs out of the box on Kubuntu 24.04 and performance is really good. Currently, there's no Vsync option, so it will run at multiple hundreds of FPS. So on Linux you may want to use <a href="https://github.com/ValveSoftware/gamescope" rel="noopener" target="_blank">Gamescope</a> to manually limit it.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2399507761716287535gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2399507761716287535gol1.jpg"/></a></p>
+<p>Available to <a href="https://store.steampowered.com/app/2530170/PERIMETER_Legate_Edition/" rel="noopener" target="_blank">buy on Steam</a>. With the source code (GPL) on <a href="https://github.com/KD-lab-Open-Source/Perimeter" rel="noopener" target="_blank">GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/perimeter-legate-edition-released-on-steam-with-linux-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/perimeter-legate-edition-released-on-steam-with-linux-support/</guid>
+      <pubDate>Tue, 21 May 2024 10:33:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/786508983id24552gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>RTS</category>
+      
+    </item>
+    
+    <item>
+      <title>Beat &#39;em up with this Humble Bundle of games</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Love classic beat 'em up games? You're going to enjoy this <a href="https://www.humblebundle.com/games/brutal-beat-em-ups?partner=gamingonlinux" rel="noopener" target="_blank">latest Humble Bundle of games</a> as there's some good picks inside it.</p>
+<p>Below I will note each game you can get included plus the Steam Deck rating, any <a href="https://www.protondb.com/" rel="noopener" target="_blank">ProtonDB</a> rating if there is one (or if it has Native Linux support) and each is a Steam link if you need more info first. You know the drill!</p>
+<p><a href="https://store.steampowered.com/app/1244950" rel="noopener" target="_blank">Battletoads</a> - Deck Verified / ProtonDB Platinum</p>
+<blockquote>
+<p>Over-the-top combat with combos and hard-hitting morph attacks. Wild, varied gameplay sequences for all types of gamers. Hand-drawn animation feels like playing a cartoon. Drop-in couch co-op for three players</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/564050" rel="noopener" target="_blank">Bud Spencer &amp; Terence Hill - Slaps And Beans</a> - Deck Playable / Native Linux</p>
+<blockquote>
+<p>Bud Spencer and Terence Hill in their first virtual adventure. Slaps And Beans is a co-operative or single player scrolling beat’ em up game with the addition of platform elements and mini-games in which you'll interpret the characters of Bud Spencer and Terence Hill</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/2142330" rel="noopener" target="_blank">Bud Spencer &amp; Terence Hill - Slaps And Beans 2</a> - Native Linux</p>
+<blockquote>
+<p>After the shipwreck in Africa, Bud and Terence save a village from criminals and make their way home on a raft loaded with bananas. But of course it wouldn't be a Bud and Terence adventure if everything went according to plan.</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/1967260" rel="noopener" target="_blank">Double Dragon Gaiden: Rise Of The Dragons</a> - Deck Verified / ProtonDB Platinum</p>
+<blockquote>
+<p>The Double Dragon brothers return in this fresh addition to the iconic franchise. With roguelite elements, every playthrough is a chance at new action. Tag in with 2 of 4 starter characters or unlock 12 additional characters, each with their own special moves and playstyles. Online &amp; Local Co-op.</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/1049320" rel="noopener" target="_blank">River City Girls</a> - Deck Verified / ProtonDB Gold</p>
+<blockquote>
+<p>There's trouble once again in River City, and this time only the girls can save the day! Using a variety of attacks, weapons, and items, these hot-blooded heroines are ready to teach the city’s lowlifes a lesson - either solo or in 2-player co-op! It’s an old-school rumble for a new generation!</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/1920480" rel="noopener" target="_blank">River City Girls 2</a> - Deck Playable / ProtonDB Platinum</p>
+<blockquote>
+<p>The River City Girls are back! Misako, Kyoko, Kunio, and Riki - joined by newcomers Marian and Provie - hit the streets for an all-new beat-'em-up adventure! Team up for local or online co-op and explore a massive world packed with new abilities, enemies, locations, and more!</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/1851020" rel="noopener" target="_blank">River City Girls Zero</a> - (no ratings)</p>
+<blockquote>
+<p>Join Kunio, Riki, Misako, and Kyoko for bone-crunching, 16-bit, co-op beat-'em-up action - newly translated and released outside of Japan after 28 years! The original 1994 graphics, soundtrack, and gameplay are augmented with new motion-comic cutscenes, a new animated intro, and new music!</p>
+</blockquote>
+<p>See the <a href="https://www.humblebundle.com/games/brutal-beat-em-ups?partner=gamingonlinux" rel="noopener" target="_blank">full bundle page for more</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/beat-em-up-with-this-humble-bundle-of-games/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/beat-em-up-with-this-humble-bundle-of-games/</guid>
+      <pubDate>Tue, 21 May 2024 09:29:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2061080178id24551gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Bundle</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Intel Lunar Lake arrives Q3 2024 as Intel jump more into AI</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Oh yay, more AI stuff. Intel have <a href="https://www.intel.com/content/www/us/en/newsroom/news/intels-lunar-lake-processors-arriving-q3-2024.html" rel="noopener" target="_blank">announced</a> that Lunar Lake is due to arrive in Q3 2024 and it will include a neural processing unit (NPU) for AI fans. This will be their latest line of CPUs designed for laptops, so even if you're not into AI there's a good bet if you go for a new laptop next yeah that it may have Intel Lunar Lake.</p>
+<p>"With breakthrough power efficiency, the trusted compatibility of x86 architecture and the industry’s deepest catalog of software enablement across the CPU, GPU and NPU, we will deliver the most competitive joint client hardware and software offering in our history with Lunar Lake and Copilot+" – Michelle Johnston Holthaus, Intel executive vice president and general manager of the Client Computing Group</p>
+<p>Intel say that starting in Q3 2024 ready for the holiday season, more than 80 new laptop designs will arrive from 20 different vendors.</p>
+<p>It's not all AI though of course, these new chips will come with an improved CPU and GPU, with Xe2 graphics so we should hopefully see a good boost in efficiency and power for those of you on the go. As Intel say: "Lunar Lake is expected to be a groundbreaking mobile processor for AI PCs with more than 3 times the AI performance compared with the previous generation. With more than 40 NPU tera operations per second (TOPS), Intel’s next generation processors will provide the capabilities necessary for Copilot+ experiences coming to market. In addition to the higher performing NPU, Lunar Lake will also be equipped with over 60 GPU TOPS delivering more than 100 platform TOPS."</p>
+<p><em>Get ready for a while lot more AI AI AI to come out of Intel, and AMD too.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/intel-lunar-lake-arrives-q3-2024-as-intel-jump-more-into-ai/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/intel-lunar-lake-arrives-q3-2024-as-intel-jump-more-into-ai/</guid>
+      <pubDate>Tue, 21 May 2024 09:15:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1397467550id24550gol.jpg" type="image/jpeg"/>
+      
+      <category>Hardware</category>
+      
+      <category>Intel</category>
+      
+      <category>Misc</category>
+      
+      <category>Upcoming</category>
+      
+    </item>
+    
+    <item>
+      <title>The KINGDOM HEARTS games are finally coming to Steam in June</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>About damn time right? After being Epic Exclusive for multiple years, KINGDOM HEARTS is finally coming to Steam and there's a lot of it. This will make it so much easier to play on Steam Deck / Linux thanks to Proton.</p>
+<p>In the official <a href="https://www.square-enix-games.com/en_GB/news/kingdom-hearts-pc" rel="noopener" target="_blank">announcement</a> they stated the release is for June 13th. It will include:</p>
+<ul>
+<li>KINGDOM HEARTS HD 1.5 + 2.5 ReMIX.</li>
+<li>KINGDOM HEARTS HD 2.8 Final Chapter Prologue.</li>
+<li>KINGDOM HEARTS III + Re Mind DLC.</li>
+<li>KINGDOM HEARTS INTEGRUM MASTERPIECE (bundle that includes all the above compilations).</li>
+</ul>
+<p>Quite a big list when you scroll to see what's inside each one. As <strong>KINGDOM HEARTS HD 1.5 + 2.5 ReMIX</strong> actually includes all this:</p>
+<blockquote>
+<ul>
+<li><strong>KINGDOM HEARTS FINAL MIX</strong> - The game that started it all, remastered with HD visuals, improved controls, a remade soundtrack, and more. This is the game that introduced us to Sora - a brave lad with big feet and a bigger heart.</li>
+<li><strong>KINGDOM HEARTS Re:Chain of Memories</strong> - Set directly after the events of the first game, Sora, Donald and Goofy enter the mysterious Castle Oblivion, and stumble into an adventure that’s forgettable in the best possible way! …That’ll make more sense when you’ve played it.</li>
+<li><strong>KINGDOM HEARTS 358/2 Days (HD Remastered Cinematics)</strong> - This story focuses on Roxas, a new character with a special connection to Sora. The compilation features cinematics from the original game, enhanced with additional text and remastered in HD.</li>
+<li><strong>KINGDOM HEARTS II FINAL MIX</strong> - The second numbered game reunites Sora, Donald and Goofy in an epic adventure across some of the most memorable and unexpected Disney worlds in the series. Like Tron - Tron’s in here!</li>
+<li><strong>KINGDOM HEARTS Birth by Sleep FINAL MIX</strong> - Prequel time! This game turns back the clock to before Sora ever wielded a keyblade and shifts the focus onto three new characters: Terra, Ventus and Aqua. It’s an emotional adventure with a wildly entertaining battle system - there’s a reason it’s a real fan favorite.</li>
+<li><strong>KINGDOM HEARTS Re:Coded (HD Remastered Cinematics)</strong> - This hi-tech tale takes Data Sora into the digital world to seek an answer about a cryptic message. The compilation features enhanced cinematics only.</li>
+</ul>
+</blockquote>
+<p>Then you have <strong>KINGDOM HEARTS HD 2.8 Final Chapter Prologue</strong> that includes:</p>
+<blockquote>
+<ul>
+<li><strong>KINGDOM HEARTS Dream Drop Distance HD</strong> - Sora and Riku take their Mark of Mastery exams to become true keyblade wielders. Things do not go as planned - if you thought your exams were stressful, you ain’t seen nothing yet.</li>
+<li><strong>KINGDOM HEARTS 0.2 Birth by Sleep -A fragmentary passage-</strong> - Made specifically for this collection, this episode gives you control of Aqua, following the dramatic ending of Birth by Sleep. It’s a short and sweet adventure that leads directly into KINGDOM HEARTS III.</li>
+<li><strong>KINGDOM HEARTS χ Back Cover (movie)</strong> - An HD movie that goes back in the timeline even further than Birth by Sleep. It tells the story of the Foretellers - but who are they and what will they mean for the KINGDOM HEARTS series?</li>
+</ul>
+</blockquote>
+<p>And then <strong>KINGDOM HEARTS III + Re Mind (DLC)</strong> to finish it up.</p>
+<p>The one that's missing from this series to come to Steam appears to be Kingdom Hearts Melody of Memory, which is a  rhythm action game set after the Re Mind DLC. So hopefully that will eventually come too. There's no Steam pages actually live yet, and the trailer for the Steam release isn't live for another few hours:</p>
+<div class="hidden_video" data-video-id="G5_3qdf19BU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6ce1d3d472abaef6cbbfcfc335c56ff7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/G5_3qdf19BU" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/05/the-kingdom-hearts-games-are-finally-coming-to-steam-in-june/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/the-kingdom-hearts-games-are-finally-coming-to-steam-in-june/</guid>
+      <pubDate>Tue, 21 May 2024 09:00:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/923329978id24549gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Steam</category>
+      
+      <category>Upcoming</category>
+      
+    </item>
     
     <item>
       <title>Men of War II out now on Steam with Native Linux support</title>
@@ -3571,388 +3920,6 @@ Stay tuned for more information on contributing to our project.</p>
       <category>Godot Engine</category>
       
       <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Fantastic party-based RPG Wildermyth is getting a big new content DLC</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Wildermyth - Omenroad is releasing on May 16th, adding in a whole lot of extra exciting sounding content for the popular party-based procedural storytelling RPG.</p>
-<p>If you've not played it before, you're really missing out. It masterfully blends together tabletop style RPG gaming into a video game and it really looks the part. The new Omenroad DLC gives you a whole new way to play the game! As the developers explained "For the fighters, we have a roguelike ​​tactical challenge mode with progression across runs. And for the lovers, we have A Walk in the Unlight, a new story campaign that uses the Omenroad format to take your heroes past the edge of the Yondering Lands and into worlds beyond."</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7700524241714989941gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7700524241714989941gol1.jpg"/></a></p>
-<p>Some of what the DLC adds in includes:</p>
-<ul>
-<li>Challenge Mode.</li>
-<li>20 new boss fights.</li>
-<li>20 new unlockable artifacts and augments.</li>
-<li>New Shadow spirit and Shadow weapons to discover in both Omenroad and the base game.</li>
-<li>75 new battle maps with new objectives.</li>
-<li>A “Wall of Fame” with twelve challenge-based titles for heroes to earn.</li>
-<li>An extensive new Neverbefore Ball campaign to play through.</li>
-</ul>
-<p>Overall, this sounds like a really fantastic addition to the game.</p>
-<p>Not seen it before? Original trailer below:</p>
-<div class="hidden_video" data-video-id="vgt_0ALl0Rk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8b430b5a6f12909f460e5a7f3ce78354.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/vgt_0ALl0Rk" target="_blank">See video</a></div></div>
-<p>Wildermyth has Native Linux support and is Steam Deck Verified!</p>
-<p>You can buy the game from:</p>
-<p><a href="https://www.fanatical.com/en/game/wildermyth?ref=gol" rel="noopener" target="_blank">Fanatical</a></p>
-<p><a href="https://www.gog.com/en/game/wildermyth" rel="noopener" target="_blank">GOG</a></p>
-<p><a href="https://store.steampowered.com/app/763890/Wildermyth/" rel="noopener" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/fantastic-party-based-rpg-wildermyth-is-getting-a-big-new-content-dlc/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/fantastic-party-based-rpg-wildermyth-is-getting-a-big-new-content-dlc/</guid>
-      <pubDate>Mon, 06 May 2024 10:08:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1076477944id24458gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Indie Game</category>
-      
-      <category>RPG</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve graphics dev gets Gamescope working on NVK with Explicit Sync</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve developers have done a lot of work over the years to improve AMD GPUs on Linux, and continue to do so with the Steam Deck using AMD and it seems like they're now getting stuck into NVIDIA too.</p>
-<p>Specifically for NVK, the open source Vulkan NVIDIA driver in Mesa which has seen a lot of focus recently on bringing up performance. Now though it's getting improved so that Gamescope can properly run on it too, which will be really useful.</p>
-<p>Posting on X (formerly Twitter) Valve developer Pierre-Loup Griffais <a href="https://twitter.com/Plagman2/status/1786544648389025928" rel="noopener" target="_blank">mentioned</a>:</p>
-<p style="text-align:center"><img alt="Thanks to Mohamed's work (as part of our graphics team), gamescope now works on NVK with explicit sync!" src="https://uploads.golmedia.net/uploads/articles/article_media/15155712261714988767gol1.png"/></p>
-<p>The two patches noted from developer Mohamed Ahmed are a Mesa <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/28843" rel="noopener" target="_blank">Merge Request</a> for get the Vulkan extensions VK_EXT_image_drm_format_modifier support hooked up. And then a <a href="https://lore.kernel.org/dri-devel/20240430155453.21132-1-mohamedahmedegypt2001@gmail.com/T/#u" rel="noopener" target="_blank">change</a> for Nouveau that notes it "Allows PTE kind and tile mode on BO create with VM_BIND, as well as adds a GETPARAM to indicate this change. This is needed to support modifiers in NVK and ensure correctness when dealing with the nouveau GL driver."</p>
-<p>Bigger version of the attached image from the post above:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11156166461714988714gol1.jpeg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11156166461714988714gol1.jpeg"/></a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/valve-graphics-dev-gets-gamescope-working-on-nvk-with-explicit-sync/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/valve-graphics-dev-gets-gamescope-working-on-nvk-with-explicit-sync/</guid>
-      <pubDate>Mon, 06 May 2024 09:52:29 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1377264849id24457gol.jpg" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Misc</category>
-      
-      <category>NVIDIA</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Monster Prom 4: Monster Con dating sim announced</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Monster Prom 4: Monster Con has now been officially announced, taking the series a little more back to its dating sim roots. Looks like no release date has been given yet but it will have Native Linux support once again.</p>
-<p>This sequel brings you into a wacky new setting: the Monster Con, a massive convention filled with video games, comic books, anime… and more than a few paranormal activities. You can expect a multiplayer narrative adventure full of colourful characters and hilarious dialogue that the series is well-known for.</p>
-<p>Check out the reveal trailer:</p>
-<div class="hidden_video" data-video-id="JbCuphgSntA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cc8e6de51d599713e55323a76aa15db1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/JbCuphgSntA" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>The signature style of the Monster Prom franchise: unique, charming characters and irreverent humour</li>
-<li>New mechanics! During the Con, you’ll get a chance to build your own comic book that you'll get to see by the end of the run.</li>
-<li>Intimate conversations to get to know your favourite characters.</li>
-<li>TONS of beautiful art!</li>
-<li>You can play with friends via local and online multiplayer!</li>
-<li>Compete for the heart of a character! If you share your romantic tastes with your friends, be ready for some stiff competition.</li>
-<li>There's a sexy clown. Honk!</li>
-</ul>
-</blockquote>
-<p>As someone who is not a big dating sim fan, I <a href="https://www.gamingonlinux.com/2018/06/in-monster-prom-i-was-rejected-even-after-letting-a-princess-ride-me/" rel="noopener" target="_blank">actually enjoyed the original</a> quite a bit which was surprising.</p>
-<p>You can <a href="https://store.steampowered.com/app/2869860/Monster_Prom_4_Monster_Con/" rel="noopener" target="_blank">wishlist / follow on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/monster-prom-4-monster-con-dating-sim-announced/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/monster-prom-4-monster-con-dating-sim-announced/</guid>
-      <pubDate>Mon, 06 May 2024 09:38:56 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/823817164id24455gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Dating Sim</category>
-      
-      <category>Indie Game</category>
-      
-      <category>LGBTQ+</category>
-      
-    </item>
-    
-    <item>
-      <title>Sony gives up on forcing PlayStation Network for Helldivers 2</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Operation Completed? Sony announced their plans for forcing <a href="https://www.gamingonlinux.com/2024/05/helldivers-2-sees-over-130k-bad-reviews-on-steam-as-sony-double-down/" rel="noopener" target="_blank">PlayStation Network accounts for Helldivers 2</a> have now been scrapped.</p>
-<p>Writing on X (formerly Twitter) the official PlayStation account <a href="https://twitter.com/PlayStation/status/1787331667616829929" rel="noopener" target="_blank">posted</a>:</p>
-<p style="text-align:center"><img alt="Helldivers fans -- we’ve heard your feedback on the Helldivers 2 account linking update. The May 6 update, which would have required Steam and PlayStation Network account linking for new players and for current players beginning May 30, will not be moving forward.  We’re still learning what is best for PC players and your feedback has been invaluable. Thanks again for your continued support of Helldivers 2 and we’ll keep you updated on future plans." src="https://uploads.golmedia.net/uploads/articles/article_media/7272431761714987130gol1.png"/></p>
-<p>This comes after a <em>huge</em> backlash seeing the Steam page for Helldivers 2 hit over 200,000 negative reviews in the space of only a few days. As a result, it became one of the worst reviewed games of all time on Steam.</p>
-<p>The situation was evolving pretty quickly, with Sony removing the purchasing option of Helldivers 2 on Steam in 177 regions. At of time of writing, that has not been reversed yet but hopefully it will so people won't have to resort to workarounds.</p>
-<p>Now we have to wait and see what happens to all the negative reviews. I imagine quite a lot will stick, but there will likely be a good amount of players that either remove their negative review, or swap it over to a positive rating to reflect Sony actually listening.</p>
-<p>HELLDIVERS 2 works great on Linux with Proton and is rated Steam Deck Playable.</p>
-<p>You can buy it from:</p>
-<p><a href="https://www.fanatical.com/en/game/helldivers-2?ref=gol" rel="noopener" target="_blank">Fanatical</a></p>
-<p><a href="https://www.humblebundle.com/store/helldivers-2?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/?curator_clanid=4218320" rel="noopener" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/sony-gives-up-on-forcing-playstation-network-for-helldivers-2/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/sony-gives-up-on-forcing-playstation-network-for-helldivers-2/</guid>
-      <pubDate>Mon, 06 May 2024 09:27:04 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1571339791id24454gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Online Multiplayer</category>
-      
-      <category>Sony</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>UK Government replies to petition about requiring publishers to keep games working</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://www.gamingonlinux.com/2024/04/stop-killing-games-is-a-new-campaign-to-stop-developers-making-games-unplayable/" rel="noopener" target="_blank">Recently I covered</a> an interesting movement called <a href="https://www.stopkillinggames.com/" rel="noopener" target="_blank">Stop Killing Games</a>, which has an aim to bring to light the issue of publishers dropping support for and turning off games that people paid for.</p>
-<p>This came about after Ubisoft decided to shut down The Crew, so everyone who had purchased it got left with a game that no longer works due to their forced online requirement. This certainly isn't the first game to do it, there's been a good few games left broken over the years and with how big the gaming industry is now, there will be more games shut by bigger publishers.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11743145411714919088gol1.jpg"/><br/>
-<em>Pictured - The Crew</em></p>
-<p><a href="https://petition.parliament.uk/petitions/659071" rel="noopener" target="_blank">A petition was set up</a> on the UK government's <em>official</em> petition website. On here when a petition hits 10,000 votes the government has to reply. If they hit 100,000 though, it's supposed to then be considered for an actual debate in Parliament. The petition closes on 16th October 2024.</p>
-<p>That petition has hit 17,426 signatures at time of writing, and the UK government replied on May 2nd. The short version is: "Those selling games must comply with UK consumer law. They must provide clear information and allow continued access to games if sold on the understanding that they will remain playable indefinitely.".</p>
-<p>No game is marketed anywhere on being available indefinitely, and in the case of Steam, you're only buying a license and not ownership of the game, so this isn't likely to go much further until it can be pushed much harder.</p>
-<p>The full reply is much wordier and goes on to mention how "There may be occasions where companies make commercial decisions based on the high running costs of maintaining older servers for video games that have declining user bases.".</p>
-<p>Which is a valid point, maintaining game servers does cost time and money, but that's not <em>quite</em> the point of the campaign argument. The point is these games with single-player modes that have forced server connections are made so that there's no way for players to continue them on, you're just left with nothing when the publisher decides to move on.</p>
-<p>The full UK government reply is below:</p>
-<blockquote>
-<p>The Government recognises recent concerns raised by video games users regarding the long-term operability of purchased products.</p>
-<p>Consumers should be aware that there is no requirement in UK law compelling software companies and providers to support older versions of their operating systems, software or connected products. There may be occasions where companies make commercial decisions based on the high running costs of maintaining older servers for video games that have declining user bases. However, video games sellers must comply with existing consumer law, including the Consumer Rights Act 2015 (CRA) and the Consumer Protection from Unfair Trading Regulations 2008 (CPRs).</p>
-<p>The CPRs require information to consumers to be clear and correct, and prohibit commercial practices which through false information or misleading omissions cause the average consumer to make a different choice, for example, to purchase goods or services they would not otherwise have purchased. The regulations prohibit commercial practices which omit or hide information which the average consumer needs to make an informed choice, and prohibits traders from providing material information in an unclear, unintelligible, ambiguous or untimely manner. If consumers are led to believe that a game will remain playable indefinitely for certain systems, despite the end of physical support, the CPRs may require that the game remains technically feasible (for example, available offline) to play under those circumstances.</p>
-<p>The CPRs are enforced by Trading Standards and the Competition and Markets Authority. If consumers believe that there has been a breach of these regulations, they should report the matter in the first instance to the Citizens Advice consumer helpline on 0808 223 1133 (<a href="http://www.citizensadvice.org.uk/" rel="nofollow" target="_blank">www.citizensadvice.org.uk</a>). People living in Scotland should contact Advice Direct Scotland on 0808 164 6000 (<a href="http://www.consumeradvice.scot/" rel="nofollow" target="_blank">www.consumeradvice.scot</a>). Both helplines offer a free service advising consumers on their rights and how best to take their case forward. The helplines will refer complaints to Trading Standards services where appropriate. Consumers can also pursue private redress through the courts where a trader has provided misleading information on a product.</p>
-<p>The CRA gives consumers important rights when they make a contract with a trader for the supply of digital content. This includes requiring digital content to be of satisfactory quality, fit for a particular purpose and as described by the seller. It can be difficult and expensive for businesses to maintain dedicated support for old software, particularly if it needs to interact with modern hardware, apps and websites, but if software is being offered for sale that is not supported by the provider, then this should be made clear.</p>
-<p>If the digital content does not meet these quality rights, the consumer has the right to a repair or replacement of the digital content. If a repair or replacement is not possible, or does not fix the problem, then the consumer will be entitled to some money back or a price reduction which can be up to 100% of the cost of the digital content. These rights apply to intangible digital content like computer software or a PC game, as well as digital content in a tangible form like a physical copy of a video game. The CRA has a time limit of up to six years after a breach of contract during which a consumer can take legal action.</p>
-<p>The standards outlined above apply to digital content where there is a contractual right of the trader or a third party to modify or update the digital content. In practice, this means that a trader or third party can upgrade, fix, enhance and improve the features of digital content so long as it continues to match any description given by the trader and continues to conform with any pre-contract information including main characteristics, functionality and compatibility provided by the trader, unless varied by express agreement.</p>
-<p>Consumers should also be aware that while there is a statutory right for goods (including intangible digital content) to be of a satisfactory quality, that will only be breached if they are not of the standard which a reasonable person would consider to be satisfactory, taking into account circumstances including the price and any description given. For example, a manufacturer’s support for a mobile phone is likely to be withdrawn as they launch new models. It will remain usable but without, for example, security updates, and over time some app developers may decide to withdraw support.</p>
-<p>Department Culture, Media &amp; Sport</p>
-</blockquote>
-<p>There's no real good solution to this. Government intervention would likely be quite messy for the industry, <em>especially</em> for smaller developers. The better solution would be for big publishers to stop forcing online requirements for games that have single-player. Handing out server builds for players is an option too of course, lots and lots of games do that. And there's probably numerous other ways to handle this that isn't just <em>taking away </em>what people <em>paid</em> for.</p>
-<p>The reality is, until people en masse stop buying games with those requirements, nothing will change.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/uk-government-replies-to-petition-about-requiring-publishers-to-keep-games-working/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/uk-government-replies-to-petition-about-requiring-publishers-to-keep-games-working/</guid>
-      <pubDate>Sun, 05 May 2024 14:29:35 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1668918847id24453gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam PC and Steam Deck Beta released solving Proton 9 download issues</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>With Valve <a href="https://www.gamingonlinux.com/2024/05/proton-9-0-released-with-expanded-game-support-for-steam-deck-linux/" rel="noopener" target="_blank">recently releasing Proton 9</a>, as the latest major update to the Windows compatibility layer for Linux / Steam Deck, there were some download issues that should now be solved.</p>
-<p>With the fixes coming in a Steam Client Beta that's available for Desktop and Steam Deck. Although curiously it's noted to be a Beta, but my Steam Deck OLED gave me the update on the Stable channel. Either way, it should roll out for everyone soon.</p>
-<p>Here's all that <a href="https://store.steampowered.com/news/app/1675200/view/4199120329637230599" rel="noopener" target="_blank">changed</a> (it's the same across Desktop and Steam Deck):</p>
-<blockquote>
-<p class="plain-list-title"><strong>General</strong></p>
-<ul>
-<li>Fixed desktop notifications no longer displaying after editing notes for a game</li>
-<li>Fixed download notification for newly downloaded DLC not showing the correct name.</li>
-</ul>
-<p class="plain-list-title"><strong>Linux</strong></p>
-<ul>
-<li>Fixed problems downloading Proton 9.</li>
-</ul>
-<p class="plain-list-title"><strong>Steam Input</strong></p>
-<ul>
-<li>Fix Regression for "Custom Deadzones" not applying correctly.</li>
-<li>UI: Joystick Mouse Deadzone controls now use the common Deadzone Editor.</li>
-<li>Added "Invert Command Binding" for FlickStick's Outer Ring Command.</li>
-<li>Added an option to allow the FlickStick to trigger a Flick Turn if the stick is thrown when the action set/action layer/mode shift is activated.</li>
-<li>Reset Camera to Horizon/Turn Camera to Face Direction/ Turn Camera 360: these actions will still work even if Flick Stick or Gyro to Mouse are removed from your settings. Dots per 360 must first be calibrated using those two modes, however.</li>
-</ul>
- 
-<p>Note: this beta was re-released to fix a regression in opening the desktop onscreen keyboard.</p>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/steam-pc-and-steam-deck-beta-released-solving-proton-9-download-issues/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/steam-pc-and-steam-deck-beta-released-solving-proton-9-download-issues/</guid>
-      <pubDate>Sun, 05 May 2024 08:56:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/proton%20logo%20official.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>HELLDIVERS 2 sees over 130K bad reviews on Steam as Sony double down</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><strong>Update: 06/05/24</strong>: <a href="https://www.gamingonlinux.com/2024/05/sony-gives-up-on-forcing-playstation-network-for-helldivers-2/" rel="noopener" target="_blank">Sony gives up on forcing PlayStation Network for Helldivers 2</a>.</p>
-<hr/>
-<p><em>Original article below:</em></p>
-<p>The HELLDIVERS 2 situation is an increasingly messy one, and it's only getting worse for Arrowhead Game Studios thanks to Sony.</p>
-<p>As a reminder on what's going on: since release, HELLDIVERS 2 has stated on the Steam page "Requires 3rd-Party Account: PlayStation Network (Supports Linking to Steam Account)". It has been there all along, although you do have to scroll down a bit to see it. However, due to overwhelming demand initially when it released, they didn't force it. An <a href="https://store.steampowered.com/news/app/553850/view/4196868529806518741" rel="noopener" target="_blank">announcement</a> was posted on the Steam page recently mentioning it will now actually be forced, which interestingly was signed by "Sony Interactive Entertainment" rather than the developer as usual.</p>
-<p>The Steam page for HELLDIVERS 2 at time of writing has amassed a crazy 134,069 negative reviews over the last few days. This has pushed the recent reviews into Mostly Negative, with an overall Mixed score.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20622813491714898583gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20622813491714898583gol1.jpg"/></a></p>
-<p>Now, Sony seem to be doubling down on this. As shown on <a href="https://steamdb.info/sub/137730/history/?changeid=23416542" rel="noopener" target="_blank">SteamDB</a> the game is no longer available for purchase in 177 locations. Why? PlayStation Network is not available in a lot of places, and so forcing this will mean players in these regions will be unable to play the game.</p>
-<p>Valve has also reportedly begun approving <a href="https://www.reddit.com/r/Helldivers/comments/1ck4mql/refunds_on_steam_work_here_is_good_guy_steam/" rel="noopener" target="_blank">refunds</a> for players not happy about it. Even people with many tens of hours in the game, which is quite unusual for Valve. It makes sense though, Valve likely don't want the legal headaches of potentially thousands of people suddenly unable to play their purchase because of a newly enforced restriction.</p>
-<p>Writing on X (formerly Twitter), the Arrowhead CEO <a href="https://twitter.com/Pilestedt/status/1786454659256758447" rel="noopener" target="_blank">posted</a>:</p>
-<p style="text-align:center"><img alt="Ouch, right in the review score  Well, I guess it's warranted. Sorry everyone for how this all transpired. I hope we will make it up and regain the trust by providing a continued great game experience.  I just want to make great games!" src="https://uploads.golmedia.net/uploads/articles/article_media/12010670531714898095gol1.png"/></p>
-<p>This forcing of the account system comes from Sony directly, <em>not</em> from Arrowhead Game Studios, and clearly the team at Arrowhead are rather unhappy about it too. Writing in Discord, some of their team have been posting <a href="https://www.reddit.com/r/Helldivers/comments/1cjyll7/some_discord_updates/" rel="noopener" target="_blank">updates</a> on it like:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7632209051714898303gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7632209051714898303gol1.jpg"/></a></p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1814632021714898340gol1.jpg"/></p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17519348311714898397gol1.jpg"/></p>
-<p>A clear case in how to destroy something great. Hopefully Sony do the right thing here and make steps to fix the situation to improve the experience for players.</p>
-<p>It's worth noting that the player counts on Steam have barely changed (<a href="https://steamdb.info/app/553850/charts/#1w" rel="noopener" target="_blank">SteamDB</a>) at all during this time.</p>
-<p>Interestingly. Sony updated their PSN sign-in on PC <a href="https://www.playstation.com/en-us/support/games/psn-sign-in-pc/#faq" rel="noopener" target="_blank">help page</a> too recently. Originally it stated:</p>
-<blockquote>
-<p>Do I have to sign in to PSN to play a PlayStation game on PC?<br/>
-Signing in to PSN is optional when playing a PlayStation game on PC.</p>
-</blockquote>
-<p>Then it was <a href="https://web.archive.org/web/20240504213615/https://www.playstation.com/en-us/support/games/psn-sign-in-pc/#faq" rel="noopener" target="_blank">changed</a> around May 4th to read:</p>
-<blockquote>
-<p>Do I have to sign in to PSN to play a PlayStation game on PC?</p>
-<p>Some PlayStation games may require you sign in and link to an account for PSN.</p>
-</blockquote>
-<p>And now it's back to saying it's optional again. So they changed it and then changed it back.</p>
-<p>I'm also hoping this is a wake-up call for Valve too on forced 3rd-party accounts. A single mention in the Steam page sidebar is clearly not enough to inform buyers. My basic idea is to add it clearly during checkout too, above the price and payment info. Something that cannot be skipped. There's quite a lot of games on Steam now that require an extra account, so it would make sense for Valve to have a much more prominent statement on it.</p>
-<hr/>
-<p><strong>Update: 05/05/24 14:47</strong> - The Arrowhead CEO, Johan Pilestedt, <a href="http://twitter.com/Pilestedt/status/1787073896560165299" rel="noopener" target="_blank">posted</a> on X (formerly Twitter) to confirm "We are talking solutions with PlayStation, especially for non-PSN countries. Your voice has been heard, and I am doing everything I can to speak for the community - but I don't have the final say.".</p>
-<p>And in reply to a user mentioning they should have known about this, Pilestedt <a href="https://twitter.com/Pilestedt/status/1787076609188483254" rel="noopener" target="_blank">replied</a>: "I do have a part to play. I am not blameless in all of this - it was my decision to disable account linking at launch so that players could play the game. I did not ensure players were aware of the requirement and we didn't talk about it enough.</p>
-<p>We knew for about 6 months before launch that it would be mandatory for online PS titles."</p>
-<p>On top of that, just to be clear, another user asked why they sold it in unsupported regions to which Pilestedt <a href="https://twitter.com/Pilestedt/status/1787111359450120237" rel="noopener" target="_blank">replied</a>: "We do not handle selling the game.". So once again, how this is being handled is down to Sony.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/helldivers-2-sees-over-130k-bad-reviews-on-steam-as-sony-double-down/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/helldivers-2-sees-over-130k-bad-reviews-on-steam-as-sony-double-down/</guid>
-      <pubDate>Sun, 05 May 2024 08:44:05 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/302886528id24450gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Misc</category>
-      
-      <category>Online Multiplayer</category>
-      
-      <category>Sony</category>
-      
-    </item>
-    
-    <item>
-      <title>Wine 9.8 released with Mono updates, ARM improvements</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another biweekly development release for the Windows compatibility layer is here, with Wine 9.8 now available.</p>
-<p><a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-9.8" rel="noopener" target="_blank">Highlights</a> of this release include:</p>
-<blockquote>
-<ul>
-<li>Mono engine updated to version 9.1.0.</li>
-<li>IDL-generated files use fully interpreted stubs.</li>
-<li>Improved RPC/COM support on ARM platforms.</li>
-<li>Various bug fixes.</li>
-</ul>
-</blockquote>
-<p>The changes from <a href="https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-9.1.0" rel="noopener" target="_blank">Wine Mono 9.1.0</a>:</p>
-<blockquote>
-<ul>
-<li>Due to a license change in Vagrant, the Vagrant build files have been removed in favor of Podman. The official build of this release was also made using Podman.</li>
-<li>Fixed a build error on systems that use a scheduling policy not in a hard-coded list.</li>
-<li>Fixed a crash when auto-generating a COM interface for some classes with array types in their signature (<a href="https://bugs.winehq.org/show_bug.cgi?id=55736" rel="nofollow" target="_blank">Winehq bug 55736</a>).</li>
-<li>Implemented String.Concat(object, object, object, object, __arglist) (<a href="https://bugs.winehq.org/show_bug.cgi?id=56248" rel="nofollow" target="_blank">Winehq bug 56248</a>).</li>
-<li>Fixed doubled characters when typing in Terraria.</li>
-<li>Added support for Joystick and Keyboard inputs in Managed DirectX/monoDX.</li>
-<li>Added support for the ApplyToOverrides property in System.Web.Extensions.</li>
-<li>Fixed System.Drawing.Icon incorrectly rejecting cursor handles, which was also breaking System.Windows.Forms.Cursor.Hotspot.</li>
-<li>Fixed hang when System.Environment.Exit is called while another thread is in a long-running native call.</li>
-<li>Upstream updates:
-<ul>
-<li>SDL2 to 2.30.2.</li>
-<li>FNA to 24.03.</li>
-<li>llvm-mingw to 20240320.</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<p>There's 22 bugs noted as solved from this Wine development release including a bug from all the way back in 2005, which was for the Microsoft Office 97 installer. There's also fixes for Battle.net, Corsair iCUE 4, Installshield and various other miscellaneous apps and Windows compatibility issues.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/wine-9-8-released-with-mono-updates-arm-improvements/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/wine-9-8-released-with-mono-updates-arm-improvements/</guid>
-      <pubDate>Sun, 05 May 2024 08:20:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-      <category>Wine</category>
-      
-    </item>
-    
-    <item>
-      <title>The FUNgeon Crawlers Humble Bundle has some good loot</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Fill your bag up with jewels in the <a href="https://www.humblebundle.com/games/fungeon-crawlers?partner=gamingonlinux" rel="noopener" target="_blank">FUNgeon Crawlers Humble Bundle</a> which has some interesting looking loot inside to grab.</p>
-<p>Below I will note each game you can get included plus the Steam Deck rating, any <a href="https://www.protondb.com/" rel="noopener" target="_blank">ProtonDB</a> rating if there is one (or if it has Native Linux support) and each is a Steam link if you need more info first.</p>
-<p><a href="https://store.steampowered.com/app/1681840/Abalon_formerly_Summoners_Fate/" rel="noopener" target="_blank">Abalon (formerly Summoners Fate)</a> - Deck Verified / Native Linux</p>
-<blockquote>
-<p>Abalon is a roguelike adventure that fuses tactical turn-based combat and card strategy. Choose your summoner and explore a tabletop world to discover its secrets. Build the perfect deck, outsmart your enemies and become legend!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/363860/MythForce/" rel="noopener" target="_blank">MythForce</a> - Deck Playable / ProtonDB Platinum</p>
-<blockquote>
-<p>Inspired by beloved Saturday morning cartoons, MythForce unites swords &amp; sorcery with gripping 1st-person combat in a new roguelike adventure.</p>
-<p>Brave the dungeon alone or join forces with friends to take on an ever-changing Castle of Evil!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1745510/Lunacid/" rel="noopener" target="_blank">Lunacid</a> - Deck Verified / ProtonDB Platinum</p>
-<blockquote>
-<p>Lunacid is a first person dungeon crawler inspired by old FROMSOFT games like Shadow Tower and King’s Field.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1289810/Siralim_Ultimate/" rel="noopener" target="_blank">Siralim Ultimate</a> - Deck Playable / Native Linux</p>
-<blockquote>
-<p>Siralim Ultimate is a monster catching, dungeon crawling RPG with a ridiculous amount of depth. Summon over 1200 different creatures and travel through randomly generated dungeons to acquire resources, new creatures, and loot.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1861290/Devil_Spire/" rel="noopener" target="_blank">Devil Spire</a> - Deck Verified / ProtonDB Platinum</p>
-<blockquote>
-<p>Roguelite Pseudo-3D Dungeon Crawler. It's King's Field but procedurally generated, and with Hexen-style graphics!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1608450/Hellslave/" rel="noopener" target="_blank">Hellslave</a> - Deck Playable / ProtonDB Platinum</p>
-<blockquote>
-<p>Prevent demon’s horde from unleashing hell on this world in this dark fantasy Dungeon Crawler. Fight fire with fire, make a deal with the Devil and choose which demon to worship.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1154810/Going_Under/" rel="noopener" target="_blank">Going Under</a> - Deck Verified / ProtonDB Platinum</p>
-<blockquote>
-<p>Going Under is a satirical dungeon crawler about exploring the cursed ruins of failed tech startups. As an unpaid intern in the dystopian city of Neo-Cascadia, you’ll wield office junk as weaponry as you make your way through the offbeat procedural dungeons beneath your company campus.</p>
-</blockquote>
-<p>£11.99 for the full bundle is a really good deal here. Cheaper than even the most recent best Steam sale price for Abalon. Plus all the others, yup that's good.</p>
-<p>Check out <a href="https://www.humblebundle.com/games/fungeon-crawlers?partner=gamingonlinux" rel="noopener" target="_blank">the full bundle for more</a>. </p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/the-fungeon-crawlers-humble-bundle-has-some-good-loot/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/the-fungeon-crawlers-humble-bundle-has-some-good-loot/</guid>
-      <pubDate>Fri, 03 May 2024 18:36:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1564977200id24448gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
       
     </item>
     
