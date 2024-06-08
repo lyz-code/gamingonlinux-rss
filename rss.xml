@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-06-07 07:24:17.910877</pubDate>
+    <pubDate>2024-06-08 07:23:46.396363</pubDate>
 
     
     <image>
@@ -18,6 +18,495 @@
     </image>
 
     
+    
+    <item>
+      <title>Proton Experimental gets updates for Guild Wars 2, Squad, Sleeping Dogs and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another weekend update of Proton Experimental has landed, with a few game fixes for Linux and Steam Deck fans.</p>
+<p>Eventually, Valve release all of the changes from Proton Experimental into a stable Proton version, which is <a href="https://www.gamingonlinux.com/2024/05/proton-9-0-released-with-expanded-game-support-for-steam-deck-linux/https://www.gamingonlinux.com/2024/05/proton-9-0-released-with-expanded-game-support-for-steam-deck-linux/" rel="noopener" target="_blank">currently Proton 9.0-1</a>. There is a Release Candidate currently in <a href="https://www.gamingonlinux.com/2024/05/proton-90-2-has-a-release-candidate-ready-for-testing-on-linux-pc-and-steam-deck/" rel="noopener" target="_blank">testing for Proton 9.0-2</a>, which should hopefully release this month. If you need more info on Proton <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">check my beginner's guide</a>.</p>
+<p>Noted to be now playable as of this Proton Experimental update for June 7th include:</p>
+<ul>
+<li>Syberia</li>
+<li>Zaccaria Pinball</li>
+<li>Sleeping Dogs: Definitive Edition</li>
+</ul>
+<p style="text-align:center"><em><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10020297511717795957gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10020297511717795957gol1.jpg"/></a><br/>
+Pictured - Sleeping Dogs: Definitive Edition</em></p>
+<p>Other Improvements:</p>
+<ul>
+<li>Improved support for workshop levels in Zeepkist.</li>
+<li>Improved microphone support with Squad.</li>
+<li>Improved language support for Guild Wars 2.</li>
+</ul>
+<p>Bug fixes:</p>
+<p></p>
+<ul>
+<li>Fixed Yakuza Kiwami not working on certain setups using very long library paths.</li>
+</ul>
+<p>As seen in the <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener" target="_blank">changelog</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/proton-experimental-gets-updates-for-guild-wars-2-squad-sleeping-dogs-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/proton-experimental-gets-updates-for-guild-wars-2-squad-sleeping-dogs-and-more/</guid>
+      <pubDate>Fri, 07 Jun 2024 21:34:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/934466533id24680gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA reveal new security issues in their GPU drivers for June 2024</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Today NVIDIA put out a new security bulletin, to highlight multiple security issues identified in their proprietary graphics driver for Linux and Windows.</p>
+<p>All driver versions below 555.52.04, 550.90.07, 535.183.01 and 470.256.02 are affected. So depending on the driver series you go for, make sure you're on at least one of those or above.</p>
+<p>From the announcement these are the ones that affect either both Linux and Windows or just Linux:</p>
+<table border="1" class="table-stripes-tbody" style="width:100%">
+<thead>
+<tr>
+<th>CVE ID</th>
+<th>Description</th>
+<th>Severity</th>
+<th>CWE</th>
+<th>Impacts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CVE‑2024‑0090</td>
+<td>NVIDIA GPU driver for Windows and Linux contains a vulnerability where a user can cause an out-of-bounds write. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and data tampering.</td>
+<td>High</td>
+<td><a href="https://cwe.mitre.org/data/definitions/787.html" rel="noopener" target="_blank">CWE‑787</a></td>
+<td>Code execution, denial of service, escalation of privileges, information disclosure, data tampering</td>
+</tr>
+<tr>
+<td>CVE‑2024‑0091</td>
+<td>NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability where a user can cause an untrusted pointer dereference by executing a driver API. A successful exploit of this vulnerability might lead to denial of service, information disclosure, and data tampering.</td>
+<td>High</td>
+<td><a href="https://cwe.mitre.org/data/definitions/822.html" rel="noopener" target="_blank">CWE‑822</a></td>
+<td>Denial of service, information disclosure, data tampering</td>
+</tr>
+<tr>
+<td>CVE‑2024‑0093</td>
+<td>NVIDIA GPU software for Linux contains a vulnerability where it can expose sensitive information to an actor that is not explicitly authorized to have access to that information. A successful exploit of this vulnerability might lead to information disclosure.</td>
+<td>Medium</td>
+<td><a href="https://cwe.mitre.org/data/definitions/200.html" rel="noopener" target="_blank">CWE‑200</a></td>
+<td>Information disclosure</td>
+</tr>
+<tr>
+<td>CVE‑2024‑0092</td>
+<td>NVIDIA GPU Driver for Windows and Linux contains a vulnerability where an improper check or improper handling of exception conditions might lead to denial of service.</td>
+<td>Medium</td>
+<td><a href="https://cwe.mitre.org/data/definitions/703.html" rel="noopener" target="_blank">CWE‑703</a></td>
+<td>Denial of service</td>
+</tr>
+</tbody>
+</table>
+<p>There's one other <em>just</em> for Windows, and multiple issues in VGPU Software too.</p>
+<p>See their <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5551" rel="noopener" target="_blank">security bulletin</a> dated June 6th for all the info, they only sent out the email announcement today.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/nvidia-reveal-new-security-issues-in-their-gpu-drivers-for-june-2024/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/nvidia-reveal-new-security-issues-in-their-gpu-drivers-for-june-2024/</guid>
+      <pubDate>Fri, 07 Jun 2024 18:11:17 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>High on Life, Atari 50 Anniversary Celebration, MechWarrior 5 and more in this bundle</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you need another set of games to play this weekend and into next week and probably longer, Humble Bundle put up the <a href="https://www.humblebundle.com/games/ign-live-at-home?partner=gamingonlinux" rel="noopener nofollow" target="_blank">IGN Live at Home collection</a>.</p>
+<p>Below I will do my usual round-up of what's in the bundle plus the Steam Deck rating, any <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> rating if there is one (or if it has Native Linux support) and each is a Steam link if you need more info first.</p>
+<p><a href="https://store.steampowered.com/app/1583230" rel="noopener" target="_blank">High On Life</a> - <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified / ProtonDB Platinum</p>
+<blockquote>
+<p>HIGH ON KNIFE DLC OUT NOW!! - Humanity is being threatened by an alien cartel who wants to use them as drugs. It’s up to you to rescue and partner with charismatic, talking guns, take down Garmantuous and his gang, and save the world!</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/1919470" rel="noopener" target="_blank">Atari 50: The Anniversary Celebration</a> - <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable / ProtonDB Platinum</p>
+<blockquote>
+<p>Atari 50: The Anniversary Celebration takes players on an interactive journey through 50 years of video games via interviews with designers, developers and industry leaders, documentary footage, product design documents, high-res original artwork, and a curated list of more than 90 playable games.</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/1306770" rel="noopener" target="_blank">Revival: Recolonization</a> - No Ratings</p>
+<blockquote>
+<p>Set in a post-apoc version of Earth, Revival is a 4x strategy game where the world and its rules can change at key moments, creating a deep and highly replayable experience.</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/784080" rel="noopener" target="_blank">MechWarrior 5: Mercenaries</a> - <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable / ProtonDB Platinum</p>
+<blockquote>
+<p>The year is 3015. The battlefields are dominated by war machines known as BattleMechs. Level entire cities and decimate the enemy in your BattleMech. Follow a quest for glory and revenge. Manage an expanding mercenary company. Fight alongside your friends with a four-player PvE co-op.</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/2429240" rel="noopener" target="_blank">Soulslinger: Envoy of Death</a> - <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable </p>
+<blockquote>
+<p>You are a gunslinger in limbo, involved in a gritty war against "The Cartel", a ruthless organization harvesting souls to break free of the shackles of the afterlife. Grow stronger with each new run, gather the essence of lost souls to take on the biggest threats in this rogue-lite FPS!</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/1607680" rel="noopener" target="_blank">Bread &amp; Fred</a> - <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable / ProtonDB Gold</p>
+<blockquote>
+<p>Grab your best bud for help in this new co-op challenge to help two adorable penguins, Bread and Fred, reach the top of the snowy summit. Time your jumps, cling to walls and swing across gaps to see how far you can make it before you tumble all the way back down the mountain.</p>
+</blockquote>
+<p><a href="https://store.steampowered.com/app/1818690" rel="noopener" target="_blank">Grindstone</a> - Deck Verified / ProtonDB Platinum</p>
+<blockquote>
+<p>Grindstone is a puzzle game where epic adventures are just your 9-to-5. It’s your job to mine grindstones from the Creeps that lurk on the mountain in over 250 levels of intricate puzzles and hazards, all in the hopes of saving up enough grindstones to take your family on a much needed vacation.</p>
+</blockquote>
+<p>See the <a href="https://www.humblebundle.com/games/ign-live-at-home?partner=gamingonlinux" rel="noopener nofollow" target="_blank">full bundle</a> for more details.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/high-on-life-atari-50-anniversary-celebration-mechwarrior-5-and-more-in-this-bundle/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/high-on-life-atari-50-anniversary-celebration-mechwarrior-5-and-more-in-this-bundle/</guid>
+      <pubDate>Fri, 07 Jun 2024 17:59:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/569967555id24678gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Bundle</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>So much for preservation, the classic Delta Force games are getting delisted</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A staffer on GOG <a href="https://www.gog.com/forum/general/delisting_all_delta_force_titles_available_in_our_store" rel="noopener" target="_blank">mentioned</a> that due to legal reasons, the classic Delta Force series is going to be removed from all storefronts.</p>
+<p>Here's what the GOG team said:</p>
+<blockquote>
+<p>Hey all, I don’t know what’s wrong with this week, but I have to post another delisting news.<br/>
+<br/>
+Just now, we’ve received a request that we have to delist all Delta Force titles that are available in our store, due to legal reasons that are beyond our control. Affected titles are:<br/>
+<br/>
+Delta Force: <a href="https://www.gog.com/game/delta_force" rel="nofollow" target="_blank">https://www.gog.com/game/delta_force</a><br/>
+Delta Force 2: <a href="https://www.gog.com/game/delta_force_2" rel="nofollow" target="_blank">https://www.gog.com/game/delta_force_2</a><br/>
+Delta Force: Land Warrior: <a href="https://www.gog.com/game/delta_force_land_warrior" rel="nofollow" target="_blank">https://www.gog.com/game/delta_force_land_warrior</a><br/>
+Delta Force: Task Force Dagger: <a href="https://www.gog.com/game/delta_force_task_force_dagger" rel="nofollow" target="_blank">https://www.gog.com/game/delta_force_task_force_dagger</a><br/>
+Delta Force Xtreme: <a href="https://www.gog.com/game/delta_force_xtreme" rel="nofollow" target="_blank">https://www.gog.com/game/delta_force_xtreme</a><br/>
+Delta Force: Black Hawk Down Platinum Pack: <a href="https://www.gog.com/game/delta_force_black_hawk_down_platinum_pack" rel="nofollow" target="_blank">https://www.gog.com/game/delta_force_black_hawk_down_platinum_pack</a><br/>
+<br/>
+The removals will happen today - June 7th, 1 PM UTC.<br/>
+<br/>
+They will be removed from all storefronts.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14262868241717762369gol1.jpg"/><br/>
+<em>Pictured - Delta Force</em></p>
+<p>So you have just under an hour from this post until they're gone if you did want to quickly grab them. Delisting means no one can buy them, but they will <em>not</em> vanish from your own library. The notice from GOG does clearly say "all storefronts" so they will presumably vanish from <a href="https://store.steampowered.com/search/?franchise=Delta%20Force" rel="noopener" target="_blank">Steam</a> too.</p>
+<p>A shame, this always makes preserving gaming history far more difficult, but that's not to say they won't return at some point in future. </p>
+<p>There is a new game coming called Delta Force: Hawk Ops, which will be a free to play shooter. So it will likely have some form of anti-cheat, which means the likelihood of it working on Linux / Steam Deck is pretty slim.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/so-much-for-preservation-the-classic-delta-force-games-are-getting-delisted/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/so-much-for-preservation-the-classic-delta-force-games-are-getting-delisted/</guid>
+      <pubDate>Fri, 07 Jun 2024 12:11:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1283576709id24676gol.jpg" type="image/jpeg"/>
+      
+      <category>FPS</category>
+      
+      <category>GOG</category>
+      
+      <category>Misc</category>
+      
+      <category>Retro</category>
+      
+    </item>
+    
+    <item>
+      <title>Escape Simulator and PowerWash Simulator collide on June 20</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>This is some real meta simulator gameception going on. Escape Simulator has announced another free DLC, pulling in the world of PowerWash Simulator.</p>
+<p>Great idea and it's their third cross-over following on from Portal and Among Us. Pine Studio have done some truly brilliant stuff with Escape Simulator, so it's no surprise it has a Very Positive user rating on Steam. It also sold over <a href="https://www.gamingonlinux.com/2022/05/escape-simulator-hits-1-million-sales-adds-voice-chat-and-new-map/" rel="noopener" target="_blank">1 million copies</a> in less than a year too.</p>
+<p>Have a look at the trailer below:</p>
+<div class="hidden_video" data-video-id="3mazUTyOvwQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/08c40180e072c9c1fc0d93168fd290e9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3mazUTyOvwQ" target="_blank">See video</a></div></div>
+<p>Free DLC Features:</p>
+<ul>
+<li><strong>Iconic Garage</strong>: Dive into the familiar garage from PowerWash Simulator, now turned into a mind-bending escape room.</li>
+<li><strong>PowerWashing Fun</strong>: Clean away grime to uncover clues and hidden secrets. It's PowerWashing with a twist!</li>
+<li><strong>Co-op</strong>: Grab a friend and tackle the puzzles together. Two (or eight) heads are better than one!</li>
+<li><strong>VR Mode</strong>: Fully playable in VR or flat version. Experience the escape room like never before!</li>
+<li><strong>New Editor Props</strong>: Use new 3D props to build your own garage or whatever your imagination creates.</li>
+<li><strong>New Soundtrack</strong>: Enjoy a brand-new rock and roll soundtrack that amps up the excitement.</li>
+</ul>
+<p>You can buy Escape Simulator from:</p>
+<p><a href="https://www.fanatical.com/en/game/escape-simulator?ref=gol" rel="noopener" target="_blank">Fanatical</a></p>
+<p><a href="https://www.humblebundle.com/store/escape-simulator?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/1435790/Escape_Simulator/" rel="noopener" target="_blank">Steam</a></p>
+<p>It has Native Linux support and is Steam Deck Verified.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/escape-simulator-and-powerwash-simulator-collide-on-june-20/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/escape-simulator-and-powerwash-simulator-collide-on-june-20/</guid>
+      <pubDate>Fri, 07 Jun 2024 11:12:46 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/548288188id24675gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>DLC</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Online Co-op</category>
+      
+    </item>
+    
+    <item>
+      <title>Fight the devs of Fishards, if you win - it goes open source! Lose and it&#39;s deleted from Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Well, that's certainly one way to pull in some eyes isn't it? Fight the developers, get it open source or Fishards will be gone from Steam.</p>
+<p>More about it: Combine the intense, skill-shot PVP of Magicka or Battlerite with some wacky 2-legged-fish and you've got yourself Fishards! The unique spell combining mechanic creates a brand new type of PvP​ ​arena​ experience that you have to try with friends!</p>
+<p>Posted on the Godot Engine <a href="https://www.reddit.com/r/godot/comments/1d85n3z/comment/l73xrqd/" rel="noopener" target="_blank">Reddit</a>, the developers announced a tournament with a twist:</p>
+<blockquote>
+<p>We released Fishards a few years ago and sadly it wasn't able to support us developers financially, so we stopped development.</p>
+<p>However, instead of letting the game fade into obscurity we have now decided to make the game open source...</p>
+<p><strong>IF!</strong></p>
+<p>...the Fishards community can beat us in a tournament taking place in a few weeks! (June 29 19:00 CET*)</p>
+<p>If we developers win however... <strong>We are deleting Fishards from Steam!!</strong> &gt;:)</p>
+</blockquote>
+<p><em>* That's 5PM UTC on June 29th.</em></p>
+<div class="hidden_video" data-video-id="DHhCwnTPqf8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c49fc4a35152bb162d3e71ba1f99d0d6.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/DHhCwnTPqf8" target="_blank">See video</a></div></div>
+<p>Will you be taking part? Sounds like a fun little marketing stunt.</p>
+<p>You can check it out and <a href="https://store.steampowered.com/app/1637140/Fishards/" rel="noopener" target="_blank">get some practice in on Steam</a>. Join their <a href="https://discord.gg/e2RTjPUGnz" rel="noopener" target="_blank">Discord</a> to sign up.</p>
+<p>It has Native Linux support and is rated Steam Deck Playable.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/fight-the-devs-of-fishards-if-you-win-it-goes-open-source-lose-and-its-deleted-from-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/fight-the-devs-of-fishards-if-you-win-it-goes-open-source-lose-and-its-deleted-from-steam/</guid>
+      <pubDate>Fri, 07 Jun 2024 10:55:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/25627690id24674gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Free Game</category>
+      
+      <category>Godot Engine</category>
+      
+    </item>
+    
+    <item>
+      <title>Obsidian gave Pillars of Eternity a big patch - Linux and macOS updates being investigated</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Obsidian Entertainment have gone back and upgraded the original Pillars of Eternity with a big update, although it's currently only for the Windows version.</p>
+<p>In the patch notes they said "This update is currently unavailable for OSX &amp; Linux. We are investigating bringing these platforms up to speed as part of a future patch.". So I'll be keeping an eye out for if / when that happens, shame to see updates delayed though. But for those who can't wait it should work fine in <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>.</p>
+<p>They use Unity, which does have both Linux and macOS game export support, so it's likely some kind of middleware is holding up updating those versions.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5872943251717756004gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/5872943251717756004gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10977266841717756033gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/10977266841717756033gol1.jpg"/></a></p>
+<p>With the patch they've updated to Unity version 2019.4.11, fixed various navigation issues, fixed a whole a bunch of visual and audio issues, improved sound quests and dialogue, tweaked some combat mechanics, fixed up various UI problems and more.</p>
+<details class="spoiler_container"><summary class="spoiler_header">Full changelog, click me</summary>
+<div class="spoiler-content"></div>
+<div class="spoiler-content">General:
+<ul>
+<li>We have updated to Unity Version 2019.4.11.</li>
+<li>Updated graphics to DirectX 11.</li>
+<li>Fixed an issue where backer rewards would appear or unlock incorrectly.</li>
+<li>Also fixed a case where backer rewards might not unlock at all for users in the public beta.</li>
+<li>Corrected save file location for the public beta (You should no longer need to move save files into a _Local_ directory for them to show up correctly).</li>
+</ul>
+Navigation:
+<ul>
+<li>Fixed areas that could not be navigated in numerous scenes.</li>
+<li>The lake in Cayron's Scar should no longer be unintentionally traversable when submerged.</li>
+<li>Fixed some cases where NPCs would become stuck when pathing during cutscenes.</li>
+<li>Fixed some cases where NPCs would walk or run in place during cutscenes.</li>
+<li>Fixed a handful of doors throughout various scenes that could be walked through due to lacking proper collision.</li>
+</ul>
+Visual and Audio:
+<ul>
+<li>Fixed multiple cases where characters might T-Pose briefly at the beginning of a cutscene.</li>
+<li>Fixed an issue where paperdolls in character creation and inventory screens might appear blurry.</li>
+<li>Overwhelming Wave should more reliably play its visual effects.</li>
+<li>Fixed VFX issues with the Woodskin spell rotating or attaching incorrectly.</li>
+<li>Symbols western chamber of Lle a Rhemen should now properly light up when expected.</li>
+<li>Fixed redundant horn audio playing after the battle of Yenwood.</li>
+<li>Fixed an issue where attempting to open locked containers could play multiple voice lines at once.</li>
+<li>Fixed a handful of cases where dialogue audio wouldn’t play when certain nodes were re-triggered.</li>
+<li>VFX will no longer become displaced when a character teleports or uses a movement ability.</li>
+<li>Unstrung Bow’s visuals will now properly appear on the ground when discovered.</li>
+<li>Soul Whip VFX are no longer lost on save/load or transitions.</li>
+<li>Penetrating Shot, Vulnerable Attack, Savage Attack, and similar VFX should no longer be lost on save/load or transitions.</li>
+<li>Released soul VFX in Sun in Shadow should now display correctly.</li>
+<li>Fixed an issue with Ninagauth’s Freezing Pillar VFX overlapping other visuals.</li>
+<li>Gafonercos will remain correctly positioned after completing certain attacks.</li>
+<li>Potion of Fleet Feet now properly plays a drinking animation.</li>
+<li>Reading from scrolls and rites will now position the scroll correctly in the reader’s hands.</li>
+<li>Fixed an issue that would cause water VFX to display improperly in certain areas.</li>
+</ul>
+Quests and Dialogue:
+<ul>
+<li>Ready the Cannons side quest should now properly update its objectives.</li>
+<li>Dialogue from Buried Secrets quest should no longer allow the player to demand their payment more than once.</li>
+<li>Fixed an issue where multiple barked lines in Gilded Vale could overlap excessively.</li>
+<li>Fixed an issue where Eder’s bark lines in the Temple of Eothas may end abruptly.</li>
+<li>Fixed a case where Calisca could trigger the wrong bark line near the camp inside Cilant Lîs.</li>
+<li>Fixed bark lines in Defiance Bay cutting short after their first line.</li>
+<li>Crag Ogres in Flames-That-Whisper Cavern should now more reliably play their banter on approach.</li>
+<li>Prisoners in Icantha’s house should no longer respawn in certain cases after save/load.</li>
+</ul>
+Combat and Mechanics:
+<ul>
+<li>Earth Blights should no longer sometimes detach from their selection circles when dominated.</li>
+<li>Scroll of Ray of Fire should now appear correctly and more accurately match the behavior of the Ray of Fire spell.</li>
+<li>Fixed a case where manually resolving stronghold combat could sometimes yield no rewards.</li>
+<li>Fixed a case where prone characters might try to move while prone, resulting in sliding behavior.</li>
+<li>Concelhaut’s Draining Missiles should no longer occasionally show 0.0 damage in the combat log.</li>
+<li>Weapon Specialization: Peasant should now reliably add its damage to unarmed attacks.</li>
+<li>Fixed some cases where the Halt spell might confuse enemy AI, causing them to repeatedly interrupt and re-attempt their own actions.</li>
+<li>Removed errant untargetable Xaurip that could sometimes appear in Dyrford Crossing.</li>
+<li>Fixed a case where Sleafhota might teleport to an alternate location mid-dialogue before attacking the player.</li>
+<li>Attacking Osrya directly will now reliably engage with her revenant and skeleton minions.</li>
+<li>Fixed a case where all survival camping bonuses might appear after spending only a single skill rank on Survival.</li>
+<li>One-Eyed Molina’s Gold-Fingered Spike-Flinger’s last two soulbound upgrades now increase Reload Speed instead of decreasing it.</li>
+<li>Deadfire Pack’s soulbound weapons now have the Universal weapon group.</li>
+<li>Fixed an issue with status effects from old saves duplicating when loaded on newer builds.</li>
+<li>Battle-Forged Godlike racial ability should no longer trigger a hit on the owner when non-hostile abilities are used (E.g. Second Wind).</li>
+<li>Caedebald’s Blackbow and Llengrath’s Blunt Wisdom are now of the universal weapon type.</li>
+<li>Stalker’s Torc item should now apply and display its effects correctly.</li>
+<li>Psychic and Brutal Backlash now correctly respect their per encounter rules.</li>
+<li>St. Ydwen’s Redeemer no longer displays “Destroys Vessels” activations in the combat log when not fighting a vessel.</li>
+<li>Scroll of Minoletta’s Minor Missiles will now better match the effects of the origin spell.</li>
+</ul>
+User Interface and Interaction:
+<ul>
+<li>Fixed a UI issue where chants could sometimes clip beyond their scrolling frame.</li>
+<li>Fixed a case where the damage type icon on the character sheet might not position correctly.</li>
+<li>Fixed some cases where assigning companions to multiple stronghold missions at once might cause UI issues.</li>
+<li>Quick loading with the crafting or enchanting UI open should no longer result in a permanent black screen.</li>
+<li>Fixed a typo in the description of Animal Companions.</li>
+<li>Fixed an issue where highlighting certain parts of a defeated enemy would not allow you to loot them.</li>
+<li>Doors in some scenes that were difficult to interact with have had their collision revised and should now be more reliable.</li>
+<li>Fixed a case where the final pressure plate in the Temple of Woedica would not appear.</li>
+<li>Examining the wall trophy inside of Elm’s Reach should now be possible.</li>
+<li>Skipping intros when first starting the client should now be more responsive.</li>
+<li>Fixed accuracy tooltips not appearing on the character sheet.</li>
+<li>Interactable tree in the Abbey of the Fallen Moon now can be interacted with properly.</li>
+<li>Fixed a bug preventing interactable highlights from appearing after opening the map.</li>
+<li>Fixed an issue that caused tooltips to sometimes shake in the UI</li>
+</ul>
+</div>
+</details>
+<p>Nice to see an older game seeing some love, probably means Obsidian Entertainment are working on a new one don't you think?</p>
+<p>You can buy it from <a href="https://www.gog.com/en/game/pillars_of_eternity_definitive_edition" rel="noopener" target="_blank">GOG</a> and <a href="https://store.steampowered.com/app/291650/Pillars_of_Eternity/" rel="noopener" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/obsidian-gave-pillars-of-eternity-a-big-patch-linux-and-macos-updates-being-investigated/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/obsidian-gave-pillars-of-eternity-a-big-patch-linux-and-macos-updates-being-investigated/</guid>
+      <pubDate>Fri, 07 Jun 2024 10:27:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1258545204id24673gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>GOG</category>
+      
+      <category>Open World</category>
+      
+      <category>RPG</category>
+      
+    </item>
+    
+    <item>
+      <title>Build up, command and fight with a big walking colony in Trailblazers: Into the March</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another one shooting to the top of my wishlist from the Guerilla Collective Showcase is Trailblazers: Into the March, I've not seen a colony-sim strategy game quite like it. Looks like a blending of some ideas from FTL: Faster Than Light, RimWorld and The Wandering Village into something rather unique overall and I need it.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6529023971717754984gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6529023971717754984gol1.jpg"/></a></p>
+<p>"You are a Trailblazer... the captain of a ‘Landship’—a powerful vessel shaped by undying dedication and boundless dreams. It is your lifeline through 'The March,' a perilous frontier engulfing civilization's remnants. Your mission: blaze a trail in this wilderness and uncover the mystery at its heart.</p>
+<p>Trailblazers: Into the March is a roguelite colony-sim that integrates tactical combat with the emotional journey of procedural characters. Before setting off, you will purchase and customize your Landship, recruit crew members with their own backgrounds and skills, trade supplies and materials, and take on contracts. Once you venture into the March, you must manage your crew's daily lives, witness their evolving relationships and stories, and defend your moving home in tactical landship battles as you explore the vast uncharted territories."</p>
+<p>Developer Strangers and publisher Joystick Ventures showed off the reveal trailer, and it starts off quite intriguing and then when it gets into the gameplay — just wow.</p>
+<div class="hidden_video" data-video-id="PXGuzybAmMI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5e2cf94f669329eb9eb50adfff67e7ad.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/PXGuzybAmMI" target="_blank">See video</a></div></div>
+<p>One that should have no problems with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> on Linux. I really cannot wait for this. Fantastic idea for a game. Visually looks great too.</p>
+<p>You can <a href="https://store.steampowered.com/app/2671300/Trailblazers_Into_the_March/" rel="noopener" target="_blank">follow it on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/build-up-command-and-fight-with-a-big-walking-colony-in-trailblazers-into-the-march/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/build-up-command-and-fight-with-a-big-walking-colony-in-trailblazers-into-the-march/</guid>
+      <pubDate>Fri, 07 Jun 2024 10:14:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/210015939id24672gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Rogue-lite</category>
+      
+      <category>Simulation</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Gangster FPS &#39;Fallen Aces&#39; will have you punch a shark in the face</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Punching a shark in the face. Do you expect any less from a game published by New Blood Interactive? Fallen Aces is a FPS crime noir that plays right out of the '90s and looks right out of a comic.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7176829341717753230gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7176829341717753230gol1.jpg"/></a></p>
+<p>More about it:</p>
+<ul>
+<li><strong>A gritty crime noir saga:</strong> spanning three episodes and <strong>dozens</strong> of levels, and featuring fully voiced <strong>hand drawn</strong> comic cutscenes - Fallen Aces tells a <em>real</em> story.</li>
+<li><strong>The world is your weapon:</strong> use fists, knives, pipes, bats, trash cans, frying pans, pistols, shotguns, nail guns, spear guns, Tommy guns and more to take back Switchblade City.</li>
+<li><strong>Non linear level design:</strong> Choose your path, use <strong>stealth</strong>, go <strong>loud</strong> or <em>try a mixture of both!</em></li>
+<li><strong>Hand drawn:</strong> 100% original hand drawn art and animation (No AI) brings the game to life.</li>
+<li><strong>Fuggedaboutit!:</strong> Hundreds of lines of <strong>authentic</strong> period era gangster dialogue injects personality into the wide array of people and places in <em>Fallen Aces.</em></li>
+</ul>
+<p>Shown off with a new trailer during Guerilla Collective 2024 Showcase have look:</p>
+<div class="hidden_video" data-video-id="w8cpLh5vKG0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cef2bea724458ce2927aac2ae11177e4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/w8cpLh5vKG0" target="_blank">See video</a></div></div>
+<p>Announced for Windows, it should work just fine on Linux with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> though. It has controller support too, so hopefully it will also work well on Steam Deck. One I very much plan to play, shooting right to the top of my wishlist.</p>
+<p>You can <a href="https://store.steampowered.com/app/1411910/Fallen_Aces/" rel="noopener" target="_blank">wishlist / follow on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/gangster-fps-fallen-aces-will-have-you-punch-a-shark-in-the-face/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/gangster-fps-fallen-aces-will-have-you-punch-a-shark-in-the-face/</guid>
+      <pubDate>Fri, 07 Jun 2024 09:42:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1531744710id24671gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>FPS</category>
+      
+    </item>
+    
+    <item>
+      <title>Pokemon and Stardew Valley blend Ova Magica arrives on July 23rd</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After a <a href="https://www.gamingonlinux.com/2021/02/with-a-few-days-left-on-the-kickstarter-ova-magica-has-been-an-incredible-success/" rel="noopener" target="_blank">Kickstarter success</a> in early 2021, Ova Magica that blends ideas from Pokemon and Stardew Valley will hit Early Access on July 23rd.</p>
+<p>Here you have the usual suspects of features like taking over a farmstead in a quaint little town, plus crafting, fishing and life-sim elements where you make friends and build relationships. But then you also have — the Blobs. Cute and wobbly creatures you hatch from eggs, which you can train up and battle others with.</p>
+<p>In the <a href="https://steamcommunity.com/games/1299170/announcements/detail/4164219969953720612?snr=2___" rel="noopener" target="_blank">announcement</a> the developer mentioned it's playable with mouse / keyboard or controller and is "Fully playable on the Steam Deck". In the Steam forum when asked about the Linux version for Early Access a developer <a href="https://steamcommunity.com/app/1299170/eventcomments/4330853789663262665?snr=2_groupannouncements_detail_#c4330853789663389242" rel="noopener" target="_blank">replied</a> "We are currently planning for it to include it.".</p>
+<div class="hidden_video" data-video-id="17GMK2SUftM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b3798067d6fd967a4d88a77d89bfa494.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/17GMK2SUftM" target="_blank">See video</a></div></div>
+<p>You can <a href="https://store.steampowered.com/app/1299170/Ova_Magica/" rel="noopener" target="_blank">wishlist / follow on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/pokemon-and-stardew-valley-blend-ova-magica-arrives-on-july-23rd/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/pokemon-and-stardew-valley-blend-ova-magica-arrives-on-july-23rd/</guid>
+      <pubDate>Fri, 07 Jun 2024 09:26:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2021277313id24670gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Farming</category>
+      
+    </item>
     
     <item>
       <title>Check out the Playing for the Planet and Future Games Show collections on Humble Bundle</title>
@@ -111,6 +600,7 @@
 <p>This is a <em>per-game</em> limit, so each game on GOG will have 200MB total for Cloud Saves. GOG said any game saves that go over the limit will "be deleted after August 31st, 2024", and so GOG players will need to go and manually check all their save files to ensure no loss of data in the cloud. Of course, those stored locally are fine, it's just a limit on what GOG will store up online for you.</p>
 <p>As for why? GOG said: "As the size and number of games increase, so does the demand for Cloud Storage. These limits ensure that all players have access to sufficient and manageable space for their game progress, and that we keep the associated costs under control. By optimizing our storage allocation, we aim to continue providing a reliable and user-friendly platform for everyone."</p>
 <p>To be clear though, they won't just nuke the entire thing for each game that hits over 200MB. They said they will "will remove save game files, starting from the oldest and stop when the remaining files fit the allocation limit". So as soon as it gets down to 200MB, they will stop (for each game).</p>
+<p>You can check your cloud saves on your <a href="https://www.gog.com/account/cloud-saves/page/1" rel="noopener" target="_blank">GOG Account</a>.</p>
 <p>In comparison to Steam, they have no specific hard limit for each game. Some games might have only a few MB, some can go up to multiple GBs. For example in my case Baldur's Gate 3 on Steam is using over 1GB, with nearly 1GB still left for it. While Vampire Survivors is only giving about 4MB, so it's quite dynamic.</p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
@@ -3909,477 +4399,6 @@ The Intel base configuration with the Intel Core i7-14650HX, NVIDIA GeForce RTX 
       <category>New Release</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Mighty Marbles is an upcoming physics game that looks like a fusion of kids toys</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I remember playing with various crazy Marbles games when younger, and again with my own small person and now one developer is making a whole game about messing with them in Mighty Marbles. The plan is to release it into Early Access sometime this year. </p>
-<blockquote>
-<p>Welcome to Mighty Marbles, a cute physics based game where you control the level to guide the marble to victory. Inspired by the desire to see real life physics toys as a video game! Each level is a playground of diverse puzzles, each with its own unique set of controls. Fear not; an intuitive on-screen controller showcases how to navigate each puzzle, granting you the freedom to switch between challenges at your whim!</p>
-</blockquote>
-<p>Check out the trailer: </p>
-<div class="hidden_video" data-video-id="PVstJrsnIBw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c678fdfb9a4c37eb5f8896f26a3b556a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/PVstJrsnIBw" target="_blank">See video</a></div></div>
-<p>More about it:</p>
-<ul>
-<li>PUZZLES - Prepare for a series of interconnected puzzles in every level, each presenting distinct challenges that put your mastery of physics to the test. Losing your marble leads to a swift rescue thanks to the adorable Bobby Copters, getting you back in the action quickly.</li>
-<li>CAMERA - Tailor your gaming experience to your liking: opt for the close-up camera, immersing yourself in a detailed view of the puzzle, or switch to the bird's eye perspective for a comprehensive overview of the entire level. Can't settle on one? No problem! Switch effortlessly between the two views with a simple button press, ensuring you have the perfect perspective for every moment.</li>
-<li>COURSES - The levels are organized into courses. Each course has 9 levels sharing the same theme with new puzzles introduced each level. Initially for early access there are 3 courses, toybox, machines and mini golf. Additionally each course can be played with different game modes to explore new and challenging ways to play.</li>
-<li>COLLECT - No marble game is complete without the joy of collecting marbles! Completing fast times on each course and each mode will unlock new and exciting marbles. Once collected, these marbles become yours to choose from, allowing you to personalize your experience by selecting any of your acquired marbles before embarking on a course.</li>
-</ul>
-<p>The developer has been testing it working well on Steam Deck too:</p>
-<div class="hidden_video" data-video-id="I9cR0Za_Cq0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/78af2d96dc63e0d287ec0c573a0605ad.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/I9cR0Za_Cq0" target="_blank">See video</a></div></div>
-<p>Looks like good fun, could be a great one for kids too. A nice family-friendly playground.</p>
-<p>You can follow <a href="https://store.steampowered.com/app/2430310/Mighty_Marbles/" rel="noopener" target="_blank">Mighty Marbles on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/mighty-marbles-is-an-upcoming-physics-game-that-looks-like-a-fusion-of-kids-toys/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/mighty-marbles-is-an-upcoming-physics-game-that-looks-like-a-fusion-of-kids-toys/</guid>
-      <pubDate>Thu, 23 May 2024 12:36:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1293048578id24576gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Casual</category>
-      
-    </item>
-    
-    <item>
-      <title>Check out the demo for Oblin Party, a wacky physics-based couch/online party brawler </title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you love a good bit of total chaos then check out Oblin Party, an upcoming wacky physics-based, couch/online party brawler where the hands do the talking. Built with <a href="https://godotengine.org/" rel="noopener" target="_blank">Godot Engine</a> and it has Native Linux support, there's a demo now available on Steam.</p>
-<p>Utilize your elastic arms to wield powerful items, or swing, slingshot, grab, and punch to catapult your opponents off the map. It looks ridiculous - in a good way. Could be a great one for when you have a few friends over, and thanks to the online support you'll be able to play with anyone. Check out some of their demo gameplay:</p>
-<div class="hidden_video" data-video-id="hQoqUvloilg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a90fbe03873461d589c68070894a4367.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/hQoqUvloilg" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<ul>
-<li>2 to 4 players local or online multiplayer.</li>
-<li>Last Oblin standing wins the round.</li>
-<li>Limited Single Player mode (time trials).</li>
-<li>Physics based movement and combat.</li>
-<li>Lots of items and weapons.</li>
-<li>Highly interactive maps.</li>
-</ul>
-<p>The demo has local multiplayer and online support, but no public lobbies in the demo. It's only a small slice of what to expect but seems pretty funny and worth a look.</p>
-<p>Check it <a href="https://store.steampowered.com/app/2643290/Oblin_Party/" rel="noopener" target="_blank">out on Steam</a>. </p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/check-out-the-demo-for-oblin-party-a-wacky-physics-based-couch-online-party-brawler/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/check-out-the-demo-for-oblin-party-a-wacky-physics-based-couch-online-party-brawler/</guid>
-      <pubDate>Thu, 23 May 2024 12:27:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1929059827id24575gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Demo</category>
-      
-      <category>Godot Engine</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>DAVE THE DIVER gets a free to keep (but time-limited) Godzilla DLC</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>This is a bit unusual. DAVE THE DIVER from developer MINTROCKET has a new Godzilla DLC out now, which is entirely free to claim but it's not sticking around forever. DAVE THE DIVER is rated Steam Deck Verified and Gold on <a href="https://www.protondb.com/app/1868140" rel="noopener" target="_blank">ProtonDB</a>.</p>
-<p>The DLC will only be available to claim until November 23, 2024. After that, no one else will be able to claim it. If you do claim it though, it's yours to <em>keep</em>. The gaming industry does some weird stuff at times. Why put all the effort into a collab to pull it away so quickly? Anyway, since it's free to keep you got nothing to lose.</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="494_fDRoTHo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/28f9f6a7f57d2bd427beb01b49ea5bf1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/494_fDRoTHo" target="_blank">See video</a></div></div>
-<p>A truly wonderful game, and now with some extra free content too. Nice. There was also a <a href="https://store.steampowered.com/news/app/1868140/view/4145079037715714518" rel="noopener" target="_blank">patch</a> to fix some issues.</p>
-<p>DAVE THE DIVER is currently 25% off on:</p>
-<p><a href="https://www.humblebundle.com/store/dave-the-diver-sale?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/1868140/DAVE_THE_DIVER/" rel="noopener" target="_blank">Steam</a></p>
-<p>If you already own it just add the DLC to your account on <a href="https://store.steampowered.com/app/2841140/DAVE_THE_DIVER__Godzilla_Content_Pack/" rel="noopener" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/dave-the-diver-gets-a-free-to-keep-but-time-limited-godzilla-dlc/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/dave-the-diver-gets-a-free-to-keep-but-time-limited-godzilla-dlc/</guid>
-      <pubDate>Thu, 23 May 2024 11:36:14 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/77538978id24574gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>DLC</category>
-      
-      <category>Giveaway</category>
-      
-    </item>
-    
-    <item>
-      <title>Wraithbinder is a new metroidvania-inspired action RPG from the dev of Songbringer</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Wraithbinder is an action roguelike RPG with metroidvania-inspired ability progression. It's just about to enter Early Access with Native Linux support from Wizard Fu (Songbringer) and Double Eleven. <u>Note</u>: developer sent a key to <a href="https://store.steampowered.com/curator/4218320-GamingOnLinux/" rel="noopener" target="_blank">our Steam Curator</a>.</p>
-<p>The Early Access release is scheduled for May 27th.</p>
-<p>Each run you build a different sequence of weapons, abilities and relics. Abilities unlock new areas by allowing you to progress beyond where you could before. You get to keep your armour, status and gold across runs to keep pushing further. Right now it has solo play but the developer is also working to add in online co-op as well. Check out the new trailer:</p>
-<div class="hidden_video" data-video-id="fjKYZGE9rcA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5d4e1d0f530adafd24a92d11bf3fbb5a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/fjKYZGE9rcA" target="_blank">See video</a></div></div>
-<p>Seems like a lot of fun if you love action-RPGs like this. Each run through gives you a randomly-generated dungeon to crawl through while building a new sequence of weapons and abilities. When you discover a new ability you get to choose between multiple, allowing you to craft your experience. New abilities will unlock previously inaccessible areas in a Metroidvania-like fashion.</p>
-<p>There's some interesting character customisation on offer too:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12811614141716463596gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12811614141716463596gol1.jpg"/></a></p>
-<p>In my own early testing the game runs <em>great</em> on Linux with the Native build, tested on Kubuntu 24.04. So far, I'm really liking what I'm seeing here with the theme and the combat, worth a look. It's going to be in Early Access for about a year, as the developer plans to add in all sorts like:</p>
-<blockquote>
-<ul>
-<li>Online co-op multiplayer.</li>
-<li>Cutscenes and other story elements.</li>
-<li>New biomes, enemies, minibosses and bosses.</li>
-<li>Many more relics, scrolls, armor and weapons to find.</li>
-<li>New abilities, gameplay mechanics and objects.</li>
-<li>A reliquary and bestiary.</li>
-<li>Additional language support.</li>
-</ul>
-</blockquote>
-<p>With Linux support and full controller support it should also run great on Steam Deck.</p>
-<p>Check out <a href="https://store.steampowered.com/app/2126370/Wraithbinder/" rel="noopener" target="_blank">Wraithbinder on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/wraithbinder-is-a-new-metroidvania-inspired-action-rpg-from-the-dev-of-songbringer/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/wraithbinder-is-a-new-metroidvania-inspired-action-rpg-from-the-dev-of-songbringer/</guid>
-      <pubDate>Thu, 23 May 2024 11:27:41 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1540972342id24573gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Crownfall Act II and Update 7.36 are a big change for Dota 2</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The way you play Dota 2 is about to change in multiple ways, with Crownfall Act II and Update 7.36 out now and it sounds pretty exciting actually.</p>
-<p>Crownfall Act II is an expansion to the new overworld map you can explore to do little quests, which was a fun addition in the last major update. This second part adds in a new overworld map taking place in the unforgiving deserts of Druud, along with a new story, new characters, new cosmetics, new mini-games and some "surprises". You'll be able to play all acts up until it's eventually removed when Crownfall is finished.</p>
-<p>The biggest change is to the gameplay though with Update 7.36 adding in Innates Abilities, giving each hero a new ability for the entire game from beginning to end and every hero ability is unique. Some Innates grant a hero a unique effect. For example, Dawnbreaker reveals the whole map to allies when the sun rises.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10206956271716460074gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10206956271716460074gol1.jpg"/></a></p>
-<p>Another big addition are Hero Facets. These are hero customizations to change the playstyle of any hero to better match up to player preference. Each hero has at least two possible Facets, and you can pick the one you want during strategy time or at the start of a match. For example: Viper can choose between adding an AoE damage burst to Poison Attack, or increasing defensive buffs while Viper remains in Nethertoxin.</p>
-<p>Main gameplay changes:</p>
-<blockquote>
-<p><strong>Innate Abilities</strong></p>
-<ul>
-<li>Innates are abilities that are present on the hero for the entire game, from the very beginning of every match. Every hero has a unique Innate</li>
-<li>The Innate for each hero can be viewed on the Hero page, or in-game by hovering a new icon between the hero talents and abilities</li>
-<li>There are two types of Innates:
-<ul>
-<li>Some Innates grant a hero a unique effect. For example, Faceless Void slows enemy attack projectiles within range, and Dawnbreaker reveals the whole map to allies when the sun rises</li>
-<li>Some Innates change a hero ability to have five levels and get a free ability point at level 1. For example, Kunkka's Tidebringer and Legion Commander's Moment of Courage now start at level 1, and can still be upgraded four more times like normal</li>
-</ul>
-</li>
-</ul>
-<p><strong>Facets</strong></p>
-<ul>
-<li>Facets are a hero customization choice that provide the ability to better align the playstyle of a hero with a specific match or player preference. Facets are specific to heroes: Each hero has at least two Facets, and every player can choose the Facet they prefer during strategy time at the beginning of each match</li>
-<li>Hero Facets can be viewed on their hero page, below the hero name and tags. They can also be viewed in-game by hovering a new icon between the hero talent and abilities, on the scoreboard, or on the top bar when holding Alt</li>
-<li>Facets are set for all players after the strategy time, and cannot be changed during a match. Facet choices aren't revealed to the enemy team until after the game begins</li>
-<li>Facets can have a variety of effects, for example:
-<ul>
-<li>Viper can choose between adding an AoE damage burst to Poison Attack, or increasing defensive buffs while Viper remains in Nethertoxin</li>
-<li>Wraith King can choose between summoning skeletons, or dealing additional curse damage when attacking</li>
-<li>Leshrac can choose between his attacks restoring mana, or changing Diabolic Edict to explode faster but deal no damage to buildings</li>
-<li>Lone Druid can choose between an improved Spirit Link, granting lifesteal in both directions, or allowing True Form to be cast on the Spirit Bear</li>
-</ul>
-</li>
-</ul>
-<p><strong>Other</strong></p>
-<ul>
-<li>Strategy time is extended by 15/10/5 seconds for the 1/2/3 weeks immediately after a numbered patch</li>
-<li>Glyph of Fortification no longer refreshes when the first Tier 3 tower is destroyed</li>
-<li>Glyph of Fortification now refreshes when the first Melee Barracks is destroyed</li>
-<li>AoE Bonuses now affect all auras and Cleave sources</li>
-<li>Dominated Creeps no longer allow players to bypass Backdoor Protection</li>
-<li>Hero Denies now grant experience to the hero who created the deniable debuff.</li>
-<li>Mana Bars are always visible for enemies</li>
-<li>Fountain Buff grants Couriers haste movement</li>
-<li>If Courier has no items, pressing the Deliver Courier button sends the Courier back home</li>
-<li>Mana Cost Reduction effects no longer work on abilities that drain mana over time</li>
-<li>Attack Speed Display is no longer normalized to 1.7 BAT. This means heroes’ max attack speed is always 700, and a buff that grants 20 Attack Speed will display as +20 always instead of a different number based on the hero’s BAT (No actual gameplay change, just a display change)</li>
-<li>Spell's Cast Range is now always listed with the new icon, which is located near Mana Costs and Cooldown</li>
-<li>Holding Alt displays the vision range of all Watchers in the map</li>
-<li>Experience gain from Abilities and Wisdom Rune will now show up separately in the post-game XP Breakdown for Dota Plus users</li>
-<li>Added a "LEVELS WITH:" parameter for ability descriptions to show which ability needs to be upgraded to level this one</li>
-<li>Ability tooltips now show icons next to ability values, indicating that those are upgraded by Aghanim's Shard/Scepter, Talents, or Facets</li>
-<li>Updated spectator view controls for live and replays to match vision unlinking</li>
-<li>Using Radiant/Dire Fog will now correctly hide members of Radiant/Dire that have had their vision unlinked and are not visible</li>
-<li>Using the player perspective on a player whose vision is unlinked will correctly hide units they can no longer see</li>
-<li>Pinging items of enemies that can't be seen currently no longer reveals information on whether those items were consumed or not</li>
-<li>In demo mode -createhero command supports facets by adding facet name or its number at the end of the command</li>
-<li>New Dota Labs Feature: "Persistent Range Indicators" -- If you hold Alt while right-clicking on either your experience indicator, attack range indicator (the stats part of portrait), or an ability/item, the game will draw a persistent range indicator in the world for it. You can only have at most one active at any given time, but it updates automatically when your attack/cast/AoE range changes</li>
-<li>New Dota Labs Feature: "Dynamic Health Bar Focus" -- The health bar of any hovered unit will always draw on top of other health bars</li>
-<li>Added the ability to type in a hero name to jump to that hero when viewing patch notes in the client</li>
-</ul>
-<p><strong>Ability Draft</strong></p>
-<ul>
-<li>Innates have the following rules for Ability Draft</li>
-<li>Innate abilities that do not appear on a hero's ability bar will be automatically assigned to the hero when spawning in, but cannot be drafted</li>
-<li>Innate abilities that can be leveled with skill points are draftable, but will not be automatically assigned when spawning in</li>
-<li>All other innate abilities are disabled for Ability Draft</li>
-<li>Facets have the following rules for Ability Draft:</li>
-<li>You can choose any hero facet belonging to your assigned hero during strategy time</li>
-<li>Facets that grant new abilities are disabled</li>
-<li>Facets that replace abilities will work if you draft the ability that is being replaced</li>
-<li>If a facet has no effect on your hero you can still select it. In game, the facet will notate it has no effect</li>
-</ul>
-</blockquote>
-<p>I think it's finally time for my return to Dota 2.</p>
-<p>Play <a href="https://store.steampowered.com/app/570/Dota_2/" rel="noopener" target="_blank">free on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/crownfall-act-ii-and-update-736-are-a-big-change-for-dota-2/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/crownfall-act-ii-and-update-736-are-a-big-change-for-dota-2/</guid>
-      <pubDate>Thu, 23 May 2024 10:28:06 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/250922272id24572gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Free Game</category>
-      
-      <category>MOBA</category>
-      
-      <category>Online Multiplayer</category>
-      
-    </item>
-    
-    <item>
-      <title>Microsoft&#39;s new Recall AI will take screenshots of everything you do - freaky</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>This will be preaching to the choir for some readers, as you didn't exactly need another reason not to use Windows right? Microsoft's new Recall AI will take screenshots of everything you do and that sounds truly terrible. <em>Spyware as a service, courtesy of Microsoft's push to stick AI into everything.</em></p>
-<p>You might think I'm being perhaps a bit sensational here or even clickbaity, but no, this is actually genuinely what Recall does. As Microsoft said: "Recall uses Copilot+ PC advanced processing capabilities to take images of your active screen every few seconds", and not only just on their new ARM PCs, they said it will roll out to x86 platforms too via a Windows update.</p>
-<p>What's the point? It's to give you a special timeline of your day (it stores up to 3 months worth of what you do), allowing you to go back through it and find things, highlight things, open the original application shown in pictures and <em>eventually</em> open up whatever you were working on in the right application with the right content at the time. Basically, some fancy-pants AI search going over everything you've done.</p>
-<p>Microsoft do say the storage is local to your device, and is "protected using data encryption on your device" and even using BitLocker if you're on Windows 11 Pro or an enterprise Windows 11 SKU. Microsoft also claim it doesn't share it anywhere else, at all, no advertisers or Microsoft themselves. But, how far do we trust data being fed into a black-box AI that no one can really see what it's doing huh?</p>
-<p>Here's the thing: straight from their own <a href="https://www.microsoft.com/en-gb/windows/copilot-plus-pcs#faq2" rel="noopener" target="_blank">FAQ</a> (scroll down) it notes how "Recall does not perform content moderation" and it will "not hide information such as passwords or financial account numbers". Oh wow, that sure sounds good for your privacy doesn't it. But don't worry it "does not take snapshots of certain kinds of content, including InPrivate web browsing sessions in Microsoft Edge" and "material protected with digital rights management (DRM)" is also protected. We can't have Netflix or Disney getting annoyed with it taking a shot of that movie you watched, nope.</p>
-<p>I'm not even what you may call a "privacy nut". I use big-name stuff all the time, my main browser is plain ol' Google Chrome and you get the idea. But still, this is super weird.</p>
-<p>What happens if someone else gets access to your device? Lost, stolen, sold (and you forgot to wipe) and so on. If you get hacked, they'll end up seeing everything, it's another major attack point. Yeah great it's stored on your device, but people and companies get broken open all the time, malicious orgs will have a real party with your data. There's plenty of other times people may end up with access to your device to think about, I'm not going to list them all of course.</p>
-<p>You can hear Microsoft CEO Satya Nadella speak about it to The Wall Street Journal, skip to 3:23:</p>
-<div class="hidden_video" data-video-id="uHEPBzYick0?rel=0&amp;start=203"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a8affdd649ddde347c3fb6cb90475bed.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/uHEPBzYick0?rel=0&amp;start=203" target="_blank">See video</a></div></div>
-<p>No thanks. I'll pass, forever. I never want this. It feels creepy and gross.</p>
-<p>The UK's Information Commissioner's Office (ICO) is already <a href="https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2024/05/statement-in-response-to-microsoft-recall-feature/" rel="noopener" target="_blank">looking into it</a>. No doubt others will be too. A privacy nightmare for everyone.</p>
-<p>If you wish to try Linux, I can recommend <a href="https://kubuntu.org/" rel="noopener" target="_blank">Kubuntu</a> which is my daily-driver.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/microsofts-new-recall-ai-will-take-screenshots-of-everything-you-do-freaky/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/microsofts-new-recall-ai-will-take-screenshots-of-everything-you-do-freaky/</guid>
-      <pubDate>Thu, 23 May 2024 09:47:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1196104784id24571gol.jpg" type="image/jpeg"/>
-      
-      <category>Editorial</category>
-      
-      <category>Microsoft</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Mesa 24.1.0 released with big improvements for NVK, Zink, Explicit Sync</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Ready for the next upgrade to open source graphics drivers? Mesa 24.1.0 has now <a href="https://lists.freedesktop.org/archives/mesa-dev/2024-May/226222.html" rel="noopener" target="_blank">released</a> bringing some big enhancements to many different drivers across AMD, NVIDIA, Intel and others.</p>
-<p>With this release NVK (open source NVIDIA Vulkan driver) is now in a much better state, and is no longer considered experimental. It's also both Vulkan 1.3 conformant and OpenGL 4.6 conformant when paired with Zink. Apple support was improved with Asahi reaching OpenGL 4.6 and OpenGL ES 3.2 support, support for Vulkan explicit synchronisation on Wayland and X11 and much more.</p>
-<p>New supported features include:</p>
-<ul>
-<li>VK_EXT_map_memory_placed on RADV, ANV and NVK</li>
-<li>VK_KHR_shader_subgroup_rotate on RADV and ANV and NVK</li>
-<li>VK_KHR_load_store_op_none on RADV, ANV, NVK and Turnip</li>
-<li>VK_KHR_line_rasterization on RADV, ANV, NVK and Turnip</li>
-<li>VK_KHR_index_type_uint8 on RADV, ANV, NVK and Turnip</li>
-<li>VK_KHR_shader_expect_assume on all Vulkan drivers</li>
-<li>VK_KHR_shader_maximal_reconvergence on RADV, ANV and NVK</li>
-<li>VK_KHR_shader_quad_control on RADV</li>
-<li>OpenGL 4.6 on Asahi</li>
-<li>OpenGL ES 3.2 on Asahi</li>
-<li>Mali G610 and G310 on Panfrost</li>
-<li>Mali T600 on Panfrost</li>
-<li>VK_KHR_shader_subgroup_uniform_control_flow on NVK</li>
-<li>alphaToOne/extendedDynamicState3AlphaToOneEnable on RADV</li>
-<li>VK_EXT_device_address_binding_report on RADV</li>
-<li>VK_EXT_external_memory_dma_buf for lavapipe</li>
-<li>VK_EXT_queue_family_foreign for lavapipe</li>
-<li>VK_EXT_shader_object on RADV</li>
-<li>VK_EXT_nested_command_buffer on NVK and RADV</li>
-<li>VK_EXT_queue_family_foreign on NVK</li>
-<li>VK_EXT_image_drm_format_modifier on NVK</li>
-</ul>
-<p>The Collabora crew give some <a href="https://www.collabora.com/news-and-blog/news-and-events/mesa-241-brings-new-hardware-support-for-arm-and-nvidia-gpus.html" rel="noopener" target="_blank">nice insight</a> into all their work that went into this release that's well worth a read.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/mesa-24-1-0-released-with-big-improvements-for-nvk-zink-explicit-sync/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/mesa-24-1-0-released-with-big-improvements-for-nvk-zink-explicit-sync/</guid>
-      <pubDate>Thu, 23 May 2024 09:23:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/mesa.png" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Mesa</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Get a bunch of Nightdive FPS Remasters in this Humble Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you want to fill up your gaming library with some retro remaster goodies, the <a href="https://www.humblebundle.com/games/fully-loaded-nightdive-fps-remasters?partner=gamingonlinux" rel="noopener" target="_blank">Fully Loaded: Nightdive FPS Remasters Humble Bundle</a> is here.</p>
-<p>Below I will note each game you can get included plus the Steam Deck rating, any <a href="https://www.protondb.com/" rel="noopener" target="_blank">ProtonDB</a> rating if there is one (or if it has Native Linux support) and each is a Steam link if you need more info first. You definitely know the drill by now right?</p>
-<p><a href="https://store.steampowered.com/app/1148590/DOOM_64/" rel="noopener" target="_blank">DOOM 64</a> - Deck Playable / ProtonDB Gold</p>
-<blockquote>
-<p>Play the enhanced version of the original game released on the Nintendo 64 in 1997. Years have passed since you stopped Hell’s invasion of Earth. Quarantined for humanity’s safety, the UAC research facilities on Mars were abandoned and forgotten...until now.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1313/SiN_Gold/" rel="noopener" target="_blank">SiN: Gold</a> - Deck Playable / ProtonDB Platinum</p>
-<blockquote>
-<p>When the CEO of SinTEK Industries begins injecting the streets with a DNA-altering drug, it's time to reassess the laws of morality. When the same twisted bio-chemist plans to overtake the world with her unholy army of genetically-engineered mutants, it's time to rewrite the golden rule.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1010750/Blood_Fresh_Supply/" rel="noopener" target="_blank">Blood Fresh Supply</a> - Deck Unsupported / ProtonDB Gold</p>
-<blockquote>
-<p>Battle an army of sycophantic cultists, zombies, gargoyles, hellhounds, and an insatiable host of horrors in your quest to defeat the evil Tchernobog. Squirm through 42 loathesome levels filled with more atmosphere than a Lovecraftian mausoleum.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/405820/Turok/" rel="noopener" target="_blank">Turok</a> - Deck Playable / Native Linux</p>
-<blockquote>
-<p>A world where time has no meaning - and evil knows no bounds. Torn from a world long gone, the time traveling warrior Turok has found himself thrust into a savage land torn by conflict.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/405830/Turok_2_Seeds_of_Evil/" rel="noopener" target="_blank">Turok 2: Seeds of Evil</a> - Deck Verified / Native Linux</p>
-<blockquote>
-<p>Having defeated the Campaigner, Turok throws the Chronocepter into a waiting volcano to destroy it. Unfortunately the blast awakens an even deadlier force - The Primagen. Once again a Turok is tasked with restoring peace to the land and stopping the Primagen from merging Earth with the nether world.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1996770/Turok_3_Shadow_of_Oblivion_Remastered/" rel="noopener" target="_blank">Turok 3: Shadow of Oblivion Remastered</a> - Deck Verified</p>
-<blockquote>
-<p>Finish the hunt in this epic finale to the Turok Trilogy. Pick up immediately after the events of Turok 2: Seeds of Evil, with dual protagonists Joseph and Danielle Fireseed, of the Turok family tree, as they battle the titular antagonist Oblivion and its followers, the Flesh Eaters.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/668980/Forsaken_Remastered/" rel="noopener" target="_blank">Forsaken Remastered</a> - Native Linux</p>
-<blockquote>
-<p>Scavengers from all over the galaxy have come to a dead Earth to loot the remains of the technology that can found in underground tunnels. You must fight your way past the scum of the universe. As you prepare for deadly combat, you are going to quickly learn that the future is... Forsaken!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1678430/PowerSlave_E" rel="noopener" target="_blank">PowerSlave Exhumed</a> - Deck Verified / ProtonDB Platinum</p>
-<blockquote>
-<p>PowerSlave: Exhumed is a KEX Engine port of the classic console game perfectly blending both the PlayStation &amp; Saturn versions</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1421490" rel="noopener" target="_blank">Rise of the Triad: Ludicrous Edition</a> - Deck Verified / ProtonDB Platinum</p>
-<blockquote>
-<p>The HUNT Returns... AGAIN! Play the original Cult Classic '90s FPS remastered in 4K Ultrawide with UNLIMITED frame rates, RESTORED content, NEW episodes, a LEVEL EDITOR, online MULTIPLAYER, LUDICROUS gameplay options and MORE. Make 'em EAT LEAD or they'll bury you in a lunchbox!</p>
-</blockquote>
-<p>Plus you also get 10% off the recently released <a href="https://store.steampowered.com/app/2697470/POed_Definitive_Edition/" rel="noopener" target="_blank">PO'ed: Definitive Edition</a> that Nightdive remastered, which only released on May 16th.</p>
-<p>See the <a href="https://www.humblebundle.com/games/fully-loaded-nightdive-fps-remasters?partner=gamingonlinux" rel="noopener" target="_blank">full bundle</a> for more.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/get-a-bunch-of-nightdive-fps-remasters-in-this-humble-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/get-a-bunch-of-nightdive-fps-remasters-in-this-humble-bundle/</guid>
-      <pubDate>Wed, 22 May 2024 18:14:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/236155642id24569gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Fanatical Bundle Fest for May 2024 live with a Play on the Go Steam Deck Bundle </title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Fanatical are bringing out new game bundles every day this week, and some of them look pretty great like the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-play-on-the-go-bundle?ref=gol" rel="noopener" target="_blank">Build your own Play on the Go Bundle for Steam Deck</a> fans.</p>
-<p>All of the games included in the bundle are Steam Deck Verified, so they will work great on desktop Linux too. You can get 3 for £4.99, 5 for £6.99, 8 for £9.99. If you buy 8+ works out at about £1.25 per-game.</p>
-<p>The games included are:</p>
-<ul>
-<li>Children of Morta: Complete Edition</li>
-<li>GRIME</li>
-<li>Juicy Realm</li>
-<li>Bridge Constructor Portal Bundle</li>
-<li>Patch Quest</li>
-<li>Teslagrad Remastered</li>
-<li>Mutazione</li>
-<li>Styx: Master of Shadows</li>
-<li>The Haunted Island, a Frog Detective Game</li>
-<li>Frog Detective 2: The Case of the Invisible Wizard</li>
-<li>Tinkertown</li>
-<li>Lawn Mowing Simulator: Landmark Edition</li>
-<li>Tunche</li>
-<li>SINNER: Sacrifice for Redemption</li>
-<li>Virgo Versus The Zodiac</li>
-<li>I Am Fish</li>
-<li>Trifox</li>
-</ul>
-<p>This <a href="http://www.fanatical.com/en/pick-and-mix/build-your-own-play-on-the-go-bundle?ref=gol" rel="noopener" target="_blank">Play on the Go Bundle bundle</a> ends June 26th. </p>
-<p>There's also:</p>
-<p><a href="https://www.fanatical.com/en/bundle/killer-bundle-30?ref=gol" rel="noopener" target="_blank">Killer Bundle 30</a> also looks to be a <em>really</em> good deal at £19.99 for <strong>all</strong> 33 games and 1 DLC that includes Monster Train, Devil May Cry 4, Dragon's Dogma, Rain World and more great experiences. Bundle ends June 30th.</p>
-<p><a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-rpg-bundle?ref=gol" rel="noopener" target="_blank">Build your own RPG Bundle</a> with treats like Moonlighter, Coromon, Giants Uprising and more. Bundle ends June 24th.</p>
-<p>The <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-bento-bundle?ref=gol" rel="noopener" target="_blank">Build your own Bento Deluxe Bundle</a> also has a whole bunch of Anime games if that's your thing. Bundle ends June 25th.</p>
-<p>Also check out the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-strategy-bundle?ref=gol" rel="noopener" target="_blank">Build your own Strategy Bundle</a> that has Kingdom New Lands, Wizard Chess, Strategic Command, Tyrant's Blessing, Guardians of Holme, Mordheim: City of the Damned and more. Bundle ends June 26th.</p>
-<p>Check out everything on the <a href="https://www.fanatical.com/?ref=gol" rel="noopener" target="_blank">Fanatical store</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/fanatical-bundle-fest-for-may-2024-live-with-a-play-on-the-go-steam-deck-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/fanatical-bundle-fest-for-may-2024-live-with-a-play-on-the-go-steam-deck-bundle/</guid>
-      <pubDate>Wed, 22 May 2024 15:20:36 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1334056855id24568gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Fanatical</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Racing game BlazeRush ending support for Linux, macOS and SteamVR</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Targem Games just announced their racing game BlazeRush is getting a big upgrade for the tenth anniversary but they're going to sunset their Linux, macOS and SteamVR support.</p>
-<p>In an <a href="https://store.steampowered.com/news/app/302710/view/4190115033974331871" rel="noopener" target="_blank">announcement</a> on Steam they didn't go into detail on the exact reasons other than some vague note about issues. Here's what they said:</p>
-<blockquote>
-<p>Hello, intergalactic racers!</p>
-<p>Due to technical difficulties, support for the game on Linux and Mac systems will be discontinued and the SteamVR version will also become unavailable.</p>
-<p>Unfortunately, downloading and running BlazeRush on Linux, Mac and SteamVR will soon be impossible.</p>
-<p>This will not affect players who use Windows systems. In addition, we are happy to announce that a major update for the Windows version will soon be released to celebrate the tenth anniversary of BlazeRush! Stay tuned!</p>
-</blockquote>
-<p>Currently, the game has a Native Linux version and it is Steam Deck Verified. Valve's verification for Steam Deck was done on the Native Linux version too, so Valve will end up being <em>forced</em> to re-test this one on <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> if it's to keep the Verified sticker.</p>
-<p>What the developer said above is <em>technically</em> incorrect though. Even if they entirely removed the Linux version, all you'll need to do is use Proton, so it won't be as "impossible" as they say. If they do plan to just entirely remove them, that's a whole 'nother problem though which just <em>shouldn't</em> be a thing. Delisting so they're not advertised and updated? Fine, but completely removing is <em>incredibly</em> anti-consumer.</p>
-<p>Still a shame to see this happen at all though, as I've played it a good few times over the years in local multiplayer and it's an absolute riot. It's a <strong>really</strong> fun game. So I'm thankful Proton from Valve exists yet again.</p>
-<p>The game is available to buy from: <a href="https://www.fanatical.com/en/game/blazerush?ref=gol" rel="noopener" target="_blank">Fanatical</a> | <a href="https://www.humblebundle.com/store/blazerush?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a> | <a href="https://store.steampowered.com/app/302710/BlazeRush/" rel="noopener" target="_blank">Steam</a></p>
-<p>I did a video of this one a whole 5 years ago:</p>
-<div class="hidden_video" data-video-id="RJ6uynCjVIs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8731201266cfc2a0d5c3728d29a8529d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/RJ6uynCjVIs" target="_blank">See video</a></div></div>
-<hr/>
-<p><strong>Update 24/05/24</strong> - The developer has released another Steam <a href="https://store.steampowered.com/news/app/302710/view/4190115033981265543" rel="noopener" target="_blank">news post</a> to clarify the situation a little. Here's what they said:</p>
-<blockquote>
-<p>In the last news we indicated that the version for Mac and Linux systems will become completely unavailable. This message was incomplete and contained an error!</p>
-<p>We would like to correct ourselves and make things clear: the version for Linux and Mac OS will not receive the upcoming update. However, users of these operating systems will be able to continue to download and play the current version of BlazeRush.</p>
-<p>We apologize for our mistake and wish you the wildest interplanetary races!  </p>
-</blockquote>
-<p>At least on Linux / Steam Deck, you will be able to just run the updated Windows version with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>. But still, Valve will need to re-verify it for Steam Deck now too, which the developer did not mention.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/racing-game-blazerush-ends-support-for-linux-macos-and-steamvr/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/racing-game-blazerush-ends-support-for-linux-macos-and-steamvr/</guid>
-      <pubDate>Wed, 22 May 2024 13:44:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/204846303id24567gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Racing</category>
       
     </item>
     
