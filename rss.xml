@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-06-12 07:24:28.537444</pubDate>
+    <pubDate>2024-06-13 07:24:02.335414</pubDate>
 
     
     <image>
@@ -18,6 +18,386 @@
     </image>
 
     
+    
+    <item>
+      <title>Proton 9.0-2 brings better controller support in launchers, more playable games, lots of bug fixes</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve just released the latest stable update to Proton, the compatibility layer for running Windows games on Linux desktop and Steam Deck with Proton 9.0-2 bringing some fun additions.</p>
+<p>This will just show up in your Steam Downloads as an update to Proton 9, if you have it installed. Otherwise, just search for Proton 9 in your Steam Library (not the store) to install it. </p>
+<p>Here's the main changes:</p>
+<blockquote>
+<ul>
+<li>Previously playable only with Proton Experimental:
+<ul>
+<li>Alpha League</li>
+<li>Battlezone Gold Edition in VR mode</li>
+<li>Black Desert Online</li>
+<li>FreestyleFootball R</li>
+<li>Helldivers 2</li>
+<li>Hero's Land</li>
+<li>Iragon</li>
+<li>SimCity 3000 Unlimited</li>
+<li>Warlords Battlecry III</li>
+</ul>
+</li>
+<li>Enabled controller support via <a href="https://github.com/madewokherd/xalia/tree/main" rel="noopener" target="_blank">Xalia</a> in the launchers of:
+<ul>
+<li>Clustertruck</li>
+<li>Fallout 3 (standard and GOTY edition) - partial support only</li>
+<li>Fallout 4</li>
+<li>Mugsters</li>
+<li>The Elder Scrolls V: Skyrim (72850)</li>
+<li>The Elder Scrolls V: Skyrim Special Edition</li>
+<li>Tomb Raider: Anniversary</li>
+<li>Tomb Raider: Legend</li>
+</ul>
+</li>
+<li>Limited number of cores seen by the following games making them playable on a high core count CPUs:
+<ul>
+<li>Call of Juarez: Gunslinger</li>
+<li>Command &amp; Conquer and The Covert Operations</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20970387821718216968gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20970387821718216968gol1.jpg"/></a><br/>
+<em>Pictured - Fallout 4</em></p>
+<p>And now the bug fixes and other improvements:</p>
+<blockquote>
+<ul>
+<li>Fixed Ghost of Tsushima and Horizon Forbidden West displaying a warning about outdated drivers with Nvidia GPUs.</li>
+<li>Fixed The Finals crashing on launch after a recent game update.</li>
+<li>Fixed The Finals wrongly detecting button mashing.</li>
+<li>Fixed The Finals not working on machines supporting AVX512 without <code class="inline-code">clearcpuid=304</code> in the kernel command line.</li>
+<li>Fixed Apex Legends not starting after a recent game update.</li>
+<li>Fixed Tekken 8 reporting wrong connection type if both WiFi and Ethernet are present.</li>
+<li>Fixed Ubisoft Launcher not starting games with a fresh Proton prefix.</li>
+<li>Fixed Halo Infinite crashing randomly during "initializing data".</li>
+<li>Fixed Beat Saber not being playable on Nvidia GPUs without using the legacy branch.</li>
+<li>Fixed Marvel vs Capcom: Infinite crashing when creating multiplayer lobby.</li>
+<li>Fixed hosting multiplayer games in Foundry.</li>
+<li>Fixed rendering of Japanese characters in the launcher of Granado Espada Japan.</li>
+<li>Fixed Nightingale not being able to authenticate with Steam on desktop.</li>
+<li>Fixed Bloons Monkey City thinking it's offline with IPv6 support disabled.</li>
+<li>Fixed Ubisoft Launcher asking for serial number on the first launch of Tom Clancy's Ghost Recon: Future Soldier.</li>
+<li>Fixed Descent 3 not working in GL mode.</li>
+<li>Fixed Shatterline freezing on loading screen when trying to join a second online match in a session.</li>
+<li>Fixed Call of Juarez: Bound in Blood failing to launch on a fresh prefix and failing on NVIDIA GPUs.</li>
+<li>Fixed audio stutter in Viking: Battle for Asgard.</li>
+<li>Fixed Russian language rendering in Brothers: A Tale of Two Sons launcher.</li>
+<li>Fixed scaling in The Desolate Hope when playing on desktop.</li>
+<li>Improved controller input support for Tower Princess.</li>
+<li>Improved performance in We Love Katamari REROLL+ Royal Reverie.</li>
+<li>Fixed GRIS showing error window when exiting the game.</li>
+<li>Fixed issues with transparency in Akka Arrh.</li>
+<li>Fixed load / save dialogs not working in Idle Spiral on Steam Deck.</li>
+<li>Added raw HID support for VKB Gunfighter SCG.</li>
+<li>Fixed random crashes in Cosmoteer Starship Architect &amp; Commander.</li>
+<li>Fixed font rendering in Cosmoteer Starship Architect &amp; Commander on Steam Deck.</li>
+<li>Improved Chinese font rendering in Cosmoteer Starship Architect &amp; Commander.</li>
+<li>Fixed Russian and Hebrew font rendering in Simon the Sorcerer: 25th Anniversary Edition.</li>
+<li>Improved font rendering in Alien Swarm: Reactive Drop on Steam Deck.</li>
+<li>Fixed Cities: Skylines not being playable on Intel GPUs.</li>
+<li>Improved compatibility with OpenComposite.</li>
+<li>Updated support for OpenXR to version <a href="https://github.com/KhronosGroup/OpenXR-Docs/releases" rel="noopener" target="_blank">1.1.36</a>.</li>
+<li>Updated OpenVR support to <a href="https://github.com/ValveSoftware/openvr/releases/tag/v2.2.3" rel="noopener" target="_blank">v2.2.3</a>.</li>
+<li>Updated vkd3d-proton to <a href="https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.12" rel="noopener" target="_blank">v2.12</a>-58-<a href="https://github.com/HansKristian-Work/vkd3d-proton/commit/f6d39052afb1fbc490b711769a0dd91c12340251" rel="noopener" target="_blank">gf6d39052afb1</a>.</li>
+<li>Updated dxvk to <a href="https://github.com/doitsujin/dxvk/releases/tag/v2.3.1" rel="noopener" target="_blank">v2.3.1</a>-64-<a href="https://github.com/doitsujin/dxvk/commit/889802887fa58cece6b95b9da80058e5781b7a21" rel="noopener" target="_blank">g889802887fa5</a>.</li>
+<li>Updated dxvk-nvapi to <a href="https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.7.0" rel="noopener" target="_blank">v0.7.0</a>-7-<a href="https://github.com/jp7677/dxvk-nvapi/commit/aae4902b6ff7038fd1bd34d33f019397018f195c" rel="noopener" target="_blank">gaae4902b6ff7</a>.</li>
+<li>Updated Wine Mono to version <a href="https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-9.1.0" rel="noopener" target="_blank">9.1.0</a>.</li>
+</ul>
+</blockquote>
+<p>Taken from the <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog#90-2" rel="noopener" target="_blank">official changelog</a>.</p>
+<p>How do you feel about this Proton update, has it improved some games you were wanting to play?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/proton-9-0-2-brings-better-controller-support-in-launchers-more-playable-games-lots-of-bug-fixes/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/proton-9-0-2-brings-better-controller-support-in-launchers-more-playable-games-lots-of-bug-fixes/</guid>
+      <pubDate>Wed, 12 Jun 2024 18:30:30 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1894161506id24714gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve faces a £656 million lawsuit in the UK for &#39;overcharging 14 million PC gamers&#39;</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A new lawsuit was filed earlier this month in the UK that alleges Valve, owner of Steam, has been "overcharging 14 million PC gamers and abusing its dominant position in the UK".</p>
+<p>First reported by the <a href="https://www.bbc.co.uk/news/articles/cpwwyj6v24xo" rel="noopener" target="_blank">BBC</a>, the claim was filed by Vicki Shotbolt, the founder and CEO of <a href="https://parentzone.org.uk/" rel="noopener" target="_blank">Parent Zone</a>. Shotbolt is also on the executive board of the UK Council for Child Internet Safety and is a trustee for MILA the media literacy and information alliance.</p>
+<p>There's even been a dedicated website set up for this lawsuit under <a href="https://steamyouoweus.co.uk/" rel="noopener" target="_blank">steamyouoweus.co.uk</a>, with Shotbolt setting up a company named Vicki Shotbolt Class Representative Limited to bring this action.</p>
+<p>From the claim website:</p>
+<blockquote>
+<p>Valve Corporation faces a £656 million collective action claim for overcharging 14 million PC gamers and abusing its dominant position in the UK. Valve owns and operates Steam – the largest digital distribution platform for PC games in the world.</p>
+<p>Companies who hold a dominant position in a market are not allowed to charge excessive or anti-competitive prices. They also cannot impose other unfair trading conditions that prevent or hinder others from competing with them.</p>
+<p>We believe Valve Corporation has been unfairly shutting out competition for PC games and in-game content, which has meant that UK customers have paid too much for these products.</p>
+<p>Vicki Shotbolt, a leading campaigner for children’s digital rights, filed the claim, via Vicki Shotbolt Class Representative Limited, on behalf of all affected gamers at the Competition Appeal Tribunal 5 June 2024.</p>
+<p>Vicki accuses Valve Corporation of shutting out competition in the PC gaming market by forcing game publishers to sign up to pricing restrictions that dictate the lowest price games can be sold for on rival platforms.</p>
+<p>This has led to UK consumers paying too much for PC games and add-on content, and has enabled the gaming giant to continue charging an excessive commission – of up to 30% – to publishers.</p>
+</blockquote>
+<p>Represented by Milberg London LLP, it's worth noting this is not their first rodeo, as they're also <a href="https://playstationyouoweus.co.uk/" rel="noopener" target="_blank">going after Sony</a> for £5 billion.</p>
+<p>Natasha Pearman, the partner leading the case, says: “Valve has a had a stranglehold on the PC games market for a long time and with this claim we’re challenging the status quo. Competition law is there to protect consumers and ensure that markets work properly. When they don’t work properly and consumers are harmed, collective actions of this kind provide consumers with a voice and a way of holding big companies, like Valve, to account. We’re delighted to be working with Vicki to seek compensation for UK consumers.”</p>
+<p>It boils down to their three main issues that they claim:</p>
+<blockquote>
+<ol>
+<li><strong>Price </strong><strong>parity obligation clauses</strong>: We say that Valve Corporation imposes price parity clauses that restrict and prevent game developers from offering better prices on PC-games on rival platforms, limiting consumer choice and harming competition.</li>
+<li><strong>Tying</strong>: We say that the restrictions Valve Corporation imposes, that mean the add-on content for games must also be purchased from Steam, restricts competition in the market.</li>
+<li><strong>Excessive pricing</strong>: We argue that Valve Corporation has imposed an excessive commission, of up to 30%, charged to publishers, that resulted in inflated prices on its Steam platform.</li>
+</ol>
+</blockquote>
+<p>The first point is one we've heard repeated many times before, but there's never been any proof on it. Which perhaps the Wolfire lawsuit and this may actually bring to light. An accusation doesn't necessarily mean they're right though. Something people get confused on often is Steam Keys, which are completely separate to Steam Store purchases. Valve <a href="https://partner.steamgames.com/doc/features/keys" rel="noopener" target="_blank">do ask</a> developers not to "give Steam customers a worse deal than Steam Key purchasers", but again, that's specifically for Steam Keys.</p>
+<p>This sounds very similar to the case that Wolfire brought up against Valve in the US.</p>
+<p><em>I've reached out to Valve press for any comments on it. Will update if they reply,</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/valve-faces-a-656-million-lawsuit-in-the-uk-for-overcharging-14-million-pc-gamers/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/valve-faces-a-656-million-lawsuit-in-the-uk-for-overcharging-14-million-pc-gamers/</guid>
+      <pubDate>Wed, 12 Jun 2024 18:09:10 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>Combat encounters are a challenging and unique experience in Bittersweet Birthday </title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Bittersweet Birthday is a game that hasn't been mentioned here in quite some time, but thankfully World Eater Games have a big update to share on this unique action adventure RPG.</p>
+<p>More about it: "You wake up...dazed, and with no memories. As you ask yourself where you are and how you got there, a strange voice breaks through the speaker system offering you a way out. Unstable individuals are hunting you down and it looks like your only chance of escape...is to listen...</p>
+<p>Bittersweet Birthday is an action game where every combat encounter is a challenging and unique experience. Learn your enemy's patterns, plan your movements and tear down your opponent in fierce battles that combine Soulslike dodge roll mechanics with bullet hell mayhem."</p>
+<p>The developer has announced that they've found a publisher with Dangen Entertainment, along with an official release window of Q2 2025. There's been a whole lot of changes for the game too with progress ongoing, so there's also a new trailer below and a refreshed demo to check out.</p>
+<div class="hidden_video" data-video-id="ve53cyTDuvQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d3ecd444d0dee766fc8c5131c06af025.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ve53cyTDuvQ" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Features:</p>
+<blockquote>
+<ul>
+<li>A story of mystery driven by endearing characters!</li>
+<li>A lively village with friendly residents and interlocking quests ready to explore!</li>
+<li>Punishing combat where reading the enemy is the key to victory!</li>
+<li>A darts mini-game! Well, darts are being used, at least...</li>
+<li>A Gachapon machine with 48 collectibles up for grabs!</li>
+<li>Hand drawn pixel-art with beautifully designed backgrounds!</li>
+<li>Fully re-mappable input and support for PlayStation, Xbox, and PC controllers!</li>
+<li>Dog!</li>
+</ul>
+</blockquote>
+<p>Always good to see more <a href="https://godotengine.org/" rel="noopener" target="_blank">Godot Engine</a> games coming to release.</p>
+<p>Check out the newer demo on <a href="https://worldeater-dev.itch.io/bittersweet-birthday" rel="noopener" target="_blank">itch.io</a> and <a href="https://store.steampowered.com/app/1581100/Bittersweet_Birthday/" rel="noopener" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/combat-encounters-are-a-challenging-and-unique-experience-in-bittersweet-birthday/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/combat-encounters-are-a-challenging-and-unique-experience-in-bittersweet-birthday/</guid>
+      <pubDate>Wed, 12 Jun 2024 16:36:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1718510532id24712gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Adventure</category>
+      
+      <category>Godot Engine</category>
+      
+    </item>
+    
+    <item>
+      <title>Terrorformer TD is a tower defense roguelite with a map you terraform as you go</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>With a map that erodes and grows as the game progresses, Terrorformer TD puts a rather unique spin on the tower defense genre.</p>
+<p>What began as a Master of Fine Arts thesis project quickly transformed into the pride and joy of solo developer TJ Cioffe of onewinter games, as he realized that this was a real opportunity to build upon previous tower defense staples and take the genre in his own direction. Check out the trailer for Steam Next Fest:</p>
+<div class="hidden_video" data-video-id="WtgP7XmrM-Q"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/590be82bf837f81ab6992944e5da58e4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/WtgP7XmrM-Q" target="_blank">See video</a></div></div>
+<p>"I've had a blast researching and testing what makes the best tower defense games so good,” onewinter games solo developer TJ Cioffe stated. “It’s a fascinating genre that stands between modern Vampire Survivors-likes and RTS classics like Starcraft that’s spawning some really creative concepts lately. There’s never been a more interesting time to be making a tower defense game and I’m excited to share Terrorformer TD with the world!"</p>
+<p class="plain-list-title">Features:</p>
+<blockquote>
+<ul>
+<li><strong>Terraform the Battlefield: </strong>Unlock new procedurally generated maps, each with unique terraforming opportunities and base-building strategies. Grow along with the dynamic battlefield and design the right defenses for each playthrough's challenges.</li>
+<li><strong>Assemble a Home Tower: </strong>Customize your Home Tower each run from the components you've unlocked, giving you access to special abilities, upgrades, and weapons! Earn dozens of permanent perks as you play and level up, increasing your survivability on each run.</li>
+<li><strong>Choose Your Own Adventure:</strong> Unlocks, upgrades, and map erosion are randomized every round, so each playthrough is different. Try your hand at a harder difficulty, or see how long you can last using the Weekly Challenge's loadout!</li>
+<li><strong>Take on Enemy Hordes:</strong> Counter enemy abilities like Fortify, Warp, and Disable Tower with 25 unique towers that earn XP and level up, growing stronger as the game goes on. Mix-and-match defenses to find the best combination for each enemy challenge.</li>
+</ul>
+</blockquote>
+<p>Check out the <a href="https://store.steampowered.com/app/2837760/Terrorformer_TD/" rel="noopener" target="_blank">demo on Steam</a> - it has Native Linux support. The full release is planned for September 2024.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/terrorformer-td-is-a-tower-defense-roguelite-with-a-map-you-terraform-as-you-go/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/terrorformer-td-is-a-tower-defense-roguelite-with-a-map-you-terraform-as-you-go/</guid>
+      <pubDate>Wed, 12 Jun 2024 13:48:40 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/294227111id24711gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Rogue-lite</category>
+      
+    </item>
+    
+    <item>
+      <title>Sally is a life sim about community and belonging aboard a magic flying ship</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Points for trying something a little different with the life sim genre here. Sally puts you aboard a magic flying ship, which is a bit unusual.</p>
+<p>It has all the usual points you might expect though like crafting, cooking, farming, building and then add into that exploring the skies. The skies are filled with floating islands each their own distinct ecosystem with different seasons, resources, animals and inhabitants. There's some random generation here with each play-through being different as it gives you new characters each time with their own emotions, tastes, interests and more. You also get to completely customize your character.</p>
+<blockquote>
+<p></p>
+</blockquote>
+<p>The trailer premiered through 2024's Wholesome Direct have a look below:</p>
+<div class="hidden_video" data-video-id="9ZewA8-kFC8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4b52e1fc5ae8d4165a13683ec13a25d0.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/9ZewA8-kFC8" target="_blank">See video</a></div></div>
+<p>This one actually had a <a href="https://www.kickstarter.com/projects/lucid-tales/sally/description" rel="noopener" target="_blank">Kickstarter</a> campaign which was quite successful back in 2022 with CA$137,377 raised.</p>
+<p>Sally has Native Linux support and in a post on <a href="https://steamcommunity.com/games/2165040/announcements/detail/4155213404196820164" rel="noopener" target="_blank">Steam</a> the developers noted "Currently, we have optimized the game to run at a stable, locked, 30 frames per second on the Steam Deck. It is configured at a slightly lower graphics quality than when running on Windows to ensure a smooth experience. It uses a Linux-native build, ensuring optimal compatibility."</p>
+<p class="plain-list-title">Features:</p>
+<ul>
+<li>Create your own character and play the way you want.</li>
+<li>Explore the Sally, a beautifully crafted ship inspired by Ghibli aesthetics.</li>
+<li>Befriend the crewmates by understanding their personalities.</li>
+<li>Accomplish a myriad of different tasks to keep the ship afloat.</li>
+</ul>
+<p>They've put up the first <a href="https://store.steampowered.com/app/2165040/Sally/" rel="noopener" target="_blank">demo on Steam</a> now.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/sally-is-a-life-sim-about-community-and-belonging-aboard-a-magic-flying-ship/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/sally-is-a-life-sim-about-community-and-belonging-aboard-a-magic-flying-ship/</guid>
+      <pubDate>Wed, 12 Jun 2024 13:30:03 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/864103215id24710gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Casual</category>
+      
+      <category>Demo</category>
+      
+    </item>
+    
+    <item>
+      <title>Piece together the broken memories of a cybernetic house in Psychroma</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Psychroma looks pretty wild. A narrative-driven side-scroller where you play as a digital medium. Confront the past by piecing together the broken memories of a cybernetic house, and exorcise the ghosts in the machine.</p>
+<p>If you enjoy games that have a diverse setting with BIPOC and LGBTQIA+ characters that are central to the narrative, this one is for you. This is quite a <em>dark</em> game too with a mature and violent theme to it. So you've been warned on that. This is probably one of the wildest looking side-scrolling adventure games I've seen for a while.</p>
+<p>More about it: "Acid rain rots away exposed rebar in the half-developed megacity once known as Toronto. Humanity modifies itself at a frequency never seen before. A housing crisis not only endangers the market, but the displaced and unhoused. One dilapidated house, only referred to as The Commons, is the center of our story. What was once meant to be a safe haven has turned against every occupant to have dwelled within.</p>
+<p>You can't remember how you got here, and you are trapped inside. You must use a strange deck of memory cards holding the recorded memories of the past and present residents to manipulate time and navigate the house."</p>
+<div class="hidden_video" data-video-id="UgjmwywNCgI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0e768fff955beb69da62996b7eb9371c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/UgjmwywNCgI" target="_blank">See video</a></div></div>
+<p>More:</p>
+<blockquote>
+<p class="plain-list-title"><strong>/TIME JUMP</strong></p>
+<ul>
+<li>Use a cybernetic memory card system to navigate through time.</li>
+<li>Gain the perspective of others' stored memories.</li>
+<li>Gain access to new parts of the house.</li>
+</ul>
+<p class="plain-list-title"><strong>/COMMUNICATE WITH THE DEAD</strong></p>
+<ul>
+<li>Use an interactive Ouija system to speak with ghosts and gather info that would otherwise be hidden.</li>
+<li>Descramble memories by inputting keywords provided by the ghost in the machine.</li>
+</ul>
+<p class="plain-list-title"><strong>/SURGERY</strong></p>
+<ul>
+<li>Perform surgical procedures to help stabilize injured victims.</li>
+<li>Uncover the debilitating effects of the Psychroma</li>
+<li>Learn about the technology that unleashed the monster</li>
+</ul>
+</blockquote>
+<p>Available with a Native Linux <a href="https://store.steampowered.com/app/1879950/Psychroma/" rel="noopener" target="_blank">version on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/piece-together-the-broken-memories-of-a-cybernetic-house-in-psychroma/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/piece-together-the-broken-memories-of-a-cybernetic-house-in-psychroma/</guid>
+      <pubDate>Wed, 12 Jun 2024 08:59:32 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/858424490id24709gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Adventure</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Prickle is a wholesome Sokoban-style puzzler about catching baby hedgehogs</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>In the game Prickle you play as a hedgehog dad trying to collect all your children, as they've done a bit of a runner so you need to stick them all together and get them back home.</p>
+<p>Prickle is a Sokoban-style puzzler but instead of the usual block-pushing, you're zipping around levels and collecting little hoglets that stick together like glue. Then you need to somehow get around to the exit, which is easier said than done. It's actually quite a nice little tweak to the usual because these sticky little critters can end up stuck together in all sorts of different ways, so you'll need to attempt to get them stuck exactly how you want, so you can rotate them all around and get them home.</p>
+<p>It's a very sweet and wholesome idea.</p>
+<div class="hidden_video" data-video-id="mVsXREWWFG4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/80b743a63247397ca8afadc136fe79e2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/mVsXREWWFG4" target="_blank">See video</a></div></div>
+<p>Real cute, worth checking out.</p>
+<p>Check out the <a href="https://store.steampowered.com/app/2759760/Prickle/" rel="noopener" target="_blank">demo on Steam</a>. It's made with <a href="https://godotengine.org/" rel="noopener" target="_blank">Godot Engine</a> and has Native Linux support.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/prickle-is-a-wholesome-sokoban-style-puzzler-about-catching-baby-hedgehogs/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/prickle-is-a-wholesome-sokoban-style-puzzler-about-catching-baby-hedgehogs/</guid>
+      <pubDate>Wed, 12 Jun 2024 07:55:39 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1302087911id24708gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Demo</category>
+      
+      <category>Godot Engine</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Logic puzzler Linkito will tease your brain as you connect everything together</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>French solo developer Kalinarm has a demo available for Linkito, a logic puzzler all about making engineering connections. Split across over 80 levels in the full game you'll be mastering the flow of power and information in no time, apparently.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5198950981718177718gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5198950981718177718gol1.jpg"/></a></p>
+<p>What's quite interesting with this one is that not only does it have the main story campaign to play through, where you use your logic to climb the corporate ladder, but there's also a full level editor with over 100 elements to design your own puzzles, and of course play the creations of others including full campaigns. But not just that, it will also have integrations with real-life circuits like Arduino or OSC protocols. There's even going to be a special Twitch campaign to play with viewers.</p>
+<p>The developer gave a nice overview in a recent video:</p>
+<div class="hidden_video" data-video-id="cuomdMWBd7A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7b8aa7d85f4165158181d02a99ee968a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/cuomdMWBd7A" target="_blank">See video</a></div></div>
+<p>Features:</p>
+<blockquote>
+<p></p>
+</blockquote>
+<ul>
+<li>Use your logic in many challenging puzzles exploring various connection-based mechanics.</li>
+<li>Tinker with, connect, arrange, flick or even push 100+ different types of physical blocks.</li>
+<li>Uncover the truth about Albatross Technologies in an original 50s dystopian setting.</li>
+<li>Progress through an easy to learn but hard to master engineering journey.</li>
+<li>Crank up your creativity and create your own logic puzzles with the level editor.</li>
+<li>Play community created levels in one click.</li>
+<li>Link with reality through Twitch, Arduino and OSC integrations.</li>
+</ul>
+<p>Check out the <a href="https://store.steampowered.com/app/2312770/Linkito/" rel="noopener" target="_blank">demo on Steam</a> with Native Linux support.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/06/logic-puzzler-linkito-will-tease-your-brain-as-you-connect-everything-together/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/06/logic-puzzler-linkito-will-tease-your-brain-as-you-connect-everything-together/</guid>
+      <pubDate>Wed, 12 Jun 2024 07:39:44 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/198684486id24707gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Puzzle</category>
+      
+    </item>
     
     <item>
       <title>Hundreds of thousands of people are now clicking a Banana on Steam</title>
@@ -3904,361 +4284,6 @@ Companies letting you use their IP like this isn't the default. When a company l
       <category>New Release</category>
       
       <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Puppygames bring massive-scale asynchronous PvP battle simulator Battledroid to Kickstarter</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Puppygames are launching a new game with Battledroid, a massively multiplayer online asynchronous PvP battle simulator that has a rather big scale to it.</p>
-<p>For those who don't immediately recognise the name, Puppygames made the likes of: Revenge of the Titans, Titan Attacks!, Droid Assault, Ultratron and Basingstoke. Revenge of the Titans is a bit of a classic! One from the second Humble Indie Bundle which had the <a href="https://web.archive.org/web/20131020134018/https://www.puppygames.net/blog/?p=914" rel="noopener" target="_blank">source code released</a>.</p>
-<p>Using their own "state-of-the art custom voxel graphics engine" they call VOXOID, they wrote it from scatch in Java and OpenGL to allow them to "create spectacular battles" which they say supports "massive super-detailed landscapes, thousands of battling droids, and millions of particles to create explosive effects". Check out the new trailer:</p>
-<div class="hidden_video" data-video-id="8AWQFimTZOA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/fc9c40f7f7c46e9bb1bacaeedd385e82.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/8AWQFimTZOA" target="_blank">See video</a></div></div>
-<p>The trailer does a pretty poor job of showing off what the overall gameplay will be like but imagine an auto-battler on a massive scale as you will battle for territory across 250,000 tiles set across a persistent open world map of the real Earth, using actual terrain and environmental data.</p>
-<p>You set up all your units (in defence, or attack), tweak their parameters a little, and then launch your attack - and sit back to watch them blow each other to bits. Winner keeps or takes the territory. There's a lot more explained and shown via gifs and screenshots on the Kickstarter.</p>
-<p>They've been building the game on and off now for around 14 years from the initial designs back in 2010, to having a Beta available on Steam now (for backers). They're hoping to raise at least £27,600 from the new Kickstarter, so they can get working on it full time to push it over the finishing line.</p>
-<p>Features at release:</p>
-<ul>
-<li>Free to play!</li>
-<li>Massive battles with up to 1000 units on each side.</li>
-<li>Asynchronous online multiplayer - you can play even if your friends are offline.</li>
-<li>Voxels! Voxels! Voxels! State-of-the art custom voxel graphics engine, with destructible scenery.</li>
-<li>Editable environment and weather system with realistic fog, mist and volumetric lighting.</li>
-<li>Tiny download, quick startup, and free to jump in and start blowing stuff up!</li>
-</ul>
-<p>Battledroid will have Native Linux support just like their previous games.</p>
-<p>Check it out on <a href="https://www.kickstarter.com/projects/puppygames/battledroid/description" rel="noopener" target="_blank">the Kickstarter</a> and follow on <a href="https://store.steampowered.com/app/247710/Battledroid/" rel="noopener" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/puppygames-bring-massive-scale-asynchronous-pvp-battle-simulator-battledroid-to-kickstarter/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/puppygames-bring-massive-scale-asynchronous-pvp-battle-simulator-battledroid-to-kickstarter/</guid>
-      <pubDate>Wed, 29 May 2024 12:07:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/70263967id24608gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Crowdfunding</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Java</category>
-      
-    </item>
-    
-    <item>
-      <title>Bella Wants Blood is a bite-sized &#34;roguelike terror defense&#34; game</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After releasing the roguelike tower defense Core Defense in 2020, and then the rogue-lite survival base builder Landnama in 2023 developer Sonderland is back with something weird with Bella Wants Blood. <u>Note</u>: developer provided an early review key.</p>
-<p>They're calling it an "absurd bite-sized roguelike terror defense game", which in a few ways builds on the ideas from Core Defense but puts it into a darker setting and gives you a Slay the Spire style path system to progress through.</p>
-<p>"Trapping you in their world, the god-like Bella demands you play their game to feed them blood. Lay down gutters and destructive terrors to obliterate Bella’s friends and their grotesque minions. Just don’t let them reach the end of your maze or Bella will get upset. And if Bella gets upset, Bella might just keep you there forever."</p>
-<div class="hidden_video" data-video-id="bREznZZoLnU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9e86718f53062d2f623972cf805d3cb5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/bREznZZoLnU" target="_blank">See video</a></div></div>
-<p>Bella Wants Blood has Native Linux support.</p>
-<p>Check out the <a href="https://store.steampowered.com/app/3007660/Bella_Wants_Blood/" rel="noopener" target="_blank">demo on Steam</a>. There's no current release date mentioned other than sometime "soon".</p>
-<p>Who are Sonderland? Three dads and close friends from Germany, France and Canada with different backgrounds and perspectives on gaming, united by the desire to make beautiful, minimalist games they love to play.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/bella-wants-blood-is-a-bite-sized-roguelike-terror-defense-game/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/bella-wants-blood-is-a-bite-sized-roguelike-terror-defense-game/</guid>
-      <pubDate>Wed, 29 May 2024 11:51:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1127911214id24614gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Demo</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Roguelike</category>
-      
-    </item>
-    
-    <item>
-      <title>Inspired by the Philippines, cinematic story-adventure Until Then now releasing June 25</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>After having a bit of a delay, Polychroma Games have announced their their cinematic adventure game inspired by the Philippines, Until Then is now going to release on June 25th. Great to see another <a href="https://godotengine.org/" rel="noopener" target="_blank">Godot</a> game coming to release showing what you can make with open source tools! Until Then will also have full Native Linux support.</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="T--eAPMyDbM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/28e55f697829ba43136fa7e85d3b1029.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/T--eAPMyDbM" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>
-<p><strong>Play Out Your Own Adventure – </strong>Meet a diverse and achingly familiar cast of characters to converse with in person, over text, and through email. Get to know them, build relationships, flunk group projects, and watch how their individual personal stories unfold alongside yours.</p>
-</li>
-<li>
-<p><strong>Investigate the Setting through Everyday Technology – </strong>Explore the depths of social media where your likes and comments may pose consequences. Scroll through social posts, emails, webpages, and more on your in-game smartphone, where you might discover hints and clues about the people and world around you. Chat with your friends, classmates, and even strangers.</p>
-</li>
-<li>
-<p><strong>Explore Themes of Love, Loss, and Friendship – </strong>Tackle philosophical issues as the main character. Make mistakes and difficult choices. Will Mark stand up for his friends and be there when they need him or will he let them down? Can he heal his wounds by letting go of the past? Decide for yourself how Mark grows and strives to do better throughout the story.</p>
-</li>
-<li>
-<p><strong>Play Addictively Mundane Minigames – </strong>Insert a flash drive—oh wait, wrong way—nope, it was right the first time. Fight your friend for more fishballs at the food stand outside. Get in the groove to pay for the jeepney. Lose yourself in little games you find yourself playing in everyday life.</p>
-</li>
-<li>
-<p><strong>Immerse Yourself in a Cinematic Visual Experience – </strong>Witness an intriguing narrative uniquely presented in eye-catching hand-drawn pixel art and immerse yourself in the warm colors and music of a world trying to move on from tragedy. Characters, landscapes, and props blend in 3D. Shadows, reflections, and lighting set the tone in a lovingly crafted experience.</p>
-</li>
-<li>
-<p><strong>Experience a World Inspired by Philippine Locations and Culture – </strong>Traverse Philippine-inspired landscapes in search for the truth. From the heart of the bustling capital to long bus rides past grass fields and coast towns, explore the world of Until Then set in a fictional version of the Philippines. Interior spaces are shaped by the mannerisms of the locals, setting the scene for a recent past.</p>
-</li>
-</ul>
-</blockquote>
-<p>You can wishlist / follow on <a href="https://store.steampowered.com/app/1574820/Until_Then/" rel="noopener" target="_blank">the Steam page</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/inspired-by-the-philippines-cinematic-story-adventure-until-then-now-releasing-june-25/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/inspired-by-the-philippines-cinematic-story-adventure-until-then-now-releasing-june-25/</guid>
-      <pubDate>Wed, 29 May 2024 11:30:36 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/996744582id24613gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Godot Engine</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Beta adds Bluetooth device battery info for Steam Deck, various desktop PC updates</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another round of Steam Client Beta updates are here with Steam Deck and Desktop PC seeing lots of improvements and bug fixes, and it's especially nice for people using Bluetooth on Steam Deck.</p>
-<p>These are just for the Steam Deck from the <a href="https://steamcommunity.com/games/1675200/announcements/detail/4177730135016134612?snr=2___" rel="noopener" target="_blank">changelog</a>:</p>
-<blockquote>
-<ul>
-<li>Show battery information for connected Bluetooth devices under Settings-&gt;Bluetooth and in the Quick Access menu.</li>
-<li>Added a per-device toggle to Settings-&gt;Bluetooth that controls whether a device is allowed to wake Steam Deck from sleep.</li>
-<li>Fixed a bug that would cause the UI to show stale data for Bluetooth devices.</li>
-</ul>
-</blockquote>
-<p>Nice to see on the Bluetooth changes, especially as you needed to use a plugin before to get better settings for Bluetooth devices. The Bluetooth device on wake though as far as I know, is still only on the OLED model.</p>
-<p>And <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/4146204937627686655?snr=2___" rel="noopener" target="_blank">the rest</a> of the Steam Client Beta for everyone on Steam Deck and Desktop PCs:</p>
-<blockquote>
-<p><strong>General</strong></p>
-<ul>
-<li>Fixed recent apps section of systray menu being offset when game icons are hidden</li>
-<li>Fixed some issues with video playback not working in client browsers</li>
-<li>Fixed support browser windows not closing when close button is clicked</li>
-<li>Fixed Steam client taking window focus when windows are open after a crash recovery</li>
-</ul>
-<p><strong>Overlay</strong></p>
-<ul>
-<li>Significantly improved in-game overlay responsiveness and fixed cases where the UI could feel stuck or run at 1fps on Windows. This bug previously occurred mostly when running a fully GPU bound game (ie, newer game + older GPU hardware). This bug also mostly only occurred with the Windows Hardware Accelerated GPU scheduling setting enabled.</li>
-</ul>
-<p><strong>Library</strong></p>
-<ul>
-<li>Fixed beta selection dropdown for games with very long beta names</li>
-<li>Fixed app activity feed to refresh more reliably</li>
-<li>Fixed comments sometimes getting lost on achievement unlock events in the app activity feed</li>
-</ul>
-<p><strong>Steam Families</strong></p>
-<ul>
-<li>Made client settings visible but generally unchangeable when parental settings are applied. Child accounts can request parental access to settings to make changes.</li>
-<li>Added a playtime countdown timer in the desktop overlay when parental playtime limits are being applied.</li>
-<li>Fixed playtime limits sometimes being applied even if "set playtime limits" was not selected in the settings UI.</li>
-<li>Fixed chat notification sounds sometimes playing even if friends &amp; chat was disabled in parental controls.v</li>
-<li>Display a copy count badge on game capsules for games that have more than one copy in a Steam Family.</li>
-<li>Display game ownership info in game hovers in library</li>
-<li>Fixed family member names sometimes not displaying while in offline mode or disconnected from Steam.</li>
-<li>Add "date acquired" for games owned by other family members.</li>
-</ul>
-<p><strong>Friends / Chat</strong></p>
-<ul>
-<li>Reduced network traffic on connect and reconnect</li>
-<li>Fixed friends list getting stuck on an empty invite list after acting on the last invite</li>
-<li>Fixed "Join Chat" button not working on Steam Community Groups when viewed in the Steam Client</li>
-</ul>
-<p><strong>Steam Input</strong></p>
-<ul>
-<li>Update the Steam/Guide button configurations for non-Deck gamepads to match the behavior on Deck, ex: Steam+X button to open the on-screen keyboard instead of Steam + Select, etc.</li>
-<li>Allow external gamepad controllers to load the same guide button configuration they would normally load on Desktop</li>
-<li>Improved Gyro To Mouse behavior when connected over bluetooth.</li>
-<li>Added the -nojoy command line option to prevent Steam from enumerating controllers</li>
-</ul>
-<p><strong>Remote Play</strong></p>
-<ul>
-<li>Added a one time pairing step when streaming from a remote computer</li>
-<li>The Remote Play Together UI is always available in the Steam overlay for supported games</li>
-<li>Use ScreenCaptureKit for desktop capture on macOS 14 (Sonoma)</li>
-<li>Added support for hardware video encoding on macOS 14 (Sonoma)</li>
-</ul>
-<p><strong>Big Picture Mode</strong></p>
-<ul>
-<li>Improve readability of the Steam/Guide button chord summary over games</li>
-<li>Fix an issue where non-Deck controllers could get the Steam/Guide button chord summary stuck showing until the next guide button press</li>
-<li>Fixed web browsers showing blank page entries when navigating back</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/steam-beta-adds-bluetooth-device-battery-info-for-steam-deck-various-desktop-pc-updates/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/steam-beta-adds-bluetooth-device-battery-info-for-steam-deck-various-desktop-pc-updates/</guid>
-      <pubDate>Wed, 29 May 2024 11:18:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>NEODUEL: Backpack Monsters blends an inventory PvP auto-battler with a monster-fusing twist</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Inventory management games are becoming another popular thing at the moment. We've had all those survivor-like bullet-heaven games and now another genre is springing to life. NEODUEL: Backpack Monsters looks like a sweet spin on the idea.</p>
-<p><a href="https://www.gamingonlinux.com/2024/03/backpack-battles-is-another-clear-indie-steam-hit/" rel="noopener" target="_blank">Backpack Battles</a> that released back in March is a current favourite of mine, but NEODUEL: Backpack Monsters brings with it a nice twist with you stuffing monsters into your pack. It's all about getting the best combo you can, while battling other players and fusing these creatures together to make a more powerful one. </p>
-<div class="hidden_video" data-video-id="PRHSoeEwBtI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a07fe4e78a4d1130e0ed7403c4aebb22.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/PRHSoeEwBtI" target="_blank">See video</a></div></div>
-<p class="plain-list-title">More about it:</p>
-<ul>
-<li>A multi-player, monster trainer themed, inventory management &amp; auto-battler game!</li>
-<li>Choose your monsters, place and combine them, create synergies and beat your opponents!</li>
-<li>After every battle, choose new monsters for your team and try to create the ultimate combo.</li>
-<li>NeoDuel: Backpack Monsters is an asynchronous multiplayer game, meaning that time is on your side.</li>
-<li>Need a break? Go ahead and take a sip of coffee for us. Your progress will be here when you return, your opponents will be ready and waiting still.</li>
-<li>Use crystals to evolve your monsters to their stronger forms and fuse different monsters to discover unique creations.</li>
-<li>From your humble family street to the shiny stadiums of monster battling, win against other players to aspire!</li>
-<li>NeoDuel will include ranks and features designed for competitive play.</li>
-<li>Use unique modifications and upgrades to alter your playstyle and maximize the potential of your team!</li>
-<li>Explore different tactics to discover strong synergies.</li>
-</ul>
-<p>The demo seems to work just great on Kubuntu Linux. Nice to see!</p>
-<p>It releases in Q3 2024. There's a <a href="https://store.steampowered.com/app/2693940/NEODUEL_Backpack_Monsters/" rel="noopener" target="_blank">demo available on Steam</a> with Native Linux support.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/neoduel-backpack-monsters-blends-an-inventory-pvp-auto-battler-with-a-monster-fusing-twist/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/neoduel-backpack-monsters-blends-an-inventory-pvp-auto-battler-with-a-monster-fusing-twist/</guid>
-      <pubDate>Tue, 28 May 2024 17:57:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1904615323id24610gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Demo</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Zelda 64: Recompiled, the Majora&#39;s Mask PC port v1.1 brings various upgrades</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Zelda 64: Recompiled was <a href="https://www.gamingonlinux.com/2024/05/zelda-majoras-mask-gets-a-pc-port-with-a-new-open-source-tool-for-nintendo-64-games/" rel="noopener" target="_blank">pretty interesting news recently</a>, a PC port of Nintendo's The Legend of Zelda: Majora's Mask using the new <a href="https://github.com/N64Recomp/N64Recomp" rel="noopener" target="_blank">N64: Recompiled</a> tool and now a fresh update is out to improve it further.</p>
-<p>It was already impressive, and now even more so. It's only going to keep getting better thanks to it being open source. Linux players especially might want this one, due to a SDL crash fix. As a reminder, you do need a copy of the game to work with Zelda 64: Recompiled, since it does not provide that for you (obviously).</p>
-<p>Version 1.1.0 brings:</p>
-<blockquote>
-<ul>
-<li>Added an analog "free" camera in the style of later entries in the series. Moving the right stick will allow you to freely rotate the camera, and pressing the Target button or going through an entrance will switch back to the normal camera.</li>
-<li>Improved motion blur effect at high framerates by using a high precision internal framebuffer (won't be enabled on machines with less than 1GB of VRAM).</li>
-<li>Implemented N64 noise dither (affects the motion blur scenes).</li>
-<li>Extended Dawn of the X Day screen to account for faster load times to match console timings.</li>
-<li>Added a configurable scaled deadzone option to the menu. (<a href="https://github.com/Zelda64Recomp/Zelda64Recomp/pull/257" rel="noopener" target="_blank">#257</a>)</li>
-<li>Added the option to remap the menu button on controllers. (<a href="https://github.com/Zelda64Recomp/Zelda64Recomp/pull/181" rel="noopener" target="_blank">#181</a>)</li>
-<li>Added an automatic save backup system to reduce chance of losing data if saving gets interrupted. (<a href="https://github.com/Zelda64Recomp/Zelda64Recomp/pull/260" rel="noopener" target="_blank">#260</a>)</li>
-<li>Fixed a Linux crash on startup by forcing SDL2 video driver selection to X11. (<a href="https://github.com/Zelda64Recomp/Zelda64Recomp/pull/197" rel="noopener" target="_blank">#197</a>)</li>
-<li>Fixed the Skull Kid "curse" effect in very wide aspect ratios. (<a href="https://github.com/Zelda64Recomp/Zelda64Recomp/pull/259" rel="noopener" target="_blank">#259</a>)</li>
-<li>Added a main volume slider. (<a href="https://github.com/Zelda64Recomp/Zelda64Recomp/pull/267" rel="noopener" target="_blank">#267</a>)</li>
-</ul>
-</blockquote>
-<p>Update trailer:</p>
-<div class="hidden_video" data-video-id="-mhGcLnnrsw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/422f78973c1c52c191b99b7a541320f8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-mhGcLnnrsw" target="_blank">See video</a></div></div>
-<p>See more on the <a href="https://github.com/Zelda64Recomp/Zelda64Recomp" rel="noopener" target="_blank">GitHub page</a>.</p>
-<p>This isn't the only PC port, as we also just had <a href="https://www.gamingonlinux.com/2024/05/2-ship-2-harkinian-another-unofficial-pc-port-of-zelda-majoras-mask-is-out-now/" rel="noopener" target="_blank">2 Ship 2 Harkinian release</a> as well.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/zelda-64-recompiled-the-majoras-mask-pc-port-v1-1-brings-various-upgrades/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/zelda-64-recompiled-the-majoras-mask-pc-port-v1-1-brings-various-upgrades/</guid>
-      <pubDate>Tue, 28 May 2024 17:38:06 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1641699311id24609gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Misc</category>
-      
-      <category>Nintendo</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>VoxeLibre (formerly MineClone2) v0.87 released moving away from Minecraft</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>VoxeLibre (formerly MineClone2), a free and open source sandbox game, has a brand new release available as they begin more movement to end the Minecraft clone wars. Well, as much as they can anyway, because it still looks and acts like Minecraft and is one of the best free alternatives.</p>
-<p>Not only is this the first release with a new name, but it also has plenty of new mechanics and some new mobs included too.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13774213861716915765gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13774213861716915765gol1.jpg"/></a></p>
-<p>Some of the highlights of this release include:</p>
-<ul>
-<li>A rewrite of the Potions and Effects system. This includes new effects, new potions and brewing recipes being added.</li>
-<li>Rewritten Nether Portals making them work better, and now they connect up properly.</li>
-<li>Improvements to the mob spawning system.</li>
-<li>New mobs:
-<ul>
-<li>Rover is a new mob, replacing the enderman.</li>
-<li>Stalker is another new mob, replacing the creeper.</li>
-</ul>
-</li>
-<li>Eating is now delayed instead of instant and has a first-person animation.</li>
-<li>Multiple new blocks.</li>
-<li>Capes are included in the character customisation.</li>
-<li>Cherry blossom particles.</li>
-<li>Leather armour can now be coloured (and washed).</li>
-<li>Sign text editing.</li>
-<li>+ much, much more.</li>
-</ul>
-<p>This sounds like a pretty exciting release for the project! Have many of you been playing it, what are your thoughts?</p>
-<p>See the <a href="https://git.minetest.land/VoxeLibre/VoxeLibre/src/branch/master/releasenotes/0_87-the_prismatic_release.md" rel="noopener" target="_blank">full release notes</a> for all the details. You can download it via <a href="https://www.minetest.net/" rel="noopener" target="_blank">Minetest</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/voxelibre-formerly-mineclone2-v0-87-released-moving-away-from-minecraft/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/voxelibre-formerly-mineclone2-v0-87-released-moving-away-from-minecraft/</guid>
-      <pubDate>Tue, 28 May 2024 17:08:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1347234874id24607gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Casual</category>
-      
-      <category>Free Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Terraria: The Board Game live on Kickstarter - goal met almost instantly</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Terraria the smash-hit indie game is being turned into a tabletop experience with Terraria: The Board Game. It's crowdfunding on Kickstarter, and obviously it was going to do well.</p>
-<p>Their goal was met almost instantly! At time of writing the main goal is £19,850 and they have £223,697 pledged. So yeah, clearly a lot of people are wanting in on this one and who could blame them? It looks great! Official too of course, made by Paper Fort Games in collaboration with Re-Logic!</p>
-<p>With this adaption it will be playable for 1-4 people (solo play is an option) with world exploration, co-op play, dice-based combat, deck-building and little miniatures for bosses you can paint too.</p>
-<div class="hidden_video" data-video-id="OrX4wCKiVmA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e28e9b334e26b58c644f02a6b03406a4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/OrX4wCKiVmA" target="_blank">See video</a></div></div>
-<p>It's certainly not cheap though at £62 to get it (not including shipping), but this is a special game adaption, it's quite different to just going into a local store and picking up a copy of Monopoly. You're paying to support the creators as much as you are getting a board game for you to play.</p>
-<p>Check out the <a href="https://www.kickstarter.com/projects/paperfortgames/terraria-the-board-game" rel="noopener" target="_blank">full project on Kickstarter</a>.</p>
-<p>Will you be jumping in for this one as well?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/05/terraria-the-board-game-live-on-kickstarter-goal-met-almost-instantly/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/05/terraria-the-board-game-live-on-kickstarter-goal-met-almost-instantly/</guid>
-      <pubDate>Tue, 28 May 2024 16:45:25 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/729970181id24605gol.jpg" type="image/jpeg"/>
-      
-      <category>Board Game</category>
-      
-      <category>Crowdfunding</category>
-      
-      <category>Misc</category>
       
     </item>
     
