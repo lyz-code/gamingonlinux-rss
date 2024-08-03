@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-08-02 07:25:11.769405</pubDate>
+    <pubDate>2024-08-03 07:22:47.936973</pubDate>
 
     
     <image>
@@ -18,6 +18,296 @@
     </image>
 
     
+    
+    <item>
+      <title>FNA gets Direct3D 11 support on Linux thanks to DXVK</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Developer Ethan Lee yesterday announced the release of FNA 24.08, bringing with it preparation for the upcoming release of SDL 3 and a fun addition of Direct3D 11 support on Linux thanks to DXVK.</p>
+<p>What is FNA? It's a reimplementation of the Microsoft XNA Game Studio 4.0 Refresh libraries. Quite a lot of games use it since it's open source and cross-platform. Games using it includes the likes of Streets of Rage 4, Terraria, Unrailed!, Axiom Verge 1 &amp; 2 and the list <a href="http://www.flibitijibibo.com/index.php?page=Portfolio/Tools#01_FNA.txt" rel="noopener" target="_blank">goes on</a>.</p>
+<p><a href="https://www.gamingonlinux.com/2023/05/fna-direct3d-11-support-on-linux-using-dxvk-and-vkd3d/" rel="noopener" target="_blank">FNA release 23.05</a> from last year pulled in the early initial Alpha of Direct3D 11 support on Linux, with FNA 24.08 now making it properly official. The DXVK project itself merged in the DXVK-Native code way back in <a href="https://www.gamingonlinux.com/2022/11/vulkan-based-d3d9-10-and-11-translation-layer-dxvk-version-20-out-now/" rel="noopener" target="_blank">DXVK 2.0 at the end of 2022</a>. What's the point of it? Even easier game porting, with it translating Microsoft's D3D API to Vulkan for Native Linux games.</p>
+<p>Speaking about the release, Lee said in the FNA <a href="https://discord.gg/fna-xna" rel="noopener" target="_blank">Discord</a>:</p>
+<blockquote>
+<p>Big surprise, it's another release that's mostly SDL3 prep and not much else. But don't be fooled, this month was huge for FNA - for SDL 3.0 the maintainers have decided to go with our GPU API, and we've even been cleared to try and get it into the first release! We've been focused entirely on GPU since then, and progress continues - we're hoping to have the API in Beta very very soon, barring any oddities from D3D12.</p>
+<p>At the same time, FNA's D3D11 support on Linux is now officially complete and supported! Steam developers are encouraged to request the "Sniper" runtime for their native Linux versions, so users can enable DXVK support if they'd like. I expect our GPU API to be just as good at least, but it's a nice thing to have in the meantime.</p>
+<p>It's been a graphics-heavy summer for sure, with way more crunch than any of us would have liked, but the results will definitely be worth it!</p>
+</blockquote>
+<p>See more on the <a href="https://fna-xna.github.io/" rel="noopener" target="_blank">FNA website</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/fna-gets-direct3d-11-support-on-linux-thanks-to-dxvk/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/fna-gets-direct3d-11-support-on-linux-thanks-to-dxvk/</guid>
+      <pubDate>Fri, 02 Aug 2024 16:09:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1737790901id24999gol.png" type="image/jpeg"/>
+      
+      <category>Game Dev</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux / Steam Deck user share on Steam stays flat for July 2024</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>No news is good news, as the saying goes, or something like that. Valve updated the Steam Hardware &amp; Software Survey for July 2024 and for Linux / Steam Deck the changes were pretty minimal. You can see the Linux share over time on <a href="https://www.gamingonlinux.com/steam-tracker/" rel="noopener" target="_blank">our Steam Tracker</a>.</p>
+<p class="plain-list-title">For July 2024 the operating system stats are:</p>
+<ul>
+<li>Windows 96.55% -0.06%</li>
+<li>Linux: 2.08% (no change)</li>
+<li>macOS 1.37% +0.06%</li>
+</ul>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18872429541722613848gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18872429541722613848gol1.jpg"/></a></p>
+<p class="plain-list-title">Here's the main Linux distribution stats:</p>
+<ul>
+<li>SteamOS Holo 64 bit (Steam Deck) 40.97% -0.20%</li>
+<li>Arch Linux 64 bit 7.99% -0.09%</li>
+<li>Freedesktop SDK 23.08 (Flatpak runtime) 64 bit 6.35% -0.36%</li>
+<li>Linux Mint 21.3 64 bit 5.20% +0.10%</li>
+<li>Ubuntu 22.04.4 LTS 64 bit 4.04% -0.22%</li>
+<li>Ubuntu 24.04 LTS 64 bit 3.41% +0.38%</li>
+<li>Ubuntu Core 22 64 bit 2.99% +0.02%</li>
+<li>"Manjaro Linux" 64 bit 2.93% -0.16%</li>
+<li>Pop!_OS 22.04 LTS 64 bit 2.73% +0.08%</li>
+<li>Debian GNU/Linux 12 (bookworm) 64 bit 2.44% +2.44%</li>
+<li>Other 20.96% -1.98%</li>
+</ul>
+<p>See more on <a href="https://store.steampowered.com/hwsurvey/" rel="noopener" target="_blank">the Steam Survey</a>.</p>
+<p><em>Meanwhile according to Statcounter, <a href="https://www.gamingonlinux.com/2024/08/linux-hits-another-all-time-high-for-july-2024-according-to-statcounter/" rel="noopener" target="_blank">Linux overall hit another all-time high</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/linux-steam-deck-user-share-on-steam-stays-flat-for-july-2024/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/linux-steam-deck-user-share-on-steam-stays-flat-for-july-2024/</guid>
+      <pubDate>Fri, 02 Aug 2024 15:51:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>Survey</category>
+      
+      <category>Survey Results</category>
+      
+    </item>
+    
+    <item>
+      <title>Glorious retro FPS &#39;Selaco&#39; is now Steam Deck Verified and plans many huge gameplay upgrades</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>As far as retro-styled shooters go, Selaco is probably <a href="https://www.gamingonlinux.com/2024/05/selaco-is-now-in-early-access-one-of-the-best-shooters-ive-played-in-forever/" rel="noopener" target="_blank">one of the best I've ever played</a>. With chunky visuals, fun combat and some really nice level design. Now, it's Steam Deck Verified and we have a better idea of what's to come next.</p>
+<p>Valve has now given it the glorious green <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified tick of approval, with their Native Linux version as of July 31st. So you can now hopefully be sure that you can take it on the go, and carry on with it on your desktop whenever you want.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8514387681722602422gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8514387681722602422gol1.jpg"/></a></p>
+<p>As for what's to come next? They have pretty exciting plans, although they're not going to give us any dates on when to expect them. Posted in a <a href="https://store.steampowered.com/news/app/1592280/view/4374768959778727710" rel="noopener" target="_blank">developer update</a> on Steam here's some of what's coming in the <em>next </em>update:</p>
+<blockquote>
+<ul>
+<li>Backpack Reloading - This was a frequently requested feature. This is a system where, after not equipping a weapon for a while, the weapon will be automatically reloaded with a full magazine (provided there is enough ammo for it). This ensures that players will always swap to a loaded weapon in the middle of combat. This system is optional and can be disabled.</li>
+<li>Improved Immersion &amp; Interactivity - The next update adds brand new visual and audio effects, improves rain to look more atmospheric, adds new interactables and more. If you like a world that feels believable and reactive, you will love some of these changes.</li>
+<li>Weapon Rebalancing - Another round of weapon balancing! This also includes making automatic weapons more consistent with their damage output. The current version on Steam has an oversight where there is a solid chance to roll low damage numbers consecutively, making some automatic weapons feel weaker than they are meant to be.</li>
+<li>Stagger improvements - Currently, enemies are less likely to stagger the higher your difficulty is. This ended up being a bad idea because it makes certain weapons lose their usefulness. The next update will address this and compensate with something more reasonable.</li>
+<li>Another round of performance improvements - A large amount of code is being optimized to reduce the amount of strain on your hardware, resulting in smoother frames and less hiccups.</li>
+<li>A slew of other Quality of Life Improvements - Vastly improved Grenade Throwing, new Map Icons, a DMR that respects your Hold/Toggle setting and more.</li>
+</ul>
+</blockquote>
+<p>There's a lot more than that, although the below content is likely to be a fair bit later. They're only a small team, and the game has a lot in it already, so they do have plenty of time to get this right. Still, I can't help but be excited by plenty of their future plans that include:</p>
+<blockquote>
+<ul>
+<li>Story Content - This is the big one. Selaco will get a major voice-over pass to flesh out Dawn as a character, the world of Selaco and the general plot. We unfortunately ran out of time to do this at launch, which made certain parts of the game feel more empty than we'd like. <em>This is planned to arrive around the end of the year.</em></li>
+<li>Randomizer Mode - Another big feature is the Randomizer Mode. This aims to add tons of replayability to the game. It randomizes enemy spawns, introduces a Rarity System where some weapons and enemies are more powerful than usual, repositions ammo pickups and offers tons of customization to tweak the game to your liking.<em> This mode is planned to launch alongside the Story Content update.</em></li>
+<li>Improved enemy tacticsI - Better Patrol modes, a goal system, cover system and more are planned for our AI. These will take a while, though, and may not appear until Chapter 2. Please bear with us as we give them an additional boost in intelligence!</li>
+<li>Adjustable difficulty during the campaign - We are looking into a system that allows players to drop the difficulty at any time during a campaign playthrough. We wanted to add this earlier, but it was quite a complicated problem to tackle and will need a bit more time.</li>
+<li>Customizable Mutators - We are working on a system that allows players to customize individual mutators before starting a new campaign. For example, tweak Hard-Boiled Mode to disable the additional projectile speed for the enemy, or play Hardcore Mode but with standard Weapon Reload behavior. <em>Mutators that have been customized will show an apostrophe symbol at the Chapter Completion Screen</em></li>
+<li>Improved Safe Rooms - We are working on additional features to make Safe Rooms more interesting and useful. This includes a free one-time use Health Cache where players can refill their health, and an Armor Station where players can purchase armor. However, the latter might not appear until Chapter 2.</li>
+<li>Chapter 2 is coming along nicely - Chapter 2 introduces a large amount of new systems which we will talk about in a blog post closer to its launch.</li>
+</ul>
+</blockquote>
+<p>You can <a href="https://store.steampowered.com/app/1592280/Selaco/?curator_clanid=4218320" rel="noopener nofollow" target="_blank">buy Selaco on Steam</a> priced at $24.99 / €24.50 / £20.99. </p>
+<div class="hidden_video" data-video-id="nUbF8Ytadx0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f9d495c1130ff6c161a0637adada5e7c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/nUbF8Ytadx0" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/glorious-retro-fps-selaco-is-now-steam-deck-verified-and-plans-many-huge-gameplay-upgrades/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/glorious-retro-fps-selaco-is-now-steam-deck-verified-and-plans-many-huge-gameplay-upgrades/</guid>
+      <pubDate>Fri, 02 Aug 2024 12:41:53 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/130507826id24997gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>FPS</category>
+      
+    </item>
+    
+    <item>
+      <title>Intel to lay off around 15,000 staff as they try make $10 billion in savings</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It's not just the gaming industry that likes to get fat and then fire everyone, as Intel has announced a cost-cutting exercise where they will be letting go of around 15,000 staff.</p>
+<p>Announced as part of their Q2 2024 <a href="https://www.intc.com/news-events/press-releases/detail/1704/intel-reports-second-quarter-2024-financial-results" rel="noopener" target="_blank">financial results</a>, followed up by <a href="https://www.intel.com/content/www/us/en/newsroom/news/actions-accelerate-our-progress.html" rel="noopener" target="_blank">a note</a> from Intel CEO Pat Gelsinger, the reduction in staff is to be completed by the end of the year. No matter how you want to spin it, 15,000 is a ridiculous amount of people overall for a single company to just get rid of.</p>
+<p>Gelsinger mentioned how it's "an incredibly hard day for Intel as we are making some of the most consequential changes in our company’s history". Words that will likely fall on deaf ears for those being told their time is up. Why though? According to Gelsinger, Intel's revenue has " not grown as expected – and we’ve yet to fully benefit from powerful trends, like AI".</p>
+<p>Their results show they've seen revenue of $12.8 billion in Q2, which is down 1% year over year. Gelsinger notes for example how in 2020 annual revenue was "$24 billion higher than it was last year, yet our current workforce is actually 10% larger now".</p>
+<p>How long before the AI bubble really bursts? Or perhaps stuff like this is the beginning. </p>
+<p><em>Intel's shares have fallen about 23% at time of writing.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/intel-to-lay-off-around-15000-staff-as-they-try-make-10-billion-in-savings/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/intel-to-lay-off-around-15000-staff-as-they-try-make-10-billion-in-savings/</guid>
+      <pubDate>Fri, 02 Aug 2024 12:29:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/intel.png" type="image/jpeg"/>
+      
+      <category>Hardware</category>
+      
+      <category>Intel</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>The free game Infinitode 2 - Infinite Tower Defense added Linux support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Here's a fun surprise for you today, Infinitode 2 - Infinite Tower Defense is a free to play game that just added Native Linux support on July 30th.</p>
+<p>If you've ever played a TD game, you'll know what to expect. Pick a level, place down towers and watch as they destroy various types of enemies that try to make their way towards your base. There's a few fun things that makes this one different though including a big 400+ research list that looks like something out of Path of Exile. There's quite a lot of varied maps, along with a map editor that has live leaderboards on each level along with various boss fights. Add to that the wonderful chiptune music, the many different types of towers with per-tower upgrades and individual tower levels for special bonuses, various gameplay modifiers, mining for resources and much more.</p>
+<p>The trailer is pretty old but still gives you a good idea of what to expect:</p>
+<div class="hidden_video" data-video-id="g0eQsxUjoDY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/35d935a725c0f9111e66a768579a8493.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/g0eQsxUjoDY" target="_blank">See video</a></div></div>
+<p>I only clicked Play on this one to check if the Linux version actually worked properly since it's brand new, and ended up sinking quite a bit of time into it. No issues encountered at all and seems like a lot of fun to put some hours into. So I'm not surprised to see it has a Very Positive rating on Steam.</p>
+<p>Grab it <a href="https://store.steampowered.com/app/937310/Infinitode_2__Infinite_Tower_Defense/" rel="noopener" target="_blank">free to play on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/the-free-game-infinitode-2-infinite-tower-defense-added-linux-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/the-free-game-infinitode-2-infinite-tower-defense-added-linux-support/</guid>
+      <pubDate>Fri, 02 Aug 2024 10:40:14 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1662444126id24995gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>We&#39;ll get our first look at Civilization VII on August 20</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>2K have announced that Civilization VII will get a world premiere of gameplay shown off during Gamescom Opening Night Live.</p>
+<p>On August 20th at 11 AM PT / 6 PM UTC it will begin on the Gamescom <a href="http://twitch.tv/gamescom" rel="noopener" target="_blank">Twitch</a>, and later afterwards at 1:30PM PT / 8:30PM UTC there will also be a Civilization VII Gameplay Showcase direct from developer Firaxes on their own <a href="http://twitch.tv/Firaxisgames" rel="noopener" target="_blank">Twitch</a> channel. Here's what they said about it:</p>
+<blockquote>
+<p>For more than 20 minutes, we'll be sharing exclusive insights from the development team about this revolutionary new chapter in the franchise, including our vision for the game as well as its innovative new features. For a one-stop shop on everything <em>Civilization VII</em>, you'll definitely want to catch this one live!</p>
+<p>But that’s just the start! From August 21 to 25, attendees at Gamescom should be sure to stop by the <em>Civilization VII</em> booth located in Hall 6.</p>
+<p>Finally, we'll be heading over to PAX West in Seattle and hope to see you there! On August 31, Kinda Funny Games' Greg Miller will host our developer panel, where we'll share new insights and behind-the-scenes anecdotes from the creation of <em>Civilization VII</em>. For those attending in-person, we'll be located in the Main Theater on the 5th floor of the Summit Building.</p>
+</blockquote>
+<p>The press release didn't go into any other detail, and gave little away to the imagination other than the basic details.</p>
+<p>What are you hoping to see in Civilization VII? As noted <a href="https://www.gamingonlinux.com/2024/06/sid-meiers-civilization-vii-arrives-in-2025-with-a-teaser/" rel="noopener" target="_blank">in the original announcement I covered</a>, they do plan to offer Native Linux support once again for this game.</p>
+<p>You can <a href="https://store.steampowered.com/app/1295660/Sid_Meiers_Civilization_VII/" rel="noopener" target="_blank">follow it on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/well-get-our-first-look-at-civilization-vii-on-august-20/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/well-get-our-first-look-at-civilization-vii-on-august-20/</guid>
+      <pubDate>Fri, 02 Aug 2024 10:05:40 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/291833201id24994gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>4x</category>
+      
+      <category>Steam</category>
+      
+      <category>Strategy</category>
+      
+    </item>
+    
+    <item>
+      <title>ChimeraOS 46-1 released fixing up some AMD issues, sound fix on some AYANEO &amp; AYN devices</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After the <a href="https://www.gamingonlinux.com/2024/07/chimeraos-46-brings-major-upgrades-and-enhanced-handheld-support-for-gpd-ayaneo-onexplayer/" rel="noopener" target="_blank">big release of ChimeraOS 46 recently</a> that further expanded the gaming handheld support with this Linux distribution, ChimeraOS 46-1 is out now to clean up some issues.</p>
+<p>Unfortunately, some users discovered a black screen problem across AMD RX 400/500 GPUs, which this release fixes. You will need to run a manual update to get around it as detailed in the <a href="https://github.com/ChimeraOS/chimeraos/wiki/Release-Notes#chimeraos-46-1-2024-08-01" rel="noopener" target="_blank">release notes</a>.</p>
+<p>The main changes for this release are:</p>
+<blockquote>
+<ul>
+<li>Restores support for AMD RX 400/500 series GPUs with a workaround for gamescope (Thank you to the Bazzite team).</li>
+<li>Reverted Aya Neo 2/2S to use full resolution by default.</li>
+<li>A fix for automatic recovery when the filesystem is corrupted.</li>
+<li>Fix sound on some AYN and AYANEO devices broken by v46.</li>
+</ul>
+</blockquote>
+<p>You have a few good choices to run Linux on handhelds now, and it's great to see! Generally a much better overall experience compared to how much of a nuisance Windows is on a small screen. <a href="https://www.gamingonlinux.com/2024/07/bazzite-linux-36-out-now-bringing-full-asus-rog-ally-x-support/" rel="noopener" target="_blank">Bazzite</a> is another good option that also recently had a big update!</p>
+<p><em>What's your preferred choice for handheld gaming?</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/chimeraos-46-1-released-fixing-up-some-amd-issues-sound-fix-on-some-ayaneo-ayn-devices/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/chimeraos-46-1-released-fixing-up-some-amd-issues-sound-fix-on-some-ayaneo-ayn-devices/</guid>
+      <pubDate>Fri, 02 Aug 2024 09:42:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1096507533id24993gol.jpg" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Here&#39;s the most popular Steam Deck games for July 2024</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A fresh month is here, so it's time to take a look at what's been popular amongst players on Steam Deck, and another chance for you to all discuss what you've been playing across Desktop Linux and Steam Deck.</p>
+<p>Valve now have their always up to date list on <a href="https://store.steampowered.com/charts/steamdecktopplayed" rel="noopener" target="_blank">Steam</a>, so you can check it yourself any time.</p>
+<p class="plain-list-title">For July 2024 here's what was most played:</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" rel="noopener" target="_blank">ELDEN RING</a></li>
+<li><a href="https://store.steampowered.com/app/413150/Stardew_Valley/" rel="noopener" target="_blank">Stardew Valley</a></li>
+<li><a href="https://store.steampowered.com/app/2379780/Balatro/" rel="noopener" target="_blank">Balatro</a></li>
+<li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" rel="noopener" target="_blank">Baldur's Gate 3</a></li>
+<li><a href="https://store.steampowered.com/app/275850/No_Mans_Sky/" rel="noopener" target="_blank">No Man's Sky</a></li>
+<li><a href="https://store.steampowered.com/app/1868140/DAVE_THE_DIVER/" rel="noopener" target="_blank">DAVE THE DIVER</a></li>
+<li><a href="https://store.steampowered.com/app/1145360/Hades/" rel="noopener" target="_blank">Hades</a></li>
+<li><a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" rel="noopener" target="_blank">Grand Theft Auto V</a></li>
+<li><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/" rel="noopener" target="_blank">Vampire Survivors</a></li>
+<li><a href="https://store.steampowered.com/app/377160/Fallout_4/" rel="noopener" target="_blank">Fallout 4</a></li>
+<li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" rel="noopener" target="_blank">Red Dead Redemption 2</a></li>
+<li><a href="https://store.steampowered.com/app/646570/Slay_the_Spire/" rel="noopener" target="_blank">Slay the Spire</a></li>
+<li><a href="https://store.steampowered.com/app/2321470/Deep_Rock_Galactic_Survivor/" rel="noopener" target="_blank">Deep Rock Galactic: Survivor</a></li>
+<li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" rel="noopener" target="_blank">Cyberpunk 2077</a></li>
+<li><a href="https://store.steampowered.com/app/1145350/Hades_II/" rel="noopener" target="_blank">Hades II</a></li>
+<li><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" rel="noopener" target="_blank">The Witcher 3: Wild Hunt</a></li>
+<li><a href="https://store.steampowered.com/app/1293830/Forza_Horizon_4/" rel="noopener" target="_blank">Forza Horizon 4</a></li>
+<li><a href="https://store.steampowered.com/app/2552430/KINGDOM_HEARTS_HD_1525_ReMIX/" rel="noopener" target="_blank">KINGDOM HEARTS -HD 1.5+2.5 ReMIX-</a></li>
+<li><a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/" rel="noopener" target="_blank">The Binding of Isaac: Rebirth</a></li>
+<li><a href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/" rel="noopener" target="_blank">Hogwarts Legacy</a></li>
+</ul>
+<hr/>
+<p>Over to you in the comments: what have you been playing lately? And, what are you most excited about picking up soon?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/heres-the-most-popular-steam-deck-games-for-july-2024/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/heres-the-most-popular-steam-deck-games-for-july-2024/</guid>
+      <pubDate>Fri, 02 Aug 2024 09:32:19 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/304862447id24992gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Listicle</category>
+      
+      <category>Misc</category>
+      
+      <category>Round-up</category>
+      
+    </item>
     
     <item>
       <title>Fox-girl platformer Kitsune Tails is a true quality retro-inspired good time - out now</title>
@@ -3634,341 +3924,6 @@ This classic 1995 Bungie™ FPS is now maintained by the fan community. Experien
       <category>FPS</category>
       
       <category>Free Game</category>
-      
-    </item>
-    
-    <item>
-      <title>SCAD is Twisted Metal meets Vampire Survivors and I want it now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I'm a total sucker for over the top action, especially when you're tearing down hordes of enemies in whatever bullet hell / bullet heaven game comes along since Vampire Survivors kicked it all off. The next one I need in my life is SCAD.</p>
-<p>More about it: "Adrenaline Fueled Chaos - Take a journey through a dangerous world where humanity is on the verge of extinction. Following a catastrophic event caused by a malicious corporation's experiments, the remnants of civilization survive in fortified junkyard enclaves. Take on missions. Engage in a never-ending battle with hordes of enemies across different environments."</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="F7yurJ--pBc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c27f3a388244aabc388de26c27c5faa4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/F7yurJ--pBc" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Story mode.</li>
-<li>Complete challenging missions enriched with special tasks.</li>
-<li>Salvage materials from the remnants of civilization.</li>
-<li>Destroy thousands of zombie hordes.</li>
-<li>Face off and defeat monstrous bosses.</li>
-<li>Upgrade your vehicle and weapons to change the course of the world.</li>
-<li>Beautiful isometric pixel art.</li>
-</ul>
-</blockquote>
-<p>What's also interesting here is the developer, NAISU, usually make <em>hentai</em> games. And somehow, an aspiring game dev managed to <a href="https://www.reddit.com/r/IndieDev/comments/1e3uwdp/comment/ldae1fi/" rel="noopener" target="_blank">convince them</a> to work on something else. I'm glad they did, because this looks <em>nuts</em>.</p>
-<p>A first demo should be out in September, with Early Access in October.</p>
-<p>You can follow <a href="https://store.steampowered.com/app/2854620/SCAD/" rel="noopener" target="_blank">SCAD on Steam</a>. You'll need <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> to play it.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/scad-is-twisted-metal-meets-vampire-survivors-and-i-want-it-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/scad-is-twisted-metal-meets-vampire-survivors-and-i-want-it-now/</guid>
-      <pubDate>Tue, 16 Jul 2024 10:10:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1807508976id24897gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Action</category>
-      
-      <category>Bullet Hell</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>GameCube emulator Dolphin adds RetroAchievements support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another nice win for people who love hitting challenges, as <a href="https://retroachievements.org/" rel="noopener" target="_blank">RetroAchievements</a> support has now been added to Dolphin for GameCube. Currently not in the Wii side of the emulator, right now the focus is on getting it working well for GameCube emulation.</p>
-<p>Showing the true power of open source, they were able to do this thanks to the PlayStation 2 emulator PCSX2, which <a href="https://www.gamingonlinux.com/2024/07/ps2-emulator-pcsx2-20-is-out-now-and-its-a-huge-upgrade/" rel="noopener" target="_blank">also recently had a major new release</a> that came with RetroAchievements support.</p>
-<p>In the <a href="https://dolphin-emu.org/blog/2024/07/15/unlocked-retroachievements-come-dolphin/" rel="noopener" target="_blank">blog post</a> the Dolphin team mentioned how "One of the things that helped was the PCSX2 implementation of RetroAchievements, which acted as a base for the developers who worked on the Dolphin version of the implementation. As well, their own achievement creation library had to be ported over to work with Dolphin's memory handling.". </p>
-<p>Took them a good while to get it going, 18 months to get it all ready and due to how GameCube games work, it sounds like it was a lot of effort to ensure they actually work correctly.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9425216871721123948gol1.jpg"/></p>
-<p>In case you also missed the recent news: <a href="https://www.gamingonlinux.com/2024/07/gamecube-and-wii-emulator-dolphin-moves-to-a-more-rapid-release-cycle/" rel="noopener" target="_blank">Dolphin has moved to a more rapid release cycle</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/gamecube-emulator-dolphin-adds-retroachievements-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/gamecube-emulator-dolphin-adds-retroachievements-support/</guid>
-      <pubDate>Tue, 16 Jul 2024 10:00:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/599626251id24896gol.jpg" type="image/jpeg"/>
-      
-      <category>Emulation</category>
-      
-      <category>Misc</category>
-      
-      <category>Nintendo</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Get ready to beat &#39;em up in Steam&#39;s Fighting Games Fest that&#39;s now live</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Time to choose your fighter? Steam's Fighting Games Fest is now live and will run through July 22nd so you can get some delicious discounts. You'll find a few games that might not perhaps be specifically fighting, as of course Valve like to leave this events just a little bit open to interpretation from developers entering their games into it.</p>
-<p>Valve also made a trailer for the event:</p>
-<div class="hidden_video" data-video-id="asZbmBYVPjA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/27f3fc44787de51dfeb6e2ebf53b08e2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/asZbmBYVPjA" target="_blank">See video</a></div></div>
-<p>Some of the fist-pumping good deals include my quick-picks below split between Steam Deck and ProtonDB ratings and noting any that have a Native Linux version too of course.</p>
-<p><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"> Steam Deck Verified:</img></p>
-<p><a href="https://store.steampowered.com/app/851850/DRAGON_BALL_Z_KAKAROT/" rel="noopener" target="_blank">DRAGON BALL Z: KAKAROT</a> - 75% off (ProtonDB Platinum)</p>
-<p><a href="https://store.steampowered.com/app/307780/Mortal_Kombat_X/" rel="noopener" target="_blank">Mortal Kombat X</a> - 75% off (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/985890/Streets_of_Rage_4/" rel="noopener" target="_blank">Streets of Rage 4</a> - 60% off (Native Linux)</p>
-<p><a href="https://store.steampowered.com/app/285900/Gang_Beasts/" rel="noopener" target="_blank">Gang Beasts</a> - 60% off (Native Linux)</p>
-<p><a href="https://store.steampowered.com/app/383980/Rivals_of_Aether/" rel="noopener" target="_blank">Rivals of Aether</a> - 60% off (ProtonDB Gold)</p>
-<p><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable:</p>
-<p><a href="https://store.steampowered.com/app/544750/SOULCALIBUR_VI/" rel="noopener" target="_blank">SOULCALIBUR VI</a> - 90% off (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/627270/Injustice_2/" rel="noopener" target="_blank">Injustice 2</a> - 90% off (ProtonDB Silver)</p>
-<p><a href="https://store.steampowered.com/app/304390/FOR_HONOR/" rel="noopener" target="_blank">FOR HONOR</a> - 85% off (ProtonDB Silver)</p>
-<p><a href="https://store.steampowered.com/app/1384160/GUILTY_GEAR_STRIVE/" rel="noopener" target="_blank">GUILTY GEAR -STRIVE-</a> 50% off (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/1778820/TEKKEN_8/" rel="noopener" target="_blank">TEKKEN 8</a> - 43% off (ProtonDB Gold)</p>
-<p>Check out <a href="https://store.steampowered.com/category/fighting" rel="noopener" target="_blank">the full event</a>.</p>
-<p>If you do pick up anything or spot a particularly good deal, as always: be sure to come and comment what and help out your fellow GamingOnLinux readers. Sharing is caring. No throwing fists in the comments please. Our comments are not turn-based combat, or are they? You decide. FIGHT!</p>
-<p><em>Ps. <a href="https://store.steampowered.com/app/1486630/Intravenous/" rel="noopener" target="_blank">Intravenous</a> is free to keep on Steam for 24 hours.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/get-ready-to-beat-em-up-in-steams-fighting-games-fest-thats-now-live/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/get-ready-to-beat-em-up-in-steams-fighting-games-fest-thats-now-live/</guid>
-      <pubDate>Mon, 15 Jul 2024 17:44:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1891397851id24895gol.jpg" type="image/jpeg"/>
-      
-      <category>Event</category>
-      
-      <category>Misc</category>
-      
-      <category>On Sale</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Megacopter: Blades of the Goddess is a quality shoot &#39;em up throwback to Desert Strike</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Inspired by the Strike series (Desert/Jungle/Urban Strike) and Choplifter, Megacopter: Blades of the Goddess is a lot of fun if you love fast-paced shoot 'em up action. <em>Note: the developer sent a key.</em></p>
-<p>As someone who grew up playing Desert Strike and later games, this one really spoke to me. Even if you don't have any nostalgia for the classics, it's still a well-made shoot 'em up full of twists and turns. Here you're not just flying any old helicopter, but the Megacopter, which appears to be somewhat alive and thirsty for blood.</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="rtM2r14BoNA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/119fe974539fd7ee2c79ff87ae6d932a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/rtM2r14BoNA" target="_blank">See video</a></div></div>
-<p>Here you go through a series of missions with increasing difficulty, as it sprinkles in various different types of enemies where your focus ends up split between ground and air attacks to counter and dodge. It needs some pretty fancy finger-work on the controls at times too, it can be quite challenging not to get destroyed. Some missions are a straight-up fight, others see you being sent to rescue people. There's even defence missions with enemy waves coming at you and boss fights too — it has a bit of everything.</p>
-<p>A bit of a learning curve to the controls too. In a few ways it reminds me of <a href="https://www.gamingonlinux.com/2021/06/incredible-top-down-shooter-brigador-gets-a-huge-free-enhancement/" rel="noopener" target="_blank">Brigador</a> (also brilliant), with how you aim along a specific line that you move the crosshair inside. So you have to be aware of your position relative to the enemies, while they're firing at you, as you're also trying to line up your shots. It actually becomes pretty chaotic in the best possible way because you firing at both ground and air targets, with a separate button to target each. You'll spend a fair amount of time ducking and dodging in circles.</p>
-<p>The story is a bit wild too, some crazy Reptoid people are trying to take over. Obviously it's your job to stop them. A job that perhaps they should have sent an army in for but they have you. Thankfully the Megacopter is powerful, with various different weapons and special ability combinations to unlock and pick your load-out for each mission. The story is just the right amount of ridiculous to make it feel not too far from an absured 80s action movie script. Great soundtrack to get the blood pumping too!</p>
-<p>My only real issue is the graphical style. A bunch of it doesn't really fit together like the terrain and trees, when compared with the buildings and enemies all look a bit off and a bit out of place perhaps but once you get past that and sink some time into the game it really doesn't matter. Gameplay is king here, as they say and Megacopter is certainly a lot of fun.</p>
-<p>It has full Native Linux and Steam Deck support. In fact, the developer <a href="https://x.com/megacoptergame/status/1810521250516586999" rel="noopener" target="_blank">mentioned</a> earlier this month that nearly 20% of the sales for it at that point were from Linux / Steam Deck players.</p>
-<p>Since release the developer has repeatedly improved all aspects of the game from player feedback too, including new ways to control the Megacopter and they continue to push out improvements even now.</p>
-<p>Overall, it's a well-built shoot 'em up that you can't go wrong with.</p>
-<p>You can <a href="https://store.steampowered.com/app/1228360/Megacopter_Blades_of_the_Goddess/" rel="noopener" target="_blank">buy it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/megacopter-blades-of-the-goddess-is-a-quality-shoot-em-up-throwback-to-desert-strike/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/megacopter-blades-of-the-goddess-is-a-quality-shoot-em-up-throwback-to-desert-strike/</guid>
-      <pubDate>Mon, 15 Jul 2024 17:17:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1384751201id24894gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Here&#39;s more of the latest Steam Deck Verified games including Sea of Thieves</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another round of games have gone through Valve's official testing for Steam Deck, so here's a fresh mid-July round-up of <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified games for you to begin your week with. Be sure to also <a href="https://www.gamingonlinux.com/2024/07/all-kingdom-hearts-games-now-steam-deck-verified-plus-more-games/" rel="noopener" target="_blank">check out my previous Verified round-up</a> from the start of July.</p>
-<h3><a href="https://store.steampowered.com/app/1172620/Sea_of_Thieves_2024_Edition/" rel="noopener" target="_blank">Sea of Thieves: 2024 Edition</a></h3>
-<blockquote>
-<p>Sea of Thieves is a smash-hit pirate adventure game, offering the quintessential pirate experience of plundering lost treasures, intense battles, vanquishing sea monsters and more. Dive in with this revised edition of the game, which includes access to digital bonus media.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12288798311721050914gol1.jpg"/></p>
-<h3><a href="https://store.steampowered.com/app/1324780/Easy_Red_2/" rel="noopener" target="_blank">Easy Red 2 (Native Linux)</a></h3>
-<blockquote>
-<p>Fight massive battles between infantry, armored vehicles, tanks, cannons and planes. Realistically manage your weapons and equipment, coordinate with your squad, and tactically navigate large, fully destructible open world maps. Experience the WW2 in singleplayer, PVP and Co-Op.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/641455821721050945gol1.jpg"/></p>
-<h3><a href="https://store.steampowered.com/app/1286990/CONSCRIPT/" rel="noopener" target="_blank">CONSCRIPT</a> (Releases July 23rd)</h3>
-<blockquote>
-<p>During the First World War, a lone French soldier must navigate twisted trenches, scavenge for limited supplies and solve complex puzzles - all whilst fighting for survival in the midst of mankind’s most brutal and horrifying conflict. CONSCRIPT is a new take on classic survival horror.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10255223921721051042gol1.jpg"/></p>
-<h3><a href="https://store.steampowered.com/app/1574820/Until_Then/" rel="noopener" target="_blank">Until Then (Native Linux)</a></h3>
-<blockquote>
-<p>A fateful meeting sets off a chain reaction, upending Mark's life. People disappear and memories prove unreliable. Uncover a hidden truth with Mark and his friends in this narrative adventure and race to unravel the mystery before it's too late.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17982189581721051122gol1.jpg"/></p>
-<h3><a href="https://store.steampowered.com/app/1084600/My_Time_at_Sandrock/" rel="noopener" target="_blank">My Time at Sandrock</a></h3>
-<blockquote>
-<p>Travel to the desert community of Sandrock and take on the role of a fledgling Builder. Use your trusty toolset to gather resources, construct machines, and turn your run-down workshop into a well-oiled production facility to save the town from the jaws of economic ruin!</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20276773871721051209gol1.jpg"/></p>
-<h3><a href="https://store.steampowered.com/app/2396240/SteamWorld_Heist_II/" rel="noopener" target="_blank">SteamWorld Heist II (Releasing August 8th)</a></h3>
-<blockquote>
-<p>Join Captain Leeway and his ragtag crew as they uncover the enigmatic menace threatening the Great Sea. Equip and upgrade your crew for turn-based gunfights packed with ricochet action and engage in real-time naval combat. Get ready to aim, plot, and plunder in this uproarious Steambot adventure!</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7155187961721051313gol1.jpg"/></p>
-<h3><a href="https://store.steampowered.com/app/1536090/Echoes_of_the_Plum_Grove/" rel="noopener" target="_blank">Echoes of the Plum Grove</a></h3>
-<blockquote>
-<p>A new life awaits in Honeywood! Build a thriving community that will last generations in this cozy farm simulator. Farm, socialize, make friends, cook, craft, forage and uncover the secrets of the island! If someone doesn’t want to be friends? There are always other means.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13739206431721051463gol1.jpg"/></p>
-<p>Also previously covered recently be sure to check out Session: Skate Sim which got <a href="https://www.gamingonlinux.com/2024/07/session-skate-sim-adds-cloud-saves-and-now-steam-deck-verified/" rel="noopener" target="_blank">bumped up to Verified</a>.</p>
-<hr/>
-<p>That's it for this Steam Deck Verified game round up! Be sure to follow the <a href="https://www.gamingonlinux.com/articles/category/Steam_Deck/" rel="noopener" target="_blank">Steam Deck tag</a>, as I do at times cover individual games seeing a Steam Deck Verified rating too with their updates and releases.</p>
-<p>What have you been playing recently?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/heres-more-of-the-latest-steam-deck-verified-games-including-sea-of-thieves/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/heres-more-of-the-latest-steam-deck-verified-games-including-sea-of-thieves/</guid>
-      <pubDate>Mon, 15 Jul 2024 13:52:37 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/711689239id24893gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Listicle</category>
-      
-      <category>Misc</category>
-      
-      <category>Round-up</category>
-      
-    </item>
-    
-    <item>
-      <title>Nexus Mods new cross-platform app adds experimental Cyberpunk 2077 support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>On top of fixing up various issues with Stardew Valley modding, the new Alpha of the cross-platform and open source Nexus Mods app introduces experimental Cyberpunk 2077 support.</p>
-<p>For those just joining us, this is for the <em>new</em> Nexus Mods app that will <em>eventually</em> replace things like Vortex with full Linux support so you can mod on desktop Linux and Steam Deck much easier as I reported on <a href="https://www.gamingonlinux.com/2024/07/nexus-mods-want-feedback-from-linux-steam-deck-users-on-their-new-cross-platform-app/" rel="noopener" target="_blank">earlier in July</a> and initially <a href="https://www.gamingonlinux.com/2023/11/nexus-mods-app-is-an-in-development-replacement-for-vortex-that-will-support-linux/" rel="noopener" target="_blank">back in November last year</a>.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1595693931721050152gol1.png" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1595693931721050152gol1.png"/></a><br/>
-<em>Pictured - Nexus Mods app on Linux</em></p>
-<p>Version 0.5.3 of the app includes all these fixes on top of experimental Cyberpunk 2077 support:</p>
-<blockquote>
-<ul>
-<li>Fixed the "SMAPI is disabled"-diagnostic for multiple SMAPI installations (<a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1674" rel="noopener" target="_blank">#1674</a>).</li>
-<li>Fixed Loadout disappearing when applying (<a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1737" rel="noopener" target="_blank">#1737</a>).</li>
-<li>Fixed un-managing a game removing all Loadouts instead of just the ones for the current game (<a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1738" rel="noopener" target="_blank">#1738</a>).</li>
-<li>Fixed sorting in the Mod Library and the "Completed Downloads"-section (<a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1690" rel="noopener" target="_blank">#1690</a>).</li>
-<li>Fixed SVGs not loading and rendering properly in the markdown viewer (<a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1661" rel="noopener" target="_blank">#1661</a>).</li>
-<li>Fixed SVGs throughout the App (<a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1622" rel="noopener" target="_blank">#1622</a>, <a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1681" rel="noopener" target="_blank">#1681</a>).</li>
-<li>Fixed not disposing services on close correctly (<a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1679" rel="noopener" target="_blank">#1679</a>).</li>
-<li>Windows: Fixed log file creation failing due to illegal character in path (<a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1728" rel="noopener" target="_blank">#1728</a>). Thanks, <a href="https://github.com/ZeeWanderer" rel="noopener" target="_blank">@ZeeWanderer</a>!</li>
-<li>Linux: Fixed protocol registration (<a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1691" rel="noopener" target="_blank">#1691</a>, <a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1689" rel="noopener" target="_blank">#1689</a>, <a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1683" rel="noopener" target="_blank">#1683</a>).</li>
-<li>Linux: Upgraded <a href="https://github.com/erri120/GameFinder" rel="noopener" target="_blank">GameFinder</a> to fix an issue with not being able to find Steam installed as a Flatpak or Snap (<a href="https://github.com/Nexus-Mods/NexusMods.App/pull/1720" rel="noopener" target="_blank">#1720</a>).</li>
-</ul>
-</blockquote>
-<p>There's a few other assorted improvements behind the scenes on this too.</p>
-<p>I really cannot tell you how excited I am to see this app expand. Modding support on Linux has traditionally been a bit messy, and with a proper cross-platform Nexus Mods app, things will become so much easier.</p>
-<p>Just to note: it <strong>didn't</strong> initially launch for me, I had to remove the configs from the previous version to get this latest to work. The bug was <a href="https://github.com/Nexus-Mods/NexusMods.App/issues/1765" rel="noopener" target="_blank">reported</a> but given it's in Alpha, such breakages are to be expected and they don't plan to support migrations yet. So keep that in mind. If you also tried the previous version, you can find the configs in "/.local/share/NexusMods.App".</p>
-<p>For Linux / Steam Deck, download the "NexusMods.App.x86_64.AppImage" from the <a href="https://github.com/Nexus-Mods/NexusMods.App/releases/tag/v0.5.3" rel="noopener" target="_blank">release page</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/nexus-mods-new-cross-platform-app-adds-experimental-cyberpunk-2077-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/nexus-mods-new-cross-platform-app-adds-experimental-cyberpunk-2077-support/</guid>
-      <pubDate>Mon, 15 Jul 2024 13:32:47 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/786268763id24892gol.png" type="image/jpeg"/>
-      
-      <category>Alpha</category>
-      
-      <category>Apps</category>
-      
-      <category>Misc</category>
-      
-      <category>Mod</category>
-      
-    </item>
-    
-    <item>
-      <title>Wine 9.13 brings more CMD.EXE engine rewrites, supports loading ODBC Windows drivers</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A little later than they usually put out a release, the <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-9.13" rel="noopener" target="_blank">Wine 9.13</a> update is out now bringing more new features and bug fixes to bring better Windows compatibility to Linux. This is a large part of what makes <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Valve's Proton</a> able to do its thing.</p>
-<p class="plain-list-title">Highlights from Wine 9.13:</p>
-<ul>
-<li>Support for loading ODBC Windows drivers.</li>
-<li>More user32 data structures in shared memory.</li>
-<li>More rewriting of the CMD.EXE engine.</li>
-</ul>
-<p class="plain-list-title">22 bugs noted to be solved as of this release including issues fixed for: </p>
-<ul>
-<li>Victoria 2</li>
-<li>Lylian demo</li>
-<li>Guild Wars 2</li>
-<li>The Witcher 3</li>
-<li>Assassin's Creed Revelations</li>
-<li>Full Metal Daemon Muramasa</li>
-<li>Photoshop CC 2024</li>
-</ul>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/wine-9-13-brings-more-cmdexe-engine-rewrites-loading-odbc-windows-drivers/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/wine-9-13-brings-more-cmdexe-engine-rewrites-loading-odbc-windows-drivers/</guid>
-      <pubDate>Mon, 15 Jul 2024 10:49:42 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-      <category>Wine</category>
-      
-    </item>
-    
-    <item>
-      <title>Linux kernel 6.10 is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Linus Torvalds announced the release of Linux kernel 6.10 and with it, plenty of new hardware support and improvements to existing hardware. You know the drill.</p>
-<p>Announcing the release Torvalds <a href="https://lkml.org/lkml/2024/7/14/250" rel="noopener" target="_blank">said</a>:</p>
-<blockquote>
-<p>So the final week was perhaps not quote as quiet as the preceding ones, which I don't love - but it also wasn't noisy enough to warrant an extra rc. And much of the noise this last week was bcachefs again (with netfs a close second), so it was all pretty compartmentalized.</p>
-<p>In fact, about a third of the patch for the last week was filesystem-related (there were also some btrfs latency fixes and other noise), which is unusual, but none of it looks particularly scary.</p>
-<p>Another third was drivers, and the rest is "random".</p>
-<p>Anyway, this obviously means that the merge window for 6.11 opens up tomorrow. Let's see how that goes, with much of Europe probably making ready for summer vacation.</p>
-</blockquote>
-<p><em>Just some cherry-picked items that made it into Linux kernel 6.10 below.</em></p>
-<p class="plain-list-title">Gaming Related:</p>
-<ul>
-<li>Steam Deck IMU support, plus the kernel now accounts for both versions of the Steam Deck (LCD / OLED).</li>
-<li><a href="https://www.gamingonlinux.com/2024/01/proposed-windows-nt-sync-driver-brings-big-wine-proton-performance-improvements/" rel="noopener" target="_blank">NTSYNC driver </a>was merged to hopefully improve Wine / Proton game performance, but not enabled yet.</li>
-<li>Improvements to Xbox Elite 2 controller back paddle buttons over Bluetooth.</li>
-<li>Added support for the Machenike G5 Pro Controller.</li>
-<li>Improved support for some ROG Ally buttons.</li>
-<li>Added support for the ASUS ROG RAIKIRI PRO.</li>
-<li>New support for GameForce Chi retro handheld.</li>
-<li>Improved Aya Neo KUN support.</li>
-</ul>
-<p class="plain-list-title">Other picks:</p>
-<ul>
-<li>Panthor driver for Arm Mali Valhall GPUs landed.</li>
-<li>More work on bringing up support for the upcoming Intel Battlemage.</li>
-<li>A new mseal() syscall for the Linux kernel that "protects the VMAs of a given virtual memory range against modifications", currently Google Chrome plans to hook into it.</li>
-<li>Lots of RISC-V support improvements.</li>
-<li>More WiFi 7 hardware support.</li>
-<li>Lots of new Arm device support across various small boards like the ArmSom Sige7, Forlinx FET3588-C and others.</li>
-</ul>
-<p>There's thousands of changes of course that I'm not going to go over, those are just a few bits that jumped out that I thought you might want to know. If I missed anything important and gaming related, be sure to send in a tip.</p>
-<p>See more in the <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.10" rel="noopener" target="_blank">full changelog</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/linux-kernel-610-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/linux-kernel-610-is-out-now/</guid>
-      <pubDate>Mon, 15 Jul 2024 10:25:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
-      
-      <category>Kernel</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
       
     </item>
     
