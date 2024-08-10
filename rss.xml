@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-08-09 07:25:09.101033</pubDate>
+    <pubDate>2024-08-10 07:23:32.060026</pubDate>
 
     
     <image>
@@ -18,6 +18,364 @@
     </image>
 
     
+    
+    <item>
+      <title>Grab some quality puzzle escape room sims in this Humble Bundle</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>What's that, another fun selection of games? It's bundle season it seems. <a href="https://www.humblebundle.com/games/great-escape-room-bundle?partner=gamingonlinux" rel="noopener" target="_blank">The Great Escape Room Humble Bundle</a> is live.</p>
+<p>Using ratings from Valve on Steam Deck Verified, plus any <a href="http://protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> and Native Linux notes here's all that's in it. Plus as usual each is a Steam link if you need more info first. It's £7.81 for the whole lot, which is cheaper than the lowest Escape Simulator has ever been just by itself on Steam, so a good deal!</p>
+<p>Check out the list:</p>
+<p><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</strong></p>
+<p><a href="https://store.steampowered.com/app/1435790" rel="noopener" target="_blank">Escape Simulator</a> - Native Linux</p>
+<p><a href="https://store.steampowered.com/app/1341290" rel="noopener" target="_blank">We Were Here Forever </a>- ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/1812090" rel="noopener" target="_blank">Escape Academy</a> - ProtonDB Platinum<br/>
+<em>+ 40% off Escape Academy Season Pass</em></p>
+<p><a href="https://store.steampowered.com/app/2296990/We_Were_Here_Expeditions_The_FriendShip/" rel="noopener" target="_blank">We Were Here Expeditions: The FriendShip</a> - ProtonDB Platinum</p>
+<p><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</strong></p>
+<p><a href="https://store.steampowered.com/app/2292650" rel="noopener" target="_blank">Escape From Mystwood Mansion</a></p>
+<p><a href="https://store.steampowered.com/app/1622770" rel="noopener" target="_blank">Doors: Paradox</a> - ProtonDB Platinum</p>
+<p><strong><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> No Ratings</strong></p>
+<p><a href="https://store.steampowered.com/app/2094320" rel="noopener" target="_blank">Escape First Alchemist</a></p>
+<p>Check out <a href="https://www.humblebundle.com/games/great-escape-room-bundle?partner=gamingonlinux" rel="noopener" target="_blank">the full Humble Bundle to grab it</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/grab-some-quality-puzzle-escape-room-sims-in-this-humble-bundle/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/grab-some-quality-puzzle-escape-room-sims-in-this-humble-bundle/</guid>
+      <pubDate>Fri, 09 Aug 2024 19:30:06 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1631948788id25038gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Bundle</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Misc</category>
+      
+      <category>Puzzle</category>
+      
+    </item>
+    
+    <item>
+      <title>The Elder Scrolls: Arena re-implementation OpenTESArena gets a graphics code overhaul</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Seems like this project is coming along nicely, and I do very much love seeing classics get revived with open source game engine re-implementations. OpenTESArena for The Elder Scrolls: Arena has a new release out.</p>
+<p>It's still considered "pre-alpha" with proper gameplay to come later, but worth keeping an eye on, because projects like this can end up doing some amazing things (just look at OpenMW for Morrowind!). This is the first release since 2021!</p>
+<p>Speaking about the OpenTESArena 0.15.0 release the developer said: "This release overhauls the graphics code to more closely match the look of the original game. The renderer now also uses meshes, shaders, and draw calls normally found in an OpenGL or Vulkan engine.</p>
+<p>Overall FPS is below average due to draw calls not being batched yet and the rasterizer being relatively unoptimized (it was very challenging to reliably coax all compilers to output good assembly, so there is still room for improvement). One optimization of interest however is the addition of a voxel quadtree for efficiently testing visibility to the camera."</p>
+<p>Check out their showcase video:</p>
+<div class="hidden_video" data-video-id="LEjsv2AehOg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9cc4c86c2cbfcd13a943c04c88a81195.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/LEjsv2AehOg" target="_blank">See video</a></div></div>
+<p>New features in this release:</p>
+<blockquote>
+<ul>
+<li>New 3D software renderer:
+<ul>
+<li>Closely matches original game's 256 color lighting (special thanks to <a href="https://github.com/Carmina16" rel="noopener" target="_blank">@Carmina16</a>).</li>
+</ul>
+</li>
+<li>Improved Arena data files detection (now checks default C: Steam install on Windows).</li>
+<li>Added exclusive fullscreen option.</li>
+<li>Added tall pixel correction option.</li>
+<li>Initial work on player attributes (@gazorpo).</li>
+<li>Improved screenshot saving.</li>
+<li>Minor change to player movement to match original game.</li>
+<li>ARM64 macOS support.</li>
+<li>Replaced debug collision option with ghost mode that allows flying.</li>
+<li>Replaced DebugFast build config with ReleaseGenericNoLTO.</li>
+<li>Removed time scale option.</li>
+</ul>
+</blockquote>
+<p>See more about it on <a href="https://github.com/afritz1/OpenTESArena" rel="noopener" target="_blank">the GitHub page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/the-elder-scrolls-arena-re-implementation-opentesarena-gets-a-graphics-code-overhaul/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/the-elder-scrolls-arena-re-implementation-opentesarena-gets-a-graphics-code-overhaul/</guid>
+      <pubDate>Fri, 09 Aug 2024 15:22:26 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1419825303id25037gol.jpg" type="image/jpeg"/>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Reimplementation</category>
+      
+      <category>Retro</category>
+      
+    </item>
+    
+    <item>
+      <title>Try the demo for The Protagonish, an adventure game where you don&#39;t control the adventurer</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Well, this is a bit more on the unique side isn't it? I know we have plenty of classic adventure game fans in the GOL readership, but what about one where you don't actual control the adventurer? Check out The Protagonish.</p>
+<p>It has all the usual marks of a classic point and click adventure game, but you're not the main character. Instead, you jump between the villagers, and choose to guide or distract the adventurer from their quest, with puzzles, comedy dialogue choices, and mysteries to uncover. Absolutely love the idea!</p>
+<div class="hidden_video" data-video-id="MFu972ETz9k"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e96b854de5311227f7d71549078691d9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/MFu972ETz9k" target="_blank">See video</a></div></div>
+<p>With full voice acting and plenty of colourful characters, backed up by some lovely hand-drawn animations, this is one you should check out.</p>
+<p>More: "Explore the beautifully hand-drawn village, and discover the lives and plans of four varied characters in this short game with multiple endings. Through your dialogue choices, be a shopkeeper out for the best deal, a monk who's taken a vow of silence, or a miner who's had a bump on the head and not quite saying what he means. And finally there is the mysterious beastie..."</p>
+<p>You can <a href="https://store.steampowered.com/app/2994780/The_Protagonish/" rel="noopener" target="_blank">try the demo on Steam</a> right now. It will be available with Native Linux support at release.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/try-the-demo-for-the-protagonish-an-adventure-game-where-you-dont-control-the-adventurer/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/try-the-demo-for-the-protagonish-an-adventure-game-where-you-dont-control-the-adventurer/</guid>
+      <pubDate>Fri, 09 Aug 2024 15:07:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/711465877id25036gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Adventure</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Preserve is a wonderfully chilled and beautiful relaxing nature-building game</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you love tile-based chilled puzzle games like Dorfromantik, you'll probably really love Preserve. This one is all about repopulating a wasteland to create a vibrant and flourishing ecosystem. <em>Note: key via the developer.</em></p>
+<p>Just released into Early Access, it's available now with Native Linux support and from my testing it really does work great. One of the most chilled and relaxing games I've played recently, with a peaceful atmosphere that allows you to almost zone-out with it and as you're placing down all types of tiles to bring the world to life. It doesn't get much calmer than this while playing games.</p>
+<p>Very similar in style to the likes of <a href="https://www.gamingonlinux.com/2022/05/relaxing-and-gorgeous-city-builder-dorfromantik-is-out-now/" rel="noopener" target="_blank">Dorfromantik</a>, <a href="https://www.gamingonlinux.com/2023/10/tiny-atolls-is-a-comfy-and-relaxing-minimalist-city-builder/" rel="noopener" target="_blank">Tiny Atolls</a> and <a href="https://www.gamingonlinux.com/2019/06/colourful-city-builder-islanders-has-officially-released-for-linux-and-its-really-lovely/" rel="noopener" target="_blank">ISLANDERS</a> where you start with nothing and gradually build up a score of points based on what tiles you put down, and building up a combination score from having multiple of the same together. </p>
+<div class="hidden_video" data-video-id="gWKFzR1oO5U"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2ecc3dc533df7046f541c5ee74cb0a77.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/gWKFzR1oO5U" target="_blank">See video</a></div></div>
+<p>I especially love the way you expand the world. Instead of you revealing more as you go, you build up points to purchase a new land expansion, which you place around the existing land in a place and position of your choosing, allowing you to really get it how you want it. </p>
+<p>That, and the vertical system. Here it's not just placing down tiles, you're gradually building upwards as well with tiles on top of tiles. Eventually, you end up with a ridiculously vibrant world full of different colours and habitats for flora and fauna.</p>
+<p>While it is a puzzle game, it's much more on the chilled side, the points system is reasonably easy to keep going with it, so you don't particularly need to worry about it much at all. Although, if you're aiming for a real high score, it will stop and make you think on your tile placements a lot more. So it has a nice balance of ease and challenge overall.</p>
+<p>In Early Access the developers plan to continue building it up over the next year to include more biomes (there's three currently) with unique ecosystems, flora, fauna and so on. They also want to add in more puzzles and challenges to deepen the gameplay overall which sounds great. They have a truly wonderful start here, I can't wait to see more from it.</p>
+<p>Available to buy from:</p>
+<p><a href="https://www.humblebundle.com/store/preserve?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/2109270/Preserve/" rel="noopener" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/preserve-is-a-wonderfully-chilled-and-beautiful-relaxing-nature-building-game/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/preserve-is-a-wonderfully-chilled-and-beautiful-relaxing-nature-building-game/</guid>
+      <pubDate>Fri, 09 Aug 2024 14:56:26 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/832730173id25035gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Initial Thoughts</category>
+      
+    </item>
+    
+    <item>
+      <title>Alabaster Dawn is the next game from the developers of CrossCode</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Previously known as Project Terra, Radical Fish Games who made the excellent CrossCode have now properly revealed their name game with Alabaster Dawn. From what their presskit said it will have Linux support once again too.</p>
+<p>Alabaster Dawn is an Action RPG that builds on the best aspects of Radical Fish Games’ previous title, CrossCode. It features a deep combat system, challenging puzzles, and a mysterious world teeming with secrets, all bundled up in an engaging story. The shadow of Nyx has fallen—warping the world into a wasteland and vanishing the gods and their people. Now, Juno the Outcast Chosen, awakes to an impossible task: bring it all back.</p>
+<p>Check out the reveal trailer below:</p>
+<div class="hidden_video" data-video-id="-wRZ-VLAqV8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/002a2d18c85660d1fc416a21c0e704f3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-wRZ-VLAqV8" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Features:</p>
+<blockquote>
+<ul>
+<li>A unique 2.5D art style combing pixelart with a subtle 3D perspective</li>
+<li>A deep combat system featuring combo trees, 4 elements, and 8 unique weapons that can be quickly switched between at any time</li>
+<li>A large environment to explore that will change and develop as the game progresses</li>
+<li>Settlements that will be built from rubbles into bustling towns.</li>
+<li>Several larger dungeons filled with puzzles and large boss fights</li>
+<li>A complete RPG system with leveling, equipment, and skill trees</li>
+<li>A unique cooking system that combines healing and buff consumables with a leveling system, designed to avoid item hoarding</li>
+<li>All the exploration and jumping that you loved (...or hated) from CrossCode. The 3D helps with the perspective!</li>
+<li>A detailed movement system with auto-jumping and precise collision</li>
+<li>An engaging story about rebuilding a civilization with lots of surprising twists</li>
+<li>Original soundtrack by Deniz Akbulut (aka Nagi Shirakumo)</li>
+</ul>
+</blockquote>
+<p>You can now <a href="https://store.steampowered.com/app/3110760/Alabaster_Dawn/" rel="noopener" target="_blank">follow it on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/alabaster-dawn-is-the-next-game-from-the-developers-of-crosscode/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/alabaster-dawn-is-the-next-game-from-the-developers-of-crosscode/</guid>
+      <pubDate>Fri, 09 Aug 2024 11:30:27 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2045304262id25034gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Adventure</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>TUXEDO reveal the InfinityFlex a fully foldable Linux laptop</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>TUXEDO are flexing their hardware chops here with the InfinityFlex, a fully foldable Linux laptop so you can use it wherever and however you want. <em>No that's not drool on my top, honest.</em></p>
+<p>With the ability to fold the screen right down on top of the unit, you can use it as a standard laptop or more like a tablet. Since it has a pressure-sensitive touch display, pairing it up with a pen you can use it for all sorts of artwork projects too. Pretty light as well at only 1.5KG.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12097365151723202057gol1.png"/></p>
+<p>TUXEDO put some fun work into this one by the sounds of it. They said "soon as the device is used in monitor or tablet mode, the keyboard and touchpad are automatically deactivated to prevent incorrect entries, the screen content is rotated according to the chassis orientation and TUXEDO OS also adapts its UI to touch operation".</p>
+<p class="plain-list-title">Specifications:</p>
+<ul>
+<li>14-inch IPS Touch Display, 1920 x 1200, sRGB color gamut: 100 %, Brightness: 400 nits.</li>
+<li>Intel Wi-Fi 6E AX211, Bluetooth 5.3.</li>
+<li>55 Wh battery.</li>
+<li>Intel Core i5-1335U, Intel Iris Xe Graphics.</li>
+<li>DDR4-3200 MHz SO-DIMM, 16GB on the base model.</li>
+<li>500 GB Samsung 980 (NVMe PCIe 3.0).</li>
+</ul>
+<p>Looks and sounds like a real nice machine.</p>
+<p>See more on the <a href="https://www.tuxedocomputers.com/en/TUXEDO-InfinityFlex-14-Gen1" rel="noopener" target="_blank">TUXEDO store</a>. Available for pre-order with shipping after September 16th. The <a href="https://www.tuxedocomputers.com/en/Wacom-Bamboo-Ink-Active-Stylus-grey.tuxedo#gallery" rel="noopener" target="_blank">pen</a> is sold separately.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/tuxedo-reveal-the-infinityflex-a-fully-foldable-linux-laptop/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/tuxedo-reveal-the-infinityflex-a-fully-foldable-linux-laptop/</guid>
+      <pubDate>Fri, 09 Aug 2024 11:19:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1576934128id25033gol.jpg" type="image/jpeg"/>
+      
+      <category>Hardware</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Fanatical&#39;s Summer Sale 2024 has lots of discounts and big new game bundles</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://www.fanatical.com/en/?ref=gol" rel="noopener" target="_blank">Fanatical</a> are quickly becoming one of my favourite stores, as they pretty much seem to always have a good deal going on something and their bundles have been great lately too.</p>
+<p><a href="https://www.fanatical.com/en/on-sale?ref=gol" rel="noopener" target="_blank">Their Summer Sale</a> has now begun with discounts on some of the best games around, so it's worth taking a look to see if something you want is there. They're also doing flash deals with huge discounts each day or so too, so you can really bag an absolute bargain.</p>
+<p>Just launched is the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-indie-legends-bundle?ref=gol" rel="noopener" target="_blank">Build your own Indie Legends Bundle</a> with 18 titles that starts from 2 for £4.99 up to 7+ Games for £2.14 each. There's lots of good stuff in there like Streets of Rogue, Tinykin, Graveyard Keeper, Pathologic 2, multiple S.T.A.L.K.E.R games and so on.</p>
+<p>Their <a href="https://www.fanatical.com/en/pick-and-mix/platinum-collection-build-your-own-bundle?ref=gol" rel="noopener" target="_blank">Build your own Platinum Collection</a> is also another good deal with some bigger games starting at 3 for £9.99 including Everspace, Remember Me, Trover Saves the Universe, Children of Morta, Heretics Fork and more.</p>
+<p>Additionally there's the new <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-summer-bundle?ref=gol" rel="noopener" target="_blank">Build your own Summer Bundle</a> that starts at £1 a game with some fun picks like Chasm, Kathy Rain, Unity of Command Trilogy Bundle, Telepath Tactics Liberated, Overloop and other indie games.</p>
+<p>Also can't forget the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-resident-evil-bundle?ref=gol" rel="noopener" target="_blank">Build your own Resident Evil Bundle</a> which I already did a <a href="https://www.gamingonlinux.com/2024/07/grab-some-cheap-resident-evil-games-from-this-fanatical-bundle/" rel="noopener" target="_blank">full round-up of</a>.</p>
+<p>And for those who like to take the chance the <a href="https://www.fanatical.com/en/bundle/vip-mystery-bundle?ref=gol" rel="noopener" target="_blank">VIP Mystery Bundle</a> is back again where every game is rated Overwhelmingly Positive or at least Very Positive. You can take the chance at 3 games for £4.99 and may end up with some top releases like Manor Lords, V Rising, Ghost of Tsushima DIRECTOR'S CUT and others.</p>
+<p>Be sure to <a href="https://www.fanatical.com/en/bundle?ref=gol" rel="noopener" target="_blank">check out all their bundles</a>, there's lots of them.</p>
+<p>Finally, if you want specifically <a href="https://www.fanatical.com/en/steam-deck-games?ref=gol" rel="noopener" target="_blank">games verified for Steam Deck</a> they have a list just for that too.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/fanaticals-summer-sale-2024-has-lots-of-discounts-and-big-new-game-bundles/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/fanaticals-summer-sale-2024-has-lots-of-discounts-and-big-new-game-bundles/</guid>
+      <pubDate>Fri, 09 Aug 2024 10:00:39 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/244227293id25032gol.jpg" type="image/jpeg"/>
+      
+      <category>Fanatical</category>
+      
+      <category>Misc</category>
+      
+      <category>On Sale</category>
+      
+      <category>Round-up</category>
+      
+    </item>
+    
+    <item>
+      <title>Decky Loader plugins should no longer cause bootloops on Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Decky Loader developers have announced that their plugin system for Steam Deck should no longer cause bootloops with the latest pre-release build.</p>
+<p><a href="https://www.gamingonlinux.com/2024/08/certain-steam-deck-plugins-via-decky-loader-are-causing-bootloops/" rel="noopener" target="_blank">News I covered just recently</a>, users discovered a number of plugins that would cause the Steam Deck to get stuck where the Big Picture Mode just wouldn't appear. Thankfully you could fix it with some manual effort, but that should no longer be needed.</p>
+<p>As of "<a href="https://github.com/SteamDeckHomebrew/decky-loader/releases/tag/v3.0.0-pre8" rel="noopener" target="_blank">Prerelease v3.0.0-pre8</a>", the developers noted it fixes a "race condition causing crash loops". Additionally, posting in their Discord server, developer "Train" <a href="https://discord.com/channels/960281551428522045/960459928538087424/1271209426803626015" rel="noopener" target="_blank">said</a>:</p>
+<blockquote>
+<p>We're also taking steps to ensure future issues do not cause breakage to this degree and to notify users of when plugins are delisted or issues with Decky Loader are discovered by us or made known to us by users. Thanks everyone for being patient and contributing.</p>
+</blockquote>
+<p>They also mentioned in a GamingOnLinux <a href="https://www.gamingonlinux.com/2024/08/certain-steam-deck-plugins-via-decky-loader-are-causing-bootloops/comment_id=267073" rel="noopener" target="_blank">comment</a>:</p>
+<blockquote>
+<p><small>[…]</small> To those wondering, we're currently working on an MOTD feature to allow us to better notify users of issues with plugins and we're working on delisting broken plugins.<br/>
+As of the most recent pre-release of Decky, v3.0.0-pre7, we now have a screen and logic that catches these loops and stops decky and should allow you to find and remove any of the effected plugins. We also have future plans to ensure plugins are easier to report as broken but we don't have anything concrete in that regard yet. Have a lovely week everyone.</p>
+</blockquote>
+<p>While the developer who fixed the issue "AAGaming" also mentioned in a GamingOnLinux <a href="https://www.gamingonlinux.com/2024/08/certain-steam-deck-plugins-via-decky-loader-are-causing-bootloops/comment_id=267110" rel="noopener" target="_blank">comment</a>:</p>
+<blockquote>
+<p>We've fixed this in the latest prerelease (v3.0.0-pre8), broken plugins shouldn't be able to cause bootloops anymore. It was caused by an extremely hard to find race condition in a new feature of @decky/ui (previously decky-frontend-lib)</p>
+</blockquote>
+<p>So thankfully, you should be pretty safe to use the latest pre-release version again with various plugins on Steam Deck.</p>
+<p>The Decky Loader team certainly have their work cut out for them, given that all of this is community-made with no direct support for plugins from Valve. Hopefully in future Valve might consider some sort of API to help make their job easier.</p>
+<p>More about Decky Loader on the <a href="https://github.com/SteamDeckHomebrew/decky-loader" rel="noopener nofollow" target="_blank">GitHub</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/decky-loader-plugins-should-no-longer-cause-bootloops-on-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/decky-loader-plugins-should-no-longer-cause-bootloops-on-steam-deck/</guid>
+      <pubDate>Fri, 09 Aug 2024 09:41:03 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1443741867id25031gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+      <category>SteamOS</category>
+      
+    </item>
+    
+    <item>
+      <title>Blackjack roguelike adventure Dungeons &amp; Degenerate Gamblers is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Ready to break Blackjack? Dungeons &amp; Degenerate Gamblers has you battle your way through a seedy tavern filled with gambling addicted townspeople in this Blackjack roguelike adventure.</p>
+<p>More about it: Begin your adventure in a tavern that is home to a unique, corrupted version of blackjack you have never played before. You will need to pick up the rules and adapt to them as you progress through the tavern, challenging a colourful cast of blackjack-addicted townspeople. Discover the mystery of who runs this twisted casino as you progress through the tavern to take them down.</p>
+<p>Complete with over 300 cards, you won’t just be drawing from a traditional deck to take down greedy opponents. Teeming with a wacky assortment of cards ranging from birthday cards to tarot cards, there’s plenty of unique combinations you can use to outwit their fiendish foes and emerge victorious in this stakes roguelike.</p>
+<div class="hidden_video" data-video-id="zo86D4qDV2c"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/694578d8ac25db346762fa79f8b96d4d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/zo86D4qDV2c" target="_blank">See video</a></div></div>
+<p>Their PR team didn't reply to my code request on this one, so I've not personally had a proper chance to play with it yet. Looks great though, probably a good one for fans of Balatro.</p>
+<p>Available to buy from:</p>
+<p><a href="https://www.fanatical.com/en/game/dungeons-and-degenerate-gamblers?ref=gol" rel="noopener" target="_blank">Fanatical</a></p>
+<p><a href="https://www.humblebundle.com/store/dungeons-degenerate-gamblers?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/2400510/Dungeons__Degenerate_Gamblers/" rel="noopener" target="_blank">Steam</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/blackjack-roguelike-adventure-dungeons-degenerate-gamblers-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/blackjack-roguelike-adventure-dungeons-degenerate-gamblers-is-out-now/</guid>
+      <pubDate>Fri, 09 Aug 2024 09:31:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/668734005id25030gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Card Game</category>
+      
+      <category>Fanatical</category>
+      
+      <category>Humble Store</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental update brings fixes for Sword of Convallaria, Space Engineers</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve updated Proton Experimental for Steam Deck and Desktop Linux again, bringing in the usual assortment of bug fixes.</p>
+<p class="plain-list-title">For the August 8th update here's the titles noted to be now playable:</p>
+<ul>
+<li>Flatout 3</li>
+<li>Banyu Lintar Angin</li>
+<li>Owl Observatory Demo</li>
+<li>Dinner with an Owl</li>
+<li>Sword of Convallaria.</li>
+</ul>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18919423851723195141gol1.jpg"/><br/>
+<em>Pictured - Sword of Convallaria</em></p>
+<p class="plain-list-title">Plus the rest of the fixes and improvements:</p>
+<ul>
+<li>Added a warning that appears in Proton Log for systems that have low file descriptor limit (e.g. non-systemd distributions).</li>
+<li>Fixed RAID: World War II randomly hanging on start.</li>
+<li>Fixed Strip Fighter ZERO not starting on some setups.</li>
+<li>Fixed Undecember not being playable after a recent game update.</li>
+<li>Fixed Proton Experimental regression that caused Space Engineers to display black screen instead of the intro video.</li>
+</ul>
+<p>All the details can be seen in the <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener nofollow" target="_blank">changelog</a>. This follows on from the <a href="https://www.gamingonlinux.com/2024/08/proton-experimental-gets-fixes-for-ea-launcher-starfield-creation-kit-the-finals/" rel="noopener" target="_blank">update from August 1st</a> that had plenty of game fixes including The Finals, Starfield and more.</p>
+<p>It will show up as an update in your Steam Downloads for Proton Experimental if you already have it downloaded. See more in my <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Steam Play Proton guide</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/proton-experimental-update-brings-fixes-for-sword-of-convallaria-space-engineers/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/proton-experimental-update-brings-fixes-for-sword-of-convallaria-space-engineers/</guid>
+      <pubDate>Fri, 09 Aug 2024 09:20:30 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1168567125id25029gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>DOOM + DOOM II get bundled together with new enhanced versions</title>
@@ -478,6 +836,8 @@ Matt Wyble, Second Dinner’s Chief Operating Officer, adds, “We're excited to
       <title>Certain Steam Deck plugins via Decky Loader are causing bootloops</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
+<p>Update: <a href="https://www.gamingonlinux.com/2024/08/decky-loader-plugins-should-no-longer-cause-bootloops-on-steam-deck/" rel="noopener" target="_blank">Now fixed</a>!</p>
+<p><em>Original article below:</em></p>
 <p>Uh oh. Not only did we recently have <a href="https://www.gamingonlinux.com/2024/08/the-jackbox-megapicker-fixed-to-stop-megabreaking-your-steam-deck/" rel="noopener" target="_blank">the issue with The Jackbox Megapicker</a> breaking the Steam Deck, but now plugins via Decky Loader too.</p>
 <p>The main issue here is with the upcoming 3.x.x release series, which has been in development for a while now. The issue shouldn't be present with the current stable 2.x.x series.</p>
 <p>Writing in an announcement on the Decky Loader Discord, developer "Train" <a href="https://discord.com/channels/960281551428522045/960459928538087424/1270616253991747616" rel="noopener" target="_blank">mentioned</a> this:</p>
@@ -3519,470 +3879,6 @@ DO NOT believe this AI message written by the parent company of Humble Games, Zi
       <category>Building Sim</category>
       
       <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>NVIDIA 560 Linux driver Beta has Wayland improvements, defaults to open GPU kernel modules</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>NVIDIA has released a fresh Beta to get you testing all the latest features and fixes. So here's what's new in the NVIDIA 560.28.03 driver Beta for Linux.</p>
-<p>As NVIDIA said recently, this is the first release that will use the open GPU kernel modules by default, as long as your GPU supports this. Which is an exciting step for more open source on your system. Plus various Wayland improvements, VRR for notebooks with the open GPU kernel modules and various bug fixes.</p>
-<p>From the changelog here's the new additions and major changes:</p>
-<blockquote>
-<ul>
-<li>Updated nvidia-installer to select the NVIDIA open GPU kernel modules by default on systems with GPUs that support both the proprietary and open kernel modules.</li>
-<li>Added support for EGL_KHR_platform_x11 and EGL_EXT_platform_xcb on Xwayland.</li>
-<li>Added a PipeWire backend to NvFBC that allows it to work on the Wayland compositors that support screencasting via XDG Desktop Portal. This new interface will be available through an upcoming Capture SDK release.</li>
-<li>Added support for multiple concurrent clients to NvFBC direct capture.</li>
-<li>Added reporting of Vulkan information to nvidia-settings control panel.</li>
-<li>Compiling nvidia-settings from source now requires Vulkan header files to be available.</li>
-<li>Support DRM-KMS explicit synchronization via the IN_FENCE_FD mode setting property.</li>
-<li>Support VRR (Variable Refresh Rate) for Wayland on pre-Volta GPUs.</li>
-<li>Added support for Variable Refresh Rate on notebooks with the open kernel modules.</li>
-<li>Updated glXWaitVideoSyncSGI() to be more efficient. This reduces frame stutter in some KDE configurations with GSP offload.</li>
-</ul>
-</blockquote>
-<p>And then the various bug fixes:</p>
-<blockquote>
-<ul>
-<li>Fixed a bug that caused GPU driver installation to fail when the system used alternate implementations of the 'tr' utility, such as from the busybox or toybox projects.</li>
-<li>Fixed a bug that could cause the wrong image format to be used for render pass image clears in Vulkan applications when using a VkImage created with VK_IMAGE_CREATE_MUTABLE_FORMAT_BIT. This could lead to rendering corruption, as described in issues such as:<br/>
-<a href="https://github.com/doitsujin/dxvk/issues/3961" rel="noopener" target="_blank">https://github.com/doitsujin/dxvk/issues/3961</a></li>
-<li>Fixed multiple issues that could cause crashes or unexpected behaviors when re-creating an NvFBC capture session.</li>
-<li>Fixed a bug that could cause some displays to appear multiple times in the nvidia-settings display layout configuration page on systems with multiple GPUs.</li>
-<li>Fixed a bug that caused OpenGL triple buffering to behave like double buffering.</li>
-</ul>
-</blockquote>
-<p>See more in <a href="https://www.nvidia.co.uk/download/driverResults.aspx/230236/en-uk" rel="noopener" target="_blank">the changelog</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/nvidia-560-linux-driver-beta-has-wayland-improvements-defaults-to-open-gpu-kernel-modules/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/nvidia-560-linux-driver-beta-has-wayland-improvements-defaults-to-open-gpu-kernel-modules/</guid>
-      <pubDate>Tue, 23 Jul 2024 14:32:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Drivers</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>DRAG returns as ExoCross, an offroad racing game with 4CPT vehicle physics</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Remember DRAG from Orontes Games? A while back in 2021 they were <a href="https://www.gamingonlinux.com/2022/01/orontes-games-creator-of-drag-gets-acquired-by-iracing/" rel="noopener" target="_blank">acquired by iRacing</a> and now the game has returned finished as the future off-road racing sim ExoCross. It has full Native Linux support still, which appears in great shape.</p>
-<p>All players that purchased it when it was DRAG: Outer Zones automatically get ExoCross, as it just replaces the Early Access game. This was one of the most promising and exciting racing games I had played in a long time back in 2020, so it's great to see it finally out.</p>
-<div class="hidden_video" data-video-id="3oVcr9wChAE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/dfe51c4531489e7c04675361eeee0763.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3oVcr9wChAE" target="_blank">See video</a></div></div>
-<p>From the press release: “We’re thrilled to finally be able to unveil the completed version of ExoCross to the world,” said iRacing president Tony Gardner. “ExoCross represents a bold and unique racing vision for us: a world built around exhilarating off-road racing with cars unlike anything our fans have ever seen. Our team has poured tons of hard work into ExoCross, and we hope everybody enjoys it as much as we do!”</p>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li><strong>4CPT physics: </strong>Fully simulated chassis and suspension components and a soft-body tire model create realistic weight transfer and understeer/oversteer.</li>
-<li><strong>Slipstream and boosts: </strong>Put the power down in the right places to charge past your opponents, or slot in behind them to recharge your boost as quickly as possible.</li>
-<li><strong>Three unique cars: </strong>Take the wheel of three distinct cars, each more challenging and powerful than the last.</li>
-<li><strong>Dozens of circuits:</strong> Do battle on 19 distinct track layouts—each raceable in both directions—across four unique biomes.</li>
-<li><strong>AI Racing and Championship Mode: </strong>Advance through six racing series, two per car, to establish yourself as the top driver in ExoCross, going into battle with challenging AI opponents in up to 10-race seasons. Just want to pick up and play? Pick any car and track combo you want and hit the track!</li>
-<li><strong>Challenge Mode: </strong>Take on 48 unique challenges across all four zones and showcase your top speed against a global leaderboard.</li>
-<li><strong>Online racing: </strong>Face off with global players in a mix of Challenges and circuit races, with player votes determining every car and track selection. When the community decides, will you have the skills to make the best of the rounds ahead?</li>
-</ul>
-</blockquote>
-<p>The release has been a bit on the <em>quiet</em> side, with no Steam announcement even posted yet to announce the finished game has been released. Trying to play online just results in endless matchmaking too, since the player-count is currently low, which will <em>hopefully</em> tick up when more people realise ExoCross is actually out. Although, it's quite disappointing to <em>only</em> see matchmaking and no lobby support to easily just hook up with friends.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17236442751721744286gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/17236442751721744286gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12152960201721744287gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/12152960201721744287gol1.jpg"/></a><br/>
-<em>Pictured: ExoCross - captured on Linux</em></p>
-<p>Aside from the above, ExoCross is a lot of fun and quite a <em>challenging</em> racer with the physics system. I do a fair amount of spinning off the tracks still, bringing back memories of playing the earlier versions when it was called DRAG. A well built racer with a nice mixture of tracks and the AI is pretty good to race against with a firm enough challenge to make it interesting.</p>
-<p>I've been blasting through it attempting to get through the Championship Mode today, and it's thoroughly entertaining. Gliding around corners, wheel-to-wheel with AI as you smash the boost button to fly ahead. It feels really good to drive the vehicles in this.</p>
-<p>You can <a href="https://store.steampowered.com/app/773840/ExoCross/" rel="noopener" target="_blank">buy it on Steam now</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/drag-returns-as-exocross-an-offroad-racing-game-with-4cpt-vehicle-physics/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/drag-returns-as-exocross-an-offroad-racing-game-with-4cpt-vehicle-physics/</guid>
-      <pubDate>Tue, 23 Jul 2024 14:18:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1558761757id24935gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>New Release</category>
-      
-      <category>Racing</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>ChimeraOS 46 brings major upgrades and enhanced handheld support for GPD, AYANEO, OneXPlayer</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>ChimeraOS Linux 46 has released today and there's a whole lot of improvements for this handheld and couch-gaming focused Linux distro.</p>
-<p>For starters, they have a whole new input system they call InputPlumber, which they say is an "open source input routing and control daemon for Linux written in Rust" that "can be used to combine any number of input devices (like gamepads, mice, gyros, and keyboards) and translate their input to a variety of virtual device formats". So basically, it's like a fully open Steam Input and they've integrated it into OpenGamepadUI.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12326303231721741990gol1.png"/></p>
-<p>They've also introduced Emulation Content Sharing, allowing a single ChimeraOS device to act as a host for ROM files and related artwork. Additionally this release brings Remote Launch, that lets you launch any game, including Steam, GOG, Epic, and Emulated games via a URL. On top of that they also hooked up <a href="https://www.gamingonlinux.com/2022/10/gb-operator-is-a-fun-gadget-for-game-boy-fans-tested-on-steam-deck/" rel="noopener" target="_blank">GB Operator</a> support so it's plug and play.</p>
-<p>Lots of other fixes and improvements:</p>
-<blockquote>
-<p><strong>Drivers</strong></p>
-<ul>
-<li>The ayaneo-platform driver brightness scaling has been fixed, response time from the driver has been improved by 20x, and there is now a "suspend_mode" attribute that can be used to control the LED's behavior during sleep. Suspend mode is not currently available on the AIR Plus variants. See the <a href="https://github.com/ShadowBlip/ayaneo-platform?tab=readme-ov-file#changing-startup-defaults" rel="noopener" target="_blank">readme</a> for guidance on how best to set your preferred settings.</li>
-<li>ayn-platform is now compatible with HHFC for multi-temperature based fan curves.</li>
-<li>Added AW87xxx driver. Audio will now work properly on the AYANEO AIR 1S, AYANEO Flip, and AYN Loki Mini Pro.</li>
-<li>Fan control is now enabled for the following devices: GPD Win Mini. AYANEO 2S, AIR 1S, GEEK 1S,and KUN. OneXPlayer 2 and OneXFly. OrangePi NEO.</li>
-<li>Replaced BMI160 and BMI260 DKMS drivers with kernel patches.</li>
-</ul>
-<p><strong>Hardware</strong></p>
-<ul>
-<li>Added full support for the OrangePi NEO.</li>
-<li>Added partial support to the AYANEO Flip models. Touchscreen support is still in progress.</li>
-<li>Gyroscope input can now be used on most handheld devices using the DS5 Edge Target Device in InputPlumber.</li>
-<li>The Steam frame limit slider will now properly function for many handheld systems.</li>
-<li>Enabled the built-in TDP control for the Steam Deck. Desktop GPU's can also be adjusted with this slider for undervolting.</li>
-<li>Added TDP control support for the AMD 8000 series into PowerStation.</li>
-<li>Reduced the default resolution on many handhelds to improve performance. This can be overwritten with <a href="https://github.com/ChimeraOS/gamescope-session?tab=readme-ov-file#user-configuration" rel="noopener" target="_blank">environment variables</a>.</li>
-</ul>
-<p><strong>Misc</strong></p>
-<ul>
-<li>GOG now always downloads the Windows version for new game installs</li>
-<li>GOG and Epic now default to Proton 8 for new game installs</li>
-<li>Included multiple fixes for gamescope and gamescope-session up-streamed from our friends over at BazziteOS. Additionally, gamescope-session has been refactored to be more flexible.</li>
-<li>Formatting or adding Steam libraries to removable media and additional internal drives can now be managed through OpenGamepadUI. The Chimera app interface is still enabled for this as well.</li>
-<li>Fixed a bug where wireplumber configurations could break first boot after installing or an update.</li>
-<li>Chimera splash screen will show a message with current step instead of a generic "Downloading game configuration updates".</li>
-<li>Implemented hiding and customizing the splash screen.</li>
-</ul>
-<p><strong>Bug Fixes</strong></p>
-<ul>
-<li>Fixed a suspend issue on some GPD devices caused by the fingerprint scanner.</li>
-<li>Fixed an issue where a fix for MT7921e WiFi devices would cause MT7922 WiFi devices to fail. (Legion Go, ROG Ally)</li>
-<li>Removed lib32 gamescope, which caused issues with HDR enabled displays and WSI.</li>
-<li>Fixed Chimera password screen not appearing in desktop mode.</li>
-<li>Fixed custom Proton and configurations not being applied correctly.</li>
-<li>Fixed an issue with shortcut artwork assets not updating.</li>
-</ul>
-</blockquote>
-<p>See more on the <a href="https://github.com/ChimeraOS/chimeraos/wiki/Release-Notes#chimeraos-46-2024-07-23" rel="noopener" target="_blank">changelog</a> and <a href="https://chimeraos.org/" rel="noopener" target="_blank">website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/chimeraos-46-brings-major-upgrades-and-enhanced-handheld-support-for-gpd-ayaneo-onexplayer/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/chimeraos-46-brings-major-upgrades-and-enhanced-handheld-support-for-gpd-ayaneo-onexplayer/</guid>
-      <pubDate>Tue, 23 Jul 2024 13:40:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/676501139id24934gol.jpg" type="image/jpeg"/>
-      
-      <category>Distro News</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Codename: Ocean Keeper takes Dome Keeper and puts you in an underwater twin-stick mech</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Take the mining and defense idea from Dome Keeper, stick you in an underwater mech with exploration and twin-stick shooting and you've got Codename: Ocean Keeper. <em>Note: key sent by the developer.</em></p>
-<p>Available in Early Access with Native Linux support, it is an interesting idea, and one I'm keen to see evolve during the planned few months it will remain there before being fully released.</p>
-<p>Here you explore the bottom of the ocean in a robotic spider-mech, one which you can customize with various different types of weapons and upgrades as you go. It's a wave-based twin-stick shooter, although your wipes can fire automatically, you can also fire the main weapon manually in a focused-fire mode. The battles range from small mites running at you, to bigger boss battles.</p>
-<div class="hidden_video" data-video-id="WdoCAbhhafY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7b103a84938b1039aa2c9f534a51c0c9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/WdoCAbhhafY" target="_blank">See video</a></div></div>
-<p>On top of the battling and exploring, you also have the cave-dwelling, which is really where the Dome Keeper-like feeling sets in. You jump down into a cave and get drilling for different riches, and occasionally a special artifact to get some extra upgrade. Unlike Dome Keeper though, you're not limited to the one area to drill. You drill through one, grab the goodies, and then get back in your mech to go explore somewhere else.</p>
-<p class="plain-list-title">Features:</p>
-<ul>
-<li>Explore the ocean floor and remnants of civilization on a huge robotic spider.</li>
-<li>Find deep caves and drill tunnels in search of valuable resources and artifacts.</li>
-<li>Upgrade mechanisms to survive in this aggressive environment as long as possible.</li>
-<li>Fight hordes of sea monsters under the energy dome, using a huge arsenal of weapons</li>
-<li>Earn meta-currency for complete customization of your robotic spider.</li>
-</ul>
-<p>The initial EA release had some issues, like the right stick for aiming not actually working on Linux / Steam Deck, but they very quickly solved that. Now it appears to run without issues!</p>
-<p>It's a good start from what I've played, and clearly its hitting the mark for a few with it getting a Very Positive rating on Steam, but my initial feeling is that it's just a bit too slow until you can get a decent bunch of upgrades going. A lot of games start of slow, which is fine, but here it all feels a bit too <em>sluggish</em>. They need to spice up the intro a fair bit I think because it's too plain. Once you do get going though, and have a few runs for the meta upgrades, it does get at least more interesting.</p>
-<p>Check it <a href="https://store.steampowered.com/app/2845630/Codename_Ocean_Keeper/" rel="noopener" target="_blank">out on Steam now</a> in Early Access.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/codename-ocean-keeper-takes-dome-keeper-and-puts-you-in-an-underwater-twin-stick-mech/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/codename-ocean-keeper-takes-dome-keeper-and-puts-you-in-an-underwater-twin-stick-mech/</guid>
-      <pubDate>Tue, 23 Jul 2024 13:14:34 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1716396102id24933gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Exploration</category>
-      
-    </item>
-    
-    <item>
-      <title>Check out the new demo for KILLBEAT a rhythm shooter roguelike</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A rhythm shooter roguelike sounds like a really fun idea, and now you can try it yourself in KILLBEAT which just released a demo with Native Linux support. From Kalma Games, an independent Finnish game studio.</p>
-<p>KILLBEAT is a rhythm shooter roguelike where you make music with guns and guts. Descend into Cadence Drop, a rift opened by the cataclysmic awakening of a godlike being at the heart of the planet. Engage in fast, brutal, skill-based gameplay as you fight your way towards the source of the beat. With the demo you get a good look at the first biome of the game, which showcases the core mechanics. The developer is also hosting a <a href="https://store.steampowered.com/news/app/2808530/view/4328605968614693761" rel="noopener" target="_blank">competition</a> to win a full Steam key.</p>
-<p>Check out the new trailer too:</p>
-<div class="hidden_video" data-video-id="yDEXXzMOFVs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5ad425bd9e21e7af19b5a1c4fde1641f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/yDEXXzMOFVs" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Features:</p>
-<ul>
-<li>Shoot, dash, and kill to the beat.</li>
-<li>Collect freestyle charges to create any rhythms you want.</li>
-<li>Experience a branching story in a procedurally generated world.</li>
-<li>Create and share custom music packs with the community.</li>
-<li>Compete with your friends through the daily and weekly challenges.</li>
-</ul>
-<p>Go give it a <a href="https://store.steampowered.com/app/2808530/KILLBEAT/" rel="noopener" target="_blank">try on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/check-out-the-new-demo-for-killbeat-a-rhythm-shooter-roguelike/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/check-out-the-new-demo-for-killbeat-a-rhythm-shooter-roguelike/</guid>
-      <pubDate>Tue, 23 Jul 2024 09:46:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/582991600id24932gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Demo</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton Experimental gets fixes for Ubisoft Connect, Once Human, Burnout Paradise Remastered</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>July 22nd saw a new release of Proton Experimental from Valve, as work continues as always towards the next main release of the Windows compatibility layer for Linux desktop and Steam Deck.</p>
-<p class="plain-list-title">Here's what's included in the latest update:</p>
-<ul>
-<li>Fixed AVPro playback in VRChat.</li>
-<li>Fixed cutscene playback in Iragon games.</li>
-<li>Fixed font rendering in Insanely Twisted Shadow Planet.</li>
-<li>Fixed Burnout Paradise Remastered crashing when an input video device is plugged in.</li>
-<li>Fixed Knowledge, or know Lady crashing about 10 minutes after launch.</li>
-<li>Fixed Once Human crashing when trying to join a server or opening the EULA on fresh Proton prefixes.</li>
-<li>Fixed Ubisoft Connect requiring a manual log in with a new prefix with Far Cry 3 Blood Dragon (some other games may still suffer from that similarly as on Windows with a clean Ubisoft Connect install).</li>
-<li>Fixed text not being displayed during the installation of EA Desktop launcher.</li>
-<li>Fixed 9.0-2 regression: Warhammer 40,000: Darktide no longer freezes randomly when processing shaders for the cache.</li>
-<li>Fixed 9.0 regressions:
-<ul>
-<li>Alan Wake's American Nightmare's DLC is playable again.</li>
-</ul>
-</li>
-</ul>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6703651481721726822gol1.jpg"/><br/>
-<em>Pictured - Once Human</em></p>
-<p>From the <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener" target="_blank">changelog</a>.</p>
-<p>It will just show up as an update for Proton Experimental in your Steam Downloads.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/proton-experimental-gets-fixes-for-ubisoft-connect-once-human-burnout-paradise-remastered/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/proton-experimental-gets-fixes-for-ubisoft-connect-once-human-burnout-paradise-remastered/</guid>
-      <pubDate>Tue, 23 Jul 2024 09:27:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1478136349id24931gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Fanatical just launched an Elite Collection Steam Deck bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you need some more interesting games for Steam Deck (and desktop Linux!), Fanatical launched the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-play-on-the-go-bundle?ref=gol" rel="noopener" target="_blank">Build your own Play on the Go - Elite Collection</a>. All of the games included are Steam Deck Verified, and so they should work great no matter your Linux device.</p>
-<p>Since this is a build your own bundle, the more games you add the higher the discount (up to a point). 2 games for £7.50 each, 3+ for £7.33 each and then 5+ for £7 each. Considering what's included, you can get a real good deal.</p>
-<p>Here's what's included (Steam links if you need more info on each):</p>
-<p><a href="https://store.steampowered.com/app/1731070/Asterigos_Curse_of_the_Stars/" rel="noopener" target="_blank">Asterigos: Curse of the Stars</a></p>
-<p><a href="https://store.steampowered.com/app/2398170/BORE_BLASTERS/" rel="noopener" target="_blank">BORE BLASTERS</a> (Native Linux)</p>
-<p><a href="https://store.steampowered.com/app/949480/BROK_the_InvestiGator/" rel="noopener" target="_blank">BROK the InvestiGator</a></p>
-<p><a href="https://store.steampowered.com/app/1803400/Beneath_Oresa/" rel="noopener" target="_blank">Beneath Oresa</a></p>
-<p><a href="https://store.steampowered.com/app/1755910/Capcom_Arcade_2nd_Stadium/" rel="noopener" target="_blank">Capcom Arcade 2nd Stadium</a></p>
-<p><a href="https://store.steampowered.com/app/1515950/Capcom_Arcade_Stadium/" rel="noopener" target="_blank">Capcom Arcade Stadium</a></p>
-<p><a href="https://store.steampowered.com/app/1882500/Cattails_Wildwood_Story/" rel="noopener" target="_blank">Cattails: Wildwood Story</a></p>
-<p><a href="https://store.steampowered.com/app/1766740/ChooChoo_Charles/" rel="noopener" target="_blank">Choo-Choo Charles</a></p>
-<p><a href="https://store.steampowered.com/app/1252330/DEATHLOOP/" rel="noopener" target="_blank">Deathloop</a></p>
-<p><a href="https://store.steampowered.com/app/1967260/Double_Dragon_Gaiden_Rise_Of_The_Dragons/" rel="noopener" target="_blank">Double Dragon Gaiden: Rise Of The Dragons</a></p>
-<p><a href="https://store.steampowered.com/app/1475810/Ghostwire_Tokyo/" rel="noopener" target="_blank">Ghostwire: Tokyo</a></p>
-<p><a href="https://store.steampowered.com/app/957960/Inkulinati/" rel="noopener" target="_blank">Inkulinati</a></p>
-<p><a href="https://store.steampowered.com/app/1154090/Kingdom_Shell/" rel="noopener" target="_blank">Kingdom Shell</a></p>
-<p><a href="https://store.steampowered.com/app/1586800/Lil_Gator_Game/" rel="noopener" target="_blank">Lil Gator Game</a></p>
-<p><a href="https://store.steampowered.com/app/1329360/Lords_of_Exile/" rel="noopener" target="_blank">Lords of Exile</a></p>
-<p><a href="https://store.steampowered.com/app/2017080/Nickelodeon_AllStar_Brawl_2/" rel="noopener" target="_blank">Nickelodeon All-Star Brawl 2</a></p>
-<p><a href="https://store.steampowered.com/app/1889740/Paper_Trail/" rel="noopener" target="_blank">Paper Trail</a></p>
-<p><a href="https://store.steampowered.com/app/1191630/Shantae_and_the_Seven_Sirens/" rel="noopener" target="_blank">Shantae and the Seven Sirens</a></p>
-<p><a href="https://store.steampowered.com/app/1058830/Spin_Rhythm_XD/" rel="noopener" target="_blank">Spin Rhythm XD</a></p>
-<p><a href="https://store.steampowered.com/app/638990/UNDYING__KINGDOM/" rel="noopener" target="_blank">UNDYING</a></p>
-<p><a href="https://store.steampowered.com/app/334540/Vox_Machinae/" rel="noopener" target="_blank">Vox Machinae</a></p>
-<p><a href="https://store.steampowered.com/app/761010/Wave_Break/" rel="noopener" target="_blank">Wave Break</a> (Native Linux)</p>
-<p>Check out the <a href="http://www.fanatical.com/en/pick-and-mix/build-your-own-play-on-the-go-bundle?ref=gol" rel="noopener" target="_blank">full bundle on Fanatical</a>.</p>
-<p>They do have various other bundles going right now too like an <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-fps-bundle?ref=gol" rel="noopener" target="_blank">FPS Bundle</a>, <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-card-and-tabletop-bundle?ref=gol" rel="noopener" target="_blank">Card and Tabletop Bundle</a> and <a href="https://www.fanatical.com/en/bundle?ref=gol" rel="noopener" target="_blank">more</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/fanatical-just-launched-an-elite-collection-steam-deck-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/fanatical-just-launched-an-elite-collection-steam-deck-bundle/</guid>
-      <pubDate>Mon, 22 Jul 2024 15:33:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/25176492id24930gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Fanatical</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Party-based soulslike Deathbound aims to be Steam Deck Verified at release</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Trialforge Studio and Tate Multimedia are bringing their party-based soulslike set in a harsh world where Faith clashes with Science to Steam on August 8th and it should be good to go for Steam Deck players. Which is good news for desktop Linux players too since both will use <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> so it should work great.</p>
-<p>Not to be confused with an online party here, instead you gain the skills and identities of fallen warriors found throughout the world. This gives you the option to seamlessly switch between all of them while you craft a play-style through the talent trees available. Sounds pretty fun!</p>
-<p>Friday last week the developers posted an <a href="https://steamcommunity.com/games/1277130/announcements/detail/4334235468138941634" rel="noopener" target="_blank">announcement</a> on Steam noting:</p>
-<blockquote>
-<p>We have good news for all Akratya citizens! Deathbound is playable on Steam Deck, and we aim to receive the Deck Verified status on release day. Right now, all Fallen Warriors can play the Deathbound demo on Steam Deck, and it’s fully compatible with Valve’s handheld device.</p>
-<p>We tested Deathbound on Steam Deck and were consistently satisfied with the results— the game runs smoothly, and we did not encounter any major bugs on this platform. Similar feedback was received from many members of our community who had the opportunity to play Deathbound on this device.</p>
-<p>Therefore, we are aiming for Deathbound to receive Verified Game status on Steam Deck on the release date, which is scheduled for August 8th.</p>
-</blockquote>
-<div class="hidden_video" data-video-id="ouC3FUKG9pA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b498282568f17d1d22e8d57b2732c8a7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ouC3FUKG9pA" target="_blank">See video</a></div></div>
-<p>You can follow it and try the <a href="https://store.steampowered.com/app/1277130/Deathbound/" rel="noopener" target="_blank">demo now on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/party-based-soulslike-deathbound-aims-to-be-steam-deck-verified-at-release/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/party-based-soulslike-deathbound-aims-to-be-steam-deck-verified-at-release/</guid>
-      <pubDate>Mon, 22 Jul 2024 12:38:34 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/527218211id24929gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Action</category>
-      
-      <category>RPG</category>
-      
-    </item>
-    
-    <item>
-      <title>Immersive idle RPG &#39;Bloobs Adventure&#39; recently got lots of Steam Deck improvements</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Bloobs Adventure is an idle game with a difference, bringing together adventuring and RPG styled mechanics into a more casual game. Idle games don't often have you do all that much, which is why Bloobs Adventure is a little bit more interesting with a whole world to explore.</p>
-<p>More about it: "Watch on as you command your Bloob to seamlessly navigate his way around a sprawling, ever-expanding world automatically. Choose which skills to train, items to create, and enemies to defeat. Push your and your Bloob's skills farther, and become the most powerful force in the the world. Forge your own path, and your own equipment on your way to conquer every boss that stands in your way. Do it on your time, because after all, Bloob will do the hard work for you."</p>
-<p>You can check out the slightly chaotic trailer below:</p>
-<div class="hidden_video" data-video-id="tn1pE8kgYsc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e5c32d62acf9646d310d92447005703f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/tn1pE8kgYsc" target="_blank">See video</a></div></div>
-<p>It launched on Steam on July 15th, and has already gained a Very Positive rating and has hundreds of players checking it out right now. At the end of last week, the developer also put up a <a href="https://steamcommunity.com/games/2942780/announcements/detail/6957581711060460996" rel="noopener" target="_blank">big update</a> that fixed up numerous issues with people playing it on Steam Deck. Just some of the improvements include:</p>
-<blockquote>
-<ul>
-<li>Crafting Loom UI Adjusted to scale with steam deck + Most Resolutions</li>
-<li>Crafting Workbench UI Adjusted to scale with steam deck + Most Resolutions</li>
-<li>BowCrafting Workbench UI Adjusted to scale with steam deck + Most Resolutions</li>
-<li>Crafting Well UI Adjusted to scale with steam deck + Most Resolutions</li>
-<li>Crafting Kiln UI Adjusted to scale with steam deck + Most Resolutions</li>
-<li>Herbology Well UI Adjusted to scale with steam deck + Most Resolutions</li>
-<li>Herbology Cauldron UI Adjusted to scale with steam deck + Most Resolutions</li>
-<li>Imbuing Lectern UI Adjusted to scale with steam deck + Most Resolutions</li>
-<li>Added Zoom in Settings to help users on Steam deck</li>
-</ul>
-</blockquote>
-<p>Check it <a href="https://store.steampowered.com/app/2942780/Bloobs_Adventure_Idle/" rel="noopener" target="_blank">out on the Steam page</a> if you love your casual games.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/immersive-idle-rpg-bloobs-adventure-recently-got-lots-of-steam-deck-improvements/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/immersive-idle-rpg-bloobs-adventure-recently-got-lots-of-steam-deck-improvements/</guid>
-      <pubDate>Mon, 22 Jul 2024 12:25:06 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/898317900id24928gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>Casual</category>
-      
-      <category>Idle</category>
-      
-    </item>
-    
-    <item>
-      <title>Developing a Video Game with Unreal Engine 5 on Linux</title>
-      <author>Vasilis</author>
-      <description><div class="content group e-content">
-<p>In November 2022, we started a side project in my company, a video game called Cuprum 2929. Because I love Linux (being a full user since 2009) and I'm the owner of the company, I made the bold decision to fully develop it on Linux. While this is largely true, I have to put a disclaimer now that we are not building everything on the Linux OS, but about 95%, which is still impressive in my opinion.</p>
-<p>In the article below, I'll discuss in detail our choices, our setup, how we helped some parts of the ecosystem support Linux better, and why some work couldn't be done on Linux. I'm also going to share some tips and tricks that I discovered myself to make the experience better and unlock some features that may not be available on the UE Linux build, and how we get the most out of it.</p>
-<h2>Setting up Unreal Engine</h2>
-<p>As is the case for a lot of things on a Linux OS, there are multiple ways to do this. If you are committed to developing your video game on Linux, I'm going to suggest the best thing that worked for us so far. If you want to experiment yourself, you can follow the <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/linux-development-quickstart-for-unreal-engine" rel="noopener" target="_blank"><u>unreal engine guide</u></a>, which would be redundant to repeat here.</p>
-<p>After we tried a few ways, the best flow for us (which is going to make more and more sense the more you progress in this article) is to build our own Unreal Engine fork. To get access to the Unreal Engine source code, as described in the previously linked guide, you can also fork it.<br/>
-<br/>
-Because the Unreal Engine project is huge in size, we only have a copy of the latest commit (git clone --depth=1 ) . But why go to all that effort?</p>
-<p>Later on, you'll see that we make changes to the code, build plugins that are not available for Linux in the Unreal Engine store, and we have a synchronised way of all of us using the same engine with the same plugins available.</p>
-<p>The process to build UE from source is not different when you have your own fork and it's already provided by Epic Games <a href="https://github.com/EpicGames/UnrealEngine/blob/release/Engine/Build/BatchFiles/Linux/README.md" rel="noopener" target="_blank"><u>here</u></a> .</p>
-<h2>Using Third Party Plugins</h2>
-<h3>Live Link</h3>
-<p>We found ourselves early on experimenting with cutscenes/cinematics in our project. A key part was making character dialogs realistic, so we tried using LiveLink. This was in May 2023, and we found out that a lot of the plugins were not available in the Linux build. After a short dig through the code, we found out that you could try to enable those plugins through some configuration and rebuild the engine.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18868024571721650161gol1.png" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18868024571721650161gol1.png"/></a></p>
-<p>It worked without issues, and all the code was compiling! We also created a proof of concept with a cutscene using Metahumans and Quixel Bridge. Later on, these plugins became available by default on Linux, so now you don't have to change anything.</p>
-<p>We then committed the code to our fork and rolled it out to all three of our developers.</p>
-<h4>Quixel Bridge</h4>
-<p>Quixel Bridge is available when you build UE from source. However, it wasn't available when we used any of the provided pre-made binaries. Now, it seems to be available, but it may not always be for the latest release.</p>
-<h3>Smartsuit</h3>
-<p>In the winter of 2023, we acquired the Rokoko Smartsuit and gloves. It's a suit with sensors that allows you to create animations quickly by wearing the suit and gloves. We acquired it knowing that Linux was not supported, but we wanted to make it so, just for the fun of it (and because I may have anger management issues when they tell me something doesn't work on Linux, but just maybe!).</p>
-<p>The first issue was that Rokoko Studio, the software that you interface with to use the suit and create animations, despite working with Wine, wouldn't recognize the hardware for the initial pairing (connected via USB). I spent 3-4 days tinkering with the Wine source code, but it seemed it needed a lot of work.</p>
-<p>Luckily, we had acquired a Mac because of the needs of another project, where a certain video game educational studio would not work consistently on Linux. We then did the initial pairing through the Macbook (the rest of the connection works wirelessly). So how it worked is:</p>
-<ol>
-<li>Get the suit and gloves connected through the USB (one by one).</li>
-<li>Set the IP of the Studio to be on the Linux machine (running under Wine).</li>
-<li>Have a static LAN IP for the Linux machine so you won't have to repeat this pairing all the time.</li>
-</ol>
-<p></p>
-<p>All of the other features of Rokoko Studio work flawlessly on Linux.</p>
-<p>We then found ourselves with another problem. The Rokoko Smartsuit plugin was not available for Linux. We <a href="https://github.com/Rokoko/rokoko-studio-live-unreal-engine/pull/55" rel="noopener" target="_blank"><u>provided a PR</u></a> that was kindly merged, with all the changes needed to make it buildable and usable on Linux (along with some bug fixes). Since then, our integration works flawlessly.</p>
-<h2>Cross Platform Collaboration</h2>
-<p>Since building a video game is a task that involves multiple disciplines and managing often short-term needs (like doing some technical animation or some special programming), we need the services of short-term contractors. We thus cannot expect every contractor to use the same setup as we do.</p>
-<p>To collaborate, we need to ensure that we are using the same release version of Unreal Engine (to the patch level). It then doesn't matter if ours has some extra changes that do not affect the core of it.</p>
-<p>When you open a project that was done on a different platform, you'll get a message to convert or skip conversion. Convert in place works (<strong>please have a version control system in place before you do that</strong>).</p>
-<h3>Version control system (VCS)</h3>
-<p>We use Git for VCS, with LFS. Basically, all the files apart from any C++ source files and configs go to Git LFS. That includes textures, sounds, maps, blueprints, and literally everything that's not a text file. We identified very early on that using Git LFS would be a problem. We used GitLab, which provides an LFS backend with a 10GB limit, and we had to do a lot of careful work to not exceed that limit.</p>
-<p>As the work progressed, we needed to find another solution. One of our engineers took the initiative to create a setup that would be cheap and easy to use, while still using GitLab. His work is summarized in <a href="https://www.vaslabs.io/post/migrating-from-gitlab-lfs-to-s3-to-save-money" rel="noopener" target="_blank"><u>this article</u></a>, and we <a href="https://github.com/vaslabs-ltd/git-s3-lfs" rel="noopener" target="_blank"><u>open-sourced a Terraform module</u></a> that helps with the setup.</p>
-<p>This, of course, is not a Linux-specific problem, but I'd like to emphasize how committed we are to helping both ourselves and the community. The setup with S3 costs us about 0.20 EUR per month, effectively nothing.</p>
-<h2>Building Projects from Source</h2>
-<p>It's come to our attention that writing C++ is somewhat problematic. Now, I'm not 100% sure if this is due to our setup or not. Basically, it seems that the generated Makefile is missing a few targets to be operational. I'm going to describe how we are fixing that, using a starter project called Lyra, which is available through the <a href="https://dev.epicgames.com/community/learning/paths/Z4/lyra-starter-game" rel="noopener" target="_blank"><u>Epic Games store</u></a>. Note that the most efficient way we found to download content from the store on Linux is the <a href="https://github.com/AchetaGames/Epic-Asset-Manager" rel="noopener" target="_blank"><u>Epic Asset Manager</u></a>.</p>
-<p>When you download and open the project, you are going to get a version warning; you can select convert in place. Then, in our case, there is an error that the source code cannot be compiled.</p>
-<p>If you open your terminal and run make, you'll get an error that some targets are missing. This is an issue we have when we are working on other video games as well. The way we fix it for now is with trial and error, using the Makefile from Unreal Engine as a guide. We are planning, though, to find the root cause and, if necessary, send a PR to get it fixed.</p>
-<h2>Our progress</h2>
-<p>Finally, I want to share our progress to give you an idea of the ecosystem state for developing a video game on Linux as well. So far, we have:</p>
-<ul>
-<li>Navigation menus, sound effects, and visual effects (using Niagara)</li>
-<li>Imported customized Metahumans, with all the features working</li>
-<li>Short cutscenes, animated from the Smartsuit and edited inside Unreal Engine</li>
-<li>A rich collection of 3D assets, created in Blender3D and imported successfully into our project</li>
-<li>AI behavior for some of our levels</li>
-</ul>
-<p>You can follow our progress on our <a href="https://store.steampowered.com/app/2660240/CUPRUM2929/" rel="noopener" target="_blank"><u>Steam Page</u></a>. As I am writing this, we are also creating a Discord server; unfortunately, it is not ready yet to make public. Look for us in Steam October Fest, where we'll be releasing a demo and broadcasting our gameplay!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/developing-a-video-game-with-unreal-engine-5-on-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/developing-a-video-game-with-unreal-engine-5-on-linux/</guid>
-      <pubDate>Mon, 22 Jul 2024 12:10:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/430575087id24927gol.jpg" type="image/jpeg"/>
-      
-      <category>Editorial</category>
-      
-      <category>Game Dev</category>
-      
-      <category>HOWTO</category>
-      
-      <category>Misc</category>
       
     </item>
     
