@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-08-13 07:25:56.742235</pubDate>
+    <pubDate>2024-08-14 07:24:57.201736</pubDate>
 
     
     <image>
@@ -18,6 +18,299 @@
     </image>
 
     
+    
+    <item>
+      <title>Ex-Blizzard devs new RTS &#39;Stormgate&#39; out in Early Access, works on Linux but may need a small fix</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Stormgate is a fresh RTS game set in an all-new science fantasy universe, it's hit Early Access today free to play but you may need a little tweak on Linux to run it. Developed by a whole bunch of Ex-Blizzard staffers including people who worked on StarCraft II, Warcraft III as well as C&amp;C: Generals 2 and Wasteland 3, the team certainly knows their stuff.</p>
+<p>Quite exciting to see another big RTS enter the market, as someone who absolutely adores these types of games and what I've played of it has been quite promising. Still plenty of rough edges, but that's expected for an unfinished game.</p>
+<div class="hidden_video" data-video-id="lSroUxCsBAQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/13b84383fdde036d7f10bde818cda659.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/lSroUxCsBAQ" target="_blank">See video</a></div></div>
+<p>The good news is that with Proton 9.0-2, it <em>does</em> work pretty well on Linux (testing done on Kubuntu 24.04). However, there's an issue where you may get <em>stuck</em> on the loading screen when it's checking for Ping. You can overcome this issue with one single terminal command, which as always with suggestions — use at your own risk:</p>
+<p><code class="inline-code">sudo sysctl -w net.ipv4.ping_group_range="0 1000"</code></p>
+<p><em>This allows your user to send and receive ICMP echo packets.</em></p>
+<p>After that, no issues getting into the game. Performance is pretty <em>reasonable</em> too, again making allowances since it's not finished. Running it on my AMD Ryzen 5800x and Radeon 6800 XT at 2560x1440 the "Ultra" preset has been giving me a mostly smooth 60FPS+ and largely well over that.</p>
+<p>I played a lot of StarCraft and StarCraft II years ago, and playing Stormgate was quite peculiar because it really does feel like StarCraft, although StarCraft with a lower budget. Even some of the unit voice lines sound like an alternate version of some units in StarCraft. This Ex-Blizzard team are certainly doing their best to be StarCraftButNot.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17803597491723576661gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/17803597491723576661gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13464492031723576659gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13464492031723576659gol1.jpg"/></a></p>
+<p>The free to play release does still need you to end up paying eventually though, since it only includes 1v1 ranked matched, 3 player co-op missions (and all heroes in co-op up to level 5) and custom games. If you want all the heroes and the actual campaign, you do <em>need</em> to pay up. For <em>everything</em> it's £50.99 according to Steam in the "Ultimate Early Access Pack".</p>
+<p>Find <a href="https://store.steampowered.com/app/2012510/Stormgate/" rel="noopener" target="_blank">Stormgate on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/ex-blizzard-devs-new-rts-stormgate-out-in-early-access-works-on-linux-but-may-need-a-small-fix/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/ex-blizzard-devs-new-rts-stormgate-out-in-early-access-works-on-linux-but-may-need-a-small-fix/</guid>
+      <pubDate>Tue, 13 Aug 2024 19:19:10 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/526844666id25053gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Free Game</category>
+      
+      <category>HOWTO</category>
+      
+    </item>
+    
+    <item>
+      <title>Minishoot&#39; Adventures developers rebuilt their UI to get it Steam Deck Verified</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Well, SoulGame Studio certainly have my attention for their effort on getting Minishoot' Adventures up to Steam Deck Verified. Plus, the game looks really entertaining.</p>
+<p>Released back in April 2024, it's a twin-stick bullet hell metroidvania with the adventurous spirit of the first Legend of Zelda. It's gone onto receiving an Overwhelmingly Positive rating from users on Steam so it seems like it's done quite well overall.</p>
+<div class="hidden_video" data-video-id="iVt4FBVdBJo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8b6bcd3e991d3d1b84716409a33645c7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/iVt4FBVdBJo" target="_blank">See video</a></div></div>
+<p>After taking a break from the launch, recently the developers released an update to get it Steam Deck Verified that includes these changes:</p>
+<blockquote>
+<ul>
+<li>We rebuilt all UI components that were poorly readable on SteamDeck. Which makes UI more user friendly and accessible for Steam Deck and PC as well.</li>
+<li>We did a final pass on optimization to remove nasty lag spikes and FPS drops. Gameplay on PC is more fluid than ever in epic fights which is especially crucial on SteamDeck.</li>
+<li>We changed the Steam API to make sure Achievements would work for MacOs user as well. Sorry about that, you should be able to redeem your Achievements if you have a save file around (if not you can find one in the forums about lost save).</li>
+</ul>
+Smaller changes :
+<ul>
+<li>Fixed a bug where unique keys were carried over to new games</li>
+<li>Fixed an issue that caused lag and freeze after reloading the game several times. (Many thanks to xcvdgb and Zookster on discord)</li>
+<li>Added the lowest difficulty chosen on the Save slot so you know which Achievement you are eligible to</li>
+<li>Made it easier to skip intro (just press Enter or Escape, or Start on gamepad)</li>
+</ul>
+</blockquote>
+<p>More about it in the developers own words: “We designed a map that would be enticing to discover, similar to a Metroidvania, with lots of connections, shortcuts, secrets, and skills that when unlocked, allow to unfold more paths to explore. All the while facing challenging bullet hell style combat with clean and polished visuals. The ability to drive around the world using a mini spaceship as a living character, allows for fluid navigation overall, making the exploration and backtracking a pleasure instead of a chore. We put all our love for Zelda 1 and shoot'em ups into Minishoot', we hope you'll find it interesting!”</p>
+<p>You can <a href="https://store.steampowered.com/app/1634860/Minishoot_Adventures/" rel="noopener" target="_blank">buy it on Steam</a>. Steam Deck Verified and rated Platinum on <a href="https://www.protondb.com/app/1634860" rel="noopener" target="_blank">ProtonDB</a> so you're good to go on Desktop Linux too with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Valve's Proton</a> version 9.0-2.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/minishoot-adventures-developers-rebuilt-their-ui-to-get-it-steam-deck-verified/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/minishoot-adventures-developers-rebuilt-their-ui-to-get-it-steam-deck-verified/</guid>
+      <pubDate>Tue, 13 Aug 2024 15:58:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/192981886id25052gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Steam Play</category>
+      
+      <category>Exploration</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Battle Train could end up being my next favourite deck-builder</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>There's just something satisfying about laying down tracks, and then slamming a train into your enemy. Battle Train is an interesting spin on deck-builders and there's a demo out now. Tested on Kubuntu Linux with Proton 9.0-2, it worked to perfection.</p>
+<p>Here the game is set out like a game-show. You're given a deck a cards that includes train tracks, bombs and all sorts and you just have to get your track built up to the opponents outposts on the board. Then the trains can smash into the outposts destroying them and you win. Easier said than done, with all the different cards you get as you can imagine there's plenty of strategy involved.</p>
+<div class="hidden_video" data-video-id="zOACIXgZPp8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/954da3bea08688c1cec9952d3bc46643.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/zOACIXgZPp8" target="_blank">See video</a></div></div>
+<p class="plain-list-title">More about it:</p>
+<ul>
+<li>Duel a wide range of foes, each with their own unique cards and abilities.</li>
+<li>Customize your train with your favorite power ups.</li>
+<li>Build your deck with an array of cards--both functional and fantastical--to obliterate your opponent.</li>
+<li>Win riches and prizes through a myriad of special events.</li>
+<li>Experience a hilarious story told by the makers of "3 out of 10", Tower of Guns, and Mothergunship.</li>
+</ul>
+<p>Really fun demo to try and, and really easy to understand and get into. Definitely worth a go.</p>
+<p>Check out the <a href="https://store.steampowered.com/app/1708950/Battle_Train/" rel="noopener" target="_blank">demo on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/battle-train-could-end-up-being-my-next-favourite-deck-builder/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/battle-train-could-end-up-being-my-next-favourite-deck-builder/</guid>
+      <pubDate>Tue, 13 Aug 2024 14:34:24 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1527924329id25051gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Deck-builder</category>
+      
+      <category>Demo</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Avoid a giant creepy boat stalking you in your kayak in this retro-horror game</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>For those readers who love the recent wave of retro-horror, Delta Kayak could be another good one to check out with a demo now live. Certainly wins points for some originality and total weirdness here.</p>
+<p>A mixture of horror and exploration wrapped up in a retro style. Here you were attacked by a strange being, and your pet vanishes without a trace. Your search ends up leading you to discover the twisted origin of the creature and its creator. You must rescue your pet, Pepa, and return home safe and sound.</p>
+<p>The game takes place in a real place, the delta of the Paraná River, Argentina. A labyrinth of rivers and streams with lush vegetation and a culture of community with nature.</p>
+<div class="hidden_video" data-video-id="a3HxIA0HT4k"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/33ae436807ec5962a9321fe0aac9087a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/a3HxIA0HT4k" target="_blank">See video</a></div></div>
+<p>The demo, lasting between 10 and 15 minutes, shows the beginning of the game, when the character goes out at night in his kayak to run an errand and encounters a half-boat, half-animal creature that constantly stalks him.</p>
+<p>Created by Eibriel, who worked in film and television before venturing into video games and uses mainly free and open source tools, such as Godot and Blender. It has Native Linux support and the developer said it will also work on Steam Deck.</p>
+<p>Check it out on <a href="https://store.steampowered.com/app/2632680/Delta_Kayak/" rel="noopener" target="_blank">the Steam page</a> and try the demo. The developer plans to launch it before the end of 2024.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/avoid-a-giant-creepy-boat-stalking-you-in-your-kayak-in-this-retro-horror-game/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/avoid-a-giant-creepy-boat-stalking-you-in-your-kayak-in-this-retro-horror-game/</guid>
+      <pubDate>Tue, 13 Aug 2024 14:10:46 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1442422215id25050gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Demo</category>
+      
+      <category>Godot Engine</category>
+      
+    </item>
+    
+    <item>
+      <title>Get a better look at S.T.A.L.K.E.R. 2: Heart of Chornobyl in the Developer Deep Dive</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A proper Developer Deep Dive is now available for the delayed S.T.A.L.K.E.R. 2: Heart of Chornobyl and it's looking and sounding really promising.</p>
+<p>GSC Game World might actually finally pull me into their world with this one, after I completely bounced off their older games in the series. The release is only a few months away (November 20th) so hopefully the extra time is going to be worth it.</p>
+<p>What do we get from this Deep Dive? There's various interviews and behind-the-scenes of the development process, quite a bit of new footage that including the world overview, various locations, gameplay and cut-scenes and there's even a full video walkthrough of one of the story quests.<br/>
+<br/>
+“We know you might be tired of waiting, and we truly appreciate your patience. These two additional months will give us the chance to fix more “unexpected anomalies” (or simply “bugs”, as you call them). We are always grateful for your ongoing support and understanding - it means the world to us. We’re just as eager as you are to finally release the game and for you to experience it for yourself.” said Yevhen Grygorovych, Game Director at GSC Game World.</p>
+<div class="hidden_video" data-video-id="bi17nPEG7jw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/122d9887dcb29207d6256820e6d28e40.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/bi17nPEG7jw" target="_blank">See video</a></div></div>
+<p>You can pre-order via:</p>
+<p><a href="https://www.gog.com/en/game/stalker_2_heart_of_chornobyl_standard_edition" rel="noopener" target="_blank">GOG</a></p>
+<p><a href="https://www.humblebundle.com/store/stalker-2-heart-of-chornobyl?partner=gamingonlinux" rel="noopener nofollow" target="_blank">Humble Store</a></p>
+<p><a href="https://store.steampowered.com/app/1643320/STALKER_2_Heart_of_Chornobyl/?curator_clanid=4218320" rel="noopener nofollow" target="_blank">Steam</a></p>
+<p>After watching it, be sure to come back and comment your thoughts on it. I really hope this one works well with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Valve's Proton</a> for Linux desktop and Steam Deck fans.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/get-a-better-look-at-stalker-2-heart-of-chornobyl-in-the-developer-deep-dive/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/get-a-better-look-at-stalker-2-heart-of-chornobyl-in-the-developer-deep-dive/</guid>
+      <pubDate>Tue, 13 Aug 2024 13:26:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1827903267id25049gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Play</category>
+      
+      <category>Action</category>
+      
+      <category>FPS</category>
+      
+      <category>GOG</category>
+      
+    </item>
+    
+    <item>
+      <title>The NoVR mod for Half-Life: Alyx has a big Summer 2024 update out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>With the rumours swirling around a <a href="https://www.gamingonlinux.com/2024/08/valve-working-on-a-new-game-that-could-be-half-life-3/" rel="noopener" target="_blank">new Half-Life game coming</a>, this is an excellent time to play the updated NoVR mod for Half-Life: Alyx if you don't own a VR kit. And there's a big Summer 2024 update out now.</p>
+<p>Since Half-Life: Alyx was designed for VR, it's still a little odd to try without it, but it's such an important game it deserves to have life outside of VR too.</p>
+<p>With this update all the "toner puzzles" are now complete and solvable from start to finish. All Steam Achievements are now obtainable too and there's been a big upgrade to the movement system too so that it should feel smoother and weapons feel better while moving. Plus some other updates:</p>
+<blockquote>
+<ul>
+<li><strong>Map Edits</strong> - players will no longer get caught on objects on the ground like train tracks etc and have proper smooth locomotion through the levels</li>
+<li><strong>Viewmodel Changes</strong> - there have been changes to how weapons sway, bob and overall move as you walk and run</li>
+<li><strong>Boundary Edits</strong> - players can no longer break level logic and proper edits have been made so players cannot break the map boundaries and other similar issues that could have arised before</li>
+</ul>
+</blockquote>
+<p>Check out their update trailer:</p>
+<div class="hidden_video" data-video-id="0f7y7gmUDZE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1322d3239c5b1298595f1cdc8f0fdd49.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/0f7y7gmUDZE" target="_blank">See video</a></div></div>
+<p>More updates are planned for 2024 including support for more mods, new animations, further movement improvements and so on. Perhaps most importantly, they will be getting the Orb Puzzle implementation done too at some point. In case you weren't aware: you can complete the game from start to finish with this mod.</p>
+<p>See more in their <a href="https://www.moddb.com/mods/half-life-alyx-novr/news/quakecon-update-summer-2024" rel="noopener" target="_blank">Mod DB post</a>. Half-Life: Alyx is available on <a href="https://store.steampowered.com/app/546560/HalfLife_Alyx/" rel="noopener" target="_blank">Steam</a> and 66% off until August 19th.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/the-novr-mod-for-half-life-alyx-has-a-big-summer-2024-update-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/the-novr-mod-for-half-life-alyx-has-a-big-summer-2024-update-out-now/</guid>
+      <pubDate>Tue, 13 Aug 2024 13:18:32 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2109730535id25048gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>FPS</category>
+      
+      <category>Misc</category>
+      
+      <category>Mod</category>
+      
+    </item>
+    
+    <item>
+      <title>The huge graphics overhaul for settlement survival sim Necesse is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Mixing together elements of RimWorld and Terraria, the open world survival crafting game Necesse has a huge graphics overhaul update out now.</p>
+<p>Work on this graphics overhaul has been going on for over a year, with the developer pulling in two new artists to make it happen. Another great thing about this update being live now, is that the "artists are no longer playing catch-up with the content updates" so we can expect to see much quicker updates and larger updates in future once again.</p>
+<p>Check out the fancy new trailer:</p>
+<div class="hidden_video" data-video-id="Wibgxke29YY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5c4699b6237e3be67758f9edb3deb00e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Wibgxke29YY" target="_blank">See video</a></div></div>
+<p>There's a lot to this update outside of much improved graphics, just <em>some</em> of which includes:</p>
+<blockquote>
+<ul>
+<li>Added 16 new achievements.</li>
+<li>Added smooth lighting to rocks and walls.</li>
+<li>Added wind effects.</li>
+<li>Added the ability to sit on chairs and benches.</li>
+<li>Added deeper and shallow parts of water.</li>
+<li>Added screenshot tool to island map.</li>
+<li>Added 20 new hairstyles you can select during character creation and Stylist change.</li>
+<li>Added 12 new eye types you can select during character creation and Stylist change.</li>
+<li>Added 8 new beard types you can select during character creation and Stylist change.</li>
+<li>Added expression wheel, by default used by holding down T.</li>
+<li>Added the ability to restore controls to their default key bind.</li>
+<li>Added toggle in pouches to disable auto pickup.</li>
+<li>Added Hardhat cosmetic item bought from the Blacksmith.</li>
+<li>Added Captains Boots cosmetic item bought from Stylist.</li>
+<li>Added Pirate Eyepatch cosmetic item bought from Stylist.</li>
+<li>Added Pirate Bandana with Eyepatch cosmetic item bought from Stylist.</li>
+<li>Added the option to buy settler cosmetic gear from each settler or Stylist.</li>
+<li>Added the Stabby Bush found creeping in the wilds.</li>
+<li>Added Landscaping Station crafted at Advanced Workstation.</li>
+<li>Added recipes for a ton of different rocks and other objects to the Landscaping Station.</li>
+<li>Added the ability to change skin and eyes at the Stylist at the cost of void shards.</li>
+<li>Added 2 new boss soundtracks for Sage and Grit and the Cryo Queen.</li>
+</ul>
+</blockquote>
+<p>“Remaking 3298 assets has been a great challenge, and the team is super happy with the result. I think anyone who has an affinity for games like Stardew Valley will absolutely adore the new art style of Necesse.” - Bo Michelsen - Artist on Necesse</p>
+<p>“From a solo hobby project, to a studio of 8 and now over 1 million people playing my game. It’s been an incredible journey.” - Mads Skovgaard - Creator of Necesse</p>
+<p>Necesse has Native Linux support and is Steam Deck Verified. You can <a href="https://store.steampowered.com/app/1169040/Necesse/?curator_clanid=4218320" rel="noopener nofollow" target="_blank">buy it from Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/the-huge-graphics-overhaul-for-settlement-survival-sim-necesse-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/the-huge-graphics-overhaul-for-settlement-survival-sim-necesse-is-out-now/</guid>
+      <pubDate>Tue, 13 Aug 2024 13:08:12 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/693052784id25047gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Exploration</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Sand in a Box is a fresh modern &#39;falling sand&#39; playground out now on Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Developer Patryk Zieliński of Tiliasoft just released Sand in a Box in Early Access on Steam, a fresh and new falling sand game with a lot of toys to play with.</p>
+<p>Sand in a Box is a falling sand simulator with advanced simulation algorithms designed for modern CPUs. Players can experiment with materials like sand, water, metals, lava, and acid, featuring cellular automata physics, thermal imaging, electrical conductivity, and radioactivity. The game supports modding, allowing the creation of new sets of elements and changes to the rules of the simulation. It fully supports Steam Deck (controller and touchscreen) and desktop Linux distributions.</p>
+<p>Looks like a whole lot of fun, check out the trailer below:</p>
+<div class="hidden_video" data-video-id="nDTcTKS66pA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b3e443ba105ac71bfde21e7a224df9df.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/nDTcTKS66pA" target="_blank">See video</a></div></div>
+<p>Speaking to the developer over email they mentioned how it originally started life as an iOS game on the App Store, but it's been gradually improved over the years with many new features.</p>
+<p>Asking them how it differs to games like <a href="https://www.gamingonlinux.com/2024/06/classic-free-physics-sandbox-game-the-powder-toy-is-now-on-steam/" rel="noopener" target="_blank">The Powder Toy</a>, which also had a Steam release recently, they said "Overall I'm just trying to develop unique features and I don't look at the other 'falling sand' games. I'm not aiming to make a better game than "The Powder Toy", just different enough that people would like to play both of them." and highlighted how it has been "designed for Steam Deck from the start".</p>
+<p>Speaking about Early Access they said: "Currently Sand in a Box launches in Early Access and I plan to actively develop it over at least few months listening to community feedback. One of the features I would like to add in a near future is multi-track video editor. That allows to record user input over multiple tracks while processing 'falling sand' simulation.</p>
+<p>However the main reason of going Early Access route is community feedback. I personally like to work on cellular automata simulations and there are people who can play with them for hours.<br/>
+My ultimate goal is to deliver really good experience for those people, solving multiple programming challenges along the way :)".</p>
+<p>One thing to note, is that the developer does use some AI. As noted on the store page:</p>
+<blockquote>
+<p><em>Gameplay trailer on storepage uses song made with the help of suno.ai<br/>
+Some backgrounds in the game are made with the help of various generative AI tools like Adobe Firefly.</em></p>
+</blockquote>
+<p>It's available with Native <a href="https://store.steampowered.com/app/2225680/Sand_in_a_Box/" rel="noopener" target="_blank">Linux support on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/08/sand-in-a-box-is-a-fresh-modern-falling-sand-playground-out-now-on-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/sand-in-a-box-is-a-fresh-modern-falling-sand-playground-out-now-on-steam/</guid>
+      <pubDate>Tue, 13 Aug 2024 13:00:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/589947339id25046gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
     
     <item>
       <title>I tried the demo of Super reaKtor and it really fried my brain</title>
@@ -51,7 +344,7 @@
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
 <p>Analgesic Productions have opened up the full source code for their 2D-3D action-adventure game Anodyne 2: Return to Dust.</p>
-<p>This is a <em>Source Available</em> release, not to be confused with true <em>Open Source</em>, since it's using a custom license with certain restrictions. However, it does effectively make the entire game free (if you build it yourself), since it also includes all the assets. This is the same thing the developer <a href="https://www.gamingonlinux.com/2020/04/analgesic-productions-have-opened-up-the-source-for-their-zelda-lite-anodyne/" rel="noopener" target="_blank">did with the first Anodyne game</a> and also with <a href="https://www.gamingonlinux.com/2023/09/even-the-ocean-from-analgesic-productions-has-a-source-code-release/" rel="noopener" target="_blank">Even the Ocean as well</a>.</p>
+<p>This is a <em>Source Available</em> release, not to be confused with true <em>Open Source</em>, since it's using a custom license with certain restrictions. However, it does effectively make the entire game free (if you build it yourself), since it also includes all the assets. This is the same thing the developer <a href="https://www.gamingonlinux.com/2020/04/analgesic-productions-have-opened-up-the-source-for-their-zelda-lite-anodyne/" rel="noopener" target="_blank">did with the first Anodyne game</a> and with <a href="http://www.gamingonlinux.com/2023/09/even-the-ocean-from-analgesic-productions-has-a-source-code-release/" rel="noopener" target="_blank">Even the Ocean</a> as well.</p>
 <p>More about it: "In this hybrid 2D-3D action-adventure game, run, jump, and drive across vast, dreamy 3D landscapes. Shrink into surreal, 2D dungeons inside of characters' bodies. Travel the world, meet strange people, and save the world from the dangerous Nano Dust. Don't miss the follow-up to the classic game 'Anodyne'!"</p>
 <p>You can see their video on the source release below and check out their <a href="https://melodicambient.substack.com/p/anodyne-2-goes-open-source" rel="noopener" target="_blank">blog post</a>:</p>
 <div class="hidden_video" data-video-id="S2IM7ZtcGFM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/acee15afbba65038cdde13acff58d940.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/S2IM7ZtcGFM" target="_blank">See video</a></div></div>
@@ -404,7 +697,7 @@
       <title>Alabaster Dawn is the next game from the developers of CrossCode</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
-<p>Previously known as Project Terra, Radical Fish Games who made the excellent CrossCode have now properly revealed their name game with Alabaster Dawn. From what their presskit said it will have Linux support once again too.</p>
+<p>Previously known as Project Terra, Radical Fish Games who made the excellent CrossCode have now properly revealed their next game with Alabaster Dawn. From what their presskit said it will have Linux support once again too.</p>
 <p>Alabaster Dawn is an Action RPG that builds on the best aspects of Radical Fish Games’ previous title, CrossCode. It features a deep combat system, challenging puzzles, and a mysterious world teeming with secrets, all bundled up in an engaging story. The shadow of Nyx has fallen—warping the world into a wasteland and vanishing the gods and their people. Now, Juno the Outcast Chosen, awakes to an impossible task: bring it all back.</p>
 <p>Check out the reveal trailer below:</p>
 <div class="hidden_video" data-video-id="-wRZ-VLAqV8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/002a2d18c85660d1fc416a21c0e704f3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-wRZ-VLAqV8" target="_blank">See video</a></div></div>
@@ -3583,282 +3876,6 @@ Locate hotspots with your Motion Tracker. Unleash a hailstorm of bullet fire wit
       <category>Misc</category>
       
       <category>Mod</category>
-      
-    </item>
-    
-    <item>
-      <title>STALKER 2 delayed until November to fix unexpected anomalies</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>GSC Game World have decided to again delay the release of STALKER 2, as it's simply not ready for the public yet.</p>
-<p>So that gives Valve even more time to continue working on <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> to ensure it runs everything nicely. I imagine too much for the Steam Deck though, probably desktop Linux only for this one. Although, I've been surprised by a few bigger games so we'll have to see.</p>
-<p>From the press release: “We know you might be tired of waiting, and we truly appreciate your patience. These two additional months will give us the chance to fix more “unexpected anomalies” (or simply “bugs”, as you call them). We are always grateful for your ongoing support and understanding - it means the world to us. We’re just as eager as you are to finally release the game and for you to experience it for yourself.” said Yevhen Grygorovych, Game Director at GSC Game World.</p>
-<p>So now it's going to release November 20th.</p>
-<div class="hidden_video" data-video-id="vxeGyXSM5Pc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3cf1e884422ce02c067ec050b24d96ee.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/vxeGyXSM5Pc" target="_blank">See video</a></div></div>
-<p class="plain-list-title">We're going to get more info on August 12th though, as they will be doing a Developer Deep Dive in collab with Xbox that will go over never before seen content including:</p>
-<ul>
-<li>- Interviews and behind-the-scenes of the development process.</li>
-<li>- Lots of new footage, including world overview, various locations, gameplay and cutscenes.</li>
-<li>- A full video walkthrough of one of the story quests.</li>
-</ul>
-<p>You can pre-order via:</p>
-<p><a href="https://www.humblebundle.com/store/stalker-2-heart-of-chornobyl?partner=gamingonlinux" rel="noopener" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/1643320/STALKER_2_Heart_of_Chornobyl/" rel="noopener" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/stalker-2-delayed-until-november-to-fix-unexpected-anomalies/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/stalker-2-delayed-until-november-to-fix-unexpected-anomalies/</guid>
-      <pubDate>Thu, 25 Jul 2024 12:15:38 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1927672937id24952gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Delayed</category>
-      
-      <category>FPS</category>
-      
-      <category>Open World</category>
-      
-    </item>
-    
-    <item>
-      <title>Hexis is a slightly chaotic spin on Tetris where blocks come in all directions</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>This isn't your classic Tetris, this is Hexis, a block-falling puzzle game about building up your high score but the blocks will come from all directions. <em>Note: key sent by the developer.</em></p>
-<p>It's a simple no-frills puzzle game, that succeeds at exactly what it describes. Blocks made of hexagons stitched together will come from the sides towards the center of the screen, initially quite slow but it will speed up. You'll need to fit them all together, to get them to vanish to build up your score before you pile them too close to the borders around the screen.</p>
-<div class="hidden_video" data-video-id="2G3Ck9vfcko"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/86b1b9dbb1e6377e7ce92d78c8c6337f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/2G3Ck9vfcko" target="_blank">See video</a></div></div>
-<p>While it has the traditional line-building in such block-falling games, one feature added in recently is the addition of bonus lines where if you line up the colours exactly as shown, you'll get some extra points. Just a fun little extra challenge to it, but not necessary to do.</p>
-<p>For those who find the main mode too easy, there's a couple of different modes where you'll have to think pretty darn fast with multiple blocks at a time. But the main mode is reasonably chilled.</p>
-<p>Initially launched in June, the developer told me via email it was developed on Linux! Overall, it's a well-built puzzler to spend some chilled-out time with.</p>
-<p>Check it out <a href="https://store.steampowered.com/app/2764350/Hexis/" rel="noopener" target="_blank">on the Steam page</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/hexis-is-a-slightly-chaotic-spin-on-tetris-where-blocks-come-in-all-directions/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/hexis-is-a-slightly-chaotic-spin-on-tetris-where-blocks-come-in-all-directions/</guid>
-      <pubDate>Thu, 25 Jul 2024 11:57:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/434325225id24951gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Casual</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Check out the demo for MetalMercs with retro real-time tactical mech squad action</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>MetalMercs could be a good one for those of you who love customizable mech combat action, and this time it's not turn-based it's actually real-time. The simplistic retro visuals will be an acquired taste though I think on this one but it seems like the gameplay will make up for it.</p>
-<p>"Destroy. Salvage. Repair. Upgrade. PROFIT! MetalMercs offers a real-time tactical experience where you command your own mercenary outfit of mechs and mercs and adventure through randomly generated missions filled with rewards, glory, and bitter defeat."</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="0Pe2PT00GAk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/54a88f68ffae443b0fb8cd7a6c9cd468.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/0Pe2PT00GAk" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li><strong>Complex Strategic Gameplay </strong>- Command your squad in battle and plan your tactics to dominate the battlefield.</li>
-<li><strong>Precision Strikes</strong> - Turn the tide and cripple enemies with called shots where YOU direct powerful attacks against your enemies.</li>
-<li><strong>Salvage and Scrap</strong> - Make key choices between missions to salvage spare parts and mechs, or use your salvage rights to keep your mechs operational.</li>
-<li><strong>Upgrade and Customize</strong> - Earn cash and parts to upgrade your mechs, enhancing their capabilities with powerful weapons and advanced technologies.</li>
-<li><strong>Dynamic Missions</strong> - Each mission offers different objectives and outcomes based on your strategic choices and actions.</li>
-<li><strong>Tactical Depth</strong> - Every decision matters, from the deployment of forces to the management of resources, adding tension and importance to every action.</li>
-</ul>
-</blockquote>
-<p>It does use some AI generation though, which the developer notes includes "This game currently uses some stand-in images created via generative AI. This includes some background screens, fluff images, and pilot portraits. All other gameplay visuals are manually crafted."</p>
-<p>You can <a href="https://store.steampowered.com/app/3045070/MetalMercs/" rel="noopener" target="_blank">check it out on Steam</a> with a Native Linux demo.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/check-out-the-demo-for-metalmercs-with-retro-real-time-tactical-mech-squad-action/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/check-out-the-demo-for-metalmercs-with-retro-real-time-tactical-mech-squad-action/</guid>
-      <pubDate>Thu, 25 Jul 2024 11:32:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1230247433id24950gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Demo</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Dragon Age: The Veilguard gets Steam Deck Verified well ahead of release</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Well that's a lovely surprise. Dragon Age: The Veilguard just got Steam Deck Verified, showing that Valve have been testing it ready for the upcoming release. Testing was done on the latest stable version of <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>, which is currently <a href="https://www.gamingonlinux.com/2024/06/proton-9-0-2-brings-better-controller-support-in-launchers-more-playable-games-lots-of-bug-fixes/" rel="noopener" target="_blank">Proton 9.0-2</a>.</p>
-<p>A release date hasn't yet even been announced, we just know it will be sometime this "Fall", which is sometime between September - December, so that's <em>really</em> early for the testing to be done.</p>
-<p>Good news, since this means it should work just fine on desktop Linux too since it will be run with Valve's Proton.</p>
-<div class="hidden_video" data-video-id="CTNwHShylIg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/20d1ccf2f4f642b3eefd90bfa32ba547.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/CTNwHShylIg" target="_blank">See video</a></div></div>
-<p>More about it:</p>
-<blockquote>
-<ul>
-<li><strong>Dramatic Single-Player Campaign</strong> — When corrupt Elven Gods threaten Thedas, lead the charge to save it. Rook isn’t afraid of a fight, no matter the odds. No matter the cost.</li>
-<li><strong>Vibrant &amp; Diverse Environments</strong> — Enter a vivid fantasy world, and experience imaginative new locations as well as some you’ve heard of but never seen.</li>
-<li><strong>Larger-than-life Foes</strong> — Battle darkspawn, demons from beyond the Veil, dragons that rule the skies, and unique enemies as you advance your quest and fight for Thedas’s future.</li>
-<li><strong>Recruit Distinct Companions</strong> — Your team is full of individuals with grim and wondrous histories, their own personal struggles and motivations, and rare skills that’ll help you survive. You’ll fight alongside Harding: The Scout, Neve: The Detective, Emmrich: The Necromancer, Taash: The Dragon Hunter, Davrin: The Warden, Bellara: The Veil Jumper, and Lucanis: The Mage Killer.</li>
-<li><strong>Rich Companion Stories</strong> — Deepen relationships with each companion and learn more about them on your adventures in Thedas. Your choices in these stories will impact how they develop, and completing them might unlock powerful abilities. Create memories with your team that will deepen your experiences in Thedas and give you more to fight for.</li>
-<li><strong>Be Who You Want To Be</strong> — Craft your personalized Rook with a robust character creator. Choose from a diverse set of appearance options for Human, Qunari, Dwarf, and Elf lineages.</li>
-<li><strong>Choose Your Way To Play</strong> — Select from 3 classes (Warrior, Mage, and Rogue), each with 2 distinct weapon types and unique abilities you can select between mid-combat. Experience new strategic depth as you combine fast-paced attacks, parries, and dodges with the companion ability wheel to exploit enemy weaknesses and seize victory with devastating combat combos. Customize a combat style that works for you.</li>
-<li><strong>Deep RPG Progression</strong> — Level up your Rook and companions with their own skill trees. Choose perks and combat abilities as you climb towards more powerful specializations.</li>
-</ul>
-</blockquote>
-<p>You can <a href="https://store.steampowered.com/app/1845910/Dragon_Age_The_Veilguard/" rel="noopener" target="_blank">follow it on Steam</a>.</p>
-<p>Will you be picking up Dragon Age: The Veilguard at release? I must admit, the Dragon Age games kind of flew past me. I've only played one of them and wasn't overly hooked on it. But since Baldur's Gate 3, I'm definitely into RPGs once again so maybe this time it will get me more into it after being refreshed by BG3.</p>
-<hr/>
-<p><strong>Update</strong>: the developer <a href="https://x.com/dragonage/status/1816511768044163410" rel="noopener" target="_blank">confirmed</a> on X (Twitter) that "the EA App will not be required to play the game". Great news!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/dragon-age-the-veilguard-gets-steam-deck-verified-well-ahead-of-release/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/dragon-age-the-veilguard-gets-steam-deck-verified-well-ahead-of-release/</guid>
-      <pubDate>Thu, 25 Jul 2024 10:51:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/651208941id24949gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>RPG</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Top-down Terraria-like &#39;Necesse&#39; gets a huge graphics update on August 10</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Necesse is an impressive game but the graphics were a bit on the plain side. This changes dramatically on August 10 with the exciting Graphics Update. Very much a play it as you want it game, a lot like a top-down Terraria even with elements of village building with NPC helpers too with a sprinkle of RimWorld even.</p>
-<p>The indie developer Fair Games ApS expanded and pulled in two new artists, and this work has been in progress for at least a year so it's great to see it finally arrive.</p>
-<p>Check out how it will look in the new trailer:</p>
-<div class="hidden_video" data-video-id="K_egmB6i9zc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1ccb7458b70933dc2db0ce8f3ca4922e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/K_egmB6i9zc" target="_blank">See video</a></div></div>
-<p><em>That actually looks a huge amount better.</em></p>
-<p>The developer actually announced late last year that it had sold over a million copies, so no doubt this will help pull in even more players new to the world. </p>
-<p>Necesse has Native Linux support and is Steam Deck Verified. You can <a href="https://store.steampowered.com/app/1169040/Necesse/?curator_clanid=4218320" rel="noopener nofollow" target="_blank">buy it from Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/top-down-terraria-like-necesse-gets-a-huge-graphics-update-on-august-10/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/top-down-terraria-like-necesse-gets-a-huge-graphics-update-on-august-10/</guid>
-      <pubDate>Wed, 24 Jul 2024 18:30:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/739878226id24947gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Building Sim</category>
-      
-    </item>
-    
-    <item>
-      <title>Horticular is a beautifully relaxing garden-restoring game inspired by Viva Pinata</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Inspired in parts by both Viva Pinata and Rollercoaster Tycoon, inDirection Games and Slug Disco just released Horticular and it's as sweet as they come. <em>Note: key provided by publisher.</em></p>
-<p>For cozy game fans, this is absolutely the one for you. Especially if you're a bit of a green finger. I myself am not, I kill every plant that's ever given to me, but at least now I can do it total safety and not have to feel bad about killing yet another cactus.</p>
-<p>Here you've been magically summoned by mysterious gnomes to restore a long-lost garden. In some ways, it actually reminds me of Terra Nil, which is about restoring a wasteland but here it's gardening. Similar idea, very different in design overall though. If you enjoyed Terra Nil, I think you would enjoy this a bit too. Less of a puzzle game though, more of a sandbox to beautify the land.</p>
-<div class="hidden_video" data-video-id="sFe5iQ6D2sM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e461f9a2a74cb80e87854e3748d73312.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/sFe5iQ6D2sM" target="_blank">See video</a></div></div>
-<p>Horticular is all about taking your time, and just making everything look sweet. It has a day / night cycle, and a weather system too. You can't even speed things up during the day, so you can just sit back and make the most of it. You do have a real sense of purpose here though, it's not just idle building. As you progress you unlock more and more, eventually you can get some animals to arrive if you ensure they have everything they need.</p>
-<p>Even if you're not particularly creative, there's plenty there to keep you going through the quests and challenges where the progress nicely drip-feeds more into the game for you. Especially with the gold and upgrade system, you can go for hours and hours at a time. And for those who are creative, the sandbox mode is for you where you don't have to follow the story along.</p>
-<p>It has Native Linux support that worked without issues and well worth a purchase if you love more casual games. Really does allow you to just zone-out and get fixing up the place.</p>
-<p>Check it <a href="https://store.steampowered.com/app/1928540/Horticular/" rel="noopener" target="_blank">out on Steam now</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/horticular-is-a-beautifully-relaxing-garden-restoring-game-inspired-by-viva-pinata/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/horticular-is-a-beautifully-relaxing-garden-restoring-game-inspired-by-viva-pinata/</guid>
-      <pubDate>Wed, 24 Jul 2024 18:14:28 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1912018868id24946gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Casual</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Besiege: The Splintered Sea Expansion gets more levels in the latest update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Besiege: The Splintered Sea Expansion was already really clever, and now it's just that little bit bigger and better thanks to a recent update.</p>
-<p>The new update brings with it five new levels allow you to dive deeper into the intricate world of Besiege, designed to expand your creative and engineering capabilities. There's also a whole bunch of bug fixes, plus other additions like improved accessibility.</p>
-<p class="plain-list-title">The new levels include:</p>
-<ul>
-<li>The Sunken Stronghold - Destroy the Fort.</li>
-<li>Stormrunner’s Grave - Steal and bury the cargo.</li>
-<li>Ironweave Passage - Race to the end before the gates close.</li>
-<li>Feeding Frenzy - Defeat all of the sharks.</li>
-<li>The Devouring Pit - Defeat the Kraken.</li>
-</ul>
-<p>So now overall there's 15 levels instead of 10. Always nice to see free additions to a DLC like this.</p>
-<p>See the updated trailer below:</p>
-<div class="hidden_video" data-video-id="-39bkG7_0EA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/516af2e294fdfae6a825b560299ba9d5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-39bkG7_0EA" target="_blank">See video</a></div></div>
-<p>Seems like players are enjoying it with a Very Positive rating on Steam. Besiege has Native Linux support and is rated Steam Deck Playable.</p>
-<p>Besiege: The Splintered Sea is available now on <a href="https://store.steampowered.com/app/2165710/Besiege_The_Splintered_Sea/" rel="noopener" target="_blank">Steam</a> for $8.99 / £7.99.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/besiege-the-splintered-sea-expansion-gets-more-levels-in-the-latest-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/besiege-the-splintered-sea-expansion-gets-more-levels-in-the-latest-update/</guid>
-      <pubDate>Wed, 24 Jul 2024 17:26:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/673599907id24945gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Building Sim</category>
-      
-      <category>DLC</category>
-      
-    </item>
-    
-    <item>
-      <title>Huge factory sim Shapez 2 releases on August 15 with over 300k wishlists</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>It's almost time to get cutting some shapes, with the Early Access release of Shapez 2 coming on August 15. Their press team mentioned the developer has managed to build up over 300,000 wishlists, so at this point it's pretty much guaranteed to be a success early on.</p>
-<p>Create sleek space factories to break shapes down and form completely different ones. With infinite resources and no construction costs, everybody can enjoy the game and solve production puzzles at their own pace. It really does look and sound like a great evolution over the first game.</p>
-<p>Have a look at the new trailer:</p>
-<div class="hidden_video" data-video-id="A9MpsOixJsg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f707612862e419d5ccfa1f46434e0889.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/A9MpsOixJsg" target="_blank">See video</a></div></div>
-<p>Tobias Springer, founder of tobspr Games, says, “We’re proud to have reached the point where shapez 2 is ready to be released in Early Access. The game already offers players a full-fledged experience worthy of a full launch — now we’re going to take the time to continue polishing the game and add more content until we’re completely satisfied with what we’ve created. We’re thankful for our passionate community that is just as invested in this game as we are and will help us shape the game even further during the Early Access period. Without our players we could not have made it this far to begin with.”</p>
-<p class="plain-list-title">Features available at release:</p>
-<ul>
-<li><strong>Multi-Layer 3D Factories:</strong> Design and optimize your factories in a whole new dimension.</li>
-<li><strong>Trains: </strong>Connect distant stations with a network of space trains.</li>
-<li><strong>Research System:</strong> Unlock buildings, mechanics &amp; upgrades in the all-new tech tree.</li>
-<li><strong>New Shape Mechanics: </strong>Discover new shapes types with unique properties and logic.</li>
-<li><strong>Blueprint Library: </strong>Save, load, export and share factory design blueprints with anyone.</li>
-<li><strong>All-new Visuals: </strong>Build factories and stations in a stunning immersive space environment.</li>
-<li><strong>Fluids: </strong>Use different types of liquids to process shapes or boost production.</li>
-<li><strong>Animated Open Buildings: </strong>See what's happening inside buildings in your factory.</li>
-<li><strong>Easy editing: </strong>Cutting, cloning, rotating and destroying sections of your factory has never been so intuitive.</li>
-<li><strong>Undo/Redo: </strong>Gain the ability to undo/redo unwanted operations.</li>
-</ul>
-<p>You can follow on <a href="https://store.steampowered.com/app/2162800/shapez_2/" rel="noopener" target="_blank">the Steam page</a>. The base price will be $24.99 / €24.99 / £20.99 with a 10% discount for the first two weeks.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/07/huge-factory-sim-shapez-2-releases-on-august-15-with-over-300k-wishlists/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/07/huge-factory-sim-shapez-2-releases-on-august-15-with-over-300k-wishlists/</guid>
-      <pubDate>Wed, 24 Jul 2024 14:43:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1672335390id24944gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Building Sim</category>
-      
-      <category>Indie Game</category>
       
     </item>
     
