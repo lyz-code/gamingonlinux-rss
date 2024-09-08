@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-09-07 07:27:23.947234</pubDate>
+    <pubDate>2024-09-08 07:24:37.515135</pubDate>
 
     
     <image>
@@ -18,6 +18,115 @@
     </image>
 
     
+    
+    <item>
+      <title>Steam Beta adds new shortcut key to save a clip of recent gameplay</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve released a fresh Steam Beta client for Desktop and Steam Deck, with one change I'm sure some will love with the new Game Recording system. Since the new Steam Game Recording feature <a href="https://www.gamingonlinux.com/2024/06/steam-game-recording-beta-announced-works-on-linux-and-steam-deck-too/" rel="noopener" target="_blank">launched in Beta back in June</a>, Valve have made some nice steady improvements to it.</p>
+<p>The latest update adds in a dedicated customizable shortcut key for you to save a clip of just recent gameplay. Not only that, the length of time it cuts can be changed as well.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13610403511725707635gol1.png" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13610403511725707635gol1.png"/></a><br/>
+<em>This shortcut only appears in Desktop Steam currently.</em></p>
+<p>From the Desktop Beta <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/4595448512893026444?snr=2___" rel="noopener" target="_blank">changelog</a>:</p>
+<blockquote>
+<p>General</p>
+<ul>
+<li>Fixed regression when rendering game invites in chat.</li>
+<li>Improved reliability of "games in common" collections in library.</li>
+<li>Rewrite of shortcut key binding in settings UI, including the ability to unbind a hotkey.</li>
+</ul>
+<p>Steam Input</p>
+<ul>
+<li>Fixed regression: "Dots per 360" was having no effect on FlickStick or Gyro to Mouse modes.</li>
+<li>Fixed a bug where PlayStation controllers connected over BT could be shown as connected over USB.</li>
+</ul>
+<p>Game Recording</p>
+<ul>
+<li>You can now bind a shortcut key which saves a clip of recent gameplay.</li>
+</ul>
+</blockquote>
+<p>From the Steam Deck Beta <a href="https://store.steampowered.com/news/app/1675200/view/4572930514754079101" rel="noopener" target="_blank">changelog</a> these changes are just for the Deck:</p>
+<blockquote>
+<p>General</p>
+<ul>
+<li>Fixed a rare crash when trying to connect to a WiFi network for the first time</li>
+<li>Fixed a rare crash when checking for updates</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/09/steam-beta-adds-new-shortcut-key-to-save-a-clip-of-recent-gameplay/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/09/steam-beta-adds-new-shortcut-key-to-save-a-clip-of-recent-gameplay/</guid>
+      <pubDate>Sat, 07 Sep 2024 11:17:00 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1548628626id25214gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Beta</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 9.17 released with window surface scaling on High DPI displays</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Windows compatibility layer Wine version 9.17 is out now bringing new features and bug fixes so here's what's new.</p>
+<p>From the <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-9.17" rel="noopener" target="_blank">release notes</a> these are the main highlights:</p>
+<blockquote>
+<ul>
+<li>Window surface scaling on High DPI displays.</li>
+<li>Bundled vkd3d upgraded to version 1.13.</li>
+<li>Mono engine updated to version 9.3.0</li>
+<li>Improved CPU detection on ARM64.</li>
+<li>Various bug fixes.</li>
+</ul>
+</blockquote>
+<p>The vkd3d upgrade I <a href="https://www.gamingonlinux.com/2024/08/wines-direct3d-to-vulkan-translation-library-vkd3d-113-out-now/" rel="noopener" target="_blank">covered previously</a> is now bundled as noted above that has these changes:</p>
+<blockquote>
+<ul>
+<li>Basic loop unrolling support in the HLSL compiler.</li>
+<li>Effects compiler support for several version 4.0+ state objects.</li>
+<li>Miscellaneous bug fixes.</li>
+</ul>
+</blockquote>
+<p>For the Wine 9.17 bug fixes they noted fixes for Starcraft Remastered, Epic Online Services, Constantine (2005), the Sven Bømwøllen series, ADOM and various other miscellanious fixes for expected Windows behaviour.</p>
+<p><a href="https://gitlab.winehq.org/mono/wine-mono/-/releases/wine-mono-9.3.0" rel="noopener" target="_blank">Mono 9.3.0</a> also bundled has these changes:</p>
+<blockquote>
+<ul>
+<li>Added a partial work-around for NLogConfigurationException in old NLog versions. (<a href="https://bugs.winehq.org/show_bug.cgi?id=51317" rel="nofollow noreferrer noopener" target="_blank">bug 51317</a>)</li>
+<li>Fixed behavior of System.IO.Directory enumeration with a search pattern of String.Empty to match an apparent bug in .NET Framework (returns no results). This fixes a crash reported at <a href="https://github.com/ValveSoftware/Proton/issues/7736" rel="nofollow noreferrer noopener" target="_blank">https://github.com/ValveSoftware/Proton/issues/7736</a></li>
+<li>Fixed a crash in winforms when an accessibility tool attempts to enumerate accessible children using IEnumVariant.</li>
+<li>Instead of running each test fixture in its own process, all tests within a single dll are run in a single process. This makes the tests run much faster.</li>
+<li>Upstream updates:
+<ul>
+<li>SDL to 2.30.6.</li>
+<li>llvm-mingw to 20240619</li>
+<li>FNA to 24.08.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>In case you missed it, the <a href="https://www.gamingonlinux.com/2024/08/microsoft-donates-the-mono-project-to-the-wine-team/" rel="noopener" target="_blank">Wine team now have control of the Mono Project</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/09/wine-9-17-released-with-window-surface-scaling-on-high-dpi-displays/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/09/wine-9-17-released-with-window-surface-scaling-on-high-dpi-displays/</guid>
+      <pubDate>Sat, 07 Sep 2024 11:03:36 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
     
     <item>
       <title>AMD&#39;s Z2 Extreme chip due out sometime in 2025 for handheld PCs</title>
@@ -4066,74 +4175,6 @@ Controls
       <category>RPG</category>
       
       <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Genki reveal a new Tokyo Xtreme Racer is in the works</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Genki are returning to their racing roots with a brand new Tokyo Xtreme Racer in the works, due out for release sometime in 2025. The first series title in 18 years, no doubt fans of the classic Genki racers will be happy about this, especially as it's coming to Steam too so you'll be able to play it with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> on Steam Deck / Desktop Linux.</p>
-<p>Their teaser was brief and didn't really show anything:</p>
-<div class="hidden_video" data-video-id="sEhzyVcUCCM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/199d51036535b9ad8aae0df6b25a0afd.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/sEhzyVcUCCM" target="_blank">See video</a></div></div>
-<p>Their Steam page was also light on any actual details too:</p>
-<blockquote>
-<p>"Tokyo Xtreme Racer" is a racing game set in a sealed-off future Tokyo, where you compete for the fastest speed in your customized cars on the highways that weave through the city, aiming to reach the top.<br/>
-<br/>
-Drive real cars on meticulously recreated courses, compete against powerful rivals,<br/>
-slip through other cars, and engage in spirit-wracking battles.<br/>
-This is a series with unparalleled appeal.<br/>
-<br/>
-A new title, "Tokyo Xtreme Racer" now in development<br/>
-please look forward to the release of more information.</p>
-</blockquote>
-<p>You can <a href="https://store.steampowered.com/app/2634950/Tokyo_Xtreme_Racer/" rel="noopener" target="_blank">follow it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/08/genki-reveal-a-new-tokyo-xtreme-racer-is-in-the-works/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/genki-reveal-a-new-tokyo-xtreme-racer-is-in-the-works/</guid>
-      <pubDate>Thu, 22 Aug 2024 12:41:36 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/379341382id25113gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Play</category>
-      
-      <category>Racing</category>
-      
-      <category>Steam</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam now shows who played mostly on Steam Deck in user reviews</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><strong>Update - 22/08/24 17:40 UTC</strong>: Valve has now actually <a href="https://x.com/OnDeck/status/1826673475119186082" rel="noopener" target="_blank">announced</a> this change.</p>
-<hr/>
-<p>While I can't find anywhere that Valve actually announced this, they've done another tweak to the user review system on Steam to show who primarily played on Steam Deck. This follows on from the recent user review update that <a href="https://www.gamingonlinux.com/2024/08/valve-attempts-to-deal-with-jokes-memes-and-ascii-art-reviews-on-steam/" rel="noopener" target="_blank">attempted to deal with jokes, memes and ASCII art</a>.</p>
-<p>Just another way for Valve to advertise their Steam Deck in a neat way, and importantly for potential buyers to see who is <em>really</em> playing on Steam Deck. It's a good way to gauge if a game is truly worth a purchase for you, if you're also primarily a Steam Decker.</p>
-<p>When you look over various user reviews on Steam, you might now spot a Steam Deck icon, the same one that was <a href="https://www.gamingonlinux.com/2024/07/steam-will-now-show-you-who-is-playing-on-steam-deck/" rel="noopener" target="_blank">added to the friends list recently</a> to show who is currently online on Steam Deck.</p>
-<p>As some examples here's one from the excellent <a href="https://store.steampowered.com/app/1592280/Selaco/" rel="noopener" target="_blank">Selaco</a>:</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14668991371724327903gol1.jpg"/></p>
-<p>And another from <a href="https://store.steampowered.com/app/1868140/DAVE_THE_DIVER/" rel="noopener" target="_blank">DAVE THE DIVER</a>:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/266177871724328096gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/266177871724328096gol1.jpg"/></a></p>
-<p>This might even push more Steam Deck players to make a review, just to show off how many hours they've put into a game. Which can then help push even more game sales, and perhaps more Steam Deck sales too.</p>
-<p>Now Valve just need to add a filter to show only Steam Deck reviews, and it should work quite nicely.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/08/steam-now-shows-who-played-mostly-on-steam-deck-in-user-reviews/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/steam-now-shows-who-played-mostly-on-steam-deck-in-user-reviews/</guid>
-      <pubDate>Thu, 22 Aug 2024 12:09:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
       
     </item>
     
