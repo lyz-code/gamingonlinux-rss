@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-09-15 07:25:22.420313</pubDate>
+    <pubDate>2024-09-16 07:27:02.411345</pubDate>
 
     
     <image>
@@ -18,6 +18,94 @@
     </image>
 
     
+    
+    <item>
+      <title>Microsoft Windows kernel changes don&#39;t suddenly mean big things for Linux gaming</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>There's a lot of blog posts and news articles being written right now centred around Microsoft's plans for updates to Windows 11, and potential kernel changes, with some thinking this means big things for Linux gaming.</p>
+<p>Sorry to say, but I'm here to bring a more realistic take and to help keep all your feet on the ground.</p>
+<p>This comes from a Microsoft <a href="https://blogs.windows.com/windowsexperience/2024/09/12/taking-steps-that-drive-resiliency-and-security-for-windows-customers/" rel="noopener" target="_blank">blog post</a> titled "Taking steps that drive resiliency and security for Windows customers", which is as a result of the recent CrowdStrike incident where an update took down millions of Windows PCs due to it running at the kernel-level inside Windows.</p>
+<p>One that has been really doing the rounds lately, especially across Reddit and other social media is from <a href="https://www.notebookcheck.net/Microsoft-paves-the-way-for-Linux-gaming-success-with-plan-that-would-kill-kernel-level-anti-cheat.888345.0.html" rel="noopener" target="_blank">Notebookcheck</a>, with a rather sensational article title of "Microsoft paves the way for Linux gaming success with plan that would kill kernel-level anti-cheat".</p>
+<p>Here's the thing: Microsoft <em>don't</em> actually say they will kill off kernel-level access, and <em>if</em> they tried that (again - they tried with Vista before), they will no doubt again face some pretty serious push-back from both cybersecurity vendors and regulators across various countries. Something that would likely be more hassle than its actually worth. What Microsoft <em>do</em> actually talk about, is providing <em>additional</em> options that are outside of kernel mode - a whole <em>new</em> platform to "meet the needs of security vendors".</p>
+<p>This new security platform, if vendors chose to actually go ahead and use it, could mean the <em>opposite</em> for Linux gaming, and cause a whole bunch of new <em>headaches</em> when it comes to supporting it regardless of it being via Native Linux games, or Windows games through Wine and Proton. So if anything, I would say that rather than paving the way for Linux gaming to get better, it's just going to be <em>another</em> hurdle. As annoying as that is.</p>
+<p>Just because some things may move out of the kernel-level, also doesn't mean things will suddenly work on Linux (or get any easier to support via Wine / Proton). There will be <em>various</em> ways for developers to detect Linux, and continue to block it.</p>
+<p>Just look at Destiny 2 as the easy and simple example here, they very clearly check for and completely block Linux platforms from playing Destiny 2 via Proton with no way around it. From the official Bungie <a href="https://help.bungie.net/hc/en-us/articles/360049024592-Destiny-2-Steam-Guide" rel="noopener" target="_blank">website</a>:</p>
+<blockquote>
+<p><strong>Steam Deck and Destiny 2</strong></p>
+<p>Destiny 2 is not supported for play on the Steam Deck or on any system utilizing Steam Play's Proton unless Windows is installed and running. Players who attempt to launch Destiny 2 on the Steam Deck through SteamOS or Proton will be unable to enter the game and will be returned to their game library after a short time.</p>
+<p>Players who are not accessing Destiny 2 through Windows and attempt to bypass the SteamOS/Proton incompatibility will be met with a game ban.</p>
+</blockquote>
+<p><em>You could expect to see more of that.</em></p>
+<p>Then there's another easy example, Rust from Facepunch. Garry Newman has been pretty outspoken in the past about it, and how when they last had Rust supported on Linux, another Facepunch developer noted it <a href="https://www.gamingonlinux.com/2022/10/facepunch-put-out-a-fresh-statement-on-rust-for-steam-deck-linux/" rel="noopener" target="_blank">caused more cheating</a> issues for them to have to deal with.</p>
+<p>How about Fortnite? That's pretty much a "lol no" event too, it's not like things being client-side will suddenly mean Fortnite would work on Linux, it would absolutely continue to be blocked. At least, <a href="https://www.gamingonlinux.com/2023/12/fortnite-on-linux-steam-deck-not-until-tens-of-millions-of-users/" rel="noopener" target="_blank">not until Linux / Steam Deck has tens of millions of users</a> according to Epic's Tim Sweeney.</p>
+<p>There's really no easy answer to the anti-cheat problem for Linux / Steam Deck gaming right now, aside from perhaps developers having things done server-side where the platform you're playing on is less of an issue, or cloud gaming where the game isn't even on your machine. That's not to say it will be a problem that will never be solved, just don't expect changes to the way Windows handles things like security, anti-tamper, anti-cheat and so on to be in any way beneficial for Linux.</p>
+<p>As usual, over to you in the comments: what are you thinking?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/09/microsoft-windows-kernel-changes-dont-suddenly-mean-big-things-for-linux-gaming/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/09/microsoft-windows-kernel-changes-dont-suddenly-mean-big-things-for-linux-gaming/</guid>
+      <pubDate>Sun, 15 Sep 2024 16:43:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>Editorial</category>
+      
+      <category>Microsoft</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Deck SteamOS 3.6.13 Beta and a new Steam Client Beta released</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>We're really closing in on the stable release of SteamOS 3.6 now for Steam Deck, with this being the second release candidate. Plus another small Steam Client Beta release.</p>
+<p>First up the SteamOS 3.6.13 Beta <a href="https://steamcommunity.com/games/1675200/announcements/detail/7124220524028473382?snr=2___" rel="noopener" target="_blank">changes</a>:</p>
+<blockquote>
+<p class="plain-list-title"><strong>General</strong></p>
+<ul>
+<li>Fixed a problem where a Game Recording capture failing could cause subsequent captures to also fail.</li>
+<li>Fixed display regressions with certain titles such as Warriors All-Stars, Disgaea 5 Complete, Vampire: The Masquerade - Reckoning of New York.</li>
+</ul>
+</blockquote>
+<p>Plus the Steam Deck Client Beta <a href="https://store.steampowered.com/news/app/1675200/view/7124220524028274953" rel="noopener" target="_blank">changes</a>:</p>
+<blockquote>
+<p class="plain-list-title"><strong>General</strong></p>
+<ul>
+<li>Fixed game recording not working for non-Steam games.</li>
+<li>Fixed instances where post-game events for the new Game Recording feature could show outside of the Steam Client Beta.</li>
+</ul>
+<p class="plain-list-title"><strong>Steam Input</strong></p>
+<ul>
+<li>Fixed controller input sometimes becoming unresponsive after changing the Switch controller layout setting.</li>
+</ul>
+</blockquote>
+<p>For Desktop Steam there was also the Client Beta update, with the only <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/7099450726079825247?snr=2___" rel="noopener" target="_blank">change</a> noted for Desktop:</p>
+<blockquote>
+<p class="plain-list-title"><strong>General</strong></p>
+<ul>
+<li>Fixed instances where post-game events for the new Game Recording feature could show outside of the Steam Client Beta.</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/09/steam-deck-steamos-3613-beta-and-a-new-steam-client-beta-released/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/09/steam-deck-steamos-3613-beta-and-a-new-steam-client-beta-released/</guid>
+      <pubDate>Sun, 15 Sep 2024 08:20:34 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>Steam</category>
+      
+      <category>SteamOS</category>
+      
+    </item>
     
     <item>
       <title>European Consumer Organization goes after multiple publishers for their in-game currency</title>
@@ -4182,65 +4270,6 @@
       <category>Action</category>
       
       <category>Anti-Cheat</category>
-      
-    </item>
-    
-    <item>
-      <title>KDE Plasma 6.2 adding a pop-up for donations, plus they want to make a next-generation KDE OS</title>
-      <author>nwildner</author>
-      <description><div class="content group e-content">
-<p>A <a href="https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/4490" rel="noopener" target="_blank">recent change</a> was proposed last month to implement an on-by-default KDED (KDE Daemon) module that will gently ask you to donate to KDE as a pop-up on your notification system inside the KDE Plasma desktop, planned for version 6.2.</p>
-<p>As per the merge request cited above and <a href="https://pointieststick.com/2024/08/28/asking-for-donations-in-plasma/" rel="noopener" target="_blank">this blog post</a> from developer Nate Graham regarding the situation, we can find the following rationale behind this implementation: KDE usually ask through various social media posts, official channels and yearly fundraisers and blog posts which Graham noted you "may get the impression that we’re always begging for cash". However, if you're not a follower of those and just an average KDE (Plasma) user, you might never know that KDE (The Foundation) has these donations requests constantly being asked, or never know it could be in need of funding.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4600060731724954281gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4600060731724954281gol1.jpg"/></a><br/>
-<em>Pictured - The donation request in KDE Plasma, although the button has now been <a href="https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/4490#note_1011086" rel="noopener" target="_blank">changed</a> to a less pushy "Donate" instead of "Donate Now".</em></p>
-<p>With that in mind and the fact that other organizations already do this on a yearly basis (Thunderbird and Wikimedia for example), KDE decided to implement a KDED module that will ask for donations only <strong>once a year</strong> in Plasma 6.2+. While it may look <em>intrusive</em>, this is completely configurable for those which are packaging KDE so, it's up to each Linux distribution or users to disable it using the normal means of disabling KDED modules.</p>
-<p>Something else to keep in mind is that they want to keep expanding too, they want to offer full-time employment to more people and hire more. On top of that, and quite exciting sounding, is that Graham noted in the blog post they eventually want to "fund the creation of a next-generation KDE OS we can offer directly to institutions looking to switch to Linux, and a hardware certification program to go along with it". Including (jokingly) they want to "take over the world" and get more distributions to use KDE Plasma by default.</p>
-<p><strong>Editor's opinion:</strong> I think it is fair for KDE to expose that they need funding and asking that from inside the UI would not hurt for a software that delivered so much for free (as in freedom and as in "<a href="https://www.merriam-webster.com/dictionary/gratis" rel="noopener" target="_blank">gratis</a>"). It is not cluttered, and does not seem to break anyone's workflow.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/08/kde-plasma-62-adding-a-pop-up-for-donations-plus-they-want-to-make-a-next-generation-kde-os/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/kde-plasma-62-adding-a-pop-up-for-donations-plus-they-want-to-make-a-next-generation-kde-os/</guid>
-      <pubDate>Thu, 29 Aug 2024 18:12:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/kde.png" type="image/jpeg"/>
-      
-      <category>Distro News</category>
-      
-      <category>KDE</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>The Elder Scrolls Online now Steam Deck Playable, to be fully Verified in &#34;a future update&#34;</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Really great to see bigger developers actually start to properly take note of the Steam Deck <a href="https://www.gamingonlinux.com/2024/08/black-myth-wukong-shows-very-clearly-valve-are-selling-a-lot-of-steam-decks/" rel="noopener" target="_blank">since it's selling so well</a>. Now we have The Elder Scrolls Online from ZeniMax Online Studios and Bethesda Softworks getting improvements.</p>
-<p>The thing is, the game has actually been playable as far back as June 2022. However, you did need to <a href="https://www.gamingonlinux.com/2022/06/how-to-play-the-elder-scrolls-online-on-steam-deck/" rel="noopener" target="_blank">some adjustments to get it to work</a> that I detailed but it seems this is no longer required. Thanks to this, Valve have now bumped it up to a Steam Deck Playable rating while using <a href="https://www.gamingonlinux.com/2024/06/proton-9-0-2-brings-better-controller-support-in-launchers-more-playable-games-lots-of-bug-fixes/" rel="noopener" target="_blank">Proton 9.0-2</a>.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15468591781724948189gol1.jpg"/></p>
-<p>In their own <a href="https://www.elderscrollsonline.com/en-us/news/post/66641" rel="noopener" target="_blank">announcement</a> on this update the developers noted:</p>
-<blockquote>
-<p>We are thrilled to announce that <em>The Elder Scrolls Online </em>now has “Playable” status on the <a href="https://store.steampowered.com/steamdeck" rel="noopener" target="_blank">Steam Deck</a>. This means that Steam <em>ESO</em> players can now venture into Tamriel’s Second Era using the portable PC gaming device. Never miss a Daily Login Reward again! </p>
-<p>If you play on Steam and have a Steam Deck, simply find the game in your Library to begin the download. Note that while the game is now officially “Playable,” it won’t have full “Verified” status until a future update, meaning you might encounter some unexpected UI issues.</p>
-</blockquote>
-<p>Going by their wording towards the end above, they plan to improve it further to get it Steam Deck Verified in future.</p>
-<p>You can play <a href="https://store.steampowered.com/app/306130/The_Elder_Scrolls_Online/" rel="noopener" target="_blank">ESO from Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/08/the-elder-scrolls-online-now-steam-deck-playable-to-be-fully-verified-in-a-future-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/08/the-elder-scrolls-online-now-steam-deck-playable-to-be-fully-verified-in-a-future-update/</guid>
-      <pubDate>Thu, 29 Aug 2024 16:18:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1014046534id25157gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Steam Play</category>
-      
-      <category>MMO</category>
-      
-      <category>RPG</category>
       
     </item>
     
