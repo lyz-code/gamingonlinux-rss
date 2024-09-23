@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-09-22 07:25:11.040393</pubDate>
+    <pubDate>2024-09-23 07:27:24.047348</pubDate>
 
     
     <image>
@@ -18,6 +18,35 @@
     </image>
 
     
+    
+    <item>
+      <title>Valve appear to be testing ARM64 and Android support for Steam on Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve appear to have some pretty ambitious future plans for Steam, as we've seen recently in a leak (and not for the first time) that Valve has plans for ARM64 and Android support on Linux.</p>
+<p>As usual, the leaks come thanks to SteamDB, which scrapes everything possible related to Steam. The <a href="https://steamdb.info/app/3043620/history/?changeid=25321568" rel="noopener" target="_blank">latest "ValveTestApp3043620"</a> appears to show various VR <em>and</em> standard non-VR games being tested on ARM64 with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> (the Windows to Linux compatibility layer). When you scroll down the list it shows this is thanks to an open source project called <a href="https://github.com/FEX-Emu/FEX" rel="noopener" target="_blank">FEX</a>, which "allows you to run x86 and x86-64 binaries on an AArch64 host". It also mentions <a href="https://github.com/waydroid/waydroid" rel="noopener" target="_blank">Waydroid</a>, an open source container system that allows you to run Android apps and games on a Linux-based system.</p>
+<p>Before people think it's about any Windows and macOS stuff here, it seems <em>very</em> specific to Linux. The configuration text mentions how it's <em>from</em> Windows <em>to</em> Linux.</p>
+<p>Initially, I thought this would have been purely for the long-rumoured "Deckard" VR headset, which I believe based on <a href="https://www.gamingonlinux.com/2021/09/deckard-is-apparently-the-codename-for-a-possible-standalone-valve-vr-headset/" rel="noopener" target="_blank">previous</a> leaks will have a standalone mode that runs Linux (with an Arm processor) as well as being able to be hooked up to a PC. So it would make a <em>lot</em> of sense for Valve to be working on a system like this to extend Proton support to ARM64 <em>and</em> get Android-based apps / games working as well.</p>
+<p>However, since the list included a lot of standard non-VR games too, it does beg the question: might we actually see Steam for Arm-based desktop devices too and not just whatever the new VR headset turns out to be? Definitely interesting times ahead. Valve's funding of various Linux-related open source projects will continue to pay off in the long run with the Steam Deck and whatever comes next.</p>
+<p>Scrolling through the list it showed Valve testing compatibility for the likes of Pistol Whip (VR), Gorilla Tag (VR), Left 4 Dead 2, Garry's Mod, Shadow of Mordor and a great many more including various smaller indie games too.</p>
+<p>Thinking back to how the <a href="https://www.gamingonlinux.com/2018/08/valve-officially-confirm-a-new-version-of-steam-play-which-includes-a-modified-version-of-wine/" rel="noopener" target="_blank">Proton compatibility layer was announced originally</a>, it confirmed a long-held suspicion by many that the DXVK project was being funded by Valve to get the Vulkan-based translation layer for Direct3D into a good state. So who knows, perhaps Valve are doing similar funding for FEX and Waydroid developers well ahead of any announcements again.</p>
+<p>Valve later wiped it (but SteamDB shows the history) and put it behind a protected token, so that SteamDB can't scrape it again in future until they set whatever it is live. Bit of a woops by Valve there, but this sort of thing has happened quite a few times in the past.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/09/valve-appear-to-be-testing-arm64-and-android-support-for-steam-on-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/09/valve-appear-to-be-testing-arm64-and-android-support-for-steam-on-linux/</guid>
+      <pubDate>Sun, 22 Sep 2024 15:58:40 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>ARM</category>
+      
+      <category>Misc</category>
+      
+      <category>Speculation</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>Steam Deck - SteamOS 3.6.14 Beta released with a Flatpak security fix</title>
@@ -4358,44 +4387,6 @@ Pictured - Metro 2033</p>
       <category>Open Source</category>
       
       <category>Reimplementation</category>
-      
-    </item>
-    
-    <item>
-      <title>Try the refreshed demo of Pest Apocalypse a pizza-delivery survivor-like bullet heaven</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Pest Apocalypse continues looking great. One I <a href="https://www.gamingonlinux.com/2024/07/try-the-demo-for-pest-apocalypse-a-horde-survival-game-where-you-deliver-pizza-in-a-van/" rel="noopener" target="_blank">highlighted before</a> and doing so again now due to a brand new demo, bringing vehicular action to the survivor-like bullet hell genre. <em>The update comes as part of the Games from Croatia event on Steam.</em></p>
-<p>Similar in basic theme to <a href="https://www.gamingonlinux.com/2024/09/earl-vs-the-mutants-is-choatic-survivor-like-fun-with-vehicles/" rel="noopener" target="_blank">Earl vs. the Mutants </a>that I also recently covered, except this has you deliver pizza in the apocalypse and it's total chaos. Plus it has Native Linux support made with <a href="https://godotengine.org/" rel="noopener" target="_blank">Godot</a>. The demo update includes "a massive amount of early game changes, a whole new map to help you learn the basics of the game, additional gameplay settings to help tweak your experience, and a whole truckload of graphical updates to improve your pixel-to-eyeball experience".</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6762107751725543026gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6762107751725543026gol1.jpg"/></a></p>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li><strong>SHORT BURSTS OF FUN</strong>: Quick runs that take ~12 minutes to complete!</li>
-<li><strong>PIZZA DELIVERY SURVIVAL</strong>: There is more to this than just surviving, you have a job to do!</li>
-<li><strong>VEHICULAR PLAYGROUND</strong>: Physics-based simulation for the best driving feel and fun!</li>
-<li><strong>CUSTOMIZATION</strong>: Try various combinations of vehicles, survivors and modifications! Adapt and experiment to find what works best for the situation at hand!</li>
-<li><strong>PEST CONTROL</strong>: Feel powerful as you slaughter an endless horde of disgusting pests!</li>
-<li><strong>PROGRESSION</strong>: Use your in-game earnings to unlock new vehicles, weapons and more!</li>
-<li><strong>2D + 3D</strong>: The charm of pixelated 2D sprites in a low poly 3D environment!</li>
-</ul>
-</blockquote>
-<p>I think you're going to really like this one. It has the crazy upgrades and level-up system made popular by Vampire Survivors, really properly tuning it for vehicle-focused action while giving you a constant quest to pick up and deliver pizza that makes it feel like nothing else. Great fun.</p>
-<p>Check it out on <a href="https://store.steampowered.com/app/2506810/Pest_Apocalypse/" rel="noopener" target="_blank">the Steam page</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/09/try-the-refreshed-demo-of-pest-apocalypse-a-pizza-delivery-survivor-like-bullet-heaven/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/09/try-the-refreshed-demo-of-pest-apocalypse-a-pizza-delivery-survivor-like-bullet-heaven/</guid>
-      <pubDate>Thu, 05 Sep 2024 13:32:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1598745485id25201gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Bullet Hell</category>
-      
-      <category>Demo</category>
       
     </item>
     
