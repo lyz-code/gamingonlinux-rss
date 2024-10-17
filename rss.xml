@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-10-16 07:29:36.922703</pubDate>
+    <pubDate>2024-10-17 07:29:40.110827</pubDate>
 
     
     <image>
@@ -18,6 +18,68 @@
     </image>
 
     
+    
+    <item>
+      <title>GE-Proton 9-16 released with mod support for various Bethesda games</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you're modding Bethesda games on Linux / Steam Deck, GE-Proton 9-16 could make things a little easier for you.</p>
+<p>As your reminder: GE-Proton (or Proton-GE) a community-build of Proton, nothing to do with the official Proton from Valve. You'll find GE adds specific fixes that Valve often can't (due to legal reasons), and sometimes other special additions, but GE comes with less testing and support. Usually you only want to use it for specific games until they work properly in Valve's Proton, <em>or</em> for using Proton outside of Steam like in Heroic and Lutris. See more about <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton in my guide</a>.</p>
+<p>In GE-Proton 9-16 one of the main additions is a change to how Bethesda games will launch like the Fallout series, Skyrim, Oblivion and Starfield. If GE-Proton detects a known mod executable for these it will launch that <em>instead</em> of the original - something that will just save players a fair bit of messing around. Seems like a nice change!</p>
+<p>Another addition is that games run with UMU (Unified launcher for Windows games on Linux), for using it outside of Steam like in Heroic Games, is that games will now have the <code class="inline-code">/mnt</code>, <code class="inline-code">/run/media</code> and <code class="inline-code">/media</code> and the user's home folder added as drives that games can see.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7527689401729065035gol1.jpg"/><br/>
+<em>Pictured - Skyrim</em></p>
+<p>There's also a few other game-specific fixes, and the usual additions of new code from the official upstream projects.</p>
+<p>Here's the full <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-16" rel="noopener" target="_blank">changelog</a>:</p>
+<blockquote>
+<p>Proton:</p>
+<ul>
+<li>import upstream makefile changes</li>
+<li>import upstream proton changes</li>
+<li>import upstream steam_helper changes</li>
+<li>import upstream vkd3d-shader changes</li>
+<li>update wine to latest bleeding edge</li>
+<li>updated dxvk to latest git</li>
+<li>update vkd3d-proton to latest git</li>
+<li>update dxvk-nvapi to e4bad70</li>
+</ul>
+<p>Protonfixes:</p>
+<ul>
+<li>fixed issue with game_titles not being pulled correctly for UMU</li>
+<li>game_titles are now looked up as part of included umu-database csv instead of trying to send online website api call</li>
+<li>games run with UMU will now have /mnt,/run/media,/media/, and the user's home folder added as drives u:,v:,w:,x: respectively inside the prefix if they are not empty. This is to allow users to install or import games outside of the prefix more conveniently. A typical scenario for this would be if you have your games pre-installed on a different mounted drive, or somewhere else in your home folder outside of the prefix and you want to add them without reinstalling the game, OR if you want to install the game to one of those mounts instead of the C:\ drive inside the wine prefix. With steam, users don't really have to worry about this because steam handles the drive mounts and the install locations, however we found that outside of steam users were trying to use the Z: drive (which is symlinked to root (/)) -- which is of course containerized and read only, and therefore also unable to provide a proper drive size, resulting in users being told they don't have enough space. With the new drives added into the prefix it should fix this, allowing users to access their mount locations or existing game folders for installation or importing via the new drives instead of Z:.</li>
+<li>Mod support for various bethesda games has been added (Thanks Root-Core). If a mod executable is found for bethesda games it will launch the mod executable instead of the original:<br/>
+mapping = {<br/>
+'22380': ('FalloutNV.exe', 'nvse_loader.exe'), # Fallout New Vegas<br/>
+'22370': ('FalloutLauncher.exe', 'fose_loader.exe'), # Fallout 3<br/>
+'377160': ('Fallout4Launcher.exe', 'f4se_loader.exe'), # Fallout 4<br/>
+'22330': ('OblivionLauncher.exe', 'obse_loader.exe'), # Oblivion<br/>
+'72850': ('SkyrimLauncher.exe', 'skse_loader.exe'), # Skyrim<br/>
+'489830': ('SkyrimSELauncher.exe', 'skse64_loader.exe'), # Skyrim SE<br/>
+'1716740': ('Starfield.exe', 'sfse_loader.exe') # Starfield<br/>
+}.get(game_id, ('', ''))</li>
+<li>protonfix added for metal gear solid 2 (thanks FranjeGueje)</li>
+<li>protonfix for Kindom Hearts HD Remix added for steam version (already existed for egs version) (thanks Internetbestfriend)</li>
+<li>protonfix added for Gothic Playable Teaser (thanks Root-Core)</li>
+<li>Star Citizen protonfix updated (no longer requires EAC workaround)</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/ge-proton-9-16-released-with-mod-support-for-various-bethesda-games/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/ge-proton-9-16-released-with-mod-support-for-various-bethesda-games/</guid>
+      <pubDate>Wed, 16 Oct 2024 07:56:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1542535827id25457gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
     
     <item>
       <title>Rogue Legacy 1 source code released</title>
@@ -1232,6 +1294,8 @@
       <title>First Steam Deck plugin on Steam will bring GOG and Epic Games compatibility</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
+<p><em><strong>Update: It looks like Valve have changed their position on this. See this <a href="https://www.gamingonlinux.com/2024/10/that-didnt-last-long-the-junk-store-for-steam-deck-has-its-steam-page-removed/" rel="noopener" target="_blank">updated article</a>.</strong></em></p>
+<p>Original Article:</p>
 <p>In a really surprising move the developers behind Decky Loader plugin <em>Junk Store</em>, which provides the ability to install games from GOG and Epic Games, are bringing the plugin to Steam officially.</p>
 <p>This is a special new release just for the Steam Deck, and <em>seems</em> to indicate that Valve are open to having Steam Deck plugins available directly like this. Especially nice for all the people claiming free games (or buying) from the Epic Games Store and GOG.</p>
 <p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20667548891728635222gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20667548891728635222gol1.jpg"/></a></p>
@@ -3832,44 +3896,6 @@ A. If your game has been issued an age rating by going through the rating proces
       <category>Roguelike</category>
       
       <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Swing around with a water gun while cleaning high-rise buildings in Aerial Cleaner</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you like your simpler games that have a fun unique idea then check out Aerial Cleaner, a 2D game about swinging around while cleaning high-rise buildings.</p>
-<p>Quite an amusing idea actually. Equipped with a water-jet gun, you jump off the roof attached by a rope and swing side to side as you attempt to clean everything up. The water gun recoil will push you towards what you need by firing backwards and swinging, and it's more challenging than it looks. Oh, there's also various weird creepy-crawly creatures that will try to get in your way.</p>
-<div class="hidden_video" data-video-id="_LQeggNGtRk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0c3b127acb8972179cd7d849bf31271b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/_LQeggNGtRk" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Multi-Purpose Water Gun: The water jet gun serves multiple functions: it cleans dirt, propels the player by swinging from the recoil, and acts as a weapon against monsters.</li>
-<li>High-Altitude Adventure: Scale skyscrapers with different themes, challenge your high-altitude cleaning skills, and experience the thrill of extreme cleaning missions.</li>
-<li>Level Design: Explore diverse level designs, each with unique challenges and obstacles, testing players' reflexes and tactical skills.</li>
-<li>Level Challenges: Completing each level's water and time limit challenges earns star rewards.</li>
-</ul>
-</blockquote>
-<p>There's a demo available on Steam. It will release sometime in Q4 2024 with Linux support.</p>
-<p>Check it out on the <a href="https://store.steampowered.com/app/2989500/Aerial_Cleaner/" rel="noopener" target="_blank">Steam page</a>.</p>
-<blockquote>
-<p></p>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/09/swing-around-with-a-water-gun-while-cleaning-high-rise-buildings-in-aerial-cleaner/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/09/swing-around-with-a-water-gun-while-cleaning-high-rise-buildings-in-aerial-cleaner/</guid>
-      <pubDate>Mon, 30 Sep 2024 10:09:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1695277092id25356gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Demo</category>
-      
-      <category>Indie Game</category>
       
     </item>
     
