@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-10-22 07:31:50.617627</pubDate>
+    <pubDate>2024-10-23 07:30:14.815677</pubDate>
 
     
     <image>
@@ -18,6 +18,795 @@
     </image>
 
     
+    
+    <item>
+      <title>Science fantasy roguelike epic Caves of Qud releases December 5</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Freehold Games and Kitfox Games have announced the thoroughly strange and unique science fantasy roguelike epic Caves of Qud is leaving Early Access on December 5. A day I've long been waiting for to really fully dive into the world, especially so with the refreshed tutorial and the finished up story.</p>
+<p>A fresh Beta release is available right now that has:</p>
+<blockquote>
+<ul>
+<li>Repolished the tutorial with new graphics, some new dialog, and several bugfixes.</li>
+<li>Added a tutorial sequence to teach resting until healed.</li>
+<li>We did a big refactor of the options menu, cleaning up option categories and text, gating advanced options behind a checkbox, and deleting some deprecated options.</li>
+<li>We did a refactor of the control bindings menu, cleaning up binding categories and text and deleting some deprecated bids.</li>
+<li>Stunning Force now deals damage in up to 3 increments based on proximity to the center of the blast, as it's supposed to.</li>
+<li>Fixed several small bugs.</li>
+</ul>
+</blockquote>
+<p>1.0 release date trailer below:</p>
+<div class="hidden_video" data-video-id="87TKcq4tcJ4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/52258000d8bb63ab7374b84c18b68a7c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/87TKcq4tcJ4" target="_blank">See video</a></div></div>
+<p>The price will be going up in a week too, so grabbing it right now would be a good idea. At the release they'll also be putting out a "Dromad Deluxe edition" that will include the game, an enhanced soundtrack and the Pets of Harvest Dawn DLC pack, with in-game companions for your character. The DLC includes pets that were originally exclusive to their Patreon supporters plus some new ones too.</p>
+<p>It has Native Linux support and is Steam Deck Verified.</p>
+<p><div class="itemdb_embed"><p><strong>Caves of Qud</strong> | Release Date: 5th December 2024<p class="plain-list-title">Where to buy from:</p>
+<ul><li><a href="https://af.gog.com/game/caves_of_qud?as=1636858786">GOG</a></li><li><a href="https://freeholdgames.itch.io/cavesofqud">itch.io</a></li><li><a href="https://store.steampowered.com/app/333640/Caves_of_Qud/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/science-fantasy-roguelike-epic-caves-of-qud-releases-december-5/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/science-fantasy-roguelike-epic-caves-of-qud-releases-december-5/</guid>
+      <pubDate>Tue, 22 Oct 2024 14:16:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1735250798id25498gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Roguelike</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA 565.57.01 Beta has Wayland and HDR improvements, plus DXVK and VKD3D optimizations</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA today released two new Linux drivers. The big one is the NVIDIA 565.57.01 Beta, along with a one-liner update in the stable 550.127.05 release.</p>
+<p>The stable release driver <strong><a href="https://www.nvidia.com/en-us/drivers/details/233004/" rel="noopener nofollow" target="_blank">550.127.05</a></strong> mentions "Fixed a bug which could cause applications using GBM to crash when running with nvidia-drm.modeset=0".</p>
+<p>While the bigger NVIDIA <strong><a href="https://www.nvidia.com/en-us/drivers/details/233008/" rel="noopener nofollow" target="_blank">565.57.01</a></strong> Beta includes various new features and fixes I've split below for easy reading.</p>
+<p>New Features &amp; Improvements</p>
+<blockquote>
+<ul>
+<li>Re-enabled GLX_EXT_buffer_age on Xwayland. This extension had been previously disabled on Xwayland due to a bug which is now fixed.</li>
+<li>Added support for mmap of exported DMA-BUF objects.</li>
+<li>Added several new per-plane and per-CRTC vendor-specific properties to nvidia-drm. These properties may be used by Wayland compositors to program the GPU's color pipeline for HDR hardware acceleration.</li>
+<li>Introduced a driver optimization to mitigate the performance loss from the 'd3d9.floatEmulation' option in DXVK.</li>
+<li>Updated the framelock settings page of the nvidia-settings control panel to use the GTK3 theme text color rather than defaulting to white for the text color, improving legibility with some themes.</li>
+<li>Implemented support for VK_EXT_depth_clamp_control.</li>
+<li>Reduced some cases of stutter with OpenGL syncing to vblank while using GSP firmware.</li>
+</ul>
+</blockquote>
+<p>Bug Fixes:</p>
+<blockquote>
+<ul>
+<li>Fixed a bug that could cause suspend/resume to fail when using the NVreg_PreserveVideoMemoryAllocations option: <a href="https://github.com/NVIDIA/open-gpu-kernel-modules/issues/472" rel="noopener nofollow" target="_blank">https://github.com/NVIDIA/open-gpu-kernel-modules/issues/472</a></li>
+<li>Fixed a bug that caused the cursor image to be truncated on Gamescope: <a href="https://github.com/ValveSoftware/gamescope/issues/1099" rel="noopener nofollow" target="_blank">https://github.com/ValveSoftware/gamescope/issues/1099</a></li>
+<li>Fixed a bug that caused FarCry 5 running through DXVK to display a black screen.</li>
+<li>Fixed some performance regressions that were observed with Vkd3d 2.9.</li>
+<li>Fixed a bug that could cause flickering in some applications when using Unified Back Buffer (UBB).</li>
+<li>Fixed a bug which could cause incorrect and/or washed out colors to be displayed with HDR scanout: <a href="https://bugs.kde.org/show_bug.cgi?id=482780" rel="noopener nofollow" target="_blank">https://bugs.kde.org/show_bug.cgi?id=482780</a></li>
+<li>Implemented support for VK_EXT_depth_clamp_control.</li>
+<li>Fixed a bug which could cause applications using GBM to crash when running with nvidia-drm.modeset=0.</li>
+<li>Fixed a bug that could cause kernel crashes upon attempting KMS operations through DRM when nvidia_drm was loaded with modeset=0.</li>
+</ul>
+</blockquote>
+<p>Let me know your thoughts in the comments!</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/nvidia-565-57-01-beta-has-wayland-and-hdr-improvements-plus-dxvk-and-vkd3d-optimizations/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/nvidia-565-57-01-beta-has-wayland-and-hdr-improvements-plus-dxvk-and-vkd3d-optimizations/</guid>
+      <pubDate>Tue, 22 Oct 2024 13:57:06 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Beta</category>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Auto-battler dungeon crawler Skull Horde announced by dev of BORE BLASTERS</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>BORE BLASTERS developer 8BitSkull have announced their next game, Skull Horde, which will be released in 2025 with Linux and Steam Deck support.</p>
+<p>In Skull Horde you play as a flying skull necromancer as you raise an ever-growing skeletal army and battle through procedurally generated dungeons, collecting casket-loads of boons and loot and unlocking powerful perks to upgrade the your little horde and achieve each soldier's fullest necrotic potential. </p>
+<p>Their teaser trailer is below, although it has no gameplay footage at all:</p>
+<div class="hidden_video" data-video-id="vGag1TvgQI4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cd048269138e6ff73cf516358c2a11c3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/vGag1TvgQI4" target="_blank">See video</a></div></div>
+<p>Since that was a lot of nothing, here's some screenshots of what it actually looks like:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7731976401729600540gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7731976401729600540gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5863610851729600541gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/5863610851729600541gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17105484651729600541gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/17105484651729600541gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20952884851729600542gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/20952884851729600542gol1.jpg"/></a></p>
+<p class="plain-list-title">Features:</p>
+<blockquote>
+<ul>
+<li><strong>Procedurally Generated Dungeons: </strong>Explore different procedurally generated dungeons, each with unique enemy types that demand different battle strategies. Different challenges require creative builds to overcome, lest you be sent to the grave yourself.</li>
+<li><strong>Realtime Auto Battling:</strong> Battles in <em>Skull Horde</em> are duked out in real-time, and your minions do battle independently. Develop your squad, choose where to explore, when to move on, and when to send your enemies six feet under.</li>
+<li><strong>For Whom the Bell Tolls?:</strong> Test out different playable characters with unique special abilities to see which one fits your particular style of death dealing. </li>
+<li><strong>Rise from Your Grave: </strong>Raise the dead and put them to work, battling swarms of wretched flesh soldiers. Diversify your army or merge unit types to gain stronger versions and unlock unique abilities.</li>
+<li><strong>Powerful Loot and Boons: </strong>Each dungeon type is filled with chests and shrines with powerful loot and boons to collect, but don’t get greedy–lest you risk being overwhelmed by the horde.</li>
+</ul>
+</blockquote>
+<p>Their previous games <a href="https://www.gamingonlinux.com/2024/03/bore-blasters-will-be-your-next-fixation-out-now/" rel="noopener" target="_blank">BORE BLASTERS</a> and <a href="https://www.gamingonlinux.com/2020/03/fates-of-ort-is-an-rpg-where-time-stops-until-you-move-its-absolutely-great-and-its-out-now/" rel="noopener" target="_blank">Fates of Ort</a> are really good, so hopefully this is too.</p>
+<p><div class="itemdb_embed"><p><strong>Skull Horde</strong><p class="plain-list-title">Where to buy from:</p>
+<ul><li><a href="https://store.steampowered.com/app/3199360/Skull_Horde/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/auto-battler-dungeon-crawler-skull-horde-announced-by-dev-of-bore-blasters/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/auto-battler-dungeon-crawler-skull-horde-announced-by-dev-of-bore-blasters/</guid>
+      <pubDate>Tue, 22 Oct 2024 12:38:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/556719662id25496gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Dungeon Crawler</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>AutoForge is Terraria mixed with Factorio, devs plan Steam Deck and controller support soon</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Blending the mining and side-scrolling from Terraria, with the building and automation from Factorio — AutoForge looks interesting. Maybe this will scratch an itch you didn't know you had.</p>
+<p>More about it: "A 2D automation sandbox adventure. Build an automated factory with Mana-powered machines, progress through an expansive tech tree, explore a vast and wonderful world, upgrade yourself with ancient technologies, and defend it all from invasions."</p>
+<p>Currently in Early Access since March, the developer released a new trailer and <a href="https://store.steampowered.com/news/app/1960480/view/4552668120494283642" rel="noopener nofollow" target="_blank">roadmap</a> of what's to come next. For players who like to kick-back and relax there's good news as right up next on their list is Steam Deck support, controller support and UI improvements. After that they're planning a whole lot more extra content and eventually mod support too.</p>
+<div class="hidden_video" data-video-id="5c8jg3Qt7hM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/61bf9433f6c07840ccf6c1dbac2cd3b6.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/5c8jg3Qt7hM" target="_blank">See video</a></div></div>
+<p>Currently it has a Steam Deck Playable rating, so hopefully it can get bumped up to Verified. It has a Silver rating on ProtonDB but a lot of the reports are old.</p>
+<p><div class="itemdb_embed"><p><strong>AutoForge</strong> | Release Date: 27th March 2024<p class="plain-list-title">Where to buy from:</p>
+<ul><li><a href="https://store.steampowered.com/app/1960480/AutoForge/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/autoforge-is-terraria-mixed-with-factorio-devs-plan-steam-deck-and-controller-support-soon/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/autoforge-is-terraria-mixed-with-factorio-devs-plan-steam-deck-and-controller-support-soon/</guid>
+      <pubDate>Tue, 22 Oct 2024 11:10:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1717195790id25495gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Exploration</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Deck Verified round-up, your late October 2024 highlights</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Here's your next run over some recent Steam Deck Verified games, those that should just be click and play on both Steam Deck and Desktop Linux. I last took a look <a href="https://www.gamingonlinux.com/2024/09/steam-deck-verified-your-game-highlights-for-mid-september-2024/" rel="noopener" target="_blank">back in mid September</a> so it's time for a fresh list of what could be interesting for you to pick up!</p>
+<p>All of the games listed here <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified by Valve. Some may have been mentioned individually in previous articles here on GamingOnLinux. I have a nice varied unique list of games to have a look at this time around, something for everyone hopefully.</p>
+<h3><a href="https://store.steampowered.com/app/1782120/ZERO_Sievert/" rel="noopener nofollow" target="_blank">ZERO Sievert</a></h3>
+<blockquote>
+<p>ZERO Sievert is a tense top-down extraction shooter that challenges you to scavenge a procedurally-generated wasteland, loot gear, and explore what’s left of a devastated world. When the odds are stacked against you, you’ll need to do more than just survive...</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4935476071729590709gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/2878980/NBA_2K25/" rel="noopener nofollow" target="_blank">NBA 2K25</a></h3>
+<blockquote>
+<p>Command every court with authenticity and realism Powered by ProPLAY™, giving you ultimate control over how you play in NBA 2K25. Define your legacy in MyCAREER, MyTEAM, MyNBA, and The W.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16419605141729590992gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/2831060/Moving_Houses/" rel="noopener nofollow" target="_blank">Moving Houses</a></h3>
+<blockquote>
+<p>A silly little physics-based game about moving on... or is it? Be neat, be careful, or be a chaos goblin. The choice is yours. But be warned, not all is as it seems in this quiet little house.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8412830941729591120gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/1993180/Quilts_and_Cats_of_Calico/" rel="noopener nofollow" target="_blank">Quilts and Cats of Calico</a></h3>
+<blockquote>
+<p>Quilts and Cats of Calico is a wholesome, award-winning complex puzzle game for 1 to 4 players. Meet adorable cats and sew the coziest quilts. Compete with other players in multiplayer mode, play solo, or delve into the story of a quilter sewing their way through the city of cats.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13927288281729591223gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/1910600/ONE_BTN_BOSSES/" rel="noopener nofollow" target="_blank">ONE BTN BOSSES</a></h3>
+<blockquote>
+<p>It's One Button Bosses, it's all in the name. You have one button. There are big bosses to beat. Push, tap, and bash in the handcrafted campaign or in the roguelike rifts.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5348173841729591280gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/3229170/Egg_Squeeze/" rel="noopener nofollow" target="_blank">Egg Squeeze</a></h3>
+<p>See <a href="https://www.gamingonlinux.com/2024/10/think-youve-seen-it-all-theres-now-a-steam-game-about-squeezing-eggs/" rel="noopener" target="_blank">my previous article</a> on it!</p>
+<blockquote>
+<p>Egg Squeeze is a biological intuition test where you squeeze eggs for as long as you can without breaking them.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10115007481729591369gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/3044030/Ten_Bells/" rel="noopener nofollow" target="_blank">Ten Bells</a></h3>
+<blockquote>
+<p>You're trapped in an old English pub. Unravel a chilling tale by identifying anomalies while trying to escape. Confront the horror as you survive Ten Bells's endless loop.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10685352821729591474gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/1155650/Shady_Knight/" rel="noopener nofollow" target="_blank">Shady Knight</a></h3>
+<blockquote>
+<p>Shady Knight is a first-person skill-driven melee action game centered around swift swordplay, acrobatic archery, and fluid platforming that seamlessly blends combat and parkour skills into a stylish dance of death full of creative chaos.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6814206241729591555gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/1466230/The_Holy_Gosh_Darn/" rel="noopener nofollow" target="_blank">The Holy Gosh Darn</a></h3>
+<blockquote>
+<p>Play as Cassiel, a foul-mouthed angel trapped in a time loop with a mission to save Heaven. Use the magical clock bestowed upon you from Death (yes, that Death, from Manual Samuel, stop asking) to jump between timelines across Heaven, Hell, Earth and Helheim to stop Heaven from going boom. Again.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2100461531729591662gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/2694420/KILL_KNIGHT/" rel="noopener nofollow" target="_blank">KILL KNIGHT</a></h3>
+<blockquote>
+<p>KILL KNIGHT is an ultra-responsive arcade-inspired isometric action shooter. Condemned to eternal sufferance, deep within the voids of an eldritch arena, you must wield an arsenal of devastating weaponry to obliterate swarms of otherworldly horrors - and MASTER THE DEMON WITHIN.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18648566431729591736gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/1733170/Killing_Time_Resurrected/" rel="noopener nofollow" target="_blank">Killing Time: Resurrected</a></h3>
+<blockquote>
+<p>Journey into a mansion on the Island of Matinicus where you'll arrive to find the mansion full of hellacious demonic creatures. Solve deadly puzzles, uncover the secrets behind a famous mystery and discover an ancient artifact from the Pharaoh Ramses, if you can live long enough to find it.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3492067751729591869gol1.jpg"/></p>
+<h3>The Ouroboros King</h3>
+<blockquote>
+<p>The Ouroboros King combines the strategic depth of chess with the build variety and replayability of roguelikes. Assemble a formidable army, discover powerful relics, and buy surprising gadgets to defeat the Coven.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19612883351729591975gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/1417930/Lorns_Lure/" rel="noopener nofollow" target="_blank">Lorn's Lure</a></h3>
+<blockquote>
+<p>An android is led through a vast structure by a glitch in his visual system. Lorn's Lure is an atmospheric narrative first-person platformer with novel climb-anything mechanics and modernized retro 3D graphics.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2868085401729592081gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/1543710/Beyond_Galaxyland/" rel="noopener nofollow" target="_blank">Beyond Galaxyland</a></h3>
+<blockquote>
+<p>Beyond Galaxyland is a thrilling adventure-RPG combining cosmic exploration, strategic turn-based combat, and epic boss battle events across a vast solar system. Join Doug and his gun-toting guinea pig on an exhilarating quest to save Earth, itself.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19064303111729592147gol1.jpg"/></p>
+<h3><a href="https://store.steampowered.com/app/1781890/The_Coma_2B_Catacomb/" rel="noopener nofollow" target="_blank">The Coma 2B: Catacomb</a></h3>
+<p>Releasing <u>October 25th</u></p>
+<blockquote>
+<p>The Coma 2B: Catacomb is a Korean survival horror adventure. It is the back story to the previous game, The Coma 2: Vicious Sisters, and a story bridge for the full series. You return as Youngho, the hero from The Coma 1, as you once again venture forth into the terrifying mirror dimension…</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9788583741729590801gol1.jpg"/></p>
+<hr/>
+<p>Anything take your fancy there? What have you been playing lately? Let me know in the comments. Give your latest recommendations on what to pick up next!</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/steam-deck-verified-round-up-your-late-october-2024-highlights/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/steam-deck-verified-round-up-your-late-october-2024-highlights/</guid>
+      <pubDate>Tue, 22 Oct 2024 10:16:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1274234758id25494gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Listicle</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Get over 60 games free with Prime Gaming right now - many work on Steam Deck / Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another round up of some free games you can get to play on Steam Deck and Desktop Linux thanks to Prime Gaming. You just need to subscribe to Amazon Prime, then you can head over to Prime Gaming to redeem them all.</p>
+<p>Trying a slightly different format to last time sorting them into a nice table for you. Hopefully you find this useful. I'll use the Steam Deck Rating from Valve (<img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Verified, <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Playable, <img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Unsupported and <img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Not Rated), plus the <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> rating to help you decide on what to play.</p>
+<p>Compatibility may be <em>slightly</em> different since the games are from various stores. Some of the games might also have <em>no</em> ratings right now.</p>
+<p>Here's the current list as of 22nd October, 2024:</p>
+<div class="scrolling-table">
+<table border="1" cellpadding="1" cellspacing="1" class="table-stripes-tbody">
+<thead>
+<tr>
+<td><strong>Name</strong></td>
+<td><strong>Store</strong></td>
+<td><strong>End Date</strong></td>
+<td><strong>Steam Deck</strong></td>
+<td><strong>ProtonDB</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spells &amp; Secrets</td>
+<td>GOG</td>
+<td>October 23, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>Thronebreaker: The Witcher Tales</td>
+<td>GOG</td>
+<td>October 23, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>LEGO The Hobbit</td>
+<td>GOG</td>
+<td>October 23, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Grime: Definitive Edition</td>
+<td>Amazon</td>
+<td>October 23, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Cat Quest II</td>
+<td>GOG</td>
+<td>October 23, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Midnight Fight Express</td>
+<td>GOG</td>
+<td>October 23, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Masterplan Tycoon</td>
+<td>Amazon</td>
+<td>October 23, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>I Love Finding Cats &amp; Pups - CE</td>
+<td>Legacy Games</td>
+<td>October 26, 2024</td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>Vlad Circus: Descend Into Madness</td>
+<td>Amazon</td>
+<td>October 31, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Trek to Yomi</td>
+<td>Epic</td>
+<td>November 6, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Gravity Circuit</td>
+<td>Amazon</td>
+<td>November 6, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Kraken Academy!!</td>
+<td>Amazon</td>
+<td>November 6, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>South of the Circle</td>
+<td>GOG</td>
+<td>November 6, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Tomb Raider: Legend</td>
+<td>GOG</td>
+<td>November 6, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Spirit of the North</td>
+<td>Epic</td>
+<td>November 6, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Whispered Secrets: Everburning Candle - CE</td>
+<td>Amazon</td>
+<td>November 6, 2024</td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>Loop Hero</td>
+<td>Epic</td>
+<td>November 6, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>GreedFall - Gold Edition</td>
+<td>GOG</td>
+<td>November 6, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Ghostbusters: Spirits Unleashed Ecto Edition</td>
+<td>Epic</td>
+<td>November 13, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>En Garde!</td>
+<td>GOG</td>
+<td>November 13, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Hard West 2</td>
+<td>GOG</td>
+<td>November 13, 2024</td>
+<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Stray Gods: The Roleplaying Musical</td>
+<td>GOG</td>
+<td>November 13, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Golfie</td>
+<td>Amazon</td>
+<td>November 13, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Zombies Ate My Neighbors and Ghoul Patrol</td>
+<td>Amazon</td>
+<td>November 20, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>KeyWe</td>
+<td>Epic</td>
+<td>November 20, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Figment 2: Creed Valley</td>
+<td>Amazon</td>
+<td>November 20, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Beholder 3</td>
+<td>Amazon</td>
+<td>November 23, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Borderlands 2</td>
+<td>Epic</td>
+<td>November 27, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Ynglet</td>
+<td>Amazon</td>
+<td>November 27, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Mystery Case Files: Black Crown - CE</td>
+<td>Amazon</td>
+<td>November 27, 2024</td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>INDUSTRIA</td>
+<td>GOG</td>
+<td>November 27, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Arcade Paradise</td>
+<td>GOG</td>
+<td>November 27, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Mystery Box: Hidden Secrets</td>
+<td>Legacy Games</td>
+<td>November 20, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Hive Jump 2: Survivors</td>
+<td>GOG</td>
+<td>December 4, 2024</td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>Borderlands: The Pre-Sequel</td>
+<td>Epic</td>
+<td>December 4, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Eternights</td>
+<td>Epic</td>
+<td>December 4, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Minabo – A Walk Through Life</td>
+<td>Amazon</td>
+<td>December 4, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>Priest Simulator: Vampire Show</td>
+<td>Epic</td>
+<td>December 11, 2024</td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>Tales from the Borderlands</td>
+<td>Amazon</td>
+<td>December 11, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Showgunners</td>
+<td>GOG</td>
+<td>December 11, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>9 Years of Shadows</td>
+<td>GOG</td>
+<td>December 11, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Cursed to Golf</td>
+<td>GOG</td>
+<td>December 11, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Hell Pie</td>
+<td>GOG</td>
+<td>December 11, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Moonlighter</td>
+<td>GOG</td>
+<td>December 13, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Kerbal Space Program</td>
+<td>Amazon</td>
+<td>December 18, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>The Falconeer</td>
+<td>GOG</td>
+<td>December 18, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Giana Sisters: Twisted Dreams</td>
+<td>Amazon</td>
+<td>December 18, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Silver</td>
+</tr>
+<tr>
+<td>Killing Floor 2</td>
+<td>Epic</td>
+<td>December 18, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Ghost Song</td>
+<td>GOG</td>
+<td>December 25, 2024</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>Tiny Robots Recharged</td>
+<td>Amazon</td>
+<td>December 31, 2024</td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>Faraway: Arctic Escape</td>
+<td>Amazon</td>
+<td>December 31, 2024</td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>Faraway 2: Jungle Escape</td>
+<td>Amazon</td>
+<td>December 31, 2024</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>No Straight Roads</td>
+<td>Epic</td>
+<td>January 1, 2025</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>The Eternal Cylinder</td>
+<td>Epic</td>
+<td>January 1, 2025</td>
+<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
+<td>Platinum</td>
+</tr>
+<tr>
+<td>SCARF</td>
+<td>Epic</td>
+<td>January 1, 2025</td>
+<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>Dexter Stardust: Adventures in Outer Space</td>
+<td>Amazon</td>
+<td>January 1, 2025</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>The Gap</td>
+<td>Amazon</td>
+<td>January 7, 2025</td>
+<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>BioShock Remastered</td>
+<td>GOG</td>
+<td>January 8, 2025</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>DreadOut 2</td>
+<td>Amazon</td>
+<td>January 8, 2025</td>
+<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+<tr>
+<td>Through the Darkest of Times</td>
+<td>Amazon</td>
+<td>January 15, 2025</td>
+<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
+<td>Gold</td>
+</tr>
+<tr>
+<td>The Collage Atlas</td>
+<td>Amazon</td>
+<td>February 28, 2025</td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The only one I'm not including in this list is DOOM Eternal, as that's via the Microsoft Store, which of course does not work on Steam Deck / Linux since it's a Windows-only thing. All the games you get to keep as Prime Gaming gives you a code to redeem!</p>
+<p>You can install games from Epic, GOG and Amazon easily via <a href="https://www.gamingonlinux.com/2024/09/heroic-games-launcher-2152-released-fixing-amazon-gog-and-epic-games-issues/" rel="noopener" target="_blank">the Heroic Games Launcher</a>.</p>
+<p>See them all and claim from <a href="https://gaming.amazon.com/home" rel="noopener nofollow" target="_blank">Prime Gaming</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/get-over-60-games-free-with-prime-gaming-right-now-many-work-on-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/get-over-60-games-free-with-prime-gaming-right-now-many-work-on-steam-deck-linux/</guid>
+      <pubDate>Tue, 22 Oct 2024 09:41:45 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1213909147id25493gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Amazon</category>
+      
+      <category>Free Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Deck SteamOS 3.6.19 Beta released</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve have released another SteamOS Beta for Steam Deck with a couple of fixes, as they continue working towards a stable release of SteamOS 3.6. <em>A stable release that seems always just that one more Beta away.</em></p>
+<p class="plain-list-title">Here's what's changed in SteamOS 3.6.19 Beta "Quiet Stability":</p>
+<blockquote>
+<p></p>
+<p>General</p>
+<ul>
+<li>Fixed a rare issue where 3.5mm headphones could produce elevated background noise on reconnection until next sleep/resume.</li>
+<li>Fixed an issue where certain games could crash with a 'page allocation failure' after a long play ession.</li>
+</ul>
+</blockquote>
+<p><em>From the <a href="https://store.steampowered.com/news/app/1675200/view/4522268823019511156" rel="noopener nofollow" target="_blank">changelog</a>.</em></p>
+<p>As a reminder of all the recent updates we've had:</p>
+<p><a href="https://www.gamingonlinux.com/2024/10/steamos-3618-beta-released-still-not-quite-the-true-end-of-the-line/" rel="noopener" target="_blank">SteamOS 3.6.18 Beta</a> on October 12th</p>
+<p><a href="https://www.gamingonlinux.com/2024/10/steam-deck-steamos-3617-beta-released-with-another-quick-fix/" rel="noopener" target="_blank">SteamOS 3.6.17 Beta</a> on October 3rd</p>
+<p><a href="https://www.gamingonlinux.com/2024/10/steam-beta-gets-big-game-recording-improvements-plus-steam-deck-steamos-3616-beta-out-now/" rel="noopener" target="_blank">SteamOS 3.6.16 Beta</a> on October 3rd</p>
+<p><a href="https://www.gamingonlinux.com/2024/09/steam-deck-steamos-3615-beta-zoomer-edition-released/" rel="noopener" target="_blank">SteamOS 3.6.15 Beta</a> on September 23rd</p>
+<p><a href="https://www.gamingonlinux.com/2024/09/steam-deck-steamos-3614-beta-released-with-a-flatpak-security-fix/" rel="noopener" target="_blank">SteamOS 3.6.14 Beta</a> on September 21st</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/steam-deck-steamos-3-6-19-beta-released/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/steam-deck-steamos-3-6-19-beta-released/</guid>
+      <pubDate>Tue, 22 Oct 2024 08:34:53 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>SteamOS</category>
+      
+    </item>
     
     <item>
       <title>FMV Adventures Bundle on Fanatical has some great stuff for cheaps</title>
@@ -3685,315 +4474,6 @@ Al Hope, Creative Director - ALIEN: ISOLATION</p>
       <category>Microsoft</category>
       
       <category>Online Multiplayer</category>
-      
-    </item>
-    
-    <item>
-      <title>Get some quality twin-stick shooters in the latest Humble Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Want some quality twin-stick shooters? Check out the new <a href="http://humblebundleinc.sjv.io/y2GbLb" rel="noopener" target="_blank">Twin Stick 'Em Up Humble Bundle</a> that's now live.</p>
-<p>You know the drill - below I'll go through and individually list the expected compatibility on Steam Deck and Linux desktop, along with any <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> rating and noting any Native Linux versions available. Plus each is a Steam link, so you can go see more info on each if you need to first.</p>
-<p><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</strong></p>
-<p><a href="https://store.steampowered.com/app/1608640/OTXO/" rel="noopener" target="_blank">OTXO</a> - ProtonDB Platinum</p>
-<blockquote>
-<p>Enter an inexplicable, abstract mansion to rescue a loved one in this fast-paced, brutal, and dark roguelite filled with precise but savage gunplay and time-bending slow motion. Face your inner demons and unveil the secrets of the Mansion.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/2008510/Go_Mecha_Ball/" rel="noopener" target="_blank">Go Mecha Ball</a> - ProtonDB Platinum</p>
-<blockquote>
-<p>Load up and roll out, in this twin stick shooter with roguelike progression! Blast your way through arcade-style levels, using pinball-style physics mixed with an arsenal of devastating weapons. Defeat waves of enemy bots, battle big bosses, and upgrade your mech between runs.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/464060/RUINER/" rel="noopener" target="_blank">RUINER</a> - ProtonDB Platinum / Native Linux</p>
-<blockquote>
-<p>RUINER is a brutal action shooter set in the year 2091 in the cyber metropolis Rengkok. A wired psychopath lashes out against a corrupt system to uncover the truth and retrieve his kidnapped brother under the guidance of a secretive hacker friend.</p>
-</blockquote>
-<p><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</strong></p>
-<p><a href="https://store.steampowered.com/app/979690/The_Ascent/" rel="noopener" target="_blank">The Ascent - Cyber Edition</a> - ProtonDB Gold</p>
-<blockquote>
-<p>The Ascent is a solo and co-op Action-shooter RPG set in a cyberpunk world. The mega corporation that owns you and everyone, The Ascent Group, has just collapsed. Can you survive without it?</p>
-</blockquote>
-<p><strong><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</strong></p>
-<p><a href="https://store.steampowered.com/app/1266840/The_Last_Stand_Aftermath/" rel="noopener" target="_blank">The Last Stand: Aftermath</a> - ProtonDB Platinum</p>
-<blockquote>
-<p>From the creators of The Last Stand: Union City and Dead Zone comes an all-new singleplayer rogue-lite action adventure. After you become infected by the zombie virus, you set out to explore the post-apocalypse and find hope for your fellow survivors. You can still make a difference. Don't give up.</p>
-</blockquote>
-<p><strong><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Not Rated</strong></p>
-<p><a href="https://store.steampowered.com/app/2726450/Windowkill/" rel="noopener" target="_blank">Windowkill</a> - Native Linux</p>
-<blockquote>
-<p>Windowkill is a twin-stick shooter, but the game window itself is constantly closing in on you. Shoot the window edges to push it around your screen as you fight and dodge enemies and bosses in their own windows.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1452070/LONE_RUIN/" rel="noopener" target="_blank">LONE RUIN</a> - ProtonDB Platinum</p>
-<blockquote>
-<p>Venture into an old, magical ruin to seek an ancient power in this highly replayable roguelike twin-stick shooter. Optimise spells and build ultimate combos to defeat twisted monstrosities and delve deeper into the Lone Ruin.</p>
-</blockquote>
-<hr/>
-<p>If those interest you then <a href="https://humblebundleinc.sjv.io/y2GbLb" rel="noopener" target="_blank">check it out on Humble Bundle</a>.</p>
-<p><strong>Note:</strong> Humble have this month <em>closed</em> their built-in partner program and moved over to the <em>much</em> less generous third-party service called Impact. So our links have changed, and we get <em>far</em> less now too. Remember that <a href="https://www.patreon.com/liamdawe" rel="noopener" target="_blank">Patreon</a> is the best way to support GamingOnLinux (and now more than ever!).</p>
-<p>Additionally, Humble seem to now be including Deck Verified status and info pulled from ProtonDB on the bundle. Although they're conflating ProtonDB status with how a game will run on Steam Deck, like for The Last Stand: Aftermath they say underneath it has "ProtonDB Platinum Deck Support" despite Valve listing it as Unsupported (since ProtonDB covers desktop Linux too). Nice to see they're trying though.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/get-some-quality-twin-stick-shooters-in-the-latest-humble-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/get-some-quality-twin-stick-shooters-in-the-latest-humble-bundle/</guid>
-      <pubDate>Sat, 05 Oct 2024 09:13:34 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1591465488id25396gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-      <category>Twin-stick shooter</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Beta gets fixes for SteamVR, Game Recording and Steam Input</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another Steam Client Beta release is live for October 4th that includes a bunch of quick bug fixes for desktop and Steam Deck. Since it's a normal Client (the Steam App) Beta update, it's the same for Steam Deck and desktop.</p>
-<p>Here's all the <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/4659627343423606990?snr=2___" rel="noopener" target="_blank">changes</a>:</p>
-<blockquote>
-<p>General</p>
-<ul>
-<li>Fixed Steam not being able to connect to SteamVR with error "SteamVR Failed to initialize: VR API not loaded (101)"</li>
-</ul>
-<p>Game Recording</p>
-<ul>
-<li>Fixed a regression from October 2nd's beta client which was causing some recordings to incorrectly fall back to using the CPU to encode video while playing a game, resulting in an increase in CPU usage.</li>
-<li>Fixed an issue causing exporting a clip to file, clipboard or chat to fail or sometimes crash.</li>
-<li>Fixes some cases where the clip export dialog did not appear.</li>
-</ul>
-<p>Steam Input</p>
-<ul>
-<li>Fixed a regression from the October 2nd Beta Update which caused per-controller preferences to not get loaded in some cases.</li>
-</ul>
-<p>macOS</p>
-<ul>
-<li>Fixed regression causing some games to be repeatedly restarted after launching.</li>
-</ul>
-</blockquote>
-<p>We're probably not far off having the Game Recording feature roll out to the stable client now. After <a href="https://www.gamingonlinux.com/2024/09/steam-families-has-officially-launched-with-a-big-steam-client-update/" rel="noopener" target="_blank">Steam Families was officially launched in September</a>, this is the next big one coming.</p>
-<p>Have you noticed a particular bug lately you want to see solved?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/steam-beta-gets-fixes-for-steamvr-game-recording-and-steam-input/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/steam-beta-gets-fixes-for-steamvr-game-recording-and-steam-input/</guid>
-      <pubDate>Sat, 05 Oct 2024 08:48:40 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Wine 9.19 released bringing improvements for Wayland, Unicode and DirectPlay</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Developer Alexandre Julliard announced the release of Wine 9.19, the Windows compatibility layer that allows thousands of apps and games to run on Linux.</p>
-<p class="plain-list-title">The main <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-9.19" rel="noopener" target="_blank">changes</a> of this release are:</p>
-<ul>
-<li>Character tables updates to Unicode 16.0.0.</li>
-<li>Better window positioning in the Wayland driver.</li>
-<li>More support for network sessions in DirectPlay.</li>
-<li>Support for plug&amp;play device change notifications.</li>
-<li>Various bug fixes.</li>
-</ul>
-<p>11 bugs were noted as solved from this release across various expected Windows behaviour, along with some regressions being fixed.</p>
-<p>Is there a particular bug or feature you're waiting on being sorted in Wine?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/wine-9-19-released-bringing-improvements-for-wayland-unicode-and-directplay/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/wine-9-19-released-bringing-improvements-for-wayland-unicode-and-directplay/</guid>
-      <pubDate>Sat, 05 Oct 2024 08:41:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-      <category>Wine</category>
-      
-    </item>
-    
-    <item>
-      <title>Get a free copy of Whispering Willows during the GOG Autumn Sale</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>It's time to grab another sweet free game courtesy of <a href="http://gog.com" rel="noopener" target="_blank">GOG.com</a> during their <a href="https://www.gog.com/en/promo/autumn_sale_2024" rel="noopener" target="_blank">big Autumn Sale</a> that's ongoing until October 8th, 7 AM UTC.</p>
-<p>For this giveaway GOG are letting you claim a free to keeps copy of Whispering Willows, an indie adventure-horror game that also has a Linux version. When you're logged in on GOG just scroll down a bit and you'll see the giveaway banner allowing you to quickly claim it.</p>
-<div class="hidden_video" data-video-id="E3ixsa4NQOc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4a6adf5ecbdb8c7816b705d414541653.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/E3ixsa4NQOc" target="_blank">See video</a></div></div>
-<p class="plain-list-title">A reminder on some great discounts currently live in the sale:</p>
-<ul>
-<li><a href="https://af.gog.com/en/game/xcom_2?as=1636858786" rel="noopener nofollow" target="_blank">XCOM 2</a> - 95% off</li>
-<li><a href="https://af.gog.com/en/game/lords_of_the_fallen_game_of_the_year_edition?as=1636858786" rel="noopener nofollow" target="_blank">Lords of the Fallen Game of the Year Edition</a> - 90% off</li>
-<li><a href="https://af.gog.com/en/game/metro_franchise_bundle?as=1636858786" rel="noopener nofollow" target="_blank">Metro Franchise Bundle</a> (Metro 2033 Redux, Metro: Last Light Redux and Metro Exodus) - 84% off</li>
-<li><a href="https://af.gog.com/en/game/kingdom_come_deliverance_royal_edition?as=1636858786" rel="noopener nofollow" target="_blank">Kingdom Come: Deliverance Royal Edition</a> - 80% off</li>
-<li><a href="https://www.gog.com/en/game/alien_isolation" rel="noopener" target="_blank">Alien: Isolation</a> - 75% off</li>
-<li><a href="https://af.gog.com/en/game/hardspace_shipbreaker?as=1636858786" rel="noopener nofollow" target="_blank">Hardspace: Shipbreaker</a> - 65% off</li>
-<li><a href="https://af.gog.com/en/game/fallout_4_game_of_the_year_edition?as=1636858786" rel="noopener nofollow" target="_blank">Fallout 4: Game of the Year Edition</a> - 60% off</li>
-<li><a href="https://af.gog.com/en/game/inscryption?as=1636858786" rel="noopener nofollow" target="_blank">Inscryption</a> - 60% off</li>
-<li><a href="https://af.gog.com/en/game/no_mans_sky?as=1636858786" rel="noopener nofollow" target="_blank">No Man's Sky</a> - 60% off</li>
-<li><a href="https://af.gog.com/en/game/everspace_2?as=1636858786" rel="noopener nofollow" target="_blank">EVERSPACE 2</a> - 60% off</li>
-<li><a href="https://af.gog.com/en/game/amnesia_the_bunker?as=1636858786" rel="noopener nofollow" target="_blank">Amnesia: The Bunker</a> - 55% off</li>
-<li><a href="https://af.gog.com/en/game/trepang2_banger_edition?as=1636858786" rel="noopener nofollow" target="_blank">Trepang2 - Banger Edition</a> - 40% off</li>
-</ul>
-<p><a href="https://af.gog.com/en/promo/autumn_sale_2024?as=1636858786" rel="noopener nofollow" target="_blank">Check out the full sale</a> for all the discounts.</p>
-<p>Check out the <a href="https://www.gamingonlinux.com/2024/09/heroic-games-launcher-2152-released-fixing-amazon-gog-and-epic-games-issues/" rel="noopener" target="_blank">Heroic Games Launcher</a> if you need an easy app for managing GOG games on Linux / Steam Deck.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/get-a-free-copy-of-whispering-willows-during-the-gog-autumn-sale/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/get-a-free-copy-of-whispering-willows-during-the-gog-autumn-sale/</guid>
-      <pubDate>Fri, 04 Oct 2024 17:26:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1325044140id25392gol.jpg" type="image/jpeg"/>
-      
-      <category>Free Game</category>
-      
-      <category>Giveaway</category>
-      
-      <category>GOG</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>JRPG-inspired adventure Flowstone Saga with a puzzle-battle system is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>From Impact Gameworks who made the excellent Tangledeep, their next game Flowstone Saga is officially out now with Linux support. <em>Note: my key was provided by NOVY UNLIMITED PR.</em></p>
-<p>Given how much I enjoyed Tangledeep, I was keen to see what Impact Gameworks had up their sleeve next. It started off life as Puzzle Explorers: A Tangledeep Story which had a <a href="https://www.gamingonlinux.com/2020/07/puzzle-explorers-a-tangledeep-story-announced-and-now-on-kickstarter/" rel="noopener" target="_blank">failed crowdfunding campaign</a>, then it came back <a href="https://www.gamingonlinux.com/2021/05/flowstone-saga-is-an-upcoming-jrpg-inspired-adventure-from-the-dev-of-tangledeep/" rel="noopener" target="_blank">just shy of a year later</a> renamed to Flowstone Saga and it was a success this time around. Nice to see that when you have a good idea, sometimes you just need a little more time to get everything right.</p>
-<p>Fusing together the basic idea of Tetris and a JRPG-styled adventure, with an intriguing story and some nice pixel art Flowstone Saga really hits a lot of the right notes. It pulls you in right from the start, even the first 5 minutes has you battling away as it teaches you the basics of the falling-blocks battle system and you just want <em>more</em>.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19598636241728055893gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/19598636241728055893gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15589474391728055894gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/15589474391728055894gol1.jpg"/></a><br/>
-<em>Pictured - Flowstone Saga, click images to enlarge.</em></p>
-<p>The battle system basics are: drop the blocks to get a full horizontal line, which then gets destroyed and you'll attack the enemy. You start off with basic shapes, with more types of shapes to unlock as you go. It throws in lots extras as well with different types of special blocks you can line up and destroy for more damage, that make it feel just that bit more frantic.</p>
-<p>Like a true classic RPG, you can fight multiple people in one battle, and switch targets any time while dropping blocks. You will need to do this at times too, as enemies can charge up special attacks, so this again adds to the additional heart-pounding moments when you really need those damn blocks to line up nicely. On top of that, enemies can throw stuff onto the board you need to clear, as they have harmful effects and become a nuisance. The design of it is mechanically just <em>great</em>. I'm not even particularly a Tetris fan at all, but here it fits in so perfectly that it's just plain fun.</p>
-<p>Check out the launch trailer:</p>
-<div class="hidden_video" data-video-id="P1ZIUS2DzEc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/66c6968680fd0c66934fb896992aee9a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/P1ZIUS2DzEc" target="_blank">See video</a></div></div>
-<p>There's even more to it, since it's an RPG, you have a level system. Here, you can earn special perks which can directly affect the block-dropping board. You could select to have some blocks pre-filled for example, with more filled at higher levels or put your unlocks into power perks when you hit enemies harder. There's multiple ways to play.</p>
-<p>As you explore there's various places that need re-building, and here you do little puzzles instead of battles with the falling blocks. They're optional, but a nice way to help towards upgrades and just a fun little break from the rest of the game. Just a nice little extra added in for explorers and completionists.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10095903091728057174gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10095903091728057174gol1.jpg"/></a><br/>
-<em>Pictured - Flowstone Saga, click images to enlarge.</em></p>
-<p>When it comes to the story, it's thoroughly intriguing too and will keep you guessing for a while. You do learn early on <em>how</em> you do the block-dropping, and <em>where</em> the power specifically for you comes from but it's still quite mysterious on where it originallyy came from to keep you wanting to progress further and explore more of the carefully designed world. Nice bit of town-building outside all the battling too, giving you more of a sense of purpose. And, in true retro-RPG fashion, you can run into everyone's house and open their chest for some extras - has no one ever heard of a lock?</p>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li>Gorgeous pixel art with painstakingly handcrafted areas sprawling across multiple biomes.</li>
-<li>An epic story grand in scope, but with plenty of heart and charm.</li>
-<li>Designed with accessibility in mind – including multiple difficulty options and a turn-based “Hold” mode.</li>
-<li>Improve, expand, and decorate the hub town of New Riverstone – helping its citizens and making it your own.</li>
-<li>Mini-games with unique and quirky ways to play … and profit!</li>
-<li>In co-op assist mode, join the fight with a friend in battle.</li>
-<li>Lots of ways to create unique battle strategies and express yourself: equipment customization, perk trees, job system, and more!</li>
-</ul>
-</blockquote>
-<p>One nice touch is that before you even get to the main menu, you're given screen display settings so you can get it how you want it first. More games should do that.</p>
-<p>There were a few issues with it at release across Linux / Steam Deck, but the developer has solved them before publishing this so you're good to go with the Native Linux version. Works really nicely.</p>
-<p>If you long for the days of sweet-looking 16-bit styled JRPGs, you're in for a bit of a treat on this one. Everything from the art style, to the design of the music and sound effects really reminded me of the golden age of such games years ago. The battle mechanic really adds to the experience too. Absolutely worth grabbing without a second thought needed. Flowstone Saga made me, <em>surprisingly</em>, finally truly appreciate dropping-blocks.</p>
-<p>Available to buy on <a href="https://store.steampowered.com/app/1372000/Flowstone_Saga/" rel="noopener" target="_blank">Steam</a>. And at some point on <a href="https://www.gog.com/en/game/flowstone_saga" rel="noopener" target="_blank">GOG</a> too.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/jrpg-inspired-adventure-flowstone-saga-with-a-puzzle-battle-system-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/jrpg-inspired-adventure-flowstone-saga-with-a-puzzle-battle-system-is-out-now/</guid>
-      <pubDate>Fri, 04 Oct 2024 15:53:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/578667488id25346gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Pinball Spire is a wonderful reinvention of what Pinball can be</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>There's been a few attempts to update Pinball into something new, and Pinball Spire is the latest that's out now. It's Steam Deck Verified and works great on desktop Linux with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Valve's Proton</a>. <em>Note: my key was sent by the developer.</em></p>
-<p>It's being called a pinballvania, because it takes some ideas from metroidvanias to provide a rather different experience for pinball fans and turns it into much more of an adventure. Developed by Apparition Games, a tiny indie game studio in Canada. What you get here is a rather unique blend of pinball, platforming and puzzles to make something quirky and different to spend your time with.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16792888961728051836gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16792888961728051836gol1.jpg"/></a><br/>
-<em>Pictured - Pinball Spire on Linux</em></p>
-<p>What makes it quite different is that each main level in the game acts as a self-contained puzzle for you to solve, with the power of pinball. I'll be honest, pinball is a game I never really got. Like many others though, I did play plenty of Space Cadet in the early Windows days but other than that it never really appealed to me. However, Pinball Spire thankfully understands me and shows me there's another way to do it, one that's just far more exciting and mysterious.</p>
-<p>Here you go into each new room not really knowing what to expect from it, and there's quite a lot of surprising variety in how you'll be dealing with each section. Thankfully, you've got a special scouter that you can hit a button to pause the movement at any time to look around and hover over objects to learn more, and hopefully get an idea on how to beat the room.</p>
-<div class="hidden_video" data-video-id="o4eVLrlq634"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/de5a19e810f264c9cc632e385d6cc6e2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/o4eVLrlq634" target="_blank">See video</a></div></div>
-<p>There's definitely a little frustration that can be found though. Some parts of it seemed to take me forever, because I just couldn't hit a very specific spot. Other times you're left just waiting for the ball to drop, which can take a while in some cases. Basically, it has all the annoying bits of Pinball too, as well as all the exciting new additions to make it (to me) actually worth a go.</p>
-<p>Thankfully, you're not just any old pinball, you have special abilities! Like being able to slow down time to line up a perfect shot (still not easy), but it gives you an actual shot line when you use the slow ability if the ball is over a flipper so you know exactly where it will fire. Seriously though, there's a few times I got worried I was smashing the keys on my keyboard a little <em>too</em> hard when desperately wanting to make a shot. Using these abilities takes up mana too, so you can't just use them all the time, which adds to the challenge of it all.</p>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li>Welcome to the world of Pinballvania! A fusion of arcade pinball mechanics with platforming, puzzles, and exploration—drawing inspiration from retro action-adventure games</li>
-<li>Elaborate pinball levels to explore, combining traditional pinball tables with atmospheric dungeons and passageways to explore.</li>
-<li>Mana-powered pinball abilities enable unorthodox ways to interact with the environment.</li>
-<li>Fun accessories to collect and equip to customize Pip’s appearance!</li>
-</ul>
-</blockquote>
-<p>With the launch of Pinball Spire, solo developer Tom Voros said: "I hope players enjoy the atmospheric art and music as they journey through the Pinball Spire in this unconventional take on pinball action!".</p>
-<p>It's a really unique experience not to be missed. Fantastic design and great audio to go with it make it a really fun game overall.</p>
-<p>You can buy it from:</p>
-<p><a href="https://www.fanatical.com/en/game/pinball-spire?ref=gol" rel="noopener" target="_blank">Fanatical</a></p>
-<p><a href="https://store.steampowered.com/app/2601940/Pinball_Spire/" rel="noopener" target="_blank">Steam</a></p>
-<p><a href="https://www.gog.com/en/game/pinball_spire" rel="noopener" target="_blank">GOG</a> (sometime "soon")</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/pinball-spire-is-a-wonderful-reinvention-of-what-pinball-can-be/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/pinball-spire-is-a-wonderful-reinvention-of-what-pinball-can-be/</guid>
-      <pubDate>Fri, 04 Oct 2024 14:24:18 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/349340385id25391gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Arcade</category>
-      
-      <category>Exploration</category>
-      
-    </item>
-    
-    <item>
-      <title>Unified Linux Wine Game Launcher (UMU) gets a first official release</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Unified Linux Wine Game Launcher (UMU) from Thomas "GloriousEggroll" Crider version 1.1.1 is out now as the first official release to help improve Linux desktop and Steam Deck gaming.</p>
-<p>A refresher on what it is: despite the name, it's not a launcher in the sense of it being an app like Steam, Heroic Games, Lutris, Bottles, Legendary and so on. Instead, it's a tool that various apps can use to run Windows games on Linux, acting as a copy of the Steam Runtime Tools and Steam Linux Runtime that Valve uses for Proton to allow Proton to properly run outside of Steam.</p>
-<p>From the release notes:</p>
-<blockquote>
-<p>First official release of UMU launcher!</p>
-<ul>
-<li>Should work inside both flatpak and snap</li>
-</ul>
-<p>We do not have official builds for flatpak or snap yet, but instructions are provided on building and using for both:</p>
-<p><a href="https://github.com/Open-Wine-Components/umu-launcher/tree/main/packaging/flatpak" rel="noopener" target="_blank">https://github.com/Open-Wine-Components/umu-launcher/tree/main/packaging/flatpak</a><br/>
-<a href="https://github.com/Open-Wine-Components/umu-launcher/tree/main/packaging/snap" rel="noopener" target="_blank">https://github.com/Open-Wine-Components/umu-launcher/tree/main/packaging/snap</a></p>
-</blockquote>
-<p>So what does it actually mean? It means that any app can run games using Proton just like they would from inside Steam so you can get a good experience with Windows games on Linux / Steam Deck from Epic Games, GOG, Amazon and various other stores via apps like Heroic, Lutris and others (when they add in full support for UMU).</p>
-<p>This is all part of <a href="https://github.com/Open-Wine-Components" rel="noopener" target="_blank">Open Wine Components</a>, and so all apps will end up using the same online database of game-specific fixes that some games need to run properly via protonfixes. In short: better compatibility overall for gaming — eventually.</p>
-<p>More info on the <a href="https://github.com/Open-Wine-Components/umu-launcher" rel="noopener" target="_blank">GitHub</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/unified-linux-wine-game-launcher-umu-gets-a-first-official-release/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/unified-linux-wine-game-launcher-umu-gets-a-first-official-release/</guid>
-      <pubDate>Fri, 04 Oct 2024 10:39:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1797253422id25390gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
       
     </item>
     
