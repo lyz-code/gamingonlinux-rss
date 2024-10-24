@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-10-23 07:30:14.815677</pubDate>
+    <pubDate>2024-10-24 07:29:04.405337</pubDate>
 
     
     <image>
@@ -18,6 +18,337 @@
     </image>
 
     
+    
+    <item>
+      <title>Proton Experimental gets a big change for video playback in games on Steam Deck / Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve released a new update to Proton Experimental with a big change for how they handle video playback, and hopefully give a nice compatibility boost for Windows games on Steam Deck and Desktop Linux.</p>
+<p class="plain-list-title">The update released today, October 23rd, has a <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener nofollow" target="_blank">changelog</a> that notes fixed or improved video playback for:</p>
+<ul>
+<li>Gal*Gun 2</li>
+<li>SOULCALIBUR VI</li>
+<li>Call of Cthulhu</li>
+<li>All-Star Fruit Racing</li>
+<li>Greedfall</li>
+<li>Onimusha: Warlords</li>
+<li>Bloodstained: Ritual of the Night</li>
+<li>Indigo Park: Chapter 1</li>
+<li>Agony Unrated</li>
+<li>TELEFORUM</li>
+</ul>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/857883721729708099gol1.jpg"/><br/>
+<em>Pictured - Call of Cthulhu</em></p>
+<p>In the linked GitHub <a href="https://github.com/ValveSoftware/Proton/issues/8186" rel="noopener nofollow" target="_blank">issue</a> developer Arek Hiler mentioned:</p>
+<blockquote>
+<p>Living true to its name <em>Proton Experimental</em> will serve as a vehicle to <strong>roll out and test a new implementation of media source</strong>. While it improves video playback in many games and enables us to fix even more things in the future, the change is substantial and may cause regressions.</p>
+<p>We've done extensive internal testing and made the changes available via the bleeding-edge beta branch already. Now it's time to push this experiment even further - into the default Proton Experimental.</p>
+<p><strong>In case of regressions in video playback please report them here.</strong><br/>
+There's a beta branch named <code class="inline-code">old-media-source</code> (select Proton Experimental in you Steam Library -&gt; cog icon -&gt; Properties -&gt; Betas -&gt; and select the branch from the beta participation drop-down).</p>
+<p>If you face any issues please make sure that they are not present with <code class="inline-code">old-media-source</code> before reporting them here.</p>
+</blockquote>
+<p class="plain-list-title">While the above list notes improved games, there's also some games with known issues right now with it:</p>
+<ul>
+<li>Resident Evil 7 videos fail to play.</li>
+<li>Resident Evil Village videos fail to play.</li>
+<li>Quantum Break videos have green flashes and intermittent crashes.</li>
+<li>Shin Megami Tensei III has intermittent video playback failure.</li>
+</ul>
+<p>It's changes like this that's why I always advise you to stick to the main versions of Proton, the latest being Proton 9, unless you specifically need Proton Experimental - as it can come with breakage.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/proton-experimental-gets-a-big-change-for-video-playback-in-games-on-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/proton-experimental-gets-a-big-change-for-video-playback-in-games-on-steam-deck-linux/</guid>
+      <pubDate>Wed, 23 Oct 2024 18:29:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/963219139id25507gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA detail new GPU driver vulnerabilities in their October 2024 Security Bulletin</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA have released a security bulletin to detail new security issues, so it's time to update your GPU driver once again.</p>
+<p>There's six vulnerabilities being disclosed today, although the date stated is October 22nd, they only emailed it today. Only <em>one</em> of the issues noted actually affects the Linux display driver (and Windows), the rest are <em>just</em> for Windows. Here's the note on the one for Linux:</p>
+<p>CVE‑2024‑0126 - "NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability which could allow a privileged attacker to escalate permissions. A successful exploit of this vulnerability might lead to code execution, denial of service, escalation of privileges, information disclosure, and data tampering."</p>
+<p>If you're on driver versions 565.57.01, 550.127.05, 535.216.01 or later you're secure. Otherwise, you should probably go and update. So that explains the tiny one-liner update I covered for the <a href="https://www.gamingonlinux.com/2024/10/nvidia-565-57-01-beta-has-wayland-and-hdr-improvements-plus-dxvk-and-vkd3d-optimizations/" rel="noopener" target="_blank">550.127.05 release yesterday along with the 565.57.01 Beta</a> that was also released at the same time.</p>
+<p>See more in their <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5586" rel="noopener nofollow" target="_blank">security bulletin</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/nvidia-detail-new-gpu-driver-vulnerabilities-in-their-october-2024-security-bulletin/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/nvidia-detail-new-gpu-driver-vulnerabilities-in-their-october-2024-security-bulletin/</guid>
+      <pubDate>Wed, 23 Oct 2024 16:22:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>The Rogue Prince of Persia now Steam Deck Verified with a big update</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Coming in a day late for <a href="https://www.gamingonlinux.com/2024/10/steam-deck-verified-round-up-your-late-october-2024-highlights/" rel="noopener" target="_blank">my recent Steam Deck Verified round-up</a>, The Rogue Prince of Persia from developer Evil Empire and publisher Ubisoft is now Steam Deck Verified with a big update out.</p>
+<p>More about it: "Experience a fast-paced, challenging but accessible roguelite as you master acrobatic moves and flow seamlessly between platforming and combat. Find new weapons, equip trinkets with special effects and upgrade them to make your own builds. Discover new characters, information and areas as you try to find a way to save Persia from a Hun invasion and become the hero you have always wanted to be."</p>
+<p class="plain-list-title">What to expect from the update:</p>
+<ul>
+<li>50 new Medallions with an all-new system.</li>
+<li>The Book of Heads: more secondary objectives.</li>
+<li>The Rescue levels: more platforming challenges.</li>
+<li>Tons of tweaks, fixes &amp; polishing.</li>
+</ul>
+<p class="plain-list-title">Speaking in a post on Twitter (X), the developer <a href="https://x.com/Studio_Evil/status/1849107939576971713" rel="noopener nofollow" target="_blank">noted</a>:</p>
+<blockquote>
+<p>"Since the last update, The Rogue Prince of Persia is Steam Deck verified!</p>
+<p>A few notes though :<br/>
+1. We will continue improving performance throughout Early Access.<br/>
+2. The hub and later biomes may experience occasional drops in frame rate.<br/>
+3. We still recommend setting the FPS to 30max in the options."</p>
+</blockquote>
+<div class="hidden_video" data-video-id="LoYIyvwI__E"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9143698811e2083e72c6c07705335f31.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/LoYIyvwI__E" target="_blank">See video</a></div></div>
+<p><div class="itemdb_embed"><p><strong>The Rogue Prince of Persia</strong> | Release Date: 27th May 2024<p class="plain-list-title">Where to buy from:</p>
+<ul><li><a href="https://store.steampowered.com/app/2717880/The_Rogue_Prince_of_Persia/">Steam</a></li></ul></p></div></p>
+<p>This comes at the same time as news that Ubisoft has disbanded the team behind Prince of Persia: The Lost Crown (<a href="https://www.bbc.co.uk/news/articles/c0j8p8l26pgo" rel="noopener nofollow" target="_blank">BBC</a>). However, there were no layoffs this time around, instead developers have been moved to other projects.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/the-rogue-prince-of-persia-now-steam-deck-verified-with-a-big-update/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/the-rogue-prince-of-persia-now-steam-deck-verified-with-a-big-update/</guid>
+      <pubDate>Wed, 23 Oct 2024 15:43:40 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/209083353id25505gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+    </item>
+    
+    <item>
+      <title>Get your own UFO in the latest No Man&#39;s Sky update during a really weird Expedition</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Hello Games have updated No Man's Sky again, bringing with it a reality-bending new Expedition with The Cursed.</p>
+<p>Unlike some previous updates, this doesn't include some major new features elsewhere, as it seems firmly focused on this new Expedition that runs for the next two weeks. There are of course plenty of bug fixes across the whole game though.</p>
+<p>So what's The Cursed all about then? Taking place in a "sort of twilight realm, straddling the boundary between one reality and the next", here the very boundaries of reality are crumbling and things will start getting pretty weird. During it you can get a few new items like an exclusive jetpack customization and the Boundary Herald Starship which looks very much like a classic UFO blended with a Millennium Falcon,</p>
+<div class="hidden_video" data-video-id="QyPJUtsQiEY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/234b82c59811563e3ae143c810e358ba.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/QyPJUtsQiEY" target="_blank">See video</a></div></div>
+<p>See the <a href="https://www.nomanssky.com/2024/10/expedition-sixteen-the-cursed/" rel="noopener nofollow" target="_blank">update page</a> for more.</p>
+<p>No Man's Sky is playable on Linux with Proton and is rated Steam Deck Verified by Valve.</p>
+<p><div class="itemdb_embed"><p><strong>No Man's Sky</strong> | Release Date: 12th August 2016<p class="plain-list-title">Where to buy from:</p>
+<ul><li><a href="https://www.fanatical.com/en/game/no-man-s-sky?ref=gol">Fanatical</a></li><li><a href="https://www.gog.com/en/game/no_mans_sky">GOG</a></li><li><a href="humblebundleinc.sjv.io/NknDNv">Humble Store</a></li><li><a href="https://store.steampowered.com/app/275850/No_Mans_Sky/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/get-your-own-ufo-in-the-latest-no-mans-sky-update-during-a-really-weird-expedition/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/get-your-own-ufo-in-the-latest-no-mans-sky-update-during-a-really-weird-expedition/</guid>
+      <pubDate>Wed, 23 Oct 2024 15:31:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1176290005id25504gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Fanatical</category>
+      
+      <category>GOG</category>
+      
+      <category>Humble Store</category>
+      
+    </item>
+    
+    <item>
+      <title>GOG announces Fallout: London hits 1 million players, all games on sale for Fallout Day</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="http://gog.com" rel="noopener nofollow" target="_blank">GOG</a> sent word via a press release that the huge Fallout 4 mod Fallout: London from Team FOLON has hit 1 million players. Additionally, it's Fallout Day so all the games are on sale.</p>
+<blockquote>
+<p>Fallout: London lets you explore a dishevelled London set in the Fallout universe. It overhauls Fallout 4 with a new story, new weapons, London-centric items and a vast recreation of the ruined city to explore.</p>
+<p>Fallout: London is a free total conversion mod for Fallout 4, available to anyone who owns the base game and all of its DLCs. It is developed non-commercially by Team FOLON, many of whom are proud London residents or expats. </p>
+</blockquote>
+<div class="hidden_video" data-video-id="lTdkNavGfss"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/47b3ef9c00782df9ea2983591a5020bf.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/lTdkNavGfss" target="_blank">See video</a></div></div>
+<p>According to the video above from Team FOLON this milestone makes it one of the fastest and biggest in the history of GOG. To play <a href="http://gog.com" rel="noopener nofollow" target="_blank">GOG</a> games easily on Linux you can use the <a href="https://www.gamingonlinux.com/2024/09/heroic-games-launcher-2152-released-fixing-amazon-gog-and-epic-games-issues/" rel="noopener" target="_blank">Heroic Games Launcher</a>.</p>
+<p class="plain-list-title">With it being Fallout Day you can also get the games discounted on GOG like:</p>
+<ul>
+<li><a href="https://www.gog.com/en/game/fallout_4_game_of_the_year_edition" rel="noopener nofollow" target="_blank" title="">Fallout 4: Game of the Year Edition</a> - 75% off</li>
+<li><a href="https://www.gog.com/en/game/fallout_3_game_of_the_year_edition" rel="noopener nofollow" target="_blank" title="">Fallout 3: Game of the Year Edition</a> - 75% off</li>
+<li><a href="https://www.gog.com/en/game/fallout_new_vegas_ultimate_edition" rel="noopener nofollow" target="_blank" title="">Fallout: New Vegas Ultimate Edition</a> - 60% off</li>
+<li><a href="https://www.gog.com/en/game/fallout_2" rel="noopener nofollow" target="_blank" title="">Fallout 2</a> - 75% off</li>
+<li><a href="https://www.gog.com/en/game/fallout" rel="noopener nofollow" target="_blank" title="">Fallout 1</a> - 75% off</li>
+<li><a href="https://www.gog.com/en/game/fallout_tactics" rel="noopener nofollow" target="_blank" title="">Fallout Tactics</a> - 75%</li>
+</ul>
+<p>There's also discounts available across other stores like <a href="https://www.fanatical.com/en/game/fallout-76?ref=gol" rel="noopener nofollow" target="_blank">Fallout 76 on Fanatical</a> is 77% off. Fanatical also have some <a href="https://www.fanatical.com/en/publishers/bethesda-softworks?ref=gol" rel="noopener nofollow" target="_blank">other big discounts on Fallout</a> games as well, higher discounts than other stores too but some deals may be limited.</p>
+<p>You can also find a few discounts on <a href="https://humblebundleinc.sjv.io/QyRrjM" rel="noopener nofollow" target="_blank">Humble</a> and <a href="https://store.steampowered.com/sale/falloutdaysale2024" rel="noopener nofollow" target="_blank">Steam</a>.</p>
+<p>Pretty much all the Fallout games are playable on Linux / Steam Deck with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> or Wine.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/gog-announces-fallout-london-hits-1-million-players-all-games-on-sale-for-fallout-day/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/gog-announces-fallout-london-hits-1-million-players-all-games-on-sale-for-fallout-day/</guid>
+      <pubDate>Wed, 23 Oct 2024 15:17:48 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/155937242id25503gol.jpg" type="image/jpeg"/>
+      
+      <category>Fanatical</category>
+      
+      <category>GOG</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>EA Anti-Cheat arrives for Battlefield 1 breaking it on Steam Deck / Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It's here. EA Anti-Cheat has now been rolled out into Battlefield 1, breaking another multiplayer game on Steam Deck and Desktop Linux.</p>
+<p>We've known it was coming for a little while <a href="https://www.gamingonlinux.com/2024/08/battlefield-1-gets-ea-anticheat-in-september-will-be-left-broken-on-steam-deck-linux/" rel="noopener" target="_blank">as I reported back in August</a>, EA were planning this roll-out originally for September, but it seems it was later delayed until a day ago where it's only just now become live. Battlefield 1 joins the likes of Battlefield 2042, Battlefield V, EA SPORTS WRC and Plants vs. Zombies Garden Warfare 2 that added EA Anti-Cheat <em>after</em> release and <em>all</em> now broken on Linux platforms.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7736225661729686272gol1.jpg"/></p>
+<p>They aren't the only games completely unplayable for Steam Deck / Linux as this EA Anti-Cheat is also in EA SPORTS FC 25, EA SPORTS Madden NFL 25, F1 24 and EA will continue using it for future multiplayer games so we can expect them all to be unplayable at release. </p>
+<p>How long until they roll this out into Apex Legends to replace Easy Anti-Cheat? It must be only a matter of time now.</p>
+<p>Anti-Cheat continues to be the biggest issue for gaming on Steam Deck / Linux, like how <a href="https://www.gamingonlinux.com/2024/09/grand-theft-auto-v-gets-battleye-anti-cheat-breaks-online-play-on-steam-deck-linux/" rel="noopener" target="_blank">Grand Theft Auto V is also now broken</a> due to adding in BattlEye with Rockstar refusing to enable it for Proton.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/ea-anti-cheat-arrives-for-battlefield-1-breaking-it-on-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/ea-anti-cheat-arrives-for-battlefield-1-breaking-it-on-steam-deck-linux/</guid>
+      <pubDate>Wed, 23 Oct 2024 12:30:14 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/373026361id25502gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>Electronic Arts</category>
+      
+    </item>
+    
+    <item>
+      <title>Creepy retro horror game Fear the Spotlight is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Fear the Spotlight from Cozy Game Pals and Blumhouse Games is a retro-styled horror game that looks like it would fit right in on the original PlayStation. It's just be re-released on Steam with Linux support. <em>Note: key provided by fortyseven.</em></p>
+<p>Originally released last year, the developers took it off Steam to expand it a little with new content and fix up various reported issues. The result? A seriously tension-filled love letter to PS1 survival horror, with little nods to Silent Hill and Resident Evil, and a perfect fit for your 2024 Halloween to get in the mood.</p>
+<p>Starring a bit of an odd couple, Vivian and Amy, who are very much the opposites in terms of style and personality. One night they decide to break into their high school to find a spirit board to hold a séance, and as you might expect from a horror game — it doesn't exactly go to plan.</p>
+<div class="hidden_video" data-video-id="cEo__9Fd3w8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0abbe577f8a7f351f1dfca18e1358807.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/cEo__9Fd3w8" target="_blank">See video</a></div></div>
+<p>What's quite interesting is that you get to play through two different stories here. The first one that serves up as an intro into all the game mechanics, the setting and the atmosphere and then a few hours in once you finish the main story it will flip (in a way I won't spoil) so that you get a taste of things from another perspective.</p>
+<p>It's not a particularly scary game (although definitely creepy) that relies on the atmosphere and not jump scares or combat. Fear the Spotlight is all about hide and seek from enemies, and all the disturbing sounds to make your heart race a little. There's plenty of puzzles to do as well, which will change how you interact with the game from the third-person exploration into more of a point and click interface that nicely splits up the exploration (and gives you a chance to breathe a little easier). The puzzles aren't particularly challenging either, so overall it's one that would be quite a nice entry into the genre and for perhaps a slightly younger adult / late teen audience to appreciate.</p>
+<p>As long as you can stand the retro visuals, you're in for a bit of a treat. Visually, I think the retro look works a lot better with these types of horror games than it does other genres, it just seems more fitting somehow and Fear the Spotlight really does look and feel the part. Not an overly long game either that you can likely finish between 5-6 hours, so it won't take you forever to get through either (which works in its favour).</p>
+<p>It has Native Linux support. Although, the Native Linux version has an issue where the audio will go to the wrong output (a bug that happens on Steam Deck too). So you have to manually switch it over in your system settings. Another bug I encountered was the Linux version repeatedly locking itself to 20FPS. Neither bugs are present when playing the Windows version with Proton 9.</p>
+<p><div class="itemdb_embed"><p><strong>Fear the Spotlight</strong> | Release Date: 15th September 2023<p class="plain-list-title">Where to buy from:</p>
+<ul><li><a href="https://store.steampowered.com/app/1959390/Fear_the_Spotlight/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/creepy-retro-horror-game-fear-the-spotlight-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/creepy-retro-horror-game-fear-the-spotlight-is-out-now/</guid>
+      <pubDate>Wed, 23 Oct 2024 12:10:17 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1339187685id25501gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Horror</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Unified launcher for Windows games on Linux (UMU) v1.1.3 out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Continuing to improve compatibility with Windows games on Linux outside of Steam, the Unified launcher for Windows games on Linux (UMU) has another release out now.</p>
+<p>Following on from the <a href="https://www.gamingonlinux.com/2024/10/unified-linux-wine-game-launcher-umu-gets-a-first-official-release/" rel="noopener" target="_blank">first official release in early October</a>, this release focuses on various bug fixes and ensuring it works well for Lutris and the Heroic Games Launcher.</p>
+<p>A refresher on what it is: forming part of <a href="https://github.com/Open-Wine-Components" rel="noopener nofollow" target="_blank">Open Wine Components</a>, it's <em>not</em> a launcher in the sense of it being an app like Steam, Heroic Games, Lutris, Bottles, Legendary and so on. Instead, it's a tool that various apps can use to run Windows games on Linux, acting as a copy of the Steam Runtime Tools and Steam Linux Runtime that Valve uses for Proton to allow Proton to properly run <em>outside</em> of Steam. In case you missed it, <a href="https://www.gamingonlinux.com/2024/10/zoom-platform-store-announces-new-tool-to-run-windows-games-on-linux-with-proton/" rel="noopener" target="_blank">the Zoom Platform store have begun using it</a> too.</p>
+<p>From the v1.1.3 <a href="https://github.com/Open-Wine-Components/umu-launcher/releases/tag/1.1.3" rel="noopener nofollow" target="_blank">changelog</a>:</p>
+<blockquote>
+<ul>
+<li>Fixed issue that prevented heroic and lutris from using UMU as a game installer instead of wine</li>
+<li>Fixed issue where sometimes DISPLAY envvar would get lost between handoff from umu to pressure vessel</li>
+<li>Refactor/cleanup of window management code under gamescope -- both lutris and heroic can fully install and run games inside gamescope while both inside or outside of flatpak now.</li>
+<li>Winetricks is now fully useable through UMU and GE-Proton/UMU-Proton</li>
+<li>Updated apparmor bwrap permission profile to recommendations from upstream apparmor folks</li>
+<li>Added a basic shim script to allow performing modifications inside the pressure vessel container after UMU handoff has happened.</li>
+<li>Cleaned up standalone flatpak script to prepare for submission upstream</li>
+<li>Fixed a few places that needed lock files in place to prevent prefix corruption if multiple instances are running</li>
+<li>Missing 32 bit dependencies added for Nix packaging</li>
+</ul>
+<p>Notes:</p>
+<ul>
+<li>
+<p>We're still working out github task attachments for releases being automated. For now we're manually attaching from the latest 1.1.3 builds in the actions section. Thanks for baring with us.</p>
+</li>
+<li>
+<p>A refactor was submitted to Lutris to allow full UMU functionality on the lutris side:<br/>
+<a href="https://github.com/lutris/lutris/commit/3a45272a35dd61f32bd164660d670f9737c4146a" rel="noopener nofollow" target="_blank">lutris/lutris@<tt>3a45272</tt></a></p>
+</li>
+<li>
+<p>Lutris and Heroic also should be receiving the permissions they need in flatpak soon if not already:<br/>
+<a href="https://github.com/flathub-infra/flatpak-builder-lint/commit/7aa23001f49beb946a58ecfd445e66d7e0349637" rel="noopener nofollow" target="_blank">flathub-infra/flatpak-builder-lint@<tt>7aa2300</tt></a></p>
+</li>
+</ul>
+</blockquote>
+<p>Have any GamingOnLinux readers been testing UMU? Let me know your thoughts in the comments.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/unified-launcher-for-windows-games-on-linux-umu-v113-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/unified-launcher-for-windows-games-on-linux-umu-v113-out-now/</guid>
+      <pubDate>Wed, 23 Oct 2024 11:10:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/280357901id25500gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Escape Simulator gets a free Talos Principle DLC out now, plus a paid DLC in December</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Escape Simulator from Pine Studio continues doing some really cool additions, with The Talos Principle getting a little free crossover DLC out now. As long as you have the base game, you can grab this DLC for nothing (permanently).</p>
+<p>It's a one room pack, although they said it's bigger than the standard ones and take you around 45 minutes to finish it. It also looks really great and fitting with the style of Talos. </p>
+<div class="hidden_video" data-video-id="oRum0CDytOQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/84b189f2c38efc3d8a10a8b2b85fd73f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/oRum0CDytOQ" target="_blank">See video</a></div></div>
+<p>The developer said: "As huge fans of the series here at Pine Studio, we’ve worked hard to capture the essence of its deep philosophical themes, mind-bending puzzles, and breathtaking environments. In this DLC, players will face a series of intricate puzzles and challenges inspired by The Talos Principle universe. Whether you are a veteran of Escape Simulator or a fan of The Talos Principle, we believe this room will offer a unique, engaging experience that bridges the gap between these two beloved puzzle game worlds."</p>
+<p>Additionally an Escape Simulator: Mayan DLC will release on December 5th with four new rooms, new outfits, a new soundtrack a more:</p>
+<div class="hidden_video" data-video-id="rlZBYlVI17M"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/456d025ac75dc993af8dad4871ed0913.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/rlZBYlVI17M" target="_blank">See video</a></div></div>
+<p>Escape Simulator has Native Linux support and is rated Steam Deck Verified.</p>
+<p><div class="itemdb_embed"><p><strong>Escape Simulator</strong> | Release Date: 19th October 2021<p class="plain-list-title">Where to buy from:</p>
+<ul><li><a href="https://www.fanatical.com/en/game/escape-simulator?ref=gol">Fanatical</a></li><li><a href="https://humblebundleinc.sjv.io/6eB51r">Humble Store</a></li><li><a href="https://store.steampowered.com/app/1435790/Escape_Simulator/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/escape-simulator-gets-a-free-talos-principle-dlc-out-now-plus-a-paid-dlc-in-december/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/escape-simulator-gets-a-free-talos-principle-dlc-out-now-plus-a-paid-dlc-in-december/</guid>
+      <pubDate>Wed, 23 Oct 2024 10:57:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/108720668id25499gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>DLC</category>
+      
+      <category>New Release</category>
+      
+    </item>
     
     <item>
       <title>Science fantasy roguelike epic Caves of Qud releases December 5</title>
@@ -4120,360 +4451,6 @@ mapping = {<br/>
       <category>LGBTQ+</category>
       
       <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Creative Assembly confirm Alien: Isolation is getting a sequel</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>It's truly hard to believe that Alien: Isolation is 10 years old now, and we're going to get a sequel to one of the scariest games ever made.</p>
-<p>Alien: Isolation is a special one for me, since Aliens is one of my all-time favourite movies, and this perfectly expanded the universe while treating it with respect. Just…my heart didn't particularly like it. What an exceptional experience it was to play.</p>
-<p>The day after its 10th anniversary (today), the official account on X (Twitter) <a href="https://x.com/AlienIsolation/status/1843305291322200488" rel="noopener" target="_blank">confirmed</a> a sequel is now in early development. To save you clicking into Twitter here's the image-cropped statement they shared:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16804605381728316846gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16804605381728316846gol1.jpg"/></a></p>
-<blockquote>
-<p>To our fans around the world:</p>
-<p>It's hard to believe that it has been 10 years since we embarked on our journey with the release of ALIEN: ISOLATION™</p>
-<p>When we started developing ALIEN: ISOLATION, we had one guiding principle: to create a truly authentic experience that went back to the roots of the ALIEN™ franchise - a new story capturing the atmosphere and terror of the original 1979 movie masterpiece.</p>
-<p>It's been nothing short of incredible to witness your passion for the game over the years and see it reach so many players around the world. Your boundless enthusiasm, excitement, screams (!) and steely courage in the face of cinema's greatest killer, have been profoundly rewarding.</p>
-<p>Whether you're a nightmare mode veteran or stepping into Amanda Ripley's shoes for that thrilling first attempt (good luck!), we wanted to express our deep gratitude. It was a dream project brought to life by a brilliant team, and the reception you have given it over the years is extraordinary.</p>
-<p>On the 10th anniversary, it seems only fitting to let you know that we have heard your distress calls loud and clear.</p>
-<p>Today, I'm delighted to confirm, on behalf of the team, that a sequel to ALIEN: ISOLATION is in early development.</p>
-<p>We look forward to sharing more details with you when we're ready.</p>
-<p>Once again, thank you.</p>
-<p>Until next time,<br/>
-Al Hope, Creative Director - ALIEN: ISOLATION</p>
-</blockquote>
-<p>The original had Native Linux support from Feral Interactive, who no longer port games over to Linux, so it's likely you'll need Valve's Proton to play the sequel.</p>
-<p>I'm excited to see what they come up with, and already terrified to think how it's going to feel to play through.</p>
-<p>Alien: Isolation: The Collection can buy purchased from:</p>
-<p><a href="https://www.fanatical.com/en/game/alien-isolation-collection?ref=gol" rel="noopener" target="_blank">Fanatical</a> (<strong>86% off</strong>)</p>
-<p><a href="https://www.gog.com/en/game/alien_isolation_collection" rel="noopener" target="_blank">GOG</a> (85% off)</p>
-<p><a href="https://store.steampowered.com/app/214490/Alien_Isolation/" rel="noopener" target="_blank">Steam</a> (85% off)</p>
-<p><em>The sale lasts for about 24 hours from this article publishing.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/creative-assembly-confirm-alien-isolation-is-getting-a-sequel/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/creative-assembly-confirm-alien-isolation-is-getting-a-sequel/</guid>
-      <pubDate>Mon, 07 Oct 2024 16:05:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/259796159id25406gol.jpg" type="image/jpeg"/>
-      
-      <category>Horror</category>
-      
-      <category>SEGA</category>
-      
-      <category>Survival</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Uncompromising wilderness survival game The Last Plague: Blight now in Early Access</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Original Studios just launched The Last Plague: Blight, an uncompromising wilderness survival game based on a more realistic set of game mechanics. It arrives with Native Linux support in Early Access. <em>Note: key provided by ÜberStrategist.</em></p>
-<p>For a game that's not finished, the initial impression I get from it is quite fantastic actually. Giving vibes of a mixture of Rust, Valheim and other similar games in a new and fresh setting that still somehow feels unique in a crowded genre.</p>
-<div class="hidden_video" data-video-id="YZXW5obTink"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3a590df153c674dee3e32d22eac1a3b5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/YZXW5obTink" target="_blank">See video</a></div></div>
-<p>One of the key points of this game is in the game, the dreaded Blight. It's a disease-ridden world, one where you will eventually try to find a cure. That's how the game sets you up too, you're not just randomly dropped into a world. You've escaped the Blight — for now, but you're on your own and you need to survive the wilderness with nothing but your bare hands to start with.</p>
-<p>This is a game that, if you let it, will end up consuming you and your whole week. Everything in it takes time and it's surprisingly deep mechanically already. From smashing rocks together to make a bowl, to gathering and boiling water so it's safe and actually getting a roof over your head just surviving is a constant battle. Surprisingly a little bit on the scary side too, when you're wandering through the forest trying to reach water and a bunch of Coyotes run in the distance when all you've got a small hatched and a bowl to your name.</p>
-<p>Thankfully there's a full tutorial to guide you through all the basics steps of getting stuff done, and even the tutorial will take you a good while to get through. The UI is also thankfully rather well thought-out too, all parts of it just seem to make sense to the point that I so far haven't been confused even a single time. Same can't be said for my sense of direction though, but that's also been thought about with you able to craft markers to help you. There's also a reasonable map system too.</p>
-<p class="plain-list-title">Even though there's plenty to it already the developer has big plans to keep expanding it including:</p>
-<blockquote>
-<ul>
-<li>Continuation of the story and tying in an actual long-term goal to the game.</li>
-<li>Collaboration and trading with other NPC survivors to rebuild.</li>
-<li>Fishing.</li>
-<li>Character customization including gender.</li>
-<li>Injury and wound system.</li>
-<li>Controller support.</li>
-<li>Taming animals.</li>
-<li>More localized languages (French, Brazilian Portuguese, Spanish, German, Italian and possibly more).</li>
-</ul>
-</blockquote>
-<p>Performance is surprisingly great too. Testing it on my Kubuntu Linux desktop with an AMD Ryzen 5800x and Radeon RX 6800 XT on the Very High preset at 2560x1440 has been really smooth and always well above 60FPS.</p>
-<p>Since it's in Early Access I'll be keeping a keen eye on this and keep checking back on it. If you're in need of a new game to get hooked on and get in deep this is a great choice right now. Great atmosphere, great game mechanics and really interesting to play. This has all the makings to be a huge hit and I'm already hooked on it.</p>
-<p>Considering it's only £14.29 when not on sale, that's a fantastic price for what's there too - good value. It may go up in price once it leaves Early Access. There's also a demo available.</p>
-<p>You can buy it from:</p>
-<p><a href="https://store.steampowered.com/app/1564600/The_Last_Plague_Blight/" rel="noopener" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/uncompromising-wilderness-survival-game-the-last-plague-blight-now-in-early-access/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/uncompromising-wilderness-survival-game-the-last-plague-blight-now-in-early-access/</guid>
-      <pubDate>Mon, 07 Oct 2024 13:21:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1246698026id25405gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Initial Thoughts</category>
-      
-    </item>
-    
-    <item>
-      <title>Nazi Zombies: Portable is a free and open source Call of Duty: Zombies demake</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I'm surprised I hadn't heard of this one before! A few developers have been building Nazi Zombies: Portable, a Call of Duty: Zombies demake powered by various enhanced forks of the Quake engine. What's a demake? It's basically remaking another game in an older style.</p>
-<p>The developer explains: "The game itself is feature-equivalent with Call of Duty: World at War on a generic level. Gameplay components are implemented with minor parity differences. Most World at War maps and their unique features are not yet represented. Various small additions and changes from Call of Duty: Black Ops are present as a means of gameplay smoothing, but not on a wide scale. NZ:P is, first and foremost, a Call of Duty: World at War remake."</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1380712591728300172gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1380712591728300172gol1.jpg"/></a><br/>
-<em>Pictured - Nazi Zombies: Portable on Linux</em></p>
-<p>If you've not played Call of Duty Zombies and have no idea what is going on: in simple terms it's a Zombie survival wave-shooter mode. You start off with a simple handgun, and gradually gain money from taking down the walkers to buy up new weapons and access new areas. I tried it out for a bit today and it feels pretty good actually, they really nailed the vibe of it and the mechanics.</p>
-<p>Fun to see such a project exist. And perhaps with a little GamingOnLinux shout-out it can find a new audience, and who knows maybe some development help. Would love to see this one keep expanding.</p>
-<p>See more on the <a href="https://github.com/nzp-team/nzportable" rel="noopener" target="_blank">GitHub</a> and <a href="https://docs.nzp.gay/landing/" rel="noopener" target="_blank">official site</a>. You can even try it in the <a href="https://nzp.gay/" rel="noopener" target="_blank">browser</a>. It's also on <a href="https://nzp-team.itch.io/nazi-zombies-portable" rel="noopener" target="_blank">itch.io</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/nazi-zombies-portable-is-a-free-and-open-source-call-of-duty-zombies-demake/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/nazi-zombies-portable-is-a-free-and-open-source-call-of-duty-zombies-demake/</guid>
-      <pubDate>Mon, 07 Oct 2024 11:23:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1793328677id25404gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>FPS</category>
-      
-      <category>Free Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Ridiculous physics platformer Mosa Lina added co-op, game rebuilt to be native</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Mosa Lina is a really fantastic game. It's also completely insanely ridiculous, full of chaos and now you can bring a friend along for the ride. It has Native Linux support and is <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified.</p>
-<p>What is it? The developers say it's a "Hostile Interpretaion of immersive sim design". Basically, it's a challenging platformer with a whole lot of ridiculous physics going on. It's super random in the design, the developer explained how it's a "response to the current trend of Immersive Sim design, where every ability is perfectly suited to solve a specific problem in the game".</p>
-<div class="hidden_video" data-video-id="EbverJLQy_U"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bdb46c10d085434f1bf429bf1bc7b636.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/EbverJLQy_U" target="_blank">See video</a></div></div>
-<p>In an update launched in September that I missed called The Collaboration Update they basically re-built the game so it's no longer using web browser tech to run the game, with it being fully native now. The benefit is that it runs much faster, it's smaller and many other improvements.</p>
-<p>Also there's now full 2 player co-op in the game with local and online support. This co-op mode works with all existing modes and custom levels, plus there's two new co-op exclusive gameplay modifiers.</p>
-<p>However, their recording system was removed, as they believe Steam Recording will be better. See all the improvements in the <a href="https://store.steampowered.com/news/app/2477090/view/4607834045442857504" rel="noopener" target="_blank">changelog</a>.</p>
-<p>You can <a href="https://store.steampowered.com/app/2477090/Mosa_Lina/" rel="noopener" target="_blank">buy it on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/ridiculous-physics-platformer-mosa-lina-added-co-op-game-rebuilt-to-be-native/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/ridiculous-physics-platformer-mosa-lina-added-co-op-game-rebuilt-to-be-native/</guid>
-      <pubDate>Mon, 07 Oct 2024 11:05:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2036407292id25403gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Local co-op</category>
-      
-      <category>Online Co-op</category>
-      
-    </item>
-    
-    <item>
-      <title>SKALD: Against the Black Priory gets controller support and Steam Deck Verified</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>SKALD: Against the Black Priory is a retro-style party-based RPG set in a grim-dark fantasy world of tragic heroes, violent deaths and Lovecraftian horror. Released back in May, it now has full controller and Steam Deck support.</p>
-<p>More about it: "SKALD: Against the Black Priory is inspired by roleplaying games of yesteryear, combining modern design and compelling storytelling with authentic 8-bit looks and charms.</p>
-<p>Delve into a dark fantasy world, full of deadly creatures, tragic heroes, and lovecraftian horror for an epic retro-style adventure rich in exploration and tactical, turn-based combat.</p>
-<p>Do you have what it takes to lead a company of broken heroes from the tainted shores of Idra to the gates of the Black Priory - and beyond?"</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/21030865731728297809gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21030865731728297809gol1.jpg"/></a></p>
-<p>As of the latest update released September 30th it's been Steam Deck Verified, and the developers hooked up full controller support making it more accessible than ever. It also has a Platinum rating on ProtonDB so it's nicely playable with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Valve's Proton</a> on Linux platforms.</p>
-<p>Main changes include:</p>
-<blockquote>
-<p>– There are now a good number of different CRT-filters to choose from.<br/>
-– The game now natively supports controller play on PC and Steam Deck.<br/>
-– You may now use the mouse-wheel to scroll while mousing over menus and text fields.<br/>
-– The game’s playability on Steam Deck has been vastly improved.<br/>
-– You can now use the move-buttons / left joystick to deploy party members in the pre-combat party placement state (until now you’ve had to use the mouse).<br/>
-– Pressing the “Swap Character” button (‘Q’ / RIGHT BUMPER) in combat, cycles through available targets.<br/>
-– Character level cap is raised to 25.<br/>
-– Certain enemies in the late game will now scale past level 20 making the end-game slightly more difficult.<br/>
-– Added new Bard class. This includes a new school of spells..<br/>
-– Added new Backgrounds: Entertainer, Laborer, Monastic, Nomad, Snake-Cultist.<br/>
-– Fixed a bug where Horryn Guards roam around after you retake the city.</p>
-</blockquote>
-<p>Available to buy from:</p>
-<p><a href="https://www.fanatical.com/en/game/skald-against-the-black-priory?ref=gol" rel="noopener" target="_blank">Fanatical</a></p>
-<p><a href="https://www.gog.com/en/game/skald_against_the_black_priory" rel="noopener" target="_blank">GOG</a></p>
-<p><a href="https://store.steampowered.com/app/1069160/SKALD_Against_the_Black_Priory/" rel="noopener" target="_blank">Steam</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/skald-against-the-black-priory-gets-controller-support-and-steam-deck-verified/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/skald-against-the-black-priory-gets-controller-support-and-steam-deck-verified/</guid>
-      <pubDate>Mon, 07 Oct 2024 10:44:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/613433484id25402gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Fanatical</category>
-      
-      <category>GOG</category>
-      
-    </item>
-    
-    <item>
-      <title>OpenRazer v3.9 released with many new Razer devices supported on Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Getting more hardware working well on Linux is the OpenRazer project that released version 3.9.0 adding in support for various new devices from Razer. It's a collection of Linux drivers for Razer devices, that you pair up with an app like Polychromatic (and <a href="https://openrazer.github.io/#apps" rel="noopener" target="_blank">others</a>) to easily adjust settings.</p>
-<p>New devices supported in this release include:</p>
-<blockquote>
-<ul>
-<li>Add support for Razer Blade 14 (2023)</li>
-<li>Add support for Razer DeathAdder V3 Pro (00c2/00c3)</li>
-<li>Add support for Razer Ornata V3 Tenkeyless</li>
-<li>Add support for Razer Viper V3 Pro (Wired and Wireless)</li>
-<li>Add support for Razer BlackWidow V4 X</li>
-<li>Add support for Razer BlackWidow V3 Pro (Wireless)</li>
-<li>Add support for Razer Naga Epic</li>
-<li>Add support for Razer Blade 14 (2024)</li>
-<li>Add support for Razer Goliathus Chroma 3XL</li>
-<li>Add support for Razer BlackWidow V4 75%</li>
-<li>Add support for Razer Ornata V3 [028F]</li>
-<li>Add support for Razer Naga (1532:0015)</li>
-</ul>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20742049091728296705gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20742049091728296705gol1.jpg"/></a><br/>
-<em>Pictured - Razer Ornata V3 Tenkeyless</em></p>
-<p>Other improvements:</p>
-<blockquote>
-<ul>
-<li>daemon: Add get_idle_time to all devices with set_idle_time</li>
-<li>pylib: Add 'idle_time' capability</li>
-<li>daemon: Add get_low_battery_threshold to all devices with set_low_battery_threshold</li>
-<li>pylib: Add 'low_battery_threshold' capability</li>
-<li>daemon: Also handle UnicodeDecodeError for persistence file fail</li>
-<li>Remove bogus gtk3 dependency from Debian</li>
-<li>Add "persistence_dual_boot_quirk" config</li>
-<li>daemon: Ignore bogus 0% battery level when notifying</li>
-<li>Add correct Fn key translation for Razer BlackWidow V4 75%</li>
-<li>Fix EVENT_FILE_REGEX for Razer BlackWidow V3 Mini Hyperspeed</li>
-<li>pylib: Use PREFIX for installing Python modules</li>
-</ul>
-</blockquote>
-<p>See the <a href="https://github.com/openrazer/openrazer/releases/tag/v3.9.0" rel="noopener" target="_blank">changelog</a> and <a href="https://openrazer.github.io/" rel="noopener" target="_blank">official site</a> for more.</p>
-<p>Do you use a Razer device on Linux? How's your experience with it?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/openrazer-v39-released-with-many-new-razer-devices-supported-on-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/openrazer-v39-released-with-many-new-razer-devices-supported-on-linux/</guid>
-      <pubDate>Mon, 07 Oct 2024 10:26:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/765993386id25400gol.jpg" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Halo will now be built on Unreal Engine 5, 343 Industries rebrands to Halo Studios</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A bit of game industry news for you: in a pretty big win for Epic Games and their Unreal Engine, 343 Industries rebrands to Halo Studios and said the future of Halo will be built on Unreal Engine 5.</p>
-<p>“If you really break Halo down, there have been two very distinct chapters. Chapter 1 – Bungie. Chapter 2 – 343 Industries. Now, I think we have an audience which is hungry for more. So we’re not just going to try improve the efficiency of development, but change the recipe of how we make Halo games. So, we start a new chapter today.” — Pierre Hintze, Studio Head</p>
-<p>They confirmed that they're working on "multiple projects" so we can expect a whole lot more Halo to come. Hopefully they will work well enough on Linux platforms with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Valve's Proton</a>.</p>
-<p>Part of this is building Project Foundry, which is a research project for the studio to see what's required to build a Halo game in Unreal Engine and makes it a training tool for them. You can see more from that in the video below.</p>
-<div class="hidden_video" data-video-id="FDgR1FRJnF8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5e3a60ac71da9094d9b966c051316c95.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/FDgR1FRJnF8" target="_blank">See video</a></div></div>
-<p>See more in the <a href="https://www.halowaypoint.com/news/a-new-dawn" rel="noopener" target="_blank">blog post</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/halo-will-now-be-built-on-unreal-engine-5-343-industries-rebrands-to-halo-studios/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/halo-will-now-be-built-on-unreal-engine-5-343-industries-rebrands-to-halo-studios/</guid>
-      <pubDate>Mon, 07 Oct 2024 09:54:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/985625557id25399gol.jpg" type="image/jpeg"/>
-      
-      <category>Epic Games</category>
-      
-      <category>Microsoft</category>
-      
-      <category>Misc</category>
-      
-      <category>Unreal Engine</category>
-      
-    </item>
-    
-    <item>
-      <title>GNU Image Manipulation Program (GIMP) finally closing on the 3.0 release</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>For any of you who work with image editing on Linux for any reason, you've probably used the GNU Image Manipulation Program (GIMP) at some point, well it's getting really close to the long-awaited 3.0 release now. <em>It's a tool I use every day for GamingOnLinux.</em></p>
-<p>Announced in a development <a href="https://www.gimp.org/news/2024/10/05/development-update/#non-destructive-editing-updates" rel="noopener" target="_blank">update blog post</a> the team noted they're about 96% of the way there towards the first Release Candidate, after development slowed over the summer due to a few developers falling ill after the Libre Graphics Meeting conference.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17021059391728293982gol1.jpg" rel="noopener" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17021059391728293982gol1.jpg"/></a><br/>
-<em>Pictured - GNU Image Manipulation Program (GIMP)</em></p>
-<p>Quite a lot to look forward to from this upcoming release including expanded non-destructive editing, upgrades to the API for plug-ins, work towards enabling letting you easily export an image into several different sizes leaving the original untouched, colour space work, darktable integration improvements for RAW images, upgrading the documentation, lots of bug fixes and so on.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/gnu-image-manipulation-program-gimp-finally-closing-on-the-30-release/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/gnu-image-manipulation-program-gimp-finally-closing-on-the-30-release/</guid>
-      <pubDate>Mon, 07 Oct 2024 09:44:14 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1486031369id25398gol.jpg" type="image/jpeg"/>
-      
-      <category>Apps</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Grounded no longer needs a Microsoft Account for multiplayer</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>While Sony are actively making their PC ports worse with forced PlayStation Network accounts even for single-player games, some companies choose to make them better and now Grounded from Obsidian Entertainment and Xbox Game Studios gets improved.</p>
-<p>Grounded was updated at the end of September to remove the forced Microsoft Account sign-in to play multiplayer on PC, as it's now Steam Native. Nice to see! We saw a similar thing with <a href="https://www.gamingonlinux.com/2024/05/it-takes-two-now-steam-deck-verified-ea-app-launcher-no-longer-required/" rel="noopener" target="_blank">It Takes Two removing the EA app requirement</a>. Hope to see more like this, because it's thoroughly annoying to launch one game and end up with another sign-in.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5922073391728292925gol1.jpg"/></p>
-<p>Here's what's <a href="https://store.steampowered.com/news/app/962130/view/4664130308822453256" rel="noopener" target="_blank">changed</a>:</p>
-<blockquote>
-<p>Steam Native Support</p>
-<ul>
-<li>Steam players no longer require a Microsoft Account to play multiplayer
-<ul>
-<li>While not logged into a Microsoft Account, you can host and join standard world multiplayer sessions with players from your Steam friends list</li>
-<li>Note: a Microsoft Account is still required for Crossplay, Shared Worlds and Playgrounds</li>
-</ul>
-</li>
-</ul>
-<p>Changes:</p>
-<ul>
-<li>Added a Crossplay Toggle in the Main Menu to quickly switch between a “Crossplay State” and a “Steam Native State”
-<ul>
-<li>Friends will need to be in the same “State” to see and join each other online</li>
-</ul>
-</li>
-<li>Players can now unlink their Microsoft Account from their Steam Account
-<ul>
-<li>Navigate by going to Options - Game Tab - At the bottom you will see “Unlink Microsoft Account”</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<p>Grounded is Steam Deck Verified and works great on desktop Linux with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Valve's Proton</a>.</p>
-<p>Available to <a href="https://store.steampowered.com/app/962130/Grounded/" rel="noopener" target="_blank">buy on Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/grounded-no-longer-needs-a-microsoft-account-for-multiplayer/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/grounded-no-longer-needs-a-microsoft-account-for-multiplayer/</guid>
-      <pubDate>Mon, 07 Oct 2024 09:22:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1457352870id25397gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Microsoft</category>
-      
-      <category>Online Multiplayer</category>
       
     </item>
     
