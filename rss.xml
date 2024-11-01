@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-10-31 07:29:06.974212</pubDate>
+    <pubDate>2024-11-01 07:29:15.696730</pubDate>
 
     
     <image>
@@ -20,6 +20,443 @@
     
     
     <item>
+      <title>Horizon Zero Dawn Remastered may need a workaround on desktop Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Horizon Zero Dawn Remastered is out now and like other recent Sony PlayStation releases on PC, it forces a PlayStation Network Account which is causing issues for some desktop Linux players.</p>
+<p>You can run it on Linux with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Valve's Proton</a>, but you might have issues actually logging into the PSN account system to play it. Not particularly surprising, since with<a href="https://www.gamingonlinux.com/2024/09/god-of-war-ragnarok-steam-deck-verified-needs-a-launch-option-for-desktop-linux/" rel="noopener" target="_blank"> God of War Ragnarök</a> you needed to pretend your desktop Linux system was a Steam Deck but in this case you <em>don't</em> want to do that.</p>
+<p>Writing on the Steam forum, a developer at Nixxes Software <a href="https://steamcommunity.com/app/2561580/discussions/0/4634860082274840611/#c4634860082274843235" rel="noopener nofollow" target="_blank">said to do this</a> instead:</p>
+<blockquote>
+<p>The SteamDeck parameter includes other changes specifically designed for the Steam Deck.<br/>
+If you are experiencing issues with the login flow on Linux, please use the following workaround:<br/>
+<br/>
+On Steam, right click the game in your Library, choose Properties, go to General.<br/>
+Add <strong>-showlinkingqr</strong> in the field for Launch Options</p>
+</blockquote>
+<p>Nice to see this sort of thing has been thought about, and to have a developer directly reply with a solution.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20604747161730403453gol1.jpg"/></p>
+<p>Hopefully some GamingOnLinux readers find this helpful.</p>
+<p><div class="itemdb_embed"><p><strong>Horizon Zero Dawn Remastered</strong> | Release Date: 31st October 2024<p class="plain-list-title">Official links and where to buy from:</p>
+<ul><li><a href="https://www.fanatical.com/en/game/horizon-zero-dawn-remastered?ref=gol">Fanatical</a></li><li><a href="https://humblebundleinc.sjv.io/VxaZeA">Humble Store</a></li><li><a href="https://store.steampowered.com/app/2561580/Horizon_Zero_Dawn_Remastered/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/horizon-zero-dawn-remastered-may-need-a-workaround-on-desktop-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/horizon-zero-dawn-remastered-may-need-a-workaround-on-desktop-linux/</guid>
+      <pubDate>Thu, 31 Oct 2024 19:40:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/757949946id25565gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>HOWTO</category>
+      
+      <category>New Release</category>
+      
+      <category>Open World</category>
+      
+    </item>
+    
+    <item>
+      <title>Black Mesa has a new Beta with &#39;WAY better&#39; support for Linux / Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Crowbar Collective have a fresh Beta available for Black Mesa, their fan-made reimagining of Valve Software's Half-Life. This brings with it some nice improvements all across the game, especially for Linux platforms like Steam Deck.</p>
+<p>In the <a href="https://store.steampowered.com/news/app/362890/view/4486241294570487809" rel="noopener nofollow" target="_blank">announcement</a> they mentioned "Welcome to Fall, and a Black Mesa beta patch post! We have pushed a build to public-beta that includes a bunch of fixes to some lingering issues, and WAY better Linux/Steam Deck support" with these highlights:</p>
+<blockquote>
+<ul>
+<li>Improved game start up for a smother first time launch and improved stability.</li>
+<li>Fixed an issue that caused the game to crash to the menu when changing video settings during gameplay.</li>
+<li>Fixed performance issue with moving wires (Thanks to npc_pigeon, narkvic, and the community).</li>
+<li>Re-added DXVK for Windows as a launch option.</li>
+<li>Significantly better native Linux implementation and Steam Deck support.</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12565454981730400051gol1.jpg"/></p>
+<p>They go into quite a lot more detail on all the changes too, which is nice to see. We often see developers note improvements, but not many go deep into the individual details. Specifically for Linux here's everything they listed:</p>
+<blockquote>
+<p>ToGL/Linux:</p>
+<ul>
+<li>Updated ToGL/Linux shaders with the latest GBuffer changes to ensure the application of up-to-date rendering techniques.</li>
+<li>Cleaned up the shadow filter state in ToGL/Linux, resulting in more accurate and stable shadow rendering.</li>
+<li>Migrated ToGL/Linux to use the OpenGL 3.3 Compatibility Profile, enhancing compatibility with a broader range of hardware and driver configurations while maintaining access to modern OpenGL features.</li>
+<li>Introduced an optional experimental Binary Shader Cache for ToGL/Linux, accessible via the -glusebinarycache command line option on Linux and native Steam Deck builds, which improves shader load times on supported platforms.</li>
+<li>Resolved a half-pixel halo issue in the ToGL/Linux rendering pipeline, improving visual accuracy in rendered scenes.</li>
+<li>Added per-triangle and optional per-vertex validation for studio models to resolve issues in ToGL/Linux related to static and dynamically lit models. A second pass for per-vertex validation can be enabled via the +r_studio_validate_vertices 1 command line argument.</li>
+<li>Improved lighting buffer quality on ToGL/Linux to resolve a red hue in specular highlights, ensuring consistent visual output across platforms.</li>
+<li>Added a missing window icon on ToGL/Linux to address a minor visual issue.</li>
+<li>Configured default arguments for the Linux launcher to optimize display settings on Steam Deck, ensuring a better out-of-the-box experience for AMD/Intel GPU users.</li>
+<li>Fixed debug assertions in Havok that leaked into the release build on Linux, preventing potential crashes during runtime.</li>
+</ul>
+<p>Proton/Linux:</p>
+<ul>
+<li>Forced the shipped DXVK configuration on Proton if no overrides are provided, enhancing compatibility with Proton 9.x and newer versions.</li>
+</ul>
+</blockquote>
+<p>For some background: <a href="https://github.com/ValveSoftware/ToGL" rel="noopener nofollow" target="_blank">ToGL</a> is the original translation layer Valve used in their earlier Linux ports, that translated Direct3D to OpenGL. Later Valve games have native Vulkan support, and they also nowadays of course have <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> with DXVK and VKD3D-Proton for translating Direct3D to Vulkan.</p>
+<p>That's a rather surprising amount of effort that's been put into the Native Linux version of the game.</p>
+<p><div class="itemdb_embed"><p><strong>Black Mesa</strong> | Release Date: 6th March 2020<p class="plain-list-title">Official links and where to buy from:</p>
+<ul><li><a href="https://store.steampowered.com/app/362890/Black_Mesa/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/black-mesa-has-a-new-beta-with-way-better-support-for-linux-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/black-mesa-has-a-new-beta-with-way-better-support-for-linux-steam-deck/</guid>
+      <pubDate>Thu, 31 Oct 2024 18:41:47 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1434689745id25564gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>FPS</category>
+      
+    </item>
+    
+    <item>
+      <title>Vampire Survivors: Ode to Castlevania is out now and it&#39;s a huge expansion</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Vampire Survivors: Ode to Castlevania DLC is out now and it's a rather large addition to an already great game. <em>Note: DLC key provided by Future Friends Games, the base game I purchased myself originally.</em></p>
+<p>Taking an already fantastic content-filled game and just giving you a whole lot more of it, what's not to love about Vampire Survivors? Accessible action that you can hop into for a run whenever you want, and now there's a healthy dose of Castlevania too? Yes please.</p>
+<p>It probably needs no real introduction right? Vampire Survivors spawned a whole genre with its simple mechanics of building up a crazy character with auto-firing attacks. Vampire Survivors: Ode to Castlevania adds in over 20 new characters, 40 new weapons, over 30 new music tracks and a huge new castle map to battle through. That's only really scratching the surface of this monstrous expansion though.</p>
+<div class="hidden_video" data-video-id="RnzmiDonN2E"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8843e1edff4652e79b2f3644e4ae6bfb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/RnzmiDonN2E" target="_blank">See video</a></div></div>
+<p>The themed map is a nice addition to the game and quite different from most of the maps. With a mixture of closed and open areas, with plenty of extras in it to find and unlock. Unlike other maps, it also has dedicated spots to spawn various Castlevania themed bosses so you can take them on when you feel you're powered up enough.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5594656041730398248gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5594656041730398248gol1.jpg"/></a></p>
+<p>While the map is nice the real weight of the DLC comes down to all the characters and weapons, but it will take you a good while to get through it all. We're talking tens of hours of gameplay here on the normal speed to battle through the bosses, and deal with the challenges to unlock all the new characters.</p>
+<p>I won't spoil it, but lets just say that they're <em>massively</em> underselling this DLC thanks to a big secret. There's a <strong>lot</strong> more to it than what they're telling you. No doubt you'll be able to find what easily somewhere else, but I'm not a fan of ruining a very nice surprise that really was awesome to see. I have no doubt this will bump the game back up the most played lists on Steam and for good reason.</p>
+<p>All the usual jank of Vampire Survivors with enemies walking on top of all the walls, while in other sections they all get stuck on them. It's the game you know and love, just more of everything.</p>
+<p>Vampire Survivors: Ode to Castlevania DLC is a brilliant addition to the game, and one that is really a no-brainer on recommending you pick up. The price ($3.99 / EUR 3.99 / £2.99) for the content is just absurd, poncle really did some great stuff here.</p>
+<p>Vampire Survivors is Steam Deck Verified, and has Native Linux support (although not advertised).</p>
+<p><div class="itemdb_embed"><p><strong>Vampire Survivors</strong> | Release Date: 20th October 2022<p class="plain-list-title">Official links and where to buy from:</p>
+<ul><li><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/vampire-survivors-ode-to-castlevania-is-out-now-and-its-a-huge-expansion/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/vampire-survivors-ode-to-castlevania-is-out-now-and-its-a-huge-expansion/</guid>
+      <pubDate>Thu, 31 Oct 2024 18:13:14 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/320372209id25562gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+      <category>DLC</category>
+      
+    </item>
+    
+    <item>
+      <title>EA / Respawn now block Apex Legends from running on Linux and Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The developers of Apex Legends have announced that they're going to be blocking the game completely on Linux platforms including Steam Deck.</p>
+<p>Writing in a <a href="https://x.com/PlayApex/status/1852019667315102151" rel="noopener nofollow" target="_blank">post</a> on X / Twitter I'll copy it below:</p>
+<blockquote>
+<p>Hey Legends,</p>
+<p>We’re sharing today that Linux (and Steam Deck using Linux) will no longer be able to access Apex Legends.</p>
+<p>Our dev team wanted to provide a bit more context into this and share some of the decision-making process that happened along the way. As mentioned in our prior <a href="https://www.ea.com/en-gb/games/apex-legends/news/anti-cheat-update-082124" rel="noopener nofollow" target="_blank">anti-cheat dev blog</a>, competitive integrity is a top priority for our team and there are many ways in which we’re battling cheaters—this is one to add to the list. We remain committed to more regular updates on topics like this and appreciate your continued reports.</p>
+<p>Read on to hear from our Anti-Cheat Team.</p>
+<p>---</p>
+<p>What’s happening?</p>
+<p>In our efforts to combat cheating in Apex, we've identified Linux OS as being a path for a variety of impactful exploits and cheats. As a result, we've decided to block Linux OS access to the game. While this will impact a small number of Apex players, we believe the decision will meaningfully reduce instances of cheating in our game.</p>
+<p>Linux is used by default on the Steam Deck. There is currently no reliable way for us to differentiate a legitimate Steam Deck from a malicious cheat claiming to be a Steam Deck (via Linux).</p>
+<p>Decision making process</p>
+<p>The openness of the Linux operating systems makes it an attractive one for cheaters and cheat developers. Linux cheats are indeed harder to detect and the data shows that they are growing at a rate that requires an outsized level of focus and attention from the team for a relatively small platform. There are also cases in which cheats for the Windows OS get emulated as if it’s on Linux in order to increase the difficulty of detection and prevention.</p>
+<p>We had to weigh the decision on the number of players who were legitimately playing on Linux/the Steam Deck versus the greater health of the population of players for Apex. While the population of Linux users is small, their impact infected a fair amount of players’ games. This ultimately brought us to our decision today.</p>
+<p>Next steps</p>
+<p>To eliminate this cheat vector, we have made the decision to prevent access to the game for Linux users. This means that Apex Legends will be unplayable immediately for those running this operating system. Playing on handhelds, such as the Steam Deck, is still possible if the user opts to install Windows.</p>
+<p>To clarify, this will not impact users who play Apex via Steam on Windows (or other supported platforms).</p>
+<p>Thanks for everyone’s continual support and we look forward to sharing future anti-cheat updates!</p>
+<p>---</p>
+<p>This is only a part of our ongoing efforts towards Apex’s anti-cheat. We are continually expanding and refining our detection and banning capabilities globally. Keep an eye out for more news to come in the future. Please continue to report cheaters using <a href="https://help.ea.com/no/help/apex-legends/apex-legends/report-player-apex-legends/" rel="noopener nofollow" target="_blank">the designated tools and channels</a>. Your reports are helpful and matter to us and anti-cheat continues to be a top priority for us.</p>
+<p>For future updates and the latest info, continue to follow us here or check out the <a href="https://trello.com/b/ZVrHV38P/apex-tracker" rel="noopener nofollow" target="_blank">Apex Tracker Trello</a> for bugs or concerns we’re investigating.</p>
+</blockquote>
+<p>Valve are really going to need to do something more about the anti-cheat situation on Linux. We only <a href="https://www.gamingonlinux.com/2024/09/grand-theft-auto-v-gets-battleye-anti-cheat-breaks-online-play-on-steam-deck-linux/" rel="noopener" target="_blank">recently had GTA Online in GTA V blocked</a> (single-player still works). EA also broke the likes of <a href="https://www.gamingonlinux.com/2024/10/ea-anti-cheat-arrives-for-battlefield-1-breaking-it-on-steam-deck-linux/" rel="noopener" target="_blank">Battlefield 1</a> and various other multiplayer games as well on Linux / Steam Deck, and I did say it was likely only a matter of time until EA messed with Apex. The list of blocked titles just keeps going like <a href="https://www.gamingonlinux.com/2024/03/game-over-for-roblox-on-linux-steam-deck-as-its-now-blocked/" rel="noopener" target="_blank">Roblox</a> too — it's just a repeating problem that seems to have no end in sight.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3288417851730392752gol1.jpg"/></p>
+<p>Soon then the official Steam Deck rating from Valve will drop from Playable to Unsupported. <em><strong>Update 18:16 UTC</strong> - Valve have now marked it as Unsupported on Steam Deck.</em></p>
+<p>When you try to play on a Linux platform now, you're just given an anti-cheat message. So this is the end of Apex Legends on Linux and Steam Deck.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10408696591730393051gol1.jpg"/></p>
+<p>How much of a loss is it? Well, for Apex fans on Linux platforms it will of course be a <em>big</em> one. However, looking at Valve's own stats, Apex isn't actually in the Top 100 for the last month of most played games on Steam Deck. The past year though? It's number #48 overall.</p>
+<p>Oh, and before you suddenly go "but…but Microsoft are banning kernel-level anti-cheat!" — no they're not. Various YouTube videos and other media made headlines about it, but <a href="https://www.gamingonlinux.com/2024/09/microsoft-windows-kernel-changes-dont-suddenly-mean-big-things-for-linux-gaming/" rel="noopener" target="_blank">they're wrong which I wrote about before</a>. Even <em>if</em> in some far-away future Microsoft managed to do so, companies will still block Linux directly if they wanted to (and they already do like Roblox!).</p>
+<p>In related news, Valve <a href="https://www.gamingonlinux.com/2024/10/steam-games-will-now-need-to-fully-disclose-kernel-level-anti-cheat-on-store-pages/" rel="noopener" target="_blank">only announced yesterday</a> that Steam store pages will need to properly note what kernel-level anti-cheat they use.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/ea-respawn-now-block-apex-legends-from-running-on-linux-and-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/ea-respawn-now-block-apex-legends-from-running-on-linux-and-steam-deck/</guid>
+      <pubDate>Thu, 31 Oct 2024 16:46:10 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1282615216id25563gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>Electronic Arts</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Deck the &#39;perfect platform&#39; for their game say Escape From Castle Matsumoto devs</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Escape From Castle Matsumoto looks like quite a unique one, and the developers give the Steam Deck some rather high praise. It's releasing with Native Linux support on December 5th.</p>
+<p>In the game two shinobis race against each other to recover stolen items and escape a Japanese castle, using your wits and tricks to outsmart your opponent. What makes it interesting is the split-screen mechanic, along with the slick retro pixel-artwork that looks like it was inspired by the classic Spy vs. Spy.</p>
+<p>Check out the trailer below:</p>
+<div class="hidden_video" data-video-id="H3PsS55E2FY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/fe6043758f9f51ff4fa7675e6d923eb0.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/H3PsS55E2FY" target="_blank">See video</a></div></div>
+<p>In an <a href="https://steamcommunity.com/games/2490030/announcements/detail/4541409756166750375" rel="noopener nofollow" target="_blank">announcement</a> on Steam the developer said: "Escape From Castle Matsumoto will be 100% Steam Deck compatible, including an official input layout. In fact, Steam Deck will be THE perfect platform for our game."</p>
+<p>Could be a good one to keep an eye on!</p>
+<p>More about it:</p>
+<blockquote>
+<p class="plain-list-title">You will need to:</p>
+<ul>
+<li>
+<p>thoroughly search the castle to locate and collect all items</p>
+</li>
+<li>
+<p>hinder your opponent's efforts by setting up tricks and obstacles</p>
+</li>
+<li>
+<p>if necessary, challenge your opponent in a direct fight</p>
+</li>
+</ul>
+<p class="plain-list-title">Use all of your shinobi training to accomplish the mission:</p>
+<ul>
+<li>
+<p>ninja's tools: locks and smoke bombs</p>
+</li>
+<li>
+<p>powerful spirits you can summon to guard items and passages</p>
+</li>
+<li>
+<p>defensive remedies to break tricks set up by your opponent</p>
+</li>
+<li>
+<p>martial arts if a direct confrontation becomes inevitable</p>
+</li>
+</ul>
+<p>Play against the CPU or another player, over split-screen or network.</p>
+</blockquote>
+<p><div class="itemdb_embed"><p><strong>Escape From Castle Matsumoto</strong> | Release Date: 4th December 2024<p class="plain-list-title">Official links and where to buy from:</p>
+<ul><li><a href="https://store.steampowered.com/app/2490030/Escape_From_Castle_Matsumoto/">Steam</a></li></ul></p></div> </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/steam-deck-the-perfect-platform-for-their-game-say-escape-from-castle-matsumoto-devs/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/steam-deck-the-perfect-platform-for-their-game-say-escape-from-castle-matsumoto-devs/</guid>
+      <pubDate>Thu, 31 Oct 2024 15:59:45 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/848198564id25561gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Arcade</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Claim a free copy of the classic Return of the Phantom during the GOG Halloween Sale</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Time for another free game. <a href="http://gog.com" rel="noopener nofollow" target="_blank">GOG</a> are giving away Return of the Phantom from MPS Labs / Ziggurat Interactive.</p>
+<p>What is it? "The legendary Phantom of the Opera has returned! As Inspector Raoul Montand, you are the only one who can pursue the Red Death into the past and prevent him from terrorizing the present. This point and click adventure originally released by MicroProse in 1993 features a fully voiced cast of characters with fluid animations, a tense and thrilling story penned by James Bond novelist Raymond Benson, and an atmospheric soundtrack that sets the perfect mood for this new take on a classic story."</p>
+<div class="hidden_video" data-video-id="-oo04TpEhMw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c5062021acc4a596c7b945e382a760b8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-oo04TpEhMw" target="_blank">See video</a></div></div>
+<p>Just scroll down on the <a href="https://www.gog.com/" rel="noopener nofollow" target="_blank">GOG homepage</a> when logged in to claim your copy. You can claim a for-keeps copy until November 3, 2024 at 1PM UTC.</p>
+<p class="plain-list-title">A reminder on some of the good deals going from the <a href="https://www.gamingonlinux.com/2024/10/gogs-halloween-sale-is-live-now-with-discounts-aplenty/" rel="noopener" target="_blank">previous article</a>:</p>
+<ul>
+<li><a href="https://af.gog.com/en/game/the_talos_principle_gold_edition?as=1636858786" rel="noopener nofollow" target="_blank">The Talos Principle: Gold Edition</a> - 85% off</li>
+<li><a href="https://af.gog.com/en/game/the_sinking_city_deluxe_edition?as=1636858786" rel="noopener nofollow" target="_blank">The Sinking City - Deluxe Edition</a> - 80% off</li>
+<li><a href="https://af.gog.com/en/game/days_gone?as=1636858786" rel="noopener nofollow" target="_blank">Days Gone</a> - 75% off</li>
+<li><a href="https://af.gog.com/en/game/disco_elysium?as=1636858786" rel="noopener nofollow" target="_blank">Disco Elysium - The Final Cut </a>- 75% off</li>
+<li><a href="https://af.gog.com/en/game/might_and_magic_6_limited_edition?as=1636858786" rel="noopener nofollow" target="_blank">Might and Magic 6-pack Limited Edition</a> - 75% off</li>
+<li><a href="https://af.gog.com/en/game/ghostrunner_2_brutal_edition?as=1636858786" rel="noopener nofollow" target="_blank">Ghostrunner 2 Brutal Edition</a> - 70% off</li>
+<li><a href="https://af.gog.com/en/game/dusk_intruder_edition?as=1636858786" rel="noopener nofollow" target="_blank">DUSK - Intruder Edition</a> - 65% off</li>
+<li><a href="https://af.gog.com/en/game/robocop_rogue_city?as=1636858786" rel="noopener nofollow" target="_blank">RoboCop: Rogue City</a> - 60% off</li>
+</ul>
+<p class="plain-list-title">Looking over the sale again today here's a few more additions that are good deals:</p>
+<ul>
+<li><a href="https://www.gog.com/en/game/metro_franchise_bundle" rel="noopener nofollow" target="_blank">Metro Franchise Bundle</a> - 84% off</li>
+<li><a href="https://www.gog.com/en/game/a_plague_tale_innocence" rel="noopener nofollow" target="_blank">A Plague Tale: Innocence</a> - 80% off</li>
+<li><a href="https://www.gog.com/en/game/batman_arkham_asylum_goty" rel="noopener nofollow" target="_blank">Batman: Arkham Asylum Game of the Year Edition</a> - 80% off</li>
+<li><a href="https://www.gog.com/en/game/yakuza_complete_series" rel="noopener nofollow" target="_blank">Yakuza Complete Series</a> - 60% off</li>
+</ul>
+<p>The <a href="https://af.gog.com/promo/2024_halloween_sale?as=1636858786" rel="noopener nofollow" target="_blank" title="">GOG Halloween Sale</a> ends on November 4th, 8 AM UTC.</p>
+<p>You can install GOG games seriously easy on Linux / Steam Deck with the <a href="https://www.gamingonlinux.com/2024/09/heroic-games-launcher-2152-released-fixing-amazon-gog-and-epic-games-issues/" rel="noopener" target="_blank">Heroic Games Launcher</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/claim-a-free-copy-of-the-classic-return-of-the-phantom-during-the-gog-halloween-sale/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/claim-a-free-copy-of-the-classic-return-of-the-phantom-during-the-gog-halloween-sale/</guid>
+      <pubDate>Thu, 31 Oct 2024 15:42:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/326241715id25560gol.jpg" type="image/jpeg"/>
+      
+      <category>DRM-Free</category>
+      
+      <category>Free Game</category>
+      
+      <category>Giveaway</category>
+      
+      <category>GOG</category>
+      
+    </item>
+    
+    <item>
+      <title>Epic roguelike Caves of Qud now has a proper tutorial</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Gearing up for the final 1.0 release on December 5, the sci-fi fantasy epic roguelike Caves of Qud now has a proper tutorial released.</p>
+<p>You still have to wait for the 1.0 release for the end of the main story though, but at least now you can jump right in and get a proper good idea of what to do. I suggest you do too, because it's a fantastic game that is at times completely absurd in what you can do and what your character can become.</p>
+<div class="hidden_video" data-video-id="87TKcq4tcJ4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/52258000d8bb63ab7374b84c18b68a7c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/87TKcq4tcJ4" target="_blank">See video</a></div></div>
+<p>I've gone through and tested the tutorial, and it really is a nice introduction to the game. Since it's a huge roguelike though, it does only scratch the surface of what the game is about and what you can do. Does the job well though and works great on Linux.</p>
+<p>The price, as they previously announced, has also now risen to £24.99 / $29.99 / €28.99.</p>
+<p class="plain-list-title">Feature Highlight:</p>
+<blockquote>
+<p><strong>DEEP PHYSICAL SIMULATION</strong> — Don’t like the wall blocking your way? Dig through it with a pickaxe, or eat through it with your corrosive gas mutation, or melt it to lava. Yes, every wall has a melting point.<br/>
+<br/>
+<strong>FULLY SIMULATED CREATURES</strong> — Every monster and NPC is as fully simulated as the player. That means they have levels, skills, equipment, faction allegiances, and body parts. So if you have a mutation that lets you, say, psionically dominate a spider, you can traipse through the world as a spider, laying webs and eating things.<br/>
+<br/>
+<strong>DYNAMIC FACTION SYSTEM</strong> — Pursue allegiances with over 70 factions: apes, crabs, trees, robots, and highly entropic beings, just to name a few.<br/>
+<br/>
+<strong>RICHLY DETAILED SCIENCE FANTASY SETTING</strong> — Over fifteen years of worldbuilding have led to a rich, weird, labyrinthine, one-of-a-kind storyworld, layered on top of the simulation, all for you to explore. Live and drink, friend.<br/>
+<br/>
+<strong>TACTICAL GAMEPLAY</strong> — Turn-based, sandbox exploration and combat offers as many solutions as you and your mutations, implants, artifacts, and skills are creative enough to invent.<br/>
+<br/>
+<strong>RPG ELEMENTS</strong> — Quests, NPCs, villages, historic sites; some dynamic and some handwritten, interwoven to produce a transportative RPG experience.<br/>
+<br/>
+<strong>ATMOSPHERIC ORIGINAL SOUNDTRACK</strong> — Over two hours of otherworldly music to delve to.</p>
+</blockquote>
+<p>Available with Native Linux support and it's Steam Deck Verified.</p>
+<p><div class="itemdb_embed"><p><strong>Caves of Qud</strong> | Release Date: 5th December 2024<p class="plain-list-title">Official links and where to buy from:</p>
+<ul><li><a href="https://af.gog.com/game/caves_of_qud?as=1636858786">GOG</a></li><li><a href="https://freeholdgames.itch.io/cavesofqud">itch.io</a></li><li><a href="https://store.steampowered.com/app/333640/Caves_of_Qud/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/epic-roguelike-caves-of-qud-now-has-a-proper-tutorial/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/epic-roguelike-caves-of-qud-now-has-a-proper-tutorial/</guid>
+      <pubDate>Thu, 31 Oct 2024 15:32:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/267592198id25559gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>GOG</category>
+      
+    </item>
+    
+    <item>
+      <title>Check out the Halloween Horror Collection Humble Bundle</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Some spooky treats available in the <a href="https://humblebundleinc.sjv.io/LKa0L3" rel="noopener nofollow" target="_blank">Halloween Horror Collection Humble Bundle</a>, if you can handle it that is. You're not a scaredy-cat right?</p>
+<p>Making it easy for you I'll go through and individually list the expected compatibility on Steam Deck and Linux desktop, along with any <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> rating and noting any Native Linux versions available. </p>
+<p><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</strong></p>
+<p><a href="https://store.steampowered.com/app/424840" rel="noopener nofollow" target="_blank">Little Nightmares</a> (ProtonDB Platinum)<br/>
+<em>+ Little Nightmares - Secrets of The Maw Expansion Pass</em></p>
+<p><a href="https://store.steampowered.com/app/860510" rel="noopener nofollow" target="_blank">Little Nightmares II Deluxe Edition</a> (ProtonDB Platinum)</p>
+<p><a href="https://store.steampowered.com/app/1567020" rel="noopener nofollow" target="_blank">The Dark Pictures Anthology: The Devil in Me</a> (ProtonDB Platinum)</p>
+<p><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</strong></p>
+<p><a href="https://store.steampowered.com/app/1281590" rel="noopener nofollow" target="_blank">The Dark Pictures Anthology: House of Ashes</a> (ProtonDB Platinum)</p>
+<p><strong><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</strong></p>
+<p><a href="https://store.steampowered.com/app/1194630" rel="noopener nofollow" target="_blank">The Dark Pictures Anthology: Little Hope</a> (ProtonDB Platinum)</p>
+<p><a href="https://store.steampowered.com/app/939850" rel="noopener nofollow" target="_blank">The Dark Pictures Anthology: Man of Medan</a> (ProtonDB Gold)</p>
+<p><em>Both above do actually work but you may need GE-Proton to get the best experience.</em></p>
+<p>Check out <a href="https://humblebundleinc.sjv.io/LKa0L3" rel="noopener nofollow" target="_blank">the Humble Bundle to purchase</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/check-out-the-halloween-horror-collection-humble-bundle/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/check-out-the-halloween-horror-collection-humble-bundle/</guid>
+      <pubDate>Thu, 31 Oct 2024 08:51:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1135944478id25558gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Bundle</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Mesa 24.2.6 graphics drivers released with a few more bug fixes</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Mesa team have released another bug-fix update with Mesa 24.2.6 available now, with a couple more bug-fix releases planned before they move onto Mesa 24.3 next month.</p>
+<p class="plain-list-title">Here's the main fixes that were noted:</p>
+<blockquote>
+<ul>
+<li>radv: wrong index value in radv_skip_graphics_pipeline_compile.</li>
+<li>Disk Cache DB file descriptors are not closed on exec.</li>
+<li>Shader cache takes too many fds (this was listed twice).</li>
+<li>Disk Cache DB file descriptors are not closed on exec.</li>
+<li>radv: `test_instruction_msad_dxil` from vkd3d-proton fails on hawaii.</li>
+<li>[vulkan-intel][regression] War Thunder causes GPU hang.</li>
+</ul>
+</blockquote>
+<p>Taken from the <a href="https://docs.mesa3d.org/relnotes/24.2.6.html" rel="noopener nofollow" target="_blank">release notes</a>.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5050837641730362521gol1.jpg"/><br/>
+<em>Pictured - War Thunder</em></p>
+<p class="plain-list-title">Want to know when more releases are due? Here's the current release calendar:</p>
+<ul>
+<li>24.2.7 - Due November 13th.</li>
+<li>24.2.8 - Due November 27th.</li>
+<li>24.3.0 - Due November 20th (either RC4 or release).</li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/mesa-2426-graphics-drivers-released-with-a-few-more-bug-fixes/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/mesa-2426-graphics-drivers-released-with-a-few-more-bug-fixes/</guid>
+      <pubDate>Thu, 31 Oct 2024 08:15:43 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1139498505id25557gol.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Mesa</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Deck SteamOS 3.6.20 Beta has an updater fix and Metaphor: ReFantazio performance improvements</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Following on from the huge <a href="https://www.gamingonlinux.com/2024/10/steam-deck-steamos-36-officially-out-with-improved-performance-mura-compensation-lots-more/" rel="noopener" target="_blank">SteamOS 3.6 update for Steam Deck</a>, Valve has put up SteamOS 3.6.20 Beta with a few more improvements.</p>
+<p class="plain-list-title">Here's what's changed:</p>
+<blockquote>
+<ul>
+<li>Fixed an issue where the updater could repeatedly revert you to the previous OS version if certain configuration files were user-modified.</li>
+<li>Fixed an issue with taking multiple screenshots if Game Recording is on.</li>
+<li>Improved performance in Metaphor: ReFantazio by up to 20%.</li>
+</ul>
+</blockquote>
+<p>Available in the Preview and Beta channels via Settings &gt; System &gt; System Update Channel.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1779348721730361308gol1.jpg"/><br/>
+<em>Pictured - Metaphor: ReFantazio</em></p>
+<p>Now SteamOS 3.6 has been out for a week, how have you been getting on with it? Are there any major problems you've had? Let me know in the comments.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/10/steam-deck-steamos-3620-beta-has-an-updater-fix-and-metaphor-refantazio-performance-improvements/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/steam-deck-steamos-3620-beta-has-an-updater-fix-and-metaphor-refantazio-performance-improvements/</guid>
+      <pubDate>Thu, 31 Oct 2024 07:56:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1651833373id25556gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
       <title>Steam games will now need to fully disclose kernel-level anti-cheat on store pages</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
@@ -29,6 +466,9 @@
 <p>However, it's only being <em>forced</em> for kernel-level anti-cheat. If it's only client-side or server-side, it's <em>optional</em>, but Valve say "we generally think that any game that makes use of anti-cheat technology would benefit from letting players know".</p>
 <p>Valve's example pictured below:</p>
 <p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7927772011730316555gol1.png"/></p>
+<p>Some games don't properly remove everything when you uninstall either, with Valve noting this happens with older games, so it's nice to also see this will be noted too.</p>
+<p>This should make it a bit easier knowing what to avoid on Steam Deck / Desktop Linux now too, since kernel-level anti-cheat games are usually blocked by the developer from running with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>.</p>
+<p>Valve have done a few rather interesting Steam updates lately like dealing with <a href="https://www.gamingonlinux.com/2024/08/steam-store-pages-are-about-to-get-a-lot-cleaner-valve-puts-an-end-to-game-advert-spam/" rel="noopener" target="_blank">publisher banner spam</a>, implementing <a href="https://www.gamingonlinux.com/2024/10/valve-makes-a-big-improvement-for-native-linux-games-in-a-steam-beta-update/" rel="noopener" target="_blank">improvements for Native Linux games</a>, actually noting clearly when you go to purchase a game <a href="https://www.gamingonlinux.com/2024/10/steam-purchases-now-clearly-state-youre-just-getting-a-license-not-ownership/" rel="noopener" target="_blank">it's just a license</a> and <a href="https://www.gamingonlinux.com/2024/09/steam-subscriber-agreement-updated-for-disputes-removing-the-need-for-individual-arbitration/" rel="noopener" target="_blank">removing the need for individual arbitration</a>.</p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
       <link>https://www.gamingonlinux.com/2024/10/steam-games-will-now-need-to-fully-disclose-kernel-level-anti-cheat-on-store-pages/</link>
@@ -99,8 +539,8 @@
 </ul>
 </blockquote>
 <p>Two more episodes are planned to release during Early Access, which the developer said it should all be complete in 2026. Each episode will be set in a different time and place across history.</p>
-<p><div class="itemdb_embed"><p><strong>COVEN</strong> | Release Date: 24th October 2024<p class="plain-list-title">Official links and where to buy from:</p>
-<ul><li><a href="https://store.steampowered.com/app/1785940/COVEN/">Steam</a></li></ul></p></div></p>
+<p><div class="itemdb_embed"><p><strong>COVEN</strong><p class="plain-list-title">Official links and where to buy from:</p>
+<ul><li><a href="https://gatorshins.itch.io/coven-early-access-out-now">itch.io</a></li><li><a href="https://store.steampowered.com/app/1785940/COVEN/">Steam</a></li></ul></p></div></p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
       <link>https://www.gamingonlinux.com/2024/10/coven-is-a-fresh-hyper-violent-retro-fps-now-in-early-access/</link>
@@ -4545,440 +4985,6 @@ Note that applying higher settings may impact the experience and lead to instabi
       <category>Indie Game</category>
       
       <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Goeland is like Untitled Goose Game but you&#39;re a seagull in a town that&#39;s a bit too peaceful</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Giving off some early Untitled Goose Game vibes, Goeland is a non-linear open-world adventure where you're one of the most annoying birds on the planet - the seagull. <em>You can tell I live near the sea right?</em></p>
-<p>Created by indie dev Bryan Martinet, you play as a mischievous seagull in a small sandboxy open world, interacting with characters and environment to solve enigmas, achieve quirky goals or take on self-imposed challenges and of course — poop on everyone.</p>
-<p>In an email Martinet mentioned: "Earlier this year, I lost my job in the AAA game industry (Eidos Montréal) due to the waves of layoffs hitting the industry. I took it as an opportunity to create this game on my own. It’s been a challenging yet rewarding experience, handling every aspect of game development."</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="2sD3nLCHg4E"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d74005a54abe8f258f01bbb87ef33fed.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/2sD3nLCHg4E" target="_blank">See video</a></div></div>
-<p>Seems like a fun idea! After playing a bunch of the demo I'm looking forward to seeing what other chaotic things the developer adds in. Being able to fly around and having a lot of freedom to explore will be great. The demo area is of course limited, but this small slice is promising.</p>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Play as a mischievous seagull wreaking havoc on a quiet island.</li>
-<li>Engage in open-ended, sandbox-style gameplay.</li>
-<li>Solve puzzles and complete objectives using stealth, creativity, manipulation.</li>
-<li>Interact with various items and NPCs to cause chaos and amusement.</li>
-<li>Shape and transform your surroundings based on your actions.</li>
-<li>Help adorable stranded animals find their way to the ocean.</li>
-<li>Enjoy charming visuals and a delightful, whimsical and dynamic soundtrack.</li>
-<li>Experience dynamic reactions from the environment and characters.</li>
-<li>Explore multiple areas within the island, each with its own unique challenges.</li>
-<li>Interact with charming characters and assist them in their quests.</li>
-<li>Enjoy relaxing gameplay with no time limits or pressure.</li>
-</ul>
-</blockquote>
-<p>The demo has a Native Linux version that works great. Have a look and try the <a href="https://store.steampowered.com/app/2531840/Goeland/" rel="noopener" target="_blank">demo on Steam</a> now. The full game release date has not yet been announced.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/goeland-is-like-untitled-goose-game-but-youre-a-seagull-in-a-town-thats-a-bit-too-peaceful/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/goeland-is-like-untitled-goose-game-but-youre-a-seagull-in-a-town-thats-a-bit-too-peaceful/</guid>
-      <pubDate>Thu, 17 Oct 2024 12:06:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/448037181id25462gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Adventure</category>
-      
-      <category>Casual</category>
-      
-    </item>
-    
-    <item>
-      <title>Dunebound Tactics really is one to watch for strategy fans</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Dunebound Tactics has been announced by Terahard Studios and if you're anything like me and love your strategy games, this looks like one to watch for sure.</p>
-<p>After reading up on it and checking out the trailer I'm getting a sort-of Sunless Sea / Sunless Skies vibe from this with the exploration and interactions, except you're in some sort of sand-crawling ship and there's the addition of turn-based tactical combat with plenty of destruction.</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="v1YgHbn-ye8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1849f0a2d4712b93b2182b76af0218cf.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/v1YgHbn-ye8" target="_blank">See video</a></div></div>
-<p>"Personally, I'm a huge tactics fanatic. We built our very own tactics engine with RPG elements from the ground up for Dunebound Tactics! I'm excited both for the technical innovations as well as the freedom we gave our game designers to create an amazing experience. The art in this game is the best we've managed so far connecting all the little details to squeeze performance and quality." — Aris Tsevrenis, CEO of Terahard Studios</p>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li><strong>Each Run a Stepping Stone -</strong> Your previous mishaps, crushing defeats or triumphs will contribute to your next run, either in the form of modules, or potentially even survivors, as you find the previous caravan’s wreck.</li>
-<li><strong>Dynamic world generation</strong> <font color="#e0e0e0"><strong>-</strong></font> Whether in combat or roaming through the sands - battlefields, locations or quests will challenge you in new and unexpected ways, making each run unique.</li>
-<li><strong>Strategic Turn-Based Combat -</strong> Manipulate a fully destructible and reshapable terrain to mold the battlefield and seize the advantage.</li>
-<li><strong>Friends -</strong> Rescue &amp; recruit lost souls to bolster your numbers, but remember, your caravan has limited seats. With a roster of 15 distinct classes and 16 unique traits that enhance skills, stats, or add abilities, every run offers a fresh experience.</li>
-<li><strong>Fuel</strong> - Decide whether to heal your wounded in the infirmary after battle takes its toll, or extract the Elios from their bodies, leaving them mere husks, to fuel your ambitions or power the caravan’s engine.</li>
-<li><strong>Foes</strong> - Between the Imperials and the Arcanists, your party must face 40 enemy classes in a desperate fight for a better tomorrow.</li>
-</ul>
-</blockquote>
-<p>You can <a href="https://store.steampowered.com/app/3034660/Dunebound_Tactics/" rel="noopener" target="_blank">follow it on Steam</a>. For Linux / Steam Deck players you'll need <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/dunebound-tactics-really-is-one-to-watch-for-strategy-fans/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/dunebound-tactics-really-is-one-to-watch-for-strategy-fans/</guid>
-      <pubDate>Thu, 17 Oct 2024 10:48:20 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1706943235id25461gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Rogue-lite</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Grab more quality games real cheap in these Fanatical bundles</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://www.fanatical.com/en/?ref=gol" rel="noopener" target="_blank">Fanatical</a> have some more quality games you can get extra cheap in a couple of bundles, so let's take a look at what you can get in them. I'll note the Steam Deck compatibility to make it easy for you at a glance and you can also check <a href="https://www.protondb.com/" rel="noopener" target="_blank">ProtonDB</a> for further compatibility. If they're rated at least Playable, they likely work well on desktop Linux too.</p>
-<p>First is the <a href="https://www.fanatical.com/en/pick-and-mix/best-of-bundle-bash-build-your-own-bundle?ref=gol" rel="noopener" target="_blank">Best of Bundle Bash - Build your own Bundle</a>, which is various popular titles from their previous Bundle Bash event. You can grab 3 games for £1.66 each and a higher discount for more. Available titles are:</p>
-<p class="plain-list-title"><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified:</strong></p>
-<ul>
-<li>THE GAME OF LIFE 2</li>
-<li>Luck be a Landlord</li>
-<li>Moonlighter: Complete Edition</li>
-<li>Forgive me Father</li>
-<li>Clue/Cluedo: Classic Edition</li>
-<li>URBO</li>
-<li>Gibbon: Beyond the Trees</li>
-</ul>
-<p class="plain-list-title"><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable:</strong></p>
-<ul>
-<li>For The King - Deluxe Edition</li>
-<li>Clue/Cluedo</li>
-<li>DIMENSIONAL SLAUGHTER</li>
-<li>King's Bounty II</li>
-</ul>
-<p class="plain-list-title"><strong><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Unrated:</strong></p>
-<ul>
-<li>Warhammer: Chaosbane - Slayer Edition</li>
-<li>Paleon</li>
-<li>Boti: Byteland Overclocked</li>
-<li>Deathbloom: Chapter 1</li>
-<li>Deathbloom: Chapter 2</li>
-<li>The Quest</li>
-</ul>
-<p>Check out the <a href="https://www.fanatical.com/en/pick-and-mix/best-of-bundle-bash-build-your-own-bundle?ref=gol" rel="noopener" target="_blank">Best of Bundle Bash - Build your own Bundle</a>.</p>
-<p>Additionally a new fresh one is the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-fall-bundle?ref=gol" rel="noopener" target="_blank">Build your own Fall Bundle 2024</a> which is again giving you 3 games for £1.66 each and a higher discount for more. Here's what's in it:</p>
-<p class="plain-list-title"><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified:</strong></p>
-<ul>
-<li>Fall of Porcupine</li>
-<li>Aeterna Noctis</li>
-<li>DG2: Defense Grid 2</li>
-<li>Cozy Space Survivors</li>
-<li>Beyond the Long Night</li>
-</ul>
-<p class="plain-list-title"><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable:</strong></p>
-<ul>
-<li>Internet Cafe Simulator 2</li>
-<li>Summum Aeterna</li>
-<li>Nyran Survivors</li>
-<li>Frogun</li>
-<li>Finding Paradise</li>
-</ul>
-<p class="plain-list-title"><strong><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Unrated:</strong></p>
-<ul>
-<li>Backfirewall_</li>
-<li>Xeno Runners</li>
-<li>Garfield Lasagna Party</li>
-<li>Long Way</li>
-<li>Elementals: The Magic Key</li>
-</ul>
-<p>Go have a look at the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-fall-bundle?ref=gol" rel="noopener" target="_blank">Build your own Fall Bundle 2024</a>.</p>
-<p>While we have you here be sure to follow GamingOnLinux on: <a href="https://bsky.app/profile/gamingonlinux.com" rel="noopener" target="_blank">Bluesky</a>, <a href="https://follow.gamingonlinux.com/" rel="noopener" target="_blank">Mastodon</a> and <a href="https://www.threads.net/@gaming0nlinux" rel="noopener" target="_blank">Threads</a>! And also join up with us to chat <a href="https://discord.gg/AghnYbMjYg" rel="noopener" target="_blank">on our Discord</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/grab-more-quality-games-real-cheap-in-these-fanatical-bundles/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/grab-more-quality-games-real-cheap-in-these-fanatical-bundles/</guid>
-      <pubDate>Thu, 17 Oct 2024 10:30:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/6580012id25460gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Fanatical</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Mesa graphics drivers 24.2.5 released with a few more bug fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Mesa 24.2.5 was announced from developer Eric Engestrom bringing in some more bug fixes for various Linux graphics drivers.</p>
-<p class="plain-list-title">Here's the main listed fixes:</p>
-<blockquote>
-<ul>
-<li>[radeonsi] glLinkProgram terminates the application when Shader is passing Bindless Texture into function.</li>
-<li>gallium: crash when using images obtained from a texture with a bindless handle.</li>
-<li>gallium: Crash when writing to writeonly image3D passed in via parameter.</li>
-<li>Using DXT1 textures fails in GL ES 1, even with EXT_texture_compression_dxt1 supported.</li>
-<li>r300 regression : Upside down and broken redering for Source games.</li>
-<li>intel A770 dg2 silent hill 2 doesn’t run.</li>
-<li>Mesa’s `intel_hang_replay` tool fails to work.</li>
-<li>Mesa’s `intel_hang_replay` tool fails to work.</li>
-</ul>
-</blockquote>
-<p>See all the individual changes on the Mesa <a href="https://docs.mesa3d.org/relnotes/24.2.5.html" rel="noopener" target="_blank">release post</a>.</p>
-<p class="plain-list-title">As a reminder of upcoming updates for Mesa:</p>
-<ul>
-<li>2024-10-30 - 24.2.6</li>
-<li>2024-11-13 - 24.2.7</li>
-<li>2024-11-27 - 24.2.8</li>
-</ul>
-<p>We also have Mesa 24.3 that <em>should</em> be due out on November 20th</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/mesa-graphics-drivers-24-2-5-released-with-a-few-more-bug-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/mesa-graphics-drivers-24-2-5-released-with-a-few-more-bug-fixes/</guid>
-      <pubDate>Thu, 17 Oct 2024 10:11:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/mesa.png" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Mesa</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>TRON: Catalyst announced from Bithell Games and Big Fan Games</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Recently we had <a href="https://www.gamingonlinux.com/2024/10/devolver-launch-big-fan-games-a-label-for-indie-devs-to-work-on-licensed-games/" rel="noopener" target="_blank">Devolver Digital announce Big Fan Games</a> to get more games made from major licenses (tv, movies, comics etc) and the first is TRON: Catalyst.</p>
-<p>This debut project from Big Fan Games brings in Bithell Games to make it who also worked on Thomas Was Alone, John Wick Hex, Tron: Identity and others. Set in the same world that Bithell Games created for Tron: Identity, it's a standalone game though that you can enjoy without playing Identity.</p>
-<p>More about it: "In Disney TRON: Catalyst, players are introduced to Exo, a highly resilient and resourceful program with an incredible ability to initiate time loops. With this newfound power, Exo takes on the overlords of a crumbling Grid all while evading Conn, a malevolent agent of CORE. Exo must gain control over her mysterious abilities and uncover the unexplained ‘Glitch’ that threatens the Grid.</p>
-<p>As Exo, players will battle on-foot and on Light Cycle to complete missions and gain crucial insights that will help them on their quest. While learning from her mistakes, Exo ​ will also need to navigate warring factions to unlock new paths and uncover the secrets of the Arq Grid."</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="qvDOAkbemRw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ffd60561ef102a0a0f9a61eba6452f61.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/qvDOAkbemRw" target="_blank">See video</a></div></div>
-<p>You can <a href="https://store.steampowered.com/app/3025590/TRON_Catalyst/" rel="noopener" target="_blank">follow it on Steam</a>. It releases sometime in 2025. For Linux / Steam Deck players you'll need <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/tron-catalyst-announced-from-bithell-games-and-big-fan-games/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/tron-catalyst-announced-from-bithell-games-and-big-fan-games/</guid>
-      <pubDate>Thu, 17 Oct 2024 10:03:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/623902986id25458gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Beat 'em up</category>
-      
-    </item>
-    
-    <item>
-      <title>GE-Proton 9-16 released with mod support for various Bethesda games</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you're modding Bethesda games on Linux / Steam Deck, GE-Proton 9-16 could make things a little easier for you.</p>
-<p>As your reminder: GE-Proton (or Proton-GE) a community-build of Proton, nothing to do with the official Proton from Valve. You'll find GE adds specific fixes that Valve often can't (due to legal reasons), and sometimes other special additions, but GE comes with less testing and support. Usually you only want to use it for specific games until they work properly in Valve's Proton, <em>or</em> for using Proton outside of Steam like in Heroic and Lutris. See more about <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton in my guide</a>.</p>
-<p>In GE-Proton 9-16 one of the main additions is a change to how Bethesda games will launch like the Fallout series, Skyrim, Oblivion and Starfield. If GE-Proton detects a known mod executable for these it will launch that <em>instead</em> of the original - something that will just save players a fair bit of messing around. Seems like a nice change!</p>
-<p>Another addition is that games run with UMU (Unified launcher for Windows games on Linux), for using it outside of Steam like in Heroic Games, is that games will now have the <code class="inline-code">/mnt</code>, <code class="inline-code">/run/media</code> and <code class="inline-code">/media</code> and the user's home folder added as drives that games can see.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7527689401729065035gol1.jpg"/><br/>
-<em>Pictured - Skyrim</em></p>
-<p>There's also a few other game-specific fixes, and the usual additions of new code from the official upstream projects.</p>
-<p>Here's the full <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-16" rel="noopener" target="_blank">changelog</a>:</p>
-<blockquote>
-<p>Proton:</p>
-<ul>
-<li>import upstream makefile changes</li>
-<li>import upstream proton changes</li>
-<li>import upstream steam_helper changes</li>
-<li>import upstream vkd3d-shader changes</li>
-<li>update wine to latest bleeding edge</li>
-<li>updated dxvk to latest git</li>
-<li>update vkd3d-proton to latest git</li>
-<li>update dxvk-nvapi to e4bad70</li>
-</ul>
-<p>Protonfixes:</p>
-<ul>
-<li>fixed issue with game_titles not being pulled correctly for UMU</li>
-<li>game_titles are now looked up as part of included umu-database csv instead of trying to send online website api call</li>
-<li>games run with UMU will now have /mnt,/run/media,/media/, and the user's home folder added as drives u:,v:,w:,x: respectively inside the prefix if they are not empty. This is to allow users to install or import games outside of the prefix more conveniently. A typical scenario for this would be if you have your games pre-installed on a different mounted drive, or somewhere else in your home folder outside of the prefix and you want to add them without reinstalling the game, OR if you want to install the game to one of those mounts instead of the C:\ drive inside the wine prefix. With steam, users don't really have to worry about this because steam handles the drive mounts and the install locations, however we found that outside of steam users were trying to use the Z: drive (which is symlinked to root (/)) -- which is of course containerized and read only, and therefore also unable to provide a proper drive size, resulting in users being told they don't have enough space. With the new drives added into the prefix it should fix this, allowing users to access their mount locations or existing game folders for installation or importing via the new drives instead of Z:.</li>
-<li>Mod support for various bethesda games has been added (Thanks Root-Core). If a mod executable is found for bethesda games it will launch the mod executable instead of the original:<br/>
-	mapping = {<br/>
-	'22380': ('FalloutNV.exe', 'nvse_loader.exe'), # Fallout New Vegas<br/>
-	'22370': ('FalloutLauncher.exe', 'fose_loader.exe'), # Fallout 3<br/>
-	'377160': ('Fallout4Launcher.exe', 'f4se_loader.exe'), # Fallout 4<br/>
-	'22330': ('OblivionLauncher.exe', 'obse_loader.exe'), # Oblivion<br/>
-	'72850': ('SkyrimLauncher.exe', 'skse_loader.exe'), # Skyrim<br/>
-	'489830': ('SkyrimSELauncher.exe', 'skse64_loader.exe'), # Skyrim SE<br/>
-	'1716740': ('Starfield.exe', 'sfse_loader.exe') # Starfield<br/>
-	}.get(game_id, ('', ''))</li>
-<li>protonfix added for metal gear solid 2 (thanks FranjeGueje)</li>
-<li>protonfix for Kindom Hearts HD Remix added for steam version (already existed for egs version) (thanks Internetbestfriend)</li>
-<li>protonfix added for Gothic Playable Teaser (thanks Root-Core)</li>
-<li>Star Citizen protonfix updated (no longer requires EAC workaround)</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/ge-proton-9-16-released-with-mod-support-for-various-bethesda-games/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/ge-proton-9-16-released-with-mod-support-for-various-bethesda-games/</guid>
-      <pubDate>Wed, 16 Oct 2024 07:56:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1542535827id25457gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Rogue Legacy 1 source code released</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Rogue Legacy, a rogue-lite from Cellar Door Games, that originally released in 2013 has now had the source code released. The game has Native Linux support and is rated Steam Deck Verified.</p>
-<p>In the <a href="https://x.com/CellarDoorGames/status/1846246914406195662" rel="noopener" target="_blank">announcement</a> on Twitter / X the developer noted they've been working with game porter and FNA developer, Ethan Lee, to make this happen who will be maintaining it going forward.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8915973611729018609gol1.jpg"/></p>
-<p>The game is <u>not</u> open source though, to be completely clear on that. It's source available under a <em>custom</em> license with certain restrictions, much the same as <a href="https://www.gamingonlinux.com/2020/01/vvvvvv-from-terry-cavanagh-has-the-source-code-opened-up-to-celebrate-the-10-year-anniversary/" rel="noopener" target="_blank">VVVVVV</a> and is actually based on the license that Terry Cavanagh used for it. This is also only the source code, it does <em>not</em> include the assets - so you still need to own a copy of the game.</p>
-<p>In their own <a href="https://x.com/flibitijibibo/status/1846249473741410725" rel="noopener" target="_blank">announcement</a>, Ethan Lee posted on Twitter / X that they intend to take on community contributions to it, and they're in progress on upgrading it to use SDL 3 that's currently in Beta.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3823223841729018862gol1.jpg"/></p>
-<p>Really great to see more developers open up the code for their older games. This way they can practically live on forever. It would have been even better if it was fully open source, but having it open like this is still a great resource for developer curious on what goes on behind the scenes to learn from as well.</p>
-<p>Check out <a href="https://github.com/flibitijibibo/RogueLegacy1/" rel="noopener" target="_blank">the GitHub</a> for the source code.</p>
-<p>You can buy the game from:</p>
-<p><a href="https://www.gog.com/en/game/rogue_legacy" rel="noopener" target="_blank">GOG</a></p>
-<p><a href="https://humblebundleinc.sjv.io/5gO2vj" rel="noopener" target="_blank">Humble Store</a></p>
-<p><a href="https://store.steampowered.com/app/241600/Rogue_Legacy/" rel="noopener" target="_blank">Steam</a></p>
-<p>See the original trailer for the game below:</p>
-<div class="hidden_video" data-video-id="T0DKxOEikTs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c778f3abeb887c950a7c244fa91e93c5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/T0DKxOEikTs" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/rogue-legacy-1-source-code-released/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/rogue-legacy-1-source-code-released/</guid>
-      <pubDate>Tue, 15 Oct 2024 19:06:55 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1448348352id25456gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Rogue-lite</category>
-      
-    </item>
-    
-    <item>
-      <title>Intel and AMD join up to form the x86 ecosystem advisory group to shape the future</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Seems AMD and Intel may be feeling the pressure from Arm? Today both companies announced the forming of a new x86 ecosystem advisory group to help shape the future of the platform.</p>
-<p>It's not just them though they've pulled in Linus Torvalds (creator of Linux) and Tim Sweeney (Epic Games), along with companies including: Broadcom, Dell, Google, Hewlett Packard Enterprise, HP Inc., Lenovo, Meta, Microsoft, Oracle, and Red Hat as founding members.</p>
-<p>From the press release:</p>
-<p>“We are on the cusp of one of the most significant shifts in the x86 architecture and ecosystem in decades – with new levels of customization, compatibility and scalability needed to meet current and future customer needs,” said Pat Gelsinger, Intel CEO. “We proudly stand together with AMD and the founding members of this advisory group, as we ignite the future of compute, and we deeply appreciate the support of so many industry leaders.”</p>
-<p>“Establishing the x86 Ecosystem Advisory Group will ensure that the x86 architecture continues evolving as the compute platform of choice for both developers and customers,” said Lisa Su, AMD Chair and CEO. “We are excited to bring the industry together to provide direction on future architectural enhancements and extend the incredible success of x86 for decades to come.”</p>
-<p>Their plan is to come together to find new ways to expand the x86 ecosystem with their intended outcomes to be:</p>
-<blockquote>
-<ul>
-<li>Enhancing customer choice and compatibility across hardware and software, while accelerating their ability to benefit from new, cutting-edge features.</li>
-<li>Simplifying architectural guidelines to enhance software consistency and standardize interfaces across x86 product offerings from Intel and AMD.</li>
-<li>Enabling greater and more efficient integration of new capabilities into operating systems, frameworks and applications.</li>
-</ul>
-</blockquote>
-<p>More in the press releases: <a href="https://www.amd.com/en/newsroom/press-releases/2024-10-15-intel-and-amd-form-x86-ecosystem-advisory-group-to-accelerate.html" rel="noopener" target="_blank">AMD</a> / <a href="https://www.intel.com/content/www/us/en/newsroom/news/october-2024-intel-news.html" rel="noopener" target="_blank">Intel</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/intel-and-amd-join-up-to-form-the-x86-ecosystem-advisory-group-to-shape-the-future/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/intel-and-amd-join-up-to-form-the-x86-ecosystem-advisory-group-to-shape-the-future/</guid>
-      <pubDate>Tue, 15 Oct 2024 17:26:00 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/834387769id25455gol.jpg" type="image/jpeg"/>
-      
-      <category>AMD</category>
-      
-      <category>Hardware</category>
-      
-      <category>Intel</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve still waiting on a &#39;generational leap&#39; for Steam Deck 2 - but it&#39;s coming</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve gave us the strongest wording yet that a Steam Deck 2 is actually real, although it's still clearly going to be some time away before there's enough of an upgrade.</p>
-<p>Recently we had the news that the <a href="https://www.gamingonlinux.com/2024/10/steam-deck-officially-comes-to-australia-in-november/" rel="noopener" target="_blank">Steam Deck is finally going to release in Australia</a>, and so now Valve have another market opened up for future hardware launches. So, a few Australian websites managed to get Valve to open up a little to discuss the future and it's sounding good.</p>
-<p>Speaking to <a href="https://www.reviews.org/au/games/valve-steam-deck-australia-interview/" rel="noopener" target="_blank">Reviews.org Australia</a> here's what Steam Deck designer Lawrence Yang said about a Steam Deck 2:</p>
-<blockquote>
-<p>It is important to us, and we’ve tried to be really clear, we are not doing the yearly cadence. We’re not going to do a bump every year. There’s no reason to do that. And, honestly, from our perspective, that’s kind of not really fair to your customers to come out with something so soon that’s only incrementally better. So we really do want to wait for a generational leap in compute without sacrificing battery life before we ship the real second generation of Steam Deck. But it is something that we’re excited about and we’re working on.</p>
-</blockquote>
-<p>Also mentioned in the interview is how they really love seeing all the devices from other companies, even if they're not a fan of the constant device refreshes. There's plenty of other good stuff mentioned in the full interview so be sure to go give it a read.</p>
-<p>It's not exactly the freshest news though if you've been following along, since I <a href="https://www.gamingonlinux.com/2022/08/steam-deck-2-is-absolutely-coming-new-booklet-from-valve-confirms/" rel="noopener" target="_blank">previously covered Valve's little handbook for the Asia launch</a>, that did make it seem pretty clearly like more was planned. Still, Valve reiterating it so <em>strongly</em> is a great sign.</p>
-<p>Until then we've still got plenty to look forward to like the final release of <a href="https://www.gamingonlinux.com/2024/05/steamos-36-preview-for-steam-deck-brings-numerous-big-new-features/" rel="noopener" target="_blank">SteamOS 3.6</a> (it's in Beta) which will bring another big lot of system improvements. And, whatever this <a href="https://www.gamingonlinux.com/2024/09/valve-appear-to-be-testing-arm64-and-android-support-for-steam-on-linux/" rel="noopener" target="_blank">ARM64 and Android stuff</a> is for (likely a new VR set).</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/valve-still-waiting-on-a-generational-leap-for-steam-deck-2-but-its-coming/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/valve-still-waiting-on-a-generational-leap-for-steam-deck-2-but-its-coming/</guid>
-      <pubDate>Tue, 15 Oct 2024 16:59:24 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steamdeckoled.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Survival game Valheim adds a new feast mechanic and The Bog Witch in testing</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The excellent survival game Valheim is getting ready to expand again, with a new update available for testing that adds in The Bog Witch and a whole new feast mechanic.</p>
-<p>Getting ready for Halloween developers Iron Gate mentioned: "We're happy to release our latest update to you – The Bog Witch! It features a brand new trader to be found in the Swamps, who sells a bunch of different ingredients and materials for you, useful for both brewing new potions and exploring the new feast mechanic. The update also features new skills and tools for homesteading!"</p>
-<p class="plain-list-title">The non-spoiler additions include:</p>
-<ul>
-<li>New trader &amp; trader location</li>
-<li>New feast mechanic, including 8 feasts</li>
-<li>16 new crafting materials</li>
-<li>8 new potions</li>
-<li>3 new items of clothing</li>
-<li>3 new skills</li>
-<li>4 new build pieces</li>
-<li>2 new tools</li>
-<li>3 new emotes</li>
-<li>1 new event</li>
-<li>Various bug fixes and performance improvements</li>
-</ul>
-<p>Check out the update trailer: </p>
-<div class="hidden_video" data-video-id="lQiLPwV_8sY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5a606eeb8e737f77b52a253f3132a8fb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/lQiLPwV_8sY" target="_blank">See video</a></div></div>
-<p>More info on how to access the Beta on <a href="https://store.steampowered.com/news/app/892970/view/7514910232818862414" rel="noopener" target="_blank">Steam</a>.</p>
-<p>I haven't played Valheim for quite a while, so I'm looking forward to really getting stuck back into it after sinking a lot of hours into the initial Early Access release. Looks like they've got a really healthy player count with a peak of 26,531 in the last 24 hours too!</p>
-<p>Valheim has Native Linux support and it's Steam Deck Verified you can buy it on <a href="https://humblebundleinc.sjv.io/Py1JbY" rel="noopener nofollow" target="_blank">Humble Store</a> or <a href="https://store.steampowered.com/app/892970/Valheim/?curator_clanid=4218320" rel="noopener nofollow" target="_blank">Steam</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/survival-game-valheim-adds-a-new-feast-mechanic-and-the-bog-witch-in-testing/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/survival-game-valheim-adds-a-new-feast-mechanic-and-the-bog-witch-in-testing/</guid>
-      <pubDate>Tue, 15 Oct 2024 16:08:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/104071878id25453gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
       
     </item>
     
