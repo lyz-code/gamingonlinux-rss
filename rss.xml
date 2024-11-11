@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-11-10 07:26:57.239081</pubDate>
+    <pubDate>2024-11-11 07:30:13.369119</pubDate>
 
     
     <image>
@@ -18,6 +18,44 @@
     </image>
 
     
+    
+    <item>
+      <title>GE-Proton 9-19 brings fixes for Horizon Zero Dawn Remastered, Monster Hunter Wilds and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The latest upgrade for GE-Proton is now available with GE-Proton 9-19 bringing an assortment of fixes for specific games, along with updates to various components that let it do its thing.</p>
+<p>GE-Proton (originally called Proton-GE) is a community-made translation layer based on Valve's official Proton, for running Windows games on Linux / Steam Deck. <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-19" rel="noopener nofollow" target="_blank">GE-Proton 9-19</a> has fixes for games including Monster Hunter Wilds, Diablo IV, Silent Hill 3 and Horizon Zero Dawn Remastered. The rest of it is pulling in code from all the projects it uses like DXVK and VKD3D-Proton for translating DirectX to Vulkan.</p>
+<p class="plain-list-title">The full changelog:</p>
+<blockquote>
+<p>-bump wine to latest bleeding edge<br/>
+-bump dxvk to latest git<br/>
+-bump vkd3d-proton to latest git (contains additional MH Wilds fix)<br/>
+-bump dxvk-nvapi to latest git<br/>
+-import upstream lsteamclient changes<br/>
+-import upstream vrclient changes<br/>
+-add xdefiant patch (thanks tperalta82)<br/>
+-auto-apply DRI_PRIME=1 when more than one gpu is detected. This allows Diablo IV to get passed the grey screen on igpu+dgpu systems.<br/>
+-add protonfixes for silent hill 3 video playback<br/>
+-add protonfixes for Horizon Zero Dawn Remastered internet connection (thanks UsernamesAreNotMyThing)</p>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16312858811731237630gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16312858811731237630gol1.jpg"/></a><br/>
+<em>Pictured - Monster Hunter Wilds</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/11/ge-proton-9-19-brings-fixes-for-horizon-zero-dawn-remastered-monster-hunter-wilds-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/ge-proton-9-19-brings-fixes-for-horizon-zero-dawn-remastered-monster-hunter-wilds-and-more/</guid>
+      <pubDate>Sun, 10 Nov 2024 11:21:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/193566218id25626gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
     
     <item>
       <title>Sony say their PSN account requirement on PC is so you can enjoy their games &#39;safely&#39;</title>
@@ -4941,55 +4979,6 @@ Definition and Dimensions of Beelink Multi-Functional EX Docking Station Gold Fi
       <category>New Release</category>
       
       <category>RPG</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Beta removes option to globally disable Steam Play plus Game Recording improvements</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another fresh Steam Client Beta for Desktop and Steam Deck fixing up some bugs, plus some improvements for Game Recording.</p>
-<p>There's one fix that's specific to the Steam Deck that Valve noted: "Fix overlay hanging for some games in Desktop mode after the game restarts itself". Plus one just for the Desktop client: "Fix a case where the wrong DPI scaling factor would be used for systems using a non-gnome based session with an active gnome-desktop-portal service."</p>
-<p>As for the rest it's the same across both Desktop and Deck:</p>
-<blockquote>
-<p><strong>General</strong></p>
-<ul>
-<li>Fix progress bar not updating during game update and move operations involving large files</li>
-<li>Fix overlay hanging in some games on macOS and Linux after the game restarts itself</li>
-</ul>
-<p><strong>Game Recording</strong></p>
-<ul>
-<li>Added support for automatic gain control for recording microphone</li>
-<li>Added support for forcing microphone input to mono for misconfigured stereo mic setups</li>
-<li>Fixed a bug preventing loading of additional programs to record audio at client start time</li>
-</ul>
-<p><strong>Big Picture Mode</strong></p>
-<ul>
-<li>Fix keyboard input dialog in-game failing to close/re-open properly if Steam Overlay is toggled while visible</li>
-<li>Fixed multi-line mode support in the dialog shown by the ShowGamepadTextInput API call in Steamworks</li>
-</ul>
-<p><strong>Linux</strong></p>
-<ul>
-<li>Always allow the Steam client to fallback to X11 when SDL_VIDEO_DRIVER/SDL_VIDEO_DRIVER is set to wayland.</li>
-<li>Remove the UI toggle to disable Steam Play globally, correctly reflecting that Steam Play is always enabled on Linux. Steam Play was always partially active even when set to off in the UI as it is a requirement for Steam client operation.</li>
-</ul>
-</blockquote>
-<p><em>Changelogs: <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/4507632758953082943?snr=2___" rel="noopener nofollow" target="_blank">Desktop</a> | <a href="https://store.steampowered.com/news/app/1675200/view/4522269457743085636" rel="noopener nofollow" target="_blank">Steam Deck</a></em></p>
-<p>As a reminder on the last one: Steam Play itself is <em>not</em> just <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>. It's also used for the Steam Linux Runtime for Native Linux games too. Plus you can also use it for tools like <a href="https://www.gamingonlinux.com/2022/05/get-some-classics-working-better-on-steam-deck-with-luxtorpeda-upgrades/" rel="noopener" target="_blank">Luxtorpeda</a>. In a <a href="https://www.gamingonlinux.com/2024/10/valve-makes-a-big-improvement-for-native-linux-games-in-a-steam-beta-update/" rel="noopener" target="_blank">previous Steam Beta update</a> Valve made a change where Native Linux titles now use the Linux Runtime container by default, matching what they do on the Steam Deck for better overall compatibility.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/10/steam-beta-removes-option-to-globally-disable-steam-play-plus-game-recording-improvements/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/10/steam-beta-removes-option-to-globally-disable-steam-play-plus-game-recording-improvements/</guid>
-      <pubDate>Sat, 26 Oct 2024 17:00:38 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Apps</category>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
       
     </item>
     
