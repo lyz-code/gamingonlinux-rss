@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-11-19 07:29:56.904153</pubDate>
+    <pubDate>2024-11-20 07:29:35.846427</pubDate>
 
     
     <image>
@@ -20,12 +20,235 @@
     
     
     <item>
+      <title>NVIDIA stable driver 550.135 released for Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>While NVIDIA continues working on new features for their <a href="https://www.gamingonlinux.com/2024/10/nvidia-565-57-01-beta-has-wayland-and-hdr-improvements-plus-dxvk-and-vkd3d-optimizations/" rel="noopener" target="_blank">565 Beta series</a>, and they have their current <a href="https://www.gamingonlinux.com/2024/08/nvidia-stable-driver-560-35-03-released-for-linux-with-wayland-fixes/" rel="noopener" target="_blank">new-feature branch 560.35.03</a>, they also have the slightly older and stable version that just updated to version <a href="https://www.nvidia.com/en-us/drivers/details/236036/" rel="noopener nofollow" target="_blank">550.135</a>.</p>
+<p>The main highlights / changes in this release are:</p>
+<blockquote>
+<ul>
+<li>In Linux kernel 6.11, drm_fbdev_generic was renamed to drm_fbdev_ttm.Use drm_fbdev_ttm when present to keep supporting direct frame buffer access needed for Wayland compositors to present content on newer kernels.</li>
+<li>In linux-next commit 446d0f4849b1, output_poll_changed is removed from struct drm_mode_config_funcs. Do not implement the function pointer member when not present to ensure the driver can compile with newer kernels. The driver now supports enumerating modes on hotplug events through the DRM fbdev API.</li>
+<li>Updated the kernel module build process to use CONFIG_CC_VERSION_TEXT from the Linux kernel's Kconfig to detect the compiler used to build the kernel. This may help select the correct compiler on systems where the kernel was built with a compiler other than the default one.</li>
+<li>Fixed a bug that prevented kernel modules linked using precompiled kernel interface files from loading on recent Debian systems.</li>
+</ul>
+</blockquote>
+<p>Since it's a stable driver, you should be fine to upgrade without issues. I imagine most of you gaming are likely at least on the 560 series that I covered previously. For this 550 series though NVIDIA describes it as: "This driver meets the quality levels applied to Windows drivers that pass testing in Windows Hardware Quality Labs (WHQL), therefore providing the same attention to driver reliability, robustness, and performance for non-Windows operating systems (e.g., Linux)".</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/11/nvidia-stable-driver-550-135-released-for-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/nvidia-stable-driver-550-135-released-for-linux/</guid>
+      <pubDate>Tue, 19 Nov 2024 15:43:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Fighting Fantasy Classics plans to add full Steam Deck support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Fighting Fantasy Classics is a library app from Tin Man Games that collects together all your favourite Fighting Fantasy gamebooks from the 1980s to more recent modern-day releases.</p>
+<p>It's free on Steam that includes one adventure, Bloodbones. The rest you need to pay for including Caverns of the Snow Witch, Citadel of Chaos, City of Thieves, Deathtrap Dungeon, The Forest of Doom, Island of the Lizard King, The Warlock of Firetop Mountain and others. For fans of truly classic retro gaming adventures, and plenty of reading, this collection is for you.</p>
+<div class="hidden_video" data-video-id="L8-hVf_Kev8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/759e0e6211466a1d130ac5c765154d7d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/L8-hVf_Kev8" target="_blank">See video</a></div></div>
+<p>The developer <a href="https://steamcommunity.com/games/856880/announcements/detail/4443457735847051472" rel="noopener nofollow" target="_blank">announced</a> on November 13 in a post on Steam that they plan to add full Steam Deck support with multiple save slots per book, controller support and cloud saving.</p>
+<p>It's not clear if this is via <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> or a Native Linux version. Looking on SteamDB there is a Linux version, but it's not currently used.</p>
+<p class="plain-list-title">More about it:</p>
+<blockquote>
+<p>Ready your sword, pack your provisions and prepare to embark upon nostalgic quests of epic proportions where YOU choose what happens next! Journey a magical realm, fighting monsters and unravelling mysteries in <em>Fighting Fantasy Classics</em> – text-based roleplaying adventures remastered. Originally presented by Steve Jackson &amp; Ian Livingstone in the 80s and 90s, <em>Fighting Fantasy Classics</em> brings these timeless tales back to your gaming library.</p>
+</blockquote>
+<p><div class="itemdb_embed"><p><strong>Fighting Fantasy Classics</strong><p class="plain-list-title">Official links and where to buy from:</p>
+<ul><li><a href="https://store.steampowered.com/app/856880/Fighting_Fantasy_Classics/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/11/fighting-fantasy-classics-plans-to-add-full-steam-deck-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/fighting-fantasy-classics-plans-to-add-full-steam-deck-support/</guid>
+      <pubDate>Tue, 19 Nov 2024 14:00:43 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1275538102id25691gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Adventure</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Retro</category>
+      
+    </item>
+    
+    <item>
+      <title>Check out Miniatures, a short mixture of strange tales</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Here's one for you if you're short on time, and want to experience something a bit unique. Miniatures released recently from developer Other Tales Interactive.</p>
+<p>More: "Step into four hand-drawn memories and discover the mysteries lurking beneath the seemingly calm surface. Explore one story at a time, or play them in a single sitting, in this solo-play adventure about the stories we tell ourselves and how they shape our world."</p>
+<p>It won't take you long at about an hour to finish but it's worth it. Plus it has Native Linux support.</p>
+<div class="hidden_video" data-video-id="WM7t0izsSDs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4f22748d485fdd9530d31e0bd2b3a75c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/WM7t0izsSDs" target="_blank">See video</a></div></div>
+<p>The Stories:</p>
+<blockquote>
+<p>Each story has a distinct gameplay and art style and can be played in any order:</p>
+<ul>
+<li>Familiar: Experience the challenges of a family assembling a flat-pack cabinet.</li>
+<li>The Paludarium: Immerse yourself in a world where a boy, home alone, navigates nature's invasion.</li>
+<li>The Last Sand Castle: Interact with the music-loving inhabitants of a sand castle.</li>
+<li>The House of the Moon: Join Alma on a journey as she searches for her lost mother in a mysterious seascape.</li>
+</ul>
+</blockquote>
+<p><div class="itemdb_embed"><p><strong>Miniatures</strong> | Release Date: 14th November 2024<p class="plain-list-title">Official links and where to buy from:</p>
+<ul><li><a href="https://store.steampowered.com/app/2428840/Miniatures/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/11/check-out-miniatures-a-short-mixture-of-strange-tales/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/check-out-miniatures-a-short-mixture-of-strange-tales/</guid>
+      <pubDate>Tue, 19 Nov 2024 13:49:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1581039740id25690gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Adventure</category>
+      
+      <category>Casual</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Hotloop is a twin-stick shooter where you fling yourself around using gravity from planets</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Need some fresh twin-stick shooting fun? Hotloop looks like a nice one, with an interesting gravity mechanic to throw your ship around using gravity from various planets.</p>
+<p>More: "It is a dynamic mix of old school arcade and simulation. In this game you will meet a realistic system of spacecraft behaviour and precise orbital mechanics. You have to curb the force of gravity and learn how to use it to your advantage in order to repel numerous enemies."</p>
+<p>Check out the gameplay trailer:</p>
+<div class="hidden_video" data-video-id="8913s_0CKLo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/47ea7a2b0660a6297b97341e265eea30.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/8913s_0CKLo" target="_blank">See video</a></div></div>
+<p>A game where you use the environment directly to defeat enemies by smashing them into asteroids, make them burn up in the sun, fall into a black hole and more. All while you're trying to keep yourself moving, with the pull of various celestial bodies. With the fuel mechanic, you'll need to make great use of gravity to keep some spare.</p>
+<p>Various different types of weapons and utilities and it just looks like some good classic fun.</p>
+<p>The developer also noted just recently they did some <a href="https://store.steampowered.com/news/app/2253660/view/6855136062298128798" rel="noopener nofollow" target="_blank">improvements</a> for Steam Deck players too including tweaking the UI and input updates, plus it has a Native Linux version.</p>
+<p><div class="itemdb_embed"><p><strong>Hotloop</strong> | Release Date: 18th November 2024<p class="plain-list-title">Official links and where to buy from:</p>
+<ul><li><a href="https://store.steampowered.com/app/2253660/Hotloop/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/11/hotloop-is-a-twin-stick-shooter-where-you-fling-yourself-around-using-gravity-from-planets/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/hotloop-is-a-twin-stick-shooter-where-you-fling-yourself-around-using-gravity-from-planets/</guid>
+      <pubDate>Tue, 19 Nov 2024 13:19:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/460008833id25689gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Sony reportedly looking to acquire Kadokawa, owner of ELDEN RING dev FromSoftware</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>According to a report from <a href="https://www.reuters.com/markets/deals/sony-talks-buy-media-powerhouse-behind-elden-ring-sources-say-2024-11-19/" rel="noopener nofollow" target="_blank">Reuters</a>, Sony are currently in talks to buy Kadokawa Corporation, the owner of ELDEN RING developer FromSoftware. They also made Armored Core, Dark Souls and Sekiro: Shadows Die Twice.</p>
+<p>Seems like a purchase that would make sense for Sony. Kadokawa are a big name in both Anime and Manga publishing, and with Sony owning Crunchyroll (and Funimation) it would help them expand it even more. Kadokawa also own some huge names in the industry including Spike Chunsoft (Danganronpa), Gotcha Gotcha Games (RPG Maker) and various others.</p>
+<p>Reuters said "Sony declined to comment. Kadokawa said it cannot comment." but according to their sources a deal might be signed as soon as a few weeks time.</p>
+<hr/>
+<p>If Sony do acquire them, this could have a big effect industry-wide. For PC releases, it <em>could</em> even mean seeing more games end up requiring the PlayStation Network account system. That would make sense, as Sony keep pushing that with more recent games, and acquiring more companies to push it even further would also align with their plans to bring more players into their system.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/11/sony-reportedly-looking-to-acquire-kadokawa-owner-of-elden-ring-dev-fromsoftware/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/sony-reportedly-looking-to-acquire-kadokawa-owner-of-elden-ring-dev-fromsoftware/</guid>
+      <pubDate>Tue, 19 Nov 2024 10:32:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/640869283id25688gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Sony</category>
+      
+    </item>
+    
+    <item>
+      <title>The Binding of Isaac: Rebirth gets online co-op in the latest update with Repentance+ </title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Available in Beta for The Binding of Isaac: Rebirth, is the new The Binding of Isaac: Repentance+ update that brings online co-op.</p>
+<p>You need to own <u>all</u> the DLC for it, and they're classing it as a Beta for now while they refine it and squash remaining bugs. Additionally, as far as I know, while the base game has Linux support you <em>need</em> <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> to run this because the Repentance DLC is only supported on Windows.</p>
+<div class="hidden_video" data-video-id="j7yPmbNCP4I"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/22049dac596d2e756b0825c371ed43cd.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/j7yPmbNCP4I" target="_blank">See video</a></div></div>
+<p>Online play supports all game modes, all achievements that you get in solo can be earned while playing online but overall there's a few differences from solo play as they detailed in the <a href="https://store.steampowered.com/news/app/250900/view/7119722540407193807" rel="noopener nofollow" target="_blank">release notes</a>:</p>
+<blockquote>
+<p>Online play has a few differences from solo play. Defeated bosses will drop an item for each player in the match. If a match is joined in progress, the new player will be granted several items to catch them up based on how far along the run is. Players can spend coins at the revive machine in the starting room of each floor to bring back dead players. Be warned, however, that the cost goes up each time the machine is used. Defeating a boss at the end of the stage will also revive any dead players. There might be some other special things to discover online as well!</p>
+</blockquote>
+<p>Something to note is that mods are not supported to play online, you need to disable any mods.</p>
+<p>Did they change anything for solo players? Yes, lots. There's various item improvements and reworks, plus many general quality of life fixes and bug fixes. It's a big update overall.</p>
+<p>Doesn't seem like GOG have the update yet, so stick to Steam if you want all the goodies.</p>
+<p><div class="itemdb_embed"><p><strong>The Binding of Isaac: Rebirth</strong> | Release Date: 4th November 2014<p class="plain-list-title">Official links and where to buy from:</p>
+<ul><li><a href="https://www.gog.com/en/game/the_binding_of_isaac_rebirth">GOG</a></li><li><a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/11/the-binding-of-isaac-rebirth-gets-online-co-op-in-the-latest-update-with-repentance-/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/the-binding-of-isaac-rebirth-gets-online-co-op-in-the-latest-update-with-repentance-/</guid>
+      <pubDate>Tue, 19 Nov 2024 09:56:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1300652508id25687gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+    </item>
+    
+    <item>
+      <title>Arcane Wilds is a western-themed fantasy RTS now on Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Now in Early Access, Arcane Wilds gives a slightly different take on the base-building RTS genre and comes with Linux support.</p>
+<p>Not only is the setting quite interesting with the blending of themes, but the way it handles resources is a fun one. Resources you gather actually remain at the gathering sites, needing direct transportation for you to be able to use them. This means you can actually steal resources from opponents, requiring each player to properly protect them. It also has a special online co-op survival mode too which sounds pretty fun.</p>
+<p>Check out the trailer below:</p>
+<div class="hidden_video" data-video-id="XocajfH1DDk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/41fc2cd7e4ced618b82d3831240efc3d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/XocajfH1DDk" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Three very different factions too:</p>
+<blockquote>
+<ul>
+<li>Army: Boasting a powerful arsenal, the Army faction excels in ranged combat with essence-powered cannons, compensating for their low mobility with exceptional firepower.</li>
+<li>Colony: Comprising a motley crew of gunslingers, the Colony faction employs explosive barrels and rapid-firing gatling guns, creating a versatile force on the battlefield.</li>
+<li>Tribe: Known for their agility and adaptability, the Tribe faction utilizes movable structures and chaos-inducing abilities from medicine men and shamans to wreak havoc among enemies.</li>
+</ul>
+</blockquote>
+<p>Some fun modding capabilities too with "first-class scripting support with Lua" they say so players can make their own maps and game modes, with Steam Workshop support.</p>
+<p>Lukas Frischknecht, founder of Avancadia, says: "We poured our energy and development expertise into creating Arcane Wilds. We’re confident that Arcane Wilds will give RTS fans an experience they’ve never had before and give the genre a much-needed freshen-up."</p>
+<p><div class="itemdb_embed"><p><strong>Arcane Wilds</strong> | Release Date: 18th November 2024<p class="plain-list-title">Official links and where to buy from:</p>
+<ul><li><a href="https://store.steampowered.com/app/1492050/Arcane_Wilds/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/11/arcane-wilds-is-a-western-themed-fantasy-rts-now-on-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/arcane-wilds-is-a-western-themed-fantasy-rts-now-on-steam/</guid>
+      <pubDate>Tue, 19 Nov 2024 09:42:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2045170721id25686gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
       <title>Steam Deck OLED: Limited Edition White and Steam Deck Australia have launched</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
 <p>Two big things have arrived. The first is that you can attempt to grab the sleek looking Steam Deck OLED: Limited Edition White right now, and the Steam Deck is now available in Australia.</p>
 <p>The new Limited Edition White costs £599 / $679 and has the same specifications as the 1TB OLED. Although, you do get an exclusive Limited Edition White carrying case, startup movie, and virtual keyboard theme. Valve said they've "allocated stock proportionally across all regions, and restricting purchases to 1 unit per account" and that to purchase your account "must have made a Steam purchase before November 2024 and be in good standing".</p>
-<p>Once it's gone, it's gone. So if you're somehow still on the fence, now might be the best time to get one of the coolest models models.</p>
+<p>Once it's gone, it's gone. So if you're somehow still on the fence, now might be the best time to get one of the coolest-looking models.</p>
 <p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20287088481731971816gol1.png"/></p>
 <p class="plain-list-title">Australia also joins then list of supported regions for the Steam Deck officially now too. Prices for Australia are:</p>
 <ul>
@@ -4899,282 +5122,6 @@ Patent No. 7528390<br/>
       <category>Casual</category>
       
       <category>Farming</category>
-      
-    </item>
-    
-    <item>
-      <title>Retro racing throwback Classic Sport Driving adds Linux support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Classic Sport Driving is designed in the spirit of retro racers like Lotus Turbo Challenge and Outrun, so if you like the old style of racing this one might be for you. Originally released back in June 2023, the developer just recently added Native Linux support to the game.</p>
-<p>Featuring classic arcade racing with time trials, a campaign to play through and unlimited challenges with their own track generator so you can play through a new race any time you want. Generated tracks even have their own online leaderboards for you to challenge others.</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="-kcAOGLnoc4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/156cda3c291f59649407e1c00ea8718f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-kcAOGLnoc4" target="_blank">See video</a></div></div>
-<p>From a small 6-person team, the main coder and designer on the game, Sylvain Debaudringhien, is a former amateur racer who was inspired by their time racing bikes and playing retro games for Classic Sport Driving.</p>
-<p>It has a Mostly Positive rating on Steam.</p>
-<p>To celebrate the Linux release it's 20% off until November 11.</p>
-<p><div class="itemdb_embed"><p><strong>Classic Sport Driving</strong> | Release Date: 12th June 2023<p class="plain-list-title">Official links and where to buy from:</p>
-<ul><li><a href="https://store.steampowered.com/app/1267580/Classic_Sport_Driving/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/retro-racing-throwback-classic-sport-driving-adds-linux-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/retro-racing-throwback-classic-sport-driving-adds-linux-support/</guid>
-      <pubDate>Tue, 05 Nov 2024 11:21:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/426377056id25590gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-      <category>Racing</category>
-      
-    </item>
-    
-    <item>
-      <title>SuperTuxKart 1.5 Beta released with a benchmark mode, graphics tweaks and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The free and open source kart racing game SuperTuxKart is gearing up for another release, with SuperTuxKart 1.5 getting a first Beta that needs some testing.</p>
-<p>You gotta love the STK project, it's been going for something around 17 years now, and in the last few years has really made some big improvements. Nice to see it continue on too!</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18606431651730803912gol1.jpg"/></p>
-<p class="plain-list-title">Some highlights of STK 1.5 Beta 1 include:</p>
-<ul>
-<li>Networking improvements.</li>
-<li>A benchmarking mode.</li>
-<li>Blog announcement system in the Online screen.</li>
-<li>Improved audio, especially for headphones.</li>
-<li>Some graphics improvements like:
-	<ul>
-<li>Improvements to Level of Detail (LoD) distances.</li>
-<li>New higher LoD and shadows settings.</li>
-<li>Improved Cascaded Shadow Mapping.</li>
-<li>More graphical effects for legacy video drivers.</li>
-<li>Improved performance for scene node iteration.</li>
-<li>Fix incorrect Screen-Space Reflection shader.</li>
-</ul>
-</li>
-<li>Various improvements to the user interface like letting you select favourite karts and tracks.</li>
-<li>A higher resolution texture for scalable fonts.</li>
-<li>And more in the <a href="https://github.com/supertuxkart/stk-code/blob/master/CHANGELOG.md" rel="noopener nofollow" target="_blank">changelog</a>.</li>
-</ul>
-<p>See more on the <a href="https://supertuxkart.net/Main_Page" rel="noopener nofollow" target="_blank">official website</a>. You can download the stable versions easily via <a href="https://flathub.org/apps/net.supertuxkart.SuperTuxKart" rel="noopener nofollow" target="_blank">Flathub</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/supertuxkart-15-beta-released-with-a-benchmark-mode-graphics-tweaks-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/supertuxkart-15-beta-released-with-a-benchmark-mode-graphics-tweaks-and-more/</guid>
-      <pubDate>Tue, 05 Nov 2024 10:52:25 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/838898993id25589gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Beta</category>
-      
-      <category>Free Game</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Manjaro Linux want your system info with their new data collection tool</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The Manjaro Linux team are asking for testers for their new data collection tool called "Manjaro Data Donor", which they plan to have as opt-out and not opt-in.</p>
-<p>As expected, they are catching some comments from users not particularly happy about their plan to have it hooked up as something you have to opt out of due to privacy concerns. Telemetry is often a bad word to a lot of people, but the reality is that when done correctly it can be truly essential for projects to know where to focus. </p>
-<p>Manjaro developer Roman Gilg said in the <a href="https://forum.manjaro.org/t/testers-needed-manjaro-data-donor/170163" rel="noopener nofollow" target="_blank">announcement</a> that currently they use <a href="https://matomo.org/" rel="noopener nofollow" target="_blank">Matomo</a>, which is pinged via the Network Manager but it's unreliable for various reasons. So they created Manjaro Data Donor (MDD) which gives more information and should be more reliable overall, and they actually have full control over it.</p>
-<p>Currently they just want Manjaro users to test it and give feedback, but eventually it will be hooked up as a systemd service:</p>
-<blockquote>
-<p>In the next few days we’ll do some more testing and if results are positive, I plan on installing it on all Manjaro systems and adding a systemd service to submit the data automatically.</p>
-<p>As a reminder: Right now you have to install MDD manually and there is no systemd service yet.</p>
-<p>With this systemd service later in place, sending the hardware data with MDD will be opt-out because I believe, if you do opt-in, the data you gather will be so heavily skewed you can just leave it be.</p>
-<p>Let me know what you think. I know telemetry is a contentious subject, but we need at least some data about how Manjaro is being used by so many people around the world in order to show that the project has a future and also to plan for that future.</p>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/manjaro-linux-want-your-system-info-with-their-new-data-collection-tool/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/manjaro-linux-want-your-system-info-with-their-new-data-collection-tool/</guid>
-      <pubDate>Tue, 05 Nov 2024 10:24:47 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/manjaro.jpg" type="image/jpeg"/>
-      
-      <category>Distro News</category>
-      
-      <category>Manjaro</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck SteamOS 3.6.20 update released for everyone</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve are acting quickly to clean up some Steam Deck problems from <a href="https://www.gamingonlinux.com/2024/10/steam-deck-steamos-36-officially-out-with-improved-performance-mura-compensation-lots-more/" rel="noopener" target="_blank">the huge SteamOS 3.6 update</a> with a new SteamOS 3.6.20 update released for everyone.</p>
-<p>This time it's just a few bits but all pretty nice to see:</p>
-<blockquote>
-<ul>
-<li>Fixed an issue where the updater could repeatedly revert you to the previous OS version if certain configuration files were user-modified.</li>
-<li>Fixed an issue with taking multiple screenshots if Game Recording is on.</li>
-<li>Improved performance in Metaphor: ReFantazio by up to 20%.</li>
-</ul>
-</blockquote>
-<p><em>From the <a href="https://steamcommunity.com/games/1675200/announcements/detail/4461471496628339025?snr=2___" rel="noopener nofollow" target="_blank">changelog</a>.</em></p>
-<p><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11818539371730746087gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11818539371730746087gol1.jpg"/></a></p>
-<p>Are you currently having issues you want to see solved? What are your biggest problems right now?</p>
-<p>Mine is a small one but still annoying: when docking to my main 4K TV, the performance overlay is absolutely tiny and unreadable. It's a really odd issue, but I would like to see it solved with some proper scaling of the performance overlay. It happens with every dock I've tried including Valve's official dock, multiple from JSAUX to the recently tested <a href="https://www.gamingonlinux.com/2024/11/the-benq-becreatus-gr10-usb4-steam-deck-dock-is-simply-great/" rel="noopener" target="_blank">BenQ beCreatus GR10</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/steam-deck-steamos-3620-update-released-for-everyone/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/steam-deck-steamos-3620-update-released-for-everyone/</guid>
-      <pubDate>Mon, 04 Nov 2024 18:49:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/80621022id25587gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>SteamOS</category>
-      
-    </item>
-    
-    <item>
-      <title>The BenQ beCreatus GR10 USB4 Steam Deck Dock is simply great</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>While a little on the pricey side, the BenQ beCreatus GR10 USB4 Steam Deck Dock is a worthy addition to your arsenal for both at home and while you're on the go. <em>Disclosure: BenQ sent over the device for review, I did not need to send it back.</em></p>
-<p>There's a <em>lot</em> of docks out there now including the official one from Valve, multiple from JSAUX, UGREEN and the list of companies doing them goes on for a while. Valve basically created another little accessory industry here. Most of them are quite similar but BenQ are at least doing something a little <em>different</em>.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4452880041730740182gol1.png"/></p>
-<p class="plain-list-title">It has some nice specifications to begin with including:</p>
-<ul>
-<li>USB4 Type-C cable for device connection. This comes with a removable 90 degree USB-C adaptor already attached.</li>
-<li>USB-C PD charger (input max 100W).</li>
-<li>USB-A Connector (10 Gbps, 4.5W charging) x 2.</li>
-<li>USB-C Connector (10 Gbps, 7.5W charging) x 1.</li>
-<li>2.5 Gigabit Ethernet RJ-45.</li>
-<li>HDMI 2.1 (4K 120Hz/8K 60Hz).</li>
-</ul>
-<p>So with it you get a reasonable amount of ports, that all work great and have a good fit with various connectors. The fun part though? The stand for your devices folds out from it. Making it easy to fold back and pack away for any travels you're doing. A bit of a novelty perhaps, but for anyone who does travel a fair bit, this will make it quite a nice space-saver for docking it wherever you go. The device connection cable also folds away into the device as well keeping it all safe and secure.</p>
-<p>Having the device connector with a removable 90 degree USB-C adaptor is a nice touch too, if you're planning to hook it up to other devices when the stand is folded away, doubling it up as a decent USB HUB for other devices too. BenQ say the beCreatus GR10 will be plug and play across iOS, Android, Windows, macOS, and Linux devices.</p>
-<p>BenQ certainly aren't the first to have a stand that you pull out, I believe JSAUX got there first with their RGB Docking Station, but that's a little flimsy feeling and wobbly as it does not sit flat as there's a gap under it. Not a problem at here, as the designers at BenQ made sure the foldable stand actually folds out flat onto the surface. So it feels a lot sturdier than the competition. The build quality overall is fantastic too. Feels solid and looks nice while staying out of your way — not much more is needed than that.</p>
-<p>Other docks I've looked at before had ports that were a bit overly snug when connecting / disconnecting wires, which I'm pleased to say is not a problem here at all. The cuts for the ports are as snug as they should be, but not where it may cause issues.</p>
-<p>I've been testing this constantly for about a week and a half now, and I haven't had a single problem with it. While I only have a Steam Deck to test with it, BenQ note it will fit and work well with other handhelds too including the ROG Ally, MSI Claw and the Legion Go thanks to the spacious 21.5mm size of the foldable stand.</p>
-<p>You can see their own video on it below:</p>
-<div class="hidden_video" data-video-id="mlcIJgcMIyE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6e7010d6b59efe8c5c66dedf6785de78.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/mlcIJgcMIyE" target="_blank">See video</a></div></div>
-<p>The only downsides really are the <em>price</em> and <em>shipping</em>. At $109 it's a bit more than most other docks, and it seems they're only shipping in the USA right now. For the price though you get rather nice specifications and the useful foldable stand that sits nicely. I'll also say personally I think it's a bit <em>silly</em> that BenQ so prominently list 120Hz and 4K for it, despite the Steam Deck not performing well at 4K for really anything. But hey, that's great for other uses!</p>
-<p>Overall this is easily one of the nicest docks I've had for review and I've been through quite a few now. For me personally it's going to be my own go-to for when travelling between places, which I actually do a fair bit of recently, so it came at a good time. And it actually works <em>better</em> than Valve's official dock, which I still at times have issues with displaying on my main TV whereas this as it should — just works. You don't get a better recommendation than that right?</p>
-<p>This is a premium dock with the price, build quality and ease of use to match with the added bonus of being good for travel. If you have yet to get a dock for your handheld, or you're looking for a <em>better</em> one, the BenQ beCreatus GR10 would be a great purchase that I'll happily recommend.</p>
-<p>More info on <a href="https://www.benq.com/en-us/docks-hubs/becreatus-dock/gr10.html" rel="noopener nofollow" target="_blank">their website</a>, <a href="https://www.benq.com/en-us/docks-hubs/becreatus-dock/gr10/buy.html" rel="noopener nofollow" target="_blank">their store page</a> also on <a href="https://www.amazon.com/dp/B0D2H8FJD1?th=1" rel="noopener nofollow" target="_blank">Amazon</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/the-benq-becreatus-gr10-usb4-steam-deck-dock-is-simply-great/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/the-benq-becreatus-gr10-usb4-steam-deck-dock-is-simply-great/</guid>
-      <pubDate>Mon, 04 Nov 2024 17:44:18 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2099423088id25586gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>Review</category>
-      
-    </item>
-    
-    <item>
-      <title>STAR WARS: Bounty Hunter, High On Life and more going cheap in this Fanatical Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Fanatical have another pretty good deal live with the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-supreme-collection?ref=gol" rel="noopener nofollow" target="_blank">Build your own Supreme Collection (Winter 2024) Bundle</a>. Good compatibility for Linux / Steam Deck too.</p>
-<p>You can get 2 + Games for £12.50 per item, 3 + Games for £12.00 per item and 5 + Games for £11.00 per item making some of them cheaper than they've ever been before. I'll go through and individually list the expected compatibility on Steam Deck and Linux desktop, using any <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> rating if there is one and noting any Native Linux versions available. Plus each is a Steam link, so you can go see more info on each if you need to.</p>
-<p>Here's what you can get:</p>
-<p class="plain-list-title"><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</strong></p>
-<ul>
-<li><a href="https://store.steampowered.com/app/2419090/STAR_WARS_Bounty_Hunter/" rel="noopener nofollow" target="_blank">STAR WARS: Bounty Hunter</a> (ProtonDB Platinum)</li>
-<li class="plain-list-title"><a href="https://store.steampowered.com/app/1583230" rel="noopener nofollow" target="_blank">High On Life: DLC Bundle</a> (ProtonDB Platinum):
-	<ul>
-<li>High On Life</li>
-<li>High On Life: High On Knife</li>
-</ul>
-</li>
-<li><a href="https://store.steampowered.com/app/1475810" rel="noopener nofollow" target="_blank">Ghostwire: Tokyo - Deluxe Edition</a> (ProtonDB Gold)</li>
-<li><a href="https://store.steampowered.com/app/1983260" rel="noopener nofollow" target="_blank">Dungeons of Hinterberg</a> (ProtonDB Platinum)</li>
-<li><a href="https://store.steampowered.com/app/2067050" rel="noopener nofollow" target="_blank">Squirrel with a Gun</a> (ProtonDB Platinum)</li>
-<li><a href="https://store.steampowered.com/app/1887840" rel="noopener nofollow" target="_blank">Another Crab's Treasure</a> (ProtonDB Platinum)</li>
-<li><a href="https://store.steampowered.com/app/1660840/Wild_Bastards/" rel="noopener nofollow" target="_blank">Wild Bastards</a></li>
-<li><a href="https://store.steampowered.com/app/1309620" rel="noopener nofollow" target="_blank">Bears In Space</a></li>
-<li><a href="https://store.steampowered.com/app/1689500" rel="noopener nofollow" target="_blank">Dune: Imperium</a> (ProtonDB Gold)</li>
-</ul>
-<p class="plain-list-title"><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> <strong>Steam Deck Playable</strong></p>
-<ul>
-<li><a href="https://store.steampowered.com/app/1681430" rel="noopener nofollow" target="_blank">RoboCop: Rogue City</a> (ProtonDB Gold)</li>
-<li><a href="https://store.steampowered.com/app/1272320" rel="noopener nofollow" target="_blank">Diplomacy is Not an Option</a> (ProtonDB Platinum)</li>
-<li><a href="https://store.steampowered.com/app/2486740" rel="noopener nofollow" target="_blank">Sledders</a> (ProtonDB Gold)</li>
-</ul>
-<p class="plain-list-title"><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> <strong>Steam Deck Unsupported</strong></p>
-<ul>
-<li><a href="https://store.steampowered.com/app/1531540/Distant_Worlds_2/" rel="noopener nofollow" target="_blank">Distant Worlds 2</a> (ProtonDB Silver)</li>
-</ul>
-<p class="plain-list-title"><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> <strong>Unrated</strong></p>
-<ul>
-<li><a href="https://store.steampowered.com/app/1415220/Its_Only_Money/" rel="noopener nofollow" target="_blank">It's Only Money</a> (ProtonDB Silver)</li>
-<li><a href="https://store.steampowered.com/app/1674920" rel="noopener nofollow" target="_blank">Sovereign Syndicate</a> (ProtonDB Silver)</li>
-<li><a href="https://store.steampowered.com/app/2289390" rel="noopener nofollow" target="_blank">Crab God</a> (ProtonDB Gold)</li>
-</ul>
-<p><em>PAYDAY 3 and Akimbot are sadly sold out at time of writing so not listing.</em></p>
-<p>Check out the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-supreme-collection?ref=gol" rel="noopener nofollow" target="_blank">bundle here to purchase</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/star-wars-bounty-hunter-high-on-life-and-more-going-cheap-in-this-fanatical-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/star-wars-bounty-hunter-high-on-life-and-more-going-cheap-in-this-fanatical-bundle/</guid>
-      <pubDate>Mon, 04 Nov 2024 13:37:14 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/48474977id25585gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Fanatical</category>
-      
-      <category>Game Bundle</category>
-      
-    </item>
-    
-    <item>
-      <title>Half-Life 3 fan game Project Borealis: Prologue gets a Steam page - due out soon</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Project Borealis is finally coming to Steam, to give you a taste of what Half-Life 3 or Half-Life 2: Episode 3 could have been. A good time to do so, since we're coming up on the 20th anniversary of Half-Life 2.</p>
-<p>Created by a bunch of passionate fans they aim to give you a proper conclusion to Valve's popular FPS series. Built with Unreal Engine 5 they aim to create a faithful recreation of iconic Half-Life 2, although with plenty of upgrades. This is only a Prologue though, which is basically a demo.</p>
-<p>I missed it but they did release a teaser trailer back in September:</p>
-<div class="hidden_video" data-video-id="dwdjgE74-98"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/59783061bf438aa945bb6652c9d53f88.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/dwdjgE74-98" target="_blank">See video</a></div></div>
-<p>More about it:</p>
-<blockquote>
-<p><strong>The Legacy Continues</strong></p>
-<p>Inspired by the epic cliffhanger from Half-Life 2: Episode Two, Project Borealis represents a fan-made effort to realize a cohesive story conclusion to the episodic series. This prologue chapter invites players back into the HEV suit of Gordon Freeman, offering a glimpse into the next chapter of his journey.</p>
-<p><strong>A Familiar Yet Different World</strong></p>
-<p>Step into a Ravenholm transformed by time and the elements. The once-familiar town now lies buried under a blanket of snow, hiding the past and new present dangers beneath its pristine surface. As you navigate through this hauntingly beautiful landscape, you'll encounter some classic enemies reimagined and completely new secrets hidden within.</p>
-</blockquote>
-<p>The developers say it will be a "condensed, standalone game experience showcasing an early look and feel of the upcoming full Project Borealis game" with an original score to accompany it.</p>
-<p><div class="itemdb_embed"><p><strong>Project Borealis: Prologue</strong><p class="plain-list-title">Official links and where to buy from:</p>
-<ul><li><a href="https://store.steampowered.com/app/2215490/Project_Borealis_Prologue/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/half-life-3-fan-game-project-borealis-prologue-gets-a-steam-page-due-out-soon/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/half-life-3-fan-game-project-borealis-prologue-gets-a-steam-page-due-out-soon/</guid>
-      <pubDate>Mon, 04 Nov 2024 12:48:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2142045106id25584gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>FPS</category>
-      
-      <category>Steam</category>
-      
-      <category>Unreal Engine</category>
       
     </item>
     
