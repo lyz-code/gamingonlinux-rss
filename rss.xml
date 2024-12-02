@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-12-01 07:29:45.330214</pubDate>
+    <pubDate>2024-12-02 07:32:04.148403</pubDate>
 
     
     <image>
@@ -18,6 +18,234 @@
     </image>
 
     
+    
+    <item>
+      <title>Proton 9.0-4 Beta updated with more game fixes needing testing on Steam Deck / Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://www.gamingonlinux.com/2024/11/huge-new-proton-9-0-4-update-for-steam-deck-linux-now-in-need-of-testing/" rel="noopener" target="_blank">Recently I covered the huge Proton 9.0-4 update</a> for Steam Deck and Desktop Linux hitting the Release Candidate stage and there's been a couple of changes.</p>
+<p>It's not released for everyone yet as you still need to manually opt into the Beta on Proton 9.0 to test. Valve developers are looking for feedback on any issues that you <em>don't</em> see in the current stable Proton 9.0-3.</p>
+<p class="plain-list-title">Since the initial Beta Valve added / changed:</p>
+<ul>
+<li>vkd3d-proton update to include a Cyberpunk 2077 performance <a href="https://github.com/HansKristian-Work/vkd3d-proton/issues/2215" rel="noopener nofollow" target="_blank">regression fix</a>.</li>
+<li>The fix for no audio being played while Microsoft Flight Simulator displays developers logos has been <em>removed</em>. It causes regressions with other games when included without some extra work that's Proton Experimental only for now. The fix is still available via Proton Experimental.</li>
+<li>Fixed Hell Let Loose crashing when joining a server after a recent game update.</li>
+<li>Included a DXVK <a href="https://github.com/doitsujin/dxvk/commit/d96fa54080320e9b63227e76124ffa50a927ced2" rel="noopener nofollow" target="_blank">regression fix</a> for RaceRoom Racing Experience.</li>
+</ul>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3396577611733058579gol1.jpg"/><br/>
+<em>Pictured - Hell Let Loose</em></p>
+<p>A note: before people reading get excited about "NVIDIA Optical Flow API and DLSS 3 Frame Generation" mentioned below, remember Proton is for Desktop Linux as well as Steam Deck. It doesn't mean anything special for Steam Deck.</p>
+<p class="plain-list-title">Below is the current full list of changes included:</p>
+<ul>
+<li>Now playable:
+	<ul>
+<li>APB Reloaded</li>
+<li>Conqueror's Blade</li>
+<li>Disgaea 4 Complete+</li>
+<li>Hard Chip Demo</li>
+<li>ScarQuest</li>
+<li>Sniper Elite: Nazi Zombie Army 2 (AMD GPUs only)</li>
+<li>Test Drive Unlimited Solar Crown</li>
+<li>Total War: SHOGUN 2</li>
+<li>Warhammer 40k: Space Marine 2 (requires disabled Steam Overlay)</li>
+<li>Welcome to Dustown</li>
+</ul>
+</li>
+<li>Fixed Hell Let Loose crashing when joining a server after a recent game update.</li>
+<li>Fixed Final Fantasy XVI having low FPS due to excessive DLL lookup.</li>
+<li>Fixed Final Fantasy XVI not showing displays in settings.</li>
+<li>Fixed keyboard input in Rivals of Aether II.</li>
+<li>Fixed Chromacell crashing on launch on AMD GPUs.</li>
+<li>Added support for NVIDIA Optical Flow API and DLSS 3 Frame Generation.</li>
+<li>Fixed Dragon Age: The Veilguard displaying a warning about being installed on a spinning drive.</li>
+<li>Fixed Crazy Taxi randomly crashing when starting a game.</li>
+<li>Added a warning in Proton logs when running on system with low <a href="https://github.com/ValveSoftware/Proton/wiki/Requirements#increasing-the-maximum-number-of-memory-map-areas-a-process-may-have" rel="noopener nofollow" target="_blank">max_map_count</a>.</li>
+<li>Fixed single player game not working in Star Wars - Jedi Knight II: Jedi Outcast.</li>
+<li>Fixed Hard Reset Redux and Shadow Warrior crashing with AMD GPUs.</li>
+<li>Fixed Skull and Bones not exiting cleanly on systems with Nvidia GPUs.</li>
+<li>Fixed Dark and Darker not being playable after a game update.</li>
+<li>Fixed EA Desktop App setup not being configurable.</li>
+<li>Improved video playback in March of Empires and Devil May Cry 3 Special Edition.</li>
+<li>Fixed trigger buttons not registering in I Expect You To Die.</li>
+<li>Fixed Proton 9.0 regressions:
+	<ul>
+<li>Multiplayer works again in Hotshot Racing.</li>
+<li>Fablecraft is playable again.</li>
+<li>I Expect You To Die is playable again.</li>
+<li>Star Wars: Knights of the Old Republic no longer launches to a black screen when in fullscreen mode.</li>
+<li>Marlow Briggs and the Mask of Death is playable again.</li>
+<li>B-17 Flying Fortress - The Mighty 8th: Redux is playable again.</li>
+<li>Games now launch on the correct screen on setups with multiple monitors connected to multiple GPUs.</li>
+</ul>
+</li>
+<li>Fixed Yakuza 3 and Yakuza 4 not being playable on some setups.</li>
+<li>Fixed Yakuza 6 crash when trying playing Puyo Puyo mini-game.</li>
+<li>Fixed Knowledge, or know Lady crashing about 10 minutes after launch.</li>
+<li>Fixed multiplayer in SpellForce 3: Versus Edition.</li>
+<li>Fixed font rendering in SpellForce 3: Versus Edition.</li>
+<li>Fixed mod support in DOOM Eternal.</li>
+<li>Fixed Mary Skelter 2 stuttering on launch.</li>
+<li>Fixed The Finals not starting with non-English locale.</li>
+<li>Fixed Traditional Chinese font rendering in Mashiroiro Symphony HD -Sana Edition-.</li>
+<li>Fixed Korean input in Diablo IV.</li>
+<li>Fixed newer Unreal Engine games trying to install redistributables on each launch.</li>
+<li>Fixed Astral Ascent hanging when unplugging a controller.</li>
+<li>Fixed playback of videos in The Curse of Brotherhood.</li>
+<li>Fixed controller support in Clash for Crust.</li>
+<li>Fixed FPS drops in Red Dead Redemption 2 when keys are pressed.</li>
+<li>Fixed Hunt: Showdown 1896 failing to start after a recent game update.</li>
+<li>Fixed full screen in Dog Brew on Steam Deck.</li>
+<li>Fixed support for BattleServer in Age of Empires II: Definitive Edition.</li>
+<li>Fixed voice chat in For Honor and UNO.</li>
+<li>Fixed Proton not setting priorities correctly for new threads.</li>
+<li>Fixed Unreal Engine Crash Report Client not launching properly.</li>
+<li>Improved loading times in Pharaoh Rebirth+.</li>
+<li>Enabled Xalia for MultiVersus - prerequisite installation can now be done with a controller.</li>
+<li>Updated Xalia to <a href="https://github.com/madewokherd/xalia/releases/tag/xalia-0.4.4" rel="noopener nofollow" target="_blank">0.4.4</a> and enabled it for Trackmania United Forever, Trackmania Nations Forever, Oddworld: Stranger's Wrath HD, Fallout: New Vegas, and WARRIORS ALL-STARS.</li>
+<li>Updated Wine Mono to <a href="https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-9.3.1" rel="noopener nofollow" target="_blank">9.3.1</a>.</li>
+<li>Updated dxvk to <a href="https://github.com/doitsujin/dxvk/releases/tag/v2.5.1" rel="noopener nofollow" target="_blank">v2.5.1</a> + <a href="https://github.com/doitsujin/dxvk/commit/d96fa54080320e9b63227e76124ffa50a927ced2" rel="noopener nofollow" target="_blank">a regression fix</a>.</li>
+<li>Updated dxvk-nvapi to <a href="https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.7.1" rel="noopener nofollow" target="_blank">v0.7.1</a>-94-g<a href="https://github.com/jp7677/dxvk-nvapi/commits/afb59a8e841b0ad561250327eb6a370b925c5f03/" rel="noopener nofollow" target="_blank">afb59a8e841b</a>.</li>
+<li>Updated vkd3d-proton to <a href="https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.13" rel="noopener nofollow" target="_blank">v2.13-241</a>-g<a href="https://github.com/HansKristian-Work/vkd3d-proton/commits/4fd7d3ab3d35/" rel="noopener nofollow" target="_blank">4fd7d3ab3d35</a>.</li>
+<li>Updated vkd3d-shader to <a href="https://gitlab.winehq.org/wine/vkd3d/-/releases/vkd3d-1.14" rel="noopener nofollow" target="_blank">vkd3d-1.14</a> + <a href="https://github.com/ValveSoftware/vkd3d/commit/function-overload-hack-2024-11-21" rel="noopener nofollow" target="_blank">a hack</a>.</li>
+</ul>
+<p>More info on the <a href="https://github.com/ValveSoftware/Proton/issues/8268" rel="noopener nofollow" target="_blank">GitHub post</a>.</p>
+<p><em>Don't forget <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our new anti-cheat page</a> to check compatibility. More info in the <a href="https://www.gamingonlinux.com/forum/topic/6277/" rel="noopener" target="_blank">forum</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/proton-90-4-beta-updated-with-more-game-fixes-needing-testing-on-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/proton-90-4-beta-updated-with-more-game-fixes-needing-testing-on-steam-deck-linux/</guid>
+      <pubDate>Sun, 01 Dec 2024 13:11:10 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/57961657id25761gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Beta</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Here&#39;s the most played Steam Deck games for November 2024</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another month down and we're closing in on the festive period, so here's a look back at what's been popular on Steam Deck during November 2024.</p>
+<p>Not really surprising what's number 1 again here! Vampire Survivors takes back the top spot thanks to the <a href="https://www.gamingonlinux.com/2024/10/vampire-survivors-ode-to-castlevania-is-out-now-and-its-a-huge-expansion/" rel="noopener" target="_blank">recent Ode to Castlevania release</a>.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19655722211733057877gol1.jpg"/><br/>
+<em>Pictured - Vampire Survivors: Ode to Castlevania</em></p>
+<p class="plain-list-title">Using Valve's official stats these were the most played from top to bottom:</p>
+<ol>
+<li><a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/" rel="noopener nofollow" target="_blank">Vampire Survivors</a></li>
+<li><a href="https://store.steampowered.com/app/2379780/Balatro/" rel="noopener nofollow" target="_blank">Balatro</a></li>
+<li><a href="https://store.steampowered.com/app/413150/Stardew_Valley/" rel="noopener nofollow" target="_blank">Stardew Valley</a></li>
+<li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" rel="noopener nofollow" target="_blank">Baldur's Gate 3</a></li>
+<li><a href="https://store.steampowered.com/app/1942280/Brotato/" rel="noopener nofollow" target="_blank">Brotato</a></li>
+<li><a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/" rel="noopener nofollow" target="_blank">The Binding of Isaac: Rebirth</a></li>
+<li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" rel="noopener nofollow" target="_blank">Cyberpunk 2077</a></li>
+<li><a href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/" rel="noopener nofollow" target="_blank">Hogwarts Legacy</a></li>
+<li><a href="https://store.steampowered.com/app/2679460/Metaphor_ReFantazio/" rel="noopener nofollow" target="_blank">Metaphor: ReFantazio</a></li>
+<li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" rel="noopener nofollow" target="_blank">ELDEN RING</a></li>
+<li><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" rel="noopener nofollow" target="_blank">Red Dead Redemption 2</a></li>
+<li><a href="https://store.steampowered.com/app/2344520/Diablo_IV/" rel="noopener nofollow" target="_blank">Diablo IV</a></li>
+<li><a href="https://store.steampowered.com/app/220/HalfLife_2/" rel="noopener nofollow" target="_blank">Half-Life 2</a></li>
+<li><a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" rel="noopener nofollow" target="_blank">Skyrim Special Edition</a></li>
+<li><a href="https://store.steampowered.com/app/1145350/Hades_II/" rel="noopener nofollow" target="_blank">Hades II</a></li>
+<li><a href="https://store.steampowered.com/app/646570/Slay_the_Spire/" rel="noopener nofollow" target="_blank">Slay the Spire</a></li>
+<li><a href="https://store.steampowered.com/app/1145360/Hades/" rel="noopener nofollow" target="_blank">Hades</a></li>
+<li><a href="https://store.steampowered.com/app/582010/Monster_Hunter_World/" rel="noopener nofollow" target="_blank">Monster Hunter: World</a></li>
+<li><a href="https://store.steampowered.com/app/2321470/Deep_Rock_Galactic_Survivor/" rel="noopener nofollow" target="_blank">Deep Rock Galactic: Survivor</a></li>
+<li><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" rel="noopener nofollow" target="_blank">The Witcher 3: Wild Hunt</a></li>
+</ol>
+<p></p>
+<p>I'm guilty for adding to Diablo IV even though I own it on Battlenet. The convenience Steam offers is just so much better than other stores and launchers. I forget to ever look at Battlenet, and having it on Steam makes it one-click on both Steam Deck and Desktop Linux.</p>
+<p>Also, if you're looking to grab a new game, I've listed some really good <a href="https://www.gamingonlinux.com/2024/11/best-cheap-steam-deck-linux-games-in-the-steam-autumn-sale-2024/" rel="noopener" target="_blank">cheap stuff for Steam Deck in the Steam Autumn Sale</a>. There's also the latest <a href="https://www.gamingonlinux.com/2024/11/the-latest-from-prime-gaming-november-29-edition-more-for-steam-deck-linux/" rel="noopener" target="_blank">games to claim with Amazon Prime</a> and an excellent <a href="https://www.gamingonlinux.com/2024/11/the-raw-fury-humble-bundle-is-an-awesome-deal-with-11-steam-deck-verified-games/" rel="noopener" target="_blank">Raw Fury Humble Bundle</a>.</p>
+<p><em>Don't forget <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our new anti-cheat page</a> to check compatibility. More info in the <a href="https://www.gamingonlinux.com/forum/topic/6277/" rel="noopener" target="_blank">forum</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/heres-the-most-played-steam-deck-games-for-november-2024/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/heres-the-most-played-steam-deck-games-for-november-2024/</guid>
+      <pubDate>Sun, 01 Dec 2024 12:59:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1280042993id25760gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Listicle</category>
+      
+      <category>Misc</category>
+      
+      <category>Round-up</category>
+      
+    </item>
+    
+    <item>
+      <title>Free &amp; open source RPG &#39;Veloren&#39; update compilation - weeks 233 to 241</title>
+      <author>nwildner</author>
+      <description><div class="content group e-content">
+<p>As usual, this is a compilation series from recent updates provided at the<a href="https://veloren.net/" rel="noopener nofollow" target="_blank"> Veloren</a> blog, the free and open source voxel action-adventure RPG and a follow-up with compiled information from the "Two/Three Weeks in Veloren series”. Please also visit the Veloren blog for a more detailed view of these items.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9574727081733056012gol1.jpg"/></p>
+<p>Since the Merged section on this compilation series tends to be the biggest one, I’ll group relevant updates into logical groups. Here they go:</p>
+<p><strong>Merged</strong>:</p>
+<ul>
+<li><strong>Gameplay</strong>: Finisher combo fixes, debuff balancing, learnable recipes, hammer balancing, fix for the give command, multiple sword animation updates, single player server name and invites, fixed black minimap bug, fixed crash on server list removal, chat clear command, trade request limitations, trading fixes, spellbook renamed to diary, better recipe tooltips, <strong><em>Hardcore characters</em></strong>,<code class="inline-code"> /spot</code> command to search for locations without teleporting to them, <a href="https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/241/glider_course.mp4" rel="noopener nofollow" target="_blank">procedural glider courses</a>, stealing items owned by villagers will trigger insatisfaction from them, some farm plots implemented.</li>
+<li><strong>Mobs</strong>: Rock Snapper attacks, Gnarling attacks speed fixes, world boss AI fixes, large bird route fixes, harvester, wood golem and chieftain rework, arthropod animation restructuring, Hydra 🐲🐲🐲 mob, transform on death effect for multi-stage bosses!, multiple minor mobs added(goblins, legooms, cactid, etc).</li>
+<li><strong>Items</strong>: Curious potion naming more consistent, wood log price fixes, item image export fixes, armor pricing, recipe pricing, charm recipes in crafting, display learned recipes, fix modular weapons crafting instruction text flow, freezing potion and effect cancelling, more detailed potion descriptions, <a href="https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/240/golemite.webp" rel="noopener nofollow" target="_blank">golemite armor set</a>,</li>
+<li><strong>Audio and Visual</strong>: New chest models, animation restructuring, multiple animation fixes, vertical scaling crash fix, new noise patterns, recommend OpenGL instead of DX11 in panic message, repair UI rework, fix of UI flickering in crafting, fix wrong button highlight in interface settings, remove help window, chat message length limits, proper ring initialization and assets manager update, beam collisions now make <a href="https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/240/particle_collisions.mp4" rel="noopener nofollow" target="_blank">raycast particles</a> adding some visual eye candy for beams, towns now have nice themed airshipper dock but captains haven’t learned how to actually land them, audio framework swap from Rodio to Kira because the later is a more polished product feature and bug wise, water splashes and river particles.</li>
+<li><strong>Dungeons</strong>: Cultist dungeon tool balancing, Shagin dungeon fixes, repair button activeness, Vampire dungeon merged, reworked Myrmidon dungeon implemented.</li>
+<li><strong>Rust and toolchain</strong>: Multiple fixes for newer toolchains, plugin load optimization and Rust nightly, RustTLS update, kiddo, hyper and dependency updates, partial archive upgrades in airshipper, c<code class="inline-code">md_doc_gen</code> update</li>
+<li><strong>OS</strong>: Multiple macOS fixes, Windows build fixes, correcting the NixOS Wiki link</li>
+<li><strong>i18n</strong>: Internationalization of prompt dialogs, updated translations, translation script fixes, localize item amount, localize skill window texts, localization of pseudo recipes, translatable message on give_item, removal of unused translation keys, command description translation, control window translation,</li>
+<li><strong>Others:</strong> Vroom admin glider with jet propulsion, Multiple changes made due to recent moderation incidents (check <a href="https://veloren.net/blog/devblog-241/" rel="noopener nofollow" target="_blank">Week 241 blog</a>).</li>
+</ul>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16237103401733056146gol1.jpg"/><br/>
+<em>Admins now go Vroom.</em></p>
+<p><strong>Ongoing improvements </strong>(not merged yet):</p>
+<ul>
+<li><strong>Gameplay</strong>: Multiple gamepad bindings updates being worked, parrying, sword animations, melee combo recovery fixes, moon phases, armor balancing and scaling, NPC animation in plugins, some NPC going to bed at night, adding beds to houses, glider courses and loops for flying challenges, stopping beams at terrain level, farming, entity to terrain tethers (grappling hook), improved climbing, hired NPCs in groups and vampire castle.</li>
+<li><strong>Mobs</strong>: Menacing AI, Five Gigas,</li>
+<li><strong>Items</strong>: New potions and potion rework, bow rework,</li>
+<li><strong>Audio and Visual</strong>: Repair UI overhaul, updated fence(gate) sprite, creating a consistent set of themed sprite variants for all town kinds, pumpkin sprites update.</li>
+<li><strong>Dungeons</strong>:Mage tower, Sewer Styled dungeon</li>
+<li><strong>Rust and toolchain: </strong>Winit update, Web tokens.</li>
+<li><strong>Others</strong>: Updated contribution guidelines, Moderation database,</li>
+</ul>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16380549781733056255gol1.jpg"/></p>
+<p><strong>Developing improvements </strong>(under heavy development or still under discussion on Discord/Gitlab):</p>
+<ul>
+<li>Support for Feral <a href="https://github.com/FeralInteractive/gamemode" rel="noopener nofollow" target="_blank">GameMode</a> and <a href="https://github.com/flightlessmango/MangoHud" rel="noopener nofollow" target="_blank">MangoHUD</a> built into airshipper (the game launcher).</li>
+<li>Admin glider looks like an accelerating glider (resembling a small turbine + airplane).</li>
+<li>Plans to add NPC sleeping habits, and <a href="https://gitlab.com/veloren/veloren/-/issues/1987" rel="noopener nofollow" target="_blank">make houses accessible</a> to them.</li>
+<li>Unfortunate issues with TLS QUIC and RusTLS as per <a href="https://discord.com/channels/449602562165833758/1248917700776820827/1248917706149728296" rel="noopener nofollow" target="_blank">this thread</a>.</li>
+<li><a href="https://wiki.veloren.net/wiki/Recipes" rel="noopener nofollow" target="_blank">Wiki page</a> for learnable recipes.</li>
+<li>Partial downloads work was resumed. <a href="https://discord.com/channels/449602562165833758/1249833646303612948/1249835413972193423" rel="noopener nofollow" target="_blank">Thread 1</a> and <a href="https://discord.com/channels/449602562165833758/956026926936490014/956644870607495228" rel="noopener nofollow" target="_blank">thread 2</a> with more details. Differential updates were implemented with a fallback to full downloads and you should definitely check <a href="https://veloren.net/blog/devblog-237/" rel="noopener nofollow" target="_blank">Week 237 blog entry</a>, subtitle “Airshipper Partial download”.</li>
+<li>Ongoing work on glider courses.</li>
+<li>A strong disagreement that started with a discussion about instruments and sounds led to a spiralled misunderstanding, misattribution and hurt feelings between long term developers. It is an unfortunate event, but this conflict lead to the creation of a consensus with multiple statements regarding resolution of such situations. Please read the entire content of these tips at the <a href="https://veloren.net/blog/devblog-235/" rel="noopener nofollow" target="_blank">Week 235 blog entry</a>, subtitle “Helpful tips and things to know for contributors”.</li>
+<li><a href="https://www.youtube.com/watch?v=TkSj9zjyeBs" rel="noopener nofollow" target="_blank">Necti</a> and <a href="https://www.youtube.com/watch?v=9Gdrp0_r8kA" rel="noopener nofollow" target="_blank">unii</a> contributors created YouTube guides on how to solo the Mindflayer boss.</li>
+<li>Sewer dungeons being worked on.</li>
+<li><a href="https://discord.com/channels/449602562165833758/851517587337773056/1279524018478907463" rel="noopener nofollow" target="_blank">Farming lands around</a> towns are being reworked.</li>
+</ul>
+<p><strong>Airshipper server queries:</strong></p>
+<p>This is a huge one that deserved its own topic here since it also features an entire <a href="https://veloren.net/blog/query-serverbrowser-announce/" rel="noopener nofollow" target="_blank">blog entry</a>.</p>
+<p>Player counts is a long-requested feature in the server browser section of Airshipper. Now, the query server allows for clients to query status information about servers more easily displaying accurate ping information, player count, version information and global battlemode. There is a bit of manual work required for server owners to enable that on existing servers, and if you own a Veloren server, please check out the following issue on Gitlab: <a href="https://gitlab.com/veloren/serverbrowser/-/issues/103" rel="noopener nofollow" target="_blank">List of servers without a query port</a>.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20866808671733056365gol1.jpg"/></p>
+<p><strong>Source</strong>: Compilation of the "<a href="https://veloren.net/blog/" rel="noopener nofollow" target="_blank">Two Weeks In Veloren</a>" blog series, weeks 233 to 241.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/free-open-source-rpg-veloren-update-compilation-weeks-233-to-241/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/free-open-source-rpg-veloren-update-compilation-weeks-233-to-241/</guid>
+      <pubDate>Sun, 01 Dec 2024 12:34:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1369512237id25759gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>Open Source</category>
+      
+      <category>Open World</category>
+      
+    </item>
     
     <item>
       <title>Best cheap Steam Deck / Linux games in the Steam Autumn Sale 2024</title>
@@ -5551,126 +5779,6 @@ manner.</p>
       <category>FPS</category>
       
       <category>Free Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Old School Rally gets split-screen support, new stages and a new car</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Old School Rally is properly awesome. Bringing back some fond memories for me of playing Colin McRae Rally on the original PlayStation and now it just got a whole lot better. It's Steam Deck Verified and runs great on Linux with the latest Proton 9.0-3.</p>
-<p>The big addition in the latest update is split-screen support! So now you can challenge friends locally or via Steam Remote Play that's supported for it.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8500596601731585431gol1.jpg"/></p>
-<p>Also in this release is a new vehicle with the Pada B82, that's "Inspired by one of the best-selling cars in the history of automobile". Plus new stages: Arizona SS1, United Kindom SS1, and two new variants of fan-favourite tracks from Finland and Sweden.</p>
-<p>On top of that there's new S-Class rally events added in to play through, a new foggy weather effect, five new music tracks, improved support for steering wheels, wipers will show up in cockpit view for rainy weather, new collectables to unlock and of course bug fixes. </p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11090195021731585730gol1.jpg"/></p>
-<p>Loving watching this one progress. It's in Early Access so there's more content to come.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/40443">Old School Rally</a></strong><p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/2824660/Old_School_Rally/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/old-school-rally-gets-split-screen-support-new-stages-and-a-new-car/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/old-school-rally-gets-split-screen-support-new-stages-and-a-new-car/</guid>
-      <pubDate>Thu, 14 Nov 2024 12:02:18 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2097615957id25659gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Godot Engine 4.4 dev 4 released with interactive in-game editing</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>An exciting new feature for game developers has begun to land in the free and open source Godot Engine, with the start of interactive in-game editing.</p>
-<p>Coming in Godot 4.4 which just had a 4th developer preview released, this feature lets developers more easily debug an actual running game. Instead of me trying to explain it poorly as a non-dev though, here's what they said about it:</p>
-<blockquote>
-<p>One of the most requested features is the ability to debug the running game from within the editor including pausing the game, clicking on elements within the scene, and embedding the running game window inside the editor. Dev4 comes with the first two of these workflows thanks to the contribution from <a href="https://github.com/YeldhamDev" rel="noopener nofollow" target="_blank">YeldhamDev</a> of Lone Wolf Technology &amp; W4 Games, users are now able to explore their project’s world freely!</p>
-<p>The actual embedding of the game window into the editor will come later in a subsequent PR.</p>
-<p>Check out the PR (<a href="https://github.com/godotengine/godot/pull/97257" rel="noopener nofollow" target="_blank">GH-97257</a>) and the video below to see exactly what this change enables.</p>
-</blockquote>
-<p>According to the PR noted above this includes:</p>
-<blockquote>
-<ul>
-<li>Selection of 2D/3D nodes at runtime, this includes anything that has collisions or some sort of visual representation. When a node is selected, a selection box will appear around it and it will be opened in the inspector.</li>
-<li>Suspend mode. This is a middle ground between in-game pausing and the editor's break feature. When this mode is enabled, it allows node selection, and frame skipping.</li>
-<li>Next frame. This allows the game to run one frame at the time when the it's suspended.
-	<ul>
-<li><em>Production edit: This closes <a href="https://github.com/godotengine/godot-proposals/issues/3105" rel="noopener nofollow" target="_blank">Add a keyboard shortcut to perform frame-by-frame stepping when running a project from the editor  godot-proposals#3105</a>.</em></li>
-</ul>
-</li>
-<li>2D/3D camera override. The camera manipulation can come from within the game, or the 2D and 3D editors.</li>
-</ul>
-</blockquote>
-<p>And a little video they included to show it off a bit:</p>
-<div class="ckeditor-html5-video" style="text-align: center;">
-<video controls="controls" loop="loop" src="https://uploads.golmedia.net/uploads/articles/article_media/19557003511731583880gol1.mp4"></video>
-</div>
-<p>There's some other really nice sounding features added into Godot as well with this release including ubershaders and pipeline pre-compilation. The result is two big improvements:</p>
-<blockquote>
-<ol>
-<li>Ubershaders: a technique that allows us to completely avoid shader stutter when objects are viewed in a scene for the first time</li>
-<li>Dedicated transfer queues: by relying on special hardware functions we can dramatically improve the load time for scenes containing many graphics assets like meshes and textures.</li>
-</ol>
-</blockquote>
-<p>So future games made with at least Godot 4.4 should see some real nice performance improvements there. Not just for players, but for developers as well since the previous dev3 release also had a massive optimized scene startup for large projects.</p>
-<p>Godot is really getting some advanced features lately, wonderful to see for cross-platform game development.</p>
-<p>See more in the <a href="https://godotengine.org/article/dev-snapshot-godot-4-4-dev-4/" rel="noopener nofollow" target="_blank">release post</a> for dev4.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/godot-engine-44-dev-4-released-with-interactive-in-game-editing/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/godot-engine-44-dev-4-released-with-interactive-in-game-editing/</guid>
-      <pubDate>Thu, 14 Nov 2024 11:37:29 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/670444256id25658gol.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Game Dev</category>
-      
-      <category>Godot Engine</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Little Big Adventure – Twinsen&#39;s Quest a remake of the original classic is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Little Big Adventure – Twinsen's Quest from [2.21] and Microids is out now. It's a remake of the original classic with a graphical makeover and modernized gameplay.</p>
-<p>Initially released in 1994 under the name Little Big Adventure, this classic action-adventure game imagined by Frédérick Raynal (Alone in the Dark) was a worldwide success. Little Big Adventure – Twinsen’s Quest features a new artistic direction, modernised gameplay and brand-new music by Philippe Vachey, the original composer.</p>
-<div class="hidden_video" data-video-id="UQzpG8WHC1s"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2004fc994687be8ae6c18c91545a90e0.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/UQzpG8WHC1s" target="_blank">See video</a></div></div>
-<p>Their press team did initially offer me pre-release access to take a look. But they <em>didn't</em> actually reply to my follow-up email enquiring about any Steam Deck / Linux support, so I won't be directly taking a look right now since no key was provided. I'm sure plenty of readers will still be interested to know it's out anyway, but you will need <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> to play it.</p>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Discover a richly layered story filled with complex themes.</li>
-<li>Navigate through Twinsun with a revamped level layout and redesigned controls.</li>
-<li>Defeat foes with an enhanced Magic Ball.</li>
-<li>Enjoy a unique and updated artistic vision.</li>
-<li>Immerse yourself with a new soundtrack by the original composer.</li>
-</ul>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/40441">Little Big Adventure – Twinsen's Quest</a></strong> | Release Date: 14th November 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://www.gog.com/en/game/little_big_adventure_twinsens_quest">GOG</a></li><li><a href="https://store.steampowered.com/app/2318070/Little_Big_Adventure__Twinsens_Quest/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/little-big-adventure-twinsens-quest-a-remake-of-the-original-classic-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/little-big-adventure-twinsens-quest-a-remake-of-the-original-classic-is-out-now/</guid>
-      <pubDate>Thu, 14 Nov 2024 11:24:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1973402891id25657gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Exploration</category>
-      
-      <category>GOG</category>
       
     </item>
     
