@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-12-06 07:31:01.689518</pubDate>
+    <pubDate>2024-12-07 07:28:53.908552</pubDate>
 
     
     <image>
@@ -18,6 +18,410 @@
     </image>
 
     
+    
+    <item>
+      <title>Path of Exile 2 now in Early Access and it works on Steam Deck / Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Path of Exile 2 from Grinding Gear Games has officially arrived, although it's not quite finished yet as it's in Early Access. <em>Note: personal purchase.</em></p>
+<p>The developer didn't reply to my request, so I've only just briefly jumped in today to check and see if it actually runs on Steam Deck and Desktop Linux. The good news there — is that it does! The game does launch right out of the box with the <a href="http://www.gamingonlinux.com/2024/09/proton-90-3-released-and-proton-experimental-upgraded-for-linux-steam-deck/" rel="noopener" target="_blank">latest stable Proton 9.0-3</a>.</p>
+<p>Grinding Gear said they expect it to remain in Early Access for "as long as needed" which they expect will be "at least 6 months". Even though it's not done, it's still absolutely huge. There's somewhere around 400 different types of monsters, about 50 bosses and a whole lot of end-game content to play through. This game will keep you going for a long time, just as the first game did.</p>
+<div class="hidden_video" data-video-id="0VZsq_vJjGk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/aed43cd7b1d2cb5ac150ca9cd9384157.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/0VZsq_vJjGk" target="_blank">See video</a></div></div>
+<p><strong>Steam Deck</strong></p>
+<p>Testing on a Steam Deck LCD 512GB, with the game on the SSD and the game loaded up fine! Gamepad input detected as soon as I moved a thumbstick and so away we go. The game is definitely playable on Steam Deck.</p>
+<p>Performance has been a bit…<strong>strange</strong>. On the lowest settings I've seen times where the same area will barely hold 30-40FPS, and other times it will give me a <em>drastically</em> smoother 50-60FPS. It's been thoroughly confusing that's for sure, and I've had to re-write this section a few times after doing repeated testing when fully reloading the game. So, your mileage here may vary, it <em>might</em> perform well for you, it <em>might</em> not. Entirely possible it's some server instancing issue messing with the performance at times.</p>
+<p>Pictures below on Low settings, AMD FSR Performance, 60FPS limit, Dynamic Resolution On:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11400292831733528660gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/11400292831733528660gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5120963571733529376gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/5120963571733529376gol1.jpeg"/></a></p>
+<p><em>You won't get much more than 1hr 30mins on the LCD Steam Deck battery.</em></p>
+<p>One big problem though is that lots of the text is small. There's some UI scaling, but seemingly no text scaling, so I still had to pull the deck up close to my face to read some parts. Especially annoying for a game like this, where you'll be reading over items and skills quite often. Higher levels of UI scaling can also cause some parts of the UI to go off the Steam Deck screen cutting it off.</p>
+<p>Pictures below on Low settings, AMD FSR Performance, 30FPS Limit, Dynamic Resolution On:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/46868441733524805gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/46868441733524805gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18218564251733525035gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/18218564251733525035gol1.jpeg"/></a><br/>
+<em>That was one heck of a boss fight…</em></p>
+<p>There's also some clear bugs, with it being in Early Access and all, like my first crash to my Steam Library when entering a portal the game just threw this up at me:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7044950191733525449gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7044950191733525449gol1.jpeg"/></a></p>
+<p>Overall: definitely playable! I just hope the <em>weird</em> performance issue is figured out.</p>
+<p><strong>Desktop Linux</strong></p>
+<p>Considering it ran on the Steam Deck, I wasn't expecting any trouble on Desktop Linux (Kubuntu 24.10) with an AMD GPU and as expected, no real issues there.</p>
+<p>However, for <u>NVIDIA</u> users, you may see a black screen. One fix there is to force the game into DirectX12 mode, which it seems you need to do directly in a configuration file. This file can be found somewhere like this depending on where you have it installed:</p>
+<p><code class="inline-code">~/.steam/steam/steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/Documents/My Games/Path of Exile 2/poe2_production_Config.ini</code></p>
+<p>Inside there set "renderer_type=DirectX12" on Line 7 (it will be Vulkan by default). Then you should be good to go.</p>
+<p>Another <em>potential</em> fix I've been told that works with NVIDIA is to run the game with <a href="https://github.com/ValveSoftware/gamescope" rel="noopener nofollow" target="_blank">Gamescope</a>.</p>
+<p>On mostly High settings with my Ryzen 5800x, Radeon 6800 XT:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7070744651733526292gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7070744651733526292gol1.jpg"/></a></p>
+<p><strong>Initial Launch Issues</strong></p>
+<p>The actual launch was just a <em>bit</em> rocky, with the login not working as the developer had to do some truly last-minute <a href="https://x.com/pathofexile/status/1865098048571113779" rel="noopener nofollow" target="_blank">upgrades</a> on their database system. So over 400,000 people we're playing a loading screen simulator. I'm not exactly complaining though. Launching games is <em>hard</em>, especially online connected games such as this when a ridiculous amount of people are trying to jump in all at the same time. The community even <a href="https://x.com/SteamDB/status/1865128830907605273" rel="noopener nofollow" target="_blank">took down</a> SteamDB as people were hammering it trying to see what was happening.</p>
+<p>Still, when the servers went up, seeing then 19,658 people ahead of me in a queue was quite <em>frustrating </em>to say the least. A queue that seemed like it wasn't actually going anywhere. Got there eventually though, <em>only</em> another 5 minutes staring at the red number of people ticking down until it was my turn. At last! At least, that's what I <em>thought</em>, I had a brief 30 seconds of bliss with a cut-scene and the game booted me back to the login screen. A "configuration problem" the developer <a href="https://x.com/pathofexile/status/1865134494321455276" rel="noopener nofollow" target="_blank">said</a> this time.</p>
+<p>40 or so minutes later, and I'm back into a queue. Just a few ahead of me, <em>only</em> 17,430 people and so another 4 minutes sat watching it tick down again. Got there eventually…for 5 minutes, then the London Realm and others <a href="https://vxtwitter.com/pathofexile/status/1865145572875018750" rel="noopener nofollow" target="_blank">went down</a> and I was kicked out again. At this point, you get the idea, the launch has <em>not</em> been the best. Clearly, the <em>login screen</em> is the hardest boss of them all.</p>
+<p>Anyway. Wonderful to see <em>another</em> huge game launch working on Linux platforms at release just like with <a href="https://www.gamingonlinux.com/2024/12/marvel-rivals-out-now-free-on-steam-and-works-on-steam-deck-linux/" rel="noopener" target="_blank">Marvel Rivals</a>.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40688/path-of-exile-2/">Path of Exile 2</a></strong> | Release Date: 6th December 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/2694490/Path_of_Exile_2/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/path-of-exile-2-now-in-early-access-and-it-works-on-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/path-of-exile-2-now-in-early-access-and-it-works-on-steam-deck-linux/</guid>
+      <pubDate>Fri, 06 Dec 2024 23:59:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/124017909id25804gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>HOWTO</category>
+      
+    </item>
+    
+    <item>
+      <title>Windows compatibility layer Wine 10.0 gets a first Release Candidate</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The next major version bump is coming for the Windows compatibility layer Wine, which forms a big part of Valve's <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>, with Wine 10.0 having a first Release Candidate.</p>
+<p>With this now available, the project has gone into a code freeze meaning no new features will be added from here, with a focus on bug fixing for the full release of Wine 10.0 next year.</p>
+<p class="plain-list-title">The highlights from <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-10.0-rc1" rel="noopener nofollow" target="_blank">this release</a> include:</p>
+<blockquote>
+<ul>
+<li>Bundled vkd3d upgraded to version 1.14.</li>
+<li>Mono engine updated to version 9.4.0.</li>
+<li>Initial version of a Bluetooth driver.</li>
+<li><a href="https://bugs.winehq.org/show_bug.cgi?id=8" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">UTF-8</a> support in the C runtime functions.</li>
+<li>Support for split debug info using build ids.</li>
+<li>Various bug fixes.</li>
+</ul>
+</blockquote>
+<p class="plain-list-title">For some context on the above, <a href="https://gitlab.winehq.org/wine/vkd3d/-/releases/vkd3d-1.14" rel="noopener nofollow" target="_blank">vkd3d 1.14</a> had these main changes:</p>
+<blockquote>
+<ul>
+<li>Disassembler support for binary effects.</li>
+<li>Initial support for Metal Shading Language output.</li>
+<li>Miscellaneous bug fixes.</li>
+</ul>
+</blockquote>
+<p class="plain-list-title">And for <a href="https://gitlab.winehq.org/mono/wine-mono/-/releases/wine-mono-9.4.0" rel="noopener nofollow" target="_blank">Mono 9.4.0</a>:</p>
+<blockquote>
+<ul>
+<li>It's now possible to configure XDEBUG to see JITted methods in GDB. See <a href="https://gitlab.winehq.org/wine/wine/-/wikis/Wine-Mono#gdb" rel="noopener nofollow" target="_blank">https://gitlab.winehq.org/wine/wine/-/wikis/Wine-Mono#gdb</a></li>
+<li>Added Georgian translation to Mono.</li>
+<li>Out-only arrays in native-to-managed wrappers are no longer marshaled on the input side.</li>
+<li>Implemented GUID generation for class types. (Used by Stronghold Kingdoms, which unfortunately isn't fully fixed yet)</li>
+<li>System.Runtime.Remoting.Channels.AggregateDictionary now allows for modification of keys. (Used by Stronghold Kingdoms)</li>
+<li>HttpClientTransportSink now returns ChunkedMemoryStream in async responses. (Used by Stronghold Kingdoms)</li>
+<li>Upstream updates:
+	<ul>
+<li>SDL to 2.30.8</li>
+<li>FNA to 24.10</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/windows-compatibility-layer-wine-10-gets-a-first-release-candidate/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/windows-compatibility-layer-wine-10-gets-a-first-release-candidate/</guid>
+      <pubDate>Fri, 06 Dec 2024 20:51:31 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Beta</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Humble Bundle are bringing back 11 popular game bundles for a limited time</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://www.humblebundle.com/games" rel="noopener nofollow" target="_blank">Humble Bundle</a> have announced they're bringing back a whole bunch of popular game bundles over the next 11 days. So it's a good chance to grab something you may have missed. Each bundle will only be live again for 2 days so you really only have a limited time to decide on them.</p>
+<p>The first game bundle is <a href="https://www.humblebundle.com/games/lego-worlds-collide-ultimate-assembly-encore" rel="noopener nofollow" target="_blank">LEGO Worlds Collide</a> giving you great games for audiences young and old. Listed below is what's inside and the expected compatibility. Each is also a Steam link if you need more info first.</p>
+<p><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified</strong></p>
+<p><a href="https://store.steampowered.com/app/647830/LEGO_Marvel_Super_Heroes_2/" rel="noopener nofollow" target="_blank">LEGO Marvel Super Heroes 2</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/352400/LEGO_Jurassic_World/" rel="noopener nofollow" target="_blank">LEGO Jurassic World</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/438640/LEGO_STAR_WARS_The_Force_Awakens/" rel="noopener nofollow" target="_blank">LEGO STAR WARS: The Force Awakens</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/881320/The_LEGO_Movie_2_Videogame/" rel="noopener nofollow" target="_blank">The LEGO Movie 2 Videogame</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/285160/LEGO_The_Hobbit/" rel="noopener nofollow" target="_blank">LEGO The Hobbit</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/204120/LEGO_Harry_Potter_Years_57/" rel="noopener nofollow" target="_blank">LEGO Harry Potter: Years 5-7</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/21130/LEGO_Harry_Potter_Years_14/" rel="noopener nofollow" target="_blank">LEGO Harry Potter: Years 1-4</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/640590/The_LEGO_NINJAGO_Movie_Video_Game/" rel="noopener nofollow" target="_blank">The LEGO NINJAGO Movie Video Game</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/249130/LEGO_Marvel_Super_Heroes/" rel="noopener nofollow" target="_blank">LEGO Marvel Super Heroes</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/267530/The_LEGO_Movie__Videogame/" rel="noopener nofollow" target="_blank">The LEGO Movie - Videogame</a> - ProtonDB Platinum</p>
+<p><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable</strong></p>
+<p><a href="https://store.steampowered.com/app/829110/LEGO_DC_SuperVillains/" rel="noopener nofollow" target="_blank">LEGO DC Super-Villains</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/313690/LEGO_Batman_3_Beyond_Gotham/" rel="noopener nofollow" target="_blank">LEGO Batman 3: Beyond Gotham</a> - ProtonDB Gold</p>
+<p><a href="https://store.steampowered.com/app/405310/LEGO_MARVELs_Avengers/" rel="noopener nofollow" target="_blank">LEGO MARVEL's Avengers</a> - ProtonDB Platinum</p>
+<p><a href="https://store.steampowered.com/app/21000/LEGO_Batman_The_Videogame/" rel="noopener nofollow" target="_blank">LEGO Batman: The Videogame</a> - ProtonDB Platinum</p>
+<p><strong><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Deck Unsupported</strong></p>
+<p><a href="https://store.steampowered.com/app/332310/LEGO_Worlds/" rel="noopener nofollow" target="_blank">LEGO Worlds</a> - ProtonDB Platinum<br/>
+<em>But it does work on Steam Deck.</em></p>
+<p><a href="https://store.steampowered.com/app/818320/LEGO_The_Incredibles/" rel="noopener nofollow" target="_blank">LEGO The Incredibles</a> - ProtonDB Gold<br/>
+<em>Again, also does work on Steam Deck.</em></p>
+<p><a href="https://store.steampowered.com/app/213330/LEGO_Batman_2_DC_Super_Heroes/" rel="noopener nofollow" target="_blank">LEGO Batman 2: DC Super Heroes</a> - ProtonDB Gold<br/>
+<em>Needs <a href="https://www.gamingonlinux.com/2024/11/ge-proton-9-20-includes-a-fix-for-diablo-iv-plus-proton-sarek-9-20-for-older-gpus-released/" rel="noopener" target="_blank">GE-Proton</a> to work properly.</em></p>
+<p><a href="https://store.steampowered.com/app/214510/LEGO_The_Lord_of_the_Rings/" rel="noopener nofollow" target="_blank">LEGO The Lord of the Rings</a> - ProtonDB Gold<br/>
+<em>Also needs <a href="https://www.gamingonlinux.com/2024/11/ge-proton-9-20-includes-a-fix-for-diablo-iv-plus-proton-sarek-9-20-for-older-gpus-released/" rel="noopener" target="_blank">GE-Proton</a> to work properly.</em></p>
+<p>Keep checking back on <a href="https://www.humblebundle.com/games" rel="noopener nofollow" target="_blank">Humble Bundle</a> for all the latest over the next 11 days. I'm not going to be going over every single bundle but you can find our link to use our partner link any time on <a href="https://www.gamingonlinux.com/support-us/" rel="noopener" target="_blank">the Support Us page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/humble-bundle-are-bringing-back-11-popular-game-bundles-for-a-limited-time/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/humble-bundle-are-bringing-back-11-popular-game-bundles-for-a-limited-time/</guid>
+      <pubDate>Fri, 06 Dec 2024 19:13:55 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1955812395id25803gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Bundle</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Pizza-delivery bullet heaven Pest Apocalypse is hilarious chaos - out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Pest Apocalypse from Kikimora Games is out now, a fresh Bullet Heaven blending together the worlds of Vampire Survivors with something like Crazy Taxi and it's thoroughly chaotic. I've made this joke before, and I'll do it again, this is VANpire Survivors.<em> Look it's a good joke okay.</em></p>
+<p>What you get here is a quality mixture of mechanics. The repeated runs of building up a crazy combination of weapons and abilities popularized by Vampire Survivors, but with the spin on it that you're in a fast-moving vehicle equipped with a nitro boost. Each pizza you deliver enables you to pick a new passenger with their own weapon, and you really can make a pretty wild ride.</p>
+<p>The developer sent over a release key and I've been having a real blast with it, sending my little van speeding across the map to collect and deliver one pizza after another, while also being chased by hordes of creatures.</p>
+<div class="hidden_video" data-video-id="Sq14-U58btM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1df396ee8f245302b099ac05ba9455e6.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Sq14-U58btM" target="_blank">See video</a></div></div>
+<p>Not only do you get to pick various passengers (weapons) after you do a successful delivery, but there's also a weapon upgrade system too. As you wheel-spin and drift your way around the map squishing all sorts of creatures, you can collect blue upgrade orbs they drop to level up, and depending on how many you have when you deliver the pizza, you'll then be able to further enhance your weapons.</p>
+<p>Aside from that there's a meta upgrade system too. As you progress through a run you'll earn tips for doing a good job, which you can then use in the main menu to do meta upgrades like passenger damage output, attack cooldown, max vehicle health and more.</p>
+<p>I also really love the silly cinematic camera that appears when you launch your vehicle over ramps. A fun little touch. It's a game that only gets funnier the more you play it. Across the maps you can find temporary pickups too like a big ball with spikes attached by a chain to your van. The physics in Pest Apocalypse can be a little funky, but that only adds to the comedic charm here I think.</p>
+<p>Very similar in style to <a href="https://www.gamingonlinux.com/2024/09/earl-vs-the-mutants-is-choatic-survivor-like-fun-with-vehicles/" rel="noopener" target="_blank">Earl vs. the Mutants</a> that I looked at previously, but here you have a specific purpose pushing you on to keep going, and in terms of style, overall feel and content - Pest Apocalypse is a bigger and better game (with a higher price to match). Pest Apocalypse also has Native Linux support, built with <a href="https://godotengine.org/" rel="noopener nofollow" target="_blank">Godot Engine</a>.</p>
+<p>Pest Apocalypse is surprisingly challenging too, a lot more so than I would say other Bullet Heaven games are. Partly due to the vehicle speed and your turning circle, making dodging enemies all that more challenging. But also the vehicle health, it doesn't actually take much to get destroyed if you're not careful. All that only adds to the intense feeling of needing <em>just one more drive</em>.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20910352511733501491gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20910352511733501491gol1.jpeg"/></a></p>
+<p>Another nice feature is that you have a tip level. I mentioned earlier that you gain tips for all the deliveries, but this adds up to its own special counter as well and each time it levels up after run you then get to pick a special unlock as well. This could be new drops from enemies that will appear during a run, new passengers (weapons), items and more.</p>
+<p>No problems at all on Desktop Linux (Kubuntu 24.10) with the Linux version. Pest Apocalypse is also pretty much a perfect Steam Deck game. Performance is good and the runs are reasonably short too.</p>
+<p>A very firm recommendation. Now I need van to come and deliver me some pizza. For now I'll settle for another run to see what ridiculous weapon combo I can make. Go get it, great fun.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/39692/pest-apocalypse/">Pest Apocalypse</a></strong> | Release Date: 4th December 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/2506810/Pest_Apocalypse/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/pizza-delivery-bullet-heaven-pest-apocalypse-is-hilarious-chaos-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/pizza-delivery-bullet-heaven-pest-apocalypse-is-hilarious-chaos-out-now/</guid>
+      <pubDate>Fri, 06 Dec 2024 16:13:12 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/648246828id25802gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Bullet Heaven</category>
+      
+      <category>Godot Engine</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>MMO interplanetary crafting adventure SpaceCraft from Shiro Games (Northgard, Wartales) announced</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Shiro Games developer of Northgard, Wartales and Dune: Spice Wars have announced SpaceCraft, and my space-nerd brain is now very excited. It's a "massively multiplayer interplanetary crafting adventure" according to the press email, whatever that actually means.</p>
+<p>Looks like it will have a big mixture of gameplay with free open-world exploration across the stars, along with you being able to explore planets directly on the ground as well. On the planets you can mine for resources, do some crafting, build a base and there's even automation systems as well. The actual spaceships look modular with you building them up from various components, and the economy will be player-driven as well. </p>
+<p>Overall it seems like a bit of a blend of Eve Online, Satisfactory and Avorion. Which could be awesome, although likely a huge timesink. Have a looksie at the trailer below:</p>
+<div class="hidden_video" data-video-id="bdd0avB3t-g"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/875b5d7dc81828ab3e5d50db018f52a2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/bdd0avB3t-g" target="_blank">See video</a></div></div>
+<p>“We wanted to give players a spectacular open-ended world to explore, where their decisions have an impact and they have full freedom to choose their own destiny,” said Nicolas Cannasse, CEO of Shiro Games. “Build complex starships and bases, conduct trade deals in a real-time economy, and form alliances and rivalries at your discretion. From the time you start the game, SpaceCraft is your story to tell.”</p>
+<p>Hopefully it will work well on Linux with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> with no <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">anti-cheat</a> annoyances. Right to the top of my wishlist it goes.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40686/spacecraft/">SpaceCraft</a></strong><p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/3276050/SpaceCraft/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/mmo-interplanetary-crafting-adventure-spacecraft-from-shiro-games-northgard-wartales-announced/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/mmo-interplanetary-crafting-adventure-spacecraft-from-shiro-games-northgard-wartales-announced/</guid>
+      <pubDate>Fri, 06 Dec 2024 13:03:32 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2014207533id25801gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Exploration</category>
+      
+      <category>MMO</category>
+      
+      <category>Online Multiplayer</category>
+      
+    </item>
+    
+    <item>
+      <title>The Thing: Remastered from Nightdive Studios is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Bit of a surprise! Nightdive Studios launched The Thing: Remastered, an upgrade of the cult-classic survival horror game. It launches with a Steam Deck Verified status, so you'll be all good on Desktop Linux too with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>.</p>
+<p>More about it: "In the frozen arctic tundra, a mysterious shape-shifting alien has wiped out the crew of the U.S. Outpost #31 research facility. In The Thing: Remastered, players step into the boots of Captain J.F. Blake, the leader of a United States Army Special Forces rescue team sent to investigate the blood-curdling events that transpired in the original The Thing film. Trapped by the elements and at risk of infection by a horrific entity, Blake must keep his squad together to survive by gaining their trust and ensuring that their fear and paranoia don't get the best of them… or himself."</p>
+<div class="hidden_video" data-video-id="xmQE_GpB44I"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5be62f7528765a6548176851c818d213.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/xmQE_GpB44I" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Main Features:</p>
+<ul>
+<li>In 20 frightening levels, lead your team against terrifying monsters, from the scuttling head-spiders and human-like walkers to gigantic multi-tentacled beasts.</li>
+<li>Advanced trust/fear interface adds a new level of interaction – How you influence your teams psychological state determines whether or not they will co-operate with you.</li>
+<li>Experience brand new dynamic lighting, specular mapping, shadows, depth of field complemented by improved models, textures and environments to create a deep level of immersion.</li>
+<li>Use awesome firepower like machine guns, explosives and flamethrowers to torch your enemies.</li>
+<li>Brand new Achievements.</li>
+<li>Quality of Life gameplay enhancements to improve your experience.</li>
+<li>Choose multiple paths to solve problems that lie ahead and accomplish goals.</li>
+</ul>
+<p>From the press release: “In keeping true to the spirit of one of the most iconic alien organisms in pop culture, The Thing: Remastered has emerged when you’d have least expected it,” said Larry Kuperman, Nightdive Studios' Director of Business Development. “For the whole Nightdive crew, it has been an honor working with Universal and members of the original development team to not only remaster The Thing video game but deliver on the original vision for the game. We hope fans worldwide enjoy their return to Outpost #31.”</p>
+<p>Will you be grabbing it?</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40299/the-thing-remastered/">The Thing: Remastered</a></strong><p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://www.gog.com/en/game/the_thing_remastered">GOG</a></li><li><a href="https://store.steampowered.com/app/2958970/The_Thing_Remastered/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/the-thing-remastered-from-nightdive-studios-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/the-thing-remastered-from-nightdive-studios-is-out-now/</guid>
+      <pubDate>Fri, 06 Dec 2024 12:10:10 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1944755165id25800gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+      <category>Horror</category>
+      
+    </item>
+    
+    <item>
+      <title>Epic science fantasy roguelike Caves of Qud 1.0 is out now and it&#39;s a wild ride</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Caves of Qud is a proper roguelike, with deep science fantasy lore and after 15+ years of development it is finally finished with the 1.0 release now available. Easily one of the best roguelikes ever made, a game not to be missed, even if you're not usually into the genre it's just a wild ride to play through.</p>
+<p>I adore everything about this game from the wild characters you can make with all sorts of insane abilities and mutations, to their deep descriptions and lore on everything in the world. Even the doors and walls have descriptions on them, the game is just massively detailed in every way. The new UI is also a thing of retro beauty.</p>
+<p>My latest character was a fun one. I had the ability to fire an electromagnetic pulse, with heightened hearing, night vision, i could make a force bubble around myself, create a force wall to protect myself and reflect mental attacks back at enemies. However, my character also suffers from Amnesia, and tends to forget things at times…</p>
+<p>Thankfully there's multiple game modes, so you can make it a bit more adventure-like and less punishing if you wish to explore it more easily.</p>
+<div class="hidden_video" data-video-id="4nG-N_jtpZI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d66c750a3eb8ce7c073b04be62dc31b8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/4nG-N_jtpZI" target="_blank">See video</a></div></div>
+<p class="plain-list-title">New as of the 1.0 release:</p>
+<ul>
+<li>Tutorial to teach the basics of the game.</li>
+<li>Final quest in the main questline &amp; the end of the game.</li>
+<li>Several new music tracks, sound effects, and items.</li>
+<li>40 new achievements.</li>
+<li>Lots of bugfixes and small feature improvements.</li>
+</ul>
+<p>With the 1.0 launch there's also the new  Dromad Deluxe edition that includes the game, the original soundtrack and the Pets of Harvest Dawn DLC to pick from 13 unique companions to start the game with.</p>
+<p class="plain-list-title">From the press release:</p>
+<p>“It's hard to think of<em> Caves of Qud</em> as anything other than our life's work,” says Jason Grinblat, Founder and Designer at Freehold Games. “We've been making it for almost 20 years now, and the success it has already, has felt like a fever dream. It's so easy to imagine we're still in Brian's converted garage working on the game for our three friends. The prospect of it finally arriving at 1.0 is thrilling, dizzying... exhausting. We're looking forward to Kitfox's support after launch so we can crawl under our desks and sleep for a few months. Anyway, please play it!”</p>
+<p>It's launched with Native Linux support and is Steam Deck Verified.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/3962/caves-of-qud/">Caves of Qud</a></strong> | Release Date: 5th December 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://www.gog.com/en/game/caves_of_qud">GOG</a></li><li><a href="https://freeholdgames.itch.io/cavesofqud">itch.io</a></li><li><a href="https://store.steampowered.com/app/333640/Caves_of_Qud/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/epic-science-fantasy-roguelike-caves-of-qud-10-is-out-now-and-its-a-wild-ride/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/epic-science-fantasy-roguelike-caves-of-qud-10-is-out-now-and-its-a-wild-ride/</guid>
+      <pubDate>Fri, 06 Dec 2024 12:01:27 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/263163593id25799gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>GOG</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Flathub to become a self-sustaining entity and they&#39;re looking to hire someone to help</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://flathub.org/" rel="noopener nofollow" target="_blank">Flathub</a> has positioned itself as pretty much the go-to place for Linux apps, since it works across many distributions and is even on the Steam Deck. Now, the GNOME Foundation are looking to hire someone to help expand it into a self-sustaining entity.</p>
+<p>As <a href="https://discourse.flathub.org/t/request-for-proposals-flathub-program-management/8276" rel="noopener nofollow" target="_blank">posted</a> on the Flathub Discourse Forum, the GNOME Foundation are looking to hire a contractor to help sort through management, legal and financial stuff with it being funded by Endless. This is all also being done in partnership with KDE e.V. too.</p>
+<p>The budget for it seems pretty low though at $12,000 for an expected 3 months of part-time work on it. To me it seems a bit overly optimistic on how long this sort of thing would take to be fully sorted. Especially when you look at what the role entails like:</p>
+<blockquote>
+<ol>
+<li>Oversee deployment of payment systems for applications and direct donations to Flathub operating costs.</li>
+<li>Finalise governance documents and convene a simple governing body for Flathub with representatives from GNOME, KDE and the Flathub community.</li>
+<li>Establish and manage bank and Stripe payment processing accounts.</li>
+<li>Finalize and launch terms of use and developer agreements.</li>
+<li>Coordinate handling of accounting, operations and expenses with the GNOME Foundation.</li>
+<li>Ensure transparency through clear communications and documentation for the community.</li>
+</ol>
+</blockquote>
+<p>Hopefully something is worked out, because Flathub has become a seriously good thing for the Linux desktop.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/flathub-to-become-a-self-sustaining-entity-and-theyre-looking-to-hire-someone-to-help/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/flathub-to-become-a-self-sustaining-entity-and-theyre-looking-to-hire-someone-to-help/</guid>
+      <pubDate>Fri, 06 Dec 2024 11:42:52 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/flathub.jpg" type="image/jpeg"/>
+      
+      <category>Jobs</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Free to play Marvel Rivals is out now on Steam and works on Steam Deck / Linux (Steam Deck has issues though)</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Marvel Rivals is the next big multiplayer shooter and potentially the next "big thing", with a Steam free to play release now live. What is it? Pretty much Marvel Overwatch.</p>
+<p>The good news, is that it <em>does</em> actually work on Steam Deck and Desktop Linux thanks to <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>. Not only that, this is <em>not</em> a case of it accidentally working either, it's supported. Straight from the developer in their Discord one of their team <a href="https://discord.com/channels/1193841000108531764/1202076175355355176/1314354112812290048" rel="noopener nofollow" target="_blank">said</a> very clearly: "Yes Steam Deck supported. Bugs on black cutscenes".</p>
+<p><em>There's clear issues right now though. So here's how to get it working on Steam Deck.</em></p>
+<p>When you go to play it on Steam Deck / Linux you may encounter errors about drivers and the operating system, which can be safely ignored. On Steam Deck, I just needed to use the touch screen to tap the confirmation boxes and then hit play on the launcher.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16243454001733477819gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16243454001733477819gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5059451721733477819gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/5059451721733477819gol1.jpeg"/></a></p>
+<p>After it's loaded shaders, at least with Proton 9.0-3, you will end up seeing black screens with audio playing, which the developer mentioned in my quote above. The good news, is that's an easy fix!</p>
+<p><strong>How to fix Marvel Rivals on Steam Deck</strong></p>
+<p>Go into Desktop Mode (STEAM button - Power - Switch to Desktop) and run Marvel Rivals from there. Once it loads the launcher you can control the mouse by holding down the STEAM button and using the Right Thumbpad to move the mouse, with Right Trigger as your mouse button to hit the buttons in the launcher and you can then get into the game properly.</p>
+<p>The initial black screen is supposed to show their privacy acceptance screen and agreement screen, which only seem to work in Desktop Mode. Here you can use a mixture of touch-screen and mouse input to get through it.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19164423381733479146gol1.jpg"/></p>
+<p>After that though, it wants you to enter a username, and since you're in Desktop Mode you <em>can't</em> bring up a keyboard overlay on top of the game properly. So hit the Power button <em>once</em>, select Log Out and it sends you back to Gaming Mode. Then launch the game again, and it will work properly.</p>
+<p>You'll still see <em>some</em> black screens though, but if you swap Marvel Rivals over to <strong>Proton Experimental</strong> (Properties -&gt; Compatibility) they seem to be fixed with it.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14093559831733479037gol1.jpeg"/></p>
+<p>So it's a bit of work, that will likely be made easier with updates to Proton from Valve and updates to the game. I'm sure Valve will figure out what causes the black screens with the agreement acceptance and get it fixed.</p>
+<p>Performance on Steam Deck is not especially great, and cut-scenes lag quite a lot. Actual gameplay is playable enough though, once you turn the settings onto Low and put FSR onto Performance.</p>
+<p>Pictures below on Low / FSR Balanced:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13309122041733479753gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13309122041733479753gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10775312451733479799gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/10775312451733479799gol1.jpeg"/></a></p>
+<p>Over on Desktop Linux, sticking with <strong>Proton Experimental</strong> as noted above to sort any black screens, and the experience is about what I expected. No issue getting it working there. You still get the driver / operating system version errors to click away but the privacy acceptance screens show up as normal, and you can get into Marvel Rivals without an issue at all.</p>
+<p>Picture below on Kubuntu 24.10 Desktop, Ultra settings:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19770803471733480764gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19770803471733480764gol1.jpg"/></a></p>
+<p>I've been enjoying trying it out, as a fan of games like it, and so far the gameplay is actually really fun, as are the designs of all the characters with their abilities. Looking forward to playing more of Marvel Rivals on Linux.</p>
+<p>Don't forget to keep an eye on <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our anti-cheat compatibility page</a> for updates on all games for Linux / Steam Deck. Any feedback on that page goes to the <a href="https://www.gamingonlinux.com/forum/topic/6277/" rel="noopener" target="_blank">forum</a>.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40684/marvel-rivals/">Marvel Rivals</a></strong> | Release Date: 6th December 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/2767030/Marvel_Rivals/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/marvel-rivals-out-now-free-on-steam-and-works-on-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/marvel-rivals-out-now-free-on-steam-and-works-on-steam-deck-linux/</guid>
+      <pubDate>Fri, 06 Dec 2024 10:26:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/601959220id25797gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+      <category>Free Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve may be working on a new kind of Steam Machine</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>There's a whole bunch of hints and speculation going around right now, showing that Valve may be working towards a new kind of Steam Machine. Suddenly, their new <a href="https://www.gamingonlinux.com/2024/11/new-steam-controller-2-and-vr-controller-designs-got-leaked/" rel="noopener" target="_blank">Steam Controller 2 that was leaked</a>, along with the new <a href="https://www.gamingonlinux.com/2024/12/valves-new-branding-guidelines-hint-at-steam-decks-steamos-for-more-devices/" rel="noopener" target="_blank">SteamOS branding guidelines</a> make a whole lot more sense if this is true.</p>
+<p>While the SteamOS branding mentions third-party vendors using it, and we know they're working towards releasing SteamOS for other hardware vendors for their handhelds, having a standard way to show it also helps Valve keep it the same across multiple of their own devices.</p>
+<p>As for the Steam Controller 2, it makes even more sense with this because otherwise the target for people to buy it would have been reasonably small. Sure there's all the people with a Steam Deck, but it would be only a percentage of people with one that would buy a Steam Controller 2, and a lot of other people on PC already have their preferred gamepad. So, having a fresh Steam Machine would pretty much <em>need</em> a dedicated controller, unless Valve bundled it with a third-party controller, but that leaves Valve at the mercy of another hardware vendor on features and support.</p>
+<p>The <em>speculation</em> and leaks on some form of new Steam Machine from Valve come initially from a <a href="https://www.reddit.com/r/SteamDeck/comments/1h7521g/looks_like_valve_is_working_on_a_steamos_device/" rel="noopener nofollow" target="_blank">Reddit post</a>, where a user pointed out a <a href="https://gitlab.com/evlaV/linux-integration/-/commit/3d92f93a76012f9dc9cb2d75eb0da7ecc93b9bd2" rel="noopener nofollow" target="_blank">change</a> to the Linux kernel used by Steam Deck / SteamOS. It mentions a change for HDMI CEC for Fremont, with code that references AMD Lilac. Lilac on <a href="https://browser.geekbench.com/search?q=amd+lilac" rel="noopener nofollow" target="_blank">Geekbench</a> being a mixture of different AMD chips like the Ryzen 8540U and Ryzen 7735HS.</p>
+<p>On X / Twitter, VR enthusiast Brad Lynch <a href="https://x.com/SadlyItsBradley/status/1864817868346360011" rel="noopener nofollow" target="_blank">mentioned</a> in a thread after more digging through Valve's code noting "But also that Quanta Computer, Valve’s Steam Deck manufacturer, is giving feedback on it" and "All references to Fremont ensure checks for a full-size HDMI Type-A port you’d see on TV-focused consoles and other desktop computers that don’t have a dedicated GPU with its own HDMI ports". Lynch is the one that has been covering a lot of the leaks for the upcoming Valve Deckard VR headset.</p>
+<p>November next year will also mark 10 years since Valve's original Steam Machine launch. That would be a pretty good time for Valve to announce something don't you think?</p>
+<p>Things have changed dramatically since the original failure of the Steam Machine launch, which kicked off Valve's effort on everything that made up the Steam Deck. We have <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> now, the real important bit, which runs tens of thousands of Windows games and Proton compatibility is continuously improving to the point where so many games really do just work (but we still have the <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">anti-cheat</a> problem). We have another <a href="https://www.gamingonlinux.com/2024/12/proton-90-4-beta-updated-with-more-game-fixes-needing-testing-on-steam-deck-linux/" rel="noopener" target="_blank">big update to Proton 9 coming soon</a> too.</p>
+<p>It's going to be really interesting to see what becomes of all this. Very exciting time to be a Linux / SteamOS gamer.</p>
+<p>What do you think this is all for? Leave a comment with your thoughts.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/valve-may-be-working-on-a-new-kind-of-steam-machine/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/valve-may-be-working-on-a-new-kind-of-steam-machine/</guid>
+      <pubDate>Fri, 06 Dec 2024 09:22:03 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1861631409id25796gol.jpg" type="image/jpeg"/>
+      
+      <category>Hardware</category>
+      
+      <category>Misc</category>
+      
+      <category>Speculation</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>Free to play monster-hunting game Dauntless now on Steam and works on Steam Deck, desktop Linux needs a quick fix</title>
@@ -5982,477 +6386,6 @@ As most of you know, we're on a hot streak with...</p>
       <category>NVIDIA</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam getting proper Season Pass support with clearer guidelines and refunds for cancellations</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve have another Steam store update incoming, with seemingly proper built-in support for a Season Pass along with new guidance for developers.</p>
-<p>Initially spotted by SteamDB developer Pavel Djundik on <a href="https://bsky.app/profile/xpaw.me/post/3lbfpzdgjdc23" rel="noopener nofollow" target="_blank">Bluesky</a> pointing out a new Steamworks page for <a href="https://partner.steamgames.com/doc/store/seasonpass" rel="noopener nofollow" target="_blank">Season Passes</a>. Valve note on this page that Season Pass store pages will be listing all of the DLC included, along with their release dates. If developers aren't ready to clearly tell you when each DLC will be released then developers "shouldn't offer a Season Pass on Steam".</p>
-<p>Valve said they will only offer Season Passes to developers "in a few rare cases with partners with which we have a well-established relationship and that have a proven track record on Steam".</p>
-<p>The new guidelines include:</p>
-<blockquote>
-<p>When a Season Pass is made available for purchase on Steam, it must include the following information:</p>
-<ul>
-<li>A complete list of all DLC included in the Pass. (i.e. listing each of the four DLCs included in a Pass).</li>
-<li>A basic description of the content that’s included in each DLC. For example, the first content release might be “The Glitterlands Expansion – New area to explore, two new weapons, and new enemies.” It’s not required for the DLC to have a final name at the launch of the Season Pass. The information about the content in the DLC doesn’t need to be detailed (simply “new weapons” or “two new weapons” is acceptable, they don’t have to list the exact weapons).</li>
-<li>Expected release date for each DLC. Quarter and Year (i.e. January to March 2025) or Season/Year is acceptable. Of course, a date that’s more precise is also fine (i.e. June, 2025 or June 1st, 2025).</li>
-</ul>
-<p><br/>
-<u>A Season Pass must include at least one released DLC when it is made available for purchase*</u><br/>
-*with the exception of Season Passes included in a Pre-Purchase of a deluxe edition.</p>
-</blockquote>
-<p>If developers need to delay an included DLC they get a one-time release date delay by up to three months. If they need longer, they need to contact Valve directly. However, if a DLC in a Season Pass is cancelled, gamers will be "offered a refund for the value of unreleased DLC".</p>
-<p>Not a big surprise to see, since it's a much-used feature by plenty of bigger developers. Just like with <a href="https://www.gamingonlinux.com/2024/04/valve-makes-paid-advanced-access-a-clear-feature-on-steam-now/" rel="noopener" target="_blank">Advanced Access being a thing</a>, Valve continue moving with what developers are doing. By making it an actual dedicated feature, Valve can ensure some quality-control there for gamers by holding developers to account on repeated delays and cancellations.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/steam-getting-proper-season-pass-support-with-clearer-guidelines-and-refunds-for-cancellations/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/steam-getting-proper-season-pass-support-with-clearer-guidelines-and-refunds-for-cancellations/</guid>
-      <pubDate>Thu, 21 Nov 2024 11:16:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve fixes up Steam Input bug with ROG Ally X</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://www.gamingonlinux.com/2024/08/valve-confirm-plan-to-get-steam-decks-steamos-on-the-rog-ally-and-more-handhelds/" rel="noopener" target="_blank">Valve confirmed back in August</a> they still had plans to release SteamOS 3 outside of the Steam Deck for other handhelds, and it's nice to see they're still working away on the Steam Client for various hardware.</p>
-<p><a href="https://www.gamingonlinux.com/2024/10/gamescope-gets-improved-rog-ally-support-hinting-at-more-progress-for-steamos/" rel="noopener" target="_blank">In October</a> we saw an update for Gamescope from the community that improved configuring the display on the ASUS ROG Ally and the newer ASUS ROG Ally X, which <a href="https://www.gamingonlinux.com/2024/10/steamos-alternative-bazzite-adds-support-for-onexplayer-plus-improvements-for-rog-ally/" rel="noopener" target="_blank">was actually for the SteamOS-like Bazzite</a>, one of the best ways to use Linux on various PC gaming handhelds.</p>
-<p class="plain-list-title">Now the <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/4489620901087674430?snr=2___" rel="noopener nofollow" target="_blank">latest</a> Steam Client Beta has a fix included for Steam Input directly on the ASUS ROG Ally X:</p>
-<blockquote>
-<p class="plain-list-title"><strong>Game Recording</strong></p>
-<ul>
-<li>Fixed audio desync that occurs for some videos when played in Steam or Chrome browser.</li>
-<li>Added settings button to allow resetting the game recording folder to the default path.</li>
-</ul>
-<p class="plain-list-title"><strong>Steam Input</strong></p>
-<ul>
-<li>Fixed duplicate controllers showing up on the ROG Ally X.</li>
-</ul>
-<p class="plain-list-title"><strong>Remote Play</strong></p>
-<ul>
-<li>Fixed store and community features being disabled when streaming to a Mac.</li>
-</ul>
-</blockquote>
-<p>So at least for now if you're using some other form of Linux, like Bazzite, or Windows, with the latest Steam Client Beta the experience should be a little better without the duplicated controllers.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11120711671732184189gol1.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11120711671732184189gol1.png"/></a><br/>
-<em>Pictured - ROG Ally X</em></p>
-<p>Any GamingOnLinux readers using Linux on an ASUS ROG Ally / Ally X? How are you getting on with it?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/valve-fixes-up-steam-input-bug-with-rog-ally-x/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/valve-fixes-up-steam-input-bug-with-rog-ally-x/</guid>
-      <pubDate>Thu, 21 Nov 2024 10:19:28 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/238171408id25704gol.jpg" type="image/jpeg"/>
-      
-      <category>ASUS</category>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>itch.io store now requires AI generated content disclosures for assets</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>With AI generated content continuing to spread everywhere, the <a href="http://itch.io" rel="noopener nofollow" target="_blank">itch.io</a> store has made a change to now require AI generated content disclosures.</p>
-<p>In the <a href="https://itch.io/t/4309690/generative-ai-disclosure-tagging" rel="noopener nofollow" target="_blank">announcement</a> it specifically mentions it's now <em>required</em> for "Asset Creators" meaning developers who provide things like graphics, sounds and more for developers to use in their games. All pages get the option though, so game developers can tag their creations as using or not using AI.</p>
-<p>From their updated guidelines:</p>
-<blockquote>
-<p>We recently added the AI Disclosure feature. You will have time to review and update your pages accordingly, but we are strictly enforcing disclosure for all game asset pages due to legal ambiguity around rights associated with Generative AI content. Failure to tag your asset page may result in delisting.</p>
-</blockquote>
-<p>Valve made a similar move for Steam <a href="https://www.gamingonlinux.com/2024/01/valve-announces-new-rules-for-games-with-ai-content-on-steam/" rel="noopener" target="_blank">back in early January</a>.</p>
-<p>This is a good change, because the store is getting flooded with it. Doing a quick search today, and keep in mind this is only those that are correctly tagged, showed 1,214 assets on itch.io that were made using some form of AI generation versus 13,536 now tagged as not using AI generation.</p>
-<p>A number of game developers have updated their itch.io pages too, with it showing 337 made using AI generation at time of writing.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/itchio-store-now-requires-ai-generated-content-disclosures-for-assets/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/itchio-store-now-requires-ai-generated-content-disclosures-for-assets/</guid>
-      <pubDate>Thu, 21 Nov 2024 10:02:49 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/526051986id25703gol.jpg" type="image/jpeg"/>
-      
-      <category>Itch.io</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Engineering puzzle game Poly Bridge 3 gets Steam Deck Verified with a major update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Highly rated, and now you can take it happily on the go, Poly Bridge 3 had a big upgrade and it's now <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified. <em>It already had Native Linux support since release.</em></p>
-<p>The 1.5.0 update brings with it Faulty Drive, a whole new world to play through. The developer said it's a "three-sheep difficulty world that takes place in cyberspace" and so to "Expect the unexpected in a world where anything can happen". </p>
-<p>What else is new:</p>
-<blockquote>
-<p><strong>Gamepad Support</strong></p>
-<ul>
-<li>Enjoy Poly Bridge 3 with full gamepad support on a Steam Deck or on the couch in Steam Big Picture Mode!</li>
-<li>New snap-to-node functionality (gamepad only) to make drawing easier!</li>
-<li>Check out the new Gamepad options to customize controls to your liking.</li>
-</ul>
-<p><strong>Curated Gallery</strong></p>
-<ul>
-<li>Added a new "Curated Gallery" option to ensure replays are appropriate for all ages.</li>
-<li>Curated replays are hand-picked by the dev team and cover a wide range of solutions.</li>
-</ul>
-<p><strong>Polish and Bug Fixing</strong></p>
-<ul>
-<li>Lots of small polish and bug fixing across the game</li>
-</ul>
-</blockquote>
-<p>Original launch trailer below:</p>
-<div class="hidden_video" data-video-id="e5tSnAh3P14"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2d7a96d57bfba549daefdbfe626b721d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/e5tSnAh3P14" target="_blank">See video</a></div></div>
-<p>Writing on Twitter, the developer <a href="https://x.com/AlanLawrance/status/1853561773259178402" rel="noopener nofollow" target="_blank">mentioned</a>: "Got Poly Bridge 3 verified for Steam Deck. Fair bit of work since game was designed for keyboard/mouse. Will build controller support in from the start for all future projects."</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/35316/poly-bridge-3/">Poly Bridge 3</a></strong> | Release Date: 30th May 2023<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/1850160/Poly_Bridge_3/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/engineering-puzzle-game-poly-bridge-3-gets-steam-deck-verified-with-a-major-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/engineering-puzzle-game-poly-bridge-3-gets-steam-deck-verified-with-a-major-update/</guid>
-      <pubDate>Wed, 20 Nov 2024 16:26:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/207743526id25702gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Puzzle</category>
-      
-    </item>
-    
-    <item>
-      <title>Monster catcher Cassette Beasts adds Steam Workshop support and a new battle mode</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Cassette Beasts from Bytten Studio is a brilliant spin on the whole monster catching genre, and a fresh update out now continues expanding it.</p>
-<p>The Gauntlet Update, version 1.7, has release and the first major addition is Magikrab's Gauntlet, a series of randomised combat encounters that can be played solo or online with a friend. And, to enhance things even further, modding should be a whole lot easier with Steam Workshop support now enabled for it.</p>
-<div class="hidden_video" data-video-id="auwooxCiZhU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/693bdbe001d8d0d23ac6ac673f9b8fc7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/auwooxCiZhU" target="_blank">See video</a></div></div>
-<p>Main New Additions:</p>
-<blockquote>
-<ul>
-<li>Magikrab’s Gauntlet has been added. This is a new gameplay system that is available in Night’s Bridge Station after completing the Land of Confusion and Take Me On quests.
-	<ul>
-<li>In the gauntlet you face an endless series of randomised and increasingly difficult battles against friends and foes old and new.</li>
-<li>You can take on the gauntlet on your own, or invite a friend through online multiplayer to take on the challenges together.</li>
-</ul>
-</li>
-<li>Ranger Wilma now provides a Sticker Fusion service after you’ve completed Land of Confusion and Take Me On. Sticker Fusion allows you to move rare and uncommon attributes you like from one sticker to another.</li>
-<li>After Frankie has completed her training, you can speak to her in the Town Hall to clear the ranger noticeboard of quests you don’t want. This costs a certain amount of Fused Material, and you get no quest rewards.</li>
-<li>During multiplayer raids and gauntlet battles you can now:
-	<ul>
-<li>Use items</li>
-<li>Fuse with your partner NPC</li>
-<li>Switch to your partner NPC’s tape</li>
-</ul>
-</li>
-<li>Steam Workshop support has been added.</li>
-</ul>
-</blockquote>
-<p>Cassette Beasts has Native Linux support and is Steam Deck Verified. It's also just thoroughly cool, you should check it out. Another great one made with <a href="https://godotengine.org/" rel="noopener nofollow" target="_blank">Godot</a>.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/19329/cassette-beasts/">Cassette Beasts</a></strong> | Release Date: 26th April 2023<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/1321440/Cassette_Beasts/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/monster-catcher-cassette-beasts-adds-steam-workshop-support-and-a-new-battle-mode/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/monster-catcher-cassette-beasts-adds-steam-workshop-support-and-a-new-battle-mode/</guid>
-      <pubDate>Wed, 20 Nov 2024 16:17:28 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1965005588id25701gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Godot Engine</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck update has fixes for performance issues in long sessions and Remote Play Together</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve pushed out a new stable Steam Deck Client update which includes some pretty essential sounding bug fixes. This was release for everyone on November 19th.</p>
-<p>From the <a href="https://store.steampowered.com/news/app/1675200/view/4472732402493423624" rel="noopener nofollow" target="_blank">announcement</a>:</p>
-<blockquote>
-<p class="plain-list-title"><strong>General</strong></p>
-<ul>
-<li>Fixed a regression in audio capture for Remote Play Together</li>
-<li>Fixed issue causing some games to slow down after long play sessions.</li>
-<li>Fixed some causes of rare crashes in Steam Client.</li>
-</ul>
-<p class="plain-list-title"><strong>Desktop Mode</strong></p>
-<ul>
-<li>Fixed successive game recording exports after the first one sometimes exporting the wrong clip.</li>
-</ul>
-</blockquote>
-<p>So far my time on the <a href="https://www.gamingonlinux.com/2024/10/steam-deck-steamos-36-officially-out-with-improved-performance-mura-compensation-lots-more/" rel="noopener" target="_blank">latest SteamOS 3.6 release</a> has been great. Loving all the new stuff. We also just had the <a href="https://www.gamingonlinux.com/2024/11/steam-deck-oled-limited-edition-white-and-steam-deck-australia-have-launched/" rel="noopener" target="_blank">Steam Deck OLED: Limited Edition White and Steam Deck in Australia</a> launches.</p>
-<p>What bug are you hoping to see Valve solve on Steam Deck next?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/steam-deck-update-has-fixes-for-performance-issues-in-long-sessions-and-remote-play-together/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/steam-deck-update-has-fixes-for-performance-issues-in-long-sessions-and-remote-play-together/</guid>
-      <pubDate>Wed, 20 Nov 2024 16:02:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Update</category>
-      
-    </item>
-    
-    <item>
-      <title>Horizon Zero Dawn Remastered now Steam Deck Verified</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Well there's a surprise. Horizon Zero Dawn Remastered from Guerrilla Games / Nixxes Software and PlayStation Publishing has been given the Steam Deck Verified <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> tick from Valve.</p>
-<p>Despite the game bringing in some more enhanced rendering and updated graphics, it appears it's running well enough for Valve to think the "game works great on Steam Deck, right out of the box". It does, however, need an internet connection for first-time setup thanks to the forcing of a PlayStation Network Account.</p>
-<div class="hidden_video" data-video-id="rgDYyxOKBgg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bacbcfdc514ff85c6a89bad568a4607f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/rgDYyxOKBgg" target="_blank">See video</a></div></div>
-<p>The release came with Ultrawide 21:9 and Super Ultrawide 32:9 resolutions, as well as 48:9 triple monitor support, NVIDIA DLSS 3, NVIDIA DLAA, NVIDIA Reflex, AMD FSR 3.1 and Intel XeSS. So if you're playing on Desktop Linux with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> you've got plenty of options to tweak it to your liking.</p>
-<p>Valve's testing on Steam Deck used the <a href="https://www.gamingonlinux.com/2024/09/proton-90-3-released-and-proton-experimental-upgraded-for-linux-steam-deck/" rel="noopener" target="_blank">latest stable Proton 9.0-3</a>.</p>
-<p>As I reported previously, for Desktop Linux you likely need a <a href="https://www.gamingonlinux.com/2024/10/horizon-zero-dawn-remastered-may-need-a-workaround-on-desktop-linux/" rel="noopener" target="_blank">quick launch option</a> to run it properly.</p>
-<p>Have you been playing on Steam Deck / Desktop Linux? How's your experience been?</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40282/horizon-zero-dawn-remastered/">Horizon Zero Dawn Remastered</a></strong> | Release Date: 31st October 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://www.fanatical.com/en/game/horizon-zero-dawn-remastered">Fanatical</a></li><li><a href="https://www.humblebundle.com/store/horizon-zero-dawn-remastered">Humble Store</a></li><li><a href="https://store.steampowered.com/app/2561580/Horizon_Zero_Dawn_Remastered/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/horizon-zero-dawn-remastered-now-steam-deck-verified/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/horizon-zero-dawn-remastered-now-steam-deck-verified/</guid>
-      <pubDate>Wed, 20 Nov 2024 15:55:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/676259141id25699gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Adventure</category>
-      
-    </item>
-    
-    <item>
-      <title>S.T.A.L.K.E.R. 2: Heart of Chornobyl review - works on Linux Desktop with Proton but poorly on Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>S.T.A.L.K.E.R. 2: Heart of Chornobyl from GSC Game World has now been released and after playing it pre-release, I've had a damn fun time with it. There's some clear issues though, that I'll get into. <em>Disclosure: key provided by Renaissance PR.</em></p>
-<p>Thankfully, the game works out of the box on Desktop Linux. With the <a href="https://www.gamingonlinux.com/2024/09/proton-90-3-released-and-proton-experimental-upgraded-for-linux-steam-deck/" rel="noopener" target="_blank">latest Proton 9.0-3</a>, everything works as expected, including the intro video with no broken test-screen. Being able to play it instantly has been quite a highlight of this year. It’s a <em>huge</em> game, both in terms of world size and install size, you’re going to need to free up some space because it’s about 160GB!</p>
-<p>Do you need to play the originals? No. While it <em>does</em> follow on from the originals, it’s a standalone game with its own story. The developers <em>suggest</em> playing the originals to "maximize the immersion". But really, it’s fine. You may not get every reference here and there, but it all explains itself as you play.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8209864151732034296gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8209864151732034296gol1.jpg"/></a></p>
-<p>When you first load up the game, you will need to let it compile shaders, it does this before you even get into the main menu. That initial compiling took about 13 minutes, so it takes a little while, but features like this are worth it to get a smoother game overall. So grab a coffee.</p>
-<p>The developers say that no procedural generation was used in S.T.A.L.K.E.R. 2: Heart of Chornoby, <em>everything</em> was made by hand. They even used photogrammetry, along with real objects and places with prominent landmarks included from the real world. However, plenty has been rearranged for the sake of the gameplay, they say it’s “fictionally revised”.</p>
-<p><em>Note: there will probably be some form of spoilers from here on out.</em></p>
-<div class="hidden_video" data-video-id="PKO4PL8Xzik"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/217ba95f27d4a9f948f4351569614a0a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/PKO4PL8Xzik" target="_blank">See video</a></div></div>
-<h4><strong>Steam Deck Performance</strong></h4>
-<p>Now a few quick words on Steam Deck performance and expectations because this won’t take long. Truthfully, I <em>didn’t</em> expect it to be playable and… it’s really not.</p>
-<p>Firstly, there’s the initial shader compiling. On Steam Deck (OLED) it took 51 minutes to complete. It will do it each time you load the game fresh too, but much faster, only about 2 minutes. The initial shader compiling also took a whole 40% battery time away - ouch.</p>
-<p>After that, there’s no controller input at all. It sometimes detected I was using a controller (the Deck itself) showing gamepad button prompts, but no actual input. Switching it over to Keyboard / Mouse in Steam Input at least allows you to continue. To be fair, it’s advertised with “Partial Controller Support” on Steam, but that’s clearly pushing it.</p>
-<p>It only gets worse from this point on.</p>
-<p>Performance is <em>awful</em>. Truly bad. Tested on the <em>lowest</em> possible settings in the game, even with nothing going on, it’s often well below 30FPS. Without upscaling, it’s about 15FPS. Then trying it with all the various upscalers in the game, and you can at times get it to <em>briefly</em> give you around 30FPS at select moments, but it’s mostly going to be around 20FPS and below.</p>
-<p>This screenshot below is 1280x800, the Low preset, with AMD FSR set to Ultra Performance and it should speak for itself at 23FPS:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18494085041732032242gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18494085041732032242gol1.jpeg"/></a></p>
-<p>How about FSR 3 Frame Generation? It may give you a few more FPS in some cases, but it destroys the Frame Timing and turns it into something comical with input all over the place. See the screenshot below, in the top left notice the frame timing going wild resulting in serious input delay.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2842523511732032243gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2842523511732032243gol1.jpeg"/></a></p>
-<p>FSR 3 Frame Generation really needs the game to already perform quite well to actually make a difference.</p>
-<p>That performance only gets <em>worse</em> at various points I tested, some dropping below 10FPS on the lowest possible settings. This is just <u>clearly</u> just <em>not</em> a game for the Steam Deck. Even if you managed to get the performance higher doing extra tweaks like we often see after releases, the low visuals simply aren't worth it in this.</p>
-<p><em>Edit: release day update note - Valve set it as Unsupported on Steam Deck.</em></p>
-<h4><strong>Desktop Linux Performance</strong></h4>
-<p>On Kubuntu 24.10 with my Ryzen 5800X / Radeon 6800 XT at 2560x1440 resolution, I’ve gone through various settings to see where I could get it performing well. And, quick tip here, Steam Game Recording seemed to suck away a good 20FPS from this game, so I would make sure it’s not recording for it. Some games just don’t play particularly nice with it.</p>
-<p>For reference, here’s their suggested system requirements:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4066123991731671887gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4066123991731671887gol1.jpg"/></a></p>
-<p>However, the developers put a small note in the actual Steam system requirements, to note even the Minimum listed specifications were using upscaling.</p>
-<p>With that in mind. Performance here will depend of course on your hardware, and your chosen upscaling. At 1440p resolution on the High preset as per their suggestion based on my system, using no upscaling simply <em>wasn’t</em> an option, performance was all over the place often dropping well below 60FPS, even when dropping it down to Medium.</p>
-<p>Eventually I settled on TSR (Temporal Super Resolution) “Quality” with 80% Resolution Scale, which works <em>impressively</em> well on both the visual quality and performance uplift. Add into that FSR 3 Frame Generation, and often it was sitting usually above 80FPS and often a fair amount higher even on the High preset.</p>
-<p>As an example here, in a pretty empty area with nothing going on. High settings preset, Frame Generation (Left), and with no Frame Generation (Right):</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4248529471732032443gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/4248529471732032443gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12311106061732032445gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/12311106061732032445gol1.jpg"/></a><br/>
-<em>Click images to enlarge them.</em></p>
-<p>So <em>without</em> any FSR 3 Frame Generation, this empty area was hovering just at 60FPS (that’s with TSR at 80% resolution scale as well). FSR 3 Frame Generation added just about 50FPS. Frame Gen also improved the Frame Timings too so it's overall smoother.</p>
-<p>While I am impressed how smooth Frame Generation makes it, clearly the game directly just <em>needs</em> various performance improvements and is quite messy without upscaling. Perhaps we may see future Proton improvements to help it too like we’ve seen for other games. Even though plenty of it performed well with my settings, numerous parts also did not perform well regardless of the settings picked.</p>
-<h4><strong>Gameplay</strong></h4>
-<p>Note: review codes came quite close to release, so i’m short on time to fully explore everything i wanted to, and a basic play through is around 40 hours <em>at least</em>. Additionally, there’s multiple endings depending on what you do, and given that it’s a pretty dynamic open-world game, other people may get to see a <em>very</em> different experience.</p>
-<p>I should probably preface this by noting that this is the first time I’ve personally <em>properly</em> experienced this world, after bouncing off the older games for various reasons. I just couldn't get into them. S.T.A.L.K.E.R. 2 though, this is very much my jam.</p>
-<p>For people new to the series, keep in mind this is <em>not</em> a fast-paced run and gun FPS. It’s supposed to be an immersive first-person exploration horror shooter. You start with very little and it’s all about looting as you go. It’s a thoroughly challenging game, and that’s how it’s designed, they say it’s an “anti-power fantasy”, as you’re just another expendable person exploring a hostile environment. With no levelling system, you <em>need</em> to loot to get a better chance at surviving for better weapons, equipment and items to just keep you somewhat alive (but probably a bit irradiated).</p>
-<p>It’s a survival game too where you’ll be dealing with hunger, bleeding, sleep and radiation that all need a constant watch over, so you’ll need to be stocking up on plenty of supplies. No character choice though, you're simply thrust into the shoes of Skif.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18025324531732032629gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18025324531732032629gol1.jpg"/></a></p>
-<p>As for the difficulty, it can be pretty <em>brutal</em>. However, they have thankfully included difficulty modes. The intended experience <em>is</em> for it to be difficult, but not impossible. There’s even a Rookie mode for you to get more forgiving combat to help you explore the world, and you can change the difficulty at any point. My play-through has been with their intended middle difficulty.</p>
-<p>The world is huge too, “64-km²” they say, and it does take a <em>long</em> time to travel across it. Half the time because of so many <em>distractions</em> and encounters. Totally seamless though, no special loading screens to get in the way of the exploration and action.</p>
-<p>While there is a main story quest line to follow, outside of that there’s this loop that you end up doing. Going through each different zone, talking to everyone you can to grab side-quests, then gearing up to go and explore. You repeat this quite a lot, and as you explore you’ll likely uncover more random side-quests that continually have you explore more, and further into danger. S.T.A.L.K.E.R. 2, like most open world games, is very much what you make of it. You could blast through it a lot quicker, but half the fun is in all the encounters and some of the side-quests are pretty good.</p>
-<p>Part of this loop is also hunting for artifacts, special items you can equip in a slot to help you on your travels. You'll see lots of different anomalies in the Zone, and you have equipment that not only warns you about them with beeps, but you can pull it out to help you hunt down where exactly an artifact might be found in select areas. There's a few different types of these detectors you'll find on your travels.</p>
-<p>As for the artifacts, they all have different buffs and debuffs and different levels of each and even just finding them can cause a whole lot of death.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/21154181831732037350gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/21154181831732037350gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19633096511732037351gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/19633096511732037351gol1.jpg"/></a><br/>
-<em>Click images to enlarge them.</em></p>
-<p>While they can give you some protection, they can also cause some serious radiation issues. So they're very much a constant toss-up between risk / reward to use.</p>
-<p>Something I did find slightly funny, is the <em>yellow paint</em> styled objects being a thing even in a game like this. You’ll see it in various places, indicating you can do something like climb a ladder or break apart some wood. It’s quite subtle, but still amusing to see it in such a game.</p>
-<p>The game can feel somewhat alive, thanks to all the various NPC encounters. You’ll see groups roaming, that will encounter each other and fight without you even needing to get involved. You can watch the fireworks from the sidelines and scoop up some loot later, or engage and speed things up a bit and potentially save some extra ammo if you manage to do it quietly.</p>
-<p>While it’s not meant to be a fast-paced game, I wouldn’t say it was particularly stealthy or slow either. Enemies seem to spot you quite easily even from afar, and track you a bit after you move around too. I can’t say I’ve really experienced a whole lot of this “Advanced artificial intelligence system” that they talk about a fair bit. When a single enemy in a group, not actually next to the group, spots you, they all seem to just <em>instantly</em> know where you are and turn to you guns blazing. This is typical of most shooters but here I was expecting a little more smarts from S.T.A.L.K.E.R. 2. The amount of times I tried certain encounters over and over and <em>over again</em> with different methods, always found by one single person setting off the whole group - I ended up just going in guns blazing myself a lot of the time.</p>
-<p>Your movement speed is somewhat quick too, and while you can crouch, you cannot go prone - which feels a bit <em>odd</em> here if you’re wanting to be more stealthy. I get it though, it’s <em>not</em> meant to be a fully tactical game, but there’s so many situations it would have been great to have. Especially as the current stealth system is…not especially great.</p>
-<p>Wonderful atmosphere all the way through. Especially with the day and night cycle, and then the weather system on top of that. Rain, full-on storms - it all really adds to the immersion. The storms especially can look awesome at night while you’re out and about.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7875088791732032762gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7875088791732032762gol1.jpg"/></a></p>
-<p>One interesting game mechanic here is that you have an unlimited supply of bolts. You can pull them out any time, and throw them at various types of Anomalies in the game to set them off. This allows you to see where certain types start and end, plus move past them safely once they’ve been set off and you get a few seconds cool-down before they reappear.</p>
-<p>You’ll be using this feature a lot to access certain areas, some may even surround some fun loot. One particular quest had me direct an NPC through a field of electrical anomalies, and it took me a while to get it right without killing them or us both.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1312371401732032849gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1312371401732032849gol1.jpg"/></a></p>
-<p>There’s a lot that can go wrong in this game. So my one big tip for anyone jumping in: <strong>save early, save often</strong>. Mash that F5 button, <em>wear it out</em>. Also, the game doesn’t pause when you’re messing with your inventory, so don’t stick around for too long. Saves are great! Especially when you’re low on health, heading towards somewhere that may have some loot, only to come across a group of bandits and just when you think you’re going to live with 1HP and a dream after taking them down for their loot, a cute little anomaly appears and gives you the sweet kiss of death. I did say it was brutal right?</p>
-<p>Some of the encounters I will never forget. Exploring early on, low health, trying to find some meds when suddenly I heard this almighty roar. My character was freaking out, the screen went all weird and clearly something was close by. But what? It felt like it was <em>stalking</em> me a bit, the top of the screen was glowing red, clearly showing an enemy is nearby and I could hear it grunting. I didn’t get a chance to see though, because some weird anomaly appeared as I was searching for it that sucked me in and — dead. Reloaded, explored the same area, and ended up finding 5 med packs close-ish to where I died, great success.</p>
-<p>5 minutes later, I heard that roar again, so I quietly explored around some more. Eventually, I came to a house that clearly had a tunnel dug into it from below. Did I explore it? You bet I did! Did I regret that decision? Also very much yes. I saw a dead body, and thought “great, some loot!” and then out of the darkness ahead came a very <em>angry</em> speedy Bloodsucker that wanted me for dinner. That might be one of the most crazy-terrifying moments I’ve had in a game. I died <em>again</em>, obviously.</p>
-<p>I love the environmental interactions in this too. Those Bloodsuckers make my heart beat real fast, and seeing them near water is quite fun, because even though they have some sort of cloaking, you can spot them through the water like in the shot below, you’ll see the ripples. That was an especially fun encounter.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13400746291732032984gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13400746291732032984gol1.jpg"/></a></p>
-<p>S.T.A.L.K.E.R. 2 is just insanely intense all the time you’re exploring as you never know quite what’s going to happen.</p>
-<p>Another time I came out of a tunnel, minding my own business, and was suddenly pushed to the floor with a grunt. Got up, looked around and saw a bunch of what looked like wild boar running rampant trying to attack me. After running for a few seconds to safety on top of a truck, I suddenly heard a load of barking. A whole pack of mutated dogs had come along for some fun too, and then the boar just seemed to chase them around. Guess what happened next? I died, because the truck I jumped onto for <em>safety</em> was a super-source of radiation. <em>Nothing in this game is safe dammit.</em></p>
-<p>Some parts of the general design I found <em>odd</em> that I didn’t like though including only being able to lean if you’re holding a gun. But what if I want to peek around a corner with a knife? Nope. There’s also the sin of some NPCs running slower than you walk, which is especially <em>annoying</em> on certain quests you pick. The mantling system to climb up something is also pretty rubbish, and only works at seemingly very select places. On top of that, in some places, even the slightest jump down can kill you. You know the times I'm talking about I'm sure, it happens in other games, you look and think "even my unfit ass could jump / side down that without a single injury".</p>
-<p>While there’s no character-specific upgrade system, there’s still plenty of ways to customise your whole experience. Weapons, for example, can be <em>individually</em> tweaked with various attachments and upgrades. It can get a little costly though depending on how many you wish to keep around. You also need to deal with weapon durability, and if it drops too low bullets will get jammed. Weapon durability can end up a fatal mistake to ignore, when you’ve got some good loot and a pack of hostile people or creatures come across you. Weapons end up wearing out somewhat quicker than I was expecting too, which is thoroughly annoying.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18089629711732033055gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/18089629711732033055gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16317179191732033056gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16317179191732033056gol1.jpg"/></a></p>
-<p>The overall dynamic nature of it means some quests and side-quests can go a fair bit differently each time, depending on your involvement, or not at all if you step out of the way.</p>
-<p>One particular quest came to mind where I tried talking a group out of killing someone in a house, but they didn’t listen. As they were about to go in, the person hiding came running out guns-blazing at them. First time around, the person in the house managed to take them all down after running outside and taking cover. Second time the group point blank shot the person the second they stepped outside, which was quite comical to see after the initial run of it due to how abrupt it was. Just <em>pow</em>, dead.</p>
-<p>I’ve also had quite a lot of times where I’m out roaming for loot when enemies spotted and started firing at me, only for a big creature to come along and annihilate them so I could run away while they’re all distracted. So many little events that keep going throughout the game, and you get to choose what to do about them all.</p>
-<p>Something I truly hated though is the weight system. I can't think of a single time, in any game – ever, that has made being overencumbered in any way fun. It's a game mechanic I despise. Let me stock up on things without slowing to a crawl. Considering how far between traders are, and your own stash, it's just a ridiculous nuisance. Let me hoard sausages in peace! Why are a few of them as heavy as some of the guns?</p>
-<p>I hope you like rats…as there can be swarms. Vicious, hungry, screeching swarms of them.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12934600221732033233gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12934600221732033233gol1.jpg"/></a></p>
-<p>Thankfully again due to the dynamic nature of the game, you might at times come across a roaming friendly patrol to help you deal with them, or use as your distraction meat-shield.</p>
-<p>I'll also take this moment to say screw these guys and their stupidly annoying telekinesis that picks up guns, fires them at you and steals your gun away from you:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17694670001732033341gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17694670001732033341gol1.jpg"/></a><br/>
-<em>Say cheese! Still smiling at me after death, annoying little thing.</em></p>
-<p>There's some other bouncy little critters that can also go to hell, that make me jump every time they make an appearance and I'm not expecting them. But I won't spoil those. You can just <em>enjoy</em> meeting them for yourselves.</p>
-<p>Even though the world is huge, there is (thankfully) a form of fast-travel. Much like the game world though, it’s on the punishing side, as it will cost you a bit every time you decide to use it. However, it can be incredibly useful too. If you’re stocked up on loot and want to get to your stash, or to a different area to sell it and carry on with more quests, it can be beneficial anyway to find a guide to initiate fast-travel so you don’t lose anything on the road. I can’t count the number of times I died to a random creature, then bandits appearing and finally losing it to an anomaly with loot on me. Thankfully, I quick-save as much as I breathe but still, you get the point.</p>
-<p>The quest system is dynamic too, and at least a little smart. You can build up quite a lot of quests, and there’s various ways of doing each of them differently. Some of them can be completed with a shotgun to the face of a particular person, but that person might give you other options. Shooting first, questions later is not always the best option, but sometimes it’s also just fun to do so you can loot everyone in a particular location. If you’re allowed to kill a particular quest giver, they’ll have the items you need on them. Other times, a quest giver might have been killed by someone, or something, and they’ll all show up in your Failed Quest list.</p>
-<p>Another big issue to deal with are powerful emissions. They’re insane crazy storms that turn the sky red, with lightning everywhere and staying outside during one is 100% guaranteed death. You do get a fair bit of warning when one is coming, but even so, getting to shelter fast can still be an issue. Nearly everything in S.T.A.L.K.E.R. 2 wants you dead.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4233058491732047350gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4233058491732047350gol1.jpg"/></a></p>
-<p>I haven't even gotten a chance yet to talk about the story, which I won't spoil, because it would be so easy to do so. It revolves around a particular item that gets taken from you, and your main initial quest to try and find it and who was involved. This of course leads onto various other intertwining stories, and things spiral a fair bit from there and it gets…weird.</p>
-<p>Dealing with various gangs and different factions along the way. It's exciting even from the moment you load it up, with an impressive intro to the game. Even though the story is interesting as it expands, S.T.A.L.K.E.R. 2 is very much about <em>everything else</em>. Plenty of the individual quests you do, along with their story progression, are really fun as they unfold. Backed up by some great voice acting, I especially liked the blind brainwashed preacher when you meet the remnants of the Monolith organisation, and a particular mind-controlling "boss battle" of sorts that took me a good few attempts to get right.</p>
-<p>As always, every experience you have depends on your equipment, you really will want to constantly be sorting through what you have and swapping things around depending on your currently picked quest-line.</p>
-<p><em>Hope you like FPS platforming too because there's a bit of that spread throughout the game.</em></p>
-<p><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8057729621732050516gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8057729621732050516gol1.jpg"/></a></p>
-<p>With a game like this, I'm really only scratching the surface. I need to go back through and play more, to try out making some different decisions. You do get to make a few interesting choices as you play, and so I'm keen to see what the real difference is when you treat a faction differently.</p>
-<h4><strong>Bugs and Technical Issues</strong></h4>
-<p>In my time in the game I’ve seen a fair amount of bugs. Just to give you a full idea of what to expect that I’ve come across: objects falling through the world, annoyingly at times I needed them too (darn ammo and meds); dead bodies that spring back up in some sort of T pose and then flop back down again; characters that at times seem to do a mini-teleport and guns that fire without a sound at all. Others like: bodies you can’t get close enough to move, that end up blocking your way in certain situations; I’ve seen NPCs with legs going through the floor in buildings; NPCs that walk on top of objects and just stare point-blank at walls; NPCs walking on the spot never going anywhere and then just vanishing; various NPCs that aren't even close to the floor (or the bed) and so on.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5147835951732033476gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5147835951732033476gol1.jpg"/></a></p>
-<p>During my run I've also seen one of the single <em>funniest</em> bugs I’ve ever seen in a game. I was at an enemy base, sneaking around, got discovered and so an enemy started firing at me. I shot them, and then they just suddenly started wildly spinning, and then their body took off like a helicopter and just carried on spinning going up and up and up. The physics system can be pretty <em>hilarious</em>. This ended up happening multiple times too.</p>
-<p>Radio chatter audio is even a problem too. When you get a call it often flicks between radio-style sounding one sentence, to chatting like they're right next to you and back again. Thoroughly odd.</p>
-<p>Objects NPCs are wearing don’t always line up correctly too, like a particular discussion where their headphones and tape player move without them and the camera ends up focusing on that as you move around. Hilarious again.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10259717461732033435gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10259717461732033435gol1.jpg"/></a></p>
-<p>Saved games act <em>oddly</em> too. I assume due to the dynamic nature of the game, but the AI seems to just make things up when you reload the game. Numerous times I’ve saved somewhat close to enemies, reloaded and they’re suddenly looking for me even when they weren’t before or they know exactly where I am and start shooting. Their position seems to <em>shift</em> during save reloading, as does their behaviour. I gave advice earlier to “save early, save often” and you’ll need it, because this issue has caused me to load earlier saves more times than I can remember.</p>
-<p>None of the problems actually stopped me enjoying it for the most part, some even just made me laugh, but yeah — there’s definitely a fair amount of bugs there. I’m honestly surprised at how many. Some do end up breaking the game, like quests that don’t go through properly causing you to reload an earlier save.</p>
-<p>A fair amount of flickering textures too in <em>some</em> places, which might be issues with it running with Proton on Linux. So I’ll give it some allowance there until we know more after release. Example video:</p>
-<div class="ckeditor-html5-video" data-responsive="true" style="text-align: center;">
-<video controls="controls" src="https://uploads.golmedia.net/uploads/articles/article_media/10836592101732104709gol1.mp4" style="height:auto; max-width:100%"></video>
-</div>
-<p>That flickering is only in a select few places, but very distracting when it happens.</p>
-<p>One major graphical issue I came across, that I’ve <em>never</em> ever seen before in <em>any</em> other game, is that I had to completely disable adaptive sync directly in my <em>monitor</em> control panel. Otherwise, lots of light sources would have some insane flicker. Took me ages to figure out what that cause was. But I’ve not had to do that for any other game.</p>
-<p>It's clear the game is coming in hot, with plenty of bugs still to be worked through. There's been patches during the review period, some fixes I may not have seen yet, but still many issues to be found during testing even on release day showing many.</p>
-<p>Quite stable though, surprisingly so, only a single hard-crash to desktop in my entire run.</p>
-<h4><strong>To sum up</strong></h4>
-<p>S.T.A.L.K.E.R. 2 has been equal parts mesmerising as it has been terrifying at the same time. There’s been lots of moments where I’ve just sat and watched something happen, to the times where something has made me jump so fiercely that I threw my mouse across my desk. Some of the encounters really can end up quite <em>frightful</em>, but other times I’ve been just amazed by things happening around me. However, all the bugs can definitely be really <em>frustrating</em> to deal with.</p>
-<p>My main concern with it aside from the many bugs is the performance on Linux (and just performance in general), you clearly need some power and without Frame Generation it’s pretty rough. Apart from that, and speaking overall, my time spent with it for the most part has been thoroughly good fun.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11797481641732033789gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11797481641732033789gol1.jpg"/></a></p>
-<p>If I could compare it to previous experiences, it was like the first time I jumped into and completed the original Dying Light or Fallout 3. Worlds full of seemingly endless possibilities, that’s truly never dull to load up a save and explore, and you don’t necessarily need to stick to the storyline if you want to just keep exploring and discovering. There’s hours and hours of content here to discover. But also a whole <strong>lot</strong> of <em>jankiness</em>, so expect plenty of patches to come.</p>
-<p>With the mod support, I really cannot wait to see what people cook up to add into it. I feel like this is going to be a game that has a very-long shelf-life that people will be playing for years to come. Add into that the multiplayer they’re promising that will come “soon after release” as a free addition, I have zero doubts that it’s going to be popular.</p>
-<p class="plain-list-title">Feature Highlight:</p>
-<blockquote>
-<ul>
-<li>Unique gameplay built on a blend of FPS, horror, and immersive sim.</li>
-<li>It is a non-linear story, with a variety of paths that lead to one of the several endings.</li>
-<li>Benchmark-setting graphics developed using cutting-edge photogrammetry and scanning technologies.</li>
-<li>Advanced artificial intelligence systems that will keep engaged even the most hard-boiled players.</li>
-<li>Immersive survival mechanics like hunger, sleeping, bleeding, radiation effects that enrich the gameplay.</li>
-<li>Dynamic day-night cycle and weather will add even more realism to the gameplay experience.</li>
-<li>Mod support gives the freedom to the creative stalker to extend and enrich the game universe.</li>
-<li>Multiplayer mode, will be added after release as a free update.</li>
-</ul>
-</blockquote>
-<p>The game goes live to purchase at 4PM UTC.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40460/stalker-2-heart-of-chornobyl/">S.T.A.L.K.E.R. 2: Heart of Chornobyl</a></strong><p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://www.gog.com/en/game/stalker_2_heart_of_chornobyl_standard_edition">GOG</a></li><li><a href="https://store.steampowered.com/app/1643320/STALKER_2_Heart_of_Chornobyl/">Steam</a></li></ul></p></div></p>
-<p>“It feels utterly surreal to say that, but after more than 7 years in the making, S.T.A.L.K.E.R. 2 is now released. That’s totally wild. So was the whole development story. What started as the most ambitious game by GSC eventually turned out to be an ultimate personal challenge. S.T.A.L.K.E.R. 2 was always supposed to be a truly Ukrainian product, showing our culture to the world in the ongoing effort of the nation to be recognized. I truly believe the team we have consists of exceptional people, but I never actually thought they would be finishing the game under the circumstances like these. Despite all the odds, it’s there. Our biggest game, our own story, our love letter to Ukraine. All the time, effort and passion we put into this is about to be witnessed by the players from all around the globe. After 15 years, the doors to the Zone will be opened once again”, — says Ievgen Grygorovych, CEO and Game Director.</p>
-<p>If you haven’t seen it, I also recommend checking out the making of documentary video for some background:</p>
-<div class="hidden_video" data-video-id="28CITqxwNz0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/26411907d1b437c5c4f80260734528bb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/28CITqxwNz0" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/stalker-2-heart-of-chornobyl-review-works-on-linux-desktop-with-proton-but-poorly-on-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/stalker-2-heart-of-chornobyl-review-works-on-linux-desktop-with-proton-but-poorly-on-steam-deck/</guid>
-      <pubDate>Wed, 20 Nov 2024 14:11:32 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1126563341id25671gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>FPS</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>FromSoftware owner Kadokawa confirms Sony sent an &#39;initial letter of intent&#39; to acquire them</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://www.gamingonlinux.com/2024/11/sony-reportedly-looking-to-acquire-kadokawa-owner-of-elden-ring-dev-fromsoftware/" rel="noopener" target="_blank">Recently I covered</a> that Kadokawa, the owner of ELDEN RING developer FromSoftware, were potentially being acquired by Sony and now Kadokawa have confirmed there's something going on.</p>
-<p>No decision has been made yet though. Before you go jumping to conclusions. In a press <a href="https://ssl4.eir-parts.net/doc/9468/ir_material7/240956/00.pdf" rel="noopener nofollow" target="_blank">release</a> issued via their <a href="https://group.kadokawa.co.jp/global/" rel="noopener nofollow" target="_blank">website</a>, they issued a brief statement:</p>
-<blockquote>
-<p>There are some articles on the acquisition of KADOKAWA Corporation (hereinafter "the Company") by<br/>
-Sony Group Inc. However, this information is not announced by the Company. The Company has received an<br/>
-initial letter of intent to acquire the Company's shares, but no decision has been made at this time. If there are<br/>
-any facts that should be announced in the future, we will make an announcement in a timely and appropriate<br/>
-manner.</p>
-</blockquote>
-<p>Now at least we know the previous report is correct, but we'll have to wait on their decision.</p>
-<p>If the deal goes through this really will be a huge deal in the world of video games since Kadokawa control FromSoftware (ELDEN RING, <em>ARMORED CORE), </em>Spike Chunsoft (Danganronpa, DRAGON BALL: Sparking! ZERO), ACQUIRE Corp. (OCTOPATH TRAVELER) and Gotcha Gotcha Games (RPG Maker) as well as various Anime and Manga.</p>
-<p>Shows you how big this deal is that they had to put out a statement to clarify things, and that nothing has happened just yet.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/fromsoftware-owner-kadokawa-confirms-sony-sent-an-initial-letter-of-intent-to-acquire-them/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/fromsoftware-owner-kadokawa-confirms-sony-sent-an-initial-letter-of-intent-to-acquire-them/</guid>
-      <pubDate>Wed, 20 Nov 2024 12:27:56 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2022225820id25698gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Sony</category>
-      
-    </item>
-    
-    <item>
-      <title>Euro Truck Simulator 2 - Greece lands December 4, SCS continue updating legacy art assets for both truck sims</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>SCS Software have announced that Euro Truck Simulator 2 - Greece is set for release on December 4th. Plus, they're continuing to update the visuals for both Euro Truck Simulator 2 and American Truck Simulator.</p>
-<p>In a <a href="https://blog.scssoft.com/2024/11/under-hood-reimagining-legacy-assets.html" rel="noopener nofollow" target="_blank">blog post</a> the developers gave a little background info on their rework of various art assets used in both games noting that: "Since the release of Euro Truck Simulator 2 and American Truck Simulator, the processing power of personal computers has made some serious advancements. In turn, we've continually brought updates to both our titles to introduce new technology and techniques, which has allowed us to introduce higher levels of visual fidelity to our content."</p>
-<p>Thanks to the work from two team members they're going through "enhancing the quality and optimization of game models that have started to look outdated and inconsistent with newer additions". Nice to see they continue updating the game for everyone, on top of all the various newer location DLC.</p>
-<p>On that note, Euro Truck Simulator 2 - Greece arrives December 4th, check out the trailer:</p>
-<div class="hidden_video" data-video-id="TnstEfkCYFM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/42f912db843c6109727d3e41dc1fc52d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/TnstEfkCYFM" target="_blank">See video</a></div></div>
-<p>The Greece DLC as you can imagine adds a lot of new areas to explore, but SCS said it's more than just that. It introduces hotel complexes and vibrant cotton farms as new depots as well. <em>Might have to dust off my wheel soon…</em></p>
-<p>12 years after release, Euro Truck Simulator 2 has some impressive numbers seeing a peak player count of 36,919 in the last 24 hours. Not many games are able to do that.</p>
-<p>It has Native Linux support and is Steam Deck Verified.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/6326/euro-truck-simulator-2/">Euro Truck Simulator 2</a></strong> | Release Date: 18th October 2012<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/11/euro-truck-simulator-2-greece-lands-december-4-scs-continue-updating-legacy-art-assets-for-both-truck-sims/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/11/euro-truck-simulator-2-greece-lands-december-4-scs-continue-updating-legacy-art-assets-for-both-truck-sims/</guid>
-      <pubDate>Wed, 20 Nov 2024 10:36:29 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1229264585id25697gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>DLC</category>
-      
-      <category>Indie Game</category>
       
     </item>
     
