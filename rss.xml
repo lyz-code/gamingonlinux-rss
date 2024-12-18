@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-12-17 07:29:50.732477</pubDate>
+    <pubDate>2024-12-18 07:28:37.158989</pubDate>
 
     
     <image>
@@ -18,6 +18,859 @@
     </image>
 
     
+    
+    <item>
+      <title>Nexus Mods new cross-platform app v0.7.1 released finally supporting upgrades - better modding for Linux / Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>This is a big one! The new and still in development cross-platform Nexus Mods app that has Linux support just released version 0.7.1 and you no longer have to remove <em>everything</em> to update.</p>
+<p>What this means is that it's safe for a lot more people to jump in and start testing it, although game support is still limited to Baldur's Gate 3, Cyberpunk 2077, Stardew Valley and Mount &amp; Blade II: Bannerlord for now. This release additionally expands the Linux support so Protontricks running via Flatpak is now supported.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3680424591734463972gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3680424591734463972gol1.jpg"/></a><br/>
+<em>Pictured - Nexus Mods App, Credit: Nexus Team</em></p>
+<p>Some other bigger changes from this release include a facelift for the Load Order styling for Cyberpunk 2077 REDmods, the mod Collections feature also has a much improved flow and they say it's "up to 25x faster than Vortex at installing collections (depending on your internet speed and hardware)".</p>
+<p>Even though the app now supports updates, they still say you need to remove any Collections this time "as they may not install properly", which hopefully won't be a problem from this release onwards.</p>
+<p class="plain-list-title">Bug fixes in this release:</p>
+<blockquote>
+<ul>
+<li>Fixed an issue counting the mods a user has installed when sending analytics.</li>
+<li>Added a placeholder to the Games view when no games have been detected.</li>
+<li>When enabling the Xbox Game Pass support option in settings, the app now correctly prompts a restart.</li>
+<li>Fixed an issue where the first row of the Library/Installed Mods would sometimes be misaligned with the table headers (this was part of an Avalonia update).</li>
+</ul>
+</blockquote>
+<p></p>
+<p class="plain-list-title">Current known issues:</p>
+<blockquote>
+<ul>
+<li>Stardew Valley (Native Linux version) is not detected when installed via Heroic Launcher on Linux. The Windows version of the game can be used instead until this issue is fixed.</li>
+<li>When installing Collections that include bundled mods, it is not possible to fully download the collection due to a counting error. A fix for this is planned for the next release.</li>
+<li>Bundled mods included with collections do not appear in the UI but are still applied to your game.</li>
+<li>The success rating for collections is not showing the correct value.</li>
+<li>The game version is not checked when adding a collection meaning you can install outdated mods without being warned.</li>
+<li>The Library and Collections (WIP) pages are not filtered by game.</li>
+<li>The "Switch View" option does not persist in the Library/Installed Mods view.</li>
+<li>The "Load Order" heading toggle does not persist in the Load Order view.</li>
+</ul>
+</blockquote>
+<p>You can download it for Linux (including Steam Deck) via the AppImage on the <a href="https://github.com/Nexus-Mods/NexusMods.App/releases/tag/v0.7.1" rel="noopener nofollow" target="_blank">release page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/nexus-mods-new-cross-platform-app-v0-7-1-released-finally-supporting-upgrades-better-modding-for-linux-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/nexus-mods-new-cross-platform-app-v0-7-1-released-finally-supporting-upgrades-better-modding-for-linux-steam-deck/</guid>
+      <pubDate>Tue, 17 Dec 2024 19:36:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2035709301id25872gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Beta</category>
+      
+    </item>
+    
+    <item>
+      <title>Fedora Asahi Remix 41 brings AAA gaming to Apple Silicon with Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Fedora Asahi Remix 41 is out now bringing the most polished version of Linux for Apple Silicon Macs, along with support for AAA gaming. <em>It's developed in collaboration between the Fedora Project and Asahi Linux.</em></p>
+<p>As announced on the <a href="https://fedoramagazine.org/fedora-asahi-remix-41-is-now-available/" rel="noopener nofollow" target="_blank">Fedora blog</a> it's built upon Fedora 41 with the KDE Plasma 6.2 desktop environment as their flagship (best supported), but GNOME 47 is also an option for those that want it. The exciting thing about this release is the much improved gaming experience!</p>
+<p>Developer Alyssa Rosenzweig from the Asahi team blogged about the <em>big</em> gaming improvements that I covered here on GamingOnLinux <a href="https://www.gamingonlinux.com/2024/10/gaming-on-linux-with-apple-silicon-now-becoming-a-very-real-thing/" rel="noopener" target="_blank">back in October</a>, and this release brings it all together along with the new and improved conformant Vulkan 1.4 driver. Writing about the graphics driver upgrade developer Rosenzweig <a href="https://rosenzweig.io/blog/vulkan-14-sur-asahi-linux.html" rel="noopener nofollow" target="_blank">mentioned</a>:</p>
+<blockquote>
+<p>Releasing a conformant driver reflects our commitment to graphics standards and software freedom. Asahi Linux is also compatible with OpenGL 4.6, OpenGL ES 3.2, and OpenCL 3.0, all conformant to the relevant specifications. For that matter, ours are the only conformant drivers on Apple hardware for any graphics standard.</p>
+</blockquote>
+<p>Thanks to the likes of <a href="https://github.com/FEX-Emu/FEX" rel="noopener nofollow" target="_blank">FEX</a> and various other projects, you <a href="https://docs.fedoraproject.org/en-US/fedora-asahi-remix/x86-support/" rel="noopener nofollow" target="_blank">can run</a> Steam games directly.</p>
+<p>Installing it on an Apple Silicon Mac is <a href="https://docs.fedoraproject.org/en-US/fedora-asahi-remix/installation/" rel="noopener nofollow" target="_blank">surprisingly easy</a> too, you just need access to a terminal and then run a simple command and it will walk you through it.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7412479301734453591gol1.jpg"/><br/>
+Pictured - The Witcher 3: Wild Hunt</p>
+<p>Wonderful to see such insanely impressive progress for running Linux on modern Apple Silicon hardware.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/fedora-asahi-remix-41-brings-aaa-gaming-to-apple-silicon-with-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/fedora-asahi-remix-41-brings-aaa-gaming-to-apple-silicon-with-linux/</guid>
+      <pubDate>Tue, 17 Dec 2024 16:46:09 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2125683246id25871gol.jpg" type="image/jpeg"/>
+      
+      <category>Apple</category>
+      
+      <category>Distro News</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>The Steam Deck Stars Bundle on Steam has some top Deck Verified games for cheap</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Here's your chance to get four absolutely brilliant games that are all Steam Deck Verified, have Native Linux support and at a discount too.</p>
+<p class="plain-list-title">This is thanks to a few developers on Steam teaming up for the Steam Deck Stars Bundle which gives you access to these great games:</p>
+<blockquote>
+<ul>
+<li><strong>Halls of Torment - </strong>Slay hordes of terrifying monsters in this horde survival roguelite. Descend into the Halls of Torment where the Lords of the underworld await you. Treasures, magical trinkets, and a growing cast of heroes will grant you the power to vanquish these horrors from beyond. How long can you survive?</li>
+<li><strong>Dome Keeper - </strong>Defend against waves of alien attackers in this innovative roguelike survival miner. Dig for resources and choose from powerful upgrade paths. Is there enough time to mine a little deeper and get back to defend before the monsters attack your dome?</li>
+<li><strong>Slay the Spire - </strong>We fused card games and roguelikes together to make the best single player deckbuilder we could. Craft a unique deck, encounter bizarre creatures, discover relics of immense power, and Slay the Spire!</li>
+<li><strong>Core Keeper - </strong>Explore a vast cavern of creatures, relics and resources in a mining sandbox adventure for 1-8 players. Mine, build, fight, craft and farm to unravel the mystery of the ancient Core.</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3181690371734452452gol1.jpg"/><br/>
+<em>Pictured - Slay the Spire</em></p>
+<p>All four of the games have great ratings from users, and from me too! They're all brilliant and worth picking up. It's a "complete the set" bundle, so if you already own some from it you still get a discount on those you don't own.</p>
+<p>Check out the <a href="https://store.steampowered.com/bundle/48219/Steam_Deck_Stars/" rel="noopener nofollow" target="_blank">bundle on Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/the-steam-deck-stars-bundle-on-steam-has-some-top-deck-verified-games-for-cheap/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/the-steam-deck-stars-bundle-on-steam-has-some-top-deck-verified-games-for-cheap/</guid>
+      <pubDate>Tue, 17 Dec 2024 16:23:00 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1153147657id25870gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Game Bundle</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Crescent County is an open-world &#34;witch-tech&#34; delivery life-sim where you travel around on a motorised broom</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Witch-tech? That's a new one. Crescent County has a really fun idea and some lovely visuals too. It's a delivery life-sim where you move to a witch-tech island and explore its painterly open world on the back of your scrappy, souped-up motorbroom.</p>
+<p>It's quite a unique blending of genres here this mixes together deliveries, exploration, customization, racing and bits of a slice-of-life game with a relationships system. Have a look at the trailer:</p>
+<div class="hidden_video" data-video-id="TryA1gjg1iY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/704368e30e7d451b78b4d7817087d8d6.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/TryA1gjg1iY" target="_blank">See video</a></div></div>
+<p>“I’ve had Crescent County, and this world, living in my head since 2017. I need to make it. If I don’t make it I will start peeling off wallpaper with my teeth.” says Anna Hollinrake, founder and Creative Director. “We’re obsessed with building crunchy motorbroom gameplay with moreish home decoration and broom upgrade systems, whilst sticking a big vulnerable heart in the middle of it. We call it cozy-with-bite: making this beautiful, wholesome world people want to live in, and still have a tonne of fun, with challenge you can opt in to. Plus we want romance in there, but like, the messy kind.”</p>
+<p>On the worldbuilding in Crescent County, Anna comments “I think genre mashups are where all the interesting stuff is. It’s sci fi and fantasy remixed to make souped-up motorbike brooms, and bathed in vibey lofi and alt-rock, playing out of your chunky 00s flip phone. It’s roller derby, scrappy, do-it-yourself zine subculture. It’s Ghibli but with considerably more crop tops and chokers. Getting to have The Beths soundtrack our announcement trailer was an absolute dream.”</p>
+<p>The developer recently <a href="https://store.steampowered.com/news/app/2202650/view/591757425095213765" rel="noopener nofollow" target="_blank">updated</a> the demo to include a "first steam deck native build" (a Native Linux version) which is fun to see. Seems they will only be supporting the Steam Deck directly and not Desktop Linux but it should run the same. If not, there's always <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40764/crescent-county/">Crescent County</a></strong><p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/2202650/Crescent_County/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/crescent-county-is-an-open-world-witch-tech-delivery-life-sim-where-you-travel-around-on-a-motorised-broom/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/crescent-county-is-an-open-world-witch-tech-delivery-life-sim-where-you-travel-around-on-a-motorised-broom/</guid>
+      <pubDate>Tue, 17 Dec 2024 16:15:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1837656540id25869gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Casual</category>
+      
+      <category>Demo</category>
+      
+    </item>
+    
+    <item>
+      <title>Tempest Rising looks awesome and this RTS is launching in April 2025</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>I quite enjoyed the first initial demo of Tempest Rising, a classic RTS like Westwood used to make (Red Alert, Command &amp; Conquer) only a lot shinier and now it has a release date along with a new trailer. You'll need <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> to play this on Linux when it launches on April 24th, 2025.</p>
+<p>Tempest Rising transports you to a battle-scarred 1997 in an alternate timeline where the Cuban Missile Crisis went nuclear. In the fallout from the war, a strange, red, electrical vine known as Tempest spread across the planet and changed the course of history, awakening an ancient race lying dormant known as the Veti, as teased in today’s new trailer.</p>
+<p>Check out the new trailer:</p>
+<div class="hidden_video" data-video-id="l_cA_pmz_dI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/707af19abdc0d2b08917049605b78fd1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/l_cA_pmz_dI" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Features:</p>
+<blockquote>
+<ul>
+<li><strong>Classic RTS base-building </strong>with fast, fluid, hard-hitting combat and tons of customization.</li>
+<li><strong>Command two asymmetrical factions</strong>, each featuring unique harvesting models, resource systems, and distinct rosters of units for drastically different play styles.</li>
+<li><strong>Two epic single-player campaigns </strong>with between-mission cutscenes to drive the story.</li>
+<li><strong>Skirmish, custom games, and ranked multiplayer matchmaking</strong> with Glicko-2 rating.</li>
+</ul>
+</blockquote>
+<p>Will you be picking it up at release?</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40763/tempest-rising/">Tempest Rising</a></strong> | Release Date: 24th April 2025<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/1486920/Tempest_Rising/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/tempest-rising-looks-awesome-and-this-rts-is-launching-in-april-2025/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/tempest-rising-looks-awesome-and-this-rts-is-launching-in-april-2025/</guid>
+      <pubDate>Tue, 17 Dec 2024 15:50:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1617248041id25868gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>RTS</category>
+      
+      <category>Steam</category>
+      
+      <category>Strategy</category>
+      
+    </item>
+    
+    <item>
+      <title>A Game About Digging A Hole has you dig the stupidest biggest hole possible to find potential secrets</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A Game About Digging A Hole sounds like it might actually be somewhat amusing. As the name suggests, it's all about digging down deep where you might find some secrets.</p>
+<p>This is why I love smaller developers. They come up with the simplest, stupidest and somehow the most interesting looking games. I'm not saying this looks incredible or anything, but the idea of it actually sounds like it might be great for some casual fun.</p>
+<p>Created by developer Cyberwave, the idea for A Game About Digging a Hole was conceived during an early stage of Solarpunk’s development when the artists were testing voxel-based islands and the basics for terraforming and digging. Although too complex for such a small team, the core mechanics were already functional. As a big fan of the game Motherload, one artist had the idea of combining digging mechanics with randomly spawning ores and shovel upgrade options. This led to the quick development of a 3D digging mini-game, built on a proven concept without requiring lengthy prototypes or testing phases. Developed during the artist's vacation and saving development time by using licensed assets, A Game About Digging A Hole was developed in just 14 days.</p>
+<div class="hidden_video" data-video-id="P-Ys4PRZxsw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1c397b11f8932023861734122cb0968a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/P-Ys4PRZxsw" target="_blank">See video</a></div></div>
+<p>More about it:</p>
+<blockquote>
+<p><em>A Game About Digging A Hole</em> challenges you to dig a hole in your newly purchased house. On your way down, collect resources to sell and upgrade equipment to dig deeper and take garden excavation to a new level! But beware! With every spadeful you take, you start to uncover a mysterious secret, and the deeper you dig, the closer you get to the truth. But take your time, as there is no rush and no rules. Just you, your spade and a great underground adventure! </p>
+</blockquote>
+<p>Seems like a nice bit of cheap casual fun to me. Releasing sometime in 2025 for £3.99 / €4.99 / $4.99.</p>
+<p>You'll need <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> to play this on Linux.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40762/a-game-about-digging-a-hole/">A Game About Digging A Hole</a></strong><p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/3244220/A_Game_About_Digging_A_Hole/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/a-game-about-digging-a-hole-has-you-dig-the-stupidest-biggest-hole-possible-to-find-potential-secrets/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/a-game-about-digging-a-hole-has-you-dig-the-stupidest-biggest-hole-possible-to-find-potential-secrets/</guid>
+      <pubDate>Tue, 17 Dec 2024 13:51:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/96783233id25867gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Casual</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Sandbox</category>
+      
+    </item>
+    
+    <item>
+      <title>Drill-ship survival game Volcanoids adds big mech spiders and tanks that drill up through the ground to say hi</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>I still think Volcanoids has one of the absolutely coolest ideas for a survival game, with your base being a big moving drill that burrows through the earth and it just keeps on getting better. Volcanoids has Native Linux support and is rated Steam Deck Playable.</p>
+<p>While they're currently working away on a whole new island for a future update, they're still adding in some really exciting stuff here. The Machine Hunt update brings with it a new system where enemy robots after a while will get a bit "fed up with your bs" and go into a Hunt Mode where special military-grade enemies will appear to ruin your day. This includes a jumping scary spider mech, and a tank the drills up through the ground to join the party along with various new enemy structures.</p>
+<p>Check out the update trailer:</p>
+<div class="hidden_video" data-video-id="xthcNHHUsd8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2c3c3dcd67f8df1896913ab1046355dc.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/xthcNHHUsd8" target="_blank">See video</a></div></div>
+<details class="spoiler_container"><summary class="spoiler_header">Full changelog, click me</summary>
+<div class="spoiler-content">
+<h3>Features</h3>
+<ul>
+<li>reworked enemy drillship and unit spawning</li>
+<li>added Cog Hunt</li>
+<li>added Cog Military structures</li>
+<li>added new enemy: Cog Spider</li>
+<li>added new enemy: Self-spawned tank</li>
+<li>added new way of spawning humanoid Cogs</li>
+<li>added 5th drillship segment</li>
+<li>added 4 new achievements</li>
+</ul>
+<h3>Improvements</h3>
+<ul>
+<li>improved Cog AI</li>
+<li>improved quest item navigation</li>
+<li>improved positioning of HUD icons for player, drillship and modules</li>
+<li>reduced range of Cog tesla weapons</li>
+<li>modified positions of trees, rocks and deposits to accomodate 5th segment</li>
+<li>modified terrain to accomodate 5th drillship segment</li>
+<li>helper drones are no longer selected when opening map by game controller</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>fixed client cannot see modules on some segments</li>
+<li>fixed kill quests stop counting when host dies</li>
+<li>fixed custom settings affecting new game</li>
+<li>fixed terrain and invisible obstacles in caves</li>
+<li>fixed player teleporting when using device with a tool</li>
+<li>fixed tank movement when driving on the edges</li>
+<li>fixed player placement after using devices like worktable or pilot seat</li>
+<li>fixed tunnel tooltips on the map</li>
+<li>fixed Lava Source and Volcano tooltips</li>
+<li>fixed typos in item and quest descriptions</li>
+<li>fixed quest description</li>
+<li>fixed “Drillship inventory full” message, when there is free space</li>
+</ul>
+<h3>Visual improvements</h3>
+<ul>
+<li>fixed double highlight in inventory and production screen</li>
+<li>fixed heat distortion</li>
+<li>fixed wrong icon on drone modules</li>
+<li>fixed coloring of modules on the drillship</li>
+<li>fixed blurry dials on newly spawned drillships</li>
+<li>fixed production large drone engines shutoff</li>
+<li>fixed quest description overlayed with other elements</li>
+</ul>
+</div>
+</details>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/14459/volcanoids/">Volcanoids</a></strong> | Release Date: 29th January 2019<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/951440/Volcanoids/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/drill-ship-survival-game-volcanoids-adds-big-mech-spiders-and-tanks-that-drill-up-through-the-ground-to-say-hi/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/drill-ship-survival-game-volcanoids-adds-big-mech-spiders-and-tanks-that-drill-up-through-the-ground-to-say-hi/</guid>
+      <pubDate>Tue, 17 Dec 2024 13:35:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1756033119id25866gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Open World</category>
+      
+    </item>
+    
+    <item>
+      <title>Wilderness survival roguelike Wayward adds creature territories, deities, item stacking and lots more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Wayward is an Early Access wilderness survival roguelike that's highly rated by players, and it just had a massive update launch with "Runekeeper". It has Native Linux support and is rated Steam Deck Playable.</p>
+<p>If you've not played it before — it's a proper traditional roguelike. With random generation, optional permadeath and turn-based gameplay. It's a challenging one with a focus on simulation, exploration, and discovery. There are no classes and no levels. Progression of your character depends on individual skill and stat gains by your interactions with items or objects in the world. You are free to play and explore the game in any fashion you wish.</p>
+<p>With the latest update out now it adds in some great sounding stuff like a simple creature territory system, item stacking, deities that can award you with tokens, wheelbarrows for additional storage help, armour stands, a new action bar that gets filled with context menu action history as you play, redesigned merchant trading and much more. All sounds great!</p>
+<p>To go along with the update there's also a brand new trailer:</p>
+<div class="hidden_video" data-video-id="arpFIS7cXHs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e1c9766d7b04f5b27bcd03cd0700d3ee.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/arpFIS7cXHs" target="_blank">See video</a></div></div>
+<p>The full changelog of additions and improvements is a big one!</p>
+<details class="spoiler_container"><summary class="spoiler_header">Changelog, click me</summary>
+<div class="spoiler-content">
+<h2>New</h2>
+<ul>
+<li>Creatures now have simplistic "territories" — creatures near your spawn point are now easier than creatures far away, and creatures will stay in their original areas more often.</li>
+<br/>
+<li>You have attracted the attention of multiple unknown forces — deities. As you survive and make decisions, these deities will award you with tokens in their likeness. Invoke them, and in turn, receive their blessing.</li>
+<br/>
+<li>You can now "stack" and "unstack" like items. Item stacks display as if they are the first item in the stack (respecting your sort), with a quantity of how many total items are in the stack. You can press "ctrl" to temporarily expand the stack your mouse is over.</li>
+<br/>
+<li>Added wheelbarrows, allowing you to push and pull additional storage.</li>
+<br/>
+<li>Added armor stands, allowing you to store armor and weapon sets visually with the ability to quick-swap certain builds.</li>
+<br/>
+<li>You can now right-click on any visible location to perform actions there, your character will automatically walk to wherever they need to.</li>
+<br/>
+<li>Added a new action bar that gets filled with context menu action history as you play.</li>
+<br/>
+<li>Merchant trading has been redesigned.</li>
+<br/>
+<li>The stats layout has been reworked, associating status effects with their related stats and providing stat names.</li>
+<br/>
+<li>Added primitive musical instruments that can be used to command multiple creatures at a time.</li>
+<br/>
+<li>Added a tamed status icon above tamed creatures.</li>
+<br/>
+<li>There is now a visual on the depth when digging.</li>
+<br/>
+<li>Added a new option to make action slots be used on the tile you're mousing over.</li>
+<br/>
+<li>Status effect iconography has been redesigned, allowing players to more easily know at a glance how threatening a new effect is.</li>
+<br/>
+<li>The actions drawer now supports selecting a specific item type from a list of all discovered item types, and selecting a range of qualities.</li>
+<br/>
+<li>Added "Thaumaturgic", a new milestone and modifier for finding every type of magical property.</li>
+<br/>
+<li>All containers now have a "dump contents" action.</li>
+<br/>
+<li>Added bindings for toggling whether individual static UI components are visible (like the action bar, messages, etc.) These bindings are not set by default.</li>
+<br/>
+<li>Added animal cartilage, and new food recipes/food preservation through the use of gelatin crafted from cartilage or shark fins.</li>
+<br/>
+<li>Ice and puddles (on certain terrain) are now slippery and will cause slippery movement for players (with certain footwear) and some creatures, more so if jumped upon.</li>
+<br/>
+<li>Added a binding for toggling whether all auto-use action slots are enabled.</li>
+<br/>
+<li>Added conifer resins, pitch, and glue for use in new recipes and reinforcing.</li>
+<br/>
+<li>Added a new magical property "persistence" which increases max item durability far beyond normal means among other bonuses.</li>
+<br/>
+<li>Magical Binding now has a new action and use involving attack and defense bonuses.</li>
+<br/>
+<li>Added the Afflicted and Exsanguinated milestones.</li>
+<br/>
+<li>You can now set an action slot to "Use Hovered Item", allowing you to set up slots to quickly use actions on hovered items.</li>
+<br/>
+<li>Status effect tooltips have been completely redesigned, providing more information and presenting it more clearly.</li>
+<br/>
+<li>Added a new "shadowy" creature.</li>
+<br/>
+<li>Added a permanent notifier for when creatures are alerted, red exclamation point for hostile, yellow for scared.</li>
+<br/>
+<li>You can now set maxed skills as your in-game title.</li>
+<br/>
+<li>Added a "heel" or "follow, but don't attack" command for tamed creatures.</li>
+<br/>
+<li>Ranged actions can now be used at any angle.</li>
+<br/>
+<li>All container dialogs throughout the game (your inventory, held containers, container doodads, vehicles, NPCs) have been ported to the new UI system, fixing some longstanding issues and improving performance.</li>
+<br/>
+<li>All stats are now inspectable, providing general information on how the stat works, along with new information such as their related core stat and the skills you can use to improve them.</li>
+<br/>
+<li>Added a new stat "potency" equipped magical property that increases the bonuses that items provide when used.</li>
+<br/>
+<li>Added a new milestone &amp; modifier "Statistician" for discovering the stats that each skill can raise.</li>
+<br/>
+<li>Added a new custom game option for disabling scared creature mechanics.</li>
+<br/>
+<li>Added a new type of skeleton with unique item drops that can appear from skeletal remains based on the current zone/tier.</li>
+<br/>
+<li>Added crucibles, a new device for smelting ores.</li>
+<br/>
+<li>Added a bindable to "Toggle Tooltips Visible", with no bindings by default. (Thanks Hiran!)</li>
+<br/>
+<li>Added the "Runekeeper" milestone and modifier.</li>
+<br/>
+<li>Added luck, a new stat affecting chances. There are not many places where luck currently takes effect, nor many things that modify luck — this will be expanded on later.</li>
+<br/>
+<li>There is a new custom creature spawn rate multiplier option that will allow you to scale the rate at which creatures spawn including disabling it altogether.</li>
+<br/>
+<li>Added a custom game option to enable viewing container dialogs for the items on the tile you're facing.</li>
+<br/>
+<li>Added an audio cue when encumbered or overburdened.</li>
+<br/>
+<li>Added sandstone arrows and arrowheads.</li>
+<br/>
+<li>The chance to craft mastercrafted items is now revealed at 100% skill.</li>
+<br/>
+<li>Added a "Skip Quest" button to the Starter Quest.</li>
+<br/>
+<li>The skills dialog now displays skill icons &amp; can be resized to display multiple columns.</li>
+<br/>
+<li>Added a rare, secret challenge modifier.</li>
+<br/>
+<li>Added eggshells (for chicken and penguin eggs), a new form of compost.</li>
+<br/>
+<li>Added a challenge modifier for starting at sunset.</li>
+<br/>
+<li>Added a new challenge modifier "Cursed!"</li>
+<br/>
+<li>There are now modifiers in challenge mode for spawning in other biomes.</li>
+<br/>
+<li>Added a multiplayer option to pause the server when desync occurs.</li>
+<br/>
+<li>Added a Steam beta dropdown to developer options.</li>
+<br/>
+<li>Added a setting to disable item notifiers.</li>
+<br/>
+<li>Added stripped leather, a new high-tier cordage.</li>
+<br/>
+<li>Each island now progresses or "ticks" independently.</li>
+<br/>
+<li>Minecarts can now push other minecarts. The faster the tier of minecart, the more minecarts can be pushed.</li>
+<br/>
+<li>Added an automatically updating notice when launching the development branch of the game.</li>
+<br/>
+<li>Added several new sound effect variations around inventory management.</li>
+<br/>
+<li>Added a new milestone, "Curator" for discovering every item quality.</li>
+<br/>
+<li>Added the "Dedicated" milestone and milestone modifier, allowing players to set one that raises faster than all others, while the rest raise very slowly.</li>
+<br/>
+<li>Added <code>"gamemoderun"</code> support.</li>
+<br/>
+<li>Added OLED burn-in protection for HUD/UI elements.</li>
+<br/>
+<li>Added a new help article about "Item Protection".</li>
+<br/>
+<li>Added two new milestones and modifiers to do with creature spawn rates.</li>
+<br/>
+<li>The "Move All" and "Move All of Quality" actions can now be bound to the action bar.</li>
+<br/>
+<li>Added notifiers when dual-wielding is enabled/disabled.</li>
+<br/>
+<li>Added fish bones and glue.</li>
+<br/>
+<li>You can now drag actions from context menus to the action bar.</li>
+<br/>
+<li>Added two new books.</li>
+<br/>
+<li>Added aberrant versions of all fish.</li>
+<br/>
+<br/>
+<br/>
+<li></li>
+</ul>
+<h2>Improvements</h2>
+<ul>
+<li>Tamed creatures now smartly follow you through cave entrances.</li>
+<br/>
+<li>The "Path to Tile: Preview" bindable has been removed in favor of it working automatically based on the modifiers of the "Path to Tile" bindable. IE, if you have "Path to Tile" set to "Shift + Click", it will automatically show the path preview on "Shift."</li>
+<br/>
+<li>Doodads used in crafts can now receive the "Aptitude" magical property.</li>
+<br/>
+<li>The "Grab All" button has been changed to a "Move All" button on all dialogs, transferring to the current quick-move target.</li>
+<br/>
+<li>The "Best for Crafting" sort is now more accurately calculated to include "Aptitude" items. (Thanks Andrej27!)</li>
+<br/>
+<li>There is now a chance for looted bags/backpacks to contain some items.</li>
+<br/>
+<li>Each item will now have an associated skill (or skills) so that actions taken upon it (like refining) will use a more closely related skill. (Thanks DragonOvLeaves!)</li>
+<br/>
+<li>Players will no longer be woken up from rest/sleep if the player around them can't actually get to them.</li>
+<br/>
+<li>Added a visual for "over-fished" tiles.</li>
+<br/>
+<li>The default control for idle is now "." and "Spacebar" now opens the action menu for the facing tile. (Thanks muzzy!)</li>
+<br/>
+<li>The default bind for toggling auto-use on an action slot has been changed to CTRL + Space instead of just ALT (to prevent accidental hover inputs).</li>
+<br/>
+<li>Reworked trapdoor spider AI. They are no longer hidden by default, instead choosing locations to hide in. They no longer move while hidden, and will sometimes come out of hiding to go somewhere else.</li>
+<br/>
+<li>Civilization score is now done per zone in addition to the whole island, impacting the creature spawning of individual areas in the island.</li>
+<br/>
+<li>Reimplemented the "Uses:" list for item tooltips, reducing noise and improving visual consistency.</li>
+<br/>
+<li>Fire now has a chance to produce particle effects when damaging doodads or items.</li>
+<br/>
+<li>"Reference links" in the game's text, such as the hoverable links to items, creatures, doodads, skills, etc, now display a new "help" cursor to indicate that they are clickable for more information.</li>
+<br/>
+<li>Random creature movement has been reworked to feel less random and more like creatures deciding to move to specific places.</li>
+<br/>
+<li>You can now see the stack of tiles when inspecting them.</li>
+<br/>
+<li>Attack stats in tooltips now display values for main-hand and off-hand use. (Thanks Andrej27!)</li>
+<br/>
+<li>Renamed all "Toggle X" actions to "X or Y", for example, "Toggle Container" is now "Open or Close Container."</li>
+<br/>
+<li>Individual stats are now discovered for new players as they progress through the game.</li>
+<br/>
+<li>You can now disable the warning when attempting to gather from plants with no resources. (Thanks Hiran!)</li>
+<br/>
+<li>You can now disable the game playing audio in the background. (Thanks Kowalth!)</li>
+<br/>
+<li>The item that an action slot will use is now displayed on the action slot. Action slots set to use the "best item" show a star above the action.</li>
+<br/>
+<li>Spawned creatures from items will now have some despawn protection. (Thanks DragonOvLeaves!)</li>
+<br/>
+<li>The Steam overlay is now more consistently implemented and will no longer report itself working in some cases where it did not.</li>
+<br/>
+<li>The various "Drop on Action" gameplay settings now support the "Drop into Containers" option.</li>
+<br/>
+<li>Tamed creatures now move around less when near the player/not busy with another task.</li>
+<br/>
+<li>Deep holes will allow water to be routed 100% of the time.</li>
+<br/>
+<li>Players with high taming skills can see the exact turn count when creatures untame at.</li>
+<br/>
+<li>You can now see how many times you've tamed or petted a tamed creature.</li>
+<br/>
+<li>All previous mechanics involving reputation (such as claw worm spawning, treasure chest creature difficulty, and creature spawning in general) are now based on the zone's tier you are in.</li>
+<br/>
+<li>Tooltip headers have been redesigned to improve consistency and user experience between them.</li>
+<br/>
+<li>The "Range" and "Attack" that are specified in tooltips for weapons/tools will now update dynamically based on skill.</li>
+<br/>
+<li>When two items have the same effective tier for an action, instead of choosing the one of higher quality as the "best" item, the game now chooses the item with the higher base action tier (ie, the action tier when the item is normal quality), due to the base being higher implying that the item is better suited for the action. (Thanks riftborn!)</li>
+<br/>
+<li>Stat gain messages now display the skill that caused them to raise.</li>
+<br/>
+<li>The Doctor milestone modifier has been reworked into something a bit more interesting.</li>
+<br/>
+<li>When a creature is regenerating or healing from a damage type and they are already at maximum health, it will now show a +0 (instead of -0).</li>
+<br/>
+<li>There are now actions for moving the contents of containers (in both doodad &amp; item form) between containers and to your inventory.</li>
+<br/>
+<li>Petting will now also increase the creature's maximum health (to a much lesser extent than re-taming/offering).</li>
+<br/>
+<li>Shippers will now spawn closer to lit lighthouses.</li>
+<br/>
+<li>Drawn maps are no longer stocked on merchants. (Thanks Dewred!)</li>
+<br/>
+<li>The Doctor milestone has been reworked to now be a discovery milestone and requires discovering all possible cures. Its information is displayed in status tooltips.</li>
+<br/>
+<li>Added a dedicated, toggleable option for "Disable Modifier Unlock Requirements" that is not locked behind Developer Mode, so players that don't want content locked behind milestones don't have to use a developer option to mark them all as completed.</li>
+<br/>
+<li>Lava is now lit with a darker shade of orange/red.</li>
+<br/>
+<li>Resting or sleeping will no longer reset hunger/thirst timers so they immediately tick down after one turn while resting/sleeping.</li>
+<br/>
+<li>Added an option to disable the quit confirmation in cases where save data would not be lost.</li>
+<br/>
+<li>Dismantling hide now uses the "Leatherworking" skill instead of "Tailoring".</li>
+<br/>
+<li>Tweaked and made consistent the color of bone items.</li>
+<br/>
+<li>Added an animation to the "till" and "pack ground" actions. (Thanks riftborn!)</li>
+<br/>
+<li>Dripstones and stills now have variable turns taken for desalination based on type.</li>
+<br/>
+<li>Multiplayer "Error code 2" now reveals the issue and potential fix for the user and/or server admin.</li>
+<br/>
+<li>The snow scarecrow will now leave behind non-meltable items when melted.</li>
+<br/>
+<li>When an item with a colored border (ie, by quality or by it nearly being destroyed or decayed) is highlighted, the border now is a brighter version of the normal color. (Thanks muzzy!)</li>
+<br/>
+<li>Fishing a tile that cannot support any fish or items will now say so (instead of saying overfished).</li>
+<br/>
+<li>Gathering no longer automatically picks up items.</li>
+<br/>
+<li>Mud is now spawned around swamps and will be located under swamp tiles when dug.</li>
+<br/>
+<li>Trapdoor spiders and claw worms now produce holes when revealed or spawned.</li>
+<br/>
+<li>Protection now persists through building and picking up items, for example, building a sailboat, riding it, and then picking it back up.</li>
+<br/>
+<li>Discovering an item of a new quality now displays a celebratory message.</li>
+<br/>
+<li>Items of undiscovered qualities on the ground now appear as the closest discovered quality instead of a "?"</li>
+<br/>
+<li>When tiles are referenced in messages/tooltips, they will now show their quality, magical status, renamed names and more.</li>
+<br/>
+<li>The "Replay" button will now reset turn modes and multiplayer options.</li>
+<br/>
+<li>Added tooltips for all buttons on the action bar.</li>
+<br/>
+<li>Menu sections are now highlighted when scrolled to via a section button.</li>
+<br/>
+<li>Damage notifier icons are now shown on heavily damaged items when thrown or fired on the tile instead of above the player.</li>
+<br/>
+<li>Dripstones and stills now show a purification counter in their tooltip.</li>
+<br/>
+<li>Rewrote the "not suitable to plant" message so that it makes sense when trying to plant a coconut. (Thanks Shim Panzé!)</li>
+<br/>
+<li>Equipped lit torches now provide heat.</li>
+<br/>
+<li>Swapping positions with creatures no longer causes an extra delay.</li>
+<br/>
+<li>Reduced the chance of merchants saying they had new stock after they already equipped or consumed it.</li>
+<br/>
+<li>Creatures will now keep a total of how many pets they have received which will impact (in addition to times tamed) command unlocks, taming chances, and more.</li>
+<br/>
+<li>Added a new "leaves" group which goats will now accept.</li>
+<br/>
+<li>"Drop All" and "Move All" action slot actions now use what is filtered in the player's inventory.</li>
+<br/>
+<li>Move/drop all binds and actions no longer move/drop equipped items.</li>
+<br/>
+<li>To help the user experience working through a quest line, "Next Quest:" buttons are now pinned to messages, ensuring that the player views the quest text as their pinned quest requirements update.</li>
+<br/>
+<li>The same item(s) can be traded back and forth several times between a merchant and a player at a cost penalty.</li>
+<br/>
+<li>Organic tiles will now always provide static resources when dug to better conform with doodads/plant resources. (Thanks DanekJovax!)</li>
+<br/>
+<li>Protected items that can't be used in crafting and dismantling will no longer be counted in the crafting/dismantle tooltip. (Thanks Feral Grumpicorn!)</li>
+<br/>
+<li>Changed some default action binds away from WASD keys, for example, Dismantle and Disassemble which caused many accidental actions.</li>
+<br/>
+<li>Multiple random items sourced from the same milestone modifier or challenge modifier into the same container are no longer duplicates.</li>
+<br/>
+<li>Some items are now excluded for random item milestone modifiers.</li>
+<br/>
+<li>Added a "Days" or "Nights" counter to the ferocity tooltip/inspection.</li>
+<br/>
+<li>The message log now supports infinite scroll, loading additional messages as necessary.</li>
+<br/>
+<li>The message log no longer forcibly keeps you at the latest message if you're trying to look at earlier messages. Scrolling back down to the latest message locks the scroll there again.</li>
+<br/>
+<li>The message log has been reimplemented for performance.</li>
+<br/>
+<li>Action slots no longer automatically switch to "best item" until you attempt to use the slot a second time. (Thanks muzzy!)</li>
+<br/>
+<li>Efficacy, success, quality chances and percentages are no longer shown when not meeting the requirements (as they were not accurate).</li>
+<br/>
+<li>The "worth" magical property now has a greater range of values possible.</li>
+<br/>
+<li>Magical doodads and bookcases that grant skill bonuses are now shown in the skill tooltips. (Thanks DanekJovax!)</li>
+<br/>
+<li>Killing creatures via traps, tamed creatures, or fire now provides the correct loot quality bonuses. (Thanks Art Shrival!)</li>
+<br/>
+<li>The "Hide Equipped Headgear" option now hides your equipped headgear for other players too (only if PVP is disabled.)</li>
+<br/>
+<li>You can now cage untamed creatures which uses the trapping skill and the creature's difficulty as a chance modifier.</li>
+<br/>
+<li>Cages now have different action tiers based on type/quality.</li>
+<br/>
+<li>Creatures now have an innate "worth" when caged to be used for trading and other purposes.</li>
+<br/>
+<li>Fires will now be more visible on tiles that contain items. (Thanks DerSimon!)</li>
+<br/>
+<li>Advancing island turns is now nearly instant at the cost of accuracy.</li>
+<br/>
+<li>Grabbing or clicking on an item from a container no longer makes the container active, allowing you to use the item "quick-move" feature between containers.</li>
+<br/>
+<li>Desktop users of Steam Deck will now be able to do normal desktop functions like toggling fullscreen mode and exporting local save files. (Thanks Geschrieben!)</li>
+<br/>
+<li>"Swords" are now referred to as "short swords".</li>
+<br/>
+<li>"Leather Hide" is now just "Hide" and "Tanned Leather" is now just "Leather".</li>
+<br/>
+<li>Void now displays as a separate unique graphic in maps.</li>
+<br/>
+<li>Health vignetting no longer shows in screenshot mode.</li>
+<br/>
+<li>Being hit additional times while delayed no longer increases your delay further.</li>
+<br/>
+<li>Added a message for when pouring water on a creature/player had no effect.</li>
+<br/>
+<li>Puddles now provide audio/visual cues when stepped on.</li>
+<br/>
+<li>"Enable Smooth Zooming" is now disabled when "Disable Movement Animations" is enabled.</li>
+<br/>
+<li>Piles of rocks now use the "mine" action instead of "chop" as their tool-based gather action.</li>
+<br/>
+<li>Container dialogs are no longer closed and reopened when changing state, such as when picking up a chest, or boarding/dismounting vehicles. The sort &amp; sort direction now also persist between the states.</li>
+<br/>
+<li>The optional smooth zoom animation is now curved, starting fast and slowing down near the end, to make it feel better to use.</li>
+<br/>
+<li>Doodads that will be destroyed on pick-up will now warn you. (Thanks riftborn!)</li>
+<br/>
+<li>Picking up any vehicle will now only damage them by 1 instead of their damage multiplier.</li>
+<br/>
+<li>Improved support for slow multiplayer connections.</li>
+<br/>
+<li>You can now use the mouse to organize all items of a type or quality within a single container.</li>
+<br/>
+<li>You can now navigate backward and forward through your Inspect dialog inspection history.</li>
+<br/>
+<li>You can now sort skills by "recent".</li>
+<br/>
+<li>The milestones dialog now displays milestone icons &amp; can be resized to display multiple columns.</li>
+<br/>
+<li>Added particle effects to crafting/dismantling/disassembling actions with colors based on the item.</li>
+<br/>
+<li>NPCs will now prefer to attack their attacker instead of the nearest player.</li>
+<br/>
+<li>"Animal Glue" is now "Bone Glue" and will only require bones instead of bones and offal.</li>
+<br/>
+<li>The "Keep Sort Active" option has been replaced with simply persisting the selected sort in containers. When manually reordering items, the sort changes to display "Custom" instead of a sort, as no sort is active anymore.</li>
+<br/>
+<li>The doodad version of "skill" magical properties will now have an "encircling" affix.</li>
+<br/>
+<li>Doodads that block the line of sight will now illuminate their surrounding tiles properly when on fire. (Thanks muzzy!)</li>
+<br/>
+<li>Some milestones are now hidden entirely until you complete previous milestones, to make the milestones dialog a bit less overwhelming. (IE Survivor reveals Weathered reveals Seasoned.)</li>
+<br/>
+<li>New items were added to the challenge mode's "get item" quests.</li>
+<br/>
+<li>Options for the action bar are now accessible via a new button alongside the "+" and "-" buttons.</li>
+<br/>
+<li>Improved the performance of displaying non-craftable items, and of dimming out irrelevant items in containers when one or more are highlighted.</li>
+<br/>
+<li>Improved performance of tooltips.</li>
+<br/>
+<li>Orb of Influence has been renamed to "Cracked Orb" to be used as a new magical component for unlocking the "alter" action.</li>
+<br/>
+<li>The "active container" highlight is now a tab on the side of containers. You can click the tab to manually set the active container instead of using the container the game thinks is best.</li>
+<br/>
+<li>The "open container" action now makes the container active if it's already open.</li>
+<br/>
+<li>"Copal" has been removed and replaced with "Hide Glue" with similar uses/efficacy.</li>
+<br/>
+<li>Updated "A Powdery Catalog" book. (Thanks Feral Grumpicorn!)</li>
+<br/>
+<li>When building or picking up containers, the container dialog now stays open.</li>
+<br/>
+<li>The skills and milestones dialogs now save their sort options when reloading the game. (Thanks 柯箴之!)</li>
+<br/>
+<li>The "days" shown on server details now are a cumulative total and average respectively across all islands.</li>
+<br/>
+<li>NPCs can no longer spawn within the line of sight of a player.</li>
+<br/>
+<li>"Dig With Hands" is no longer available on piles of rocks or other doodads. (Thanks muzzy!)</li>
+<br/>
+<li>Changed the "Rest" action to auto-use only when you have the "tired" status effect.</li>
+<br/>
+<li>"Gather With Hands" now has a description.</li>
+<br/>
+<li>Trampling fire now produces messages for partial/failure events.</li>
+<br/>
+<li>Equipment slots and action slots can now be inspected with the Inspect dialog.</li>
+<br/>
+<li>The islands dialog now displays waves as decorations between the islands.</li>
+<br/>
+<li>Updated the appearance of the weight tooltip.</li>
+<br/>
+<li>You will now receive a warning when overwatering small plants. (Thanks Zeτα!)</li>
+<br/>
+<li>Holding alt while slotting an item or action in the action bar now slots it with auto-use enabled.</li>
+<br/>
+<li>Container weight is now revalidated on reload (for save compatibility). (Thanks Veeyu!)</li>
+<br/>
+<li>NPCs will now attempt to move off of dangerous tiles.</li>
+<br/>
+<li>The "dangerous" creature tier has been renamed to "vicious" to differentiate it from the "danger level" mechanic.</li>
+<br/>
+<li>You can now sort milestones by "recent".</li>
+<br/>
+<li>Puddles now decay faster if walked on, but last a bit longer by default.</li>
+<br/>
+<li>Action slots containing an item now highlight when the mouse is over the item in your inventory.</li>
+<br/>
+<li>Useful item hover binds are now described in the inventory management help article.</li>
+<br/>
+<li>Your carry &amp; max weight are now displayed in your inventory dialog with a tooltip.</li>
+<br/>
+<li>Updated some old references in the help articles.</li>
+<br/>
+<li>You can now click on most tooltip links to open that tooltip in the "Inspect" dialog, rather than needing to press shift+right click in all cases.</li>
+</ul>
+</div>
+</details>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/2107/wayward/">Wayward</a></strong> | Release Date: 22nd April 2016<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://www.fanatical.com/en/game/wayward">Fanatical</a></li><li><a href="https://www.humblebundle.com/store/wayward">Humble Store</a></li><li><a href="https://store.steampowered.com/app/379210/Wayward/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/wilderness-survival-roguelike-wayward-adds-creature-territories-deities-item-stacking-and-lots-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/wilderness-survival-roguelike-wayward-adds-creature-territories-deities-item-stacking-and-lots-more/</guid>
+      <pubDate>Tue, 17 Dec 2024 13:24:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1046294306id25865gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Fanatical</category>
+      
+    </item>
+    
+    <item>
+      <title>Stoneshard major upgrade brings an upgradable fast-travel caravan system, cooking, new locations and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Stoneshard is a very challenging open-world RPG currently in Early Access and the latest major release is a really big one. Stoneshard has Native Linux support and is rated Steam Deck Playable.</p>
+<p>The developers said it's "the largest update in the game's history" and it certainly reads like it. It adds in a brand new Caravan system, giving you fast travel of large distances. This is upgradable too, and you can get special Caravan followers as well.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6843207491734441222gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6843207491734441222gol1.jpg"/></a><br/>
+<em>Pictured - a Caravan in Stoneshard</em></p>
+<p>On top of that they overhauled the dungeons system from scratch to give a lot more variety, some come with special conditions to give new challenges and there's a whole lot of new locations in the game to explore too. This is a seriously feature-packed release.</p>
+<p>The update is so big it's not compatible with saves from the previous version, which they've made available via Steam Beta branches so you can still continue on if you wish.</p>
+<p>Nice to see this one get such a great expansion, as it has been quite some time since the last major update to it and they've been clearly busy.</p>
+<details class="spoiler_container"><summary class="spoiler_header">All the main additions changelog, click me</summary>
+<div class="spoiler-content">
+<ul>
+<li><strong>Caravan.</strong> A fully functional Caravan System that allows for fast travels over large distances using a special resource - fodder. It also comes with an option to directly purchase items into the Caravan Storage (or sell from it) when the Caravan is parked near settlements.</li>
+<li><strong>Caravan Upgrades.</strong> 24 upgrades that will introduce additional utility to your Camp and improve the Caravan's overall efficiency.</li>
+<li><strong>Caravan Followers.</strong> Recruit up to three non-combat companions, each with their own unique specialization, perks, events, and dialogues.</li>
+<li><strong>Overhauled Dungeons.</strong> The Dungeon Generator was reworked from scratch - small rooms and narrow corridors have been replaced with massive halls, their visuals and structure properly reflecting each dungeon's type and tier.</li>
+<li><strong>Reworked contracts.</strong> A wider variety of contract types and objectives. New dialogues for requesting additional information about the job, asking for an advance, and haggle for a better pay. Consequences for failing contracts and their behind-the-scenes completion by rival mercenaries. Contracts can now also be turned in to different NPCs for a higher monetary reward or additional local or Brynn Reputation.</li>
+<li><strong>Dungeon Conditions.</strong> Unique effects that introduce new challenges to dungeon exploration and increase the reward for completing the contracts tied to them.</li>
+<li><strong>Enhanced Economy.</strong> Dynamic and responsive supply and demand, commodity trading, as well as flexible traders' stocks and preferences.</li>
+<li><strong>Denbrie.</strong> The fourth and final settlement of the Grand Magistrate, utterly devastated by the war.</li>
+<li><strong>Situations.</strong> 9 unique Settlement Situations, providing additional opportunities or offering new challenges.</li>
+<li><strong>Outskirts.</strong> 10 new locations and 60+ new NPC with their own dialogues, roles, and goods for sale.</li>
+<li>Revised <strong>Global Map</strong>. Adjusted the map generation algorithms and the placement of locations to ensure a smoother progression. Added contracts to the Rotten Willow Tavern.</li>
+<li><strong>Cooking System</strong>. 40 unique recipes, each offering various advantages along with the possibility of adding spices to further customize their effects.</li>
+<li><strong>Crafting System</strong>. 15 schematics for creating useful consumables in the field.</li>
+<li><strong>Reworked Progression.</strong> All equipment, enemies, and dungeons have been rebalanced to challenge even high-level characters.</li>
+<li>Reworked the <strong>Loot System.</strong></li>
+<li>Reworked the <strong>Spawn System.</strong></li>
+<li>Reworked <strong>Reputation Perks.</strong></li>
+<li>Reworked the <strong>Noise System.</strong></li>
+<li>Reworked the <strong>AI States System</strong>.</li>
+<li>Updated and improved many <strong>dialogues</strong>.</li>
+<li><strong>QoL improvements:</strong> faster character movement, trade hovers, the ability to store small valuables in purses and caskets, and much more.</li>
+<li><strong>5 new bags</strong>, each with its own distinct purpose.</li>
+<li><strong>7 new Undead minibosses</strong>.</li>
+<li><strong>New items:</strong> 35+ new pieces of equipment, 15 valuables, and 10 new ingredients.</li>
+<li><strong>Balance changes:</strong> a complete rework of all the equipment, abilities, and enemy stats. Survival tree overhaul.</li>
+<li><strong>12 new Steam achievements</strong>.</li>
+<li>Updated <strong>Prologue</strong>.</li>
+<li>Numerous <strong>bug fixes</strong>.</li>
+</ul>
+</div>
+</details>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/11189/stoneshard/">Stoneshard</a></strong> | Release Date: 6th February 2020<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://www.gog.com/game/stoneshard/?pp=b2a10a6c3dcadb10c8ffd734c1bab896d55cf0ec">GOG</a></li><li><a href="https://store.steampowered.com/app/625960/Stoneshard/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/stoneshard-major-upgrade-brings-an-upgradable-fast-travel-caravan-system-cooking-new-locations-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/stoneshard-major-upgrade-brings-an-upgradable-fast-travel-caravan-system-cooking-new-locations-and-more/</guid>
+      <pubDate>Tue, 17 Dec 2024 13:15:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1692495703id25864gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
     
     <item>
       <title>Horror scavenging game KLETKA is like Lethal Company but an elevator wants to eat you</title>
@@ -5099,781 +5952,6 @@ Wired networking is highly recommended for the best streaming experience.</block
       <category>Kubuntu</category>
       
       <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Prime Gaming December 3rd edition, new titles coming twice this week - lots for Steam Deck / Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Here we go again! Each week Prime Gaming, part of what you get with a subscription to Amazon Prime, add and remove various games you can claim to keep. This week we get <em>two</em> sets of new games, so there will be another article with the next additions / removals on December 5th too!</p>
-<p>I'll use the Steam Deck Rating from Valve (<img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Verified, <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Playable, <img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Unsupported and <img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Not Rated), plus the <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> rating to help you decide on what to play. Compatibility may be <em>slightly</em> different since the games are from various stores. Some of the games might also have <em>no</em> ratings right now.</p>
-<p>Here's the current list as of 3rd December, 2024:</p>
-<div class="scrolling-table">
-<table border="1" cellpadding="1" cellspacing="1" class="table-stripes-tbody">
-<thead>
-<tr>
-<td><strong>Name</strong></td>
-<td><strong>Store</strong></td>
-<td><strong>End Date</strong></td>
-<td><strong>Steam Deck</strong></td>
-<td><strong>ProtonDB</strong></td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Hive Jump 2: Survivors</td>
-<td>GOG</td>
-<td>December 4, 2024</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Borderlands: The Pre-Sequel</td>
-<td>Epic</td>
-<td>December 4, 2024</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Eternights</td>
-<td>Epic</td>
-<td>December 4, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Minabo – A Walk Through Life</td>
-<td>Amazon</td>
-<td>December 4, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Priest Simulator: Vampire Show</td>
-<td>Epic</td>
-<td>December 11, 2024</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Tales from the Borderlands</td>
-<td>Amazon</td>
-<td>December 11, 2024</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Showgunners</td>
-<td>GOG</td>
-<td>December 11, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>9 Years of Shadows</td>
-<td>GOG</td>
-<td>December 11, 2024</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Cursed to Golf</td>
-<td>GOG</td>
-<td>December 11, 2024</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Hell Pie</td>
-<td>GOG</td>
-<td>December 11, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Disney•Pixar Cars</td>
-<td>Amazon</td>
-<td>December 11, 2024</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Dishonored: Definitive Edition</td>
-<td>GOG</td>
-<td>December 11, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Snakebird Complete</td>
-<td>Epic</td>
-<td>December 11, 2024</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Moonlighter</td>
-<td>GOG</td>
-<td>December 13, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Kerbal Space Program</td>
-<td>Amazon</td>
-<td>December 18, 2024</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>The Falconeer</td>
-<td>GOG</td>
-<td>December 18, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Giana Sisters: Twisted Dreams</td>
-<td>Amazon</td>
-<td>December 18, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Silver</td>
-</tr>
-<tr>
-<td>Killing Floor 2</td>
-<td>Epic</td>
-<td>December 18, 2024</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Chasm: The Rift</td>
-<td>GOG</td>
-<td>December 18, 2024</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Tomb Raider: Anniversary</td>
-<td>GOG</td>
-<td>December 18, 2024</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Blade of Darkness</td>
-<td>GOG</td>
-<td>December 18, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>STAR WARS: Bounty Hunter</td>
-<td>GOG</td>
-<td>December 23, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Ghost Song</td>
-<td>GOG</td>
-<td>December 25, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Morbid: The Seven Acolytes</td>
-<td>Epic</td>
-<td>December 25, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Max: The Curse of Brotherhood</td>
-<td>Amazon</td>
-<td>December 25, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Overcooked! Gourmet Edition</td>
-<td>GOG</td>
-<td>December 25, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Gloomy Tales: One-Way Ticket Collector’s Edition</td>
-<td>Legacy Games</td>
-<td>December 25, 2024</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Super Meat Boy</td>
-<td>Epic</td>
-<td>December 25, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>RIOT - Civil Unrest</td>
-<td>GOG</td>
-<td>December 25, 2024</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Tiny Robots Recharged</td>
-<td>Amazon</td>
-<td>December 31, 2024</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Faraway: Arctic Escape</td>
-<td>Amazon</td>
-<td>December 31, 2024</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Faraway 2: Jungle Escape</td>
-<td>Amazon</td>
-<td>December 31, 2024</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Mafia: Definitive Edition</td>
-<td>GOG</td>
-<td>December 31, 2024</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Scorn</td>
-<td>GOG</td>
-<td>December 31, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Sir Whoopass: Immortal Death</td>
-<td>GOG</td>
-<td>December 31, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Call of Juarez: Gunslinger</td>
-<td>GOG</td>
-<td>December 31, 2024</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>No Straight Roads</td>
-<td>Epic</td>
-<td>January 1, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>The Eternal Cylinder</td>
-<td>Epic</td>
-<td>January 1, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>SCARF</td>
-<td>Epic</td>
-<td>January 1, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Dexter Stardust: Adventures in Outer Space</td>
-<td>Amazon</td>
-<td>January 1, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>A Plague Tale: Innocence</td>
-<td>GOG</td>
-<td>January 1, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>DREDGE</td>
-<td>GOG</td>
-<td>January 5, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Overcooked! 2</td>
-<td>GOG</td>
-<td>January 5, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Tomb Raider: Underworld</td>
-<td>GOG</td>
-<td>January 5, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>The Gap</td>
-<td>Amazon</td>
-<td>January 7, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>BioShock Remastered</td>
-<td>GOG</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>DreadOut 2</td>
-<td>Amazon</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Close to the Sun</td>
-<td>GOG</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Duck Paradox</td>
-<td>GOG</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Through the Darkest of Times</td>
-<td>Amazon</td>
-<td>January 15, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Ms. Holmes: The Case of the Dancing Men Collector's Edition</td>
-<td>Amazon</td>
-<td>January 15, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Monster Train</td>
-<td>GOG</td>
-<td>January 22, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Pumpkin Jack</td>
-<td>GOG</td>
-<td>January 22, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>STASIS: BONE TOTEM</td>
-<td>Epic</td>
-<td>January 22, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Mystery Case Files: The Dalimar Legacy Collector's Edition</td>
-<td>Amazon</td>
-<td>January 28, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Shogun Showdown</td>
-<td>GOG</td>
-<td>January 28, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Coromon</td>
-<td>GOG</td>
-<td>January 29, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Bang Bang Racing</td>
-<td>Amazon</td>
-<td>February 5, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>House of Golf 2</td>
-<td>Epic</td>
-<td>February 12, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Moonscars</td>
-<td>GOG</td>
-<td>February 19, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Elite Dangerous</td>
-<td>Epic</td>
-<td>February 25, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Jurassic World Evolution</td>
-<td>Epic</td>
-<td>February 25, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>The Collage Atlas</td>
-<td>Amazon</td>
-<td>February 28, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>New since last covering include: DREDGE, Call of Juarez: Gunslinger, Overcooked! 2, Tomb Raider: Underworld and STAR WARS: Bounty Hunter.</p>
-<p>You can install games from Epic, GOG and Amazon easily via <a href="https://www.gamingonlinux.com/2024/09/heroic-games-launcher-2152-released-fixing-amazon-gog-and-epic-games-issues/" rel="noopener" target="_blank">the Heroic Games Launcher</a>.</p>
-<p>See them all and claim from <a href="https://gaming.amazon.com/home" rel="noopener nofollow" target="_blank">Prime Gaming</a>. You can also follow our new <a href="https://www.gamingonlinux.com/articles/category/Prime_Gaming/" rel="noopener" target="_blank">Prime Gaming tag</a>!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/prime-gaming-december-3rd-edition-new-titles-coming-twice-this-week-lots-for-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/prime-gaming-december-3rd-edition-new-titles-coming-twice-this-week-lots-for-steam-deck-linux/</guid>
-      <pubDate>Tue, 03 Dec 2024 10:15:32 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1003667063id25771gol.jpg" type="image/jpeg"/>
-      
-      <category>Amazon</category>
-      
-      <category>Listicle</category>
-      
-      <category>Misc</category>
-      
-      <category>Prime Gaming</category>
-      
-    </item>
-    
-    <item>
-      <title>KDE&#39;s 2024 fundraiser hits the goal - clearly their donation pop-up works</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Some good news coming out from camp <a href="https://kde.org/" rel="noopener nofollow" target="_blank">KDE</a>, with their yearly fundraiser ongoing and they've managed to smash their original goal.</p>
-<p>Writing on Mastodon, KDE developer Carl Schwan <a href="https://mastodon.social/@carl@kde.social/113584216771717051" rel="noopener nofollow" target="_blank">mentioned</a>:</p>
-<blockquote>
-<p>I'm so happy to see the big influx of donations to KDE. More than 75 000€ in the last 30 days with 35 000€ in the past 48 hours.</p>
-<p>This is huge. Thank you to everyone who donated!</p>
-</blockquote>
-<p>Going by the actual <a href="https://kde.org/fundraisers/yearend2024/" rel="noopener nofollow" target="_blank">fundraising website</a>, the total is only listed as €34,121 against their original €30,000 goal. But, it seems that's not counting everything. There's also the <a href="https://kde.org/community/donations/previousdonations/" rel="noopener nofollow" target="_blank">plain donations</a> to keep an eye on too.</p>
-<p>There's more details noted in a fresh <a href="https://pointieststick.com/2024/12/02/i-think-the-donation-notification-works/" rel="noopener nofollow" target="_blank">blog post</a> from Nate Graham that goes over various other details, like how the <a href="https://www.gamingonlinux.com/2024/08/kde-plasma-62-adding-a-pop-up-for-donations-plus-they-want-to-make-a-next-generation-kde-os/" rel="noopener" target="_blank">new donation request pop-op</a> is clearly working, as it went live on December 1st and this caused donations to <em>surge</em> to where they received "double the prior two months' Paypal donations in a single day".</p>
-<p>Thanks to all the donations, KDE e.V. (the non-profit organization that represents the KDE Community), may end up with a balanced budget instead of their predicted "deficit of over €50k in 2024". According to Graham "German nonprofits like KDE e.V. are required to avoid stockpiling money" which is why they run an intentional deficit, so with the funding moving quickly into a positive cashflow they'll end up increasing their expenditure meaning they can hire more people, sponsor more projects and so on.</p>
-<p>Really good news, great to see KDE doing well.</p>
-<p>Their fundraising website also expanded the list of apps you can "adopt", by donating a specific amount and picking an app you want with a bunch already full but they've recently added more.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/kdes-2024-fundraiser-hits-the-goal-clearly-their-donation-pop-up-works/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/kdes-2024-fundraiser-hits-the-goal-clearly-their-donation-pop-up-works/</guid>
-      <pubDate>Tue, 03 Dec 2024 10:04:57 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/kde.png" type="image/jpeg"/>
-      
-      <category>KDE</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Vulkan API 1.4 released with new required extensions, better 8K rendering</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The Khronos Group have today announced the release of the Vulkan 1.4 API specification, with various changes and improvements for game and application developers.</p>
-<p>In the announcement it notes that "Mesa open-source Linux drivers have passed Vulkan 1.4 conformance on AMD, Apple, Intel, NVIDIA, and Qualcomm hardware" already. Looking on the conformant <a href="https://www.khronos.org/conformance/adopters/conformant-products/vulkan" rel="noopener nofollow" target="_blank">driver list</a>, even the Steam Deck is already listed as supporting Vulkan 1.4. On the NVIDIA side, they have a Linux <a href="https://developer.nvidia.com/vulkan-driver" rel="noopener nofollow" target="_blank">550.40.81 Vulkan Beta</a> release available with Vulkan 1.4 support.</p>
-<p>New features as noted include:</p>
-<blockquote>
-<ul>
-<li><a href="https://docs.vulkan.org/features/latest/features/proposals/VK_VERSION_1_4.html#_streaming_transfers" rel="noopener nofollow" target="_blank">Streaming Transfers</a>: Vulkan 1.4 imposes new implementation requirements to ensure portable, cross-platform applications can stream large quantities of data to a device while simultaneously rendering at full performance.</li>
-<li>Previously optional extensions and features critical to emerging high-performance applications are now mandatory in Vulkan 1.4, ensuring their reliable availability across multiple platforms. These include push descriptors, dynamic rendering local reads, and scalar block layouts.</li>
-<li>Maintenance extensions up to and including VK_KHR_maintenance6 are now part of the core Vulkan 1.4 specification.</li>
-<li>8K rendering with up to eight separate render targets is now guaranteed to be supported, along with several other limit increases.</li>
-</ul>
-</blockquote>
-<p>From the press release:</p>
-<p>“Vulkan 1.4 is a developer-driven update that enhances Vulkan's value as a stable, reliable framework for creating graphics-intensive applications on any platform,” said Tom Olson, outgoing Vulkan Working Group Chair. “As I step down, I'm proud to see the groundwork we’ve laid through our roadmaps come to fruition. Our roadmap milestone plans have empowered developers with new levels of flexibility and performance, setting Vulkan on a path for continued innovation and broader adoption in the years to come.”</p>
-<p>“Vulkan 1.4 is a milestone release that directly brings long-requested features and proven extensions into the core standard. By mandating these capabilities, we are enhancing Vulkan’s flexibility and performance across a wider range of devices, making it easier for developers to create cutting-edge applications with confidence that they will run reliably on any platform," said Ralph Potter, newly elected Vulkan Working Group Chair.</p>
-<p>See more in the <a href="https://www.khronos.org/news/press/khronos-streamlines-development-and-deployment-of-gpu-accelerated-applications-with-vulkan-1.4" rel="noopener nofollow" target="_blank">announcement</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/vulkan-api-14-released-with-new-required-extensions-better-8k-rendering/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/vulkan-api-14-released-with-new-required-extensions-better-8k-rendering/</guid>
-      <pubDate>Mon, 02 Dec 2024 18:32:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1910437553id25769gol.jpg" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Game Dev</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Disney Black Friday Humble Bundle has 17 classics for you like Star Wars and LEGO</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I doubt you need any more games, or perhaps you do, and you fancy some classics. Well the <a href="https://www.humblebundle.com/games/disney-classics-black-friday" rel="noopener nofollow" target="_blank">Disney Black Friday Humble Bundle</a> has some fun stuff in it.</p>
-<p>Below I'll go through and individually list the expected compatibility on Steam Deck and Linux desktop, along with any <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> rating and noting any Native Linux versions available. Plus each is a Steam link, so you can go see more info on each if you need to.</p>
-<p><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</strong></p>
-<p><a href="https://store.steampowered.com/app/32440" rel="noopener nofollow" target="_blank">LEGO Star Wars - The Complete Saga</a> (ProtonDB Platinum)</p>
-<p><a href="https://store.steampowered.com/app/32450" rel="noopener nofollow" target="_blank">LEGO Indiana Jones 2: The Adventure Continues</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/32510" rel="noopener nofollow" target="_blank">LEGO Star Wars III: The Clone Wars</a> (ProtonDB Gold)</p>
-<p><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</strong></p>
-<p><a href="https://store.steampowered.com/app/311770" rel="noopener nofollow" target="_blank">LEGO Pirates of the Caribbean The Video Game</a> (ProtonDB Platinum)</p>
-<p><a href="https://store.steampowered.com/app/32330" rel="noopener nofollow" target="_blank">LEGO Indiana Jones: The Original Adventures</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/32360" rel="noopener nofollow" target="_blank">The Secret of Monkey Island: Special Edition</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/32460" rel="noopener nofollow" target="_blank">Monkey Island 2: Special Edition</a> (ProtonDB Platinum)</p>
-<p><a href="https://store.steampowered.com/app/560430" rel="noopener nofollow" target="_blank">Indiana Jones and the Emperor's Tomb</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/32470" rel="noopener nofollow" target="_blank">Star Wars Empire At War: Gold Pack</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/208580" rel="noopener nofollow" target="_blank">STAR WARS Knights of the Old Republic II - The Sith Lords</a> (Native Linux / ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/32370" rel="noopener nofollow" target="_blank">STAR WARS Knights of the Old Republic</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/6000" rel="noopener nofollow" target="_blank">STAR WARS Republic Commando</a> (ProtonDB Platinum)</p>
-<p><strong><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</strong></p>
-<p><a href="https://store.steampowered.com/app/356500" rel="noopener nofollow" target="_blank">STAR WARS Galactic Battlegrounds Saga</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/6020" rel="noopener nofollow" target="_blank">Star Wars Jedi Knight - Jedi Academy</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/32430" rel="noopener nofollow" target="_blank">STAR WARS - The Force Unleashed Ultimate Sith Edition</a> (ProtonDB Gold)</p>
-<p><strong><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unrated</strong></p>
-<p><a href="https://store.steampowered.com/app/730820" rel="noopener nofollow" target="_blank">The Curse of Monkey Island</a> (ProtonDB Platinum)</p>
-<p><a href="https://store.steampowered.com/app/441550" rel="noopener nofollow" target="_blank">STAR WARS Rebellion</a> (ProtonDB Silver)</p>
-<p>Check out the <a href="https://www.humblebundle.com/games/disney-classics-black-friday" rel="noopener nofollow" target="_blank">whole thing on Humble Bundle to purchase</a>.</p>
-<p>Don't miss the <a href="https://www.gamingonlinux.com/2024/11/the-raw-fury-humble-bundle-is-an-awesome-deal-with-11-steam-deck-verified-games/" rel="noopener" target="_blank">Raw Fury Bundle</a> too or the <a href="https://www.gamingonlinux.com/2024/11/the-sci-fi-shooters-humble-bundle-is-a-top-deal-with-system-shock-prey-crysis-remastered-1-3/" rel="noopener" target="_blank">Sci-Fi Shooters Bundle</a>, both filled with good stuff.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/disney-black-friday-humble-bundle-has-17-classics-for-you-like-star-wars-and-lego/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/disney-black-friday-humble-bundle-has-17-classics-for-you-like-star-wars-and-lego/</guid>
-      <pubDate>Mon, 02 Dec 2024 18:10:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1464831908id25768gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Motorsport Games delisting all NASCAR games after iRacing license transfer</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Motorsport Games announced at the end of November, that all NASCAR games will be delisted from stores on December 31st.</p>
-<p>In a statement <a href="https://x.com/MSportgames/status/1862534587206836467" rel="noopener nofollow" target="_blank">posted</a> on X / Twitter the official Motorsport Games account said:</p>
-<blockquote>
-<p>To the NASCAR game community!</p>
-<p>From December 31, 2024, all NASCAR game titles and their DLC content will no longer be available for purchase on all digital storefronts but will remain available to play after this time. This includes the <br/>
-@NASCARHeat, @NASCARRivals, and @NASCARignition franchises.</p>
-<p>Please lookout for various platform promotions this December to complete your NASCAR console game collection while you can!</p>
-<p>We sincerely thank our community for the enthusiasm and support you’ve shown for these games over the years and hope you have enjoyed racing with us.</p>
-</blockquote>
-<p>Why? Back in October 2023, Motorsport Games <a href="https://motorsportgames.com/exclusive-simulation-style-nascar-video-game-license-sold-to-iracing/" rel="noopener nofollow" target="_blank">sold off</a> the NASCAR Team Properties' (NTP) exclusive license to iRacing. So this is just them cleaning up shop.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9369612381733161312gol1.jpg"/><br/>
-<em>Pictured - NASCAR Heat 5</em></p>
-<p>Looking on stores <a href="https://www.fanatical.com/en/search?search=nascar" rel="noopener nofollow" target="_blank">Fanatical</a> and <a href="https://store.steampowered.com/developer/MotorsportGames" rel="noopener nofollow" target="_blank">Steam</a> various games do have a big discount on them. So if you did want to pick some up, now is the time. As usual for delistings, you'll keep your copy for download but no one else will be able to buy them after December 31st, 2024.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/motorsport-games-delisting-all-nascar-games-after-iracing-license-transfer/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/motorsport-games-delisting-all-nascar-games-after-iracing-license-transfer/</guid>
-      <pubDate>Mon, 02 Dec 2024 17:44:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1559210126id25767gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Delisting</category>
-      
-      <category>Misc</category>
-      
-      <category>Racing</category>
-      
-    </item>
-    
-    <item>
-      <title>Inventory management battler NeoDuel: Backpack Monsters gets new content - we have keys to give away</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>NeoDuel: Backpack Monsters from DiceHit Games, Rogue Duck Interactive and The 4 Winds Entertainment is an inventory management battler with a creature collecting / fusing twist and a fresh content update recently went live. It has Native Linux support too.</p>
-<div class="hidden_video" data-video-id="RA9KfkjK5r8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/16005ad92ef3d8fc2cabf801dfa6cb2d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/RA9KfkjK5r8" target="_blank">See video</a></div></div>
-<p>In the latest update the developers added in a Swamp Element, a fusion of Nature and Water. They said "This new element brings unique abilities and over 10 fresh upgrades and Cosmions infused with muddy power". Plus various UI and quality of life improvements to make the game better. A Custom PvP battle mode is coming later too. They have it ready, but there's a technical challenge with IP restrictions they're working around right now.</p>
-<p>You can read more about what's new in the <a href="https://store.steampowered.com/news/app/2693940/view/4455843903878203614" rel="noopener nofollow" target="_blank">Steam announcement</a>.</p>
-<p><strong>Want to win a key?</strong> The 4 Winds Entertainment sent over <em>three</em> Steam keys for a giveaway!</p>
-<p>Simply comment to note your clear interest in a key, and winners will be sent a DM here on GamingOnLinux directly with their winning key. Closes Friday 6th December, 8PM UTC.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/37757/neoduel-backpack-monsters/">NEODUEL: Backpack Monsters</a></strong> | Release Date: 29th September 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/2693940/NEODUEL_Backpack_Monsters/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/inventory-management-battler-neoduel-backpack-monsters-gets-new-content-we-have-keys-to-give-away/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/inventory-management-battler-neoduel-backpack-monsters-gets-new-content-we-have-keys-to-give-away/</guid>
-      <pubDate>Mon, 02 Dec 2024 17:26:09 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/625481332id25766gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Giveaway</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Looks like Discord finally fixed Linux screen and audio sharing with Wayland</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A while ago in November, it seems I missed a <a href="https://discord.com/channels/155794864305471497/803664113560977429/1311064084740964433" rel="noopener nofollow" target="_blank">post</a> from a user in the <a href="https://discord.gg/AghnYbMjYg" rel="noopener nofollow" target="_blank">GamingOnLinux Discord</a> server, noting that the Discord developers finally hooked up screen and audio sharing for Linux with Wayland.</p>
-<p>Not yet <em>released</em> though, it seems it's only currently available in Discord Canary, their public testing environment, but anyone can download it and try it out. On the stable client, it just mentions that "Sounds may not be available when sharing a screen on your device", but when you use the Discord Canary client you'll actually see the tickbox to share audio on Linux now too:</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12593113211733158763gol1.jpg"/></p>
-<p>Testing it with a couple community members myself using Discord Canary earlier today and — yep, it works perfectly. They could see my shared window and the audio playing from it. Excellent.</p>
-<p>Once it's out in the proper <em>stable</em> Discord client, you and friends will be able to sit and chat with screens (or specific windows) and audio being shared properly on Wayland. Nice. I imagine there's many scenarios where this would be useful, and it's a feature many Linux users have been pestering Discord to sort for a while now with a <a href="https://support.discord.com/hc/en-us/community/posts/360050971374-Linux-Screen-Share-Sound-Support" rel="noopener nofollow" target="_blank">suggestion</a> on it open for 4 years.</p>
-<p><em>No word on when it will be in the stable release yet though.</em></p>
-<p>You can test it via the experimental Canary client from Flathub using these commands (taken from the <a href="https://github.com/flathub/com.discordapp.DiscordCanary" rel="noopener nofollow" target="_blank">GitHub</a>):</p>
-<p><code>flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo<br/>
-flatpak install flathub-beta com.discordapp.DiscordCanary<br/>
-flatpak override --user --socket=wayland com.discordapp.DiscordCanary<br/>
-flatpak run com.discordapp.DiscordCanary</code></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/looks-like-discord-finally-fixed-linux-screen-and-audio-sharing-with-wayland/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/looks-like-discord-finally-fixed-linux-screen-and-audio-sharing-with-wayland/</guid>
-      <pubDate>Mon, 02 Dec 2024 17:04:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1110571542id25765gol.jpg" type="image/jpeg"/>
-      
-      <category>Apps</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Lutris game manager v0.5.18 released with improved GOG and itch.io support, various other features</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Lutris, the popular free and open source game manager for Linux, has a fresh update out now fixing up some issues and adding in a good bunch of new features.</p>
-<p>With this app you can manage games on Linux Desktop / Steam Deck from Epic Games, Humble, GOG, Steam, Emulators and much more.</p>
-<p style="text-align:center"><em><img src="https://uploads.golmedia.net/uploads/articles/article_media/10874743321733155976gol1.png"/>Pictured - Lutris v0.5.18</em></p>
-<p>Here's all the <a href="https://github.com/lutris/lutris/releases/tag/v0.5.18" rel="noopener nofollow" target="_blank">changes</a>:</p>
-<blockquote>
-<ul>
-<li>Lutris downloads the latest GE-Proton build for Wine if any Wine version is installed.</li>
-<li>Use dark theme by default.</li>
-<li>Display cover-art rather than banners by default.</li>
-<li>Add 'Uncategorized' view to sidebar.</li>
-<li>Preference options that do not work on Wayland will be hidden when on Wayland.</li>
-<li>Game searches can now use fancy tags like 'installed:yes' or 'source:gog', with explanatory tool-tip.</li>
-<li>A new filter button on the search box can build many of these fancy tags for you.</li>
-<li>Runner searches can use 'installed:yes' as well, but no other fancy searches or anything.</li>
-<li>Updated the Flathub and Amazon source to new APIs, restoring integration.</li>
-<li>Itch.io source integration will load a collection named 'Lutris' if present.</li>
-<li>GOG and Itch.io sources can now offer Linux and Windows installers for the same game.</li>
-<li>Added support for the 'foot' terminal.</li>
-<li>Support for DirectX 8 in DXVK v2.4.</li>
-<li>Support for Ayatana Application Indicators.</li>
-<li>Additional options for Ruffle runner.</li>
-<li>Updated download links for the Atari800 and MicroM8 runners.</li>
-<li>No longer re-download cached installation files even when some are missing.</li>
-<li>Lutris log is included in the 'System' tab of the Preferences window.</li>
-<li>Improved error reporting, with the Lutris log included in the error details.</li>
-<li>Add AppArmor profile for Ubuntu versions &gt;= 23.10.</li>
-<li>Add Duckstation runner.</li>
-</ul>
-</blockquote>
-<p>See more on the <a href="https://lutris.net/" rel="noopener nofollow" target="_blank">Lutris website</a>.</p>
-<p>Are you a Lutris user? What do you think to this update? Let me know in the comments.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/lutris-game-manager-v0-5-18-released-adding/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/lutris-game-manager-v0-5-18-released-adding/</guid>
-      <pubDate>Mon, 02 Dec 2024 16:14:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/lutris.jpg" type="image/jpeg"/>
-      
-      <category>Apps</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Blizzard are delisting Warcraft I and II from GOG, so GOG adds a special discount and will keep them updated</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>GOG have announced that <a href="https://www.gog.com/en/game/warcraft_orcs_and_humans" rel="noopener nofollow" target="_blank">Warcraft I</a> and <a href="https://www.gog.com/en/game/warcraft_2_battlenet_edition" rel="noopener nofollow" target="_blank">Warcraft II</a> are going to be leaving <a href="http://gog.com" rel="noopener nofollow" target="_blank">GOG</a> "at the publisher's request" (Blizzard).</p>
-<p>They're set to leave GOG on December 13th, although if you have a copy you'll still be able to download it afterwards. If you want to pick them up, GOG have given a special discount code "MakeWarcraftLiveForever" but that only applies to <a href="https://www.gog.com/en/game/warcraft_bundle" rel="noopener nofollow" target="_blank">the bundle</a> of them together. GOG say it will knock "2 USD, 2 EUR, 1.5 GBP or 8 PLN" off the price.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2141467671733155444gol1.jpg"/></p>
-<p>Additionally, GOG announced a promise for their recently announced <a href="https://www.gamingonlinux.com/2024/11/gog-launch-their-preservation-program-to-make-games-live-forever-with-a-hundred-classics-being-re-released/" rel="noopener" target="_blank">Preservation Program</a> as they said "Once a game joins the Program, we pledge to maintain its compatibility even if it gets delisted from the store.". Nice to see for people who do buy it up before it vanishes.</p>
-<p>Why are Blizzard doing this now? They recently released Warcraft I: Remastered and Warcraft II: Remastered, although they're only available on Battlenet.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/blizzard-are-delisting-warcraft-i-and-ii-from-gog-so-gog-adds-a-special-discount-and-will-keep-them-updated/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/blizzard-are-delisting-warcraft-i-and-ii-from-gog-so-gog-adds-a-special-discount-and-will-keep-them-updated/</guid>
-      <pubDate>Mon, 02 Dec 2024 16:05:55 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1011326117id25763gol.jpg" type="image/jpeg"/>
-      
-      <category>Activision Blizzard</category>
-      
-      <category>Delisting</category>
-      
-      <category>GOG</category>
-      
-      <category>Retro</category>
       
     </item>
     
