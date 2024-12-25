@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2024-12-24 07:27:08.220449</pubDate>
+    <pubDate>2024-12-25 07:27:22.257234</pubDate>
 
     
     <image>
@@ -18,6 +18,495 @@
     </image>
 
     
+    
+    <item>
+      <title>Fan-made PC port of Star Fox 64 is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>From the team behind PC ports of other Nintendo games like <a href="https://www.gamingonlinux.com/2023/03/ship-of-harkinian-a-pc-port-of-ocarina-of-time-has-a-feature-filled-upgrade/" rel="noopener" target="_blank">The Legend of Zelda: Ocarina of Time</a> and <a href="https://www.gamingonlinux.com/2024/05/2-ship-2-harkinian-another-unofficial-pc-port-of-zelda-majoras-mask-is-out-now/" rel="noopener" target="_blank">The Legend of Zelda: Majora's Mask</a>, a new PC port has arrived for Star Fox 64.</p>
+<p>Just like their previous releases, Starship (their name for the project) does not include any copyrighted assets. You are required to provide the data files from a copy of the game you own.</p>
+<p>Currently the only available build is for Windows, which you can try running through Wine / Proton. The developer said in the announcement in their Discord: "The Linux and Mac versions are very close but we ran into some snags and didn't want to delay the release for it. If any Linux/MacOS developers want to help the ports across the finish line, it's available to be built from source (see our GitHub Starship repository)."</p>
+<p>Hopefully it won't be too long before the Native Linux build is up to make it easier to run.</p>
+<p>Star Fox designer Takaya Imamura <a href="https://x.com/ima_1966/status/1871337679176237461" rel="noopener nofollow" target="_blank">posted</a> on X (Twitter) to say "I don't think Nintendo would tolerate this, but I'm personally very happy about it." (translated from Japanese).</p>
+<p>You can find it on <a href="https://github.com/HarbourMasters/Starship" rel="noopener nofollow" target="_blank">the GitHub page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/fan-made-pc-port-of-star-fox-64-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/fan-made-pc-port-of-star-fox-64-is-out-now/</guid>
+      <pubDate>Tue, 24 Dec 2024 15:37:02 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/421768388id25900gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Nintendo</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Open source evolution sim Thrive v0.8 brings more graphics improvements and new game mechanics</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Thrive is an open source evolution sim built with <a href="https://godotengine.org/" rel="noopener nofollow" target="_blank">Godot Engine</a>, it's getting more impressive with every new release and there's another update out now for you to try out.</p>
+<p>Version 0.8.0 brings with it some more graphics improvements to make all the little organisms look more impressive with new textures, new 3D models plus new and improved icons.</p>
+<p>There's a lot more to this release like the introduction of a Organelle Suggestion System that suggests what organelles to add to your organism in order to guide you towards optimizing its evolution. You can ignore it if you wish, but sounds like a useful feature for you to keep jumping to the top of the food chain. The devs also added in sulfur chunks, an underwater vent eruption event that creates extra hydrogen sulfide and carbon dioxide in the patch, nitrogen is now dynamic and there's two new multicellular loading screen artworks.</p>
+<p>Check out their release highlights trailer:</p>
+<div class="hidden_video" data-video-id="FKhdlzvRX90"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ff8fa30f03e3b73d7a6e58f041c01d8b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/FKhdlzvRX90" target="_blank">See video</a></div></div>
+<p>Thrive has Native Linux support and is rated Steam Deck Playable. See more about the update in the <a href="https://revolutionarygamesstudio.com/devblog-45-suggestion-of-an-update/" rel="noopener nofollow" target="_blank">blog post</a>. It's free from their launcher or you can buy it from stores to support development.</p>
+<details class="spoiler_container"><summary class="spoiler_header">Full changelog, click me</summary>
+<div class="spoiler-content">
+<ul>
+<li>Added an organelle suggestion that is shown in the editor which gives info on what auto-evo would like the player to add</li>
+<li>Added a new tab in the editor to control organelle split order for more fine tuned control over ATP during reproduction</li>
+<li>Reintroduced Mac builds of Thrive. Thrive is again playable on macOS but this is not official full support yet.</li>
+<li>Balancing changes to microbe storage: most organelles now give much less storage to make storage an actual gameplay mechanic that needs planning</li>
+<li>Created new membrane textures that help make the 3D membranes of different types more easily distinguishable (as the change to 3D membranes made all the membranes look very similar)</li>
+<li>Reworked all organelle 3D models</li>
+<li>Added sulfur chunks</li>
+<li>Added a bloom strength slider and enabled it by default</li>
+<li>Added an underwater vent eruption event that creates extra hydrogen sulfide and carbon dioxide in the patch</li>
+<li>Added a miche viewer to the patch map tab</li>
+<li>Improved gas update logic to make sure gases don't add up to over 100%</li>
+<li>Made compounds move much more freely between patches</li>
+<li>Made nitrogen dynamic</li>
+<li>Added hydrogen sulfide compound consumption by species</li>
+<li>Added iron chunks being oxidised by oxygen making them less common once oxygen starts spreading through the world</li>
+<li>Removed experimental compound production mode as it was too unbalanced and didn't get any work done on it since the last release</li>
+<li>Improved the microbe AI in terms of when it uses sprinting</li>
+<li>Mucocyst can now be used by the AI to defend itself</li>
+<li>Added difficulty options for what to do with stored compounds after reproducing</li>
+<li>Added disk caching for generated species images. This makes displaying species images a lot faster after restarting the game and loading a save. By default the cache aims to use at most 1 GB of disk space.</li>
+<li>Reduced unlock requirements of gas-dependent organelles</li>
+<li>Reduced base endosymbiosis time costs by one</li>
+<li>Lowered hydrogenase ATP output by 10%</li>
+<li>Made slight balancing tweaks to photosynthesis glucose production and glucose use of a few ATP-generating organelles</li>
+<li>Renamed Nitrogen-Fixing Plastid to Nitroplast</li>
+<li>Made glucose reduction text only apply to discovered patches to make the percentages higher to make it look like a more important message</li>
+<li>Added a warning tooltip for the speed stat in the editor about how it is not fully accurate</li>
+<li>Added an icon for the mucocyst upgrade</li>
+<li>Reworked the experimental siderophore feature action icon</li>
+<li>Made engulfing info be last in the membrane tooltips like it was previously (before tooltip refactoring broke it)</li>
+<li>Added a new and more visible cell membrane animation</li>
+<li>Increased visibility of engulf wave effect slightly</li>
+<li>Added bigger warning when enabling experimental features mode</li>
+<li>Added tooltips for chemoreceptor upgrade GUI amount and distance sliders</li>
+<li>Updated nitrogen icon to not have glow anymore to be more consistent with other compound icons</li>
+<li>Tweaked some GUI element alignments to be more similar to what they were before we upgraded to Godot 4</li>
+<li>Added a tip in the unlock tooltip that endosymbiosis is an alternative unlock method</li>
+<li>Fixed process toggle buttons not always matching the underlying process states and fixed processes re-enabling by themselves when organelles reproduced</li>
+<li>Fixed hex popup menu being able to operate on deleted hexes which could be exploited for infinite MP. Also fix a related bug in the prototype editors.</li>
+<li>Fixed not all patches showing up in the editor report patch selector dropdown</li>
+<li>Fixed a bug in the volcanism effect that caused it to add way more CO2 than originally intended</li>
+<li>Fixed non-LAWK unlocks showing after loading a save</li>
+<li>Fixed aspect ratio of sunlight icon in daytime selection bar</li>
+<li>Fixed chemical equation arrow to be vertically centered</li>
+<li>Fixed a bug where compound diffusion between patches could move too much compound</li>
+<li>Fixed auto-evo migration usefulness calculations using the wrong miche tree</li>
+<li>Fixed organelle scale-affecting upgrades not applying while moving that organelle to a new location</li>
+<li>Fixed bug with osmoregulation cost being shown on upgrade tooltips</li>
+<li>Fixed osmoregulation showing in rigidity slider tooltip</li>
+<li>Fixed lag when zooming out a draggable container while it is still displaying its initial animation</li>
+<li>Fixed the timeline incorrectly claiming some species to be extinct</li>
+<li>Fixed moved cell in body plan editor being invisible if no cell type to place was selected</li>
+<li>Fixed a missing wordwrap on a label in the mod manager</li>
+<li>Fixed multiple bugs in our species visual hashing algorithm that made memory caching also less efficient</li>
+<li>Fixed extinct species not having previews in auto-evo exploring tool</li>
+<li>Made auto-evo exploring tool show patch events, note that historical view for events doesn't work yet</li>
+<li>Disabled temperature miche being generated when in LAWK mode (no species could occupy it but for clarity it is entirely disabled now)</li>
+<li>Added two new multicellular loading screen artworks</li>
+<li>Tweaked PhotoStudio image capture distance math</li>
+<li>Made organelle tooltips not constantly try to refresh their displayed chemical equations</li>
+<li>Added an energy icon for the later stage prototypes</li>
+<li>Linked late multicellular prototype jump force to mass to make jumping speed more consistent</li>
+<li>Added proper content for the Thriveopedia page of ferroplast</li>
+<li>Added code for UV unwrapping of macroscopic creatures, but there's no textures yet so the code isn't enabled</li>
+<li>Native lib install tool now prints full paths to try to reduce potential confusion</li>
+<li>Started backend work on allowing more kinds of unit tests for Thrive using gdUnit4</li>
+<li>Added workaround in the C# interop code to work with newer native library compiles</li>
+<li>Added a few explicit garbage collector calls when the game is loading to hopefully reduce chance that it runs during gameplay</li>
+<li>Updated to .NET 9</li>
+<li>Updated YamlDotNet from 16.1.3 to 16.2.1</li>
+<li>Updated System.Numerics.Vectors from 4.5.0 to 4.6.0</li>
+<li>Updated automatic code checking tools</li>
+<li>Improved a few aspects of our CMake files</li>
+<li>Steam: Fixed workshop upload dialog not showing all error conditions</li>
+<li>Updated translations</li>
+</ul>
+</div>
+</details>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/19421/thrive/">Thrive</a></strong> | Release Date: 26th November 2021<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/1779200/Thrive/">Steam</a></li><li><a href="https://revolutionarygamesstudio.com/">Official Website</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/open-source-evolution-sim-thrive-v08-brings-more-graphics-improvements-and-new-game-mechanics/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/open-source-evolution-sim-thrive-v08-brings-more-graphics-improvements-and-new-game-mechanics/</guid>
+      <pubDate>Tue, 24 Dec 2024 15:17:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1278687023id25899gol.jpg" type="image/jpeg"/>
+      
+      <category>Free Game</category>
+      
+      <category>Godot Engine</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>ScummVM 2.9.0 is out now for expanded retro gaming support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>ScummVM v2.9.0 has rolled out as a little holiday treat bringing expanded compatibility with various retro classic for you to play on modern systems.</p>
+<p>Don't know what ScummVM does? It's is a program that allows you to run certain classic adventure and role-playing games, provided you already have their data files. It replaces the original executable to launch the game, to get them running on modern systems with various enhancements.</p>
+<p>Newly supported games in this release:</p>
+<blockquote>
+<ul>
+<li>The Adventures of the Good Soldier Schweik</li>
+<li>Backyard Basketball</li>
+<li>Castle Master</li>
+<li>Marvellous Mice Adventures: Meeting Sea Rat</li>
+<li>Marvellous Mice Adventures: Sea Rat's Birthday</li>
+<li>Mask Show</li>
+<li>Moonbase Commander</li>
+<li>Orion Burger</li>
+<li>Rise of the Dragon</li>
+<li>The Space Bar</li>
+<li>Thimbleweed Park[^1]</li>
+<li>Total Eclipse</li>
+<li>Total Eclipse 2</li>
+<li>Unrest</li>
+<li>Wait for it! Issue 3. Song for a Hare</li>
+</ul>
+</blockquote>
+<p>Some other changes in this release include the AGS engine updated to version 3.6.1.30 adding support for some newer games like Stranger in Utopia, The Phantom Fellows, and It Takes Two to Tangle. They also added Keymapper support to "more than 20 engines" allowing you to customize your controls. Plus lots and lots more.</p>
+<p>See more in <a href="https://www.scummvm.org/news/20241222/" rel="noopener nofollow" target="_blank">the news post</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/scummvm-2-9-0-is-out-now-for-expanded-retro-gaming-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/scummvm-2-9-0-is-out-now-for-expanded-retro-gaming-support/</guid>
+      <pubDate>Tue, 24 Dec 2024 15:01:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/scummvm.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Retro</category>
+      
+    </item>
+    
+    <item>
+      <title>Palworld - Feybreak v0.4.11 is out now and it&#39;s a huge update</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Bringing with it a whole lot of new content to play through, the Palworld - Feybreak update is officially out now ready for your holiday time.</p>
+<p>What to expect from it? Quite a lot. A whole new island, new resources, the ability to send Pals out on expeditions, a new research mechanic, special Predator Pals that roam the world that are "extremely difficult" to deal with, NPCs that have a bounty on their head to find, new strongholds to fight through, player level cap raised to 60, new items, Sphere's for capturing Pals can be customized with special modules, there's a Hardcore mode, new weapons, new Pals and the list goes on.</p>
+<p>Check out the trailer below:</p>
+<div class="hidden_video" data-video-id="WS2yS9rO-lI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4725ddf9ab34c482e9fb2922b64adc89.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/WS2yS9rO-lI" target="_blank">See video</a></div></div>
+<p>This also brings in the first small bit of the Terraria crossover with a bullet-firing melee weapon the Meowmere. With a promise of more on that crossover to come in 2025.</p>
+<div class="hidden_video" data-video-id="6y6HeSei24E"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f16ebf0d6676600215c681bdbf7dd334.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6y6HeSei24E" target="_blank">See video</a></div></div>
+<details class="spoiler_container"><summary class="spoiler_header">Full changelog, click me</summary>
+<div class="spoiler-content">▼New Content<br/>
+・Meowmere from Terraria!<br/>
+⤷ Meowmere, the first "bullet-firing melee weapon" in Palworld, has been added. This is only a small taste of the Palworld x Terraria collab, and in 2025, even more collaboration content will be released! Enjoy taking a step towards a new adventure alongside the sound of cat meowing!<br/>
+<br/>
+・New Island - Feybreak<br/>
+⤷A new island, Feybreak, has appeared! A mysterious island with many challenges, glowing sand and many new Pals!<br/>
+⤷Conquer the Feybreak Warriors, a new faction that dominates the island with the power of their missile battery camp!<br/>
+<br/>
+・New Resources - Chromite and Hexolite Quartz!<br/>
+⤷Chromite is buried underground and can only be found by using Pals or items that can detect metal.<br/>
+⤷Hexolite Quartz is a rare ore that only exists on Feybreak.<br/>
+<br/>
+・New Mechanic - Expeditions!<br/>
+⤷Obtain supplies by sending Pals out on expeditions at the Pal Expedition Station!<br/>
+<br/>
+・New Mechanic - Research!<br/>
+⤷By conducting research at the Pal Labor Research Laboratory, you can unlock permanent passives and rewards that increase the productivity of your base!<br/>
+*Some existing buildings that increase work speed will now be unlocked as research rewards.<br/>
+<br/>
+・Predator Pals<br/>
+⤷Vicious Predator Pals will now appear throughout the world. These Pals are extremely difficult to defeat but those strong enough to take them down will earn rare resources in return for their bravery!<br/>
+<br/>
+・New "Bounty" NPCs<br/>
+⤷Dangerous criminals have appeared all over the Palpagos Islands. Bring these crooks to justice and cash in the country for rewards.<br/>
+<br/>
+・New Strongholds and Stronghold Boss: The Attack Chopper<br/>
+⤷A large and very difficult "Platform Oil Rig" has appeared! Great riches, important supplies and more are stored here. A powerful Attack Chopper guards this rig from any intruders!<br/>
+⤷A smaller oil rig, the "Barge Oil Rig" has been added for beginners.<br/>
+<br/>
+・Player level cap raised to 60! New technologies and more await!<br/>
+<br/>
+・New Raid - Xenolord!<br/>
+Defeat the dark mechanical dragon that controls the Xeno army!<br/>
+<br/>
+・Sphere Modules<br/>
+⤷You can now attach modules to spheres to significantly change their trajectory, such as curving it, which in turn increases the capture rate!<br/>
+<br/>
+・New Items<br/>
+⤷Metal Detector - Find chromite buried underground on Feybreak.<br/>
+⤷Pouches - Increases your inventory size!<br/>
+⤷Double Jump Boots - Stylish and practical, time to double jump!<br/>
+⤷Air Dash Boots, - Allows the player to dash while in the air.<br/>
+⤷Revival Potion - Bring your Pals back to life.<br/>
+⤷New cooking recipes have been added.<br/>
+<br/>
+・Hardcore Mode!<br/>
+⤷The ultimate challenge. Player and Pal death is permanent.<br/>
+Can be enabled in the world settings.<br/>
+<br/>
+・Random Pal Mode!<br/>
+⤷Turn on Random Pal Mode in world settings to randomize Pal spawns!<br/>
+⤷Randomize by Region - Randomize Pal spawns while maintaining a certain regional range.<br/>
+⤷Completely Random - All Pal spawns in all regions will be completely randomized! It could be a bit chaotic...<br/>
+<br/>
+・New Area Discovery Bonus!<br/>
+⤷Players will earn experience points when they discover a location for the first time.<br/>
+<br/>
+・Many New Weapons!<br/>
+⤷Makeshift SMG<br/>
+⤷Makeshift Assault Rifle<br/>
+⤷Makeshift Shotgun<br/>
+⤷Old Revolver<br/>
+⤷SMG<br/>
+⤷Semi-Auto Rifle<br/>
+⤷Semi-Auto Shotgun<br/>
+⤷Laser Gatling Gun<br/>
+⤷Plasma Cannon<br/>
+⤷Compound Bow<br/>
+⤷Advanced Bow<br/>
+⤷Katana<br/>
+⤷Beam Sword<br/>
+⤷Dark Grenade<br/>
+⤷Dragon Grenade<br/>
+⤷Ground Grenade<br/>
+⤷Grass Grenade<br/>
+⤷Water Grenade<br/>
+<br/>
+・New Buildings<br/>
+⤷Large-Scale Electric Egg Incubator - Hatch up to 10 eggs at the same time.<br/>
+⤷Guild Chest - Items placed in a guild chest are shared among all guild chests.<br/>
+⤷Item Retrieval Machine - Search for and take any item from any chest within your base!<br/>
+⤷Medicine Rack - Pals will take medicine stored to treat their illnesses and injuries.<br/>
+⤷Flea Market - Sell Pals and items to other players!<br/>
+⤷Large-Scale Stone Oven and Gigantic Furnace - Multiple Pals can work together to cook and refine at higher speeds!<br/>
+⤷Skillfruit Orchard - Plant and grow skill fruits!<br/>
+⤷Gold Coin Assembly Line - Illegally produced coins, now made at home!<br/>
+⤷Ladders - Players can go up and down without needing to build stairs!<br/>
+⤷Pure Quartz Mine - Mine an infinite amount in the comfort of your base.<br/>
+⤷Accumulator - By storing extra electricity, you can keep your facilities running at night while your Pals sleep.<br/>
+<br/>
+・Elemental Treasure Chests<br/>
+⤷Rare treasure chests that can only be unlocked by Pals of specific elements have appeared!<br/>
+<br/>
+▼Player<br/>
+・Players can now sit on chairs!<br/>
+・You can now obtain Successful Bounty Tokens by defeating field bosses. These tokens provide permanent passives to the player.<br/>
+・Player climbing speed has been increased.<br/>
+・Increased the maximum amount of power that can be enhanced by Lifmunk Effigies from 12 to 14.<br/>
+・Implemented "Sphere Critical" hits! Throwing a sphere at a Pal's weak spot (the same weak spot as when attacking a Pal) will temporarily increase the capture rate!<br/>
+・Experience points gained from crafting and building have been increased. You now also gain experience points for Pals crafting and building even when you aren't at your base!<br/>
+・Improved player animations.<br/>
+・Players will now be invincible for a few seconds after teleporting or entering/exiting dungeons.<br/>
+・When mounted, Pals now cancel any active skills that are in effect, allowing it to move immediately.<br/>
+<br/>
+▼Base Related<br/>
+・A function to replace foundation structures and defensive walls without destroying them has been implemented. Walls already built can be upgraded.<br/>
+・New foundation structures, "Japanese Style" have been implemented! You can recreate Sakurajima's Japanese-style architecture at your base. Sliding doors have also been implemented.<br/>
+・The maximum base level has been increased to 30.<br/>
+・Pal transportation work has been improved while the player is not in the base.<br/>
+・In Single-Player and COOP modes you can build much more freely around the world, except in some dungeons.<br/>
+・The Pal working state set in the monitoring stand is now saved.<br/>
+<br/>
+▼Pals<br/>
+・Christmas Skins!<br/>
+6 Christmas skins have been added for all players!<br/>
+(※You must own the Pal to equip the skin)<br/>
+⤷Pudding à la Gumoss<br/>
+⤷Party Night Depresso<br/>
+⤷Winter Style Chillet<br/>
+⤷Winter Style Chillet Ignis<br/>
+⤷Royal Frostallion<br/>
+⤷White Shadowbeak<br/>
+<br/>
+・Redistributing Limited-Time skins to all players!<br/>
+(※You must own the Pal to equip the skin)<br/>
+⤷Gold Relaxaurus<br/>
+⤷Sailor Quivern<br/>
+⤷Summer Chillet<br/>
+<br/>
+・New Unique Skills<br/>
+⤷Vanwyrm - Flame Breath<br/>
+⤷Vanwyrm Cryst - Tempest Blizzard<br/>
+⤷Astegon - Firefist Breathstorm<br/>
+⤷Maraith - Spirit Dash<br/>
+⤷Verdash - Spinning Roundhouse<br/>
+⤷Univolt - Lightning Gale<br/>
+⤷Blazehowl - Volcanic Fang<br/>
+⤷Ragnahawk - Rush Beak<br/>
+⤷Beegarde - Needle Spear<br/>
+⤷Beakon - Lightning Dive<br/>
+⤷Rayhound - Beckon Lightning<br/>
+⤷Jormuntide - Slither Slam<br/>
+⤷Jormuntide Ignis - Magma Serpent<br/>
+⤷Cryolinx - Blizzard Claw<br/>
+⤷Wumpo - Snow Bowling<br/>
+⤷Wumpo Botan - Lawn Bowling<br/>
+<br/>
+・New Ground Skill<br/>
+⤷Stone Beat<br/>
+<br/>
+・New Dark Skill<br/>
+⤷Poison Shower<br/>
+<br/>
+・New Dragon Skill<br/>
+⤷Charge Cannon<br/>
+<br/>
+・New Tier of Passive Skills<br/>
+⤷An even higher tier of passives, "rainbow passive skill" has been added! Breed the ultimate Pal!<br/>
+※ "Swift" has been promoted to a rainbow passive skill, and the chance of obtaining it has decreased.<br/>
+<br/>
+・Work Suitability Enhancement Books!<br/>
+⤷By using various technique books, you can permanently increase Pal's work suitability.<br/>
+<br/>
+・The limit on strengthening Pals with souls has been lifted! It's now possible to further develop your Pals.<br/>
+・If a summoned Pal has three moves that are all on cooldown, it will use the most basic move of its element.<br/>
+・Enemy Pals will now use every move they know at that level.<br/>
+・Alpha Pal eggs are no longer all huge but are now each the appropriate size.<br/>
+<br/>
+▼UI<br/>
+・Added a filter function to the Technology screen.<br/>
+・You can now add Pals to your favourites with a single button in the Pal Box UI.<br/>
+・Improved Pal Box sorting function, making it easier to find the Pal you're looking for.<br/>
+・You can now change the font size in the options settings.<br/>
+・The player's main HUD no longer becomes hidden over time. (You can revert this setting in the options.)<br/>
+<br/>
+・Mouse and Keyboard<br/>
+⤷You can now close any window with the Tab key.<br/>
+⤷The right Shift key and right Ctrl key can now be registered in the key configuration.<br/>
+<br/>
+・Controller Pad<br/>
+⤷Fixed an issue where the player would continue walking if the UI was opened while moving.<br/>
+⤷Changed the cutscene skip button on controller to Y.<br/>
+<br/>
+▼Crime<br/>
+・The charges have been expanded. Serious crimes, such as "Obstructing Public Officials" will increase the player's criminal level even more.<br/>
+<br/>
+▼Dedicated Servers<br/>
+・You can now set "Maximum number of buildings per base" in the world settings.<br/>
+This allows server administrators to make adjustments to stabilize server performance and maintain a comfortable playing environment.<br/>
+<br/>
+▼Balance Adjustment<br/>
+・The weight multiplier for all items can now be changed in world settings.<br/>
+・Technology unlock levels have been adjusted.<br/>
+・The selling prices of some Pals have been adjusted.<br/>
+・Merchant stock and prices have been adjusted.<br/>
+・The crafting recipes for some ammunition have been adjusted.<br/>
+・Boss enemies are now immune to stuns and will now become staggered when their stun accumulation value reaches 100.<br/>
+・Some technologies can now be unlocked by defeating tower bosses.<br/>
+<br/>
+・Adjusted the work suitability of some Pals:<br/>
+⤷Blazamut Ryu - Kindling 3 → 4<br/>
+⤷Selyne - Handiwork 3 → 4<br/>
+⤷Knocklem - Mining 3 → 4<br/>
+⤷Cryolinx - Added Transporting<br/>
+<br/>
+・Legendary Pals are now level 60, and they can learn more powerful skills.<br/>
+・The recovery amount of Felbat and Lovander's partner skills has been increased from 6% to 10%<br/>
+<br/>
+▼Bug Fixes<br/>
+・Improved base pals so they don't get stuck as often.<br/>
+・Reduced the issue of players falling under the ground after fast travel.<br/>
+・Improved enemy pathing so they don't get stuck in walls as often.<br/>
+・Improved the raid algorithm and pathing to ensure that raids reach bases much more often.<br/>
+・Many many many other minor bug fixes.<br/>
+<br/>
+▼Other<br/>
+・New NPCs have been added to various locations.<br/>
+・Added the "Free Pal Alliance Judicator" to the Free Pal Alliance. He will now appear at their camps.<br/>
+・Slowed down the work speed animation of base Pals with work speed buffs. (This is a measure to prevent the processing load from increasing too much when the effect is played at high speed. This change does not affect actual work speed.)<br/>
+・Changed Paldeck to Palpedia to be more in line with other languages.<br/>
+<br/>
+▼Soundtrack<br/>
+・3 new songs have been added to the soundtrack. If you have already purchased the game, please update the soundtrack.<br/>
+*Please note that the soundtrack update may be delayed by about a day.</div>
+</details>
+<p>Palworld works on Linux with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> and is rated Steam Deck Playable.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40377/palworld/">Palworld</a></strong> | Release Date: 19th January 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/1623730/Palworld/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/palworld-feybreak-v0411-is-out-now-and-its-a-huge-update/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/palworld-feybreak-v0411-is-out-now-and-its-a-huge-update/</guid>
+      <pubDate>Tue, 24 Dec 2024 14:38:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1361174691id25897gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Monster Catching</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve released the Best of Steam - 2024 showing off the highest earners and most played games</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another year comes to a close and Valve have put up the Best of Steam - 2024, so you can go and check out what's the most popular.</p>
+<p>Split across multiple tabs of the top sellers overall, best-selling releases of 2024, the most played during 2024, the most played on Steam Deck during 2024, most played using a controller and top selling VR games.</p>
+<p class="plain-list-title">For the Steam Deck the top most played games for 2024 are:</p>
+<ul>
+<li>Fallout 4</li>
+<li>Palworld</li>
+<li>Dave the Diver</li>
+<li>Cyberpunk 2077</li>
+<li>Hogwarts Legacy</li>
+<li>Hades</li>
+<li>Vampire Survivors</li>
+<li>Grand Theft Auto V</li>
+<li>Elden Ring</li>
+<li>Baldur's Gate 3</li>
+<li>Stardew Valley</li>
+<li>Balatro</li>
+</ul>
+<p class="plain-list-title">The overall top sellers based on revenue generated across the whole of Steam for 2024 are (which Valve say are sorted randomly are):</p>
+<ul>
+<li>Counter-Strike 2</li>
+<li>Space Marine 2</li>
+<li>Call of Duty Black Ops 6</li>
+<li>PUBG: Battlegrounds</li>
+<li>Destiny 2</li>
+<li>Black Myth Wukong</li>
+<li>Helldivers 2</li>
+<li>Palworld</li>
+<li>Dota 2</li>
+<li>Baldur's Gate 3</li>
+<li>Apex Legends</li>
+<li>Elden Ring</li>
+</ul>
+<p>Check <a href="https://store.steampowered.com/sale/bestof2024" rel="noopener nofollow" target="_blank">it out on Steam</a>.</p>
+<p>What were the games you played the most through 2024?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2024/12/valve-released-the-best-of-steam-2024-showing-off-the-highest-earners-and-most-played-games/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/valve-released-the-best-of-steam-2024-showing-off-the-highest-earners-and-most-played-games/</guid>
+      <pubDate>Tue, 24 Dec 2024 14:30:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/712406103id25896gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
     
     <item>
       <title>Merry Christmas and Happy New Year from GamingOnLinux</title>
@@ -5486,186 +5975,6 @@ From what I can tell, some person made a fan page for an existing Funko Pop vide
       <category>Action</category>
       
       <category>Horror</category>
-      
-    </item>
-    
-    <item>
-      <title>Epic science fantasy roguelike Caves of Qud 1.0 is out now and it&#39;s a wild ride</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Caves of Qud is a proper roguelike, with deep science fantasy lore and after 15+ years of development it is finally finished with the 1.0 release now available. Easily one of the best roguelikes ever made, a game not to be missed, even if you're not usually into the genre it's just a wild ride to play through.</p>
-<p>I adore everything about this game from the wild characters you can make with all sorts of insane abilities and mutations, to their deep descriptions and lore on everything in the world. Even the doors and walls have descriptions on them, the game is just massively detailed in every way. The new UI is also a thing of retro beauty.</p>
-<p>My latest character was a fun one. I had the ability to fire an electromagnetic pulse, with heightened hearing, night vision, i could make a force bubble around myself, create a force wall to protect myself and reflect mental attacks back at enemies. However, my character also suffers from Amnesia, and tends to forget things at times…</p>
-<p>Thankfully there's multiple game modes, so you can make it a bit more adventure-like and less punishing if you wish to explore it more easily.</p>
-<div class="hidden_video" data-video-id="4nG-N_jtpZI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d66c750a3eb8ce7c073b04be62dc31b8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/4nG-N_jtpZI" target="_blank">See video</a></div></div>
-<p class="plain-list-title">New as of the 1.0 release:</p>
-<ul>
-<li>Tutorial to teach the basics of the game.</li>
-<li>Final quest in the main questline &amp; the end of the game.</li>
-<li>Several new music tracks, sound effects, and items.</li>
-<li>40 new achievements.</li>
-<li>Lots of bugfixes and small feature improvements.</li>
-</ul>
-<p>With the 1.0 launch there's also the new  Dromad Deluxe edition that includes the game, the original soundtrack and the Pets of Harvest Dawn DLC to pick from 13 unique companions to start the game with.</p>
-<p class="plain-list-title">From the press release:</p>
-<p>“It's hard to think of<em> Caves of Qud</em> as anything other than our life's work,” says Jason Grinblat, Founder and Designer at Freehold Games. “We've been making it for almost 20 years now, and the success it has already, has felt like a fever dream. It's so easy to imagine we're still in Brian's converted garage working on the game for our three friends. The prospect of it finally arriving at 1.0 is thrilling, dizzying... exhausting. We're looking forward to Kitfox's support after launch so we can crawl under our desks and sleep for a few months. Anyway, please play it!”</p>
-<p>It's launched with Native Linux support and is Steam Deck Verified.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/3962/caves-of-qud/">Caves of Qud</a></strong> | Release Date: 5th December 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://www.gog.com/en/game/caves_of_qud">GOG</a></li><li><a href="https://freeholdgames.itch.io/cavesofqud">itch.io</a></li><li><a href="https://store.steampowered.com/app/333640/Caves_of_Qud/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/epic-science-fantasy-roguelike-caves-of-qud-10-is-out-now-and-its-a-wild-ride/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/epic-science-fantasy-roguelike-caves-of-qud-10-is-out-now-and-its-a-wild-ride/</guid>
-      <pubDate>Fri, 06 Dec 2024 12:01:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/263163593id25799gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>GOG</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Flathub to become a self-sustaining entity and they&#39;re looking to hire someone to help</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://flathub.org/" rel="noopener nofollow" target="_blank">Flathub</a> has positioned itself as pretty much the go-to place for Linux apps, since it works across many distributions and is even on the Steam Deck. Now, the GNOME Foundation are looking to hire someone to help expand it into a self-sustaining entity.</p>
-<p>As <a href="https://discourse.flathub.org/t/request-for-proposals-flathub-program-management/8276" rel="noopener nofollow" target="_blank">posted</a> on the Flathub Discourse Forum, the GNOME Foundation are looking to hire a contractor to help sort through management, legal and financial stuff with it being funded by Endless. This is all also being done in partnership with KDE e.V. too.</p>
-<p>The budget for it seems pretty low though at $12,000 for an expected 3 months of part-time work on it. To me it seems a bit overly optimistic on how long this sort of thing would take to be fully sorted. Especially when you look at what the role entails like:</p>
-<blockquote>
-<ol>
-<li>Oversee deployment of payment systems for applications and direct donations to Flathub operating costs.</li>
-<li>Finalise governance documents and convene a simple governing body for Flathub with representatives from GNOME, KDE and the Flathub community.</li>
-<li>Establish and manage bank and Stripe payment processing accounts.</li>
-<li>Finalize and launch terms of use and developer agreements.</li>
-<li>Coordinate handling of accounting, operations and expenses with the GNOME Foundation.</li>
-<li>Ensure transparency through clear communications and documentation for the community.</li>
-</ol>
-</blockquote>
-<p>Hopefully something is worked out, because Flathub has become a seriously good thing for the Linux desktop.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/flathub-to-become-a-self-sustaining-entity-and-theyre-looking-to-hire-someone-to-help/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/flathub-to-become-a-self-sustaining-entity-and-theyre-looking-to-hire-someone-to-help/</guid>
-      <pubDate>Fri, 06 Dec 2024 11:42:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/flathub.jpg" type="image/jpeg"/>
-      
-      <category>Jobs</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Free to play Marvel Rivals is out now on Steam and works on Steam Deck / Linux (Steam Deck has issues though)</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Marvel Rivals is the next big multiplayer shooter and potentially the next "big thing", with a Steam free to play release now live. What is it? Pretty much Marvel Overwatch.</p>
-<p>The good news, is that it <em>does</em> actually work on Steam Deck and Desktop Linux thanks to <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a>. Not only that, this is <em>not</em> a case of it accidentally working either, it's supported. Straight from the developer in their Discord one of their team <a href="https://discord.com/channels/1193841000108531764/1202076175355355176/1314354112812290048" rel="noopener nofollow" target="_blank">said</a> very clearly: "Yes Steam Deck supported. Bugs on black cutscenes".</p>
-<p><em>There's clear issues right now though. So here's how to get it working on Steam Deck.</em></p>
-<p>When you go to play it on Steam Deck / Linux you may encounter errors about drivers and the operating system, which can be safely ignored. On Steam Deck, I just needed to use the touch screen to tap the confirmation boxes and then hit play on the launcher.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16243454001733477819gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16243454001733477819gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5059451721733477819gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/5059451721733477819gol1.jpeg"/></a></p>
-<p>After it's loaded shaders, at least with Proton 9.0-3, you will end up seeing black screens with audio playing, which the developer mentioned in my quote above. The good news, is that's an easy fix!</p>
-<p><strong>How to fix Marvel Rivals on Steam Deck</strong></p>
-<p>Go into Desktop Mode (STEAM button - Power - Switch to Desktop) and run Marvel Rivals from there. Once it loads the launcher you can control the mouse by holding down the STEAM button and using the Right Thumbpad to move the mouse, with Right Trigger as your mouse button to hit the buttons in the launcher and you can then get into the game properly.</p>
-<p>The initial black screen is supposed to show their privacy acceptance screen and agreement screen, which only seem to work in Desktop Mode. Here you can use a mixture of touch-screen and mouse input to get through it.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19164423381733479146gol1.jpg"/></p>
-<p>After that though, it wants you to enter a username, and since you're in Desktop Mode you <em>can't</em> bring up a keyboard overlay on top of the game properly. So hit the Power button <em>once</em>, select Log Out and it sends you back to Gaming Mode. Then launch the game again, and it will work properly.</p>
-<p>You'll still see <em>some</em> black screens though, but if you swap Marvel Rivals over to <strong>Proton Experimental</strong> (Properties -&gt; Compatibility) they seem to be fixed with it.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14093559831733479037gol1.jpeg"/></p>
-<p>So it's a bit of work, that will likely be made easier with updates to Proton from Valve and updates to the game. I'm sure Valve will figure out what causes the black screens with the agreement acceptance and get it fixed.</p>
-<p>Performance on Steam Deck is not especially great, and cut-scenes lag quite a lot. Actual gameplay is playable enough though, once you turn the settings onto Low and put FSR onto Performance.</p>
-<p>Pictures below on Low / FSR Balanced:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13309122041733479753gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13309122041733479753gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10775312451733479799gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/10775312451733479799gol1.jpeg"/></a></p>
-<p>Over on Desktop Linux, sticking with <strong>Proton Experimental</strong> as noted above to sort any black screens, and the experience is about what I expected. No issue getting it working there. You still get the driver / operating system version errors to click away but the privacy acceptance screens show up as normal, and you can get into Marvel Rivals without an issue at all.</p>
-<p>Picture below on Kubuntu 24.10 Desktop, Ultra settings:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19770803471733480764gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19770803471733480764gol1.jpg"/></a></p>
-<p>I've been enjoying trying it out, as a fan of games like it, and so far the gameplay is actually really fun, as are the designs of all the characters with their abilities. Looking forward to playing more of Marvel Rivals on Linux.</p>
-<p>Don't forget to keep an eye on <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our anti-cheat compatibility page</a> for updates on all games for Linux / Steam Deck. Any feedback on that page goes to the <a href="https://www.gamingonlinux.com/forum/topic/6277/" rel="noopener" target="_blank">forum</a>.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40684/marvel-rivals/">Marvel Rivals</a></strong> | Release Date: 6th December 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/2767030/Marvel_Rivals/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/marvel-rivals-out-now-free-on-steam-and-works-on-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/marvel-rivals-out-now-free-on-steam-and-works-on-steam-deck-linux/</guid>
-      <pubDate>Fri, 06 Dec 2024 10:26:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/601959220id25797gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Free Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve may be working on a new kind of Steam Machine</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>There's a whole bunch of hints and speculation going around right now, showing that Valve may be working towards a new kind of Steam Machine. Suddenly, their new <a href="https://www.gamingonlinux.com/2024/11/new-steam-controller-2-and-vr-controller-designs-got-leaked/" rel="noopener" target="_blank">Steam Controller 2 that was leaked</a>, along with the new <a href="https://www.gamingonlinux.com/2024/12/valves-new-branding-guidelines-hint-at-steam-decks-steamos-for-more-devices/" rel="noopener" target="_blank">SteamOS branding guidelines</a> make a whole lot more sense if this is true.</p>
-<p>While the SteamOS branding mentions third-party vendors using it, and we know they're working towards releasing SteamOS for other hardware vendors for their handhelds, having a standard way to show it also helps Valve keep it the same across multiple of their own devices.</p>
-<p>As for the Steam Controller 2, it makes even more sense with this because otherwise the target for people to buy it would have been reasonably small. Sure there's all the people with a Steam Deck, but it would be only a percentage of people with one that would buy a Steam Controller 2, and a lot of other people on PC already have their preferred gamepad. So, having a fresh Steam Machine would pretty much <em>need</em> a dedicated controller, unless Valve bundled it with a third-party controller, but that leaves Valve at the mercy of another hardware vendor on features and support.</p>
-<p>The <em>speculation</em> and leaks on some form of new Steam Machine from Valve come initially from a <a href="https://www.reddit.com/r/SteamDeck/comments/1h7521g/looks_like_valve_is_working_on_a_steamos_device/" rel="noopener nofollow" target="_blank">Reddit post</a>, where a user pointed out a <a href="https://gitlab.com/evlaV/linux-integration/-/commit/3d92f93a76012f9dc9cb2d75eb0da7ecc93b9bd2" rel="noopener nofollow" target="_blank">change</a> to the Linux kernel used by Steam Deck / SteamOS. It mentions a change for HDMI CEC for Fremont, with code that references AMD Lilac. Lilac on <a href="https://browser.geekbench.com/search?q=amd+lilac" rel="noopener nofollow" target="_blank">Geekbench</a> being a mixture of different AMD chips like the Ryzen 8540U and Ryzen 7735HS.</p>
-<p>On X / Twitter, VR enthusiast Brad Lynch <a href="https://x.com/SadlyItsBradley/status/1864817868346360011" rel="noopener nofollow" target="_blank">mentioned</a> in a thread after more digging through Valve's code noting "But also that Quanta Computer, Valve’s Steam Deck manufacturer, is giving feedback on it" and "All references to Fremont ensure checks for a full-size HDMI Type-A port you’d see on TV-focused consoles and other desktop computers that don’t have a dedicated GPU with its own HDMI ports". Lynch is the one that has been covering a lot of the leaks for the upcoming Valve Deckard VR headset.</p>
-<p>November next year will also mark 10 years since Valve's original Steam Machine launch. That would be a pretty good time for Valve to announce something don't you think?</p>
-<p>Things have changed dramatically since the original failure of the Steam Machine launch, which kicked off Valve's effort on everything that made up the Steam Deck. We have <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> now, the real important bit, which runs tens of thousands of Windows games and Proton compatibility is continuously improving to the point where so many games really do just work (but we still have the <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">anti-cheat</a> problem). We have another <a href="https://www.gamingonlinux.com/2024/12/proton-90-4-beta-updated-with-more-game-fixes-needing-testing-on-steam-deck-linux/" rel="noopener" target="_blank">big update to Proton 9 coming soon</a> too.</p>
-<p>It's going to be really interesting to see what becomes of all this. Very exciting time to be a Linux / SteamOS gamer.</p>
-<p>What do you think this is all for? Leave a comment with your thoughts.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/valve-may-be-working-on-a-new-kind-of-steam-machine/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/valve-may-be-working-on-a-new-kind-of-steam-machine/</guid>
-      <pubDate>Fri, 06 Dec 2024 09:22:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1861631409id25796gol.jpg" type="image/jpeg"/>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>Speculation</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Free to play monster-hunting game Dauntless now on Steam and works on Steam Deck, desktop Linux needs a quick fix</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Dauntless from Phoenix Labs has finally launched on Steam, it's also free to play so you can go and check out this monster-hunting game without spending a penny.</p>
-<p>The developers <a href="https://steamcommunity.com/app/331370/discussions/0/4635987888980475489/#c4635988522932731095" rel="noopener nofollow" target="_blank">mentioned</a> on Steam clearly back in late November: "We have no intentions to intentionally block Steam Deck compatibility!", and it has launched with Easy Anti-Cheat. There's no official Steam Deck compatibility rating from Valve just yet though, and the developer hasn't officially noted any supported status for Steam Deck apart from that quote so far.</p>
-<div class="hidden_video" data-video-id="0eZC5ITT7f0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/87e7273a655edf3be32e3e392a41d48f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/0eZC5ITT7f0" target="_blank">See video</a></div></div>
-<p>Giving it a test-run myself on Steam Deck with Proton 9.0-3, the game does launch correctly and shows Easy Anti-Cheat initializing. The game <em>requires</em> an Epic Games Account, which I had already previously linked with Steam for a different game, so I just had to use the touch screen to allow the game to be linked to it and after that gamepad input then worked correctly.</p>
-<p>So it seems at launch, at least right now, it does indeed work on Steam Deck. Sticking it into Low overall details and the performance looked pretty good too above 50FPS. Not quite keeping 60FPS, but still pretty good, a few dips down into the 40s during heavy combat.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8522697711733427853gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8522697711733427853gol1.jpeg"/></a></p>
-<p>One odd issue I have encountered, is that some display modes cause the resolution on the menu to be quite broken. Keeping it in Borderless Window works fine. Apart from that, it all appears to work pretty well, running around the city and engaging in a few battles with other players.</p>
-<p>Dauntless has a text scaling option too, which I set to larger so it's easier to read although there's still a couple of places with really small text.</p>
-<p>I also tested it on Desktop Linux (Kubuntu 24.10) <em>but</em> here across both Proton 9.0-3 and Proton Experimental Easy Ant-Cheat gives me a "Client game integrity violation error". A workaround, at least for now, is to pretend your desktop is a Steam Deck with this launch option:</p>
-<p><code class="inline-code">SteamDeck=1 %command%</code></p>
-<p>The official word I got back from their press team over email today is that "the Dauntless anti-cheat is Steam Deck compatible and they’ll be making further improvements to Steam Deck functionality".</p>
-<p>Don't forget to keep an eye on <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our anti-cheat compatibility page</a> for updates on all games for Linux / Steam Deck. Any feedback on that page goes to the <a href="https://www.gamingonlinux.com/forum/topic/6277/" rel="noopener" target="_blank">forum</a>.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40677/dauntless/">Dauntless</a></strong> | Release Date: 5th December 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/331370/Dauntless/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/free-to-play-monster-hunting-game-dauntless-now-on-steam-and-works-on-steam-deck-desktop-linux-needs-a-quick-fix/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/free-to-play-monster-hunting-game-dauntless-now-on-steam-and-works-on-steam-deck-desktop-linux-needs-a-quick-fix/</guid>
-      <pubDate>Thu, 05 Dec 2024 19:59:39 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1718914887id25795gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Anti-Cheat</category>
       
     </item>
     
