@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-01-16 07:26:04.400337</pubDate>
+    <pubDate>2025-01-17 07:26:22.148342</pubDate>
 
     
     <image>
@@ -18,6 +18,390 @@
     </image>
 
     
+    
+    <item>
+      <title>NVIDIA release new GPU driver updates for Linux and Windows after announcing security issues</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Today, January 16th 2025, NVIDIA have revealed multiple security flaws in their GPU drivers, so it's time to get updating again. There's a mixture of issues that affect both Linux and Windows.</p>
+<p>Copied below are the security issues announced:</p>
+<div class="scrolling-table">
+<table border="1" class="table-stripes-tbody">
+<thead>
+<tr>
+<th><strong>CVE ID</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Impacts</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CVE‑2024‑0150</td>
+<td>NVIDIA GPU display driver for Windows and Linux contains a vulnerability where data is written past the end or before the beginning of a buffer. A successful exploit of this vulnerability might lead to information disclosure, denial of service, or data tampering.</td>
+<td>Information disclosure, denial of service, and data tampering</td>
+</tr>
+<tr>
+<td>CVE‑2024‑0147</td>
+<td>NVIDIA GPU display driver for Windows and Linux contains a vulnerability where referencing memory after it has been freed can lead to denial of service or data tampering.</td>
+<td>Denial of service, data tampering</td>
+</tr>
+<tr>
+<td>CVE‑2024‑53869</td>
+<td>NVIDIA Unified Memory driver for Linux contains a vulnerability where an attacker could leak uninitialized memory. A successful exploit of this vulnerability might lead to information disclosure.</td>
+<td>Information disclosure</td>
+</tr>
+<tr>
+<td>CVE‑2024‑0131</td>
+<td>NVIDIA GPU kernel driver for Windows and Linux contains a vulnerability where a potential user-mode attacker could read  a buffer with an incorrect length. A successful exploit of this vulnerability might lead to denial of service.</td>
+<td>Denial of service</td>
+</tr>
+<tr>
+<td>CVE‑2024‑0149</td>
+<td>NVIDIA GPU Display Driver for Linux contains a vulnerability which could allow an attacker unauthorized access to files. A successful exploit of this vulnerability might lead to limited information disclosure.</td>
+<td>Information disclosure</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="plain-list-title">Depending on what driver series you go for, you will need to check what the next version up is that has fixes. NVIDIA listed these Linux driver versions as safe:</p>
+<ul>
+<li>550.144.03 (released today)</li>
+<li>535.230.02 (released today)</li>
+</ul>
+<p>All driver versions prior to the above are vulnerable to the listed issues.</p>
+<p class="plain-list-title">550.144.03 Linux <a href="https://www.nvidia.com/en-gb/drivers/details/238869/" rel="noopener nofollow" target="_blank">Changelog</a>:</p>
+<blockquote>
+<ul>
+<li>Minor bug fixes and improvements</li>
+</ul>
+</blockquote>
+<p class="plain-list-title">535.230.02 Linux <a href="https://www.nvidia.com/en-gb/drivers/details/239545/" rel="noopener nofollow" target="_blank">Changelog</a>:</p>
+<blockquote>
+<ul>
+<li>Updated the kernel module build process to use CONFIG_CC_VERSION_TEXT from the Linux kernel's Kconfig to detect the compiler used to build the kernel. This may help select the correct compiler on systems where the kernel was built with a compiler other than the default one.</li>
+<li>Fixed a bug that prevented kernel modules linked using precompiled kernel interface files from loading on recent Debian systems.</li>
+<li>In linux-next commit 446d0f4849b1, intended to be included in Linux kernel 6.12, output_poll_changed is removed from struct drm_mode_config_funcs. Do not implement the function pointer member when not present to ensure the driver can compile with newer kernels. Populating modes for DRM connectors during hotplug events will not be supported with r535 and kernels containing the relevant commit.</li>
+</ul>
+</blockquote>
+<p>Windows users need at least 553.62 or 539.19.</p>
+<p>Source: <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5614" rel="noopener nofollow" target="_blank">NVIDIA</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/nvidia-release-new-gpu-driver-updates-for-linux-and-windows-after-announcing-security-issues/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/nvidia-release-new-gpu-driver-updates-for-linux-and-windows-after-announcing-security-issues/</guid>
+      <pubDate>Thu, 16 Jan 2025 18:01:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Cubic Odyssey announced as a fusion of Minecraft and No Man&#39;s Sky</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>With a style that's a fair bit similar to Minecraft with an expansive universe seen in the likes of No Mans Sky, the recently announced Cubic Odyssey from Atypical Games and Gaijin Network Ltd looks pretty darn fun.</p>
+<p>An open world multi-planet adventure that blends in all sorts. Planet and space exploration, crafting, vehicle building, quests and an "epic story of saving the galaxy" – it seems to have just a little bit of everything. <em>It was bugging me where I've seen the idea before, turns out it was slightly similar to <a href="https://www.gamingonlinux.com/2016/10/stellar-overload-the-block-based-adventure-fps-is-now-on-steam/" rel="noopener" target="_blank">Stellar Overload</a> from 2016 that is no longer for sale and another called Outerverse.</em></p>
+<p>Check out the trailer below:</p>
+<div class="hidden_video" data-video-id="pESTJPDZmmk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c0107dbf08e8abe0f5f06903baf8880b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/pESTJPDZmmk" target="_blank">See video</a></div></div>
+<p>I love the idea of it, but I have to be blunt, that combat looks pretty <em>weak</em>. Everything else about it looks and sounds great, especially with it having co-op support too.</p>
+<p class="plain-list-title">More about it:</p>
+<blockquote>
+<p>Cubic Odyssey starts right after a crash landing on the surface of a distant planet. A player mines resources, refines materials, and builds everything from tools and outposts to vehicles and starships that give access to free exploration of the galaxy. Every star seen in the sky or in space is the light of a star system. Each star is orbited by planets filled with life, with shifting day-night cycles, bustling NPC cities, pirate outposts, and dangerous ruins waiting to be discovered. The ultimate goal here is to stop the Red Darkness, a spreading galactic infection that mutates wildlife, consumes planets, and threatens all living beings.</p>
+<p>The game features seamless ground, air and space traversal, with a brief slice of this experience shown in an announcement trailer. Experience warp jumps between star systems, cruise at blazing fast speed between planets, use the planetary speeders to travel on planets, and explore the underground caves on foot. Players will also be able to join forces with others in an optional co-op mode to take down massive enemies, initiate orbital laser strikes, or build cooperative megastructures.</p>
+</blockquote>
+<p>“We’re happy to support the creativity of indie game developers and were thrilled by the scope and ambition of Cubic Odyssey”, - comments Anton Yudintsev, founder of Gaijin Entertainment.</p>
+<p>“We intend to build a boundless open world where every planet, every system, and every moment is yours to shape”, - says Andrei Lopata, CEO of Bucharest-based Atypical Games.</p>
+<p>You'll need Proton to play it on Linux.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40932/cubic-odyssey/">Cubic Odyssey</a></strong><p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/3400000/Cubic_Odyssey/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/cubic-odyssey-announced-as-a-fusion-of-minecraft-and-no-mans-sky/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/cubic-odyssey-announced-as-a-fusion-of-minecraft-and-no-mans-sky/</guid>
+      <pubDate>Thu, 16 Jan 2025 15:45:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/260066986id26006gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Exploration</category>
+      
+      <category>Open World</category>
+      
+      <category>RPG</category>
+      
+    </item>
+    
+    <item>
+      <title>Broken Alliance from the Death &amp; Taxes dev is now in Early Access, a love-letter to Heroes of Might and Magic</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Placeholder Gameworks who made Death &amp; Taxes just released Broken Alliance into Early Access with Linux support. An indie love letter to pixel art, old-school adventure games, mythical creatures and fantasy storytelling.</p>
+<p>They say it has a mixture of inspiration from King's Bounty, Disciples, Heroes of Might and Magic, Age of Wonders, Master of Magic but they mixed in some deck-building for a twist. Coming from a small team of only 9 people there's a mixture of industry veterans that worked on the likes of Disco Elysium, the Might &amp; Magic: Heroes series, Metro franchise, Saints Row and more to industry newcomers.</p>
+<p>Broken Alliance features a card combat system that allows each faction for unique gameplay. Expand your kingdom, build up your army, train your Heroes and make or break alliances to save your people from a collapsing world.</p>
+<div class="hidden_video" data-video-id="YmY1w0Ejy64"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/84ba00adc75557caa0026d1605cf131b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/YmY1w0Ejy64" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Features:</p>
+<blockquote>
+<ul>
+<li>Build a kingdom, adventure and gather resources, battle mythical creatures, go on epic quests and make or break alliances!</li>
+<li>Short branching narrative experience with choices that matter, heavy re-playability.</li>
+<li>Character customization. With 8 different fantasy species and faction based clothing and equipment. The artifacts you equip will change how your Commander looks!</li>
+<li>Creature and building upgrades with choices.</li>
+<li>4 different fantasy factions to choose from with unique stories, card decks, gameplay, creatures, environments and even different look to the game’s UI.</li>
+<li>Single player campaigns.</li>
+<li>Original Soundtrack.</li>
+<li>Full voice acting.</li>
+<li>Colorful pixel art with both retro and modern elements.</li>
+</ul>
+</blockquote>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/31677/broken-alliance/">Broken Alliance</a></strong> | Release Date: 15th January 2025<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/1704180/Broken_Alliance/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/broken-alliance-from-the-death-taxes-dev-is-now-in-early-access-a-love-letter-to-heroes-of-might-and-magic/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/broken-alliance-from-the-death-taxes-dev-is-now-in-early-access-a-love-letter-to-heroes-of-might-and-magic/</guid>
+      <pubDate>Thu, 16 Jan 2025 15:26:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/500554020id26005gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux Mint 22.1 &#39;Xia&#39; is out now with improved Wayland support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Linux Mint 22.1 "Xia" has now been released bringing with it many improvements to the desktop, along with enhancements to all the software that powers it.</p>
+<p>This is a long-term support release with updates and security fixes until 2029. It features Linux kernel 6.8 and an Ubuntu 24.04 package base. New Mint releases until 2026 will continue using the same package base for easy and simple upgrades.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2698608671737038256gol1.png"/><br/>
+<em>Pictured - Linux Mint 22.1</em></p>
+<p>This includes Cinnamon 6.4 that has a new default theme along with much improved Wayland compatibility. There's a lot of individual changes for the Cinnamon desktop update like a native Night Light feature, cleaner alt+tab, simplified sound over-amplification settings and more.</p>
+<p class="plain-list-title">Some other features at a glance:</p>
+<ul>
+<li>Modernization of APT dependencies. Aptkit replaces aptdaemon, while Captain unifies the features of GDebi and apturl into a single, easy-to-use utility.</li>
+<li>Power Modes management.</li>
+<li>Cleaner modern dialogs and on-screen display elements (confirmation boxes, password entering and more).</li>
+<li>Notifications can now appear above fullscreen windows (new setting).</li>
+<li>Nemo now has an option to disable auto-expanding of treeview columns during drag and drop.</li>
+<li>GWL (Global Window List) now includes an option to always show windows from other monitors.</li>
+<li>The Software Manager has been optimized for better speed, ensuring faster application browsing and installations.</li>
+<li>Wallpapers have been moved to themed sets, making them "easier to explore and more organized".</li>
+</ul>
+<p>See more in the <a href="https://blog.linuxmint.com/?p=4793" rel="noopener nofollow" target="_blank">release post</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/linux-mint-221-xia-is-out-now-with-improved-wayland-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/linux-mint-221-xia-is-out-now-with-improved-wayland-support/</guid>
+      <pubDate>Thu, 16 Jan 2025 14:38:10 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/464590763id26004gol.png" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>Linux Mint</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>THREAT VECTOR is an action sci-fi horror FPS coming from KillPixel Games</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>KillPixel Games, one of the dev teams responsible for WRATH: Aeon of Ruin, have announced their next game with THREAT VECTOR. Seems it will have Linux support like WRATH too.</p>
+<p>About the game: "In 2197, an interplanetary mankind encounters a rogue planet passing through the solar system. Beneath its frozen surface lurks a discovery that threatens all of humanity.  As the human race is brought to the edge of extinction, a failing AI locates a remaining hypersleep pod within lunar orbital Theia's crisis unit chamber. Once awakened, the last surviving soldier must journey across the solar system to secure the THREAT VECTOR."</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/49690231737034858gol1.jpg"/></p>
+<p>They've so far only released a short teaser video on the game, which doesn't give away much and doesn't really show any gameplay but even so, it has me rather excited because it seems like it's going to be incredibly creepy. Story from their Steam page noted above sounds interesting too.</p>
+<p>Check out the first teaser below:</p>
+<div class="hidden_video" data-video-id="9GULXgdgMhk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2732f1c955fb1f2243d96575f3fa4667.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/9GULXgdgMhk" target="_blank">See video</a></div></div>
+<p>Highlights:</p>
+<blockquote>
+<p>THREAT VECTOR has a laser focus on the core elements that make classic shooters timeless:</p>
+<ul>
+<li>
+<p><strong>ENGAGING COMBAT</strong></p>
+<p><strong>&gt;</strong> easy to learn, hard to master; varied, dynamic and refined.</p>
+</li>
+<li>
+<p><strong>EXCELLENT LEVEL DESIGN</strong></p>
+<p><strong>&gt;</strong> succinct and elegant levels are infused with the rich history of classic FPS design.</p>
+</li>
+<li>
+<p><strong>GRIPPING ATMOSPHERE</strong></p>
+<p><strong>&gt;</strong> ambience and mood so thick you can cut it with a knife.</p>
+</li>
+</ul>
+<p>Neutralize the murderous mechs, augmented animals and antisocial aliens that menace lunar bases, orbital facilities and space stations across the solar system with an arsenal of ballistic weaponry, including shotguns, carbines, precision rifles, explosive launchers and high-tech, experimental weaponry.</p>
+</blockquote>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40931/threat-vector/">THREAT VECTOR</a></strong><p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/3448680/THREAT_VECTOR/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/threat-vector-is-an-action-sci-fi-horror-fps-coming-from-killpixel-games/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/threat-vector-is-an-action-sci-fi-horror-fps-coming-from-killpixel-games/</guid>
+      <pubDate>Thu, 16 Jan 2025 13:42:35 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/578598127id26003gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>FPS</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>FINAL FANTASY VII REBIRTH gets Steam Deck Verified ahead of release</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>FINAL FANTASY VII REBIRTH from Square Enix arrives on January 23rd, and thankfully the developers have already managed to get it <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified ahead of the release.</p>
+<p>I was hoping this would be the case, since the developer did <a href="https://www.gamingonlinux.com/2024/12/final-fantasy-vii-rebirth-comes-to-pc-on-january-23-2025-its-getting-optimised-for-steam-deck/" rel="noopener" target="_blank">previously confirm</a> they were working on Steam Deck optimisations. Today the verification went public as shown on <a href="https://steamdb.info/app/2909400/history/?changeid=27025108" rel="noopener nofollow" target="_blank">SteamDB</a> (and now on the Steam page) as Verified using <a href="https://www.gamingonlinux.com/2024/12/proton-9-0-4-is-out-now-bringing-big-compatibility-improvements-for-steam-deck-linux/" rel="noopener" target="_blank">Proton 9.0-4</a>, the latest stable release of Valve's compatibility layer for running Windows games on Linux systems.</p>
+<p>Really great to see!</p>
+<div class="hidden_video" data-video-id="1bzWvyncQh8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f2d558168997a51374081c8219909ce0.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/1bzWvyncQh8" target="_blank">See video</a></div></div>
+<p>More about it:</p>
+<blockquote>
+<p>FINAL FANTASY VII REMAKE Project Trilogy Part 2</p>
+<p>After escaping Midgar, the City of Mako, Cloud and his friends overcome the boundaries of faith and step into the unknown wasteland.</p>
+<p>A vast world with many characteristics awaits, as well as a new story where you will run through fields on chocobos to freely explore points of interest.</p>
+<p>The FINAL FANTASY VII remake project uses the latest technology to bring FINAL FANTASY VII, the legendary RPG that enchanted the world, to a new generation and allows fans to experience the famed story reimagined.</p>
+<p>The first game in the trilogy, FINAL FANTASY VII REMAKE, was released in 2020, achieving critical acclaim across the globe and shipping more than seven million units worldwide. Now, the second game, FINAL FANTASY VII REBIRTH, returns to tell the story at the core of the trilogy and has already achieved critical acclaim.</p>
+</blockquote>
+<p>Will you be picking it up and playing it on Steam Deck / Linux?</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40736/final-fantasy-vii-rebirth/">FINAL FANTASY VII REBIRTH</a></strong> | Release Date: 23rd January 2025<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://www.humblebundle.com/store/final-fantasy-vii-rebirth">Humble Store</a></li><li><a href="https://store.steampowered.com/app/2909400/FINAL_FANTASY_VII_REBIRTH/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/final-fantasy-vii-rebirth-gets-steam-deck-verified-ahead-of-release/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/final-fantasy-vii-rebirth-gets-steam-deck-verified-ahead-of-release/</guid>
+      <pubDate>Thu, 16 Jan 2025 13:13:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2083398410id26002gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+      <category>Adventure</category>
+      
+    </item>
+    
+    <item>
+      <title>Popular diorama builder Tiny Glade is getting better Steam Deck support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Tiny Glade is a gorgeous and relaxing diorama builder about doodling castles and all sorts all over the screen, it's seriously impressive and they've announced work is ongoing for improving it on Steam Deck.</p>
+<p>More about it: "Tiny Glade is a relaxing free-form building game. Tap into the joy of making something pretty with no management, no combat, or wrong answers - just kick back, doodle some castles, and turn forgotten meadows into lovable dioramas. Explore gridless building chemistry, and watch the game carefully assemble every brick, pebble and plank, adapting to your whim. Draw a path through a building? A door pops up! Raise the building? Columns and beams line up to support it."</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20737348231737032793gol1.jpg"/></p>
+<p>In an <a href="https://store.steampowered.com/news/app/2198150/view/547850400377602109" rel="noopener nofollow" target="_blank">announcement</a> on Steam the developer mentioned working on "controller support &amp; improving the experience on Steam Deck". It's not coming in one big patch though, and instead will come as and when each bit is ready.</p>
+<p>One such patch is already out now adding "an alternative mode for camera rotation and zoom" which "should improve the Steam Deck experience, and if you’re on PC, and you’ve been struggling with the camera suddenly yeeting itself as you try to rotate, we recommend checking it out too".</p>
+<p>See the separate <a href="https://store.steampowered.com/news/app/2198150/view/543346166601876515" rel="noopener nofollow" target="_blank">patch notes</a> for more.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/35745/tiny-glade/">Tiny Glade</a></strong> | Release Date: 23rd September 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/2198150/Tiny_Glade/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/popular-diorama-builder-tiny-glade-is-getting-better-steam-deck-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/popular-diorama-builder-tiny-glade-is-getting-better-steam-deck-support/</guid>
+      <pubDate>Thu, 16 Jan 2025 13:07:35 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/687849127id26001gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Casual</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Game save data backup tool Ludusavi v0.28 brings new features</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you want to make backups of your game saves, the free and open source tool Ludusavi is an essential item to put in your toolbox. The developer just put up a new release, v0.28.0, which includes a bunch of fixes and new features.</p>
+<p>Cross-platform so you can run it on Linux (including Steam Deck), Windows and macOS. Fully featured with the ability to detect thousands of games across Steam, GOG, Epic, Heroic Launcher, Lutris and more. It has a full user interface, as well as command-line tools. Useful for backing up to another drive or anywhere else like somewhere on the cloud.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8158414311737030861gol1.png"/></p>
+<p>For this release here's the new features added:</p>
+<blockquote>
+<ul>
+<li>On Linux, for Lutris roots that point to a Flatpak installation, Ludusavi now checks <code class="inline-code">$XDG_DATA_HOME</code> and <code class="inline-code">$XDG_CONFIG_HOME</code> inside of the Flatpak installation of Lutris.</li>
+<li>Custom games now let you specify installed folder names. This can be used to satisfy the and path placeholders in cases where Ludusavi can't automatically detect the right folder. For more info, <a href="https://github.com/mtkennerly/ludusavi/blob/v0.28.0/docs/help/custom-games.md" rel="noopener nofollow" target="_blank">see the custom games document</a>.</li>
+<li>On the "other" screen, there is a new option to skip backups when saves are only removed but not added/updated. This can be useful because uninstalling a game may cause some of its data (but not all) to be removed, but you may not want to exclude that data from your backups yet.</li>
+<li>CLI: <code class="inline-code">config show</code> command.</li>
+<li>CLI: The <code class="inline-code">backup</code>, <code class="inline-code">restore</code>, <code class="inline-code">cloud upload</code>, and <code class="inline-code">cloud download</code> commands now support a <code class="inline-code">--gui</code> option for graphical dialog prompts.</li>
+<li>CLI: The <code class="inline-code">backup</code> and <code class="inline-code">restore</code> commands now support a <code class="inline-code">--dump-registry</code> option, which includes the serialized registry content in the output. This may be useful if you're consuming the <code class="inline-code">--api</code> output to back up with another tool, but don't have a good way to check the registry keys directly.</li>
+<li>CLI: The <code class="inline-code">find</code> command now supports <code class="inline-code">--fuzzy</code> and <code class="inline-code">--multiple</code> options. This is also available for the <code class="inline-code">api</code> command's <code class="inline-code">findTitle</code> request.</li>
+<li>CLI: The <code class="inline-code">wrap</code> command now supports several options from the <code class="inline-code">backup</code> command: <code class="inline-code">--path</code>, <code class="inline-code">--format</code>, <code class="inline-code">--compression</code>, <code class="inline-code">--compression-level</code>, <code class="inline-code">--full-limit</code>, <code class="inline-code">--differential-limit</code>, <code class="inline-code">--cloud-sync</code>, <code class="inline-code">--no-cloud-sync</code>.</li>
+</ul>
+</blockquote>
+<p>There's some other behaviour changes and bug fixes too.</p>
+<p>See more on <a href="https://github.com/mtkennerly/ludusavi" rel="noopener nofollow" target="_blank">the GitHub page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/game-save-data-backup-tool-ludusavi-v028-brings-new-features/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/game-save-data-backup-tool-ludusavi-v028-brings-new-features/</guid>
+      <pubDate>Thu, 16 Jan 2025 12:41:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1551074441id26000gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental gets fixes for Marvel Rivals, Sea of Thieves and Stalker 2</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A fresh update to Proton Experimental arrived for SteamOS Steam Deck / Linux gamers with some necessary fixes for various games. Valve did release another one-liner update previously that was noted in <a href="https://www.gamingonlinux.com/2025/01/valve-confirms-a-public-beta-of-steamos-is-coming-as-steamos-expands-beyond-steam-deck/" rel="noopener" target="_blank">my previous article on SteamOS expanding beyond the Steam Deck</a>.</p>
+<p class="plain-list-title">For the release on January 15th here's all the changes:</p>
+<ul>
+<li>Fixed Stalker 2, The Axis Unseen, Beyond Handwell, Marvel Rivals, The Finals, Creatures of Ava crashing with Intel GPUs.</li>
+<li>Fixed Marvel Rivals crashing on non-Steam Deck devices after a recent game update.</li>
+<li>Fixed Sea of Thieves Xbox login window not working.</li>
+<li>Fixed interface elements in Disney Epic Mickey 2: The Power of Two showing as solid green color.</li>
+<li>Fixed Proton 9 regressions:
+	<ul>
+<li>Overcooked! All You Can Eat works with more than one controller again.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17157319151737028030gol1.jpg"/><br/>
+Pictured - Marvel Rivals</p>
+<p>It will show up in your Steam Downloads as an update if you already have it. Otherwise you can search for Proton Experimental in your Steam Library. See more in the <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener nofollow" target="_blank">changelog</a>.</p>
+<p>Confused on all the Proton versions? Go and <a href="https://www.gamingonlinux.com/guides/view/why-are-there-so-many-different-proton-versions-proton-8-proton-9-experimental-ge-proton/" rel="noopener" target="_blank">read my guide explainer</a>.</p>
+<p>Nice to see the Marvel Rivals fix, since it's incredibly popular right now. Recently it managed to hit a concurrent user count of 644,269 which is <em>really</em> impressive. The good news for us is that the developer plans to keep it supported, after <a href="https://www.gamingonlinux.com/2025/01/marvel-rivals-team-issue-a-statement-on-recent-bans-for-steam-deck-and-macos-players/" rel="noopener" target="_blank">reversing some recent bans</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/proton-experimental-gets-fixes-for-marvel-rivals-sea-of-thieves-and-stalker-2/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/proton-experimental-gets-fixes-for-marvel-rivals-sea-of-thieves-and-stalker-2/</guid>
+      <pubDate>Thu, 16 Jan 2025 11:50:12 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1920740526id25999gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Open Source</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>Intel and NVIDIA drivers holding back a public SteamOS release, Valve not trying to compete with Windows</title>
@@ -5082,649 +5466,6 @@ Thank you so much for your continued support. We hope you enjoy the latest versi
       <category>Misc</category>
       
       <category>Round-up</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton Experimental updated with fixes for Marvel Rivals on Steam Deck / Linux and other game improvements</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Over the festive period Valve released an update to Proton Experimental bringing in more game fixes for the likes of Marvel Rivals and other games on Steam Deck and Desktop Linux. There's also an update to the open source Xalia tool, which is used for getting gamepad input in launchers. <em>Check out my <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton beginner's guide</a> if you're confused.</em></p>
-<p class="plain-list-title">For the update on December 24th these are listed as now playable with Proton:</p>
-<ul>
-<li>Black Ink</li>
-<li>Factorio</li>
-</ul>
-<p><em>Factorio does have a Native Linux version that's nicely supported, but the point of Proton is to get everything possible working.</em></p>
-<p class="plain-list-title">The Marvel Rivals improvements:</p>
-<ul>
-<li>Improved rendering of Marvel Rivals launcher.</li>
-<li>Fixed Marvel Rivals displaying OS/drivers out of date warning.</li>
-</ul>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14593735661735243093gol1.jpg"/><br/>
-<em>Pictured - Marvel Rivals</em></p>
-<p class="plain-list-title">And all other changes:</p>
-<ul>
-<li>Fixed Experimental regressions causing a black screen when using CRT shader in Eastward.</li>
-<li>Fixed graphics scaling in Master Magistrate (Proton 9.0-2 regression).</li>
-<li>Fixed Simulakros and Assassin's Creed Syndicate not launching on AMD systems due to NVAPI presence.</li>
-<li>Enabled <a href="https://github.com/madewokherd/xalia/" rel="noopener nofollow" target="_blank">Xalia</a> for Overlord, The TakeOver, Floppy Heroes, Whiskered Away, Himno, Survirus, The Adventure of Ninomae Ina'nis.</li>
-<li>Updated Xalia to <a href="https://github.com/madewokherd/xalia/releases/tag/xalia-0.4.5" rel="noopener nofollow" target="_blank">0.4.5</a>.</li>
-</ul>
-<p>As shown in the <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener nofollow" target="_blank">changelog</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/proton-experimental-updated-with-fixes-for-marvel-rivals-on-steam-deck-linux-and-other-game-improvements/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/proton-experimental-updated-with-fixes-for-marvel-rivals-on-steam-deck-linux-and-other-game-improvements/</guid>
-      <pubDate>Thu, 26 Dec 2024 20:00:21 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1699646886id25902gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Fan-made PC port of Star Fox 64 is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>From the team behind PC ports of other Nintendo games like <a href="https://www.gamingonlinux.com/2023/03/ship-of-harkinian-a-pc-port-of-ocarina-of-time-has-a-feature-filled-upgrade/" rel="noopener" target="_blank">The Legend of Zelda: Ocarina of Time</a> and <a href="https://www.gamingonlinux.com/2024/05/2-ship-2-harkinian-another-unofficial-pc-port-of-zelda-majoras-mask-is-out-now/" rel="noopener" target="_blank">The Legend of Zelda: Majora's Mask</a>, a new PC port has arrived for Star Fox 64.</p>
-<p>Just like their previous releases, Starship (their name for the project) does not include any copyrighted assets. You are required to provide the data files from a copy of the game you own.</p>
-<p>Currently the only available build is for Windows, which you can try running through Wine / Proton. The developer said in the announcement in their Discord: "The Linux and Mac versions are very close but we ran into some snags and didn't want to delay the release for it. If any Linux/MacOS developers want to help the ports across the finish line, it's available to be built from source (see our GitHub Starship repository)."</p>
-<p>Hopefully it won't be too long before the Native Linux build is up to make it easier to run.</p>
-<p>Star Fox designer Takaya Imamura <a href="https://x.com/ima_1966/status/1871337679176237461" rel="noopener nofollow" target="_blank">posted</a> on X (Twitter) to say "I don't think Nintendo would tolerate this, but I'm personally very happy about it." (translated from Japanese).</p>
-<p>You can find it on <a href="https://github.com/HarbourMasters/Starship" rel="noopener nofollow" target="_blank">the GitHub page</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/fan-made-pc-port-of-star-fox-64-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/fan-made-pc-port-of-star-fox-64-is-out-now/</guid>
-      <pubDate>Tue, 24 Dec 2024 15:37:02 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/421768388id25900gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Nintendo</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Open source evolution sim Thrive v0.8 brings more graphics improvements and new game mechanics</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Thrive is an open source evolution sim built with <a href="https://godotengine.org/" rel="noopener nofollow" target="_blank">Godot Engine</a>, it's getting more impressive with every new release and there's another update out now for you to try out.</p>
-<p>Version 0.8.0 brings with it some more graphics improvements to make all the little organisms look more impressive with new textures, new 3D models plus new and improved icons.</p>
-<p>There's a lot more to this release like the introduction of a Organelle Suggestion System that suggests what organelles to add to your organism in order to guide you towards optimizing its evolution. You can ignore it if you wish, but sounds like a useful feature for you to keep jumping to the top of the food chain. The devs also added in sulfur chunks, an underwater vent eruption event that creates extra hydrogen sulfide and carbon dioxide in the patch, nitrogen is now dynamic and there's two new multicellular loading screen artworks.</p>
-<p>Check out their release highlights trailer:</p>
-<div class="hidden_video" data-video-id="FKhdlzvRX90"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ff8fa30f03e3b73d7a6e58f041c01d8b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/FKhdlzvRX90" target="_blank">See video</a></div></div>
-<p>Thrive has Native Linux support and is rated Steam Deck Playable. See more about the update in the <a href="https://revolutionarygamesstudio.com/devblog-45-suggestion-of-an-update/" rel="noopener nofollow" target="_blank">blog post</a>. It's free from their launcher or you can buy it from stores to support development.</p>
-<details class="spoiler_container"><summary class="spoiler_header">Full changelog, click me</summary>
-<div class="spoiler-content">
-<ul>
-<li>Added an organelle suggestion that is shown in the editor which gives info on what auto-evo would like the player to add</li>
-<li>Added a new tab in the editor to control organelle split order for more fine tuned control over ATP during reproduction</li>
-<li>Reintroduced Mac builds of Thrive. Thrive is again playable on macOS but this is not official full support yet.</li>
-<li>Balancing changes to microbe storage: most organelles now give much less storage to make storage an actual gameplay mechanic that needs planning</li>
-<li>Created new membrane textures that help make the 3D membranes of different types more easily distinguishable (as the change to 3D membranes made all the membranes look very similar)</li>
-<li>Reworked all organelle 3D models</li>
-<li>Added sulfur chunks</li>
-<li>Added a bloom strength slider and enabled it by default</li>
-<li>Added an underwater vent eruption event that creates extra hydrogen sulfide and carbon dioxide in the patch</li>
-<li>Added a miche viewer to the patch map tab</li>
-<li>Improved gas update logic to make sure gases don't add up to over 100%</li>
-<li>Made compounds move much more freely between patches</li>
-<li>Made nitrogen dynamic</li>
-<li>Added hydrogen sulfide compound consumption by species</li>
-<li>Added iron chunks being oxidised by oxygen making them less common once oxygen starts spreading through the world</li>
-<li>Removed experimental compound production mode as it was too unbalanced and didn't get any work done on it since the last release</li>
-<li>Improved the microbe AI in terms of when it uses sprinting</li>
-<li>Mucocyst can now be used by the AI to defend itself</li>
-<li>Added difficulty options for what to do with stored compounds after reproducing</li>
-<li>Added disk caching for generated species images. This makes displaying species images a lot faster after restarting the game and loading a save. By default the cache aims to use at most 1 GB of disk space.</li>
-<li>Reduced unlock requirements of gas-dependent organelles</li>
-<li>Reduced base endosymbiosis time costs by one</li>
-<li>Lowered hydrogenase ATP output by 10%</li>
-<li>Made slight balancing tweaks to photosynthesis glucose production and glucose use of a few ATP-generating organelles</li>
-<li>Renamed Nitrogen-Fixing Plastid to Nitroplast</li>
-<li>Made glucose reduction text only apply to discovered patches to make the percentages higher to make it look like a more important message</li>
-<li>Added a warning tooltip for the speed stat in the editor about how it is not fully accurate</li>
-<li>Added an icon for the mucocyst upgrade</li>
-<li>Reworked the experimental siderophore feature action icon</li>
-<li>Made engulfing info be last in the membrane tooltips like it was previously (before tooltip refactoring broke it)</li>
-<li>Added a new and more visible cell membrane animation</li>
-<li>Increased visibility of engulf wave effect slightly</li>
-<li>Added bigger warning when enabling experimental features mode</li>
-<li>Added tooltips for chemoreceptor upgrade GUI amount and distance sliders</li>
-<li>Updated nitrogen icon to not have glow anymore to be more consistent with other compound icons</li>
-<li>Tweaked some GUI element alignments to be more similar to what they were before we upgraded to Godot 4</li>
-<li>Added a tip in the unlock tooltip that endosymbiosis is an alternative unlock method</li>
-<li>Fixed process toggle buttons not always matching the underlying process states and fixed processes re-enabling by themselves when organelles reproduced</li>
-<li>Fixed hex popup menu being able to operate on deleted hexes which could be exploited for infinite MP. Also fix a related bug in the prototype editors.</li>
-<li>Fixed not all patches showing up in the editor report patch selector dropdown</li>
-<li>Fixed a bug in the volcanism effect that caused it to add way more CO2 than originally intended</li>
-<li>Fixed non-LAWK unlocks showing after loading a save</li>
-<li>Fixed aspect ratio of sunlight icon in daytime selection bar</li>
-<li>Fixed chemical equation arrow to be vertically centered</li>
-<li>Fixed a bug where compound diffusion between patches could move too much compound</li>
-<li>Fixed auto-evo migration usefulness calculations using the wrong miche tree</li>
-<li>Fixed organelle scale-affecting upgrades not applying while moving that organelle to a new location</li>
-<li>Fixed bug with osmoregulation cost being shown on upgrade tooltips</li>
-<li>Fixed osmoregulation showing in rigidity slider tooltip</li>
-<li>Fixed lag when zooming out a draggable container while it is still displaying its initial animation</li>
-<li>Fixed the timeline incorrectly claiming some species to be extinct</li>
-<li>Fixed moved cell in body plan editor being invisible if no cell type to place was selected</li>
-<li>Fixed a missing wordwrap on a label in the mod manager</li>
-<li>Fixed multiple bugs in our species visual hashing algorithm that made memory caching also less efficient</li>
-<li>Fixed extinct species not having previews in auto-evo exploring tool</li>
-<li>Made auto-evo exploring tool show patch events, note that historical view for events doesn't work yet</li>
-<li>Disabled temperature miche being generated when in LAWK mode (no species could occupy it but for clarity it is entirely disabled now)</li>
-<li>Added two new multicellular loading screen artworks</li>
-<li>Tweaked PhotoStudio image capture distance math</li>
-<li>Made organelle tooltips not constantly try to refresh their displayed chemical equations</li>
-<li>Added an energy icon for the later stage prototypes</li>
-<li>Linked late multicellular prototype jump force to mass to make jumping speed more consistent</li>
-<li>Added proper content for the Thriveopedia page of ferroplast</li>
-<li>Added code for UV unwrapping of macroscopic creatures, but there's no textures yet so the code isn't enabled</li>
-<li>Native lib install tool now prints full paths to try to reduce potential confusion</li>
-<li>Started backend work on allowing more kinds of unit tests for Thrive using gdUnit4</li>
-<li>Added workaround in the C# interop code to work with newer native library compiles</li>
-<li>Added a few explicit garbage collector calls when the game is loading to hopefully reduce chance that it runs during gameplay</li>
-<li>Updated to .NET 9</li>
-<li>Updated YamlDotNet from 16.1.3 to 16.2.1</li>
-<li>Updated System.Numerics.Vectors from 4.5.0 to 4.6.0</li>
-<li>Updated automatic code checking tools</li>
-<li>Improved a few aspects of our CMake files</li>
-<li>Steam: Fixed workshop upload dialog not showing all error conditions</li>
-<li>Updated translations</li>
-</ul>
-</div>
-</details>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/19421/thrive/">Thrive</a></strong> | Release Date: 26th November 2021<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/1779200/Thrive/">Steam</a></li><li><a href="https://revolutionarygamesstudio.com/">Official Website</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/open-source-evolution-sim-thrive-v08-brings-more-graphics-improvements-and-new-game-mechanics/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/open-source-evolution-sim-thrive-v08-brings-more-graphics-improvements-and-new-game-mechanics/</guid>
-      <pubDate>Tue, 24 Dec 2024 15:17:04 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1278687023id25899gol.jpg" type="image/jpeg"/>
-      
-      <category>Free Game</category>
-      
-      <category>Godot Engine</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>ScummVM 2.9.0 is out now for expanded retro gaming support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>ScummVM v2.9.0 has rolled out as a little holiday treat bringing expanded compatibility with various retro classic for you to play on modern systems.</p>
-<p>Don't know what ScummVM does? It's is a program that allows you to run certain classic adventure and role-playing games, provided you already have their data files. It replaces the original executable to launch the game, to get them running on modern systems with various enhancements.</p>
-<p>Newly supported games in this release:</p>
-<blockquote>
-<ul>
-<li>The Adventures of the Good Soldier Schweik</li>
-<li>Backyard Basketball</li>
-<li>Castle Master</li>
-<li>Marvellous Mice Adventures: Meeting Sea Rat</li>
-<li>Marvellous Mice Adventures: Sea Rat's Birthday</li>
-<li>Mask Show</li>
-<li>Moonbase Commander</li>
-<li>Orion Burger</li>
-<li>Rise of the Dragon</li>
-<li>The Space Bar</li>
-<li>Thimbleweed Park[^1]</li>
-<li>Total Eclipse</li>
-<li>Total Eclipse 2</li>
-<li>Unrest</li>
-<li>Wait for it! Issue 3. Song for a Hare</li>
-</ul>
-</blockquote>
-<p>Some other changes in this release include the AGS engine updated to version 3.6.1.30 adding support for some newer games like Stranger in Utopia, The Phantom Fellows, and It Takes Two to Tangle. They also added Keymapper support to "more than 20 engines" allowing you to customize your controls. Plus lots and lots more.</p>
-<p>See more in <a href="https://www.scummvm.org/news/20241222/" rel="noopener nofollow" target="_blank">the news post</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/scummvm-2-9-0-is-out-now-for-expanded-retro-gaming-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/scummvm-2-9-0-is-out-now-for-expanded-retro-gaming-support/</guid>
-      <pubDate>Tue, 24 Dec 2024 15:01:28 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/scummvm.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-      <category>Retro</category>
-      
-    </item>
-    
-    <item>
-      <title>Palworld - Feybreak v0.4.11 is out now and it&#39;s a huge update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Bringing with it a whole lot of new content to play through, the Palworld - Feybreak update is officially out now ready for your holiday time.</p>
-<p>What to expect from it? Quite a lot. A whole new island, new resources, the ability to send Pals out on expeditions, a new research mechanic, special Predator Pals that roam the world that are "extremely difficult" to deal with, NPCs that have a bounty on their head to find, new strongholds to fight through, player level cap raised to 60, new items, Sphere's for capturing Pals can be customized with special modules, there's a Hardcore mode, new weapons, new Pals and the list goes on.</p>
-<p>Check out the trailer below:</p>
-<div class="hidden_video" data-video-id="WS2yS9rO-lI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4725ddf9ab34c482e9fb2922b64adc89.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/WS2yS9rO-lI" target="_blank">See video</a></div></div>
-<p>This also brings in the first small bit of the Terraria crossover with a bullet-firing melee weapon the Meowmere. With a promise of more on that crossover to come in 2025.</p>
-<div class="hidden_video" data-video-id="6y6HeSei24E"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f16ebf0d6676600215c681bdbf7dd334.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6y6HeSei24E" target="_blank">See video</a></div></div>
-<details class="spoiler_container"><summary class="spoiler_header">Full changelog, click me</summary>
-<div class="spoiler-content">▼New Content<br/>
-・Meowmere from Terraria!<br/>
-⤷ Meowmere, the first "bullet-firing melee weapon" in Palworld, has been added. This is only a small taste of the Palworld x Terraria collab, and in 2025, even more collaboration content will be released! Enjoy taking a step towards a new adventure alongside the sound of cat meowing!<br/>
-<br/>
-・New Island - Feybreak<br/>
-⤷A new island, Feybreak, has appeared! A mysterious island with many challenges, glowing sand and many new Pals!<br/>
-⤷Conquer the Feybreak Warriors, a new faction that dominates the island with the power of their missile battery camp!<br/>
-<br/>
-・New Resources - Chromite and Hexolite Quartz!<br/>
-⤷Chromite is buried underground and can only be found by using Pals or items that can detect metal.<br/>
-⤷Hexolite Quartz is a rare ore that only exists on Feybreak.<br/>
-<br/>
-・New Mechanic - Expeditions!<br/>
-⤷Obtain supplies by sending Pals out on expeditions at the Pal Expedition Station!<br/>
-<br/>
-・New Mechanic - Research!<br/>
-⤷By conducting research at the Pal Labor Research Laboratory, you can unlock permanent passives and rewards that increase the productivity of your base!<br/>
-*Some existing buildings that increase work speed will now be unlocked as research rewards.<br/>
-<br/>
-・Predator Pals<br/>
-⤷Vicious Predator Pals will now appear throughout the world. These Pals are extremely difficult to defeat but those strong enough to take them down will earn rare resources in return for their bravery!<br/>
-<br/>
-・New "Bounty" NPCs<br/>
-⤷Dangerous criminals have appeared all over the Palpagos Islands. Bring these crooks to justice and cash in the country for rewards.<br/>
-<br/>
-・New Strongholds and Stronghold Boss: The Attack Chopper<br/>
-⤷A large and very difficult "Platform Oil Rig" has appeared! Great riches, important supplies and more are stored here. A powerful Attack Chopper guards this rig from any intruders!<br/>
-⤷A smaller oil rig, the "Barge Oil Rig" has been added for beginners.<br/>
-<br/>
-・Player level cap raised to 60! New technologies and more await!<br/>
-<br/>
-・New Raid - Xenolord!<br/>
-Defeat the dark mechanical dragon that controls the Xeno army!<br/>
-<br/>
-・Sphere Modules<br/>
-⤷You can now attach modules to spheres to significantly change their trajectory, such as curving it, which in turn increases the capture rate!<br/>
-<br/>
-・New Items<br/>
-⤷Metal Detector - Find chromite buried underground on Feybreak.<br/>
-⤷Pouches - Increases your inventory size!<br/>
-⤷Double Jump Boots - Stylish and practical, time to double jump!<br/>
-⤷Air Dash Boots, - Allows the player to dash while in the air.<br/>
-⤷Revival Potion - Bring your Pals back to life.<br/>
-⤷New cooking recipes have been added.<br/>
-<br/>
-・Hardcore Mode!<br/>
-⤷The ultimate challenge. Player and Pal death is permanent.<br/>
-Can be enabled in the world settings.<br/>
-<br/>
-・Random Pal Mode!<br/>
-⤷Turn on Random Pal Mode in world settings to randomize Pal spawns!<br/>
-⤷Randomize by Region - Randomize Pal spawns while maintaining a certain regional range.<br/>
-⤷Completely Random - All Pal spawns in all regions will be completely randomized! It could be a bit chaotic...<br/>
-<br/>
-・New Area Discovery Bonus!<br/>
-⤷Players will earn experience points when they discover a location for the first time.<br/>
-<br/>
-・Many New Weapons!<br/>
-⤷Makeshift SMG<br/>
-⤷Makeshift Assault Rifle<br/>
-⤷Makeshift Shotgun<br/>
-⤷Old Revolver<br/>
-⤷SMG<br/>
-⤷Semi-Auto Rifle<br/>
-⤷Semi-Auto Shotgun<br/>
-⤷Laser Gatling Gun<br/>
-⤷Plasma Cannon<br/>
-⤷Compound Bow<br/>
-⤷Advanced Bow<br/>
-⤷Katana<br/>
-⤷Beam Sword<br/>
-⤷Dark Grenade<br/>
-⤷Dragon Grenade<br/>
-⤷Ground Grenade<br/>
-⤷Grass Grenade<br/>
-⤷Water Grenade<br/>
-<br/>
-・New Buildings<br/>
-⤷Large-Scale Electric Egg Incubator - Hatch up to 10 eggs at the same time.<br/>
-⤷Guild Chest - Items placed in a guild chest are shared among all guild chests.<br/>
-⤷Item Retrieval Machine - Search for and take any item from any chest within your base!<br/>
-⤷Medicine Rack - Pals will take medicine stored to treat their illnesses and injuries.<br/>
-⤷Flea Market - Sell Pals and items to other players!<br/>
-⤷Large-Scale Stone Oven and Gigantic Furnace - Multiple Pals can work together to cook and refine at higher speeds!<br/>
-⤷Skillfruit Orchard - Plant and grow skill fruits!<br/>
-⤷Gold Coin Assembly Line - Illegally produced coins, now made at home!<br/>
-⤷Ladders - Players can go up and down without needing to build stairs!<br/>
-⤷Pure Quartz Mine - Mine an infinite amount in the comfort of your base.<br/>
-⤷Accumulator - By storing extra electricity, you can keep your facilities running at night while your Pals sleep.<br/>
-<br/>
-・Elemental Treasure Chests<br/>
-⤷Rare treasure chests that can only be unlocked by Pals of specific elements have appeared!<br/>
-<br/>
-▼Player<br/>
-・Players can now sit on chairs!<br/>
-・You can now obtain Successful Bounty Tokens by defeating field bosses. These tokens provide permanent passives to the player.<br/>
-・Player climbing speed has been increased.<br/>
-・Increased the maximum amount of power that can be enhanced by Lifmunk Effigies from 12 to 14.<br/>
-・Implemented "Sphere Critical" hits! Throwing a sphere at a Pal's weak spot (the same weak spot as when attacking a Pal) will temporarily increase the capture rate!<br/>
-・Experience points gained from crafting and building have been increased. You now also gain experience points for Pals crafting and building even when you aren't at your base!<br/>
-・Improved player animations.<br/>
-・Players will now be invincible for a few seconds after teleporting or entering/exiting dungeons.<br/>
-・When mounted, Pals now cancel any active skills that are in effect, allowing it to move immediately.<br/>
-<br/>
-▼Base Related<br/>
-・A function to replace foundation structures and defensive walls without destroying them has been implemented. Walls already built can be upgraded.<br/>
-・New foundation structures, "Japanese Style" have been implemented! You can recreate Sakurajima's Japanese-style architecture at your base. Sliding doors have also been implemented.<br/>
-・The maximum base level has been increased to 30.<br/>
-・Pal transportation work has been improved while the player is not in the base.<br/>
-・In Single-Player and COOP modes you can build much more freely around the world, except in some dungeons.<br/>
-・The Pal working state set in the monitoring stand is now saved.<br/>
-<br/>
-▼Pals<br/>
-・Christmas Skins!<br/>
-6 Christmas skins have been added for all players!<br/>
-(※You must own the Pal to equip the skin)<br/>
-⤷Pudding à la Gumoss<br/>
-⤷Party Night Depresso<br/>
-⤷Winter Style Chillet<br/>
-⤷Winter Style Chillet Ignis<br/>
-⤷Royal Frostallion<br/>
-⤷White Shadowbeak<br/>
-<br/>
-・Redistributing Limited-Time skins to all players!<br/>
-(※You must own the Pal to equip the skin)<br/>
-⤷Gold Relaxaurus<br/>
-⤷Sailor Quivern<br/>
-⤷Summer Chillet<br/>
-<br/>
-・New Unique Skills<br/>
-⤷Vanwyrm - Flame Breath<br/>
-⤷Vanwyrm Cryst - Tempest Blizzard<br/>
-⤷Astegon - Firefist Breathstorm<br/>
-⤷Maraith - Spirit Dash<br/>
-⤷Verdash - Spinning Roundhouse<br/>
-⤷Univolt - Lightning Gale<br/>
-⤷Blazehowl - Volcanic Fang<br/>
-⤷Ragnahawk - Rush Beak<br/>
-⤷Beegarde - Needle Spear<br/>
-⤷Beakon - Lightning Dive<br/>
-⤷Rayhound - Beckon Lightning<br/>
-⤷Jormuntide - Slither Slam<br/>
-⤷Jormuntide Ignis - Magma Serpent<br/>
-⤷Cryolinx - Blizzard Claw<br/>
-⤷Wumpo - Snow Bowling<br/>
-⤷Wumpo Botan - Lawn Bowling<br/>
-<br/>
-・New Ground Skill<br/>
-⤷Stone Beat<br/>
-<br/>
-・New Dark Skill<br/>
-⤷Poison Shower<br/>
-<br/>
-・New Dragon Skill<br/>
-⤷Charge Cannon<br/>
-<br/>
-・New Tier of Passive Skills<br/>
-⤷An even higher tier of passives, "rainbow passive skill" has been added! Breed the ultimate Pal!<br/>
-※ "Swift" has been promoted to a rainbow passive skill, and the chance of obtaining it has decreased.<br/>
-<br/>
-・Work Suitability Enhancement Books!<br/>
-⤷By using various technique books, you can permanently increase Pal's work suitability.<br/>
-<br/>
-・The limit on strengthening Pals with souls has been lifted! It's now possible to further develop your Pals.<br/>
-・If a summoned Pal has three moves that are all on cooldown, it will use the most basic move of its element.<br/>
-・Enemy Pals will now use every move they know at that level.<br/>
-・Alpha Pal eggs are no longer all huge but are now each the appropriate size.<br/>
-<br/>
-▼UI<br/>
-・Added a filter function to the Technology screen.<br/>
-・You can now add Pals to your favourites with a single button in the Pal Box UI.<br/>
-・Improved Pal Box sorting function, making it easier to find the Pal you're looking for.<br/>
-・You can now change the font size in the options settings.<br/>
-・The player's main HUD no longer becomes hidden over time. (You can revert this setting in the options.)<br/>
-<br/>
-・Mouse and Keyboard<br/>
-⤷You can now close any window with the Tab key.<br/>
-⤷The right Shift key and right Ctrl key can now be registered in the key configuration.<br/>
-<br/>
-・Controller Pad<br/>
-⤷Fixed an issue where the player would continue walking if the UI was opened while moving.<br/>
-⤷Changed the cutscene skip button on controller to Y.<br/>
-<br/>
-▼Crime<br/>
-・The charges have been expanded. Serious crimes, such as "Obstructing Public Officials" will increase the player's criminal level even more.<br/>
-<br/>
-▼Dedicated Servers<br/>
-・You can now set "Maximum number of buildings per base" in the world settings.<br/>
-This allows server administrators to make adjustments to stabilize server performance and maintain a comfortable playing environment.<br/>
-<br/>
-▼Balance Adjustment<br/>
-・The weight multiplier for all items can now be changed in world settings.<br/>
-・Technology unlock levels have been adjusted.<br/>
-・The selling prices of some Pals have been adjusted.<br/>
-・Merchant stock and prices have been adjusted.<br/>
-・The crafting recipes for some ammunition have been adjusted.<br/>
-・Boss enemies are now immune to stuns and will now become staggered when their stun accumulation value reaches 100.<br/>
-・Some technologies can now be unlocked by defeating tower bosses.<br/>
-<br/>
-・Adjusted the work suitability of some Pals:<br/>
-⤷Blazamut Ryu - Kindling 3 → 4<br/>
-⤷Selyne - Handiwork 3 → 4<br/>
-⤷Knocklem - Mining 3 → 4<br/>
-⤷Cryolinx - Added Transporting<br/>
-<br/>
-・Legendary Pals are now level 60, and they can learn more powerful skills.<br/>
-・The recovery amount of Felbat and Lovander's partner skills has been increased from 6% to 10%<br/>
-<br/>
-▼Bug Fixes<br/>
-・Improved base pals so they don't get stuck as often.<br/>
-・Reduced the issue of players falling under the ground after fast travel.<br/>
-・Improved enemy pathing so they don't get stuck in walls as often.<br/>
-・Improved the raid algorithm and pathing to ensure that raids reach bases much more often.<br/>
-・Many many many other minor bug fixes.<br/>
-<br/>
-▼Other<br/>
-・New NPCs have been added to various locations.<br/>
-・Added the "Free Pal Alliance Judicator" to the Free Pal Alliance. He will now appear at their camps.<br/>
-・Slowed down the work speed animation of base Pals with work speed buffs. (This is a measure to prevent the processing load from increasing too much when the effect is played at high speed. This change does not affect actual work speed.)<br/>
-・Changed Paldeck to Palpedia to be more in line with other languages.<br/>
-<br/>
-▼Soundtrack<br/>
-・3 new songs have been added to the soundtrack. If you have already purchased the game, please update the soundtrack.<br/>
-*Please note that the soundtrack update may be delayed by about a day.</div>
-</details>
-<p>Palworld works on Linux with <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> and is rated Steam Deck Playable.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40377/palworld/">Palworld</a></strong> | Release Date: 19th January 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/1623730/Palworld/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/palworld-feybreak-v0411-is-out-now-and-its-a-huge-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/palworld-feybreak-v0411-is-out-now-and-its-a-huge-update/</guid>
-      <pubDate>Tue, 24 Dec 2024 14:38:28 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1361174691id25897gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Monster Catching</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve released the Best of Steam - 2024 showing off the highest earners and most played games</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another year comes to a close and Valve have put up the Best of Steam - 2024, so you can go and check out what's the most popular.</p>
-<p>Split across multiple tabs of the top sellers overall, best-selling releases of 2024, the most played during 2024, the most played on Steam Deck during 2024, most played using a controller and top selling VR games.</p>
-<p class="plain-list-title">For the Steam Deck the top most played games for 2024 are:</p>
-<ul>
-<li>Fallout 4</li>
-<li>Palworld</li>
-<li>Dave the Diver</li>
-<li>Cyberpunk 2077</li>
-<li>Hogwarts Legacy</li>
-<li>Hades</li>
-<li>Vampire Survivors</li>
-<li>Grand Theft Auto V</li>
-<li>Elden Ring</li>
-<li>Baldur's Gate 3</li>
-<li>Stardew Valley</li>
-<li>Balatro</li>
-</ul>
-<p class="plain-list-title">The overall top sellers based on revenue generated across the whole of Steam for 2024 are (which Valve say are sorted randomly are):</p>
-<ul>
-<li>Counter-Strike 2</li>
-<li>Space Marine 2</li>
-<li>Call of Duty Black Ops 6</li>
-<li>PUBG: Battlegrounds</li>
-<li>Destiny 2</li>
-<li>Black Myth Wukong</li>
-<li>Helldivers 2</li>
-<li>Palworld</li>
-<li>Dota 2</li>
-<li>Baldur's Gate 3</li>
-<li>Apex Legends</li>
-<li>Elden Ring</li>
-</ul>
-<p>Check <a href="https://store.steampowered.com/sale/bestof2024" rel="noopener nofollow" target="_blank">it out on Steam</a>.</p>
-<p>What were the games you played the most through 2024?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/valve-released-the-best-of-steam-2024-showing-off-the-highest-earners-and-most-played-games/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/valve-released-the-best-of-steam-2024-showing-off-the-highest-earners-and-most-played-games/</guid>
-      <pubDate>Tue, 24 Dec 2024 14:30:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/712406103id25896gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Merry Christmas and Happy New Year from GamingOnLinux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Hello there! It's coming up on Christmas now, and so GamingOnLinux will be starting to go into it's usual mostly hibernating state to take a little break.</p>
-<p>As per usual I'll be taking some holiday time and <em>slightly</em> longer than usual over the next 2 weeks. So unless there's some sudden big stories that appear, or just plain <em>boredom</em> from me (sometimes I really just can't help myself) or from guest contributions, you can expect news to be rather <em>quiet</em> over the 2 weeks. A time to recharge, see family and play some video games on Linux (you should see my backlog…).</p>
-<p>I'll take this moment to thank all readers and supporters for another <em>incredible</em> year. We've been through some really interesting news through 2024, and it really does look like 2025 is going to be even <em>bigger</em>.</p>
-<p>Just a reminder that if you wish to support me and GamingOnLinux the <a href="https://www.gamingonlinux.com/support-us/" rel="noopener" target="_blank">links are available here any time</a> which includes the affiliate store links to buy games while also supporting GamingOnLinux.</p>
-<p>And as another reminder you can follow along on <a href="https://mastodon.social/@gamingonlinux" rel="noopener nofollow" target="_blank">Mastodon</a>, <a href="https://bsky.app/profile/gamingonlinux.com" rel="noopener nofollow" target="_blank">Bluesky</a>, <a href="https://t.me/linux_gaming" rel="noopener nofollow" target="_blank">Telegram</a>, <a href="https://whatsapp.com/channel/0029VaEDbO8KLaHp1wMOrR0Z" rel="noopener nofollow" target="_blank">WhatsApp</a> and the customizable <a href="https://www.gamingonlinux.com/rss/" rel="noopener" target="_blank">RSS feed</a>. If you wish to connect up with other readers you can also join the <a href="https://discord.gg/AghnYbMjYg" rel="noopener nofollow" target="_blank">Discord</a> and <a href="https://www.reddit.com/r/gamingonlinuxsub/" rel="noopener nofollow" target="_blank">Reddit</a> to chat and share.</p>
-<p>Remember that on top of news articles there's also the <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">anti-cheat page</a>, our <a href="https://www.gamingonlinux.com/users/statistics/" rel="noopener" target="_blank">user statistics page</a> and our <a href="https://www.gamingonlinux.com/steam-tracker/" rel="noopener" target="_blank">steam tracker</a>. With more sections planned to launch in 2025 as well including a dedicated guides page for things that don't fit into a front-page news article.</p>
-<p>GamingOnLinux will return to properly normal operations around January 6th, 2025.</p>
-<p>Merry Christmas, Happy Holidays and have a wonderful and safe New Year celebration!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/merry-christmas-and-happy-new-year-from-gamingonlinux-24/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/merry-christmas-and-happy-new-year-from-gamingonlinux-24/</guid>
-      <pubDate>Sat, 21 Dec 2024 23:28:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1962920059id25895gol.jpg" type="image/jpeg"/>
-      
-      <category>Community</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>For fans of Advance Wars there&#39;s a new demo up for Warside and new release window</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Something for the weekend: you can now try out a brand new demo of Warside, a game very much inspired by the classic Advance Wars and it does look good. Playing it a little bit close to their inspiration though.</p>
-<p>From developer LAVABIRD and publisher First Break Labs, the game is preparing to launch sometime in Q2 / Spring 2025.</p>
-<p>The new demo has a five-mission mini-campaign featuring new air units playable for the first time, including jets, bombers, and helicopters. Plus there's new not seen before battle powers like an EMP Blast which disables vehicles in an area, an Orbital Strike to rain energy beams from the sky and Rage that forces enemy units to attack each other. Sounds like a lot of fun.</p>
-<p>Along with a new demo there's also a new trailer:</p>
-<div class="hidden_video" data-video-id="JoepqTZoamw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9546eb36af7d835e7dc0fa8d4e5fc124.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/JoepqTZoamw" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Highlights:</p>
-<blockquote>
-<ul>
-<li>Intuitive turn-based gameplay with a familiar feel for fans of the classics.</li>
-<li>12 playable Commanders, each with unique passive skills and Battle Powers.</li>
-<li>Control 25+ unit types. Simultaneously battle over land, air, and sea with ground forces, aircraft, and naval units.</li>
-<li>Faction unique units with mechanics specific to each faction.</li>
-<li>Single-player campaign with over 30 missions.</li>
-<li>Forest, desert and snow environments, plus the toxic wastelands.</li>
-<li>Challenge friends and foes with multiplayer battles. Local and internet play are supported.</li>
-<li>Design your own maps with the built-in mission editor for both single and multiplayer.</li>
-</ul>
-</blockquote>
-<p>It has Native Linux support.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/35480/warside/">Warside</a></strong><p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/2368300/Warside/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/for-fans-of-advance-wars-theres-a-new-demo-up-for-warside-and-new-release-window/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/for-fans-of-advance-wars-theres-a-new-demo-up-for-warside-and-new-release-window/</guid>
-      <pubDate>Sat, 21 Dec 2024 19:02:38 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/42118499id25894gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Demo</category>
-      
-      <category>Godot Engine</category>
-      
-    </item>
-    
-    <item>
-      <title>Windows compatibility layer Wine 10.0 third Release Candidate out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>With the feature code freeze continuing, the Wine team had put up a third Release Candidate for the upcoming stable main release of Wine 10.0 coming in early 2025. There's no new features since they're focused on bug fixes only right now. New features will return for the development releases following Wine 10.0.</p>
-<p>Here's all the bugs noted as solved for Wine 10.0-rc3:</p>
-<blockquote>
-<ul>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=11674" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#11674</a> Dual-core unsupported in WoW and SC2</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=49473" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#49473</a> Chaos Legion videos are played upside down</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=52738" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#52738</a> No keyboard input in "STREET CHAVES - O LUTADOR DA VILA"</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=56319" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#56319</a> Parallel Port Tester won't start (fails to locate driver "System32\Drivers\inpoutx64.sys", but changing to absolute path works)</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=56348" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#56348</a> Bricks: moving a brick causes it to rapidly alternate positions</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=56471" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#56471</a> starting of native program with "start /unix ..." is broken</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=56632" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#56632</a> Explorer cannot run any files in Windows ME compatibility mode (or below)</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=56714" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#56714</a> Startopia is stuck on a black screen on launch</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=57227" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#57227</a> IL-2 1946 crash at startup</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=57286" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#57286</a> Dark Age of Camelot - camelot.exe required igd10umd32.dll but the .dll file is not found.</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=57319" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#57319</a> Painting in a proprietary application is broken with vulkan renderer</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=57515" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#57515</a> desktop mode did not show taskbar anymore</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=57523" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#57523</a> PokerTracker 4: cannot launch anymore</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=57525" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#57525</a> Systray icons cannot be interacted with</li>
-<li><a href="https://bugs.winehq.org/show_bug.cgi?id=57541" rel="noopener nofollow" target="_blank" title="Issue in Bugzilla">#57541</a> CMake doesn't find toolchain</li>
-</ul>
-</blockquote>
-<p>Taken from the <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-10.0-rc3" rel="noopener nofollow" target="_blank">release notes</a>.</p>
-<p>At some point after the release of Wine 10.0 we'll see Valve and their partners at Codeweavers update <a href="https://www.gamingonlinux.com/2019/07/steam-play-proton-guide-valves-tech-for-playing-windows-games-on-linux-steam-deck/" rel="noopener" target="_blank">Proton</a> and we'll then see a Proton 10.0 release as well. We don't know exactly when that will happen though, for the Wine 9 to Proton 9 release, it took about a month and a half to arrive.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2024/12/windows-compatibility-layer-wine-100-third-release-candidate-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2024/12/windows-compatibility-layer-wine-100-third-release-candidate-out-now/</guid>
-      <pubDate>Sat, 21 Dec 2024 12:18:34 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-      <category>Wine</category>
       
     </item>
     
