@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-01-18 07:24:39.569170</pubDate>
+    <pubDate>2025-01-19 07:25:52.600050</pubDate>
 
     
     <image>
@@ -18,6 +18,59 @@
     </image>
 
     
+    
+    <item>
+      <title>GE-Proton 9-23 released with a Battle.net update fix for Linux / Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>GE-Proton 9-23 is out now as the latest update for the community-maintained version of Valve's Proton that pulls in lots of quick-fixes for Linux, SteamOS and Steam Deck. <em>Confused on all the Proton versions? Go and <a href="https://www.gamingonlinux.com/guides/view/why-are-there-so-many-different-proton-versions-proton-8-proton-9-experimental-ge-proton/" rel="noopener" target="_blank">read my guide explainer</a>.</em></p>
+<p>Recently there's been some issues with the Battle.net launcher updates breaking again, and a fix for it is available in Wine, which this GE-Proton release has pulled in along with other fixes.</p>
+<p style="text-align:center"><img src="https://www.gamingonlinux.com/uploads/articles/tagline_images/11883412id26016gol.jpg"/></p>
+<p>Here's all that's changed in <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-23" rel="noopener nofollow" target="_blank">GE-Proton 9-23</a>:</p>
+<blockquote>
+<p>Upstream:</p>
+<ul>
+<li>update wine to bleeding-edge (fixes battle.net broken updates)</li>
+<li>update dxvk to latest git</li>
+<li>update vkd3d-proton to latest git</li>
+<li>update dxvk-nvapi to latest git</li>
+<li>update vkd3d to latest git</li>
+<li>import upstream proton game fixes</li>
+</ul>
+<p>Patches:</p>
+<ul>
+<li>proton: preserve drive letter for different mount points <a href="https://github.com/GloriousEggroll/proton-ge-custom/pull/129" rel="noopener nofollow" target="_blank">#129</a> (thanks loathingKernel)</li>
+<li>wine: add fix for Vanguard: Saga of Heroes (thanks loisgomez) -- triggered with SteamGameId=218210</li>
+</ul>
+<p>Protonfixes:</p>
+<ul>
+<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/2f969d8aeea17c979cc8b3dbab1e7f47da7dfb61" rel="noopener nofollow" target="_blank">Add Project Torque</a></li>
+<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/61cf7698df8ffee04746c1cd20487f58228ad4da" rel="noopener nofollow" target="_blank">Add fix for Middle-earth: Shadow of War (GOG) (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/209%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/61cf7698df8ffee04746c1cd20487f58228ad4da" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/209[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/61cf7698df8ffee04746c1cd20487f58228ad4da</a>)</li>
+<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/3d7215c95093f4910c77174d80cfdd9224c07813" rel="noopener nofollow" target="_blank">Add launcher skip for X-Blades (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/206%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/3d7215c95093f4910c77174d80cfdd9224c07813" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/206[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/3d7215c95093f4910c77174d80cfdd9224c07813</a>)<br/>
+<a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/2abbeb508355d1739f9b83bf7178609e8ade1885" rel="noopener nofollow" target="_blank">Add directplay for Total Annihilation (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/196%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/2abbeb508355d1739f9b83bf7178609e8ade1885" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/196[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/2abbeb508355d1739f9b83bf7178609e8ade1885</a>)</li>
+<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/d8933250dabc07b5457ed4de9b222a07e7611a3f" rel="noopener nofollow" target="_blank">Add fix for Sifu (EGS) (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/195%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/d8933250dabc07b5457ed4de9b222a07e7611a3f" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/195[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/d8933250dabc07b5457ed4de9b222a07e7611a3f</a>)</li>
+<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/48fcb33edd2910572e990dc6c75b52b7a8c1f0ce" rel="noopener nofollow" target="_blank">Add fix for [REDACTED] (EGS) (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/194%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/48fcb33edd2910572e990dc6c75b52b7a8c1f0ce" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/194[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/48fcb33edd2910572e990dc6c75b52b7a8c1f0ce</a>)</li>
+<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/fa14101a449b10ca076989dfa16307433ce5a4d1" rel="noopener nofollow" target="_blank">Add fix for Super Meat Boy(EGS) (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/193%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/fa14101a449b10ca076989dfa16307433ce5a4d1" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/193[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/fa14101a449b10ca076989dfa16307433ce5a4d1</a>)</li>
+<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/9982ec315339059634ba3f6283a7ba4d4bd8a71f" rel="noopener nofollow" target="_blank">Add fix for BioShock Remastered and BioShock 2 Remastered (EGS) (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/192%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/9982ec315339059634ba3f6283a7ba4d4bd8a71f" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/192[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/9982ec315339059634ba3f6283a7ba4d4bd8a71f</a>)</li>
+<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/4eef22e273008d65111c22db849dcd9b74414b7e" rel="noopener nofollow" target="_blank">Add DirectPlay to SpellForce 1 and 2 titles for Multiplayer (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/190%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/4eef22e273008d65111c22db849dcd9b74414b7e" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/190[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/4eef22e273008d65111c22db849dcd9b74414b7e</a>)</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/ge-proton-9-23-released-with-a-battlenet-fix-for-linux-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/ge-proton-9-23-released-with-a-battlenet-fix-for-linux-steam-deck/</guid>
+      <pubDate>Sat, 18 Jan 2025 14:11:10 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/11883412id26016gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
     
     <item>
       <title>Don&#39;t miss the Fanatical Build your own Explosive Bundle as it&#39;s an awesome deal for FPS fans</title>
@@ -5588,36 +5641,6 @@ Thank you so much for your continued support. We hope you enjoy the latest versi
       <category>Casual</category>
       
       <category>Farming</category>
-      
-    </item>
-    
-    <item>
-      <title>Grab some typing adventures and language learning in the latest Humble Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The first new Humble Bundle of games for 2025 is here, and it's starting you off with some typing and language adventures to sink your fingers into.</p>
-<p>Using ratings from Valve on Steam Deck Verified, plus any <a href="http://protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> and Native Linux notes here's all that's in it. Plus as usual each is a Steam link if you need more info first.</p>
-<p><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</strong></p>
-<p><a href="https://store.steampowered.com/app/940680/The_Textorcist_The_Story_of_Ray_Bibbia/" rel="noopener nofollow" target="_blank">The Textorcist: The Story of Ray Bibbia</a> (ProtonDB Gold)</p>
-<p><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</strong></p>
-<p><a href="https://store.steampowered.com/app/944920/Nanotale__Typing_Chronicles/" rel="noopener nofollow" target="_blank">Nanotale - Typing Chronicles</a> (Native Linux)</p>
-<p><a href="https://store.steampowered.com/app/398850/Epistory__Typing_Chronicles/" rel="noopener nofollow" target="_blank">Epistory - Typing Chronicles</a> (Native Linux)</p>
-<p><a href="https://store.steampowered.com/app/865540/PLAYNE__The_Meditation_Game/" rel="noopener nofollow" target="_blank">PLAYNE : The Meditation Game</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/1031900/You_Can_Kana__Learn_Japanese_Hiragana__Katakana/" rel="noopener nofollow" target="_blank">You Can Kana - Learn Japanese Hiragana &amp; Katakana</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/1183580/Terra_Alia_The_Language_Discovery_RPG/" rel="noopener nofollow" target="_blank">Terra Alia: The Language Learning RPG</a> (ProtonDB Silver)</p>
-<p><strong><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unrated</strong></p>
-<p><a href="https://store.steampowered.com/app/274980/Influent_Language_Learning_Game/" rel="noopener nofollow" target="_blank">Influent: Definitive Edition</a> (Native Linux)</p>
-<p>Check it out and <a href="https://www.humblebundle.com/games/new-years-resolution-learn-new-skill-encore" rel="noopener nofollow" target="_blank">purchase on Humble Bundle</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/grab-some-typing-adventures-and-language-learning-in-the-latest-humble-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/grab-some-typing-adventures-and-language-learning-in-the-latest-humble-bundle/</guid>
-      <pubDate>Thu, 02 Jan 2025 13:26:26 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2056794501id25911gol.jpg" type="image/jpeg"/>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
       
     </item>
     
