@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-01-22 07:26:51.062776</pubDate>
+    <pubDate>2025-01-23 07:28:25.813208</pubDate>
 
     
     <image>
@@ -18,6 +18,284 @@
     </image>
 
     
+    
+    <item>
+      <title>AMD reveals AMDGPU Composition Stack, a fork of Wayland&#39;s Weston compositor for advancing the Linux desktop</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>With many Linux desktops now running Wayland quite nicely, it seems it's time to keep pushing ahead. AMD have revealed what they call the AMDGPU Composition Stack (ACS).</p>
+<p>This is a fork of Wayland's Weston compositor with some "additional advanced features". It all sounds pretty exciting when you look at what AMD developer Shashank Sharma noted on the <a href="https://gitlab.com/acs-wayland/weston/-/wikis/home" rel="noopener nofollow" target="_blank">GitLab Wiki</a> page with these being the primary goals:</p>
+<blockquote>
+<ul>
+<li>To act as a staging area for Weston/Wayland features to be opensourced to mainline.</li>
+<li>To act as a reference compositor for AMD's advanced graphics and display feature development.</li>
+<li>To provide a middleware compositor which extracts the best out of AMD Display and Graphics HW (We don't mind being biased to AMDGPU HW)
+	<ul>
+<li>To host some of the AMD HW specific code, which can't be merged in weston mainline due to its bias towards AMD HW.</li>
+</ul>
+</li>
+<li>To be utilised in full stack opensource delivery vehicle for AMDs commercial solutions and products.</li>
+<li>To be the space where AMD specific in-house SW tools (performance tweakers, multimedia players, 3D games, profiling tools etc) can be saved in future.</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6400159901737583151gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6400159901737583151gol1.jpg"/></a><br/>
+<em>Picture credit: AMD</em></p>
+<p>As noted on the Wiki page some initial features added include:</p>
+<blockquote>
+<ul>
+<li>VRR / Freesync.</li>
+<li>MPO using underlays.</li>
+<li>Color Management and Wide gamut support.</li>
+<li>ACS media-player app.</li>
+<li>Fullscreen HDR video playback.</li>
+<li>Multi-seat config support.</li>
+</ul>
+</blockquote>
+<p>There's also a basic video player included to "demonstrate some of these advance feature in a video playback context".</p>
+<p>This was announced on the dri-devel <a href="https://lists.freedesktop.org/archives/dri-devel/2025-January/486833.html" rel="noopener nofollow" target="_blank">mailing list</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/amd-reveals-amdgpu-composition-stack-a-fork-of-waylands-weston-compositor-for-advancing-the-linux-desktop/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/amd-reveals-amdgpu-composition-stack-a-fork-of-waylands-weston-compositor-for-advancing-the-linux-desktop/</guid>
+      <pubDate>Wed, 22 Jan 2025 22:04:46 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1763129483id26020gol.jpg" type="image/jpeg"/>
+      
+      <category>AMD</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Stable Steam Client update for Desktop and Steam Deck brings a whole lot of fixes</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve released a fresh stable update to the Steam Client this week bringing numerous bug fixes and improvements for Desktop and Steam Deck.</p>
+<p class="plain-list-title">Originally released January 20th but Valve re-released this update with a few extra changes on January 21st. The <em>extra</em> fixes are noted as:</p>
+<blockquote>
+<ul>
+<li>Fixed an issue where dropdown menus would sometimes fail to appear.</li>
+<li>Fixed "Processing Shaders" status window failing to show during game launch on Linux.</li>
+<li>Fixed an issue where foreground colors did not apply correctly to Steam Input Virtual menus.</li>
+<li>Updated localization.</li>
+</ul>
+</blockquote>
+<p class="plain-list-title">Scanning over the changelogs these below seem to be specific to the <strong>Steam Deck</strong> <a href="https://store.steampowered.com/news/app/1675200/view/523080879756542659" rel="noopener nofollow" target="_blank">update</a>, as they don't show up in the Desktop update:</p>
+<blockquote>
+<ul>
+<li>Improved the display of the startup animations on 16:9 and ultra-wide monitor resolutions.</li>
+<li>Discovery Queue: Smoothed out user experience and brought up to date with recent changes to web version.</li>
+<li>Child accounts are now allowed to adjust the brightness of the screen.</li>
+<li>Fixed desktop Steam Clients exiting while running a game if a Steam Deck is resumed while running a non-Steam app.</li>
+<li>Fixed the WiFi auto connect setting being forgotten after a system restart.</li>
+<li>Fixed a case where the WiFi connection dialog would not show a password prompt for networks that only support WPA3.</li>
+<li>Fixed brightness slider (HDR) in Quick Access Menu.</li>
+<li>Fixed the display of the Triangle/Cross glyphs for the PlayStation DualShock controller on some Virtual Keyboard skins where they didn't display.</li>
+<li>Fixed turning off external gamepads connected via BT via the controller chord and after the inactivity timeout.</li>
+<li>Fixed a case where bluetooth devices would sometimes show as a generic device under Settings-&gt;Bluetooth instead of showing as their specific type (e.g. gamepad/headphones).</li>
+<li>Fixed a rare crash that could happen when scanning for WiFi devices under Settings-&gt;Internet.</li>
+<li>Fixed a case where navigation menus stopped showing after closing a game in Desktop Mode.</li>
+<li>Fixed a bug where the video track of a game recording could be empty.</li>
+<li>Fixed a crash in Drill Core when Steam Input is enabled with a gamepad config.</li>
+<li>Fixed an issue where the Wireless HORIPAD for Steam could wake up OLED Steam Decks when they suspend while the device is connected via BT.</li>
+<li>Fixed an issue where hitting down in the Keyboard section of the Choose Binding screen could switch to the gamepad tab.</li>
+<li>Fixed some cases where bindings were removed for grip or share buttons on devices.</li>
+<li>Fixed Gyro Drift Correction not saving to disc when Sleeping the console. Save now occurs during manual calibration.</li>
+</ul>
+</blockquote>
+<p class="plain-list-title">And here's everything from the main <strong>Desktop</strong> update:</p>
+<blockquote>
+<p><strong>General</strong></p>
+<ul>
+<li>Added a global setting for improved management of game updates.</li>
+<li>Added a panel to manage per-game exceptions to the global setting.</li>
+<li>Added keyboard controls for dropdown lists in the client.</li>
+<li>Added "View In Library" to the context menu for games on the downloads page.</li>
+<li>Clicking on the game image of the actively downloading item on the downloads page will now navigate to the game's library page.</li>
+<li>Updated layout of downloads page for the active item.</li>
+<li>Improved caching of Soundtrack album covers in library.</li>
+<li>Improved library asset loading times for large libraries.</li>
+<li>Fixed Steam Client exiting instead of showing a refresh login dialog if another client session starts playing a game or resumes from suspend in a game session.</li>
+<li>Fixed Steam Client exiting while running a game if a Steam Deck is resumed while running a non-Steam app.</li>
+<li>Fixed a case where Steam would prefer to stream from another PC on your local network if the game was installed on both PCs and could be played without streaming.</li>
+<li>Fixed a stall in games after taking a screenshot for users with very large numbers of local screenshots (10's of thousands).</li>
+<li>Fixed Steam window being draggable from left and right edges when maximized on the Store/Community view.</li>
+</ul>
+<strong>Library</strong>
+<ul>
+<li>Fixed friends showing multiple times in the "In-Game" section if they also had the game on their wishlist.</li>
+</ul>
+<strong>Game Recording</strong>
+<ul>
+<li>Improved error messages for limited accounts sharing messages in chat or via the share menu.</li>
+<li>Fixed OpenGL games failing to record on Linux.</li>
+<li>Fixed issue which prevented audio capture from some games on Windows 11 24H2.</li>
+</ul>
+<strong>Steam Overlay</strong>
+<ul>
+<li>Added support for bookmarks saved per game in the overlay browser.</li>
+<li>Improved reliability of saving for notes.</li>
+<li>Fixed scroll position, selection, and undo history getting lost when switching between notes.</li>
+<li>When editing notes, the "Insert Link" button can now edit links as well, and can be opened with ctrl-k.</li>
+<li>The toolbar buttons in notes will now display the associated keyboard shortcut in their tooltips.</li>
+</ul>
+<strong>Remote Play</strong>
+<ul>
+<li>Fixed Remote Play Together session not fully starting for some games running on macOS host systems.</li>
+</ul>
+<strong>Big Picture Mode</strong>
+<ul>
+<li>Updated suspend animation when not on Steam Deck.</li>
+<li>Fixed several issues where navigation could get stuck behind menus or dialogs.</li>
+<li>Fixed an issue where the guide button would open the menu in the main steam window instead of in the game overlay.</li>
+<li>Fixed cases where repeatedly accessing the controller configurator in the overlay would leave extra instances of it in the backstack after exiting the game.</li>
+</ul>
+<strong>macOS</strong>
+<ul>
+<li>Added "End of Life" alert for macOS 10.15 ("Catalina"). Steam Client support for these operating systems will end on February 15th, 2025 at 10am. See <a href="https://help.steampowered.com/en/faqs/view/736A-892E-4F03-CA38" rel="noopener nofollow" target="_blank">here</a> for additional details.</li>
+<li>Fixed game recording failures on Apple Silicon Macs when recording native games.</li>
+<li>Fixed audio in Remote Play Together sessions when streaming a native game from an Apple Silicon Mac.</li>
+<li>Fixed mouse input to Steam Overlay not working for some multi-display configurations.</li>
+</ul>
+<strong>Linux</strong>
+<ul>
+<li>Fixed a case where Steam could permanently inhibit the screensaver if it crashed while holding the screensaver lock.</li>
+<li>Fixed potential crash when exiting a game if Game Recording is enabled on systems with recent versions of pipewire.</li>
+<li>Fixed high single core CPU usage for users with large libraries during Steam startup.</li>
+<li>Fixed a rare issue which resulted in a GetTimelineLoaderForGame() error showing in the in-game overlay.</li>
+<li>Fixed crash in games using Steam P2P Voice Chat.</li>
+<li>Fixed a crash in the game recording viewer caused by unstable vaapi drivers (disable GPU in recording settings).</li>
+<li>Fixed a case where navigation menus stopped showing after closing a game.</li>
+<li>Fixed a rare crash when hotplugging a mouse and keyboard.</li>
+</ul>
+<strong>Steam Input</strong>
+<ul>
+<li>Reduced overhead/latency of controller input in Big Picture Mode and Virtual Menus.</li>
+<li>Slightly reduced steady-state CPU usage of Steam Input overall.</li>
+<li>Added visualization of mode shifts to the Preview Layout page.</li>
+<li>Added the ability to have a mode shift without needing to have a mode already on a source.</li>
+<li>Added Nintendo Switch controller configurations to the options shown by default for the Wireless HORIPAD for Steam so that gyro configurations are more easily found.</li>
+<li>Made the "Choose a Configuration" page remember which tab you were on when returning from previewing a configuration.</li>
+<li>Made the "Choose a Configuration" page remember the setting to show/hide configurations from other controller types.</li>
+<li>In <em>Options-&gt;Controller-&gt;Calibration &amp; Advanced Settings-&gt;Gyro Calibration</em>, the gamepad Pitch, Yaw, and roll ion rotation now come from the internal quaternion that drives many of the new "Gyro to..." modes, and Steam Input api's GetMotionData.</li>
+<li>Gyro Drift Corrections now save during successful manual calibration, rather than only when exiting Steam.</li>
+<li>Fixed some Linux-specific crashes.</li>
+<li>Fixed a crash at startup when certain analog keyboards are connected.</li>
+<li>Fixed not being able to use "Export Layout-&gt;Save New Layout" when using a "Sharable Personal Layout".</li>
+<li>Fixed an issue where previewing a configuration, then editing your original configuration could corrupt it.</li>
+<li>Fixed a case where the title of the configuration in the summary screen would break after making an edit.</li>
+<li>Fixed a case where inputs with multiple bindings would show up as [object] [object] after removing a binding.</li>
+<li>Fixed SIAPI trigger bindings sometimes not working when bound to buttons.</li>
+<li>Fixed Gyro as Joystick mode ignoring sensitivity settings.</li>
+<li>Fixed a case where mode shift bindings leftover from a bug in 2019 could activate a mode shift that was disabled in the UI.</li>
+<li>Fixed detecting thumbsticks that have been mapped to a D-pad in controller setup.</li>
+<li>Fixed the left/right trigger soft pull showing in the mode shift button dropdown as "none".</li>
+<li>Fixed the mode shift button sometimes not having a localization token in the summary page.</li>
+<li>Fixed virtual menus showing as "Create Touch Menu" instead of "Touch Menu" in the summary page.</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/stable-steam-client-update-for-desktop-and-steam-deck-brings-a-whole-lot-of-fixes/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/stable-steam-client-update-for-desktop-and-steam-deck-brings-a-whole-lot-of-fixes/</guid>
+      <pubDate>Wed, 22 Jan 2025 21:46:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>SDL 3 officially released for game devs plus an SDL 2 to SDL 3 compatibility layer</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Simple DirectMedia Layer (SDL) is a popular free and open source library for developers that handles audio, keyboard, mouse, joystick and graphics with SDL 3 now available. Plus a new SDL 2 to SDL 3 compatibility layer.</p>
+<p>Much like they already have <a href="https://github.com/libsdl-org/sdl12-compat" rel="noopener nofollow" target="_blank">sdl12-compat</a>, which allows you to use SDL 2 if you're stuck on SDL 1, they've also released <a href="https://github.com/libsdl-org/sdl2-compat" rel="noopener nofollow" target="_blank">sdl2-compat</a> for people stuck on SDL 2 to get the benefits of SDL 3.</p>
+<p>There's a huge amount of new features and overall improvements including (taken from the SDL 3 <a href="https://github.com/libsdl-org/SDL/releases/tag/release-3.2.0" rel="noopener nofollow" target="_blank">release post</a>):</p>
+<blockquote>
+<ul>
+<li><a href="https://wiki.libsdl.org/SDL3/APIByCategory" rel="noopener nofollow" target="_blank">Extremely good documentation</a>: We've spent a ton of effort writing and revising the API reference.</li>
+<li><a href="https://github.com/libsdl-org/SDL/tree/main/examples" rel="noopener nofollow" target="_blank">Example programs</a> to get you started, <a href="https://examples.libsdl.org/" rel="noopener nofollow" target="_blank">running in your web browser</a>!</li>
+<li>More consistent API naming conventions. Everything is named consistently across the API now, instead of different subsystems taking different approaches. Also, we've tended toward more descriptive names for things in SDL3.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/README/main-functions#main-callbacks-in-sdl3" rel="noopener nofollow" target="_blank">Main Callbacks</a>: optionally run your program from callbacks instead of main().</li>
+<li><a href="https://wiki.libsdl.org/SDL3/CategoryGPU" rel="noopener nofollow" target="_blank">GPU API</a>: access to modern 3D rendering and GPU compute in a cross-platform way.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/CategoryDialog" rel="noopener nofollow" target="_blank">Dialog API</a>: access to system file dialogs (file and folder selection UI for opening/saving).</li>
+<li><a href="https://wiki.libsdl.org/SDL3/CategoryFilesystem" rel="noopener nofollow" target="_blank">Filesystem API</a>: simple directory management and globbing, access to topic-specific user folders.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/CategoryStorage" rel="noopener nofollow" target="_blank">Storage API</a>: Abstract interface to platform-specific storage.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/CategoryCamera" rel="noopener nofollow" target="_blank">Camera API</a>: access to webcams.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/CategoryPen" rel="noopener nofollow" target="_blank">Pen API</a>: access to pens (like Wacom tablets and Apple Pencil, etc).</li>
+<li><a href="https://wiki.libsdl.org/SDL3/SDL_OpenAudioDevice" rel="noopener nofollow" target="_blank">Logical audio devices</a>: different parts of an app can get their own unique audio device to use.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/SDL_CreateAudioStream" rel="noopener nofollow" target="_blank">Audio streams</a>: handle buffering, converting, resampling, mixing, channel mapping, pitch, and gain. Bind to an audio device and go!</li>
+<li><a href="https://wiki.libsdl.org/SDL3/SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK" rel="noopener nofollow" target="_blank">Default audio devices</a>: SDL3 will automatically manage migrating to new physical hardware as devices are plugged in, ripped out, or changed.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/CategoryProperties" rel="noopener nofollow" target="_blank">Properties API</a>: fast, flexible dictionaries of name/value pairs.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/CategoryProcess" rel="noopener nofollow" target="_blank">Process API</a>: Spawn child processes and communicate with them in various ways.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/SDL_Colorspace" rel="noopener nofollow" target="_blank">Colorspace support</a>: Surfaces and the renderer, etc, can manage multiple colorspaces.</li>
+<li>The Clipboard API <a href="https://wiki.libsdl.org/SDL3/SDL_SetClipboardData" rel="noopener nofollow" target="_blank">can support any data type</a> (SDL2 only handled text), and apps can provide data in multiple formats upon request in <a href="https://wiki.libsdl.org/SDL3/SDL_ClipboardDataCallback" rel="noopener nofollow" target="_blank">a provided callback</a>.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/BestKeyboardPractices" rel="noopener nofollow" target="_blank">Better keyboard input</a>, for all your keypress needs.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/SDL_StartTextInputWithProperties" rel="noopener nofollow" target="_blank">Customizable virtual keyboards</a> on iOS and Android.</li>
+<li>High DPI support is dramatically improved over SDL2.</li>
+<li><a href="https://wiki.libsdl.org/SDL3/SDL_SetAppMetadata" rel="noopener nofollow" target="_blank">App metadata API</a> for letting SDL report things about your app correctly (like in the About dialog on macOS, etc).</li>
+<li>and much, much more.</li>
+</ul>
+</blockquote>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/sdl-3-officially-released-for-game-devs-plus-an-sdl-2-to-sdl-3-compatibility-layer/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/sdl-3-officially-released-for-game-devs-plus-an-sdl-2-to-sdl-3-compatibility-layer/</guid>
+      <pubDate>Wed, 22 Jan 2025 21:35:43 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/sdl.jpg" type="image/jpeg"/>
+      
+      <category>Game Dev</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Windows compatibility layer Wine 10.0 out now bringing Wayland and ARM64EC support, new FFmpeg multimedia back-end</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The big release is here! The Windows compatibility layer Wine version 10.0 is officially out now bringing lots of big new features. Wine is a major part of what powers Valve's Proton, enabling thousands of Windows games to run on Linux.</p>
+<p class="plain-list-title">Some highlights of what's new includes (compared with Wine 9):</p>
+<ul>
+<li>ARM64EC support</li>
+<li>Wayland support that's enabled by default.</li>
+<li>An FFmpeg-based multimedia back-end as an alternative to the GStreamer backend. Still experimental though, but should hopefully begin to improve Media Foundation support (good for gaming).</li>
+<li>Much improved High-DPI support.</li>
+<li>Network sessions are supported in DirectPlay.</li>
+<li>An initial Bluetooth driver.</li>
+<li>Support for the Dvorak keyboard layout.</li>
+</ul>
+<p>And lots more! Full changelog on the <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-10.0" rel="noopener nofollow" target="_blank">Wine GitLab</a>.</p>
+<p>Eventually we will see Valve update Proton as well to move it onto Wine 10 and see Proton 10 later this year.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/01/windows-compatibility-layer-wine-10-out-now-bringing-wayland-and-arm64ec-support-new-ffmpeg-multimedia-back-end/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/windows-compatibility-layer-wine-10-out-now-bringing-wayland-and-arm64ec-support-new-ffmpeg-multimedia-back-end/</guid>
+      <pubDate>Wed, 22 Jan 2025 20:57:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
     
     <item>
       <title>GE-Proton 9-23 released with a Battle.net update fix for Linux / Steam Deck</title>
@@ -5213,434 +5491,6 @@ Thank you so much for your continued support. We hope you enjoy the latest versi
       <category>New Release</category>
       
       <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Slavic fantasy story-driven mystery adventure The End of the Sun releases January 29</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The End of the Sun is an upcoming Slavic fantasy story-driven mystery adventure that sounds interesting and it's ready for release on January 29.</p>
-<p>Developed by a two-person indie team, this first-person adventure invites players to step into the shoes of Ashter, a time-travelling Slavic sorcerer, as they unravel mysteries across shifting seasons and lifetimes. The developers explained that the story begins "in a mysterious village marked by burnt-out bonfires, where players navigate a dynamic environment to uncover secrets hidden in the ashes of the past" and that "With the power to manipulate time, players witness key events in the lives of the villagers, exploring how their choices shape the present and future".</p>
-<p>Check out the new trailer:</p>
-<div class="hidden_video" data-video-id="Zqf_P-xnYYw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cb8b2d464b21a18f899142293bb90562.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Zqf_P-xnYYw" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Feature Highlight:</p>
-<blockquote>
-<ul>
-<li><strong>Authentic worldbuilding</strong>: Leveraging a photogrammetry, the game recreates detailed environments, including entire buildings and artifacts from real-world ethnographic museums. Players will immerse themselves in a setting that’s as historically accurate as it is visually stunning.</li>
-<li><strong>Nonlinear storyline</strong>: Explore the story at your own pace and uncover the hidden layers that evolves with the seasons and years.</li>
-<li><strong>Time-Travel mechanics</strong>: Shift between four distinct periods, each reflecting different stages in the lives of the villagers. Experience their stories in spring, summer, autumn, and winter, with years separating each moment in time.</li>
-<li><strong>Slavic culture and mysticism</strong>: Dive deep into forgotten traditions, uncover ancient rituals, and encounter mythical creatures rooted in Slavic folklore.</li>
-<li><strong>Dynamic gameplay environment</strong>: Real-time changes in weather, lighting, and time of day create an atmosphere of constant discovery and adaptation.</li>
-</ul>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/13137/the-end-of-the-sun/">The End of the Sun</a></strong> | Release Date: 29th January 2025<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/912840/The_End_of_the_Sun/?snr=1_7_7_comingsoon_150_13">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/slavic-fantasy-story-driven-mystery-adventure-the-end-of-the-sun-releases-january-29/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/slavic-fantasy-story-driven-mystery-adventure-the-end-of-the-sun-releases-january-29/</guid>
-      <pubDate>Fri, 03 Jan 2025 11:39:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/768503028id25915gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Prime Gaming January 3rd 2025 edition round-up for Steam Deck / Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Welcome to the first round-up of games you can claim from Prime Gaming for 2025, along with the expected compatibility across Steam Deck and desktop Linux. Each week Prime Gaming, part of what you get with a subscription to Amazon Prime, add and remove various games you can claim to keep.</p>
-<p>I'll use the Steam Deck Rating from Valve (<img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Verified, <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Playable, <img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Unsupported and <img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Not Rated), plus the <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> rating to help you decide on what to play. Compatibility may be <em>slightly</em> different since the games are from various stores. Some of the games might also have <em>no</em> ratings right now.</p>
-<p>Amazon haven't yet put up a list of what's coming over this month, but they've still added a few.</p>
-<p>Here's the current list as of January 3rd, 2025:</p>
-<div class="scrolling-table">
-<table border="1" cellpadding="1" cellspacing="1" class="table-stripes-tbody">
-<thead>
-<tr>
-<td><strong>Name</strong></td>
-<td><strong>Store</strong></td>
-<td><strong>End Date</strong></td>
-<td><strong>Steam Deck</strong></td>
-<td><strong>ProtonDB</strong></td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DREDGE</td>
-<td>GOG</td>
-<td>January 5, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Overcooked! 2</td>
-<td>GOG</td>
-<td>January 5, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Tomb Raider: Underworld</td>
-<td>GOG</td>
-<td>January 5, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>The Gap</td>
-<td>Amazon</td>
-<td>January 7, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>BioShock Remastered</td>
-<td>GOG</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>DreadOut 2</td>
-<td>Amazon</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Close to the Sun</td>
-<td>GOG</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Duck Paradox</td>
-<td>GOG</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Quake II</td>
-<td>GOG</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Disney•Pixar WALL-E</td>
-<td>Amazon</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Spelunky</td>
-<td>GOG</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Verified</td>
-</tr>
-<tr>
-<td>Baldur's Gate: Enhanced Edition</td>
-<td>GOG</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Baldur's Gate II: Enhanced Edition</td>
-<td>GOG</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Neverwinter Nights: Enhanced Edition</td>
-<td>GOG</td>
-<td>January 8, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Through the Darkest of Times</td>
-<td>Amazon</td>
-<td>January 15, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Ms. Holmes: The Case of the Dancing Men Collector's Edition</td>
-<td>Amazon</td>
-<td>January 15, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Planet of Lana</td>
-<td>GOG</td>
-<td>January 15, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>The Coma: Recut</td>
-<td>GOG</td>
-<td>January 15, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Monster Train</td>
-<td>GOG</td>
-<td>January 22, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Pumpkin Jack</td>
-<td>GOG</td>
-<td>January 22, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>STASIS: BONE TOTEM</td>
-<td>Epic</td>
-<td>January 22, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Christmas Fables: The Magic Snowflake Collector’s Edition</td>
-<td>Legacy Games</td>
-<td>January 22, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Mystery Case Files: The Dalimar Legacy Collector's Edition</td>
-<td>Amazon</td>
-<td>January 28, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Shogun Showdown</td>
-<td>GOG</td>
-<td>January 28, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Coromon</td>
-<td>GOG</td>
-<td>January 29, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Bang Bang Racing</td>
-<td>Amazon</td>
-<td>February 5, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>House of Golf 2</td>
-<td>Epic</td>
-<td>February 12, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Hero’s Hour</td>
-<td>GOG</td>
-<td>February 12, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>ReDrawn: The Painted Tower Collector’s Edition</td>
-<td>Amazon</td>
-<td>February 12, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td>Moonscars</td>
-<td>GOG</td>
-<td>February 19, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Elite Dangerous</td>
-<td>Epic</td>
-<td>February 25, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>The Town of Light</td>
-<td>GOG</td>
-<td>February 26, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>Jurassic World Evolution</td>
-<td>Epic</td>
-<td>February 25, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>The Collage Atlas</td>
-<td>Amazon</td>
-<td>February 28, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>The Outer Worlds</td>
-<td>GOG</td>
-<td>March 5, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Eastern Exorcist</td>
-<td>Epic</td>
-<td>March 5, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td>Platinum</td>
-</tr>
-<tr>
-<td>The Bridge</td>
-<td>Epic</td>
-<td>March 5, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Silver</td>
-</tr>
-<tr>
-<td>Aces of the Luftwaffe — Squadron Extended Edition</td>
-<td>Amazon</td>
-<td>March 19, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td>Gold</td>
-</tr>
-<tr>
-<td>Simulakros</td>
-<td>Amazon</td>
-<td>March 19, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>New since last covering include: The Town of Light, Eastern Exorcist, The Bridge.</p>
-<p>You can install games from Epic, GOG and Amazon easily via <a href="https://www.gamingonlinux.com/2024/09/heroic-games-launcher-2152-released-fixing-amazon-gog-and-epic-games-issues/" rel="noopener" target="_blank">the Heroic Games Launcher</a>. For any games that use anti-cheat be sure to check out <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our anti-cheat compatibility page</a>.</p>
-<p>See them all and claim from <a href="https://gaming.amazon.com/home" rel="noopener nofollow" target="_blank">Prime Gaming</a>. You can also follow our <a href="https://www.gamingonlinux.com/articles/category/Prime_Gaming/" rel="noopener" target="_blank">Prime Gaming tag</a>!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/prime-gaming-january-3rd-2025-edition-round-up-for-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/prime-gaming-january-3rd-2025-edition-round-up-for-steam-deck-linux/</guid>
-      <pubDate>Fri, 03 Jan 2025 11:27:29 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1919991637id25914gol.jpg" type="image/jpeg"/>
-      
-      <category>Amazon</category>
-      
-      <category>Listicle</category>
-      
-      <category>Misc</category>
-      
-      <category>Prime Gaming</category>
-      
-    </item>
-    
-    <item>
-      <title>Selaco won IndieDB&#39;s 2024 Indie of the Year Award plus a big sales milestone was hit</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The epic retro-fuelled shooter Selaco managed to win an award as IndieDB crowned it their 2024 Indie of the Year and it seems overall the game has done really well on sales. </p>
-<p>Selaco had some tough competition over on <a href="https://www.indiedb.com/groups/2024-indie-of-the-year-awards/features/players-choice-indie-of-the-year-2024" rel="noopener nofollow" target="_blank">IndieDB</a> with it beating the likes of Palworld, Balatro and Hades II. Nice to see one of my favourite shooters getting the recognition it deserves.</p>
-<p>Additionally, writing on <a href="https://bsky.app/profile/selaco.bsky.social/post/3lermonvkis2p" rel="noopener nofollow" target="_blank">Bluesky</a>, the developers announced it's managed to cross over 100,000 sales. In a follow-up post on <a href="https://bsky.app/profile/selaco.bsky.social/post/3lermoqdgos2p" rel="noopener nofollow" target="_blank">Bluesky</a> the developer noted how it has blown past their expectations. They said:</p>
-<blockquote>
-<p>Our goal was to hit 25,000 in the first 12 months. Somehow, we managed to achieve 4x that amount in just half the time. We went without a publisher, placing all our faith in the game itself, and our the community to help spread the word. You delivered and we're grateful!</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12319893461735902195gol1.jpg"/></p>
-<p>Congrats to the team at Altered Orbit Studios. Can't wait to see the next part of the campaign for Selaco to see what they add into it.</p>
-<p>Selaco has Native Linux support and is Steam Deck Verified.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/22241/selaco/">Selaco</a></strong> | Release Date: 31st May 2024<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://store.steampowered.com/app/1592280/Selaco/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/selaco-won-indiedb-2024-indie-of-the-year-award-plus-a-big-sales-milestone-was-hit/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/selaco-won-indiedb-2024-indie-of-the-year-award-plus-a-big-sales-milestone-was-hit/</guid>
-      <pubDate>Fri, 03 Jan 2025 11:04:58 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1234366795id25913gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>FPS</category>
-      
-    </item>
-    
-    <item>
-      <title>Stardew Valley hits over 41 million sales with millions sold during 2024</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Developer Eric Barone "ConcernedApe", has updated the Stardew Valley website with some new figures showing the pixel-art farming life-sim has only continued to grow.</p>
-<p><a href="https://www.gamingonlinux.com/2024/02/stardew-valley-v16-confirmed-to-release-in-march-hits-over-30-million-sales/" rel="noopener" target="_blank">Back in February 2024</a>, Barone mentioned how Stardew had hit around 30 million sales but the update on the website mentions that as of December 2024 that number has risen to over 41 million. This means somewhere around 10 million was just during 2024 which is crazy to think of when the game is now coming up on 8 years since release.</p>
-<p class="plain-list-title">The <a href="https://www.stardewvalley.net/press/" rel="noopener nofollow" target="_blank">website</a> notes:</p>
-<blockquote>
-<p>As of December 2024, Stardew Valley has sold over 41 million copies across all platforms, with over 26 million copies sold on PC, and 7.9 million copies on the Nintendo Switch.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13017934271735824811gol1.jpg"/></p>
-<p>Simply incredible and well deserved. No surprise that it is still receiving updates when it's selling so well. After all, why not? Easy money for the developer to keep adding to it. 10 months ago it also hit a record of concurrent players on Steam with 236,614 playing it and it regularly sees over 100,000 in-game.</p>
-<p>They're still slowly working on their next game, Haunted Chocolatier. As noted in a <a href="https://www.hauntedchocolatier.net/2024/12/04/update/" rel="noopener nofollow" target="_blank">blog post</a> in December 2024, work did come to a halt while the focus went back to Stardew Valley for a while. Barone will be doing the same with Haunted Chocolatier working solo and no plans for Early Access, they'll just put it out when they feel it's ready. So it's likely quite some time away yet.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/522/stardew-valley/">Stardew Valley</a></strong> | Release Date: 26th February 2016<p class="plain-list-title">Official links and where to buy from:</p><ul><li><a href="https://www.gog.com/game/stardew_valley">GOG</a></li><li><a href="https://www.humblebundle.com/store/stardew-valley">Humble Store</a></li><li><a href="https://store.steampowered.com/app/413150/Stardew_Valley/">Steam</a></li><li><a href="http://stardewvalley.net/">Official Website</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/stardew-valley-hits-over-41-million-sales-with-millions-sold-during-2024/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/stardew-valley-hits-over-41-million-sales-with-millions-sold-during-2024/</guid>
-      <pubDate>Thu, 02 Jan 2025 13:37:41 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1373697730id25912gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Casual</category>
-      
-      <category>Farming</category>
       
     </item>
     
