@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-02-06 07:28:15.175111</pubDate>
+    <pubDate>2025-02-07 07:26:29.562155</pubDate>
 
     
     <image>
@@ -18,6 +18,369 @@
     </image>
 
     
+    
+    <item>
+      <title>Monster Hunter Wilds looks unplayable on Steam Deck but good on Desktop Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Seems like Monster Hunter Wilds may be just too much for the little Steam Deck, after testing out the newly released Monster Hunter Wilds benchmark mode. But Desktop Linux is looking good.</p>
+<p>We're rapidly approaching the release on February 28th, so no doubt plenty of people are keen to know how it runs. Given that Monster Hunter is an incredibly popular series of games. I'm here to save you a bit of time buying and downloading to some potential disappointment.</p>
+<p>CAPCOM released this benchmark mode on February 5th which they said gives you a "near-launch version of the game" inside it. You don't play anything, it's just a benchmark to show how it will run. It does offer to let you change various settings to see how your system runs so you can find that sweet spot. However, the benchmark is a little <em>deceptive</em>, as it includes cut-scenes in the scores. Once it goes into the proper gameplay, the performance drops a fair bit.</p>
+<h5>Steam Deck</h5>
+<p>Let's get the bad news out of the way shall we? Testing with Proton Experimental (and Proton 9.0-4), for the <strong>Steam Deck</strong> the situation is just plain <em>bad</em>. I'm not going to sugarcoat it for you, this appears to be pretty much unplayable going by the benchmark. The shader optimization stage before you even get to the menu takes a lifetime too.</p>
+<p>Setting it into the <em>lowest</em> possible settings <em>without</em> frame generation and <em>without</em> upscaling gave a clear sub 30FPS experience (it hovered a lot around 20FPS), with quite a few stutters and big drops. In places it almost looked like a slideshow as it went right down to 10FPS and below.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7715975381738849063gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7715975381738849063gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2816095111738849064gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2816095111738849064gol1.jpeg"/></a><br/>
+<em>Pictured - Monster Hunter Wilds on Steam Deck, no Upscaling and no Frame Generation</em></p>
+<p>So next up, trying it with AMD FSR upscaling set to Ultra Performance. Here, we do see it get a little better but still not very playable, still constantly below 30FPS with some huge dips down and the visual quality of course is even worse. It looks actually hilarious.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5666793161738849534gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/5666793161738849534gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3182872661738849536gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/3182872661738849536gol1.jpeg"/></a><br/>
+<em>Pictured - Monster Hunter Wilds on Steam Deck, with AMD FSR Ultra Performance but no Frame Generation</em></p>
+<p>You may think "what about Frame Generation everyone is hyping up on Steam Deck", which is an option you can try, and does increase the FPS. The problem with Frame Generation though is that if the game is <em>not</em> performing particularly well to begin with, it will cause various other problems like <em>massive</em> spikes in the frame timing resulting in a <em>very</em> poor experience. Just look at the mess on the frame timings in the below pictures (green wiggly lines), you want that to be as low and <em>flat</em> as possible</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12541104421738850081gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/12541104421738850081gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10774842301738850082gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/10774842301738850082gol1.jpeg"/></a><br/>
+<em>Pictured - Monster Hunter Wilds on Steam Deck, with AMD FSR set to Ultra Performance and Frame Generation On</em></p>
+<p>Not only that, even just the benchmark on my Steam Deck LCD caused the Steam Deck to abruptly reboot.</p>
+<p>Unless something happens, like the developer doing some specific low-end optimizations, Monster Hunter Wilds is pretty much <em>unplayable</em> on the Steam Deck.</p>
+<h5>Desktop Linux</h5>
+<p>How about <strong>Desktop Linux</strong>? The situation there is, thankfully, much better. There seems to be no issue with Proton running the game. As expected really. My system is an AMD Ryzen 5800x with an AMD Radeon 6800 XT on Kubuntu 24.10 at 2560x1440 resolution.</p>
+<p>On the High preset, without any upscaling, it averaged 62FPS. A bit deceptive though, as mentioned previously, since there's a long cut-scene included.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12167158341738846036gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12167158341738846036gol1.jpg"/></a><br/>
+<em>Pictured - Monster Hunter Wilds on Desktop Linux, High Settings, No Upscaling</em></p>
+<p>Actual gameplay here had plenty of parts that were above 60FPS, but there's also lots of clear drops below 60FPS on these settings.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15619722971738846105gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15619722971738846105gol1.jpg"/></a><br/>
+<em>Pictured - Monster Hunter Wilds on Desktop Linux, High Settings, No Upscaling</em></p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9738403401738846106gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9738403401738846106gol1.jpg"/></a><br/>
+<em>Pictured - Monster Hunter Wilds on Desktop Linux, High Settings, No Upscaling</em></p>
+<p>For example, changing over to using AMD FSR on Balanced while keeping it on High settings gave about an extra 10FPS in some of the lower performing scenes. A lot of other scenes were hitting well over 80FPS.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15385018821738850584gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15385018821738850584gol1.jpg"/></a><br/>
+<em>Pictured - Monster Hunter Wilds on Desktop Linux, High Settings, AMD FSR Balanced</em></p>
+<p>So still not a steady 60FPS, this is a game that with my GPU (Radeon RX 6800 XT) on Linux, at 2560x1440 will probably need to drop to Medium to have a better overall experience.</p>
+<p>Dropping it to Medium with AMD FSR also bumped to Performance and we're much closer to 60FPS here.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18315850641738851229gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18315850641738851229gol1.jpg"/></a><br/>
+<em>Pictured - Monster Hunter Wilds on Desktop Linux, Medium Settings, AMD FSR Performance</em></p>
+<p>So Steam Deck is definitely a nope for now, but Desktop Linux it will absolutely run with Proton it just depends on your settings. If you use the correct settings to match up with your system, you should be good to go on Linux at release day.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/39862/monster-hunter-wilds/">Monster Hunter Wilds</a></strong> | Release Date: 28th February 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2246340/Monster_Hunter_Wilds/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/monster-hunter-wilds-looks-unplayable-on-steam-deck-but-good-on-desktop-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/monster-hunter-wilds-looks-unplayable-on-steam-deck-but-good-on-desktop-linux/</guid>
+      <pubDate>Thu, 06 Feb 2025 14:04:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1206745674id26129gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+      <category>Online Co-op</category>
+      
+    </item>
+    
+    <item>
+      <title>The huge free Command &amp; Conquer - Combined Arms RTS just got upgraded</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Powered by the always impressive OpenRA game engine, the standalone and entirely free Command &amp; Conquer - Combined Arms RTS has a brand new release out.</p>
+<p>For those of you who continue to love your classic RTS game, this is probably one of the best. It combines together Command &amp; Conquer, Red Alert and expands upon it further. It includes Allies, Soviets, GDI, Nod and the Scrin each with their own sub-factions with their own units, powers and upgrades.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19576941361738843537gol1.jpg"/></p>
+<p>The latest update brings in all these upgrades to the overall game:</p>
+<blockquote>
+<ul>
+<li>Campaign progress tracking. Mission browser records which missions have been completed as well as the date, time taken, difficulty, version, and game speed.</li>
+<li>New music track "Malevolence".</li>
+<li>Co-op version of the mission "Reckoning".</li>
+<li>Increased the size of the final campaign mission.</li>
+<li>Added 10x RAGL 16 maps along with 7x more 1v1 maps, 1x 3v3 map, 1x 4v4 and 1x FFA Europe map.</li>
+<li>Condition applying abilities no longer delayed until next full cell of movement, increasing the responsiveness of Gyro Stabilizers, Defense Matrix, Mind Blast, Mind Spark, Hypercharge, Advanced Optics, Decoy Projectors, Chaos Drone, Mobile EMP.</li>
+<li>Bounties are now taken from a pool that first has to be accumulated by a player getting kills. Bounty increased from 10% to 15% of unit value. Added bounty column to economy stats panel.</li>
+<li>Most previously uncrushable infantry (SEALs, Tesla Troopers, Desolators, Zone Troopers/Raiders/Defenders, Cryo Troopers, Chem Warriors, Templar) can now be crushed by any vehicles that can crush walls (e.g. Mammoth Tanks, Tripods etc.). Commando units, Brutes and Enforcers are now the only fully uncrushable infantry.</li>
+<li>All superweapons do increased damage vs buildings (so they can now kill an undamaged Construction Yard / War Factory).</li>
+<li>Added "Harvester under attack" announcement.</li>
+<li>Reduced mine damage, increased splash radius, added TankBuster modifier (+33% damage vs tanks).</li>
+<li>Oil Refinery no longer affects cost of buildings/defenses.</li>
+<li>In competitive multi-queue, Service Depot &amp; equivalents grant reduced cost of additional production structures (equivalent to radar).</li>
+<li>Added 1.33x speed option in replays.</li>
+<li>Added produced unit values tab to observer info panel.</li>
+<li>Show times in build order tab in observer info panel.</li>
+<li>Added &amp; improved unit compositions for campaign AI.</li>
+<li>Allow 10 hotkeys for support powers (up from 6).</li>
+<li>Targets are validated when activating support powers that apply conditions (e.g. Iron Curtain) so the power isn't used up if targets are destroyed before the condition can be applied.</li>
+</ul>
+</blockquote>
+<p>Plus, there's a whole lot of faction-specific balancing changes and upgrades as well. There's some new voice lines, new artwork, new units to try out and so much more. Command &amp; Conquer - Combined Arms is a truly impressive project and one I really love jumping back into.</p>
+<p>OpenRA itself also has a new version coming since that had a first <a href="https://www.gamingonlinux.com/2024/11/openra-for-classic-rts-games-like-red-alert-has-a-new-playtest-with-enhanced-visuals-revamped-map-editor/" rel="noopener" target="_blank">test build released back in November 2024</a>, and had a small follow-up test release in December 2024.</p>
+<p>We have a lot to thank EA for since they released Command &amp; Conquer 1, Red Alert 1 and Tiberian Sun as freeware many years ago.</p>
+<p>You can follow it via <a href="https://www.moddb.com/mods/command-conquer-combined-arms" rel="noopener nofollow" target="_blank">Mod DB</a> and see the full changelog on <a href="https://github.com/Inq8/CAmod/releases/tag/1.05" rel="noopener nofollow" target="_blank">GitHub</a>. It runs on Linux, macOS and Windows.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/the-huge-free-command-conquer-combined-arms-rts-just-got-upgraded/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/the-huge-free-command-conquer-combined-arms-rts-just-got-upgraded/</guid>
+      <pubDate>Thu, 06 Feb 2025 12:08:53 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/30882106id26128gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>Open Source</category>
+      
+      <category>RTS</category>
+      
+    </item>
+    
+    <item>
+      <title>Spooky drone-operating derelict spaceship explorer Duskers is getting a sequel</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Misfits Attic who made A Virus Named TOM and the more popular spooky drone-operating derelict spaceship explorer game Duskers have released a video going over three new games, one of which is a sequel to Duskers.</p>
+<p>Well, they actually say it's a "spiritual successor" but going by the footage they showed, it looks very much like a full sequel to me. Currently noted to be called "Humanity 2.0" in the video, the developer said:</p>
+<blockquote>
+<p>What can I say? I still love Duskers, and we've started work on a spiritual successor. Don't think scavenging parts from derelict spaceships and upgrading your drones was enough? What about carving up those derelict ships and adding portions of them to your own previously non-existent ship.</p>
+</blockquote>
+<p>The developer continues to reel off a few other additions like drones being your actual crew, helping you fight off other ships and drones having little personalities. All progress towards rebooting humanity apparently.</p>
+<p>See it and their other upcoming games in the below video:</p>
+<div class="hidden_video" data-video-id="ZxUeJNTALws"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4f21db7fe0ac8691157be9d1cc1066c5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ZxUeJNTALws" target="_blank">See video</a></div></div>
+<p><em>Both their previous games have Native Linux support.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/spooky-drone-operating-derelict-spaceship-explorer-duskers-is-getting-a-sequel/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/spooky-drone-operating-derelict-spaceship-explorer-duskers-is-getting-a-sequel/</guid>
+      <pubDate>Thu, 06 Feb 2025 11:09:52 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1336662443id26127gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Exploration</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Space</category>
+      
+    </item>
+    
+    <item>
+      <title>Toy soldier FPS battleground Mini Royale releases in March</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The online shooter Mini Royale is set for an Early Access release on March 27th, bringing with it a toy soldier battleground with multiple game modes.</p>
+<p>It will have a classic Battle Royale mode with a shrinking zone, Colour Conquest where four teams battle it out and when you die you join the enemy team and classic deathmatch. Plus it has both first and third-person modes for each game mode.</p>
+<p>I tried out the demo <a href="https://www.gamingonlinux.com/2024/10/mini-royale-is-a-battle-royale-with-toy-soldiers-and-fun-game-modes-demo-available-now/" rel="noopener" target="_blank">back in October 2024</a>, where it was already pretty fun and they've continued to update it with <em>lots</em> of improvements since then. The Colour Conquest mode was a particular favourite of mine.</p>
+<div class="hidden_video" data-video-id="Qd4kGADVIFY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2ec68f087b53545973d2c2d9d9e09203.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Qd4kGADVIFY" target="_blank">See video</a></div></div>
+<p>Mini Royale has a <em>lot</em> to like about it but it's incredibly difficult for a new online shooter to break through. People who play online shooters tend to stick to the same few, with a lot of newer online shooters failing pretty quickly. Hopefully this will fare just a little bit better since it's trying to do something a bit different to a lot of others. It will also be free to play with optional cosmetics via a season pass, so at least people can easily jump in and try it.</p>
+<p>There is a demo listed but the playtest servers aren't live right now. Going by the in-game countdown it will get another playtest in around 8 days.</p>
+<p>It has Native Linux support with Easy Anti-Cheat enabled.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/36454/mini-royale/">Mini Royale</a></strong> | Release Date: 27th March 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1657090/Mini_Royale/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/toy-soldier-fps-battleground-mini-royale-releases-in-march/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/toy-soldier-fps-battleground-mini-royale-releases-in-march/</guid>
+      <pubDate>Thu, 06 Feb 2025 10:55:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1338706761id26126gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Anti-Cheat</category>
+      
+    </item>
+    
+    <item>
+      <title>Portal 2 gets a compatibility update for Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve recently <a href="https://www.gamingonlinux.com/2025/02/left-4-dead-2-gets-a-compatibility-update-for-linux/" rel="noopener" target="_blank">updated Left 4 Dead 2</a> with a compatibility fix for Linux, and it seems they've done the <a href="https://store.steampowered.com/news/app/620/view/539971003577532592" rel="noopener nofollow" target="_blank">same</a> for their popular puzzle game Portal 2.</p>
+<p>The announcements for the two games were only 1 minute apart, and both mentioned simply "Fixed a compatibility issue that was causing a crash on Linux clients" so it's likely it's the exact same fix. This was due to the glibc v2.41 update release that was causing problems on Arch Linux, and would then cause issues when other Linux distributions update. </p>
+<p>More info in <a href="https://github.com/ValveSoftware/Source-1-Games/issues/6978#issuecomment-2633738175" rel="noopener nofollow" target="_blank">this linked comment</a> from the Valve Source 1 game GitHub bug tracker.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5418480141738836082gol1.jpg"/></p>
+<p>Nice to see some Valve games get updated quickly to ensure they keep running on Linux.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/6410/portal-2/">Portal 2</a></strong> | Release Date: 18th April 2011<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/620/Portal_2/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/portal-2-gets-a-compatibility-update-for-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/portal-2-gets-a-compatibility-update-for-linux/</guid>
+      <pubDate>Thu, 06 Feb 2025 10:02:17 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2095949438id26125gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Puzzle</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>Experience slow-burn atmospheric dread in the typing horror game DEAD LETTER DEPT.</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>DEAD LETTER DEPT. comes from the 2-person studio Belief Engine, a slow-burn typing horror game that will fill you with dread. As the developer <a href="https://www.gamingonlinux.com/2025/01/linux-fascinates-and-terrifies-the-dev-of-dead-letter-dept-but-theyre-supporting-it-anyway/" rel="noopener" target="_blank">announced previously</a> it comes with full Linux / SteamOS support, even though "Linux fascinates and terrifies".</p>
+<p>A quite unusual horror game where you take a temp job that tasks you with data-entry-like work. You'll be typing up the words and addresses on mail &amp; letters that were not deliverable, either due to bad handwriting or other odd reasons (sounds exactly like one of my previous jobs). It gets weird as time goes on with various stories that begin to emerge. It won't be long before you get that sinking feeling.</p>
+<p>Check out the release trailer:</p>
+<div class="hidden_video" data-video-id="uCByepaHNyg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9b8ce7ed72f9903de044681887776c8a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/uCByepaHNyg" target="_blank">See video</a></div></div>
+<p>"Working in a dingy warehouse, isolated from anyone and everyone, your only connection to the outside world are glimpses of letters that couldn't reach their destination. As time goes on, working conditions become questionable and dreamlike. Oddities and cracks begin to appear. Making money for rent is important, but at what cost."</p>
+<p class="plain-list-title"><strong>Highlights:</strong></p>
+<ul>
+<li>USE YOUR KEYBOARD to type in various prompts, and attempt to decipher damaged images.</li>
+<li>MULTIPLE ENDINGS &amp; buried secrets to uncover.</li>
+<li>NO TWO PLAYTHROUGHS are exactly the same (Estimated playtime: 120min per run).</li>
+<li>A MASSIVE AMOUNT OF MAIL to voyeur through, and catch glimpses into other lives.</li>
+<li>ATMOSPHERIC HORROR MOOD with rich sound designed to crawl under your skin.</li>
+</ul>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40965/dead-letter-dept/">DEAD LETTER DEPT.</a></strong> | Release Date: 30th January 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1627350/DEAD_LETTER_DEPT/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/experience-slow-burn-atmospheric-dread-in-the-typing-horror-game-dead-letter-dept/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/experience-slow-burn-atmospheric-dread-in-the-typing-horror-game-dead-letter-dept/</guid>
+      <pubDate>Thu, 06 Feb 2025 09:45:26 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1640489996id26124gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Horror</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Paradox Interactive acquires Haemimont Games</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Paradox Interactive announced, along with their latest earning reports, that they've entered into an agreement to acquire Haemimont Games.</p>
+<p>The deal hasn't been completed just yet they said they expect it to go through "within a few days". The purchasing price was done via "an upfront cash consideration and a performance-based earnout of similar size that is to be paid out over the coming years" but they're not disclosing how much. This will make Haemimont Games a wholly owned subsidiary of Paradox.</p>
+<p>Seems like an overall pretty good fit with Haemimont Games previously developing Surviving Mars in 2018 that was published by Paradox. They also more recently released Jagged Alliance 3 and Stranded: Alien Dawn both in 2023. Earlier titles included Tropico 3, Tropico 4 and Tropico 5.</p>
+<p>From the press release:</p>
+<p><em>“We are very happy to welcome Haemimont Games to Paradox!” said Fredrik Wester, CEO of Paradox. “They bring a tight-knit team with long experience in developing management games with many well received projects in their portfolio. Moreover, they have a strong creative streak, technology developed for their niche, a new IP in development and a strong culture that fits Paradox’s way of working. We have strong faith in their team and leadership, and our main focus now is to ensure that they can continue to create great games under new ownership.”</em></p>
+<p><em>“We're delighted to become a part of the Paradox family!” said Gabriel Dobrev, Founder of Haemimont Games. “The cultural fit between our companies is remarkable, and we already feel at home. This partnership empowers us to push the boundaries of our games, delivering deeper and more intense experiences to our players. It also opens new horizons for our team, technology, and creative processes, which we're eager to explore. Expect amazing new games from us!”</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/paradox-interactive-acquires-haemimont-games/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/paradox-interactive-acquires-haemimont-games/</guid>
+      <pubDate>Thu, 06 Feb 2025 09:26:26 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1719712020id26123gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Paradox Interactive</category>
+      
+    </item>
+    
+    <item>
+      <title>Fighting Fantasy Classics adds &#34;Comprehensive Steam Deck support&#34;, cloud saves and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Fighting Fantasy Classics from Tin Man Games has been upgraded with numerous enhancements to make playing through various remastered text-based roleplaying adventures even better.</p>
+<p>More about the collection: "Ready your sword, pack your provisions and prepare to embark upon nostalgic quests of epic proportions where YOU choose what happens next! Journey a magical realm, fighting monsters and unravelling mysteries in Fighting Fantasy Classics – text-based roleplaying adventures remastered. Originally presented by Steve Jackson &amp; Ian Livingstone in the 80s and 90s, Fighting Fantasy Classics brings these timeless tales back to your gaming library."</p>
+<p>In the <a href="https://store.steampowered.com/news/app/856880/view/507319906279096325" rel="noopener nofollow" target="_blank">announcement</a> they mentioned a new update is live with these changes:</p>
+<blockquote>
+<ul>
+<li>Steam Cloud Saves for both PC and Mac players.</li>
+<li>New Bookmarking and Saving system.</li>
+<li>Support for up to three adventurer profiles per gamebook.</li>
+<li>Controller Support.</li>
+<li>Comprehensive Steam Deck support.</li>
+<li>Some UI and Layout improvements.</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7057936481738833261gol1.jpg"/></p>
+<p>They also announced Starship Traveller will be released in a few weeks along with the next Fighting Fantasy gamebook joining the library at some point soon.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40507/fighting-fantasy-classics/">Fighting Fantasy Classics</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/856880/Fighting_Fantasy_Classics/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/fighting-fantasy-classics-adds-comprehensive-steam-deck-support-cloud-saves-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/fighting-fantasy-classics-adds-comprehensive-steam-deck-support-cloud-saves-and-more/</guid>
+      <pubDate>Thu, 06 Feb 2025 09:14:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1307967470id26122gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Adventure</category>
+      
+      <category>Retro</category>
+      
+    </item>
+    
+    <item>
+      <title>Left 4 Dead 2 gets a compatibility update for Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A recent update to glibc in version 2.41 appears to have been causing issues with Left 4 Dead 2, which Valve have solved in a fresh update.</p>
+<p>The <a href="https://store.steampowered.com/news/app/550/view/521956605068050680" rel="noopener nofollow" target="_blank">release notes</a> simply mention "Fixed a compatibility issue that was causing a crash on Linux clients". Digging deeper, the issue was <a href="https://github.com/ValveSoftware/Source-1-Games/issues/6978" rel="noopener nofollow" target="_blank">posted</a> on Valve's official GitHub for Source 1 games. Going by the comments, it appears the issue appeared with the glibc v2.41 release. More info in <a href="https://github.com/ValveSoftware/Source-1-Games/issues/6978#issuecomment-2633738175" rel="noopener nofollow" target="_blank">this linked comment</a>.</p>
+<p>The issue came up on Arch Linux since that's a rolling release distribution and updates come in quite early, and is now solved, so when other Linux distributions also update they should see Left 4 Dead 2 continue to work.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1121452591738832653gol1.jpg"/></p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/6441/left-4-dead-2/">Left 4 Dead 2</a></strong> | Release Date: 16th November 2009<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/550/Left_4_Dead_2/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/left-4-dead-2-gets-a-compatibility-update-for-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/left-4-dead-2-gets-a-compatibility-update-for-linux/</guid>
+      <pubDate>Thu, 06 Feb 2025 09:06:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1147304040id26121gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>New Steam Beta stops forcing HDR on external display for Steam Deck OLED plus Steam Input fixes</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve released an updated Steam Beta for Steam Deck and Desktop. Here's all the changes you need to know.</p>
+<p>Just for the Steam Deck this is in the Preview and Beta channels and includes:</p>
+<blockquote>
+<p class="plain-list-title"><strong>General</strong></p>
+<ul>
+<li>HDR is no longer forced active on external displays (Steam Deck OLED).</li>
+<li>HDR on external displays can be persistently enabled / disabled (per display, via Display -&gt; Advanced -&gt; Enable HDR).</li>
+</ul>
+<p class="plain-list-title"><strong>Desktop Mode</strong></p>
+<ul>
+<li>Improved preservation of display brightness when transitioning to desktop mode.</li>
+</ul>
+</blockquote>
+<p>The Steam Input changes apply to both Steam Deck and Desktop:</p>
+<blockquote>
+<p class="plain-list-title"><strong>Steam Input</strong></p>
+<ul>
+<li>Added support for the Zuiki Mascon controllers for Nintendo Switch.</li>
+<li>Fixed a case where controllers would be in the guide button chord config after disconnecting with the button held.</li>
+<li>Fixed a case where the virtual menu screen in the configurator would stop displaying other settings after changing a binding.</li>
+<li>Fixed some issues when using "Gyro to ..." modes with controllers with high gyroscope polling rates.</li>
+<li>Added support to allow Mode Shifts to be activated using multiple buttons.</li>
+<li>Fixed SteamController receiving random haptic events when playing No Man's Sky.</li>
+</ul>
+</blockquote>
+<p>Sources: <a href="https://store.steampowered.com/news/app/1675200/view/520830071182721129" rel="noopener nofollow" target="_blank">Deck Changelog</a>, <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/523081871000600682?snr=2___" rel="noopener nofollow" target="_blank">Desktop Changelog</a></p>
+<p>If you missed it Valve also recently made a change for <a href="https://www.gamingonlinux.com/2025/02/valve-now-warns-on-steam-pages-if-an-early-access-game-hasnt-been-updated-in-a-long-time/" rel="noopener" target="_blank">Early Access games on Steam that haven't been updated</a>, and for Steam Deck fans you can now <a href="https://www.gamingonlinux.com/2025/02/you-can-now-gopro-with-your-steam-deck-and-mount-it-to-your-belly-or-wherever-you-want/" rel="noopener" target="_blank">GoPro and mount it to your belly or wherever you want</a>. And that <a href="https://www.gamingonlinux.com/2025/02/the-latest-valve-steam-console-rumour-with-amd-rdna4-can-be-safely-ignored-heres-why/" rel="noopener" target="_blank">recent "Steam Console" rumour was wrong</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/new-steam-beta-stops-forcing-hdr-on-external-display-for-steam-deck-oled-plus-steam-input-fixes/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/new-steam-beta-stops-forcing-hdr-on-external-display-for-steam-deck-oled-plus-steam-input-fixes/</guid>
+      <pubDate>Thu, 06 Feb 2025 08:58:48 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>Blocking Linux / Steam Deck in Apex Legends led to a &#39;meaningful reduction&#39; in cheaters</title>
@@ -141,7 +504,7 @@
       <title>Beholder: Conductor is Papers, Please meets the Golden Idol series</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
-<p>The latest from Alawar is a spin-off from the previous Beholder games. The first had you be a landlord in a totalitarian country, the second had you work in their central ministry and now this third game has you work as a train conductor.</p>
+<p>The latest from Alawar is a spin-off from the previous Beholder games. The first had you be a landlord in a totalitarian country, the second had you work in their central ministry and now this next game has you work as a train conductor.</p>
 <p>Aboard a legendary train, the Determination Bringer, you assume you role of senior conductor. The game has you monitor the passengers of the train, uncover conspiracies and attempt to keep everything running smoothly. They said to "Imagine the choice-driven gameplay of Papers Please blended with the mystery of the Golden Idol Series".</p>
 <p>Check out the previous teaser trailer:</p>
 <div class="hidden_video" data-video-id="AS5h3YUhMew"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ca7cadf4437adac241133559e5d274e9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/AS5h3YUhMew" target="_blank">See video</a></div></div>
@@ -4193,538 +4556,6 @@ Image credit: GDC</p>
       <category>Misc</category>
       
       <category>Press Release</category>
-      
-    </item>
-    
-    <item>
-      <title>90s classics inspired adventure Splittown arrives on Steam and looks great</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you love classic point and click adventures then Splittown might be your next destination, as it's just arrived on Steam. It has Native Linux support, and they plan to improve the Steam Deck support soon too. The game is in Early Access while they gather feedback and polish the experience.</p>
-<p>Story: "Cold War has split the world in two, both figuratively and literally. The Great Divide spans across the globe with an impenetrable mess of concrete and barbed wire sandwiched between the two blocs. You are Leonard Nimby; stone-faced former top agent of IM5, hot on the trail of a shrink gun stolen from you by a villanous mayoral candidate on the eve of a fateful election."</p>
-<div class="hidden_video" data-video-id="aF3fdklXunU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f23b10a434685b7ebd5f0b31f82f5957.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/aF3fdklXunU" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li>More gags than you can shake a stick at.</li>
-<li>Multi-layered puzzles in a highly interactive world.</li>
-<li>Imaginative world inspired by the Cold War.</li>
-<li>Large cast of characters with unique motivations and backstories.</li>
-<li>Graphics evocative of the golden age of point-and-clicks.</li>
-<li>Beautiful in-game maps for travel between locations.</li>
-<li>Eclectic score combining ska and rock.</li>
-</ul>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/37527/splittown/">Splittown</a></strong> | Release Date: 16th January 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2117400/Splittown/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/90s-classics-inspired-adventure-splittown-arrives-on-steam-and-looks-great/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/90s-classics-inspired-adventure-splittown-arrives-on-steam-and-looks-great/</guid>
-      <pubDate>Thu, 23 Jan 2025 12:23:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1295488502id26025gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Adventure</category>
-      
-    </item>
-    
-    <item>
-      <title>Linux kernel 6.13 is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>One missed earlier this week while I was running around Wales, Linus Torvalds announced the release of Linux kernel 6.13.</p>
-<p class="plain-list-title">In the release <a href="https://lkml.org/lkml/2025/1/19/281" rel="noopener nofollow" target="_blank">announcement</a> Torvalds said:</p>
-<blockquote>
-<p>So nothing horrible or unexpected happened last week, so I've tagged and pushed out the final 6.13 release.</p>
-<p>It's mostly some final driver fixes (gpu and networking dominating - normal), with some doc updates too. And various little stuff all over. The shortlog is appended for people who want to see the details (and, as always, it's just the shortlog for the last week, the full 6.13 log is obviously much too big).</p>
-<p>With this, the merge window for 6.14 will obviously open tomorrow. I already have two dozen pull requests pending - thank you, you know who you are.</p>
-</blockquote>
-<p class="plain-list-title">Some highlights of what's new:</p>
-<ul>
-<li>A proper fix for data corruption on 64GB Steam Deck models. Plus a few other miscellaneous kernel improvements for Steam Deck APU support.</li>
-<li>A fix for AMDGPU when running Steam games and YouTube videos together, to prevent a system hang with multiple monitors.</li>
-<li>Case-insensitive support for tmpfs. An interesting one that can help Wine, Proton and Flatpak as noted:</li>
-</ul>
-<blockquote>
-<p>The use case for this feature is similar to the use case for ext4, to better support compatibility layers (like Wine), particularly in combination with sandboxing/container tools (like Flatpak).<br/>
-<br/>
-Those containerization tools can share a subset of the host filesystem with an application. In the container, the root directory and any parent directories required for a shared directory are on tmpfs, with the shared directories bind-mounted into the container's view of the filesystem.<br/>
-<br/>
-If the host filesystem is using case-insensitive directories, then the application can do lookups inside those directories in a case-insensitive way, without this needing to be implemented in user-space. However, if the host is only sharing a subset of a case-insensitive directory with the application, then the parent directories of the mount point will be part of the container's root tmpfs. When the application tries to do case-insensitive lookups of those parent directories on a case-sensitive tmpfs, the lookup will fail"</p>
-</blockquote>
-<p class="plain-list-title">Highlights continued:</p>
-<ul>
-<li>A new AMD 3D V-Cache optimizer driver to help X3D processors improve performance.</li>
-<li>Improvements to Apple M1 device support.</li>
-<li>The open source NVIDIA driver Nouveau got DRM panic support for nv50+ cards.</li>
-<li>Improved support for various <em>older</em> Apple devices including phones, Apple TV, iPad and more.</li>
-<li>Platform profile support for Dell laptops with new WMAX thermal interface, present on some Alienware X-Series, Alienware M-Series and Dell's G-Series laptops.</li>
-<li>V3D driver for Raspberry Pi gets "Super Pages" support to help performance.</li>
-<li>Added support for the Corsair Void headset family.</li>
-<li>Lots more new hardware support as usual.</li>
-</ul>
-<p>As usual I'm just searching through and cherry-picking random bits here. It's a ridiculously long read as always with thousands of changes across all areas. See more in the <a href="https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.13" rel="noopener nofollow" target="_blank">full changelog</a>.</p>
-<p>Is there a particular addition you're excited to see that made it into Linux kernel 6.13? Let me know in the comments.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/linux-kernel-613-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/linux-kernel-613-is-out-now/</guid>
-      <pubDate>Thu, 23 Jan 2025 11:08:00 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/defaulttagline.png" type="image/jpeg"/>
-      
-      <category>Kernel</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck sales drop hard following the Nintendo Switch 2 announcement (updated: Valve fixed it)</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><strong>Update 11:21AM</strong>: it's possible the weekly global top sellers list is having issues, as it's been pointed out some clearly top selling games vanished from the last week. I've reached out to Valve to see what's up.</p>
-<p><strong>Update #2 8:07PM</strong>: seems Valve got the message, and they've updated it. The Steam Deck on the weekly global top seller for the week beginning January 14th was actually <strong>4th</strong>, not 47th.</p>
-<p>With that in mind here's an updated corrected version of the positions over time for you:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4897488031737662833gol1.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4897488031737662833gol1.png"/></a></p>
-<p>So we can back to saying I'm right, nothing will dethrone it except a Steam Deck 2.</p>
-<hr/>
-<p><em>Original article below:</em></p>
-<p>Valve's Steam Deck with SteamOS has been consistently in the top sales charts on Steam since release, but recently it dropped down rather hard following the Nintendo Switch 2 announcement.</p>
-<p>I've been tracking the sales over time and have posted a few times about how well it was doing. However, the week during which the Nintendo Switch 2 was announced, it really has dropped down massively to the lowest point since the original release back in February 2022.</p>
-<p>Keeping in mind the global Steam sales charts are for revenue, not numbers sold, the Steam Deck is generally higher anyway since it's the equal cost of multiple sales of the most expensive games. Still, it's an interesting look into how the Steam Deck is doing overall and still means usually it's selling a lot considering the games it's up against sell often hundreds of thousands and millions.</p>
-<p>Here's how it's position in the weekly global <a href="https://store.steampowered.com/charts/topsellers/global/2025-1-14" rel="noopener nofollow" target="_blank">top sellers list</a> has changed:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7485795531737628534gol1.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7485795531737628534gol1.png"/></a></p>
-<p>I guess I need to admit here I was wrong then don't I? Back in July 2024 when I last looked at this I said "<a href="https://www.gamingonlinux.com/2024/07/will-anything-dethrone-the-steam-deck-probably-not/" rel="noopener" target="_blank">Will anything dethrone the Steam Deck? Probably not</a>", seems the Switch 2 did it.</p>
-<p>Sales dropping was bound to happen eventually though, one way or another, and I do fully expect it to bounce back, but it's just surprising to see it drop down so drastically like that.</p>
-<p>This won't cause any alarm bells to ring at Valve HQ though, they probably expected this to happen too. I don't expect them to speed up any work on a Steam Deck 2 due to this either. Valve clearly have a plan, especially with <a href="https://www.gamingonlinux.com/2025/01/valve-confirms-a-public-beta-of-steamos-is-coming-as-steamos-expands-beyond-steam-deck/" rel="noopener" target="_blank">SteamOS coming to more devices</a>, and they're still waiting for a truly next-generation APU to slot into a Steam Deck 2.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/steam-deck-sales-drop-hard-following-the-nintendo-switch-2-announcement/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/steam-deck-sales-drop-hard-following-the-nintendo-switch-2-announcement/</guid>
-      <pubDate>Thu, 23 Jan 2025 10:40:05 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>The devs of Celeste have cancelled their follow-up game Earthblade</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Extremely OK Games, creators of the popular platformer Celeste, have <a href="https://exok.com/posts/2025-01-22-earthblade-final-update/" rel="noopener nofollow" target="_blank">announced</a> that their follow-up game Earthblade has now been cancelled. This was announced in a news post on their official website yesterday, January 22nd.</p>
-<p>In the post titled "Final Earthblade Update" written by developer Maddy Thorson they mention clearly "Late last month, Noel and I made the difficult decision to cancel Earthblade". They said the decision was made in December but they waited until now to announce it.</p>
-<p>As for why? Their team had a breakdown in communication with Pedro Medeiros, who they said is was "a founding member of EXOK, longtime friend &amp; collaborator, and art director of Earthblade and pixel/ui artist on Celeste and TowerFall". The issue: "a disagreement about the IP rights of Celeste" which they said they won't be going into publicly.</p>
-<p>Medeiros has moved onto their own game with <a href="https://saint11.art/games/neverway/" rel="noopener nofollow" target="_blank">Neverway</a>. Worth noting that Medeiros did post on X back in November 2024 that they had left EXOK:</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19758198891737626172gol1.png"/></p>
-<p>The decision to cancel Earthblade, the post from Thorson makes clear, was made by Maddy Thorson and Noel Berry. As for why? Multiple reasons it seems. The game wasn't as far along as they had hoped, along with the pressure of Celeste's success: "Celeste's success applied pressure on us to deliver something bigger and better with Earthblade, and that pressure is a large part of why working on it has become so exhausting".</p>
-<p>Other members of their team have moved on now too, so Thorson and Berry are going back to smaller-scale projects and have begun prototyping again.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/the-devs-of-celeste-have-cancelled-their-follow-up-game-earthblade/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/the-devs-of-celeste-have-cancelled-their-follow-up-game-earthblade/</guid>
-      <pubDate>Thu, 23 Jan 2025 10:00:25 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1703903529id26021gol.jpg" type="image/jpeg"/>
-      
-      <category>Cancelled</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>AMD reveals AMDGPU Composition Stack, a fork of Wayland&#39;s Weston compositor for advancing the Linux desktop</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>With many Linux desktops now running Wayland quite nicely, it seems it's time to keep pushing ahead. AMD have revealed what they call the AMDGPU Composition Stack (ACS).</p>
-<p>This is a fork of Wayland's Weston compositor with some "additional advanced features". It all sounds pretty exciting when you look at what AMD developer Shashank Sharma noted on the <a href="https://gitlab.com/acs-wayland/weston/-/wikis/home" rel="noopener nofollow" target="_blank">GitLab Wiki</a> page with these being the primary goals:</p>
-<blockquote>
-<ul>
-<li>To act as a staging area for Weston/Wayland features to be opensourced to mainline.</li>
-<li>To act as a reference compositor for AMD's advanced graphics and display feature development.</li>
-<li>To provide a middleware compositor which extracts the best out of AMD Display and Graphics HW (We don't mind being biased to AMDGPU HW)
-	<ul>
-<li>To host some of the AMD HW specific code, which can't be merged in weston mainline due to its bias towards AMD HW.</li>
-</ul>
-</li>
-<li>To be utilised in full stack opensource delivery vehicle for AMDs commercial solutions and products.</li>
-<li>To be the space where AMD specific in-house SW tools (performance tweakers, multimedia players, 3D games, profiling tools etc) can be saved in future.</li>
-</ul>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6400159901737583151gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6400159901737583151gol1.jpg"/></a><br/>
-<em>Picture credit: AMD</em></p>
-<p>As noted on the Wiki page some initial features added include:</p>
-<blockquote>
-<ul>
-<li>VRR / Freesync.</li>
-<li>MPO using underlays.</li>
-<li>Color Management and Wide gamut support.</li>
-<li>ACS media-player app.</li>
-<li>Fullscreen HDR video playback.</li>
-<li>Multi-seat config support.</li>
-</ul>
-</blockquote>
-<p>There's also a basic video player included to "demonstrate some of these advance feature in a video playback context".</p>
-<p>This was announced on the dri-devel <a href="https://lists.freedesktop.org/archives/dri-devel/2025-January/486833.html" rel="noopener nofollow" target="_blank">mailing list</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/amd-reveals-amdgpu-composition-stack-a-fork-of-waylands-weston-compositor-for-advancing-the-linux-desktop/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/amd-reveals-amdgpu-composition-stack-a-fork-of-waylands-weston-compositor-for-advancing-the-linux-desktop/</guid>
-      <pubDate>Wed, 22 Jan 2025 22:04:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1763129483id26020gol.jpg" type="image/jpeg"/>
-      
-      <category>AMD</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Stable Steam Client update for Desktop and Steam Deck brings a whole lot of fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve released a fresh stable update to the Steam Client this week bringing numerous bug fixes and improvements for Desktop and Steam Deck.</p>
-<p class="plain-list-title">Originally released January 20th but Valve re-released this update with a few extra changes on January 21st. The <em>extra</em> fixes are noted as:</p>
-<blockquote>
-<ul>
-<li>Fixed an issue where dropdown menus would sometimes fail to appear.</li>
-<li>Fixed "Processing Shaders" status window failing to show during game launch on Linux.</li>
-<li>Fixed an issue where foreground colors did not apply correctly to Steam Input Virtual menus.</li>
-<li>Updated localization.</li>
-</ul>
-</blockquote>
-<p class="plain-list-title">Scanning over the changelogs these below seem to be specific to the <strong>Steam Deck</strong> <a href="https://store.steampowered.com/news/app/1675200/view/523080879756542659" rel="noopener nofollow" target="_blank">update</a>, as they don't show up in the Desktop update:</p>
-<blockquote>
-<ul>
-<li>Improved the display of the startup animations on 16:9 and ultra-wide monitor resolutions.</li>
-<li>Discovery Queue: Smoothed out user experience and brought up to date with recent changes to web version.</li>
-<li>Child accounts are now allowed to adjust the brightness of the screen.</li>
-<li>Fixed desktop Steam Clients exiting while running a game if a Steam Deck is resumed while running a non-Steam app.</li>
-<li>Fixed the WiFi auto connect setting being forgotten after a system restart.</li>
-<li>Fixed a case where the WiFi connection dialog would not show a password prompt for networks that only support WPA3.</li>
-<li>Fixed brightness slider (HDR) in Quick Access Menu.</li>
-<li>Fixed the display of the Triangle/Cross glyphs for the PlayStation DualShock controller on some Virtual Keyboard skins where they didn't display.</li>
-<li>Fixed turning off external gamepads connected via BT via the controller chord and after the inactivity timeout.</li>
-<li>Fixed a case where bluetooth devices would sometimes show as a generic device under Settings-&gt;Bluetooth instead of showing as their specific type (e.g. gamepad/headphones).</li>
-<li>Fixed a rare crash that could happen when scanning for WiFi devices under Settings-&gt;Internet.</li>
-<li>Fixed a case where navigation menus stopped showing after closing a game in Desktop Mode.</li>
-<li>Fixed a bug where the video track of a game recording could be empty.</li>
-<li>Fixed a crash in Drill Core when Steam Input is enabled with a gamepad config.</li>
-<li>Fixed an issue where the Wireless HORIPAD for Steam could wake up OLED Steam Decks when they suspend while the device is connected via BT.</li>
-<li>Fixed an issue where hitting down in the Keyboard section of the Choose Binding screen could switch to the gamepad tab.</li>
-<li>Fixed some cases where bindings were removed for grip or share buttons on devices.</li>
-<li>Fixed Gyro Drift Correction not saving to disc when Sleeping the console. Save now occurs during manual calibration.</li>
-</ul>
-</blockquote>
-<p class="plain-list-title">And here's everything from the main <strong>Desktop</strong> update:</p>
-<blockquote>
-<p><strong>General</strong></p>
-<ul>
-<li>Added a global setting for improved management of game updates.</li>
-<li>Added a panel to manage per-game exceptions to the global setting.</li>
-<li>Added keyboard controls for dropdown lists in the client.</li>
-<li>Added "View In Library" to the context menu for games on the downloads page.</li>
-<li>Clicking on the game image of the actively downloading item on the downloads page will now navigate to the game's library page.</li>
-<li>Updated layout of downloads page for the active item.</li>
-<li>Improved caching of Soundtrack album covers in library.</li>
-<li>Improved library asset loading times for large libraries.</li>
-<li>Fixed Steam Client exiting instead of showing a refresh login dialog if another client session starts playing a game or resumes from suspend in a game session.</li>
-<li>Fixed Steam Client exiting while running a game if a Steam Deck is resumed while running a non-Steam app.</li>
-<li>Fixed a case where Steam would prefer to stream from another PC on your local network if the game was installed on both PCs and could be played without streaming.</li>
-<li>Fixed a stall in games after taking a screenshot for users with very large numbers of local screenshots (10's of thousands).</li>
-<li>Fixed Steam window being draggable from left and right edges when maximized on the Store/Community view.</li>
-</ul>
-<strong>Library</strong>
-<ul>
-<li>Fixed friends showing multiple times in the "In-Game" section if they also had the game on their wishlist.</li>
-</ul>
-<strong>Game Recording</strong>
-<ul>
-<li>Improved error messages for limited accounts sharing messages in chat or via the share menu.</li>
-<li>Fixed OpenGL games failing to record on Linux.</li>
-<li>Fixed issue which prevented audio capture from some games on Windows 11 24H2.</li>
-</ul>
-<strong>Steam Overlay</strong>
-<ul>
-<li>Added support for bookmarks saved per game in the overlay browser.</li>
-<li>Improved reliability of saving for notes.</li>
-<li>Fixed scroll position, selection, and undo history getting lost when switching between notes.</li>
-<li>When editing notes, the "Insert Link" button can now edit links as well, and can be opened with ctrl-k.</li>
-<li>The toolbar buttons in notes will now display the associated keyboard shortcut in their tooltips.</li>
-</ul>
-<strong>Remote Play</strong>
-<ul>
-<li>Fixed Remote Play Together session not fully starting for some games running on macOS host systems.</li>
-</ul>
-<strong>Big Picture Mode</strong>
-<ul>
-<li>Updated suspend animation when not on Steam Deck.</li>
-<li>Fixed several issues where navigation could get stuck behind menus or dialogs.</li>
-<li>Fixed an issue where the guide button would open the menu in the main steam window instead of in the game overlay.</li>
-<li>Fixed cases where repeatedly accessing the controller configurator in the overlay would leave extra instances of it in the backstack after exiting the game.</li>
-</ul>
-<strong>macOS</strong>
-<ul>
-<li>Added "End of Life" alert for macOS 10.15 ("Catalina"). Steam Client support for these operating systems will end on February 15th, 2025 at 10am. See <a href="https://help.steampowered.com/en/faqs/view/736A-892E-4F03-CA38" rel="noopener nofollow" target="_blank">here</a> for additional details.</li>
-<li>Fixed game recording failures on Apple Silicon Macs when recording native games.</li>
-<li>Fixed audio in Remote Play Together sessions when streaming a native game from an Apple Silicon Mac.</li>
-<li>Fixed mouse input to Steam Overlay not working for some multi-display configurations.</li>
-</ul>
-<strong>Linux</strong>
-<ul>
-<li>Fixed a case where Steam could permanently inhibit the screensaver if it crashed while holding the screensaver lock.</li>
-<li>Fixed potential crash when exiting a game if Game Recording is enabled on systems with recent versions of pipewire.</li>
-<li>Fixed high single core CPU usage for users with large libraries during Steam startup.</li>
-<li>Fixed a rare issue which resulted in a GetTimelineLoaderForGame() error showing in the in-game overlay.</li>
-<li>Fixed crash in games using Steam P2P Voice Chat.</li>
-<li>Fixed a crash in the game recording viewer caused by unstable vaapi drivers (disable GPU in recording settings).</li>
-<li>Fixed a case where navigation menus stopped showing after closing a game.</li>
-<li>Fixed a rare crash when hotplugging a mouse and keyboard.</li>
-</ul>
-<strong>Steam Input</strong>
-<ul>
-<li>Reduced overhead/latency of controller input in Big Picture Mode and Virtual Menus.</li>
-<li>Slightly reduced steady-state CPU usage of Steam Input overall.</li>
-<li>Added visualization of mode shifts to the Preview Layout page.</li>
-<li>Added the ability to have a mode shift without needing to have a mode already on a source.</li>
-<li>Added Nintendo Switch controller configurations to the options shown by default for the Wireless HORIPAD for Steam so that gyro configurations are more easily found.</li>
-<li>Made the "Choose a Configuration" page remember which tab you were on when returning from previewing a configuration.</li>
-<li>Made the "Choose a Configuration" page remember the setting to show/hide configurations from other controller types.</li>
-<li>In <em>Options-&gt;Controller-&gt;Calibration &amp; Advanced Settings-&gt;Gyro Calibration</em>, the gamepad Pitch, Yaw, and roll ion rotation now come from the internal quaternion that drives many of the new "Gyro to..." modes, and Steam Input api's GetMotionData.</li>
-<li>Gyro Drift Corrections now save during successful manual calibration, rather than only when exiting Steam.</li>
-<li>Fixed some Linux-specific crashes.</li>
-<li>Fixed a crash at startup when certain analog keyboards are connected.</li>
-<li>Fixed not being able to use "Export Layout-&gt;Save New Layout" when using a "Sharable Personal Layout".</li>
-<li>Fixed an issue where previewing a configuration, then editing your original configuration could corrupt it.</li>
-<li>Fixed a case where the title of the configuration in the summary screen would break after making an edit.</li>
-<li>Fixed a case where inputs with multiple bindings would show up as [object] [object] after removing a binding.</li>
-<li>Fixed SIAPI trigger bindings sometimes not working when bound to buttons.</li>
-<li>Fixed Gyro as Joystick mode ignoring sensitivity settings.</li>
-<li>Fixed a case where mode shift bindings leftover from a bug in 2019 could activate a mode shift that was disabled in the UI.</li>
-<li>Fixed detecting thumbsticks that have been mapped to a D-pad in controller setup.</li>
-<li>Fixed the left/right trigger soft pull showing in the mode shift button dropdown as "none".</li>
-<li>Fixed the mode shift button sometimes not having a localization token in the summary page.</li>
-<li>Fixed virtual menus showing as "Create Touch Menu" instead of "Touch Menu" in the summary page.</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/stable-steam-client-update-for-desktop-and-steam-deck-brings-a-whole-lot-of-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/stable-steam-client-update-for-desktop-and-steam-deck-brings-a-whole-lot-of-fixes/</guid>
-      <pubDate>Wed, 22 Jan 2025 21:46:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Apps</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>SDL 3 officially released for game devs plus an SDL 2 to SDL 3 compatibility layer</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Simple DirectMedia Layer (SDL) is a popular free and open source library for developers that handles audio, keyboard, mouse, joystick and graphics with SDL 3 now available. Plus a new SDL 2 to SDL 3 compatibility layer.</p>
-<p>Much like they already have <a href="https://github.com/libsdl-org/sdl12-compat" rel="noopener nofollow" target="_blank">sdl12-compat</a>, which allows you to use SDL 2 if you're stuck on SDL 1, they've also released <a href="https://github.com/libsdl-org/sdl2-compat" rel="noopener nofollow" target="_blank">sdl2-compat</a> for people stuck on SDL 2 to get the benefits of SDL 3.</p>
-<p>There's a huge amount of new features and overall improvements including (taken from the SDL 3 <a href="https://github.com/libsdl-org/SDL/releases/tag/release-3.2.0" rel="noopener nofollow" target="_blank">release post</a>):</p>
-<blockquote>
-<ul>
-<li><a href="https://wiki.libsdl.org/SDL3/APIByCategory" rel="noopener nofollow" target="_blank">Extremely good documentation</a>: We've spent a ton of effort writing and revising the API reference.</li>
-<li><a href="https://github.com/libsdl-org/SDL/tree/main/examples" rel="noopener nofollow" target="_blank">Example programs</a> to get you started, <a href="https://examples.libsdl.org/" rel="noopener nofollow" target="_blank">running in your web browser</a>!</li>
-<li>More consistent API naming conventions. Everything is named consistently across the API now, instead of different subsystems taking different approaches. Also, we've tended toward more descriptive names for things in SDL3.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/README/main-functions#main-callbacks-in-sdl3" rel="noopener nofollow" target="_blank">Main Callbacks</a>: optionally run your program from callbacks instead of main().</li>
-<li><a href="https://wiki.libsdl.org/SDL3/CategoryGPU" rel="noopener nofollow" target="_blank">GPU API</a>: access to modern 3D rendering and GPU compute in a cross-platform way.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/CategoryDialog" rel="noopener nofollow" target="_blank">Dialog API</a>: access to system file dialogs (file and folder selection UI for opening/saving).</li>
-<li><a href="https://wiki.libsdl.org/SDL3/CategoryFilesystem" rel="noopener nofollow" target="_blank">Filesystem API</a>: simple directory management and globbing, access to topic-specific user folders.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/CategoryStorage" rel="noopener nofollow" target="_blank">Storage API</a>: Abstract interface to platform-specific storage.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/CategoryCamera" rel="noopener nofollow" target="_blank">Camera API</a>: access to webcams.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/CategoryPen" rel="noopener nofollow" target="_blank">Pen API</a>: access to pens (like Wacom tablets and Apple Pencil, etc).</li>
-<li><a href="https://wiki.libsdl.org/SDL3/SDL_OpenAudioDevice" rel="noopener nofollow" target="_blank">Logical audio devices</a>: different parts of an app can get their own unique audio device to use.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/SDL_CreateAudioStream" rel="noopener nofollow" target="_blank">Audio streams</a>: handle buffering, converting, resampling, mixing, channel mapping, pitch, and gain. Bind to an audio device and go!</li>
-<li><a href="https://wiki.libsdl.org/SDL3/SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK" rel="noopener nofollow" target="_blank">Default audio devices</a>: SDL3 will automatically manage migrating to new physical hardware as devices are plugged in, ripped out, or changed.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/CategoryProperties" rel="noopener nofollow" target="_blank">Properties API</a>: fast, flexible dictionaries of name/value pairs.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/CategoryProcess" rel="noopener nofollow" target="_blank">Process API</a>: Spawn child processes and communicate with them in various ways.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/SDL_Colorspace" rel="noopener nofollow" target="_blank">Colorspace support</a>: Surfaces and the renderer, etc, can manage multiple colorspaces.</li>
-<li>The Clipboard API <a href="https://wiki.libsdl.org/SDL3/SDL_SetClipboardData" rel="noopener nofollow" target="_blank">can support any data type</a> (SDL2 only handled text), and apps can provide data in multiple formats upon request in <a href="https://wiki.libsdl.org/SDL3/SDL_ClipboardDataCallback" rel="noopener nofollow" target="_blank">a provided callback</a>.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/BestKeyboardPractices" rel="noopener nofollow" target="_blank">Better keyboard input</a>, for all your keypress needs.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/SDL_StartTextInputWithProperties" rel="noopener nofollow" target="_blank">Customizable virtual keyboards</a> on iOS and Android.</li>
-<li>High DPI support is dramatically improved over SDL2.</li>
-<li><a href="https://wiki.libsdl.org/SDL3/SDL_SetAppMetadata" rel="noopener nofollow" target="_blank">App metadata API</a> for letting SDL report things about your app correctly (like in the About dialog on macOS, etc).</li>
-<li>and much, much more.</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/sdl-3-officially-released-for-game-devs-plus-an-sdl-2-to-sdl-3-compatibility-layer/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/sdl-3-officially-released-for-game-devs-plus-an-sdl-2-to-sdl-3-compatibility-layer/</guid>
-      <pubDate>Wed, 22 Jan 2025 21:35:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/sdl.jpg" type="image/jpeg"/>
-      
-      <category>Game Dev</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Windows compatibility layer Wine 10.0 out now bringing Wayland and ARM64EC support, new FFmpeg multimedia back-end</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The big release is here! The Windows compatibility layer Wine version 10.0 is officially out now bringing lots of big new features. Wine is a major part of what powers Valve's Proton, enabling thousands of Windows games to run on Linux.</p>
-<p class="plain-list-title">Some highlights of what's new includes (compared with Wine 9):</p>
-<ul>
-<li>ARM64EC support</li>
-<li>Wayland support that's enabled by default.</li>
-<li>An FFmpeg-based multimedia back-end as an alternative to the GStreamer backend. Still experimental though, but should hopefully begin to improve Media Foundation support (good for gaming).</li>
-<li>Much improved High-DPI support.</li>
-<li>Network sessions are supported in DirectPlay.</li>
-<li>An initial Bluetooth driver.</li>
-<li>Support for the Dvorak keyboard layout.</li>
-</ul>
-<p>And lots more! Full changelog on the <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-10.0" rel="noopener nofollow" target="_blank">Wine GitLab</a>.</p>
-<p>Eventually we will see Valve update Proton as well to move it onto Wine 10 and see Proton 10 later this year.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/windows-compatibility-layer-wine-10-out-now-bringing-wayland-and-arm64ec-support-new-ffmpeg-multimedia-back-end/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/windows-compatibility-layer-wine-10-out-now-bringing-wayland-and-arm64ec-support-new-ffmpeg-multimedia-back-end/</guid>
-      <pubDate>Wed, 22 Jan 2025 20:57:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>Open Source</category>
-      
-      <category>Wine</category>
-      
-    </item>
-    
-    <item>
-      <title>GE-Proton 9-23 released with a Battle.net update fix for Linux / Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>GE-Proton 9-23 is out now as the latest update for the community-maintained version of Valve's Proton that pulls in lots of quick-fixes for Linux, SteamOS and Steam Deck. <em>Confused on all the Proton versions? Go and <a href="https://www.gamingonlinux.com/guides/view/why-are-there-so-many-different-proton-versions-proton-8-proton-9-experimental-ge-proton/" rel="noopener" target="_blank">read my guide explainer</a>.</em></p>
-<p>Recently there's been some issues with the Battle.net launcher updates breaking again, and a fix for it is available in Wine, which this GE-Proton release has pulled in along with other fixes. If you don't know how to install and setup GE-Proton, I have a <a href="https://www.gamingonlinux.com/guides/view/how-to-install-ge-proton-on-steam-deck-steamos-linux/" rel="noopener" target="_blank">full guide available</a> for that.</p>
-<p style="text-align:center"><img src="https://www.gamingonlinux.com/uploads/articles/tagline_images/11883412id26016gol.jpg"/></p>
-<p>Here's all that's changed in <a href="https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton9-23" rel="noopener nofollow" target="_blank">GE-Proton 9-23</a>:</p>
-<blockquote>
-<p>Upstream:</p>
-<ul>
-<li>update wine to bleeding-edge (fixes battle.net broken updates)</li>
-<li>update dxvk to latest git</li>
-<li>update vkd3d-proton to latest git</li>
-<li>update dxvk-nvapi to latest git</li>
-<li>update vkd3d to latest git</li>
-<li>import upstream proton game fixes</li>
-</ul>
-<p>Patches:</p>
-<ul>
-<li>proton: preserve drive letter for different mount points <a href="https://github.com/GloriousEggroll/proton-ge-custom/pull/129" rel="noopener nofollow" target="_blank">#129</a> (thanks loathingKernel)</li>
-<li>wine: add fix for Vanguard: Saga of Heroes (thanks loisgomez) -- triggered with SteamGameId=218210</li>
-</ul>
-<p>Protonfixes:</p>
-<ul>
-<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/2f969d8aeea17c979cc8b3dbab1e7f47da7dfb61" rel="noopener nofollow" target="_blank">Add Project Torque</a></li>
-<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/61cf7698df8ffee04746c1cd20487f58228ad4da" rel="noopener nofollow" target="_blank">Add fix for Middle-earth: Shadow of War (GOG) (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/209%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/61cf7698df8ffee04746c1cd20487f58228ad4da" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/209[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/61cf7698df8ffee04746c1cd20487f58228ad4da</a>)</li>
-<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/3d7215c95093f4910c77174d80cfdd9224c07813" rel="noopener nofollow" target="_blank">Add launcher skip for X-Blades (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/206%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/3d7215c95093f4910c77174d80cfdd9224c07813" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/206[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/3d7215c95093f4910c77174d80cfdd9224c07813</a>)<br/>
-<a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/2abbeb508355d1739f9b83bf7178609e8ade1885" rel="noopener nofollow" target="_blank">Add directplay for Total Annihilation (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/196%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/2abbeb508355d1739f9b83bf7178609e8ade1885" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/196[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/2abbeb508355d1739f9b83bf7178609e8ade1885</a>)</li>
-<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/d8933250dabc07b5457ed4de9b222a07e7611a3f" rel="noopener nofollow" target="_blank">Add fix for Sifu (EGS) (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/195%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/d8933250dabc07b5457ed4de9b222a07e7611a3f" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/195[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/d8933250dabc07b5457ed4de9b222a07e7611a3f</a>)</li>
-<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/48fcb33edd2910572e990dc6c75b52b7a8c1f0ce" rel="noopener nofollow" target="_blank">Add fix for [REDACTED] (EGS) (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/194%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/48fcb33edd2910572e990dc6c75b52b7a8c1f0ce" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/194[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/48fcb33edd2910572e990dc6c75b52b7a8c1f0ce</a>)</li>
-<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/fa14101a449b10ca076989dfa16307433ce5a4d1" rel="noopener nofollow" target="_blank">Add fix for Super Meat Boy(EGS) (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/193%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/fa14101a449b10ca076989dfa16307433ce5a4d1" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/193[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/fa14101a449b10ca076989dfa16307433ce5a4d1</a>)</li>
-<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/9982ec315339059634ba3f6283a7ba4d4bd8a71f" rel="noopener nofollow" target="_blank">Add fix for BioShock Remastered and BioShock 2 Remastered (EGS) (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/192%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/9982ec315339059634ba3f6283a7ba4d4bd8a71f" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/192[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/9982ec315339059634ba3f6283a7ba4d4bd8a71f</a>)</li>
-<li><a href="https://github.com/Open-Wine-Components/umu-protonfixes/commit/4eef22e273008d65111c22db849dcd9b74414b7e" rel="noopener nofollow" target="_blank">Add DirectPlay to SpellForce 1 and 2 titles for Multiplayer (</a><a href="https://github.com/Open-Wine-Components/umu-protonfixes/pull/190%5B)%5D(https://github.com/Open-Wine-Components/umu-protonfixes/commit/4eef22e273008d65111c22db849dcd9b74414b7e" rel="noopener nofollow" target="_blank">https://github.com/Open-Wine-Components/umu-protonfixes/pull/190[)](https://github.com/Open-Wine-Components/umu-protonfixes/commit/4eef22e273008d65111c22db849dcd9b74414b7e</a>)</li>
-</ul>
-</blockquote>
-<p></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/ge-proton-9-23-released-with-a-battlenet-fix-for-linux-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/ge-proton-9-23-released-with-a-battlenet-fix-for-linux-steam-deck/</guid>
-      <pubDate>Sat, 18 Jan 2025 14:11:10 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/11883412id26016gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Don&#39;t miss the Fanatical Build your own Explosive Bundle as it&#39;s an awesome deal for FPS fans</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another awesome deal for you here in the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-explosive-bundle" rel="noopener nofollow" target="_blank">Fanatical Build your own Explosive Bundle</a>. A chance to build up your collection of action-packed games and seriously cheap too.</p>
-<p>You can get 3 + Games for £1.66 each, 5 + Games for £1.60 each and  7 + Games for £1.43 each. And when you look at what's available, I think you'll agree you can do well with this one.</p>
-<p class="plain-list-title">Available to pick from:</p>
-<ul>
-<li>WRATH: Aeon of Ruin</li>
-<li>Wolfenstein: The New Order</li>
-<li>Prey (2017)</li>
-<li>HYPERVIOLENT</li>
-<li>GRAVEN</li>
-<li>SPRAWL</li>
-<li>BPM: BULLETS PER MINUTE</li>
-<li>Hands of Necromancy II</li>
-<li>Eden Survivors</li>
-<li>Anomalous</li>
-<li>The Pony Factory</li>
-<li>Jawbreaker</li>
-<li>GROSS</li>
-<li>Chop Goblins</li>
-<li>DIMENSIONAL SLAUGHTER</li>
-<li>QUAKE</li>
-<li>Viscerafest</li>
-<li>Deathbloom: Chapter 1</li>
-<li>Deathbloom: Chapter 2</li>
-<li>The Hong Kong Massacre &amp; Splatter - Zombiecalypse Now Double Pack</li>
-<li>Diluvian Ultra</li>
-</ul>
-<p>Check it all <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-explosive-bundle" rel="noopener nofollow" target="_blank">out on Fanatical</a>.</p>
-<p>Fanatical also list the official Steam Deck Verified rating on each game to make it easier for you.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/dont-miss-the-fanatical-build-your-own-explosive-bundle-as-its-an-awesome-deal-for-fps-fans/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/dont-miss-the-fanatical-build-your-own-explosive-bundle-as-its-an-awesome-deal-for-fps-fans/</guid>
-      <pubDate>Fri, 17 Jan 2025 12:41:34 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/955898963id26015gol.jpg" type="image/jpeg"/>
-      
-      <category>Fanatical</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Misc</category>
       
     </item>
     
