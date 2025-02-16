@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-02-15 07:24:57.577183</pubDate>
+    <pubDate>2025-02-16 07:26:54.717044</pubDate>
 
     
     <image>
@@ -18,6 +18,41 @@
     </image>
 
     
+    
+    <item>
+      <title>Steam Deck update gets a small battery life boost with the Frame Limiter</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve released a new Steam Deck Beta Client update for February 14th, showing the love to battery life with a little extra juice. You need to be on the Preview / Beta channel to receive the update for testing.</p>
+<p>Here's what's <a href="https://store.steampowered.com/news/app/1675200/view/518579539928940547" rel="noopener nofollow" target="_blank">changed</a>:</p>
+<blockquote>
+<p><strong>General</strong></p>
+<ul>
+<li>Fixed an error on the Downloads page when a Free to Play game is removed during installation.</li>
+</ul>
+<p><strong>Steam Input</strong></p>
+<ul>
+<li>Reduced polling rate while the Steam Frame Limiter is active to save additional power. This can save up to 6% on battery life when running at 30fps in a low-power game like HL2.</li>
+<li>Fixed an error on the virtual menu settings when bound to gyro.</li>
+</ul>
+</blockquote>
+<p>Great to see the Steam Deck just keeps on improving so many things years after release. That's one of the benefits of the Steam Deck compared with other hardware, Valve just keep on pushing out those updates.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/steam-deck-update-gets-a-small-battery-life-boost-with-the-frame-limiter/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/steam-deck-update-gets-a-small-battery-life-boost-with-the-frame-limiter/</guid>
+      <pubDate>Sat, 15 Feb 2025 13:09:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_deck.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>Steam</category>
+      
+      <category>SteamOS</category>
+      
+    </item>
     
     <item>
       <title>Deckbuilder fans should check out this new Humble Bundle</title>
@@ -519,13 +554,13 @@ Bonus Content<br/>
       <pubDate>Fri, 14 Feb 2025 11:03:56 +0000</pubDate>
       <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/94055731id26184gol.jpg" type="image/jpeg"/>
       
+      <category>Native Linux</category>
+      
       <category>Action</category>
       
       <category>Adventure</category>
       
       <category>New Release</category>
-      
-      <category>Open Source</category>
       
     </item>
     
@@ -4506,89 +4541,6 @@ Department for Culture, Media and Sport</p>
       <category>Action</category>
       
       <category>Cancelled</category>
-      
-    </item>
-    
-    <item>
-      <title>Linux performance overlay MangoHud 0.8.0-rc1 out now for testing with Intel GPU support and lots of improvements</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>MangoHud is a performance overlay you can use on Desktop Linux, and it's what powers the built-in overlay on Steam Deck. A new release candidate is now available for testing for an upcoming stable release with version 0.8.0-rc1.</p>
-<p>This release adds a few more applications to the blacklist to stop it appearing and causing issues with them including the Ubisoft Store (UplayWebCore.exe), halloy (IRC client) and Plutonium Launcher (plutonium.exe, plutonium-launcher-win32.exe).</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7912058801738327495gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7912058801738327495gol1.jpg"/></a><br/>
-<em>Pictured - Stalker 2 on Linux with MangoHud, click image to enlarge.</em></p>
-<p>If you like my simple horizontal layout you can find it on <a href="https://gist.github.com/LiamDawe/199a3341f0d91d2f306375a76ab4e7f3" rel="noopener nofollow" target="_blank">GitHub</a>. Just pop it into "~/.config/MangoHud/MangoHud.conf".</p>
-<p>Also some fixes made it in including:</p>
-<blockquote>
-<ul>
-<li><code class="inline-code">read_cfg</code> didn't properly overwrite config options.</li>
-<li>logging would sometimes crash if it returned an empty vec.</li>
-<li>fix double-logging of avg fps.</li>
-<li>nvidia: warn if both nvml and xnvctrl are unavailable.</li>
-<li>mangoapp didn't properly respond to hide/show hud.</li>
-<li>add 32bit xkbcommon to project dependencies.</li>
-<li>add missing dependencies for opensuse.</li>
-<li>proper vsync implementation.</li>
-<li>refactor FPS calculation in metrics.</li>
-<li>fix exec, network, gpu and vram displaying incorrectly in horizontal mode.</li>
-</ul>
-</blockquote>
-<p>Various other changes:</p>
-<blockquote>
-<p><strong>Changes</strong></p>
-<ul>
-<li>Multiple GPUs can be displayed</li>
-<li>Changed logger errors to debug</li>
-<li>Added CPU power to logging</li>
-<li>Improved wayland keybinds</li>
-<li>Memory usage has been refactored to be inline with other apps</li>
-<li>DLSYM is enabled by default, <code class="inline-code">MANGOHUD_DLSYM=0</code> to disable it.</li>
-<li>mangoapp vulkan layer is deleted (it was a testing project and no longer in development)</li>
-<li>OpenGL shim
-	<ul>
-<li>The shim is preloaded first instead of the opengl library</li>
-<li>it checks to make sure there is an opengl context to hook before loading mangohud</li>
-<li>this should resolve some crashes. More detailed information here <a href="https://github.com/flightlessmango/MangoHud/commit/c22ced01083fd32476b0bdd8b969ee749631469a" rel="noopener nofollow" target="_blank">c22ced0</a></li>
-</ul>
-</li>
-<li>If using exec and inside steam runtime, launch command using <code class="inline-code">steam-runtime-launch-client</code>
-<ul>
-<li>If mangohud is used inside flatpak, you need to allow your app to speak on <code class="inline-code">org.freedesktop.Flatpak</code> dbus address.</li>
-<li>Example if you're using mangohud in steam: <code class="inline-code">flatpak override --user --talk-name=org.freedesktop.Flatpak com.valvesoftware.Steam</code></li>
-</ul>
-</li>
-<li>Added Intel GPUs support (integrated and discrete, i915 and xe drivers)
-	<ul>
-<li>Temperature is only available in linux 6.13+</li>
-<li>Temperature and Power Usage is not available for integrated gpus</li>
-<li>VRAM and GPU Usage is per-process not per-system (that would require root rights)</li>
-</ul>
-</li>
-<li>Multiple GPUs support:
-	<ul>
-<li>By default, MangoHud displays all GPUs. To select needed GPUs, you can use <code class="inline-code">gpu_list</code> or <code class="inline-code">pci_dev</code></li>
-</ul>
-</li>
-</ul>
-<p><strong>Params</strong></p>
-<ul>
-<li><code class="inline-code">network_color</code> sets the color of the network hud element</li>
-<li><code class="inline-code">display_server</code> shows if the display server is Xorg, Xwayland or wayland</li>
-<li><code class="inline-code">gpu_list</code> set the GPUs to display in the hud e.g gpu_list=0,1</li>
-<li><code class="inline-code">proc_mem</code> and <code class="inline-code">io_read</code> now works properly in gamescope (mangoapp)</li>
-</ul>
-</blockquote>
-<p>Source: <a href="https://github.com/flightlessmango/MangoHud/releases/tag/v0.8.0-rc1" rel="noopener nofollow" target="_blank">GitHub</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/01/linux-performance-overlay-mangohud-0-8-0-rc1-out-now-for-testing-with-intel-gpu-support-and-lots-of-improvements/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/01/linux-performance-overlay-mangohud-0-8-0-rc1-out-now-for-testing-with-intel-gpu-support-and-lots-of-improvements/</guid>
-      <pubDate>Fri, 31 Jan 2025 12:48:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1637147460id26087gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
       
     </item>
     
