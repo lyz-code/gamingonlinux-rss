@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-02-18 07:27:16.815345</pubDate>
+    <pubDate>2025-02-19 07:28:11.751908</pubDate>
 
     
     <image>
@@ -18,6 +18,532 @@
     </image>
 
     
+    
+    <item>
+      <title>Team Fortress 2 major update released and source available for modders via the Source SDK</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It wasn't just <a href="https://www.gamingonlinux.com/2025/02/counter-strike-source-and-day-of-defeat-source-get-major-updates-with-64bit-support/" rel="noopener" target="_blank">Counter-Strike: Source and Day of Defeat: Source</a> that received big updates today, as Valve also published a new update for Team Fortress 2 along with updating the Source SDK to include TF2! This is a big one for modders, since you now have the source available for TF2!</p>
+<p>As <a href="https://www.teamfortress.com/post.php?id=238809" rel="noopener nofollow" target="_blank">announced</a> on the official TF2 website, having the Source SDK updated to include "all the Team Fortress 2 client and server game code" means modders can do a whole lot with it. This includes building entire conversions, which can be released on Steam. This SDK is under a "non-commercial basis" so everything made with it must be free. Valve included a little word on TF2 items though:</p>
+<blockquote>
+<p>Players have a lot of investment in their TF2 inventories, and Steam Workshop contributors have created of a lot of that content. The majority of items in the game now are thanks to the hard work of the TF2 community. To respect that, we're asking TF2 mod makers continue to respect that connection, and to not make mods that have the purpose of trying to profit off Workshop contributors' efforts. We're hoping that many mods will continue to allow players access their TF2 inventory, if this makes sense for the mod.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12877442231739911015gol1.jpg"/><br/>
+<em>Pictured - TF2 on Linux</em></p>
+<p>As for the main TF2 <a href="https://www.teamfortress.com/post.php?id=238643" rel="noopener nofollow" target="_blank">update</a> here's what's included:</p>
+<blockquote>
+<ul>
+<li>Added missing files for Taunt: The Travel Agent</li>
+<li>Added No Hat styles for the Cozy Cover-Up</li>
+<li>Added VScript support for HIDEHUD_MATCH_STATUS flag to hide the Match Status panel</li>
+<li>Added a borderless window option to video settings</li>
+<li>Added bicubic lightmaps (from Half-Life 2: 20th Anniversary Update)</li>
+<li>Added radial fog (from Half-Life 2: 20th Anniversary Update)</li>
+<li>Added support for Steam Networking</li>
+<li>Made the default server name for listen servers include the player's name</li>
+<li>Made the game launch in native resolution by default instead of 640x480</li>
+<li>Client-side prediction fixes (these fix 'jank'/rollback in certain situations)
+	<ul>
+<li>Fixed a prediction bug where if the player was moved on the client, their input-based movement for that tick was not taken into account in non-player actions</li>
+<li>Improved prediction for walking on props and other entities</li>
+<li>Made certain client-side entities only trigger local prediction errors
+		<ul>
+<li>e.g. If the viewmodel experiences a prediction error, the player will not experience a prediction error</li>
+</ul>
+</li>
+<li>Fixed prediction of viewmodel sway</li>
+<li>Fixed a prediction error regarding weapon idle animations</li>
+</ul>
+</li>
+<li>Fixed certain breakable props not gibbing correctly</li>
+<li>Fixed an issue where certain variables like position would not be updated correctly to match the server in certain situations</li>
+<li>Fixed the player's base velocity (eg. conveyors, moving items etc.) getting subtly out of sync from client/server</li>
+<li>Fixed players being able to spam duel cancellation messages for a duel that doesn't exist</li>
+<li>Fixed not being able to join community servers via Steam invites or game info</li>
+<li>Fixed lighting position discrepancies for cosmetic items, weapons, and viewmodels (community fix from ficool2)</li>
+<li>Fixed Equipped label overlapping attribute icons in the loadout menu (community fix from Lindon)</li>
+<li>Fixed an issue with props and team colors when taunting with Australium weapons</li>
+<li>Fixed the Voices from Below effect not working when taunting with the Highland Hound set equipped</li>
+<li>Fixed player voice commands being abruptly ended when the player enters shallow water</li>
+<li>Fixed incorrect number on the Geneva Contravention achievement icon</li>
+<li>Fixed the Military Style for The Surgeon General to stay properly semi-visible at all angles</li>
+<li>Fixed some classes missing the BLU team material for That '70s Chapeau</li>
+<li>Fixed the Spanish-Latin America option being displayed as English in the Settings menu</li>
+<li>Fixed the MOTD dialog not working for Spanish-Latin America</li>
+<li>Updated attribute descriptions for The Scottish Resistance and the Stickybomb Jumper to use 'stickybomb' instead of 'pipebomb'</li>
+<li>Updated equip_region settings for The Little Bear, The Heavy-Weight Champ, The Grand Duchess Tutu, and the Combat Slacks to fix unnecessary conflicts</li>
+<li>Updated the Spooky Night and Ominous Night Unusual taunt effects to fix a visual bug (Thanks Kiffy!)</li>
+<li>Updated koth_overcast_final to improve optimization</li>
+<li>Updated ctf_applejack
+	<ul>
+<li>Added block bullets to some stores</li>
+<li>Unblocked a window at mid, allowing Snipers to shot across the middle hut</li>
+<li>Removed the missing texture in BLU spawn</li>
+<li>Gave a chicken a friend, because friendship is magic</li>
+</ul>
+</li>
+<li>Updated cp_fortezza
+	<ul>
+<li>New radio model for spawn rooms</li>
+<li>Changed sentry shack ammo pack on last to a medium</li>
+<li>Adjusted health pickups throughout the map</li>
+<li>Changed kill volume on cap A double doors to be more consistent with visuals</li>
+<li>Improved bot support (Thanks Star Bright)</li>
+<li>Detail pass</li>
+</ul>
+</li>
+<li>Updated pl_patagonia
+	<ul>
+<li>[Stage 1]
+		<ul>
+<li>Fixed some RED bots stuck forever trying to make an impossible jump on the stairs outside spawn</li>
+<li>Fixed the cart not capping the first point on extremely rare occasions</li>
+</ul>
+</li>
+<li>[Stage 2]
+		<ul>
+<li>Improved optimization</li>
+<li>Fixed a nodraw floor near the first BLU spawn train bridge waterfall</li>
+<li>Fixed 3D skybox looking pitch black for players using mat_hdr_level 2</li>
+</ul>
+</li>
+<li>[Stage 3]
+		<ul>
+<li>Improved optimization</li>
+<li>Fixed wrap assassin baubles colliding with a solid func_brush bounding box outside BLU spawn</li>
+<li>Removed the platform above the open choke of the last point</li>
+<li>Added an additional path to the window overlooking the open choke of the last point</li>
+<li>Fixed RED bots getting stuck on a solid fence outside the RED spawn</li>
+<li>Fixed 3D skybox looking pitch black for players using mat_hdr_level 2</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>The Source SDK is on <a href="https://github.com/ValveSoftware/source-sdk-2013" rel="noopener nofollow" target="_blank">GitHub</a>.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/6464/team-fortress-2/">Team Fortress 2</a></strong> | Release Date: 10th October 2007<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/440/Team_Fortress_2/?snr=1_7_7_2300_150_1">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/team-fortress-2-major-update-released-and-source-available-for-modders-via-the-source-sdk/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/team-fortress-2-major-update-released-and-source-available-for-modders-via-the-source-sdk/</guid>
+      <pubDate>Tue, 18 Feb 2025 20:40:10 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1272233897id26208gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Free Game</category>
+      
+      <category>Source Available</category>
+      
+    </item>
+    
+    <item>
+      <title>Counter-Strike: Source and Day of Defeat: Source get major updates with 64bit support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A nice surprise for some classic Valve games today with multiple titles like Counter-Strike: Source and Day of Defeat: Source getting major updates. Not many developers continue supporting their games this long after release! Although, Valve do have a lot of resources to do such a thing thanks to how popular Steam is.</p>
+<p>These updates are mainly about bringing them up to scratch on modern systems complete with 64bit support, improved networking, UI scaling and some little features pulled in from the Half-Life 2: 20th Anniversary Update. Exciting to see!</p>
+<p><a href="https://store.steampowered.com/news/app/240/view/689716592460694165" rel="noopener nofollow" target="_blank">Changes</a> for Counter-Strike: Source:</p>
+<blockquote>
+<ul>
+<li>Added 64-bit Support. 64-bit binaries will automatically be launched on systems with a 64-bit OS.</li>
+<li>Added a borderless window option to video settings</li>
+<li>Added bicubic lightmaps (from Half-Life 2: 20th Anniversary Update)</li>
+<li>Added radial fog (from Half-Life 2: 20th Anniversary Update)</li>
+<li>Added support for Steam Networking</li>
+<li>Added UI scaling for high-resolution screens</li>
+<li>Made the default server name for listen servers include the player's name</li>
+<li>Made the game launch in native resolution by default instead of 640x480</li>
+<li>Client-side prediction fixes (these fix 'jank'/rollback in certain situations)
+	<ul>
+<li>Fixed a bug where when unducking, the view could glitch out if the player doesn't have space to unduck</li>
+<li>Fixed gifts not randomly dropping when players are killed during the winter event</li>
+<li>Added sv_autobunnyhopping so bhop servers can have this wanted behaviour with client-side prediction</li>
+<li>Fixed a prediction bug where if the player was moved on the client, their input-based movement for that tick was not taken into account in non-player actions</li>
+<li>Improved prediction for walking on props and other entities</li>
+<li>Made certain client-side entities only trigger local prediction errors
+		<ul>
+<li>e.g. If the viewmodel experiences a prediction error, the player will not experience a prediction error</li>
+</ul>
+</li>
+<li>Fixed prediction of viewmodel sway</li>
+<li>Fixed a prediction error regarding weapon idle animations</li>
+</ul>
+</li>
+<li>Fixed certain breakable props not gibbing correctly</li>
+<li>Fixed an issue where certain variables like position would not be updated correctly to match the server in certain situations</li>
+<li>Fixed the player's base velocity (eg. conveyors, moving items etc.) getting subtly out of sync from client/server</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11980850301739910237gol1.jpg"/><br/>
+<em>Pictured - Counter-Strike: Source</em></p>
+<p><a href="https://store.steampowered.com/news/app/300/view/574874801961698003" rel="noopener nofollow" target="_blank">Changes</a> for Day of Defeat: Source:</p>
+<blockquote>
+<ul>
+<li>Added 64-bit Support. 64-bit binaries will automatically be launched on systems with a 64-bit OS.</li>
+<li>Added a borderless window option to video settings</li>
+<li>Added bicubic lightmaps (from Half-Life 2: 20th Anniversary Update)</li>
+<li>Added radial fog (from Half-Life 2: 20th Anniversary Update)</li>
+<li>Added support for Steam Networking</li>
+<li>Added UI scaling for high-resolution screens</li>
+<li>Made the default server name for listen servers include the player's name</li>
+<li>Made the game launch in native resolution by default instead of 640x480</li>
+<li>Client-side prediction fixes (these fix 'jank'/rollback in certain situations)
+	<ul>
+<li>Fixed a prediction bug where if the player was moved on the client, their input-based movement for that tick was not taken into account in non-player actions</li>
+<li>Fixed prediction errors (rollback) occurring while prone</li>
+<li>Improved prediction for walking on props and other entities</li>
+<li>Made certain client-side entities only trigger local prediction errors
+		<ul>
+<li>e.g. If the viewmodel experiences a prediction error, the player will not experience a prediction error</li>
+</ul>
+</li>
+<li>Fixed prediction of viewmodel sway</li>
+<li>Fixed a prediction error regarding weapon idle animations</li>
+</ul>
+</li>
+<li>Fixed certain breakable props not gibbing correctly</li>
+<li>Fixed an issue where certain variables like position would not be updated correctly to match the server in certain situations</li>
+<li>Fixed the player's base velocity (eg. conveyors, moving items etc.) getting subtly out of sync from client/server</li>
+</ul>
+</blockquote>
+<p>They're not the only ones that got updated, there's even more! Similar updates were also released for Half-Life 2: Deathmatch (<a href="https://store.steampowered.com/news/app/320/view/529838805680652975" rel="noopener nofollow" target="_blank">changes</a>) and Half-Life Deathmatch: Source (<a href="https://store.steampowered.com/news/app/360/view/562489902889960288" rel="noopener nofollow" target="_blank">changes</a>).</p>
+<p>On top of that there's an <a href="https://www.gamingonlinux.com/2025/02/team-fortress-2-major-update-released-and-source-available-for-modders-via-the-source-sdk/" rel="noopener" target="_blank">even bigger surprise for Team Fortress 2</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/counter-strike-source-and-day-of-defeat-source-get-major-updates-with-64bit-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/counter-strike-source-and-day-of-defeat-source-get-major-updates-with-64bit-support/</guid>
+      <pubDate>Tue, 18 Feb 2025 20:25:47 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/96434919id26207gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Online Multiplayer</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Broken Shell is the cutest looking love story adventure of two little hermit crabs</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>You ever look at a game and just think - "wow, this looks truly lovely"? That's the feeling I got from seeing Broken Shell and I can't wait to see it release. It's an in-development cozy casual adventure game from Foggy Studio, with some artwork and themes that really do just look wonderful.</p>
+<p>About it: "Broken Shell is a cute and cozy adventure game follows the love story of two little hermit crabs searching for a new home. Despite human interference in their habitat, they face challenges leading to their separation. Embark on adventures, meet new friends, and assist diverse characters, all through solving puzzles and mini-games, a combination of humorous narrative events within a heartfelt romantic drama without a single word."</p>
+<p>Check out the trailer:</p>
+<div class="hidden_video" data-video-id="ptgnlIretOE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1c4c2af999fe018af73b650bba2344bc.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ptgnlIretOE" target="_blank">See video</a></div></div>
+<p class="plain-list-title"><strong>Feature Highlight:</strong></p>
+<blockquote>
+<ul>
+<li>Story-Driven Experience: An emotional and heartfelt tale of love, hope, and the lengths we go to protect what we cherish. Perfect for players who seek a meaningful and immersive storytelling experience.</li>
+<li>Intuitive &amp; Engaging Gameplay: A seamless point-and-click experience with natural, rewarding interactions, perfectly balancing ease of play and depth.</li>
+<li>Vibrant Art and Animation: Stunning underwater visuals paired with smooth, engaging animations that bring the world and characters to life.</li>
+<li>Unique Indie Adventure: A personal, handcrafted journey offering something fresh and different from mainstream titles.</li>
+<li>Family-Friendly Fun: Suitable for all ages, with a playful yet heartfelt tone that resonates with both kids and adults.</li>
+</ul>
+</blockquote>
+<p>The game is currently <a href="https://www.kickstarter.com/projects/foggystudio/broken-shell-a-cute-and-cozy-hand-drawn-puzzle-adventure/description" rel="noopener nofollow" target="_blank">crowdfunding on Kickstarter</a>, with Linux being a clear target for support. They only have a small €8,000 goal, which is rather small, but they said that's to "bring Broken Shell to life at the highest possible quality and ensure it becomes the heartfelt experience we’ve envisioned" with it being self-funded until now. They're expecting it to be ready for release in October 2025.</p>
+<p>You can also follow the developer on <a href="https://bsky.app/profile/foggystudio.bsky.social" rel="noopener nofollow" target="_blank">Bluesky</a>.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41186/broken-shell/">Broken Shell</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3018500/Broken_Shell/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/broken-shell-is-the-cutest-looking-love-story-adventure-of-two-little-hermit-crabs/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/broken-shell-is-the-cutest-looking-love-story-adventure-of-two-little-hermit-crabs/</guid>
+      <pubDate>Tue, 18 Feb 2025 17:36:03 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1774488733id26206gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Adventure</category>
+      
+      <category>Casual</category>
+      
+      <category>Crowdfunding</category>
+      
+    </item>
+    
+    <item>
+      <title>Cropdeck blends farming and deckbuilders together to make a wonderful looking mix</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Just when you think you've seen it all, along comes Cropdeck. Described by the developer as the "ultimate farming roguelite deckbuilder" and it really looks quite charming.</p>
+<p>More about it: "Master farming in this roguelite deckbuilder! Clear obstacles, plant crops in optimal layouts and protect them from hazards. Use scarecrows with unique perks to supercharge your strategy, build a deck of unstoppable combos and thrive against all odds."</p>
+<p>Going by the announcement trailer below, it looks like a nice chilled-out experience. This is why I love indie developers, they're always smashing ideas together in a blender and making something different. Check it out:</p>
+<div class="hidden_video" data-video-id="rCH7R9HSamQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4b611e4def004ec7b522f24e619d485a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/rCH7R9HSamQ" target="_blank">See video</a></div></div>
+<p>The developer mentioned in the <a href="https://store.steampowered.com/news/app/3500680/view/525334939368947729" rel="noopener nofollow" target="_blank">announcement</a> they plan to have full Steam Deck support too. And it appears it will have Native Linux support.</p>
+<p>Feature Highlight:</p>
+<blockquote>
+<p><strong>Plant, grow and harvest!</strong></p>
+<ul>
+<li>Clear obstacles and plow to prepare your land for planting.</li>
+<li>Strategically plan your crop layout for maximum efficiency and yields.</li>
+<li>Nurture your plants - water, fertilize, and shield them from harm.</li>
+<li>Reap your harvest and turn a profit, but watch out - Sir Landlord might drop by for his tax!</li>
+</ul>
+<p><strong>Find the best combos!</strong></p>
+<ul>
+<li>Uncover a variety of unique scarecrows with powerful perks and passives to supercharge your farming.</li>
+<li>Experiment with different scarecrow combinations and create the ultimate synergy.</li>
+<li>Build your deck around their abilities or hunt for the perfect ones to complete your collection. The possibilities are endless!</li>
+</ul>
+<p><strong>Outsmart challenges!</strong></p>
+<ul>
+<li>Facing thunder, droughts, tornadoes or even ice cubes? There ain’t no rest for the farmer!</li>
+<li>Brave diverse biomes and adapt to unique hazards in every scenario.</li>
+<li>Protect your crops at all costs! Sir Landlord won’t wait - he’ll collect his tax rain or shine.</li>
+</ul>
+<p><strong>Craft your ideal deck!</strong></p>
+<ul>
+<li>Earn gems by completing levels and use them at the market to expand your card collection.</li>
+<li>Take a risk with themed card packs or stick to safer picks from the seller’s inventory.</li>
+<li>Got a card you don’t need or a scarecrow that’s not working for you? Remove them and keep your deck streamlined.</li>
+</ul>
+</blockquote>
+<p>You can follow the developer on <a href="https://bsky.app/profile/madheadbump.bsky.social" rel="noopener nofollow" target="_blank">Bluesky</a>. No release date yet.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41171/cropdeck/">Cropdeck</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3500680/Cropdeck/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/cropdeck-blends-farming-and-deckbuilders-together-to-make-a-wonderful-looking-mix/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/cropdeck-blends-farming-and-deckbuilders-together-to-make-a-wonderful-looking-mix/</guid>
+      <pubDate>Tue, 18 Feb 2025 17:20:36 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/967076897id26205gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Casual</category>
+      
+      <category>Deck-builder</category>
+      
+    </item>
+    
+    <item>
+      <title>PlayStation 3 emulator RPCS3 expands online play for fighting games with RPCN v1.4</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Another big update has been released for RPCN, the open source online matchmaking server for PlayStation 3 emulator RPCS3. This brings new features and more compatible games for Netplay.</p>
+<p><a href="https://github.com/RipleyTom/rpcn" rel="noopener nofollow" target="_blank">RPCN</a> v1.4.0 / 1.4.1 actually released last week, with the RPCS3 team announcing it yesterday as they've hooked up various bits it needed in RPCS3 directly now too. From the official RPCS3 <a href="https://discord.com/channels/272035812277878785/272075326157225995/1341135102146641971" rel="noopener nofollow" target="_blank">Discord</a> they listed these games that now work online:</p>
+<blockquote>
+<ul>
+<li>Arcana Heart 3</li>
+<li>Arcana Heart 3 LOVE MAX!!!!!</li>
+<li>BlazBlue: Calamity Trigger</li>
+<li>BlazBlue: Continuum Shift</li>
+<li>BlazBlue: Chrono Phantasma</li>
+<li>BlazBlue: Central Fiction</li>
+<li>Persona 4 Arena</li>
+<li>Persona 4 Arena Ultimax</li>
+<li>Super Hang-On</li>
+<li>TMNT Turtles in Time Re-Shelled</li>
+<li>Under Night In-Birth Exe:Late</li>
+<li>Under Night In-Birth Exe:Late[st]</li>
+<li>+ more</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9022558151739889353gol1.jpg"/><br/>
+<em>Pictured - Persona 4 Arena Ultimax</em></p>
+<p>As for RPCN itself version 1.4.0 added all this:</p>
+<blockquote>
+<p><strong>Added</strong></p>
+<ul>
+<li>Implemented support for private slots and room passwords</li>
+<li>Added hint for game name in game tracker</li>
+<li>Added a cache to game tracker</li>
+<li>Added support for IPv6 for signaling</li>
+<li>Added support for groups</li>
+<li>Added a command to reset client's state without disconnecting</li>
+</ul>
+<p><strong>Changed</strong></p>
+<ul>
+<li>Removed target from logging</li>
+<li>Stopped printing error if connection stops because of TCP connection termination</li>
+<li>Got rid of unnecessary Arcs around atomics in game tracker</li>
+<li>Cleaned up logging</li>
+</ul>
+<p><strong>Fixed</strong></p>
+<ul>
+<li>Signaling information is now given out to the person joining a room in the room response and in the notification that a user has joined instead of separately</li>
+<li>Fixed Presence not being announced to friends when first set</li>
+</ul>
+<p><strong>Misc</strong></p>
+<ul>
+<li>Updated dependencies to all latest major versions</li>
+</ul>
+</blockquote>
+<p>More info on Netplay on the RPCS3 <a href="https://wiki.rpcs3.net/index.php?title=Help:Netplay" rel="noopener nofollow" target="_blank">wiki</a>.</p>
+<p>See more on the <a href="https://rpcs3.net/" rel="noopener nofollow" target="_blank">official website</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/playstation-3-emulator-rpcs3-expands-online-play-for-fighting-games-with-rpcn-v1-4/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/playstation-3-emulator-rpcs3-expands-online-play-for-fighting-games-with-rpcn-v1-4/</guid>
+      <pubDate>Tue, 18 Feb 2025 14:36:57 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/611485253id26204gol.jpg" type="image/jpeg"/>
+      
+      <category>Emulation</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+      <category>Sony</category>
+      
+    </item>
+    
+    <item>
+      <title>FACEMINER will have you scale up your A.I. surveillance empire on February 27</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A narrative-driven management simulation that plunges players into the heart of a 90s-era data harvesting and artificial intelligence empire, FACEMINER is set for release on February 27th.</p>
+<p>AI is very much at the centre of this one. It's set against the backdrop of 90s techno-optimism, a story-driven descent into the machinery of data harvesting and artificial intelligence. From server meltdowns to climate catastrophes, every decision carries weight as you navigate the complex world of planetary-scale data management. FACEMINER blends management mechanics with a layered narrative, inviting players to reflect on the cascading consequences of their actions while scaling their surveillance empire.</p>
+<p>Check out the release date trailer below:</p>
+<div class="hidden_video" data-video-id="kUYLimuZ1Yw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d3027294a97ba17999c51b9bec2560c7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/kUYLimuZ1Yw" target="_blank">See video</a></div></div>
+<p>Feature Highlight:</p>
+<blockquote>
+<p>Deep Incremental Data Center Management - Manage every detail of your growing data empire, from RAM, processing power, and cooling systems to software upgrades and carbon offset schemes. Juggle power consumption, hardware demands, and global environmental impacts as you scale up.</p>
+<p>Story-Driven Campaign - Dive into a compelling 2-3 hour narrative campaign that reveals the mysterious story behind FACEMINER. Unlock additional modes like Endless Mode and Infinite Money Glitch Mode for unrestricted experimentation.</p>
+<p>Original Soundtrack by Madwreck - Immerse yourself in a period-authentic soundtrack by Madwreck. Whether it’s atmospheric jungle beats or driving techno, the in-game audio player ensures you stay in the zone while building your click-and-mortar empire.</p>
+<p>Dynamic Internal Messaging System - Uncover over 200 in-game messages to reveal office gossip, backstory, and the secrets of the FACEMINER project.</p>
+<p>Player-Driven Choices - Will you prioritize eco-friendly solutions or maximize profits at any cost? Build your own surveillance network, or rely on third-party brokers. Your choices shape your empire’s rise—and its ultimate destiny.</p>
+<p>Rich 90s Interface - Experience the nostalgia of a meticulously crafted retro operating system. Monitor your progress through the Visualiser 3D view and track your influence with a global surveillance map.</p>
+</blockquote>
+<p>With AI (and specifically AI generation) being a hot topic right now, it seems like quite a fitting game for the times. The developers filled out their AI disclosure on Steam too, which makes it clear it's all quite on-point for the theme of the game. They only use AI for a very specific feature, which seems to fit in well with the overall subject of the game itself:</p>
+<blockquote>
+<p>FACEMINER is a concept-driven game that directly engages with the ethics of AI. For thematic purposes, the game features faces which have been generated by a GAN (Generative Adversarial Network) trained on the FFHQ dataset, a research dataset released by NVIDIA that is the backbone of many real-world facial recognition applications. Per NVIDIA, only images under permissive licenses were collected.<br/>
+<br/>
+The 'AI training' in this game is fictional and has been simulated for entertainment purposes. The game can be interpreted as a critique of AI specifically relating to the ecological impact of mass data hoarding, surveillance concerns, and way it is used to compound corporate power.</p>
+</blockquote>
+<p>The developer, Wristwork, is an independent studio committed to crafting experimental, short form interactive media and games. This is their first commercial game.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/37369/faceminer/">FACEMINER</a></strong> | Release Date: 27th February 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2276980/FACEMINER/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/faceminer-will-have-you-scale-up-your-a-i-surveillance-empire-on-february-27/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/faceminer-will-have-you-scale-up-your-a-i-surveillance-empire-on-february-27/</guid>
+      <pubDate>Tue, 18 Feb 2025 13:44:42 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/714652027id26203gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Point & Click</category>
+      
+      <category>Simulation</category>
+      
+    </item>
+    
+    <item>
+      <title>OCCT for stress-testing comes to Linux and Steam Deck, with a Steam release planned</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>OCCT has long been a popular tool for PC stability and performance testing on Windows, and now it's officially been made available for Linux in Alpha, including Steam Deck support too.</p>
+<p>With the new Linux version in Alpha, it's not fully ready for everyone just yet, it's also only available to their Patreon supporters via a direct download for Linux / Steam Deck. In the announcement the developers mentioned they're even planning a Steam release of the tool, although there's no release date for that just yet.</p>
+<p>Why they say it's a game changer:</p>
+<blockquote>
+<p>For years, Linux users have struggled with reliable stress-testing solutions for CPUs and GPUs. With OCCT now available on Linux, testing hardware stability has never been easier.</p>
+<p><strong>Easy Installation</strong> – Just download, make the file executable, and you're ready to go. No complex dependencies required.</p>
+<p><strong>Same Powerful Features as Windows</strong> – The Linux version includes all the core functionalities of OCCT, from CPU and GPU stress tests to power supply diagnostics.</p>
+<p><strong>Perfect for Server Environments</strong> – IT professionals can now utilize OCCT to validate hardware performance on Linux-based systems.</p>
+<p><strong>Allow for bootable diagnostics</strong> – No more OS corruption, just run Linux from a Live DVD/USB setup and test your settings!</p>
+</blockquote>
+<p>Check out their video on it below:</p>
+<div class="hidden_video" data-video-id="N7oi-wkVXb4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/74616894b67787322e98a4d98dd925bd.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/N7oi-wkVXb4" target="_blank">See video</a></div></div>
+<p>See more in <a href="https://www.ocbase.com/news/occt-linux-release" rel="noopener nofollow" target="_blank">their news post</a>.</p>
+<p>It's fantastic to see more regular software add in Linux support. Thanks to Valve picking Linux (SteamOS) for the Steam Deck, we've seen a really nice boost to all areas of Linux over the last few years. And with <a href="https://www.gamingonlinux.com/2025/01/valve-confirms-a-public-beta-of-steamos-is-coming-as-steamos-expands-beyond-steam-deck/" rel="noopener" target="_blank">SteamOS readying for more devices</a>, I expect this support to continue.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/occt-for-stress-testing-comes-to-linux-and-steam-deck-with-a-steam-release-planned/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/occt-for-stress-testing-comes-to-linux-and-steam-deck-with-a-steam-release-planned/</guid>
+      <pubDate>Tue, 18 Feb 2025 12:57:26 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2013491952id26202gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>CodeWeavers are hiring developers to work on Wine / Proton</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>CodeWeavers announced recently that they're once again looking for more developers to come work for them on the compatibility layers Wine and Valve's Proton.</p>
+<p>Their team posted the link on <a href="https://bsky.app/profile/codeweavers.com/post/3lifdx4drmw2a" rel="noopener nofollow" target="_blank">Bluesky</a> to their jobs page, which currently lists positions for multiple General Wine Developers. According to the listing this full-time job would include working on "a variety of Wine-based software, including CodeWeavers's own CrossOver product; the Proton project for Valve software; and projects for other clients and software internal to CodeWeavers".</p>
+<p>Could be a good opportunity for some readers to get involved in paid open source work, and help improve Linux gaming with Wine / Proton.</p>
+<p>The jobs are available to work remote or in the US. There's some important requirements to keep in mind:</p>
+<blockquote>
+<ul>
+<li><em>Strong</em> C language skills. Compilers, linkers, macros and function pointers don't scare you.</li>
+<li><em>Excellent</em> debugging skills. You will be debugging applications whose source you do not have.</li>
+<li>Familiarity with developing on and administering a Linux system (bash, unix utilities, package management, etc).</li>
+<li>Ability to understand and debug build systems (Makefiles, autotools, etc).</li>
+<li>Understanding of good development practices (source control, atomic commits, code readability, test-driven development).</li>
+<li>Self-motivated to find work and learn new skills.</li>
+<li>No exposure to Microsoft code or reverse-engineering of Microsoft software.</li>
+</ul>
+</blockquote>
+<p>See more on <a href="https://www.codeweavers.com/about/jobs" rel="noopener nofollow" target="_blank">their jobs page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/codeweavers-are-hiring-developers-to-work-on-wine-proton/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/codeweavers-are-hiring-developers-to-work-on-wine-proton/</guid>
+      <pubDate>Tue, 18 Feb 2025 12:42:55 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Jobs</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Building a Retro Linux Gaming Computer Part 46: Bursting Bubbles</title>
+      <author>Hamish</author>
+      <description><div class="content group e-content">
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" rel="noopener" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<p><strong>Continued from <a href="https://www.gamingonlinux.com/2025/01/building-a-retro-linux-gaming-computer-part-45-free-as-in-beer/" rel="noopener" target="_blank">Part 45: Free as in Beer</a></strong></p>
+<p>Unlike when building a retro Windows computer which gives you certain milestone releases to target, the incremental nature of Linux leaves it more difficult to settle on which version you wish to run, even if you have decided on a distribution. I opted to use Red Hat Linux 7.3 Valhalla for largely two reasons: the decent 3D support it offers for my ATI Rage 128 Pro graphics card, and it still being on the right side of the glibc 2.3 boundary after which Loki Software titles will start to break.</p>
+<p>Thanks to this I have had my fair share of success in running games released up to around 2004 or so, but after that I do begin to encounter more issues with binary compatibility. The true strength of Linux has always been in source compatibility however, and by leaning into this fact you can still find means and ways of getting newer games and software to launch, even if they were released well after the heyday of your chosen Linux version.</p>
+<p>If you are given access to a source tarball with requirements already in line with your build environment, then this can often be as easy as just typing "make" and letting the magic happen. When playing with software from the future this often fails to be the case though, with new libraries being introduced and newer versions of existing libraries being demanded. At least when using an RPM based distribution such as Red Hat Linux, this is where source RPMs can become incredibly useful.</p>
+<p>Not only do they give you all the benefits of package management such as proper dependency resolution, but by using source RPMs I have been able to version bump existing system libraries and even install new ones to those packaged for later Red Hat and Fedora releases, all without breaking compatibility elsewhere. Your mileage of course may vary, and a certain discretion is required, but one success I have had was in upgrading SDL to the version found in Red Hat Linux 8.0 Psyche.</p>
+<p>My main interest was in trying to get SDL Mixer reliant games with MIDI music to utilize my hardware synthesizer, a feature in later SDL versions that I sadly still have not gotten to work, but in upgrading SDL I was also able to finally build and then play the 1.0.0 version of <em>Frozen Bubble</em> outside of a live Knoppix environment. To do this I needed to grab the SDL-1.2.4-5.src.rpm, SDL_image-1.2.2-3.src.rpm, SDL_mixer-1.2.4-5.src.rpm, and SDL_net-1.2.4-3.src.rpm files from the Red Hat archives.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19663923531739822760gol6.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/19663923531739822760gol6.png"/></a> <a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11438794101739822761gol6.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/11438794101739822761gol6.png"/></a></p>
+<p>To build and install a source RPM on Red Hat Linux 7.3 you need to use the "rpm --rebuild" command followed by the name of the package files in question, which if successful will generate regular binary RPM packages in the /usr/src/redhat/RPMS/i386 directory. Assuming there are no conflicts you can then use these to install or update your software, although in this case I did need to ensure that the SDL and SDL-devel packages were installed first in order to respect the depedency chain.</p>
+<p>Building SDL also required nasm to be installed as a dependency, and the <em>Frozen Bubble</em> source RPM package that I used also needed the desktop-file-utils-0.2-1.i386.rpm package to be installed, all of which was communicated by the package manager saving me any guesswork. The main stumbling block I always had when trying to build <em>Frozen Bubble</em> in the past was perl-SDL, but with the newer version of SDL installed, I was at last able build a perl-SDL source RPM without incident.</p>
+<p>The Enet library served a similar role in blocking my ability to compile the final release of <em>Cube</em>, but by grabbing a source RPM from when it was included with Fedora 7 Moonshine I was at last able to get it to build. Overall performance is weaker than in the earlier release I covered, as while <em>Cube</em> remains playable it dips into uncomfortable frame rates far more often. I do feel the game plays smoother at 32-bit colours, as I found with <em>Unreal Tournament</em>, but the difference here was marginal.</p>
+<p>In accomplishing this I corrected what were two of my greatest failures in getting newer releases of games to run, but I was not able to redress everything. Newer versions of ClanLib are built with X.org rather than XFree86 in mind, meaning I was unable to get later versions of <em>Trophy</em> to work for instance. Attempts at using later <em>Kobo Deluxe</em> source RPM packages also just produced the same errors related to GL detection that I got when I tried to build them with the source tarballs.</p>
+<p>Now that I have the binary RPM packages created for Red Hat Linux 7.3 Valhalla I can just distribute them to save anyone else the trouble, but there are lessons to be learned here for anyone trying to run new software on legacy RPM based distributions; source RPMs for Mandrake and its descendants are not compatible with Red Hat however, and Debian and derivatives possess their own separate ways of handling package sources. Time to tackle a different challenge, and look back in time instead.</p>
+<p><strong>Carrying on in Part 47: Before I Was Born</strong></p>
+<p><strong>Return to <a href="https://www.gamingonlinux.com/2021/03/building-a-retro-linux-gaming-computer-part-1-dumpster-diving/" rel="noopener" target="_blank">Part 1: Dumpster Diving</a></strong></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/building-a-retro-linux-gaming-computer-part-46-bursting-bubbles/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/building-a-retro-linux-gaming-computer-part-46-bursting-bubbles/</guid>
+      <pubDate>Tue, 18 Feb 2025 10:26:48 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/738623849id26200gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Editorial</category>
+      
+      <category>Misc</category>
+      
+      <category>Retro</category>
+      
+    </item>
     
     <item>
       <title>Is This Seat Taken? is a thoroughly charming puzzle game about swapping seats</title>
@@ -4190,353 +4716,6 @@ For those of you who have a Steam Deck or prefer to play with a gamepad - let us
       <category>Misc</category>
       
       <category>Unreal Engine</category>
-      
-    </item>
-    
-    <item>
-      <title>Get ready for a smashing time as Wreckfest 2 comes to Early Access in March</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Bugbear and THQ Nordic have announced that the chaotic racer Wreckfest 2 is set for an Early Access release on March 20th. The first game is great fun and it's Steam Deck Verified, hopefully the sequel will run well with Proton too.</p>
-<p>You're in for a smashing time on this one, as it's full-contact racing. No shiny super cars, just lots of dented vehicles with crazy drivers. As they said: "As Early Access progresses, you'll be able to build the banger of your dreams and transform your battered ride into a wrecking machine! New cars and other vehicles will be added as the game evolves". A much less serious game compared to a lot of other racers and I'm all for it. This is the type of game where you can really just blow off some steam.</p>
-<p>Check out the trailer below:</p>
-<div class="hidden_video" data-video-id="Z2PCl64qnng"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/671c9aa5735c4530952595198c95e3e5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Z2PCl64qnng" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li><strong>Unmatched racing experience - </strong>Brace yourself for the most phenomenal full-contact racing action with no rules, just jaw dropping moments of chaos and destruction, powered by the overhauled physics engine. Race in intense head-to-head fights on courses featuring high-speed circuits, crazy courses with obstacles &amp; jumps, intersections and oncoming traffic, or go for demolition domination in derby mode.<br/>
-<em>- More and more tracks &amp; arenas will be added during the Early Access phase -</em></li>
-<li><strong>Awesome &amp; customizable cars - </strong>Forget pristine supercars: Our cars are old, dented and patched together. Each of them tells a story, and you can tell your own by customizing your ride. Over the course of early access, more and more customization options will be added to the game. They will not only unlock your creative desires, but also contain new armor and component types that support certain playstyles.<br/>
-<em>- Later during Early Access, you can also share your designs with other racers and wreckers! -</em></li>
-<li><strong>Fully revamped game modes - </strong>Launching into early access with the base game modes of Racing, Derby and multiplayer mode. During the Early Access phase, we will add a completely revamped career mode that adapts to your individual playstyle and guides you on your journey to become a true champion! For online racers there will be new skill-based matchmaking system and server queues coming as well!</li>
-<li><strong>Challenges - </strong>Another highlight during the Early Access phase will be special challenges, putting you behind the steering wheel of unconventional vehicles that were definitely never supposed to end up on a racetrack! Various bite-sized scenarios will keep you hooked as you battle for the highest scores.</li>
-<li><strong>Tournaments - </strong>Players can also look forward to tournaments that will be implemented during the Early Access phase. Here you can earn unique rewards in special events - events which test more than just your driving skills!</li>
-<li><strong>Mod Support - </strong>During the Early Access phase, mod support will be added so you can really mess with this game by installing various mods from the Steam Workshop.</li>
-</ul>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41085/wreckfest-2/">Wreckfest 2</a></strong> | Release Date: 20th March 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1203190/Wreckfest_2/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/get-ready-for-a-smashing-time-as-wreckfest-2-comes-to-early-access-in-march/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/get-ready-for-a-smashing-time-as-wreckfest-2-comes-to-early-access-in-march/</guid>
-      <pubDate>Tue, 04 Feb 2025 16:10:18 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/339816553id26107gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Racing</category>
-      
-    </item>
-    
-    <item>
-      <title>Killing Floor 3 is set for release on March 25 with &#34;even more realistic carnage&#34;</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Tripwire Interactive recently announced that their co-op action horror FPS, Killing Floor 3, will be releasing on March 25.</p>
-<p>I have very fond memories of putting lots of hours into the first game years ago, although I did entirely skip the second game. Third time's a charm? Killing Floor 3 does look and sound awesome. And unless they do something strange, it should work well with Proton on Linux platforms. Another good online co-op game to keep an eye on if that's your sort of thing.</p>
-<p>There's also going to be an early closed-beta you can <a href="https://killingfloor3.com/#signup" rel="noopener nofollow" target="_blank">sign up</a> for with a new short trailer:</p>
-<div class="hidden_video" data-video-id="4RCHPgFjXXs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ed97a5439772c25e10cdcb613deb86ef.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/4RCHPgFjXXs" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li><strong>Killer Co-op</strong><strong><em> </em></strong>– Assemble the ultimate zed extermination squad for frenzied 6-player co-op with full crossplay functionality across all platforms. Skilled specialists can brave the battlefield alone in tense single-player mode.</li>
-<li><strong>Relentless Zeds</strong><strong><em> </em></strong>– Players will face the most lethal zeds yet. Every enemy has been redesigned with advanced methods of mobility, attack, and re-tuned with smarter AI; making them faster, deadlier, and more strategic than ever.</li>
-<li><strong>Deadly Weapons</strong><strong><em> </em></strong>– From flamethrowers to shotguns to katanas, players will have an expansive arsenal at their disposal, fully customizable with hundreds of mods, gadgets, and skills to choose from to fit their unique brand of bloodletting.</li>
-<li><strong>Dangerous Locations</strong> – Players will drop into a variety of treacherous hot zones to contain further spread of the Outbreak. Interactive environments give players dynamic advantages by activating turrets, fans, and other devastating traps.</li>
-<li><strong>More Gore</strong> – The M.E.A.T. System returns to deliver even more realistic carnage. Featuring additional points of dismemberment and persistent blood, the game responds to attacks with gruesome authenticity.</li>
-</ul>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41084/killing-floor-3/">Killing Floor 3</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.fanatical.com/en/game/killing-floor-3">Fanatical</a></li><li><a href="https://www.humblebundle.com/store/killing-floor-3">Humble Store</a></li><li><a href="https://store.steampowered.com/app/1430190/Killing_Floor_3/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/killing-floor-3-is-set-for-release-on-march-25-with-even-more-realistic-carnage/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/killing-floor-3-is-set-for-release-on-march-25-with-even-more-realistic-carnage/</guid>
-      <pubDate>Tue, 04 Feb 2025 15:50:32 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1186113557id26106gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Action</category>
-      
-      <category>FPS</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>SteamDolls - Order Of Chaos stealth-meets-action platformer arrives February 11</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>With a voice cast that reunites multiple people from Metal Gear Solid, SteamDolls - Order Of Chaos is set to arrive in Early Access on February 11. The voice cast will include David Hayter, Christopher Randolph and Jennifer Hale.</p>
-<p>The publisher, Top Hat Studios Inc, mentioned via email: "Linux version is still intended but not sure we'll be able to make it for the initial Early Access launch. It will be available soon however.".</p>
-<p>More about it: Originally conceived based on a comic book from the development studio and then Kickstarted soon after, SteamDolls has been a passion project of its director. The game features a beautiful comic book inspired 2D-meets-3D aesthetic, with a spattering of unique, fully voiced cinematic cutscenes. It boasts a large world to explore split across unique zones, such as a beautiful yet far overgrown chapel, a hellish underbelly seemingly made of flesh, an electrified industrial bunker, a city overrun by an insect-like infection, and more! Put the treasure found during your explorations to good usage back in your home base by upgrading The Whisper and his skills to better suit your gameplay style, unlocking unique lore and cutscenes, and putting your finest trophies on display.</p>
-<p>Check out the new trailer below:</p>
-<div class="hidden_video" data-video-id="zuV_zkPcNpc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3c5195c9daced6650c593c94b4652520.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/zuV_zkPcNpc" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li>Novel stealth-lite gameplay mixed with platforming and brutal action</li>
-<li>Gruesome finishers and combat</li>
-<li>Use your hacking skills to experience the memories of the world, solve puzzles, and glimpse into the past...and future</li>
-<li>Beautiful comic book-inspired 2D meets 3D aesthetics</li>
-<li>A vast world to explore filled with unique zones and grotesque creatures, filled with secrets</li>
-<li>AAA voice cast, including David Hayter (Solid Snake) as the voice of The Whisper, as well as Christopher Randolph and Jennifer Hale.</li>
-<li>Hand-drawn Cutscenes mixed with 3D cinematic inserts</li>
-<li>Upgradable skill-trees; choose your gameplay style and master it.</li>
-<li>Customize the Whisper's home base, and unlock lore and other trophies.</li>
-</ul>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/19271/steamdolls-order-of-chaos/">SteamDolls - Order Of Chaos</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1305260/SteamDolls__Order_Of_Chaos/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/steamdolls-order-of-chaos-stealth-meets-action-platformer-arrives-february-11/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/steamdolls-order-of-chaos-stealth-meets-action-platformer-arrives-february-11/</guid>
-      <pubDate>Tue, 04 Feb 2025 15:40:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/914632042id26105gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Eyes of War is a medieval era RTS that lets you get up close and personal with third-person controls</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Eyes of War is a medieval eta RTS from Good Mood Games that just hit the big 1.0. It's an usual RTS where you can jump right into playing as a single character. You can play single-player or online with others. It also has Native Linux support.</p>
-<p>It has all the usual points you have come to know and love from such an RTS. There's base-building and big battles, but the key here is in how you control everything. While you can move big groups around, you can also get up close and personal in a third-person mode to join in on the fun of the battles to try and turn the tide of war. There's even an Arena Mode which focuses on putting your third-person action skills to the test.</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="TrLmeilgZUg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9a24c998d217a248157738783a65e3ec.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/TrLmeilgZUg" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li><strong>Choose From Four Nations: </strong>Each nation has its own unique culture, weaknesses and of course, strengths. Players can diversify their strategy by using units with different advantages from each nation to become victorious. </li>
-<li><strong>Take Your Place in Arena Mode:</strong> Go beyond Strategy Mode and compete in the arena where players can choose their unit, and fight against AI or real players to become the champion of the arena. </li>
-<li><strong>Strategise and Fight Against Real Players: </strong>Players can either play against AI or join online battles with up to four players. Players will need to take on their opponents to gather more resources, and take control of the kingdom. </li>
-</ul>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41083/eyes-of-war/">Eyes of War</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2343930/Eyes_of_War/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/eyes-of-war-is-a-medieval-era-rts-that-lets-you-get-up-close-and-personal-with-third-person-controls/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/eyes-of-war-is-a-medieval-era-rts-that-lets-you-get-up-close-and-personal-with-third-person-controls/</guid>
-      <pubDate>Tue, 04 Feb 2025 14:54:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/305203464id26104gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>New Release</category>
-      
-      <category>RTS</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Atari announced Breakout Beyond, a fresh spin on the classic from the devs of BIT.TRIP</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The Breakout franchise is making a full return, with Atari announcing Breakout Beyond, developed by Choice Provisions (the studio behind BIT.TRIP). Not quite the classic you remember. They're saying it's a reimagining of the series that invites players to break on through to the other side.</p>
-<p>More about it: "In this neon-infused twist on the classic 1976 arcade game, players smash through each puzzle by clearing bricks to reach the final goal. However, the script has been flipped—literally! Players now progress sideways, breaking through barriers and building up combos that ramp up the intensity of the effects, rewarding the most skilled players with a dazzling light show. Breaking special blocks offers powerful advantages, like massive brick-clearing blasts, a protective barrier to shield the ball, and a laser cannon to carve a path forward. Each one unleashes stunning dynamic effects, delivering dazzling visuals never seen before in Breakout."</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="-wKT_MzXDTE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a0b9f8afcddf745811494f868014cab1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/-wKT_MzXDTE" target="_blank">See video</a></div></div>
-<p>From the press release sent today: it was originally slated as an Amico Intellivision exclusive back in 2020, Atari agreed to acquire and complete the development of the title. “We’re thrilled to be able to bring this gem to our players,” said Ethan Stearns, Senior Director of Games Publishing at Atari. “The team thought it was a brilliant concept, preserving the heart of Breakout’s gameplay while also giving the formula a completely new spin. Breakout Beyond is a worthy new entry into the Breakout pantheon, and we can’t wait to see the insane combos brick-breakers will make.”</p>
-<p class="plain-list-title">Features:</p>
-<ul>
-<li>Unlockable endless mode with an online global leaderboard.</li>
-<li>72 challenging levels that will put players’ brick-breaking skills to the test.</li>
-<li>Two-player co-op to manage (or ramp up) the chaos with a friend.</li>
-<li>Procedural audio and visual effects that increase in intensity with each combo.</li>
-</ul>
-<p>Looks like you'll need Proton to run it on Linux.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41082/breakout-beyond/">Breakout Beyond</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3041770/Breakout_Beyond/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/atari-announced-breakout-beyond-a-fresh-spin-on-the-classic-from-the-devs-of-bit-trip/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/atari-announced-breakout-beyond-a-fresh-spin-on-the-classic-from-the-devs-of-bit-trip/</guid>
-      <pubDate>Tue, 04 Feb 2025 14:33:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1069655316id26103gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Arcade</category>
-      
-      <category>Atari</category>
-      
-    </item>
-    
-    <item>
-      <title>The latest Valve Steam Console rumour with AMD RDNA4 can be safely ignored - here&#39;s why</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><strong>Update - 05/02/25 09:12am UTC</strong>: Valve developer Pierre-Loup Griffais quoted this very article on <a href="https://bsky.app/profile/plagman.bsky.social/post/3lhflptgruk2v" rel="noopener nofollow" target="_blank">Bluesky</a> to note "Thank you... we've done pre-release Mesa Vulkan work on every AMD architecture since Vega thanks to them kindly providing hardware, so there's nothing meaningful to read into there."</p>
-<p>So there you have it.</p>
-<hr/>
-<p><em>Original (and clearly correct) article below:</em></p>
-<p>Thanks to posts on social media and YouTuber videos, which now other news sites have picked up, we're seeing fresh rumours about a new Steam Machine / Steam Console.</p>
-<p>A lot of it seems to have come from <a href="https://x.com/HandleDeck/status/1886724649750302816" rel="noopener nofollow" target="_blank">@HandleDeck</a> on X, in a post where they suggest and speculate on future Valve hardware that was then picked up in a video from "<a href="https://www.youtube.com/watch?v=8f3D79aoro8" rel="noopener nofollow" target="_blank">eXtas1s</a>" on YouTube, and now multiple bigger news websites have decided to run with it.</p>
-<p>What's the story here: Valve developer Samuel Pitoiset added a update in the documentation for the open source Mesa graphics drivers recently to <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/33281/diffs?commit_id=b3cff84e0607f1ecf433fe51f65d4dc725054ce9" rel="noopener nofollow" target="_blank">note</a> AMD RDNA4 support "should be good enough", just part of the release notes for an upcoming Mesa release, which was shared by <a href="https://www.phoronix.com/news/Mesa-25.0-RADV-RDNA4-State" rel="noopener nofollow" target="_blank">Phoronix</a>. For people who don't regularly follow Linux, this seems to have caused their brains to wildly speculate on new Valve hardware coming, and it's now being spun into a rumour of Valve competing with Microsoft and Sony for the console space.</p>
-<p><em>You could run this rumour any time a Valve contracted developer updates Mesa for newer AMD hardware.</em></p>
-<p>Here's why I believe the rumours are plain and simply incorrect: Valve have paid developers to work on the AMD Mesa drivers for <em>years</em> at this point, to improve Linux as a whole and ensure Linux drivers are in a good state for upcoming and future AMD hardware. Valve invest in a lot of different areas for Linux, not all of it specifically just for their own hardware. A lot of their contracted developers just work on regular upgrades and improvements like this. Valve have done this for a long time now that we've been covering here.</p>
-<p>This isn't to say Valve definitely aren't working on future hardware, they're always seemingly <a href="https://www.gamingonlinux.com/2024/12/valve-may-be-working-on-a-new-kind-of-steam-machine/" rel="noopener" target="_blank">working on <em>something</em></a>, just that <u><em>this specific new rumour</em></u> is wrong based on where they're getting their information from — a small documentation update for upcoming Mesa driver upgrades (that traditional desktop Linux uses, as well as Valve's SteamOS).</p>
-<p>A fair amount of previous rumours ended up being for the <a href="https://www.gamingonlinux.com/2025/01/lenovo-legion-go-s-with-valves-steamos-is-official-expected-to-launch-in-may/" rel="noopener" target="_blank">Legion Go S with SteamOS</a>, and <a href="https://www.gamingonlinux.com/2025/01/valve-confirms-a-public-beta-of-steamos-is-coming-as-steamos-expands-beyond-steam-deck/" rel="noopener" target="_blank">Valve's wider SteamOS push on more devices</a>. This Mesa update helps with the SteamOS push too, so you could <em>eventually</em> run SteamOS on any of your own AMD RDNA4 devices. Again, it's not specific to Valve hardware.</p>
-<p>Valve already have their hands full with all this, and it's a lot of work to add in another system, so they're clearly not yet ready for it. They've already said the hardware for a Steam Deck 2 simply isn't there yet for a generational leap, so it won't be that either. <em>Just don't expect a new home console from Valve any time soon.</em></p>
-<p>I fully expect the next hardware to come from Valve will be a new VR headset to replace the ageing Valve Index.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/the-latest-valve-steam-console-rumour-with-amd-rdna4-can-be-safely-ignored-heres-why/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/the-latest-valve-steam-console-rumour-with-amd-rdna4-can-be-safely-ignored-heres-why/</guid>
-      <pubDate>Tue, 04 Feb 2025 12:24:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/488899307id26102gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Editorial</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>UK gov responds to the newer Stop Killing Games petition - no plans to amend UK consumer law</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The second Stop Killing Games petition in the UK crossed over 10,000 signatures, and so the government have responded with a full statement.</p>
-<p>As a reminder: this is the initiative started up by YouTuber Ross Scott / of Accursed Farms, resulting from Ubisoft shutting down The Crew and preventing people who purchased it from playing it. The first UK petition had a <a href="https://www.gamingonlinux.com/2024/05/uk-government-replies-to-petition-about-requiring-publishers-to-keep-games-working/" rel="noopener" target="_blank">government response last year</a>, which really just reiterated the current consumer laws.</p>
-<p>This second petition also now has a reply from the UK government and it's clear they have zero plans to change anything right now. Here's their reply in full:</p>
-<blockquote>
-<p>The Government recognises concerns raised by video games users regarding the operability of purchased products. As the lead department for video games, the Department for Culture, Media and Sport (DCMS) regularly engages industry representatives and monitors how consumers interact with games. We work with the Department for Business and Trade (DBT) as the lead department for consumer protection more generally.</p>
-<p>We are aware of issues relating to the life-span of digital content, including video games, and we appreciate the concerns of players of some games that have been discontinued. We have no plans to amend existing consumer law on digital obsolescence, but we will monitor this issue and consider the relevant work of the Competition and Market Authority (CMA) on consumer rights and consumer detriment.</p>
-<p>Video games sellers must comply with existing consumer law – this includes the Consumer Rights Act 2015 (CRA) and Consumer Protection from Unfair Trading Regulations 2008 (CPRs). We have provided details of relevant protections below. However, there is no requirement in UK law for software companies to support older versions of their products. Decision-making is for those companies, taking account of commercial and regulatory factors and complying with existing consumer law. There may be occasions where companies make decisions based on the high running costs of maintaining older servers for games with declining user bases.</p>
-<p>The CRA gives consumers important rights when they make a contract with a trader for the supply of digital content, requiring it to be of satisfactory quality, fit for a particular purpose and as described by the seller. It may be difficult and expensive for businesses to maintain support for old software, particularly if it needs to interact with new technologies. However, if software is offered for sale that is not supported by the provider, then this should be made clear, for example on product webpages and physical packaging.</p>
-<p>If digital content does not meet these quality rights, the consumer is entitled to a repair or replacement or, if not possible, some money back up to 100% of the cost of the digital content. These rights apply to intangible digital content like a PC game, as well as tangible content like a physical copy of a game. The CRA has a limit of up to six years after a breach of contract during which a consumer can take legal action.</p>
-<p>A trader or third party can upgrade and improve the features of digital content so long as it continues to match any description given by the trader and conforms with any pre-contract information provided by the trader, unless varied by express agreement.</p>
-<p>In addition, the CRA requires that the terms and conditions applied by a trader to a product they sell must not be unfair and must be prominent and transparent. If not, they may also be challenged and the question of fairness is a matter for the courts. Terms found to be unfair are not binding on the consumer.</p>
-<p>The CPRs require information to consumers to be clear and correct and prohibit commercial practices which through false information or misleading omissions cause the average consumer to make a different choice. As such, the regulations prohibit commercial practices which omit or hide information which the average consumer needs to make an informed choice, and prohibits traders from providing material information in an unclear, unintelligible, ambiguous or untimely manner. If consumers are led to believe that a game will remain playable indefinitely for certain systems, despite the end of physical support, the CPRs may require that the game remains technically feasible (for example, available offline) to play under those circumstances.</p>
-<p>The CPRs are enforced by Trading Standards and the CMA. If consumers believe that there has been a breach of these regulations, they should report it to the Citizens Advice helpline (or Advice Direct Scotland for those living in Scotland) which is a free service advising on rights and how to take their case forward. The helplines will refer complaints to Trading Standards and CMA where appropriate. Consumers can also pursue private redress through the courts where a trader has provided misleading information on a product.<br/>
-<br/>
-The CPRs section of the Digital Markets, Competition and Consumers (DMCC) Act 2024 is expected to come into effect in April 2025. It restates and updates the CPRs into primary legislation, revokes the 2008 regulations and sets out rules around unfair trading. The Act:<br/>
-● Provides the Secretary of State with the power to add, amend, or remove a description of a commercial practice which are in all circumstances considered unfair<br/>
-● Provides clarification that someone facilitating supply or promotion of a product is a ‘trader’ and must comply with consumer law</p>
-<p>The use of this power will be kept under review – any amendments proposed are subject to a duty to consult with stakeholders and approval by both Houses of Parliament.<br/>
-Department for Culture, Media and Sport</p>
-</blockquote>
-<p>Clearly, these types of petitions aren't going to really help anything right now.</p>
-<p>For now, your best bet is to be on the lookout for games that force an online connection and look to a different game. What we can perhaps hope for instead though, is to have stores like Steam require developers to clearly state on store pages if there's a forced online requirement, much like <a href="https://www.gamingonlinux.com/2024/10/steam-games-will-now-need-to-fully-disclose-kernel-level-anti-cheat-on-store-pages/" rel="noopener" target="_blank">they now require for for kernel-level anti-cheat</a>. Valve also made a tweak on Steam to <a href="https://www.gamingonlinux.com/2024/10/steam-purchases-now-clearly-state-youre-just-getting-a-license-not-ownership/" rel="noopener" target="_blank">more clearly note you're buying a license</a> last year too, you don't actually own what you buy.</p>
-<p>Source: <a href="https://petition.parliament.uk/petitions/702074/" rel="noopener nofollow" target="_blank">UK Gov</a>, <a href="https://www.stopkillinggames.com/" rel="noopener nofollow" target="_blank">Stop Killing Games</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/uk-gov-responds-to-the-newer-stop-killing-games-petition-no-plans-to-amend-uk-consumer-law/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/uk-gov-responds-to-the-newer-stop-killing-games-petition-no-plans-to-amend-uk-consumer-law/</guid>
-      <pubDate>Tue, 04 Feb 2025 10:37:09 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1894667952id26099gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve fixes up The Finals and No Man&#39;s Sky VR with Proton Experimental</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A fresh Proton Experimental update from Valve has landed fixing up issues with two games for Linux / Steam Deck so here's what's new. This follows on from a <a href="https://www.gamingonlinux.com/2025/01/proton-hotfix-updated-to-get-the-finals-working-again-on-linux-steam-deck/" rel="noopener" target="_blank">recent Proton Hotfix</a> for The Finals. Confused yet? See <a href="https://www.gamingonlinux.com/guides/view/why-are-there-so-many-different-proton-versions-proton-8-proton-9-experimental-ge-proton/" rel="noopener" target="_blank">more in my guide on all the Proton versions</a>.</p>
-<p class="plain-list-title">The two fixes Valve noted are:</p>
-<ul>
-<li>Fixed The Finals crashing after a recent game update.</li>
-<li>Fixed No Man's Sky failing to boot in VR mode after a recent game update.</li>
-</ul>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1753916821738664133gol1.jpg"/><br/>
-<em>Pictured - THE FINALS on Linux</em></p>
-<p>It will just show up in your Steam Downloads as an update for Proton Experimental. The Finals is already set for Proton Experimental by default, but you'll need to swap it over for No Man's Sky VR in settings -&gt; compatibility. See <a href="https://www.gamingonlinux.com/guides/view/how-to-change-the-proton-version-on-linux-steamos-and-steam-deck/" rel="noopener" target="_blank">more in our guide on changing Proton versions</a>.</p>
-<p>In case you missed it there was also a <a href="https://www.gamingonlinux.com/2025/01/final-fantasy-vii-rebirth-should-work-better-on-linux-steam-deck-with-the-latest-proton-hotfix/" rel="noopener" target="_blank">Proton Hotfix update for FINAL FANTASY VII REBIRTH</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/valve-fixes-up-the-finals-and-no-mans-sky-vr-with-proton-experimental/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/valve-fixes-up-the-finals-and-no-mans-sky-vr-with-proton-experimental/</guid>
-      <pubDate>Tue, 04 Feb 2025 10:19:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1720162000id26098gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Nexus Mods app makes improvements to Collections, fixes Baldur&#39;s Gate 3 Script Extender on Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The newer open source and cross-platform Nexus Mods app has another update out, this time with more UI changes and improvements to the Collections system along with bug fixes. Still in Alpha, with a limited selection of supported games, but they're working on supporting more games.</p>
-<p>For the Collections feature it will now sit at the top if you have some installed, along with being read-only when you first add them to ensure "you get the full experience the curator intended". Downloading and installing mod collections was also improved, along with a UI change to show you when a collection has been updated. They also said "mod updates are coming soon".</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9802176141738593915gol1.jpg"/></p>
-<p>All the other changes:</p>
-<blockquote>
-<p><strong>Workspace Improvements</strong></p>
-<p>We've made several improvements to the behaviour of the left menu in your Workspaces:</p>
-<ul>
-<li>The left menu has been reorganised with the Library at the top, the mods in your loadout in the middle, and the extra utilities at the bottom.</li>
-<li>Pages in the left menu will now show active/selected states based on which panels/tabs are open and in view.</li>
-<li>Tooltips have been added to the left menu items so you can always see the full name.</li>
-</ul>
-<p><strong>Mod Thumbnails</strong></p>
-<p>We've added the mod page image as a thumbnail in the Library, My Mods, and Collection Download pages. It's a small change, but we think it makes a big difference.</p>
-<p><strong>Technical Changes</strong></p>
-<ul>
-<li>Added a new error pop-up when the app encounters an unexpected error. This can be turned off in the Settings.</li>
-<li>Added CLI commands to allows users to delete files from the hidden Override folder where this has compromised their setup.</li>
-</ul>
-<p><strong>Bug Fixes</strong></p>
-<ul>
-<li>Fixed Health Checks not refreshing properly when the Loadout changes.</li>
-<li>Fixed an issue when installing Baldur's Gate 3 Script Extender on Linux.</li>
-</ul>
-<p><strong>Known Issues</strong></p>
-<ul>
-<li>On Windows, a Command Prompt window will appear behind the app while it is running.</li>
-<li>When viewing a read-only collection, it is still possible to toggle individual mods on and off, but this does not affect your loadout.</li>
-<li>Stardew Valley (Native Linux version) is not detected when installed via Heroic Launcher on Linux. The Windows version of the game can be used instead until this issue is fixed.</li>
-<li>Bundled mods included with collections do not appear in the UI but are still applied to your game.</li>
-<li>The success rating for collections does not show the correct value.</li>
-<li>The game version is not checked when adding a collection meaning you can install outdated mods without being warned.</li>
-<li>The "Switch View" option does not persist in the Library/Installed Mods view.</li>
-<li>The "Load Order" heading toggle does not persist in the Load Order view.</li>
-</ul>
-</blockquote>
-<p>I'm really looking forward to Nexus adding the likes of Skyrim and Fallout into this one, it's what many keep asking for. Their <a href="https://trello.com/b/gPzMuIr3/nexus-mods-app-roadmap" rel="noopener nofollow" target="_blank">roadmap</a> clearly shows Bethesda games are planned, so it's only a matter of time.</p>
-<p>See more in the <a href="https://github.com/Nexus-Mods/NexusMods.App/releases/tag/v0.7.3" rel="noopener nofollow" target="_blank">release notes</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/nexus-mods-app-makes-improvements-to-collections-fixes-baldurs-gate-3-script-extender-on-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/nexus-mods-app-makes-improvements-to-collections-fixes-baldurs-gate-3-script-extender-on-linux/</guid>
-      <pubDate>Mon, 03 Feb 2025 14:49:17 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1850286385id26097gol.jpg" type="image/jpeg"/>
-      
-      <category>Apps</category>
-      
-      <category>Misc</category>
-      
-      <category>Mod</category>
-      
-      <category>Open Source</category>
       
     </item>
     
