@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-02-19 07:28:11.751908</pubDate>
+    <pubDate>2025-02-20 07:26:57.297789</pubDate>
 
     
     <image>
@@ -18,6 +18,221 @@
     </image>
 
     
+    
+    <item>
+      <title>Mesa 25.0 open source graphics drivers released with Vulkan 1.4 and initial AMD RDNA4 support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Developer Eric Engestrom announced today the release of Mesa 25.0, bringing lots of open source graphics driver updates and expanded hardware support.</p>
+<p>From the release announcement Engestrom noted "The flashiest addition is probably the support for Vulkan 1.4 by Anv (Intel), Asahi (Apple), Lavapipe (software), NVK (NVIDIA), PanVK (Mali), RADV (AMD), and Turnip (Qualcomm)". On top of that there's plenty of support for new extensions and "initial GFX12 (RDNA4) support on RADV".</p>
+<p>All the additions highlighted for Mesa 25.0 are:</p>
+<blockquote>
+<p>- cl_khr_depth_images in rusticl<br/>
+- Vulkan 1.4 on radv/gfx8+<br/>
+- VK_KHR_dedicated_allocation on panvk<br/>
+- VK_KHR_global_priority on panvk<br/>
+- VK_KHR_index_type_uint8 on panvk<br/>
+- VK_KHR_map_memory2 on panvk<br/>
+- VK_KHR_multiview on panvk/v10+<br/>
+- VK_KHR_shader_non_semantic_info on panvk<br/>
+- VK_KHR_shader_relaxed_extended_instruction on panvk<br/>
+- VK_KHR_vertex_attribute_divisor on panvk<br/>
+- VK_KHR_zero_initialize_workgroup_memory on panvk<br/>
+- VK_KHR_shader_draw_parameters on panvk<br/>
+- VK_KHR_shader_float16_int8 on panvk<br/>
+- VK_KHR_8bit_storage on panvk<br/>
+- VK_EXT_4444_formats on panvk<br/>
+- VK_EXT_global_priority on panvk<br/>
+- VK_EXT_global_priority_query on panvk<br/>
+- VK_EXT_host_query_reset on panvk<br/>
+- VK_EXT_image_robustness on panvk<br/>
+- VK_EXT_pipeline_robustness on panvk<br/>
+- VK_EXT_provoking_vertex on panvk<br/>
+- VK_EXT_queue_family_foreign on panvk<br/>
+- VK_EXT_sampler_filter_minmax on panvk<br/>
+- VK_EXT_scalar_block_layout on panvk<br/>
+- VK_EXT_tooling_info on panvk<br/>
+- depthClamp on panvk<br/>
+- depthBiasClamp on panvk<br/>
+- drawIndirectFirstInstance on panvk<br/>
+- fragmentStoresAndAtomics on panvk/v10+<br/>
+- sampleRateShading on panvk<br/>
+- occlusionQueryPrecise on panvk<br/>
+- shaderInt16 on panvk<br/>
+- shaderInt64 on panvk<br/>
+- imageCubeArray on panvk<br/>
+- VK_KHR_depth_clamp_zero_one on RADV<br/>
+- VK_KHR_maintenance8 on radv<br/>
+- VK_KHR_shader_subgroup_rotate on panvk/v10+<br/>
+- Vulkan 1.1 on panvk/v10+<br/>
+- VK_EXT_subgroup_size_control on panvk/v10+<br/>
+- initial GFX12 (RDNA4) support on RADV</p>
+</blockquote>
+<p>For those of you who want a stable experience, you would usually want to wait for the first update point release with at least Mesa 25.0.1. Here's a reminder of their currently planned release schedule:</p>
+<ul>
+<li>2025-03-05 - 25.0.1</li>
+<li>2025-03-19 - 25.0.2</li>
+<li>2025-04-02 - 25.0.3</li>
+<li>2025-04-16 - 25.0.4</li>
+<li>2025-04-30 - 25.0.5</li>
+<li>2025-05-14 - 25.0.6</li>
+<li>2025-05-28 - 25.0.7 (last planned)</li>
+</ul>
+<p>The next major feature release with Mesa 25.1 is due sometime around May 7th, if it's deemed stable enough.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/mesa-25-0-open-source-graphics-drivers-released-with-vulkan-1-4-and-initial-amd-rdna4-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/mesa-25-0-open-source-graphics-drivers-released-with-vulkan-1-4-and-initial-amd-rdna4-support/</guid>
+      <pubDate>Wed, 19 Feb 2025 22:38:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/mesa.png" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Mesa</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental adds fixes for Rising Storm 2: Vietnam, The Finals and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve released a fresh update for Proton Experimental today pulling in some more fixes for various Windows games to run on Linux / Steam Deck.</p>
+<p>Noted to be now playable is Sniper Elite: Nazi Zombie Army from Rebellion, originally released back in 2013. Although there is a newer version of the game included in the Zombie Army Trilogy that's already supported by Proton.</p>
+<p class="plain-list-title">Other changes include:</p>
+<ul>
+<li>Fixed input not working with Studio System : Guardian Angel. (previously in Proton Hotfix)</li>
+<li>Fixed The Finals crashing after a recent game update. (previously in Proton Hotfix)</li>
+<li>Fixed Proton 9 regressions:
+	<ul>
+<li>Rising Storm 2: Vietnam is playable again.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5306322231740004048gol1.jpg"/><br/>
+<em>Pictured - Rising Storm 2: Vietnam</em></p>
+<p>Source: <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener nofollow" target="_blank">GitHub</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/proton-experimental-adds-fixes-for-rising-storm-2-vietnam-the-finals-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/proton-experimental-adds-fixes-for-rising-storm-2-vietnam-the-finals-and-more/</guid>
+      <pubDate>Wed, 19 Feb 2025 22:27:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1117603361id26212gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Amazon&#39;s previous VP of Prime Gaming said they &#34;tried everything&#34; to disrupt Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Everything except making a store people wanted to use? Ethan Evans, who was previously Vice President of Prime Gaming at Amazon, has a short retrospective of trying to take on Steam.</p>
+<p>It's a typical <a href="https://www.linkedin.com/posts/ethanevansvp_as-vp-of-prime-gaming-at-amazon-we-failed-activity-7295834479036702720-cDmX/" rel="noopener nofollow" target="_blank">LinkedIn post</a> that doesn't exactly go into a whole lot of detail, but it's still interesting to get just a little behind the scenes from people who worked at companies that thought they could dethrone Steam. In the post Evans notes how "we failed multiple times to disrupt the game platform Steam" despite being "250x bigger" and how they "tried everything".</p>
+<p>Evans continued noting "We acquired Reflexive Entertainment (a small PC game store) and tried to scale it. It went nowhere" and then after buying Twitch and trying a store there assuming people would use it because they watch livestreams, they were also wrong. Then it comes to the cloud gaming platform Luna, which also appears to not be going particularly well, noting how along with Stadia from Google that "Neither gained significant traction".</p>
+<p>Why the failures? Evans said "The mistake was that we underestimated what made consumers use Steam. It was a store, a social network, a library, and a trophy case all in one. And it worked well".</p>
+<p><em>It's not just Amazon though.</em></p>
+<p>When you think about the Epic Games Store, and how they're trying to compete with constant free game giveaways, they're pretty much coasting on the revenue from the likes of Fortnite, and it shows you truly how difficult it is to move people away from what they like and what they're used to.</p>
+<p>In <a href="https://store.epicgames.com/en-US/news/epic-games-store-2024-year-in-review" rel="noopener nofollow" target="_blank">Epic's 2024 Year in Review</a> they might show off some fancy numbers in multiple places with an increase in total spending from users, but they had an 18% cut in third-party PC game spending on the Epic Store. Looking back to <a href="https://store.epicgames.com/en-US/news/epic-games-store-2023-year-in-review" rel="noopener nofollow" target="_blank">2023</a>, they had a 13% cut in third-party PC game spending, so it's actually getting <em>worse</em>.</p>
+<p>If you want to compete in an established market, against a company that's massive and (on the whole) quite well liked, you have to have something better to offer in some way. Just being big doesn't mean you'll be a success.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/amazons-previous-vp-of-prime-gaming-said-they-tried-everything-to-disrupt-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/amazons-previous-vp-of-prime-gaming-said-they-tried-everything-to-disrupt-steam/</guid>
+      <pubDate>Wed, 19 Feb 2025 10:53:52 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1836249689id26211gol.jpg" type="image/jpeg"/>
+      
+      <category>Amazon</category>
+      
+      <category>Editorial</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Even with the incredible launch Marvel Rivals developer NetEase sends US staff packing</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Game didn't sell enough? Staff cuts. Game did incredible! Staff cuts. It seems there's just no winning for some people as Marvel Rivals developer NetEase sends US staff packing.</p>
+<p>Some initial reports out there made it out to be seemingly bigger than it is, but no matter how you want to cut it, the developer of a huge hit game has shed some staff responsible for helping it succeed.</p>
+<p>First coming in from a <a href="https://www.linkedin.com/feed/update/urn:li:activity:7297672154060361729/" rel="noopener nofollow" target="_blank">post</a> on LinkedIn from Thaddeus Sasser, a Game Director based in the US for NetEase who said in a post:</p>
+<blockquote>
+<p>This is such a weird industry...<br/>
+<br/>
+My stellar, talented team just helped deliver an incredibly successful new franchise in Marvel Rivals for NetEase Games...<br/>
+<br/>
+...and were just laid off!</p>
+</blockquote>
+<p>Level designer Garry McGee also confirmed it in their own LinkedIn <a href="https://www.linkedin.com/feed/update/urn:li:activity:7297717165019803649/" rel="noopener nofollow" target="_blank">post</a>:</p>
+<blockquote>
+<p>Hello, hello! As the old saying goes, “All good things must come to an end.” My team recently helped develop and launch Marvel Rivals, which turned out to be a bigger hit than any of us expected! Unfortunately my team was also laid off. Strange times all across the industry indeed.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7329297001739961044gol1.jpg"/><br/>
+<em>Pictured - Marvel Rivals</em></p>
+<p>For some added context: in their official Discord server, the Community Manager has been responding to a bunch of users concerned about it:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4904128381739960798gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4904128381739960798gol1.jpg"/></a></p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13611664781739960662gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13611664781739960662gol1.jpg"/></a></p>
+<p>Also in a statement to <a href="https://www.pcgamer.com/games/third-person-shooter/just-couldnt-dodge-that-big-boot-i-guess-no-matter-how-big-the-success-of-the-gig-marvel-rivals-developers-in-the-us-say-netease-just-laid-off-their-whole-team/" rel="noopener nofollow" target="_blank">PC Gamer</a>, NetEase confirmed the layoffs noting:</p>
+<blockquote>
+<p>We recently made the difficult decision to adjust Marvel Rivals’ development team structure for organizational reasons and to optimize development efficiency for the game. This resulted in a reduction of a design team based in Seattle that is part of a larger global design function in support of Marvel Rivals. We appreciate the hard work and dedication of those affected and will be treating them confidentially and respectfully with recognition for their individual contributions.</p>
+</blockquote>
+<p>Additionally NetEase said they remain committed to the game with their development team in China.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40684/marvel-rivals/">Marvel Rivals</a></strong> | Release Date: 6th December 2024<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2767030/Marvel_Rivals/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/even-with-the-incredible-launch-marvel-rivals-developer-netease-sends-us-staff-packing/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/even-with-the-incredible-launch-marvel-rivals-developer-netease-sends-us-staff-packing/</guid>
+      <pubDate>Wed, 19 Feb 2025 10:32:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/837742640id26210gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>Online Multiplayer</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve pinch a little code from Godot for Half-Life 2, Counter-Strike: Source, Day of Defeat: Source, Team Fortress 2</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>This is the beauty of open source in action - everyone can benefit. Valve are no stranger to open source, and as it turns out they're using a little bit of code from <a href="https://godotengine.org/" rel="noopener nofollow" target="_blank">Godot Engine</a> now too.</p>
+<p>Spotted by a few eagle eyes in the recent <a href="https://www.gamingonlinux.com/2025/02/team-fortress-2-major-update-released-and-source-available-for-modders-via-the-source-sdk/" rel="noopener" target="_blank">big Source SDK update that gives the code for Team Fortress 2</a> for modders, the official Valve GitHub page actually <a href="https://github.com/ValveSoftware/source-sdk-2013/blob/0759e2e8e179d5352d81d0d4aaded72c1704b7a9/src/materialsystem/stdshaders/common_lightmappedgeneric_fxc.h#L153C4-L153C25" rel="noopener nofollow" target="_blank">notes</a> that "Bicubic lightmap code lovingly taken and adapted from Godot" (with the Godot license also <a href="https://github.com/ValveSoftware/source-sdk-2013/blob/0759e2e8e179d5352d81d0d4aaded72c1704b7a9/thirdpartylegalnotices.txt#L890" rel="noopener nofollow" target="_blank">noted</a>).</p>
+<p>Bicubic lightmap support was first introduced in the <a href="https://www.gamingonlinux.com/2024/11/half-life-2-free-to-keep-until-november-18th-episodes-one-two-now-included-with-a-huge-update/" rel="noopener" target="_blank">Half-Life 2: 20th Anniversary Update</a>, and then rolled out yesterday for various Valve classics like Team Fortress 2, <a href="https://www.gamingonlinux.com/2025/02/counter-strike-source-and-day-of-defeat-source-get-major-updates-with-64bit-support/" rel="noopener" target="_blank">Counter-Strike: Source and Day of Defeat: Source</a> and others as part of all their big updates.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11796665631739959271gol1.jpg"/><br/>
+<em>Pictured - Half-Life 2: Episode One</em></p>
+<p>Just a fun little detail I thought you might like to know. Valve do a lot with open source, the most notable being their compatibility layer Proton to run Windows games on Linux / SteamOS / Steam Deck.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/valve-pinch-a-little-code-from-godot-for-half-life-2-counter-strike-source-day-of-defeat-source-team-fortress-2/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/valve-pinch-a-little-code-from-godot-for-half-life-2-counter-strike-source-day-of-defeat-source-team-fortress-2/</guid>
+      <pubDate>Wed, 19 Feb 2025 10:02:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2114166252id26209gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Godot Engine</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
     
     <item>
       <title>Team Fortress 2 major update released and source available for modders via the Source SDK</title>
@@ -4508,214 +4723,6 @@ For those of you who have a Steam Deck or prefer to play with a gamepad - let us
       <category>Steam</category>
       
       <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>You can now GoPro with your Steam Deck and mount it to your belly - or wherever you want</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Mechanism, who made the excellent <a href="https://www.gamingonlinux.com/2022/09/your-steam-deck-deserves-a-deckmate/" rel="noopener" target="_blank">Deckmate</a> and <a href="https://www.gamingonlinux.com/2024/10/set-comfort-level-to-maximum-with-the-mechanism-gaming-pillow-for-handhelds/" rel="noopener" target="_blank">Gaming Pillow</a>, said about their latest accessory kit the GoPro Mount that "No one asked for this…" but they did it anyway, because why not it actually sounds pretty useful.</p>
-<p>They said "Just in case you need more validation in your gaming career: now you can finally say you've gone pro. Designed for static loads only (don't go skydiving with your console please)". Mechanism of course included some slightly silly uses in their marketing for their new GoPro Mount, which slots into their existing Mechanism mounting point, like with their Deckmate. One such example is strapping it to your belly for when you're relaxing with a game.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12809783341738754795gol1.jpg"/><br/>
-<em>Picture credit: Mechanism</em></p>
-<p>I'm not one to judge because…that actually doesn't look too bad. Still, I think I would prefer their Gaming Pillow in that situation which really does work nicely with the Steam Deck. Having it attached directly to me would feel a bit — weird. Maybe some GamingOnLinux readers will find it useful though.</p>
-<p>Or, perhaps, better still, when you're on the throne so you don't miss a moment.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/192542171738755010gol1.jpg"/><br/>
-<em>Picture credit: Mechanism</em></p>
-<p>I'm definitely going to judge you if you do that though.</p>
-<p>There's plenty of actual genuine uses for this, since GoPro have a lot of accessories and stands.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9394358011738755077gol1.jpg"/><br/>
-<em>Picture credit: Mechanism</em></p>
-<p>At £8 that seems nice and reasonable for a specialised mount and screw. Although, you do then need to buy their grips to go with it.</p>
-<p>You can see more on the <a href="https://getmechanism.com/products/gopro-mount" rel="noopener nofollow" target="_blank">Mechanism website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/you-can-now-gopro-with-your-steam-deck-and-mount-it-to-your-belly-or-wherever-you-want/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/you-can-now-gopro-with-your-steam-deck-and-mount-it-to-your-belly-or-wherever-you-want/</guid>
-      <pubDate>Wed, 05 Feb 2025 11:36:57 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1219250070id26113gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Fanatical&#39;s Pedal to the Metal Bundle has some gems for racing fans</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Got the need for some speed? <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-pedal-to-the-metal-bundle" rel="noopener nofollow" target="_blank">Fanatical's Pedal to the Metal Bundle</a> has a bunch of good looking games to add to your collection. It's a build your own bundle so you can get 3 + Games for £2.00 each, 5 + Games for £1.80 each or 7 + Games for £1.71 each.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5603665331738753406gol1.jpeg"/></p>
-<p>Below I'll list the expect compatibility via Deck Verified and ProtonDB.</p>
-<p><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> <strong>Steam Deck Verified</strong></p>
-<p>New Star GP</p>
-<p>Make Way</p>
-<p>Retrowave 2</p>
-<p>Super Indie Karts (Native Linux)</p>
-<p>Rocket Assault: Downhill Rush</p>
-<p><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> <strong>Steam Deck Playable</strong></p>
-<p>Dakar 18 (ProtonDB Platinum)</p>
-<p>Descenders (Native Linux)</p>
-<p>Ultimate Racing 2D 2 (Native Linux)</p>
-<p><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> <strong>Steam Deck Unsupported</strong></p>
-<p>WRC 10 FIA World Rally Championship (ProtonDB Gold)<br/>
-<em>Reportedly works fine on Steam Deck with DX12.</em></p>
-<p>WRC 9 FIA World Rally Championship (ProtonDB Gold)<br/>
-<em>Works but appears to need a <a href="https://www.protondb.com/app/1267540#O04ovilvsW" rel="noopener nofollow" target="_blank">launch option</a>.</em></p>
-<p>Retrowave World</p>
-<p><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> <strong>Steam Deck Unrated</strong></p>
-<p>BallisticNG Deluxe Edition (Native Linux)</p>
-<p>Aqua Moto Racing Utopia (ProtonDB Platinum)</p>
-<p>Snow Moto Racing Freedom</p>
-<p>Yugo: the non-game (Native Linux)</p>
-<p>Xeno Runners</p>
-<p class="plain-list-title">There's also the <em>RewindApp Racing Penta Pack</em> you can pick up as part of it, which includes these games with various ratings:</p>
-<ul>
-<li>Drift Of The Hill</li>
-<li>Drift86</li>
-<li>Karting</li>
-<li>Retrowave</li>
-<li>Initial Drift Online</li>
-</ul>
-<p><a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-pedal-to-the-metal-bundle" rel="noopener nofollow" target="_blank">Check out the full bundle</a> to pick some gems up.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/fanaticals-pedal-to-the-metal-bundle-has-some-gems-for-racing-fans/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/fanaticals-pedal-to-the-metal-bundle-has-some-gems-for-racing-fans/</guid>
-      <pubDate>Wed, 05 Feb 2025 11:05:34 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1818900991id26112gol.jpg" type="image/jpeg"/>
-      
-      <category>Fanatical</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Misc</category>
-      
-      <category>Racing</category>
-      
-    </item>
-    
-    <item>
-      <title>Flathub adds We Love Games and On the go sections plus details on what&#39;s next for their infrastructure</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://flathub.org/" rel="noopener nofollow" target="_blank">Flathub</a> is carefully tweaking and expanding their Linux software store, with two newer flashy sections included on it. Plus, some details behind the scenes on what they're working on.</p>
-<p>What is Flathub? A way to install various apps and games across many different Linux distributions, and it's the default way to install new apps on Valve's Steam Deck in Desktop Mode via the Discover app.</p>
-<p>Since gaming on Linux (hi!) is a bigger thing now, they're attempting to give it a bit of a boost on the Flathub store directly. This comes with the new "We ♥ Games" section that you can find if you scroll down a bit. Writing on Mastodon, developer "razze" <a href="https://mastodon.social/@razze@osna.social/113936280873590097" rel="noopener nofollow" target="_blank">noted</a>:</p>
-<blockquote>
-<p>I've added a new card to the landing page of flathub.org yesterday, focused on games. We have been trying to do this for quiet some time and I know that the results (as in what is in which category) are not perfect, but putting this out there hopefully helps us move things.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17547786751738751913gol1.jpg"/></p>
-<p>Additionally, the official Flathub account on Mastodon, also <a href="https://mastodon.social/@flathub@floss.social/113948318239881567" rel="noopener nofollow" target="_blank">announced</a> the new On the go section. They said:</p>
-<blockquote>
-<p>We have a shiny new “On the Go” section on Flathub! ✨📱✨ Check out how we’re making it easier to find Linux apps for mobile devices like phones, tablets, and even Steam Decks using existing data and open standards. And developers: if your app is ready for mobile but isn’t featured in the new section, learn how to fix it. ⚒️</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16086364291738752014gol1.jpg"/></p>
-<p>There's more too. In a fresh blog post titled "<a href="https://docs.flathub.org/blog/flathub-build-infrastructure-revamp/" rel="noopener nofollow" target="_blank">What's next for Flathub build infrastructure</a>" developer Bart Piotrowski noted how there's "a storm coming and we are re-architecting our build infrastructure". Sounds pretty complicated, especially with their sponsor Equinix Metal pulling out which is affecting various open source projects as Equinix Metal is being sunset. At least for <a href="https://gitlab.freedesktop.org/freedesktop/freedesktop/-/issues/2011" rel="noopener nofollow" target="_blank">FreeDesktop.org</a>, AWS and Cloudflare have noted potential sponsorships, so perhaps Flathub can get in on that too.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/flathub-adds-we-love-games-and-on-the-go-sections-plus-details-on-whats-next-for-their-infrastructure/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/flathub-adds-we-love-games-and-on-the-go-sections-plus-details-on-whats-next-for-their-infrastructure/</guid>
-      <pubDate>Wed, 05 Feb 2025 10:49:10 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/flathub.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Humble Choice for February has Total War: PHARAOH, Trepang2, Griftlands and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The <a href="https://www.humblebundle.com/membership" rel="noopener nofollow" target="_blank">latest Humble Choice</a> has been revealed. This is the monthly selection of games you can subscribe to with Humble Bundle. Here's the expected compatibility for Linux / Steam Deck.</p>
-<p>Unfortunately, their headline game with Immortals of Aveum is an EA / Origin key but the rest are Steam keys. So for Immortals of Aveum you'll need something like <a href="https://lutris.net/games/ea-app/" rel="noopener nofollow" target="_blank">Lutris</a> or <a href="https://github.com/moraroy/NonSteamLaunchers-On-Steam-Deck" rel="noopener nofollow" target="_blank">NonSteamLaunchers</a> to run it with Proton. Below I'll list the expect compatibility via Deck Verified and ProtonDB, plus each is a Steam link for you to get more info.</p>
-<p>Included games:</p>
-<p><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</strong></p>
-<p><a href="https://store.steampowered.com/app/1164940/Trepang2/" rel="noopener nofollow" target="_blank">Trepang2</a> (ProtonDB Gold)</p>
-<blockquote>
-<p>Become the ultimate badass in Trepang2: A gory, action-packed FPS set in the near future. Unleash all hell on your enemies, dodge bullets and leave a trail of destruction in this hardcore and frenetic shooter.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/601840/Griftlands/" rel="noopener nofollow" target="_blank">Griftlands</a> (Native Linux)</p>
-<blockquote>
-<p>Griftlands is a deck-building roguelite where you negotiate, fight, steal or otherwise persuade others to get your way. Every decision is important, be it the jobs you take, the friends you make, or the cards you collect.</p>
-</blockquote>
-<p><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</strong></p>
-<p><a href="https://store.steampowered.com/app/2328750/My_Little_Universe/" rel="noopener nofollow" target="_blank">My Little Universe</a> (ProtonDB Platinum)</p>
-<blockquote>
-<p>Stranded on a barren moon with nothing but your tools, fuelless ship, and celestial powers of creation, you are destined to recreate what was once lost and be the hero of your own Little Universe! Don't forget to call in up to three of your friends to join your journey in the Splitscreen Co-op Mode!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1651560/Fabledom/" rel="noopener nofollow" target="_blank">Fabledom</a> (ProtonDB Gold)</p>
-<blockquote>
-<p>Set in a wholesome fairytale world, Fabledom is a laid-back City builder. Enjoy the growth of your settlement, interact with your neighbors and defend your kingdom from magical creatures. All to find true love and live happily ever after!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1652250/Tales__Tactics/" rel="noopener nofollow" target="_blank">Tales &amp; Tactics</a> (ProtonDB Gold)</p>
-<blockquote>
-<p>Roguelike Squad-based Autobattler in a Tabletop RPG setting. Draft your army, carefully equip and position your units, make important choices, and meet a colorful cast of characters as you make ready for the Grand Tournament.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/2005160/Naheulbeuks_Dungeon_Master/" rel="noopener nofollow" target="_blank">Naheulbeuk's Dungeon Master</a> (ProtonDB Platinum)</p>
-<blockquote>
-<p>A dungeon in danger ! Build, manage, and defend your tower in the satirical heroic fantasy universe of Dungeon of Naheulbeuk. From a shaky establishment to an infamous lair!</p>
-</blockquote>
-<p><strong><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Steam Deck Unsupported</strong></p>
-<p><a href="https://store.steampowered.com/app/2009100/Immortals_of_Aveum/" rel="noopener nofollow" target="_blank">Immortals of Aveum</a> (ProtonDB Gold) (EA key)</p>
-<blockquote>
-<p>Immortals of Aveum is a single-player first person magic shooter that tells the story of Jak as he joins an elite order of battlemages to save a world on the edge of abyss.</p>
-</blockquote>
-<p><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> <strong>Steam Deck Unrated</strong></p>
-<p><a href="https://store.steampowered.com/app/2951630/Total_War_PHARAOH_DYNASTIES/" rel="noopener nofollow" target="_blank">Total War: PHARAOH DYNASTIES</a> (ProtonDB Silver)</p>
-<blockquote>
-<p>Wage total war across the ancient world from the Aegean to Mesopotamia in this free addition to Total War: PHARAOH. Challenge the Bronze Age Collapse by building your own dynasty and leading your faction to victory with new cultures, new units and dramatic new battle mechanics.</p>
-</blockquote>
-<p>Head over to <a href="https://www.humblebundle.com/membership" rel="noopener nofollow" target="_blank">Humble Choice</a> if you wish to pick up the bundle.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/humble-choice-for-february-has-total-war-pharaoh-trepang2-griftlands-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/humble-choice-for-february-has-total-war-pharaoh-trepang2-griftlands-and-more/</guid>
-      <pubDate>Wed, 05 Feb 2025 10:27:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1326605066id26110gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Epic Games devs talk about solutions to the Unreal Engine stuttering issues in games</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you've played a game using Unreal Engine, or for that matter any modern game engine, you've likely encountered various forms of stuttering. One major issue is shader stuttering, as games build up that cache and it seems Epic Games have a solution for Unreal Engine.</p>
-<p><em>We might finally see games eventually perform a lot better on PC. </em></p>
-<p>Their <a href="https://www.unrealengine.com/en-US/tech-blog/game-engines-and-shader-stuttering-unreal-engines-solution-to-the-problem" rel="noopener nofollow" target="_blank">blog post</a> is highly technical but it's good to see Epic developers are working on solutions, and giving advice to developers on some best practices. In super-simple basic terms: when developers make games, the shaders used to render 3D images are written in a language that needs to be changed so your GPU can actually run it.</p>
-<p><em>"Shader compilation stuttering happens when a render engine discovers that it needs to compile a new shader right before it uses it for drawing something, so everything stops while waiting for the driver to finish compilation." - Epic Games</em></p>
-<p>The issue, as Epic say, is that going way back games didn't have as many shaders, and so this code translation wasn't much of an issue when running a game. But, games have grown a lot bigger and more complex resulting in all the stuttering.</p>
-<p><em>"Rendering an object usually involves several shaders (e.g. a vertex shader and a pixel shader working together), as well as a number of other settings for the GPU: culling mode, blend mode, depth and stencil comparison modes etc. Together, these items describe the configuration, or state, of the GPU pipeline.</em></p>
-<p><em>Older graphics APIs like Direct3D 11 and OpenGL allow for changing parts of the state individually and at arbitrary times, which means that the driver only sees the complete configuration when the game issues a draw request. Some settings influence the executable shader code, so there are cases when the driver can only start compiling shaders when the draw command is processed. This can take tens of milliseconds or more for a single draw command, resulting in very long frames when a shader is used for the first time—a phenomenon known to most gamers as hitching or stuttering.</em></p>
-<p><em>Modern APIs require developers to package all the shaders and settings they will use for a draw request into a Pipeline State Object and set it as a single unit. Crucially, PSOs can be constructed at any time, so in theory engines can create everything they need sufficiently early (for example during loading), so that compilation has time to finish before rendering." - Epic Games</em></p>
-<p>Making use of modern graphics APIs like Direct3D 12 and Vulkan with Pipeline State Objects (PSOs) is part of the solution. They even talk up Vulkan's Graphics Pipeline Library as a "good initiative". However, prior to Unreal Engine 5.2, they were suggesting developers run "automated level fly-throughs, and other such discovery methods" (like playing the game through) to build up a cache of the PSOs to bundle with the game (in a way, similar to Valve's shader precache system on Steam). The problem is, as they say, it has many limitations like being "resource-intensive and it must be kept up to date when content changes".</p>
-<p>With Unreal Engine 5.2 they introduced a <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/pso-precaching-for-unreal-engine" rel="noopener nofollow" target="_blank">PSO precaching</a> system, to enable developers to do a fair amount of this at game loading time. With GPU drivers saving these PSOs, they can be re-loaded and reduce loading time on subsequent game sessions and result in a smoother gameplay experience. This precache system is <em>not</em> finished though and still seeing lots of improvements:</p>
-<p><em>"The precaching system has evolved a lot since its experimental introduction in 5.2 and it prevents most kinds of shader compilation stutters. However, it still has some coverage gaps and other limitations, so there are ongoing efforts to improve it further. We’re also working with hardware and software vendors to adapt drivers and graphics APIs to the way games use these systems in practice." - Epic Games</em></p>
-<p>Epic ends the post with a few bits of useful advice for game developers on ensuring a smoother experience.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/epic-games-devs-talk-about-solutions-to-the-unreal-engine-stuttering-issues-in-games/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/epic-games-devs-talk-about-solutions-to-the-unreal-engine-stuttering-issues-in-games/</guid>
-      <pubDate>Wed, 05 Feb 2025 10:11:58 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1067577840id26109gol.jpg" type="image/jpeg"/>
-      
-      <category>Epic Games</category>
-      
-      <category>Game Dev</category>
-      
-      <category>Misc</category>
-      
-      <category>Unreal Engine</category>
       
     </item>
     
