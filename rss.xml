@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-02-25 07:28:01.619471</pubDate>
+    <pubDate>2025-02-26 07:27:48.611559</pubDate>
 
     
     <image>
@@ -18,6 +18,327 @@
     </image>
 
     
+    
+    <item>
+      <title>Simple GOG client for Linux, Minigalaxy v1.3.2 released with improved game installs</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you prefer to buy your games for Linux on <a href="http://gog.com" rel="noopener nofollow" target="_blank">GOG</a>, there's a fresh update to Minigalaxy, the open source simple GOG client.</p>
+<p>Compared with the likes of Lutris and Heroic Games Launcher that bundle lots of features and different stores, Minigalaxy has a singular focus — getting your <a href="http://gog.com" rel="noopener nofollow" target="_blank">GOG</a> games simply and easily on Linux. Either Native Linux games or Windows games with Wine.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5098355631740487620gol1.png"/></p>
+<p>The major changes in Minigalaxy version 1.3.2 include:</p>
+<blockquote>
+<ul>
+<li>Completely reworked windows wine installation. This should solve a lot of problems with failing game installs. Innoextract (if installed) is only used to detect and configure the installation language. (thanks to GB609)</li>
+<li>Variables and arguments in game settings can now contain blanks when quoted shell-style (thanks to GB609)</li>
+<li>Minigalaxy will now create working Desktop Shortcuts for wine games (thanks to GB609)</li>
+<li>Fix games with binaries in a directory not launching in some cases</li>
+<li>Minor UI change in the dialog for third-party logins (thanks to GB609)</li>
+<li>Desktop shortcuts created by Minigalaxy will now be updated with environment and launch argument changes from the game's property dialog when OK is clicked (thanks to GB609)</li>
+<li>Clean-up and fixes of the code used for grid and list style library views (thanks to GB609)</li>
+<li>Desktop shortcuts for windows games can now have icons, if gog provides them in the game info api 'images' section (thanks to GB609)</li>
+<li>Fixed a bug in download_manager that prevents correct resume of downloads with 50%+ progress after restart (thanks to GB609)</li>
+<li>Make sure all translations are included in releases</li>
+</ul>
+</blockquote>
+<p>Nice to see the project has picked up another developer, GB609, who did a lot of work for this release.</p>
+<p>See more on the <a href="https://github.com/sharkwouter/minigalaxy" rel="noopener nofollow" target="_blank">GitHub page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/simple-gog-client-for-linux-minigalaxy-v1-3-2-released-with-improved-game-installs/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/simple-gog-client-for-linux-minigalaxy-v1-3-2-released-with-improved-game-installs/</guid>
+      <pubDate>Tue, 25 Feb 2025 12:51:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/614525558id26253gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>GOG</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Happy three years to the Steam Deck - the Linux gaming machine that changed everything</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It's been <a href="https://www.gamingonlinux.com/2022/02/steam-deck-initial-review/" rel="noopener" target="_blank">three years today</a> since Valve released the Steam Deck. Not only has Valve shown how incredible Linux actually can be as a gaming platform, but they really kicked the industry into gear on PC gaming handhelds.</p>
+<p>What a success it's been! Selling multiple millions, although we don't know the exact number since Valve don't really like to talk in such specifics. And we're closing in on 18,000 games rated at least Playable (although the rating system is a bit off at times), that's a whole lot of gaming you can do from the comfort of your couch, on the bus, the toilet — wherever.</p>
+<p>During this time Valve have released <strong>14</strong> major updates to Proton, the compatibility layer that runs Windows games on Linux systems like SteamOS / Steam Deck. Going from <a href="https://www.gamingonlinux.com/2022/02/proton-7-easy-anti-cheat-improvements-more-games-for-linux-a-steam-deck/" rel="noopener" target="_blank">Proton 7.0-1</a> in February 2022 just before the Steam Deck release up to the latest <a href="https://www.gamingonlinux.com/2024/12/proton-9-0-4-is-out-now-bringing-big-compatibility-improvements-for-steam-deck-linux/" rel="noopener" target="_blank">Proton 9.0-4</a> in December 2024. The progress on game compatibility has been impressive (although anti-cheat is still a real problem). That's only counting numbered Proton updates too, there's plenty more that have gone into Proton Experimental and Proton Hotfix in between. <em>If you're confused on the different Proton versions <a href="https://www.gamingonlinux.com/guides/view/why-are-there-so-many-different-proton-versions-proton-8-proton-9-experimental-ge-proton/" rel="noopener" target="_blank">be sure to read my guide</a>.</em></p>
+<p class="plain-list-title">We've seen some huge updates to SteamOS Linux during this time too. Going back through all the updates since the original release we've seen Valve add the likes of:</p>
+<ul>
+<li>Per-app performance profiles.</li>
+<li>HDR, VRR and display colour settings.</li>
+<li>Game recording.</li>
+<li>A lock screen for security.</li>
+<li>Refresh rate switcher.</li>
+<li>A window switcher for when games have multiple windows (like launchers remaining open).</li>
+<li>Night Mode.</li>
+<li>Enabled customization of the performance overlay.</li>
+<li>An improved Offline Mode (it used to require a reboot).</li>
+<li>Major version updates to the KDE Plasma Desktop Mode.</li>
+<li>Improvements for docking the Steam Deck like display interface scaling.</li>
+<li>Various performance improvements and GPU driver upgrades.</li>
+<li>Support for Bluetooth A2DP and BAP profiles.</li>
+<li>Mura Compensation.</li>
+<li>Added support for some HDMI CEC features to their official Dock.</li>
+<li>Added overclocking controls on Steam Deck LCD.</li>
+<li>+ so much more.</li>
+</ul>
+<p>That's just me cherry-picking additions in some big SteamOS updates, we've also seen some huge upgrades to the Steam Client as a whole too, a lot of which the Steam Deck has also benefited from. You certainly can't say Valve have been sitting around - they're always doing <em>something</em>. Who can also forget the <a href="https://www.gamingonlinux.com/2023/11/steam-deck-oled-is-just-pure-joy-the-definitive-steam-deck/" rel="noopener" target="_blank">Steam Deck OLED release</a>, Valve's definitive edition of the handheld with <em><strong>masses</strong></em> of improvements.</p>
+<p>With Valve showing the way, we've seen an explosion in the number of different PC gaming handhelds too. Previously limited to smaller high-priced vendors, it's all become a lot more accessible. Valve <em>proved</em> there's a market for it. While others have been chasing refreshes with improved specifications, and at times ludicrous prices, the Steam Deck has soldiered on to be more of a dedicated platform. We've seen the ASUS ROG Ally and ASUS ROG Ally X, Lenovo Legion Go and Lenovo Legion Go S, Acer Nitro Blaze 7, 8 and 11, ZOTAC Zone, MSI Claw A1M and the MSI Claw 8 AI+. <em>That's on top of the constant refreshes from other smaller vendors.</em></p>
+<p>One day hopefully we will see another Steam Machine / Steam Console. I had some thoughts on <a href="https://www.gamingonlinux.com/2025/02/what-valve-would-need-to-do-to-make-a-steam-console-a-success/" rel="noopener" target="_blank">what Valve could do to make such a thing a success this time</a>. I'm also especially looking forward to the <a href="https://www.gamingonlinux.com/2025/01/valve-confirms-a-public-beta-of-steamos-is-coming-as-steamos-expands-beyond-steam-deck/" rel="noopener" target="_blank">upcoming public Beta of SteamOS 3</a> to see what people and other hardware vendors do with it.</p>
+<p><strong>Happy Steam Deck Day everyone.</strong></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/happy-three-years-to-the-steam-deck-the-linux-gaming-machine-that-changed-everything/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/happy-three-years-to-the-steam-deck-the-linux-gaming-machine-that-changed-everything/</guid>
+      <pubDate>Tue, 25 Feb 2025 11:29:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1880687646id26252gol.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Editorial</category>
+      
+      <category>Hardware</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Point and click urban thriller Kathy Rain 2: Soothsayer gets a new demo</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Probably one of the most exciting upcoming point and click adventures is Kathy Rain 2: Soothsayer, and now you can get any early look thanks to a demo release for Steam Next Fest. This isn't the first time it's had a demo but the developers said it's gone through some updates, so it may be worth checking out again.</p>
+<p>Worried you might get lost in the sequel? They've said the game will actually begin with a recap of the first game, and they've also put up a new Bridging the Gap video to give you a brief rundown of the events you can watch below:</p>
+<div class="hidden_video" data-video-id="JKQ9LnEPzz8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/049c838e48aa73aa6377cf9db68b3b1b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/JKQ9LnEPzz8" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Features:</p>
+<blockquote>
+<ul>
+<li>Point and click urban thriller – take on the second case with Kathy Rain in an all-new adventure that is as hard-hitting as emotional. Fit for newcomers and fans of the series alike!</li>
+<li>Improved graphics – See Kathy Rain as never before with a higher resolution pixel art style that complements Kathy's gritty world, alongside modern features such as dynamic lighting and surface reflections.</li>
+<li>Stunning Cinematic Sequences – Watch the story unfold with beautiful hand-drawn cutscenes and character portraits.</li>
+<li>Bigger than ever – Play through the longest Clifftop title yet with a deep narrative that spans many diverse locations and a wide range of characters.</li>
+<li>Familiar voices – Arielle Siegel returns as Kathy Rain, alongside other familiar voices in supportive roles!</li>
+<li>Make a note – Log interesting findings in Kathy’s notebook and refer to them in your investigation. Connect narrative threads for surprising and satisfying outcomes.</li>
+</ul>
+</blockquote>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40544/kathy-rain-2-soothsayer/">Kathy Rain 2: Soothsayer</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1466390/Kathy_Rain_2_Soothsayer/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/point-and-click-urban-thriller-kathy-rain-2-soothsayer-gets-a-new-demo/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/point-and-click-urban-thriller-kathy-rain-2-soothsayer-gets-a-new-demo/</guid>
+      <pubDate>Tue, 25 Feb 2025 10:40:54 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/952230262id26251gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Adventure</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>SteamDB now lets you filter out Steam games with AI Generation</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you don't want Steam games that have AI Generation in them, you might want to check out the new filter on SteamDB. Making it a bit easier to get rid of them from your searches. <em>ICYMI: <a href="https://www.gamingonlinux.com/2025/02/indie-devs-have-begun-adding-a-no-generative-ai-stamp-to-their-store-pages/" rel="noopener" target="_blank">Indie devs have begun adding a no generative AI stamp to their store pages</a>.</em></p>
+<p>This new filter depends on the AI disclosures that <a href="https://www.gamingonlinux.com/2024/01/valve-announces-new-rules-for-games-with-ai-content-on-steam/" rel="noopener" target="_blank">Valve require</a> developers to put on their Steam pages, so it's only as accurate as the developers who actually fill it out accurately.</p>
+<p>On any of the lists on SteamDB, you need to open the "Filter by user tags" sidebar section and enter in "AI Content Disclosed" and then either pick to have them or not. Example shot below of the <a href="https://steamdb.info/sales/event/714486390316859705/?displayOnly=Demo&amp;sort=online_desc&amp;tagid=-1368160" rel="noopener nofollow" target="_blank">SteamDB Steam Next Fest page</a> filtered to just demos, and no AI content:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14328770431740479113gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14328770431740479113gol1.jpg"/></a></p>
+<p>Hopefully Valve directly will soon add a proper filter to Steam for this. But until then, the community site <a href="https://steamdb.info/" rel="noopener nofollow" target="_blank">SteamDB</a> keeps showing how useful it can be.</p>
+<p>Activision also recently (finally) admitted it uses AI for Call of Duty, with the Call of Duty <a href="https://store.steampowered.com/app/1938090/Call_of_Duty/" rel="noopener nofollow" target="_blank">Steam</a> page now having an AI content disclosure that reads "Our team uses generative AI tools to help develop some in game assets". Players have spotted a few places where it was likely used for cosmetics like some loading screens and player calling cards but Activision haven't specified where it's used. If the likes of Activision can't get away from disclosing it on Steam, hopefully Valve will keep ensuring more developers list it properly.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/steamdb-now-lets-you-filter-out-steam-games-with-ai-generation/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/steamdb-now-lets-you-filter-out-steam-games-with-ai-generation/</guid>
+      <pubDate>Tue, 25 Feb 2025 10:28:30 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/883059141id26250gol.jpg" type="image/jpeg"/>
+      
+      <category>AI</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Tempopo from the devs of Unpacking and Assault Android Cactus releases in April</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Witch Beam team (Unpacking, Assault Android Cactus) are back with a whimsical, charming adventure in Tempopo. It's just been announced that it will release on April 17th. There's a new trailer and demo up. On the Steam page the demo only lists Windows / macOS, but there is a Linux demo.</p>
+<p>Check out the brand new trailer, seems like a good one for fans of puzzles with a musical theme:</p>
+<div class="hidden_video" data-video-id="48Wa1N6dXuo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/45f901243a18640b2c293e17c96cd4e5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/48Wa1N6dXuo" target="_blank">See video</a></div></div>
+<p>More about it:</p>
+<blockquote>
+<p>Adventure through multiple sky islands, and experience contemplative bliss solving puzzles at your own pace. Witness the majesty of your puzzling genius (or the less harmonious results of your attempts) and know that in Tempopo, there’s no harm in taking your time.</p>
+<p>You’ll work with a chaotic, kindhearted bunch - the Tempopo - who will rely on your guidance to solve each puzzle. Work together with these adorable friends and utilise their adaptable talents to solve puzzles. Get inventive or use trial and error, there is no wrong way to solve a puzzle!</p>
+<ul>
+<li>Conduct the chaotic Tempopo to keep on beat as you puzzle through all four seasons - from cozy winter snow to warm summer sunsets, the beat goes on! </li>
+<li>Experience a world handcrafted to the music. Everything in the game harmonises in time to the musical heartbeat of the title!</li>
+<li>Listen to a soundtrack crafted by BAFTA award-winning composer &amp; audio director Jeff van Dyck</li>
+<li>Cultivate your garden your way, choosing where to sow your rescued fragrant friends and bloom your own melodies based on how you choose to craft your garden. Watch unique musical performances sprout from the garden you’ve made - a reward for nurturing the garden back to health!</li>
+</ul>
+</blockquote>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41255/tempopo/">Tempopo</a></strong> | Release Date: 17th April 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/318840/Tempopo/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/tempopo-from-the-devs-of-unpacking-and-assault-android-cactus-releases-in-april/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/tempopo-from-the-devs-of-unpacking-and-assault-android-cactus-releases-in-april/</guid>
+      <pubDate>Tue, 25 Feb 2025 10:17:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1256014991id26249gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Music</category>
+      
+      <category>Puzzle</category>
+      
+    </item>
+    
+    <item>
+      <title>Team Fortress 2 Classic is coming to Steam thanks to Valve adding TF2 to the Source SDK</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Team Fortress 2 Classic, a mod that aims to re-imagine the early post-launch era of Team Fortress 2, will be released on Steam.</p>
+<p>Recently we had the news that <a href="https://www.gamingonlinux.com/2025/02/team-fortress-2-major-update-released-and-source-available-for-modders-via-the-source-sdk/" rel="noopener" target="_blank">Valve had effectively made Team Fortress 2 "Source Available"</a>, as it's now part of the Source SDK. In the announcement Valve said developers would be able to release their mods on Steam, and so it's happening. A new Team Fortress 2 Classic Steam page has been put up, although there's no date listed on it other than 2025.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8893674131740477792gol1.jpg"/></p>
+<p>More about it from the Steam page:</p>
+<blockquote>
+<p><strong>Team Fortress 2 Classic</strong> is a mod for Team Fortress 2 that re-imagines the early post-launch era — circa 2008 to 2009 — of the original game. Starting from there, we've added quality-of-life features, remade and reworked scrapped content, and built onto it with full-size updates in homage to TF2's timeless style and tone.</p>
+<p><strong>NEW-OLD FEATURES</strong></p>
+<ul>
+<li>Meet the Civilian, a brand-new special class based on the legacy Team Fortress Classic character, and deliver him mostly-unharmed to the objective in VIP mode.</li>
+<li>Use TF2 prerelease-inspired weapons like the Nailgun, the Dynamite Pack, and the Tranquilizer Gun, all redesigned from the ground up to feel right at home with what's already there.</li>
+<li>Go on a rampage in Four-Team matches, where GRN and YLW bring their unique (yet strangely identical) brand of violence to Arena, King of the Hill, and more.</li>
+</ul>
+<p><strong>NEW-NEW FEATURES</strong></p>
+<ul>
+<li>Exclusive new gamemodes, including Domination, Territorial Domination, and VIP Race — all playable on professional-quality official maps, with more yet to come.</li>
+<li>Jump pads, flak cannons, bricks, chains wrapped around your fists; made-in-house weapons that go beyond mere sidegrades, and dramatically change how you play the game.</li>
+<li>Extensive modding support, allowing players to customize the look of their game, and allowing servers to host advanced custom weapon packs and maps.</li>
+<li>A whole host of visual enhancements, including improved textures, models, mapping features, and restored toon-style shading that was mostly absent in the retail release.</li>
+<li>A chicken, or so we're led to believe.</li>
+</ul>
+</blockquote>
+<p>The developers of the mod likely have to port over their changes to the newer SDK, so it may still be a while until the Steam release is available.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41254/team-fortress-2-classic/">Team Fortress 2 Classic</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3545060/Team_Fortress_2_Classic/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/team-fortress-2-classic-is-coming-to-steam-thanks-to-valve-adding-tf2-to-the-source-sdk/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/team-fortress-2-classic-is-coming-to-steam-thanks-to-valve-adding-tf2-to-the-source-sdk/</guid>
+      <pubDate>Tue, 25 Feb 2025 10:05:32 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/264327183id26248gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>FPS</category>
+      
+      <category>Free Game</category>
+      
+      <category>Mod</category>
+      
+    </item>
+    
+    <item>
+      <title>Seriously clever twin-stick shooter Windowkill adds Steam Deck support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Windowkill is a twin-stick shooter where the game window itself is constantly closing in on you. A really clever idea, and a game I <a href="https://www.gamingonlinux.com/2024/02/windowkill-is-a-clever-multi-window-twin-stick-shooter-that-moves-around-your-screen/" rel="noopener" target="_blank">had a lot of fun with previously</a> and now it has improved Steam Deck support too.</p>
+<p>In the 1 year anniversary update that's now available, the developer mentioned it's now Steam Deck Verified, with Valve giving it the rating on February 11th on the Native Linux version (made with <a href="https://godotengine.org/" rel="noopener nofollow" target="_blank">Godot</a>).</p>
+<p>New feature highlight for <a href="https://store.steampowered.com/news/app/2726450/view/501691675000703296" rel="noopener nofollow" target="_blank">update 4.0.5</a>:</p>
+<blockquote>
+<ul>
+<li>Added custom asset refresh button
+	<ul>
+<li>This will reload custom asset files in the current tab, without needing to reload the game</li>
+</ul>
+</li>
+<li>Added "now playing" popup when shuffle is enabled
+	<ul>
+<li>Includes a toggle option to disable</li>
+</ul>
+</li>
+<li>Added "drag aid windows by center" option
+	<ul>
+<li>When enabled, this allows moving peer and drain without needing to click on the titlebar</li>
+</ul>
+</li>
+<li>Added new menu window to "friend"
+	<ul>
+<li>This allows toggling visibility, changing colors, and quitting to the title</li>
+</ul>
+</li>
+<li>Added a new audio visualization background type, and example background "thump"</li>
+<li>Added challenge run icon to the in-game UI</li>
+<li>Added "UI text scale" option</li>
+<li>Added new "steamdeck" window theme</li>
+<li>Added Steam Deck-specific controller input icons</li>
+<li>Added silly anniversary-only crown change</li>
+</ul>
+</blockquote>
+<p>If you've not seen it before the trailer is below:</p>
+<div class="hidden_video" data-video-id="3fqqN2rsGz0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7973de61a6c6e9c7be82fdb947661128.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3fqqN2rsGz0" target="_blank">See video</a></div></div>
+<p>I was curious how this would actually look on Steam Deck. As when you think about it, this game was really designed for a desktop PC. The whole idea of having multiple windows like that is not something you would see with how you usually interact with the Steam Deck in Gaming Mode.</p>
+<p>So I gave it a fresh spin today to see how it was done and actually — it's still just as <em>brilliant</em> on Steam Deck. The window mechanic with how it's implemented works really well here too, even with the smaller screen.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2380524461740477213gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2380524461740477213gol1.jpeg"/></a><br/>
+<em>Pictured - Windowkill on Steam Deck</em></p>
+<p>Worth picking up for sure, it's challenging but a lot of fun.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/38154/windowkill/">Windowkill</a></strong> | Release Date: 23rd February 2024<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2726450/Windowkill/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/seriously-clever-twin-stick-shooter-windowkill-adds-steam-deck-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/seriously-clever-twin-stick-shooter-windowkill-adds-steam-deck-support/</guid>
+      <pubDate>Tue, 25 Feb 2025 09:54:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/307986900id26247gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Godot Engine</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>The Talos Principle: Reawakened launches in April with a demo live</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>One of the best puzzle games ever returns! Croteam and Devolver Digital have announced The Talos Principle: Reawakened is set for launch on April 10, and there's a demo you can try out right now too as part of Steam Next Fest. <em>You'll need Proton to play this one on Linux.</em></p>
+<p>The demo at least won't be leaving when Next Fest ends, as they've said it will be up until release. Remade with Unreal Engine 5, hopefully the performance on this one won't be problematic like a lot of recent UE games are (although Epic Games are making steps to help). This version of the game also includes a powerful in-game editor for modders.</p>
+<p>More about it:</p>
+<blockquote>
+<p>The Talos Principle: Reawakened introduces new content, enhanced gameplay, and a gorgeously upgraded presentation. Relive the critically acclaimed expansion Road to Gehenna and dive into an all-new chapter, In the Beginning. Discover the story of Alexandra Drennan as she faces profound existential questions while orchestrating the Simulation's first critical test, challenging players to think deeply about the human condition.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="DQdEC6R-eAY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5a561ded20bfe7639fe954674a5a5b70.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/DQdEC6R-eAY" target="_blank">See video</a></div></div>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40719/the-talos-principle-reawakened/">The Talos Principle: Reawakened</a></strong> | Release Date: 10th April 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.fanatical.com/en/game/the-talos-principle-reawakened">Fanatical</a></li><li><a href="https://store.steampowered.com/app/2806640/The_Talos_Principle_Reawakened/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/02/the-talos-principle-reawakened-launches-in-april-with-a-demo-live/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/the-talos-principle-reawakened-launches-in-april-with-a-demo-live/</guid>
+      <pubDate>Tue, 25 Feb 2025 09:23:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1223108227id26246gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Puzzle</category>
+      
+      <category>Steam</category>
+      
+      <category>Unreal Engine</category>
+      
+    </item>
     
     <item>
       <title>Steam Next Fest - February 2025 is live with tons of demos</title>
@@ -4326,423 +4647,6 @@ unique to Shift Up. In particular, we plan to optimize the game to ensure smooth
       <category>Godot Engine</category>
       
       <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Humble&#39;s Better With a Friend bundle has some quality co-op games</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Need some more games to play with your friends? Check out the <a href="https://www.humblebundle.com/games/better-with-friend-coop-adventures" rel="noopener nofollow" target="_blank">Better With a Friend Humble Bundle</a> that has 6 quality games included. Using ratings from Valve on Steam Deck Verified, plus any <a href="http://protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> and Native Linux notes here's all that's in it. Plus as usual each is a Steam link if you need more info first.</p>
-<p><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</strong></p>
-<p><a href="https://store.steampowered.com/app/690640/Trine_4_The_Nightmare_Prince/" rel="noopener nofollow" target="_blank">Trine 4</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/858820/Tribes_of_Midgard/" rel="noopener nofollow" target="_blank">Tribes of Midgard</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/914710/Cat_Quest_II/" rel="noopener nofollow" target="_blank">Cat Quest II</a> (ProtonDB Platinum)</p>
-<p><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</strong></p>
-<p><a href="https://store.steampowered.com/app/1337520/Risk_of_Rain_Returns/" rel="noopener nofollow" target="_blank">Risk of Rain Returns</a> (ProtonDB Platinum)</p>
-<p><a href="https://store.steampowered.com/app/1385380/Across_the_Obelisk/" rel="noopener nofollow" target="_blank">Across the Obelisk</a> (Native Linux)</p>
-<p><a href="https://store.steampowered.com/app/527230/For_The_King/" rel="noopener nofollow" target="_blank">For The King: Deluxe Edition</a> (Native Linux)</p>
-<p>Check out <a href="https://www.humblebundle.com/games/better-with-friend-coop-adventures" rel="noopener nofollow" target="_blank">the full bundle to purchase</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/humbles-better-with-a-friend-bundle-has-some-quality-co-op-games/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/humbles-better-with-a-friend-bundle-has-some-quality-co-op-games/</guid>
-      <pubDate>Mon, 10 Feb 2025 13:04:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1762538286id26151gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck Verified highlights for February 2025 - come find your next game</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>It's time to highlight some games you might have missed! Here's a run over what's been through Valve's Steam Deck Verified with some of my personal picks here for February.</p>
-<p>All of these highlighted got the green <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified tick from Valve, so they're <em>supposed</em> to be click and play with nothing else required. Be sure to check out my other picks from <a href="https://www.gamingonlinux.com/2025/01/a-fresh-steam-deck-verified-games-round-up-for-january-2025/" rel="noopener" target="_blank">January</a>, along with <a href="https://www.gamingonlinux.com/2024/12/steam-deck-verified-highlights-for-december-2024/" rel="noopener" target="_blank">December 2024</a> as well. </p>
-<h4><a href="https://store.steampowered.com/app/3061810/Like_a_Dragon_Pirate_Yakuza_in_Hawaii/" rel="noopener nofollow" target="_blank">Like a Dragon: Pirate Yakuza in Hawaii</a></h4>
-<p><em>Releases on February 20th!</em></p>
-<blockquote>
-<p>Embark on an over-the-top, modern-day pirate adventure with an ex-yakuza, now pirate captain &amp; his crew. Engage in exhilarating combat on land and sea in the hunt for lost memories and treasure.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5110662121739191342gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/1700270/Lucky_Tower_Ultimate/" rel="noopener nofollow" target="_blank">Lucky Tower Ultimate</a></h4>
-<blockquote>
-<p>Escape from a dangerous tower where everything can be a weapon. Lucky Tower Ultimate is a slapstick, roguelike adventure that looks like a cartoon and feels like a joke. Slashy slashy!</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10629614711739190909gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/1147860/UFO_50/" rel="noopener nofollow" target="_blank">UFO 50</a></h4>
-<blockquote>
-<p>UFO 50 is a collection of 50 single and multiplayer games that span a variety of genres, from platformers and shoot 'em ups to puzzle games, roguelites, and RPGs. Our goal is to combine a familiar 8-bit aesthetic with new ideas and modern game design.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21070430661739191248gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/856880/Fighting_Fantasy_Classics/" rel="noopener nofollow" target="_blank">Fighting Fantasy Classics</a></h4>
-<blockquote>
-<p>Ready your sword, pack your provisions and prepare to embark upon quests in which YOU are the hero! Choose what happens at every turn of the page with Fighting Fantasy Classics – text-based roleplaying adventures remastered.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8005758251739190814gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/1640400/Janosik_2/" rel="noopener nofollow" target="_blank">Janosik 2</a></h4>
-<blockquote>
-<p>Janosik 2 is a retro action-platformer with metroidvania elements. Get ready to jump, slash, dodge roll, dive, smash and bash your way through deadly traps, mischievous villains and bosses, and more in this sequel to Janosik.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13040834281739190981gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/2871290/School_Hero/" rel="noopener nofollow" target="_blank">School Hero</a></h4>
-<blockquote>
-<p>Beat everyone in the school and save your beloved girlfriend in this anime-inspired Beat Em Up game!, as Sakura high calls for a new Hero. Will you answer the call and save her?</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19372922791739191068gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/1932210/Takara_Cards/" rel="noopener nofollow" target="_blank">Takara Cards</a></h4>
-<blockquote>
-<p>Takara Cards is a unique tactical deck-builder RPG about chasing space dragons in a sci-fi fantasy universe. Create your deck as you explore sectors, fighting your way in deep puzzly combat. Every decision you make affects your Ship and Character: Each new adventure offers new surprises!</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13201232831739191124gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/2400430/Capcom_Fighting_Collection_2/" rel="noopener nofollow" target="_blank">Capcom Fighting Collection 2</a></h4>
-<p><em>Releases on May 16th!</em></p>
-<blockquote>
-<p>Capcom's new fighting collection hits the stage! Choose from fan-favorite games like Capcom vs. SNK 2: Mark of the Millennium 2001 and Project Justice to 3D action games like Power Stone and Power Stone 2 in this collection of eight classic fighting games!</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3592936521739191447gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/2073250/Rift_of_the_NecroDancer/" rel="noopener nofollow" target="_blank">Rift of the NecroDancer</a></h4>
-<blockquote>
-<p>The NecroDancer's back in an all-new rhythm game! Dragged into a strange new world, Cadence must engage in musical combat with monsters surging through the Rift! Face pulse-pounding Rhythm Rifts where every beat is a battle, all set to an original soundtrack by Danny Baranowsky &amp; friends.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13105445211739191499gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/2259260/Tyrants_Realm/" rel="noopener nofollow" target="_blank">Tyrant's Realm</a></h4>
-<blockquote>
-<p>Tyrant's Realm is a roguelite action-adventure inspired by classic PS1 visuals. Explore procedurally generated dark fantasy worlds, battling through dangers that evolve with each run. Death is not the end, as the night is still young.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18127137231739191605gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/3293490/Dragon_Ruins_II/" rel="noopener nofollow" target="_blank">Dragon Ruins II</a></h4>
-<blockquote>
-<p>A dungeon crawler for tired people.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17242440591739191794gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/2495100/Hello_Kitty_Island_Adventure/" rel="noopener nofollow" target="_blank">Hello Kitty Island Adventure</a></h4>
-<blockquote>
-<p>Embark on a cozy, open-world adventure with Hello Kitty and Friends. Befriend beloved characters as you explore and restore a mysterious island, solve ancient puzzles, cook delicious dishes, customize yourself and your cabins, and so much more.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4266253731739191868gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/858210/Nova_Drift/" rel="noopener nofollow" target="_blank">Nova Drift</a></h4>
-<blockquote>
-<p>Nova Drift distills the mechanical depth and strategy of an ARPG into classic arcade space combat. Control an endlessly evolving bio-mechanical ship, face legions of strange and deadly foes, and ride the wake of a dying star across the void.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14882181941739191944gol1.jpg"/></p>
-<h4><a href="https://store.steampowered.com/app/2545360/Lonely_Mountains_Snow_Riders/" rel="noopener nofollow" target="_blank">Lonely Mountains: Snow Riders</a></h4>
-<blockquote>
-<p>Crash over and over until you master the mountain in the snowy followup to Lonely Mountains: Downhill. Now also including 2-8 person crossplatform multiplayer - work your way down as a group the slopes sharing a small number of checkpoints, or risk it all in a breakneck race to the base!</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3883536481739192004gol1.jpg"/></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/steam-deck-verified-highlights-for-february-2025-come-find-your-next-game/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/steam-deck-verified-highlights-for-february-2025-come-find-your-next-game/</guid>
-      <pubDate>Mon, 10 Feb 2025 12:53:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1784703714id26150gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Listicle</category>
-      
-      <category>Misc</category>
-      
-      <category>Round-up</category>
-      
-    </item>
-    
-    <item>
-      <title>Popular game launcher Playnite will get Linux support but it&#39;s still a while away</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Playnite is a very popular free and open source video game library manager, one used a lot on Windows and a developer has confirmed they will be working on Linux support.</p>
-<p>The launcher supports linking games from Steam, Epic, EA, GOG, Battle.net, Ubisoft Connect and other services. This includes emulation, a fullscreen mode, theme support, an extensions system and much more. It's an incredibly feature-filled app.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9684077911739185952gol1.jpg"/></p>
-<p>Right now, there's no Linux support, but that will eventually change. They're currently waiting on <a href="https://avaloniaui.net/" rel="noopener nofollow" target="_blank">Avalonia UI</a>, an open source framework for building user interfaces with .NET, to get some improvements though. As noted by a developer on GitHub <a href="https://github.com/JosefNemec/Playnite/issues/59#issuecomment-2634737400" rel="noopener nofollow" target="_blank">they said</a>:</p>
-<blockquote>
-<p>2025 update</p>
-<p>Upcoming major release (P11) will be on modern open source and multi-platform .NET runtime but will still use Window only WPF based UI. This is for several reasons, one of the main ones being that Avalonia's developer experience is not, in my opinion, good enough to be used in project like Playnite. Playnite heavily depends on community made extensions and themes, often developed by hobbyist developers, not professionals, and Avalonia is simply not user friendly as much as I would like it to be for us.</p>
-<p>We are 100% moving to Avalonia at some point in future, it's just not going to be with Playnite 11 release.</p>
-<p>So current plan is to release Playnite 11, continue developing it for Windows only and once Avalonia's DX improves (they are promising major tools improvements with their upcoming Accelerate program), I will start porting P11 to Avalonia.</p>
-<p>Once we have polished Windows version of Avalonia based Playnite, I'll start working on Linux version. I don't want to make just straight port of Windows version, that wouldn't be good enough. I would really like to have Linux specific feature available on release, like Wine/Proton specific features, Epic and GOG plugins using Legendary and heroic-gogdl respectively, stuff like that.</p>
-<p>To sum this up, Linux version is definitely something I plan to work on in future, it's just going to happen later than originally planned.</p>
-<p>As far as macOS version, no idea about that. It's definitely not something I would look into sooner than having Linux version more or less done.</p>
-</blockquote>
-<p>Really great to see more and more support for Linux everywhere.</p>
-<p>If you need an alternative right now on Linux / Steam Deck the most comparable would likely be Heroic Games Launcher and Lutris.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/popular-game-launcher-playnite-will-get-linux-support-but-its-still-a-while-away/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/popular-game-launcher-playnite-will-get-linux-support-but-its-still-a-while-away/</guid>
-      <pubDate>Mon, 10 Feb 2025 11:14:38 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/638393414id26149gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Apps</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Blender Studio announced Project DogWalk, a &#34;Micro-Game&#34; made with Godot</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Blender Studio, the creative unit of the free open source Blender project, recently announced work has begun on their second video game with Project DogWalk. It's going to be a small one, made to be playable in a single sitting, so they're calling it a "Micro-Game".</p>
-<p>This is something I missed from <a href="https://studio.blender.org/blog/announcing-project-dogwalk/" rel="noopener nofollow" target="_blank">back in January</a>, thanks to a tip in <a href="https://discord.gg/AghnYbMjYg" rel="noopener nofollow" target="_blank">our Discord</a> (there's a dedicated suggested news channel for me to pick things from you!). With it being a small game they said it's going to be centred around these points:</p>
-<blockquote>
-<ul>
-<li>A playtime of a single sitting.</li>
-<li>Oriented around a single mechanic.</li>
-<li>Extended primarily via replayability and player expression.</li>
-<li>Reliant on a reusable &amp; modular asset library.</li>
-</ul>
-</blockquote>
-<p>Using a "papercraft" art style, it will take place in a small snow-covered woods. As they explained: "You play as an adorable big dog who, together with their kid owner, is trying to decorate a snowman with the best things they can find nearby" they continued "While you are a force of nature that the environment cannot stop from exploring, your little companion is very easily dragged and flung around and might get stuck. It's about whacky slip-ups and building a relationship".</p>
-<p>Since the Blender Game Engine they used in their first game, Yo Frankie!, no longer officially exists they're going with <a href="https://godotengine.org/" rel="noopener nofollow" target="_blank">Godot Engine</a> this time around.</p>
-<div class="hidden_video" data-video-id="ivGx54_X7YE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4215a99e52786e54d3cf5c7478b03cdd.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ivGx54_X7YE" target="_blank">See video</a></div></div>
-<p>Godot already has pretty good support for importing from Blender, but part of this development will also allow the Blender Studio team to "research how this can be improved even further". </p>
-<p>You can follow it on the <a href="https://studio.blender.org/projects/project-dogwalk/" rel="noopener nofollow" target="_blank">project website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/blender-studio-announced-project-dogwalk-a-micro-game-made-with-godot/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/blender-studio-announced-project-dogwalk-a-micro-game-made-with-godot/</guid>
-      <pubDate>Mon, 10 Feb 2025 10:53:16 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/853147832id26148gol.jpg" type="image/jpeg"/>
-      
-      <category>Godot Engine</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>The Campsite is a short and sweet modern point-and-click adventure worth your time</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>One for your next coffee break is The Campsite, a short but sweet modern point and click adventure that looks to be worth your time. It has a Native Linux version available.</p>
-<p>From developer Guillem Espias they said "If you have a passion for graphic adventures but never find the time to play, this might be exactly what you’re looking for". It's about an hour long, good for casual gamers and a great starting-off point for adventure games. There's even a bit of a plot twist to make it stick in your mind after you finish.</p>
-<p>More about it: "An enthusiastic adventurer is about to embark on a special mission: leading a chaotic team of unruly members in the hunt for a mysterious treasure. A vibrant night in the woods awaits, unveiling a memorable adventure, but beware—the shadows conceal a watchful presence. They are not alone..."</p>
-<div class="hidden_video" data-video-id="GEQo6fGZVDg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/775f3d78a5b2a45abddb85339af3bf34.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/GEQo6fGZVDg" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Highlights:</p>
-<blockquote>
-<ul>
-<li>Rich storytelling - Explore richly crafted characters and an intricately woven storyline, featuring a three-act structure with captivating twists.</li>
-<li>Immersive soundtrack and SFX - A wide variety of original ambience sounds and music specially composed and recorded to match every mood and scene of the game.</li>
-<li>Meticulously crafted graphics - No AI-generated or processed images. Just labor-intensive hand-drawn pixel art.</li>
-<li>Enhanced accessibility - Enjoy a more inclusive gaming experience with hotspot highlighting, adjustable subtitle speed, dialogue clues, and more.</li>
-<li>Just point and click - Experience a monkey-friendly, simplified interface—every action is only a single click away!</li>
-</ul>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40998/the-campsite/">The Campsite</a></strong> | Release Date: 31st January 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://guillemespias.itch.io/the-campsite">itch.io</a></li><li><a href="https://store.steampowered.com/app/3335060/The_Campsite/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/the-campsite-is-a-short-and-sweet-modern-point-and-click-adventure-worth-your-time/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/the-campsite-is-a-short-and-sweet-modern-point-and-click-adventure-worth-your-time/</guid>
-      <pubDate>Mon, 10 Feb 2025 10:21:38 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/39076583id26147gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Free Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>Commandos: Origins gets an April release date</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Commandos: Origins from Claymore Game Studios and Kalypso Media is set for release on April 9th, where you get to see the beginning of this legendary elite force. I'm actually quite excited about this one. I spent more hours than I probably should have in the original Commandos: Behind Enemy Lines, back in the 90s.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/101002351739182280gol1.jpg"/></p>
-<p>From the press release: “The Green Beret couldn’t have said it better with his iconic phrase ‘Consider it done,’” said Jürgen Reusswig, Studio Director at Claymore Game Studios. “After more than four years of setting up a new studio, design and development and the invaluable community feedback from various playtests, operation ‘Release’ is a go for Commandos: Origins. We are proud and excited that players will now be able to experience the origins story of the elite unit which started this legendary franchise.” </p>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>
-<p><strong>Challenging Real Time Tactical Stealth Gameplay:</strong> Make the best use of your Commandos’ <strong>unique abilities</strong>, infiltrate enemy facilities, and hit them where it hurts most before disappearing into the shadows. </p>
-</li>
-<li>
-<p><strong>An extraordinary team:</strong> Featuring <strong>6 infamous characters</strong>, each with their own storied history, banding together to form an extraordinary fighting force – the Commandos: Take control over Jack O’Hara “the Green Beret”, Thomas “the Sapper” Hancock, Francis T. “the Sniper” Woolridge, Samuel “the Driver” Brooklyn, James “the Marine” Blackwood, and Rene “the Spy” Duchamp and lead them to success.  </p>
-</li>
-<li>
-<p><strong>Many paths to victory:</strong> The detailed, varied, and interactive environments offer <strong>multiple approaches</strong> to reach your goal. Sneak, climb, <strong>drive in various vehicles</strong>, or hide and creep your way to mission success! </p>
-</li>
-<li>
-<p><strong>On your mark:</strong> A modern user experience with <strong>precise and intuitive controls</strong> enables you to control the commandos with expert precision. <strong>Coordinate complex actions simultaneously</strong> to overcome heavily fortified targets. </p>
-</li>
-<li>
-<p><strong>Fight on all fronts:</strong> Play through <strong>more than 10 missions</strong> in historically authentic <strong>WWII</strong> environments, spanning from the barren Arctic to the African desert, with a range of core and voluntary objectives that will require your <strong>full tactical expertise</strong>. </p>
-</li>
-<li>
-<p><strong>There is no I in team:</strong> Take on missions with a friend in the <strong>2-player cooperative multiplaye</strong>r mode, either <strong>online</strong> or via <strong>local split-screen</strong>.  </p>
-</li>
-</ul>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41121/commandos-origins/">Commandos: Origins</a></strong> | Release Date: 9th April 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1479730/Commandos_Origins/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/commandos-origins-gets-an-april-release-date/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/commandos-origins-gets-an-april-release-date/</guid>
-      <pubDate>Mon, 10 Feb 2025 10:11:58 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1124896501id26146gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Stealth</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Paranormal point-and-click adventure Slender Threads is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Love your modern point and click adventures? Paranormal point-and-click adventure Slender Threads from developer Blyts looks like a good one. From the same team as Kelvin and the Infamous Machine, it promises a much darker and more ambitious tale but still features plenty of humour.</p>
-<p>Fully voiced too featuring a cast some might recognise from the likes of Hades, Telltale's The Walking Dead, Unicorn Overlord, and many more. More about it: "Haunted by a prescient nightmare, traveling salesman Harvey Green wanders the peculiar seaside town of Villa Ventana in a desperate attempt to stop a series of shocking deaths—before he's next."</p>
-<p>The Prologue, that's still free on <a href="https://store.steampowered.com/app/1682490/Slender_Threads_Prologue/" rel="noopener nofollow" target="_blank">Steam</a>, had a lot of positive user reviews.</p>
-<p>Check out the most recent trailer below:</p>
-<div class="hidden_video" data-video-id="Sg-1JWW5m5E"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b9ab82542aa377dcfd05a58866827e8f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Sg-1JWW5m5E" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li>A timeless point-and-click blend of exploration, dialogue, and puzzle-solving.</li>
-<li>A curious tale that melds shocking twists with absurd humor.</li>
-<li>Dozens of strange, memorable characters brought to life by a cast of celebrated voice actors.</li>
-<li>Hand-drawn art that combines 2D and 3D to create striking, "diorama-like" visuals.</li>
-<li>An original, haunting score.</li>
-</ul>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/17259/slender-threads/">Slender Threads</a></strong> | Release Date: 7th February 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/slender_threads">GOG</a></li><li><a href="https://store.steampowered.com/app/1116480/Slender_Threads/?snr=1_7_7_comingsoon_150_15">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/paranormal-point-and-click-adventure-slender-threads-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/paranormal-point-and-click-adventure-slender-threads-is-out-now/</guid>
-      <pubDate>Mon, 10 Feb 2025 09:42:23 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1807802830id26145gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>GOG</category>
-      
-      <category>Horror</category>
-      
-    </item>
-    
-    <item>
-      <title>Classic Diablo game engine DevilutionX improves gamepad support, gets lots of bug fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>DevilutionX remains the best way to play the original Diablo on modern systems including Linux (and Steam Deck), macOS and Windows. A new update to this community-made project should also make it feel even better.</p>
-<p>It was already good but now gamepad players should get a better experience by default. The 1.5.4 release notes it has improved support for various gamepads, has improved Stash navigation on gamepad and improves keymapper options. There's also improved translations, plus various stability improvements and bug fixes to make the whole game smoother.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13403201211739179636gol1.jpg"/><br/>
-<em>Pictured - Diablo via DevilutionX on Linux</em></p>
-<details class="spoiler_container"><summary class="spoiler_header">Full changelog, click me</summary>
-<div class="spoiler-content">
-<h4>Multiplayer</h4>
-<ul>
-<li>Make invalid items unusable</li>
-</ul>
-<h4>Controls</h4>
-<ul>
-<li>Better support for various gamepads</li>
-<li>Gamepad: Improve navigation of the stash</li>
-<li>Improve keymapper options</li>
-</ul>
-<h4>Platforms</h4>
-<ul>
-<li>Added support for macOS 10.4 PowerPC</li>
-<li>Added support for Windows XP</li>
-<li>Android: Avoid game lagging on devices that can switch refresh rates</li>
-<li>Correct networking support on big-endian systems</li>
-<li>iOS: High refresh rate support</li>
-<li>Xbox One/Series: Include translations</li>
-</ul>
-<h4>Translations</h4>
-<ul>
-<li>Improve rendering of Turkish texts</li>
-<li>Update Italian translation</li>
-<li>Update Russian translation</li>
-<li>Update Ukrainian translation</li>
-</ul>
-<h4>Stability / Performance / System</h4>
-<ul>
-<li>Fix crashes on device hot-plugging</li>
-<li>Fix game crash</li>
-<li>Hide Upscale option in the Settings menu to avoid stability issues</li>
-<li>Looser validation in Single Player games</li>
-<li>Make file sync services less likely to corrupt saves</li>
-<li>Make it clearer how to switch between Hellfire and Diablo</li>
-<li>Use available screen space in the Settings menu</li>
-</ul>
-<h3>Bug Fixes</h3>
-<h4>Gameplay</h4>
-<ul>
-<li>Fix being able to repair equipped items for free</li>
-<li>Fix game freezing when loading Lazarus lair from a save game</li>
-<li>Unique drops now reset on a new game</li>
-<li>Wake up the whole pack of Gargoyles when disturbed</li>
-</ul>
-<h4>Platforms</h4>
-<ul>
-<li>Android: Fix performance and audio issues on recent versions</li>
-<li>Android: Fix full immersive mode in Android 9 and higher</li>
-<li>Incorrect menu graphics on DirectFB devices</li>
-<li>PS4/Switch/Vita/Xbox One/Series: Correct controller mapping</li>
-</ul>
-<h4>Multiplayer</h4>
-<ul>
-<li>Correct some item validation</li>
-<li>Fix items being lost when held in the cursor during lag spikes</li>
-</ul>
-<h3>Bug Fixes for Original Diablo Bugs</h3>
-<h4>Gameplay</h4>
-<ul>
-<li>Fix non-solid fences in the caves</li>
-</ul>
-<h3>Bug Fixes for Original Hellfire Bugs</h3>
-<h4>Gameplay</h4>
-<ul>
-<li>Fix incorrectly solid tile next to crypt stairs down</li>
-</ul>
-<h4>Multiplayer</h4>
-<ul>
-<li>Fix runes not being seen as a player spell in PvP</li>
-</ul>
-</div>
-</details>
-<p>Find the details on <a href="https://github.com/diasurgical/devilutionX" rel="noopener nofollow" target="_blank">GitHub</a>. You need a copy of the original game to play it which you can get <a href="https://www.gog.com/en/game/diablo" rel="noopener nofollow" target="_blank">easily via GOG.com</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/classic-diablo-game-engine-devilutionx-improves-gamepad-support-gets-lots-of-bug-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/classic-diablo-game-engine-devilutionx-improves-gamepad-support-gets-lots-of-bug-fixes/</guid>
-      <pubDate>Mon, 10 Feb 2025 09:28:36 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1852889999id26144gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Activision Blizzard</category>
-      
-      <category>Retro</category>
-      
-      <category>RPG</category>
       
     </item>
     
