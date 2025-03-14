@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-03-13 07:27:46.314890</pubDate>
+    <pubDate>2025-03-14 07:28:39.604124</pubDate>
 
     
     <image>
@@ -18,6 +18,594 @@
     </image>
 
     
+    
+    <item>
+      <title>DXVK 2.6 brings expanded Nvidia Reflex support and lots of game fixes for Linux / Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>DXVK is a tool used by Proton that translates Direct3D 8 / 9 / 10 / 11 to Vulkan. It's one of the projects that enables Windows games to run so well on Linux platforms like Steam Deck. Version 2.6 was just released.</p>
+<p>You don't need to do anything, as Proton pulls in updates from DXVK directly in future releases. However, if you do wish to upgrade DXVK early, be sure to read <a href="https://www.gamingonlinux.com/guides/view/how-to-update-dxvk-and-vkd3d-proton-in-proton-and-ge-proton/" rel="noopener" target="_blank">my dedicated guide on it</a>.</p>
+<p>DXVK 2.6 includes expanded support for Nvidia Reflex when paired up with Proton Experimental for games that use DirectX 11. Noted games it works with includes "God of War, Overwatch 2, Quake Champions and some others". It does not work with "most Unreal Engine 4 games in D3D11 mode" so you should use DirectX 12 where you can.</p>
+<p class="plain-list-title">Then there's lots of game-specific fixes for the likes of:</p>
+<ul>
+<li>Assassin's Creed 3 and Black Flag</li>
+<li>Watch Dogs 1 &amp; 2</li>
+<li>Stalker: Clear Sky</li>
+<li>Baldurs Gate 3</li>
+<li>Cardfight!! Vanguard Dear Days 2</li>
+<li>Trine 5</li>
+<li>God of War</li>
+<li>Clanfolk</li>
+<li>Kingdom Come: Deliverance</li>
+<li>CivCity: Rome</li>
+<li>Global Operations</li>
+<li>Need For Speed: Hot Pursuit 2</li>
+<li>Silent Hill 2</li>
+<li>Tom Clancy's Splinter Cell</li>
+<li>Trainz v1.3</li>
+</ul>
+<details class="spoiler_container"><summary class="spoiler_header">Full changelog, click me</summary>
+<div class="spoiler-content">
+<h2>D3D10 / D3D11</h2>
+<h3>Nvidia Reflex support</h3>
+<p>When running Proton Experimental and an Nvidia driver with <code class="inline-code">VK_NV_low_latency2</code> support, Reflex can now be enabled in D3D11 games that support this feature. This includes <strong>God of War</strong>, <strong>Overwatch 2</strong>, <strong>Quake Champions</strong> and some others. Approximate input latency can be displayed in these games by setting <code class="inline-code">DXVK_HUD=latency</code>.</p>
+<p><strong>Note</strong>: Reflex does <strong>not</strong> work in most Unreal Engine 4 games in D3D11 mode since <code class="inline-code">LatencySleep</code> and other related functions never get called. This cannot be worked around inside DXVK; prefer using D3D12 for affected games.</p>
+<h3>Bug fixes and Improvements</h3>
+<ul>
+<li>Worked around a common game bug that would cause garbled output on Nvidia when using MSAA. (<a href="https://github.com/doitsujin/dxvk/issues/4480" rel="noopener nofollow" target="_blank">#4480</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4731" rel="noopener nofollow" target="_blank">#4731</a>)<br/>
+	This affects games such as <strong>Assassin's Creed 3 / Black Flag</strong>, <strong>Watch Dogs</strong>, <strong>Stalker: Clear Sky</strong>, and others.<br/>
+<strong>Note:</strong> This may have a small impact on performance on memory usage in affected games, including on AMD GPUs, where this issue did not manifest in rendering issues due to hardware details.</li>
+<li>Potentially improved GPU-bound performance in games that use NVAPI UAVOverlap feature, such as <strong>Baldurs Gate 3</strong>.<br/>
+	While this feature was supported before, our previous implementation was too conservative. (PR <a href="https://github.com/doitsujin/dxvk/pull/4691" rel="noopener nofollow" target="_blank">#4691</a>)<br/>
+<strong>Note:</strong> LIke other vendor extensions, this does not work on Windows.</li>
+<li>Removed <code class="inline-code">d3d11.dcSingleUseMode</code> option. Submitting deferred command lists multiple times will now behave as expected by default.<br/>
+<strong>Note:</strong> This may increase memory usage in some games. Fixes rendering issues in <strong>Cardfight!! Vanguard Dear Days 2</strong>.</li>
+<li>Slightly improved GPU-bound performance in modern games that extensively use pixel shader UAVs, such as <strong>Trine 5</strong>. (PR <a href="https://github.com/doitsujin/dxvk/pull/4693" rel="noopener nofollow" target="_blank">#4693</a>)</li>
+<li>Slightly reduced CPU overhead in some games that use resource binding methods inefficiently, such as <strong>God of War</strong>.</li>
+<li>Fixed layered D3D11 video processor view creation. (PR <a href="https://github.com/doitsujin/dxvk/pull/4651" rel="noopener nofollow" target="_blank">#4651</a>)</li>
+<li>Added support for the <code class="inline-code">ID3D11On12Device1</code> interop interface.</li>
+<li><strong>Clanfolk</strong>: Worked around a game bug that would cause missing geometry on Intel. (PR <a href="https://github.com/doitsujin/dxvk/pull/4716" rel="noopener nofollow" target="_blank">#4716</a>)</li>
+<li><strong>Kingdom Come: Deliverance</strong>: Fixed a case of invalid Vulkan usage. (PR <a href="https://github.com/doitsujin/dxvk/pull/4684" rel="noopener nofollow" target="_blank">#4684</a>)</li>
+<li><strong>Watch Dogs 2</strong>: Worked around a game bug that would cause the sky to flicker on RDNA3 GPUs. (PR <a href="https://github.com/doitsujin/dxvk/pull/4717" rel="noopener nofollow" target="_blank">#4717</a>)</li>
+</ul>
+<h2>D3D8 / D3D9</h2>
+<ul>
+<li>Fixed a race condition that could lead to crashes in games doing multi-threaded asset loading. (<a href="https://github.com/doitsujin/dxvk/issues/4613" rel="noopener nofollow" target="_blank">#4613</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4646" rel="noopener nofollow" target="_blank">#4646</a>)</li>
+<li>Fixed various issues that would occur when disabling shader support via the <code class="inline-code">d3d9.shaderModel</code> option. (<a href="https://github.com/doitsujin/dxvk/issues/4625" rel="noopener nofollow" target="_blank">#4625</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4629" rel="noopener nofollow" target="_blank">#4629</a>)</li>
+<li>Fixed an issue where games using both software and hardware cursors would not transition between the two smoothly. (PR <a href="https://github.com/doitsujin/dxvk/pull/4670" rel="noopener nofollow" target="_blank">#4670</a>)</li>
+<li>Fixed a regression that would cause textures to not be bound correctly in some games. (PR <a href="https://github.com/doitsujin/dxvk/pull/4694" rel="noopener nofollow" target="_blank">#4694</a>)</li>
+<li>Fixed an issue where games that request half-rate Vsync would run at quarter-rate instead.</li>
+<li>Fixed minor issues that would cause wine test failures. (PR <a href="https://github.com/doitsujin/dxvk/pull/4732" rel="noopener nofollow" target="_blank">#4732</a>)</li>
+<li><strong>CivCity: Rome</strong>: Added vendor ID override to make the game render shadows on Intel GPUs. (PR <a href="https://github.com/doitsujin/dxvk/pull/4739" rel="noopener nofollow" target="_blank">#4739</a>)</li>
+<li><strong>Global Operations</strong>: Fixed rendering issues (<a href="https://github.com/doitsujin/dxvk/issues/4138" rel="noopener nofollow" target="_blank">#4138</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4678" rel="noopener nofollow" target="_blank">#4678</a>)</li>
+<li><strong>Need For Speed: Hot Pursuit 2</strong>: Fixed missing fog. (<a href="https://github.com/doitsujin/dxvk/issues/4113" rel="noopener nofollow" target="_blank">#4113</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4653" rel="noopener nofollow" target="_blank">#4653</a>)</li>
+<li><strong>Silent Hill 2</strong>: Fixed an issue where the menu would render incorrectly with the <em>Silent HIll 2 Enhancements</em> mod. (<a href="https://github.com/doitsujin/dxvk/issues/3943" rel="noopener nofollow" target="_blank">#3943</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/3948" rel="noopener nofollow" target="_blank">#3948</a>)</li>
+<li><strong>Tom Clancy's Splinter Cell</strong>: Worked around alt+tab and shadow rendering issues. (PR <a href="https://github.com/doitsujin/dxvk/pull/4656" rel="noopener nofollow" target="_blank">#4656</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4660" rel="noopener nofollow" target="_blank">#4660</a>)</li>
+<li><strong>Trainz v1.3</strong>: Worked around alt+tab issue. (<a href="https://github.com/doitsujin/dxvk/issues/4116" rel="noopener nofollow" target="_blank">#4116</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4659" rel="noopener nofollow" target="_blank">#4659</a>)</li>
+</ul>
+<h2>General Improvements</h2>
+<ul>
+<li>Reworked Vulkan swapchain implementation to be more robust. (PR <a href="https://github.com/doitsujin/dxvk/pull/4609" rel="noopener nofollow" target="_blank">#4609</a>)</li>
+<li>Improved efficiency of multisample resolves on tiling GPUs.</li>
+<li>Fixed a regression introduced in DXVK 2.5 that would cause memory allocation errors on certain unified memory setups, including the Qualcomm proprietary driver.<br/>
+<strong>Note:</strong> This does not mean that DXVK will officially support Android, or proprietary mobile drivers.</li>
+<li>Fixed a crash if an application unloads the SetupAPI DLL. This issue affected various AdvHD-based visual novels. (<a href="https://github.com/doitsujin/dxvk/issues/4662" rel="noopener nofollow" target="_blank">#4662</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4668" rel="noopener nofollow" target="_blank">#4668</a>)</li>
+<li>Fixed an issue where software rasterizers such as Lavapipe would not be considered when setting <code class="inline-code">DXVK_FILTER_DEVICE_NAME</code>. (PR <a href="https://github.com/doitsujin/dxvk/pull/4716" rel="noopener nofollow" target="_blank">#4716</a>)</li>
+<li>Resource initialization is now always performed on the asynchronous transfer queue if possible, and no longer uses additional memory on drivers that support Vulkan sparse residency features. This may save up to 64 MiB of VRAM in some games.</li>
+<li>Worked around an <code class="inline-code">std::regex</code> bug that would cause games to instantly crash when using Japanese locale. (PR <a href="https://github.com/doitsujin/dxvk/pull/4669" rel="noopener nofollow" target="_blank">#4669</a>)</li>
+<li>Worked around potential 32-bit crashes caused by stack alignment issues in GCC-compiled binaries. (PR <a href="https://github.com/doitsujin/dxvk/pull/4627" rel="noopener nofollow" target="_blank">#4627</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4633" rel="noopener nofollow" target="_blank">#4633</a>)</li>
+</ul>
+<p>The <a href="https://github.com/doitsujin/dxvk/wiki/Developer-guidelines" rel="noopener nofollow" target="_blank">Developer guidelines</a> wiki page was updated to reflect current implementation details.</p>
+</div>
+</details>
+<p>Source: <a href="https://github.com/doitsujin/dxvk/releases/tag/v2.6" rel="noopener nofollow" target="_blank">GitHub</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/dxvk-2-6-brings-expanded-nvidia-reflex-support-and-lots-of-game-fixes-for-linux-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/dxvk-2-6-brings-expanded-nvidia-reflex-support-and-lots-of-game-fixes-for-linux-steam-deck/</guid>
+      <pubDate>Thu, 13 Mar 2025 17:58:16 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2132899621id26372gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+      <category>Vulkan</category>
+      
+    </item>
+    
+    <item>
+      <title>Steam Spring Sale 2025 is live now - here&#39;s some great budget games for Steam Deck / Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve have launched the first of their planned four major seasonal sales for 2025, with the Steam Spring Sale launched featuring plenty of big discounts and demos.</p>
+<p>They also have a fresh trailer to mark the event featuring a bunch of different games:</p>
+<div class="hidden_video" data-video-id="C-4SwzW0KoA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9c0ca8c3c9b72da2b26a77caee2a7e31.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/C-4SwzW0KoA" target="_blank">See video</a></div></div>
+<p>For this event Valve have also put up a Deep Discounts section again, so you can look to find some of the biggest discounts they have during the sale. No sale on Steam Deck hardware though, that's more likely later on in the year.</p>
+<p>Going over the list I've managed to pick out a number of different games I think are worth grabbing. All of them suitable for those of you on a budget and I've stuck to those that are <img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"> Steam Deck Verified only, to ensure no matter what they should work great on <em>both</em> Steam Deck and Desktop Linux as a whole.</img></p>
+<h3><strong>Under £15</strong></h3>
+<ul>
+<li><a href="https://store.steampowered.com/app/1659040/HITMAN_World_of_Assassination/" rel="noopener nofollow" target="_blank">HITMAN World of Assassination Part One</a> - 70% off</li>
+<li><a href="https://store.steampowered.com/app/1196590/Resident_Evil_Village/" rel="noopener nofollow" target="_blank">Resident Evil Village</a> - 60% off.</li>
+<li><a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" rel="noopener nofollow" target="_blank">Dead by Daylight</a> - 60% off.</li>
+<li><a href="https://store.steampowered.com/app/2478970/Tomb_Raider_IIII_Remastered_Starring_Lara_Croft/" rel="noopener nofollow" target="_blank">Tomb Raider I-III Remastered</a> - 60% off</li>
+<li><a href="https://store.steampowered.com/app/1562430/DREDGE/" rel="noopener nofollow" target="_blank">DREDGE</a> - 50% off.</li>
+<li><a href="https://store.steampowered.com/app/264710/Subnautica/" rel="noopener nofollow" target="_blank">Subnautica</a> - 50% off.</li>
+<li><a href="https://store.steampowered.com/app/1167630/Teardown/" rel="noopener nofollow" target="_blank">Teardown</a> - 50% off.</li>
+<li><a href="https://store.steampowered.com/app/1313140/Cult_of_the_Lamb/" rel="noopener nofollow" target="_blank">Cult of the Lamb</a> - 50% off.</li>
+<li><a href="https://store.steampowered.com/app/1435790/Escape_Simulator/" rel="noopener nofollow" target="_blank">Escape Simulator</a> - 50% off</li>
+<li><a href="https://store.steampowered.com/app/753640/Outer_Wilds/" rel="noopener nofollow" target="_blank">Outer Wilds</a> - 40% off.</li>
+<li><a href="https://store.steampowered.com/app/1229490/ULTRAKILL/" rel="noopener nofollow" target="_blank">ULTRAKILL</a> - 30% off.</li>
+<li><a href="https://store.steampowered.com/app/108600/Project_Zomboid/" rel="noopener nofollow" target="_blank">Project Zomboid</a> - 45% off.</li>
+<li><a href="https://store.steampowered.com/app/2379780/Balatro/" rel="noopener nofollow" target="_blank">Balatro</a> - 15% off.</li>
+</ul>
+<h3><strong>Under £5</strong></h3>
+<ul>
+<li><a href="https://store.steampowered.com/app/242640/Styx_Master_of_Shadows/" rel="noopener nofollow" target="_blank">Styx: Master of Shadows</a> - 90% off.</li>
+<li><a href="https://store.steampowered.com/app/234140/Mad_Max/" rel="noopener nofollow" target="_blank">Mad Max</a> - 85% off.</li>
+<li><a href="https://store.steampowered.com/app/367500/Dragons_Dogma_Dark_Arisen/" rel="noopener nofollow" target="_blank">Dragon's Dogma: Dark Arisen</a> - 84% off.</li>
+<li><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" rel="noopener nofollow" target="_blank">The Witcher 3: Wild Hunt</a> - 80% off.</li>
+<li><a href="https://store.steampowered.com/app/208650/Batman_Arkham_Knight/" rel="noopener nofollow" target="_blank">Batman: Arkham Knight</a> - 80% off.</li>
+<li><a href="https://store.steampowered.com/app/683320/GRIS/" rel="noopener nofollow" target="_blank">GRIS</a> - 80% off.</li>
+<li><a href="https://store.steampowered.com/app/241930/Middleearth_Shadow_of_Mordor/" rel="noopener nofollow" target="_blank">Middle-earth: Shadow of Mordor</a> - 80% off.</li>
+<li><a href="https://store.steampowered.com/app/894020/Deaths_Door/" rel="noopener nofollow" target="_blank">Death's Door</a> - 75% off.</li>
+<li><a href="https://store.steampowered.com/app/424840/Little_Nightmares/" rel="noopener nofollow" target="_blank">Little Nightmares</a> - 75% off</li>
+</ul>
+<h3><strong>Native Linux</strong></h3>
+<p>For this next set here's some top picks for readers who specifically go for games that have a <em>Native Linux</em> version. All under £15 as well. All should also work on Steam Deck being rated at least Playable or higher!</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/701160/Kingdom_Two_Crowns/" rel="noopener nofollow" target="_blank">Kingdom Two Crowns</a> - 75% off</li>
+<li><a href="https://store.steampowered.com/app/953490/CARRION/" rel="noopener nofollow" target="_blank">CARRION</a> - 70% off.</li>
+<li><a href="https://store.steampowered.com/app/785790/WHAT_THE_GOLF/" rel="noopener nofollow" target="_blank">WHAT THE GOLF?</a> - 66% off.</li>
+<li><a href="https://store.steampowered.com/app/985890/Streets_of_Rage_4/" rel="noopener nofollow" target="_blank">Streets of Rage 4</a> - 60% off.</li>
+<li><a href="https://store.steampowered.com/app/590380/Into_the_Breach/" rel="noopener nofollow" target="_blank">Into the Breach</a> - 60% off.</li>
+<li><a href="https://store.steampowered.com/app/892970/Valheim/" rel="noopener nofollow" target="_blank">Valheim</a> - 50% off.</li>
+<li><a href="https://store.steampowered.com/app/1321440/Cassette_Beasts/" rel="noopener nofollow" target="_blank">Cassette Beasts</a> - 45% off.</li>
+<li><a href="https://store.steampowered.com/app/1592280/Selaco/" rel="noopener nofollow" target="_blank">Selaco</a> - 30% off.</li>
+<li><a href="https://store.steampowered.com/app/1621690/Core_Keeper/" rel="noopener nofollow" target="_blank">Core Keeper</a> - 25% off.</li>
+<li><a href="https://store.steampowered.com/app/1989270/Slay_the_Princess__The_Pristine_Cut/" rel="noopener nofollow" target="_blank">Slay the Princess — The Pristine Cut</a> - 25% off (check out <a href="https://www.gamingonlinux.com/2025/03/a-sweeping-journey-down-the-path-in-the-woods-slay-the-princess-pristine-cut-interview/" rel="noopener" target="_blank">our recent interview</a>!).</li>
+</ul>
+<p>I'm also going to give an a little honourable mention to one of the best co-op games ever with <a href="https://store.steampowered.com/app/548430/Deep_Rock_Galactic/" rel="noopener nofollow" target="_blank">Deep Rock Galactic</a> at 67% off but it's only rated <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable (but works perfectly on Desktop Linux).</p>
+<p>See the full sale on <a href="https://store.steampowered.com/" rel="noopener nofollow" target="_blank">the Steam store</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/steam-spring-sale-2025-is-live-now-heres-some-great-budget-games-for-steam-deck-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/steam-spring-sale-2025-is-live-now-heres-some-great-budget-games-for-steam-deck-linux/</guid>
+      <pubDate>Thu, 13 Mar 2025 17:44:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2040328442id26369gol.jpg" type="image/jpeg"/>
+      
+      <category>Event</category>
+      
+      <category>Misc</category>
+      
+      <category>On Sale</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Fast-paced turn-based tactics game Warside for fans of Advance Wars launches April 14</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It looks very much like Advance Wars. LAVABIRD and First Break Labs have announced that Warside is set for launch now on April 14th.</p>
+<p>You'll be able to battle across icy snow environments, sandy deserts, toxic wastelands and more in various modes including solo play (campaign and skirmish), co-op and PvP. There's a buit-in mission editor for you to make your own battles too. Various different types of combatants to command including snipers, medics, mortar teams, artillery, tanks, submarines, and warships. You get to pick between fourteen different commanders to progress through it, with each of them having different passive skills and special battle powers.</p>
+<div class="hidden_video" data-video-id="zeVa4x_qmpo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8dc7fe74c6e3b9d6de72e1e00da628fb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/zeVa4x_qmpo" target="_blank">See video</a></div></div>
+<p>Nice to see Steam Deck clearly listed in a trailer too. It will have Native Linux support.</p>
+<p class="plain-list-title">Features:</p>
+<blockquote>
+<ul>
+<li>Intuitive turn-based gameplay with a familiar feel for fans of the classics.</li>
+<li>14 playable Commanders, each with unique passive skills and Battle Powers.</li>
+<li>Control 30+ unit types. Simultaneously battle over land, air, and sea with ground forces, aircraft, and naval units.</li>
+<li>Faction unique units with mechanics specific to each faction.</li>
+<li>Single-player campaign with over 30 missions.</li>
+<li>Forest, desert and snow environments, plus the toxic wastelands.</li>
+<li>Challenge friends and foes with multiplayer battles. Local and internet play are supported.</li>
+<li>Design your own maps with the built-in mission editor for both single and multiplayer.</li>
+<li>Language support for English, French, Spanish, and Brazilian Portuguese.</li>
+</ul>
+</blockquote>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/35480/warside/">Warside</a></strong> | Release Date: 14th April 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2368300/Warside/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/fast-paced-turn-based-tactics-game-warside-for-fans-of-advance-wars-launches-april-14/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/fast-paced-turn-based-tactics-game-warside-for-fans-of-advance-wars-launches-april-14/</guid>
+      <pubDate>Thu, 13 Mar 2025 13:13:34 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/17116046id26370gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Palworld is getting crossplay in &#39;late March&#39;</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Pocketpair have announced that sometime real soon you'll be able to team up with players across different platforms in the popular monster catcher Palworld.</p>
+<p>They said it will come in "late March" but didn't give any other specifics on the date. We'll just have to wait and see. In the <a href="https://store.steampowered.com/news/app/1623730/view/541100079887417458" rel="noopener nofollow" target="_blank">announcement</a> they said:</p>
+<blockquote>
+<p>This update will implement multiplayer between different platforms and the ability to move Pals between worlds.</p>
+<p>Crossplay is supported between all currently released platforms, including Steam, Xbox, PS5 and Mac. Please enjoy crossplay with your family and friends!</p>
+<p>For more details, please check the release notes that will be published on the day of the update.</p>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15703146961741869775gol1.jpg"/></p>
+<p>In case you missed it, Pocketpair announced a <a href="https://www.gamingonlinux.com/2025/01/palworld-gets-a-roadmap-including-co-op-crossplay-world-transfers-for-pals-and-an-ending/" rel="noopener" target="_blank">roadmap back in February</a> with plenty more planned to arrive for the game including actually having an ending. Nice to see one part of the roadmap will be coming soon! Optimization is included in their plans, which will be good to see, since it definitely could do with some to perform better on devices like the Steam Deck.</p>
+<p>Palworld is rated Steam Deck Playable by Valve and Gold on <a href="https://www.protondb.com/app/1623730" rel="noopener nofollow" target="_blank">ProtonDB</a>. I've played quite a lot of it and can confirm for Desktop Linux users it does run great. </p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40377/palworld/">Palworld</a></strong> | Release Date: 19th January 2024<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1623730/Palworld/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/palworld-is-getting-crossplay-in-late-march/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/palworld-is-getting-crossplay-in-late-march/</guid>
+      <pubDate>Thu, 13 Mar 2025 12:48:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1770067361id26368gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Monster Catching</category>
+      
+    </item>
+    
+    <item>
+      <title>Hello Sunshine has you walking in the shadow of a giant robot so you&#39;re not fried by the sun</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Just announced from Red Thread Games (Dreamfall Chapters, Draugen, Dustborn) is Hello Sunshine, a mysterious survival game where you're following a truly massive robot and keeping to their shadow to not get fried by the sun.</p>
+<p>I have to admit the whole idea of this has me fully intrigued. I love a good giant robot, and the teaser trailer certainly left me wanting a whole lot more. The trailer doesn't actually show any proper gameplay though, more just introducing the world and the giant robot.</p>
+<p>Check it out below:</p>
+<div class="hidden_video" data-video-id="XI-HO3uoCmQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6a9009baae43472bc0ceb247ab9e2f2c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/XI-HO3uoCmQ" target="_blank">See video</a></div></div>
+<p>The Steam page at least gives us a much clearer idea of what you'll be doing, along with some actual clear in-game shots. Here's some more about it:</p>
+<blockquote>
+<p>Hello Sunshine is a mystery survival RPG set in the sun-scorched ruins of a corporate empire. You play the final employee. Your mission: reach the tower at the end of the road, and help decide the fate of what remains of this world.</p>
+<p>To survive the blistering heat and deadly sun, you'll walk in the shadow of a towering war machine, scavenging for supplies and searching for pieces to the puzzle.</p>
+<p>When the sun sets and the robot stops to charge, you'll  make camp, craft new gear, and repair your mechanical guardian. But the wasteland is freezing cold at night. Stay close to the robot to keep warm.</p>
+<p>The journey to the tower is long. You won't make it on your own. As the sun rises, the robot starts walking. Follow — and stay alive until the end of the road.</p>
+</blockquote>
+<p>Screenshots:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15879883891741869545gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/15879883891741869545gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1519679861741869546gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/1519679861741869546gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7003235911741869547gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7003235911741869547gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11405428111741869547gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/11405428111741869547gol1.jpg"/></a></p>
+<p>Definitely going to be keeping an eye on this one! Sounds really unique and it will be playable in online co-op too.</p>
+<p>You can follow the developer on <a href="https://bsky.app/profile/redthreadgames.bsky.social" rel="noopener nofollow" target="_blank">Bluesky</a>.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41406/hello-sunshine/">Hello Sunshine</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3245140/Hello_Sunshine/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/hello-sunshine-has-you-walking-in-the-shadow-of-a-giant-robot-so-youre-not-fried-by-the-sun/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/hello-sunshine-has-you-walking-in-the-shadow-of-a-giant-robot-so-youre-not-fried-by-the-sun/</guid>
+      <pubDate>Thu, 13 Mar 2025 12:40:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2060161468id26367gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Adventure</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Moon Studios developer of Ori and No Rest for the Wicked goes &#39;fully independent&#39;</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Some good industry news for you today. Moon Studios who made Ori and the Blind Forest, Ori and the Will of the Wisps and their current Early Access game No Rest for the Wicked have gone "fully independent".</p>
+<p>The news was shared in their latest update video for No Rest for the Wicked where Gennadiy Korol, the Co-Founder and Director of Moon Studios said: "After months of negotiations, we reached an agreement to buy the publishing rights for No Rest for the Wicked back so that Moon Studios could become fully independent". Following that the Creative Director, Thomas Mahler, said: "We believe this will give you even more confidence in our vision, because we're free to build No Rest for the Wicked exactly how we want".</p>
+<p>Just a small part of the below video where they talk about a huge update coming to the game on April 30th:</p>
+<div class="hidden_video" data-video-id="CzAtYaSYZms"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e85095d0a0185040f064d09eb6a2c873.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/CzAtYaSYZms" target="_blank">See video</a></div></div>
+<p>No Rest for the Wicked is rated Steam Deck Verified and Platinum on ProtonDB. So it appears to work well on Linux with Valve's Proton.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/38610/no-rest-for-the-wicked/">No Rest for the Wicked</a></strong> | Release Date: 18th April 2024<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1371980/No_Rest_for_the_Wicked/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/moon-studios-developer-of-ori-and-no-rest-for-the-wicked-goes-fully-independent/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/moon-studios-developer-of-ori-and-no-rest-for-the-wicked-goes-fully-independent/</guid>
+      <pubDate>Thu, 13 Mar 2025 11:20:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1628864952id26366gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+    </item>
+    
+    <item>
+      <title>Bazzite Linux announced two new editions designed for game developers</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Bazzite Linux, a popular choice for people wanting to put Linux on their handhelds or living room PC, is getting two new editions designed to help developers.</p>
+<p>Writing on their official forum, the two new editions will be Bazzite DX and Bazzite GDX. As developer NiHaiden said in the announcement:</p>
+<blockquote>
+<p>Building upon the incredible work by the <a href="https://artifacthub.io/packages/container/amyos/amyos" rel="noopener nofollow" target="_blank">amyOS</a> developers, we are officially announcing the creation of Bazzite DX and Bazzite GDX (Game Developer Experience).</p>
+<p>Bazzite DX will be developer focused edition which will include general developer goodies, just like Bluefin DX or Aurora DX. This will be a general developer image, so it will be scoped to match our existing developer modes.</p>
+<p>Bazzite GDX is the one we’re excited about the most. This will be a game-developer focused edition of Bazzite filled with awesome tools (like Godot) and whatever goodies the community builds with us. It’s purpose is to be a kickass game developer workstation.</p>
+</blockquote>
+<p>They're now available in a prototype Alpha testing stage for any developer or user wanting to help test and give feedback on how to make it a success.</p>
+<p>An interesting idea, and given the <a href="https://www.gamingonlinux.com/2025/02/steamos-like-bazzite-linux-has-some-nice-growth-thanks-to-great-handheld-pc-support/" rel="noopener" target="_blank">rise in popularity of Bazzite</a>, it might make sense. Giving developers a similar stable platform to develop, test and play their games across a range of supported hardware. Even though Valve have SteamOS, they haven't put it out to the public yet, so Bazzite has really been picking up a lot of slack here. It will be interesting to see what they will bring to the table.</p>
+<p>See more in the <a href="https://universal-blue.discourse.group/t/introducing-the-bazzite-developer-experience-alpha/7342" rel="noopener nofollow" target="_blank">forum post</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/bazzite-linux-announced-two-new-editions-designed-for-game-developers/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/bazzite-linux-announced-two-new-editions-designed-for-game-developers/</guid>
+      <pubDate>Thu, 13 Mar 2025 11:04:03 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/bazzite.jpg" type="image/jpeg"/>
+      
+      <category>Bazzite</category>
+      
+      <category>Distro News</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Spell-combining co-op survivor-like The Spell Brigade adds a new character and a new game mode</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A game that continues to review well by players, with it hitting a good sales milestone not long after launch, The Spell Brigade from Bolt Blaster Games has a big update out now with a brand new character. It has Native Linux support and is rated Steam Deck Verified.</p>
+<p>More about it: The Spell Brigade is a survivors-like with online co-op for 1-4 players. Team up with your wizard friends to slay hordes of dark creatures. Complete team-based objectives, unlock new upgrades, and create overpowered spell synergies. Friend nor foe is safe in this friendly fire bullet hell!</p>
+<p>Not seen it before? Check out the trailer below:</p>
+<div class="hidden_video" data-video-id="xNplw0h5Qkk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6e9709435bef05e3b9fe80a0965195c7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/xNplw0h5Qkk" target="_blank">See video</a></div></div>
+<p class="plain-list-title">New additions:</p>
+<ul>
+<li>New Wizard: Maggie: The Spell Brigade welcomes the eleventh wizard to their ranks. Maggie uses her bird-like features to spot pickups from far away and wields a unique spell called "Aurora Wings," which casts mystic birds across the battlefield that pick off targets one by one.</li>
+<li>Wizard Traits &amp; Ranks: Following community feedback, Bolt Blaster Games has reworked and rebalanced each wizard's stats and effects. Every mage now has unique attributes that define their specific role within a team. Examples include Reginald's luck-based abilities, Aldric's occasional healing powers, and Kavin's... distinctive Kavin-ness. Each wizard now also has their own rank, which players can level up to show off their shiny badges to their teammates.</li>
+<li>Single Spell Mode: A new covenant called "Solitary Focus" challenges players to rely solely on their Starter Spell. As players progress, this single spell evolves to extraordinary power levels, offering a fresh strategic approach to their runs.</li>
+</ul>
+<p>They said it will also be discounted during the Steam Spring Sale with 25% off (it's biggest discount so far) which begins later today. Looks like another great one to add to your library, which I still haven't had a chance to properly dive into yet.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/38638/the-spell-brigade/">The Spell Brigade</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2904000/The_Spell_Brigade/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/spell-combining-co-op-survivor-like-the-spell-brigade-adds-a-new-character-and-a-new-game-mode/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/spell-combining-co-op-survivor-like-the-spell-brigade-adds-a-new-character-and-a-new-game-mode/</guid>
+      <pubDate>Thu, 13 Mar 2025 10:53:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1802658465id26363gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Bullet Heaven</category>
+      
+    </item>
+    
+    <item>
+      <title>Here&#39;s what was shown off during the Humble Games Showcase 2025</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Humble Games Showcase 2025 just recently went live and with it we have some new game announcements and trailers. So here's what you might have missed to keep you up to date.</p>
+<h4>The Pre-Show</h4>
+<p>Firstly, they had a little pre-show where they showed off a couple of teasers.</p>
+<p>The first of which was <strong><a href="https://store.steampowered.com/app/3467710/Wall_World_2/" rel="noopener nofollow" target="_blank">Wall World 2</a> (2025)</strong>. </p>
+<blockquote>
+<p>The world of the Wall awaits. Wall World 2 builds on the mining rogue-lite experience with expanded mechanics, new challenges, and deeper gameplay. Explore procedurally generated mines full of new discoveries and dangers. Extract valuable resources, harness lost technologies, and upgrade your robospider and exosuit to survive against hordes of raging monsters. Venture through incredible biomes and uncover the secrets entombed in the depths of the Wall.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="CBwohPsHDl4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/14b80574f65bcbddbbe17ce9144263e6.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/CBwohPsHDl4" target="_blank">See video</a></div></div>
+<p><em>They also showed off a trailer for <a href="https://store.steampowered.com/app/2303350/Sticky_Business/" rel="noopener nofollow" target="_blank">Sticky Business</a> but that's not a new game and actually released back in 2023.</em></p>
+<p>Next up for actual announcements in the pre-show was <strong><a href="https://store.steampowered.com/app/2744010/Urban_Jungle/" rel="noopener nofollow" target="_blank">Urban Jungle</a> (21st March).</strong></p>
+<blockquote>
+<p>Urban Jungle is a charming and relaxing simulation game that invites you to transform small, ordinary apartments into lush, green havens by placing delightful plants with savvy. But no worries, you won’t have to deal with watering or pest control – the plants just need a good spot, and that's enough to create the comfiest and coziest home of them all. Oh, and don’t forget to pet your cat!</p>
+</blockquote>
+<div class="hidden_video" data-video-id="j44G5_9sEWA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/20d6c0ef50775dfc420825ed9151efca.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/j44G5_9sEWA" target="_blank">See video</a></div></div>
+<p>Then they moved onto a new trailer for <strong><a href="https://store.steampowered.com/app/2412240/Bubble_Ghost_Remake/" rel="noopener nofollow" target="_blank">Bubble Ghost Remake</a> (27th March)</strong>.</p>
+<blockquote>
+<p>Bubble Ghost Remake is set to bring the classic 1990 platformer to new heights. Originally a Game Boy title, this completely remade version by Nakama Game Studio will launch on March 27th for Nintendo Switch, PC and now, PlayStation. Players will guide Heinrich Von Schinker, a ghost inventor, as he maneuvers a bubble through 40 challenging levels. The remake features revamped graphics, new gameplay modes, and updated puzzles, with a modern twist that honors the original.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="XRHrmdjAFM0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d4165006d057930b03180a91f527bb36.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/XRHrmdjAFM0" target="_blank">See video</a></div></div>
+<p>After that we had <strong><a href="https://store.steampowered.com/app/1861250/Antro/" rel="noopener nofollow" target="_blank">Antro</a></strong>.</p>
+<blockquote>
+<p>In Antro, players dive into a dystopian future where every move and jump is synchronized to an electrifying soundtrack. Set in an underground metropolis ruled by a totalitarian government, players will take control of Nittch, a rebellious delivery courier, to challenge the oppressive regime with fast-paced parkour, rhythmic platforming, and intense puzzle-solving.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="pYw1sj3tPxc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/114731e5f1b63d8d2094e5d6672d2268.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/pYw1sj3tPxc" target="_blank">See video</a></div></div>
+<p>Last full game for the pre-show was some footage and a chat with the developer of <strong><a href="https://store.steampowered.com/app/3525890/Future_Vibe_Check/" rel="noopener nofollow" target="_blank">Future Vibe Check</a></strong>.</p>
+<blockquote>
+<p>Future Vibe Check is a musical automation game where your factories don’t just produce goods—they make music. Summoned by Infinity, you must rebuild reality. The call of endless optimization will be sublimated into sound. Automate the Vibe. Defend the Vibe. Become the Vibe.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="3ETtbUyQnwY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/908e15a3abaf7001337614dcfaca01d6.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3ETtbUyQnwY" target="_blank">See video</a></div></div>
+<p>After that there was a trailer for <strong><a href="https://store.steampowered.com/app/1614440/B_Path_of_the_Teal_Lotus/" rel="noopener nofollow" target="_blank">Bō: Path of the Teal Lotus</a></strong> which mentioned a new DLC coming soon.</p>
+<blockquote>
+<p>Flow gracefully through a colorful, hand-drawn 2.5D action platformer inspired by Japanese folklore. Engage in acrobatic aerial combat, unlock powerful mystical abilities, and explore an interconnected world of myth as you seek to unravel the mysteries of your origin.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="IVwiQH_FXp0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/893aa76f50f790c12421850dfa57699d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/IVwiQH_FXp0" target="_blank">See video</a></div></div>
+<h4>The Main Event</h4>
+<p>After they were done with a little chat and a few teasers during the pre-show, they then moved onto the main event to show off even more titles.</p>
+<p>The first of the new announcements was <strong><a href="https://store.steampowered.com/app/1748110/Town_of_Zoz/" rel="noopener nofollow" target="_blank">Town of Zoz</a></strong>.</p>
+<blockquote>
+<p>Fight with flavor! As Ito, a young shaman chef adventurer, you'll hunt critters, gather magical ingredients and rebuild bonds by cooking for the townspeople. A shaman chef always aims to lend a helping hand, but the more Ito gets involved, the more he'll learn about the town and its ancient secrets.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="keA0jqnl-Rw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f95e44530bc96d79e744d245ea32ceb2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/keA0jqnl-Rw" target="_blank">See video</a></div></div>
+<p>Next up is a fresh look at <strong><a href="https://store.steampowered.com/app/1063030/Monaco_2/" rel="noopener nofollow" target="_blank">Monaco 2</a> (2025)</strong>.</p>
+<blockquote>
+<p>Get your crew back together for the ultimate heist experience! Return to Monaco, plan your operation, and skedaddle when things inevitably go awry in this co-op heist game. The city is yours for the taking!</p>
+</blockquote>
+<div class="hidden_video" data-video-id="_UdGDRpoDlM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/10d72a5c54f9976085ccd76f9c7ac6be.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/_UdGDRpoDlM" target="_blank">See video</a></div></div>
+<p>They also showed off <a href="https://store.steampowered.com/app/2132560/On_Your_Tail/" rel="noopener nofollow" target="_blank">On Your Tail</a>, which released for PC back in December, this was to show off a Nintendo Switch release.</p>
+<p><strong><a href="https://store.steampowered.com/app/1931180/Lost_Skies/" rel="noopener nofollow" target="_blank">Lost Skies</a></strong> got a new trailer after that.</p>
+<blockquote>
+<p>Chart a course in a breathtaking, but fractured world. Explore ancient ruins, master advanced technology, and craft your very own skyship to brave nature’s fury and colossal threats in Lost Skies. Team up with friends or go it alone in this awe-inspiring cooperative survival adventure.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="qf05rS9yRDM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/497af711d78fd34a7c162d79d5de4e28.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/qf05rS9yRDM" target="_blank">See video</a></div></div>
+<p><strong><a href="https://store.steampowered.com/app/1400830/Billie_Bust_Up/" rel="noopener nofollow" target="_blank">Billie Bust Up</a></strong> was up next with a trailer.</p>
+<blockquote>
+<p>Embark on a thrilling and imaginative odyssey in a 3D platforming musical inspired by your favorite timeless, magical animated films. Meet a fantastical cast of characters, take gameplay cues from the music—and try not to let the villains’ songs get stuck in your head.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="kG0VI7nPHMY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d182996ed994ce1f32d00bf8c3bb6f3e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/kG0VI7nPHMY" target="_blank">See video</a></div></div>
+<p>Then we had footage for <strong><a href="https://store.steampowered.com/app/1823210/Breeze_in_the_Clouds/" rel="noopener nofollow" target="_blank">Breeze in the Clouds</a></strong>.</p>
+<blockquote>
+<p>Jump, brawl, and command the powers of weather as Breeze, a scrappy corgi swept into a world in the clouds where animal forces control the weather. Battle the elements with combo-fueled 2D brawling action as you accumulate the ultimate puppy power!</p>
+</blockquote>
+<div class="hidden_video" data-video-id="7Vj9l_TbB1s"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1a7667252802d2ca4bcf0696fd5f9034.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/7Vj9l_TbB1s" target="_blank">See video</a></div></div>
+<p><a href="https://store.steampowered.com/app/2193540/Wizard_of_Legend_2/" rel="noopener nofollow" target="_blank">Wizard of Legend 2</a> was also shown off next, but that's currently in Early Access and nothing about it shown was actually new for the event so we'll skip over that one too.</p>
+<p>A fresh look for <strong><a href="https://store.steampowered.com/app/2090210/Threads_of_Time/" rel="noopener nofollow" target="_blank">Threads of Time</a></strong> was the next exciting one.</p>
+<blockquote>
+<p>Threads of Time is an era-spanning, turn-based RPG inspired by the timeless classics. Embark on a journey through time, gather a party of charismatic heroes from across ages, and uncover a plot that threatens to unravel the past, present and future.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="q2Q9tI3rH-c"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1b2df9633ee0d38be50191bdb62132be.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/q2Q9tI3rH-c" target="_blank">See video</a></div></div>
+<p>The final game video of the event was the Star Fox 64 love-letter called <strong><a href="https://store.steampowered.com/app/1921490/Wild_Blue/" rel="noopener nofollow" target="_blank">Wild Blue</a></strong>. Coming from Chuhai Labs, founded by original Star Fox programmer Giles Goddard. It was nothing more than a brief silly teaser though.</p>
+<blockquote>
+<p>Wild Blue reimagines the classic on-rail adventures of the '90s. Join Bowie Stray and the Blue Bombers as they soar through the skies on a mission to save the world in this action-packed, nostalgic journey!</p>
+</blockquote>
+<div class="hidden_video" data-video-id="jfeCrTB7egc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/62faaaa187ae1c994daa3ad62df9523a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/jfeCrTB7egc" target="_blank">See video</a></div></div>
+<p>You can watch the full event below:</p>
+<div class="hidden_video" data-video-id="yMejSEspaog"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cc63ca8976aa0c6957a1c91e2707828f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/yMejSEspaog" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/heres-what-was-shown-off-during-the-humble-games-showcase-2025/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/heres-what-was-shown-off-during-the-humble-games-showcase-2025/</guid>
+      <pubDate>Thu, 13 Mar 2025 10:48:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/451372155id26364gol.jpg" type="image/jpeg"/>
+      
+      <category>Event</category>
+      
+      <category>Misc</category>
+      
+      <category>Round-up</category>
+      
+    </item>
+    
+    <item>
+      <title>A Sweeping Journey Down The Path In The Woods: Slay The Princess Pristine Cut Interview</title>
+      <author>alexa_bement</author>
+      <description><div class="content group e-content">
+<p>When you make your way out of the cabin in the woods at the end of a production cycle, what happens next?</p>
+<p>With the release of Slay The Princess: The Pristine Cut DLC, I asked Black Tabby Games developers Tony Howard-Aris and Abby Howard about the game's past and present, as well as the future of Black Tabby Games, and even some <em>very</em> important lore about the Voices. Let's dive deeper into the woods with the developers of Slay the Princess:</p>
+<p><strong>When you originally released the game, what were your expectations for its reception compared to what you've received?</strong></p>
+<p>Tony says of Slay The Princess, "We had pretty high expectations for how it would sell based on a combination of wishlist data and general engagement on social media and our Steam forums. But then the actual performance wound up blowing those already high expectations out of the water, which is great! Really, really freeing. In terms of audience/critical reception, we were a little shakier before the game came out.</p>
+<p>The game takes some unexpected metaphysical and poetic turns that weren’t communicated in the demo, and we figured they might be some harder pills to swallow for some players? So we were a little nervous until we sent builds of the finished game to our testers - and even though the reception there was great, we were still a little nervous before launch. We were expecting something that would maybe be around 87% positive on Steam, not 97% positive."</p>
+<p>Slay The Princess: The Pristine Cut currently sits at the 97% positive review rating based on 17,513 user reviews, has sold half a million copies, and has a 90% on Metacritic and a 96/100 on OpenCritic. It also won the OTK Video Game Awards's Best RPG, The Horror Game Awards' Player's Choice, and World Soundtrack Awards' Game Music Award. It seems the Princess has climbed even higher than the height of her Tower form!</p>
+<p><strong>What made you decide to expand on Slay The Princess?</strong></p>
+<p>Abby said that "it was a combination of things, first and foremost being an AMA we did about a week after launch– a few folks asked us if we were planning on doing any DLC, and at the time the answer was no, but I think that very night we wound up deciding that there actually were some areas we thought deserved to be more fleshed-out. I think having a little breathing room after the launch was also a big part of it. It was such a scramble to get the base game done by our deadline that we didn’t have the opportunity to step back and give it a nice long look, and see the areas that still needed a little extra something.</p>
+<p>And personally, I didn’t love that there were “holes” in the pattern of the game. Most Chapter 2 princess forms have two Chapter 3s, one that’s a fusion with another princess and one that’s unique to them, and several Chapter 2 princesses only had a fusion, leaving these little holes that I didn’t love. But I don’t see any more of those holes now! I’m very happy with where the game is, and we’ve had plenty of time to sit around hemming and hawing over it this time. The Pristine Cut was very satisfying to finish!"</p>
+<p>The Pristine Cut was announced in December 2023 and released almost exactly a year to the original release date of the game after months of development. In addition to a new ending and an expanded Apotheosis and Fury, the Pristine Cut brought three new routes to focus solely on Damsel, Prisoner, and Spectre respectively. Each of these Princesses now mutate further to play with the consequences of a specific outcome from the original release.</p>
+<p>Tony added to the discussion of the time constraints with finishing the original release, "Time was a huge, almost self-imposed constraint on Slay the Princess’ development so we wouldn’t spend too much time away from Scarlet Hollow, our other, ongoing title. But I think the intensity that came from constraining our time led to a lot of really interesting decisions that ultimately elevated Slay the Princess as a finished product. So much of the flow of the narrative and its game-world is dream-like, so working quickly and exploring any idea that felt natural contributed a lot to nailing that vibe. The original demo for Slay the Princess was made in about two weeks." The original demo was released on August 5th of 2022, with an expanded demo then coming out in March of 2023, and the full original game in October 2023.</p>
+<p><strong>What was the writing thought process and approach like, coming back to the game to expand on the existing narrative compared to the original cut?</strong></p>
+<p>Tony said "A lot of it came down to looking at the big-picture themes of the game and asking ourselves, “What haven’t we said about this?” It helped that we at least knew what chapters we were expanding — even the new Princesses all are offshoots of chapters that are already in the game, so that narrowed it down.</p>
+<p>Ultimately, it felt like we needed to spend more time on the fleshy parts of being alive. The physical parts of love. Deeper explorations of what it means to be trapped in a loop that’s changing, but <em>only a little bit</em>. How does having a different vantage point change the shape of the story? How does that change or redeem the shape of a relationship? And there’s something in there that I feel is a really important farewell and book-end to the game in general, even if people wind up playing it out of order. I’ll let the readers figure out what I’m talking about with all of that ;)."</p>
+<p>I suspect I know exactly which new route Tony is alluding to there, but if you know, you know. Indeed, Slay The Princess is a <em>very</em> physical game, with its ability to convey just about every single form of body horror you can think of at one point or another while still being hauntingly beautiful. Add in the love story at the center of the game between the severed halves of the cycle of transformation, and said love certainly got physical many times over.</p>
+<p>"Slay the Princess is also the kind of game that, despite its heavily branching narrative, lends itself very well to updates," Abby added. "It would not be anywhere near as easy to add the kinds of sweeping updates we’ve been able to add to, say, our other game, Scarlet Hollow– that game’s narrative structure is much more of a braid, where the wide branching paths have to intersect constantly, and are held up by a delicate scaffolding of everything that came before. Slay the Princess was always about exploring these unique little pathways and seeing just how far they could be pushed, and honestly, the bits we’ve added slotted in very nicely to the existing structure– again, like filling holes!"</p>
+<p>Without spoilers, certain 'what ifs' that went unaddressed in the original release about the premise of the games' looping narrative and the rules it works on were finally answered in the Pristine Cut. With these holes filled up, pretty much every possible outcome feels explored by the full game.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8006686671741858281gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8006686671741858281gol1.jpeg"/></a></p>
+<p><strong>What drew you to decide to write a story about the themes present in Slay The Princess?</strong></p>
+<p>"Themes in general, I feel, tend to come about organically after you’ve figured out the core story that you’re working on," Tony said on the matter. "They always just sort of happen while you’re exploring the text. For Slay the Princess, we knew we were telling a story about a being that was shaped by the perception of others (The Princess) and the story of someone who was terrified of the danger that being posed (The Narrator). But getting at the deeper themes of it took a lot of extra digging. It was a lot harder than, say, Scarlet Hollow, where the story is so detailed and so rooted in the physical world.</p>
+<p>Slay the Princess is so abstract, you know? I think it was around the time I started playing with that first conversation with the Shifting Mound—the one you have after you finish your first “route”—that I really started figuring out the themes. That this was a story about change and its relationship with death. That it was ultimately a love story at its core. Once we figured that out, the Stranger chapter, which we’d been stuck on for a while, and which Abby likes to describe as an “overture” for the game, really came together, and that’s around the point the themes became very <em>conscious</em>, if that makes sense."</p>
+<p>"It’s exactly what Tony said," Abby added. "I feel like themes are often not something I start with when writing. Rather, I just start playing with ideas that interest me, and as those ideas are fleshed out, the theme starts to become obvious. At a certain point when you’re working on something, it’s important to step back and try to pinpoint what you might be fixating on, the underlying fascination with whatever larger idea is lurking under the surface of your work, so you can communicate it more effectively. And I do think most things have some underlying thesis, even if the writer didn’t know it!"</p>
+<p>The first conversation with the Shifting Mound happens right after where the second demo stopped. By that point, it was clear the Princess was some kind of entity changing to your perception and the Narrator was trying to prevent you from knowing this- the only way to kill her without dying yourself was to immediately do as you're told without engaging in conversation with her. Yet without the deeper theme revealed by this conversation and the rest of the original release, Slay The Princess would seem like just another horrific looping-your-choices-matter game. However, the decision to make the looping and choice mechanics directly tied to a story of the choice between a perfect stasis and letting go of something to make room for the cycle of new invokes a question of what it means to be alive or happy, elevating the game's storytelling abilities far beyond my personal expectations.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5341535641741858307gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5341535641741858307gol1.jpeg"/></a></p>
+<p><strong>As I understand it, with the Pristine Cut the game is officially finished except for console porting. Now that you're nearing the end of the developmental journey on Slay The Princess, how do you feel reflecting back on the entire process?</strong></p>
+<p>Abby said she is "mostly just very proud of the work the team has done. Everyone really gave it their all, and I love how it all came together! I feel like Tony and I learned a lot of valuable skills that are helping us make our other game even better going forward, and have broken a lot of personal barriers that are helping us understand what we’re capable of, even as a small team.</p>
+<p>Animation, for instance, is something I started learning for Slay the Princess, and I’m really happy with how far I’ve come just since the very start of development! It’s so helpful in our line of work, and it was something I had always told myself I was incapable of trying. Just goes to show, the hardest part of learning a skill is defeating that little voice that’s telling you it’s impossible to even get started. The second-hardest part is getting good… and it’s a close second…"</p>
+<p>Tony agreed to being proud of the work done, adding that "Something I profoundly appreciate about working in video games is that, more than any other form of media, games are living, breathing artifacts. Interaction changes them. Nothing is set in stone. I love nothing more than to look back at a release and, even if it went well, even if people <em>really</em> liked it, going back and making it better. Figuring out what more could be said. I’m very glad we had that opportunity to do that for Slay the Princess, and I am so proud of everyone who worked on it with us. Everyone has grown so much."</p>
+<p>With all the success of the original release and the overwhelmingly positive reaction to the Pristine Cut, the inspiring journey they took is worth its weight in gold. The animations in the game and its release trailers are so stunning you would never guess it was done by someone learning as she went! If this development story teaches us anything, it's that nothing is impossible indeed!</p>
+<p><strong>What advice would you give to someone wanting to make a branching narrative or psychological horror like Slay The Princess?</strong></p>
+<p><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16540003831741858340gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16540003831741858340gol1.jpeg"/></a></p>
+<p>"I think the most important thing is to figure out exactly what ideas really interest you," Tony said. "Figure out exactly what story you <em>want</em> to tell. People can tell when a project really comes from the heart, and they love that. At the end of the day, art is about connection. It’s about communicating with other people. So you have to know what you want to communicate. I’ll also say that, if you’re looking to tell a story with a video game, you need to ask yourself <em>why</em> this story needs to be a video game. You need to ask yourself what is it about <em>this medium</em> that makes it right for your story. What works for a novel won’t necessarily work for a game, and vice versa. For us, at the end of the day, it comes down to how important it is for our readers to experience the events of our stories directly, as characters, as opposed to reading <em>about</em> events from an outside perspective.</p>
+<p>If it’s <em>important</em> for your player to step directly into someone else’s shoes, or if it’s important for the player to <em>wear their own shoes</em> somewhere they otherwise would never wear them… that’s when you want to make a game."</p>
+<p>Visual novel games like Slay The Princess are named as such for being text-heavy and full of dialogue and choices. As Tony alludes to, video games have always stood out from other mediums for being the most interactive, making them perfect for Slay The Princess' choose-your-own-adventure narrative device. The player is always right with the Hero's constant confusion as he deals with the surreal nature of the game, and the choices feel like the players' own. While I would of course love to see the game in other formats, Slay The Princess is definitively meant to be a video game. And one full of heart and creativity, which drew me to the game in the first place and made that connection discussed. I almost cried while playing on both original and Pristine release.</p>
+<p>"As for advice on narratives and psychological horror in particular," Abby added on, "I think a nice big piece of advice is to never get too precious with what you’ve already done. If you wind up zoning out or otherwise not enjoying the work you’re doing, there’s a chance that players/readers won’t enjoy it, either. This is our mantra at Black Tabby Games, that if something sucks to work on, it will probably suck to play!"</p>
+<p>The developers discussed multiple times in the past having a strict policy on cutting content. If something isn't working, it's cut. Slay The Princess alone had multiple updates cutting down voice lines and other small pieces they felt unnecessary to streamline the experience.</p>
+<p>"I also recommend reading nonfiction," Abby added. "Reading fiction can help a lot in understanding what kind of prose style you want to use, but nonfiction is especially helpful for writing horror. I feel there’s no better place to turn than reality to help you understand what horrifies you and why."</p>
+<p>Reality is indeed very terrifying- while the game is very fairytale in nature, the body horror of every conceivable angle probably came from something much more grounded in reality, and that gives the game a harsh edge to truly lean into the horror angle. Nonfiction it is!</p>
+<p><strong>What's next for Scarlet Hollow and potential future projects?</strong></p>
+<p>"Well, first thing’s first," Tony said, "we’ve got a <em>big</em> patch in the oven for Scarlet Hollow that’ll be releasing at some point before Episode 5. Now that we have Slay the Princess under our belts, we’re a lot more confident in tackling some interesting narrative challenges that were left unsolved in the first couple of episodes. Like, what happens if you <em>don’t</em> go into the woods with Stella? Can we still bring everything together into the same compelling, overarching narrative if we afford our players a little more agency early on?</p>
+<p>This was a big, unsolvable problem for us for a while, but having a little extra distance helped us come up with some really good solutions, and we can’t wait to share it with folks. No release date to share, but it’ll be sooner than people think. And then from there, Episode 5 sometime next year, and then we’ll be releasing 6 and 7 together."</p>
+<p>Scarlet Hollow is the pair's first and ongoing game that releases chapter by chapter in an ongoing story, from which Slay The Princess was made as a smaller project they could make all at once in order to fund its future. How exciting that trying their hand at another type of visual novel has given them new ideas for the scope of their golden child!</p>
+<p>"And after <em>that</em>, Abby’s got an excellent comic to finish, and we’ve already got some ideas for a third game that we’re <em>really</em> excited for," Tony continued. "We might be branching out from visual novels a little bit with that one."</p>
+<p>You heard it from him, we may see a new genre of game from Black Tabby Games in the future! With how quickly they mastered visual novels, what else could they learn and grow and succeed in?</p>
+<p>Now that we've heard a lot about the development process behind Slay The Princess, it's time for the <strong><em>real</em></strong> questions…</p>
+<p><strong>Which Princess would be the most difficult ghost to contend with in Phasmophobia?</strong></p>
+<p><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7510811721741858358gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7510811721741858358gol1.jpeg"/></a></p>
+<p>On this question, they disagreed.</p>
+<p>Abby's vote was "The Wraith, she’s already a ghost, plus she’s mad at you. The possession angle would also be fun when it comes to multiplayer, as your friends can haunt you while their bodies are being twisted horribly by her." Meanwhile, Tony simply said this: "Adversary. I’ve played Phasmophobia. Those guys don’t have any weapons. Get punched to death."</p>
+<p>With the exception of Damsel, every Princess is dangerous in their own way. No matter which one you pick to be a ghost in the ghost-hunting video game classic, those players are in for a world of hurt. I have to say that Tony's answer is objectively the funniest, but Abby's is objectively the scariest and would make for a fun mechanic. Watching people scream as their friends die in Phasmophobia never gets old, imagine if they got to watch that?</p>
+<p>While this is valuable information, nothing comes close to the ultimate question of the interview I had to put on the table:</p>
+<p><strong>You said before the hero and his voices have Minesweeper in their head. Which voice is the best and worst at Minesweeper?</strong></p>
+<p>I am referring to a question on their post-original release Reddit AMA. When asked what else is in the Hero's head besides stiff drinks and corners, Tony's response was Minesweeper. We cannot leave it there. We need to know <strong>how</strong> they play Minesweeper.</p>
+<p><strong>"</strong>Ooooooh this is a GOOD question," Tony said. "I don’t know if you knew this about me, but I was actually <em>really</em> into Minesweeper for a while. Even now, it’s still my go-to thing to do when I’m stuck on an airplane without WiFi."</p>
+<p>In Slay The Princess, we have the following voices to work with:</p>
+<ul>
+<li>Hero</li>
+<li>Broken</li>
+<li>Cheated</li>
+<li>Skeptic</li>
+<li>Contrarian</li>
+<li>Paranoid</li>
+<li>Cold</li>
+<li>Stubborn</li>
+<li>Smitten</li>
+<li>Opportunist</li>
+<li>Hunted</li>
+</ul>
+<p>Eleven voices in your head, and only one can win. Who will come out on top?</p>
+<p>He began to explain how this goes down. "There’s a bunch of voices we can rule out quickly. Smitten has no Minesweeper related strengths, Hero is generic. Broken is… Broken. I’m not sure he has the confidence to get good at the game." Indeed, Smitten would be too distracted by thinking about the Princess, the Hero is just a basic protagonist, and you can't get Broken to do anything at all. So that's three of them eliminated off the bat. What about the remaining nine?</p>
+<p>"So there’s two important components of Minesweeper," Tony explains. "There’s accuracy, of course. If you hit a mine, you’re donezo. But there’s also speed. You only really “win” if you’re faster than other people. Skeptic’s an overthinker, so he’s out. Cold’s too bored all the time to do anything quickly." Two more eliminated by being too slow. We're down to six in the lineup. If speed wasn't a factor, perhaps Skeptic would still be in the game, given he's one of the more strategic voices, but it's no surprise Cold doesn't care enough. It's worth noting that Contrarian wasn't mentioned at all, presumably because he's automatically eliminated by nature of never wanting to do what you're supposed to.</p>
+<p>"Another important thing to know about Minesweeper is that it’s <em>bullshit</em>. Specifically, the way the game’s set up, it’s <em>really</em> easy to get stuck in a position where you literally have a 50/50 chance of losing, with nothing you can do about it. This knocks out Stubborn, who would start raging at it, and Cheated, who would also rage at it. Paranoid is out of the running because he would just spend way too much time on those spaces, unable to commit." Alas, both Cheated and Stubborn do get mad very easily when they can't win a game. If there was a Minesweeper computer in the headspace to flip off a table, you know they would be rushing to flip it first.  Four eliminated! Only two voices left in the run to win at head Minesweeper, which means...</p>
+<p>"This leaves us with Hunted, who’s a good all-rounder, and Opportunist, who’s a backstabbing sleaze, but who has such I-work-in-an-office energy that you just <em>know</em> he’s played too much Minesweeper while other people were doing most of the heavy lifting." Of all the Voices, Hunted tends to have the most practical input besides Hero, being one of the only ones good at keeping you alive besides Paranoid and Skeptic, so it's no wonder he made it to the finals. So if it's between the conniving backstabber and the straightforward but helpful survivalist Voice, who comes out on top?</p>
+<p>"But ultimately I’ve gotta go with Voice of the Hunted. He’s fast, but he also has that survival instinct that would screw over some of the more persistent voices." Opportunist has been defeated! Considering his spine tends to disappear so he can suck it up and gain the upper hand, it's not a surprise he lost to Hunted. Hunted has much more of a spine to work with and sticks to trying to survive. No time to bend like a folding chair, got too many mines to sweep!</p>
+<p>"I don’t play Minesweeper like that," was all Abby had to say to this question.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9812460141741858409gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9812460141741858409gol1.jpg"/></a></p>
+<p>With the cabin door open and the outside world visible again, it's clear the path to Slay The Princess' finish was a rich and vibrant one full of learning experiences and growth in every area of creativity, and of course, Minesweeper too. And all of it was done with the focused self-discipline of a due date to ensure everything stayed flowing and brought us the masterpiece of a horror visual novel we have now. Abby and Tony's development story just goes to remind all of us that anything is possible if you set your mind to doing it. Even Slaying a Princess' Development!</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/32791/slay-the-princess/">Slay the Princess</a></strong> | Release Date: 23rd October 2023<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/slay_the_princess">GOG</a></li><li><a href="https://www.humblebundle.com/store/slay-the-princess">Humble Store</a></li><li><a href="https://store.steampowered.com/app/1989270/Slay_the_Princess/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/a-sweeping-journey-down-the-path-in-the-woods-slay-the-princess-pristine-cut-interview/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/a-sweeping-journey-down-the-path-in-the-woods-slay-the-princess-pristine-cut-interview/</guid>
+      <pubDate>Thu, 13 Mar 2025 09:36:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1813453110id26361gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Interview</category>
+      
+    </item>
+    
+    <item>
+      <title>Ubisoft announce Steam Deck support for Assassin&#39;s Creed Shadows at launch</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>In a surprise turnaround after <a href="https://www.gamingonlinux.com/2025/03/no-support-for-assassins-creed-shadows-on-steam-deck-at-launch/" rel="noopener" target="_blank">previously stating</a> the Steam Deck would not be supported for Assassin’s Creed Shadows, Ubisoft have now said it actually will be.</p>
+<p>The official Assassin’s Creed account on X/Twitter <a href="https://x.com/assassinscreed/status/1899863156995903687" rel="noopener nofollow" target="_blank">posted</a>:</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10051083501741857803gol1.jpg"/></p>
+<blockquote>
+<p>Many of you have been asking about Steam Deck.  We are happy to say that we are supporting Steam Deck at launch and are currently awaiting the level of classification from Valve. More info to come soon.</p>
+</blockquote>
+<p>Previously, Valve rated it as Unsupported on Steam Deck with their rating that went live on February 8th. At time of writing, the Steam page still shows this Unsupported rating so it will be interesting to see what Ubisoft have changed to actually get it supported. Hopefully Valve will give it an appropriate rating and not just bump it up to Verified if it has poor performance like we've seen a couple of times in the past.  Valve's rating is usually correct though, just a few random outliers that don't match up.</p>
+<p>The game is due to release on March 20th on Steam so we don't have long to find out.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41309/assassins-creed-shadows/">Assassin's Creed Shadows</a></strong> | Release Date: 20th March 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3159330/Assassins_Creed_Shadows/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/ubisoft-announce-steam-deck-support-for-assassins-creed-shadows-at-launch/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/ubisoft-announce-steam-deck-support-for-assassins-creed-shadows-at-launch/</guid>
+      <pubDate>Thu, 13 Mar 2025 09:28:16 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/446637341id26362gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Action</category>
+      
+      <category>Adventure</category>
+      
+      <category>Open World</category>
+      
+    </item>
     
     <item>
       <title>Machine Mind blends real-time action with survival and RTS elements to make a fun mix</title>
@@ -2508,13 +3096,13 @@ We're working on further performances and an official control layout fixes to ea
 <li>Shipping the best game possible after two and a half years of hard work</li>
 <li>Supporting our exceptionally talented team in finding new opportunities in the industry</li>
 </ul>
-<p>If you want to support us, please spread the word about <em>Reignbreaker</em> and play the demo (<a href="https://store.steampowered.com/app/3384770/Reignbreaker_Demo/" rel="noopener nofollow" target="_blank">LINK</a>), and support our team by reaching out to <a href="/cdn-cgi/l/email-protection#85edecf7ecebe2c5f6f1f0e1eceaa8e3ecffe7ecebabe1e0" rel="noopener nofollow" target="_blank"><span class="__cf_email__" data-cfemail="761e1f041f181136050203121f195b101f0c141f18581213">[email protected]</span></a> if you’re looking for amazing talent in a wide range of disciplines.</p>
+<p>If you want to support us, please spread the word about <em>Reignbreaker</em> and play the demo (<a href="https://store.steampowered.com/app/3384770/Reignbreaker_Demo/" rel="noopener nofollow" target="_blank">LINK</a>), and support our team by reaching out to <a href="/cdn-cgi/l/email-protection#10787962797e775063646574797f3d76796a72797e3e7475" rel="noopener nofollow" target="_blank"><span class="__cf_email__" data-cfemail="bed6d7ccd7d0d9fecdcacbdad7d193d8d7c4dcd7d090dadb">[email protected]</span></a> if you’re looking for amazing talent in a wide range of disciplines.</p>
 <p>We want to thank every single one of our fans for your purchases, your fan art, your comments, your reviews, your passion, and your seemingly endless support.</p>
 <p>We also would like to thank all our business partners, Medienboard, the MfG, Creative Europe, and the federal funding partners for all their support.</p>
 <p>And finally, we’d like to give the biggest thanks to our team – those who are here until the end, and the many others who have found a different path on the way. Fizbin and its games are defined by its team members, and you all made this the most inspiring place to perform the world’s most difficult magic trick: making games.</p>
 <p>Thank you.</p>
 <p>Alexander “Pepe” Pieper</p>
-<p>For further info, please contact us: <a href="/cdn-cgi/l/email-protection#8be3eee7e7e4cbf8fffeefe2e4a6ede2f1e9e2e5a5e8e4e6" rel="noopener nofollow" target="_blank"><span class="__cf_email__" data-cfemail="dab2bfb6b6b59aa9aeafbeb3b5f7bcb3a0b8b3b4f4b9b5b7">[email protected]</span></a></p>
+<p>For further info, please contact us: <a href="/cdn-cgi/l/email-protection#adc5c8c1c1c2edded9d8c9c4c280cbc4d7cfc4c383cec2c0" rel="noopener nofollow" target="_blank"><span class="__cf_email__" data-cfemail="7e161b1212113e0d0a0b1a1711531817041c1710501d1113">[email protected]</span></a></p>
 </blockquote>
 <p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8205187141741104114gol1.jpg"/><br/>
 <em>Pictured - Reignbreaker</em></p>
@@ -4149,454 +4737,6 @@ Thank you for all of your support and interest in the game!</img></p>
       <category>Adventure</category>
       
       <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>GOG Preservation Program expands to add 11 LEGO games</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="http://gog.com" rel="noopener nofollow" target="_blank">GOG's</a> special Preservation Program, where they ensure games are kept up to date and continue working on modern systems, has expanded with 11 LEGO games now included. That's on top of the <a href="https://www.gamingonlinux.com/2025/02/gog-adding-f-e-a-r-to-their-preservation-program-with-monolith-games-on-sale/" rel="noopener" target="_blank">recent announcement about F.E.A.R. also joining up soon</a>.</p>
-<p>Lots of games get lost to time due to developers moving on and so it's nice to see such preservation efforts, especially when the games are DRM free too.</p>
-<p>With today's announcement these have newly launched on GOG:</p>
-<ul>
-<li><a href="https://www.gog.com/game/the_lego_movie_videogame" rel="noopener nofollow" target="_blank">The LEGO Movie - Videogame </a>- 80% off.</li>
-<li><a href="https://www.gog.com/game/the_lego_movie_2_videogame" rel="noopener nofollow" target="_blank">The LEGO Movie 2 Videogame </a>- 85% off.</li>
-<li><a href="https://www.gog.com/game/lego_city_undercover" rel="noopener nofollow" target="_blank">LEGO City Undercover</a> - 80% off.</li>
-<li><a href="https://www.gog.com/game/the_lego_ninjago_movie_video_game" rel="noopener nofollow" target="_blank">The LEGO NINJAGO® Video Game</a> - 80% off.</li>
-</ul>
-<p>A bunch of LEGO games GOG already had have also now joined in the Preservation Program:</p>
-<ul>
-<li><a href="https://www.gog.com/en/game/lego_pirates_of_the_caribbean_the_video_game" rel="noopener nofollow" target="_blank">LEGO Pirates of the Caribbean: The Video Game</a> -75% off.</li>
-<li><a href="https://www.gog.com/en/game/lego_indiana_jones_the_original_adventures" rel="noopener nofollow" target="_blank">LEGO Indiana Jones: The Original Adventures</a> - 75% off</li>
-<li><a href="https://www.gog.com/en/game/lego_indiana_jones_2_the_adventure_continues" rel="noopener nofollow" target="_blank">LEGO Indiana Jones 2: The Adventure Continues</a> - 75% off.</li>
-<li><a href="https://www.gog.com/en/game/lego_batman_the_videogame" rel="noopener nofollow" target="_blank">LEGO Batman: The Videogame</a> - 85% off.</li>
-<li><a href="https://www.gog.com/en/game/legor_batman_2_dc_super_heroes" rel="noopener nofollow" target="_blank">LEGO Batman 2 DC Super Heroes</a> - 80% off.</li>
-<li><a href="https://www.gog.com/en/game/lego_batman_3_beyond_gotham" rel="noopener nofollow" target="_blank">LEGO Batman 3: Beyond Gotham</a> - 75% off.</li>
-<li><a href="https://www.gog.com/en/game/lego_the_lord_of_the_rings" rel="noopener nofollow" target="_blank">LEGO The Lord of the Rings</a> - 80% off.</li>
-</ul>
-<p>See more on <a href="http://gog.com" rel="noopener nofollow" target="_blank">GOG.com</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/gog-preservation-program-expands-to-add-11-lego-games/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/gog-preservation-program-expands-to-add-11-lego-games/</guid>
-      <pubDate>Thu, 27 Feb 2025 14:58:54 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1052558485id26270gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>DRM-Free</category>
-      
-      <category>GOG</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>NVIDIA stable driver 570.124.04 released for Linux with VRR for multiple displays and various bug fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Following on from the 570.86.16 Beta that was released on <a href="https://www.gamingonlinux.com/2025/01/nvidia-beta-driver-570-86-16-released-with-vrr-for-multiple-displays-and-lots-of-improvements/" rel="noopener" target="_blank">January 30th</a>, NVIDIA have today put up a new stable driver release with 570.124.04. As a reminder following a <a href="https://www.gamingonlinux.com/2025/01/nvidia-release-new-gpu-driver-updates-for-linux-and-windows-after-announcing-security-issues/" rel="noopener" target="_blank">recent security bulletin</a>, you'll want to ensure you're up to date.</p>
-<p>Since the 570.86.16 Beta release these are the <strong>new</strong> changes for the stable driver:</p>
-<blockquote>
-<ul>
-<li>Fixed a bug that could prevent displays from being restored correctly when resuming from suspend on some systems with multiple displays.</li>
-<li>Fixed a regression which stopped VRR from working on HDMI displays.</li>
-<li>Fixed an issue which caused stuttering and performance issues when scrolling windows in Wayland with GSP firmware enabled.</li>
-<li>Fixed a bug that resulted in corruption or application crashes when using PRIME render offloading between two NVIDIA GPUs with modeset=1 enabled in nvidia-drm.</li>
-<li>Added a new kernel module parameter, 'conceal_vrr_caps', to the nvidia-modeset kernel module. This parameter may be used to enable usage of features on some displays such as ULMB (Ultra Low Motion Blur) which are incompatible with VRR. See the "Direct Rendering Manager Kernel Modesetting" (DRM KMS) chapter of the README for further information.</li>
-</ul>
-</blockquote>
-<p>To save you a click and for those who didn't try the Beta, all these below are also included in 570.124.04 that were first released via the 570.86.16 Beta:</p>
-<blockquote>
-<ul>
-<li>Fixed a bug that caused the nvidia-settings control panel to crash when querying VRR attributes on some monitors.</li>
-<li>Updated the nvidia-settings control panel to use NVML rather than NV-CONTROL to control GPU clocks and fan speed. This allows related functionality to work when using Wayland, where the NV-CONTROL X extension is not available. Note that as a result, some operations which were previously available to unprivileged users, due to the privileges of the X server, may now require elevated privileges.</li>
-<li>Added support for VRR on systems with multiple displays.</li>
-<li>Added an application profile to improve performance on Indiana Jones and the Great Circle.</li>
-<li>Added an application profile to resolve a corruption issue on Assassin's Creed Valhalla and Assassin's Creed Mirage.</li>
-<li>Implemented support for the VK_KHR_incremental_present extension.</li>
-<li>Fixed a bug that could cause some Vulkan applications to crash when responding to window resize events.</li>
-<li>Updated GPU overclocking control to be available by default in nvidia-settings, for GPU boards that support programmable clock control. Previously, this was only available when bit 3 was set in the "Coolbits" X config option.</li>
-<li>Disabled a power saving feature on Ada and above generation GPUs for surfaces allocated with the DRM Dumb-Buffers API, for example, when using a DRM fbdev. The power saving feature could cause black screens for DRM Dumb-Buffers which use front buffer rendering instead of KMS flips.</li>
-<li>Fixed a bug that could cause some multi-threaded OpenGL applications, for example Civilization 6, to crash when running on Xwayland.</li>
-<li>Added support for querying Dynamic Boost status via the 'power' file in /proc/driver/nvidia/gpus/*.</li>
-<li>Enabled 32 bit compatibility support for the NVIDIA GBM backend.</li>
-<li>Added a new kernel module parameter, 'conceal_vrr_caps', to the nvidia-modeset kernel module. This parameter may be used to enable usage of features on some displays such as ULMB (Ultra Low Motion Blur) which are incompatible with VRR. See the "Direct Rendering Manager Kernel Modesetting" (DRM KMS) chapter of the README for further information.</li>
-<li>Fixed a bug that could cause games to crash when the "PROTON_ENABLE_NGX_UPDATER" environment variable was set to a value of "1".</li>
-<li>Added /usr/share/nvidia/files.d/sandboxutils-filelist.json which lists all the driver files used by container runtime environments such as nvidia-container-toolkit and enroot.</li>
-<li>Added support for the systemd suspend-then-hibernate method of system sleep. This feature requires systemd version 248 or newer.</li>
-<li>Enabled the nvidia-drm fbdev=1 option by default. When supported by the kernel and the nvidia-drm modeset=1 option is enabled, nvidia-drm will replace the system's framebuffer console with one driven by DRM.<br/>
-	This feature can be disabled by setting fbdev=0.</li>
-<li>Implemented a feature that allows low latency display interrupts to be serviced even when the system is under heavy contention. This is especially useful for reducing stutter when using virtual reality.<br/>
-	This feature is experimental and disabled by default.<br/>
-	This feature can be enabled by loading nvidia.ko with the `NVreg_RegistryDwords=RMIntrLockingMode=1` kernel module parameter.</li>
-<li>Fixed a bug, introduced in 555.58, where some DVI outputs would not work with HDMI monitors.</li>
-<li>In Linux kernel 6.11, drm_fbdev_generic was renamed to drm_fbdev_ttm. Use drm_fbdev_ttm when present to keep supporting direct framebuffer access needed for Wayland compositors to present content on newer kernels.</li>
-<li>In linux-next commit 446d0f4849b1, output_poll_changed is removed from struct drm_mode_config_funcs. Do not implement the function pointer member when not present to ensure the driver can compile with newer kernels. The driver now supports enumerating modes on hotplug events through the DRM fbdev API.</li>
-<li>In linux-next commit 446d0f4849b1, intended to be included in Linux kernel 6.12, output_poll_changed is removed from struct drm_mode_config_funcs. Do not implement the function pointer member when not present to ensure the driver can compile with newer kernels. Populating modes for DRM connectors during hotplug events will not be supported with r535 and kernels containing the relevant commit.</li>
-<li>Fixed a bug that could cause external displays to become frozen until the next modeset when using PRIME Display Offloading with the NVIDIA dGPU acting as the display offload sink.</li>
-</ul>
-</blockquote>
-<p>Source: <a href="https://www.nvidia.com/en-gb/drivers/details/241275/" rel="noopener nofollow" target="_blank">NVIDIA</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/nvidia-stable-driver-570-124-04-released-for-linux-with-vrr-for-multiple-displays-and-various-bug-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/nvidia-stable-driver-570-124-04-released-for-linux-with-vrr-for-multiple-displays-and-various-bug-fixes/</guid>
-      <pubDate>Thu, 27 Feb 2025 14:47:05 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>NVIDIA</category>
-      
-    </item>
-    
-    <item>
-      <title>Fallen Aces the crime noir FPS is now Steam Deck Verified with the Wheels of Steel update </title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Fallen Aces from Trey Powell, Jason Bond and New Blood Interactive looks awesome and now it should be even better. With the Wheels of Steel update there's been a few bits added, overhauled and now it's Steam Deck Verified too. If you're after an FPS that's a bit different then this is one to stick into your wishlist.</p>
-<p>What is it? "The A.C.E.S, watchful guardians of Switchblade City, are being taken down, one by one. Now it's up to one man, with two fists, to get to the bottom of it all. Fallen Aces is a crime noir FPS that plays right out of the '90s and looks like it's right outta the comics."</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13549989861740659411gol1.jpg"/></p>
-<p>The big thing included in this update are the remade vehicle assets across the whole game so they should look a lot better. But there's plenty of smaller bits to it like new Tommy Gun animations, new punch and automatic pistol sound effects, improved enemy path calculations (plus other enemy character fixes) and lots of bug fixes. My favourite change though is that you can throw enemy bodies through breakable doors — sounds fun.</p>
-<p>Additionally, for Steam Deck players, it's a good one too as it's now Steam Deck Verified! They've updated it to make some UI elements bigger, there's better controller navigation in some places, improved sliders and more.</p>
-<p>Plenty more to come with Episode 2 "all storyboarded out and into production" but before that they're going to add in a Level Editor and Steam Workshop support.</p>
-<p>See more in the <a href="https://store.steampowered.com/news/app/1411910/view/535469307384037520" rel="noopener nofollow" target="_blank">changelog</a>.</p>
-<p>Most recent trailer is below:</p>
-<div class="hidden_video" data-video-id="pW4gxuetKwg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6ec45949ce18e8c28f13311cf2622478.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/pW4gxuetKwg" target="_blank">See video</a></div></div>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41270/fallen-aces/">Fallen Aces</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1411910/Fallen_Aces/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/fallen-aces-the-crime-noir-fps-is-now-steam-deck-verified-with-the-wheels-of-steel-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/fallen-aces-the-crime-noir-fps-is-now-steam-deck-verified-with-the-wheels-of-steel-update/</guid>
-      <pubDate>Thu, 27 Feb 2025 12:36:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/212362273id26268gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve updates the Steam Daily Deals program and gives some stats</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve have done a little adjustment to the display of Steam Daily Deals to show more games. They also now give developers some more stats, and gave us all a bit of an overview.</p>
-<p>For gamers the only real difference here is that they're bumping up the display from four to six games in total in the special offers section. The name is also a little deceptive, since it's not just a single day as the deals often run for quite a bit longer, which Valve said "We found that many of the platform effects of a game running a discount, particularly a featured discount such as the Daily Deal, causes a lot of additional visibility, buzz, and lift in sales for days following the initial day. Extending the discount to run for a week makes the promotion accessible to more players and allows the game to benefit from higher visibility on Top Sellers and other charts throughout Steam."</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13069639071740651605gol1.jpg"/></p>
-<p>Giving us some stats and background on it during 2024 they highlighted these points:</p>
-<blockquote>
-<ul>
-<li>2,843 games from 1,160 different developers and publishers were featured in Daily Deals.</li>
-<li>These games came from developers in 68 different countries around the world.</li>
-<li>Each game featured as a Daily Deal typically gets over 10 Million impressions on the Steam store during the one-day promotion.</li>
-<li>Each Daily Deal spot can be focused on a single game, or can lead to a multi-game sale event. The largest multi-game sale event was the Czech &amp; Slovak Games Week, which featured 277 games from developers located in that region.</li>
-<li>The range of revenue generated from the Daily Deal featuring is broad and depends on a lot of factors such as the age of the game, the discount percentage, the interest in the game, and so forth. We've seen games earn anywhere from ~$10,000 to $2,000,000.</li>
-<li>87% of Daily Deals in 2024 were for games that had never previously been featured as a Daily Deal. Some were new releases while others were titles that we were now able to highlight as a result of the updates to our program.</li>
-</ul>
-</blockquote>
-<p>For developers they've added a new post-promotion recap on the Steamworks dashboard, so developers can see how it did at a glance. There's also a new daily deal history section for developers to look back on.</p>
-<p>How exactly do Valve decide what games to actually show to us all? Valve said they've refined it over time and they use a "prioritization algorithm", which is based on what you've played to match you up with the current games running a promotion. So you might see a list of deals that are different to others.  You'll see your daily deal picks across the Steam homepage as well as the tag / genre pages too.</p>
-<p>Of course all the sales are available on the dedicated <a href="https://store.steampowered.com/specials" rel="noopener nofollow" target="_blank">sales page</a> at any time.</p>
-<p>Source: <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/497186807117513038" rel="noopener nofollow" target="_blank">Valve</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/valve-updates-the-steam-daily-deals-program-and-gives-some-stats/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/valve-updates-the-steam-daily-deals-program-and-gives-some-stats/</guid>
-      <pubDate>Thu, 27 Feb 2025 10:25:34 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>GOG adding F.E.A.R. to their Preservation Program with Monolith games on sale</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>With the news that <a href="https://www.gamingonlinux.com/2025/02/wb-close-f-e-a-r-and-shadow-of-mordor-dev-monolith-productions-and-other-studios/" rel="noopener" target="_blank">WB have closed up Monolith Productions</a> and other studios, GOG have announced they're speeding up bringing F.E.A.R. to their Preservation Program. Additionally you can grab various games from Monolith cheap right now on GOG.</p>
-<p>Posted to their X/Twitter profile the GOG team <a href="https://x.com/GOGcom/status/1894753901540196781" rel="noopener nofollow" target="_blank">said</a>:</p>
-<blockquote>
-<p>F.E.A.R. Platinum – featuring the base game and both expansions – will be available as part of the GOG Preservation Program by next month. Originally scheduled for a later timeframe, we’ve decided to accelerate this release to properly recognize Monolith’s contributions to gaming. </p>
-<p>At GOG, we believe in celebrating the creative minds that have shaped gaming history. Monolith Productions has given players some of the most unforgettable experiences, blending groundbreaking gameplay with rich storytelling. To honor their legacy, we’re proud to announce that F.E.A.R. Platinum will be joining the GOG Preservation Program – and sooner than planned, with other Monolith icons to join eventually as well.</p>
-</blockquote>
-<p>You can also find a bunch of the games GOG have from Monolith currently on sale:</p>
-<p><a href="https://www.gog.com/en/game/fear_platinum" rel="noopener nofollow" target="_blank">F.E.A.R. Platinum</a> - 90% off</p>
-<p><a href="https://www.gog.com/en/game/fear_2_project_origin_reborn" rel="noopener nofollow" target="_blank">F.E.A.R. 2: Project Origin + Reborn</a> - 80% off</p>
-<p><a href="https://www.gog.com/en/game/fear_3" rel="noopener nofollow" target="_blank">F.E.A.R. 3</a> - 80% off</p>
-<p><a href="https://www.gog.com/en/game/middleearth_shadow_of_war_definitive_edition" rel="noopener nofollow" target="_blank">Middle-earth: Shadow of War Definitive Edition</a> - 85% off</p>
-<p><a href="https://www.gog.com/en/game/middleearth_shadow_of_mordor" rel="noopener nofollow" target="_blank">Middle-earth: Shadow of Mordor Game of the Year Edition</a> - 75% off</p>
-<p><a href="https://www.gog.com/en/game/tron_20" rel="noopener nofollow" target="_blank">TRON 2.0</a> - 74% off</p>
-<p><a href="https://www.gog.com/en/game/blood_2_the_chosen_expansion" rel="noopener nofollow" target="_blank">Blood 2: The Blood Group</a> - 69% off</p>
-<p><a href="https://www.gog.com/en/game/shogo_mobile_armor_division" rel="noopener nofollow" target="_blank">Shogo: Mobile Armor Division</a> - 20% off</p>
-<p><em>You have just under 2 days on the sale from article publishing time.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/gog-adding-f-e-a-r-to-their-preservation-program-with-monolith-games-on-sale/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/gog-adding-f-e-a-r-to-their-preservation-program-with-monolith-games-on-sale/</guid>
-      <pubDate>Thu, 27 Feb 2025 09:52:53 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/561184946id26266gol.jpg" type="image/jpeg"/>
-      
-      <category>DRM-Free</category>
-      
-      <category>GOG</category>
-      
-      <category>On Sale</category>
-      
-    </item>
-    
-    <item>
-      <title>WB close F.E.A.R. and Shadow of Mordor dev Monolith Productions and other studios</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Seriously tough times in the gaming industry, with even more publishers pulling back and closing studios. Now Warner Bros. have confirmed they've closed multiple studios.</p>
-<p>First reported by Jason Schreier (<a href="https://bsky.app/profile/jasonschreier.bsky.social/post/3lizk5skwps2d" rel="noopener nofollow" target="_blank">Bluesky</a>) of Bloomberg, and then later confirmed in an email to <a href="https://kotaku.com/monolith-productions-wonder-woman-multiversus-cancel-wb-1851766400" rel="noopener nofollow" target="_blank">Kotaku</a>. WB have closed Monolith Productions, Player First Games and Warner Bros. Games San Diego. These developers between them were responsible for creating F.E.A.R., Middle-earth: Shadow of Mordor, Middle-earth: Shadow of War, MultiVersus and many more.</p>
-<p>The statement sent to Kotaku:</p>
-<blockquote>
-<p>We have had to make some very difficult decisions to structure our development studios and investments around building the best games possible with our key franchises -– Harry Potter, Mortal Kombat, DC and Game of Thrones. After careful consideration, we are closing three of our development studios – Monolith Productions, Player First Games and Warner Bros. Games San Diego. This is a strategic change in direction and not a reflection of these teams or the talent that consists within them.</p>
-<p>The development of Monolith’s Wonder Woman videogame will not move forward. Our hope was to give players and fans the highest quality experience possible for the iconic character, and unfortunately this is no longer possible within our strategic priorities. This is another tough decision, as we recognize Monolith’s storied history of delivering epic fan experiences through amazing games. We greatly admire the passion of the three teams and thank every employee for their contributions. As difficult as today is, we remain focused on and excited about getting back to producing high-quality games for our passionate fans and developed by our world class studios and getting our Games business back to profitability and growth in 2025 and beyond.</p>
-</blockquote>
-<p>Especially frustrating for gamers, because the really fun nemesis system from Middle-earth: Shadow of Mordor is patented and it seems WB are now doing nothing with it since the Wonder Woman game was cancelled that was reportedly going to use it. According to <a href="https://patents.google.com/patent/US20160279522A1/en" rel="noopener nofollow" target="_blank">Google Patents</a>, WB own the patent until 2036.</p>
-<p>Hopefully the people affected will find something again soon. There's been far too much of this happening over the last few years. It's ridiculous. So much knowledge being lost in the process. Developers and publishers can't expect to keep ever increasing their revenue, while losing a lot of the knowledge from the people actually responsible for doing the work.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/wb-close-f-e-a-r-and-shadow-of-mordor-dev-monolith-productions-and-other-studios/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/wb-close-f-e-a-r-and-shadow-of-mordor-dev-monolith-productions-and-other-studios/</guid>
-      <pubDate>Thu, 27 Feb 2025 09:42:21 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/473631216id26265gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve&#39;s in-development Deadlock gets a huge map overhaul</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve's upcoming MOBA shooter Deadlock has received one of the biggest updates to date, which includes a big overhaul to the map that makes it a bit less complicated. While it's in development access is still locked behind invites.</p>
-<p>Before this update there were four separate lanes to ride on the rails and battle through, with one of them being ripped out. Valve have redesigned a lot of the map to bring it down to three lanes, and I think they're onto something here. It's a bit more streamlined, less overwhelming and a bit quicker on the action thanks to it. The game is still pretty deep but a bit less crazy now.</p>
-<p>The map layout change includes changes to "visuals, building layouts, pathways, neutral camps, air vents, breakables, powerup buffs, juke spots, mid boss" and so on. There's also a new Explore Map feature, so you can just run around the map to learn it now — very useful.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18527574251740579118gol1.jpg"/></p>
-<p>Another major change is to some of the progression. Much like with Dota 2, you needed to get a last-hit in order to get the full benefit. This has been removed from Deadlock. Now the AI troopers will generate Soul Orbs for XP and currency as long as you're nearby, although you still need to shoot them to get the extras. Additionally, gaining souls from kills now has a visual effect of them flying towards you.</p>
-<p>Various other technical additions in the update include support for DLSS, they upgraded FSR2 to AMD's new FSR3 temporal upscaler, Valve enabled NVIDIA Reflex and AMD Anti-Lag 2.0 for reduced latency, various netcode improvements and there's a lot of general smaller gameplay changes too. There's even a bunch of improvements for controller players to make it feel better. </p>
-<p>See more in the <a href="https://store.steampowered.com/news/app/1422450/view/530965072572320687" rel="noopener nofollow" target="_blank">update notes</a>. Hopefully it's not too far off becoming more open so anyone can just jump in and play.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40236/deadlock/">Deadlock</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1422450/Deadlock/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/valves-in-development-deadlock-gets-a-huge-map-overhaul/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/valves-in-development-deadlock-gets-a-huge-map-overhaul/</guid>
-      <pubDate>Wed, 26 Feb 2025 14:15:48 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1023643622id26263gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Beta</category>
-      
-      <category>Free Game</category>
-      
-      <category>MOBA</category>
-      
-    </item>
-    
-    <item>
-      <title>Dune: Awakening looks like it may be playable on Steam Deck - benchmark tested</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Dune: Awakening is releasing May 20th from Funcom, and surprisingly it looks like it may actually be playable on the Steam Deck. That is, unless Funcom decide to put in some anti-cheat that blocks Linux. There's currently no anti-cheat mentioned on the Steam page. <em>I did email Funcom about any anti-cheat, and they haven't yet replied.</em></p>
-<p>A benchmark mode has been made available for the upcoming MMO, so I gave it a test-run on an LCD Steam Deck to see how it went and the results actually surprised me. As long as you're not expecting a constant 60FPS and don't mind running on low details, you might be okay here.</p>
-<p>First up testing on Low with FSR3 set to <u>Ultra Performance</u> resulted in all sections giving above 50FPS on average:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17065616361740575262gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17065616361740575262gol1.jpeg"/></a></p>
-<p>Changing over FSR3 to <u>Performance</u> still gave over 40FPS on average in all sections:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/21043532121740575619gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21043532121740575619gol1.jpeg"/></a></p>
-<p>Also see how it went when setting FSR3 to <u>Balanced</u>. It's still getting averages above 40FPS in all parts:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1145948611740576003gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1145948611740576003gol1.jpeg"/></a></p>
-<p>The real concern are the <em>minimums</em> though, which in all cases shows drops below 30FPS. It just depends how often it will dip in the full game.</p>
-<p>I wouldn't recommend Frame Generation either. For a lot of games on Steam Deck it will bring up the overall FPS, but it destroys the Frame Timings making it a mess. Frame Generation is generally only good if the game is already able to perform to at least 60FPS.</p>
-<p>If you actually locked it down to 30FPS, this might actually give a reasonable experience if you're wanting to play the brand new MMO on Steam Deck when it releases. It remains to be seen how the rest of the game fares though but this is at least somewhat promising from the benchmark.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41260/dune-awakening/">Dune: Awakening</a></strong> | Release Date: 20th May 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1172710/Dune_Awakening/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/dune-awakening-looks-like-it-may-be-playable-on-steam-deck-benchmark-tested/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/dune-awakening-looks-like-it-may-be-playable-on-steam-deck-benchmark-tested/</guid>
-      <pubDate>Wed, 26 Feb 2025 13:27:11 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/974012658id26262gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>MMO</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Support BIPOC studios &amp; creators in the Indie Allies 2025 Humble Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Humble Bundle have launched the <a href="https://www.humblebundle.com/games/indie-allies-2025" rel="noopener nofollow" target="_blank">Indie Allies 2025 Humble Bundle</a> supporting BIPOC studios and creators via the <a href="https://xperiencestudios.org/" rel="noopener nofollow" target="_blank">Xperience Studios</a> charity. This bundle is a bit more varied than a lot of what we've seen recently from Humble, so you might find something you like in this one.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14302206291740572227gol1.jpg"/></p>
-<p>Using ratings from Valve on Steam Deck Verified, plus any <a href="http://protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> and Native Linux notes here's all that's in it. Plus as usual each is a Steam link if you need more info first.</p>
-<p><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</strong></p>
-<p><a href="https://store.steampowered.com/app/1369720/Innchanted/" rel="noopener nofollow" target="_blank">Innchanted</a> </p>
-<blockquote>
-<p>Run a Magical Inn with friends! Yarrul’s family Inn has been stolen by an evil wizard landlord! Team up with friends to reclaim your family's legacy. Manage your inn, brew potions, fish, cook, and fight in this hectic &amp; heartfelt magical adventure. Play solo or co-op for 1-4 players.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1320490/Princess_Farmer/" rel="noopener nofollow" target="_blank">Princess Farmer</a> (ProtonDB Gold)</p>
-<blockquote>
-<p>Be the magical bunny farmer you've always wanted to be! Princess Farmer is a charming visual-novel meets match-3 gameplay, with a host of adorable characters to befriend, mysteries to solve, and fashion to collect. Smash rocks! Make combos! Win hearts!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1100290/Super_Space_Club/" rel="noopener nofollow" target="_blank">Super Space Club</a></p>
-<blockquote>
-<p>Super Space Club is a lo-fi arcade space shooter to chill to. Defend a vibrant galaxy as a club of misfit heroes and battle endless waves of spacecrafts to the tune of atmospheric beats. Outlast your enemies and vibe to the rhythm of the stars.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1323540/Aerial_Knights_Never_Yield/" rel="noopener nofollow" target="_blank">Aerial_Knight's Never Yield</a> (ProtonDB Platinum)</p>
-<blockquote>
-<p>Survive A futuristic Tokyo style Detroit in this 3D runner that tells the story of Wally who has uncovered the evidence that can change his city forever. Explore a game world with a dope-tastic soundtrack featuring the authentic sounds of Detroit Artist.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1996470/Skator_Gator_3D/" rel="noopener nofollow" target="_blank">Skator Gator 3D</a> (ProtonDB Platinum)</p>
-<blockquote>
-<p>Stop the mayor from polluting the swamp in this short, 3D adventure! Explore new open locales with skateboard in hand or while grinding on pipelines — Greenjamin's skating into the third dimension in SKATOR GATOR 3D!</p>
-</blockquote>
-<p><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</strong></p>
-<p><a href="https://store.steampowered.com/app/1273080/Raptor_Boyfriend_A_High_School_Romance/" rel="noopener nofollow" target="_blank">Raptor Boyfriend: A High School Romance</a> (Native Linux)</p>
-<blockquote>
-<p>Raptor Boyfriend: A High School Romance is a dating sim about a teen girl who moves to a small secret community of cryptids. Romance a magical Fairy, a sensitive Sasquatch and a bold Velociraptor. A satirical 90's teen drama about trying to find love in your last year of high school.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/2180000/Elemental_Survivors/" rel="noopener nofollow" target="_blank">Elemental Survivors</a></p>
-<blockquote>
-<p>Grind, die, upgrade, repeat in this auto-attacking roguelite/RPG! Transform into an enemy-blender with your fave attacks made devastating with equipment, party members, and elemental evolutions. Survive to earn gems to unlock areas, permanent upgrades, characters, and god-like summons.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1760240/Skator_Gator/" rel="noopener nofollow" target="_blank">Skator Gator</a></p>
-<blockquote>
-<p>SKATOR GATOR puts you in the scales of Greenjamin Gator as you skate across a wide network of oil pipelines leading to the big city, dodging robots and avoiding the polluted swamp waters below.</p>
-</blockquote>
-<p><strong><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Steam Deck Unrated</strong></p>
-<p><a href="https://store.steampowered.com/app/1719240/Illuminaria/" rel="noopener nofollow" target="_blank">Illuminaria</a> (Native Linux)</p>
-<blockquote>
-<p>Command a swarm of intelligent robots in their quest to save the world. Mine resources, manage, and defend multiple bases. Go on expeditions, fight in auto-battles, research new technologies, and create your army of golems to bring back the light.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/2137480/On_the_Peril_of_Parrots/" rel="noopener nofollow" target="_blank">On the Peril of Parrots</a></p>
-<blockquote>
-<p>Take control of P.O.L.L.I - the Procedural Operating Layered Linguistic Intelligence - and put your skills to the test with 100+ challenging puzzles! Unravel a mysterious experiment overseen by the brilliant "Scientist", their trusted "Assistant", and the shady "Stakeholder".</p>
-</blockquote>
-<p>Check it <a href="https://www.humblebundle.com/games/indie-allies-2025" rel="noopener nofollow" target="_blank">out on Humble Bundle</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/support-bipoc-studios-creators-in-the-indie-allies-2025-humble-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/support-bipoc-studios-creators-in-the-indie-allies-2025-humble-bundle/</guid>
-      <pubDate>Wed, 26 Feb 2025 12:17:25 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1618235345id26261gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>The Wipeout-like racer BallisticNG gets Steam Deck Verified</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>That's another game with the green tick that you might want to pick up. BallisticNG is a Wipeout, Rollcage and Jet Moto inspired racer that's genuinely good. With the still in-development updates, it's now Steam Deck Verified. It also has Native Linux support.</p>
-<p>For the best experience on Steam Deck though you do need to opt-in to the "development" Beta on Steam. This does highlight a bit of a flaw in Valve's Deck Verified rating system, as it already shows as Deck Verified on the Steam page despite needing the Beta.</p>
-<p>As the developer <a href="https://store.steampowered.com/news/app/473770/view/525335573256211983" rel="noopener nofollow" target="_blank">announced</a> on Steam "1.4 Dev 6" brings quite a lot of work. There's a lot of UI updates that went into this, with developer Neognosis noting how they've been "addressing feedback from both the community and Valve through the Steam Deck verification process". There's new standardized input prompt positions, campaign info pages are now tabs making understanding it easier, there's a controller events system, fixes to controller assignment, larger text sizing in some places and more.</p>
-<p>Their most recent proper trailer is below:</p>
-<div class="hidden_video" data-video-id="e0vWr5aBqEU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2adfb360d73aefb134bf017776c5989d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/e0vWr5aBqEU" target="_blank">See video</a></div></div>
-<p>Nice to see so many developers making their games better on Steam Deck, with a lot of the benefits just making the games better overall.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/11908/ballisticng/">BallisticNG</a></strong> | Release Date: 31st May 2016<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/ballisticng/?pp=b2a10a6c3dcadb10c8ffd734c1bab896d55cf0ec">GOG</a></li><li><a href="https://store.steampowered.com/app/473770/BallisticNG/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/the-wipeout-like-racer-ballisticng-gets-steam-deck-verified/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/the-wipeout-like-racer-ballisticng-gets-steam-deck-verified/</guid>
-      <pubDate>Wed, 26 Feb 2025 11:52:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/351967956id26260gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>GOG</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>X.Org X server and Xwayland have 8 more security vulnerabilities revealed</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>You should probably keep an eye on your software updater, as the X.Org X server and Xwayland have more security vulnerabilities that have been announced.</p>
-<p>The security advisory was <a href="https://lists.x.org/archives/xorg/2025-February/061894.html" rel="noopener nofollow" target="_blank">posted</a> to the xorg-announce mailing list on Tuesday, 25th February from developer Olivier Fourdan. A few hours later xorg-server v21.1.16 and xwayland v24.1.6 were released to deal with all of the reported issues. Hopefully distributions will get the updates in quickly.</p>
-<p>Here's the listed issues:</p>
-<p>CVE-2025-26594: Use-after-free of the root cursor.</p>
-<blockquote>
-<p>The root cursor is referenced in the xserver as a global variable. If a client manages to free the root cursor, the internal reference points to freed memory and causes a use-after-free.</p>
-</blockquote>
-<p>CVE-2025-26595: Buffer overflow in XkbVModMaskText().</p>
-<blockquote>
-<p>The code in XkbVModMaskText() allocates a fixed sized buffer on the stack and copies the names of the virtual modifiers to that buffer.</p>
-<p>The code however fails to check the bounds of the buffer correctly and would copy the data regardless of the size, which may lead to a buffer overflow.</p>
-</blockquote>
-<p>CVE-2025-26596: Heap overflow in XkbWriteKeySyms().</p>
-<blockquote>
-<p>The computation of the length in XkbSizeKeySyms() differs from what is actually written in XkbWriteKeySyms(), which may lead to a heap based buffer overflow.</p>
-</blockquote>
-<p>CVE-2025-26597: Buffer overflow in XkbChangeTypesOfKey().</p>
-<blockquote>
-<p>If XkbChangeTypesOfKey() is called with 0 group, it will resize the key symbols table to 0 but leave the key actions unchanged.<br/>
-<br/>
-If later, the same function is called with a non-zero value of groups, this will cause a buffer overflow because the key actions are of the wrong size.</p>
-</blockquote>
-<p>CVE-2025-26598: Out-of-bounds write in CreatePointerBarrierClient().</p>
-<blockquote>
-<p>The function GetBarrierDevice() searches for the pointer device based on its device id and returns the matching value, or supposedly NULL if no match was found.<br/>
-<br/>
-However the code will return the last element of the list if no matching device id was found which can lead to out of bounds memory access.</p>
-</blockquote>
-<p>CVE-2025-26599: Use of uninitialized pointer in compRedirectWindow().</p>
-<blockquote>
-<p>The function compCheckRedirect() may fail if it cannot allocate the backing pixmap. In that case, compRedirectWindow() will return a BadAlloc error without the validation of the window tree marked just before, which leaves the validate data partly initialized, and the use of an uninitialized pointer later.</p>
-</blockquote>
-<p>CVE-2025-26600: Use-after-free in PlayReleasedEvents().</p>
-<blockquote>
-<p>When a device is removed while still frozen, the events queued for that device remain while the device itself is freed and replaying the events will cause a use after free.</p>
-</blockquote>
-<p>CVE-2025-26601: Use-after-free in SyncInitTrigger().</p>
-<blockquote>
-<p>When changing an alarm, the values of the change mask are evaluated one after the other, changing the trigger values as requested and eventually, SyncInitTrigger() is called. If one of the changes triggers an error, the function will return early, not adding the new sync object. This can be used to cause a use after free when the alarm eventually<br/>
-triggers.</p>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/x-org-x-server-and-xwayland-have-8-more-security-vulnerabilities-revealed/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/x-org-x-server-and-xwayland-have-8-more-security-vulnerabilities-revealed/</guid>
-      <pubDate>Wed, 26 Feb 2025 11:28:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/xorg.jpg" type="image/jpeg"/>
-      
-      <category>Security</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
       
     </item>
     
