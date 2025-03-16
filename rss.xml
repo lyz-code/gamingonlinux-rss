@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-03-15 07:27:13.442913</pubDate>
+    <pubDate>2025-03-16 07:26:15.711301</pubDate>
 
     
     <image>
@@ -18,6 +18,120 @@
     </image>
 
     
+    
+    <item>
+      <title>SteamOS 3.7.0 Preview brings the &#39;beginnings of support for non-Steam Deck handhelds&#39;</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve have released SteamOS 3.7.0 Preview, which they noted has the beginnings of support for non-Steam Deck handhelds! So we're closing in on the <a href="https://www.gamingonlinux.com/2025/01/valve-confirms-a-public-beta-of-steamos-is-coming-as-steamos-expands-beyond-steam-deck/" rel="noopener" target="_blank">previously announced Beta for more handhelds</a>. Although this release is still just for Steam Deck.</p>
+<p>Since it's a Preview version you need to have your Steam Deck update settings set to Preview in Settings &gt; System &gt; System Update Channel.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5528745881742026980gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5528745881742026980gol1.jpeg"/></a></p>
+<p>One of the nice surprises for this Preview release is adding the ability for Bluetooth controllers to wake the LCD Steam Deck model!</p>
+<p>Here's the full list of changes:</p>
+<blockquote><strong>General</strong>
+<ul>
+<li>Updated to a newer Arch Linux base</li>
+<li>Updated the Linux kernel to 6.11</li>
+<li>Updated the Mesa graphics driver base</li>
+<li>Desktop mode now ships with Plasma 6.2.5</li>
+<li>Beginnings of support for non-Steam Deck handhelds</li>
+</ul>
+<strong>Controllers and Input</strong>
+<ul>
+<li>Add support for the Proteus Byowave controller</li>
+<li>Fixed an issue where Switch Pro Controller gyros might not work on first connection</li>
+<li>Fixed an issue with stuck/hanging controller inputs when exiting Steam</li>
+</ul>
+<strong>Bluetooth</strong>
+<ul>
+<li>Fixed Bluetooth devices still being able to wake the Steam Deck from suspend, even when Bluetooth was disabled from Desktop mode</li>
+<li>Enable HFP/HSP profiles, to allow using the integrated microphone from headsets and earbuds
+	<ul>
+<li>Currently only available to select in Desktop mode</li>
+</ul>
+</li>
+<li>Added battery level display for supported Bluetooth devices</li>
+<li>Include a bugfix for the Airpods when using the AAC codec</li>
+<li>Bluetooth controllers can now wake LCD units from sleep, previously only available on OLED models
+	<ul>
+<li>Known issue: Bluetooth LE based controllers are not currently compatible with bluetooth wake on LCD models</li>
+</ul>
+</li>
+</ul>
+<strong>Steam Deck Dock</strong>
+<ul>
+<li>Made compatibility improvements for certain displays including TCL FireTV models and Dell VRR capable monitors</li>
+</ul>
+<strong>Graphics and Performance</strong>
+<ul>
+<li>Enabled AMD P-State CPU frequency control</li>
+<li>Fixed a performance regression for No Rest for the Wicked</li>
+</ul>
+<strong>Desktop</strong>
+<ul>
+<li>Updated to Plasma 6.2.5 (previously 5.27.10) - see the big changes in Plasma 6 <a href="https://kde.org/announcements/megarelease/6/" rel="noopener nofollow" target="_blank">here</a></li>
+<li>Surround sound now works correctly
+	<ul>
+<li>Enabling the setting is currently only available via Desktop mode</li>
+</ul>
+</li>
+<li>KDE Filelight is now installed by default for disk usage visualization and low disk space notifications</li>
+<li>Speed and robustness improvements when switching between desktop and game mode
+	<ul>
+<li>Fixed a common cause of hangs when switching to desktop mode</li>
+<li>Fixed some cases where Steam could take up to ninety seconds to exit on shutdown or switch to desktop</li>
+</ul>
+</li>
+<li>Added 'gocryptfs' support to desktop session to enable use of the Plasma Vaults feature</li>
+</ul>
+<strong>Misc</strong>
+<ul>
+<li>Fixed some cases where "filter-chain" or other virtual sound devices would erroneously appear in the UI</li>
+<li>Fixed cases where applying system updates could fail if certain configuration files were corrupted or malformed</li>
+<li>Various enhancements to System Report functionality for support and troubleshooting</li>
+<li>Fixed compatibility issue with certain DNS servers causing very slow domain lookups</li>
+<li>Improved responsiveness of system when running into out-of-memory crash situations</li>
+<li>Enabled IPv6 Privacy Extensions by default</li>
+</ul>
+<strong>Known Issues</strong>
+<ul>
+<li>Creative Zen Air Pro earbuds display an unexpected all-zeros entry under the "Show all devices" section when pairing</li>
+<li>Super NES controllers can erroneously show up as connected when they are not</li>
+<li>DualShock 3 controllers are currently not able to be paired or used</li>
+</ul>
+<strong>Developer</strong>
+<ul>
+<li>Updated to a 6.11 based kernel</li>
+<li>Added debuginfod URLs for SteamOS</li>
+<li>Added systemd .socket units to the default list of /etc files preserved across updates</li>
+<li>When running in a VM, system will now default to the desktop session</li>
+<li>Swap file setup now uses standard 'mkswap' functionality instead of shipping an ad-hoc 'mkswapfile' script</li>
+<li>The steamos-readonly command now warns that the status might not be accurate when sysexts are loaded</li>
+<li>Fixed a case that could introduce duplicate boot entries for devices manually setup to dual-boot</li>
+<li>The pacman cache is now cleaned after applying a SteamOS update
+	<ul>
+<li>Fixes stale cache errors working with pacman after switching branches</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>Source: <a href="https://store.steampowered.com/news/app/1675200/view/529841158837240756" rel="noopener nofollow" target="_blank">Valve</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/03/steamos-3-7-0-preview-brings-the-beginnings-of-support-for-non-steam-deck-handhelds/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/steamos-3-7-0-preview-brings-the-beginnings-of-support-for-non-steam-deck-handhelds/</guid>
+      <pubDate>Sat, 15 Mar 2025 08:57:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steamos-2025.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>Steam Deck hits 18,000 games playable and verified</title>
@@ -3714,13 +3828,13 @@ We're working on further performances and an official control layout fixes to ea
 <li>Shipping the best game possible after two and a half years of hard work</li>
 <li>Supporting our exceptionally talented team in finding new opportunities in the industry</li>
 </ul>
-<p>If you want to support us, please spread the word about <em>Reignbreaker</em> and play the demo (<a href="https://store.steampowered.com/app/3384770/Reignbreaker_Demo/" rel="noopener nofollow" target="_blank">LINK</a>), and support our team by reaching out to <a href="/cdn-cgi/l/email-protection#2a42435843444d6a595e5f4e4345074c4350484344044e4f" rel="noopener nofollow" target="_blank"><span class="__cf_email__" data-cfemail="a1c9c8d3c8cfc6e1d2d5d4c5c8ce8cc7c8dbc3c8cf8fc5c4">[email protected]</span></a> if you’re looking for amazing talent in a wide range of disciplines.</p>
+<p>If you want to support us, please spread the word about <em>Reignbreaker</em> and play the demo (<a href="https://store.steampowered.com/app/3384770/Reignbreaker_Demo/" rel="noopener nofollow" target="_blank">LINK</a>), and support our team by reaching out to <a href="/cdn-cgi/l/email-protection#e28a8b908b8c85a2919697868b8dcf848b98808b8ccc8687" rel="noopener nofollow" target="_blank"><span class="__cf_email__" data-cfemail="731b1a011a1d1433000706171a1c5e151a09111a1d5d1716">[email protected]</span></a> if you’re looking for amazing talent in a wide range of disciplines.</p>
 <p>We want to thank every single one of our fans for your purchases, your fan art, your comments, your reviews, your passion, and your seemingly endless support.</p>
 <p>We also would like to thank all our business partners, Medienboard, the MfG, Creative Europe, and the federal funding partners for all their support.</p>
 <p>And finally, we’d like to give the biggest thanks to our team – those who are here until the end, and the many others who have found a different path on the way. Fizbin and its games are defined by its team members, and you all made this the most inspiring place to perform the world’s most difficult magic trick: making games.</p>
 <p>Thank you.</p>
 <p>Alexander “Pepe” Pieper</p>
-<p>For further info, please contact us: <a href="/cdn-cgi/l/email-protection#84ece1e8e8ebc4f7f0f1e0edeba9e2edfee6edeaaae7ebe9" rel="noopener nofollow" target="_blank"><span class="__cf_email__" data-cfemail="5c34393030331c2f2829383533713a35263e3532723f3331">[email protected]</span></a></p>
+<p>For further info, please contact us: <a href="/cdn-cgi/l/email-protection#3d55585151527d4e4948595452105b54475f5453135e5250" rel="noopener nofollow" target="_blank"><span class="__cf_email__" data-cfemail="6008050c0c0f2013141504090f4d06091a02090e4e030f0d">[email protected]</span></a></p>
 </blockquote>
 <p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8205187141741104114gol1.jpg"/><br/>
 <em>Pictured - Reignbreaker</em></p>
@@ -4601,101 +4715,6 @@ Thank you for continuing to read and support GamingOnLinux!</p>
       <category>Misc</category>
       
       <category>Site Info</category>
-      
-    </item>
-    
-    <item>
-      <title>AMD Radeon RX 9070 and 9070 XT arrive March 6th, AMD dive deeper into RDNA 4 and FSR 4</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>AMD have today pulled back the curtain on the Radeon RX 9000 series powered by RDNA 4 along with FidelityFX Super Resolution 4 (FSR 4).</p>
-<p>Today they've announced the Radeon RX 9070 and 9070 XT which will be available starting March 6th. This comes along with FSR 4 which features Machine Learning, which they say has been made especially for RDNA 4. FSR 4 can be enabled on all FSR 3.1 titles enabling developers to get it in quickly.</p>
-<p>Some of the slides from the press pack:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4591785891740741627gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4591785891740741627gol1.jpg"/></a></p>
-<table class="table-stripes-tbody">
-<tbody>
-<tr>
-<td><strong>Model</strong></td>
-<td><strong>Compute Units</strong></td>
-<td><strong>GDDR6</strong></td>
-<td><strong>Game Clock (GHz)</strong></td>
-<td><strong>Boost Clock6</strong><strong> (GHz)</strong></td>
-<td><strong>Memory Interface</strong></td>
-<td><strong>Infinity Cache</strong></td>
-<td><strong>TBP</strong></td>
-<td colspan="2"><strong>Price</strong><br/>
-<strong>(USD SEP)</strong></td>
-</tr>
-<tr>
-<td>AMD Radeon RX 9070 XT</td>
-<td>64</td>
-<td>16 GB</td>
-<td>2.4</td>
-<td>Up to 3.0</td>
-<td>256-bit</td>
-<td>64 MB</td>
-<td>304W</td>
-<td colspan="2">$599</td>
-</tr>
-<tr>
-<td>AMD Radeon RX 9070</td>
-<td>56</td>
-<td>16 GB</td>
-<td>2.1</td>
-<td>Up to 2.5</td>
-<td>256-bit</td>
-<td>64 MB</td>
-<td>220W</td>
-<td colspan="2">$549</td>
-</tr>
-</tbody>
-</table>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10268218131740742135gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10268218131740742135gol1.jpg"/></a></p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1954754541740742351gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/1954754541740742351gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6205260491740742352gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/6205260491740742352gol1.jpg"/></a></p>
-<p class="plain-list-title">Feature Highlight:</p>
-<blockquote>
-<ul>
-<li><strong>Unified AMD RDNA™ 4 Compute Units</strong> – Features up to 64 advanced AMD RDNA™ 4 compute units delivering up to 40% higher gaming performance than the previous-generation AMD RDNA™ 3 architecture.</li>
-<li><strong>High-Performance Raytracing</strong> – With 3rd generation Raytracing Accelerators, AMD RDNA 4 is able to deliver over 2x the Raytracing throughput per compute unit when compared to our previous generation. Gamers with the latest AMD Radeon RX 9000 Series are ready for immersive gaming experiences with high-quality graphics, including realistic lighting, shadows, and reflections.</li>
-<li><strong>Supercharged AI Acceleration </strong>– 2nd Generation AI Accelerators received several enhancements, allowing AMD RDNA™ 4 to efficiently process advanced AI models much faster than what was possible with RDNA 3,4 through a combination of additional math pipelines for AI calculations, expanding the capabilities of the AI Accelerator to support new emerging data types such as FP8, and support for inference optimization techniques such as structured sparsity. These changes deliver up to 8x INT8 throughput per AI accelerator (for sparse matrices) per compute unit vs the previous generation.</li>
-<li><strong>AMD FidelityFX™ Super Resolution Technology 4 (FSR 4)</strong> – AMD’s new cutting-edge ML-powered upscaling technology delivers high-quality boosted frames under even the most demanding workloads, such as 4K gaming with maximum raytracing settings and will be supported in over 30 games at launch.</li>
-<li><strong>Innovative suite of features through HYPR-RX (Windows only)</strong> – Gamers can instantly improve their experience by activating AMD HYPR-RX and the suite of features within AMD Software, including AMD Radeon™ Super Resolution, AMD Fluid Motion Frames 2.1, AMD Radeon™ Anti-Lag, and AMD Radeon™ Boost. These features can all be tailored to gamers’ hardware and preferences within AMD Software: Adrenalin Edition™ to drive increased FPS, responsiveness and efficiency.</li>
-<li><strong>AI-Enhanced AMD Software: Adrenalin Edition™ Application (Windows only) </strong>– A new suite of software and resources designed to deliver an industry-leading AI user experience with AMD Radeon RX 9070 Series graphics cards. Keep your drivers and AI software up to date with the new Software Manager. Find the answers to your questions about all things AMD or create free and private text and images with AMD Chat. Discover, download and install new and exciting AMD-partnered AI applications with the App Portal, and leverage AI to improve software quality with the AMD Image Inspector.</li>
-<li><strong>Ready for Next-Generation Displays</strong> – AMD Radiance Display™ Engine supports the latest DisplayPort™ 2.1a and HDMI® 2.1b connections, enabling ultra-high resolutions and refresh rates up to 8K 144Hz, with 12-bit HDR and full REC2020 Color Space for incredible color accuracy. Paired with AMD FreeSync™ technology, gamers can enjoy tear-free, stutter-free gaming experiences on over 4000 compatible displays, including upcoming 4K 240Hz and 8K 144Hz DisplayPort™ 2.1 monitors.</li>
-</ul>
-</blockquote>
-<p>As for what performance to expect these below are from AMD's own slides in comparison to the RX 7900 GRE:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7948243951740750316gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7948243951740750316gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2434064461740750317gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2434064461740750317gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13919872471740750317gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13919872471740750317gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/16900471511740750318gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/16900471511740750318gol1.jpg"/></a></p>
-<p>For FSR 4, AMD said to expect 30+ games supported immediately at launch including: Marvel Rivals, Smite 2, Space Marine 2, Spider-Man Remastered, Spider-Man Miles Morales and Spider-Man 2, Horizon Zero Dawn and Horizon Forbidden West, God of War Ragnorok, The Last of Us Part 1 and more. AMD said to expect over 75 titles to add FSR 4 support during 2025.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11034823831740742968gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/11034823831740742968gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2969886801740742969gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2969886801740742969gol1.jpg"/></a></p>
-<p>It's a shame you have to upgrade your whole GPU for the full benefit of FSR 4 though, as the quality of it does look pretty impressive based on the bits they've shown. AMD have made seriously great progress on FSR since it was first released, and this does look like quite a big overall enhancement to their tech on both quality and performance.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3105069551740743275gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/3105069551740743275gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4202375431740743276gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/4202375431740743276gol1.jpg"/></a></p>
-<p>AMD FSR 4 Feature Highlight:</p>
-<blockquote>
-<ul>
-<li>Available exclusively on AMD Radeon™ RX 9000 Series graphics cards, AMD Software: Adrenalin Edition™ adds a new easy-to-use AMD FidelityFX™ Super Resolution 4 (AMD FSR 4) Upgrade feature that helps maximize performance at maximum quality in over 30 games at launch, with 75 coming later this year. AMD FSR 4 delivers a substantial image quality improvement over AMD FSR 3.1 upscaling, with the new ML-based algorithm helping to improve temporal stability, better preserve detail, and reduce ghosting.</li>
-<li>Utilizing features already built into the AMD FidelityFX™ API added when game developers integrate AMD FSR 3.1 into their games, AMD FSR 4 enables an easy upgrade for supported FSR 3.1 games and can be combined with existing in-game AMD FSR 3.1 advanced frame-generation and AMD Radeon™ Anti-Lag 2 for ultra-smooth, ultra-responsive gaming at incredible frame rates on AMD Radeon RX 9070 Series graphics cards.</li>
-<li>The new ML-accelerated AMD FSR 4 upscaling algorithm is trained using high-quality ground truth game data on AMD Instinct™ Accelerators and uses the hardware-accelerated FP8 Wave Matrix Multiply Accumulate (WMMA) feature of the AMD RDNA™ 4 architecture to ensure maximum upscaling quality while still providing a substantial game performance boost.</li>
-</ul>
-</blockquote>
-<p>And of course during the event there was plenty of <em>AI this AI that</em> talk.</p>
-<p>You can see the full video announcement from AMD below:</p>
-<div class="hidden_video" data-video-id="GZfFPI8LJrc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d1d355aea59d6a9d65aeb6f9dbc3e657.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/GZfFPI8LJrc" target="_blank">See video</a></div></div>
-<p>What do you think to the new GPUs and FSR 4? Will you be looking to grab one?</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/02/amd-announce-radeon-rx-9070-and-9070-xt-for-march-6th-dive-deeper-into-rdna-4-and-fsr-4/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/02/amd-announce-radeon-rx-9070-and-9070-xt-for-march-6th-dive-deeper-into-rdna-4-and-fsr-4/</guid>
-      <pubDate>Fri, 28 Feb 2025 13:13:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1594158032id26277gol.png" type="image/jpeg"/>
-      
-      <category>AMD</category>
-      
-      <category>Hardware</category>
-      
-      <category>Misc</category>
-      
-      <category>Upcoming</category>
       
     </item>
     
