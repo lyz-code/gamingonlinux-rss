@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-04-07 07:30:57.737945</pubDate>
+    <pubDate>2025-04-08 07:29:45.370860</pubDate>
 
     
     <image>
@@ -18,6 +18,419 @@
     </image>
 
     
+    
+    <item>
+      <title>DXVK 2.6.1 brings numerous needed fixes for playing Windows games on Linux and Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>DXVK is a Vulkan-based implementation of Direct3D 8, 9, 10 and 11. It's part of what Proton uses to make Windows games run so well on Linux platforms including the SteamOS based Steam Deck. DXVK 2.6.1 is now available fixing up some big issues.</p>
+<p>The full changelog:</p>
+<blockquote>
+<ul>
+<li>Removed sparse buffer usage that was introduced in DXVK 2.6. This caused all sorts of driver issues that would cause hangs and instability on AMD Vega GPUs and others. (PR <a href="https://github.com/doitsujin/dxvk/pull/4763" rel="noopener nofollow" target="_blank">#4763</a>)<br/>
+<strong>Note:</strong> This may increase peak memory usage in some games again.</li>
+<li>Worked around an RTSS bug that would cause the overlay to render incorrectly if the Vulkan swapchain uses an sRGB format. (<a href="https://github.com/doitsujin/dxvk/issues/4777" rel="noopener nofollow" target="_blank">#4777</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4778" rel="noopener nofollow" target="_blank">#4778</a>)</li>
+<li>Worked around an issue where multisample resolves would lead to visual issues on Nvidia in certain Unity Engine games. (<a href="https://github.com/doitsujin/dxvk/issues/4817" rel="noopener nofollow" target="_blank">#4817</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4818" rel="noopener nofollow" target="_blank">#4818</a>)</li>
+<li>Worked around an Intel ANV issue that would cause terrain to misrender in games such as <strong>Assassin's Creed Origins</strong>.<br/>
+<strong>Note:</strong> This driver bug was fixed in Mesa 25.0.3.</li>
+<li>Worked around a RADV issue that would cause hangs on RDNA4 GPUs prior to Mesa 25.0.2.<br/>
+<strong>Note:</strong> Please keep your drivers up to date when using these newer GPUs.</li>
+<li>Further improved render pass efficiency for tiling GPUs in some cases, especially if <code class="inline-code">VK_KHR_load_store_op_none</code> is supported.<br/>
+<strong>Note:</strong> This change <strong>does not</strong> affect desktop GPUs in any meaningful way.</li>
+<li>Fixed a potential issue with display mode handling on uncommon monitor setups. (PR <a href="https://github.com/doitsujin/dxvk/pull/4764" rel="noopener nofollow" target="_blank">#4764</a>)</li>
+<li>Fixed various issues with the SDL3 backend in dxvk-native. (PR <a href="https://github.com/doitsujin/dxvk/pull/4825" rel="noopener nofollow" target="_blank">#4825</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4826" rel="noopener nofollow" target="_blank">#4826</a>)</li>
+<li>Fixed compatibility of MSVC builds with very old CPUs. (PR <a href="https://github.com/doitsujin/dxvk/pull/4811" rel="noopener nofollow" target="_blank">#4811</a>)</li>
+<li>Fixed various minor issues that would cause Vulkan validation errors in rare scenarios.</li>
+<li><strong>Hitman 2</strong>: Worked around poor CPU-bound performance in certain areas. (PR <a href="https://github.com/doitsujin/dxvk/pull/4796" rel="noopener nofollow" target="_blank">#4796</a>)<br/>
+<strong>Note:</strong> This may slightly regress GPU-bound performance.</li>
+<li><strong>LEGO Batman: The Video Game</strong> and <strong>LEGO Indiana Jones: The Original Adventures</strong>: Worked around a game issue causing horrible UI performance. (PR <a href="https://github.com/doitsujin/dxvk/pull/4798" rel="noopener nofollow" target="_blank">#4798</a>, PR <a href="https://github.com/doitsujin/dxvk/pull/4810" rel="noopener nofollow" target="_blank">#4810</a>)</li>
+<li><strong>Need For Speed: Most Wanted (2005)</strong>: Worked around a crash on Windows. (<a href="https://github.com/doitsujin/dxvk/issues/4624" rel="noopener nofollow" target="_blank">#4624</a>)</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19657301831744036206gol1.jpg"/><br/>
+<em>Pictured - HITMAN 2</em></p>
+<p>As for how to update — you don't need to do anything. Valve's Proton pulls in updates from DXVK directly in future releases. However, if you do wish to upgrade DXVK early, then check out <a href="https://www.gamingonlinux.com/guides/view/how-to-update-dxvk-and-vkd3d-proton-in-proton-and-ge-proton/" rel="noopener" target="_blank">my dedicated guide on it</a>.</p>
+<p>Source: <a href="https://github.com/doitsujin/dxvk/releases/tag/v2.6.1" rel="noopener nofollow" target="_blank">GitHub</a>, posted into <a href="https://discord.gg/AghnYbMjYg" rel="noopener nofollow" target="_blank">our Discord</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/dxvk-2-6-1-brings-numerous-needed-fixes-for-playing-windows-games-on-linux-and-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/dxvk-2-6-1-brings-numerous-needed-fixes-for-playing-windows-games-on-linux-and-steam-deck/</guid>
+      <pubDate>Mon, 07 Apr 2025 14:31:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1602426177id26530gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Palworld publisher teams up with MythicOwl for car delivery adventure Truckful</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>MythicOwl have teamed up with Pocketpair Publishing, the <a href="https://www.gamingonlinux.com/2025/01/palworld-developer-pocketpair-launches-pocketpair-publishing/" rel="noopener" target="_blank">recently announced publishing arm of the Palworld developer</a>, for their upcoming game Truckful. The developer previously released the wonderful <a href="https://www.gamingonlinux.com/2024/05/planetiles-is-a-beautiful-blend-of-tetris-and-dorfromantik/" rel="noopener" target="_blank">Planetiles</a>.</p>
+<p>What is it? Truckful is a single player car delivery adventure game based around completing errands and quests for villagers and uncovering the ancient mystery that surrounds the nearby old forest.<em> There's no release date for it yet.</em></p>
+<p>In a new <a href="https://store.steampowered.com/news/app/3090810/view/535472473750111179" rel="noopener nofollow" target="_blank">announcement</a> the developer mentioned Pocketpair will be "providing game changing funding, publishing and marketing support to help us bring the best possible version of Truckful to you - the players" and that they "couldn't be happier with the chosen partner" enabling them to "deliver the best and most ambitious game we envisioned at the start".</p>
+<p>They posted it along with a very short teaser:</p>
+<div class="hidden_video" data-video-id="rZDY-AFvTvU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/974b1674fe2b1747ffe1c61f6ab7387d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/rZDY-AFvTvU" target="_blank">See video</a></div></div>
+<p>Also see their original trailer below for more:</p>
+<div class="hidden_video" data-video-id="Sqss-pcgfXI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2a84120f3e4d95ea9abc350a59279744.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Sqss-pcgfXI" target="_blank">See video</a></div></div>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40545/truckful/">Truckful</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3090810/Truckful/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/palworld-publisher-teams-up-with-mythicowl-for-car-delivery-adventure-truckful/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/palworld-publisher-teams-up-with-mythicowl-for-car-delivery-adventure-truckful/</guid>
+      <pubDate>Mon, 07 Apr 2025 14:26:27 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/725585903id26529gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Adventure</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Twin Sails Interactive break off from Asmodee and Embracer to go independent</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Some <em>hopefully</em> good industry news here. Twin Sails Interactive have officially broken away from Asmodee Group AB / Embracer to become independent. This follows a "strategic management buyout" with Twin Sails retaining their entire team.</p>
+<p>The company was founded back in 2016 and was originally known as Asmodee Digital, serving as the Asmodee's video game division. They've published various tabletop adaptions including Terraforming Mars and Gloomhaven along with various indie games.</p>
+<div class="hidden_video" data-video-id="CJEgCTJ0V7A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/80c21a435954049bb3e09fbd971e205a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/CJEgCTJ0V7A" target="_blank">See video</a></div></div>
+<p>From the press release:</p>
+<p>"This is an exciting new chapter for Twin Sails Interactive,” said Nicolas Godement, CEO of Twin Sails Interactive. “Our time within Asmodee provided us with invaluable experience, and we are grateful for the collaboration that helped shape our journey. Now, as an independent publisher, we move forward with confidence, ready to pursue our bold and energized vision for the future."</p>
+<p>“At Twin Sails Interactive, we believe every game deserves dedicated expertise and care,” said Laurent Lichnewsky, Production Director. “That’s why each title is championed by a dedicated ‘Triforce’—a producer, brand manager, and game designer—who work closely with the developer to shape the game’s creative vision, a strong market positioning, and overall quality. From production oversight to porting, localization, and QA, we’re committed to delivering polished, high-impact experiences to players worldwide.”</p>
+<p>"We will continue to champion creative titles with strong visual identities and passionate teams behind them", added Adrien Rotondo, Marketing Director. "Our goal is to work with our partner studios to create long-lasting game brands that grow through updates, new content, and new titles in the series”.</p>
+<p>Last year,<a href="https://www.gamingonlinux.com/2024/04/embracer-group-splitting-into-three-companies/" rel="noopener" target="_blank"> Embracer split off into three companies</a> which included Asmodee, with Asmodee being acquired by Embracer back in late 2021 with the acquisition being completed in March 2022. So they weren't under Embracer for that long, as Embracer continues trying to turn things around after facing years of problems resulting in selling off or splitting from various other developers and publishers.</p>
+<p>Others include <a href="https://www.gamingonlinux.com/2024/03/take-two-interactive-buying-gearbox-from-embracer-more-borderlands-on-the-way/" rel="noopener" target="_blank">Take-Two Interactive buying Gearbox from Embracer</a> and <a href="https://www.gamingonlinux.com/2024/03/saber-interactive-splits-off-from-embracer-group-taking-various-studios-with-them/" rel="noopener" target="_blank">Saber Interactive splitting off from Embracer Group</a> taking various studios with them.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/twin-sails-interactive-break-off-from-asmodee-and-embracer-to-go-independent/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/twin-sails-interactive-break-off-from-asmodee-and-embracer-to-go-independent/</guid>
+      <pubDate>Mon, 07 Apr 2025 13:53:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1863136165id26528gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Press Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Build a train to expand your deck and fight off bandits in the demo for Fogpiercer</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Fogpiercer is a fresh and interesting take on deckbuilders, with you controlling a train that you build up and upgrade as you go.<em> It has Native Linux support built with <a href="https://godotengine.org/" rel="noopener nofollow" target="_blank">Godot</a> and a demo is now available.</em></p>
+<p>Your train carriages make up your deck of cards so you could have a very different run each time you load it up. It all depends on what carriages you take with you and buy at stations during your run. When it comes to upgrade time, you can eventually get a whole stack of powerful cards to help the turn-based tactical battles.</p>
+<p>The battles are really interesting too, since it's all based on positioning. You're controlling a train, so of course you're attached to the rails, but the enemy bandits are not. It's up to you to force them into the positions you want with your weapons and perhaps a little ramming or forcing them into something.</p>
+<div class="hidden_video" data-video-id="z9AJShGRpsI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/33cf0624a229474bc5790d126f9d59fa.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/z9AJShGRpsI" target="_blank">See video</a></div></div>
+<p>The demo includes 1 driver, 1 locomotive and 3 carriages. Featuring over 47 unique cards and 18 modules that significantly change your playstyle, allowing you to create interesting builds on an endlessly-replayable dynamic tactical grid.</p>
+<p>I've played through the demo and thought it was really great. Shooting right up into the top of my wishlist. Really want a whole lot more from this one, can't wait to see what all the extra carriages will let you do in the full release. Give this demo a go for sure.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/39834/fogpiercer/">Fogpiercer</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3219010/Fogpiercer/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/build-a-train-to-expand-your-deck-and-fight-off-bandits-in-the-demo-for-fogpiercer/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/build-a-train-to-expand-your-deck-and-fight-off-bandits-in-the-demo-for-fogpiercer/</guid>
+      <pubDate>Mon, 07 Apr 2025 13:38:29 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1440036208id26527gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Deck-builder</category>
+      
+      <category>Demo</category>
+      
+      <category>Godot Engine</category>
+      
+    </item>
+    
+    <item>
+      <title>Master platforming with two characters at the same time in Ambidextro - from the dev of Pineapple on pizza</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Some evil Witch has kidnapped the Queen's children. As the Royal Wizard, it's up to your to rescue them. The only problem is that the Queen is a bit brutal, and has cut you in half. You're a Wizard though, so apparently being cut in half is no big deal. <em>Note: key provided by the developer.</em></p>
+<p>The developer calls it a "multi-player game for a single player", which is an interesting way to put it. Giving you 100 levels to conquer quickly, while your brain gets melted by trying to control the two characters together and escape each level. It's a thorough challenge and one that's really quite entertaining to run and jump through.</p>
+<div class="hidden_video" data-video-id="dnuyOmAkmtw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e4e0fd1121884d54042a5fc39f2aab55.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/dnuyOmAkmtw" target="_blank">See video</a></div></div>
+<p>"Could an average player learn to control two Super-Mario-like characters at the same time?" is the question that inspired Alva Majo to develop Ambidextro. The answer is apparently yes. Unless you're me that is, because I'm terrible at it. Seriously, it's a fun game but really does challenge your attention and reflexes. It made me throw my controller down a couple of times when I was so-damn-close. Gets you feeling weirdly determined though, when you've gone from repeated fails to a split-second away from completing a level, resulting in needing just one more run.</p>
+<p>With that damn level timer it's not just a question of speed but true skill too. One tiny misstep by one character, and you'll be mashing that restart button so hard. The level design is truly devilish at times too.</p>
+<p class="plain-list-title">Highlights:</p>
+<ul>
+<li>A multi-player game for a single player.</li>
+<li>Control one character with each hand.</li>
+<li>Make your two-halves meet before the time runs out.</li>
+<li>100 levels to conquer.</li>
+<li>Retro dark-fantasy atmosphere with a dungeon synth soundtrack.</li>
+</ul>
+<p>About the developer: Majorariatto is a small Spanish-based indie studio made of mostly-solo developer Alva Majo, music composer Alejandro Maciá, and occasional collaborators; this time, pixel artist SunPixels. Majorariatto has been releasing and self-publising games since 2016 with Majotori. Their last title, Pineapple on pizza, was a short free game that went pretty viral, with almost a million downloads and hundreds of millions of views on YouTube and an Overwhelmingly Positive rating on Steam from over 20,000 user reviews.</p>
+<p>Ambidextro has Native Linux support.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40925/ambidextro/">Ambidextro</a></strong> | Release Date: 28th March 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3445580/Ambidextro/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/master-platforming-with-two-characters-at-the-same-time-in-ambidextro-from-the-dev-of-pineapple-on-pizza/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/master-platforming-with-two-characters-at-the-same-time-in-ambidextro-from-the-dev-of-pineapple-on-pizza/</guid>
+      <pubDate>Mon, 07 Apr 2025 12:57:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1681292144id26526gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Nexus Mods improve the new open source app with UI upgrades, Cyberpunk 2077 fixes and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>I continue to be very excited about improvements to the cross-platform open source Nexus Mods app, to finally firmly plug the modding hole on Linux platforms including the Steam Deck.</p>
+<p>The app is ready for people to use with Stardew Valley, with other games still being worked on. Certain games like Cyberpunk 2077, Baldur's Gate 3 or Mount &amp; Blade II: Bannerlord are currently locked behind a toggle as they're not quite ready.</p>
+<p>With this release there's quite a few bug fixes but also some nice improvements to the interface too. Like it now showing in-progress collection installs in the left menu to be more clear. They've also re-organised the Library UI, as it was getting too cluttered and difficult to use on smaller screens (like the Steam Deck). So they've turned mods and collections into tabs.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1591321881744029457gol1.png"/></p>
+<p>In my own testing, the latest version also starts up on Linux a <em>lot</em> faster than before.</p>
+<p>Other changes:</p>
+<blockquote>
+<h4>More Features</h4>
+<ul>
+<li>Files in mods from a Nexus Mods collection are now read-only to prevent users from accidentally breaking the collection by editing them.</li>
+<li>Mods that are required as part of a Nexus Mods collection can now only be enabled or disabled using the collection toggle.</li>
+<li>The toggle indicator for mods has been updated to explain better why a mod cannot be toggled when part of a collection. Clicking this indicator will now open the Installed Collection page.</li>
+<li>Continued to refine the UI to make it more compact.</li>
+<li>The "Optional" tab is now only shown for collections with optional mods.</li>
+</ul>
+<h4>Technical Changes</h4>
+<ul>
+<li>Improved the "Update available" pop-up to give more relevant advice depending on how the app was installed (Windows EXE, Linux AppImage, Linux Package Manager).</li>
+<li>Updated the Load Order page to use the newer display technologies.</li>
+<li>The "Advanced Install" option no longer shows a screen saying the mod is unsupported before showing the options to install files.</li>
+<li>The view button on the games page will now open the last applied loadout rather than the first one that was created.</li>
+<li>The "Login" button will no longer be disabled for a short time after clicking on it.</li>
+<li>If a download fails during a collection installation, subsequent downloads will no longer be aborted.</li>
+<li>Updated Nexus Mods links to the new format.</li>
+<li>Updated Privacy Policy links.</li>
+</ul>
+<h4>Bug Fixes</h4>
+<ul>
+<li>Fixed a few instances where the app would not clean up empty directories on swapping loadouts or uninstalling.</li>
+<li>In the Advanced Installer, the "Suggested" folder will now correctly show a name instead of a number.</li>
+<li>The spine menu will now correctly show which loadout is active after the app starts up.</li>
+<li>Fixed an issue where some Cyberpunk 2077 mod installers (FOMODs) would not trigger correctly.</li>
+<li>Fixed an issue preventing mods installed by FOMOD from being deleted/disabled.</li>
+<li>Fixed a critical bug that would cause data to be written to the wrong file when installing or removing mods that shared some identical files.</li>
+<li>Fixed an error relating to "Duplicate Keys" when applying mods.</li>
+<li>Fixed an issue re-indexing the game files after a game update, which could result in DLCs (e.g. REDmod, Phantom Liberty) being unintentionally deleted when applying a loadout.</li>
+<li>Fixed an issue where large files skipped during the indexing of the game were not properly tracked by the app, causing errors when applying a loadout.</li>
+</ul>
+<h4>Known Issues</h4>
+<ul>
+<li>The sort order for some columns does not work as expected.</li>
+<li>The game version is not checked when adding a collection, meaning you can install outdated mods without being warned.</li>
+<li>The table header sorting and active tab states are not saved and are reset each time the view is loaded.</li>
+</ul>
+</blockquote>
+<p>You can download the AppImage from the <a href="https://github.com/Nexus-Mods/NexusMods.App/releases" rel="noopener nofollow" target="_blank">GitHub releases page</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/nexus-mods-improve-the-new-open-source-app-with-ui-upgrades-cyberpunk-2077-fixes-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/nexus-mods-improve-the-new-open-source-app-with-ui-upgrades-cyberpunk-2077-fixes-and-more/</guid>
+      <pubDate>Mon, 07 Apr 2025 12:38:12 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/827682033id26525gol.png" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Apps</category>
+      
+      <category>Beta</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Iron Village is a sweet super-casual city-builder and railway manager out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you prefer your games a bit cosier and sweeter perhaps Iron Village might be your next one to pick up. Especially if you like building and management sims. Distilling the genre down to something a bit more simple and easy to get into.</p>
+<p>Since it's a more casual game, don't go in expecting a big challenge. It's more about setting it all up how you want, watching it all grow and continuing to build it all up.</p>
+<p>As the developer explains: "Iron Village is a casual game offering building and management challenges in a fun and intuitive environment; start from scratch and with the help of your railway you can build houses, farms, warehouses, and more to create your basic village. Trade what your people make for other resources and gather gold to grow your village into a prospering town and grow the railway into a powerhouse. For your village to grow and prosper you must build houses for the community. You can open shops that turn raw resources into valuable goods. You need to clear farm fields to grow a variety of crops, from basic staples to exotic magical ingredients - and with time and experience, you may construct warehouses to store your resources and goods. Trading is an essential part of the game; resources and goods your villagers make can be turned into gold and you can trade for other resources that your villagers need. Gold can be used to invest in, and to expand, your village. You can unlock new types of goods and resources along the way, and with patience and skills create new opportunities to grow into a prospering town."</p>
+<p>Check out the release trailer:</p>
+<div class="hidden_video" data-video-id="fZGJJFMB4tY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9cabe12d55bafdb1b35df4016c56c302.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/fZGJJFMB4tY" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Highlights:</p>
+<blockquote>
+<ul>
+<li>Build a village with homes, farms, shops, warehouses, and more.</li>
+<li>Trade your goods with the trains for other resources and gold.</li>
+<li>Refuel trains that stop by on their long journeys.</li>
+<li>Keep the railway happy and pour in gold to improve it.</li>
+<li>Unlock new types of goods and resources.</li>
+<li>Cute tiny pixel graphics.</li>
+</ul>
+</blockquote>
+<p>The new release comes with full Native Linux support.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40948/iron-village/">Iron Village</a></strong> | Release Date: 24th March 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://lunar-chippy.itch.io/iron-village">itch.io</a></li><li><a href="https://store.steampowered.com/app/3011060/Iron_Village/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/iron-village-is-a-sweet-super-casual-city-builder-and-railway-manager-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/iron-village-is-a-sweet-super-casual-city-builder-and-railway-manager-out-now/</guid>
+      <pubDate>Mon, 07 Apr 2025 12:27:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/851527022id26524gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Building Sim</category>
+      
+      <category>Casual</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux GPU Control Application (LACT) v0.7.3 brings configurable charts, improvements for AMD RDNA3</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Linux GPU Control Application (LACT) continues being one of the best ways to control your AMD, NVIDIA or Intel GPU on a Linux system with version 0.7.3 out now with new features and improvements.</p>
+<p>The first big one is that the charts window is now fully configurable. This means you can set whatever stats to show that you want, add and remove charts and much more. It's a nice quality of life improvement for the app.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17817087491744028278gol1.png"/></p>
+<p>For AMD RDNA3 GPU owners, this is a big release for you too! It includes some workarounds to improve overclocking. Due to driver bugs it does things in a very specific order to work around them, until they're fixed in the drivers. So you should now be able to properly deal with custom power limits/fan curve/clocks on RDNA3.</p>
+<p>An emergency reset option has been included, for if you mess up overclocking settings. And, additionally there's also now a Flatpak package.</p>
+<p>Source: <a href="https://github.com/ilya-zlobintsev/LACT/releases/tag/v0.7.3" rel="noopener nofollow" target="_blank">GitHub</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/linux-gpu-control-application-lact-v0-7-3-brings-configurable-charts-improvements-for-amd-rdna3/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/linux-gpu-control-application-lact-v0-7-3-brings-configurable-charts-improvements-for-amd-rdna3/</guid>
+      <pubDate>Mon, 07 Apr 2025 12:19:24 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/860386414id26523gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA open sourced PhysX and Flow GPU code</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>In a nice win for open source, NVIDIA have now provided the PhysX and Flow GPU source code to expand what developers can do with it.</p>
+<p>From the <a href="https://github.com/NVIDIA-Omniverse/PhysX/discussions/384" rel="noopener nofollow" target="_blank">announcement</a> on GitHub from NVIDIA developer Adam Moravanszky:</p>
+<blockquote>
+<p>Since the release of PhysX SDK 4.0 in December 2018, NVIDIA PhysX has been available as open source under the BSD-3 license—with one key exception: the GPU simulation kernel source code was not included.</p>
+<p>That changes today.</p>
+<p>We’re excited to share that the latest update to the PhysX SDK now includes all the GPU source code, fully licensed under BSD-3!</p>
+<p>With over 500 CUDA kernels powering features such as rigid body dynamics, fluid simulation, and deformable objects, GPU PhysX represents one of the most advanced real-time simulation use cases of CUDA and GPU programming. We hope this release will be a valuable resource for learning, experimentation, and development across the community.</p>
+<p>In addition, we’re also open-sourcing the full GPU compute shader implementation of the Flow SDK, our real-time, sparse grid–based fluid simulation library.</p>
+<p>We can’t wait to see what you build with it. Explore, experiment—and feel free to post issues or feedback right here on GitHub!</p>
+</blockquote>
+<p>Will be interesting to see what developers end up doing with this now it's all there. What do you think it might enable?</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/nvidia-open-sourced-physx-and-flow-gpu-code/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/nvidia-open-sourced-physx-and-flow-gpu-code/</guid>
+      <pubDate>Mon, 07 Apr 2025 12:05:09 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Proton Experimental gets fixes for XCOM 2, Grand Theft Auto V Enhanced, The Last of Us Part II Remastered</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve released a great sounding new update to Proton Experimental on April 4th, to help get more Windows games running correctly on Linux platforms like Steam Deck.</p>
+<p class="plain-list-title">Noted to be now playable includes:</p>
+<ul>
+<li>MySims Kingdom.</li>
+<li>STAR OCEAN THE DIVINE FORCE.</li>
+</ul>
+<p class="plain-list-title">A "hack" from Proton 7 was reinstated that helps with:</p>
+<ul>
+<li>SpellForce: Platinum Edition, NieR: Automata, Sekiro: Shadows Die Twice and DARK SOULS III crashing with monitors exposing too many possible resolutions.</li>
+</ul>
+<p class="plain-list-title">Other fixes:</p>
+<ul>
+<li>Fixed XCOM 2 erroring out when trying to connect to my2K.</li>
+<li>Fixed network issues in Hunt: Showdown 1896 after a recent game update.</li>
+<li>Fixed Grand Theft Auto V Enhanced launcher hang.</li>
+<li>Fixed Grand Theft Auto V Enhanced showing driver version warning with AMD GPUs.</li>
+<li>Fixed Grand Theft Auto V Enhanced not being able to be uninstalled via Steam.</li>
+<li>Fixed cursor not working in the menu of Amerzone: The Explorer's Legacy (1999).</li>
+<li>Fixed The Last of Us Part II Remastered PC crashing with Nvidia GPUs.</li>
+</ul>
+<p class="plain-list-title">A Proton 9.0 regression was also found and solved:</p>
+<ul>
+<li>Stardust Skate is playable again.</li>
+</ul>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15348210971744027178gol1.jpg"/><br/>
+<em>Pictured - The Last of Us Part II Remastered</em></p>
+<p>Source: <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener nofollow" target="_blank">GitHub</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/proton-experimental-gets-fixes-for-xcom-2-grand-theft-auto-v-enhanced-the-last-of-us-part-ii-remastered/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/proton-experimental-gets-fixes-for-xcom-2-grand-theft-auto-v-enhanced-the-last-of-us-part-ii-remastered/</guid>
+      <pubDate>Mon, 07 Apr 2025 12:00:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/517454681id26521gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 10.5 released with pairing support in the Bluetooth driver and ARM64 improvements</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Wine 10.5 is out now as the latest development release of the Windows compatibility layer that will eventually release as Wine 11 next year. This release brings new features and bug fixes.</p>
+<p>Highlights include:</p>
+<blockquote>
+<ul>
+<li>Support for larger page sizes on ARM64.</li>
+<li>Mono engine updated to version 10.0.0.</li>
+<li>Pairing support in the Bluetooth driver.</li>
+<li>Vulkan H.264 decoding.</li>
+<li>%GS register swapping on macOS.</li>
+<li>Various bug fixes.</li>
+</ul>
+</blockquote>
+<p>Some of the bug fixes include improvements for running on Apple M1 hardware, a fix for Brothers - A Tale of Two Sons, Rally Trophy, Microsoft Edge, alt+tab keyboard input being lost, Game Controllers panel crashing on exit and more.</p>
+<p>Source: <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-10.5" rel="noopener nofollow" target="_blank">GitLab</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/wine-10-5-released-with-pairing-support-in-the-bluetooth-driver-and-arm64-improvements/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/wine-10-5-released-with-pairing-support-in-the-bluetooth-driver-and-arm64-improvements/</guid>
+      <pubDate>Mon, 07 Apr 2025 11:53:53 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
     
     <item>
       <title>Steam Deck Verified round-up for early April 25 with new and upcoming games</title>
@@ -4640,685 +5053,6 @@ Pictured - F.E.A.R. on Linux</p>
       <category>Misc</category>
       
       <category>Video</category>
-      
-    </item>
-    
-    <item>
-      <title>Wine 10.4 continues work on Bluetooth driver and more Vulkan video decoder support in WineD3D</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Wine 10.4 is out now as the latest development release of the Windows compatibility layer, bringing new features and assorted bug fixes.</p>
-<p>Highlighted additions in this release include:</p>
-<blockquote>
-<ul>
-<li>Improvements to PDB support in DbgHelp.</li>
-<li>More Vulkan video decoder support in WineD3D.</li>
-<li>Accessibility support in the SysLink control.</li>
-<li>More progress on the Bluetooth driver.</li>
-</ul>
-</blockquote>
-<p>There's also bug fixes for Battle.net, Steam, Need for Speed: Shift, Command &amp; Conquer 3: Kane's Wrath, Europa Universalis 4 Golden Century, ShaderMap 4.x, Chessbase, Zenless Zone Zero, Myst, iTunes, Firefox and more.</p>
-<p>See all in <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-10.4" rel="noopener nofollow" target="_blank">the release notes</a>.</p>
-<p>Since Valve's Proton is built from Wine, to preempt the question — no, we don't know exactly when Proton 10 will release after rebasing onto Wine 10. Proton 8 was released in April 2023, Proton 9 got a Beta in late April 2024 with a release in May, so it's probably not likely until sometime around April / May.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/03/wine-10-4-continues-work-on-bluetooth-driver-and-more-vulkan-video-decoder-support-in-wined3d/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/wine-10-4-continues-work-on-bluetooth-driver-and-more-vulkan-video-decoder-support-in-wined3d/</guid>
-      <pubDate>Sat, 22 Mar 2025 09:49:09 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-      <category>Wine</category>
-      
-    </item>
-    
-    <item>
-      <title>Get a whole lot of EARTH DEFENSE FORCE in this Humble Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>On top of the recently launched <a href="https://www.gamingonlinux.com/2025/03/the-humble-heroines-bundle-returns-with-some-great-games-for-womens-history-month/" rel="noopener" target="_blank">Humble Heroines Bundle</a>, we also have the just launched<a href="https://www.humblebundle.com/games/earth-defense-force-collection" rel="noopener nofollow" target="_blank"> EARTH DEFENSE FORCE Collection</a>. Seems like quite a good deal based on the usual price of each game, plus a whole lot of DLC.</p>
-<p>All the games included are rated <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable and Gold or <em>higher</em> on <a href="http://protondb.com" rel="noopener nofollow" target="_blank">ProtonDB</a>. So you should hopefully not have much trouble playing them with Valve's Proton.</p>
-<p>The games included are:</p>
-<p><a href="https://store.steampowered.com/app/1007040/EARTH_DEFENSE_FORCE_5/" rel="noopener nofollow" target="_blank">EARTH DEFENSE FORCE 5</a></p>
-<p><a href="https://store.steampowered.com/app/1497950/EARTH_DEFENSE_FORCE_WORLD_BROTHERS/" rel="noopener nofollow" target="_blank">EARTH DEFENSE FORCE: WORLD BROTHERS</a></p>
-<p><a href="https://store.steampowered.com/app/1039890/EARTH_DEFENSE_FORCE_IRON_RAIN/" rel="noopener nofollow" target="_blank">EARTH DEFENSE FORCE: IRON RAIN</a></p>
-<p><a href="https://store.steampowered.com/app/574200/EARTH_DEFENSE_FORCE_41_WINGDIVER_THE_SHOOTER/" rel="noopener nofollow" target="_blank">EARTH DEFENSE FORCE 4.1 WINGDIVER THE SHOOTER</a></p>
-<p><a href="https://store.steampowered.com/app/410320/EARTH_DEFENSE_FORCE_41_The_Shadow_of_New_Despair/" rel="noopener nofollow" target="_blank">EARTH DEFENSE FORCE 4.1 The Shadow of New Despair</a></p>
-<p>Plus there's <u>18</u> included DLC for 4.1 The Shadow of New Despair.</p>
-<p>Head over to <a href="https://www.humblebundle.com/games/earth-defense-force-collection" rel="noopener nofollow" target="_blank">Humble Bundle to purchase</a>. It's £19.27 for all 23 items.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/03/get-a-whole-lot-of-earth-defense-force-in-this-humble-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/get-a-whole-lot-of-earth-defense-force-in-this-humble-bundle/</guid>
-      <pubDate>Fri, 21 Mar 2025 18:11:39 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1968749554id26428gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>The Humble Heroines Bundle returns with some great games for Women&#39;s History Month</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Another chance to pick up some quality games! The <a href="https://www.humblebundle.com/games/humble-heroines-2025" rel="noopener nofollow" target="_blank">Humble Heroines Bundle</a> returns with a different set of great games for Women's History Month supporting Girls Who Code and Girls Make Games Scholarship Fund.</p>
-<p>Humble have done the Heroines Bundle a few times over the years, with a different selection each time. As usual I will give you easy to read compatibility for Steam Deck and Desktop Linux via Deck Verified, <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> and Native Linux listings. Each is also a Steam link to grab more info if you need before purchasing. </p>
-<p><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</strong></p>
-<p><a href="https://store.steampowered.com/app/960990/Beyond_Two_Souls/" rel="noopener nofollow" target="_blank">Beyond: Two Souls</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/870780/Control_Ultimate_Edition/" rel="noopener nofollow" target="_blank">Control Ultimate Edition</a> (ProtonDB Platinum)</p>
-<p><a href="https://store.steampowered.com/app/635390/Thief_of_Thieves/" rel="noopener nofollow" target="_blank">Kill The Crows</a> (ProtonDB Platinum)</p>
-<p><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</strong></p>
-<p><a href="https://store.steampowered.com/app/1184370/Pathfinder_Wrath_of_the_Righteous__Enhanced_Edition/" rel="noopener nofollow" target="_blank">Pathfinder: Wrath of the Righteous - Enhanced Edition</a> (ProtonDB Gold)</p>
-<p><a href="https://store.steampowered.com/app/606280/Darksiders_III/" rel="noopener nofollow" target="_blank">Darksiders III</a> (ProtonDB Platinum)</p>
-<p><a href="https://store.steampowered.com/app/2365810/Pseudoregalia/" rel="noopener nofollow" target="_blank">Pseudoregalia</a> (ProtonDB Platinum)</p>
-<p><a href="https://store.steampowered.com/app/635390/Thief_of_Thieves/" rel="noopener nofollow" target="_blank">Thief of Thieves</a> (ProtonDB Gold)</p>
-<p>Check it out and <a href="https://www.humblebundle.com/games/humble-heroines-2025" rel="noopener nofollow" target="_blank">purchase on Humble Bundle</a>. It's £9.27 for the whole lot.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/03/the-humble-heroines-bundle-returns-with-some-great-games-for-womens-history-month/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/the-humble-heroines-bundle-returns-with-some-great-games-for-womens-history-month/</guid>
-      <pubDate>Fri, 21 Mar 2025 17:57:44 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1815439222id26427gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>The Last of Us Part II Remastered devs aiming for &#34;best possible experience on handheld gaming devices&#34;</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Sony have revealed the system requirements and more info for the PC release of The Last of Us Part II Remastered, which is due to arrive on April 3rd. Looks like it might be good news for Steam Deck owners too.</p>
-<p>The first game on PC released in quite a poor state so hopefully this time around they have learned from some mistakes. Sounds like they may have as they've pulled in Nixxes Software in addition to Iron Galaxy as well. On top of that, <a href="https://www.gamingonlinux.com/2025/01/playstation-network-requirement-on-pc-will-now-be-optional-with-in-game-rewards/" rel="noopener" target="_blank">as Sony announced previously</a>, there's no PlayStation Network requirement here now but you will get bonus features if you sign-in.</p>
-<p>For Steam Deck players, they didn't mention the handheld specifically but they did note how it offers a "wide range of graphics settings and presets, to ensure the best possible experience on hardware ranging from high-end PCs to handheld gaming devices". <em>The minimum system requirements seem quite reasonable too.</em></p>
-<p>One <em>potential</em> issue here though is that they say it supports the PlayStation Overlay, which does not work on Linux platforms with Proton. It's part of why Ghost of Tsushima is rated Unsupported. However, since the sign-in is optional, hopefully that won't cause any problems.</p>
-<p>The system requirements:</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5475464221742577448gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5475464221742577448gol1.jpg"/></a></p>
-<p class="plain-list-title">The PC release arrives with support for:</p>
-<ul>
-<li>Nvidia DLSS 3 Super Resolution and Frame Generation support.</li>
-<li>AMD FSR 3.1 and AMD FSR 4 support with upscaling and frame generation.</li>
-<li>VSync and framerate cap options, including an uncapped framerate option.</li>
-<li>DirectStorage support, and more.</li>
-</ul>
-<p>Source: <a href="https://blog.playstation.com/2025/03/20/the-last-of-us-part-ii-remastered-pc-features-and-new-no-return-content-detailed/" rel="noopener nofollow" target="_blank">Sony</a></p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40737/the-last-of-us-part-ii-remastered/">The Last of Us Part II Remastered</a></strong> | Release Date: 3rd April 2024<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2531310/The_Last_of_Us_Part_II_Remastered/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/03/the-last-of-us-part-ii-remastered-devs-aiming-for-best-possible-experience-on-handheld-gaming-devices/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/the-last-of-us-part-ii-remastered-devs-aiming-for-best-possible-experience-on-handheld-gaming-devices/</guid>
-      <pubDate>Fri, 21 Mar 2025 17:29:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1431135910id26426gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Adventure</category>
-      
-    </item>
-    
-    <item>
-      <title>System Shock 2: 25th Anniversary Remaster arrives June 26</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Nightdive Studios have finally revealed that their System Shock 2: 25th Anniversary Remaster arrives June 26th with a new trailer and new details.</p>
-<p>From the press email: "System Shock® 2: 25th Anniversary Remaster brings the acclaimed PC game to consoles for the first time. Nightdive Studios has rebuilt System Shock 2 for modern platforms using its proprietary KEX Engine, offering players the definitive System Shock 2 experience with improved visuals, enhanced gameplay, improved performance, cross-play co-op multiplayer, mod support, and more. Every aspect of the game has been refined to provide the best possible experience for new fans as well as veterans. "</p>
-<p>Check out the release date trailer below:</p>
-<div class="hidden_video" data-video-id="0re7MctiGqs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e12265431a425be9f1f7d900d2d675f4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/0re7MctiGqs" target="_blank">See video</a></div></div>
-<p class="plain-list-title">System Shock 2: 25th Anniversary Remaster Key Features:</p>
-<blockquote>
-<ul>
-<li>Unknowable Horrors, In High Definition: Completely remastered visuals, extending to cutscenes and character and weapons models, with up to 4K 144 FPS support on PC.</li>
-<li>Might As Well Make Your Death Comfortable: The game includes settings for an adjustable FOV, post-processing effects, and ultra-widescreen support.</li>
-<li>Armed Forces: Choose from an O.S.A., Marine, or Navy background to experiment with different playstyles.</li>
-<li>Misery Loves Company: Drag your friends into the hell that is the Von Braun starship in cross-play co-op multiplayer.</li>
-<li>Interface This: Play from the comfort of your couch with gamepad support, then celebrate with an ice-cold medical stim when you unlock 50 new Trophies/Achievements.</li>
-<li>If You Want Something Done Right: Full mod support on PC and the ability to implement community-made missions at launch.</li>
-</ul>
-</blockquote>
-<p>Should work just fine on Linux / Steam Deck at launch, like most other Nightdive games they generally work really well in Valve's Proton.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41469/system-shock-2-25th-anniversary-remaster/">System Shock 2: 25th Anniversary Remaster</a></strong> | Release Date: 26th June 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/866570/System_Shock_2_25th_Anniversary_Remaster/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/03/system-shock-2-25th-anniversary-remaster-arrives-june-26/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/system-shock-2-25th-anniversary-remaster-arrives-june-26/</guid>
-      <pubDate>Fri, 21 Mar 2025 13:44:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2014970566id26425gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Action</category>
-      
-      <category>FPS</category>
-      
-      <category>Horror</category>
-      
-    </item>
-    
-    <item>
-      <title>Get ready to defend a walking castle in the roguelike action game Castlebound</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>From Ogre Pixel who made Lonesome Village and A Tiny Sticker Tale, their next game is an action roguelike where you're defending a walking castle. Castlebound seems like it could be a lot of fun.</p>
-<p>You fight off various waves of different foes while trying to progress through each level, all while ensuring your castle keeps on walking. Available to play solo or in local co-op too, could be another great game to play with a partner. So it's a mixture of base defence with a whole lot of fast-paced action going on.</p>
-<p>Check out the first gameplay teaser below:</p>
-<div class="hidden_video" data-video-id="W2vNQrAlxTc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f8c9208610ce0e02653640e552015f30.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/W2vNQrAlxTc" target="_blank">See video</a></div></div>
-<p>Features:</p>
-<blockquote>
-<ul>
-<li>Fast-Paced Combat: Jump, dodge, and unleash devastating attacks to fend off relentless enemy hordes!</li>
-<li>Defend the Walking Castle: Protect your fortress as it moves through dangerous lands!</li>
-<li>Solo or Co-Op Action: Take on the challenge alone or team up with a friend for an epic multiplayer adventure!</li>
-<li>Multiple Playable Heroes: Fight alongside different warriors, each with unique abilities and playstyles that offer a fresh and dynamic experience!</li>
-<li>Roguelike Progression: Each run is unique, unlock new skills, heroes, and upgrades to enhance your chances of survival!</li>
-<li>A Unique Take on the Genre: Experience an innovative blend of castle defense and roguelike combat like never before!</li>
-</ul>
-</blockquote>
-<p>Their previous games had Native Linux support and it looks like this will too.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41468/castlebound/">Castlebound</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3551820/Castlebound/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/03/get-ready-to-defend-a-walking-castle-in-the-roguelike-action-game-castlebound/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/get-ready-to-defend-a-walking-castle-in-the-roguelike-action-game-castlebound/</guid>
-      <pubDate>Fri, 21 Mar 2025 13:38:56 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1559797012id26424gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Local co-op</category>
-      
-    </item>
-    
-    <item>
-      <title>The Entertainment Software Association have launched the Accessible Games Initiative </title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The Accessible Games Initiative from the Entertainment Software Association (ESA) has been launched, with an aim to improve how developers and stores list clear information about the accessibility features available in video games.</p>
-<p>It was announced at GDC this year with Electronic Arts, Google, Microsoft, Nintendo of America, Sony Interactive Entertainment, Ubisoft, Amazon Games, Riot Games, Square Enix and Warner Bros. Games signing up to it. It will be directly managed be the ESA.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11899726521742556755gol1.jpg"/></p>
-<p>From the press release:</p>
-<blockquote>
-<p>The primary purpose of the new Accessible Games Initiative is to help provide clear information about whether a specific video game has accessibility features and, if so, what those features are. The initiative is launching with a set of 24 “tags,” all with clear criteria about what each tag means. Sample tags include: <em>clear text, large and clear subtitles, narrated menus, stick inversion and save anytime</em>, among others. Over time, participating companies will place the Accessible Games Initiative tags near their game product information – for example on digital storefronts, product pages or digital catalogues. This can help provide players and other consumers, such as parents and teachers, with clear information about which features are in any given game before they make a purchase.</p>
-<p>“Tens of millions of Americans have a disability and often face barriers to experiencing the joy and connection that comes with playing video games,” said Stanley Pierre-Louis, ESA president and CEO. “We are immensely proud to announce the Accessible Games Initiative in partnership with industry leaders. This initiative demonstrates how impactful we can be when we work together in our industry-wide pursuit of helping more people experience the power of play.”</p>
-</blockquote>
-<p>Hopefully we will see the likes of Valve expand on accessibility notices on Steam store pages, they could definitely do with noting various features on there to help people.</p>
-<p>I would really like to be able to search directly for games on Steam that have font and UI scaling, which is one of the biggest nuisances not just for Steam Deck but for Desktop too. I find too many games have tiny text. I can't imagine how bad it is for people with worse vision than me. This all sounds like a good step in the right direction.</p>
-<p>See more on <a href="https://accessiblegames.com/" rel="noopener nofollow" target="_blank">the new website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/03/the-entertainment-software-association-have-launched-the-accessible-games-initiative/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/the-entertainment-software-association-have-launched-the-accessible-games-initiative/</guid>
-      <pubDate>Fri, 21 Mar 2025 11:33:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/278980241id26423gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Silent Hill 4, F.E.A.R. and more join the GOG Preservation Program</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="http://gog.com" rel="noopener nofollow" target="_blank">GOG</a> have just announced another expansion of the the GOG Preservation Program. This is their promise to keep classics updated and working on modern systems. <em>There's now 141 games in the program.</em></p>
-<p>While their current aim is only to ensure the games keep working on modern Windows, it should also mean they're easier to run with Wine / Proton on Linux too since you'll be getting (hopefully) the best version of the game.</p>
-<p>The full list of games that have joined along with their current discount in the GOG Spring Sale:</p>
-<ul>
-<li><a href="https://www.gog.com/en/game/silent_hill_4_the_room" rel="noopener nofollow" target="_blank" title="">Silent Hill 4: The Room</a> (-35%)</li>
-<li><a href="https://www.gog.com/en/game/fear_platinum" rel="noopener nofollow" target="_blank" title="">F.E.A.R. Platinum</a> (-80%)</li>
-<li><a href="https://www.gog.com/en/game/vampire_the_masquerade_redemption" rel="noopener nofollow" target="_blank" title="">Vampire: The Masquerade - Redemption</a> (-50%)</li>
-<li><a href="https://www.gog.com/en/game/tomb_raider_underworld" rel="noopener nofollow" target="_blank" title="">Tomb Raider: Underworld</a> (-89%), <a href="https://www.gog.com/en/game/tomb_raider_anniversary" rel="noopener nofollow" target="_blank" title="">Anniversary</a> (-89%) and <a href="https://www.gog.com/en/game/tomb_raider_legend" rel="noopener nofollow" target="_blank" title="">Legend</a> (-86%)</li>
-<li><a href="https://www.gog.com/en/game/alone_in_the_dark_the_trilogy_123" rel="noopener nofollow" target="_blank" title="">Alone in the Dark: The Trilogy 1+2+3</a> (-75%)</li>
-<li><a href="https://www.gog.com/en/game/ultima_1_2_3" rel="noopener nofollow" target="_blank" title="">Ultima 1+2+3 </a>(-75%)</li>
-<li><a href="https://www.gog.com/en/game/ultima_456" rel="noopener nofollow" target="_blank" title="">Ultima 4+5+6 </a>(-75%)</li>
-<li><a href="https://www.gog.com/en/game/ultima_8_gold_edition" rel="noopener nofollow" target="_blank" title="">Ultima 8 Gold Edition</a> (-75%)</li>
-<li><a href="https://www.gog.com/en/game/wing_commander_1_2" rel="noopener nofollow" target="_blank" title="">Wing Commander 1+2 </a>(-60%)</li>
-<li><a href="https://www.gog.com/en/game/deus_ex" rel="noopener nofollow" target="_blank" title="">Deus Ex GOTY Edition</a> (-86%)</li>
-<li><a href="https://www.gog.com/en/game/jagged_alliance_2" rel="noopener nofollow" target="_blank" title="">Jagged Alliance 2 </a>(-60%)</li>
-<li><a href="https://www.gog.com/en/game/fallout_2" rel="noopener nofollow" target="_blank" title="">Fallout 2</a> (-75%)</li>
-<li><a href="https://www.gog.com/en/game/privateer_2_the_darkening" rel="noopener nofollow" target="_blank" title="">Privateer 2: The Darkening </a>(-75%)</li>
-<li><a href="https://www.gog.com/en/game/port_royale_3" rel="noopener nofollow" target="_blank" title="">Port Royale 3 Gold</a> (-70%)</li>
-<li><a href="https://www.gog.com/en/game/alien_breed_tower_assault" rel="noopener nofollow" target="_blank" title="">Alien Breed + Tower Assault</a> (-80%)</li>
-<li><a href="https://www.gog.com/en/game/cannon_fodder" rel="noopener nofollow" target="_blank" title="">Cannon Fodder</a> (-75%) and <a href="https://www.gog.com/en/game/cannon_fodder_2" rel="noopener nofollow" target="_blank" title="">Cannon Fodder 2</a> (-75%)</li>
-</ul>
-<div class="hidden_video" data-video-id="FUZPtLEu2yY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/807e4b5d9ecad53293ee968f5641c5eb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/FUZPtLEu2yY" target="_blank">See video</a></div></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/03/silent-hill-4-fear-and-more-join-the-gog-preservation-program/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/silent-hill-4-fear-and-more-join-the-gog-preservation-program/</guid>
-      <pubDate>Fri, 21 Mar 2025 10:48:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/232013315id26422gol.jpg" type="image/jpeg"/>
-      
-      <category>DRM-Free</category>
-      
-      <category>GOG</category>
-      
-      <category>Misc</category>
-      
-      <category>On Sale</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton Experimental adds fixes for GTA V Enhanced and more for Linux / Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve released another smaller update for Proton Experimental, the constantly changing compatibility layer to run Windows games on Linux platforms like the Steam Deck with SteamOS. Confused on the differences between each Proton version? Then be sure to <a href="https://www.gamingonlinux.com/guides/view/why-are-there-so-many-different-proton-versions-proton-8-proton-9-experimental-ge-proton/" rel="noopener" target="_blank">check out my guide</a>.</p>
-<p class="plain-list-title">The Proton Experimental update for March 20th has these changes noted:</p>
-<ul>
-<li>Fixed Grand Theft Auto V Enhanced crashing on launch*.</li>
-<li>Fixed The Finals crashing after a recent game update. (previously in Proton Hotfix)</li>
-<li>Fixed Warhammer: Vermintide 2 showing prerequsite installer on every launch.</li>
-<li>Added Steamworks SDK 1.62 support.</li>
-</ul>
-<p>*There's still no online play for GTA Online, since it's <a href="https://www.gamingonlinux.com/2024/09/grand-theft-auto-v-gets-battleye-anti-cheat-breaks-online-play-on-steam-deck-linux/" rel="noopener" target="_blank">intentionally blocked by Rockstar</a>. Single-player works though. See more anti-cheat game compatibility on <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our dedicated page</a>.</p>
-<p>This update will just show up in your Steam Downloads for Proton Experimental, it would have been automatically downloaded if you launched a game that Valve set to use it.</p>
-<p>Source: <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener nofollow" target="_blank">GitHub</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/03/proton-experimental-adds-fixes-for-gta-v-enhanced-and-more-for-linux-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/proton-experimental-adds-fixes-for-gta-v-enhanced-and-more-for-linux-steam-deck/</guid>
-      <pubDate>Fri, 21 Mar 2025 10:04:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1480466222id26421gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Everything to grab from Prime Gaming, March 21st edition for Steam Deck / Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Here's the up to date list of games available on Amazon Prime Gaming for March 21st, and what compatibility you can expect for Linux / SteamOS and Steam Deck. An easy way to build up your gaming collection with these games coming as part of your Amazon Prime subscription.</p>
-<p>I'll use the Steam Deck Rating from Valve (<img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Verified, <img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Playable, <img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Unsupported and <img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Not Rated), plus the <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> rating to help you decide on what to play. Compatibility may be <em>slightly</em> different since the games are from various stores. Some of the games might also have <em>no</em> ratings right now.</p>
-<p>You can install games from Epic, GOG and Amazon easily via <a href="https://www.gamingonlinux.com/2024/09/heroic-games-launcher-2152-released-fixing-amazon-gog-and-epic-games-issues/" rel="noopener" target="_blank">the Heroic Games Launcher</a> with Prime giving you a code for each game for whatever store it's on. For any games that use anti-cheat be sure to check out <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our anti-cheat compatibility page</a>.</p>
-<div class="scrolling-table">
-<table border="1" cellpadding="1" cellspacing="1" class="dataTable table-stripes-tbody">
-<thead>
-<tr>
-<td><strong>Name</strong></td>
-<td><strong>Store</strong></td>
-<td><strong>Start</strong></td>
-<td><strong>End</strong></td>
-<td><strong>Steam Deck</strong></td>
-<td><strong>ProtonDB</strong></td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>To The Rescue!</td>
-<td>Epic</td>
-<td>January 23, 2025</td>
-<td>March 26, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/946720" rel="noopener nofollow" target="_blank">No rating</a></td>
-</tr>
-<tr>
-<td>El Hijo — A Wild West Tale</td>
-<td>Epic</td>
-<td>February 20, 2025</td>
-<td>March 26, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/853050" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>Colt Canyon</td>
-<td>GOG</td>
-<td>February 20, 2025</td>
-<td>March 26, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/940710" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>Republic of Jungle</td>
-<td>Epic</td>
-<td>February 20, 2025</td>
-<td>March 26, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><a href="https://www.protondb.com/app/1413250" rel="noopener nofollow" target="_blank">Silver</a></td>
-</tr>
-<tr>
-<td>Royal Romances: Cursed Hearts Collector’s Edition</td>
-<td>Legacy Games</td>
-<td>February 20, 2025</td>
-<td>March 26, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><a href="https://www.protondb.com/app/2676970" rel="noopener nofollow" target="_blank">No rating</a></td>
-</tr>
-<tr>
-<td>Wall World</td>
-<td>Amazon</td>
-<td>March 13, 2025</td>
-<td>March 27, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/2187290" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>Beholder 3</td>
-<td>Amazon</td>
-<td>March 13, 2025</td>
-<td>March 27, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/1570070" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Deus Ex: Human Revolution - Director's Cut</td>
-<td>GOG</td>
-<td>February 27, 2025</td>
-<td>April 2, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/238010" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-<tr>
-<td>Redemption Reapers</td>
-<td>Epic</td>
-<td>February 27, 2025</td>
-<td>April 2, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/2139300" rel="noopener nofollow" target="_blank">No rating</a></td>
-</tr>
-<tr>
-<td>Yes, Your Grace</td>
-<td>GOG</td>
-<td>February 27, 2025</td>
-<td>April 2, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/1115690" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>Figment 2: Creed Valley</td>
-<td>Amazon</td>
-<td>March 20, 2025</td>
-<td>April 3, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/1085220" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>BioShock 2 Remastered</td>
-<td>GOG</td>
-<td>January 9, 2025</td>
-<td>April 9, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/409720" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-<tr>
-<td>Spirit Mancer</td>
-<td>Amazon</td>
-<td>January 9, 2025</td>
-<td>April 9, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/2172580" rel="noopener nofollow" target="_blank">No rating</a></td>
-</tr>
-<tr>
-<td>SkyDrift Infinity</td>
-<td>Epic</td>
-<td>January 9, 2025</td>
-<td>April 9, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/827330" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>Surf World Series</td>
-<td>Amazon</td>
-<td>February 6, 2025</td>
-<td>April 9, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><a href="https://www.protondb.com/app/462640" rel="noopener nofollow" target="_blank">No rating</a></td>
-</tr>
-<tr>
-<td>Sands of Aura</td>
-<td>Epic</td>
-<td>February 6, 2025</td>
-<td>April 9, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/1119840" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>Crime Boss: Rockay City</td>
-<td>Epic</td>
-<td>March 6th, 2025</td>
-<td>April 9, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/2933080" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-<tr>
-<td>Hardspace: Shipbreaker</td>
-<td>Epic</td>
-<td>February 23, 2025</td>
-<td>April 13, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/1161580" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-<tr>
-<td>Dark Sky</td>
-<td>GOG</td>
-<td>February 13, 2025</td>
-<td>April 16, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><a href="https://www.protondb.com/app/1454960" rel="noopener nofollow" target="_blank">No rating</a></td>
-</tr>
-<tr>
-<td>Mutazione</td>
-<td>GOG</td>
-<td>March 20, 2025</td>
-<td>April 23, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/1080750" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-<tr>
-<td>Legacy of Kain: Defiance</td>
-<td>GOG</td>
-<td>March 20, 2025</td>
-<td>April 23, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td><a href="https://www.protondb.com/app/224300" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>Mortal Shell</td>
-<td>Epic</td>
-<td>March 20, 2025</td>
-<td>April 23, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/1110910" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>Night Reverie</td>
-<td>Amazon</td>
-<td>February 27, 2025</td>
-<td>April 30, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/1254670" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>The Talos Principle: Gold Edition</td>
-<td>GOG</td>
-<td>February 6, 2025</td>
-<td>May 6, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/257510" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-<tr>
-<td>BioShock Infinite Complete Edition</td>
-<td>GOG</td>
-<td>February 6, 2025</td>
-<td>May 7, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/8870" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-<tr>
-<td>Naheulbeuk’s Dungeon Master</td>
-<td>Amazon</td>
-<td>March 6, 2025</td>
-<td>May 7, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/2005160" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>Saints Row: The Third Remastered</td>
-<td>GOG</td>
-<td>March 6, 2025</td>
-<td>May 7, 2025</td>
-<td><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/></td>
-<td><a href="https://www.protondb.com/app/978300" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>The Smurfs 2 — The Prisoner of the Green Stone</td>
-<td>GOG</td>
-<td>February 13, 2025</td>
-<td>May 14, 2025</td>
-<td><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/></td>
-<td><a href="https://www.protondb.com/app/2397500" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>Lysfanga: The Time Shift Warrior</td>
-<td>Epic</td>
-<td>February 13, 2025</td>
-<td>May 14, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/2161620" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-<tr>
-<td>Dark Deity: Complete Edition</td>
-<td>GOG</td>
-<td>March 13, 2025</td>
-<td>May 14, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/433550" rel="noopener nofollow" target="_blank">Silver</a></td>
-</tr>
-<tr>
-<td>Sine Mora EX</td>
-<td>Amazon</td>
-<td>February 27, 2025</td>
-<td>May 28, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/606730" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Mafia II: Definitive Edition</td>
-<td>GOG</td>
-<td>March 6, 2025</td>
-<td>June 4, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/1030830" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-<tr>
-<td>Syberia: The World Before</td>
-<td>GOG</td>
-<td>March 13, 2025</td>
-<td>June 11, 2025</td>
-<td><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/></td>
-<td><a href="https://www.protondb.com/app/1410640" rel="noopener nofollow" target="_blank">Platinum</a></td>
-</tr>
-<tr>
-<td>Endling - Extinction is Forever</td>
-<td>Amazon</td>
-<td>March 13, 2025</td>
-<td>June 11, 2025</td>
-<td><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/></td>
-<td><a href="https://www.protondb.com/app/898890" rel="noopener nofollow" target="_blank">Gold</a></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>New since last covering include: Mutazione (GOG), Figment 2: Creed Valley (Amazon), Legacy of Kain: Defiance (GOG) and Mortal Shell (Epic).</p>
-<p>There's also Wolfenstein: The Old Blood, but that's only for Xbox and the Microsoft Store which isn't usable in any way on Linux platforms.</p>
-<p>On top of that you get access to various Cloud Games via Amazon Luna.</p>
-<p>See them all and claim from <a href="https://gaming.amazon.com/home" rel="noopener nofollow" target="_blank">Prime Gaming</a>. You can also follow our <a href="https://www.gamingonlinux.com/articles/category/Prime_Gaming/" rel="noopener" target="_blank">Prime Gaming tag</a>!</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/03/everything-to-grab-from-prime-gaming-march-21st-edition-for-steam-deck-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/everything-to-grab-from-prime-gaming-march-21st-edition-for-steam-deck-linux/</guid>
-      <pubDate>Fri, 21 Mar 2025 09:54:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1396598405id26420gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Amazon</category>
-      
-      <category>Listicle</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>SteamOS 3.7.2 Preview gets a fix for the Steam Deck OLED</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>While Valve continue working towards the <a href="https://www.gamingonlinux.com/2025/01/valve-confirms-a-public-beta-of-steamos-is-coming-as-steamos-expands-beyond-steam-deck/" rel="noopener" target="_blank">public SteamOS 3 release for more devices</a>, and we've seen them note work towards that in the <a href="https://www.gamingonlinux.com/2025/03/steamos-3-7-0-preview-brings-the-beginnings-of-support-for-non-steam-deck-handhelds/" rel="noopener" target="_blank">initial SteamOS 3.7 Preview</a>, they continue rolling out more bug fixes for the Steam Deck.</p>
-<p>The latest "SteamOS 3.7.2 Preview: 2 Safe 2 Sound" release is available with this fix:</p>
-<blockquote>
-<p><strong>General</strong></p>
-<ul>
-<li>
-<p>Fixed a sound crash on session switch on Steam Deck OLED</p>
-</li>
-</ul>
-</blockquote>
-<p><em>Source: <a href="https://store.steampowered.com/news/app/1675200/view/529841887223218179" rel="noopener nofollow" target="_blank">Valve</a></em></p>
-<p>Since this is in Preview you need to manually opt into it via Settings &gt; System &gt; System Update Channel. SteamOS 3.7 is a big update but it's not reccomended if you want a properly stable experience.</p>
-<p>One annoyance I've encountered so far is that all input seems to randomly break sometimes. On both the Steam Deck itself and external controllers. A bug is <a href="https://github.com/ValveSoftware/SteamOS/issues/1838" rel="noopener nofollow" target="_blank">already logged</a> with Valve on this.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/03/steamos-3-7-2-preview-gets-a-fix-for-the-steam-deck-oled/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/03/steamos-3-7-2-preview-gets-a-fix-for-the-steam-deck-oled/</guid>
-      <pubDate>Fri, 21 Mar 2025 09:46:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steamdeckoled.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
       
     </item>
     
