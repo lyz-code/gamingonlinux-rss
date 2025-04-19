@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-04-18 07:30:23.711584</pubDate>
+    <pubDate>2025-04-19 07:26:56.144969</pubDate>
 
     
     <image>
@@ -20,16 +20,207 @@
     
     
     <item>
+      <title>Steel Swarm: APOCALYPSE is a tank-battling destructive MOBA that will have Steam Deck support </title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Steel Swarm: APOCALYPSE is an upcoming MOBA from Clay Token Game Studio, Inc. that might actually manage to pull in some players where others have failed, thanks to the vehicle combat and grand scale compared with other games.</p>
+<p>Here it's 5 versus 5 but with two major differences. You control a special tank in twin-stick styled controls instead of a humanoid character, and you'll be battling through multiple lanes that have over 100 "minions" to blast through. They said it "combines traditional lane-based mechanics with a tactical warzone feel". Oh, and the map is destructible too. Buildings and walls can be destroyed to forge a new path between lanes, <em>I think this sounds awesome.</em></p>
+<p>They've <a href="https://steamcommunity.com/games/3199180/announcements/detail/498319044783374736" rel="noopener nofollow" target="_blank">announced</a> their full support for the Steam Deck noting that they're "currently in the process of intense testing and optimization to ensure the game runs smoothly on handheld devices, both technically and in terms of gameplay". They're working on getting in Steam Deck Verified, with their demo build "currently running at around 60 FPS in internal tests" which is very promising.</p>
+<p>On <a href="https://www.reddit.com/r/linux_gaming/comments/1k24suf/were_planning_a_native_linux_release_for_our/" rel="noopener nofollow" target="_blank">Reddit</a>, they're also asking if people want a Native Linux version of it, otherwise it will run with Proton.</p>
+<div class="hidden_video" data-video-id="kx-u_InH0SY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/65d0ead0be6490c85135f6e9590895a5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/kx-u_InH0SY" target="_blank">See video</a></div></div>
+<p>The trailer sold me pretty quickly. I just hope their monetisation of it is fair as it seems it will be free to play. </p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41726/steel-swarm-apocalypse/">Steel Swarm: APOCALYPSE</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3199180/Steel_Swarm_APOCALYPSE/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/steel-swarm-apocalypse-is-a-tank-battling-destructive-moba-that-will-have-steam-deck-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/steel-swarm-apocalypse-is-a-tank-battling-destructive-moba-that-will-have-steam-deck-support/</guid>
+      <pubDate>Fri, 18 Apr 2025 15:43:24 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/533376643id26601gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Demo</category>
+      
+      <category>Free Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Ubuntu 25.04 upgrades halted due to Kubuntu users getting a broken desktop</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>This is a bit of a major woopsie. The upgrade path for the latest Ubuntu 25.04 release has been pulled offline, as it has resulted in Kubuntu users seeing a broken desktop.</p>
+<p>What you end up with is a weird looking login screen, and nothing seems to work. </p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/19134569061744989712gol1.jpg"/><br/>
+<em>Picture credit: <a href="https://bsky.app/profile/dimspace.xyz/post/3ln3mizqzrc2q" rel="noopener nofollow" target="_blank">@dimspace.xyz</a> on Bluesky</em></p>
+<p>I actually <a href="https://bsky.app/profile/liamd.gamingonlinux.com/post/3llgrewoaqk26" rel="noopener nofollow" target="_blank">encountered</a> this bug during the Beta, thinking I had done something wrong or not paid enough attention. Turns out, it was a real genuine <em>major</em> bug. I probably should have reported it, but I'm always doing multiple things at the same time and quite overworked right now. So, uh, feel free to blame me I guess? Developers can't fix stuff they don't know about — woops.</p>
+<p>Writing on Reddit in replies to posts about the problem, Simon Quigley the Lubuntu Release Manager, <a href="https://www.reddit.com/r/Kubuntu/comments/1k1ncaf/comment/mnoo753/?context=3" rel="noopener nofollow" target="_blank">wrote</a>:</p>
+<blockquote>
+<p>Here's what's going on with this, because yeah, there's something going on.</p>
+<p>It's my fault personally, sorry folks.</p>
+<p>So, when you go to upgrade from Kubuntu 24.10 to 25.04, the actual installer is grabbed as a tarball from the archive.</p>
+<p>In other words, Kubuntu 25.04's upgrader is used to upgrade to 25.04, from 24.10.</p>
+<p>Well, I ported it to PyQt6 this cycle. A few weeks before release, I was pinged with someone notifying me that Kubuntu, Ubuntu Studio, and Lubuntu didn't actually come with pyqt6 installed.</p>
+<p>Literally, installing pyqt6 should fix your issue, for now. If you run into actual issues with the Kubuntu install after upgrade, I'm much more concerned.</p>
+<p>We have a fix, in the queue. Waiting. Sitting. We had the release today. I'm surprised people are able to upgrade already, and if someone already enabled the upgrades without checking with me... I'm going to be unhappy, to say the least.</p>
+<p>Some cross training is happening, we're working it out. For now, this was me, sorry about that folks.</p>
+</blockquote>
+<p>And then in a follow-up <a href="https://www.reddit.com/r/Kubuntu/comments/1k1ncaf/comment/mnq4pox/" rel="noopener nofollow" target="_blank">post</a>:</p>
+<blockquote>
+<p>Hi folks, just a quick update on the latest.</p>
+<p>Yes, 25.04 upgrades are broken beyond just adding pyqt6 as a dependency. While I had something to do with it, there's a much greater issue at play that we don't know about yet.</p>
+<p>From everything I can possibly read, enabling upgrades this early was a genuine mistake not found in code review. I have done everything in my power to slam the brakes on the upgrades, not just for Kubuntu, but for everyone. All ten flavors, plus Desktop, and Server.</p>
+<p>Yes, I personally pushed the code change disabling those upgrades. It required one more manual step, and now it's deployed.</p>
+<p>As of about 20 minutes ago, I've passed off to the official Ubuntu Release Team who will now drive this to completion. The change I made was to mark Plucky as unsupported temporarily, which will halt the upgrades, with a POSSIBLE side effect of an end of life popup, on your Plucky machine.</p>
+<p>Ignore the popup, it was just the quickest solution to throw a wrench in the gears.</p>
+<p>I'm genuinely sorry about this. On behalf of Ubuntu, on behalf of Kubuntu, and on behalf of my own flavor, Lubuntu. This is unacceptable, and I will be persistent in making sure our processes become better.</p>
+<p>I'm going to try to go to sleep now. This thread is what alerted me that there's a wider issue, specifically. So, thank you all.</p>
+<p>We'll be better. If you need help picking up the pieces, yes, we have support channels for basically everything. The best thing is to just make sure the kubuntu-desktop package is already installed.</p>
+<p>I hope you can also understand my position. I have never worked for Canonical, I work for Altispeed Technologies. Please go support the Ask Noah Show, Noah is the one who made sure I had enough coffee to survive this thing.</p>
+</blockquote>
+<p>Accidents and bugs happen, hopefully some lessons will be learned from all sides on this. Just goes to show, Beta releases are vital to pick up bugs…if they're reported.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/ubuntu-25-04-upgrades-halted-due-to-kubuntu-users-getting-a-broken-desktop/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/ubuntu-25-04-upgrades-halted-due-to-kubuntu-users-getting-a-broken-desktop/</guid>
+      <pubDate>Fri, 18 Apr 2025 15:26:31 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1904058437id26600gol.jpg" type="image/jpeg"/>
+      
+      <category>Distro News</category>
+      
+      <category>Kubuntu</category>
+      
+      <category>Open Source</category>
+      
+      <category>Ubuntu</category>
+      
+    </item>
+    
+    <item>
+      <title>Peaceful nature simulation city-builder Of life and Land launches May 16</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Of life and Land has been in Early Access for just over a year now, and it's about to cross over the finishing line as Metaroot and Kerzoven have announced the 1.0 launch for May 16th.</p>
+<p>More about it: Of Life and Land is a charming settlement-building strategy game paired with a rich nature simulation experience. Every animal and plant strives to find its place in nature while you lead your villagers to their future. Expand to different regions and trade with local factions to gain needed resources.</p>
+<p>The 1.0 Release introduces a brand-new historical scenario about the Counts of Lenzburg, set in the Central Plateau of medieval Switzerland. Players can build the Lenzburg Castle, discover ancient myths, and take part in a time of political conflict between church and empire. New features also include castle construction, single-city scenarios, advanced trade mechanics, and decorative elements like benches, signposts, and flower boxes to bring settlements to life.</p>
+<div class="hidden_video" data-video-id="md-g0UNTBV4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8675d6748f0e10d98ae4c673b24dfc5b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/md-g0UNTBV4" target="_blank">See video</a></div></div>
+<p>There's been a lot of updates to it since the initial Early Access release including dirt and humidity simulation, more animals, a simulated education and retirement system, new buildings and much more.</p>
+<p>It has Native Linux support and Valve rated it Steam Deck Playable.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/29084/of-life-and-land/">Of Life and Land</a></strong> | Release Date: 2nd April 2024<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1733110/Of_Life_and_Land/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/peaceful-nature-simulation-city-builder-of-life-and-land-launches-may-16/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/peaceful-nature-simulation-city-builder-of-life-and-land-launches-may-16/</guid>
+      <pubDate>Fri, 18 Apr 2025 15:14:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1168226067id26599gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Casual</category>
+      
+      <category>City Builder</category>
+      
+    </item>
+    
+    <item>
+      <title>Witch Beam the creators of Unpacking have released the musical puzzler Tempopo</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Tempopo is the latest release from Australian developer Witch Beam, the creators of Unpacking and Assault Android Cactus. It's out now with Native Linux support!</p>
+<p>More about it: "Displaced by a great storm, Hana’s magical musical flowers have found themselves scattered across a series of puzzling sky islands - and only you can help bring them safely home! Your helpers are the Tempopo: incredibly cute creatures who are also extremely chaotic and uncoordinated by nature. Luckily they take direction really well, so with a flick of your conductor's baton, you’ll be able to get them on beat in no time!"</p>
+<div class="hidden_video" data-video-id="xPftQ5Yozks"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/058590f60cda9ffff45dafbe8641241e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/xPftQ5Yozks" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Highlights:</p>
+<blockquote>
+<ul>
+<li><strong>Plot Your Path: </strong>Carefully plot the Tempopo’s path through each puzzle, helping them work together to use items and interact with the island map to safely reach the island's end. </li>
+<li><strong>A Puzzler’s Paradise:</strong> Each puzzle is an exercise in trial and error, as you experiment with different placements and routes. But don’t worry, Hana is always on hand to give a helpful hint to anyone who needs it! Bonus challenge levels add a <em><strong>huge </strong></em>chunk of extra puzzling outside the main levels for those seeking a bit more difficulty too. </li>
+<li><strong>Plot Your Garden:</strong> As you puzzle across all four seasons rescuing Hana’s magical flowers, you’ll replant them back in her musical garden. </li>
+<li><strong>Nature’s Orchestra:</strong> Each flower plays a note based on where they’re placed, and you can even stack multiple flowers into the same spot to create chords. As you progress, you’ll collect a whole variety of different sounds to add to the melody - horns, harps and more! Get lost in the rhythm of making new tunes, or trying to recreate your favourites! </li>
+</ul>
+</blockquote>
+<p>A word from the developer: "Creating Tempopo led to the journey of a lifetime," said Sanatana Mishra, Director of Tempopo and co-founder of Witch Beam. "We've seen everything from a young woman in Melbourne being inspired to create her own games, to an older man in Kyoto giving himself a silent yet forceful fist pump as he rescued a particularly difficult flower. I hope the finished game can surprise and delight those players in ways they couldn't imagine."</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41255/tempopo/">Tempopo</a></strong> | Release Date: 17th April 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/318840/Tempopo/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/witch-beam-the-creators-of-unpacking-have-released-the-musical-puzzler-tempopo/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/witch-beam-the-creators-of-unpacking-have-released-the-musical-puzzler-tempopo/</guid>
+      <pubDate>Fri, 18 Apr 2025 15:07:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2116443375id26598gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Music</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>DOOM (2016) gets a surprise release on GOG with a big discount</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>DRM freedom from hell. <a href="https://www.gog.com/en/game/doom_2016" rel="noopener nofollow" target="_blank">DOOM (2016)</a> has just released on GOG and there's a nice big discount to go along with the release. However, it's single-player only though.</p>
+<p>It's 80% off until May 2nd so this is a great chance to get it. You can play GOG games easily on Linux / Steam Deck with the likes of Lutris and Heroic Games Launcher too.</p>
+<div class="hidden_video" data-video-id="uyT4G2oYtZQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bc37fb0b66e762c795c344a7e792dc3c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/uyT4G2oYtZQ" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Not that it needs any introduction, but taken from the GOG page:</p>
+<blockquote>
+<p>Developed by id software, the studio that pioneered the first-person shooter genre and created multiplayer Deathmatch, DOOM returns as a brutally fun and challenging modern-day shooter experience. Relentless demons, impossibly destructive guns, and fast, fluid movement provide the foundation for intense, first-person combat.</p>
+<p><strong>Story</strong></p>
+<p>You’ve come here for a reason. The Union Aerospace Corporation’s massive research facility on Mars is overwhelmed by fierce and powerful demons, and only one person stands between their world and ours. As the lone DOOM Marine, you’ve been activated to do one thing – kill them all.<br/>
+<br/>
+<strong>A Relentless Campaign</strong></p>
+<p>There is no taking cover or stopping to regenerate health as you beat back Hell’s raging demon hordes. Combine your arsenal of futuristic and iconic guns, upgrades, movement and an advanced melee system to knock-down, slash, stomp, crush, and blow apart demons in creative and violent ways.</p>
+</blockquote>
+<p>It really is nice to see some bigger releases come to GOG. Hopefully more will come later like DOOM Eternal too.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/24022/doom-2016/">Doom (2016)</a></strong> | Release Date: 13th May 2016<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/doom_2016">GOG</a></li><li><a href="https://store.steampowered.com/app/379720/DOOM/">Steam</a></li></ul></p></div></p>
+<p>GOG do also have some sales going right now too:</p>
+<ul>
+<li><a href="https://www.gog.com/promo/20250415_action_games_promo" rel="noopener nofollow" target="_blank">Action Games Promo</a></li>
+<li><a href="https://www.gog.com/promo/20250416_make_your_choice_promo" rel="noopener nofollow" target="_blank">Make Your Choice Promo</a></li>
+<li><a href="https://www.gog.com/promo/20250415_dark_settings_promo" rel="noopener nofollow" target="_blank">Dark Settings Promo</a></li>
+<li><a href="https://www.gog.com/promo/20250418_strategy_promo" rel="noopener nofollow" target="_blank">Strategy Promo</a></li>
+<li><a href="https://www.gog.com/promo/20250414_metro_franchise_sale" rel="noopener nofollow" target="_blank">Metro Franchise Sale</a></li>
+<li><a href="https://www.gog.com/promo/20250414_anshar_publisher_sale" rel="noopener nofollow" target="_blank">Anshar Publishing Publisher Sale</a></li>
+<li><a href="https://www.gog.com/promo/20250415_devolver_publisher_sale" rel="noopener nofollow" target="_blank">Devolver Digital Publisher Sale</a></li>
+<li><a href="https://www.gog.com/promo/20250418_gamirror_publisher_sale" rel="noopener nofollow" target="_blank">Gamirror Games Publisher Sale</a></li>
+<li><a href="https://www.gog.com/games?publishers=cd-projekt-red" rel="noopener nofollow" target="_blank">CD PROJEKT RED games</a></li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/04/doom-2016-gets-a-surprise-release-on-gog-with-a-big-discount/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/doom-2016-gets-a-surprise-release-on-gog-with-a-big-discount/</guid>
+      <pubDate>Fri, 18 Apr 2025 13:54:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2109621549id26597gol.jpg" type="image/jpeg"/>
+      
+      <category>Action</category>
+      
+      <category>DRM-Free</category>
+      
+      <category>FPS</category>
+      
+      <category>GOG</category>
+      
+    </item>
+    
+    <item>
       <title>Ubuntu 25.04 &#39;Plucky Puffin&#39; is out now</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
+<p><strong>Update 18/04/25 16:28 BST</strong>: <a href="https://www.gamingonlinux.com/2025/04/ubuntu-25-04-upgrades-halted-due-to-kubuntu-users-getting-a-broken-desktop/" rel="noopener" target="_blank">upgrades have been halted due to a major bug</a>.</p>
+<hr/>
 <p>Canonical has today released Ubuntu 25.04, codenamed "Plucky Puffin", their latest feature upgrade release to one of the most popular Linux distributions. This also includes updates for all the other editions like Kubuntu. It will be supported for 9 months until January 2026 as this is not a long term support release.</p>
 <p>This release has been dedicated to Steve Langasek, who sadly passed away January 1st. As said in the release announcement:</p>
 <blockquote>
 <p>Subscribers to the <em>ubuntu-{devel-}announce</em> mailing list and long term participants in the Ubuntu community will have come across Steve Langasek’s work. Steve, known in the community as vorlon, was a long-term member of the Release team (along with being a member of Archive Admin, Techboard, SRU team, and so on) and a colleague to many of us at Canonical. As a member of the Release team, Steve was responsible for devising many of the processes, policies, and tools which we use today, and teaching his fellow members the ropes. <a href="https://discourse.ubuntu.com/t/remembering-and-thanking-steve-langasek/52665" rel="noopener nofollow" target="_blank">Steve passed away on 1st January 2025</a> after being unwell for quite some time. The Ubuntu Release Team dedicates 25.04 “Plucky Puffin” to our colleague and friend, Steve Langasek. He is missed and will live in our hearts forever. Thank you for everything, Steve.</p>
 </blockquote>
 <p>I've been running Kubuntu 25.04, since I prefer KDE Plasma, since the Beta release and it has been really smooth. Overall very happy with it as my main choice for my desktop workstation and gaming PC.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8906297911744913818gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8906297911744913818gol1.jpg"/></a><br/>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8906297911744913818gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8906297911744913818gol1.jpg"/></a><br/>
 <em>Pictured - Ubuntu 25.04</em></p>
 <p>There's a lot of upgrades in this one including Linux kernel 6.14, which includes the new NTSYNC driver for Wine / Proton. Although <a href="https://www.gamingonlinux.com/2025/03/linux-kernel-6-14-out-late-due-to-pure-incompetence-dont-get-too-excited-about-linux-gaming-boosts/" rel="noopener" target="_blank">don't get too excited</a> about it increasing Windows game performance. There's also the new ARM64 Desktop Image, <a href="https://www.gamingonlinux.com/2025/03/gnome-48-released-with-notification-stacking-performance-improvements-and-initial-hdr-support/" rel="noopener" target="_blank">GNOME 48</a> and lots of assorted software upgrades. For gamers on NVIDIA GPU laptops, you'll be hopefully pleased with NVIDIA Dynamic Boost being enabled by default which should give a bit more performance. Plus there's also support for newer Intel GPUs along with Mesa 25.0.</p>
 <p>Installation and upgrades should be easier too. The installer added the option to replace an existing Ubuntu install, and there's better support for dual booting with Windows with BitLocker.</p>
@@ -5112,228 +5303,6 @@ Travel further into the floating archipelago, unlock bigger islands and build la
       <category>Humble Store</category>
       
       <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>DELTARUNE chapters 1-4 release on Steam in June</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>UNDERTALE fans are pretty excited about this one! DELTARUNE from tobyfox is finally coming to Steam with chapters 1, 2, 3 and 4 on June 5th. The first 2 chapters have been available free for a while now and we're finally getting 2 more chapters with the Steam release.</p>
-<p>There's also a new trailer with the announcement of it coming to the Nintendo Switch 2:</p>
-<div class="hidden_video" data-video-id="yDzgiGdekas"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/68a5be8e3468372eff6d263543189856.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/yDzgiGdekas" target="_blank">See video</a></div></div>
-<p>There will be one difference between the Switch 2 and PC release, as the developer explained:</p>
-<blockquote>
-<p>As an effort to make the most of being a LAUNCH TITLE for the Nintendo Switch 2, I really wanted to try to do something special...</p>
-<p>So, we made a very small SPECIAL ROOM which takes advantage of using MOUSE CONTROLS ON TWO CONTROLLERS AT ONCE, only possible on the Nintendo Switch 2!! You can see it in the trailer!!</p>
-<p>But, don't worry! Even if you can't get your hands on a Nintendo Switch 2 right away, the other versions of the game also have THE SPECIAL ROOM, with a completely different control scheme! (To clarify, all non-Nintendo Switch 2 versions have the exact same content as each other.)</p>
-<p>There is no meaningful difference in content amount, dialogue, setting, music etc between any version, so you will have a full package of fun no matter which you get! No one gets left out!</p>
-<p>And -- just to clarify for the cats in the back -- no matter what version you buy, EVERYONE gets PLUEY -- for FREE!!!</p>
-</blockquote>
-<p>For those who haven't played UNDERTALE, fear not, you don't need to have.</p>
-<p>At release it will cost $24.99. You only have to buy it once, with additional chapters planned as free updates as confirmed in the recent <a href="https://toby.fangamer.com/newsletters/release-date/" rel="noopener nofollow" target="_blank">newsletter</a>. Chapter 4 is firmly not the end for DELTARUNE, as there's still chapter 5 to come later . There will also be a soundtrack for $14.99 that will have over 150 tracks.</p>
-<p>You can also follow the developer on <a href="https://bsky.app/profile/tobyfox.undertale.com" rel="noopener nofollow" target="_blank">Bluesky</a>.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41566/deltarune/">DELTARUNE</a></strong> | Release Date: 5th June 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://tobyfox.itch.io/deltarune">itch.io</a></li><li><a href="https://store.steampowered.com/app/1671210/DELTARUNE/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/04/deltarune-chapters-1-4-release-on-steam-in-june/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/deltarune-chapters-1-4-release-on-steam-in-june/</guid>
-      <pubDate>Wed, 02 Apr 2025 18:15:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/719628919id26501gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Pixel Graphics</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Western point and click adventure Rosewater is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>One classic point and click adventure game fans have been excited about has arrive. Rosewater, a Western adventure in the alternate 19th century world of Lamplight City from Grundislav Games and Application Systems Heidelberg is out now with Native Linux support.</p>
-<p>It's also rated Steam Deck Playable.</p>
-<p>More about it: "It's been several years since Harley Leger left New Bretagne and headed west, hoping to leave her rough and tumble past behind and make her way as a freelance writer. When she arrives in the sleepy border town of Rosewater, a seemingly trivial assignment for the local paper leads to a hunt for a missing man's fortune—and the story of the century.</p>
-<p>Harley and her ragtag posse embark on a harrowing journey across Western Vespuccia, facing bandits, rebels, ruthless oil barons, and many more obstacles on their quest for fame and riches."</p>
-<div class="hidden_video" data-video-id="vt-jq838Zn4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b3f6d890cbfc7b85d20757fbf27b5ef7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/vt-jq838Zn4" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Features:</p>
-<ul>
-<li>A thrilling treasure hunt with 5 travel companions and plenty of dramatic twists and turns. Your interactions and relationships affect the story.</li>
-<li>Inventory is back, but logical, streamlined, and easy to use—no banging things together to see what sticks. Many situations have multiple solutions based on play style.</li>
-<li>Randomized encounter storylets on your journey, with different situations and outcomes that depend on your previous choices and available resources.</li>
-<li>Fully rotoscoped animations, including cinematic closeups.</li>
-<li>High resolution 1280x720 graphics (yes, that's 720p!)</li>
-<li>Full music score by Lamplight City composer Mark Benis, featuring live instruments.</li>
-<li>Meet over 60 characters, voiced by a star-studded cast including Cissy Jones (Firewatch, Call of the Sea), Dave Fennoy (The Walking Dead), Roger Clark (Red Dead Redemption 2) and many more!</li>
-</ul>
-<p class="plain-list-title">A little more about the developer:</p>
-<blockquote>
-<p>Francisco Gonzalez has been making adventure games using Adventure Game Studio since 2001. After concluding his eight-part series of freeware adventures about paranormal investigator Ben Jordan in 2012, he moved from his native Miami to Brooklyn and transitioned to making games professionally as Grundislav Games. His first commercial title, A Golden Wake, a historical drama about land development in 1920s Florida, launched in 2014, followed by post-apocalyptic plague thriller Shardlight in 2016. In 2018, he released the detective mystery Lamplight City, published by Application Systems Heidelberg.<br/>
-<br/>
-Raised on classic adventures from the likes of Sierra, LucasArts, and Revolution, Francisco is a champion of the modern indie adventure game scene and believes that the genre is the perfect medium for telling all kinds of stories.</p>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/17733/rosewater/">Rosewater</a></strong> | Release Date: 27th March 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/rosewater">GOG</a></li><li><a href="https://store.steampowered.com/app/1226670/Rosewater/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/04/western-point-and-click-adventure-rosewater-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/western-point-and-click-adventure-rosewater-is-out-now/</guid>
-      <pubDate>Wed, 02 Apr 2025 16:52:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/415355682id26500gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>GOG</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Bullet hell dungeon crawler Enter the Gungeon 2 announced with a new 3D style</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Dodge Roll and Devolver Digital announced Enter the Gungeon 2 today, teased during the Nintendo Switch 2 event and it's coming to Steam as well in 2026.</p>
-<p>The first game is truly a blast to play through, so I'm definitely keen to see more on it. This new 3D style looks like it will make it seriously intense too, at least from the short teaser that was shown off.</p>
-<div class="hidden_video" data-video-id="Gg15MFGINWY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e63f5f18aaf312f715100ca59d06c6c2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Gg15MFGINWY" target="_blank">See video</a></div></div>
-<p>From the press release:</p>
-<blockquote>
-<p>Enter the Gungeon 2 is a reloaded, high-caliber sequel to the iconic bullet hell dungeon crawler, reinforced with a new 3D art style, new weapons and enemies, and expanded gameplay.</p>
-<p>Battle through areas familiar and unknown as the ruined Gungeon reveals its secrets to those brave enough to enter. Discover, unlock, and master fantastic weaponry within its procedurally generated halls and destroy the legions of Gundead pouring forth from within. Charge into dynamic battles against devilishly cute enemies, previously confined to the 2D plane, and delight as they are knocked around, tossed into the air, and thrown deep into pits.</p>
-<p>Choose from an expanding roster of Gungeoneers full of both familiar and new faces as you rescue and extract marooned heroes from the depths of the Gungeon. Become mighty through unexpected combinations of powerful passive items, explosive active items, blessings, curses, and your own mastery over an impressive armory of weapons.</p>
-<p>And seek to understand why you find yourself under assault in the Gungeon once again...</p>
-</blockquote>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41565/enter-the-gungeon-2/">Enter the Gungeon 2</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2339840/Enter_the_Gungeon_2/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/04/bullet-hell-dungeon-crawler-enter-the-gungeon-2-announced-with-a-new-3d-style/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/bullet-hell-dungeon-crawler-enter-the-gungeon-2-announced-with-a-new-3d-style/</guid>
-      <pubDate>Wed, 02 Apr 2025 16:45:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/682559483id26499gol.jpg" type="image/jpeg"/>
-      
-      <category>Bullet Hell</category>
-      
-      <category>Dungeon Crawler</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Hollow Knight: Silksong lives and it&#39;s releasing in 2025</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>This is not a drill. Hollow Knight: Silksong is alive, thankfully, and it's even going to be releasing this year. On Nintendo Switch 2 that is at least.</p>
-<p>Don't go expecting some big reveal here though, because this isn't it. During the Nintendo Switch 2 event today we were graced with just a few seconds of footage, which also clearly showed a 2025 release date. We're still waiting to see about an official announcement from Team Cherry directly on a release date for any other platform. At least for Hollow Knight fans though, the wait will soon be over in some form.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5198051341743611548gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5198051341743611548gol1.jpg"/></a><br/>
-<em>Pictured - Hollow Knight: Silksong. Credit: Nintendo / Team Cherry</em></p>
-<p>I'll be keeping a close eye out for any more news on it. Given the tiny slice we saw today though, it's likely Team Cherry aren't yet ready to divulge any more.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41564/hollow-knight-silksong/">Hollow Knight: Silksong</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/hollow_knight_silksong">GOG</a></li><li><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/04/hollow-knight-silksong-lives-and-its-releasing-in-2025/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/hollow-knight-silksong-lives-and-its-releasing-in-2025/</guid>
-      <pubDate>Wed, 02 Apr 2025 16:35:10 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/553385394id26498gol.jpg" type="image/jpeg"/>
-      
-      <category>GOG</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Metroidvania</category>
-      
-      <category>Platformer</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Desktop and Steam Deck stable update released with various fixes, plus tweaks to the download UI</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve released and then rereleased a fresh stable update to the Steam Client for Desktop and Steam Deck with a whole bunch of fixes and improvements.</p>
-<p>The initial launch came with some problems on both Desktop and Steam Deck. The rereleased update fixes a "display issue on game details page for games with queued updates" across both. But for Steam Deck, there were bigger problems with these two issues quickly getting solved:</p>
-<blockquote>
-<ul>
-<li>Fixed TDP and GPU clock performance settings not working.</li>
-<li>Fixed crash loop at startup when Wifi Debug Mode setting is enabled.</li>
-</ul>
-</blockquote>
-<p>As for the rest of the stable update this was specific for the Steam Deck:</p>
-<blockquote>
-<ul>
-<li>'Enable Steam Play for all other titles' is always enabled on SteamOS, updated the UI accordingly to stop showing a non functional toggle.</li>
-</ul>
-</blockquote>
-<p>And all these apply across all supported systems:</p>
-<blockquote>
-<p></p>
-<p><strong>General</strong></p>
-<ul>
-<li>Fixed brief layout shift of elements (one or two frames) when navigating back to the library section.</li>
-<li>Fixed Steam Client window focusing multiple times on startup.</li>
-<li>Fixed Update News window being covered by Steam Client window at startup.</li>
-<li>Fixed notifications displaying in wrong position in some games.</li>
-<li>Fixed some instances where windows fail to render after display events.</li>
-<li>Fixed game content switching from private beta to default branch in some cases</li>
-<li>Fixed child accounts in a family getting additional playtime after switching to offline mode.</li>
-<li>Fixed in-game friends sometimes not showing up in the "Friends Who Play" section of the game details page.</li>
-<li>Improved accuracy of download progress and time estimates. Accuracy will improve over the course of more downloads.</li>
-<li>Improved consistency and clarity of download/install/update UI:
-	<ul>
-<li>Byte counts, when displayed, refer to the number of bytes to download.</li>
-<li>Progress bars and percentages, when displayed, refer to the total progress of the install/update, which includes work before, after, and during the download. The exception is the top (blue) progress bar on the downloads page, which shows the bytes downloaded.</li>
-<li>Time remaining estimates refer to the total progress of the install/update. These estimates will be very rough at first but will become more accurate as Steam learns more about the performance of the user's network and disks.</li>
-</ul>
-</li>
-</ul>
-<strong>Big Picture</strong>
-<ul>
-<li>Fixed issue that could allow the keyboard to cover the target text area when summoned from a game.</li>
-</ul>
-<strong>macOS</strong>
-<ul>
-<li>Added Steam Overlay support for games using HDR rendering.</li>
-</ul>
-<strong>Linux</strong>
-<ul>
-<li>Improved the download speed of Steam client updates.</li>
-<li>No longer applying compatibility tool filtering to shortcuts.</li>
-<li>Fixed a rare issue where non-steam Protons could get assigned an incorrect compatibility tool.</li>
-<li>Fixed initial positioning of dropdown menus.</li>
-</ul>
-<strong>Remote Play</strong>
-<ul>
-<li>Fixed controller input when streaming S.T.A.L.K.E.R. 2</li>
-<li>Fixed sending a Remote Play Together invite from a VR game streaming to a headset</li>
-</ul>
-<strong>Steam Input</strong>
-<ul>
-<li>Fixed crash when using DualSense controllers, related to gyro timestamp calculation.</li>
-<li>Fixed adaptive trigger effects with the DualSense Edge controller.</li>
-</ul>
-</blockquote>
-<p>Sources: <a href="https://store.steampowered.com/news/app/593110/view/500568942379533966" rel="noopener nofollow" target="_blank">Desktop Changelog</a> | <a href="https://store.steampowered.com/news/app/1675200/view/529842339955345099" rel="noopener nofollow" target="_blank">Steam Deck Changelog</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/04/steam-desktop-and-steam-deck-stable-update-released-with-various-fixes-plus-tweaks-to-the-download-ui/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/04/steam-desktop-and-steam-deck-stable-update-released-with-various-fixes-plus-tweaks-to-the-download-ui/</guid>
-      <pubDate>Wed, 02 Apr 2025 16:21:34 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steamos-2025.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Apps</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
       
     </item>
     
