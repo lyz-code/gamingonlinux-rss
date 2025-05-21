@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-05-20 07:31:54.054435</pubDate>
+    <pubDate>2025-05-21 07:30:47.346992</pubDate>
 
     
     <image>
@@ -18,6 +18,519 @@
     </image>
 
     
+    
+    <item>
+      <title>Latest Steam update fixes Steam Deck controller issues, plus numerous bugfixes for Desktop Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve have released the latest stable Steam Client update for all platforms bringing numerous important bug fixes to Steam Deck and Desktop Steam.</p>
+<p>Initially, Valve did a <em>woops</em> in the Steam Deck notes where they said the new Battery Charge Limit was added <a href="http://www.gamingonlinux.com/2025/05/steam-deck-gets-a-battery-charge-limit-control-in-the-latest-beta/" rel="noopener" target="_blank">from the previous Beta</a>. They went back and removed that part from the changelog, <a href="https://steamcommunity.com/app/1675200/eventcomments/598527273204724229?snr=2_groupannouncements_detail_#c598527273204726782" rel="noopener nofollow" target="_blank">noting</a> in the comments it requires SteamOS 3.7 which is still in Beta. It still has some needed fixes though, like the controller sometimes just not working after a restart and further work towards the rollout of SteamOS for more devices.</p>
+<p class="plain-list-title">Changelog for <u>Steam Deck</u>:</p>
+<blockquote><strong>General</strong>
+<ul>
+<li>Moved display dim and suspend timeout settings to Settings-&gt;Power.</li>
+<li>Moved 'Show Battery Percentage' setting to Settings-&gt;Power.</li>
+<li>Clicking on the battery header icon now navigates to Settings-&gt;Power.</li>
+<li>Proton Voice Files speech synthesis data will now be automatically installed based on Steam Deck compatibility testing results.</li>
+<li>Reduced steamwebhelper memory usage when launching games.</li>
+<li>Fixed pasting from on-screen keyboard.</li>
+<li>Fixed controller not working intermittently after Steam restart.</li>
+<li>Fixed games failing to connect to the Steam process when the Steam process id contains certain values.</li>
+<li>Fixed battery percentage not showing in the header when the battery is full.</li>
+<li>Fixed SteamOS compatible devices showing Steam Deck Verified installation warnings instead of the SteamOS Compatible version.</li>
+<li>Fixed transitions snapping backwards in the Welcome Wizard.</li>
+</ul>
+<strong>Steam Input</strong>
+<ul>
+<li>Speculative Fix for rare DualSense Edge gyroscope related bug.</li>
+</ul>
+<strong>Desktop Mode</strong>
+<ul>
+<li>Reduced steamwebhelper memory usage when switching to/from Big Picture Mode.</li>
+<li>Fixed rare steamwebhelper crash when switching to/from Big Picture Mode.</li>
+</ul>
+</blockquote>
+<p class="plain-list-title">And there's plenty of changes for <u>Desktop Steam</u> as well, including:</p>
+<blockquote><strong>General</strong>
+<ul>
+<li>Improved controller hotplug detection for some third party devices.</li>
+<li>Reduced steamwebhelper memory usage when launching games or switching to/from Big Picture Mode.</li>
+<li>Fixed games failing to connect to the Steam process when the Steam process id contains certain values.</li>
+<li>Fixed game preloads showing 0bps disk activity.</li>
+<li>Fixed rare steamwebhelper crash when switching to/from Big Picture Mode.</li>
+</ul>
+<strong>Steam Overlay</strong>
+<ul>
+<li>Fixed links opened from chat window showing in desktop browser rather than overlay browser.</li>
+</ul>
+<strong>Big Picture Mode</strong>
+<ul>
+<li>Fixed pasting from on-screen keyboard.</li>
+</ul>
+<strong>Server Browser</strong>
+<ul>
+<li>Fixed bug causing bots to contribute to the player count.</li>
+</ul>
+<strong>Steam Input</strong>
+<ul>
+<li>Speculative Fix for rare Dualsense Edge gyroscope related bug.</li>
+</ul>
+<strong>Linux</strong>
+<ul>
+<li>Proton Voice Files speech synthesis data will now be automatically installed when necessary.</li>
+<li>Fixed game recordings containing a green bar on the right side of the image when using HEVC encoding on AMD systems if the game window width was not a multiple of 64.</li>
+<li>Fixed Game Recording and Remote Play video streams showing green frames when capturing Vulkan games on Intel GPUs.</li>
+</ul>
+<strong>Steamworks API</strong>
+<ul>
+<li>GameOverlayActivated_t is now sent to the current VR app when the SteamVR Dashboard is opened or closed.</li>
+</ul>
+<strong>VR</strong>
+<ul>
+<li>Fix a case where the Steam Link VR client would get a key mismatch error on stream start.</li>
+<li>Steam will no longer occasionally reload itself when SteamVR closes.</li>
+</ul>
+</blockquote>
+<p>Sources: <a href="https://store.steampowered.com/news/app/1675200/view/820329049655084153" rel="noopener nofollow" target="_blank">Steam Deck Changelog</a>, <a href="https://steamcommunity.com/games/593110/announcements/detail/655947663575876741" rel="noopener nofollow" target="_blank">Desktop Changelog</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/latest-steam-update-fixes-steam-deck-controller-issues-plus-numerous-bugfixes-for-desktop-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/latest-steam-update-fixes-steam-deck-controller-issues-plus-numerous-bugfixes-for-desktop-steam/</guid>
+      <pubDate>Tue, 20 May 2025 21:13:50 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_plain_2025.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>SteamOS</category>
+      
+    </item>
+    
+    <item>
+      <title>Nexus Mods cross-platform app v0.11.1 brings full Cyberpunk 2077 support for Linux, SteamOS / Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Nexus Mods team just launched the latest update to their in-development cross-platform open source Nexus Mods app. This is the one that will eventually replace Vortex, and now it has full Cyberpunk 2077 support.</p>
+<p>Support for Cyberpunk 2077 in the previous release was a "soft launch", but now they feel it's good enough for everyone to get modding. So it sits alongside Stardew Valley as the two main supported games currently. The rest (Baldur's Gate 3 and Mount &amp; Blade II: Bannerlord) are hidden behind an experimental option you can enable.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5887447181747757044gol1.png"/></p>
+<p class="plain-list-title">As a reminder for Cyberpunk 2077 it offers:</p>
+<blockquote>
+<ul>
+<li>Compatibility with the Steam and GOG Galaxy releases on Windows and Linux.</li>
+<li>Support for the most common types of mod: REDmod, archives, REDscript, and framework mods (e.g. Cyber Engine Tweaks).</li>
+<li>Support for collections.</li>
+<li>Health Check diagnostics for missing dependencies.</li>
+<li>Health Check diagnostics to help set up a Linux environment to mod the game.</li>
+<li>REDmod Load Order management and deployment.</li>
+</ul>
+</blockquote>
+<p>There's a lot more changes in this version including the new and improved load order tab for REDmod, and lots of smaller improvements to the UI flow to make modding easier than ever.</p>
+<p>I'm especially happy about their focus on making Linux / SteamOS / Steam Deck modding as easy as possible, something we've been lacking for a long time. Like including proper instructions for Linux systems:</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14466420961747757081gol1.png"/></p>
+<p>All the rest of the changelog below:</p>
+<blockquote>
+<h4>More Features</h4>
+<ul>
+<li>Updated the Health Check messages for Cyberpunk 2077 to match the structure of other diagnostic messages.</li>
+<li>When hovering the cursor to resize panels, a solid line will now appear to better indicate which panel will be adjusted.</li>
+<li>The app now has its own minimise, maximise and close buttons, removing the operating system "chrome" and saving more vertical space.</li>
+<li>The tab bar is now hidden until there are at least two tabs in a panel.</li>
+<li>Tabs can now be closed with a middle click.</li>
+<li>Added mod thumbnails to the load order page.</li>
+<li>Increased resilience to network errors during downloads.</li>
+</ul>
+<h4>Technical Changes</h4>
+<ul>
+<li>On Linux, the app will only register itself as the default Nexus Mods download handler when not installed with a package manager.</li>
+<li>Replaced the Stardew Valley preview UI elements with game-agnostic versions.</li>
+<li>Added the core backend frameworks required for the "Undo" feature.</li>
+<li>Added the core backend frameworks to allow the app to create and share collections.</li>
+<li>Improved the stability of downloads by requesting the entire file rather than using range requests.</li>
+<li>Use the recent rating for collections instead of "All time".</li>
+<li>The app will now send headers with Nexus Mods requests to allow us to better track mod manager usage.</li>
+</ul>
+<h4>Bug Fixes</h4>
+<ul>
+<li>Games can be unmanaged via the command line (thanks to Michael-Kowata on GitHub).</li>
+<li>Fixed missing colours to represent added, removed, or changed files on the Preview Changes page.</li>
+<li>Fixed an issue where the app could end up in a state where the Apply button was not visible but the Launch button was disabled.</li>
+<li>Fixed an issue where the app would unnecessarily backup files during an Apply, leading to long processing times.</li>
+<li>Fixed a rare issue where the Apply action would not work correctly if two files have the same minimal hash.</li>
+<li>Fixed a crash when snapping to full screen with multiple panels open.</li>
+<li>Fixed "No game installed with active loadout" error that occurred when a loadout had not been applied since managing the game.</li>
+<li>When un-managing a game, loadouts for that game will be hidden to prevent a crash when trying to access them.</li>
+<li>Fixed a bug where copying a loadout could result in two loadouts with the same name.</li>
+<li>Fixed a bug where the app may incorrectly treat Premium users as free users if the app had been open for over an hour.</li>
+<li>The app will now correctly close all background processes when exiting. This was preventing the UI from re-opening and blocking users on Linux from shutting down their system without manually killing the process.</li>
+</ul>
+<h4>Known Issues</h4>
+<ul>
+<li>Collection success ratings will sometimes not match what is shown on the website.</li>
+<li>The Epic Games release of Cyberpunk 2077 is detected but not supported.</li>
+<li>The app will attempt to run the REDmod.exe even if it is not installed, resulting in an error message.</li>
+<li>The sort order for some columns does not work as expected.</li>
+<li>The game version is not checked when adding a collection, meaning you can install outdated mods without being warned.</li>
+<li>The table header sorting and active tab states are not saved and are reset each time the view is loaded.</li>
+</ul>
+</blockquote>
+<p>For Linux / Steam Deck you can download the AppImage from the <a href="https://github.com/Nexus-Mods/NexusMods.App/releases/tag/v0.11.1" rel="noopener nofollow" target="_blank">GitHub release</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/nexus-mods-cross-platform-app-v0-11-1-brings-full-cyberpunk-2077-support-for-linux-steamos-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/nexus-mods-cross-platform-app-v0-11-1-brings-full-cyberpunk-2077-support-for-linux-steamos-steam-deck/</guid>
+      <pubDate>Tue, 20 May 2025 16:05:02 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1736160074id26820gol.png" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Celebrating 10 years, The Witcher 3: Wild Hunt and older titles are heavily discounted</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you've still not had the chance to grab The Witcher 3: Wild Hunt, now is your best bet with the 10th anniversary celebration giving huge discounts. CD PROJEKT RED have put the game, and the older titles in the series, on some of the best discounts they've ever had.</p>
+<p>There's also a fancy new trailer:</p>
+<div class="hidden_video" data-video-id="TWOkT7l0yWQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2aa280c2a698ccb6a741431a6b06f555.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/TWOkT7l0yWQ" target="_blank">See video</a></div></div>
+<p>Celebrations also included an anniversary edition of <a href="https://www.youtube.com/watch?v=mlRkbwmlNsg" rel="noopener nofollow" target="_blank">REDstreams</a>, which took place May 19th and featured Geralt’s voice actor Doug Cockle, alongside English Adaptation Director Borys Pugacz-Muraszkiewicz. The voice actor took a walk down memory lane, reminiscing on his time as the voice of Geralt, his experience with The Witcher 3: Wild Hunt, and how the role has impacted him over the years.</p>
+<p>The Witcher in Concert is also gearing up to introduce attendees to a one-of-a-kind live event featuring an ensemble orchestra and a blend of cutting-edge visuals and gameplay. Two anniversary celebrations are planned: Boston on May 31 and Poznań on June 15. All of this will lead up to the official tour kickoff at gamescom in Cologne on August 20, with tickets for the European leg of the tour already available for purchase on the official Witcher in Concert <a href="https://www.thewitcher.com/pl/en/concert" rel="noopener nofollow" target="_blank" title="">website</a>. New dates and locations will be revealed in the future, with newsletter subscribers receiving access to all official pre-sales.</p>
+<p>The base game is 90% off across GOG and Steam (best-ever discount, but has been that low before). And it's 80% off for the complete edition. So you can get the full thing for about £7. An <em>absolute steal</em> for such a huge and engrossing game.</p>
+<p>Works great on Desktop Linux with Proton and is rated Steam Deck Verified by Valve.</p>
+<p>A deal not to miss.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41982/the-witcher-3-wild-hunt/">The Witcher 3: Wild Hunt</a></strong> | Release Date: 18th May 2015<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/the_witcher_3_wild_hunt">GOG</a></li><li><a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/celebrating-10-years-the-witcher-3-wild-hunt-and-older-titles-are-heavily-discounted/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/celebrating-10-years-the-witcher-3-wild-hunt-and-older-titles-are-heavily-discounted/</guid>
+      <pubDate>Tue, 20 May 2025 15:31:25 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1425866933id26819gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+      <category>Open World</category>
+      
+    </item>
+    
+    <item>
+      <title>RoadCraft runs surprisingly well on Steam Deck and great on Desktop Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>RoadCraft is about to release from Saber Interactive / Focus Entertainment, their next-gen heavy-machinery simulation and sandbox game from the team behind the popular SnowRunner and MudRunner. The good news - it runs on Steam Deck and Desktop Linux. <em>Note: key provided by their PR team.</em></p>
+<p>What is it? A calm slow-paced simulation game where you run a disaster recovery company restoring various sites devastated by natural disasters. Your tasks will involve clearing debris, rebuilding entire roads and bridges and getting your vehicles unstuck as you'll be dealing with some pretty terrible conditions often. There's some big differences to the previous games like Snowrunner with no fuel to worry about or damage, so it's not quite as hardcore and a bit more welcoming (and certainly easier to get into).</p>
+<p>So in RoadCraft the main emphasis is about the journey, and finding the best route forwards using the best tools for the job. Often, multiple vehicles will be needed to complete a task and so it all builds up as you progress through. Getting stuck in the mud is still a huge pain in the ass though. But entertaining when you try all sorts of tricks to get unstuck.</p>
+<p><em>Click the article images below to enlarge them.</em></p>
+<h4>Steam Deck</h4>
+<p>My testing was done on the latest <a href="https://www.gamingonlinux.com/2025/05/steamos-3-7-5-for-steam-deck-now-in-beta-with-big-upgrades-and-initial-support-for-more-hardware/" rel="noopener" target="_blank">SteamOS Beta 3.7.5</a>, since it's approaching release as the next stable version. Considering how big the changes are, I felt it didn't make sense to stick with the much older stable SteamOS release (but I checked, and it did run on SteamOS 3.6.24). The game is confirmed to work with <a href="https://www.gamingonlinux.com/2024/12/proton-9-0-4-is-out-now-bringing-big-compatibility-improvements-for-steam-deck-linux/" rel="noopener" target="_blank">Proton 9.0-4</a>, but then I switched to the <a href="https://www.gamingonlinux.com/2025/05/proton-experimental-updated-to-fix-missing-saves-and-a-new-proton-10-beta-fixes-gamepad-breakage/" rel="noopener" target="_blank">latest Proton 10 Beta</a> since again, that should release soon as the new stable Proton version.</p>
+<p>Don't go expecting incredible performance here though, this is a time to firmly keep expectations in check. Like a lot of bigger recent releases this is a game you'll be looking at 30FPS on the Steam Deck, with everything set to Low visuals. However, compared to some other big recent releases, I'm amazed it works to this level. Especially nice, since the <a href="https://www.gamingonlinux.com/2025/02/sadly-the-roadcraft-demo-is-currently-broken-on-steam-deck-linux/" rel="noopener" target="_blank">demo didn't work at all</a> originally. <em>No extras needed here, it was click and play.</em></p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5908707761747741084gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/5908707761747741084gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15042860201747741083gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/15042860201747741083gol1.jpeg"/></a></p>
+<p>I've seen numerous times where performance <em>can</em> go above 30FPS, if you set the in-game FPS limit to 60FPS, but it's far more stable and enjoyable if you just keep it to the set 30FPS in-game limit. I found there was a fair bit more stuttering at times unless I kept it to 30FPS. No matter what, there's still some traversal stutter when driving around as you pop through new areas, but it mostly smoothens out quite quickly, the drops are very momentary.</p>
+<p>Turning off the FPS counter and just letting myself get absorbed by it was a wonderful experience — except the times where I forgot to put the handbrake on, put the Steam Deck down to have a drink or a bite to eat, and came back to find my vehicle had rolled into the mud and gotten stuck. Woops.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2781641881747744517gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2781641881747744517gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20129716891747744518gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/20129716891747744518gol1.jpeg"/></a></p>
+<p>I'm impressed on how clear the game UI is here on Steam Deck, it really feels like a great fit for it. Everything is nice and readable out of the box with no tweaks needed. There's no UI or text sizing options though, not that I've needed them, but that would have been a nice addition to have for those that do need things just a bit bigger.</p>
+<p>Even with lots of different controls, with each vehicle being quite different, it was clearly made with gamepad controls in mind too. They're all clearly shown on-screen and after a while it's pretty easy to get the hang of all of them.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3159972011747746742gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/3159972011747746742gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13455019091747749141gol1.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13455019091747749141gol1.png"/></a></p>
+<p>For the exact settings I've been testing on Steam Deck with:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18533464031747738408gol1.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/18533464031747738408gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10141045911747738409gol1.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/10141045911747738409gol1.png"/></a></p>
+<p>These are all the <em>defaults</em> the game gave on Steam Deck, which <em>seem</em> to be the best way to play it. The Deck really can't handle bumping much of these up at all. Which is not surprising really. Even with details set to Low and FSR3 set to Performance, the visuals are still pretty good here, far better than a number of other bigger titles to the point that I've not had an issue with how it looks on Steam Deck.</p>
+<p>What has surprised me is the battery life. On the Steam Deck OLED, you get a pretty reasonable 2.5+ hours. On the Steam Deck LCD it's just under 2 hours. So you'll still want to keep a charger or battery pack close by but very reasonable for this type of bigger game.</p>
+<p>I would expect Valve to rate this as Steam Deck Playable as you need to manually bring up the on-screen keyboard to enter in any names. Apart from that though, everything else pretty much worked as expected with a mostly stable 30FPS experience. <em><strong>Update</strong>: just as I clicked publish, Valve set it as Steam Deck Playable.</em></p>
+<h4>Desktop Linux</h4>
+<p>Considering how it runs on Steam Deck, there's not a whole lot extra to say about Desktop Linux here. Testing again with the <a href="http://www.gamingonlinux.com/2025/05/proton-experimental-updated-to-fix-missing-saves-and-a-new-proton-10-beta-fixes-gamepad-breakage/" rel="noopener" target="_blank">latest Proton 10 Beta</a>, the game runs well although I did notice some minor graphical artifacts in places which may be due to the Mesa version used. On my Kubuntu 25.04 setup with AMD Ryzen 5800X, with the Radeon RX 6800 XT on Mesa 25.0.3 the performance has been great.</p>
+<p><u>NVIDIA</u>: if you have an NVIDIA GPU, there's currently a driver bug with the game so it won't run out of the box. You can use <a href="https://github.com/HansKristian-Work/pyroveil/" rel="noopener nofollow" target="_blank">Pyroveil</a> to work around it and hopefully get it launching. As noted by the VKD3D-Proton developer on <a href="https://github.com/ValveSoftware/Proton/issues/8694#issuecomment-2893555768" rel="noopener nofollow" target="_blank">GitHub</a>.</p>
+<p>Back to AMD…it looks fantastic! Ultra settings with AMD FSR3 Native (just AA):</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13703237731747753216gol1.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13703237731747753216gol1.png"/></a></p>
+<p>Then AMD FSR3 Quality:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9642285601747753281gol1.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/9642285601747753281gol1.png"/></a></p>
+<p>There's barely a difference in visual quality, but a clear performance difference. And then with Frame Generation turned on, it's about double the performance:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19779592781747753366gol1.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/19779592781747753366gol1.png"/></a></p>
+<p>In motion, I cannot tell a difference with AMD FSR3 Frame Generation turned on, so the performance benefit there is great while being able to keep the graphics cranked up to Ultra where it looks awesome as you sort the roads out.</p>
+<h4>Overall</h4>
+<p><em>The only part not tested was online co-op play due to the preview period but I don't foresee any issues there since there's no <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">anti-cheat</a> nuisances here.</em></p>
+<p>Part of what makes this one real interesting is that it's not all about you. While you're doing a lot of the work, you're then setting up routes for AI vehicles to travel through to deliver various goods. Spectating them as they go through your planned routes that you've sorted and cleared is so satisfying, although the AI drivers are complete <em>morons</em> and get stuck on the smallest obstacles. They will not try to avoid anything at all (including trying to drive through you), so you often spend a lot of time micro-managing your newly placed routes. Once you get a good route going for the first time after clearing everything and rebuilding though, it's lovely to see your work in action.</p>
+<p>At its heart, RoadCraft is as much a puzzle game with you figuring out how to overcome every tiny little obstacle, as it is a challenging driving and mini-construction sim. If you liked Snowrunner or Mudrunner, you will most likely enjoy this although keeping in mind some parts of the sim have been simplified.</p>
+<div class="hidden_video" data-video-id="0YxFJTFi0Os"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1b189e5184fda8816cfbd5dd6e035dc3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/0YxFJTFi0Os" target="_blank">See video</a></div></div>
+<p>Roadcraft is very much a game for people who have a lot of free time to get stuck in the mud, and you will, if you're an idiot like me. On both Steam Deck and Desktop Linux, it has been quite an enjoyable experience, although frustrating when you spend a bit too much time getting stuck. Very much like Snowrunner, you need to bring along a healthy dose of patience.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41047/roadcraft/">RoadCraft</a></strong> | Release Date: 20th May 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2104890/RoadCraft/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/roadcraft-runs-surprisingly-well-on-steam-deck-and-great-on-desktop-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/roadcraft-runs-surprisingly-well-on-steam-deck-and-great-on-desktop-linux/</guid>
+      <pubDate>Tue, 20 May 2025 15:06:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/134306792id26814gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>New Release</category>
+      
+      <category>Online Co-op</category>
+      
+    </item>
+    
+    <item>
+      <title>S.T.A.L.K.E.R.: Legends of the Zone Trilogy Enhanced Edition is out now, needs a workaround on Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>GSC Game World have released the S.T.A.L.K.E.R.: Legends of the Zone Trilogy Enhanced Edition now which includes S.T.A.L.K.E.R.: Shadow of Chornobyl - Enhanced Edition, S.T.A.L.K.E.R.: Clear Sky - Enhanced Edition and S.T.A.L.K.E.R.: Call of Prypiat - Enhanced Edition.</p>
+<p>If you own the originals, you should receive the new editions for free. The Enhanced Editions also include the originals.</p>
+<div class="hidden_video" data-video-id="AVWkOx4Cj6g"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4900cb606d0aec6b927d8a7e6f37d983.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/AVWkOx4Cj6g" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Each game comes with an assortment of upgrades including:</p>
+<blockquote>
+<ul>
+<li>Atmospheric visual enhancements including God Rays, Dynamic Screen Space Reflections, and Advanced Global Illumination effects.</li>
+<li>Redesigned water shaders, upgraded skyboxes, and wetness effects.</li>
+<li>Improved visuals with upscaled textures featuring more detailed NPCs and environment.</li>
+<li>Upgraded weapon Field of View and models.</li>
+<li>Multiple bugfixes and quality of life tweaks.</li>
+<li>Full gamepad support.</li>
+</ul>
+</blockquote>
+<p>This also makes the series a much better fit on the Steam Deck too. Plus there's also Steam Workshop support and Cloud Saves as well.</p>
+<p>The only one I actually own is S.T.A.L.K.E.R.: Call of Prypiat, so that's what I picked for some testing today, along with the latest <a href="https://www.gamingonlinux.com/2025/05/proton-experimental-updated-to-fix-missing-saves-and-a-new-proton-10-beta-fixes-gamepad-breakage/" rel="noopener" target="_blank">Proton 10 Beta</a>. Early reports from players on Steam have pushed all three Enhanced Editions rapidly into "Mostly Negative". Many noting it's a "blurry mess", so I wanted to see what's going on.</p>
+<p>On <strong>Desktop Linux</strong>, the game will not run out of the box, and ends up giving a black screen with this error:</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20538914521747749867gol1.png"/></p>
+<p>You can get around that by spoofing a Steam Deck, using this launch option:</p>
+<p><code class="inline-code">SteamDeck=1 %command%</code></p>
+<p>On <strong>Steam Deck</strong> however, the game does work out of the box.</p>
+<p>Once getting into S.T.A.L.K.E.R.: Call of Prypiat - Enhanced Edition and fiddling with some settings here's some unfiltered shots of it on Max settings at 2560x1440. Running on Kubuntu 25.04, AMD Ryzen 5800X, Radeon RX 6800 XT on Mesa 25.0.3:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2895736791747750713gol1.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2895736791747750713gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6432585811747750716gol1.png" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/6432585811747750716gol1.png"/></a></p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11145693121747751592gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/11145693121747751592gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2841952061747751734gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2841952061747751734gol1.png"/></a></p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6029505261747752284gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/6029505261747752284gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15008768531747752313gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/15008768531747752313gol1.png"/></a></p>
+<p>To me, the game doesn't look particularly blurry, certainly not to the level the Steam user reviews are suggesting. There's some slight blurry bits the further you are away but the picture is overall quite clear. And on Max settings, it seems to run well enough on Desktop Linux. Even with the enhancements though, I would have expected performance to be a fair bit higher than it is.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41945/s-t-a-l-k-e-r-legends-of-the-zone-trilogy/">S.T.A.L.K.E.R.: Legends of the Zone Trilogy</a></strong> | Release Date: 20th May 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/stalker_legends_of_the_zone_trilogy">GOG</a></li><li><a href="https://store.steampowered.com/bundle/53693/STALKER__Legends_of_the_Zone_Trilogy/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/s-t-a-l-k-e-r-legends-of-the-zone-trilogy-enhanced-edition-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/s-t-a-l-k-e-r-legends-of-the-zone-trilogy-enhanced-edition-is-out-now/</guid>
+      <pubDate>Tue, 20 May 2025 14:32:01 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/280470037id26818gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+      <category>FPS</category>
+      
+    </item>
+    
+    <item>
+      <title>Steel Swarm: APOCALYPSE is a tank-battling MOBA set for Early Access in June</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Steel Swarm: APOCALYPSE is an upcoming tank-battling MOBA that I'm pretty excited about for the huge battles and map destruction. And now the developer has revealed it's set to release in Early Access on June 24th.</p>
+<p>I previously covered this one <a href="https://www.gamingonlinux.com/2025/04/steel-swarm-apocalypse-is-a-tank-battling-destructive-moba-that-will-have-steam-deck-support/" rel="noopener" target="_blank">back in April</a>, when they announced full Steam Deck support. Seems they're going a step further now, since they're also noting Linux support in the release <a href="https://store.steampowered.com/news/app/3199180/view/800062851651732420" rel="noopener nofollow" target="_blank">announcement</a>.</p>
+<div class="hidden_video" data-video-id="kx-u_InH0SY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/65d0ead0be6490c85135f6e9590895a5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/kx-u_InH0SY" target="_blank">See video</a></div></div>
+<p>I like that it sounds quite different to other MOBAs. Instead of just a basic 5 v 5 with some AI minions in parts, there's a whole lot going on. Their focus is on a large-scale battlefield with over 100 minions per team, which is "per avenue" (lanes to battle through) resulting in there being thousands of units in each game. They say that "no other MOBA will compare" to the scale of this one.</p>
+<p>The map destruction also looks like it could be fun as you reshape it as you go. You're in a tank, so you have a lot of firepower.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41726/steel-swarm-apocalypse/">Steel Swarm: APOCALYPSE</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3199180/Steel_Swarm_APOCALYPSE/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/steel-swarm-apocalypse-is-a-tank-battling-moba-set-for-early-access-in-june/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/steel-swarm-apocalypse-is-a-tank-battling-moba-set-for-early-access-in-june/</guid>
+      <pubDate>Tue, 20 May 2025 09:44:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1777472063id26817gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Free Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Create a pocket-sized garden inside a magical toy in Tiny Garden out now with Linux support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Tiny Garden released at the start of April, with a fresh update that just released adding in controller support and Native Linux support. Looks like another very sweet casual game to relax with.</p>
+<p>In the game you're gifted a precious family heirloom passed down through the generations that turns into a magical pocket-sized garden, uncovered through a heartfelt story. Here you get to create and grow your own tiny little garden. You can sow a variety of plants and flowers, trade them for unique furniture alongside various customisation options for the garden in this calming mix of farming, puzzle-solving, and strategy.</p>
+<p>Each decision leads to a new discovery, and hidden surprises await. No wrong choices in this one, no time limits, no score. It's all about just relaxing and creating and seeing what you can experiment with.</p>
+<div class="hidden_video" data-video-id="yVig9KKjK10"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9919f7bc8142a25ec3f722256d9ed4db.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/yVig9KKjK10" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Patch notes for May 19th, with the developer hoping to get Steam Deck Verified:</p>
+<blockquote>
+<ul>
+<li>Controller support.</li>
+<li>Linux and Mac versions.</li>
+<li>Greatly improved VRAM usage through resource indirection and texture compression (basis universal).</li>
+<li>Enlarged seeder sign icons.</li>
+<li>Fixed bug where previous compost tiles were incrementing the Steam stat when loading a game.</li>
+<li>Free camera fully implemented.</li>
+<li>Fixed cursor import settings and weird particle dust png import bug.</li>
+<li>Added generic tree icon to creeper plants catalog sections.</li>
+<li>Community chosen skin added.</li>
+<li>New backer letter.</li>
+<li>New stickers, updated sticker order in inventory.</li>
+<li>Fixed camera zoom sensitivities/steps.</li>
+<li>Improved pick seeds tutorial.</li>
+<li>Fixed shiny badge acting as terrains list button.</li>
+<li>Fixed garden selector showing controller buttons all the time.</li>
+<li>New settings implemented.</li>
+<li>Fixed camera controls.</li>
+<li>Catalog hide sold out button implemented.</li>
+<li>Changed click to continue for pressing anything to continue.</li>
+</ul>
+</blockquote>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41981/tiny-garden/">Tiny Garden</a></strong> | Release Date: 8th April 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2812450/Tiny_Garden/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/create-a-pocket-sized-garden-inside-a-magical-toy-in-tiny-garden-out-now-with-linux-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/create-a-pocket-sized-garden-inside-a-magical-toy-in-tiny-garden-out-now-with-linux-support/</guid>
+      <pubDate>Tue, 20 May 2025 09:29:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1324287742id26816gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Casual</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Cosy vertical tile-stacking nature-building puzzle game Preserve is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Preserve from developer Bitmap Galaxy is a nature-building puzzle game where you build tiles in an interesting mix of horizontal and vertical gameplay that's just left Early Access. It's really sweet, great to unwind with.</p>
+<p>Here you just keep on adding layers of nature until it all fits nicely together. The idea is that you're restoring and building up various diverse connected biomes and it really does look lovely while you're playing it. A soft casual puzzle game that won't make your brain sweat, accessible thanks to the clean and clear design and engaging enough to keep you going as you want to see what happens as you place all the tiles down to watch it come alive. Dorfromantik was one of their main inspirations for it, so if you've seen or played that, you know some of what to expect.</p>
+<p>Check out the release trailer:</p>
+<div class="hidden_video" data-video-id="1JnQ5d33hTE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/aa2d2cde1a9e1eafb868972a6b475ded.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/1JnQ5d33hTE" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Full release features:</p>
+<blockquote>
+<ul>
+<li><strong>Full Compendium</strong> - Players dive into detailed card mechanics, scoring, and gameplay strategies.</li>
+<li><strong>Leaderboards</strong> - Gamers climb the ranks and compare preservation skills.</li>
+<li><strong>Platform-Specific Achievements/Trophies</strong> - Players celebrate their victories.</li>
+<li><strong>Engaging Weekly Challenges</strong> - Compete with friends and build nature.</li>
+<li><strong>Card Trading in Harmony Mode</strong> - More control over the deck and strategy.</li>
+<li><strong>Expanded Puzzle Collection</strong> - More brain-bending nature puzzles.</li>
+<li><strong>Brand New Jurassic Biome</strong> - Preservers uncover a prehistoric world of wonder.</li>
+</ul>
+</blockquote>
+<p>During Early Access it managed to get a Very Positive rating from Steam players. It launches with Native Linux support and Valve rated it Steam Deck Playable (some small text / on-screen keyboard has to be pulled up manually).</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/38444/preserve/">Preserve</a></strong> | Release Date: 8th August 2024<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2109270/Preserve/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/cosy-vertical-tile-stacking-nature-building-puzzle-game-preserve-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/cosy-vertical-tile-stacking-nature-building-puzzle-game-preserve-is-out-now/</guid>
+      <pubDate>Tue, 20 May 2025 09:21:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1859730126id26815gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Casual</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Upcoming Steam update should fix lag spikes on Linux when the Steam Overlay is disabled</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>For quite some time now Linux gamers have been reporting issues with lag spikes in various games on Steam when the Steam Overlay is disabled. It seems Valve may have finally found the cause and a fix is hopefully on the way.</p>
+<p>There's been a bug report open on the Steam GitHub page since <a href="https://github.com/ValveSoftware/steam-for-linux/issues/11446" rel="noopener nofollow" target="_blank">November 2024</a>, with hundreds of comments discussing the issue. One workaround has been to set this as a launch option for games:</p>
+<p><code class="inline-code">LD_PRELOAD="" %command%</code></p>
+<p>However, that's only good if you know that workaround exists. Ideally, games should perform the same if you have the Steam Overlay enabled or disabled.</p>
+<p>Writing on the GitHub, Valve contractor Timothee "TTimo" Besset <a href="https://github.com/ValveSoftware/steam-for-linux/issues/11446#issuecomment-2892172851" rel="noopener nofollow" target="_blank">wrote</a> on May 19th:</p>
+<blockquote>
+<p>Hey all - thanks for the reports. We believe we have a fix for this issue, it hasn't made it's way through our release pipeline yet but I'll update here when we do.</p>
+</blockquote>
+<p>Hopefully then we'll see this problem solved soon.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/upcoming-steam-update-should-fix-lag-spikes-on-linux-when-the-steam-overlay-is-disabled/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/upcoming-steam-update-should-fix-lag-spikes-on-linux-when-the-steam-overlay-is-disabled/</guid>
+      <pubDate>Tue, 20 May 2025 08:52:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA 570.153.02 driver released for Linux with a couple fixes</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA have released driver version 570.153.02, a new bug-fix release for their current main stable driver version for Linux gamers. In case you missed it: back in late April, <a href="https://www.gamingonlinux.com/2025/04/nvidia-disclose-new-security-flaw-in-their-linux-gpu-drivers/" rel="noopener" target="_blank">NVIDIA revealed a new security flaw</a> in their drivers so you're going to want to make sure you're up to date.</p>
+<p>This is a small bug-fix release only, here's the changes:</p>
+<blockquote>
+<ul>
+<li>Fixed a bug that could cause OpenGL applications and compositors to stall when using NVIDIA as a PRIME Display Offload sink ("Reverse PRIME"), potentially resulting in a black screen.</li>
+<li>Fixed a bug that led to increasing memory usage in X11 OpenGL and Vulkan applications after suspend/resume cycles.</li>
+</ul>
+</blockquote>
+<p>Source: <a href="https://www.nvidia.com/en-us/drivers/details/245911/" rel="noopener nofollow" target="_blank">NVIDIA</a></p>
+<p>Their most recent new-feature Beta release was with the <a href="https://www.gamingonlinux.com/2025/04/nvidia-575-51-02-beta-driver-brings-nvidia-smooth-motion-support-to-linux-geforce-rtx-5060-series-announced/" rel="noopener" target="_blank">575.51.02 driver back in mid-April</a>.</p>
+<p><em>NVIDIA don't give any set schedule for when the next release will be for either their stable or Beta series.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/nvidia-570-153-02-driver-released-for-linux-with-a-couple-fixes/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/nvidia-570-153-02-driver-released-for-linux-with-a-couple-fixes/</guid>
+      <pubDate>Tue, 20 May 2025 08:44:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Ludaro is a deck-building roguelike spin on Ludo with a demo out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>I wrote about <a href="https://www.gamingonlinux.com/2025/04/ludaro-puts-a-roguelike-deck-building-twist-on-the-classic-board-game-ludo/" rel="noopener" target="_blank">Ludaro back in mid April</a>, and now you can try this new chaotic spin on Ludo yourself, as they've just released a first demo for it. Love seeing more developers attempt to refresh classics like this!</p>
+<p>Ludaro is a roguelike deck-building dice game with a unique twist on Ludo! Plan your moves, manipulate deterministic dice rolls, and unleash powerful Spirit Cards to beat the score. Upgrade tiles, collect quirky pets and stack wild combos as you battle in epic boss fights with game-changing modifiers.</p>
+<p>Check out their recent trailer to get a glimpse of it:</p>
+<div class="hidden_video" data-video-id="FSyyM3cMs5Y"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a45e3f59c061b81fd351a07ef343eb84.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/FSyyM3cMs5Y" target="_blank">See video</a></div></div>
+<p>The demo is out now which has a Native Linux version. The full game is due sometime later this year. Should run great on Steam Deck too which is what they've said they're optimising it for.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41691/ludaro/">Ludaro</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3613030/Ludaro/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/ludaro-is-a-deck-building-roguelike-spin-on-ludo-with-a-demo-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/ludaro-is-a-deck-building-roguelike-spin-on-ludo-with-a-demo-out-now/</guid>
+      <pubDate>Tue, 20 May 2025 08:36:21 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2123954108id26811gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Board Game</category>
+      
+      <category>Casual</category>
+      
+    </item>
     
     <item>
       <title>Fanatical have a big May Madness sale with steep discounts, along with multiple major new game bundles</title>
@@ -217,10 +730,11 @@
 </ul>
 </blockquote>
 <div class="hidden_video" data-video-id="1RWoS8me1no"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ed8ce55c0666fa77bb8a789f0abde19e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/1RWoS8me1no" target="_blank">See video</a></div></div>
+<p>I've played a lot of retro games over the years, and a lot recently too but Utopia Must Fall stands apart from the crowd because it's just so satisfying and nicely designed.</p>
 <p>It works well on Desktop Linux with Proton, although the Steam Overlay didn't seem to work for me. On Steam Deck, they're working on support but it's not yet ready. They <a href="https://steamcommunity.com/app/2849680/discussions/0/597386590728345355/" rel="noopener nofollow" target="_blank">didn't seem</a> particularly happy last year that Valve already gave it a Playable rating.</p>
 <p>Cheap too, with a 30% discount until May 28th and even when not discounted it's very reasonably priced. They even note this as a feature: "reasonably priced to help offset the unreasonable cost of everything else".</p>
 <p>I just can't get over the atmosphere of it. Brilliant.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41978/utopia-must-fall/">Utopia Must Fall</a></strong> | Release Date: 9th September 2024<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2849680/Utopia_Must_Fall/">Steam</a></li></ul></p></div></p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41978/utopia-must-fall/">Utopia Must Fall</a></strong> | Release Date: 9th September 2024<p class="plain-list-title">Official links:</p><ul><li><a href="https://pixeljam.itch.io/utopia-must-fall/">itch.io</a></li><li><a href="https://store.steampowered.com/app/2849680/Utopia_Must_Fall/">Steam</a></li></ul></p></div></p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
       <link>https://www.gamingonlinux.com/2025/05/utopia-must-fall-is-easily-one-of-the-best-modern-arcade-shoot-em-ups/</link>
@@ -1617,7 +2131,7 @@
 </blockquote>
 <p>The press release noted that if you already have the originals on PC you will get the Enhanced Editions free, and the originals are included for anyone who purchases the Enhanced Editions. It will be available as a Trilogy Bundle for $39.99 or individually at $19.99 each.</p>
 <p>In the official <a href="https://www.stalker-game.com/en/faq" rel="noopener nofollow" target="_blank">FAQ</a> the developer noted there's no multiplayer with them "designed specifically around providing a dedicated Single-player experience".</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41945/s-t-a-l-k-e-r-legends-of-the-zone-trilogy/">S.T.A.L.K.E.R.: Legends of the Zone Trilogy</a></strong> | Release Date: 20th May 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/stalker_legends_of_the_zone_trilogy">GOG</a></li><li><a href="https://store.steampowered.com/sub/35983/">Steam</a></li></ul></p></div></p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41945/s-t-a-l-k-e-r-legends-of-the-zone-trilogy/">S.T.A.L.K.E.R.: Legends of the Zone Trilogy</a></strong> | Release Date: 20th May 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/stalker_legends_of_the_zone_trilogy">GOG</a></li><li><a href="https://store.steampowered.com/bundle/53693/STALKER__Legends_of_the_Zone_Trilogy/">Steam</a></li></ul></p></div></p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
       <link>https://www.gamingonlinux.com/2025/05/s-t-a-l-k-e-r-legends-of-the-zone-trilogy-enhanced-edition-announced-with-steam-deck-support/</link>
@@ -4778,618 +5292,6 @@ We want to tell stories from modern India — and represent our home more approp
       <category>Indie Game</category>
       
       <category>Puzzle</category>
-      
-    </item>
-    
-    <item>
-      <title>SteamOS 3.7.5 for Steam Deck now in Beta with big upgrades and initial support for more hardware</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Bringing some big changes down from Preview, SteamOS 3.7.5 for Steam Deck now in Beta as Valve work towards getting it in the stable release for all Steam Deck players and then eventually the<a href="https://www.gamingonlinux.com/2025/01/valve-confirms-a-public-beta-of-steamos-is-coming-as-steamos-expands-beyond-steam-deck/" rel="noopener" target="_blank"> public SteamOS release for more hardware</a>. <em>This is still only supported on Steam Deck for now.</em></p>
-<p>The initial Preview release <a href="https://www.gamingonlinux.com/2025/03/steamos-3-7-0-preview-brings-the-beginnings-of-support-for-non-steam-deck-handhelds/" rel="noopener" target="_blank">came March 14th</a>, and this rolls up the major changes there and the few point releases after into one release for the Beta. There's lots of really good stuff here from a major bump in the Linux kernel, to graphics driver updates, a big upgrade to the KDE Plasma Desktop Mode, support for the LCD Steam Deck to wake from Bluetooth controllers, lots of bug fixes and so on.</p>
-<p>Since this is in Beta, you need to still opt into it. To do so go into Settings (STEAM button) -&gt; System and select Beta from the System Update Channel.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8591650071746605057gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8591650071746605057gol1.jpeg"/></a></p>
-<p class="plain-list-title">Here's all the changes:</p>
-<blockquote>
-<p><strong>General</strong></p>
-<ul>
-<li>Updated to a newer Arch Linux base</li>
-<li>Updated the Linux kernel to 6.11</li>
-<li>Updated the Mesa graphics driver base</li>
-<li>Desktop mode now ships with Plasma 6.2.5</li>
-<li>Beginnings of support for non-Steam Deck handhelds</li>
-<li>Added support for frame limiting with VRR displays (internal and external)</li>
-<li>Fixed a crash when no displays are connected</li>
-<li>Added support for the power button on Asus and Lenovo handhelds</li>
-<li>Improved input support for Asus and Lenovo handhelds</li>
-</ul>
-<p><strong>Controllers and Input</strong></p>
-<ul>
-<li>Add support for the Proteus Byowave controller.</li>
-<li>Fixed an issue where Switch Pro Controller gyros might not work on first connection.</li>
-<li>Fixed an issue with stuck/hanging controller inputs when exiting Steam.</li>
-</ul>
-<p><strong>Bluetooth</strong></p>
-<ul>
-<li>Fixed Bluetooth devices still being able to wake the Steam Deck from suspend, even when Bluetooth was disabled from Desktop mode.</li>
-<li>Enable HFP/HSP profiles, to allow using the integrated microphone from headsets and earbuds.</li>
-<li>Currently only available to select in Desktop mode.</li>
-<li>Added battery level display for supported Bluetooth devices.</li>
-<li>Include a bugfix for the Airpods when using the AAC codec.</li>
-<li>Bluetooth controllers can now wake LCD units from sleep, previously only available on OLED models.
-	<ul>
-<li>Known issue: Bluetooth LE based controllers are not currently compatible with bluetooth wake on LCD models.</li>
-</ul>
-</li>
-</ul>
-<p><strong>Steam Deck Dock</strong></p>
-<ul>
-<li>Made compatibility improvements for certain displays including TCL FireTV models and Dell VRR capable monitors.</li>
-</ul>
-<p><strong>Graphics and Performance</strong></p>
-<ul>
-<li>Enabled AMD P-State CPU frequency control.</li>
-<li>Fixed a performance regression for No Rest for the Wicked.</li>
-</ul>
-<p><strong>Desktop</strong></p>
-<ul>
-<li>Updated to Plasma 6.2.5 (previously 5.27.10) - see the big changes in Plasma 6 here.</li>
-<li>Surround sound now works correctly.</li>
-<li>Enabling the setting is currently only available via Desktop mode.</li>
-<li>KDE Filelight is now installed by default for disk usage visualization and low disk space notifications.</li>
-<li>Speed and robustness improvements when switching between desktop and game mode.</li>
-<li>Fixed a common cause of hangs when switching to desktop mode.</li>
-<li>Fixed some cases where Steam could take up to ninety seconds to exit on shutdown or switch to desktop.</li>
-<li>Added 'gocryptfs' support to desktop session to enable use of the Plasma Vaults feature.</li>
-</ul>
-<p><strong>Misc</strong></p>
-<ul>
-<li>Fixed some cases where "filter-chain" or other virtual sound devices would erroneously appear in the UI.</li>
-<li>Fixed cases where applying system updates could fail if certain configuration files were corrupted or malformed.</li>
-<li>Various enhancements to System Report functionality for support and troubleshooting.</li>
-<li>Fixed compatibility issue with certain DNS servers causing very slow domain lookups.</li>
-<li>Improved responsiveness of system when running into out-of-memory crash situations.</li>
-<li>Enabled IPv6 Privacy Extensions by default.</li>
-<li>Fixed a bootloader crash on certain non-Steam Deck devices, including qemu-based virtual machines.</li>
-</ul>
-<p><strong>Known Issues</strong></p>
-<ul>
-<li>Super NES controllers can erroneously show up as connected when they are not.</li>
-</ul>
-<p><strong>Developer</strong></p>
-<ul>
-<li>Updated to a 6.11 based kernel.</li>
-<li>Added debuginfod URLs for SteamOS.</li>
-<li>Added systemd .socket units to the default list of /etc files preserved across updates.</li>
-<li>When running in a VM, system will now default to the desktop session.</li>
-<li>Swap file setup now uses standard 'mkswap' functionality instead of shipping an ad-hoc 'mkswapfile' script.</li>
-<li>The steamos-readonly command now warns that the status might not be accurate when sysexts are loaded.</li>
-<li>Fixed a case that could introduce duplicate boot entries for devices manually setup to dual-boot.</li>
-<li>The pacman cache is now cleaned after applying a SteamOS update.</li>
-<li>Fixes stale cache errors working with pacman after switching branches.</li>
-</ul>
-</blockquote>
-<p>Source: <a href="https://store.steampowered.com/news/app/1675200/view/529845510803031952" rel="noopener nofollow" target="_blank">Valve</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/steamos-3-7-5-for-steam-deck-now-in-beta-with-big-upgrades-and-initial-support-for-more-hardware/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/steamos-3-7-5-for-steam-deck-now-in-beta-with-big-upgrades-and-initial-support-for-more-hardware/</guid>
-      <pubDate>Wed, 07 May 2025 07:49:13 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steamos-2025.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Steam</category>
-      
-      <category>SteamOS</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton 10 gets another Beta update with more fixes for Windows games on Linux / Steam Deck</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve continue working towards a stable release of the major Proton 10 update, to bring many improvements to Windows game compatibility on Linux / Steam Deck. Today, Valve released a small bug fix update to the Proton 10 Beta.</p>
-<p>In case you missed it, <a href="https://www.gamingonlinux.com/2025/05/proton-experimental-updates-to-proton-10-with-fixes-for-marvel-rivals-oblivion-remastered-and-more-for-steam-deck-linux/" rel="noopener" target="_blank">Proton Experimental was also recently updated to use Proton 10</a>.</p>
-<p class="plain-list-title">Here's the latest changes in Proton 10.0-1d (beta):</p>
-<blockquote>
-<ul>
-<li>Fixed The Elden Scrolls IV: Oblivion Remastered sometimes wrongly claiming that it's not installed on an SSD.</li>
-<li>Fixed Jusant crashing with Intel GPUs.</li>
-<li>Fixed Proton 10 regressions:
-	<ul>
-<li>Simon the Sorcerer: 25th Anniversary Edition displays non-latin scripts correctly again.</li>
-<li>Hunt: Showdown, Warframe, Rising Storm 2: Vietnam, Red Dead Redemption 2 and potentially many other games no longer have issues with key bindings and detecting the layout correctly with non-US-english keyboard layouts.</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17347233961746561258gol1.jpg"/></p>
-<p>That's on top of all the other changes in the initial Proton 10 Beta that <a href="https://www.gamingonlinux.com/2025/04/proton-10-gets-a-first-beta-to-improve-game-compatibility-on-steam-deck-and-desktop-linux/" rel="noopener" target="_blank">I wrote about at the end of April</a>:</p>
-<blockquote>
-<ul>
-<li>Now playable (previously worked with Proton Experimental):
-	<ul>
-<li>Batman: Arkham Asylum Game of the Year Edition</li>
-<li>Black Ink</li>
-<li>Factorio</li>
-<li>Ignited Entry</li>
-<li>Microsoft Flight Simulator 2024</li>
-<li>MySims Kingdom</li>
-<li>No Man's Sky in VR mode (regressed after a game update)</li>
-<li>Rising Storm 2: Vietnam</li>
-<li>Sniper Elite: Nazi Zombie Army</li>
-<li>Soul Interface</li>
-<li>THE KING OF FIGHTERS XIII GLOBAL MATCH</li>
-<li>VIDEO GAME (924310)</li>
-<li>Willful</li>
-<li>X Rebirth VR Edition</li>
-</ul>
-</li>
-<li>Fixed / improved video playback in:
-	<ul>
-<li>Agony Unrated</li>
-<li>All-Star Fruit Racing</li>
-<li>Audiosurf</li>
-<li>Bloodstained: Ritual of the Night</li>
-<li>Gal*Gun 2</li>
-<li>Greedfall</li>
-<li>Indigo Park: Chapter 1</li>
-<li>Omensight</li>
-<li>SOULCALIBUR VI</li>
-<li>TELEFORUM</li>
-<li>Tintin Reporter - Cigars of the Pharaoh</li>
-<li>Zero Escape: The Nonary Games</li>
-</ul>
-</li>
-<li>Reinstated hack from Proton 7 that helped with SpellForce: Platinum Edition, NieR: Automata, Sekiro: Shadows Die Twice and DARK SOULS III crashing with monitors exposing too many possible resolutions.</li>
-<li>Improved performance in Dirt Rally 2.0.</li>
-<li>Fixed Final Fantasy XVI demo displaying driver warning on launch.</li>
-<li>Fixed Grand Theft Auto V Enhanced launcher hang and the game crashing on launch as well as not being possible to uninstall it via Steam.</li>
-<li>Fixed XCOM 2 erroring out when trying to connect to my2K.</li>
-<li>Fixed network issues in Hunt: Showdown 1896 after a game update.</li>
-<li>Fixed Rivals of Aether II, Stalker 2, The Axis Unseen, Beyond Handwell, Marvel Rivals, The Finals, Creatures of Ava crashing with Intel GPUs.</li>
-<li>Added support for game mods that load via custom dinput8.dll.</li>
-<li>Fixed input not working with Studio System : Guardian Angel.</li>
-<li>Fixed cursor not working in the menu of Amerzone: The Explorer's Legacy (1999).</li>
-<li>Fixed Deviator crashing with AMD GPUs shortly after launching.</li>
-<li>Fixed Warhammer: Vermintide 2 showing prerequisite installer on every launch.</li>
-<li>Re-enabled nvapi for Neverwinter, Star Trek Online and Champions Online.</li>
-<li>Fixed full screen mode in The Bright Star Of Seraph-Katis.</li>
-<li>Improved situation with audio crackling in Assassin’s Creed Shadows on Steam Deck.</li>
-<li>Improved reliability of Proton Prefix creation.</li>
-<li>Fixed Supermarket Together not detecting DLC on some systems.</li>
-<li>Fixed extras video playback in Shadow Warrior 2.</li>
-<li>Fixed VR mode in Evochron Legacy SE.</li>
-<li>Fixed non-Steam Battle.net installations.</li>
-<li>Fixed Sea of Thieves Xbox login window not working.</li>
-<li>Fixed graphics scaling in Master Magistrate.</li>
-<li>Fixed interface elements in Disney Epic Mickey 2: The Power of Two showing as solid green color.</li>
-<li>Included initial work on speech synthesis - requires manual installation of Proton Voice Files (steam://install/3086180), confirmed to work with The Thief, the Witch, the Toad, and the Mushroom.</li>
-<li>Fixed video playback in Twisted Sails.</li>
-<li>Improved video playback in Max: The Curse of Brotherhood.</li>
-<li>Added hack to allow Steam Overlay to function with EAC EOS games.</li>
-<li>Fixed CPU topology override issues on machines with more than 32 logical cores.</li>
-<li>Fixed Proton sometimes creating an empty window when running via XWayland.</li>
-<li>Fixed Marvel Rivals displaying OS/drivers out of date warning.</li>
-<li>Fixed desync issue with 60FPS AVPro videos in VRChat.</li>
-<li>Fixed intermittent freezing in Spirit Hunter: NG.</li>
-<li>Fixed The Finals crashing after a recent game update.</li>
-<li>Improved Ubisoft Connect behavior when switching between Proton versions.</li>
-<li>Improved video playback in Locoland on NVIDIA GPUs.</li>
-<li>Improved video playback in Microsoft Flight Simulator.</li>
-<li>Fixed Tiny Cauldron freezing when selecting some resolutions.</li>
-<li>Fixed various crashes affecting Final Fantasy XIV launcher.</li>
-<li>Fixed broken account creation in Final Fantasy XIV.</li>
-<li>Fixed Nioh: Complete Edition hanging on a black screen when skipping videos.</li>
-<li>Fixed Killsquad freezing on character selection screen.</li>
-<li>Fixed Dread X Collection 3 Bete Grise minigame.</li>
-<li>Fixed video playback in ATRI - My Dear Moments-.</li>
-<li>Fixed Dark and Darker not being playable after a game update.</li>
-<li>Updated libvkd3d-shader to <a href="https://gitlab.winehq.org/wine/vkd3d/-/releases/vkd3d-1.15" rel="noopener nofollow" target="_blank">vkd3d-1.15</a>-179-g<a href="https://gitlab.winehq.org/wine/vkd3d/-/commits/21e08955d3c3" rel="noopener nofollow" target="_blank">21e08955d3c3</a>.</li>
-<li>Updated dxvk to <a href="https://github.com/doitsujin/dxvk/releases/tag/v2.6.1" rel="noopener nofollow" target="_blank">v2.6.1</a>.</li>
-<li>Updated dxvk-nvapi to <a href="https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.9.0" rel="noopener nofollow" target="_blank">v0.9.0</a>.</li>
-<li>Updated vkd3d-proton to <a href="https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.14.1" rel="noopener nofollow" target="_blank">v2.14.1</a>-153-g<a href="https://github.com/HansKristian-Work/vkd3d-proton/commits/a7159b80e165" rel="noopener nofollow" target="_blank">a7159b80e165</a>.</li>
-<li>Updated wine-mono to <a href="https://gitlab.winehq.org/mono/wine-mono/-/releases/wine-mono-9.4.0" rel="noopener nofollow" target="_blank">9.4.0</a>.</li>
-<li>Updated Xalia to <a href="https://github.com/madewokherd/xalia/releases/tag/xalia-0.4.5" rel="noopener nofollow" target="_blank">0.4.5</a> and enabled it for The TakeOver, Floppy Heroes, Whiskered Away, Himno, Survirus, The Adventure of Ninomae Ina'nis.</li>
-<li>Rebased Wine on top of <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-10.0" rel="noopener nofollow" target="_blank">wine-10.0</a>.</li>
-<li>Added Steamworks SDK 1.62 support.</li>
-</ul>
-</blockquote>
-<p>Source: <a href="https://github.com/ValveSoftware/Proton" rel="noopener nofollow" target="_blank">Proton GitHub</a></p>
-<p><strong>How to test it?</strong></p>
-<p>Search for Proton 10 in your Steam Library, and then download it. From there you can set Proton 10 on specific games to see how they run. See <a href="https://www.gamingonlinux.com/guides/view/how-to-change-the-proton-version-on-linux-steamos-and-steam-deck/" rel="noopener" target="_blank">my guide on changing Proton versions</a> and <a href="http://www.gamingonlinux.com/guides/view/why-are-there-so-many-different-proton-versions-proton-8-proton-9-experimental-ge-proton/" rel="noopener" target="_blank">my guide for all the different Proton versions</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/proton-10-gets-another-beta-update-with-more-fixes-for-windows-games-on-linux-steam-deck/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/proton-10-gets-another-beta-update-with-more-fixes-for-windows-games-on-linux-steam-deck/</guid>
-      <pubDate>Tue, 06 May 2025 19:56:00 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1384916672id26719gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Fanatical&#39;s Monster Hunter Bundle returns again with a good deal</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Fanatical have revived their <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-monster-hunter-bundle" rel="noopener nofollow" target="_blank">Build your own Monster Hunter Bundle</a>, giving you another chance to build up your collection and it's pretty cheap.</p>
-<p>Since it's a build your own deal, you get a bigger discount for adding more into your cart starting from 2+ for £5, 4+ for £4.50 and all of it for £3.12 per item. So altogether you can get the entire thing for about £25.</p>
-<p class="plain-list-title">Available in the bundle:</p>
-<ul>
-<li>Monster Hunter Rise</li>
-<li>Monster Hunter Rise - Deluxe Kit</li>
-<li>Monster Hunter Rise: Sunbreak</li>
-<li>Monster Hunter Rise: Sunbreak - Deluxe Kit</li>
-<li>Monster Hunter World</li>
-<li>Monster Hunter World - Deluxe Kit</li>
-<li>Monster Hunter World: Iceborne</li>
-<li>Monster Hunter World: Iceborne - Deluxe Kit</li>
-</ul>
-<p>Considering their current price it's a good deal. But when you look at Rise and World's individual highest discounts ever on Steam, it's still a cracking deal considering you can get both the main games for £10.</p>
-<p>Both Monster Hunter Rise and Monster Hunter World are rated Steam Deck Verified by Valve. And they both have a Gold rating on ProtonDB for Desktop players.</p>
-<p>Check it out on <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-monster-hunter-bundle" rel="noopener nofollow" target="_blank">the Fanatical store</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/fanaticals-monster-hunter-bundle-returns-again-with-a-good-deal/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/fanaticals-monster-hunter-bundle-returns-again-with-a-good-deal/</guid>
-      <pubDate>Tue, 06 May 2025 19:05:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/986251263id26717gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Fanatical</category>
-      
-      <category>Game Bundle</category>
-      
-    </item>
-    
-    <item>
-      <title>Humble Choice for May is stacked with STAR WARS: Bounty Hunter, The Thaumaturge, Amnesia: The Bunker and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Looks like <a href="https://www.humblebundle.com/membership" rel="noopener nofollow" target="_blank">Humble Choice for May 2025</a> is actually pretty good, stacked with some great looking titles. Here's your usual monthly overview of what's in it and how they might run on Linux Desktop / Steam Deck.</p>
-<p>This is the monthly bundle that you can subscribe to allowing you to claim all of the games included each month with a fresh set, and it also gives you a Humble Store discount (bigger discount up to 20% if you stay subscribed to it for longer).</p>
-<p>Below I will note each game you can get plus the Steam Deck rating, any <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a> rating if there is one (or if it has Native Linux support) and each is a Steam link if you need more info first.</p>
-<p style="text-align:center"><a href="https://www.humblebundle.com/membership" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12470127681746555431gol1.jpg"/></a></p>
-<p><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Steam Deck Verified</strong></p>
-<p><a href="https://store.steampowered.com/app/1684350/The_Thaumaturge/" rel="noopener nofollow" target="_blank">The Thaumaturge</a> - Deluxe Edition (ProtonDB Gold)</p>
-<blockquote>
-<p>The Thaumaturge is a character-driven RPG with a rich story, morally ambiguous choices, and turn-based combat. In a city on the brink of change, use your mystical powers to read emotions, uncover motives, and command folklore-inspired demons — while resisting the temptation of your own pride.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1944430/Amnesia_The_Bunker/" rel="noopener nofollow" target="_blank">Amnesia: The Bunker</a> (ProtonDB Platinum)</p>
-<blockquote>
-<p>Amnesia: The Bunker is a first-person horror game set in a WW1 bunker. A relentless, AI-driven monster stalks you. Survival depends on finding tools, crafting items, and keeping the lights on.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1545560/Shadow_Gambit_The_Cursed_Crew/" rel="noopener nofollow" target="_blank">Shadow Gambit: The Cursed Crew</a> (ProtonDB Platinum)</p>
-<blockquote>
-<p>Assemble your crew and set sail on an infamous ghost ship to sneak, stab, and spellcast your way through the Inquisition in this non-linear stealth strategy game. Chart a course, develop uncanny abilities, and use unconventional tactics to find a powerful pirate artifact!</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/2419090/STAR_WARS_Bounty_Hunter/" rel="noopener nofollow" target="_blank">STAR WARS: Bounty Hunter</a> (ProtonDB Platinum)</p>
-<blockquote>
-<p>In this classic third-person action-adventure, you'll become Jango Fett, Prime Clone of the Grand Army of the Republic, hired to capture a deranged Dark Jedi.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/2386310/Ultros/" rel="noopener nofollow" target="_blank">Ultros</a> (ProtonDB Platinum)</p>
-<blockquote>
-<p>ULTROS is a psychedelic metroidvania where you wake up stranded on The Sarcophagus — a cosmic uterus holding an ancient, demonic being. Trapped in the loop of a black hole, you will have to explore The Sarcophagus and meet its inhabitants to understand the part you play...</p>
-</blockquote>
-<p><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Steam Deck Playable</strong></p>
-<p><a href="https://store.steampowered.com/app/1065310/Evil_West/" rel="noopener nofollow" target="_blank">Evil West</a> (ProtonDB Platinum)</p>
-<blockquote>
-<p>A dark menace consumes the Old West. In solo or coop, fight with style in visceral, explosive combat against bloodthirsty monstrosities. Eradicate the vampiric hordes with your lightning-fueled gauntlet and become a Wild West Superhero.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1658280/Eiyuden_Chronicle_Hundred_Heroes/" rel="noopener nofollow" target="_blank">Eiyuden Chronicle: Hundred Heroes</a> (ProtonDB Gold)</p>
-<blockquote>
-<p>Eiyuden Chronicle: Hundred Heroes is designed to bring players a modern take on a classic JRPG experience. Get ready to lead 100+ playable characters through a war-torn world only you can save.</p>
-</blockquote>
-<p><a href="https://store.steampowered.com/app/1601740/Corpse_Keeper/" rel="noopener nofollow" target="_blank">Corpse Keeper</a></p>
-<blockquote>
-<p>Corpse Keeper is a very challenging action-strategy roguelite. You'll need to lead a squad of three corpses to explore the grim and dark medieval world within limited time, build a powerful army of the living dead, and finally kill the demon lurking in the deep end of the cathedral.</p>
-</blockquote>
-<p><em>+ One month of IGN Plus</em></p>
-<p>Check it out on <a href="https://www.humblebundle.com/membership" rel="noopener nofollow" target="_blank">the Humble Bundle store</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/humble-choice-for-may-is-stacked-with-star-wars-bounty-hunter-the-thaumaturge-amnesia-the-bunker-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/humble-choice-for-may-is-stacked-with-star-wars-bounty-hunter-the-thaumaturge-amnesia-the-bunker-and-more/</guid>
-      <pubDate>Tue, 06 May 2025 18:18:04 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1073442101id26716gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve rolls out SteamVR 2.10 with quick recenter, reduced controller and physics jitter and Linux fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve have released the latest stable version of SteamVR with 2.10 bringing a few fixes and a couple of new features to improve the experience. Nice to see Valve putting a few little improvements for Linux VR fans too.</p>
-<p class="plain-list-title">All the changes are:</p>
-<blockquote>
-<p><strong>SteamVR:</strong></p>
-<ul>
-<li>Quick recenter now available system-wide via system button long press.</li>
-<li>Improved automatic throttling behavior. Reduces controller and physics jitter from throttling and prediction changes in response to performance variations.</li>
-</ul>
-<strong>OpenXR:</strong>
-<ul>
-<li>Better handling of non-pipelined applications. Reduces controller jitter for Unity OpenXR apps.</li>
-</ul>
-<strong>Linux:</strong>
-<ul>
-<li>Fixed empty black window when starting SteamVR on Linux.</li>
-<li>Added window icons to SteamVR windows on Linux.</li>
-</ul>
-<strong>Developer Options</strong>
-<ul>
-<li>Removed remaining legacy 32-bit executables, including: vrmonitor, vrstartup, restarthelper, overlay_viewer.</li>
-<li>Fix UI launching of overlay_viewer.</li>
-<li>overlay_viewer gets better pan / zoom / resize support, and other misc improvements.</li>
-<li>performance improvements to IVRChaperone ()-&gt;GetBoundsColor().</li>
-<li>Added lens calibration model, DISTORT_POLY3_TANGENT_SCALED.</li>
-</ul>
-</blockquote>
-<p>Source: <a href="https://steamcommunity.com/games/250820/announcements/detail/505075712851444413?snr=2___" rel="noopener nofollow" target="_blank">Valve</a></p>
-<p>For those of you doing SteamVR on Linux, leave a comment on how you're finding the experience at the moment.</p>
-<p>I just recently moved my office around, and finally mounted my second SteamVR Base Station for my Valve Index onto a wall instead of resting on a unit. And made some extra space for a bit more room, so hopefully I'll be doing a lot more VR soon. Although, I do hope whatever the Deckard ends up being doesn't need the Base Stations as it would open it up for a lot more people. And, especially, if it will use Linux like we've seen leaked for a standalone mode, my high hope there is that Valve are sitting on some bigger SteamVR improvements for Linux to come.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/valve-rolls-out-steamvr-2-10-with-quick-recenter-reduced-controller-and-physics-jitter-and-linux-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/valve-rolls-out-steamvr-2-10-with-quick-recenter-reduced-controller-and-physics-jitter-and-linux-fixes/</guid>
-      <pubDate>Tue, 06 May 2025 16:33:27 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/SteamVR.jpg" type="image/jpeg"/>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-      <category>Virtual Reality (VR)</category>
-      
-    </item>
-    
-    <item>
-      <title>Playtron wanted to take on Windows and SteamOS with their GameOS, now they&#39;re announcing a cryptocurrency</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Reading the press release sounded like a late April Fools joke, but I think we all saw where Playtron were heading. After <a href="https://www.gamingonlinux.com/2024/03/playtron-plan-to-launch-playtronos-a-linux-based-system-for-gaming/" rel="noopener" target="_blank">originally announcing PlaytronOS</a> (now GameOS), their Linux-powered gaming system, they're now directly moving into crypto.</p>
-<p><em>Because of course they are and to the surprise of no one I think.</em></p>
-<p>They've previously released a few Alpha builds, gathering funding from a few investors (like <a href="https://www.gamingonlinux.com/2024/09/square-enix-invests-in-playtron-for-their-linux-based-playtronos-first-alpha-out-now/" rel="noopener" target="_blank">Square Enix</a>) and talked a lot of big talk to the point that I'm sure some people were originally excited about Playtron — somewhere out there anyway. Especially considering they pulled in developers working on various popular open source stuff like Lutris, Heroic Games Launcher, ChimeraOS, Box64 and others. However, this continued crypto nonsense makes me continue to believe it won't go anywhere outside of the crypto-bro crowd.</p>
-<p>They're calling it Game Dollar, a "stablecoin" that will be used in GameOS to power purchases, subscriptions, and rewards across Playtron "and other gaming ecosystems in the future". And this goes back directly to the <a href="https://www.gamingonlinux.com/2024/04/the-first-handheld-to-use-playtronos-is-some-web3-thing-the-suiplay0x1/" rel="noopener" target="_blank">incredibly weird web3 SuiPlay0x1 handheld</a> that will ship with Playtron's GameOS. They're doing this with support from the stablecoin platform <a href="https://www.m0.org/" rel="noopener nofollow" target="_blank">M0</a> and payments platform Bridge.</p>
-<p>From the press release:</p>
-<p>“Playtron's GameOS reimagines how we play the games we love. Through this lens it became clear: stablecoins will become a financial backbone for the $500B global gaming economy. That’s why Playtron is excited to announce Game Dollar, the stablecoin built for games and ready to handle massive transaction volume over the next decade,” said Kirt McMaster, co-founder and CEO of Playtron. “Game Dollar will unlock new economic models for developers and marketplaces while enabling consumer incentives only possible via programmable dollars.”</p>
-<p>“Programmable stablecoins are the next evolution of digital assets, and Game Dollar is a powerful example of how this innovation unlocks utility for one of the world’s most dynamic sectors,” said Adeniyi Abiodun, Co-Founder and CPO of Mysten Labs. “We’re witnessing the start of a new era where gamers not only play, but participate in dynamic, self-sustaining economies.”</p>
-<p>“We’re excited to see Playtron harness M0’s universal stablecoin platform to reimagine the gaming payments experience in a unique way,” said Luca Prosperi, co-founder and CEO at M0. “This collaboration highlights the power of programmable money applied to real-world use cases, and our vision is that this is how the payments and rewards experiences of the future will look like.”</p>
-<p>“Gaming is a global community, and financial access shouldn't be a barrier. With Bridge powering seamless entry and exit points for Game Dollar, we're making digital economies more inclusive for players—and radically simpler for developers,” said Zach Abrams, CEO at Bridge. “They get stable, ready-to-use payments infrastructure that takes care of compliance and enables a global reach out of the box.”</p>
-<hr/>
-<p>At this point, if you're interested in Linux gaming or any kind of alternative to Windows, you're going to be much better off looking elsewhere. Unless crypto is your thing, I guess. Like Valve's own <a href="https://www.gamingonlinux.com/2025/01/valve-confirms-a-public-beta-of-steamos-is-coming-as-steamos-expands-beyond-steam-deck/" rel="noopener" target="_blank">SteamOS when it eventually gets a public Beta</a>, or <a href="https://bazzite.gg/" rel="noopener nofollow" target="_blank">Bazzite</a>.</p>
-<p>When it comes to hardware vendors for PCs, handhelds and more, what are they going to pick? There's Microsoft's Windows, Valve's SteamOS, various other forms of Linux, or weird <em>crypto-fuelled</em> Linux? I really just cannot imagine a serious normal hardware vendor ever jumping in for this.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/playtron-wanted-to-take-on-windows-and-steamos-with-their-gameos-now-theyre-announcing-a-cryptocurrency/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/playtron-wanted-to-take-on-windows-and-steamos-with-their-gameos-now-theyre-announcing-a-cryptocurrency/</guid>
-      <pubDate>Tue, 06 May 2025 15:22:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1748407167id26714gol.jpg" type="image/jpeg"/>
-      
-      <category>Distro News</category>
-      
-      <category>Editorial</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Starless Abyss is a seriously cool Eldritch-themed space strategy deckbuilder out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>My new favourite deck-builder? Could well be. Starless Abyss released late in April from Konafa Games and No More Robots blending together the worlds of Eldritch horror and deck-builders in a space strategy theme. <em>Note: key provided by the publisher.</em></p>
-<p>I love deck-builders, strategy games and everything space sci-fi so this game is like a little dream for me. Blending together a little from the likes of Slay the Spire, FTL and Into the Breach for the mechanics and theme it's been a huge surprise that really deserves a lot more eyes on it.</p>
-<p><em>Tested on Kubuntu Linux (25.04), it works perfectly with Valve's Proton.</em></p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7799698821746537472gol1.jpg"/></p>
-<p>Starting off like any good deck-builder you pick your captain, which comes with unique skills and off you go to fight off the Eldritch-themed space horrors that are breaking down reality and causing all sorts of trouble. Then we get to the satisfying gameplay loop where you pick between locations to travel, each with their own different rewards and engage in turn-based card-based combat.</p>
-<p>During combat you'll position your ships around a grid each turn, and then play various cards that each have a different energy cost (energy is replenished each turn). What I really liked for the battles is that cards can be used by any ship in your fleet, but ships <em>individually</em> build up heat and so might be unable to use certain cards. It's up to you to balance the heat on each ship and thankfully there's cards that can reduce the heat build up, which also goes down each new turn too.</p>
-<p>As you face off against the space horrors and destroy them, they don't just get removed from the grid. They'll leave a floating carcass which will block movement and line of sight, so you need to deal with that too. Positioning really is important. Being able to hover over a ship and see what enemies plan is also a nice touch, something I'm glad other games took from games like Slay the Spire so you can keep planning ahead but it doesn't make it easy.</p>
-<p>The events system is a unique one here too. You get special Dice (D.I.C.E), which allow you to bend reality to increase your odds during the events. They won't guarantee you get everything though, and they're a limited resource, but a sweet tweak for an events system.</p>
-<p>You get to upgrade your fleet as the game goes on too. There's a shipyard where you can buy new ships to replace one of your current set and each with their own amount of movement, armour, heat and health. Add to that the relics system, where you can give each ship their own set of special buffs (like giving all near ships a shield every turn) and there's a lot of room to really change your play-through on every run.</p>
-<p>Another quite clever addition are the Ritual cards. These powerful one-time bonus cards allow you to do certain actions but they come with a cost. They cause other cards to <em>malfunction</em>, which is a nuisance, but they're often necessary for survival and the malfunctions only last for the current combat.</p>
-<div class="hidden_video" data-video-id="vFmuGZQGKPo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/15866a95e4ed4d730ea24751394daefb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/vFmuGZQGKPo" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Highlights:</p>
-<blockquote>
-<ul>
-<li>Awaken a Proxima with unique skills and downfalls to help you to take on the horrors.</li>
-<li>Command a fleet of upgradable ships across the universe.</li>
-<li>Make pivotal decisions when encountering obstacles between combat, which could help boost or decapitate your run.</li>
-<li>6 different factions of cards can be combined, collected and combo-ed to defeat the horrors in your own way.</li>
-<li>Control your fate using D.I.C.E to increase your chances of survival during random encounters</li>
-<li>Embrace the occult using ritual cards to powerfully destroy and beat the competition.</li>
-<li>Earn credits to buy and upgrade your cards•Unlock artifacts on your run to transform your ships powers•Unlock multiple different Proxima’s, each with their own unique set of skills and downfalls.</li>
-</ul>
-</blockquote>
-<p>Really crispy pixel art mixed with some great turn-based combat, a thoroughly weird but interesting premise all wrapped up in some pretty cool tunes. Love it. Absolutely worth getting.</p>
-<p>It's out now and there's <a href="https://store.steampowered.com/app/3450230/Starless_Abyss_Demo/" rel="noopener nofollow" target="_blank">also a demo</a>.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41860/starless-abyss/">Starless Abyss</a></strong> | Release Date: 25th April 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3167970/Starless_Abyss/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/starless-abyss-is-a-seriously-cool-eldritch-themed-space-strategy-deckbuilder-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/starless-abyss-is-a-seriously-cool-eldritch-themed-space-strategy-deckbuilder-out-now/</guid>
-      <pubDate>Tue, 06 May 2025 13:18:08 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1114512290id26713gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Deck-builder</category>
-      
-      <category>New Release</category>
-      
-      <category>Review</category>
-      
-    </item>
-    
-    <item>
-      <title>Horror adventure ASYLUM updated for Steam Deck and on the way to being Verified</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Senscape continue to tweak their supernatural horror adventure ASYLUM, with a recent update making a few changes to be on the way to getting it Steam Deck Verified. Also, the developer is still working on the Native Linux version.</p>
-<p>Back in April the developer noted in a Steam <a href="https://store.steampowered.com/news/app/230210/view/564746584593531844" rel="noopener nofollow" target="_blank">announcement</a> that they fixed a "softlock in the morgue" for players using Proton but it's a "temporary patch while we keep working on the native Linux/Steam Deck version". While work on that continues, they also just released <a href="https://steamcommunity.com/games/asylum/announcements/detail/501698013135110643" rel="noopener nofollow" target="_blank">another</a> patch over the weekend to improve it overall on the Steam Deck.</p>
-<p>Latest patch notes:</p>
-<blockquote>
-<ul>
-<li>New: Now fully <strong>Playable</strong> on Steam Deck! Only a few tweaks left related to font sizes to get the coveted <strong>Verified</strong> status next.</li>
-<li>New: Full controller support validated! Moving the cursor during close-ups with a gamepad should feel much smoother now.</li>
-<li>Fix: Greatly improved detection of a connected gamepad to properly show tutorials and input tips.</li>
-<li>Fix: Menu settings wouldn't properly detect fullscreen status. Now they do.</li>
-<li>Fix: A non-essential transitional cutscene late in the game was missing following a previous fix. It has been reinstated in all its cutscene-y glory.</li>
-<li>Fix: Also, 2 frames were fixed in the aforementioned cutscene. No idea what this means, I'm going to trust the changelist on this one.</li>
-<li>Fix: That puzzle in the topmost floor still had a few issues involving the timing of certain sound effects. No more.</li>
-<li>Fix: Annoyingly, the head bobbing effect persisted while the menu was opened, making it difficult select stuff. Luckily for you, we are now sparing this annoyance.</li>
-<li>Fix: Increased tab size in notepad, which is specially useful for the Steam Deck. No, it wasn't you and you don't need glasses, the text was indeed too small.</li>
-<li>Fix: Fonts scale better now in lower resolutions, including the menu. Again, another win for Steam Deck!</li>
-</ul>
-</blockquote>
-<p>Original trailer below:</p>
-<div class="hidden_video" data-video-id="xaqcGH7t4wI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/facf845d41c393373c720ae068915293.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/xaqcGH7t4wI" target="_blank">See video</a></div></div>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/11259/asylum/">ASYLUM</a></strong> | Release Date: 13th March 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/asylum">GOG</a></li><li><a href="http://store.steampowered.com/app/230210/ASYLUM/?snr=1_7_7_comingsoon_150_10">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/horror-adventure-asylum-updated-for-steam-deck-and-on-the-way-to-being-verified/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/horror-adventure-asylum-updated-for-steam-deck-and-on-the-way-to-being-verified/</guid>
-      <pubDate>Tue, 06 May 2025 10:56:25 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/481754594id26712gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Adventure</category>
-      
-    </item>
-    
-    <item>
-      <title>BULLET YEETERS is an upcoming miniature-mayhem toy-scale PvP fragfest </title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I'm always on the lookout for a good online shooter that works well on Linux Desktop / Steam Deck and BULLET YEETERS is high up on the list of games that could be great. A shooter of miniature mayhem, with a toy-scale with you and others running around big rooms across various game modes.</p>
-<p>The developers say clearly it will support Steam Deck, and the PR email mentioned "native Steam Deck support" (which I've asked for clarification on). More details:</p>
-<blockquote>
-<p>Bullet Yeeters pays tribute to a classic trope in competitive shooters - shrinking its cast down and turning any messy room into an ever-shifting battleground. With beefy guns and a wide cast of characters with their own powers to turn the tide, it’s not just the bullets that are getting thrown around here. Yeet yourself into action with Bullet Yeeters’ funky-fresh jetpack mechanics. Blast into the air at any point, pick your landing spot and launch to high shelves, dense cover or straight in your opponent’s face for a friendly buckshot greeting!</p>
-<p>Bullet Yeeters is designed to be accessible to players of all skill levels, starting with gentle bot-matches to get newcomers on their feet, then escalating into increasingly complex modes. There’s classic deathmatches (teams optional) with fast respawns, a tense battle royale where cover is life and keeping your partners on their feet is half the challenge. Oh, and who can forget that childhood favourite - the floor is lava! That garish carpet is now instant death, so make sure you tread carefully, or shove enemies into it for a spicy surprise.</p>
-</blockquote>
-<div class="hidden_video" data-video-id="5pYEUsrCeO0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/30641b42febabb4246966d7bb1c69799.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/5pYEUsrCeO0" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Some of the announced game modes include:</p>
-<ul>
-<li>Deathmatch (Team &amp; FFA).</li>
-<li>Floor is Lava.</li>
-<li>Battle Royale.</li>
-<li>PvE boss fights.</li>
-</ul>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41859/bullet-yeeters/">BULLET YEETERS</a></strong> | Release Date: 19th June 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3624020/BULLET_YEETERS/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/bullet-yeeters-is-an-upcoming-miniature-mayhem-toy-scale-pvp-fragfest/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/bullet-yeeters-is-an-upcoming-miniature-mayhem-toy-scale-pvp-fragfest/</guid>
-      <pubDate>Tue, 06 May 2025 10:26:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1742707410id26711gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Battle Royale</category>
-      
-      <category>Online Multiplayer</category>
-      
-    </item>
-    
-    <item>
-      <title>Fight off a planet-wide fungal catastrophe in the upcoming co-op shooter Mycopunk</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>From developer Pigeons at Play and Devolver Digital, Mycopunk is one of those games where you see a few seconds of footage in the trailer, get totally sold and instantly stick it into your wishlist. There's also a demo available to try.</p>
-<p>Your ragtag gang of robot rejects have been hired by the universal megacorp SAXON for one last shot at profitable glory (and avoiding the scrap heap). You are the New Atlas Hazard Crew, a ramshackle squad of exterminators sent to uncover the mysteries behind a planet-wide fungal catastrophe. You get an arsenal of crazy weapons and power tools, and you get to supercharge them with what they're saying is a " one-of-a-kind grid-based upgrade system to create the ridiculous sci-fi super-weapon of your dreams". Yeah, I'm definitely 100% sold on this. I need it.</p>
-<p>This looks like one of the absolute wildest shooters in terms of world and creature design I've seen for a while. Absolutely love the style of it and the action looks intense too. Check out the trailer:</p>
-<div class="hidden_video" data-video-id="nT4jTAMY7m8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ba4f60f9ec566726fc6344d2ca13425b.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/nT4jTAMY7m8" target="_blank">See video</a></div></div>
-<p>I tested out the demo on Desktop Linux with the <a href="https://www.gamingonlinux.com/2025/04/proton-10-gets-a-first-beta-to-improve-game-compatibility-on-steam-deck-and-desktop-linux/" rel="noopener" target="_blank">latest Proton 10 Beta</a>, and it worked perfectly. Even if the trailer didn't sell me on it, the gameplay definitely would have. Chaotic, good fun and some really interesting game mechanics. Shooting enemies and watching them fall apart, and have pieces remain alive and be picked up by others, it's really something. This has quickly turned into one of my most anticipated games for 2025.</p>
-<p>The developer said on <a href="https://steamcommunity.com/app/3247750/discussions/0/595147637711205628/#c595147637711214686" rel="noopener nofollow" target="_blank">Steam</a> that they're "planning to get it steam deck ready for full release" too.</p>
-<p>This is one to watch, could easily end up being the next big co-op shooter.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41858/mycopunk/">Mycopunk</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3247750/Mycopunk/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/fight-off-a-planet-wide-fungal-catastrophe-in-the-upcoming-co-op-shooter-mycopunk/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/fight-off-a-planet-wide-fungal-catastrophe-in-the-upcoming-co-op-shooter-mycopunk/</guid>
-      <pubDate>Tue, 06 May 2025 09:55:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/20898170id26710gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Demo</category>
-      
-      <category>FPS</category>
-      
-    </item>
-    
-    <item>
-      <title>Gears of War is getting a remaster with Gears of War: Reloaded releasing in August</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Microsoft / Xbox Game Studios and developer The Coalition have <a href="https://news.xbox.com/en-us/2025/05/05/gears-of-war-reloaded-release-date/" rel="noopener nofollow" target="_blank">announced</a> Gears of War is getting a remaster with Gears of War: Reloaded. It's coming to Steam on August 26th priced at $39.99.</p>
-<p>So not only are we getting a prequel with <a href="https://www.gamingonlinux.com/2024/06/gears-of-war-e-day-announced-and-its-coming-to-steam/" rel="noopener" target="_blank">Gears of War: E-Day</a>, but an upgraded edition of the first game. Nice!</p>
-<p>Interestingly, from the Xbox announcement, Microsoft seem to have begun rebranding their PC gaming efforts a little bit. In the store / platform list they said it will be available on "Xbox Series X|S, <strong>Xbox PC</strong>, Xbox Cloud Gaming, PlayStation 5, and Steam, and arrives on day one with Game Pass Ultimate or PC Game Pass".</p>
-<p><em>Xbox PC huh?</em></p>
-<p>As for what it will have: "Gears of War: Reloaded includes the full breadth of content from the Gears of War: Ultimate Edition, delivering the most complete version of the original game to date. Players will gain immediate access to all post-launch downloadable content at no additional cost — this includes the bonus Campaign act, all multiplayer maps and modes, and a full roster of classic characters and cosmetics unlockable through progression."</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6707593961746521019gol1.jpg"/></p>
-<p>A Microsoft Account is not required for it, without it you'll be able to do cross-play. However, they said if you sign-in you'll get cross-progression and cross-platform invites.</p>
-<p>Features they said to expect from it:</p>
-<blockquote>
-<ul>
-<li>4K resolution.</li>
-<li>60 FPS in Campaign.</li>
-<li>120 FPS in Multiplayer.</li>
-<li>High Dynamic Range (HDR).</li>
-<li>Dolby Vision &amp; 7.1.4 Dolby Atmos.</li>
-<li>7.1.4 3D Spatial Audio.</li>
-<li>Variable Refresh Rate (VRR).</li>
-<li>4K assets and remastered textures.</li>
-<li>Enhanced post-processing visual effects.</li>
-<li>Improved shadows and reflections.</li>
-<li>Super resolution with improved anti-aliasing.</li>
-<li>Zero loading screens during Campaign.</li>
-</ul>
-</blockquote>
-<p>The only bit that really concerns me, is that the Steam page already notes it will use Easy Anti-Cheat. However, Microsoft did at least enable that in Halo Infinite and Halo: The Master Chief Collection so hopefully they will again for Linux Desktop / Steam Deck. You can see the status of more games with anti-cheat on our <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">dedicated compatibility page</a>.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41856/gears-of-war-reloaded/">Gears of War: Reloaded</a></strong> | Release Date: 26th August 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2523720/Gears_of_War_Reloaded/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/gears-of-war-is-getting-a-remaster-with-gears-of-war-reloaded-releasing-in-august/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/gears-of-war-is-getting-a-remaster-with-gears-of-war-reloaded-releasing-in-august/</guid>
-      <pubDate>Tue, 06 May 2025 08:48:24 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/732171320id26709gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Microsoft</category>
       
     </item>
     
