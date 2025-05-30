@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-05-29 07:30:57.266470</pubDate>
+    <pubDate>2025-05-30 07:30:30.292317</pubDate>
 
     
     <image>
@@ -18,6 +18,346 @@
     </image>
 
     
+    
+    <item>
+      <title>Mesa 25.0.7 open source Linux graphics drivers released</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Developer Eric Engestrom announced the Mesa 25.0.7 release, finishing off the 25.0 series of open source Linux graphics drivers. If you want future updates, you'll need to upgrade to the next major version of Mesa which is currently at <a href="https://www.gamingonlinux.com/2025/05/mesa-25-1-1-is-out-now-with-the-amd-gpu-fix-for-doom-the-dark-ages/" rel="noopener" target="_blank">Mesa 25.1.1</a>.</p>
+<p>If you're on SteamOS, Valve updates Mesa with their SteamOS updates. For desktop users see <a href="https://www.gamingonlinux.com/guides/view/how-to-install-update-and-see-what-graphics-driver-you-have-on-linux-and-steamos/" rel="noopener" target="_blank">my graphics driver guide</a>.</p>
+<p>The main highlighted fixes in this release include:</p>
+<blockquote>
+<ul>
+<li>RX9070 hard crash with Mafia Definitive Edition.</li>
+<li>RADV: Potential bug with vulkan fragment shader interpolation (on outputs from mesh shaders?).</li>
+<li>In the game “Foundation” a buildings areas of effect is missing.</li>
+<li>ANV: Dota 2 May 22 2025 update crashing in vkCmdBindDescriptorSets with no validation error.</li>
+<li>[RADV][GFX9] Recent Mesa-git broken on AMD Vega 64 with ring sdma0 timeouts when launching DXVK games.</li>
+<li>Vulkan Video engages during playback of format which is not supported by my Fiji GPU.</li>
+<li>ACO: IR Validation error “SDWA operand selection size” triggered by compute shader on VEGA20.</li>
+<li>RADV: Gibberish output with llama.cpp (Vulkan compute) on Radeon VII (Vega20) with Mesa 25.1.0, works on 25.0.5.</li>
+<li>Blending broken in game SkinDeep.</li>
+<li>Radeon R5 (Mullins) H264 VA-API encoding acceleration doesn’t work.</li>
+<li>nvk: lib_rs_gen.py requires `rustfmt`.</li>
+<li>radv: vkd3d-proton test failure with predication + EXT_dgc.</li>
+<li>mesa-25.0.4 aborts Xserver due to ACO “Unsupported opcode” v_lshlrev_b16.</li>
+</ul>
+</blockquote>
+<p>When to expect more releases? This is the current release schedule, showing the latest major release Mesa 25.1 will get bug-fix releases until late August:</p>
+<table class="table-stripes-tbody">
+<tbody>
+<tr>
+<td>
+<p><strong>25.1</strong></p>
+</td>
+<td>
+<p>2025-06-04</p>
+</td>
+<td>
+<p>25.1.2</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>2025-06-18</p>
+</td>
+<td>
+<p>25.1.3</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>2025-07-02</p>
+</td>
+<td>
+<p>25.1.4</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>2025-07-16</p>
+</td>
+<td>
+<p>25.1.5</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>2025-07-30</p>
+</td>
+<td>
+<p>25.1.6</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>2025-08-13</p>
+</td>
+<td>
+<p>25.1.7</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>2025-08-27</p>
+</td>
+<td>
+<p>25.1.8</p>
+</td>
+<td>
+<p>Last planned 25.1.x release.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>25.2</strong></p>
+</td>
+<td>
+<p>2025-07-16</p>
+</td>
+<td>
+<p>25.2.0-rc1</p>
+</td>
+<td>
+<p>25.2 branchpoint</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>2025-07-23</p>
+</td>
+<td>
+<p>25.2.0-rc2</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>2025-07-30</p>
+</td>
+<td>
+<p>25.2.0-rc3</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<p>2025-08-06</p>
+</td>
+<td>
+<p>25.2.0-rc4</p>
+</td>
+<td>
+<p>or 25.2.0 final</p>
+</td>
+</tr>
+</tbody>
+</table>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/mesa-25-0-7-open-source-linux-graphics-drivers-released/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/mesa-25-0-7-open-source-linux-graphics-drivers-released/</guid>
+      <pubDate>Thu, 29 May 2025 16:58:26 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/mesa.png" type="image/jpeg"/>
+      
+      <category>AMD</category>
+      
+      <category>Drivers</category>
+      
+      <category>Intel</category>
+      
+      <category>Mesa</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve give Steam developer and publisher pages a little extra visibility</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve have done a couple of small but useful tweaks to developer and publisher homepages, resulting in hopefully a little more visibility.</p>
+<p>Don't know what I'm talking about? When you click a developer or publisher name on Steam, if developers have actually set them up, you'll go to their fancy page. They're actually pretty important for the reach of games, since anyone logged in on Steam can directly follow a page to get notifications about new game releases. Easy for players to keep track of their favourite developers and publishers.</p>
+<p>Like this example below for Hooded Horse:</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21138445341748536852gol1.jpg"/></p>
+<p>Valve have tweaked the pages to enable developers to add various social media links, so they will show up at the top.</p>
+<p>Additionally, these pages will also now show up every time you go through the checkout process on Steam, to show the pages for all the developers and publishers involved. Example below for 9 Kings (look to the bottom right):</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6731095551748537046gol1.jpg"/></p>
+<p>On top of that, Valve made even it easier for developers to link games to these homepages so nothing gets missed. As developers set up a new store page for a new game, they can link them up right there whereas before it was an entirely separate page.</p>
+<p>Source: <a href="https://store.steampowered.com/news/group/4145017/view/532097944415897164" rel="noopener nofollow" target="_blank">Valve</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/valve-give-steam-developer-and-publisher-pages-a-little-extra-visibility/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/valve-give-steam-developer-and-publisher-pages-a-little-extra-visibility/</guid>
+      <pubDate>Thu, 29 May 2025 16:46:31 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_plain_2025.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+      <category>Valve</category>
+      
+    </item>
+    
+    <item>
+      <title>REMATCH is working well on Linux / Steam Deck in the Beta</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>REMATCH is an upcoming Football game from Sifu developer Sloclap, that feels very much like Rocket League but actual Football. <em>A Beta is live now on Steam which you can request access to via the Steam Playtest.</em></p>
+<p>Thankfully, it appears that Easy Anti-Cheat is fully enabled for Proton so players on Linux, SteamOS / Steam Deck will be able to play. I've had no issues getting into games today to test it out. Which is great, because there's a <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">number of popular games with anti-cheat</a> that block Linux platforms. REMATCH could easily be the next big multiplayer game, so this is awesome to see.</p>
+<p>However, to keep expectations in check, this currently working status could change between the Beta and full release (we've seen that happen a few times). I did reach out to the developer and publisher and their PR team and no one has replied to me on it.</p>
+<div class="hidden_video" data-video-id="EFMw23F-KbA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2448948162c80f1261086ef1efdb3431.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/EFMw23F-KbA" target="_blank">See video</a></div></div>
+<p>On Desktop Linux (Kubuntu 25.04) there's been no problems. It's incredibly smooth and looks great. A little challenging to learn though, quite a few different controls but genuinely seems like a lot of fun to play.</p>
+<p>Playing it on Steam Deck with default (all Low) visuals, in a 3v3 match it seemed to keep a near solid 60FPS.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11360347871748535293gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11360347871748535293gol1.jpeg"/></a></p>
+<p>Testing a 5v5 (the max player count) on Medium settings on Steam Deck, it was still surprisingly playable, although the performance was a fair bit lower at around 40-50FPS.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1950780791748536171gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1950780791748536171gol1.jpeg"/></a></p>
+<p>Hopefully the anti-cheat will remain enabled once it's out fully on June 19th. Will keep you updated on any changes.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42050/rematch/">REMATCH</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2138720/REMATCH/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/rematch-is-working-well-on-linux-steam-deck-in-the-beta/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/rematch-is-working-well-on-linux-steam-deck-in-the-beta/</guid>
+      <pubDate>Thu, 29 May 2025 16:30:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/606086020id26881gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>Online Multiplayer</category>
+      
+    </item>
+    
+    <item>
+      <title>Ubuntu gets monthly snapshot testing releases</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>To aid testing and ensure future Ubuntu (and Kubuntu etc) releases are in good shape, Canonical have announced monthly snapshots.</p>
+<p>Canonical's VP of Engineering, Jon Seager, wrote a post on the official Discourse Forum going through the details. Talking about how things have changed with more rolling-release distros, immutable distros and so on with the goal here to "build a release process that takes advantage of modern release engineering practices, while retaining the resilience and stability of our six-monthly releases".</p>
+<p>To be clear, they're <strong>not</strong> replacing their current normal releases, this is more about getting more automated testing done. However, it also makes it easier for testers to get their hands on upcoming releases for regular testing too.</p>
+<p>As Seager said "Starting in May 2025, we’re introducing monthly snapshot releases for Ubuntu.</p>
+<p>Ubuntu is not “moving to monthly releases” or adopting a rolling release model; we’re committed to our six-monthly releases with a Long Term Support (LTS) release every two years. That doesn’t mean that our release process should be exempt from the same scrutiny that the rest of our engineering processes are subject to."</p>
+<p>As part of this, they've also recently formed a new 'Canonical Ubuntu Release Management Team' to help develop the process for all this to work alongside the main Ubuntu Release Team. Part of it is to help the team get away from "deep institutional knowledge, and toward clean well-documented automated workflows that are transparent, repeatable and testable". With their current model "failure modes are not detected until they’re urgent and blocking an imminent release" so this gives more opportunities to avoid that.</p>
+<p>Source: <a href="https://discourse.ubuntu.com/t/supercharging-ubuntu-releases-monthly-snapshots-automation/61876" rel="noopener nofollow" target="_blank">Canonical</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/ubuntu-gets-monthly-snapshot-testing-releases/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/ubuntu-gets-monthly-snapshot-testing-releases/</guid>
+      <pubDate>Thu, 29 May 2025 15:45:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/ubuntu.png" type="image/jpeg"/>
+      
+      <category>Kubuntu</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+      <category>Ubuntu</category>
+      
+    </item>
+    
+    <item>
+      <title>GeForce NOW app for Steam Deck has arrived</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA have today officially released their GeForce NOW native app for the Steam Deck, to give a better experience than using a browser with more features.</p>
+<p>They said "The app is now available, and gamers can stream titles on the Steam Deck at up to 4K 60 frames per second — connected to a TV — with HDR10, NVIDIA DLSS 4 and Reflex technologies on supported titles. Plus, members can run these games at settings and performance levels that aren’t possible natively on the Steam Deck. To top it off, Steam Deck users can enjoy up to 50% longer battery life when streaming from an RTX gaming rig in the cloud."</p>
+<p>This is for playing games you already own, or free to play games.</p>
+<div class="hidden_video" data-video-id="6tDvIATtQrI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/bca08b4769b79722adcca54bcaa8bbf2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/6tDvIATtQrI" target="_blank">See video</a></div></div>
+<p>To get it you need to be in Desktop Mode. Via the STEAM menu -&gt; Power -&gt; Switch to Desktop:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/7266339311748529396gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/7266339311748529396gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1994181761748529416gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/1994181761748529416gol1.jpeg"/></a></p>
+<p>Then download it from <a href="https://www.nvidia.com/en-us/geforce-now/download/" rel="noopener nofollow" target="_blank">their website</a> in your browser. Installation <em>should</em> be easy, with the supplied installer they provide that walks you through it. You'll find it in your Downloads folder. Simply double-click it, hit Execute and then Continue and it will pop up with the installer.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/10390225431748531063gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/10390225431748531063gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2522377151748531171gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/2522377151748531171gol1.png"/></a></p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/11770925591748531170gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/11770925591748531170gol1.png"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15220959481748531169gol1.png" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/15220959481748531169gol1.png"/></a></p>
+<p>After which, you can simply go back to Gaming Mode and find it in the Non-Steam section of your Steam Library.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19595850781748531300gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/19595850781748531300gol1.jpeg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/19424065511748531353gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/19424065511748531353gol1.jpeg"/></a></p>
+<p><em>NVIDIA gave early access to a whole bunch of other sites but did not send anything to GamingOnLinux.</em></p>
+<p>Even though it has been announced and "released", the download page at time of writing has not been updated to the new app. So looks like they either forgot, or it's going to be updated sometime today. <em><strong>Update 2:24 UTC</strong> - the download link has now been corrected to the new app.</em></p>
+<p>This will be really great for playing games where the developer has not enabled <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">the anti-cheat</a>.</p>
+<p>Source: <a href="https://blogs.nvidia.com/blog/geforce-now-thursday-steam-deck-geforce-now/" rel="noopener nofollow" target="_blank">NVIDIA</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/geforce-now-app-for-steam-deck-has-arrived/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/geforce-now-app-for-steam-deck-has-arrived/</guid>
+      <pubDate>Thu, 29 May 2025 13:50:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1451414677id26879gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Cloud Gaming</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Another dev gone, EA cancels Black Panther and closes Cliffhanger Games</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The rough time for the gaming industry continues, with a report that EA have cancelled the Black Panther game along with closing Cliffhanger Games.</p>
+<p>Only recently <a href="https://www.gamingonlinux.com/2025/04/ea-and-codemasters-no-longer-making-wrc-world-rally-championship-games/" rel="noopener" target="_blank">EA's Codemasters also dropped the license</a> for the WRC games, with it <a href="https://www.gamingonlinux.com/2025/05/fia-world-rally-championship-wrc-games-return-to-nacon/" rel="noopener" target="_blank">moving to NACON</a>. We also had the announcement recently where EA also cancelled <a href="https://www.gamingonlinux.com/2025/04/ea-cancels-multiple-projects-from-apex-and-titanfall-developer-respawn-with-more-layoffs/" rel="noopener" target="_blank">multiple projects with layoffs at Apex developer Respawn</a>.</p>
+<p>Another blow for a whole lot of developers, as per the report from <a href="https://www.ign.com/articles/ea-cancels-black-panther-game-closes-cliffhanger-games" rel="noopener nofollow" target="_blank">IGN</a> who saw an email from EA Entertainment president Laura Miele. According to the email EA will focus mostly on a smaller set of franchises including Battlefield, The Sims, Skate, and Apex Legends. That and their upcoming Iron Man game, another Star Wars: Jedi game and Mass Effect.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11880471741748524401gol1.jpg"/></p>
+<p>I do hope the developers who now have to find another job will find something soon.</p>
+<p>EA didn't respond for comment.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/another-dev-gone-ea-cancels-black-panther-and-closes-cliffhanger-games/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/another-dev-gone-ea-cancels-black-panther-and-closes-cliffhanger-games/</guid>
+      <pubDate>Thu, 29 May 2025 13:19:10 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1121534604id26878gol.jpg" type="image/jpeg"/>
+      
+      <category>Electronic Arts</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>ELDEN RING NIGHTREIGN launches today and works on Linux, SteamOS / Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>ELDEN RING NIGHTREIGN arrives today by FromSoftware and thankfully it will work on Linux, SteamOS / Steam Deck even with the anti-cheat.</p>
+<p>The game uses Easy Anti-Cheat and additionally also has GuardIT DRM and seems neither are causing any problems. It's now noted on <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our anti-cheat page</a> so keep an eye on it for any changes. Our friends at <a href="https://steamdeckhq.com/game-reviews/elden-ring-nightreign/" rel="noopener nofollow" target="_blank">SteamDeckHQ</a> did an overview of it directly on Steam Deck. Really great to see such a big release working on Linux platforms.</p>
+<p>Additionally, the developer has put up new trailers. One of which brings us back to the days of AMV's being super popular, with Evanescence:</p>
+<div class="hidden_video" data-video-id="Ot6j_qqYQaM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0561beda19c77e988674c36fd51af1ba.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Ot6j_qqYQaM" target="_blank">See video</a></div></div>
+<p>Are you going to be buying it? I don't play enough co-op games to make this one actually worth my time, so it's one I'm personally going to be skipping over. Also, I was never particularly fussed about ELDEN RING myself. Great design, but the punishing side of it just wasn't for me.</p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40740/elden-ring-nightreign/">ELDEN RING NIGHTREIGN</a></strong> | Release Date: 29th May 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.fanatical.com/en/game/elden-ring-nightreign">Fanatical</a></li><li><a href="https://store.steampowered.com/app/2622380/ELDEN_RING_NIGHTREIGN/">Steam</a></li></ul></p></div></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/05/elden-ring-nightreign-launches-today-and-works-on-linux-steamos-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/elden-ring-nightreign-launches-today-and-works-on-linux-steamos-steam-deck/</guid>
+      <pubDate>Thu, 29 May 2025 13:01:35 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1134562034id26877gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>Online Co-op</category>
+      
+    </item>
     
     <item>
       <title>Watchword gives the Balatro treatment to an anagram word game</title>
@@ -203,7 +543,7 @@ Please note that only the source code is released under the MIT license, not the
 </tr>
 </tbody>
 </table>
-<p>When it comes to battery life, SteamOS was yet again a <em>very</em> clear winner in this with even demanding titles like Cyberpunk 2077 having 1 hour 31 minutes on Windows and 2 hours 6 minutes on SteamOS. In less demanding titles like Dead Cells the difference is absolutely insane jumping from 2 hours 47 minutes on Windows to 7 hours 8 minutes on SteamOS.</p>
+<p>When it comes to battery life, SteamOS was yet again a <em>very</em> clear winner in this with even demanding titles like Cyberpunk 2077 having 1 hour 31 minutes on Windows and 1 hour 54 minutes on SteamOS. In less demanding titles like Dead Cells the difference is absolutely insane jumping from 2 hours 47 minutes on Windows to 6 hours 12 minutes on SteamOS. Again for Hades at only 1 hour 58 minutes on Windows and 4 hours 17 minutes on SteamOS.</p>
 <p>Dave2D also talks again about just how good the sleep system is on SteamOS, with you being able to just tap the power button on the Legion Go S and tap it again to pick up right where you left off which just doesn't really work on Windows. Seems like it's just win after win for SteamOS compared to Windows for handheld gaming (apart from <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">games with anti-cheat</a>).</p>
 <p>See their full video on it below, Dave2D does some really nice work:</p>
 <div class="hidden_video" data-video-id="CJXp3UYj50Q"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7ba73264c100623d3de935a8bc314f26.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/CJXp3UYj50Q" target="_blank">See video</a></div></div>
@@ -4749,283 +5089,6 @@ vulkan/wsi/wayland: make needs_color_surface_old check if surface exists</p>
       <category>Indie Game</category>
       
       <category>Platformer</category>
-      
-    </item>
-    
-    <item>
-      <title>Here&#39;s a statement from Valve on the reported Steam data breach</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>There's been reports of a Steam data breach recently, and instead of jumping the gun I reached out to Valve first to see what was going on.</p>
-<p>From what I can tell the reports originated on <a href="https://www.linkedin.com/posts/underdark-ai_cybersecurity-databreach-steam-activity-7327022917370703872-JqN3" rel="noopener nofollow" target="_blank">LinkedIn</a> from "Underdark.ai" that claimed there was a "Massive Alleged Steam Data Breach: 89M+ Records for Sale". This was then picked up on X/Twitter, and then lots of news websites posted it up. The initial report mentioned the company Twilio, who told me earlier today:</p>
-<blockquote>
-<p>There is no evidence to suggest that Twilio was breached. We have reviewed a sampling of the data found online, and see no indication that this data was obtained from Twilio.</p>
-<cite>A Twilio Spokesperson</cite></blockquote>
-<p>Next up, the full statement sent to me by Valve:</p>
-<blockquote>
-<p>Yesterday we were made aware of reports of leaks of older text messages that had previously been sent to Steam customers. We have examined the leak sample and have determined <strong>this was NOT a breach of Steam systems.</strong></p>
-<p>We’re still digging into the source of the leak, which is compounded by the fact that any SMS messages are unencrypted in transit, and routed through multiple providers on the way to your phone.</p>
-<p>The leak consisted of older text messages that included one-time codes that were only valid for 15-minute time frames and the phone numbers they were sent to. <strong>The leaked data did not associate the phone numbers with a Steam account, password information, payment information or other personal data.</strong> Old text messages cannot be used to breach the security of your Steam account, and whenever a code is used to change your Steam email or password using SMS, you will receive a confirmation via email and/or Steam secure messages.</p>
-<p>From a Steam perspective, customers do not need to change their passwords or phone numbers as a result of this event. It is a good reminder to treat any account security messages that you have not explicitly requested as suspicious. We recommend regularly checking your Steam account security at any time at <a href="https://store.steampowered.com/account/authorizeddevices" rel="noopener nofollow" target="_blank" title="https://store.steampowered.com/account/authorizeddevices">https://store.steampowered.com/account/authorizeddevices</a>.</p>
-<p>We also recommend Steam users set up the Steam Mobile Authenticator if they haven’t already, as it gives us the best way to send secure messages about their account and that account’s safety.</p>
-<cite>Valve Press</cite></blockquote>
-<p>Will update when I learn any more verified information.</p>
-<p><em>Quick little update 11:09 BST — Valve have now posted it officially on <a href="https://steamcommunity.com/games/593110/announcements/detail/533224478739530146" rel="noopener nofollow" target="_blank">Steam</a>.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/heres-a-statement-from-valve-on-the-reported-steam-data-breach/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/heres-a-statement-from-valve-on-the-reported-steam-data-breach/</guid>
-      <pubDate>Wed, 14 May 2025 21:51:42 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Security</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Mesa 25.0.6 released with AMD GPU fixes for DOOM: The Dark Ages on Linux</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The open source Mesa 25.0.6 graphics drivers bug-fix release is out now, and thankfully this one comes with the updates needed to run DOOM: The Dark Ages on Linux with Proton when you have an AMD GPU.</p>
-<p><a href="https://www.gamingonlinux.com/2025/05/doom-the-dark-ages-needs-workarounds-on-linux-with-amd-gpus-a-fix-has-been-merged-into-mesa/" rel="noopener" target="_blank">I recently reported about the issues</a> with DOOM: The Dark Ages, and it's nice to see it solved so quickly and <em>just</em> ahead of the game being released properly in a few hours. There's also issues solved for Skin Deep, Psychonauts, Indiana Jones and The Great Circle, Hunt Showdown 1896, Kingdom Come: Deliverance II,  Tomb Raider IV - VI Remastered and Dota 2 across different drivers.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18217050371747247421gol1.jpg"/><br/>
-<em>Pictured - DOOM: The Dark Ages</em></p>
-<p>The DOOM fix is <em>not</em> actually in their main highlighted list of bug-fixes at the top of the <a href="https://docs.mesa3d.org/relnotes/25.0.6.html" rel="noopener nofollow" target="_blank">changelog</a> (as quoted below), but when you scroll down a bit it does note these changes are included from developer Natalie Vock:</p>
-<blockquote>
-<ul>
-<li>radv,driconf: Add radv_force_64k_sparse_alignment config.</li>
-<li>driconf: Add workarounds for DOOM: The Dark Ages.</li>
-</ul>
-</blockquote>
-<p>The main highlighted fixes otherwise are:</p>
-<blockquote>
-<ul>
-<li>In SkinDeep, GL_LINES causes GL_INVALID_OPERATION with radeonsi and llvmpipe.</li>
-<li>radv: UB and artifacts when copying a `COMBINED_IMAGE_SAMPLER` with an immutable sampler.</li>
-<li>RADV: Dynamic state multiple viewport corruption.</li>
-<li>[drm:amdgpu_uvd_cs_pass2 [amdgpu]] *ERROR* )Handle 0x48780001 already in use!</li>
-<li>glGetInternalformativ returns incorrect information for GL_STENCIL_INDEX8.</li>
-<li>RadeonSI: Psychonauts rendering regression since !29895.</li>
-<li>[r600g] Rejected CS when using dolphin’s GPU texture decoder.</li>
-<li>radeonsi: Assertion `src_bit_size == bit_size’ failed. when running without MESA_GLSL_DISABLE_IO_OPT=1.</li>
-<li>radeonsi vdpau + Packed YUY2 = assert.</li>
-<li>Indiana Jones and The Great Circle, Graphical corruption on 9070 XT.</li>
-<li>glPushAttrib/glPopAttrib broken with glColorMaterial and ligthing.</li>
-<li>radv: Flickering in Kingdom Come: Deliverance II.</li>
-<li>RADV regression causes severe glitches in Hunt Showdown 1896 on Polaris.</li>
-<li>Z-Fighting in Tomb Raider IV - VI Remastered Linux.</li>
-<li>RADV:RX 9070:Mesa-25.0.5 GTA 5 Enhanced GPU HANG.</li>
-<li>[anv] VK_ERROR_DEVICE_LOST on Linux 6.13.8 while playing Dota 2 on Intel Graphics.</li>
-</ul>
-</blockquote>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/mesa-25-0-6-released-with-amd-gpu-fixes-for-doom-the-dark-ages-on-linux/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/mesa-25-0-6-released-with-amd-gpu-fixes-for-doom-the-dark-ages-on-linux/</guid>
-      <pubDate>Wed, 14 May 2025 18:35:06 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/982539846id26781gol.jpg" type="image/jpeg"/>
-      
-      <category>AMD</category>
-      
-      <category>Drivers</category>
-      
-      <category>Mesa</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Rogue Worlds is a free chaotic tactical roguelite platformer out now with Linux and Steam Deck support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Rogue Worlds is a new free chaotic tactical roguelite platformer that's a spin-off of Aura of Worlds, a paid bigger game from developer Cognitive Forge. It looks really good and can't argue with that price.</p>
-<p>Here, the environment is your toolkit and your key to salvation. You'll outwit deadly traps, swing across dangerous gaps, wield the strength of enemies against them, and turn hazards into chaotic advantages at every turn. The game has Native Linux support and is Steam Deck Verified.</p>
-<p>Check out their trailer below:</p>
-<div class="hidden_video" data-video-id="RkVpiC0YxY4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/a65e7f3792f44e1fbf8c2fdd8c7c634e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/RkVpiC0YxY4" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li>Diverse Level Themes: Tidal corridors lined with mines, flickering lights in underground ruins, rising lava pits, and carnivorous gardens. Each environment brings unique dangers and opportunities.</li>
-<li>Creative Abilities: Master parkour, cloak from enemies, or even enthrall foes to fight on your side.</li>
-<li>Multi-Use Objects: Light your way with a lantern—or throw it as an improvised flaming Molotov.</li>
-<li>Challenging Boss Fights: Outsmart colossal adversaries by using both your reflexes and the environment to your advantage.</li>
-<li>Handcrafted Pixel Art &amp; Animations: Beautifully detailed pixel visuals bring the world to life.</li>
-<li>Unique Musical Score: An immersive soundtrack that evolves with your adventure.</li>
-<li>Permanent Progression: Unlock new items, character backgrounds, and more to customize your journey.</li>
-</ul>
-</blockquote>
-<p>On the subject of how it's connected to their previous games, Aura of Worlds, they said "Rogue Worlds offers a focused, free start to the creative survival gameplay that defines Aura of Worlds. While it stands on its own, it’s also part of a larger, evolving universe, with Aura of Worlds receiving ongoing content updates, expanded biomes, new items, challenges, and more surprises still to come. Progress made in Rogue Worlds carries over to Aura of Worlds, allowing players to seamlessly continue their journey with unlocked gear, rescued allies, and upgraded options intact. Whether you’re discovering the series for the first time or jumping in from the full game, Rogue Worlds is a fast, flexible, and chaotic entry point built to reward experimentation and improvisation."</p>
-<p>So it's sort-of like a really big demo, but also not a demo because it stands on its own. A smaller free companion game that can be played by itself.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41152/rogue-worlds/">Rogue Worlds</a></strong> | Release Date: 14th May 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3410640/Rogue_Worlds/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/rogue-worlds-is-a-free-chaotic-tactical-roguelite-platformer-out-now-with-linux-and-steam-deck-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/rogue-worlds-is-a-free-chaotic-tactical-roguelite-platformer-out-now-with-linux-and-steam-deck-support/</guid>
-      <pubDate>Wed, 14 May 2025 17:25:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/119775639id26780gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Indie Game</category>
-      
-      <category>New Release</category>
-      
-    </item>
-    
-    <item>
-      <title>The fusion of deck-building and space-Tetris in the demo of Moonsigil Atlas has totally hooked me</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Moonsigil Atlas has a demo out now and it's already shot right up to the top of my wishlist. The idea of fusing a Slay the Spire styled deck-builder with something sort-of Tetris-like is just incredibly slick.</p>
-<p>I wrote about it <a href="https://www.gamingonlinux.com/2025/04/moonsigil-atlas-is-a-deckbuilding-roguelike-with-tile-based-energy-thats-tetris-meets-slay-the-spire/" rel="noopener" target="_blank">earlier in April</a>, quite interested in the idea and the developer sent over a pre-release key for the demo that I've <em>thoroughly enjoyed</em> playing through. For a deck-builder, it's incredibly refreshing and thoroughly different to play through thanks to the main game mechanic of fitting pieces onto a board.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2447696861747241812gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2447696861747241812gol1.jpg"/></a></p>
-<p>How it works: you fight in battles where your cards need to be placed onto the centre board. The cards all have different shapes, so part of the strategy is knowing not just what card to use but where <em>exactly</em> to place it onto the board too. Enemies you face can also place their own shapes on the board to mess with you, some of which can have really annoying effects on your cards that you need to watch out for.</p>
-<p>There's no mana system, which makes it initially a little odd, as you can just keep on using cards and placing shapes as long as you think they'll be useful each round. In a way, the board itself is your mana. I especially like how the card upgrade system allows you to remove specific tiles you select from individual cards, so you can make some of them easier to slot together with other cards when placing them on the board later on.</p>
-<p>Trailer is below if you missed me covering it previously:</p>
-<div class="hidden_video" data-video-id="aTEJ9InXqfI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cca04806e6fdc7af121eb08674600cf4.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/aTEJ9InXqfI" target="_blank">See video</a></div></div>
-<p>Really fun idea and wonderful visuals and audio too.</p>
-<p>Go give the demo a run through and let me know what you think in the comments. The demo has over 100 cards, two playable characters and various different enemies to battle.</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41554/moonsigil-atlas/">Moonsigil Atlas</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3284290/Moonsigil_Atlas/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/the-fusion-of-deck-building-and-space-tetris-in-the-demo-of-moonsigil-atlas-has-totally-hooked-me/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/the-fusion-of-deck-building-and-space-tetris-in-the-demo-of-moonsigil-atlas-has-totally-hooked-me/</guid>
-      <pubDate>Wed, 14 May 2025 17:01:33 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1160028286id26779gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Deck-builder</category>
-      
-      <category>Demo</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Rescue Ops: Wildfire could be a good one for co-op fans where you fight raging infernos</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Rescue Ops: Wildfire is an upcoming immersive firefighter simulation game where you (and friends, if you have any) get to attempt to put out dynamic, unpredictable mega-fires.</p>
-<p>Mixed across two modes you'll be able to play through a mission-based campaign playable alone or with up to 4 total players. There's also going to be a sandbox mode to really test yourself on the frontlines. I'm definitely interested to see their fire reaction system that they said reacts to wind strength and direction and can "spread across vast hectares of terrain, no two fires or the way you approach them will ever be the same".</p>
-<p>From the press release:</p>
-<blockquote>
-<p>With climate change giving rise to more frequent and extreme wildfires around the world, more than ever before brave firefighters heroically walk into the fire and flames to protect our communities. In Rescue Ops: Wildfire, players will experience the intensity of being on the front lines of one the world’s most dangerous professions, built from the ground up for solo or cooperative play.</p>
-<p>From the fire station to the front line, you’re in control. The initial emergency call to the fire station is just the first step, and it’s then that you’ll have to use the many varied tactics, tools, strategies, and mechanics at your disposal to battle the blaze. Operate a fleet of ground and aerial vehicles to assess and travel to the incident site, locate and rescue trapped or injured civilians, call in tactical support, wield forest clearing equipment, and take the fight directly to the mega-fires with intricate and immersive water hose systems and gameplay.</p>
-</blockquote>
-<div class="hidden_video" data-video-id="KZEHa6LAMCU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/46e151e38f2540e1ee6d885701d72360.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/KZEHa6LAMCU" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Features:</p>
-<blockquote>
-<ul>
-<li>Fight to control massive dynamic wildfires and determine the best strategies in Campaign and Sandbox mode, alone or with players worldwide.</li>
-<li>Operate a fleet of ground and aerial firefighting vehicles including fire engines and helicopters.</li>
-<li>Call in tactical support to gain the upper hand: deploy water bombers, have a water supply delivered, or ask for ground support to establish an attack or defense line.</li>
-<li>Gear up with cutting-edge equipment, developed with the support and expertise of professional firefighters.</li>
-<li>Charge into maps inspired by the world’s wildest regions, each with unique terrain and challenges.</li>
-</ul>
-</blockquote>
-<p>Hopefully there won't be any problems with running this one with Proton on Linux / SteamOS. I like the idea of it and the short glimpse we get in the reveal trailer seems like it could actually get pretty intense. </p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41946/rescue-ops-wildfire/">Rescue Ops: Wildfire</a></strong><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2915770/Rescue_Ops_Wildfire/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/rescue-ops-wildfire-could-be-a-good-one-for-co-op-fans-where-you-fight-raging-infernos/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/rescue-ops-wildfire-could-be-a-good-one-for-co-op-fans-where-you-fight-raging-infernos/</guid>
-      <pubDate>Wed, 14 May 2025 15:50:36 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/93925104id26778gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Online Co-op</category>
-      
-      <category>Simulation</category>
-      
-    </item>
-    
-    <item>
-      <title>More Intel CPU security flaws revealed with Branch Privilege Injection</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>We only just had the reveal of <a href="https://www.gamingonlinux.com/2025/05/vusec-reveal-training-solo-more-security-issues-for-intel-and-arm-cpus/" rel="noopener" target="_blank">Training Solo from VUSec for Intel and Arm</a>, and now we have another security flaw in Intel CPUs with Branch Privilege Injection.</p>
-<p>This was detailed by COMSEC, the computer security group of the Department of Information Technology and Electrical Engineering (D-ITET) at ETH Zürich in their <a href="https://comsec.ethz.ch/research/microarch/branch-privilege-injection/" rel="noopener nofollow" target="_blank">new research post</a>. </p>
-<p>Who is affected? They said "All intel processors since the 9th generation (Coffee Lake Refresh) are affected by Branch Privilege Injection. However, we have observed predictions bypassing the Indirect Branch Prediction Barrier (IBPB) on processors as far back as 7th generation (Kaby Lake)". And while their testing has been on Linux, it is a hardware issue so all systems will be affected by it.</p>
-<p>Explaining it they said "Branch Privilege Injection (<a href="https://www.cve.org/CVERecord?id=CVE-2024-45332" rel="noopener nofollow" target="_blank">CVE-2024-45332</a>) brings back the full might of branch target injection attacks (Spectre-BTI) on Intel. Intel’s hardware mitigations against these types of attacks have held their ground for almost 6 years. In our work, we demonstrate how these mitigations can be broken due to a race condition in Intel CPUs".</p>
-<p>Their video example:</p>
-<div class="hidden_video" data-video-id="jrsOvaN7PaA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0b969abc5ed117c16afe29e3546f2d59.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/jrsOvaN7PaA" target="_blank">See video</a></div></div>
-<p>As for updates to fix the problem, unfortunately it seems that will come with another performance cut "Intel has developed a microcode update for affected processors and provided us with one to evaluate on Alder Lake. We were able to verify that the microcode update stops our primitives that we use in the paper to detect the vulnerabilities. Our performance evaluation shows up to 2.7% overhead for the microcode mitigation on Alder Lake. We have also evaluated several potential alternative mitigation strategies in software with overheads between 1.6% (Coffee Lake Refresh) and 8.3% (Rocket lake). Please refer to our <a href="https://comsec.ethz.ch/wp-content/files/bprc_sec25.pdf" rel="noopener nofollow" target="_blank">paper</a> for more details."</p>
-<p>Intel has since put up a <a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01247.html" rel="noopener nofollow" target="_blank">security advisory</a> on it.</p>
-<p>Another time to keep an eye on system and BIOS updates.</p>
-<p>AMD / Arm are not affected by this one.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/more-intel-cpu-security-flaws-revealed-with-branch-privilege-injection/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/more-intel-cpu-security-flaws-revealed-with-branch-privilege-injection/</guid>
-      <pubDate>Wed, 14 May 2025 13:55:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/intel.png" type="image/jpeg"/>
-      
-      <category>Security</category>
-      
-      <category>Hardware</category>
-      
-      <category>Intel</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>S.T.A.L.K.E.R.: Legends of the Zone Trilogy Enhanced Edition announced with Steam Deck support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>GSC Game World have just announced S.T.A.L.K.E.R.: Legends of the Zone Trilogy Enhanced Edition that will launch on May 20th with enhanced versions of Shadow of Chornobyl (2007), Clear Sky (2008), and Call of Prypiat (2009). They will be coming with various upgrades and Steam Deck support too.</p>
-<p><em>It appears they have tweaked the naming to Chornobyl and Prypiat (the originals were Chernobyl and Pripyat).</em></p>
-<div class="hidden_video" data-video-id="AVWkOx4Cj6g"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/4900cb606d0aec6b927d8a7e6f37d983.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/AVWkOx4Cj6g" target="_blank">See video</a></div></div>
-<p>Upgrades for all platforms:</p>
-<blockquote>
-<ul>
-<li>Enhanced lighting with godrays, screen space reflections, and global illumination for a more immersive atmosphere.</li>
-<li>Upscaled textures and detailed 3D models for NPCs, weapons, and environments.</li>
-<li>Advanced shaders for water and wetness effects, paired with upgraded skyboxes for a more dynamic world.</li>
-<li>4K pre-rendered cinematics for dramatic storytelling and improved weapon FOV for better combat visibility.</li>
-</ul>
-</blockquote>
-<p>And specifically for the PC release:</p>
-<blockquote>
-<ul>
-<li>Steam Deck Optimized: Play the trilogy on the go with full Steam Deck compatibility.</li>
-<li>Steam Workshop Integration: Access a vast library of user-generated mods.</li>
-<li>Cloud Saves: Seamless progress backup across devices.</li>
-<li>Gamepad Support: Full controller compatibility for a console-like experience on PC.</li>
-</ul>
-</blockquote>
-<p>The press release noted that if you already have the originals on PC you will get the Enhanced Editions free, and the originals are included for anyone who purchases the Enhanced Editions. It will be available as a Trilogy Bundle for $39.99 or individually at $19.99 each.</p>
-<p>In the official <a href="https://www.stalker-game.com/en/faq" rel="noopener nofollow" target="_blank">FAQ</a> the developer noted there's no multiplayer with them "designed specifically around providing a dedicated Single-player experience".</p>
-<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41945/s-t-a-l-k-e-r-legends-of-the-zone-trilogy/">S.T.A.L.K.E.R.: Legends of the Zone Trilogy</a></strong> | Release Date: 20th May 2025<p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/stalker_legends_of_the_zone_trilogy">GOG</a></li><li><a href="https://store.steampowered.com/bundle/53693/STALKER__Legends_of_the_Zone_Trilogy/">Steam</a></li></ul></p></div></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/s-t-a-l-k-e-r-legends-of-the-zone-trilogy-enhanced-edition-announced-with-steam-deck-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/s-t-a-l-k-e-r-legends-of-the-zone-trilogy-enhanced-edition-announced-with-steam-deck-support/</guid>
-      <pubDate>Wed, 14 May 2025 13:21:57 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1145881395id26776gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>FPS</category>
       
     </item>
     
