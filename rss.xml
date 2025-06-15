@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-06-14 07:29:11.073175</pubDate>
+    <pubDate>2025-06-15 07:29:24.596558</pubDate>
 
     
     <image>
@@ -18,6 +18,107 @@
     </image>
 
     
+    
+    <item>
+      <title>Proton Experimental gets fixes for Warframe, Enshrouded, Crysis 2 Remastered, OpenVR and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve updated Proton Experimental for June 13th bringing more game fixes to Linux, SteamOS / Steam Deck to get Windows games running nicely.</p>
+<p>If you already have it downloaded it will show up in your Steam Downloads as an update. Otherwise, you can search for Proton Experimental directly in your Steam Library. See <a href="https://www.gamingonlinux.com/guides/view/why-are-there-so-many-different-proton-versions-proton-8-proton-9-experimental-ge-proton/" rel="noopener" target="_blank">my guide on all the different Proton versions</a> for more info. There was also an <a href="https://www.gamingonlinux.com/2025/06/proton-experimental-gets-fixes-for-fallout-3-skyrim-special-edition-the-witcher-3-intel-cpus-and-more/" rel="noopener" target="_blank">update on June 5th</a> if you missed it and Valve just hit <a href="https://www.gamingonlinux.com/2025/06/steam-deck-and-steamos-hit-20000-playable-games/" rel="noopener" target="_blank">20,000 Steam Deck and SteamOS playable games</a>.</p>
+<p class="plain-list-title"><strong>Noted as now playable:</strong></p>
+<ul>
+<li>WRC Generations</li>
+</ul>
+<p class="plain-list-title"><strong>General bug fixes:</strong></p>
+<ul>
+<li>Fixed a crash late in game in Crysis 2 Remastered.</li>
+<li>Improved AVPro player compatibility in VRChat: fixed seeking, improved performance - less freezes and video playback should work in more cases than before.</li>
+<li>Fixed Tiny Troopers Global Ops having focus issues when using Steam Overlay on Steam Deck.</li>
+<li>Fixed built-in web browser in Banter.</li>
+</ul>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7120829021749888633gol1.jpg"/><br/>
+<em>Pictured - Crysis 2 Remastered</em></p>
+<p class="plain-list-title"><strong>Fixed Proton 10 regressions:</strong></p>
+<ul>
+<li>Ride 2 is playable again.</li>
+<li>Warframe launcher should no longer have issues displaying titlebar elements.</li>
+<li>Resident Evil 2 no longer struggles with switching full-screen resolutions.</li>
+<li>Enshrouded no longer crash when refreshing server list.</li>
+<li>OpenVR is working with 32 bit games again.</li>
+</ul>
+<p>At some point soon we should see the next Beta of Proton 10 with Proton 10.0-2. As the <a href="https://www.gamingonlinux.com/2025/05/proton-experimental-updated-to-fix-missing-saves-and-a-new-proton-10-beta-fixes-gamepad-breakage/" rel="noopener" target="_blank">last Proton 10 Beta update was over a month ago</a>.</p>
+<p>Source: <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener nofollow" target="_blank">GitHub</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/proton-experimental-gets-fixes-for-warframe-enshrouded-crysis-2-remastered-openvr-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/proton-experimental-gets-fixes-for-warframe-enshrouded-crysis-2-remastered-openvr-and-more/</guid>
+      <pubDate>Sat, 14 Jun 2025 08:11:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/248457209id26996gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Wine 10.10 brings more Media Foundation work, Mono and Unicode updates</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Wine 10.10 is the latest development release of the Windows compatibility layer, which is a big part of Valve's Proton.</p>
+<p>For this release the main highlights are:</p>
+<blockquote>
+<ul>
+<li>Mono engine updated to version 10.1.0.</li>
+<li>OSMesa library no longer needed.</li>
+<li>More support for generating Windows Runtime metadata in WIDL.</li>
+<li>Locale data updated to Unicode CLDR 47.</li>
+<li>P010 format support in Media Foundation.</li>
+</ul>
+</blockquote>
+<p>Bug fixes are noted for Rise of Nations, Braid, Steam, Horizon Chase, F.E.A.R, S.T.A.L.K.E.R. Anomaly, Eador. Masters of the Broken World, StarCraft Remastered, The Fidelio Incident, Vampyr and more.</p>
+<p>For Wine Mono 10.1.0 these are the changes:</p>
+<blockquote>
+<ul>
+<li>The builtin FNA now uses SDL3. This shouldn't have any noticeable impact, but it does change how rendering backends are selected. FNA3D now has three options for backend: <code class="inline-code">FNA3D_FORCE_DRIVER=OpenGL</code>, <code class="inline-code">FNA3D_FORCE_DRIVER=D3D11</code>, and <code class="inline-code">FNA3D_FORCE_DRIVER=SDLGPU</code>. The SDL_GPU backend can be controlled with <code class="inline-code">SDL_GPU_DRIVER=vulkan</code> or <code class="inline-code">SDL_GPU_DRIVER=direct3d12</code>. The default under most circumstances should be SDL_GPU with Vulkan.</li>
+<li>Added a stub <code class="inline-code">msbuild.exe</code>. (<a href="https://bugs.winehq.org/show_bug.cgi?id=57020" rel="noopener nofollow" target="_blank">wine bug 17020</a>)</li>
+<li>Added support for "Recycle Bin" to the VB.NET class libraries. (needed by DayZ tools)</li>
+<li>Updates from Framework Mono:
+	<ul>
+<li>Fixed handling of IPv6 addresses in the Host header in System.Net.</li>
+<li>Fixed build with cmake 4.</li>
+</ul>
+</li>
+<li>Upstream updates
+	<ul>
+<li>FNA updated to 25.04</li>
+<li>llvm-mingw updated to 20250417</li>
+<li>SDL updated to 3.2.10</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>Source: <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-10.10" rel="noopener nofollow" target="_blank">Wine GitLab</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/wine-10-10-brings-more-media-foundation-work-mono-and-unicode-updates/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/wine-10-10-brings-more-media-foundation-work-mono-and-unicode-updates/</guid>
+      <pubDate>Sat, 14 Jun 2025 08:04:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
     
     <item>
       <title>Steam Deck and SteamOS hit 20,000 playable games</title>
@@ -3274,7 +3375,7 @@ Steam Deck Playable / ProtonDB Platinum</p>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
 <p>Valve have released a fresh June 5th update for Proton Experimental, their testing-ground for running Windows games on Linux, SteamOS, Steam Deck.</p>
-<p>If you already have it downloaded it will shop up in your Steam Downloads as an update. Otherwise, you can search for Proton Experimental directly in your Steam Library. See <a href="https://www.gamingonlinux.com/guides/view/why-are-there-so-many-different-proton-versions-proton-8-proton-9-experimental-ge-proton/" rel="noopener" target="_blank">my guide on all the different Proton versions</a> for more info.</p>
+<p>If you already have it downloaded it will show up in your Steam Downloads as an update. Otherwise, you can search for Proton Experimental directly in your Steam Library. See <a href="https://www.gamingonlinux.com/guides/view/why-are-there-so-many-different-proton-versions-proton-8-proton-9-experimental-ge-proton/" rel="noopener" target="_blank">my guide on all the different Proton versions</a> for more info.</p>
 <p class="plain-list-title">The June 5th update notes these as newly playable:</p>
 <ul>
 <li>IL-2 Sturmovik Cliffs of Dover</li>
@@ -5052,75 +5153,6 @@ When you arrive on the other server, you will appear at Griffin’s Reach trade 
       <category>Misc</category>
       
       <category>Round-up</category>
-      
-    </item>
-    
-    <item>
-      <title>CRSED: Cuisine Royale devs confirm end of Linux / Steam Deck support</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>CRSED: Cuisine Royale is a battle royale from Darkflow Software / Matter Team and Gaijin Network Ltd, and now it's unplayable on Linux / Steam Deck. <em>Previously the game was known as CRSED: F.O.A.D.</em></p>
-<p>Earlier in May, they updated their anti-cheat to BattlEye, whereas previously it used Easy Anti-Cheat. Both of which <em>can</em> be enabled to work on Linux platforms including SteamOS / Steam Deck. It seems in this case with the swap and the removal of the Native Linux build, the developer has decided <em>not</em> to enable BattlEye.</p>
-<p>Our <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">anti-cheat compatibility page</a> was updated when the change happened.</p>
-<p>In a post on Steam <a href="https://steamcommunity.com/games/884660/announcements/detail/546735912086668872" rel="noopener nofollow" target="_blank">they said</a>:</p>
-<blockquote>
-<p>Dear players!<br/>
-<br/>
-We’d like to inform you that CRSED: Cuisine Royale is no longer supported on the Linux operating system.<br/>
-<br/>
-We apologize for any [inconvenience] and recommend switching to play on other available platforms.</p>
-</blockquote>
-<p style="text-align:center"><img alt="CRSED: Cuisine Royale screenshot" src="https://uploads.golmedia.net/uploads/articles/article_media/7892685421748611758gol1.jpg"/></p>
-<p><em>Valve rated it Steam Deck Verified, so that will need to change soon.</em></p>
-<p>Compared with the likes of <a href="https://www.gamingonlinux.com/2024/10/ea-respawn-now-block-apex-legends-from-running-on-linux-and-steam-deck/" rel="noopener" target="_blank">Apex Legends removing support</a> and <a href="https://www.gamingonlinux.com/2024/09/grand-theft-auto-v-gets-battleye-anti-cheat-breaks-online-play-on-steam-deck-linux/" rel="noopener" target="_blank">GTA Online also shutting Linux out</a>, this is not quite the same kind of loss considering CRSED: Cuisine Royale barely hits 208 players online each day. Still, it does only further highlight the ongoing anti-cheat problem for Linux gaming. One issue I <a href="https://www.gamingonlinux.com/2025/01/steamos-moving-from-steam-deck-to-more-handhelds-gives-me-hope-for-better-anti-cheat-compatibility/" rel="noopener" target="_blank">truly hope Valve can solve</a> now that <a href="https://www.gamingonlinux.com/2025/05/steam-deck-gets-a-big-upgrade-with-steamos-3-7-and-you-can-now-install-it-on-other-amd-handhelds/" rel="noopener" target="_blank">SteamOS 3 has seen a wider release</a>.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/31381/crsed-cuisine-royale/">CRSED: Cuisine Royale</a></strong> | Release Date: 12th December 2019</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/884660/CRSED_Cuisine_Royale/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/crsed-cuisine-royale-devs-confirm-end-of-linux-steam-deck-support/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/crsed-cuisine-royale-devs-confirm-end-of-linux-steam-deck-support/</guid>
-      <pubDate>Fri, 30 May 2025 13:31:10 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1591442878id26895gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Anti-Cheat</category>
-      
-    </item>
-    
-    <item>
-      <title>ACTION GAME MAKER devs exploring Linux support for the editor and exports</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>ACTION GAME MAKER, the upcoming game making toolkit from Gotcha Gotcha Games (RPG Maker series) are exploring Linux support now. The tool is currently scheduled to release on Steam on June 17th.</p>
-<p>Much like their previous tools, the idea is you don't need to write out lines of code. They say it "provides access to professional level functions without any programming required", with their previous game making kits being very popular tools. Their previous tools include Pixel Game Maker MV, RPG Maker MV, RPG Maker MZ, RPG Maker VX, RPG Maker 2000 and so on.</p>
-<p>In an update posted on <a href="https://steamcommunity.com/games/2987180/announcements/detail/535477547601756842" rel="noopener nofollow" target="_blank">Steam</a> they said:</p>
-<blockquote>
-<h4>Linux Editor Support</h4>
-<p>Due to a large number of requests, we have been testing both running the ACTION GAME MAKER editor on Linux as well as testing the Linux export function. As the tests are not finished yet, we will update everyone as soon as our testing is finished.<br/>
-<br/>
-However, we have confirmed that Wine or Proton can be used to run the Windows build on Linux without issue. Regardless, use of the Windows build on Linux is outside of official support – so proceed with caution!</p>
-</blockquote>
-<p>This time around, it shouldn't <em>hopefully</em> be too difficult for them, since they're using <a href="https://godotengine.org/" rel="noopener nofollow" target="_blank">Godot Engine</a> which is cross-platform and open source.</p>
-<div class="hidden_video" data-video-id="JSjN67Bc_jo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/23f3d7dacccfe6b9ce4456fd07f20070.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/JSjN67Bc_jo" target="_blank">See video</a></div></div>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42058/action-game-maker/">ACTION GAME MAKER</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2987180/ACTION_GAME_MAKER/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/05/action-game-maker-devs-exploring-linux-support-for-the-editor-and-exports/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/05/action-game-maker-devs-exploring-linux-support-for-the-editor-and-exports/</guid>
-      <pubDate>Fri, 30 May 2025 13:21:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/393343749id26894gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Apps</category>
-      
-      <category>Game Dev</category>
-      
-      <category>Godot Engine</category>
       
     </item>
     
