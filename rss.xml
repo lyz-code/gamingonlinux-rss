@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-06-17 07:32:58.512718</pubDate>
+    <pubDate>2025-06-18 07:33:02.303356</pubDate>
 
     
     <image>
@@ -18,6 +18,408 @@
     </image>
 
     
+    
+    <item>
+      <title>Steam Beta finally enables Proton on Linux fully, making Linux gaming simpler</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>At some point recently, Valve updated the Steam Beta Client with a change to the way Proton is enabled making Linux gaming easier. <em>Quick note for newbies: Proton is a compatibility layer to run Windows games on Linux systems available on Steam.</em></p>
+<p>For some context here: originally, Proton had an option to enable / disable it globally. That was removed with <a href="https://www.gamingonlinux.com/2024/11/steam-game-recording-has-officially-launched/" rel="noopener" target="_blank">the Game Recording update last year</a>. That made sense, because people kept somehow turning it entirely off and now it's required by Steam.</p>
+<p>Currently, there's <em>still</em> an option in the stable Steam Client that you need to <em>manually</em> check to enable Steam Play (Proton) for "all other titles". This is something of a leftover from when Proton was initially revealed, and only worked for a specific set of games on Valve's whitelist. It now covers what Valve set by default for Steam Deck and SteamOS verification.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1856373141750201114gol1.jpg"/></p>
+<p>What's changed is that at some point in the recent Steam Beta releases, is that "for all other titles" option is gone. I've scrolled back through changelogs and not seen it mentioned. So now, Proton is just enabled properly in full by default in the Steam Beta like shown in the below shot.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/13190839541750201245gol1.jpg"/></p>
+<p>This is a good (and needed) change that I'm happy to see. There's often confusion when people try to run Windows games on Linux and end up with no install button because Proton isn't turned on for <em>all</em> titles. The below will soon be a thing of the past:</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8165610001750201664gol1.jpg"/></p>
+<p>To be clear, this is not setting Proton on every game by default, it does not override Native Linux games. It's just making Proton <em>available</em> by default.</p>
+<p>It's just one more little nuisance niggle removed, to get people playing games on Linux even faster</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/steam-beta-finally-enables-proton-on-linux-fully-making-linux-gaming-simpler/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/steam-beta-finally-enables-proton-on-linux-fully-making-linux-gaming-simpler/</guid>
+      <pubDate>Tue, 17 Jun 2025 23:09:19 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steamos-2025.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Beta</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA drivers 575.64 and 570.169 released for Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA have today released two new stable GPU drivers for Linux systems, here's what's changed in each version.</p>
+<p>The first is the <a href="https://www.nvidia.com/en-us/drivers/details/247731/" rel="noopener nofollow" target="_blank">570.169</a> driver, part of their "Recommended/Certified" branch which is slower to update and add in new features. It's what goes through their full quality testing. This includes two fixes:</p>
+<blockquote>
+<ul>
+<li>Fixed a bug that could cause a kernel use-after-free on pre-Turing GPUs.</li>
+<li>Fixed a bug that could cause 32-bit x86 applications running on recent builds of glibc to crash on dlopen().</li>
+</ul>
+</blockquote>
+<p>And then the <a href="https://www.nvidia.com/en-us/drivers/details/248665/" rel="noopener nofollow" target="_blank">575.64</a> driver, part of their New Feature Branch branch giving you new features earlier. Which includes three fixes:</p>
+<blockquote>
+<ul>
+<li>Fixed a bug that could cause blank rendering on some single-buffered GLX applications when running on Xwayland.</li>
+<li>Fixed a bug that could cause a kernel use-after-free on pre-Turing GPUs.</li>
+<li>Fixed a bug that could cause 32-bit x86 applications running on recent builds of glibc to crash on dlopen().</li>
+</ul>
+</blockquote>
+<p>Neither are tagged as a Beta driver, so you should be good to update your systems.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/nvidia-drivers-575-64-and-570-169-released-for-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/nvidia-drivers-575-64-and-570-169-released-for-linux/</guid>
+      <pubDate>Tue, 17 Jun 2025 15:29:37 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+      <category>Update</category>
+      
+    </item>
+    
+    <item>
+      <title>Multiple security issues in the X.Org X server and Xwayland disclosed, new versions released</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Developer Olivier Fourdan announced multiple security issues in the X.Org X server and Xwayland, with new versions being released.</p>
+<p>The updated versions are xorg-server 21.1.17 and xwayland 24.1.7 that were released today to sort out the issues. Hopefully Linux distributions that ship these packages will be getting updates out quickly, keep an eye on your update manager application.</p>
+<p>Here's the list of issues below that were disclosed along with the explanation from the mailing list announcement.</p>
+<p>1) CVE-2025-49175: Out-of-bounds access in X Rendering extension (Animated cursors) </p>
+<blockquote>
+<p>The X Rendering extension allows creating animated cursors providing a list of cursors.</p>
+<p>By default, the Xserver assumes at least one cursor is provided while a client may actually pass no cursor at all, which causes an out-of-bound read creating the animated cursor and a crash of the Xserver.</p>
+</blockquote>
+<p>2) CVE-2025-49176: Integer overflow in Big Requests Extension </p>
+<blockquote>
+<p>The Big Requests extension allows requests larger than the 16-bit length limit.</p>
+<p>It uses integers for the request length and checks for the size not to exceed the maxBigRequestSize limit, but does so after translating the length to integer by multiplying the given size in bytes by 4.</p>
+<p>In doing so, it might overflow the integer size limit before actually checking for the overflow, defeating the purpose of the test. </p>
+</blockquote>
+<p>3) CVE-2025-49177: Data leak in XFIXES Extension 6 (XFixesSetClientDisconnectMode) </p>
+<blockquote>
+<p>The handler of XFixesSetClientDisconnectMode does not check the client request length.</p>
+<p>A client could send a shorter request and read data from a former request. </p>
+</blockquote>
+<p>4) CVE-2025-49178: Unprocessed client request via bytes to ignore </p>
+<blockquote>
+<p>When reading requests from the clients, the input buffer might be shared and used between different clients.</p>
+<p>If a given client sends a full request with non-zero bytes to ignore, the bytes to ignore may still be non-zero even though the request is full, in which case the buffer could be shared with another client who's request will not be processed because of those bytes to ignore, leading to a possible hang of the other client request.</p>
+</blockquote>
+<p>5) CVE-2025-49179: Integer overflow in X Record extension </p>
+<blockquote>
+<p>The RecordSanityCheckRegisterClients() function in the X Record extension implementation of the Xserver checks for the request length, but does not check for integer overflow.</p>
+<p>A client might send a very large value for either the number of clients or the number of protocol ranges that will cause an integer overflow in the request length computation, defeating the check for request length. </p>
+</blockquote>
+<p>6) CVE-2025-49180: Integer overflow in RandR extension (RRChangeProviderProperty) </p>
+<blockquote>
+<p>A client might send a request causing an integer overflow when computing the total size to allocate in RRChangeProviderProperty(). </p>
+</blockquote>
+<p>See the mailing list <a href="https://lists.x.org/archives/xorg-announce/2025-June/003608.html" rel="noopener nofollow" target="_blank">announcement</a> for the full details.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/multiple-security-issues-in-the-x-org-x-server-and-xwayland-disclosed-new-versions-released/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/multiple-security-issues-in-the-x-org-x-server-and-xwayland-disclosed-new-versions-released/</guid>
+      <pubDate>Tue, 17 Jun 2025 15:23:26 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/xorg.jpg" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>Run a post-apocalyptic food truck in Wasteland Bites and serve weird meals to strange creatures</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Wasteland Bites is an upcoming questionable cooking sim set in the post-apocalypse. It looks thoroughly weird and I want it now. Coming from CosmicDev, who previously released the also very weird FPS Cosmic Call.</p>
+<p>With visuals that look like they would fit on the PS1 or N64, it's looks like a treat for people who love that era and for players who want their games to be that extra bit bizarre. Here you're on the clock until midnight, serving up increasingly strange meals to even stranger looking customers. You have to balance cooking with staying alive by "dodging horrors, managing your nerves, and trying not to completely lose your mind".</p>
+<p>Check out the trailer:</p>
+<div class="hidden_video" data-video-id="gcIUu3gLE6Y"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/20e7ea7c7ce18b2e7fc2e5eeb3d75ec1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/gcIUu3gLE6Y" target="_blank">See video</a></div></div>
+<p>More about it:</p>
+<blockquote>
+<h5>"YOU GOT FOOD? I GOT MOUTH."</h5>
+<p>Hungry weirdos are lining up, and it’s your job to feed them. Toast, bowls, shish kebabs—raw or cooked, rotten or radioactive—you’ll serve them all, no matter how freaky their faces or their appetites.</p>
+<p>It’s all part of the gig. Keep your truck moving, survive each stop, and maybe—just maybe—you’ll make it to that legendary non-irradiated beach on the horizon...</p>
+</blockquote>
+<p class="plain-list-title">Highlights:</p>
+<blockquote>
+<ul>
+<li>Survival cooking gameplay with a pressure-based stress system.</li>
+<li>Unpredictable customers with weird requests and weirder appearances.</li>
+<li>A variety of wasteland locations with their own dangers and monsters.</li>
+<li>Tense, atmospheric gameplay with a darkly humorous tone.</li>
+</ul>
+</blockquote>
+<p>It's due out in October.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42191/wasteland-bites/">Wasteland Bites</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3748640/Wasteland_Bites/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/run-a-post-apocalyptic-food-truck-in-wasteland-bites-and-serve-weird-meals-to-strange-creatures/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/run-a-post-apocalyptic-food-truck-in-wasteland-bites-and-serve-weird-meals-to-strange-creatures/</guid>
+      <pubDate>Tue, 17 Jun 2025 12:41:12 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/131042757id27014gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Horror</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Simulation</category>
+      
+    </item>
+    
+    <item>
+      <title>KDE Plasma 6.4 brings improvements for accessibility, colour rendering, tablet support and more</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>KDE Plasma 6.4 has arrived bringing lots of modern enhancements to my favourite Linux desktop environment, and what's used on SteamOS / Steam Deck Desktop Mode.</p>
+<p>One of the major new additions is per-workspace tiling options. Tiling is a great feature to keep all your windows tidy and being able to quickly swap workspaces and have different tiling sounds great. So on one workspace you could have two windows snapped together side by side, on another you could have one in each corner and so on - you get the idea.</p>
+<p>Another accessibility upgrade for the Wayland session is the inclusion of keyboard numpad keys to move the mouse pointer, three-finger touchpad pinch to zoom in / out, improved keyboard navigation throughout Plasma, improved screen reader usability and more.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2268064551750160629gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2268064551750160629gol1.jpg"/></a><br/>
+Pictured - KDE Plasma 6.4</p>
+<p>There's been some subtle theme changes as well, all in the name of making things more readable with tweaks to the contrast between the foreground and background elements. On top of that the Info Centre energy page and the menu editor have been overhauled, and there's a new Animations settings page putting them all in one place.</p>
+<p>For users of drawing tablets, configuring them should be easier now too with improvements to buttons and calibration settings. Plasma also now supports "relative mode", making the stylus act more like a mouse so you can continue using it outside of making art.</p>
+<p>As for colour options, there's a new HDR calibration wizard in Plasma 6.4. There's a whole lot more like new Wayland protocol support, as usual I'm just cherry-picking stuff that sounded cool.</p>
+<p>See the <a href="https://kde.org/announcements/plasma/6/6.4.0/" rel="noopener nofollow" target="_blank">release page for more</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/kde-plasma-6-4-brings-improvements-for-accessibility-colour-rendering-tablet-support-and-more/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/kde-plasma-6-4-brings-improvements-for-accessibility-colour-rendering-tablet-support-and-more/</guid>
+      <pubDate>Tue, 17 Jun 2025 11:52:44 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1257289176id27013gol.jpg" type="image/jpeg"/>
+      
+      <category>Desktop Environment</category>
+      
+      <category>KDE</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Nautical Survival is an overlooked naval-based roguelite auto-shooter gem</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Look away now if you value your free time, as Nautical Survival is an absolute gem that will throw your free hours overboard. <a href="https://www.gamingonlinux.com/2025/06/terratech-legion-could-be-the-best-survivor-like-ever-with-vehicle-building/" rel="noopener" target="_blank">I mentioned recently</a> how I was on a bit of a quest to play every survivor-like I could find, and a reader emailed in about Nautical Survival. One I somehow missed, so I decided to rectify that situation.<em> I wish I didn't, because it has completely reeled my in.</em></p>
+<p>Most of these games inspired by the mechanics made popular in Vampire Survivors do something a bit unique, and I'm pleased to see again that Nautical Survival is another such game. All the basics are here that you know and love like collecting XP to level up and picking new abilities but it's the overall presentation and game mechanics in Nautical Survival that help set it apart.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8388111531750160278gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8388111531750160278gol1.jpg"/></a></p>
+<p>For starters, most of the map you get is hidden in a shroud of mystery. You start off in a little boat by a lighthouse, which gives you a certain amount of vision around you. Go outside its light, and it gets more difficult as the light of your boat isn't very big which makes it quite intense as you can't see what's coming (unless you find an upgrade or two to help).</p>
+<p>Enemy fish come in waves too, so you do get a brief bit to catch your breath. So it's more on the lines of Brotato in that way. However, it's all real-time. You need to travel between specific bits of land to access different shops, with your travel time taking away your rest between waves. Having to actually travel between these locations is another nice little change to the formula and allows you to open up a shop whenever you want too.</p>
+<p>There's some other major features that really make it interesting. The weapon, upgrade, cargo and crew systems are the big ones. Here you collect yellow coins from killed fish, which eventually level you up to allow you to pick between a few different buffs like damage, steering, range and more. All pretty standard but, you also have a cargo system. You start off with limited cargo slots to fill with either weapons, crew members or packages. After each wave is completed, you then also get to promote a crew member which adds in their own special bonuses so there's a lot of ways to change your run each time/</p>
+<p>It's a constant toss-up between filling up on more crew or more weapons and all the upgrades that you can do with each of them individually. Even more so, because you can add more cargo space to further make your boat insanely powered. There's also a little mini-delivery game in there, with packages taking up one of those precious cargo bays but delivering gives you a nice coin bonus to further upgrade what you already have.</p>
+<div class="hidden_video" data-video-id="vQjI5mDYT40"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1e77e5981fd3196e73f11cf99917336e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/vQjI5mDYT40" target="_blank">See video</a></div></div>
+<p>There's also certain weather effects to worry about too, like storm clouds that will zap you if you go under them. I really hope to see more from that side of the game added.</p>
+<p>It's currently in Early Access and so I won't be giving it a full formal review just yet. But I think you can gather from my initial post here, that I already like it quite a lot. I can't wait to see what else is added to it. Definitely worth picking up if you enjoy short runs and trying out lots of different combinations with fun gameplay systems.</p>
+<p>Despite it being an auto-shooter survivor-like, it also feels so weirdly chilled. Great atmosphere.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42215/nautical-survival/">Nautical Survival</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2860990/Nautical_Survival/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/nautical-survival-is-an-overlooked-naval-based-roguelite-auto-shooter-gem/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/nautical-survival-is-an-overlooked-naval-based-roguelite-auto-shooter-gem/</guid>
+      <pubDate>Tue, 17 Jun 2025 11:39:09 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1674719537id27012gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Bullet Heaven</category>
+      
+    </item>
+    
+    <item>
+      <title>POLDERS is a &#34;quintessentially Dutch&#34; city builder inspired by Townscaper</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Reclaim the land from the sea in POLDERS, what the developer says is a "quintessentially Dutch" city builder inspired by Townscaper.</p>
+<p>With the sandbox environment you create the very land buildings will stand on. The dev said it's inspired also by "centuries of Dutch ingenuity" with you building a system of walls to then pump out the water using windmills. The Townscaper inspiration is more about the casual flow of it, with streets and buildings and the general layout in POLDERS all looking quite crooked and imperfect. </p>
+<p>Buildings do have a purpose, it's not just about creating and expanding. You need to get resources, deal with transport, build up an income to grow you production chains with more products and the list goes on. From the way it's described and the visuals, it looks like it's going to be a good one.</p>
+<div class="hidden_video" data-video-id="xl1MwdSgfAE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3bb7cd8661d7f9f5866f89df2fe91cc6.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/xl1MwdSgfAE" target="_blank">See video</a></div></div>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42214/polders/">POLDERS</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3417550/POLDERS/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/polders-is-a-quintessentially-dutch-city-builder-inspired-by-townscaper/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/polders-is-a-quintessentially-dutch-city-builder-inspired-by-townscaper/</guid>
+      <pubDate>Tue, 17 Jun 2025 11:01:27 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1918430436id27011gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>City Builder</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Borderlands 4 now up for pre-order with some post-launch content revealed</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Despite the talk of Borderlands 4 potentially being $80, the pre-orders are up and the standard edition comes in at £59.99 / $69.99. That's still $10 / £10 more than Borderlands 3 was at release, but with the spiralling cost of these huge games (and the big salaries for the people at the top) it's not really a surprise to see the price is higher than before.</p>
+<p>However there is an even higher priced Deluxe Edition for $99.99 / £89.99 and a Super Deluxe Edition for $129.99 / £119.99 which is going into <em>madness</em> territory but they come with post-launch DLC packs included and other assorted cosmetics.</p>
+<p>Seems the higher prices are very much here to stay for the bigger AAA lot. Now that Microsoft and Nintendo are bumping prices up, others will see fit to follow along.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/361135121750157019gol1.jpg"/></p>
+<p>For post-launch content they mentioned a mixture of free and paid additions coming including "paid DLC can include two new Vault Hunters, all-new regions of Kairos, new story missions, side missions, challenges, enemies, and more. Full details will be revealed at a later date".</p>
+<p>More about the game is going to be revealed during Borderlands Fan Fest on June 21, including a new story trailer. The game is set for release on September 12th. I should also note it has two different forms of DRM included with both Denuvo and Symbiote.</p>
+<p>From the press release:</p>
+<p>“I’ve been blown away by how high the team at Gearbox have raised the bar for Borderlands 4,” said David Ismailer, President of 2K. “The development team crafted a premium AAA adventure that evolves the series’ gameplay and storytelling in new ways, while delivering on the quintessential Borderlands looter-shooter experience fans know and love.”</p>
+<p>"Borderlands 4 is the most excited the team and I have ever been to launch a Borderlands game," said Gearbox founder and President Randy Pitchford. "Borderlands 4 is the best entry point for new players while also being a heartfelt love letter to fans of the original games."</p>
+<p>Will you be buying it at release? Pre-ordering? Waiting for a sale? Skipping it entirely?</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41147/borderlands-4/">Borderlands 4</a></strong> | Release Date: 12th September 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1285190/Borderlands_4/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/borderlands-4-now-up-for-pre-order-with-some-post-launch-content-revealed/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/borderlands-4-now-up-for-pre-order-with-some-post-launch-content-revealed/</guid>
+      <pubDate>Tue, 17 Jun 2025 10:48:59 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/800030560id27010gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Action</category>
+      
+      <category>FPS</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Spray Paint Simulator is the opposite of Power Wash Simulator and just as satisfying</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Spray Paint Simulator is basically the opposite of Power Wash Simulator, instead of cleaning up you're making a slight mess - with paint. <em>Disclosure: key provided for me.</em></p>
+<p>I am a huge fan of these laid-back casual sims, so checking out Spray Paint Simulator was a no-brainer for me. Life is stressful enough, so games need to have a wide variety of genres for everyone to get into. Although, it does still make me chuckle a fair bit that these work simulators are so popular. I could be painting my office (I should be) but instead, I'm painting things in a video game. At least if I make a mess here it's not going to be a problem…</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/5739752491750153745gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5739752491750153745gol1.jpg"/></a></p>
+<p>As much as the idea of doing job games makes me laugh, it's anything but funny. It's ridiculously relaxing watching it all come together, and it's such an easy game to get into. With a warm and welcoming atmosphere, easy to understand controls and a simple tutorial while on the first small job painting a car that does enough to get you going.</p>
+<p>There's hardly any setup of why you're doing it to speak of though, the story side of it is pretty bare. You're thrown a bit of cash to start a business and away you go. That's about it. In a way, it's nice it doesn't add needless padding forcing you through a story to just get painting, after all how much story does a game about painting like this need? But the way it dumps you into it is a bit <em>too</em> abrupt.</p>
+<p>The gameplay makes up for that though. They have a <em>wonderful</em> idea here and I really enjoy the gameplay loop overall.</p>
+<p>Each job begins in exactly the same way. You start off buying tape and paper to cover every bit you're not painting from the shop, then place them on the floor, to then add them actually into your inventory. That extra step there feels like it could have been cut away though. The actual masking is also incredibly basic, just click and it's there. I really do wish they expanded that side of it, making it more of a manual process as it just would have helped fill it out. That said, the masking and taping is a little bit <em>tedious</em> on some levels with multiple paint colours, with so many little bits needing covering.</p>
+<p>When it comes to the painting though, that's where the real fun begins. It's so insanely satisfying seeing your paint layer up on whatever it is you happen to be covering. Much like Power Wash Simulator, I could happily spend hours and days playing through it, painting more and more and just forgetting all of life's little troubles. Once every bit is 100% done, it's then time to remove all the coverings and replace fittings you removed and job done.</p>
+<p>I think the game length is pretty reasonable too. It doesn't overstay its welcome at about 15-20 hours but, the problem is the lack of overall content with it. The game is more limited than I was expecting with the amount of levels on offer. While you can jump into completed levels in free-play to mess around, that's just not the same. </p>
+<div class="hidden_video" data-video-id="0GVAf5pT0QQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/69dba868d4b398c06829d942a0bf503c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/0GVAf5pT0QQ" target="_blank">See video</a></div></div>
+<p>The locations are nice though, with all of them getting you to paint something very different which requires the use of many different types of tools, each come with there own little challenges when using them. The variety it has in that way is definitely good. Again though, just not enough of it.</p>
+<p>It's quite an accessible game too. Not only are the controls really easy but there's no time limits to the game, so you can just go at your own pace. Leaving a job and coming back later is possible too, no punishments for saving and quitting. I especially like how you can unlink camera controls from the mouse to send it to the paint sprayer, so you get to fine-tune exactly where you're pointing. That, and you just click and it sprays continuously, no need to hold down the mouse button.</p>
+<p>As you go through it you'll unlock some more tools too like a step ladder, a bigger paint sprayer nozzle and more. All of which become necessary as you get into the later levels with bigger objects to wrap and paint. Just a small gentle bit of tailored progression with nothing to really worry about here. </p>
+<p>Quite appreciate the feature that highlights bits you haven't painted too. At a single button press, areas will flash white that need to be done. Some of those bits hide away quite well too, with a few of the jobs taking a while to get all those little nooks and crannies. You'll be making use of this button often, as you scratch your head thinking "it looks great, how have I missed 1% on it?!". That feature does almost feel like you're cheating though because it just completely spoon-feeds what you need to do.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6489200461750153746gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6489200461750153746gol1.jpg"/></a></p>
+<p>Overall it's a nice entry into the casual job sim with some truly enjoyable painting mechanics but it's lacking in total content. North Star Video Games is mainly just two people and their first game as a studio, so they've done well considering and I think it's priced appropriately for what you get. I enjoyed it but I want more locations - which is not exactly a bad thing, it's good. Just needs more of it.</p>
+<p>It's a testament to the great idea and painting mechanics that I repeatedly told myself, "I'm going to take a break now", and yet I carried on painting for a while longer.</p>
+<p>The game works great on Desktop Linux with <a href="https://www.gamingonlinux.com/2024/12/proton-9-0-4-is-out-now-bringing-big-compatibility-improvements-for-steam-deck-linux/" rel="noopener" target="_blank">the latest Proton 9.0-4</a>. No technical issues at all.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42213/spray-paint-simulator/">Spray Paint Simulator</a></strong> | Release Date: 29th May 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1811340/Spray_Paint_Simulator/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/spray-paint-simulator-is-the-opposite-of-power-wash-simulator-and-just-as-satisfying/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/spray-paint-simulator-is-the-opposite-of-power-wash-simulator-and-just-as-satisfying/</guid>
+      <pubDate>Tue, 17 Jun 2025 10:24:15 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/444989009id27009gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Casual</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Prime Gaming announce extra games for June including Tomb Raider I-III Remastered</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Amazon have revealed a bunch of extra games are coming to Prime Gaming and there's some great stuff in there for Amazon Prime subscribers.</p>
+<p>The extra games will go live on Prime Gaming today at 9am PST / 5PM BST / 4PM UTC.</p>
+<p class="plain-list-title">Here's what they've announced that you'll be able to claim to keep:</p>
+<ul>
+<li>Dungeon of the ENDLESS Definitive Edition [Amazon Games App]</li>
+<li>Tomb Raider I-III Remastered Starring Lara Croft [GOG code]</li>
+<li>Saints Row 2 [GOG code]</li>
+<li>TOEM [GOG code]</li>
+<li>Saints Row IV: Re-Elected [GOG code]</li>
+<li>STAR WARS: Rebellion [GOG code]</li>
+</ul>
+<p>I'll have an updated table overview of all the current games in Prime Gaming on Thursday for you.</p>
+<p>You can claim all the games at <a href="https://gaming.amazon.com/home" rel="noopener nofollow" target="_blank">Prime Gaming</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/prime-gaming-announce-extra-games-for-june-including-tomb-raider-i-iii-remastered/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/prime-gaming-announce-extra-games-for-june-including-tomb-raider-i-iii-remastered/</guid>
+      <pubDate>Tue, 17 Jun 2025 08:35:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1205961304id27008gol.jpg" type="image/jpeg"/>
+      
+      <category>Amazon</category>
+      
+      <category>Listicle</category>
+      
+      <category>Misc</category>
+      
+      <category>Prime Gaming</category>
+      
+    </item>
+    
+    <item>
+      <title>ACTION GAME MAKER confirm plans for Linux support for the editor and game exports</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>ACTION GAME MAKER is the brand new release from Gotcha Gotcha Games, who are known for the RPG Maker series and it's good news for Linux fans.</p>
+<p>This new game creation toolkit was built on top of Godot and <a href="https://www.gamingonlinux.com/2025/05/action-game-maker-devs-exploring-linux-support-for-the-editor-and-exports/" rel="noopener" target="_blank">previously they talked about looking into Linux support</a>. In the new <a href="https://store.steampowered.com/news/app/2987180/view/509583211988255594" rel="noopener nofollow" target="_blank">Producer Letter</a> about the release, they've confirmed some future plans for it which includes full Linux support now.</p>
+<blockquote>
+<p><strong>Update Plans</strong></p>
+<p>Currently, we are in development of the following changes for future updates.</p>
+<ul>
+<li>Update to Godot 4.4</li>
+<li>This will update the base version of Godot used in ACTION GAME MAKER.</li>
+<li>Editor Support for Linux<br/>
+	We received many requests for official Linux, so we’re happy to finally make that a reality!</li>
+<li>New Export Platform: Linux</li>
+<li>New Export Platform: Android</li>
+<li>With these changes, we will be able to support even more platforms for our users.</li>
+<li>Create Actions and Conditions using GDScript</li>
+<li>By allowing users to create their own Actions and Conditions, the Visual Script system will become highly customizable and more flexible.</li>
+<li>“Light” Object Type for Bullets<br/>
+	In order to allow for higher Object counts for developers that need them, we will be implementing a special simplified Bullet Object type based on Godot’s Area2D or Node2D, which will greatly improve performance.</li>
+</ul>
+</blockquote>
+<p>Great to see. The more tools we have for game developers the better the overall platform health will be. Especially since this is quite an accessible game engine, using a special node-based approach built on top of Godot. It's based on the visual scripting they made for Pixel Game Maker MV but with many improvements. They say "No knowledge of programming is needed" as you simply connect up Actions to see it all come together.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15529830761750148532gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15529830761750148532gol1.jpg"/></a></p>
+<p><div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42058/action-game-maker/">ACTION GAME MAKER</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2987180/ACTION_GAME_MAKER/">Steam</a></li></ul></div> </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/06/action-game-maker-confirm-plans-for-linux-support-for-the-editor-and-game-exports/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/action-game-maker-confirm-plans-for-linux-support-for-the-editor-and-game-exports/</guid>
+      <pubDate>Tue, 17 Jun 2025 08:23:24 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/822296799id27007gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Game Dev</category>
+      
+      <category>Game Engine</category>
+      
+      <category>Godot Engine</category>
+      
+    </item>
     
     <item>
       <title>Minecraft (Java) is going through quite an overhaul for the upcoming Vibrant Visuals update</title>
@@ -53,7 +455,7 @@
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
 <p>Robin "Dark0ne" Scott has announced that Nexus Mods is going through a change with new owners.</p>
-<p>Scott had been running Nexus Mods since its inception on 2001, with the site taking up their "entire adult life". Running such a big thing by yourself can certainly take a toll (I can certainly understand that), although Nexus Mods nowadays is much more than just Scott with a whole team behind it.</p>
+<p>Scott had been running Nexus Mods since its inception in 2001, with the site taking up their "entire adult life". Running such a big thing by yourself can certainly take a toll (I can certainly understand that), although Nexus Mods nowadays is much more than just Scott with a whole team behind it.</p>
 <p>In the post they mentioned how "The stress of the job has been a regular source of anxiety and stress-related health issues. I realised that I have been burning out and this started to have an impact on my staff and Nexus Mods as a whole".</p>
 <p>Why now? They never found someone who "gets" the modding community, until now. After going through "months of meetings, face-to-face talks, and a whole lot of soul searching, I am thrilled to say that I truly believe I have found the exact right people for the task" and so "the ownership of Nexus Mods has changed hands".</p>
 <p>Scott mentioned how this isn't some "corporate 'exit' or a backroom deal" but them "doing something I probably should’ve done years ago: taking care of myself".</p>
@@ -61,6 +463,14 @@
 <p>Hopefully it will be a <em>smooth</em> transition and that the new owners know what they're doing. It doesn't sound like some big company took it over, with just two individuals noted in the post as the new owners. However, it's not entirely clear who they actually are apart from their profiles linked on Nexus.</p>
 <p>Still a bit worrying though, with Nexus being pretty much the go-to for modding. It wouldn't take a lot for that dreaded enshittification to start creeping in if the new owners start wanting more money out of it.</p>
 <p>See more in <a href="https://www.nexusmods.com/news/15301" rel="noopener nofollow" target="_blank">the news post</a>.</p>
+<hr/>
+<p><strong>Update: 17/06/25 12:59 UTC</strong> - we now at least know who actually acquired it. They're a company called <a href="https://wearechosen.io/" rel="noopener nofollow" target="_blank">Chosen</a>, with a flashy website that doesn't really tell you what they actually do, apart from acquiring sites like Nexus Mods.</p>
+<p>One of the owners has been answering questions in the comments on the original post. As for why Chosen was not mentioned, they said:</p>
+<blockquote>
+<p>This post wasn’t about Chosen — it was about Robin and the legacy he built over 24 years. We’re the new owners and ultimate decision-makers at Nexus Mods. We’ll share more about ourselves when we’ve earned that right. For now, we’re focused on listening, learning, and making modding even easier, and yes, you’ll see us around in the community being active.</p>
+</blockquote>
+<p>They also say mods will remain free, previous lifetime subs aren't going anywhere and that they're "not changing the core model" with no "aggressive monetization".</p>
+<p>Really though, if you want trust, you have to be open and honest and not seemingly try to hide who you are when acquiring something so well known.</p>
 <span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
 </div></description>
       <link>https://www.gamingonlinux.com/2025/06/nexus-mods-is-under-new-ownership/</link>
@@ -4278,464 +4688,6 @@ Discover a new chapter in the SILENT HILL series, blending psychological horror 
       <category>FPS</category>
       
       <category>Horror</category>
-      
-    </item>
-    
-    <item>
-      <title>Humble Choice for June 2025 has Boltgun, Legacy of Kain 1&amp;2 Remastered and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Some top quality titles in <a href="https://www.humblebundle.com/membership" rel="noopener nofollow" target="_blank">Humble Choice for June 2025</a> including Warhammer 40K: Boltgun and Legacy of Kain Soul Reaver 1&amp;2 Remastered.</p>
-<p>As per usual from GamingOnLinux, I'll list the compatibility you can expect on Linux, SteamOS / Steam Deck. Each noted title is a direct store link too in case you need more info first, along with overall user review score.</p>
-<p style="text-align:center"><a href="https://www.humblebundle.com/membership" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4270334371748971144gol1.jpg"/></a></p>
-<p><a href="https://store.steampowered.com/app/2005010/Warhammer_40000_Boltgun/" rel="noopener nofollow" target="_blank">Warhammer 40K: Boltgun</a><br/>
-<em>Deck Verified, ProtonDB Gold<br/>
-Overall Reviews: Very Positive (13,351 reviews)</em></p>
-<p><a href="https://store.steampowered.com/app/2521380/Legacy_of_Kain_Soul_Reaver_12_Remastered/" rel="noopener nofollow" target="_blank">Legacy of Kain Soul Reaver 1&amp;2 Remastered</a><br/>
-<em>Deck Verified, ProtonDB Platinum<br/>
-Overall Reviews: Very Positive (2,319 reviews) </em></p>
-<p><a href="https://store.steampowered.com/app/1939970/Nobody_Wants_to_Die/" rel="noopener nofollow" target="_blank">Nobody Wants to Die</a><br/>
-<em>Deck Unsupported, ProtonDB Platinum<br/>
-Overall Reviews: Very Positive (3,117 reviews) </em></p>
-<p><a href="https://store.steampowered.com/app/1983260/Dungeons_of_Hinterberg/" rel="noopener nofollow" target="_blank">Dungeons of Hinterberg</a><br/>
-<em>Deck Verified, ProtonDB Platinum<br/>
-Overall Reviews: Very Positive (1,639 reviews) </em></p>
-<p><a href="https://store.steampowered.com/app/1496590/Tchia/" rel="noopener nofollow" target="_blank">Tchia</a><br/>
-<em>Deck Verified, ProtonDB Platinum<br/>
-Overall Reviews: Very Positive (339 reviews) </em></p>
-<p><a href="https://store.steampowered.com/app/1492070/Sker_Ritual/" rel="noopener nofollow" target="_blank">Sker Ritual</a><br/>
-<em>Deck Playable, ProtonDB Platinum<br/>
-Overall Reviews: Very Positive (4,637 reviews) </em></p>
-<p><a href="https://store.steampowered.com/app/1071870/Biped/" rel="noopener nofollow" target="_blank">Biped</a><br/>
-<em>Deck Playable, ProtonDB Platinum<br/>
-Overall Reviews: Very Positive (7,074 reviews) </em></p>
-<p><a href="https://store.steampowered.com/app/2020710/Havendock/" rel="noopener nofollow" target="_blank">Havendock</a><br/>
-<em>Deck Playable</em><br/>
-<em>Overall Reviews: Very Positive (1,252 reviews) </em></p>
-<p>Check it <a href="https://www.humblebundle.com/membership" rel="noopener nofollow" target="_blank">out on Humble Choice</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/06/humble-choice-for-june-2025-has-boltgun-legacy-of-kain-1-2-remastered-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/humble-choice-for-june-2025-has-boltgun-legacy-of-kain-1-2-remastered-and-more/</guid>
-      <pubDate>Tue, 03 Jun 2025 17:28:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1422014701id26917gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Pulp adventure thriller The Drifter looks amazing and releases July 17</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The Drifter from Powerhoof is an awesome looking adventure thriller and it just got a new trailer, along with a release date reveal of July 17. Native Linux support is confirmed for the release too.</p>
-<p>Inspired by the works of Stephen King, John Carpenter and Michael Crichton — it features some fantastic pixel-art and fast-paced gameplay that will work just as well with a mouse and keyboard, as it will with a gamepad. They've even put a demo up for Steam Next Fest so you can check it out right now.</p>
-<p>Before you do though, have a look at the trailer below:</p>
-<div class="hidden_video" data-video-id="dAJ1LQVqWWE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e9d1a9280c8998bc8334b1c73222e5af.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/dAJ1LQVqWWE" target="_blank">See video</a></div></div>
-<p>More about it:</p>
-<blockquote>
-<p><!-- squire -->A classic 2D point and click adventure with the brake-lines cut - <em>The Drifter</em> plunges players headfirst into a web of shadowy corporations, conspiracy, murder, and the thousand year obsession of a madman.</p>
-<p>Mick Carter's been drifting a while now - moving from job to job, never staying one place long. Jumping a box-car to his old home town, he witnesses a violent murder, is pursued by hi-tech soldiers, thrown in a reservoir and drowned.</p>
-<p>Just before his consciousness is ripped away, it is thrust back into his body. Alive again, seconds before his death. Mick is framed for the killing he witnessed, tormented by his own past, and haunted by the feeling that something followed him back from the other side…</p>
-<p>The Drifter takes its cues from modern revival of the adventure genre and focuses on serving up a tight, razor-sharp narrative - propelling the player through the story - while grounded, unobtrusive and satisfying investigative puzzles act as the sinew between punchy narrative beats.</p>
-</blockquote>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/16834/the-drifter/">The Drifter</a></strong> | Release Date: 17th July 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1170570/The_Drifter/?snr=1_7_7_comingsoon_150_16">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/06/pulp-adventure-thriller-the-drifter-looks-amazing-and-releases-july-17/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/pulp-adventure-thriller-the-drifter-looks-amazing-and-releases-july-17/</guid>
-      <pubDate>Tue, 03 Jun 2025 16:53:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/770670487id26916gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Demo</category>
-      
-      <category>Point & Click</category>
-      
-    </item>
-    
-    <item>
-      <title>Cyberpunk deckbuilder and dungeon crawler Into The Grid gets a fresh demo</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Into The Grid is a cyberpunk roguelike deckbuilder and dungeon crawler from Flatline Studios, with a fresh demo up ahead of Steam Next Fest. <em>Time to go crack open some firewalls and destroy some robots.</em></p>
-<p>With this big upgrade to the demo they<span style="font-size:16px"> "overhauled most of the graphics, animations, SFX, and VFX, added new mechanics, and rebalanced others". They also said it only contains one of the five planned characters for the game, but the demo will still give you lots of hours to play.</span></p>
-<p>There's also a new trailer:</p>
-<div class="hidden_video" data-video-id="PQJvJnP04w0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/67fce18ef009d108230ae3d4f3271e7e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/PQJvJnP04w0" target="_blank">See video</a></div></div>
-<p>Highlights:</p>
-<blockquote>
-<ul>
-<li><strong>An exciting blend of deckbuilding, card battler and dungeon crawler</strong> - Into The Grid introduces a map exploration system to the genre that’s a breath of fresh air. You will need to be tactical and strategical not only in the way you put together your deck and play your cards, but also in how you explore the map and manage your limited resources to find and reach your goal before The Grid kicks you out, sends a private security force to your location, or worse.</li>
-<li><strong>A unique dual resource system to diminish RNG and leverage “dead draws”</strong> - Into The Grid introduces a novel combat mechanic called “Commands”, skills you can activate during combat by spending a resource that almost every card in the game generates just by playing them. Commands are designed to have supporting effects that help to play around RNG by letting you, for example, draw or fetch cards from specific places. Their varied effects also enable different archetypes within each character, creating a new fan of possibilities as you change your Commands in between battles and adjust them to your current deck.</li>
-<li><strong>5 Characters and Factions to discover the deep lore of the “2112 Universe”</strong><br/>
-	​Into The Grid takes place in the year 2112, in a universe that Flatline Studios has been developing for even longer than the game itself. This universe is full of characters and entities with their own agendas and motivations. In gameplay terms, the full game will include 5 different characters, each one belonging to a different hacker Faction that determines the hacker’s ethos and their reasons to be outlaws.</li>
-</ul>
-</blockquote>
-<p>It has Native Linux support for the demo and will for the full game. The release is due sometime in Q3 2025 for Early Access.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/37466/into-the-grid/">Into The Grid</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2576200/Into_The_Grid/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/06/cyberpunk-deckbuilder-and-dungeon-crawler-into-the-grid-gets-a-fresh-demo/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/cyberpunk-deckbuilder-and-dungeon-crawler-into-the-grid-gets-a-fresh-demo/</guid>
-      <pubDate>Tue, 03 Jun 2025 15:36:09 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/150617273id26915gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Deck-builder</category>
-      
-      <category>Demo</category>
-      
-      <category>Dungeon Crawler</category>
-      
-    </item>
-    
-    <item>
-      <title>Castle Cab looks like Crazy Taxi but with an unhinged horse and silly customization</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Crazy Taxi delivery sim but with a horse and carriage, plus some over the top physics? Castle Cab really does look like a lot of fun. I'm all for a bit of chaos and the horse customization looks ridiculous too.</p>
-<p>Going into more details the developers explain it as: "Castle Cab puts you in the horseshoes of a sentient, indestructible horse running a delivery service in a whimsical medieval kingdom. When wizards enlist your help to overthrow a king bent on banning magic, you’ll find yourself at the heart of a revolution that could lead the kingdom down an unpredictable path. Complete quirky quests, race through winding roads, and uncover hidden secrets."</p>
-<p>Check out the trailer below:</p>
-<div class="hidden_video" data-video-id="o1u0smmioMk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/7114369c56d2f361cbd40715fa3812f8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/o1u0smmioMk" target="_blank">See video</a></div></div>
-<p>"Castle Cab's development has been a wild ride full of fun, hard work, and laughter," shared Royal Reign Studios' studio director Jacob von Appen. "Seeing kids light up while playing it has made it all worth it! We’re so grateful for the love so far, and we can’t wait for more people to jump in, have fun, and share in what’s ahead!"</p>
-<blockquote>
-<p>Cooperative Campaign</p>
-<p>Join forces with up to 3 other players to navigate the bustling medieval world as a team. Work together to pick up patrons, deliver them (hopefully in one piece), and overcome outrageous obstacles. Collaboration is key—but so is laughing at your friends’ spectacular fails as carts flip, horses stumble, and chaos unfolds.</p>
-<p>Competitive Mayhem</p>
-<p>Prefer to leave teamwork in the dust? Switch gears and compete against your friends in a variety of riotous modes, where your goal is to outsmart, outrun, and outmaneuver your opponents. Sabotage their deliveries, steal their patrons, or simply cause as much carnage as possible to claim victory!</p>
-<p>Deck Out Your Horse and Cart</p>
-<p>It’s not just about getting the job done—it’s about looking hilariously good while doing it! Give your hardworking horse some flair with a variety of comically oversized hats, silly costumes, and vibrant patterns. Ever wanted to see a knight’s steed wearing a wizard’s hat? Now you can!</p>
-<p>And why settle for an ordinary wooden cart when you can deliver patrons in style? Choose from an outrageous selection of carts, including a giant onion, a sleek sports car, or even a fully functional toilet on wheels!</p>
-<p>Fun for All Ages</p>
-<p>Designed with simplicity and fun in mind, Castle Cab is a game that everyone can enjoy, regardless of age or experience. The controls are intuitive and straightforward, making it easy for kids, casual players, and first-time gamers to jump right into the action.</p>
-<p>At the same time, the chaotic physics and creative gameplay ensure there’s plenty of challenge and depth for experienced players to master. Castle Cab caters to everyone. Its humor, visual style, and gameplay are designed to entertain players of all generations.</p>
-</blockquote>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42082/castle-cab/">Castle Cab</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3755770/Castle_Cab/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/06/castle-cab-looks-like-crazy-taxi-but-with-an-unhinged-horse-and-silly-customization/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/castle-cab-looks-like-crazy-taxi-but-with-an-unhinged-horse-and-silly-customization/</guid>
-      <pubDate>Tue, 03 Jun 2025 15:08:41 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1192418839id26914gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Action</category>
-      
-      <category>Comedy</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Dune: Awakening will get Private Servers at release but with limits</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Some good news for Dune: Awakening, Funcom have announced it actually will have Private Servers you can rent and sort with friends.</p>
-<p>In a <a href="https://store.steampowered.com/news/app/1172710/view/546736546679621439" rel="noopener nofollow" target="_blank">Steam post</a> published June 2nd the developer noted "We’ve previously communicated that private servers are for post-launch, but we’re happy to share that progress has been faster than expected". However, it's a bit complicated since it is at its heart a proper MMO so the game as a whole won't be <em>entirely</em> private.</p>
-<p>Part of the problem is how the game works. There's many different servers, and a few of them contain different parts of the game. They said that "each server belongs to a World consisting of several other servers, and each of those share the same social hubs and Deep Desert" which "allows us to retain a neighborhood-like feel to the Hagga Basin and provide persistent, freeform building, and other server-demanding mechanics you typically see in survival games". Moving all of this to a private server model "has not been trivial".</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/10924759871748954547gol1.jpg"/></p>
-<p>Rather than probably incorrectly paraphrasing it due to the mechanics involved, here's what the developer said:</p>
-<blockquote>
-<h4>How private servers work</h4>
-When you rent a private server, you essentially rent a server containing one Hagga Basin, just like the official servers. Here you have the full Hagga Basin map, and you can do everything you would do on an official server.<br/>
-<br/>
-Your private server will belong to a World consisting of other private servers, and you can choose a World for your private server when you rent yours from a provider.<br/>
-<br/>
-That means that you will still be able to take full advantage of Dune: Awakening’s large-scale multiplayer content and mechanics, including visiting the social hubs and the Deep Desert, to meet and play with people from any private server in the same World.<br/>
-<br/>
-Players do not rent or control social hubs nor the Deep Desert. These are provided by the server hosting company, who ensures each private server’s World has them.<br/>
-<h4>Private server settings</h4>
-So, what settings will be available for your private server?<br/>
-<br/>
-Because your private server will belong to a World of other private servers, and you will be meeting and playing with other people in the social hubs and the Deep Desert, you won’t be able to control every aspect of how your private server works.<br/>
-<br/>
-Which settings you can configure for your server is ultimately up to the third-party server provider, but these are the settings we are making available:<br/>
-<ul>
-<li><strong>Security Zones:</strong> you can disable security zones entirely, making all parts of Hagga Basin PvP enabled, or you can choose to have pockets of PvP like on official servers</li>
-<li><strong>Taxation:</strong> you can disable taxation on your server</li>
-<li><strong>Sandstorms:</strong> you can disable sandstorms, making them not appear on your server</li>
-</ul>
-<br/>
-You will also be able to name your server and set a password for it.<br/>
-<br/>
-Please note that private servers do not have an admin control panel nor character transfers presently. We will evaluate this functionality post-launch.<br/>
-<h4>Visiting other private servers</h4>
-<p>Just like how you can visit another server in your World when playing on official servers, you can do the same with private servers.<br/>
-<br/>
-All you need to do is select the other server in the server selection menu and put in the server’s password when prompted. You can take with you everything on your character, and you are free to do anything you would like on the server. You can even claim land, something you can’t do when visiting official servers.<br/>
-<br/>
-When you arrive on the other server, you will appear at Griffin’s Reach trade post.</p>
-</blockquote>
-<p>It really does sound complicated and still a little bit confusing. But you essentially get your own private area, that's linked to a much bigger more public area.</p>
-<p>Some other good news - their press team has approved my key for it. So I'll be taking a look to ensure it works properly on Linux, SteamOS / Steam Deck. I don't anticipate many problems, especially since they already <a href="https://www.gamingonlinux.com/2025/05/dune-awakening-will-have-battleye-enabled-for-linux-steamos-steam-deck/" rel="noopener" target="_blank">confirmed to GamingOnLinux that BattlEye would be enabled</a>. <em>Check out more <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">anti-cheat compatibility on our dedicated page</a>.</em></p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41260/dune-awakening/">Dune: Awakening</a></strong> | Release Date: 10th June 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1172710/Dune_Awakening/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/06/dune-awakening-will-get-private-servers-at-release-but-with-limits/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/dune-awakening-will-get-private-servers-at-release-but-with-limits/</guid>
-      <pubDate>Tue, 03 Jun 2025 12:46:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/829343617id26913gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>MMO</category>
-      
-      <category>Steam</category>
-      
-      <category>Upcoming</category>
-      
-    </item>
-    
-    <item>
-      <title>Cyber Knights: Flashpoint is out now, great for XCOM and strategy fans</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Cyber Knights: Flashpoint is the latest game from Trese Brothers, bringing some excellent squad-based tactics and it's out now. After tons of updates during Early Access, what we have is an impressive and feature-filled strategy game that blends in elements of XCOM and stealth games.</p>
-<p>The game also takes on some of the spirit of other great games like Shadowrun and Invisible, Inc., so if you like the sound of those too you'll feel right at here. As a Cyber Knight fitted with a powerful cybernetic spinal implant, you lead a crew as you continue building up your reputation and connections and go on various heists. Featuring grid-less movement, environmental cover, specialised overwatch, initiative manipulation, independent enemy unit AI and more.</p>
-<div class="hidden_video" data-video-id="bzToChIOp2A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/09b347f0ef1dc3aa101e6521f86fe9be.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/bzToChIOp2A" target="_blank">See video</a></div></div>
-<p>There's a lot to enjoy with this one, especially with the depth of all the characters to upgrade and set up your squad exactly how you want. I've been looking for something to scratch the itch left by XCOM and this very well may be the one. You're in great hands with the Trese Brothers.</p>
-<p>The full release comes with a second origin story to play through, new game character options, a new map, a raised level cap and a few bug fixes.</p>
-<p>It has Native Linux support and Valve rated it Steam Deck Verified.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/17855/cyber-knights-flashpoint/">Cyber Knights: Flashpoint</a></strong> | Release Date: 17th October 2023</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1021210/Cyber_Knights_Flashpoint/?snr=1_7_7_comingsoon_150_16">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/06/cyber-knights-flashpoint-is-out-now-great-for-xcom-and-strategy-fans/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/cyber-knights-flashpoint-is-out-now-great-for-xcom-and-strategy-fans/</guid>
-      <pubDate>Tue, 03 Jun 2025 11:48:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2096615673id26912gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>New Release</category>
-      
-      <category>RPG</category>
-      
-    </item>
-    
-    <item>
-      <title>Dark fantasy dungeon crawler Hellslave is free to keep for a limited time</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Hellslave is a dark fantasy dungeon crawler where you make a pact with the Devil to fight back a demon invasion. It's free to keep if you're quick. They've recently announced a sequel, so this is one way to get people interested in it and get some wishlists.</p>
-<p>It has some quite lovely artwork to it, check out the trailer:</p>
-<div class="hidden_video" data-video-id="Xwq6pWEYXQg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2043a8f9db770113a7465c3e0111e533.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Xwq6pWEYXQg" target="_blank">See video</a></div></div>
-<p>Game Features:</p>
-<blockquote>
-<p><strong>Fight Fierce Enemies and Overcome Nightmarish Bosses</strong> - Deal with dozens of enemies from reanimated zombies, ghastly ghosts, and hellish demons. Confront monstrous bosses that could be the end of you or your salvation. </p>
-<p><strong>Unleash Powerful Demonic Abilities</strong> - Customize your character with a unique passive skill tree, and experiment with dozens of demonic powers. Master the art of synergy, create devastating combos that crush your enemies. </p>
-<p><strong>Explore a Dark and Dangerous World</strong> - Travel on world maps filled with dozens of unique landmarks but beware of what lurks in the dark. From villages to graveyards and crypts, destroy your foes, retrieve old relics to help the inhabitants of this doomed world. </p>
-<p><strong>Immerse Yourself in Dark Fantasy Art</strong> - Every moment of your journey is brought to life with stunning hand-crafted visuals and atmospheric cutscenes. Immerse yourself in a world where beauty and horror coexist, inspired by dark fantasy literature and art. </p>
-<p><strong>New Game+ for Endless Replays</strong> - The demons may have been defeated, but <em>Hellslave</em> is never the same twice. Unlock New Game+ and replay the nightmare with increased difficulty, different starting demons, and new challenges awaiting at every turn. </p>
-<p><strong>A Dark Fantasy Experience Like No Other</strong> - <em>Hellslave</em> brings classic dungeon crawling to life in a new, twisted form. Drawing inspiration from dark fantasy literature and artists like John Milton, it combines brutal turn-based combat, strategic gameplay, and a gripping story that will keep you on the edge. </p>
-</blockquote>
-<p>It's rated Playable for Steam Deck / SteamOS, and has a Platinum rating on ProtonDB.</p>
-<p>Free to claim and keep. You just have to add it to your Steam account before June 16 at 5PM UTC.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/32161/hellslave/">Hellslave</a></strong> | Release Date: 26th May 2022</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1608450/Hellslave/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/06/dark-fantasy-dungeon-crawler-hellslave-is-free-to-keep-for-a-limited-time/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/dark-fantasy-dungeon-crawler-hellslave-is-free-to-keep-for-a-limited-time/</guid>
-      <pubDate>Tue, 03 Jun 2025 11:31:32 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1286464398id26911gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Dungeon Crawler</category>
-      
-      <category>Giveaway</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve fix lag and freezing in games with the Steam Overlay disabled</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>On top of the <a href="https://www.gamingonlinux.com/2025/06/steam-deck-steamos-will-now-stop-bugging-you-to-install-updates-multiple-times/" rel="noopener" target="_blank">recent Steam Deck / SteamOS update</a>, Valve also released a desktop Steam Beta that should solve issues in games with the Steam Overlay disabled. <a href="https://www.gamingonlinux.com/2025/05/upcoming-steam-update-should-fix-lag-spikes-on-linux-when-the-steam-overlay-is-disabled/" rel="noopener" target="_blank">I wrote about the issue</a> with the Steam Overlay, although there was a workaround it's good to see a fix now available for testing.</p>
-<p>From the <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/545610012180874686?snr=2___" rel="noopener nofollow" target="_blank">June 2nd</a> Steam Client Beta:</p>
-<blockquote>
-<p><strong>General</strong></p>
-<ul>
-<li>Fixed events not showing spoiler sections when events were being shown in the library.</li>
-<li>Fixed events showing blurred images in the library for games with adult content.</li>
-<li>Fixed links opened from desktop chat opening in Steam browser before opening in desktop browser.</li>
-</ul>
-<p><strong>Steam Overlay</strong></p>
-<ul>
-<li>Fixed periodic gameplay lag and freezing in games using Vulkan rendering when running with Steam Overlay disabled.</li>
-<li>Fixed timer continuing to alert after game exit if running in repeat mode.</li>
-</ul>
-<p><strong>SteamVR</strong></p>
-<ul>
-<li>Fixed intermittent steamwebhelper crash when exiting VR mode.</li>
-</ul>
-<p><strong>Linux</strong></p>
-<ul>
-<li>Improved steam client update installation speed. In some pathological cases this operation could take minutes to complete, when the expected completion time is seconds.</li>
-</ul>
-<p><strong>Big Picture</strong></p>
-<ul>
-<li>Fixed X, Y, trigger and other buttons being treated as simulated mouse input on the Steam Store.</li>
-</ul>
-</blockquote>
-<p>The fix notes it's for Vulkan so that will apply to any Native Linux game using Vulkan, as well as running Windows games with Proton.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/06/valve-fix-lag-and-freezing-in-games-with-the-steam-overlay-disabled/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/valve-fix-lag-and-freezing-in-games-with-the-steam-overlay-disabled/</guid>
-      <pubDate>Tue, 03 Jun 2025 09:33:46 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/Steam-Logo.jpg" type="image/jpeg"/>
-      
-      <category>Apps</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Deck, SteamOS will now stop bugging you to install updates multiple times</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve released a fresh Steam update for Steam Deck / SteamOS and additionally a Beta update too, both of which solve some annoyances.</p>
-<p>The first to be released was the <a href="https://store.steampowered.com/news/app/1675200/view/529847413482980683" rel="noopener nofollow" target="_blank">Beta</a> update with these changes:</p>
-<blockquote>
-<p>Note: This update was re-released with the following additional changes:</p>
-<ul>
-<li>Fixed a rare case that could result in multiple prompts to install the same update.</li>
-<li>Fixed a rare case that could result in re-triggering the out of box wizard.</li>
-</ul>
-<p><strong>General</strong></p>
-<ul>
-<li>Added in-game keyboard shortcuts to open the Main Menu and Quick Access Menu.
-	<ul>
-<li>Default Main Menu hotkey: Shift+Tab</li>
-<li>Default Quick Access Menu hotkey: Ctrl+Shift+Tab</li>
-<li>Customizable in Settings-&gt;In Game</li>
-</ul>
-</li>
-<li>Improved steam client update installation speed. In some pathological cases this operation could take minutes to complete, when the expected completion time is seconds.</li>
-<li>Fixed events showing blurred images in the library for games with adult content.</li>
-</ul>
-</blockquote>
-<p>And then the <a href="https://store.steampowered.com/news/app/1675200/view/529848048073838040" rel="noopener nofollow" target="_blank">Stable</a> update:</p>
-<blockquote>
-<p><strong>General</strong></p>
-<ul>
-<li>Fixed a rare case that could result in multiple prompts to install the same update.</li>
-<li>Fixed a rare case that could result in re-triggering the out of box wizard.</li>
-<li>Fixed the 'Battery Charge Limit' option showing on devices that currently don't support this feature.</li>
-<li>Fixed events showing blurred images in the library for games with adult content.</li>
-</ul>
-</blockquote>
-<p>I've seen the issue where system updates in Gaming Mode repeatedly appear, asking you to apply them when you've already done them. Hopefully this really will be the end of it now.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/06/steam-deck-steamos-will-now-stop-bugging-you-to-install-updates-multiple-times/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/steam-deck-steamos-will-now-stop-bugging-you-to-install-updates-multiple-times/</guid>
-      <pubDate>Tue, 03 Jun 2025 09:27:45 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steamdeckoled.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Handheld Gaming</category>
-      
-      <category>Legion Go S</category>
-      
-      <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Freaky incremental dungeon crawler Horripilant gets a demo</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Horripilant is a thoroughly unusual dungeon crawler that will make you feel quite uneasy blending in some elements from idler, puzzle and autobattler games. It will have Native Linux support at release built with <a href="https://www.gamingonlinux.com/articles/category/godot-engine/" rel="noopener" target="_blank">Godot</a> and the first public demo is live now.</p>
-<p>This is one you need to try. I just love how thoroughly unusual it is, can't think of another dungeon crawler that has a mixture quite like this.</p>
-<div class="hidden_video" data-video-id="BzHhzFOaIyw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ce75adfa576bd4c9ff55cd25f896ab2e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/BzHhzFOaIyw" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Features:</p>
-<ul>
-<li>Incrementally gain and collect materials.</li>
-<li>Combat horrific foes in the dungeon.</li>
-<li>Solve puzzles and explore the depths of your camp.</li>
-<li>Upgrade your gear to venture deeper.</li>
-<li>Meet god and gain strong boons.</li>
-</ul>
-<p class="plain-list-title">Story:</p>
-<blockquote>
-<p>You awaken. An old, battered knight, lost in the darkest corners of an abandoned dungeon, with no memory of how you got there. The stench of decay permeates the thick air. The walls seem to whisper your name.</p>
-<p>As you stir, a strange tree sprout catches your eye. You hit it, for the voice demands it of you; a twig breaks off onto the ground. With your newfound resource, you seem to be able to ameliorate your equipment. Distorted moans echo from an empty staircase. The voice calls to you again, beckoning you. You must go down. It is your purpose...</p>
-<p>Encounter bizarre characters, solve cryptic puzzles, and survive the horrors that lurk in every shadow. Will you escape this living nightmare, or will it consume you?</p>
-</blockquote>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41704/horripilant/">Horripilant</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://pasgame.itch.io/horripilant">itch.io</a></li><li><a href="https://store.steampowered.com/app/3525970/Horripilant/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/06/freaky-incremental-dungeon-crawler-horripilant-gets-a-demo/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/freaky-incremental-dungeon-crawler-horripilant-gets-a-demo/</guid>
-      <pubDate>Mon, 02 Jun 2025 17:23:41 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1867379723id26907gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Demo</category>
-      
-      <category>Dungeon Crawler</category>
-      
-      <category>Godot Engine</category>
-      
-    </item>
-    
-    <item>
-      <title>Chilled factory-builder shapez 2 gets a massive upgrade</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>shapez 2 was already good and now the huge Dimension Update is out now, it looks like it's going to suck away plenty more hours of your time. Truly a wonderful factory building sim, that really has a clear focus on just letting you chill with it without the hassle of any kind of enemies. Just build the coolest looking shape-cutting thing you can.</p>
-<p class="plain-list-title">The newly launched Dimension Update has some big new features like:</p>
-<blockquote>
-<ul>
-<li><strong>3D Platform Building:</strong> Build platforms, space belts, space pipes &amp; rails on multiple layers just as you do with buildings.</li>
-<li><strong>Trains Rework:</strong> Quick &amp; Wait stops, transfer stations, multiple packages, new colors and more.</li>
-<li><strong>Variable Launchers:</strong> Belt launchers, fluid launchers and wire transmitters now have variable range.</li>
-<li><strong>New Layouts:</strong> Re-added old T, Cross and L-platform layouts, and added even more!</li>
-<li><strong>Space Belts</strong> got a 400% throughput increase.</li>
-<li>Allow <strong>searching</strong> for shapes on the map.</li>
-<li>Added overflow splitter.</li>
-<li><strong>Dynamic Global Wire Transmitters:</strong> Global Wire transmitters now have two inputs/outputs, one for the channel ID, one for the actual signal. This gives you basically infinite channels and replaces the old color-based system.</li>
-<li><strong>Operator Shape Receiver:</strong> To be able to receive the operator shape definition, there is now a new Operator Shape Receiver building.</li>
-</ul>
-</blockquote>
-<p>Check out their new 7 minute video on it:</p>
-<div class="hidden_video" data-video-id="usCDutH3e8A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c9af2e86fa6b025691265d80c6190fa5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/usCDutH3e8A" target="_blank">See video</a></div></div>
-<p>Yep — that looks awesome.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/35604/shapez-2/">shapez 2</a></strong> | Release Date: 15th August 2024</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2162800/shapez_2/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/06/chilled-factory-builder-shapez-2-gets-a-massive-upgrade/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/06/chilled-factory-builder-shapez-2-gets-a-massive-upgrade/</guid>
-      <pubDate>Mon, 02 Jun 2025 16:56:09 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1520267580id26906gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Native Linux</category>
-      
-      <category>Building Sim</category>
-      
-      <category>Indie Game</category>
       
     </item>
     
