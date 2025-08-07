@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-08-06 07:41:00.794339</pubDate>
+    <pubDate>2025-08-07 07:40:06.089740</pubDate>
 
     
     <image>
@@ -18,6 +18,384 @@
     </image>
 
     
+    
+    <item>
+      <title>Mesa 25.2.0 released with NVIDIA upgrades, Apple Vulkan driver enhancements and lots more improvements</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Mesa 25.2.0 is officially out now as the latest new feature release of open source graphics drivers for Linux. There's quite a lot of changes with this one from big new features, lots of different drivers seeing enhancements and the usual assortment of bug fixes.</p>
+<p>From the mailing list release announcement developer Eric Engestrom said:</p>
+<blockquote>
+<p><!-- squire -->This release includes some major house-cleaning of the window system code to remove support for deprecated functionality:<br/>
+- DRI2 support has been removed entirely. X11 window system support is now only available through DRI3 or software paths. This should not directly impact users as DRI2 has been deprecated for some time.<br/>
+- Support for the insecure legacy GEM names has also been removed and buffer sharing is now only supported using dma-buf file descriptors. This should also not affect users as dma-buf has been the preferred path for about a decade.<br/>
+- Support for thread-unsafe libX11 has been removed. Mesa now requires libX11 &gt;= 1.8 (April 2022) which calls XInitThreads() on load and guarantees libX11 is always thread-safe. libX11 must not be built with --disable-thread-safety-constructor since that disables the XInitThreads() call.<br/>
+- Support for EGL_WL_bind_wayland_display has been deprecated and is now hidden behind the -Dlegacy-wayland=bind-wayland-display build flag. In order for XWayland to work properly without EGL_WL_bind_wayland_display, distros will need to upgrade to Xwayland &gt;= 24.1 (May 2024).<br/>
+<br/>
+Another important things is that, as announced during `meson setup` since 25.0.2, the Clover OpenCL implementation has been deleted. RustiCL is now the only OpenCL implementation available, providing support for more OpenCL versions and features and to more hardware than Clover ever did. It is not (yet) perfect though, so please report any issue you find while using it.<br/>
+<br/>
+NVK has added a dependency on the rustc-hash crate, which has improved shader compile times by an estimated 12%. We believe rustc-hash is already widely packaged, so the hope is that this won't pose much of a burden to packagers.<br/>
+<br/>
+Speaking of NVK, it now supports NVIDIA's Blackwell and Kepler architectures. The old Nouveau GL driver has not been updated for Blackwell and there are no plans to do so. Instead, Nouveau users will only get OpenGL via Zink+NVK on any GPUs after Ada. (Kepler users will still get the old Nouveau GL driver as it is still the default pre-Turing.)<br/>
+<br/>
+HoneyKrisp, the Apple Vulkan driver, has seen significant performance improvements.</p>
+</blockquote>
+<p>The various new highlight features, extension support and more includes:</p>
+<blockquote>
+<p><!-- squire -->- removed clover frontend<br/>
+- VK_EXT_vertex_input_dynamic_state/vertexInputDynamicState on panvk<br/>
+- pushDescriptor on panvk<br/>
+- VK_EXT_vertex_input_dynamic_state on panvk<br/>
+- VK_EXT_vertex_attribute_divisor on panvk<br/>
+- supportsNonZeroFirstInstance on panvk<br/>
+- GL_ARB_blend_func_extended on v3d<br/>
+- dualSrcBlend on v3dv<br/>
+- VK_KHR_maintenance4 on panvk/v10+<br/>
+- VK_KHR_maintenance5 on panvk/v10+<br/>
+- VK_EXT_direct_mode_display on panvk<br/>
+- VK_EXT_extended_dynamic_state[2] on panvk<br/>
+- Vulkan 1.2 on panvk/v10+<br/>
+- VK_KHR_shader_quad_control on panvk/v10+<br/>
+- multiDrawIndirect on panvk/v10+<br/>
+- VK_KHR_draw_indirect_count on panvk/v10+<br/>
+- VK_KHR_shader_integer_dot_product on panvk<br/>
+- VK_KHR_shader_terminate_invocation on panvk<br/>
+- VK_EXT_shader_demote_to_helper_invocation on panvk<br/>
+- VK_EXT_shader_replicated_composites on panvk<br/>
+- VK_EXT_depth_bias_control on panvk<br/>
+- VK_KHR_shader_bfloat16 on anv/gfx125+ and radv/gfx12+<br/>
+- VK_KHR_robustness2 on RADV<br/>
+- VK_EXT_zero_initialize_device_memory on RADV and NVK<br/>
+- VK_EXT_primitive_topology_list_restart on panvk<br/>
+- VK_EXT_image_2d_view_of_3d on panvk<br/>
+- VK_EXT_texel_buffer_alignment on panvk<br/>
+- cl_khr_kernel_clock on freedreno, iris, llvmpipe, nvc0, panfrost, radeonsi and zink with llvm-19 or newer<br/>
+- GL_KHR_texture_compression_astc_hdr on panfrost and asahi<br/>
+- cl_ext_buffer_device_address on iris, llvmpipe, radeonsi and zink<br/>
+- Completed OpenCL 2.0 coarse grain buffer SVM support for iris and radeonsi<br/>
+- VK_EXT_shader_subgroup_ballot on panvk<br/>
+- VK_EXT_shader_subgroup_vote on panvk<br/>
+- Vulkan video support on GFX12 (RDNA4) for RADV<br/>
+- VK_KHR_load_store_op_none on panvk<br/>
+- VK_EXT_load_store_op_none on panvk<br/>
+- VK_EXT_scalar_block_layout on radv/gfx6<br/>
+- VK_EXT_inline_uniform_block on panvk<br/>
+- cl_khr_fp16 on asahi, freedreno, llvmpipe, panfrost, radeonsi and zink<br/>
+- GL_ARB_shader_clock on panfrost/v6+<br/>
+- VK_EXT_texture_compression_astc_hdr on panvk<br/>
+- MSAA with 8 and 16 sample counts on panfrost<br/>
+- cl_khr_spirv_queries<br/>
+- VK_EXT_depth_clamp_zero_one on panvk<br/>
+- VK_KHR_depth_clamp_zero_one on panvk<br/>
+- VK_EXT_depth_clip_control on panvk<br/>
+- VK_KHR_maintenance9 on RADV<br/>
+- VK_KHR_unified_image_layouts on RADV (RDNA3+), tu and panvk<br/>
+- VK_KHR_vulkan_memory_model on panvk<br/>
+- Vulkan 1.3 on panvk/v10+<br/>
+- VK_KHR_present_wait2<br/>
+- VK_EXT_descriptor_indexing on panvk/v10+<br/>
+- cl_khr_priority_hints<br/>
+- VK_KHR_maintenance6 on panvk/v10+<br/>
+- CL_sRGBA and CL_sBGRA images<br/>
+- cl_khr_extended_bit_ops<br/>
+- VK_KHR_shader_clock on panvk<br/>
+- GL_EXT_shader_realtime_clock on panfrost/v6+<br/>
+- VK_KHR_shader_float8 on RADV (RDNA4+)<br/>
+- GL_EXT_window_rectangles on r600<br/>
+- GL_EXT_shader_image_load_store on r600/evergreen+<br/>
+- GL_EXT_shader_clock on all drivers that support GL_ARB_shader_clock<br/>
+- CL_UNORM_INT_101010_2 and cl_ext_image_unorm_int_2_101010<br/>
+- timestamps on panvk/v10+<br/>
+- VK_KHR_calibrated_timestamps on panvk/v10+<br/>
+- VK_EXT_non_seamless_cube_map on panvk<br/>
+- VK_ARM_shader_core_properties on panvk/v10+<br/>
+- removed X11 DRI2 support<br/>
+- removed EGL_MESA_drm_image<br/>
+- removed pre-dmabuf wl_drm support<br/>
+- deprecated EGL_WL_bind_wayland_display<br/>
+- VK_KHR_shader_atomic_int64 on panvk/v10+<br/>
+- VK_EXT_host_image_copy on RADV (RDNA1+)<br/>
+- VK_KHR_cooperative_matrix on nvk/turing+<br/>
+- VK_KHR_host_image_copy on panvk<br/>
+- Vulkan 1.4 on panvk/v10+<br/>
+- NV_timeline_semaphore for zink</p>
+</blockquote>
+<p>You can also read the short <a href="https://www.collabora.com/news-and-blog/news-and-events/mesa-25.2-brings-new-hardware-support-for-nouveau-users.html" rel="noopener nofollow" target="_blank">Collabora blog post</a> from developer Faith Ekstrand on the NVIDIA upgrades.</p>
+<p>Check out <a href="https://www.gamingonlinux.com/guides/view/how-to-install-update-and-see-what-graphics-driver-you-have-on-linux-and-steamos/" rel="noopener" target="_blank">our guide to graphics drivers on Linux</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/mesa-25-2-0-released-with-nvidia-upgrades-apple-vulkan-driver-enhancements-and-lots-more-improvements/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/mesa-25-2-0-released-with-nvidia-upgrades-apple-vulkan-driver-enhancements-and-lots-more-improvements/</guid>
+      <pubDate>Wed, 06 Aug 2025 17:26:28 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/mesa.png" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Mesa</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Massive scale RTS game Ashes of the Singularity II announced for 2026</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Ashes of the Singularity II has been announced by Oxide Games and Stardock, bringing us the next-generation of massive scale real-time strategy games.</p>
+<p>My favourite genre. Something about building up a big army like this and watching the fireworks, every since first discovering the original Dune II and later Command &amp; Conquer. I have great expectations for Ashes of the Singularity II, I just hope it works well with Valve's Proton on Desktop Linux.</p>
+<p>For this one they have a "significantly" expanded team and scope with them promising some pretty big stuff including "greater strategic depth, intricate base-building dynamics, and intense skirmishes against intelligent computer opponents".<!-- squire --> So far the only official trailer they've put up doesn't show gameplay but here it is anyway:</p>
+<div class="hidden_video" data-video-id="SV3k4yxWKS0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/820069c00a3f2fe5b43d2ccccbb69ae7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/SV3k4yxWKS0" target="_blank">See video</a></div></div>
+<p>From the press release: “Ten years ago, we set a new, literal benchmark for RTS games with massive battles and groundbreaking technology," said Brad Wardell, CEO of Stardock Entertainment. "With Ashes of the Singularity II, we’re raising the bar even higher, delivering strategic gameplay depth that RTS fans have always dreamed of.”</p>
+<p><!-- squire -->“Obviously, in the first game, the number one request was to have a human faction,” said Wardell. “Back then, we just couldn’t support having thousands of organic, walking, squishy people in the world and thus had to design in favor of machines. We’re really excited to bring the humans into the war and watch how they fare against the massive mechanical armies of the Substrate and PHC.”</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42591/ashes-of-the-singularity-ii/">Ashes of the Singularity II</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3499790/Ashes_of_the_Singularity_II/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/massive-scale-rts-game-ashes-of-the-singularity-ii-announced-for-2026/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/massive-scale-rts-game-ashes-of-the-singularity-ii-announced-for-2026/</guid>
+      <pubDate>Wed, 06 Aug 2025 14:24:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/897138793id27316gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>RTS</category>
+      
+      <category>Steam</category>
+      
+      <category>Strategy</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA say no to adding backdoors and killswitches in their GPUs</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA have released a blog post from chief security officer, fighting back against attempts from pundits and policymakers in governments wanting backdoors.</p>
+<p>In the post, David Reber Jr. gives a firm no to the suggestion they should add in anything like a backdoor or killswitch into their hardware noting "NVIDIA GPUs do not and should not have kill switches and backdoors" noting that adding anything like it would be "a gift to hackers and hostile actors". <em>Some words that perhaps the UK Government should take note on, with their repeated attempts (<a href="https://en.wikipedia.org/wiki/Encryption_ban_proposal_in_the_United_Kingdom" rel="noopener nofollow" target="_blank">#1</a>, <a href="https://www.bbc.co.uk/news/articles/cgj54eq4vejo" rel="noopener nofollow" target="_blank">#2</a> and so on) to get backdoors in encryption.</em></p>
+<p>The post continues noting how a "good" secret backdoor just isn't a thing "only dangerous vulnerabilities that need to be eliminated" and ensuring that "no single-point vulnerability can compromise or shut down a system". It all seems so obvious to say doesn't it? But it clearly needs to be repeated as governments simply don't learn. A backdoor for one, is eventually a backdoor for everyone determined to access it.</p>
+<p>Reber Jr goes on to give the NSA's <a href="https://en.wikipedia.org/wiki/Clipper_chip" rel="noopener nofollow" target="_blank">Clipper Chip initiative</a> from the 90s as an example of how it just doesn't work. There's more in the post worth reading but the ending note is especially blunt "There are no back doors in NVIDIA chips. No kill switches. No spyware. That's not how trustworthy systems are built — and never will be".</p>
+<p>See more in the <a href="https://blogs.nvidia.com/blog/no-backdoors-no-kill-switches-no-spyware/" rel="noopener nofollow" target="_blank">NVIDIA blog post</a>.</p>
+<p>In related NVIDIA news - there's a <a href="https://www.gamingonlinux.com/2025/08/nvidia-driver-570-181-released-for-linux-as-the-latest-recommended-stable-driver/" rel="noopener" target="_blank">new recommended Linux driver out</a> and they're <a href="https://www.gamingonlinux.com/2025/08/nvidia-are-working-on-a-general-optimization-for-vkd3d-directx12-games-on-linux/" rel="noopener" target="_blank">working on some Linux gaming performance improvements</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/nvidia-say-no-to-adding-backdoors-and-killswitches-in-their-gpus/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/nvidia-say-no-to-adding-backdoors-and-killswitches-in-their-gpus/</guid>
+      <pubDate>Wed, 06 Aug 2025 11:51:19 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Security</category>
+      
+      <category>Hardware</category>
+      
+      <category>Misc</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Odencat released a sweet new adventure in Wish Upon a Cat</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Celebrating their sixth anniversary as a studio, Japanese developer Odencat have released a free heartwarming adventure with Wish Upon a Cat.</p>
+<p>It has Linux support just like the previous games including Bear's Restaurant, Fishing Paradiso and Meg's Monster that all have very positive user reviews. Looks like this will be another lovely little one to go through, and since it's free you can just go and grab it right now.</p>
+<div class="hidden_video" data-video-id="psi9pXEsWYI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ab013633b3475bf14c0591ff013a8731.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/psi9pXEsWYI" target="_blank">See video</a></div></div>
+<p>More about it (from Steam):</p>
+<blockquote>
+<p>"If I knew things were going to end up like this, I would've just apologized in the first place…"</p>
+<p>It's your best friend's birthday—but after a recent fight with her, you're not exactly on speaking terms.</p>
+<p>Before you even have a chance to wallow in regret, though, a burst of light erupts from your computer screen and sucks you into an alternate dimension—where a rather snarky mouse gives you the rundown.</p>
+<p>A rogue cat with a bad attitude has been leaping between realities and causing all sorts of dimensional mayhem—and if something isn't done to stop it, it might very well cause another big bang. And you DEFINITELY don't want that.</p>
+<p>With no other options available, you set off in pursuit of the feisty feline—not just to restore balance to the dimensions, but because it's the only way you'll ever make it back home.</p>
+<p>In this short-but-sweet adventure, you'll journey through the many worlds of Odencat games like Bear's Restaurant and Meg's Monster, meeting dozens of familiar friends along the way on your search for the runaway cat.</p>
+<p>Why did it throw the dimensions out of whack? What is it this little kitty-cat truly desires? And when all is said and done—what will YOU wish for?</p>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42478/wish-upon-a-cat/">Wish Upon a Cat</a></strong> | Release Date: 6th August 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3857590/Wish_Upon_a_Cat/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/odencat-released-a-sweet-new-adventure-in-wish-upon-a-cat/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/odencat-released-a-sweet-new-adventure-in-wish-upon-a-cat/</guid>
+      <pubDate>Wed, 06 Aug 2025 11:35:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/573214739id27314gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Adventure</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Stumble and fall through the free release of FALLSTRUKTUR</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>FALLSTRUKTUR is a new free 3D platformer game that sees you descend through a world of dream-like geometry. Developed by Fynn Levy, Rollin'Barrel, Stuffed Wombat - some names you might recognise from the excellent and chaotic <a href="https://www.gamingonlinux.com/2025/05/random-chaotic-puzzle-platformer-mosa-lina-gets-a-big-free-expansion/" rel="noopener" target="_blank">Mosa Lina</a>.</p>
+<p>This new free game won't take much of your time either with a running time of around an hour. There's also Steam Workshop support for making and adding more to it.</p>
+<div class="hidden_video" data-video-id="1S6B1TSbzmg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e2ac429b64c1805058955d176901c0b2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/1S6B1TSbzmg" target="_blank">See video</a></div></div>
+<p>Game Highlights:</p>
+<blockquote>
+<ul>
+<li>Explore an interconnected vertical world.</li>
+<li>Avoid splintering into a thousand pieces.</li>
+<li>Savor the dense atmosphere.</li>
+<li>Discover secret paths.</li>
+<li>Master the first person physics-based control scheme.</li>
+<li>Immerse yourself in the experience of falling.</li>
+<li>20-60 minutes of playtime.</li>
+<li>Struktur Development Kit (w/ Steam Workshop support).</li>
+</ul>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42590/fallstruktur/">FALLSTRUKTUR</a></strong> | Release Date: 6th August 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://stuffedwombat.itch.io/fallstruktur">itch.io</a></li><li><a href="https://store.steampowered.com/app/3674270/FALLSTRUKTUR/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/stumble-and-fall-through-the-free-release-of-fallstruktur/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/stumble-and-fall-through-the-free-release-of-fallstruktur/</guid>
+      <pubDate>Wed, 06 Aug 2025 11:22:39 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1929927621id27313gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Free Game</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Itch.io</category>
+      
+    </item>
+    
+    <item>
+      <title>Bottles app for running Windows apps / games on Linux gets NGI Zero Commons funding</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The NLnet Foundation <a href="https://nlnet.nl/news/2025/20250804-announcement-grants-CommonsFund.html" rel="noopener nofollow" target="_blank">revealed</a> more projects receiving funding from NGI Zero Commons, which includes the popular Bottles app for running Windows apps on Linux.</p>
+<p>Not heard of the NGI Zero Commons Fund before? From the NLnet Foundation it's designed to help support free and open source software. They receive financial support from the European Commission's Next Generation Internet programme, the European Union’s Horizon Europe research and innovation programme and even the Swiss State Secretariat for Education, Research and Innovation (SERI).</p>
+<p>In the <a href="https://usebottles.com/posts/2025-08-04-nlnet-commons-fund/" rel="noopener nofollow" target="_blank">announcement</a> from the Bottles team they note it will go towards work on Bottles Next, as they're rebuilding the software to improve all parts of it. Back in <a href="https://usebottles.com/posts/2025-07-06-bottles-need-help/" rel="noopener nofollow" target="_blank">early July</a>, the Bottles developers put out a call for more support, so it's nice to see it answered.</p>
+<p>While a lot of people use software like <a href="https://www.gamingonlinux.com/guides/view/how-to-play-games-from-gog-and-epic-games-on-linux-steamos-and-steam-deck/" rel="noopener" target="_blank">Heroic and Lutris</a>, Bottles is just another tool in the box that you can use to make running Windows software a little bit easier.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/bottles-app-for-running-windows-apps-games-on-linux-gets-ngi-zero-commons-funding/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/bottles-app-for-running-windows-apps-games-on-linux-gets-ngi-zero-commons-funding/</guid>
+      <pubDate>Wed, 06 Aug 2025 10:41:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/879398131id27312gol.jpg" type="image/jpeg"/>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Persona 5 Royal, My Time at Sandrock and more feature in Humble Choice for August 2025</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="http://www.humblebundle.com/membership" rel="noopener nofollow" target="_blank">Humble Choice for August 2025</a> has been revealed and there's a really great selection of games this time including the likes of Persona 5 Royal.</p>
+<p>Here's your usual GamingOnLinux run over what's included and the compatibility to expect across Linux desktop, SteamOS and Steam Deck. Using Valve's Deck Verified ratings and <a href="https://www.protondb.com/" rel="noopener nofollow" target="_blank">ProtonDB</a>.</p>
+<p style="text-align:center"><a href="https://www.humblebundle.com/membership" rel="noopener nofollow" target="_blank"><img alt="Humble Choice for August 2025" src="https://uploads.golmedia.net/uploads/articles/article_media/4817546531754475226gol1.jpg"/></a></p>
+<p>Humble Choice August Lineup:</p>
+<p><a href="https://store.steampowered.com/app/1687950/Persona_5_Royal/" rel="noopener nofollow" target="_blank">Persona 5 Royal</a><br/>
+ProtonDB Gold / Steam Deck Verified</p>
+<p><a href="https://store.steampowered.com/app/1493640/Banishers_Ghosts_of_New_Eden/" rel="noopener nofollow" target="_blank">Banishers: Ghost of New Eden</a><br/>
+PorotnDB Platinum / Steam Deck Playable</p>
+<p><a href="https://store.steampowered.com/app/1084600/My_Time_at_Sandrock/" rel="noopener nofollow" target="_blank">My Time at Sandrock</a><br/>
+ProtonDB Platinum / Steam Deck Verified</p>
+<p><a href="https://store.steampowered.com/app/1937500/Lets_School/" rel="noopener nofollow" target="_blank">Let's School</a><br/>
+ProtonDB Platinum / Steam Deck Verified</p>
+<p><a href="https://store.steampowered.com/app/1586800/Lil_Gator_Game/" rel="noopener nofollow" target="_blank">Lil Gator Game</a><br/>
+ProtonDB Platinum / Steam Deck Verified</p>
+<p><a href="https://store.steampowered.com/app/2238040/Tiny_Terrys_Turbo_Trip/" rel="noopener nofollow" target="_blank">Tiny Terry's Turbo Trip</a><br/>
+ProtonDB Platinum / Steam Deck Verified</p>
+<p><a href="https://store.steampowered.com/app/1599330/Wildmender/" rel="noopener nofollow" target="_blank">Wildmender</a><br/>
+ProtonDB Platinum / Steam Deck Verified</p>
+<p><a href="https://store.steampowered.com/app/1291010/Warpips/" rel="noopener nofollow" target="_blank">Warpips</a><br/>
+ProtonDB Platinum / Steam Deck Playable</p>
+<p>Check it out on the <a href="https://www.humblebundle.com/membership" rel="noopener nofollow" target="_blank">Humble Bundle website</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/persona-5-royal-my-time-at-sandrock-and-more-feature-in-humble-choice-for-august-2025/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/persona-5-royal-my-time-at-sandrock-and-more-feature-in-humble-choice-for-august-2025/</guid>
+      <pubDate>Wed, 06 Aug 2025 10:19:04 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1351327072id27311gol.jpg" type="image/jpeg"/>
+      
+      <category>Game Bundle</category>
+      
+      <category>Humble Store</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA driver 570.181 released for Linux as the latest recommended stable driver</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>In addition to <a href="https://www.gamingonlinux.com/2025/08/nvidia-beta-driver-580-65-06-released-for-linux-with-bug-fixes-and-expanded-wayland-support/" rel="noopener" target="_blank">releasing a new Beta series recently</a>, NVIDIA have now put up driver version 570.181 as the latest recommended stable driver for Linux.</p>
+<p>Here we go again though, we get a one-liner vague <a href="https://www.nvidia.com/en-in/drivers/details/252486/" rel="noopener nofollow" target="_blank">changelog</a>. Are you ready for this? The improvements noted are:</p>
+<blockquote>
+<ul>
+<li>Minor bug fixes and improvements.</li>
+</ul>
+</blockquote>
+<p>When this happened previously, NVIDIA stealthily <a href="https://www.gamingonlinux.com/2025/07/nvidia-stable-driver-575-64-03-released/" rel="noopener" target="_blank">added support for a newer GPU</a>. The time after with another vague changelog, I <a href="https://www.gamingonlinux.com/2025/07/nvidia-570-172-08-released-for-linux-as-the-main-stable-driver/" rel="noopener" target="_blank">speculated that it was possibly for unrevealed security issues</a> — which turned out to be correct when NVIDIA later <a href="https://www.gamingonlinux.com/2025/07/nvidia-reveal-more-gpu-driver-security-issues-for-july-2025/" rel="noopener" target="_blank">announced some more security flaws</a>. So it's entirely possible we may get another security bulletin sometime soon. As always, GamingOnLinux will let you know when we have any details of that or anything else.</p>
+<p><em>In related news: NVIDIA are <a href="https://www.gamingonlinux.com/2025/08/nvidia-are-working-on-a-general-optimization-for-vkd3d-directx12-games-on-linux/" rel="noopener" target="_blank">working on a "general optimization" for VKD3D / DirectX12 games on Linux</a>.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/nvidia-driver-570-181-released-for-linux-as-the-latest-recommended-stable-driver/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/nvidia-driver-570-181-released-for-linux-as-the-latest-recommended-stable-driver/</guid>
+      <pubDate>Wed, 06 Aug 2025 09:52:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>After being banned for sale VILE: Exhumed has released for free</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It was going to release on Steam but it was removed and banned for sale, now VILE: Exhumed is back as a free game to fight back against censorship. <em>With the release it's now under the CC BY-NC-ND license.</em></p>
+<p>Not caught up on what's going on? This is one game that was caught up in the recent campaign to have certain games with adult themes <a href="https://www.gamingonlinux.com/2025/08/mastercard-release-a-statement-about-game-stores-payment-processors-and-adult-content/" rel="noopener" target="_blank">removed for sale on Steam and itch.io</a>, with <a href="https://www.gamingonlinux.com/2025/08/zoom-platform-also-had-payment-processor-issues-say-they-have-no-plans-to-remove-any-titles/" rel="noopener" target="_blank">ZOOM Platform also recently talking about it too</a>.</p>
+<p>The developer said that 50% of the profits will go towards the "Red Door Family Shelter, a Toronto based charity that focuses on helping families, refugees, and women who are escaping violence". Writing on the website the developer posted a statement about the situation:</p>
+<blockquote>
+<p>The game covers topics of assault, abuse, and entitlement, and uses a combination of FMV and practical effects to create images as horrifying as the themes. This was never a secret. There are a lot of intense visuals in VILE: Exhumed, but there is no uncensored nudity, no depictions of sex acts, and no pornography whatsoever – which is one of the justifications bad actors are using right now to censor games.</p>
+<p>What this actually results in is taking power and storytelling away from women, other marginalized artists, and ultimately, from everyone.</p>
+<p><strong>This censorship of my work is a direct attack on creative expression and artistic freedom, and it will not stop with false accusations of sexual content.</strong></p>
+<p>They will come for anything that speaks more loudly than they do. </p>
+<p>By giving the game away, for free, to whoever wants to play it, I am doing the same thing I set out to do when I started working on VILE: Exhumed, a game about sexual assault, male entitlement, and misogyny. Taking back my agency. </p>
+<p>No one is allowed to dictate what kind of horror is acceptable, or what stories are allowed to be told.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="q6lOV2KN_Pk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5b8a5edba01ee22665d9f04c7e9f3f7f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/q6lOV2KN_Pk" target="_blank">See video</a></div></div>
+<p>See more on <a href="https://dreadxp.com/vile-is-banned/" rel="noopener nofollow" target="_blank">the release website</a>.</p>
+<p>Editor's Note: these bans and removals don't work. All that ends up happening is games and other content move elsewhere, and people go looking in darker places. We know how these things go, and now with all the age verification in the UK and coming to other countries, the situation is only going to get worse. </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/after-being-banned-for-sale-vile-exhumed-has-released-for-free/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/after-being-banned-for-sale-vile-exhumed-has-released-for-free/</guid>
+      <pubDate>Wed, 06 Aug 2025 09:35:30 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/136370271id27309gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Free Game</category>
+      
+      <category>Horror</category>
+      
+      <category>Misc</category>
+      
+    </item>
     
     <item>
       <title>Portal: Revolution drops Native Linux support to focus on Proton</title>
@@ -114,6 +492,9 @@
       <title>Hunt: Showdown 1896 broken on Linux / SteamOS and Steam Deck due to Easy Anti-Cheat</title>
       <author>Liam Dawe</author>
       <description><div class="content group e-content">
+<p><strong>Update 06/08/2025 - 9:37am UTC</strong>: while Crytek did not reply to GamingOnLinux, they have fixed the issue and the game works again. <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">Our anti-cheat page</a> has been updated to note it works again.</p>
+<hr/>
+<p><em>Original article below…</em></p>
 <p>Here we go again? Hunt: Showdown 1896 is a popular extraction shooter from Crytek that's now broken on Linux / SteamOS and Steam Deck due to Easy Anti-Cheat.</p>
 <p>Just recently the developers put out a small update with version 2.4.0.2 fixing a couple of bugs, but the side-effect is that the Easy Anti-Cheat system seems to now be either disabled for Linux systems or left broken. Quite frustrating to see, with no announcements from the developer.</p>
 <p>I've tested with Proton 9 and Proton Experimental and both just give the same issue, the game will load and then eventually give you an error box like this:</p>
@@ -3978,516 +4359,6 @@ Pictured - Warframe</p>
       <category>Exploration</category>
       
       <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>AMID EVIL, DUSK and many other greats can be found in the Fanatical Shooter Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Get ready to head into the weekend with the <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-shooter-bundle" rel="noopener nofollow" target="_blank">Build Your Own Shooter Bundle from Fanatical</a>. There's plenty of treats for real cheap.</p>
-<p style="text-align:center"><a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-shooter-bundle" rel="noopener nofollow" target="_blank"><img alt="Fanatical Shooter Bundle splash image" src="https://uploads.golmedia.net/uploads/articles/article_media/21011768911752829418gol1.jpg"/></a></p>
-<p>Here's all the games to pick from:</p>
-<p class="plain-list-title"><strong><img alt="steam deck verified" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_verified.png"/> Deck Verified:</strong></p>
-<ul>
-<li>AMID EVIL &amp; DUSK Double Pack</li>
-<li>Pathologic 2</li>
-<li>Post Void</li>
-<li>Fobia - St. Dinfna Hotel</li>
-<li>Hellbound</li>
-</ul>
-<p class="plain-list-title"><strong><img alt="steam deck playable" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_playable.png"/> Deck Playable:</strong></p>
-<ul>
-<li>ZERO PROTOCOL</li>
-<li>HYPER DEMON</li>
-<li>The Ascent: Cyber Edition Bundle</li>
-<li>Mother Hub</li>
-<li>SPRAWL</li>
-<li>In Sound Mind</li>
-<li>Hellpoint</li>
-<li>REAVER</li>
-<li>Stop Dead</li>
-</ul>
-<p class="plain-list-title"><strong><img alt="steam deck not rated" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_notrated.png"/> Compatibility Not Known</strong></p>
-<ul>
-<li>Quartermain and the Cult of Cthulhu</li>
-<li>Dead Trash</li>
-<li>SATAN</li>
-<li>Ash &amp; Adam's GOBSMACKED</li>
-<li>Dread X Collection 5</li>
-<li>Sylvio: Black Waters</li>
-<li>R.I.C.O.: London</li>
-</ul>
-<p class="plain-list-title"><strong><img alt="steam deck unsupported" src="https://www.gamingonlinux.com/templates/default/images/steamdeck/deck_unsupported.png"/> Deck Unsupported:</strong></p>
-<ul>
-<li>Dread X Collection 4: The Hunt</li>
-</ul>
-<p>As a bundle you build yourself it starts at 3 + games for £1.65/Per item, 5 + games at £1.60/Per item and 7 + games at £1.45/Per item.</p>
-<p>Check it out on <a href="https://www.fanatical.com/en/pick-and-mix/build-your-own-shooter-bundle" rel="noopener nofollow" target="_blank">the Fanatical website</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/amid-evil-dusk-and-many-other-greats-can-be-found-in-the-fanatical-shooter-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/amid-evil-dusk-and-many-other-greats-can-be-found-in-the-fanatical-shooter-bundle/</guid>
-      <pubDate>Fri, 18 Jul 2025 09:13:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1698916061id27216gol.jpg" type="image/jpeg"/>
-      
-      <category>Fanatical</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Misc</category>
-      
-      <category>On Sale</category>
-      
-    </item>
-    
-    <item>
-      <title>2.5D turn-based strategy game Avante! Atlantis gives off Advance Wars vibes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Avante! Atlantis is an upcoming turn-based strategy game that looks like you're playing a board game with a clever 2.5D style. The developer recently announced full Native Linux and Steam Deck support. There's a demo available right now too which they keep updating for you to get an early taste of what's to come.</p>
-<p>More about it: "Amid global conflict and scarce resources, the lost city of Atlantis has mysteriously resurfaced. Rich in natural resources, it quickly becomes the focus of every major nation’s ambitions. But Atlantis didn’t return by chance. As battles rage across its ruins, a deeper mystery begins to unfold...one that could reshape the world."</p>
-<p>Getting some Advance Wars vibes from this one for the mixture of the level and battle scene style, but at least unlike other very similar games to Advance Wars, the overall aesthetic is more unique.</p>
-<p>Check out their original trailer below:</p>
-<div class="hidden_video" data-video-id="pwu3zAk393g"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/44396f1de752540406f63d13892d60fa.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/pwu3zAk393g" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Game Highlights:</p>
-<blockquote>
-<ul>
-<li>Single-Player Campaign: Embark on an epic journey through Atlantis, battling foes and uncovering the mysteries behind the city’s long-hidden secrets;</li>
-<li>Many ways to Play!: Battle solo or compete with friends in exciting matches! Play locally or over LAN for an intense and thrilling experience. Up to 4 Players in a match!</li>
-<li>Board Game Experience: Roll the dice for victory! Each roll can slightly boost or reduce your unit’s base power, adding a small layer of unpredictability to your strategy.</li>
-<li>Diverse Biomes: Battle across four distinct environments, each featuring unique tiles, like the life-restoring Oasis or the fragile Ice that can shatter beneath your units at any moment!</li>
-<li>Commanders: Choose from 8 charming and unique Commanders, each with a special ability to turn the tide of battle in your favor!</li>
-<li>Varied Units: Command a diverse arsenal to secure victory! From classic Infantry and Tanks to unique units like Drills and Magnets, each brings its own strategic role to the battlefield.</li>
-<li>Custom Map Editor: Unleash your creativity with the map editor! Design and share your own custom maps, using all the tools the game offers to craft exciting battlefields.</li>
-</ul>
-</blockquote>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42442/avante-atlantis/">Avante! Atlantis</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3172160/Avante_Atlantis/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/2-5d-turn-based-strategy-game-avante-atlantis-gives-off-advance-wars-vibes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/2-5d-turn-based-strategy-game-avante-atlantis-gives-off-advance-wars-vibes/</guid>
-      <pubDate>Fri, 18 Jul 2025 08:51:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1234462363id27215gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Board Game</category>
-      
-      <category>Demo</category>
-      
-    </item>
-    
-    <item>
-      <title>City-building on the back of a giant creature, The Wandering Village 1.0 is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The Wandering Village from Stray Fawn Studio is a really unique city-builder that takes place on the back of a giant moving creature. It has Native Linux support and is Steam Deck Verified / SteamOS Compatible.</p>
-<p>It's unlike any other village / city-builder I've played due to the way the game progresses, with you going through different locations with events. A really great idea and visually pleasing too. Nice to see it fully release now with a lot of content enhancements since the initial Early Access release. </p>
-<p>As usual for a lot of games now, the 1.0 release is not the end of the road. They're working on addressing feedback and a 1.1 "Quality of Life &amp; UX update" is planned, along with a further 1.2 update to expand the interactions and relationship you have with the giant creature named Onbu.</p>
-<p>For the 1.0 release they made a sweet animated trailer:</p>
-<div class="hidden_video" data-video-id="eczlXmiEsUI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d2ca9895abde9656514a26f7f86fd621.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/eczlXmiEsUI" target="_blank">See video</a></div></div>
-<p>See the previous trailer for actual footage:</p>
-<div class="hidden_video" data-video-id="VHhS3DIHg-I"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1bf423af24f8c67d4349eae9e6f62e72.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/VHhS3DIHg-I" target="_blank">See video</a></div></div>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/32330/the-wandering-village/">The Wandering Village</a></strong> | Release Date: 14th September 2022</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1121640/The_Wandering_Village/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/city-building-on-the-back-of-a-giant-creature-the-wandering-village-1-0-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/city-building-on-the-back-of-a-giant-creature-the-wandering-village-1-0-is-out-now/</guid>
-      <pubDate>Fri, 18 Jul 2025 08:37:48 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/384720169id27214gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>City Builder</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Old School Rally gets hit with a DMCA and taken down from Steam</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Showing just how tough game dev can be for smaller teams and solo devs, Old School Rally has been hit with a DMCA and the Steam store page is gone. This is hopefully only a temporary situation, while the developer of the game works through the issue.</p>
-<p>Writing in a Steam <a href="https://steamcommunity.com/app/2824660/discussions/0/590651049589629945/" rel="noopener nofollow" target="_blank">forum post</a> the developer noted how they sourced certain car models from Sketchfab, a website where people can share and buy 3D models. The game developer said they spoke to the original uploader to verify approval for use in the game. All of that was agreed, so the game developer continued using the models and released the game with them. Unfortunately, a week ago the game developer received a claim of ownership over the car models from someone else. The original uploader of the car models maintained they own them, and the game developer reached out to the claimant to explore solutions. Sadly, "on Monday Old School Rally was abruptly issued with a DMCA takedown notice, prompting Steam to temporarily remove the game from the store as per their policies (which is standard practice)".</p>
-<div class="hidden_video" data-video-id="62T8hbNBXfo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/fdb06debb31eecbe3832d3f42dc0fe46.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/62T8hbNBXfo" target="_blank">See video</a></div></div>
-<p>So for now the game store page is just gone. The game developer is planning to update the game to lock the models and note they will return, as they're working on "all-original car model designs that still show resemblances to the classic legendary rally cars that we all love as replacements in waves".</p>
-<p>What a sticky situation. Dev grabs models with the author's permission, and it turns out they might not actually own those models. Just goes to show how difficult it can be for game devs sourcing art from elsewhere. And, with the rise of AI generation, that might only get more troublesome.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40443/old-school-rally/">Old School Rally</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2824660/Old_School_Rally/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/old-school-rally-gets-hit-with-a-dmca-and-taken-down-from-steam/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/old-school-rally-gets-hit-with-a-dmca-and-taken-down-from-steam/</guid>
-      <pubDate>Fri, 18 Jul 2025 08:21:14 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/329852039id27213gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Proton</category>
-      
-      <category>Game Dev</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Cyberpunk 2077 2.3 is out with new vehicles, auto drive, AMD FSR 4, Intel XeSS 2 and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>CD PROJEKT RED have released the latest major free update for Cyberpunk 2077 today, bringing with it new content and graphics enhancements. It's quite a big one too, with a lot more than I expected them to add in after the last update. Nice to see them still continue to expand it though.</p>
-<div class="hidden_video" data-video-id="qPcPBaWhny4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/64a924f4b2cf93127f147f1ca37d22cc.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/qPcPBaWhny4" target="_blank">See video</a></div></div>
-<p>The full changelog:</p>
-<blockquote>
-<h4>Vehicles</h4>
-<ul>
-<li>Added 4 new vehicles, including several Side Jobs tied to acquiring them:
-	<ul>
-<li><strong>Yaiba ARV-Q340 Semimaru</strong> Reward from a new side job (to unlock, complete The Hunt and The Beast In Me). An additional side job unlocks the CrystalCoat™ feature for it.</li>
-<li><strong>Rayfield Caliburn "Mordred"</strong> Reward from a new side job (to unlock, complete The Beast in Me: Badlands, The Beast in Me: Santo Domingo, Transmission, and Search and Destroy)."</li>
-<li><strong>Yaiba ASM-R250 Muramasa</strong> Reward from a new side job (to unlock, purchase 1 Yaiba vehicle, purchase at least 3 vehicles through AUTOFIXER, and complete Reported Crime: You Play with Fire...). If you fail the side job, the vehicle can later be purchased through AUTOFIXER.</li>
-<li><strong>Chevillon Legatus 450 Aquila</strong> Available for purchase on AUTOFIXER.</li>
-</ul>
-</li>
-<li>Introducing AutoDrive! This cutting-edge, autonomous driving feature will take you to your chosen destination (i.e. job objective or placed pin on the map). If you have no set destination, it will take you on a leisurely ride through the streets of Night City. Simply hop in any of your vehicles, make sure you're on a road, and hold H (PC) / Left Stick (consoles) to activate. This feature is disabled when you enter combat or when your vehicle is heavily damaged.</li>
-<li>Implemented Cinematic Camera for AutoDrive. Hold Q (PC) / D-Pad Right (consoles) to activate. Sit back and enjoy cinematic views of Night City as you cruise toward your destination.</li>
-<li>Self-driving Delamain cabs are now available on demand! Simply open the menu to call vehicles, then select "Delamain Cab" from the list to request a ride. This feature unlocks after completing the job Don't Lose Your Mind (regardless of outcome) and receiving a message from Delamain.</li>
-<li>Rayfield's CrystalCoat™ is now available for vehicles from partner brands, including motorcycles. Additionally, the infamous hacker known as Cosmetic_Troll exploited a vulnerability and created a cracked version of Rayfield's CrystalCoat™ technology for lower-end vehicles. Please note, however, that some models do not support the technology, such as heavily modded nomad vehicles and job-related vehicles.</li>
-<li>Fixed an issue where unique color schemes did not work properly on the Mizutani Shion MZ1 and MZ2.</li>
-<li>Fixed an issue where unique color scheme could not be applied properly to the Villefort Deleon "Vindicator".</li>
-</ul>
-<h4>Photo Mode</h4>
-<ul>
-<li>Added 27 new NPCs that can be spawned in Photo Mode, including Rita Wheeler, the Cassel twins, fixers, Dum Dum, the iguana, Brendan, and more.</li>
-<li>You can now switch between alternative outfits for NPCs spawned in Photo Mode.</li>
-<li>You can now switch between V's saved Wardrobe outfits in Photo Mode.</li>
-<li>Added a confirmation pop-up when exiting Photo Mode to prevent accidental exits after setting up the perfect shot.</li>
-<li>Added more customization options to the Look-At Camera feature, including an option for only the character's eyes to turn toward the camera instead of their entire body.</li>
-<li>Added improvements to Lighting:
-	<ul>
-<li>Lights now spawn around the camera instead of the player character.</li>
-<li>Added an outline to the spotlight mesh and an indicator when it's off screen for better visibility.</li>
-<li>Improved light movement speed on controllers.</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>Added multiple new stickers and frames, including iconic quotes and stylish overlays that let you turn your screenshots into Night City postcards – perfect for sharing memories from the City of Dreams.</li>
-</ul>
-<ul>
-<li>Improved Depth of Field and moved it to the Camera tab.</li>
-<li>Added a new Color Balance tab, allowing you to create your own custom filters.</li>
-<li>Added a new Time and Weather tab:
-	<ul>
-<li>Weather: includes rain, acid rain, fog, sandstorm, pollution, and sunny.</li>
-<li>Time of Day: changes the time of day within Photo Mode.</li>
-<li>Frame Forward: advances through an unlimited amount of frames to capture the perfect shot.</li>
-<li>Game Speed: allows in-game time to progress while in Photo Mode."</li>
-</ul>
-</li>
-</ul>
-<h4>Quality of Life &amp; Accessibility</h4>
-<ul>
-<li>The game will now detect if the player is using inverted mouse button settings and automatically adjusts in-game button prompts accordingly.</li>
-<li>Added an option to toggle aiming down sights in Settings → Controls.</li>
-</ul>
-<h4>Jobs &amp; Open World</h4>
-<ul>
-<li>Cyberpsycho Sighting: Bloody Ritual - the "Crack the ritualist's shard" objective now properly disappears from the Journal after completing the objective.</li>
-<li>Sex on Wheels - now properly appears in the Journal after receiving the message from Jake Estevez.</li>
-<li>Shot by Both Sides - fixed an issue where selecting a specific dialogue option in the conversation with Bree created a nameless, iconless item in the player's Inventory.</li>
-<li>Shot by Both Sides - fixed an issue where the button to go to the lower level didn't appear on the elevator panel.</li>
-</ul>
-<h4>Gameplay</h4>
-<ul>
-<li>Fixed an issue where, when using a controller in Trauma Drama, the controllable character would default to shooting upwards instead of forward.</li>
-<li>Players can now drop more Cyberware Capacity Shards if some within the intended drop limit were previously missed.</li>
-<li>Fixed an issue causing automatic weapons to fire slower than intended.</li>
-<li>Fixed an issue where the Official BARGHEST Tac Vest didn't drop from the scripted Airdrop as intended.</li>
-<li>The level 60 Engineer perk no longer activates the EMP blast outside of combat or after entering a vehicle.</li>
-<li>Added an option to replay the gameplay tutorial at any time via Settings → Controls.</li>
-</ul>
-<h4>Miscellaneous</h4>
-<ul>
-<li>Added an option to tell Johnny to go away after you look at him for a short while when he appears in the passenger seat. He takes the hint and disappears as a passenger for a couple days.</li>
-<li>Fixed an issue where the sound of V's Radioport could be randomly interrupted by the Radioports of nearby NPCs.</li>
-<li>Fixed an issue where History by Gazelle Twin and Trash Generation played too loudly compared to other songs on the radio.</li>
-<li>Improved the HDR Setting screen: fixed the HDR calibration preview so it correctly reflects the chosen settings, and clarified the description of the "Tone-Mapping Midpoint" setting.</li>
-<li>Updated the End User Licence Agreement. You will be asked to accept it again when you load the game after updating.</li>
-<li>Fixed several visual issues with missing, clipping, or floating textures.</li>
-<li>Fixed several localization issues in various languages.</li>
-</ul>
-<h4>PC-specific</h4>
-<ul>
-<li>Added support for AMD FidelityFX Super Resolution 4 for compatible AMD GPUs. IMPORTANT: The FSR 4 option will not be available in the in-game settings until the supporting AMD driver is installed. Please note that the driver will be released at a later date.</li>
-<li>Added support for AMD FidelityFX Super Resolution Frame Generation 3.1 for compatible hardware. It can now be used in combination with any upscaler.</li>
-<li>Added support for ​Intel XeSS 2.0, with XeSS Frame Generation available on compatible hardware.</li>
-<li>Added support for HDR10+ GAMING <a href="https://hdr10plus.org/certified-products/?product-type=60&amp;manufacturer=86&amp;feature=&amp;search-term=" rel="noopener nofollow" target="_blank">certified Intel GPUs</a>. To enable this feature, your display must support the technology (<a href="https://hdr10plus.org/certified-products/?product-type=&amp;manufacturer=&amp;feature=product_gaming&amp;search-term=" rel="noopener nofollow" target="_blank">find my display</a>) and have "Game Mode" enabled. The HDR10+ GAMING toggle can be found in Settings in the Video tab.</li>
-<li>Fixed an issue where the DLSS Super Resolution Preset would invisibly revert from the CNN model to the Transformer model after restarting the game, even though the UI still displayed the CNN model as active.</li>
-<li>Added more detailed information to the DLSS Super Resolution Preset tooltip in Settings to help players choose the best option for their setup.</li>
-<li>Added the ability to move the mouse cursor to a different display while in Windowed Borderless mode.</li>
-<li>Increased the maximum save size from 12 MB to 15 MB.</li>
-<li>It will now be possible to rebind the key used to jump out of vehicles with the Stuntjock perk.</li>
-</ul>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8041498161752762292gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8041498161752762292gol1.jpg"/></a></p>
-<p>Hey, maybe I'll finally actually go through it all the way now. Seems like a good time to do it.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40720/cyberpunk-2077/">Cyberpunk 2077</a></strong> | Release Date: 10th December 2020</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/cyberpunk_2077">GOG</a></li><li><a href="https://www.humblebundle.com/store/cyberpunk-2077">Humble Store</a></li><li><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/cyberpunk-2077-2-3-is-out-with-new-vehicles-auto-drive-amd-fsr-4-intel-xess-2-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/cyberpunk-2077-2-3-is-out-with-new-vehicles-auto-drive-amd-fsr-4-intel-xess-2-and-more/</guid>
-      <pubDate>Thu, 17 Jul 2025 14:26:18 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1817899257id27212gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Open World</category>
-      
-    </item>
-    
-    <item>
-      <title>NVIDIA 570.172.08 released for Linux as the main stable driver</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>NVIDIA are continuing to make us guess what's included in their updates with the NVIDIA driver <a href="https://www.nvidia.com/en-us/drivers/details/249205/" rel="noopener nofollow" target="_blank">570.172.08</a> release today.</p>
-<p>This is part of their Recommended/Certified driver series, their main stable series that updates a bit slower with new features compared with the New Feature Branch. Much like NVIDIA did with the <a href="https://www.gamingonlinux.com/2025/07/nvidia-stable-driver-575-64-03-released/" rel="noopener" target="_blank">recent driver 575.64.03 release</a>, they're being rather vague as they channel mobile app store changelog energy with this.</p>
-<p>The entire changelog is:</p>
-<blockquote>
-<ul>
-<li>Minor bug fixes and improvements</li>
-</ul>
-</blockquote>
-<p>Yep. And unlike the 575.64.03 release, they haven't stealthily added RTX 5050 support to it as that's not currently listed in the supported products for this driver.</p>
-<p>At this point I can only speculate, as it's not even listed yet on the NVIDIA open-gpu-kernel-modules GitHub to sleuth through. Perhaps we <em>might</em> see some more security issues get revealed in a few weeks / month, which would make some sense on why they're being repeatedly vague with these latest two driver updates as to not give anything away but get people updated and prepared. Potentially related to <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5671" rel="noopener nofollow" target="_blank">Rowhammer</a> that they recently put up a security bulletin on. It could also be nothing of the sort - we just don't know.</p>
-<p><strong>Update at 16:50 UTC</strong> - now that it's actually up on the open-gpu-kernel-modules GitHub, we <a href="https://github.com/NVIDIA/open-gpu-kernel-modules/commit/4d6c416e7fd20dba9b24e6b1d352284473af7812" rel="noopener nofollow" target="_blank">can see</a> they did in fact tag RTX 5050 as supported with this release, despite the models missing from the driver update page.</p>
-<p><em>I've emailed NVIDIA this time to see if we can get some clearer details.</em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/nvidia-570-172-08-released-for-linux-as-the-main-stable-driver/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/nvidia-570-172-08-released-for-linux-as-the-main-stable-driver/</guid>
-      <pubDate>Thu, 17 Jul 2025 13:51:43 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Misc</category>
-      
-      <category>New Release</category>
-      
-      <category>NVIDIA</category>
-      
-    </item>
-    
-    <item>
-      <title>Extreme sports game Descenders Next is Steam Deck Verified ahead of release</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Extreme sports game Descenders Next is set to arrive sometime soon, and they've ensured it works well on Steam Deck as it's Verified ahead of release. They're not giving the release date out for Early Access yet, but the publisher has already sent a key for GamingOnLinux testing.</p>
-<p>More about it: "It's time to conquer the world of extreme sports. This is Descenders Next. Grab your snowboard and tackle the steep, snowy slopes, or tear up the harsh, lush terrain with your mountainboard! Feel like taking on the challenge with a squad? Match up with your friends and Descenders players all around the world, and take on the tracks together! The mountain is calling - will you master it?"</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3155816311752758559gol1.jpg"/></p>
-<p>Sharing the Steam Deck news in an <a href="https://store.steampowered.com/news/app/2375530/view/535481986904490066" rel="noopener nofollow" target="_blank">announcement</a> they said "One of the main things we wanted to make sure is that Descenders Next runs great on Steam Deck, so we're super glad we can give you the ultimate experience!". The status isn't live yet, but developers do get notified before the Steam Deck notice goes live.</p>
-<p>It was originally due to launch April 9th, but it was delayed in March to give it a little more time to cook. During Early Access they plan to add in more sports, more game modes - more everything.</p>
-<p>They have more news to come on Descenders Day, July 21st.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42434/descenders-next/">Descenders Next</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2375530/Descenders_Next/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/extreme-sports-game-descenders-next-is-steam-deck-verified-ahead-of-release/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/extreme-sports-game-descenders-next-is-steam-deck-verified-ahead-of-release/</guid>
-      <pubDate>Thu, 17 Jul 2025 13:23:01 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1809533680id27210gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Impressive free and open source RTS 0 A.D. gets an essential patch update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>0 A.D. is a free and open source RTS game that saw a <a href="https://www.gamingonlinux.com/2025/01/open-source-rts-0-a-d-alpha-27-released-bringing-a-new-vulkan-renderer-new-maps-amd-fsr-and-lots-more/" rel="noopener" target="_blank">first release in years back in January</a>, now an important bug fix patch is out now. This aims to clean up the most pressing issues, as part of their new workflow to get releases out much quicker.</p>
-<p>The game has often been compared to the likes of Age of Empires, actually starting life as a concept mod for Age of Empires II: The Age of Kings. It's a full free standalone strategy game like the classics.</p>
-<p>See the previous update trailer for some footage on it:</p>
-<div class="hidden_video" data-video-id="3MhcRPm7Zhg"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6c87fd27136abb6533f05e58d5d13c35.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/3MhcRPm7Zhg" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Here are the changes included in A27.1:</p>
-<blockquote>
-<ul>
-<li>A fix for the large performance issue observed by some players on older hardware.</li>
-<li>Several small performance improvements in the calculation of simulation hashes (related to multiplayer stuttering).</li>
-<li>Fixed support of Windows 7.</li>
-<li>A fix for modifying your lobby password when you have an uppercase letter in your username.</li>
-<li>A fix for the distorted 3D models with GPU Skinning.</li>
-<li>Fixes for crashes with Vulkan and/or with GPU Skinning.</li>
-<li>A fix for changing player perspective in replays.</li>
-<li>A fix for an out-of-memory crash in the JS engine when generating random maps.</li>
-<li>A fix for the game crash on pressing Fn key.</li>
-<li>A fix for a crash in Atlas when the map generation fails.</li>
-<li>A fix for a memory leak in the renderer.</li>
-<li>Fixes for multiplayer port forwarding.</li>
-<li>Package fixes for Linux desktop environments.</li>
-<li>Various build fixes for Linux (some sent by package managers).</li>
-</ul>
-</blockquote>
-<p>It's compatible with players who do not have the release, as it's just a small essential update while they work on the next major version.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/4328/0-a-d/">0 A.D.</a></strong> | Release Date: 10th July 2009</p><p class="plain-list-title">Official links:</p><ul><li><a href="http://play0ad.com/">Official Website</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/impressive-free-and-open-source-rts-0-a-d-gets-an-essential-patch-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/impressive-free-and-open-source-rts-0-a-d-gets-an-essential-patch-update/</guid>
-      <pubDate>Thu, 17 Jul 2025 12:22:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/750466921id27209gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Free Game</category>
-      
-      <category>Open Source</category>
-      
-      <category>RTS</category>
-      
-    </item>
-    
-    <item>
-      <title>Mesa 25.1.6 and Mesa 25.2.0 RC1 are now available for Linux graphics drivers</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Mesa 25.1.6 is the latest bug-fix release for the open source Linux graphics drivers, plus the first Release Candidate for the next feature-release.</p>
-<p>The main changelog for Mesa 25.1.6 includes:</p>
-<blockquote>
-<ul>
-<li>v3dv: regression in vkAllocateMemory importing gbm bo.</li>
-<li>Vulkan WSI (and zink) use threads on X11 even when the X connection isn’t thread-safe.</li>
-<li>sddm-greeter-qt segfault when using nvk+zink.</li>
-<li>[regression][bisected] [FirePro W4100]: crashing/rebooting.</li>
-<li>Descriptor set layout with binding flags fails due to indices not matching bindings.</li>
-<li>piglit bindless texture tests crash.</li>
-<li>[radeonsi] Artifacts in Team Fortress 2 (bisected).</li>
-<li>eglgears_wayland segfault on zink+nvk with PRIME.</li>
-<li>vn_renderer_virtgpu.c:13:10: fatal error: ‘xf86drm.h’ file not found.</li>
-<li>brw: mad instruction printing broken on Gfx11.</li>
-<li>radv: RGB9E5 rendering does not ignore alpha write mask.</li>
-<li>Confidential issue #13431.</li>
-</ul>
-</blockquote>
-<p>For Mesa 25.2.0 this will come with new hardware enabling, performance improvements and new features. All the new stuff will be covered here on GamingOnLinux when it's fully ready. As for when to expect the full release, the current release schedule for Mesa is below:</p>
-<table class="table-stripes-tbody">
-<thead>
-<tr>
-<th>
-<p>Branch</p>
-</th>
-<th>
-<p>Expected date</p>
-</th>
-<th>
-<p>Release</p>
-</th>
-<th>
-<p>Notes</p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>25.1</p>
-</td>
-<td>
-<p>2025-07-30</p>
-</td>
-<td>
-<p>25.1.7</p>
-</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>
-<p>2025-08-13</p>
-</td>
-<td>
-<p>25.1.8</p>
-</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>
-<p>2025-08-27</p>
-</td>
-<td>
-<p>25.1.9</p>
-</td>
-<td>
-<p>Last planned 25.1.x release.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>25.2</p>
-</td>
-<td>
-<p>2025-07-23</p>
-</td>
-<td>
-<p>25.2.0-rc2</p>
-</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>
-<p>2025-07-30</p>
-</td>
-<td>
-<p>25.2.0-rc3</p>
-</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>
-<p>2025-08-06</p>
-</td>
-<td>
-<p>25.2.0-rc4</p>
-</td>
-<td>
-<p>or 25.2.0 final</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>Check out my guide on <a href="https://www.gamingonlinux.com/guides/view/how-to-install-update-and-see-what-graphics-driver-you-have-on-linux-and-steamos/" target="_blank">How to install, update and see what graphics driver you have on Linux and SteamOS</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/mesa-25-1-6-and-mesa-25-2-0-rc1-are-now-available-for-linux-graphics-drivers/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/mesa-25-1-6-and-mesa-25-2-0-rc1-are-now-available-for-linux-graphics-drivers/</guid>
-      <pubDate>Thu, 17 Jul 2025 10:46:22 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/mesa.png" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Mesa</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
       
     </item>
     
