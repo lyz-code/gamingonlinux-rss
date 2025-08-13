@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-08-12 07:32:51.902514</pubDate>
+    <pubDate>2025-08-13 07:34:02.797831</pubDate>
 
     
     <image>
@@ -18,6 +18,367 @@
     </image>
 
     
+    
+    <item>
+      <title>NVIDIA 580.76.05 released for Linux as the new recommended stable driver</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The first proper release of the NVIDIA 580 driver series is out now, with <a href="https://www.nvidia.com/en-us/drivers/details/252790/" rel="noopener nofollow" target="_blank">NVIDIA 580.76.05</a> now the latest recommended driver.</p>
+<p>Interestingly, they only <a href="https://www.gamingonlinux.com/2025/08/nvidia-driver-570-181-released-for-linux-as-the-latest-recommended-stable-driver/" rel="noopener" target="_blank">bumped up NVIDIA driver 570.181</a> as the recommended driver less than a week ago, which contained the vague "Minor bug fixes and improvements", so I'm still sort-of expecting more driver security issues to be revealed soon. Unless they really did need to bump up the previous driver for something so minor they didn't even say what…</p>
+<p>Anyway, here's all the changes for the new driver:</p>
+<blockquote>
+<p>Highlights since R580 Beta Release, 580.65.06</p>
+<ul>
+<li>Updated egl-x11 to version 1.0.3.</li>
+<li>Updated egl-wayland to version 1.1.20.</li>
+<li>Added an "OutputBitsPerComponent" MetaMode attribute that can be used to control the number of bits per color component transmitted via a display connector. If not specified, the driver will choose an optimal color format.</li>
+</ul>
+<p>Highlights from R580 Beta Release, 580.65.06</p>
+<ul>
+<li>Fixed a bug that could cause Vulkan applications to hang when destroying swapchains after a lost device event.</li>
+<li>Fixed a bug that could allow atomic commit and other DRM operations to return success status despite having failed due to handling an interrupt:<br/>
+<a href="https://github.com/NVIDIA/open-gpu-kernel-modules/issues/832" rel="noopener nofollow" target="_blank">https://github.com/NVIDIA/open-gpu-kernel-modules/issues/832</a></li>
+<li>Fixed a bug that could cause GTK 4 applications to crash when using the Vulkan backend on Wayland.</li>
+<li>Fixed a bug that could intermittently cause llama.cpp to crash on exit when using the Vulkan backend:<br/>
+<a href="https://github.com/ggml-org/llama.cpp/issues/10528" rel="noopener nofollow" target="_blank">https://github.com/ggml-org/llama.cpp/issues/10528</a></li>
+<li>Added support for the fifo-v1 Wayland protocol on Vulkan.</li>
+<li>Updated GPU clock value reporting in nvidia-settings, NVML, and nvidia-smi to show clocks before thermal and idle slowdowns for better consistency with the equivalent functionality on Windows.</li>
+<li>Fixed compatibility with Bigscreen Beyond Head Mounted Displays.</li>
+<li>Fixed a bug that could result in a black screen when setting specific modes on HDMI displays.</li>
+<li>Fixed a bug that caused blank or frozen screens under the following conditions: nvidia-drm is loaded with the modeset=1 and fbdev=1 parameters, using a Maxwell or Pascal series GPU, and more than one display device of differing resolutions are connected.</li>
+<li>Fixed a bug that caused nvidia-suspend.service to fail when available system memory is low.</li>
+<li>Enabled RMIntrLockingMode by default. This feature can help reduce stutter especially when using virtual reality. This feature was originally introduced in the r570 series. It can be disabled by loading nvidia.ko with the `NVreg_RegistryDwords=RMIntrLockingMode=0` kernel module parameter.</li>
+<li>Implemented another feature that can reduce time spent in the interrupt top half for low latency display interrupts by deferring the work until later. This feature is experimental and disabled by default. This feature can be enabled by loading nvidia.ko with the `NVreg_RegistryDwords=RmEnableAggressiveVblank=1` kernel module parameter.</li>
+<li>Fixed a bug that could cause blank rendering on some single-buffered GLX applications when running on Xwayland.</li>
+<li>Fixed a bug that could cause a kernel use-after-free on pre-Turing GPUs.</li>
+<li>Fixed a bug that could cause OpenGL applications and compositors to stall when using NVIDIA as a PRIME Display Offload sink ("Reverse PRIME"), potentially resulting in a black screen.</li>
+<li>Fixed a bug that led to increasing memory usage in X11 OpenGL and Vulkan applications after suspend/resume cycles.</li>
+<li>Fixed a bug that could cause 32-bit x86 applications running on recent builds of glibc to crash on dlopen().</li>
+</ul>
+</blockquote>
+<p class="plain-list-title">In related NVIDIA news:</p>
+<ul>
+<li><a href="https://www.gamingonlinux.com/2025/08/nvidia-say-no-to-adding-backdoors-and-killswitches-in-their-gpus/" rel="noopener" target="_blank">NVIDIA say no to adding backdoors and killswitches in their GPUs</a></li>
+<li><a href="https://www.gamingonlinux.com/2025/08/nvidia-are-working-on-a-general-optimization-for-vkd3d-directx12-games-on-linux/" rel="noopener" target="_blank">NVIDIA are working on a "general optimization" for VKD3D / DirectX12 games on Linux</a></li>
+</ul>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/nvidia-580-76-05-released-for-linux-as-the-new-recommended-stable-driver/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/nvidia-580-76-05-released-for-linux-as-the-new-recommended-stable-driver/</guid>
+      <pubDate>Tue, 12 Aug 2025 19:35:58 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>POSTAL 2 Redux has launched on Kickstarter</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>POSTAL 2 Redux is now on <a href="https://www.kickstarter.com/projects/postal2redux/postal-2-redux/description" rel="noopener nofollow" target="_blank">Kickstarter</a> with the developers gathering funding to make this enhanced Unity rebuild of the classic divisive game.</p>
+<p>Originally launched in 2003, this will bring the game over from ancient Unreal Engine to Unity and make it work better on modern platforms. Plus, plenty of enhancements to the visuals and basically overhauling everything while keeping the spirit of it intact.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8851136341755014819gol1.jpg"/></p>
+<p>What's new in Redux:</p>
+<blockquote>
+<ul>
+<li>A modern backbone. We’re hauling POSTAL 2 into Unity so it runs perfectly on modern hardware. This gives us the ability to have completely scalable requirements. Basically, for every platform this comes to it will look as good as it can for the hardware. </li>
+<li>Loading Zones, begone! Paradise streams in as you walk. No more load screens. Just roam and ruin.</li>
+<li>A complete graphical upgrade. Higher‑resolution textures, upgraded shaders and materials and lighting make every billboard, back alley, and biohazard pop.</li>
+<li>Guns with bite. Balancing the combat based on community feedback. Weapons are being rebuilt to hit harder, punch through flesh, and send bodies flopping with proper ragdolls. You’ll feel the boom.</li>
+<li>Check out my insides. Shipping malls, restaurants, offices, arcades—stuffed with destructible props. Let loose and see the World explode in front of your eyes. </li>
+<li>Crowds that find trouble faster. Civilians still snitch and cops still overreact, but smarter pathing means they get to the chaos quicker and make it messier when they do.</li>
+<li>Champ gets promoted from mascot to menace. Pet him, point him, weaponize him. Man’s best friend finally acts like it.</li>
+<li>Built to break out of the PC cage. Targeting PC and modern consoles so Paradise can spread its disease broadly and legally. </li>
+<li>Quality of life, everywhere. Widescreen done right, modern inputs, fewer crashes, smarter UI—the boring necessities so the fun stuff can be loud.</li>
+</ul>
+</blockquote>
+<p>As for why Kickstarter? Here's what they said:</p>
+<blockquote>
+<p>Twenty years later, POSTAL 2 is still selling, still memed, but confined by limited platform support and its older engine. Console players want it. Mac players can’t even launch it. Doing it right (new engine, modern pipelines, rebuilt assets, smarter systems) and also expanding the Universe and continuing the story of POSTAL 2 costs real money. To that end we need to gauge the community interest in this happening. If the interest is there we also want to engage with the community upfront, rather than turn up with something in 12 months and hope it's what people want. POSTAL 2 has always been a journey, we want to bring you along on the next phase of this adventure. <br/>
+Kickstarter lets us do that without some suit leaning over the keyboard asking us to “tone it down.” No creative half‑measures. We answer only to Running With Scissors and you. POSTAL 2 Redux is for the fans. </p>
+</blockquote>
+<p>The Kickstarter is asking for $250,000 to make it a reality and there's special stretch goals to expand the game further if they pull in lots of funding. Extras like time of day effects, a sandbox mode and more.</p>
+<div class="hidden_video" data-video-id="pQHQ7rt5CVU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/77761a824187acd15540af5fc92f9be9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/pQHQ7rt5CVU" target="_blank">See video</a></div></div>
+<p>"We are absolutely thrilled to launch the POSTAL 2 Redux Kickstarter campaign today," said Eric Masher, COO, Impact Inked. "The original game is one of the most exciting and important games of the 21st century, and we’re honored to work with Team Beef and Running With Scissors to bring the POSTAL Dude, Paradise, and everything that makes POSTAL 2 special to today’s gamers!"</p>
+<p>The campaign runs through September 12.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42183/postal-2-redux/">POSTAL 2 Redux</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3839180/POSTAL_2_Redux/">Steam</a></li><li><a href="https://runningwithscissors.com/">Official Website</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/postal-2-redux-has-launched-on-kickstarter/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/postal-2-redux-has-launched-on-kickstarter/</guid>
+      <pubDate>Tue, 12 Aug 2025 16:11:17 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2077061359id27353gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Crowdfunding</category>
+      
+      <category>FPS</category>
+      
+    </item>
+    
+    <item>
+      <title>Rising Heat aims to be a next evolution of horde survival twin-stick shooters</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A sprinkle of Geometry Wars and other twin-stick shooters, a dash of Vampire Survivors styled upgrades - Rising Heat thinks it's going to be special.</p>
+<p>So special in fact the developers claim it's going to be the "next evolution of horde survival". That's…a pretty bold claim huh? One I thought I should check out as part of my ongoing quest to play everything resembling some sort of survivor-like game. <em>I'm a sucker for quick action, lots of upgrades and watching numbers go up.</em></p>
+<p>Here you're flying a ship with floaty physics that you need to take into account. It's very much a twin-stick shooter, or should I say twin-stick <em>smasher</em>, as a big part of it is the <em>tackling</em> system. Yeah you have weapons you can fire, but your ship is directly a weapon too. You will dash repeatedly into enemies to cause all sorts of chaotic explosions.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3641959181755012652gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3641959181755012652gol1.jpg"/></a></p>
+<p>The upgrade system is pretty interesting too in its design. You buy and attach modules to your ship when you level up from the shop, and you're able to fuse together two of these modules to make them more powerful (and save on your limited active slots) to reign down more destruction. The fusing system is essential as a lot of modules have debuffs as well as buffs, with fusing reducing the debuffs. The first fusion attempt is free, so it's always worth doing and you can re-fuse to re-roll at a cost as many times as you want for each module fusion until you get what you want.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14418868401755012071gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/14418868401755012071gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/18548151581755012069gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/18548151581755012069gol1.jpg"/></a></p>
+<p>On top of that there's an <em>integration</em> system for these modules. You only have 5 active slots to place modules in, but you have a bunch of additional integration slots,where you can pay up to make modules available for use outside of your active slots. It can be a little bit of information overload but it's all pretty simple once you get going.</p>
+<p>Lots of stats to think about too so it will take a while to go through and figure out what sort of build you want to make, but that's part of the allure of it. All the modules, stats and the action together make it really interesting. I'm not sure if it's anything close to the evolution they're marketing it as — but the modules system is quite fun to play with.</p>
+<div class="hidden_video" data-video-id="MAItG038CE8"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2bad03d4db2525dd5eab2fa83c5d6d3a.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/MAItG038CE8" target="_blank">See video</a></div></div>
+<p>The co-op mode is part of what's going to make this one rock. You each have a ship on the field, linked together by any energy beam and it can end up pretty crazy thanks to this system. Possibly one of the best co-op experiences in a survivor-like game so far.</p>
+<p>With different ships, pilots, hacks and maps to unlock through the full game, I am most definitely excited for more.</p>
+<p>Game Highlights:</p>
+<blockquote>
+<ul>
+<li><strong>Dynamic movement</strong><strong>:</strong> Master a dynamic momentum-based movement system. Line up multiple enemies to execute a flurry of precise tackles, dealing devastating damage while bouncing between a barrage of enemy bullets!</li>
+<li><strong>Customize Your Loadout:</strong> Each cockpit has a limited inventory in which the pilot can upgrade, integrate, and fuse hacks together to create varied builds. Different strategies in the shop, hack positioning, action order, and even negative stats will help get the most out of every build.</li>
+<li><strong>Plan of Attack:</strong> A strong pilot must plan out their runs, including which pilot, ship, hacks, and weapons to equip. As the aliens learn to adapt, how does a successful pilot stay one step ahead?</li>
+<li><strong>Fly With a Friend:</strong> In co-op mode, two pilots are linked by a supercharged beam, creating opportunities for mass destruction…assuming they’ve got each other’s backs.</li>
+</ul>
+</blockquote>
+<p>If you love arcade-styled action, twin-stick shooting and arena-styled shooters then I think Rising Heat has a lot of neat ideas bundled together. The demo is worth checking out right now and the game works perfectly on Linux with Proton 9.0-4 tested.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42641/rising-heat/">Rising Heat</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2184290/Rising_Heat/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/rising-heat-aims-to-be-a-next-evolution-of-horde-survival-twin-stick-shooters/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/rising-heat-aims-to-be-a-next-evolution-of-horde-survival-twin-stick-shooters/</guid>
+      <pubDate>Tue, 12 Aug 2025 15:31:11 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1205831646id27352gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Bullet Heaven</category>
+      
+      <category>Bullet Hell</category>
+      
+      <category>Demo</category>
+      
+    </item>
+    
+    <item>
+      <title>Senua&#39;s Saga: Hellblade II gets Steam Deck Verified with the Enhanced Update out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Enhanced Update has arrived for Senua's Saga: Hellblade II, bringing with it optimisations, Steam Deck Verified support and more.</p>
+<p>Originally released on PC back in May 2024, this update adds a new "Very High" graphics preset. They said that their team "carefully considered where we could make the most impactful improvements for a visual quality bump at a reasonable performance cost" for it, rather than just dialling everything up. They've also added in NVIDIA DLSS 4 and Multi Frame Generation support.</p>
+<p>A good update for Steam Deck players too as they explained in the <a href="https://store.steampowered.com/news/app/2461850/view/528728489311864054" rel="noopener nofollow" target="_blank">announcement</a>:</p>
+<blockquote>
+<p>Something else we wanted to revisit with this update was performance on Steam Deck to achieve Verified compatibility, and we’re pleased to report that this work was successful. Deck performance at launch wasn’t an out-of-the-box experience, so players would find themselves needing to tweak settings to achieve optimal performance. We’ve now made the game ‘Deck-aware’, so the game will now automatically select the best settings for this hardware. We’ve also found some CPU performance improvements for a better game experience on Steam Deck.</p>
+</blockquote>
+<div class="hidden_video" data-video-id="ZZovyEHQ4Ko"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ad8526c44aa971fb6d6b3d876a0e786f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ZZovyEHQ4Ko" target="_blank">See video</a></div></div>
+<p class="plain-list-title">The full list of changes are below:</p>
+<blockquote>
+<ul>
+<li>Dark Rot mode can be selected after completing the game.</li>
+<li>Dark Rot Achievement added.</li>
+<li>Developer Commentary can be selected after completing the game.</li>
+<li>Very High graphs preset added.</li>
+<li>DLSS4 / Multi Frame Gen.</li>
+<li>Dolby Atmos for speakers.</li>
+<li>Enhanced Photo mode.</li>
+<li>Steam Deck Verified + performance improvements.</li>
+<li>DualSense controller support.</li>
+<li>Fixed overlaps present in localised languages in pause menu when text size is set to large.</li>
+<li>Fixed Senua's hair turning white when she steps into the light in Chapter 4 "Act of Sacrifice".</li>
+<li>Fixed a bug where changing upscaler for the first time does not load upscaler quality mode properly</li>
+<li>Fixed Senua's hair sometimes turning white when using Intel XeSS or AMD FSR Ultra Performance mode in Chapter 2 "Return Home".</li>
+<li>Fixed a bug where holding input does not always work for getting up, when button mash input method is set as ‘Hold’.</li>
+<li>Fixed speaker colour settings.</li>
+<li>Fixed an enemy encounter in the 2nd fight of Chapter 6 where an opponent continues an attack sequence after Senua is knocked down on the ground against a wall.</li>
+<li>Fixed Senua's footprints moving alongside her in Chapter 4 caves after the ‘Trial of Wisdom’ checkpoint, if reached in asingle game session that started in a previous chapter's checkpoint.</li>
+<li>Fixed Senua dying after climbing elevated ground in the first part of the Sea Giant's ritual in Chapter 5.</li>
+<li>Fixed assets without collision spawning after skipping a cinematic with Astridr in the forest, during Chapter 6.</li>
+<li>Fixed a Hiddenfolk puzzle disappearing if the graphic preset is changed.</li>
+<li>Fixed the speaker disappearing from the subtitles after pausing and resuming the game.</li>
+<li>Fixed Thorgestr and Senua's subtitles not syncing with audio during the Draugr fight at the settlement in Chapter 5</li>
+<li>Fixed The Goði spawning on screen behind Senua if she performs the neck breaking animation on the last Axe Northman warrior</li>
+<li>Fixed Northman enemies spinning around jarringly if attacked in the back with Focus attacks during Chapter 6.</li>
+<li>Fixed a red light highlighting Senua after the 4th fight with devourers during a checkpoint.</li>
+<li>Several menu narration fixes across the board.</li>
+</ul>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42640/senuas-saga-hellblade-ii/">Senua's Saga: Hellblade II</a></strong> | Release Date: 21st May 2024</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2461850/Senuas_Saga_Hellblade_II/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/senuas-saga-hellblade-ii-gets-steam-deck-verified-with-the-enhanced-update-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/senuas-saga-hellblade-ii-gets-steam-deck-verified-with-the-enhanced-update-out-now/</guid>
+      <pubDate>Tue, 12 Aug 2025 12:42:47 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1471150070id27351gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Action</category>
+      
+      <category>Adventure</category>
+      
+    </item>
+    
+    <item>
+      <title>Repterra is a base-building survival RTS set in a world overrun by dinosaurs</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Repterra is a promising upcoming real-time strategy game that has a demo available, and if you love the idea of facing hordes of dinosaurs it's one for you.</p>
+<p>Set in a similar gameplay style to the likes of They Are Billions and Age of Darkness, with you building and expanding while also dealing with hordes that will come to try and destroy you in waves. So it's a bit of a mixture of classic RTS building with some tower defense. The demo as tested worked perfectly on Linux with Proton 9.0-4 and it's going to be worth keeping an eye on, as it's exactly the type of RTS I love to see more of.</p>
+<p>You're not just building up walls to hide behind though, you'll also be building up your own little army of humans and dinos together - some dinos can even have a human jump on their back to unlock special extras. I just think it's neat to see.</p>
+<div class="hidden_video" data-video-id="ZtRdtdK4B8A?rel=0&amp;start=0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ecb9f0799465d1a1e630372bec22cf06.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ZtRdtdK4B8A?rel=0&amp;start=0" target="_blank">See video</a></div></div>
+<p>A little rough around the edges since it's a demo of an unfinished game, but it shows a lot of promise that reminds me of the good classic RTS games I played endless hours of in my youth. Looking forward to seeing more of it but there's no release date being mentioned for the full game just yet.</p>
+<p class="plain-list-title">Some Highlights (from Steam):</p>
+<blockquote>
+<ul>
+<li>Unique Breeding, Riding, and Taming mechanics.</li>
+<li>5 Different factions with unique play-style focuses.</li>
+<li>Game modifying perks that can be chosen at load-out.</li>
+<li>Permanent unlockable points and shop (levels, perks, bonus features).</li>
+<li>Customizable hero units..</li>
+<li>Campaign mode.</li>
+<li>Extensive Survival mode with unlockables and meta progression.</li>
+<li>100,000+ dinos running at a smooth 60fps.</li>
+<li>Dozens of different units, dinos, and buildings.</li>
+<li>Achievements and Steam Cloud.</li>
+<li>4k High rez graphic in a timeless pre-rendered style.</li>
+</ul>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/38316/repterra/">Repterra</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2768380/Repterra/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/repterra-is-a-base-building-survival-rts-set-in-a-world-overrun-by-dinosaurs/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/repterra-is-a-base-building-survival-rts-set-in-a-world-overrun-by-dinosaurs/</guid>
+      <pubDate>Tue, 12 Aug 2025 11:52:44 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/413963461id27350gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+      <category>RTS</category>
+      
+    </item>
+    
+    <item>
+      <title>Use bombs creatively to progress in the puzzle-platformer metroidvania Öoo</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Öoo is a visually charming and clever puzzle-platformer metroidvania where you make creative use of bombs to move yourself around to progress. The game works great on Linux / Steam Deck with Proton.</p>
+<p>You don't directly have any real abilities and so you need to stick bombs everywhere and see what happens. Bombs can push you across gaps, send you flying to hit other platforms and bombs can push other bombs to annihilate things blocking your path. Some might even show up hidden passageways to allow you to progress further.</p>
+<p>A game that does a lot with a little and it's absolutely worth picking up for a couple of hours of fun. Some areas need just a little bit of your imagination but none of it is particularly difficult to figure out, so it won't waste you time making you scratch your brain for ages.</p>
+<div class="hidden_video" data-video-id="jXQmJBsrciI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ab4cfc18230b2f753325a4bdb4019ea7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/jXQmJBsrciI" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Game Highlights:</p>
+<blockquote>
+<ul>
+<li>A dense experience that can be enjoyed in just 2–3 hours.</li>
+<li>A cute yet oddly mysterious world.</li>
+<li>Diverse puzzle solutions that change depending on how you use bombs.</li>
+<li>No text — enjoy the game without language barriers.</li>
+<li>Cute enough to delight even those who don’t like bugs!</li>
+</ul>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42639/oo/">Öoo</a></strong> | Release Date: 7th August 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2721890/oo/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/use-bombs-creatively-to-progress-in-the-puzzle-platformer-ooo/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/use-bombs-creatively-to-progress-in-the-puzzle-platformer-ooo/</guid>
+      <pubDate>Tue, 12 Aug 2025 10:32:46 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/730625937id27349gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Metroidvania</category>
+      
+    </item>
+    
+    <item>
+      <title>Linux Mint 22.2 Beta available for the next long-term supported release</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Linux Mint 22.2 arrives soon with a Beta release now available so you can test it early, and help report any issues for the next long-term support release.</p>
+<p>It will come with the Linux kernel 6.14, built on top of Ubuntu 24.04 ("Noble"). With support running until 2029, the Mint team will continue to release new versions of Linux Mint with the same base packages making it easy to upgrade.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/21322813721754992646gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21322813721754992646gol1.jpg"/></a></p>
+<p class="plain-list-title">Some of what's new includes:</p>
+<ul>
+<li>Sticky notes supported with Wayland.</li>
+<li>Revamped login screen styling to look better.</li>
+<li>Hypnotix video player has two new viewing modes and performance improvements.</li>
+<li>A brand new XApp called Fingwit dedicated to fingerprint authentication.</li>
+<li>LibAdwaita was patched to work with themes. Also forked into <a href="https://github.com/xapp-project/libadapta" rel="noopener nofollow" target="_blank">LibAdapta</a> for adding new features.</li>
+<li>XDG Desktop Portal XApp now supports accent colours.</li>
+<li>The Software Manager welcome screen was improved, and the app explains the different between Flatpak and system packages.</li>
+</ul>
+<p>See more in the <a href="https://blog.linuxmint.com/?p=4876" rel="noopener nofollow" target="_blank">announcement</a>.</p>
+<p>Are you using Linux Mint? What are your current thoughts on it? Leave a comment and let us know.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/linux-mint-22-2-beta-available-for-the-next-long-term-supported-release/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/linux-mint-22-2-beta-available-for-the-next-long-term-supported-release/</guid>
+      <pubDate>Tue, 12 Aug 2025 09:58:43 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1502697851id27348gol.jpg" type="image/jpeg"/>
+      
+      <category>Beta</category>
+      
+      <category>Distro News</category>
+      
+      <category>Linux Mint</category>
+      
+      <category>Misc</category>
+      
+    </item>
+    
+    <item>
+      <title>Webcam-based 6DoF head &amp; eye tracking app LookPilot released on Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>LookPilot is an app that provides head and eye tracking for games, using nothing but your webcam and it looks pretty slick with a new Steam release. It even has Linux support right out of the box and there's a demo available to see if it works for you before buying it.</p>
+<div class="hidden_video" data-video-id="hs-8CzalGIk"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/62471e9f7661bab3efc09bc07cf003c3.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/hs-8CzalGIk" target="_blank">See video</a></div></div>
+<p>Highlights:</p>
+<blockquote>
+<ul>
+<li>6DoF Tracking: Head yaw, pitch, roll, plus forward/back, left/right, up/down translation.</li>
+<li>Head + Eye Blend: Combine head and eye rotation with adjustable influence to match your preference.</li>
+<li>High-Rate Output: Responsive output at high refresh rates for smooth camera control—even from low-FPS webcams.</li>
+<li>Quick Start: Install → Start tracking → Launch the game. Most titles work instantly; some need a one-time in-game toggle.</li>
+<li>Low Overhead: Runs on CPU—no dedicated hardware or GPU required.</li>
+<li>Cross-Platform: Windows and Linux support, including titles launched through Wine.</li>
+<li>Wide Compatibility: Works with 700+ games via standard head-tracking interfaces.</li>
+<li>Keybinds: Recenter, toggle tracking, and switch presets on the fly.</li>
+</ul>
+</blockquote>
+<p>Since it's on the newer side, there's not many guides for games up on this yet, and especially so for the Linux side with most guides missing - but nice to see it release to give Linux gamers more options like it.</p>
+<p>Check it out on <a href="https://store.steampowered.com/app/3326890/LookPilot/" rel="noopener nofollow" target="_blank">Steam</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/08/webcam-based-6dof-head-eye-tracking-app-lookpilot-released-on-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/08/webcam-based-6dof-head-eye-tracking-app-lookpilot-released-on-steam/</guid>
+      <pubDate>Tue, 12 Aug 2025 09:38:13 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1719782777id27347gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Apps</category>
+      
+      <category>Misc</category>
+      
+    </item>
     
     <item>
       <title>Smash everything with your balls in BALL x PIT releasing October 15</title>
@@ -4316,362 +4677,6 @@ And if a bunch of levels weren't enough, we also have epic boss fights and tons 
       <category>Platformer</category>
       
       <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Valve reveal new Steam store menu and enhanced search now in Beta</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>If you're on the Steam Client Beta (Desktops), you might have noticed the Steam store looking a bit different with the latest update. Valve <a href="https://steamcommunity.com/games/593110/announcements/detail/500579345320904591" rel="noopener nofollow" target="_blank">announced</a> a refresh of the Steam store menu noting it's designed to "provide easier access to the places Steam users most frequently visit".</p>
-<p>What's changed? A lot actually. The whole left sidebar of links is entirely gone, combined into the new store bar at the top. It also puts the bar on more pages across on Steam, to give you access to the search and links easily. It will also disappear when you scroll down, just scroll up a bit for it to reappear.</p>
-<p>Valve have also enhanced the search bar too. It now offers more options when searching including:</p>
-<blockquote>
-<ul>
-<li><strong>Popular Searches</strong>: See what others are searching for right now</li>
-<li><strong>Recently Viewed</strong>: An easy way to jump back to games you've previously looked at</li>
-<li><strong>More than just games</strong>: Search for categories/tags, publishers, and more</li>
-<li><strong>Advanced Search link</strong>: For those who want to refine their game search even further, we’ve made it easier than ever to access the advanced search page with a variety of filters.</li>
-</ul>
-</blockquote>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/17880502151753525854gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/17880502151753525854gol1.jpg"/></a></p>
-<p>There's more including recommendations, categories and tags personalised to you and various smaller changes.</p>
-<p>If you've tried it out in the Steam Client Beta, drop a comment to let us know what you think.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/valve-reveal-new-steam-store-menu-and-enhanced-search-now-in-beta/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/valve-reveal-new-steam-store-menu-and-enhanced-search-now-in-beta/</guid>
-      <pubDate>Sat, 26 Jul 2025 10:33:58 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_plain_2025.jpg" type="image/jpeg"/>
-      
-      <category>Beta</category>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>Proton Experimental gets fixes for Rockstar Launcher, Call of Duty: WWII, Mortal Kombat 11</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve have pushed out a small update for Proton Experimental for July 25th, bringing a few fixes across a bunch of games.</p>
-<p>Proton Experimental is Valve's staging area for the latest fixes and improvements for the Proton compatibility layer. Eventually the changes will make their way into a stable numbered Proton version. Be sure to check out the <a href="https://www.gamingonlinux.com/guides/view/why-are-there-so-many-different-proton-versions-proton-8-proton-9-experimental-ge-proton/" rel="noopener" target="_blank">GamingOnLinux guide for all the different Proton versions</a>.</p>
-<p class="plain-list-title">All that's changed is below:</p>
-<ul>
-<li>Fixed Chinese font rendering in Warage.</li>
-<li>Fixed screen reader not working in Diablo 4 - requires download of Proton Voice Files.</li>
-<li>Fixed Proton Experimental regression that caused Mortal Kombat 11 getting stuck on a black screen.</li>
-<li>Fixed Proton 10 regressions:
-	<ul>
-<li>Rockstar Launcher's birthday date selection dropdowns work again.</li>
-<li>Call of Duty: WWII should no longer fail to render properly in fullscreen native resolution on setups with dual monitors.</li>
-</ul>
-</li>
-</ul>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2930576121753525297gol1.jpg"/><br/>
-<em>Pictured - Call of Duty: WWII</em></p>
-<p><em>Source: <a href="https://github.com/ValveSoftware/Proton/wiki/Changelog" rel="noopener nofollow" target="_blank">GitHub</a></em></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/proton-experimental-gets-fixes-for-rockstar-launcher-call-of-duty-wwii-mortal-kombat-11/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/proton-experimental-gets-fixes-for-rockstar-launcher-call-of-duty-wwii-mortal-kombat-11/</guid>
-      <pubDate>Sat, 26 Jul 2025 10:22:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/975311334id27251gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Grab the Sniper Elite Classics Collection in this new Humble Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The<a href="https://www.humblebundle.com/games/sniper-elite-classics-collection" rel="noopener nofollow" target="_blank"> Sniper Elite: Classics Collection Humble Bundle </a>looks like a good deal for gamers if you're in the mood for some action. As you know and love from GamingOnLinux we'll list below the full compatibility to expect on Linux platforms like SteamOS / Steam Deck.</p>
-<p style="text-align:center"><a href="https://www.humblebundle.com/games/sniper-elite-classics-collection" rel="noopener nofollow" target="_blank"><img alt="Sniper Elite Classics Bundle" src="https://uploads.golmedia.net/uploads/articles/article_media/9308690061753464386gol1.jpg"/></a></p>
-<p>Here's all that's included:</p>
-<p><a href="https://store.steampowered.com/app/1029690/Sniper_Elite_5/" rel="noopener nofollow" target="_blank">Sniper Elite 5</a><br/>
-83% Positive on Steam<br/>
-ProtonDB Gold / Steam Deck Playable</p>
-<p><a href="https://store.steampowered.com/app/312660/Sniper_Elite_4/" rel="noopener nofollow" target="_blank">Sniper Elite 4: Deluxe Edition</a><br/>
-88% Positive on Steam<br/>
-ProtonDB Gold / Steam Deck Verified</p>
-<p><a href="https://store.steampowered.com/app/238090/Sniper_Elite_3/" rel="noopener nofollow" target="_blank">Sniper Elite 3</a> + Season Pass<br/>
-82% Positive on Steam<br/>
-ProtonDB Gold / Steam Deck Playable</p>
-<p><a href="https://store.steampowered.com/app/728740/Sniper_Elite_V2_Remastered/" rel="noopener nofollow" target="_blank">Sniper Elite V2 Remastered</a><br/>
-71% Positive on Steam<br/>
-ProtonDB Gold / Steam Deck Playable</p>
-<p><a href="https://store.steampowered.com/app/3700/Sniper_Elite/" rel="noopener nofollow" target="_blank">Sniper Elite</a><br/>
-77% Positive on Steam<br/>
-ProtonDB Platinum / Steam Deck Playable</p>
-<p>Check it out on <a href="https://www.humblebundle.com/games/sniper-elite-classics-collection" rel="noopener nofollow" target="_blank">the Humble Bundle page</a>.</p>
-<p>It's £10.45 for the full entire bundle.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/grab-the-sniper-elite-classics-collection-in-this-new-humble-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/grab-the-sniper-elite-classics-collection-in-this-new-humble-bundle/</guid>
-      <pubDate>Fri, 25 Jul 2025 17:29:52 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/889141723id27250gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-    </item>
-    
-    <item>
-      <title>Last Epoch devs Eleventh Hour Games have been acquired by Krafton</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Subnautica 2 publisher Krafton have acquired Last Epoch devs Eleventh Hour Games, ahead of the latest season launching next month.</p>
-<p>In a post on the Last Epoch forum Judd Cobler, Founder of Eleventh Hour Games, <a href="https://forum.lastepoch.com/t/a-new-chapter-for-eleventh-hour-games/78482" rel="noopener nofollow" target="_blank">wrote</a> "Today I’m excited to announce that Eleventh Hour Games is joining Krafton, the powerhouse behind PUBG, who shares our passion for the action RPG genre and is ready to help fuel our efforts in raising Last Epoch to new heights. With this partnership we will have the opportunity and resources to execute on our goal of creating the very best ARPG in the genre.</p>
-<p>After speaking with dozens of potential strategic partners, Krafton clearly demonstrated that they’re aligned in helping us achieve our goals and can both enable and guide us through some of the largest upcoming challenges we’ll face as a studio. This partnership will allow us to deliver things we’ve only dreamed of previously and I’m excited to share details on those at a later date".</p>
-<p>Cobler noted how Eleventh Hour Games will be hiring "many" roles in the "near future".</p>
-<p>This was announced by Eleventh Hour Games the same day they released a full trailer for Season 3 of Last Epoch.</p>
-<div class="hidden_video" data-video-id="TnDnhPqC0BA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5408b28a580d4baa187b9a536f6e6fcb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/TnDnhPqC0BA" target="_blank">See video</a></div></div>
-<p><em>Related: <a href="https://www.gamingonlinux.com/2024/09/last-epoch-drops-the-native-linux-version-devs-tell-players-to-use-proton/" rel="noopener" target="_blank">back in September 2024</a>, Eleventh Hour Games dropped support for their Native Linux version of Last Epoch telling people to use Proton instead.</em></p>
-<p>From the Krafton press release: "We are thrilled to welcome Eleventh Hour Games into the KRAFTON family," said Maria Park, Head of Corporate Development at KRAFTON. "The team’s commitment to the ARPG community and innovative approach to game development resonated strongly with our values. Their rise from a grassroots studio to a globally renowned ARPG developer is nothing short of remarkable. We believe this acquisition lays the groundwork for diversifying KRAFTON’s genre portfolio and expanding distinctive franchise IPs. This acquisition also reaffirms our unwavering passion for great games and the teams that build them. We will always stand behind developers who put players first.”</p>
-<p>KRAFTON acquired 100 percent of Eleventh Hour Games’ shares. The acquisition amount includes an initial consideration of USD 96 million.</p>
-<p>Krafton are currently involved in a pretty dramatic legal spat with the original Subnautica founders, but that's clearly not putting the brakes on the rest of their publishing. Hopefully this won't one day turn into a sour situation as well. Probably not the best timing to be announcing such a thing though.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/15252/last-epoch/">Last Epoch</a></strong> | Release Date: 30th April 2019</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/899770/Last_Epoch/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/last-epoch-devs-eleventh-hour-games-have-been-acquired-by-krafton/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/last-epoch-devs-eleventh-hour-games-have-been-acquired-by-krafton/</guid>
-      <pubDate>Fri, 25 Jul 2025 17:20:14 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1776703827id27249gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Misc</category>
-      
-      <category>RPG</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Garry&#39;s Mod now has lots of Counter-Strike: Source and Half-Life 2 content included</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve have given special permission to Garry's Mod from Facepunch to include a whole bunch of extra content for the popular physics sandbox.</p>
-<p>In the July 2025 update the developers noted "The biggest user-facing change in this update brings most of Counter-Strike: Source and Half-Life 2 Episodic content to Garry's Mod by default, with gracious permission from Valve. This means that you no longer need to own those games and have them installed to play on community maps that expect you to have this content".</p>
-<p>However it doesn't come with the maps, voice over files and music. You still need to own and install the games to use that part of each. Still, a thoroughly great change to see that should make jumping into Garry's Mod a whole lot easier going forwards.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7203514311753458878gol1.jpg"/></p>
-<p>Facepunch also said this update means that "Half-Life 2: Episode 2 content is now available in the spawnmenu for every player by default". It won't remove all instances of missing textures, but the majority of them.</p>
-<p>The update also contains a lot of smaller changes including crash fixes, optimizations and more. See the <a href="https://gmod.facepunch.com/news/july-2025-update" rel="noopener nofollow" target="_blank">full update notes</a>.</p>
-<p>It's actually pretty amazing how open Valve are in many ways with things like this, they're really nothing like certain other big companies.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/6465/garrys-mod/">Garry's Mod</a></strong> | Release Date: 29th November 2006</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/4000/Garrys_Mod/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/garrys-mod-now-has-lots-of-counter-strike-source-and-half-life-2-content-included/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/garrys-mod-now-has-lots-of-counter-strike-source-and-half-life-2-content-included/</guid>
-      <pubDate>Fri, 25 Jul 2025 15:55:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1616099792id27248gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Casual</category>
-      
-      <category>Misc</category>
-      
-      <category>Sandbox</category>
-      
-    </item>
-    
-    <item>
-      <title>Team Fortress 2 adds 10 new maps for a summer event and more bug fixes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>While this is not the <a href="https://www.gamingonlinux.com/2025/06/mann-vs-machine-is-getting-an-upgrade-in-team-fortress-2/" rel="noopener" target="_blank">Mann vs Machine update we were previously promised</a>, Team Fortress 2 still has a big update our for the Summer 2025 Event. Still seems like a great time to jump back into the classic free to play FPS from Valve.</p>
-<p>As usual for these event updates, Valve pulled in the community for basically all of the actual content that's included. Not something you see from other developers often.</p>
-<p>For the Summer 2025 Event this is what was added:</p>
-<blockquote>
-<ul>
-<li>Featuring 10 new community maps: Citadel, Aquarius, Fulgur, Cargo, Conifer, Boardwalk, Blowout, Mannhole, Demolition, and Pressure</li>
-<li>Added the Summer 2025 Cosmetic Case
-	<ul>
-<li>Contains 23 new community-contributed items</li>
-</ul>
-</li>
-<li>Added 4 new community-contributed taunts to the Mann Co. Store
-	<ul>
-<li>Taunt: The Final Score</li>
-<li>Taunt: Bear Hug</li>
-<li>Taunt: Texan Trickshot</li>
-<li>Taunt: Flying Colors</li>
-</ul>
-</li>
-<li>Added 14 new community-created Unusual effects
-	<ul>
-<li>7 new effects for Unusual hats</li>
-<li>7 new effects for Unusual taunts</li>
-</ul>
-</li>
-<li>All cosmetic and taunt cases will grant Summer 2025 Unusual effects instead of their normal Unusual effects during the Summer event. This does not include crates.</li>
-</ul>
-</blockquote>
-<p>The Summer event runs through September 15th, 2025.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/15997026841753458248gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/15997026841753458248gol1.jpg"/></a><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/13836338691753458246gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/thumbs/13836338691753458246gol1.jpg"/></a><br/>
-<em>Pictured - TF2 on Linux, map: Pressure</em></p>
-<p>Various other fixes came with this update too including:</p>
-<blockquote>
-<ul>
-<li>Fixed the Frontline Field Recorder not using its normal map</li>
-<li>Fixed The Texas Half-Pants not fully using rimlight</li>
-<li>Fixed the Das Hazmattenhatten's materials not using its normal map</li>
-<li>Fixed The Bazaar Bargain's scope being painted when using the Saccharine Striped, Team Detail, Gobi Glazed, and Team Charged war paints</li>
-<li>Fixed some outdated in-game tips</li>
-<li>Reduced default value for ConVar 'tf_mm_next_map_vote_time' from 30s to 15s</li>
-<li>Updated materials for The Candy Cane to fix consistency issues</li>
-<li>Updated lightwarptexture setting for the blood version of the Half-Zatoichi</li>
-<li>Updated the Strasbourg Scholar to improve clipping</li>
-<li>Updated the Heavy's model to add a 'bullets' bodygroup for cosmetics</li>
-<li>Updated/Added some tournament medals</li>
-<li>Updated cp_fortezza
-	<ul>
-<li>Reworked routes between Point A and Last</li>
-<li>Improved lighting and visuals across the map</li>
-<li>Clipping fixes</li>
-</ul>
-</li>
-<li>Updated vsh_distillery, vsh_maul, vsh_nucleus, vsh_outburst, vsh_skirmish, and vsh_tinyrock
-	<ul>
-<li>Big thanks to Whurr, Starfall and Bradasparky for reporting bugs and suggesting changes.</li>
-<li>Balance changes
-		<ul>
-<li>Consecutive Wall Climbs no longer cut your preexisting speed</li>
-<li>Mini-Sentries now deal 80% damage (up from 50%)</li>
-<li>Crit-boosted Miniguns now deal 70% damage (up from 60%)</li>
-<li>Reduced the Mighty Slam's damage at point-blank range</li>
-<li>Rebalanced Hale's damage against buildings
-			<ul>
-<li>Level 1 buildings are destroyed with a single punch</li>
-<li>Level 2 and 3 buildings now require two punches</li>
-<li>The Wrangler Shield adds an additional punch to the required count</li>
-<li>Ability-based damage to buildings is unchanged</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Bugfixes
-		<ul>
-<li>Fixed a crash caused by the string pool overflowing over time</li>
-<li>Fixed Hale's attacks applying knockback in the wrong direction</li>
-<li>Fixed dead players being flagged as AFK and kicked for idling during long rounds</li>
-<li>Fixed the round timer resetting to 60 seconds if it was lower when the number of alive Mercs dropped to 5</li>
-<li>Fixed Hale being able to punch immediately as the Sweeping Charge ends.</li>
-<li>Fixed Hale's punch knockback being too strong against Demoman, Heavy, and Medic</li>
-<li>Fixed healing effects from the Warrior's Spirit and the Powerjack erasing overheal</li>
-<li>Fixed the Quick-Fix occasionally failing to mirror the patient's Wall Climbing</li>
-<li>Fixed a rare bug at the start of a round where Hale couldn't move</li>
-<li>Fixed being able to Wall Climb off of projectiles</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<p>With all that in mind we're still due to Mann vs. Machine update, which has a deadline for community submissions on August 27th. Plus, Valve also confirmed a Halloween update is coming this year.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/6464/team-fortress-2/">Team Fortress 2</a></strong> | Release Date: 10th October 2007</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/440/Team_Fortress_2/?snr=1_7_7_2300_150_1">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/team-fortress-2-adds-10-new-maps-for-a-summer-event-and-more-bug-fixes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/team-fortress-2-adds-10-new-maps-for-a-summer-event-and-more-bug-fixes/</guid>
-      <pubDate>Fri, 25 Jul 2025 15:44:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1561985643id27247gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>FPS</category>
-      
-      <category>Free Game</category>
-      
-      <category>Online Multiplayer</category>
-      
-    </item>
-    
-    <item>
-      <title>THE FINALS devs confirm (again) continued compatibility for Linux / Steam Deck with Proton</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Embark Studios have reconfirmed their for THE FINALS to continue working with Proton for Linux / SteamOS and Steam Deck players.</p>
-<p><a href="https://www.gamingonlinux.com/2025/07/the-finals-is-getting-new-kernel-based-anti-cheat-likely-to-break-it-on-linux-steamos-steam-deck/" rel="noopener" target="_blank">Back in early July</a> we had Embark Studios detail new anti-cheat plans for THE FINALS, which caused some concern amongst Linux players since it could end up unplayable as we've seen with various other games. They quickly confirmed the game would continue to work though.</p>
-<p>The key though, is that THE FINALS is <em>not</em> "supported" but they will ensure it's not intentionally blocked. In the latest Steam <a href="https://store.steampowered.com/news/app/2073850/view/541112120139317344" rel="noopener nofollow" target="_blank">update</a> they've posted the below to reassure Linux platform players:</p>
-<blockquote>
-<p><strong>Steam Deck and Proton Support</strong></p>
-<p>We noticed the concern about Linux following our last update. We’re testing everything across all platforms, and have made it very clear to our partners that Proton and Steam Deck are important to our development plans. While we don’t officially support Steam Deck due to our required dependence on Proton Experimental, we are committed to ensuring compatibility, and we work with external partners to fix issues before we ship a patch. The experience of every player is important to us. Despite many factors, we are still dedicated to supporting it because we know it matters. However, general Wine support is not tested, and native Linux support is not planned. </p>
-</blockquote>
-<p>Really great to see, hopefully more Linux players will actually take a look at THE FINALS given their repeated statements on it. Nice that a few bigger games like it aren't blocking us.</p>
-<p>See more on <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">the GamingOnLinux anti-cheat compatibility page</a>.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3663216261753457207gol1.jpg"/></p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40322/the-finals/">THE FINALS</a></strong> | Release Date: 8th December 2023</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2073850/THE_FINALS/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/the-finals-devs-confirm-again-continued-compatibility-for-linux-steam-deck-with-proton/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/the-finals-devs-confirm-again-continued-compatibility-for-linux-steam-deck-with-proton/</guid>
-      <pubDate>Fri, 25 Jul 2025 15:27:35 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1986349827id27246gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Anti-Cheat</category>
-      
-      <category>FPS</category>
-      
-    </item>
-    
-    <item>
-      <title>Heroic Games Launcher 2.18 adds GE-Proton prioritisation, improved UI navigation and new analytics</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A smaller update to the Heroic Games Launcher for running games from Epic, GOG and Amazon on Linux / SteamOS and Steam Deck arrived with v2.18.0.</p>
-<p>Included with this release along with several improvements is their new opt-in analytics system. It uses Plausible Analytics, which is open source and privacy focused where "All data is 100% anonymous and it serves only to have an idea of the number of users across the different operating systems we support" so they know where to focus for updates.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4044264111753455998gol1.png"/></p>
-<p>The main changes:</p>
-<blockquote>
-<ul>
-<li>[Linux] Prioritize GE-Proton Versions and adds a setting to show/hide non-GE version on Wine List.</li>
-<li>[UX] Several improvements to Joystick and Keyboard navigation.</li>
-<li>[UX] Adds a new option to launch games with or without logs from the game page.</li>
-<li>[macOS] Adds Wine-Staging back to Wine Manager and Fix an issue with picking up the wrong wine binary when using GPTK.</li>
-<li>[General] Adds Opt-in Anonymous analytics.</li>
-<li>Several other fixes and improvements.</li>
-</ul>
-</blockquote>
-<p><em>Source: <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.18.0" rel="noopener nofollow" target="_blank">GitHub</a></em></p>
-<p>See more on the official site. And, if you need some instructions on installing it and setting it up <a href="https://www.gamingonlinux.com/guides/view/how-to-play-games-from-gog-and-epic-games-on-linux-steamos-and-steam-deck/" rel="noopener" target="_blank">check out my guide</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/07/heroic-games-launcher-2-18-adds-ge-proton-prioritisation-improved-ui-navigation-and-new-analytics/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/07/heroic-games-launcher-2-18-adds-ge-proton-prioritisation-improved-ui-navigation-and-new-analytics/</guid>
-      <pubDate>Fri, 25 Jul 2025 15:07:29 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2088687138id27245gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Amazon</category>
-      
-      <category>Apps</category>
-      
-      <category>Epic Games</category>
       
     </item>
     
