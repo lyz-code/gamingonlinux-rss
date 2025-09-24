@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-09-23 07:30:29.318308</pubDate>
+    <pubDate>2025-09-24 07:30:04.580541</pubDate>
 
     
     <image>
@@ -18,6 +18,393 @@
     </image>
 
     
+    
+    <item>
+      <title>Baldur&#39;s Gate 3 gets a Native Linux version to improve it on Steam Deck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Larian have just released a fresh update for Baldur's Gate 3, which brings a Native Linux version made for the Steam Deck. I mentioned they were doing this <a href="https://www.gamingonlinux.com/2025/09/valve-fixes-baldurs-gate-3-issue-on-steam-deck-steamos/" rel="noopener" target="_blank">in a recent GamingOnLinux article</a> talking about an issue it had and now it's here.</p>
+<p>Originally, it used Proton to run the Windows version (like a lot of games) but Larian say with the new Native version it should result in a "more stable framerate, lower loading times, and smoother gameplay".</p>
+<p>Additionally, the work they put into this update benefits <em>everyone</em> as they said you should see "overall improvements to the way game models are streamed on all platforms, which should reduce framerate spikes in busy areas, such as the Lower City in Act 3".</p>
+<p>For Steam Deck players, you won't lose any saves with the move, as long as your Steam Cloud is up to date. Larian also put up a <a href="https://larian.com/support/faqs/steam-deck-native-version_121" rel="noopener nofollow" target="_blank">dedicated guide</a> for the transition to the new version. In short: if you wish to change it over before Valve re-run it through verification to swap it, go into the game Properties -&gt; Compatibility, tick the "Force..." box and select "Steam Linux Runtime". <em>Although, that should already be done by Valve.</em></p>
+<p>As for Desktop Linux support, Larian gave a definitive no on that:</p>
+<blockquote>
+<p><strong>Now that there is a Steam Deck Native build, is Baldur’s Gate 3 supported on Linux?</strong></p>
+<p>Larian does not provide support for the Linux platform. The Steam Deck Native build is only supported on Steam Deck.</p>
+</blockquote>
+<p>I'll refrain from moaning about the Steam Deck being treated like it's <em>not</em> Linux. But I get what they're saying, this is specifically for the Steam Deck as a device with SteamOS Linux. For all other Linux systems from PCs to different handhelds, you'll want to stick with Proton.</p>
+<p>The issue for Desktop Linux is a bit confusing. Larian has set this for Linux + Steam Deck, so right now the Native Linux version will <em>only</em> download on Steam Deck and leave Desktop Linux with a broken empty download (or broken update if you had it installed already). You will need to manually force Proton until this is solved. I sent a <a href="http://github.com/ValveSoftware/steam-for-linux/issues/12344" rel="noopener nofollow" target="_blank">bug report</a> to Valve on it. <strong>Update: 20:21 UTC</strong> - looks like this has been fixed and it now downloads on Desktop Linux. </p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9647349971758642710gol1.jpg"/></p>
+<p>All the changes for this update below:</p>
+<blockquote><strong>Crashes and Performance</strong>
+<ul>
+<li>Fixed a potential crash related to the Slow condition during combat.</li>
+<li>Fixed a potential crash related to using the Find Familiar spell on Scratch and Boo during combat.</li>
+</ul>
+<strong>Gameplay</strong>
+<ul>
+<li>Fixed the Hound of Ill Omen and the Accursed Spectre's HP being affected by difficulty modifiers for enemy characters.</li>
+<li>Fixed a bug causing the Apostle of Myrkul to regain Hit Points every time you load a savegame mid-combat in Tactician and Honour Mode.</li>
+</ul>
+<strong>Audio</strong>
+<ul>
+<li>Fixed a bug causing the sounds that djinn summons make when they follow you to loop continuously, creating an uncharacteristic metallic thrum.</li>
+<li>When you're on the ground floor of Felogyr's Fireworks, the smokepowder explosions going off on the floor above will no longer sound like they're happening right next to you.</li>
+<li>Fixed the audio levels for a rat in the Lower City that you, tragically, couldn't hear squeak when it squoke.</li>
+<li>Fixed missing SFX when preparing to cast Wind Walk.</li>
+<li>Fixed an issue causing the SFX to play longer than they should when preparing to cast the Way of the Drunken Master's subclass-specific actions.</li>
+<li>Fixed missing SFX when preparing to cast Booming Blade.</li>
+<li>Fixed the SFX for preparing a Starry Form continuing to play if you cast the spell quickly after selecting it.</li>
+<li>Fixed missing SFX when Astarion taps Woe on the ground during a cinematic.</li>
+<li>Fixed missing SFX in the overhead dialogue between Minthara and the questioners in Moonrise Towers Prison.</li>
+<li>Fixed a sound resource for Photo Mode not being generated correctly.</li>
+<li>Fixed the rattling Moonlantern SFX continuing to play after you unequip it.</li>
+<li>Recovered some missing SFX when casting Speak with Dead on the mind flayer in the Shattered Sanctum.</li>
+<li>Reminded Halsin to actually yell when he gains barbarian Rage instead of silently miming it.</li>
+<li>Fixed the SFX during Vlaakith's appearance at camp getting cut off prematurely.</li>
+</ul>
+<strong>Cinematics</strong>
+<ul>
+<li>Told one of the imps on the nautiloid to stop looking in the wrong direction.</li>
+<li>Fixed a super-mega-ultra-close-up shot during the dialogue with Raphael at Last Light.</li>
+<li>Removed a static pool of blood hovering mid-air in the cinematic with the gnolls on the Risen Road when playing as a short Dark Urge character.</li>
+<li>Fixed Karlach's line about Gale being a hero getting cut off prematurely.</li>
+<li>Fixed a bug causing party members to appear as floating torsos (or simply floating hair) when talking to Ketheric's dog, Squire.</li>
+</ul>
+</blockquote>
+<p>Speaking on X, Larian's Swen Vincke <a href="https://x.com/LarAtLarian/status/1970526548592623969" rel="noopener nofollow" target="_blank">said</a>:</p>
+<blockquote>
+<p>"The story of how this came to be really is one of true passion. The Steam Deck native build was initiated by a single engineer who really wanted a smoother version of the game on Steam Deck and so he started working on it after hours. When we tried it out, we were all surprised by how good it felt and so it didn't take much to convince us to put our shoulders behind it and get it released. It's this type of pure passion for their craft that makes me fall in love with my developers over and over again. Considering myself very lucky to have people like him on my team. Try it out!"</p>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40627/baldurs-gate-3/">Baldur's Gate 3</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/baldurs_gate_iii">GOG</a></li><li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/09/baldurs-gate-3-gets-a-native-linux-version-to-improve-it-on-steam-deck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/baldurs-gate-3-gets-a-native-linux-version-to-improve-it-on-steam-deck/</guid>
+      <pubDate>Tue, 23 Sep 2025 15:52:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/499700063id27649gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>RPG</category>
+      
+      <category>SteamOS</category>
+      
+    </item>
+    
+    <item>
+      <title>3rd person action roguelite mech-builder Granvir is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Granvir brings solo and online co-op to mech-building, with Linux support it's officially available today and it's great. They also previously released Granvir: Zero Front, a standalone cut-down version for you to try for free to get a feel for it.</p>
+<p>More about it: pilot your Granvir and manage your campaign between battles to find the best equipment and stay supplied while fighting back against the Millennium Company invasion of Inheritance in single-player or with friends in multiplayer co-op. You can end up building some pretty fun mechs in it, a bit of a dream for fans of things like Gundam.</p>
+<div class="hidden_video" data-video-id="HNXPPHE4SL4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/beac91b4b68d8823103d3c5f6e242c17.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/HNXPPHE4SL4" target="_blank">See video</a></div></div>
+<p>Game Highlights:</p>
+<blockquote>
+<ul>
+<li><strong>Equip An Arsenal Of Deadly Weapons: </strong>Don devastating melee weapons such as swords, rocket spears, and jaw arms. In addition you can wield powerful long range guns like cannons, machine guns, flamethrowers and rockets. Mix and match them to suit your play style.</li>
+</ul>
+<ul>
+<li><strong>Build Your Granvir Your Way:</strong> Mix arms, legs, armatures, and special modules to customize your mech. Defeating ace pilots grants their unique parts for your use.</li>
+<li><strong>Deploy With Friends: </strong>Complete any campaign in single-player or multiplayer co-op with up to 10 Granvir pilots at a time. Share parts and resources utilizing the squad depot in rest areas as you plan your next moves.</li>
+</ul>
+<ul>
+<li><strong>Direct The Campaign:</strong> No campaign is the same as you manage time, resources, and your route to each objective. Each zone dictates what services and resources are available to you. Use down time between missions to refit and upgrade your Granvir to prevail.</li>
+</ul>
+</blockquote>
+<p>A whole bunch of content is also <a href="https://store.steampowered.com/news/app/2743460/view/542243094205040437" rel="noopener nofollow" target="_blank">planned</a> post-release including a new story campaign, new mission environments, more parts for your mechs, new enemies and much more.</p>
+<p>I played quite a lot of Granvir: Zero Front and really enjoyed the mech building in it. Really pleases my brain to see more mech games appearing lately that are actually <em>good</em>. Still nice to see games releasing with direct Native Linux support too, hopefully it continues working well.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/41753/granvir/">Granvir</a></strong> | Release Date: 23rd September 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2743460/Granvir/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/09/3rd-person-action-roguelite-mech-builder-granvir-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/3rd-person-action-roguelite-mech-builder-granvir-is-out-now/</guid>
+      <pubDate>Tue, 23 Sep 2025 14:03:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1141852126id27648gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Indie Game</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>Stalker 2: Heart of Chornobyl finally gets night vision and more upgrades</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Going back to S.T.A.L.K.E.R. 2: Heart of Chornobyl is probably going to feel like quite a different game, and that actually excites me again.</p>
+<p>They just released another major free upgrade for the game finally adding in night vision goggles, along with some other gameplay enhancements. This was one of my major requests to add, so I'm pleased to see it made it in. There's also offset aiming, a laser pointer, updates to the combat systems, NPCs can loot mutants noew, a new Fireball anomaly, controller improvements, a save backup and restore option, new face and hair options for female characters, improved modding support and lots of fixes to the game overall.</p>
+<div class="hidden_video" data-video-id="0naul_67_Jw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5dfba09254d95335a2dbdb5624c8abe1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/0naul_67_Jw" target="_blank">See video</a></div></div>
+<p><a href="https://www.gamingonlinux.com/2024/11/stalker-2-heart-of-chornobyl-review-works-on-linux-desktop-with-proton-but-poorly-on-steam-deck/" rel="noopener" target="_blank">Most of my original review</a> still stands on most of it but it does appear that the game has seen vast improvements to lots of it since the release. I'm definitely going to be going back through.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40460/s-t-a-l-k-e-r-2-heart-of-chornobyl/">S.T.A.L.K.E.R. 2: Heart of Chornobyl</a></strong> | Release Date: 20th November 2024</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/stalker_2_heart_of_chornobyl_standard_edition">GOG</a></li><li><a href="https://store.steampowered.com/app/1643320/STALKER_2_Heart_of_Chornobyl/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/09/stalker-2-heart-of-chornobyl-finally-gets-night-vision-and-more-upgrades/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/stalker-2-heart-of-chornobyl-finally-gets-night-vision-and-more-upgrades/</guid>
+      <pubDate>Tue, 23 Sep 2025 13:34:39 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/348146860id27647gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Action</category>
+      
+      <category>FPS</category>
+      
+      <category>Open World</category>
+      
+    </item>
+    
+    <item>
+      <title>For fans of Ghostrunner and Ultrakill the fast melee dungeon-runner Bloodthief is out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Slay the undead and let their blood fuel your movement and combat abilities in Bloodthief, the ultra-fast melee runner - out now. The release comes with Native Linux support too and is rated Steam Deck Playable.</p>
+<p>You get the dripping style from Ultrakill with the first-person running action of Ghostrunner together in a neat retro package, awesome for anyone who loves brutal fast-paced action. Developed by solo dev Jake Bedard ("Blargis"), they actually documented the entire development on their YouTube channel which is pretty interesting.</p>
+<p>Across 31 main story levels, you’ll uncover the terrible truths hidden behind the dungeons' stone walls, stained glass, and bubbling lava pits. There are magical abilities and bounties of loot to be uncovered in Bloodthief's mystical world.</p>
+<p>Curiosity will be rewarded with a number of secrets to uncover. Including alternative routes off the main path and shortcuts to shave precious seconds off of your speed-run time, there’s plenty to see for those who decide to dive deeper into the game’s dungeons.</p>
+<p>Check out the launch trailer:</p>
+<div class="hidden_video" data-video-id="Sll06gaCYhY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/e2d2650098acd922d0109545ee6ffb4d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Sll06gaCYhY" target="_blank">See video</a></div></div>
+<p class="plain-list-title">Game Highlights:</p>
+<blockquote>
+<ul>
+<li>Gotta Go Fast: Wall run, vault, and dash between environments and enemies, drinking blood to propel you faster and keep the destruction going.</li>
+<li>Bloody and Brutally Difficult: Bloodthief is a challenging experience inviting you to learn the deep and intertwined gameplay mechanics to progress and succeed. It will push your skills to their limit, but leave you feeling like the ultimate, vampiric killing machine.</li>
+<li>What Darkness Lies Beneath?: The medieval dungeons and castles you’ll explore hum with a dark and ancient evil. Explore each level, taking branching paths and shortcuts to unlock powerful loot, new abilities, and to uncover the secrets of this fantasy world.</li>
+</ul>
+</blockquote>
+<p>Priced at $19.99 USD / £16.79 GBP / €19,50 it has a 10% discount for the next two weeks for the launch.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42840/bloodthief/">Bloodthief</a></strong> | Release Date: 22nd September 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2533600/Bloodthief/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/09/for-fans-of-ghostrunner-and-ultrakill-the-fast-melee-dungeon-runner-bloodthief-is-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/for-fans-of-ghostrunner-and-ultrakill-the-fast-melee-dungeon-runner-bloodthief-is-out-now/</guid>
+      <pubDate>Tue, 23 Sep 2025 13:02:08 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/910807165id27646gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>FPS</category>
+      
+      <category>Godot Engine</category>
+      
+    </item>
+    
+    <item>
+      <title>A first look at the spooky game OD from KOJIMA PRODUCTIONS</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>While we don't yet know when it will release or come to Steam, OD from KOJIMA PRODUCTIONS and Xbox Game Studios looks freaky as heck. Given Microsoft's push to put more games on PC, I've no doubt it will eventually pop up on Steam after release. </p>
+<p>It's nice to see more from it, although we still don't entirely know what exactly it will be, other than some form of horror. KOJIMA PRODUCTIONS are getting help from Microsoft on this one, with Xbox's Phil Spencer on stage during their livestream saying: "OD is bold, it's unique and it's unmistakably from this studio. Which is just incredible. We're deeply supporting the production, it's our technical work on Unreal that we're doing with the team, both with the flashy <em>[features]</em> you see on the screen, but also a lot of the behind the scenes work. We have one goal in mind, which is to bring Kojima's vision to life for all players everywhere."</p>
+<p>Check out the teaser below:</p>
+<div class="hidden_video" data-video-id="eHCqxLtwy5g"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1919774f8debe81b12a90ae807019a4c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/eHCqxLtwy5g" target="_blank">See video</a></div></div>
+<p>An interesting choice to go with Unreal Engine for it, switching away from the Sony-owned Decima game engine, with Kojima noting how Unreal Engine tech is "one step higher than Death Stranding 2".</p>
+<p><em>Now if we could just get Sony to put Death Stranding 2 finally on PC I'll be happy.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/09/a-first-look-at-the-spooky-game-od-from-kojima-productions/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/a-first-look-at-the-spooky-game-od-from-kojima-productions/</guid>
+      <pubDate>Tue, 23 Sep 2025 12:31:38 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/920051602id27645gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Horror</category>
+      
+      <category>Teaser</category>
+      
+      <category>Unreal Engine</category>
+      
+    </item>
+    
+    <item>
+      <title>Comedy first-person adventure The Dungeon Experience from Devolver Digital gets a demo and new trailer</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Dungeon Experience is a comedy first-person adventure about a low-level mudcrab helping to bring you the true bliss of Financial Freedom. <em>Whatever the heck that actually means.</em></p>
+<p>One of the developers, Jacob Janerka, previously made the quirky and funny adventure game <a href="https://store.steampowered.com/app/600370/Paradigm/" rel="noopener nofollow" target="_blank">Paradigm</a> which I'm a big fan of. Knowing their humour, this is going to be a good one. With Devolver Digital publishing, I have high hopes for the quality of it too.</p>
+<p>From the press email:</p>
+<blockquote>
+<p>This lowly crab started life as a humble crustacean scraping by at the bottom of the food chain, a low level RPG monster, but now – thanks to determination, optimism, and a modest investment in crab scented essential oil candles – he’s the proud owner of a fully featured, highly desirable dungeon, now confirmed to have asbestos all removed. </p>
+<p>And he wants to share this life-changing opportunity with YOU!</p>
+</blockquote>
+<p>Check out the new trailer:</p>
+<div class="hidden_video" data-video-id="im4DtyULXSo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/04a58041340a0f2c474233c6ef672819.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/im4DtyULXSo" target="_blank">See video</a></div></div>
+<p>Yep, that was definitely marketing for something. Funny though.</p>
+<p>More from the press email:</p>
+<blockquote>
+<ul>
+<li>
+<p>Step inside the dungeon, explore its wonders, and take part in an exclusive training program that will guide you to success</p>
+</li>
+<li>
+<p>Never seen before techniques of teaching business acumen via high fantasy themes. Who knew murdering goblins could lead to such wealth.</p>
+</li>
+<li>
+<p>The training program will increase your chance with prospective partners of your choosing whether that be romantic, platonic or George. </p>
+</li>
+<li>
+<p>Rise through the ranks of a supportive, fast-growing community who are ready to synergise and touch base with other like minded touchers of bases.</p>
+</li>
+<li>
+<p>You will be able to pass down the success you earn onto others and reap the benefits of their success, creating a pyramid adjacent shape of Financial Freedom*</p>
+</li>
+</ul>
+<p><strong><em>Financial Freedom</em></strong><em>* Is a trademark owned by the Dungeon Experience and is not representative of owning government mandated “currency” and is open to interpretation. “Open to interpretation” is open to interpretation, and we’d rather you not interpret it at all, consider interpreting yourself instead, of how much spare time you have to interpret things you should not be. We in fact have interpreted you as a ‘person who is poor with no friends’ and would very much benefit from our exclusive training to be not those things.</em> </p>
+</blockquote>
+<p>This is definitely one you're going to need to play to get the idea of it. Thankfully it should work great on Linux with Proton.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43074/the-dungeon-experience/">The Dungeon Experience</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/994680/The_Dungeon_Experience/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/09/comedy-first-person-adventure-the-dungeon-experience-from-devolver-digital-gets-a-demo-and-new-trailer/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/comedy-first-person-adventure-the-dungeon-experience-from-devolver-digital-gets-a-demo-and-new-trailer/</guid>
+      <pubDate>Tue, 23 Sep 2025 12:16:51 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/15885799id27644gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Adventure</category>
+      
+      <category>Comedy</category>
+      
+      <category>Demo</category>
+      
+    </item>
+    
+    <item>
+      <title>Pocketpair announced farming life sim spin-off Palworld: Palfarm</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Pocketpair have to be trolling Nintendo and The Pokémon Company at this point, with the announcement of Palworld: Palfarm.</p>
+<p>Not just because of the ongoing lawsuit over Palworld versus Pokémon but little over a week ago, Nintendo only just revealed Pokémon Pokopia, their own blend of Pokémon with a life sim and now we have Pocketpair doing something very similar.</p>
+<p>Just watch, Nintendo will now probably attempt to patent some kind of mechanics included in Pokémon Pokopia like they're <a href="https://www.gamingonlinux.com/2025/09/nintendo-get-another-problematic-patent-in-their-fight-against-palworld-for-summoning-characters/" rel="noopener" target="_blank">doing with another problematic patent</a>. They won't, probably not anyway, especially given the masses of prior art on it but never say never when it comes to Nintendo.</p>
+<p>No release date has been revealed yet for Palfarm but it's not lost on me that Pocketpair are announcing a new game, with two others still in Early Access. One of which, Craftopia, has been in Early Access for over five years at this point. Hopefully they will actually finish it.</p>
+<p>Anyway, the Palfarm trailer is below:</p>
+<div class="hidden_video" data-video-id="AmurGwwjvGM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b6658cacbd2e77e64254f510549eac20.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/AmurGwwjvGM" target="_blank">See video</a></div></div>
+<p>Must admit, I do actually like the look of this one. And with online co-op as well, it might turn into a great one to play with friends. Love how they blended a very cosy vibe and then suddenly – creepy person playing russian roulette? And then back to being cosy on the beach and rolling snowballs and all sorts. And then right at the end, the suddenly sinister vibe returns of catching a Pal that wants just to be friends. Okay then.</p>
+<p>From the press release:</p>
+<blockquote>
+<p>Move to an island where the Pals live, work together to till the fields, cook, craft, and build the farm of your dreams.</p>
+<p>Each Pal will lend a hand in farm work by making use of their unique abilities. From sowing seeds and watering to harvesting, Pals make for reliable partners. Deepen your relationships with the island residents and Pals through daily conversation and gift-giving, and you may discover unexpected, special stories unfolding.</p>
+<p>At times, you’ll also need to defend your farm from some nasty Pals that come to wreak havoc. Head to the market, buy and sell crops or crafted goods, and sometimes even obtain rare items. Of course, multiplayer is also supported, so you can build your farm life together with friends.</p>
+<p>A cosy life is waiting for you with your Pals!</p>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43073/palworld-palfarm/">Palworld: Palfarm</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/4031890/Palworld_Palfarm/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/09/pocketpair-announced-farming-life-sim-spin-off-palworld-palfarm/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/pocketpair-announced-farming-life-sim-spin-off-palworld-palfarm/</guid>
+      <pubDate>Tue, 23 Sep 2025 12:03:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1342587279id27643gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Casual</category>
+      
+      <category>Farming</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Deadly Days: Roadtrip brings inventory management to survivor-likes and it&#39;s damn good</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Blending inventory management with a zombies horde-based road trip bullet heaven, Deadly Days Roadtrip is a delight. <em>Disclosure: a key was provided to GamingOnLinux.</em></p>
+<p>Once again taking the mechanics popularised by Vampire Survivors, but with a fresh spin on it that’s a bit more like Death Road to Canada mixed with backpack management found in the likes of Backpack Hero. All together, that’s a lot of “it’s like this but also this” so I’ll attempt to break it down a little more for you.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2500414321758627615gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2500414321758627615gol1.jpg"/></a><br/>
+<em>Pictured - Deadly Days: Roadtrip on Desktop Linux (Kubuntu)</em></p>
+<p>You start off in a basic camp with nothing but your bus. So off you pop, and pick a location to run around and loot in. Each location to pick has a different map size, general loot amount and amount of fuel you can find. In the locations you run around while your character auto-fires (you can manually aim like a twin-stick too), and you pick up experience gems from dead zombies. When you level up you auto-throw a flare and after a short delay along comes a little care package. This is where the real hook is!</p>
+<p>Inside the package you get to pick an item. This could be a power-up item, a new weapon, a gadget of some sort or more slots to build your backpack to get more space to add even more into it next time.</p>
+<p>The inventory management alone is quite a challenge. You can initially only wield two main weapons (like guns or bats and knives), as after all - you’re only human. Each weapon takes up 1 or 2 slots, for single or double-handed. It’s how you arrange that inventory that matters due to the many different additional items that can stack upgrades onto weapons. Like a lighter that can add burning to ammo to set zombies ablaze. All these extra items have specific backpack slots they affect, so that’s where you have to rearrange everything to fit and synergise together.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4850594731758625523gol1.jpeg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4850594731758625523gol1.jpeg"/></a><br/>
+<em>Pictured - Deadly Days: Roadtrip on Steam Deck</em></p>
+<p>Eventually, you might be able to stack some more weapons if you’re lucky enough to find the legendary Robot Arm. However, this is <em>inventory Tetris</em>, and so the arm takes up valuable backpack space too. Decisions - decisions, making room for it is the obvious choice of course. Who doesn't love more weapons?</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/6704963241758625913gol1.jpeg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/6704963241758625913gol1.jpeg"/></a><br/>
+<em>Pictured - Deadly Days: Roadtrip on Steam Deck</em></p>
+<p>Another fun bit is that you can drop the same weapon on top of another, and it will level them up to make them more powerful too. The game doesn’t actually tell you that though, and it took me a while to even realise as it just does a small arrow animation over the same weapons that I entirely missed for a while. Easy to miss when you’re not looking for it. Nice to have but one small bit they should explain better.</p>
+<p>There is a point to exploring these locations too as you need to find more fuel to feed your bus to continue on your journey to the next destination. The longer you stay to get as much loot as you can, the more challenging it gets and it can end up pretty brutal. As soon as you have enough fuel to leave, you can make a run for your bus - but that can at times be insanely tough. Especially if you overstayed your welcome.</p>
+<p>There’s a nice mixture of enemy types from the mindless walkers, to some that will dash as you, throw up some toxic stuff your way and more. I've lost count of the amount of times I've died in it, often due to my own stupidity but the later exploration is a true challenge.</p>
+<p>You also get stopped along the way with special levels that interrupt your trip. Here you get a smaller map with specific objectives like clearing actual roadblocks or taking down specific enemies, like the shot below where you have to take down Titans, much bigger and tougher enemies.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/21170730471758625525gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21170730471758625525gol1.jpg"/></a><br/>
+<em>Pictured - Deadly Days: Roadtrip on Steam Deck</em></p>
+<p>At first you think it’s a bit light on content, then you finish your first run and realise that’s just the start. Back to camp you go, and new things have appeared. Like a crafting table, that allows you to unlock more for your future runs like new items, a merchant, an item workbench to craft new items and much more.</p>
+<p>It’s in your camp where you can now also do character upgrades. Depending on how long you survive you get apples, a currency to boost your stats like max HP and attack speed.</p>
+<p>As fun as it is, I think they’re playing it perhaps a bit <em>too safe</em>. Or maybe <em>plain</em> is the better word here? I would love to see them play with the absurdity of a zombie apocalypse a bit more. You can see a small glimpse of it at times, like when you get a powerup from a box that explodes zombies on death for 30 seconds. Or the little bits of map destruction already in that they could really amplify. You can destroy a few select items on the map - I want lots more like that for it.</p>
+<p>The game has only just begun life, and I expect it’s going to be another big indie hit during its time in Early Access. Incredibly keen to see where they take it. Already more polished and fun than a lot of finished games.</p>
+<p>Good performance on Steam Deck too and it works great out of the box. Valve, weirdly, gave it only a Playable rating noting various issues that just don't seem to exist. This <em>should</em> be a <strong>Verified</strong> game as far as I can see. I've put almost all of my hours into it on Steam Deck. No issues to report on Desktop Linux (Kubuntu) either, it works very nicely.</p>
+<p>It tickles the happy part of my brain. A properly fun blend of things. I love turning a big horde into zombie confetti when I’ve really juiced my weapons with fancy items after spending 15 minutes sorting my bag.</p>
+<p>That is until I die for the 5th time in a row, but then that itch comes back and I need another run to scratch it. And another run I will have, often, to the point that my total hours in it shocked even me. Where does time go?</p>
+<p>Great stuff, you should go grab it.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43072/deadly-days-roadtrip/">Deadly Days: Roadtrip</a></strong> | Release Date: 22nd September 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3026450/Deadly_Days_Roadtrip/">Steam</a></li></ul></div>
+<div class="hidden_video" data-video-id="hKL4AQYe6TE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/fdb2c5c38accb578419c78f54a218190.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/hKL4AQYe6TE" target="_blank">See video</a></div></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/09/deadly-days-roadtrip-brings-inventory-management-to-survivor-likes-and-its-damn-good/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/deadly-days-roadtrip-brings-inventory-management-to-survivor-likes-and-its-damn-good/</guid>
+      <pubDate>Tue, 23 Sep 2025 11:41:05 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1568952037id27642gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Bullet Heaven</category>
+      
+    </item>
+    
+    <item>
+      <title>Valve fixes DualSense crash on Linux / SteamOS and improves game recording with Vulkan</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Valve released another small Beta update for Desktop PCs, SteamOS and Steam Deck for the Steam Client to fix up some more annoying problems.</p>
+<p>For Desktop here's the <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/545620793932908810?snr=2___" rel="noopener nofollow" target="_blank">changes</a>:</p>
+<blockquote>
+<p><strong>Accessibility</strong></p>
+<ul>
+<li>
+<p>Improved High Contrast view of game list search and app filter panel</p>
+</li>
+</ul>
+<p><strong>Game Recording</strong></p>
+<ul>
+<li>
+<p>Improved performance when recording is on for some games using Vulkan rendering</p>
+</li>
+</ul>
+<p><strong>Linux</strong></p>
+<ul>
+<li>Fixed a crash when DualSense controllers are connected and idle.</li>
+</ul>
+</blockquote>
+<p>The Steam Deck / SteamOS update also just <a href="https://store.steampowered.com/news/app/1675200/view/498332997840275674" rel="noopener nofollow" target="_blank">noted</a> the DualSense fix, since it's a Linux issue. Nice to see that solved.</p>
+<p>It's currently in Beta / Preview so you need to opt into receiving it before it rolls out into the Stable channel for all Steam users. Another recent <a href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/502836144430384152?snr=2___" rel="noopener nofollow" target="_blank">Beta update</a> also put Windows 10 32bit on notice, as Valve will be removing 32bit support for Windows soon. Hopefully at some point we may also eventually see a 64 bit client for Linux too.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/09/valve-fixes-dualsense-crash-on-linux-steamos-and-improves-game-recording-with-vulkan/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/valve-fixes-dualsense-crash-on-linux-steamos-and-improves-game-recording-with-vulkan/</guid>
+      <pubDate>Tue, 23 Sep 2025 10:57:24 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/steam_plain_2025.jpg" type="image/jpeg"/>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beta</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>Grab the Steam Deck LCD 256GB for cheap as Valve gave it a discount</title>
@@ -4154,376 +4541,6 @@ Take on a mission to uncover the mystery of the world’s collapse, where chance
       <category>Indie Game</category>
       
       <category>Open World</category>
-      
-    </item>
-    
-    <item>
-      <title>SnowRunner should look a little better on Steam Deck with the new update</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The excellent driving sim SnowRunner was already pretty great on Steam Deck but the latest update should make it just that little bit better.</p>
-<p>Sounds like it's time to get a truck stuck somewhere again for a while. I'm truly rubbish at it, but the challenge is one that's surprisingly good to keep you involved and wanting more.</p>
-<p>With the Season 16 DLC out now they've given players 3 new "massive" maps along with 3 new trucks to master with a whole bunch of new add-ons and trailers. There's also a healthy injection of bug fixes to: vehicles, co-op play and the mod browser. Plus steering wheel improvements and for Steam Deck players specifically, there's also a note that they "Improved UI for Steam Deck version" which is great to see.</p>
-<p>Check out the trailer for Season 16 below:</p>
-<div class="hidden_video" data-video-id="Krbye_T9pI0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ed22e4c07a2b07ba702b022952cd5191.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Krbye_T9pI0" target="_blank">See video</a></div></div>
-<p>At time of writing it's rated Steam Deck Verified by Valve with Proton 9. ProtonDB also gives it an overall Platinum rating from the community.</p>
-<p>Don't have it yet? It's currently 50% off across most PC stores.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/28071/snowrunner/">SnowRunner</a></strong> | Release Date: 18th May 2021</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.fanatical.com/en/game/snowrunner">Fanatical</a></li><li><a href="https://www.humblebundle.com/store/snowrunner">Humble Store</a></li><li><a href="https://store.steampowered.com/app/1465360/SnowRunner/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/09/snowrunner-should-look-a-little-better-on-steam-deck-with-the-new-update/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/snowrunner-should-look-a-little-better-on-steam-deck-with-the-new-update/</guid>
-      <pubDate>Tue, 09 Sep 2025 14:39:47 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/931966247id27545gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Online Co-op</category>
-      
-      <category>Simulation</category>
-      
-    </item>
-    
-    <item>
-      <title>Classic open source RTS Warzone 2100 v4.6 brings better water effects, revamped options and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Warzone 2100 continues living its best life as a free and open source project, with the classic RTS receiving another major upgrade with version 4.6 out now.</p>
-<p>This is easily one of the best success stories of a game that was originally a commercial release, and then eventually open sourced. The community team working on it have really done some incredible work to improve it over the years and that's only continued with this new release.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/3652018321757427843gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/3652018321757427843gol1.jpg"/></a><br/>
-<em>Pictured - Warzone 2100 on Linux</em></p>
-<p>The main general highlights from this update include:</p>
-<blockquote>
-<ul>
-<li><strong>Revamped Options Menus</strong>
-<ul>
-<li>Revamped &amp; reorganized options menus available in the title and in-game.</li>
-<li>Fixes usability issues, adds many new options, makes it easier to change controls.</li>
-</ul>
-</li>
-<li><strong>Improved High-Quality Water</strong>
-<ul>
-<li>Massively improved high-quality water effects by @MaNGusT.</li>
-</ul>
-</li>
-<li><strong>Improved Graphics Initialization</strong>
-<ul>
-<li>Automatically attempts multiple graphics backends on first-run (or if initialization fails).</li>
-<li>Defaults to Vulkan in more cases, when possible.</li>
-</ul>
-</li>
-<li><strong>New Windows Installer</strong>
-<ul>
-<li>Supports all architectures (x64, arm64, and x86).</li>
-<li>Offers “all users” (admin privs required) and “current-user-only” installs.</li>
-<li>Advanced Options and much more customization.</li>
-<li>Supports (optionally) portable installs.</li>
-<li>Supports easier future updates.</li>
-</ul>
-</li>
-<li>Add: Improve research items tooltips with categories and time.</li>
-<li>Add: Attempt to break infinitely circling units out of a movement loop.</li>
-<li>Add: Various mouse edge scrolling fixes, and new “Automatic” Trap Cursor mode.</li>
-<li>Add: Performance improvements for loading, path-finding, target selection, networking, and high-object-count situations.</li>
-<li>Add: Add “Audio Cues” options section, toggle for “Group Reporting” audio cue.</li>
-<li>Change: Bump repair spread area from 6 to 10 tiles.</li>
-<li>Fix: Can’t build if the droid is centered on the tile.</li>
-<li>Fix: Added check for droid distance when working on structure.</li>
-<li>Fix: Target selection sometimes preferring targets that can’t be hit behind terrain.</li>
-<li>Fix: Units sometimes do not retreat.</li>
-<li>Fix: Prevent splash damage from giving exp when damaging friendly objects.</li>
-<li>Fix: Graphics pop-in due to quick object clipping.</li>
-<li>Fix: Various model graphics issues (seams, shadows, connector positioning).</li>
-<li>Fix: Transporters no longer catch fire when flying over fire.</li>
-<li>And many other bug &amp; crash fixes.</li>
-</ul>
-</blockquote>
-<p>There's also a number of tweaks to online multiplayer and the single-player story campaigns too.</p>
-<p>See more on <a href="https://wz2100.net/news/version-4-6-0/" rel="noopener nofollow" target="_blank">the website</a>. </p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/09/classic-open-source-rts-warzone-2100-v4-6-brings-better-water-effects-revamped-options-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/classic-open-source-rts-warzone-2100-v4-6-brings-better-water-effects-revamped-options-and-more/</guid>
-      <pubDate>Tue, 09 Sep 2025 14:25:54 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1153280784id27544gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Free Game</category>
-      
-      <category>Open Source</category>
-      
-      <category>RTS</category>
-      
-    </item>
-    
-    <item>
-      <title>Sci-fi adventure Ultrasound will bring a different kind of body horror</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A different kind of body horror as you diagnose bizarre malformations all over a spaceship, Ultrasound is a grim (but great) looking point and click adventure. No release date is being given for it yet other than 2026, but they've said that a demo will arrive to try it out later this year.</p>
-<p>Set aboard a long haul space freighter hurtling towards a star, Ultrasound sees players step into the shoes of Medical Officer Dana Voss, as she diagnoses and performs surgical procedures upon a grotesque alien infection which is rapidly spreading aboard the ship.</p>
-<p>Check out the trailer below:</p>
-<div class="hidden_video" data-video-id="FrCsJHPbyEE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6dc71caec4df86691456c5ccf11dea7c.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/FrCsJHPbyEE" target="_blank">See video</a></div></div>
-<p>Ultrasound is being developed by two new fathers - Walter Woods (Lead Developer) and Jason Scalfano (Lead Artist) - and is inspired by their respective tragic and joyful paths to parenthood. "So many of us know the hope and horror of the ultrasound machine. The mystery. The ambiguity. The flickering image of life and death." said Walter Woods. "We hope our game captures these difficult feelings and resonates with players."</p>
-<p class="plain-list-title">Game Highlights:</p>
-<blockquote>
-<ul>
-<li><strong>A MYSTERIOUS INFECTION IS SPREADING</strong> aboard a long haul space freighter. As Medical Officer Dana Voss, you must diagnose and perform surgical procedures on ship systems. Restore functionality before your collision course with a star comes to cosmic end.</li>
-<li><strong>USE A PORTABLE ULTRASOUND MACHINE</strong> to discover and diagnose bizarre malformations that hide within your ship.</li>
-<li><strong>PERFORM SURGERY</strong> to repair infected systems in tense and gruesome procedures that will test your skills.</li>
-<li><strong>MAINTAIN UNIQUE SHIP SYSTEMS </strong>such as life support, power, cargo manifests, and more. The failure of each system has drastic effects on your play experience, forcing you to adapt and manage resources effectively.</li>
-<li><strong>CRAFT STRANGE MEDICINES</strong> to heal and eradicate foreign growths. Navigate the risks, rewards, and unexpected effects of your creations.</li>
-<li><strong>MULTIPLE ENDINGS</strong> and high variety in each playthrough. Discover hidden secrets and new dimensions of the story each time.</li>
-</ul>
-</blockquote>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42935/ultrasound/">Ultrasound</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3824290/Ultrasound/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/09/sci-fi-adventure-ultrasound-will-bring-a-different-kind-of-body-horror/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/sci-fi-adventure-ultrasound-will-bring-a-different-kind-of-body-horror/</guid>
-      <pubDate>Mon, 08 Sep 2025 12:35:30 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1598023396id27543gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Adventure</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Point & Click</category>
-      
-    </item>
-    
-    <item>
-      <title>Tic Tactic arrives September 18 turning tic-tac-toe / noughts and crosses into a deck-building roguelike</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Turning noughts and crosses into a deck-building roguelike isn't something I wasn't expecting, but it's real and Tic Tactic releases on September 18th. There's a demo available on Steam right now too that should run fine with Proton on Linux.</p>
-<p>Tic Tactic transforms the classic childhood game into a high-stakes roguelike. Players face off in turn-based battles, using a tic-tac-toe board to deal damage by creating combos. Every move counts as the board doesn’t clear, meaning mistakes linger and opportunities stack. Each run introduces new enemies, environments, and narrative discoveries as players push further into the mystery of what happened at the Duck Pond.</p>
-<p>A deck-builder too as you get to place down over two dozen unique tiles, adding another layer to the classic game. These tiles give abilities ranging from board-wiping moves to precision strikes on the enemy.</p>
-<p>Seems like another unique little indie game that might be worth a bunch of your hours. Release date trailer is below:</p>
-<div class="hidden_video" data-video-id="b0c8pQ0JodU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/b9fa6526559d18db2ddaf065d0a693e8.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/b0c8pQ0JodU" target="_blank">See video</a></div></div>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42934/tic-tactic/">Tic Tactic</a></strong> | Release Date: 18th September 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3256850/Tic_Tactic/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/09/tic-tactic-arrives-september-18-turning-tic-tac-toe-noughts-and-crosses-into-a-deck-building-roguelike/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/tic-tactic-arrives-september-18-turning-tic-tac-toe-noughts-and-crosses-into-a-deck-building-roguelike/</guid>
-      <pubDate>Mon, 08 Sep 2025 12:11:18 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/127764710id27542gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Deck-builder</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Microsoft&#39;s 6502 BASIC is now officially open source</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Some fun computing history for you here as Microsoft recently open sourced Microsoft 6502 BASIC under the MIT license.</p>
-<p>While there have been versions of it floating around for a long time, Microsoft decided just to play nice and make it official and give it out to everyone. Back in 2024, they <a href="https://www.gamingonlinux.com/2024/04/microsoft-open-sources-ms-dos-40/" rel="noopener" target="_blank">also open sourced MS-DOS 4.0</a>. This is perhaps even more important though for computing history, with it being Microsoft's first official product and served as the foundation for the modern software industry.</p>
-<p>From their <a href="https://opensource.microsoft.com/blog/2025/09/03/microsoft-open-source-historic-6502-basic/" rel="noopener nofollow" target="_blank">blog post</a> going over the background of it:</p>
-<blockquote>
-<p>This is <strong>BASIC M6502 8K VER 1.1</strong>, the 6502 BASIC lineage that powered an era of home computing and formed the foundation of <strong>Commodore BASIC</strong> in the PET, VIC-20, and the legendary Commodore 64. This very source tree also contains adaptations for the <strong>Apple II</strong> (“Applesoft BASIC”), built from the same core BASIC source. The original headers still read, <strong>“BASIC M6502 8K VER 1.1 BY MICRO-SOFT”</strong>—a time capsule from 1978.</p>
-<p>The version we are releasing here—labeled “1.1”—contains fixes to the garbage collector identified by Commodore and jointly implemented in 1978 by Commodore engineer John Feagans and Bill Gates, when Feagans traveled to Microsoft’s Bellevue offices. This is the version that shipped as the PET’s “BASIC V2.” It even contains a playful Bill Gates Easter egg, hidden in the labels STORDO and STORD0, which Gates <a href="https://www.pagetable.com/?p=43#comment-1033" rel="noopener nofollow" target="_blank">himself confirmed in 2010</a>.</p>
-</blockquote>
-<p>And a snippet from the GitHub on why it's historically important:</p>
-<blockquote>
-<p>1. Foundation of the Personal Computer Revolution</p>
-<ul>
-<li>This BASIC interpreter was the software foundation that powered many of the most influential early personal computers.</li>
-<li>It democratized programming by making it accessible to non-technical users through a simple, English-like programming language.</li>
-<li>Without this software, the personal computer revolution might have developed very differently.</li>
-</ul>
-</blockquote>
-<p>The code is available on <a href="https://github.com/microsoft/BASIC-M6502" rel="noopener nofollow" target="_blank">GitHub</a>. And see the Microsoft <a href="https://opensource.microsoft.com/blog/2025/09/03/microsoft-open-source-historic-6502-basic/" rel="noopener nofollow" target="_blank">blog post</a> for more background.</p>
-<p>Pretty cool to see it official like this.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/09/microsofts-6502-basic-is-now-officially-open-source/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/microsofts-6502-basic-is-now-officially-open-source/</guid>
-      <pubDate>Mon, 08 Sep 2025 11:31:18 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/751766260id27541gol.jpg" type="image/jpeg"/>
-      
-      <category>Microsoft</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-      <category>Programming</category>
-      
-    </item>
-    
-    <item>
-      <title>Squad got a big upgrade with the 9.0 update, as the devs address Linux compatibility</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Squad from Offworld recently released the 9.0 upgrade bumping it up to Unreal Engine 5, which came with some issues but it should be working well again.</p>
-<p>Overall it was a huge update for the popular online shooter, one of the few with anti-cheat that actually do try to keep it compatible with Linux / SteamOS. It features a new Commendation System, a big remake to the Al Basrah map, a new lighting system for all maps, new weapons and equipment were added, a new physics system and so much more.</p>
-<p>Unfortunately, it initially rolled out with the Easy Anti-Cheat broken on Linux. This has since been fixed, and they've addressed Linux compatibility in a new official <a href="https://steamcommunity.com/games/squad/announcements/detail/498331728096528214" rel="noopener nofollow" target="_blank">FAQ post</a>:</p>
-<blockquote>
-<p>Squad doesn’t have a native Linux build, but can be played through Proton. The challenge with Proton is anti-cheat. EAC has Linux support, and we do our best to integrate the latest updates as needed. Sometimes, we miss a step there as we don’t usually test on Linux clients, so we appreciate the Linux gaming community reporting any issues. The best place to provide feedback and bug reports is on the Squad Community Discord. </p>
-</blockquote>
-<p>It's great to see at least this level of effort, while so many just block Linux like GTA Online and Apex Legends. See more on <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our dedicated anti-cheat page</a>.</p>
-<p>The update trailer is below:</p>
-<div class="hidden_video" data-video-id="AmixykvehfY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6336ceca628360ccd0dcd1eee41350b2.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/AmixykvehfY" target="_blank">See video</a></div></div>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/25762/squad/">Squad</a></strong> | Release Date: 23rd September 2020</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/393380/Squad/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/09/squad-got-a-big-upgrade-with-the-9-0-update-as-the-devs-address-linux-compatibility/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/squad-got-a-big-upgrade-with-the-9-0-update-as-the-devs-address-linux-compatibility/</guid>
-      <pubDate>Mon, 08 Sep 2025 11:07:24 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1748214846id27540gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Anti-Cheat</category>
-      
-      <category>FPS</category>
-      
-      <category>Online Multiplayer</category>
-      
-    </item>
-    
-    <item>
-      <title>Tusk Force is the next major update to War Thunder featuring the first Ukrainian-made tank</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>War Thunder is heating up again with the new Tusk Force update coming soon that features War Thunder's first Ukrainian-made tank, along many other additions.</p>
-<p>The Tusk Force update will bring a brand-new subtree of Thai ground vehicles (within the Japanese tech tree), the American battleship USS Maryland, the British Sky Sabre SAM system, the Russian Buk-M3 SAM system, and the Canadian CF-188A fighter jet. As for the first Ukrainian made tank, from the press release about the details in the game:</p>
-<blockquote>
-<p>The Oplot-T tank is <em>War Thunder</em>’s first Ukrainian-made tank. A modification of the T-80UD main battle tank built for the Royal Thai army, these vehicles saw combat during the brief 2025 border clash with Cambodia. The Oplot-T sports reactive armor, a Laser Warning Receiver (LWR), and an optronic countermeasures system. Thanks to its upgraded transmission, it can reverse at up to 30 km/h, allowing it to quickly fall back to cover. In addition to ammunition typical for the USSR tech tree, the Oplot is armed with Chinese-made ammo like the GP125 ATGMs and the new top-end BTA4 APFSDS round - capable of penetrating over half a meter of armor.</p>
-</blockquote>
-<p>Check out the update trailer:</p>
-<div class="hidden_video" data-video-id="L93Bfc0fk-o"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/911b81244a63740d64c9c09c27633900.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/L93Bfc0fk-o" target="_blank">See video</a></div></div>
-<p>From the press release it should launch sometime in "mid-September".</p>
-<p>It has Native Linux support, although it is missing some graphics features it mostly works well. I have a lot of hours in this one. I think the only thing that annoys me is how terrible the spectator camera is when playing with friends. Apart from that I really enjoy the action in it.</p>
-<p>The game uses BattlEye which is enabled for Linux platforms. See more on <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our dedicated anti-cheat page</a>.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/6278/war-thunder/">War Thunder</a></strong> | Release Date: 15th August 2013</p><p class="plain-list-title">Official links:</p><ul><li><a href="http://store.steampowered.com/app/236390/War_Thunder/">Steam</a></li><li><a href="https://warthunder.com/">Official Website</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/09/tusk-force-is-the-next-major-update-to-war-thunder-featuring-the-first-ukrainian-made-tank/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/tusk-force-is-the-next-major-update-to-war-thunder-featuring-the-first-ukrainian-made-tank/</guid>
-      <pubDate>Mon, 08 Sep 2025 10:54:58 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2074663329id27539gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Anti-Cheat</category>
-      
-      <category>Online Multiplayer</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Need some games for the week? Check out the Humble Curve Games Care Package Bundle</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The <a href="https://www.humblebundle.com/games/curve-games-care-package" rel="noopener nofollow" target="_blank">Humble Curve Games Care Package Bundle</a> arrived on the weekend to bring more games to add to your collection so here's the run over what's in it. And, as you expect from GamingOnLinux, what compatibility to find across SteamOS / Steam Deck too.</p>
-<p style="text-align:center"><a href="https://www.humblebundle.com/games/curve-games-care-package" rel="noopener nofollow" target="_blank"><img alt="Humble Curve Games Bundle" src="https://uploads.golmedia.net/uploads/articles/article_media/17901100281757327790gol1.jpg"/></a></p>
-<p>Here's all the games below:</p>
-<p><a href="https://store.steampowered.com/app/2078230/Badlands_Crew/" rel="noopener nofollow" target="_blank">Badlands Crew</a><br/>
-82% Positive on Steam<br/>
-Steam Deck Verified / ProtonDB Silver</p>
-<p><a href="https://store.steampowered.com/app/1983260/Dungeons_of_Hinterberg/" rel="noopener nofollow" target="_blank">Dungeons of Hinterberg Support Pack Bundle</a><br/>
-94% Positive on Steam<br/>
-Steam Deck Verified / ProtonDB Platinum</p>
-<p><a href="https://store.steampowered.com/app/979690/The_Ascent/" rel="noopener nofollow" target="_blank">The Ascent Complete Collection</a><br/>
-75% Positive on Steam<br/>
-Steam Deck Playable / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/3109280/Super_Loco_World__Cozy_Train_Automation/" rel="noopener nofollow" target="_blank">Super Loco World - Cozy Train Automation</a><br/>
-76% Positive on Steam<br/>
-Steam Deck Playable</p>
-<p><a href="https://store.steampowered.com/app/1480560/Lawn_Mowing_Simulator/" rel="noopener nofollow" target="_blank">Lawn Mowing Simulator Landmark Edition</a><br/>
-74% Positive on Steam<br/>
-Steam Deck Verified / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/527230/For_The_King/" rel="noopener nofollow" target="_blank">For The King - Deluxe Edition</a><br/>
-87% Positive on Steam<br/>
-Steam Deck Playable / ProtonDB Platinum (Native Linux)</p>
-<p><a href="https://store.steampowered.com/app/2107090/KitHack_Model_Club/" rel="noopener nofollow" target="_blank">KitHack Model Club</a><br/>
-84% Positive on Steam<br/>
-ProtonDB Silver</p>
-<p><a href="https://store.steampowered.com/app/1472560/I_Am_Fish/" rel="noopener nofollow" target="_blank">I Am Fish</a><br/>
-82% Positive on Steam<br/>
-Steam Deck Verified / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/837880/You_Suck_at_Parking__Complete_Edition/" rel="noopener nofollow" target="_blank">You Suck at Parking - Complete Edition</a><br/>
-88% Positive on Steam<br/>
-Steam Deck Verified / ProtonDB Gold</p>
-<p><a href="https://store.steampowered.com/app/537800/Bomber_Crew/" rel="noopener nofollow" target="_blank">Bomber Crew - Deluxe Edition</a><br/>
-88% Positive on Steam<br/>
-Steam Deck Verified / ProtonDB Platinum (Native Linux)</p>
-<p class="plain-list-title">Plus you also get:</p>
-<ul>
-<li>COUPON 60% OFF For The King II</li>
-<li>COUPON 15% OFF Lawn Mowing Simulator - Heritage Park</li>
-</ul>
-<p>It's £14.28 for the full bundle.</p>
-<p>Check it out on <a href="https://www.humblebundle.com/games/curve-games-care-package" rel="noopener nofollow" target="_blank">the Humble Bundle store</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/09/need-some-games-for-the-week-check-out-the-humble-curve-games-care-package-bundle/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/need-some-games-for-the-week-check-out-the-humble-curve-games-care-package-bundle/</guid>
-      <pubDate>Mon, 08 Sep 2025 10:43:39 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1426627642id27538gol.jpg" type="image/jpeg"/>
-      
-      <category>Game Bundle</category>
-      
-      <category>Humble Store</category>
-      
-      <category>Misc</category>
-      
-      <category>Round-up</category>
-      
-    </item>
-    
-    <item>
-      <title>Keep an eye on Pitchforks and Daggers - a branching court politics drama, where every choice matters</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>This could be a fun adventure full of choices. Pitchforks and Daggers was recently revealed with a first proper trailer.</p>
-<p>Pitchforks and Daggers is a branching court politics drama where every choice matters. A game about making difficult decisions, because of constant consequences. Each choice you make will shape the fate of your rule - so deciding carefully requires a little thought, or just to go and see what chaos you can cause.</p>
-<p>Check out the trailer below:</p>
-<div class="hidden_video" data-video-id="kmngYSbn4Os"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6f804b85259a5f0698c1d146828f7afb.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/kmngYSbn4Os" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Game Highlights:</p>
-<blockquote>
-<ul>
-<li>A deeply branching narrative with multiple endings.</li>
-<li>A web of political intrigue, betrayal, and war.</li>
-<li>High-stakes choices that impact the story.</li>
-<li>Replayability- see the different paths your rule could take.</li>
-</ul>
-<p><strong>Story:</strong></p>
-<p>King Henry has no heir, his beloved wife cannot bear children. Meanwhile, his uncle, King Harold of Ervin, challenges his claim to the throne.</p>
-<p>The kingdom teeters on the brink of war.</p>
-<p>Your choices will shape the fate of Elander. Will you secure your legacy, or lose everything?</p>
-</blockquote>
-<p>It should have Native Linux support at release.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42929/pitchforks-and-daggers/">Pitchforks and Daggers</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2762740/Pitchforks_and_Daggers/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/09/keep-an-eye-on-pitchforks-and-daggers-a-branching-court-politics-drama-where-every-choice-matters/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/09/keep-an-eye-on-pitchforks-and-daggers-a-branching-court-politics-drama-where-every-choice-matters/</guid>
-      <pubDate>Mon, 08 Sep 2025 10:32:31 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1599278846id27537gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Adventure</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Pixel Graphics</category>
       
     </item>
     
