@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2025-11-17 07:31:40.915730</pubDate>
+    <pubDate>2025-11-18 07:31:16.615352</pubDate>
 
     
     <image>
@@ -18,6 +18,750 @@
     </image>
 
     
+    
+    <item>
+      <title>Mesa 25.3.0 released with lots of Linux graphics driver improvements</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Just as the weekend arrived, Mesa 25.3.0 was released as the latest new-feature upgrade for open source Linux graphics drivers.</p>
+<p>Curiously, it was <a href="https://gitlab.freedesktop.org/mesa/mesa/-/tags/mesa-25.3.0" rel="noopener nofollow" target="_blank">tagged</a> and put out on the 14th but as of yet there's been <em>no</em> release announcement to the mailing list, and <em>no</em> news post to notify of the new release on the official Mesa website either. I <em>was</em> waiting on the actual announcements before posting either Friday or Saturday, but it seems to be coming in quite late. So anyway, here we are.<br/>
+<em>Minor update 22:59 UTC: a while after publishing the <a href="https://docs.mesa3d.org/relnotes/25.3.0.html" rel="noopener nofollow" target="_blank">Mesa news post</a> went live.</em></p>
+<p>As usual, you may want to stick with the previous latest bug fix release with <a href="https://www.gamingonlinux.com/2025/11/linux-open-source-graphics-drivers-mesa-25-2-7-released/" rel="noopener" target="_blank">Mesa 25.2.7</a> until the first point release for Mesa 25.3 is out while they deal with any issues that appear. The release calendar is not up to date yet either, but we can usually expect the Mesa 25.3.1 release in around 2 weeks.</p>
+<p>Whenever they actually publish the announcements, we can see from <a href="https://gitlab.freedesktop.org/mesa/mesa/-/blob/523eea18c546b67ce0ed8425f5eb469808fa7523/docs/relnotes/25.3.0.rst" rel="noopener nofollow" target="_blank">GitLab</a> this will be in the release notes:</p>
+<blockquote>
+<h2>New features</h2>
+<ul>
+<li>EGL_EXT_create_context_robustness support on Panfrost V10+</li>
+<li>GL_ARB_robust_buffer_access_behavior, GL_KHR_robust_buffer_access_behavior and GL_KHR_robustness support on Panfrost</li>
+<li>VK_EXT_mutable_descriptor_type on panvk/v9+</li>
+<li>GL_KHR_robustness on v3d</li>
+<li>VK_ARM_shader_core_builtins on panvk</li>
+<li>VK_KHR_shader_untyped_pointers on anv</li>
+<li>cl_ext_immutable_memory_objects</li>
+<li>VK_KHR_video_encode_intra_refresh on radv</li>
+<li>VK_KHR_video_encode_quantization_map on radv</li>
+<li>GL_ATI_meminfo and GL_NVX_gpu_memory_info on r300</li>
+<li>VK_KHR_shader_untyped_pointers on anv and RADV</li>
+<li>VK_KHR_maintenance8 on NVK</li>
+<li>VK_KHR_maintenance9 on NVK</li>
+<li>cl_khr_semaphore on radeonsi and zink</li>
+<li>cl_khr_external_semaphore on radeonsi and zink</li>
+<li>cl_khr_external_semaphore_sync_fd on radeonsi and zink</li>
+<li>GL_NV_shader_atomic_int64 on radeonsi and Panfrost V9+</li>
+<li>VK_KHR_maintenance7 on panvk/v10+</li>
+<li>VK_KHR_maintenance8 on panvk/v10+</li>
+<li>VK_KHR_maintenance9 on panvk</li>
+<li>VK_AMD_buffer_marker on NVK</li>
+<li>VK_EXT_ycbcr_2plane_444_formats on radv</li>
+<li>Removed VDPAU frontend</li>
+<li>GL_NV_representative_fragment_test on zink</li>
+<li>VK_KHR_maintenance9 on HoneyKrisp</li>
+<li>sparseBinding on panvk/v10+</li>
+<li>sparseResidencyBuffer on panvk/v10+</li>
+<li>Vulkan 1.2 on pvr</li>
+<li>VK_KHR_create_renderpass2 on pvr</li>
+<li>VK_KHR_dedicated_allocation on pvr</li>
+<li>VK_KHR_depth_stencil_resolve on pvr</li>
+<li>VK_KHR_descriptor_update_template on pvr</li>
+<li>VK_KHR_imageless_framebuffer on pvr</li>
+<li>VK_KHR_line_rasterization on pvr</li>
+<li>VK_KHR_maintenance1 on pvr</li>
+<li>VK_KHR_maintenance2 on pvr</li>
+<li>VK_KHR_maintenance3 on pvr</li>
+<li>VK_KHR_multiview on pvr</li>
+<li>VK_KHR_robustness2 on pvr</li>
+<li>VK_KHR_separate_depth_stencil_layouts on pvr</li>
+<li>VK_KHR_shader_draw_parameters on pvr</li>
+<li>VK_KHR_shader_float_controls on pvr</li>
+<li>VK_KHR_shader_subgroup_extended_types on pvr</li>
+<li>VK_KHR_spirv_1_4 on pvr</li>
+<li>VK_KHR_shader_terminate_invocation on pvr</li>
+<li>VK_KHR_swapchain_mutable_format on pvr</li>
+<li>VK_KHR_vertex_attribute_divisor on pvr</li>
+<li>VK_EXT_border_color_swizzle on pvr</li>
+<li>VK_EXT_color_write_enable on pvr</li>
+<li>VK_EXT_custom_border_color on pvr</li>
+<li>VK_EXT_depth_clamp_zero_one on pvr</li>
+<li>VK_EXT_depth_clip_enable on pvr</li>
+<li>VK_EXT_extended_dynamic_state on pvr</li>
+<li>VK_EXT_extended_dynamic_state2 on pvr</li>
+<li>VK_EXT_extended_dynamic_state3 on pvr</li>
+<li>VK_EXT_image_2d_view_of_3d on pvr</li>
+<li>VK_EXT_line_rasterization on pvr</li>
+<li>VK_EXT_physical_device_drm on pvr</li>
+<li>VK_EXT_provoking_vertex on pvr</li>
+<li>VK_EXT_robustness2 on pvr</li>
+<li>VK_EXT_queue_family_foreign on pvr</li>
+<li>VK_EXT_separate_stencil_usage on pvr</li>
+<li>VK_EXT_shader_demote_to_helper_invocation on pvr</li>
+<li>VK_EXT_vertex_attribute_divisor on pvr</li>
+<li>imageCubeArray on pvr</li>
+<li>independentBlend on pvr</li>
+<li>sampleRateShading on pvr</li>
+<li>logicOp on pvr</li>
+<li>drawIndirectFirstInstance on pvr</li>
+<li>alphaToOne on pvr</li>
+<li>samplerAnisotropy on pvr</li>
+<li>shaderStorageImageExtendedFormats on pvr</li>
+<li>shaderStorageImageReadWithoutFormat on pvr</li>
+<li>shaderStorageImageWriteWithoutFormat on pvr</li>
+<li>shaderClipDistance on pvr</li>
+<li>shaderCullDistance on pvr</li>
+<li>VK_EXT_zero_initialize_device_memory on pvr</li>
+<li>VK_KHR_sampler_mirror_clamp_to_edge on pvr</li>
+<li>VK_KHR_shader_non_semantic_info on pvr</li>
+<li>VK_KHR_shader_relaxed_extended_instruction on pvr</li>
+<li>VK_EXT_shader_replicated_composites on pvr</li>
+<li>VK_KHR_device_group_creation on pvr</li>
+<li>VK_KHR_map_memory2 on pvr</li>
+<li>VK_EXT_map_memory_placed on pvr</li>
+<li>VK_KHR_device_group on pvr</li>
+<li>VK_KHR_buffer_device_address on pvr</li>
+<li>GL_EXT_mesh_shader on zink</li>
+<li>VK_KHR_wayland_surface on pvr</li>
+<li>VK_NVX_image_view_handle on NVK</li>
+</ul>
+<h2>Bug fixes</h2>
+<ul>
+<li>amdgpu: ring gfx_0.0.0 timeout, in vr when opening apps</li>
+<li>zink/radv: new cts fails on rdna3</li>
+<li>Penumbra: Overture OpenGL game has graphical glitch for ice</li>
+<li>mesa: regression caused by hash_table sizing</li>
+<li>RustiCL: fence fd leak on CL-GL interop</li>
+<li>Uniform variable not updated correctly with shared contexts</li>
+<li>[radv] Borderlands 4 triggers a consistent GPU page fault on RDNA2</li>
+<li>radv: RE4 Separate Ways DLC hangs RDNA2 GPU</li>
+<li>ACO: fix a hazard when the number of attributes loaded/consumed don't match with VS prologs</li>
+<li>ACO: loading 64-bit attributes can override the fetch index in VS prologs</li>
+<li>[RADV][bisected][regression] - Doom: The Dark Ages (3017860) - Square flickering artifacts around Hebeth</li>
+<li>nvk, nak: Broken icons in ENDLESS Legend 2 on a RTX 4080</li>
+<li>LLVMPipe's `VkPhysicalDeviceAccelerationStructurePropertiesKHR::maxPrimitiveCount` is lower than Vulkan requires.</li>
+<li>asahi: DMABuf import of multi-plane YCbCr (NV12 from ISP) not renderer correctly</li>
+<li>asahi: DMABuf import of multi-plane YCbCr (NV12 from ISP) not renderer correctly</li>
+<li>brw: Gfx9 sampler messages violate r127 rule</li>
+<li>radv: No Man's Sky XESS page fault GPU reset</li>
+<li>r600/sfn: Assertion `cir.alu_vec.empty()` failed</li>
+<li>radv: Hit assert when over maxFragmentDualSrcAttachments but vkCmdSetColorBlendEnableEXT is set to false</li>
+<li>[ANV][PTL][DG2] Flickering textures in Assassin's Creed Valhalla benchmark</li>
+<li>ADL, ANV: Wuthering Waves leads to gpu reset on Alder Lake iGPU</li>
+<li>RADV: ANGLE deqp regression</li>
+<li>[ANV][EXT_debug_utils] descriptor set object_name leak when not calling vkFreeDescriptorSets</li>
+<li>nvk: CTS failures in sample_locations_ext.verify_interpolation.samples_1</li>
+<li>[regression] [bisected] RuneLite GPU Experimental - GPU crash</li>
+<li>Missing definition of __builtin_ia32_clflush since "util/cache_ops: Add some cache flush helpers"</li>
+<li>LLVM instruction selection compilation error</li>
+<li>v3d: green screen when rpivid hevc decoder is used</li>
+<li>[radv] Stuttering with latest mesa git (21 sept) on radv/6900 XT</li>
+<li>BFN with UW sources gets munged by lower regioning</li>
+<li>zink: chromium flickers in youtube when fullscreening videos</li>
+<li>r600: Attribute stride updates may be skipped</li>
+<li>[ANV][TGL]: test_buffer_feedback_instructions_sm51 on vkd3d-proton crashes</li>
+<li>some video file are not shown in mpv when using vaapi hardware decoding on amd apu</li>
+<li>[ANV][PTL] Indiana Jones and the Great Circle - GPU Hang</li>
+<li>[ANV] [PTL] Hades 2 game freeze on start of gameplay</li>
+<li>[anv][ptl] GPU hang in Dying Light dx12</li>
+<li>radv: Only look at statically used descriptors.</li>
+<li>RADV: Consider always using the global bo list</li>
+<li>anv: Age of Wonders 4 corruption on a Arc b580</li>
+<li>nvk: Incorrect rendering in Baldur's Gate 3 shadows starting with e6dae6ef5fc134f9ed5dd93b1a462084bc3aadfd</li>
+<li>nvk commets cause problems with kepler</li>
+<li>anv: Assert in brew when descriptor indexing with modulo</li>
+<li>tu: VK_EXT_zero_initialize_device_memory</li>
+<li>ResourceTracker.cpp:40:10: fatal error: perfetto/tracing.h: No such file or directory</li>
+<li>A bunch of CTS tests are failing on Gfx12.0 trying to use the blitter with TILE_X</li>
+<li>radv: meta pipeline cache appears to be broken</li>
+<li>mesa:amd+compiler / aco_tests assembler.mubuf/gfx11 failure with llvm-21.1.2</li>
+<li>[ANV] Bunch of tests in dEQP-VK.pipeline.*.render_to_image.*3d.*2d_compatible failing on gen9/11</li>
+<li>elk: segfault in lower_txd_cb</li>
+<li>bisected: Regression in EXT_shader_framebuffer_fetch_non_coherent test after !37527</li>
+<li>VK_QUERY_RESULT_WAIT_BIT does not work for VK_QUERY_TYPE_VIDEO_ENCODE_FEEDBACK_KHR</li>
+<li>a618-traces often times out</li>
+<li>bisected build failure in clc_helpers.ccp with llvm 22</li>
+<li>anv: GL mesh tests crash/fail on zink with shader object</li>
+<li>25.2.1 fails to build on risc-v with llvm 21</li>
+<li>RISC-V builds with llvmpipe against LLVM 21 fail due to API changes</li>
+<li>Confidential issue #14013</li>
+<li>implicit-function-declaration error when compiling mesa 25.2.0 devel</li>
+<li>vl_stubs.c:105:1: error: conflicting types for 'vl_mpg12_bs_decode'</li>
+<li>[ANV][LNL] - FINAL FANTASY XVI (2515020) - Title crashes to Desktop immediately following the splash card.</li>
+<li>Segfault in init_source at ../src/gallium/auxiliary/vl/vl_idct.c:597 when trying to play DVD on r600</li>
+<li>nvk: Failure in vkd3d-proton ibfe tests</li>
+<li>nvk, nak: NAK panic in Call of the Wild: The Angler on RTX 4080</li>
+<li>Simple External Semaphore test hangs in vk_sync_wait</li>
+<li>nir_builtin_builder.h:108:43: error: 'M_LOG2E' undeclared</li>
+<li>regression: windows: msys2 - undeclared M_PI and M_LOG2E probably since !37289 21b8e7604ba51f90682adeff650fc866c71c57f2</li>
+<li>dEQP-VK.spirv_assembly.instruction.compute.float_controls.fp32.input_args.reflect_denorm_flush_to_zero regression on nvk</li>
+<li>mesa-25.2.3/src/gallium/drivers/radeonsi/radeon_uvd.c:658: array index used before check ?</li>
+<li>lp_test_arit.c:200:14: error: static declaration of ‘rsqrtf’ follows non-static declaration</li>
+<li>build failure with glibc 2.42</li>
+<li>[bisected] 44aaf884254 regressing FSR vulkan cts tests on PTL</li>
+<li>[bisected] f416a529 "egl: refine dma buf export to support multi plane" results in piglit crash</li>
+<li>Crash on game Elite Dangerous at 0% planetary generation, on Tigerlake+ Iris Xe and Arc GPUs.</li>
+<li>regression;bisected;amd: 0a266f0256025d271945adb3478fc2c1291d4c79 leads pgadmin4-qt to crashes</li>
+<li>segfault with mesa &gt;= 24.1.0 on nvidia</li>
+<li>segfault through lavapipe</li>
+<li>Confidential issue #13807</li>
+<li>[bisected] 25b97a mesa/st: mark internal texture map calls as UNSYNCHRONIZED breaks r600</li>
+<li>Gallium: Segfault while trying to compile a shader with differing UBO contents in fragment and vertex stage - With reproduction case</li>
+<li>aco: generate wrong code when gl_DrawID is used by primitive indices in mesh shader</li>
+<li>Regression since mesa 25.2.0: applications waiting for dGPU to start</li>
+<li>ci: libX11 upgrade tracker</li>
+<li>anv: Regression in dEQP-VK.graphicsfuzz.cov-nested-loops-set-struct-data-verify-in-function</li>
+<li>brw: regression crash on dEQP-VK.graphicsfuzz.cov-dfdx-dfdy-after-nested-loops</li>
+<li>a618-traces often times out</li>
+<li>ci: crosvm dumping log spam from host gl when the job fails</li>
+<li>panfrost: assertion fail in pan_image_get_wsi_row_pitch</li>
+<li>virgl: guest memory leak with qemu + virtio-gpu-gl</li>
+<li>[ANV][LNL] - Horizon Forbidden West™ Complete Edition (2420110) - Orbicular artifacts near heads of machines (wildlife).</li>
+<li>iris: Assertion failures in piglit tests on all platforms</li>
+<li>[radv] [Regression) Shadow of the Tomb Raider - flickering/missing textures</li>
+<li>Minecraft 1.12.2 visual artifacts when running on zink/radv</li>
+<li>[RADV][VEGA 64][bisected] Cyberpunk 2077 - Massive performance regression due to <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/37025/diffs?commit_id=d7f401c2bbadd192dbbcaaeede2805bad71f6193" rel="noopener nofollow" target="_blank">https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/37025/diffs?commit_id=d7f401c2bbadd192dbbcaaeede2805bad71f6193</a></li>
+<li>[PTL] hitting assert when starting Xorg</li>
+<li>GZDoom 4.11/Raze 1.7 exhibit very high memory usage during shader compilation under OpenGL</li>
+<li>anv: Assertion failure replaying q2rtx fossil</li>
+<li>[ANV] [REGRESSION] PCSX2/Midnight Club 3 crashes with VK_ERROR_DEVICE_LOST on Mesa 25.0.7</li>
+<li>Hollow Knight Silksong segfaults with zink on radv</li>
+<li>zink: crash in KHR-GL46.framebuffer_blit.scissor_blit</li>
+<li>Request: RADV support for VK_EXT_ycbcr_2plane_444_formats..</li>
+<li>mesa: state parameters duplicated</li>
+<li>ARB_vertex_program and ARB_fragment_program are broken</li>
+<li>d3d10umd fails to create basic pixel shader, outputs "unknown TGSI opcode: RET"</li>
+<li>turnip: FDM failures with forcebin</li>
+<li>a7xx_state_location</li>
+<li>[ANV] Assertion with VVL GPU-AV around robust UBO</li>
+<li>radv: avoid advertising unsupported global queue priorities for the client</li>
+<li>crocus: SIGSEGV crash at pbo compressed teximage</li>
+<li>nvk: test_conditional_rendering fails on vkd3d-proton</li>
+<li>Segfault in x11_xlib_display_is_thread_safe</li>
+<li>[ANV][BMG] Witcher 3 ray tracing freeze on a Arc b580</li>
+<li>[ANV][BMG] Witcher 3 ray tracing freeze on a Arc b580</li>
+<li>[ANV][BMG] Witcher 3 ray tracing freeze on a Arc b580</li>
+<li>anv: optimize utrace overhead from bo memset</li>
+<li>radv: watching vp9 encoded video with vulkan hwdecode result in artifacts</li>
+<li>ci: zink-venus-lavapipe errors</li>
+<li>[ANV][DG2][BMG] 3DMark Solar Bay Misrendering</li>
+<li>lavapipe defaults to memfd when multiple export types are requested</li>
+<li>anv: Simple vulkan compute shader causes Intel GPU hang due to excessive loop unrolling</li>
+<li>INTEL_DEBUG=spill_fs regression</li>
+<li>NIR validation failed after nir_lower_io in DOOM The Dark Ages</li>
+<li>radv: NIR validation failed after nir_shrink_vec_array_vars in ../src/amd/vulkan/radv_shader.c:171 (bisected)</li>
+<li>Wayland EGL missing pbuffer surface support</li>
+<li>missing sparse synchronization in zink</li>
+<li>ACO validation failed in DOOM: The Dark Ages - Undef operand to `p_parallelcopy`</li>
+<li>ACO validation failure in DOOM: The Dark Ages Shader</li>
+<li>Dragon Age Veilguard / Ability Wheel Targeting Visual Distortion</li>
+<li>[AMD] glTexturePageCommitmentEXT triggers an error if level is higher than 0</li>
+<li>deqp-egl multithread link flakes</li>
+<li>Ratchet and Clank "[gfxhub] page fault" Mesa25.3</li>
+<li>[RADV] Support for VK_KHR_video_encode_quantization_map</li>
+<li>System Crashes when starting VR on rx 9070 (xt)</li>
+<li>[Build][32bit] Meson does not find libdisplay-info in 32-bit builds</li>
+<li>freedreno,decode: Lua environment picks up the A6XX register offset instead of A7XX</li>
+<li>Confidential issue #13351</li>
+<li>d3d10umd: Build regression on 25.2.0-rc1</li>
+<li>turnip: LRZ bug with TU_DEBUG=gmem,forcebin</li>
+<li>nvk/nak regression: memory_model.message_passing fails on KeplerA</li>
+<li>[ANV] dEQP-VK.api.copy_and_blit.copy_commands2.image_to_buffer_transfer_queue.2d_images.whole_r32g32b32_uint_linear and possibly others asserts on LNL</li>
+<li>nir: validation failed after nir_remove_dead_variables in 3DMark Solar Bay</li>
+<li>Build dependency on intel_wa.h missing in Intel vulkan driver</li>
+<li>Missing polygons/vertices in CS2 on BMG</li>
+<li>`vn_ring`: use-after-release crash after `vn_ring_destroy` on Virtio-Vulkan</li>
+<li>venus: vkmark --winsys headless segfault (regression)</li>
+<li>Vulkan headless WSI crashes when initializing swapchain on Asahi Linux running Apple M1 Max</li>
+<li>lavapipe: Crashes on simple Descriptor Buffer test</li>
+<li>make zink-radv-navi31-valve a pre-merge job</li>
+<li>[RADV] Graphical glitches in Ghost of Tsushima on Polaris</li>
+<li>radv: RT regressions</li>
+<li>macOS: use of undeclared identifier 'free_zombie_glx_drawable'</li>
+<li>macOS: Undefined symbols "_pipe_loader_drm_probe_fd", referenced from: _dri_get_drm_device_info in libdri.a[7](dri_util.c.o)</li>
+<li>Segfault when activating DPMS on i915 hardware</li>
+<li>RADV caps reported sparse address size at 4 GiB</li>
+<li>nvk Blackwell support</li>
+<li>hk: framerate limited/locked to 23 in RDR2 ingame menus (Vulkan)</li>
+<li>i915: multiple dEQP tests asserts at nir_opt_group_loads.c:75: get_load_resource: Assertion `!"" "tex instr should have a resource"' failed.</li>
+<li>tu: VK_KHR_fragment_shading_rate broken when HelperInvocation is used</li>
+<li>radv: regression: commit a7291074c800 break lighting in Like a Dragon: Infinite Wealth</li>
+<li>[bisected regression] Latest mesa-git keeps /dev/dri/renderD129 always open with new applications even though they don't use it at all</li>
+<li>spec@arb_shader_storage_buffer_object@max-ssbo-size@fs stack overflow since cb558b2b88c2</li>
+<li>anv: enable compression on ASTC LDR emulation surface</li>
+<li>High GPU usage when using Zink for eglgears_x11 (on X11)</li>
+<li>Segfault in X11 image acquire code with timeout=0</li>
+<li>v3dv: regression in vkAllocateMemory importing gbm bo</li>
+<li>Crash from iris_set_sampler_views in chromium/chrome with accelerated video decoding</li>
+<li>rusticl: aco: LLVM outperforms ACO in clpeak for `short` benchmarks on hawaii</li>
+<li>rusticl: aco: Performance regression in clpeak for char benchmarks on hawaii</li>
+<li>nir: Deprecate NIR_PASS_V</li>
+<li>zink on tu assertion failing doing shader-db runs.</li>
+<li>Race condition with timeline semaphores</li>
+<li>nir_algebraic silently ignores operand conditions in some cases</li>
+<li>lavapipe: valgrind triggers errors with CTS unit tests when creating a vulkan device</li>
+<li>radv: gfx12 RGP captures don't support instruction timings for graphics pipelines</li>
+<li>xe2: DMA Buffer exported modifier is incorrect</li>
+<li>cleanup CI kernel patches</li>
+<li>radv: more glcts fails KHR-GL46.shading_language_420pack.initializer_list_initializer*</li>
+<li>radv: regression in KHR-GL46.gpu_shader5_gl.float_encoding</li>
+<li>!36097 breaks Xwayland (&amp; others)</li>
+<li>GPU process crash via WebGPU shader - heap-buffer-overflow in Mesa build_interference_graph</li>
+<li>GPU process crash via WebGPU shader - heap-buffer-overflow in Mesa build_interference_graph</li>
+<li>radeonsi: Broken VAAPI video color conversion</li>
+<li>Gallium HUD broken since !34054</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/332298041763402155gol1.jpg"/><br/>
+<em>Pictured - Doom: The Dark Ages</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/11/mesa-25-3-0-released-with-lots-of-linux-graphics-driver-improvements/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/11/mesa-25-3-0-released-with-lots-of-linux-graphics-driver-improvements/</guid>
+      <pubDate>Mon, 17 Nov 2025 17:56:22 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1483724276id28020gol.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Mesa</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+    </item>
+    
+    <item>
+      <title>VKD3D-Proton 3.0 brings FSR4 support, shader backend rewrite, lots of bug fixes and performance upgrades</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>VKD3D-Proton is one of the secret ingredients for Proton to make so many Windows games work well on Linux / SteamOS with a new 3.0 release out now.</p>
+<p>You don't need to actually do anything to upgrade, as Valve pull in VKD3D-Proton changes for Proton versions themselves that you'll see in future Proton release updates. However, if you wish to try it out in the current version of Proton <a href="https://www.gamingonlinux.com/guides/view/how-to-update-dxvk-and-vkd3d-proton-in-proton-and-ge-proton/" rel="noopener" target="_blank">we have a GamingOnLinux guide</a> to tell you what to do.</p>
+<p>In VKD3D-Proton 3.0 there's a a major DXBC shader backend rewrite that brings improvements to the D3D12 mode in various games, resulting in some games that were previously broken being fixed. Nice! They noted that "Some recently released DXBC based games also only work on the new path" and that DXVK shares the same backend, so it has been tested quite heavily.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/497785671763397391gol1.jpg"/><br/>
+<em>Pictured - Mafia: Definitive Edition</em></p>
+<p>There's also the exciting FSR4 support added in which will even work on older AMD GPUs, although the default build of VKD3D-Proton only exposes the feature for RDNA4+ since the "quite hacky emulation path" for older GPUs comes with a "significant performance cost (and some cost to theoretical correctness)". You have to build from source to get the emulation path, as the plan is to "be able to ship FSR4 in a more proper way in Proton".</p>
+<p>Various additions to D3D12 feature support, a whole bunch of performance improvements, along with lots and lots of game fixes too.</p>
+<details class="spoiler_container"><summary class="spoiler_header">Full changelog, click me</summary>
+<div class="spoiler-content">
+<div class="markdown-body my-3" data-pjax="true" data-test-selector="body-content" data-view-component="true">
+<p>A new major release, yay!<br/>
+A few milestones have been reached over the last year, warranting a new major bump.<br/>
+It's been quite a while since the last release due to new things coming up constantly.<br/>
+These tags are mostly arbitrary anyway, and tend to be done when islands of calm and stability emerge.</p>
+<h3>Major items</h3>
+<h4>DXBC shader backend rewrite</h4>
+<p><a class="notranslate user-mention" href="https://github.com/doitsujin" rel="noopener nofollow" target="_blank">@doitsujin</a> rewrote the entire DXBC backend, replacing our legacy vkd3d-shader path.<br/>
+DXVK and vkd3d-proton now share the same DXBC frontend which gives us clean,<br/>
+"readable" (as readable as DXBC can be) and lean IR to work with.<br/>
+dxil-spirv standalone project now supports DXBC as well as a result.</p>
+<p>Lots of games which used to be completely broken before due to bugs and missing features<br/>
+in the legacy vkd3d-shader backend are now fixed. E.g. Red Dead Redemption 2 runs just fine now in D3D12 mode.<br/>
+Some recently released DXBC based games also only work on the new path.<br/>
+The amount of regressions found the last months in DXBC games has been very minor,<br/>
+but it's possible there are still bugs in this area.<br/>
+However, given that DXVK uses it now as well, it's been battle tested quite extensively already.</p>
+<h4>FSR4 support</h4>
+<p>We added support for AGS WMMA intrinsics through <code class="inline-code">VK_KHR_cooperative_matrix</code> and <code class="inline-code">VK_KHR_shader_float8</code>,<br/>
+which is enough to support FSR4.<br/>
+Note that these shaders are tightly coded for AMD GPUs with some implementation defined behavior<br/>
+(particularly around matrix layouts), and they will not necessarily work on other GPU vendors.</p>
+<p>There is also a quite hacky emulation path of this which relies on int8 and float16 cooperative matrix support,<br/>
+which can run on older GPUs at significant performance cost (and some cost to theoretical correctness).</p>
+<p>Note that the default "official" build of vkd3d-proton only exposes this feature when the native<br/>
+<code class="inline-code">VK_KHR_shader_float8</code> is properly supported, i.e. RDNA4+ only.<br/>
+The emulation path is available when building from source with the appropriate build flags.<br/>
+The decision to not include this emulation path by default is over my pay grade.<br/>
+The aim is to be able to ship FSR4 in a more proper way in Proton.</p>
+<h3>Features</h3>
+<p>We've more or less caught up on the things we can feasibly implement,<br/>
+so there isn't much exciting stuff happening on the feature front.</p>
+<ul>
+<li>Implemented experimental support for D3D12 work graphs. No real-world content ships this yet.<br/>
+	This implementation is far from complete,<br/>
+	but it works on "any" GPU since we emulate the feature with normal compute shaders.<br/>
+	Funnily enough, the performance of this emulation can massively outperform native driver implementations of the feature<br/>
+	in many scenarios we've tested (at the cost of some extra VRAM usage).<br/>
+	See <code class="inline-code">docs/</code> for more details on implementation and some performance numbers.</li>
+<li>Expose <code class="inline-code">AdvancedTextureOpsSupported</code> by default from SM 6.7 if <code class="inline-code">VK_KHR_maintenance8</code> is supported.</li>
+<li>Expose the recently added sparse TIER_4.</li>
+<li>Bump exposed D3D12SDKVersion to latest 618.</li>
+<li>Experimentally expose support for opacity micromaps.<br/>
+	There are some details which aren't quite compatible with the D3D12 API, but some basic demo content is working fine.</li>
+<li>Add support for AMD_anti_lag when exposed. The current implementation does not take frame-gen into account.</li>
+<li>Implement support for tight alignment from recent AgilitySDK.</li>
+<li>Add support for shared resource path on upstream Wine.</li>
+</ul>
+<h3>Performance</h3>
+<ul>
+<li>Overhaul the texture copy batching situation.<br/>
+	The new batching logic should be able to improve performance in many more cases than before.
+	<ul>
+<li>Implemented support for <code class="inline-code">VK_KHR_unified_image_layouts</code>.<br/>
+		Image copy batching in particular can take advantage of this to avoid a lot of unnecessary barriers.</li>
+</ul>
+</li>
+<li>Removed manual clear workaround on newer (6.15.9+) kernels on AMD, where an old kernel regression was finally fixed.<br/>
+	Kernels older than 6.10 are also not affected by this workaround.</li>
+<li>Use push descriptor path on Qualcomm GPUs over BDA for speed.</li>
+<li>Improve handling of GDeflate when decompression extension is not available.<br/>
+	We now ship our own fallback shader in GLSL instead of the more awkward HLSL shader that dstorage ships.</li>
+<li>Bump DGC scratch size on NVIDIA. Should avoid some massive perf drops in Halo Infinite on NVIDIA.</li>
+<li>Add performance optimization for The Last of Us Part 1 to prefer 2D tiling on 3D images.<br/>
+	Requires <a href="https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/38084" rel="noopener nofollow" target="_blank">an update to Mesa</a> as well to get the proper effect.</li>
+<li>Handle depth/stencil &lt;-&gt; color image copies better when <code class="inline-code">VK_KHR_maintenance8</code> is supported.</li>
+<li>Make use of <code class="inline-code">VK_EXT_zero_initialize_device_memory</code> to avoid manual clears on allocation.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>Emit render pass barriers as expected on tiled GPUs. Fixes misc rendering bugs reported on e.g. Turnip.
+	<ul>
+<li>For performance reasons, we deliberately skirt the spec a bit on desktop GPUs.</li>
+</ul>
+</li>
+<li>Fixed a bunch of minor correctness problems exposed by new Vulkan-ValidationLayers.</li>
+<li>Adjust how <code class="inline-code">PointSamplingAddressesNeverRoundUp</code> is reported to match recent driver behaviors.</li>
+<li>Fix overflow bugs in massive (&gt; 4GiB) sparse resource handling.</li>
+<li>Fix reporting of some esoteric format properties to better match native drivers.</li>
+<li>Fix handling of NULL acceleration structure descriptors.</li>
+<li>Fix some texturing bugs in Helldivers II on NVIDIA.</li>
+<li>Fix some bugs with memory type handling on very old NVIDIA GPUs.</li>
+<li>Fix bug when pixel shader includes root signature.</li>
+<li>Make ClearUAV barrier insertion the default now.<br/>
+	Too many games screw this up, and D3D12 drivers seem to do it by default.</li>
+<li>Fix shared fences when initial value is not 0. Fixes some Star Citizen issues.</li>
+<li>Fix rare deadlock scenario in Ninja Gaiden 4.<br/>
+	Fixes some long-standing issues with how we deal with fence rewinds.</li>
+<li>Fix some long-standing issues with how we deal with placed MSAA resources and alignment.</li>
+<li>Make sure we don't clear memory of imported resources.<br/>
+	This doesn't fix any known games, but you never know :V</li>
+<li>Improve correctness for many odd GS/HS/DS corner cases with primitive types and API validation.</li>
+<li>Fixes crashes when index buffer SizeInBytes = 0, but VA was invalid.<br/>
+	Seen in some Saber Interactive games.</li>
+<li>Fixes some potential deadlocks in VR interop APIs when multiple threads attempt to acquire Vulkan queue.</li>
+<li>Fixes 16-bit aligned structured buffer strides. Not observed in any real content, but you never know!</li>
+</ul>
+<h3>Workarounds</h3>
+<ul>
+<li>Add FF VII rebirth sync bugs workarounds. Fixes some rare GPU hangs.</li>
+<li>Add misc AMD workarounds for Monster Hunter Wilds caused by bugged hardware around sparse SMEM.
+	<ul>
+<li>A proper hardware workaround in RADV is still pending.</li>
+</ul>
+</li>
+<li>Workaround some Starfield bugs around <code class="inline-code">NonUniformResourceIndex</code> use.</li>
+<li>Add performance workarounds for extremely large tessellation factors used in misc new Koei Tecmo games.</li>
+<li>Add Wreckfest 2 workarounds for illegal texture placement aliasing. Fixes some broken textures.</li>
+<li>Add barrier in Satisfactory that game missed. Fixes some corrupt rendering especially on AMD.</li>
+<li>Ignore NOT_CLEARED flags on allocation in all games now. Native drivers seem to always clear regardless of the flag,<br/>
+	and e.g. Street Fighter 6 relies on NOT_CLEARED memory to actually be cleared :(</li>
+<li>Workaround some issues with RGB9E5 and alpha write masks observed in Ninja Gaiden 4.</li>
+<li>Add missing barrier in Death Stranding (the older build, not Director's Cut).</li>
+<li>Add missing barrier in Wuthering Waves.</li>
+<li>Workaround bugged uninitialized loop variable in Dune MMO.</li>
+<li>Disable UAV compression in Spider-Man Remastered. Fixes some weird RT issues on RDNA2.</li>
+<li>Add Root CBV robustness workaround for Gray Zone Warfare.</li>
+<li>Disables color compression in Rise of the Tomb Raider. Fixes some glitches due to game bug on AMD.</li>
+<li>Workaround some bugs in Port Royal benchmark.</li>
+<li>Workaround Mafia: Definitive Edition hanging GPU when using FSR on startup due to use-after-free.
+	<ul>
+<li>The workaround applies to all uses of FSR. Plausibly workaround a hang in MGS: Delta as well, but not confirmed it was this bug.</li>
+</ul>
+</li>
+<li>Workaround Control RT path occasionally observing NaNs due to bad normalize() patterns.</li>
+<li>Workaround Final Fantasy Tactics Ivalice Chronicles illegally using dynamically indexed root constants.</li>
+</ul>
+<h3>Misc</h3>
+<ul>
+<li>Added a lot more debug instrumentation as usual.
+	<ul>
+<li>Not user facing, so omitting details.</li>
+</ul>
+</li>
+<li>Make it a bit easier to use vkd3d-proton in Linux-native projects.</li>
+<li>Remove <code class="inline-code">DXVK_FRAME_RATE</code> to align with DXVK's removal. Only <code class="inline-code">VKD3D_FRAME_RATE</code> remains (at least for now).</li>
+</ul>
+</div>
+</div>
+</details>
+<p>Source: <a href="https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v3.0" rel="noopener nofollow" target="_blank">GitHub</a></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/11/vkd3d-proton-3-0-brings-fsr4-support-shader-backend-rewrite-lots-of-bug-fixes-and-performance-upgrades/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/11/vkd3d-proton-3-0-brings-fsr4-support-shader-backend-rewrite-lots-of-bug-fixes-and-performance-upgrades/</guid>
+      <pubDate>Mon, 17 Nov 2025 16:39:21 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/383516607id28019gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Forestrike is a martial arts roguelite like no other where you see the future</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Using the power of Foresight, in the 2D martial arts roguelite Forestrike you can see how each fight will go down, and it's really damn good. <em>Note: a key was provided to GamingOnLinux.</em></p>
+<p>A beat 'em up fighting game like no other that's for sure, and one of this year's absolute gems. There's no sense in button-bashing here, and that's firmly not the point of it. While you can just jump directly into every single battle, the game is built around your Foresight technique. This is where you enter a special state, where you can test out all your moves, and see what each enemy is going to do. You can do this as many times as you like in each fight. You're supposed to use the ability to explore every possible way to defeat the enemies, and find the perfect solution to each battle.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12849105041763396459gol1.jpg"/></p>
+<p>Nice narrative to go along with it too. Set in a country that was once firmly ruled by a great Emperor, but now an evil Admiral has spread their influence far and wide to pretty much take over. Reaching even as far as your one of your old masters that betrays you. It's up to you, Yu, to try and rescue the Emperor from the Admiral's influence — one fight at a time.</p>
+<p>The fighting system is the clear star of the show here, but the narrative elements do wonderfully break things up so that everything doesn't feel so samey which I find a lot of beat 'em ups end up like. Good to have a bit of a break to let your mind rest between a lot of crazy fights.</p>
+<p>The interesting thing is that just because you <em>know</em> what's going to happen with Foresight, it <em>doesn't</em> make the game easy though. It's still a thorough challenge to not only pick the right moves to deal with each individual enemy with their different behaviours coming at you, but getting all your own timings right can still lead to a few bloody noses on your end.</p>
+<p>I've played tons of fighting games, beat 'em ups and all sorts in between and can't remember a time where they've truly tried to punch through the genre to make something as different as this is. Forestrike is just so incredibly inventive. Fighting games rely on you having a specific amount of health, giving you a limited amount of attempts - but here it just feels so <em>different</em>. You <em>still</em> have your health limit and you <em>need</em> to watch it closely, but the experimentation you can do endlessly on every single fight is quite amazing.</p>
+<p><em>That said, I suppose Shogun Showdown is probably one of the closest to it in terms of some of the ideas. However, that's turn-based, this is real-time and they're still very different overall.</em></p>
+<p>You could do 10 different attempts in Foresight, and still manage to screw it up when you decide it's time for the real thing. Some of the fights even early on can be pretty brutal, and that challenge might actually put a few players off. It's definitely one for people who appreciate the technical side of the challenge. That experimentation is key though, I've seen so many fights in it go completely differently by changing up one specific thing with either what ability I use, or timing something differently and the results can be hilariously unexpected sometimes.</p>
+<div class="hidden_video" data-video-id="ZCbJLFTjgbo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/cf49edfe6292afc4b95157c2ec949f58.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/ZCbJLFTjgbo" target="_blank">See video</a></div></div>
+<p>Another fun addition is the fight re-cap you get, so you can study how the fight went down after beating it. And here, you can grab a special code to share with others, so they can then try the exact same fight you had. Very cool! Absolutely love features like that.</p>
+<p>Add to that the rogue-lite side of it, with you picking from random upgrades for your fighter as you go through - each run can be quite different. There's some interesting abilities there like healing up if you manage to get an enemy to hit another enemy that defeats them, poking them in the eyes to stun them and turn them around once per fight and more. You also pick what fights you engage in using a node-based map system of progressing through the game, with each fight having their own different set of enemies and rewards for you.</p>
+<p>It did bug me that some of the nodes on the map had you fight <em>without</em> the Foresight ability, which really is the key highlight of the entire game. While yes, it can give you a nice reward, the map is not exactly big and you don't get many movement choices. If they added just one more lane to the node map, this probably would have been a lot better. Just, a few more options for the progression and it would have been perfection there.</p>
+<p>The map you progress through also has shops to visit where you can give up certain techniques you've picked, to form a better one. And you can also buy health along with various trinkets to help your run. So there's additional ways here that your run can be different each time too.</p>
+<p>The way you build up your fighter through it feels like it leans a little more into deck-builders, or day I say it, survivor-likes. Eventually once you progress through it, you also get to do a run with a few different masters backing you. Each of them come with their own special moves for you.</p>
+<p>With all parts together, it's quite brilliant. Loved it. A really fresh feeling spin on beat 'em styled fighting games, with great presentation and it really will give your brain a right-hook to the pleasure centre. Probably one of my favourite releases of 2025.</p>
+<p>Worked without issues on Desktop Linux (Kubuntu 25.04) with Proton 10. Valve also rated it Steam Deck Playable, as it may have some small text.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43609/forestrike/">Forestrike</a></strong> | Release Date: 17th November 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2325920/Forestrike/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/11/forestrike-is-a-martial-arts-roguelite-like-no-other-where-you-see-the-future/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/11/forestrike-is-a-martial-arts-roguelite-like-no-other-where-you-see-the-future/</guid>
+      <pubDate>Mon, 17 Nov 2025 16:21:42 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/179493725id28018gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Steam Deck</category>
+      
+      <category>Beat 'em up</category>
+      
+      <category>Fighting</category>
+      
+    </item>
+    
+    <item>
+      <title>Below the Crown is an curious brew of chess and dungeon crawling out now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Out now in Early Access, from the minds that gave us the excellent Duskers, Below the Crown is a mixture of chess-like pieces and moves in a dungeon crawler. <em>Note: a key was provided to GamingOnLinux.</em></p>
+<p>It's a "dungeon crawler for everyone" they say, that is only somewhat <em>loosely</em> related to chess and you don't need to be some sort of grand master to play through this one. You start off by picking a deck that gives you a few chess-like pieces in the form of cards, and move through different randomly generated dungeons using your wizard who can summon your pieces. Your wizard can be a king, bishop, knight and others - with each giving you a different set of cards to summon and some have special abilities.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/664598831763389957gol1.jpg"/></p>
+<p>Starting off in each room with only your main piece, the rooms are all small self-contained puzzles to smash through. Make a move, summon a piece if you have any left to bring into play and keep moving around the board. The idea is to beat each room by either: getting a checkmate, getting the AI enemy king to withdraw by being the last piece left, or getting your king to a door. It's not just standard chess pieces though, as they've introduced some new pieces to keep things fresh and you get an assortment of spells to throw the game in your favour too. It's not just plain square board layouts either, there's a few different shapes that present their own unique challenges to think on as well.</p>
+<p>Thankfully, it is true that you don't need to really understand chess to play this at all. Everything is <em>very</em> clearly presented. And with the amount of pieces each side controls, there's no information overload here. Just a few pieces at a time, with each having a clear set movement pattern you can see by hovering your mouse over them anytime. There's even a turn assist feature, for the game to suggest moves if there's something good for you to do, so it's quite accessible too.</p>
+<p>It's all a bit <em>strange</em>. From the retro visuals to the strange psychological questions you have to answer that "may or may not impact runs". Just what exactly is going on here? They've somehow given a chess-like a bit of an unnerving atmosphere.</p>
+<div class="hidden_video" data-video-id="acKftQNAsfI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1bee3c2d4c3321bdf66589b171ff1db5.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/acKftQNAsfI" target="_blank">See video</a></div></div>
+<p>While it's turn-based, it's certainly <em>not</em> chilled. Part of the difficulty here is that if you take too too many turns, the board will start self-destructing with tiles getting a turn timer so you need to ensure your pieces aren't there. Reducing the size of the board forces both sides closer together, and really does make your brain sweat a bit.</p>
+<p>The presentation is supremely slick too. I <em>love</em> the way the game moves between boards, and the overall feel of it is perfect for the type of game it is.</p>
+<p>“Below the Crown wouldn’t be what it is today without the incredible minds on the Misfits Attic team," said Tim Keenan, Founder, Misfits Attic. “Our diverse experiences on films and games have enabled us to give Below the Crown its own distinct, mysterious identity. We hope chess enthusiasts and beginners alike enjoy digging into this dynamic world of strategy, magic, and retro vibes in Early Access!"</p>
+<p>A full formal opinion will be saved for when it's released properly, which the developer estimates will be in about 5 months while they add a bit more of everything into the game. So far though, it is a <em>lot</em> of fun to play through as a weird blend of game genres and mechanics that ends up as a bit of a brain-tickling puzzle to get through.</p>
+<p>There are a couple of resolution related bugs I've encountered. If the game resolution does not match your desktop, some UI will go off the screen, and if you alt+tab the mouse position is messed up making it basically unplayable. It was supposed to have been solved before, but it's still a problem. You'll need to ensure you match the game resolution up to your desktop for now. This is likely a problem with it specifically with Proton and they <a href="https://www.gamingonlinux.com/2025/10/below-the-crown-from-the-developer-of-duskers-arrives-november-with-a-demo-live-now/" rel="noopener" target="_blank">did say previously</a> a Native Linux version is planned.</p>
+<p>Misfits Attic have once again crafted something unique, that I really need more hours in the day to play. Deliciously engrossing to try and beat everything in it. It's proven once again that I'm terrible at anything resembling chess, but the challenge of it is so clever it makes me want to dive in again and again. This definitely deserves a whole lot more players.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42872/below-the-crown/">Below the Crown</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1883920/Below_the_Crown/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/11/below-the-crown-is-an-curious-brew-of-chess-and-dungeon-crawling-out-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/11/below-the-crown-is-an-curious-brew-of-chess-and-dungeon-crawling-out-now/</guid>
+      <pubDate>Mon, 17 Nov 2025 14:33:09 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1571662794id28017gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Proton</category>
+      
+      <category>Dungeon Crawler</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Colossal Order and Paradox Interactive split with Cities: Skylines going to a new developer</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Colossal Order and Paradox Interactive have ended their partnership on Cities: Skylines, with it moving onto a new developer.</p>
+<p>The announcement posted on the <a href="https://forum.paradoxplaza.com/forum/threads/an-update-on-cities-skylines-ii.1873154/" rel="noopener nofollow" target="_blank">Paradox forum</a> notes they've "mutually decided to pursue independent paths "with the decision being made "thoughtfully and in the interest of both teams - ensuring the strongest possible future for the Cities: Skylines franchise". So now further development of the Cities franchise will move to Iceflake Studios, who Paradox acquired back in 2020. Iceflake will be taking over all existing and future development of Cities: Skylines II so that players "will be able to look forward to new updates and content drops for many years".</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/7836167891763385039gol1.jpg"/></p>
+<p>Iceflake Studios will take the helm from the start of 2026, with a couple bits left to add in from Colossal Order.</p>
+<p>Statements from the post:</p>
+<p>“For over fifteen years, the Cities Series and our partnership with Paradox have been a defining part of our journey at Colossal Order. When we set out to create Cities in Motion, we never imagined it would grow to become a cherished franchise with a passionate, loyal community of millions of players around the world. We want to thank everyone at Paradox for their trust and collaboration, and of course the community for the incredible support that has made Cities what it is today. We’re confident that the franchise will continue to thrive under Paradox's leadership. As we move forward, we’re excited to channel our experience, creativity, and passion into new projects that align with our long-term vision.” Mariina Hallikainen, CEO of Colossal Order</p>
+<p>“Our partnership with Colossal Order is one of the longest-running relationships we've enjoyed here at Paradox. Four games, dozens of expansions, and a community of millions of Cities players; it's remarkable how much we've achieved together. We have deep respect for the Colossal Order team and we look forward to seeing where they go from here. On our end, we’re eager to continue working for the passionate Cities: Skylines community and make sure to provide them with more content and new experiences.” Mattias Lilja, Deputy CEO of Paradox Interactive</p>
+<p>“Taking the reins on a genre-leading franchise like Cities is an immense honor and a great responsibility. There's a huge, loyal community out there and I want to say to every member of that community that we will humbly carry this legacy with respect, together with all of you. Iceflake has the capacity and capability to get started. We have a decade worth of experience from making city building and management games. We see a strong foundation and so much potential waiting to be unleashed and I can't wait to show you what we have planned for the next chapter of this incredible game.” Lasse Liljedahl, Studio Manager of Iceflake Studios</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/11/colossal-order-and-paradox-interactive-split-with-cities-skylines-going-to-a-new-developer/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/11/colossal-order-and-paradox-interactive-split-with-cities-skylines-going-to-a-new-developer/</guid>
+      <pubDate>Mon, 17 Nov 2025 13:12:18 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1487865189id28016gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>City Builder</category>
+      
+      <category>Misc</category>
+      
+      <category>Paradox Interactive</category>
+      
+    </item>
+    
+    <item>
+      <title>The Many Sins of House Ocampo is one to watch for point and click mystery adventure fans</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>The Many Sins of House Ocampo is a new announcement from the developers of If On A Winter's Night Four Travelers and it looks great. Could be a really good one for fans of point and click mystery adventure games.</p>
+<p>In The Many Sins of House Ocampo you play as Lucía, a young woman in 1977 Buenos Aires who discovers she's the last living descendant of the Ocampos, an Argentinian settler family rumoured to be beset by a terrible curse. Reliving the last moments of her ancestors via letters, tapes, documents and diaries, and using an interactive clue board to trace the fate of each family member, Lucía will not stop until figuring out the truth of the Ocampo curse, as well as her own origins.</p>
+<p>Very much like Dead Idle's previous game If On A Winter's Night Four Travelers, The Many Sins of House Ocampo features stunning pixel art and animations, dark and mature themes, and an exquisite soundtrack that oscillates between Argentinian folk, dark ambient, and classical piano. What's not to love about all of that? Sounds and looks wild.</p>
+<p>Check out the trailer:</p>
+<div class="hidden_video" data-video-id="AK-GxlbaXGs"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/233ecc4123c7878af2a3eef78148f334.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/AK-GxlbaXGs" target="_blank">See video</a></div></div>
+<p>At release it will have Native Linux support. No release date has been set yet.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43608/the-many-sins-of-house-ocampo/">The Many Sins of House Ocampo</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/4102890/The_Many_Sins_of_House_Ocampo/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/11/the-many-sins-of-house-ocampo-is-one-to-watch-for-point-and-click-mystery-adventure-fans/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/11/the-many-sins-of-house-ocampo-is-one-to-watch-for-point-and-click-mystery-adventure-fans/</guid>
+      <pubDate>Mon, 17 Nov 2025 12:50:27 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/76264648id28015gol.webp" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Adventure</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Point & Click</category>
+      
+    </item>
+    
+    <item>
+      <title>Timing is everything in the fast-paced arcade racer Wild Horse Racing - try the demo now</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>If you love arcade-styled retro racing games, Wild Horse Racing looks like it could be good fun and there's a demo available with Linux support.</p>
+<p>Don't let the name put you off at all, this is not some cutesy horse game. Here it's quite a challenge where timing is everything. You have to master control patterns from easy to godlike difficulty, leap over big jumps, and race through vibrant tracks while managing your horse. Some fun game mechanics included with each track having its own control pattern, and nailing the timing gives you a speed boost. </p>
+<p>The horse hoof upgrade system sounds interesting to spice things up a little too, like picking and upgrading your tyres in a car racing game. As here mud and gravel build up during races to slow you to, so you have to manage that. </p>
+<p>Check out the trailer below:</p>
+<div class="hidden_video" data-video-id="cKWpQhoQcKM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1664b6681c1b7a9c24b83bf856dac3d6.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/cKWpQhoQcKM" target="_blank">See video</a></div></div>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43488/wild-horse-racing/">Wild Horse Racing</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2579620/Wild_Horse_Racing/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/11/timing-is-everything-in-the-fast-paced-arcade-racer-wild-horse-racing-try-the-demo-now/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/11/timing-is-everything-in-the-fast-paced-arcade-racer-wild-horse-racing-try-the-demo-now/</guid>
+      <pubDate>Mon, 17 Nov 2025 12:45:00 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/891973592id28014gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Arcade</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Nightdive recently showed off Outlaws + Handful of Missions: Remaster footage in a dev diary video</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Looking forward to the next remaster from Nightdive? They recently put up a new dev diary video for Outlaws + Handful of Missions: Remaster to show it off. It's releasing on November 20th, so this is a nice behind the scenes look into some of the work that went into upgrading the visuals.</p>
+<p>Fully remastered by the Nightdive Studios crew through the proprietary KEX engine, Outlaws + Handful of Missions: Remaster brings gunslinging action and the iconic Wild West adventure to modern platforms with up to 4K resolution at 120FPS. It will also include cross-play multiplayer with four game modes.</p>
+<p>Check out the video below:</p>
+<div class="hidden_video" data-video-id="C2LBdcCsYl0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/d264fad24025f3ea65169a2758ca1122.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/C2LBdcCsYl0" target="_blank">See video</a></div></div>
+<p>Main Highlights:</p>
+<blockquote>
+<ul>
+<li><strong>Engaging first-person ground combat </strong>featuring five weapon types</li>
+<li><strong>Up to 4K 120FPS</strong> visuals on PC, PlayStation 4|5, and Xbox One and Series X|S</li>
+<li><strong>Modern gamepad support </strong>adds a new weapon wheel, rumble, and motion/gyro controls</li>
+<li><strong>Trophies and Achievements</strong> on Windows PC via Steam, PlayStation, and Xbox consoles</li>
+<li><strong>A Vault filled with golden behind-the-scenes</strong> nuggets that fans will enjoy</li>
+<li><strong>Four Multiplayer game modes</strong> with crossplay across platforms — Deathmatch, Team Play, Capture the Flag, and Kill The Fool With The Chicken!</li>
+</ul>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42725/outlaws-handful-of-missions-remaster/">Outlaws + Handful of Missions: Remaster</a></strong> | Release Date: 20th November 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/outlaws_a_handful_of_missions_remaster">GOG</a></li><li><a href="https://store.steampowered.com/app/3366780/Outlaws__Handful_of_Missions_Remaster/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/11/nightdive-recently-showed-off-outlaws-handful-of-missions-remaster-footage-in-a-dev-diary-video/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/11/nightdive-recently-showed-off-outlaws-handful-of-missions-remaster-footage-in-a-dev-diary-video/</guid>
+      <pubDate>Mon, 17 Nov 2025 12:27:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1668447284id28013gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>FPS</category>
+      
+      <category>Retro</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Check out the demo for top-down 2D action roguelike Shroomwood now on Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>A fresh demo for you to try this week, as the top-down 2D action roguelike Shroomwood has a Linux build available for you to shoot your way through.</p>
+<p>More about it: "Play as Shroomie, a curious little mushroom navigating the ever-changing wilderness of Shroomwood. This top-down 2D roguelike adventure blends fast-paced combat with dynamic dungeon exploration. Each run through the Shroomwood forest offers new challenges, randomized rooms, and a host of peculiar creatures from classical slimes to zombie-infested mushrooms. Discover powerful weapons, stack unique modifiers, and uncover the secrets hidden within vibrant and unique biomes."</p>
+<p>Check out the demo release trailer:</p>
+<div class="hidden_video" data-video-id="YLjpPbixrwY"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/f7490d163d224e66f282bd6c7fe533a1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/YLjpPbixrwY" target="_blank">See video</a></div></div>
+<p>Game Highlights:</p>
+<blockquote>
+<ul>
+<li><strong>High-Paced Action</strong> - We blended the shooting mechanics of traditional roguelikes such as Enter the Gungeon and Binding of Isaac with a brand new melee system to create a roguelike that put a creative spin on the classic tried-and-true formula! There are more bullets, more enemies, more death, and more fun.</li>
+<li><strong>Upgrade your Arsenal</strong> - Find over 20 unique weapons throughout your journey!</li>
+<li><strong>Equip Modifiers</strong> - There are over 50 unique modifiers with stat changing and gameplay changing effects!</li>
+<li><strong>Visit the Shops</strong> - Find a shop in every run to cash in your Shroomstone, recover health, meeting interesting NPCs, and, of course, buy new stuff.</li>
+<li><strong>Explore Shroomstead</strong> - In between runs you will spend your time in Shroomstead, a small clearing in the Shroomwood forest where you and your fellow species of sentient mushrooms live. Meet NPCs, upgrade your weapons, discover magical obelisks, and much more!</li>
+</ul>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43592/shroomwood/">Shroomwood</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3504020/Shroomwood/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/11/check-out-the-demo-for-top-down-2d-action-roguelike-shroomwood-now-on-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/11/check-out-the-demo-for-top-down-2d-action-roguelike-shroomwood-now-on-steam/</guid>
+      <pubDate>Mon, 17 Nov 2025 12:21:32 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1288589817id28012gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Action</category>
+      
+      <category>Demo</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Cozy 3D food puzzler UMAMI has launched on Steam</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Need a new chill puzzle game? UMAMI from indie studio Mimmox has arrived with Linux support. Across 15 hand-painted levels, you’ll tinker, toy, and rotate wooden blocks, attaching them to a board to create meals including towers of fluffy pancakes, gravity-defying burgers, freshly prepared onigiri, and even seasonal sweets for holidays such as Halloween and Christmas. </p>
+<p>No pressure with this one is there's no timers, no wrong moves. The game encourages you to mess around and explore the layers of sugar and spice. There's also hidden animals to pet and cards to collect spread through the levels too.</p>
+<p>Check out the trailer:</p>
+<div class="hidden_video" data-video-id="SQ7DR8mp4nI"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/0e01093728fdbedc93aae4d15265ad50.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/SQ7DR8mp4nI" target="_blank">See video</a></div></div>
+<p>Game Highlights:</p>
+<blockquote>
+<ul>
+<li><strong>Looking Good Enough to Eat: </strong>Each of the game’s 15 dioramas is hand-painted and has been lovingly crafted by the team’s five artists, including experts in hand-painted textures, environment modelling, and detailed illustrations. </li>
+<li><strong>The Secret Ingredient is Love: </strong>A love for cozy and cute experiences, that is. This is a game that allows players to relax, unwind, and escape into a whimsical and welcoming world of foodstuffs. </li>
+<li><strong>Tinker, Baker, Gourmet, Pie: </strong>From tantalizing breakfast dishes and gourmet lunches, to lavish burgers and towers of pastries, the puzzles feature a range of foods to satisfy every taste.</li>
+</ul>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42226/umami/">UMAMI</a></strong> | Release Date: 17th November 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3669360/UMAMI/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2025/11/cozy-3d-food-puzzler-umami-has-launched-on-steam/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/11/cozy-3d-food-puzzler-umami-has-launched-on-steam/</guid>
+      <pubDate>Mon, 17 Nov 2025 12:13:24 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1246524510id28011gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Casual</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Puzzle</category>
+      
+    </item>
     
     <item>
       <title>Wine 10.19 released as we head towards Wine 11</title>
@@ -2634,7 +3378,7 @@ Steam Deck Playable / ProtonDB Platinum</p>
 <blockquote>
 <ul>
 <li>Updated Simplified Chinese translation to use fan translation provided by Team Cart Fix.</li>
-<li>Switched to Unity's Input System to improve overall controller support. This includes rumble features now working for various controllers, and additional controllers being recognised. Some issues may remain. For a full list of supported controllers and features, please visit: <a class="Link _29bMZB6BOQfTQ_3za-w60I" href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fdocs.unity3d.com%2FPackages%2Fcom.unity.inputsystem%401.14%2Fmanual%2FSupportedDevices.html" rel="noopener nofollow" target="_blank">https://docs.unity3d.com/Packages/<span class="__cf_email__" data-cfemail="d4b7bbb9faa1babda0adfabdbaa4a1a0a7ada7a0b1b994e5fae5e0">[email protected]</span>/manual/SupportedDevices.html</a></li>
+<li>Switched to Unity's Input System to improve overall controller support. This includes rumble features now working for various controllers, and additional controllers being recognised. Some issues may remain. For a full list of supported controllers and features, please visit: <a class="Link _29bMZB6BOQfTQ_3za-w60I" href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fdocs.unity3d.com%2FPackages%2Fcom.unity.inputsystem%401.14%2Fmanual%2FSupportedDevices.html" rel="noopener nofollow" target="_blank">https://docs.unity3d.com/Packages/<span class="__cf_email__" data-cfemail="97f4f8fab9e2f9fee3eeb9fef9e7e2e3e4eee4e3f2fad7a6b9a6a3">[email protected]</span>/manual/SupportedDevices.html</a></li>
 <li>Added additional dithering levels. Now defaults to 'low'.</li>
 <li>Added film grain effect to advanced options. Defaults to ‘off’</li>
 <li>Various localisation fixes implemented across all languages.</li>
@@ -4302,354 +5046,6 @@ Steam Deck Playable</p>
       <category>Indie Game</category>
       
       <category>Misc</category>
-      
-    </item>
-    
-    <item>
-      <title>Linux users have no reason to worry about recent AMD GPU driver changes</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>This is a little PSA to Linux users and Linux gamers, with news reports out there about AMD shifting focus away from certain GPUs.</p>
-<p>What's happening? People noticed in the <a href="https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-25-10-2.html" rel="noopener nofollow" target="_blank">Adrenalin Edition 25.10.2 release notes</a> how it says "New Game Support and Expanded Vulkan Extensions Support is available to Radeon™ RX 7000 and 9000 series graphics products" signaling a shift away from earlier generations like the popular Radeon RX 5000 and RX 6000 series. According to <a href="https://www.computerbase.de/news/grafikkarten/fsr-4-auf-rdna-2-vom-tisch-amd-versetzt-radeon-rx-5000-und-6000-in-den-vorruhestand.94862/" rel="noopener nofollow" target="_blank">computerbase.de</a>, they've had confirmation from AMD that the RX 5000 and RX 6000 series are indeed going into "maintenance mode".</p>
-<p>The thing is - this only concerns the <em>Windows</em> driver.</p>
-<p>Linux uses a very different driver system with the open source Mesa project that contains many drivers, and <a href="https://www.gamingonlinux.com/2025/09/amdvlk-has-been-discontinued-as-amd-are-throwing-their-full-support-behind-radv/" rel="noopener" target="_blank">AMD recently discontinued their AMDVLK</a> to give their full support for Mesa's RADV. So, you don't need to worry about it if you're on Linux, as we've seen from updates to Mesa for some pretty old GPUs at times. And, with Mesa drivers being open source, anyone can pick up the torch anytime if an older driver stops being updated by the existing maintainers. Something that's not the case with closed-source drivers.</p>
-<p>Oh, and of course we have Valve with SteamOS Linux with the Steam Deck using an AMD APU - it's not like Valve are going to stop all the driver upgrades any time soon either which benefits all Linux users.</p>
-<p>Anyway, the recent news is nothing to worry about for Linux gamers.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/10/linux-users-have-no-reason-to-worry-about-recent-amd-gpu-driver-changes/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/10/linux-users-have-no-reason-to-worry-about-recent-amd-gpu-driver-changes/</guid>
-      <pubDate>Fri, 31 Oct 2025 13:55:10 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/amd-logo.jpg" type="image/jpeg"/>
-      
-      <category>AMD</category>
-      
-      <category>Drivers</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Inspired by Advance Wars, the new Earth vs Mars from Relic Entertainment is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>A smaller team at Relic Entertainment under the Relic Labs umbrella have released Earth vs Mars, a homage to some classic strategy games like Advance Wars.</p>
-<p>Quite a break from the likes of Company of Heroes / Dawn of War. Relic said their smaller teams with Relic Labs are experimenting with smaller games to get them into your hands sooner. Not really surprising, spending many years building up single games simply isn't sustainable for a lot of developers.</p>
-<p>From the press release:</p>
-<blockquote>
-<p style="text-align:justify">This love letter to the turn-based strategy genre puts players at the helm of Earth’s forces in a desperate battle against a full-scale Martian invasion. Players must lead an unlikely group of commanders against alien saucers, grav-tanks, and elite alien warriors threatening the planet.</p>
-<p style="text-align:justify">Humanity’s secret weapon is the <em>Splice-O-Tron</em>, a device that fuses human volunteers with Earth’s creatures to create powerful hybrid super soldiers. From cheetah-fly scouts to rhino-human tanks and squirrel-cow infantry, these bizarre, but powerful, super soldiers give humanity a fighting chance. </p>
-<p style="text-align:justify">As the campaign unfolds, you’ll unlock new creatures, upgrades, and commander abilities—but your enemy evolves too, unleashing horrors like “The Creep” and other mutant creations.</p>
-</blockquote>
-<div class="hidden_video" data-video-id="yNjOInCD9uM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1c8988f1e8fdf63050d06b2c4d0bb667.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/yNjOInCD9uM" target="_blank">See video</a></div></div>
-<p class="plain-list-title">Game Features:</p>
-<blockquote>
-<ul>
-<li><strong>Splice-O-Tron –</strong> Bringing some old-school Relic flavor to this genre, the Splice-O-Tron is a key mechanic in <em>Earth vs Mars</em>. Combining creatures with human “volunteers” will allow you to field an array of exciting and powerful hybrid units</li>
-<li><strong>Single Player Campaign –</strong> <em>Earth vs Mars</em> will feature an expansive narrative focused campaign composed of over 30 hand-crafted missions</li>
-<li><strong>Online Multiplayer –</strong> Battle against other commanders in 1vs1 multiplayer, either as the armies of Earth or as the forces of the Martian Invaders</li>
-<li><strong>VS Mode –</strong> Battle against the A.I. on custom maps giving endless replayability to single-player fans</li>
-<li><strong>Challenge Mode –</strong> Chase your high score in battles against the A.I.</li>
-<li><strong>Map Lab – </strong>Fully featured map editor allows you to create custom maps and scenarios</li>
-<li><strong>Unit Abilities –</strong> Many of the units in <em>Earth vs Mars</em> will have their own unique abilities, adding new strategies and gameplay depth to this style of game</li>
-<li><strong>Commanders –</strong> There will be multiple commanders in the game, each bringing unique abilities that change the way you play</li>
-<li><strong>Beautifully realized 3D world –</strong> The world of <em>Earth vs Mars</em> brings expressive units, vibrant environments, and stunning effects to players</li>
-<li><strong>Fully Voiced Experience - </strong>The game is fully voiced, bringing commanders, units and story moments to life</li>
-</ul>
-</blockquote>
-<p>There's a campaign demo available to try before you buy. You can also follow the developer on <a href="https://bsky.app/profile/reliclabs.bsky.social" rel="noopener nofollow" target="_blank">Bluesky</a>.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43464/earth-vs-mars/">Earth vs Mars</a></strong> | Release Date: 29th October 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3269230/Earth_vs_Mars/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/10/inspired-by-advance-wars-the-new-earth-vs-mars-from-relic-entertainment-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/10/inspired-by-advance-wars-the-new-earth-vs-mars-from-relic-entertainment-is-out-now/</guid>
-      <pubDate>Fri, 31 Oct 2025 11:47:42 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/341517622id27919gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>New Release</category>
-      
-      <category>Steam</category>
-      
-      <category>Strategy</category>
-      
-    </item>
-    
-    <item>
-      <title>ARK: Survival Ascended gets bumped up to Steam Deck Verified</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>ARK: Survival Ascended entered Early Access in 2023, and while it worked well enough on Linux / Steam Deck - Valve noted it was Unsupported until now.</p>
-<p>What is it? ARK: Survival Ascended is a remake of the original ARK: Survival Evolved with Unreal Engine 5. Form a tribe, tame &amp; breed hundreds of unique dinosaurs and primeval creatures, explore, craft, build, and fight your way to the top of the food-chain.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2389526161761910115gol1.jpg"/></p>
-<p>Not long after the initial release, Valve checked it over and gave it a Steam Deck Unsupported rating noting the anti-cheat was <em>not</em> supported. The game uses BattlEye, even though it's <em>not</em> actually listed on the Steam store page (so they seem to be <a href="https://www.gamingonlinux.com/2024/10/steam-games-will-now-need-to-fully-disclose-kernel-level-anti-cheat-on-store-pages/" rel="noopener" target="_blank">breaking Valve's own rules on that</a>). It's not entirely clear when BattlEye was actually enabled for Linux / SteamOS but it has been working for a while now and is listed on <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">our dedicated anti-cheat page</a>.</p>
-<p>As of October 30th, Valve finally re-tested it and gave it the green Steam Deck Verified / SteamOS Compatible tick. They've also now by default set it to use <a href="https://www.gamingonlinux.com/2025/10/proton-10-0-3-release-candidate-live-for-testing-better-windows-game-compatibility-on-linux-steam-deck/" rel="noopener" target="_blank">the upcoming Proton 10</a>.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/11673679351761910081gol1.jpg"/></p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40409/ark-survival-ascended/">ARK: Survival Ascended</a></strong> | Release Date: 26th October 2023</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2399830/ARK_Survival_Ascended/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/10/ark-survival-ascended-gets-bumped-up-to-steam-deck-verified/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/10/ark-survival-ascended-gets-bumped-up-to-steam-deck-verified/</guid>
-      <pubDate>Fri, 31 Oct 2025 11:30:24 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/889562108id27918gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Anti-Cheat</category>
-      
-    </item>
-    
-    <item>
-      <title>Northgard Definitive Edition announced for December with expanded content</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Shiro Games have revealed they're giving their strategy game Northgard the Definitive Edition treatment in December, with a whole bunch of new content planned.</p>
-<p>What is Northgard? A critically acclaimed real-time strategy game based on Norse mythology. Lead your clan, uncover the secrets of a mysterious newfound continent and defeat your enemies to conquer the Throne! Northgard Definitive Edition will be a major free update for all existing owners of the game - nice! The existing price has already been bumped up, with a special discount being planned for when the Definitive Edition actually launches on December 4th.</p>
-<p class="plain-list-title">The Definitive Edition brings with it all this:</p>
-<ul>
-<li>The critically acclaimed base game with several enhancements.</li>
-<li>The new Valhalla biome.</li>
-<li>Bifrost biomes for PvE and PvP play.</li>
-<li>The Cross of Vidar expansion pack including the full campaign and Neustria - Clan of the Lion.</li>
-<li>The first three clans ever released for Northgard.</li>
-<li>A beautiful in-game gallery including alternate artwork, concept art, alpha and beta visuals, and much more.</li>
-</ul>
-<div class="hidden_video" data-video-id="aW663csfL0Q"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/6e691c04d94e5db0bf71c61f24396595.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/aW663csfL0Q" target="_blank">See video</a></div></div>
-<p>From the press release: "Northgard’s acclaimed, accessible blend of real-time strategy and colony management has resonated with millions of players since it first launched," said Nicolas Cannasse, CEO, Shiro Games. "Whether you’re a long-time Northgard fan returning to the fray or a curious newcomer, Northgard: Definitive Edition is ready to hand over the warchief's helm."</p>
-<p>It has Linux support and is rated Steam Deck Playable / SteamOS Compatible.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/11518/northgard/">Northgard</a></strong> | Release Date: 7th March 2018</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/game/northgard/">GOG</a></li><li><a href="https://store.steampowered.com/app/466560/Northgard/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/10/northgard-definitive-edition-announced-for-december-with-expanded-content/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/10/northgard-definitive-edition-announced-for-december-with-expanded-content/</guid>
-      <pubDate>Fri, 31 Oct 2025 11:08:07 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/458226422id27917gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>GOG</category>
-      
-      <category>RTS</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>The classic tense horror roguelike &#39;Basingstoke&#39; from Puppygames gets a big surprise upgrade</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Basingstoke (now known as Welcome to Basingstoke) is an absolute underappreciated gem from Puppygames, and now is the perfect time to jump back in. It somewhat recently had a console release, and so the developers have refreshed the PC version with a whole bunch of upgrades so perhaps it's time to give this classic a new life.</p>
-<p>What is it? If you've not heard of it before - it's a tense roguelike from 2018 that mixes stealth and arcade action. You get to explore the smouldering ruins of apocalyptic Basingstoke, UK, a world of extreme peril where reanimated undead and ferocious alien monsters roam. It really is an <em>incredibly</em> tense game, and one that Puppygames previously said <a href="https://www.gamingonlinux.com/2020/03/as-puppygames-reflect-on-the-release-of-basingstoke-they-say-it-financially-ruined-them/" rel="noopener" target="_blank">financially ruined them</a>.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/16730708951761907968gol1.jpg"/></p>
-<p>The <a href="https://store.steampowered.com/news/app/336940/view/547875764461113018" rel="noopener nofollow" target="_blank">new update</a> announced adds in a big remake of the later stages of the game, along with a special new end level that actually allows you to escape with 10 completely new areas and nearly 300 new scenery items. All that plus what's in the list below (and many bug fixes) add up to an awesome sounding upgrade:</p>
-<blockquote>
-<ul>
-<li>Added Achievements for the new levels, Horde mode... and a new extra special secret one :)</li>
-<li>Added three new special Omnicorp items</li>
-<li>Replaced the old Horde mode UI and added special skins for the Horde mode characters</li>
-<li>Enemies would block the player hurdling if on the other side of a barrier - now the player knocks them back instead, and ninja kicks them if timed right</li>
-<li>Added UI scaling option</li>
-<li>Added controller shake support, and sliders for controller and camera shake</li>
-<li>Added audio recording to instant replay, and options for resolution, framerate etc. (Windows only)</li>
-<li>Added quick zoom control that works in the game and the map</li>
-<li>Added controls to the map to find the level start, player and exit</li>
-<li>Changed the map so undiscovered areas are shown as flat black rather than hidden</li>
-<li>Added various tweaks to enemy spawning and behaviour based on difficulty autotuning</li>
-<li>Added FRAGILE warning to melee weapons if near breaking</li>
-<li>Added option to view item info in the shop and vending machines</li>
-<li>Changed popup help controls – show map, show next help, or close help, depending on context</li>
-<li>Added enemy models to enemy info in the encyclopedia</li>
-</ul>
-</blockquote>
-<p>The most recent trailer to show it off (for the console release) is below:</p>
-<div class="hidden_video" data-video-id="OwyuY-xsAZ4"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/889321f097a1179469c284c1efada3a7.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/OwyuY-xsAZ4" target="_blank">See video</a></div></div>
-<p>It has a Linux version and it's rated Steam Deck Playable.</p>
-<p>Do give this one a go.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/10907/basingstoke/">Basingstoke</a></strong> | Release Date: 27th April 2018</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/welcome_to_basingstoke">GOG</a></li><li><a href="https://store.steampowered.com/app/336940/Welcome_to_Basingstoke/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/10/the-classic-tense-horror-roguelike-basingstoke-from-puppygames-gets-a-big-surprise-upgrade/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/10/the-classic-tense-horror-roguelike-basingstoke-from-puppygames-gets-a-big-surprise-upgrade/</guid>
-      <pubDate>Fri, 31 Oct 2025 10:56:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/742111764id27916gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Action</category>
-      
-      <category>Horror</category>
-      
-    </item>
-    
-    <item>
-      <title>DRAGON QUEST I &amp; II HD-2D Remake out now and Steam Deck Playable</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Square Enix have released DRAGON QUEST I &amp; II HD-2D Remake and you should be mostly good to go on Linux / SteamOS and Steam Deck with it.</p>
-<p>Valve have stuck it with a Playable Steam Deck rating and it's SteamOS Compatible. The main issues noted being small text, plus it requires an internet connection for the first run and it doesn't default to external controllers - so you may need to use the SteamOS Quick Access menu to change the active controller.</p>
-<p>Apart from that, you should be fine as everything else works with the testing being done on Proton 10.</p>
-<p>Release trailer is below:</p>
-<div class="hidden_video" data-video-id="Cle07k1-TWA"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/9a055ed4911cd4114853460bc4234675.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Cle07k1-TWA" target="_blank">See video</a></div></div>
-<p>DRAGON QUEST I &amp; II HD-2D Remake combines full remakes of DRAGON QUEST I and DRAGON QUEST II, which chronologically take place after DRAGON QUEST III HD-2D Remake which launched in November 2024. You will get to experience the conclusion to the Erdrick Trilogy in these two standalone epic adventures, with the upgraded HD-2D graphical style with never-before-seen story content and gameplay updates that includes a new, fully explorable underwater world and playable character in DRAGON QUEST II, among many other additions.</p>
-<p>In related news <a href="https://www.gamingonlinux.com/2025/09/dragon-quest-vii-reimagined-announced-for-february-2026-already-rated-steam-deck-playable/" rel="noopener" target="_blank">DRAGON QUEST VII Reimagined arrives next year</a> and is also already rated Steam Deck Playable.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43463/dragon-quest-i-ii-hd-2d-remake/">DRAGON QUEST I &amp; II HD-2D Remake</a></strong> | Release Date: 30th October 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.humblebundle.com/store/dragon-quest-i-ii-hd2d-remake">Humble Store</a></li><li><a href="https://store.steampowered.com/app/2893570/DRAGON_QUEST_I__II_HD2D_Remake/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/10/dragon-quest-i-ii-hd-2d-remake-out-now-and-steam-deck-playable/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/10/dragon-quest-i-ii-hd-2d-remake-out-now-and-steam-deck-playable/</guid>
-      <pubDate>Fri, 31 Oct 2025 10:45:34 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1088058777id27915gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>New Release</category>
-      
-      <category>RPG</category>
-      
-    </item>
-    
-    <item>
-      <title>Mesa 25.2.6 rolls out with more fixes for Intel GPUs, Zink and NVK</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Mesa 25.2.6 is the latest bug fix release available now for open source Linux graphics drivers, pulling in fresh updates for games and other assorted issues. This follows on from<a href="https://www.gamingonlinux.com/2025/10/mesa-25-2-5-released-with-major-bug-fix-for-intel-graphics-on-linux/" rel="noopener" target="_blank"> the exciting Mesa 25.2.5 release</a> that had a major bug fix for users of Intel GPUs.</p>
-<p>Another release that's looking even better for Intel GPU owners, with multiple fixes to the ANV driver (Intel Vulkan) for Assassin's Creed Valhalla and Wuthering Waves and potentially other games. Plus improvements for Zink to stop YouTube videos flickering.</p>
-<p>From the <a href="https://docs.mesa3d.org/relnotes/25.2.6.html" rel="noopener nofollow" target="_blank">changelog</a>:</p>
-<blockquote>
-<ul>
-<li>[ANV][PTL][DG2] Flickering textures in Assassin’s Creed Valhalla benchmark</li>
-<li>ADL, ANV: Wuthering Waves leads to gpu reset on Alder Lake iGPU</li>
-<li>[ANV][EXT_debug_utils] descriptor set object_name leak when not calling vkFreeDescriptorSets</li>
-<li>nvk: CTS failures in sample_locations_ext.verify_interpolation.samples_1</li>
-<li>[regression] [bisected] RuneLite GPU Experimental - GPU crash</li>
-<li>lp_test_arit.c:200:14: error: static declaration of ‘rsqrtf’ follows non-static declaration</li>
-<li>build failure with glibc 2.42</li>
-<li>zink: chromium flickers in youtube when fullscreening videos</li>
-<li>r600: Attribute stride updates may be skipped</li>
-<li>anv: Assert in brew when descriptor indexing with modulo</li>
-<li>[ANV][TGL]: test_buffer_feedback_instructions_sm51 on vkd3d-proton crashes </li>
-</ul>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15461185161761833801gol1.jpg"/><br/>
-<em>Pictured - Wuthering Waves</em></p>
-<p>As for when to expect the next lot of updates to Mesa, the current release schedule has the bug fix release 25.2.7 due out on November 12th. And then we'll hopefully see Mesa 25.3 on November 5th as the next feature release, but it may come a bit later depending on stability as that's either the fourth release candidate or the final release.</p>
-<p>In related news - <a class="gol230 u-url" href="https://www.gamingonlinux.com/2025/10/indiana-jones-and-the-great-circle-will-perform-better-on-amd-gpus-with-mesa-26/" rel="noopener" target="_blank">Indiana Jones and the Great Circle will perform better on AMD GPUs with Mesa 26</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/10/mesa-25-2-6-rolls-out-with-more-fixes-for-intel-gpus-zink-and-nvk/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/10/mesa-25-2-6-rolls-out-with-more-fixes-for-intel-gpus-zink-and-nvk/</guid>
-      <pubDate>Thu, 30 Oct 2025 14:20:15 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/807718832id27914gol.jpg" type="image/jpeg"/>
-      
-      <category>Drivers</category>
-      
-      <category>Mesa</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Replicat is basically the classic card game snap meets Balatro - check out the demo</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Balatro, much like Vampire Survivors, has created a bit of an indie trend and now the classic card game snap has been given the Balatro treatment in Replicat.</p>
-<p>There's a demo available, built with Unity it has Native Linux support with a release currently planned for November 19th. I've given the demo a run through and think they genuinely have a great idea here. The classic card-matching memory game, but tweaked for modern generations to add a little more flavour. Since it's now a roguelike deck-builder, you get to acquire all sorts of special cards to bend and break the game resulting in some crazy combos.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14246509831761832748gol1.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14246509831761832748gol1.jpg"/></a></p>
-<p>Much like the inspiration, you go through rounds to build up a score and you need to keep hitting a higher score to continue on. Here it's definitely challenging, especially because my short-term memory is apparently awful. During your run you earn money to spend on new cards in the shop to add to your deck like cards that give you bonus moves or matching any other card. You also get to buy up special curios which allow you to tweak your whole run with bonuses like multiplying your score or money.</p>
-<p>With all the ways you can change your run, it's not entirely a memory game like snap. Since you can acquire tools to reveal extra cards, keep them flipped so you can see them instead of them flipping back when you mismatch and even ways to force mismatches to work. There's a lot of ways to mess with it in your favour. Some cards will also auto-reveal their match, if you're lucky enough to pick them.</p>
-<div class="hidden_video" data-video-id="NyC-yxNeMQU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/35b6f4daddaf7158c4fe3d4a39690d1e.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/NyC-yxNeMQU" target="_blank">See video</a></div></div>
-<p>My only concern is time. There's so many games releasing, this might suck a lot away from me because the demo is quite delicious.</p>
-<p>You can also follow the developer on <a href="https://bsky.app/profile/brainoid.bsky.social" rel="noopener nofollow" target="_blank">Bluesky</a>.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43443/replicat/">Replicat</a></strong> | Release Date: 18th November 2025</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3509430/Replicat/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/10/replicat-is-basically-the-classic-card-game-snap-meets-balatro-check-out-the-demo/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/10/replicat-is-basically-the-classic-card-game-snap-meets-balatro-check-out-the-demo/</guid>
-      <pubDate>Thu, 30 Oct 2025 13:59:42 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1814201047id27913gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Card Game</category>
-      
-      <category>Deck-builder</category>
-      
-      <category>Demo</category>
-      
-    </item>
-    
-    <item>
-      <title>The brutal survival horror Darkwood is getting a sequel with Darkwood 2 from Hooded Horse</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Publisher Hooded Horse recently revealed Darkwood 2 is coming from the developers of the Pathologic series. It's being made in consultation with the original Darkwood developers Acid Wizard. No release date has been set for it yet.</p>
-<p>Need a refresher first? Darkwood originally released in 2017, and went onto receive an Overwhelmingly Positive rating from players on Steam (over 20,000 users rating it). It's a dark and spooky top-down mixture of exploration, action, survival and horror. Darkwood 2 is set years following the first game but it's completely standalone, so you don't need to have played the first game. With a new story, new lands to explore, new horrifying creatures to evade and it looks just as terrifying.</p>
-<p>The first trailer is below:</p>
-<div class="hidden_video" data-video-id="CR99LP_nays"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/74583aacebafdedf89aa418e3d04b855.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/CR99LP_nays" target="_blank">See video</a></div></div>
-<p>From the press release:</p>
-<p>"The original Darkwood is a unique experience in horror -- mixing resource management and strategic survival into a rarely used top-down horror format," says Hooded Horse CEO Tim Bender. "We’re honored to be part of the sequel, and to be working with such a great team."</p>
-<p>"Crafting the world of Darkwood was a very challenging and long journey for the team," says Acid Wizard co-founder Gustaw Stachaszewski. "After an experience like that, you become emotionally attached to your work. We know that the fans have been eagerly awaiting a continuation of Darkwood. For years, the idea of handing over our baby to another studio was something unthinkable for us. But, after it became evident that working together is not viable anymore, we decided that Darkwood should live on, even if not directly through our work."</p>
-<p>"We're genuinely excited to pass on the torch to Ice-Pick Lodge - creators whose work on Pathologic has inspired us for years. The team at IPL really gets what makes Darkwood a unique experience. We believe they will not only honor its spirit but will create something truly exceptional. As for us, we'll be in the background, making sure it stays true to the original vision."</p>
-<p>"I believe the most interesting things are created when people with very different backgrounds work together on creative projects," says Alexander Souslov, Executive Producer on Darkwood 2. "Ice-Pick is known for its focus on narrative and on the design of semiotic systems. Hooded Horse, on the other hand, is renowned for its expertise in strategy. What kind of game could come from that? It has to be something so compelling that I’d want to play it myself. I’ve been genuinely impressed by their clear understanding of what developers face, their focus on success and mutual growth, and their dedication to long-term support for their games."</p>
-<p>"Our collaboration is just beginning, but with people like this working together, I’m confident something truly special will come out of it," says Ice-Pick co-founder Ayrat Zakirov.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43450/darkwood-2/">Darkwood 2</a></strong></p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3708010/Darkwood_2/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/10/the-brutal-survival-horror-darkwood-is-getting-a-sequel-with-darkwood-2-from-hooded-horse/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/10/the-brutal-survival-horror-darkwood-is-getting-a-sequel-with-darkwood-2-from-hooded-horse/</guid>
-      <pubDate>Thu, 30 Oct 2025 13:30:21 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2089594837id27912gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam Deck</category>
-      
-      <category>Horror</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Ubuntu getting optimisations for modern processors with architecture variants</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Canonical announced they're working on architecture variants of Ubuntu, to hopefully result in better optimisation and performance on modern processors.</p>
-<p>Posted today on the Ubuntu Discourse forum, developer Michael Hudson Doyle they note how Ubuntu has a focus on wide compatibility but there is a performance trade-off with it. So with Ubuntu 25.10, they've now added support for packages that "target specific silicon variants, meaning you can have your cake and eat it too". The first supported is amd64v3 (x86-64-v3) that should be supported on Intel Haswell / AMD Excavator and above.</p>
-<p>For those wanting to squeeze every possible bit of performance out of their machines, this sounds like a nice upgrade for Canonical to be working on.</p>
-<p>As Doyle said they've made changes to dpkg, apt and Launchpad to support building multiple version of packages for different levels of the x86-64 architecture. Some packages are now available on an opt-in basis for the x86-64-v3 architecture level.</p>
-<p>The current aim is to have the Ubuntu 26.04 LTS release have all packages rebuilt and ready for the x84-64-v3 / amd64v3 architecture.</p>
-<p>You can test it out yourself right now on an Ubuntu install. See the <a href="https://discourse.ubuntu.com/t/introducing-architecture-variants-amd64v3-now-available-in-ubuntu-25-10/71312" rel="noopener nofollow" target="_blank">forum post</a> for details.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/10/ubuntu-getting-optimisations-for-modern-processors-with-architecture-variants/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/10/ubuntu-getting-optimisations-for-modern-processors-with-architecture-variants/</guid>
-      <pubDate>Thu, 30 Oct 2025 13:18:12 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/ubuntu.png" type="image/jpeg"/>
-      
-      <category>Distro News</category>
-      
-      <category>Kubuntu</category>
-      
-      <category>Misc</category>
-      
-      <category>Ubuntu</category>
       
     </item>
     
