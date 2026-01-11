@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2026-01-10 07:31:24.954872</pubDate>
+    <pubDate>2026-01-11 07:33:11.298269</pubDate>
 
     
     <image>
@@ -18,6 +18,130 @@
     </image>
 
     
+    
+    <item>
+      <title>Canonical call for testing their Steam gaming Snap for Arm Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Doing something similar to what Valve will do for the Steam Frame, Canonical have announced a Steam gaming Snap package for Arm. Making use of the open source <a href="https://github.com/FEX-Emu/FEX" rel="noopener nofollow" target="_blank">FEX</a> emulator that <a href="https://www.gamingonlinux.com/2025/12/valve-have-been-funding-fex-to-get-x86-games-on-arm-linux/" rel="noopener" target="_blank">Valve are funding</a>, it all comes bundled together to allow you to play Steam games on Linux with Arm systems.</p>
+<p>In a post on the <a href="https://discourse.ubuntu.com/t/call-for-testing-steam-snap-for-arm64/74719/1" rel="noopener nofollow" target="_blank">Ubuntu Discourse forum</a> they've called for testing. Since this is coming from Canonical, it is not supported by Valve directly.</p>
+<p>They left some notes about testing and compatibility:</p>
+<blockquote>
+<ul>
+<li>Our primary focus so far has been developing and testing this on the NVIDIA DGX Spark with the 580.95.05 NVIDIA driver series.</li>
+<li>Early performance testing on DGX Spark is promising in several games in our libraries (both native, and via Proton). (Details below)</li>
+<li>We are currently investigating a known issue preventing proper client functionality on Qualcomm Snapdragon X laptops</li>
+<li>This snap will not currently run on Apple Silicon Macs running Asahi Linux due to their 16k page size requirement</li>
+</ul>
+</blockquote>
+<p>Some benchmarks they shared which they noted are "not intended to be comprehensive; rather, it is just a quick a look into the types of games we’ve had success with so far":</p>
+<table class="table-stripes-tbody">
+<thead>
+<tr>
+<th>Game</th>
+<th>Native Platform</th>
+<th>Performance</th>
+<th>Device</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cyberpunk 2077</td>
+<td>Windows x86 (via Proton)</td>
+<td>200+ FPS w/ DLSS</td>
+<td>NVIDIA DGX Spark w/ DGX OS (Ubuntu Noble)</td>
+</tr>
+<tr>
+<td>Counter-Strike 2</td>
+<td>Linux x86</td>
+<td>smooth, no notable performance issues (2+ hour session, mostly arms race)</td>
+<td>NVIDIA DGX Spark w/ DGX OS (Ubuntu Noble)</td>
+</tr>
+<tr>
+<td>Marvel Cosmic Invasion</td>
+<td>Linux x86</td>
+<td>no notable performance issues</td>
+<td>NVIDIA DGX Spark w/ DGX OS (Ubuntu Noble)</td>
+</tr>
+<tr>
+<td>Lonely Mountains: Snow Riders</td>
+<td>Windows x86 (via Proton)</td>
+<td>smooth, no notable performance issues. (2+ hour session)</td>
+<td>NVIDIA DGX Spark w/ DGX OS (Ubuntu Noble)</td>
+</tr>
+<tr>
+<td>DOTA 2</td>
+<td>Linux x86</td>
+<td>smooth, no notable performance issues</td>
+<td>NVIDIA DGX Spark w/ DGX OS (Ubuntu Noble)</td>
+</tr>
+<tr>
+<td>Outer Wilds</td>
+<td>Windows x86 (via ProtonGE-10-17)</td>
+<td>smooth, no notable performance issues (~20 minute test)</td>
+<td>NVIDIA DGX Spark w/ DGX OS (Ubuntu Noble)</td>
+</tr>
+<tr>
+<td>Half-Life 2</td>
+<td>Linux x86</td>
+<td>smooth, no notable performance issues</td>
+<td>NVIDIA DGX Spark w/ DGX OS (Ubuntu Noble)</td>
+</tr>
+<tr>
+<td>Portal 2</td>
+<td>Linux x86</td>
+<td>smooth, no notable performance issues</td>
+<td>NVIDIA DGX Spark w/ DGX OS (Ubuntu Noble)</td>
+</tr>
+<tr>
+<td>Garry’s Mod</td>
+<td>Linux x86</td>
+<td>smooth, no notable performance issues</td>
+<td>NVIDIA DGX Spark w/ DGX OS (Ubuntu Noble)</td>
+</tr>
+<tr>
+<td>Hollow Knight Silksong</td>
+<td>Windows x86 (via Proton)</td>
+<td>Very smooth (~10 minute test)</td>
+<td>NVIDIA DGX Spark w/ Ubuntu Questing</td>
+</tr>
+<tr>
+<td>Clair Obscur Expedition 33</td>
+<td>Windows x86 (via Proton)</td>
+<td>Playable (~10 minute test)</td>
+<td>NVIDIA DGX Spark w/ Ubuntu Questing</td>
+</tr>
+<tr>
+<td>Golf with your Friends</td>
+<td>Linux x86</td>
+<td>100+ FPS, smooth, no notable performance issues</td>
+<td>NVIDIA DGX Spark w/ DGX OS (Ubuntu Noble)</td>
+</tr>
+<tr>
+<td>PEAK</td>
+<td>Windows x86 (via ProtonGE-10-17)</td>
+<td>Was previously unstable, but is now stable across 3x ~10 minute tests after a recent game update when testing on 1/7/26. (but have not yet tested with multiple players).</td>
+<td>NVIDIA DGX Spark w/ DGX OS (Ubuntu Noble)</td>
+</tr>
+</tbody>
+</table>
+<p>I unfortunately don't have any Arm hardware to test on, apart from an older Raspberry Pi 4. </p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/canonical-call-for-testing-their-steam-gaming-snap-for-arm-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/canonical-call-for-testing-their-steam-gaming-snap-for-arm-linux/</guid>
+      <pubDate>Sat, 10 Jan 2026 13:30:09 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/577832039id28287gol.jpg" type="image/jpeg"/>
+      
+      <category>ARM</category>
+      
+      <category>Kubuntu</category>
+      
+      <category>Misc</category>
+      
+      <category>Steam</category>
+      
+    </item>
     
     <item>
       <title>Steam Frame and Steam Machine will be another good boost for Flatpaks and desktop Linux overall too</title>
@@ -5091,31 +5215,6 @@ There are two new dungeons to explore in Woolhaven! <strong>Ewefall</strong> : t
       <category>Indie Game</category>
       
       <category>Point & Click</category>
-      
-    </item>
-    
-    <item>
-      <title>The results are in - Bullet Heaven moves forward to be an official genre</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>The results are in, game developers look to move forward to create Bullet Heaven as an official genre spawned from Vampire Survivors.</p>
-<p>You know it by now I'm sure — all these survivor-like reverse bullet hell games that appeared rapidly over the last few years. There's <a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/" rel="noopener nofollow" target="_blank">Vampire Survivors</a> that started it now there's the likes of <a href="https://store.steampowered.com/app/1942280/Brotato/" rel="noopener nofollow" target="_blank">Brotato</a>, <a href="https://store.steampowered.com/app/2163330/Yet_Another_Zombie_Survivors/" rel="noopener nofollow" target="_blank">Yet Another Zombie Survivors</a> (from Awesome Games Studio), <a href="https://store.steampowered.com/app/3405340/Megabonk/" rel="noopener nofollow" target="_blank">Megabonk</a>, <a href="https://store.steampowered.com/app/2321470/Deep_Rock_Galactic_Survivor/" rel="noopener nofollow" target="_blank">Deep Rock Galactic: Survivor</a>, <a href="https://store.steampowered.com/app/2904000/The_Spell_Brigade/" rel="noopener nofollow" target="_blank">The Spell Brigade</a>, <a href="https://store.steampowered.com/app/2922410/Achilles_Survivor/" rel="noopener nofollow" target="_blank">Achilles: Survivor</a>, <a href="https://store.steampowered.com/app/2066020/Soulstone_Survivors/" rel="noopener nofollow" target="_blank">Soulstone Survivors</a> and no doubt <em>tons</em> you've never heard of.</p>
-<p>I've covered quite a number of them by now that you can see across <a href="https://www.gamingonlinux.com/articles/category/bullet-heaven/" rel="noopener" target="_blank">our own Bullet Heaven article tag</a> too.</p>
-<p>Well, to settle on an actual name for this genre, Awesome Games Studio <a href="https://docs.google.com/forms/d/e/1FAIpQLSczuipvt1qjXbUKE55K4HJUKXJo2lz-i6AXOErwle-Yj3zLnA/viewanalytics" rel="noopener nofollow" target="_blank">did a poll recently</a> and after 8,023 responses the winner was clear, it's going to be <strong>Bullet Heaven</strong>.</p>
-<div class="hidden_video" data-video-id="yVjG3oCstyo"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/8ef5da1cba13afd11bd84cd3edd9de49.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/yVjG3oCstyo" target="_blank">See video</a></div></div>
-<p>Now they just need Valve / Steam to get on board with the idea, and give it an official category like many others on Steam have. What you can do to help settle it once and for all, is add your own Bullet Heaven Steam tag to various games, which should show Valve there's a need for it.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/the-results-are-in-bullet-heaven-moves-forward-to-be-an-official-genre/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/the-results-are-in-bullet-heaven-moves-forward-to-be-an-official-genre/</guid>
-      <pubDate>Mon, 15 Dec 2025 11:23:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/635781124id28188gol.jpg" type="image/jpeg"/>
-      
-      <category>Bullet Heaven</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Misc</category>
       
     </item>
     
