@@ -8,7 +8,7 @@
     <atom:link href="https://raw.githubusercontent.com/lyz-code/gamingonlinux-rss/main/rss.xml" rel="self" type="application/rss+xml"/>
 
     
-    <pubDate>2026-01-13 07:37:39.499488</pubDate>
+    <pubDate>2026-01-14 07:39:30.916997</pubDate>
 
     
     <image>
@@ -18,6 +18,864 @@
     </image>
 
     
+    
+    <item>
+      <title>Windows compatibility layer Wine 11 arrives bringing masses of improvements to Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Wine is a compatibility layer for running Windows apps and games on Linux, a major part of Valve's Proton and now Wine 11 is finally here.</p>
+<p>Each year a new main release is made, so that developers and users have something stable to work with. After that, it splits off again into development releases towards the next major version. So in a few weeks we'll see the first Wine 11.1 build, which will be work towards Wine 12 around this time next year.</p>
+<p>Coming in hot with absolutely masses of improvements throughout the whole project. From performance upgrades to massive technical changes, there's a little something for everyone. Some highlights like better Wayland support, better pure 64-bit support to run 32-bit apps, it will use the NTSync kernel module when available for better accuracy and performance, improved ARM64 support and so much more.</p>
+<details class="spoiler_container"><summary class="spoiler_header">Full Wine 11 changelog, click me</summary>
+<div class="spoiler-content">
+<h3 id="user-content-whats-new-in-wine-110">What's new in Wine 11.0</h3>
+<h4 id="user-content-wow64">WoW64</h4>
+<ul>
+<li>
+<p>The <em>new WoW64</em> mode that was first introduced as experimental feature in Wine 9.0 is considered fully supported, and essentially has feature parity with the old WoW64 mode.</p>
+</li>
+<li>
+<p>16-bit applications are supported in the new WoW64 mode.</p>
+</li>
+<li>
+<p>It is possible to force an old WoW64 installation to run in new WoW64 mode by setting the variable <code class="inline-code">WINEARCH=wow64</code>. This requires the prefix to have been created as 64-bit (the default).</p>
+</li>
+<li>
+<p>Pure 32-bit prefixes created with <code class="inline-code">WINEARCH=win32</code> are deprecated, and are not supported in new WoW64 mode.</p>
+</li>
+<li>
+<p>The <code class="inline-code">wine64</code> loader binary is removed, in favor of a single <code class="inline-code">wine</code> loader that selects the correct mode based on the binary being executed. For binaries that have both 32-bit and 64-bit versions installed, it defaults to 64-bit. The 32-bit version can then be launched with an explicit path, e.g. <code class="inline-code">wine c:\\windows\\syswow64\\notepad.exe</code>.</p>
+</li>
+</ul>
+<h4 id="user-content-synchronization--threading">Synchronization / Threading</h4>
+<ul>
+<li>
+<p>The NTSync Linux kernel module is used when available, to improve the performance of synchronization primitives. The needed kernel module is shipped with the Linux kernel starting from version 6.14.</p>
+</li>
+<li>
+<p>Thread priority changes are implemented on Linux and macOS. On Linux, this is constrained by the system nice limit, and current distributions require some configuration to change the nice hard limit to a negative value (in the -19,-1 range, where -5 is usually enough, and anything lower is not recommended). See <code class="inline-code">man limits.conf(5)</code> for more information.</p>
+</li>
+<li>
+<p>NTDLL synchronization barriers are implemented.</p>
+</li>
+<li>
+<p>On macOS, the <code class="inline-code">%gs</code> register is swapped in the syscall dispatcher. This avoids conflicts between the Windows TEB and the macOS thread descriptor.</p>
+</li>
+</ul>
+<h4 id="user-content-kernel">Kernel</h4>
+<ul>
+<li>
+<p>NT Reparse Points are implemented, with support for the mount point and symlink types of reparse points.</p>
+</li>
+<li>
+<p>Write Watches take advantage of userfaultfd on Linux if available, to avoid the cost of handling page faults in user space.</p>
+</li>
+<li>
+<p>NT system calls use the same syscall numbering as recent Windows, to support applications that hardcode syscall numbers.</p>
+</li>
+<li>
+<p>On ARM64, there is support for simulating a 4K page size on top of larger host pages (typically 16K or 64K). This works for simple applications, but because it is not possible to completely hide the differences, more demanding applications may not work correctly. Using a 4K-page kernel is strongly recommended.</p>
+</li>
+</ul>
+<h4 id="user-content-graphics">Graphics</h4>
+<ul>
+<li>
+<p>The OSMesa dependency is removed, and OpenGL bitmap rendering is implemented with the hardware accelerated OpenGL runtime.</p>
+</li>
+<li>
+<p>The EGL OpenGL backend is extended, and used by default on the X11 platform. The GLX backend is deprecated but remains available, and is used as fallback if EGL isn't available. It can also be forced by setting the value <code class="inline-code">UseEGL=N</code> in the <code class="inline-code">HKCU\Software\Wine\X11 Driver</code> registry key.</p>
+</li>
+<li>
+<p>The <code class="inline-code">VK_KHR_external_memory_win32</code>, <code class="inline-code">VK_KHR_external_semaphore_win32</code>, <code class="inline-code">VK_KHR_external_fence_win32</code>, <code class="inline-code">VK_KHR_win32_keyed_mutex</code> extensions and the related D3DKMT APIs are implemented.</p>
+</li>
+<li>
+<p>In new WoW64 mode, OpenGL buffers are mapped to 32-bit memory space using Vulkan extensions if available.</p>
+</li>
+<li>
+<p>Front buffer OpenGL rendering is emulated for platforms that don't support it natively.</p>
+</li>
+<li>
+<p>OpenGL context sharing implementation in wglShareLists is improved.</p>
+</li>
+<li>
+<p>The Vulkan API version 1.4.335 is supported.</p>
+</li>
+<li>
+<p>Image metadata handling is better supported in WindowsCodecs.</p>
+</li>
+<li>
+<p>Many more conversions between various pixel formats are supported in WindowsCodecs.</p>
+</li>
+</ul>
+<h4 id="user-content-desktop-integration">Desktop integration</h4>
+<ul>
+<li>
+<p>X11 Window Manager integration is improved: window activation requests are sent to the Window Manager, and the EWMH protocol is used to keep the X11 and the Win32 active windows consistent.</p>
+</li>
+<li>
+<p>Exclusive fullscreen mode is supported, and D3D fullscreen mode is improved, especially improving older DDraw games.</p>
+</li>
+<li>
+<p>Shaped and color-keyed windows are supported in the experimental Wayland driver.</p>
+</li>
+<li>
+<p>Performance of several windowing-related functions is improved, using shared memory for communication between processes.</p>
+</li>
+<li>
+<p>Clipboard support is implemented in the Wayland driver.</p>
+</li>
+<li>
+<p>Input Methods are supported in the Wayland driver.</p>
+</li>
+</ul>
+<h4 id="user-content-direct3d">Direct3D</h4>
+<ul>
+<li>
+<p>Hardware decoding of H.264 video through Direct3D 11 video APIs is implemented over Vulkan Video. Note that the Vulkan renderer must be used. As in previous Wine versions, the Vulkan renderer can be used by setting <code class="inline-code">renderer</code> to <code class="inline-code">vulkan</code> using the <code class="inline-code">Direct3D</code> registry key or <code class="inline-code">WINE_D3D_CONFIG</code> environment variable.</p>
+</li>
+<li>
+<p>Direct3D 11 sampler minimum/maximum reduction filtering is implemented if <code class="inline-code">GL_ARB_texture_filter_minmax</code> is available (when using the GL renderer) or <code class="inline-code">VK_EXT_sampler_filter_minmax</code> (when using the Vulkan renderer).</p>
+</li>
+<li>
+<p>The following legacy Direct3D features are implemented for the Vulkan renderer:</p>
+<ul>
+<li>Point size control.</li>
+<li>Point sprite control.</li>
+<li>Vertex blending.</li>
+<li>Fixed-function bump mapping.</li>
+<li>Color keying in draws.</li>
+<li>Flat shading.</li>
+<li>Alpha test.</li>
+<li>User clip planes.</li>
+<li>Several resource formats.</li>
+</ul>
+<p>Additionally, the bundled copy of vkd3d-shader includes many improvements for Shader Model 1, 2, and 3 shaders, including notably support for Shader Model 1 pixel shaders and basic Shader Model 1 texturing. The Vulkan renderer is not yet at parity with the GL renderer, and is therefore not yet the default.</p>
+</li>
+</ul>
+<h4 id="user-content-direct3d-helper-libraries">Direct3D helper libraries</h4>
+<ul>
+<li>
+<p><code class="inline-code">D3DXSaveSurfaceToFileInMemory</code> is reimplemented for PNG, JPEG and BMP files, enabling support for formats and other edge cases not supported by WindowsCodecs. It also supports saving surfaces to TARGA files.</p>
+</li>
+<li>
+<p>D3DX 11 texture loading functions are implemented, using code shared with earlier D3DX versions.</p>
+</li>
+<li>
+<p>Box filtering is supported in all versions.</p>
+</li>
+<li>
+<p><code class="inline-code">D3DXSaveTextureToFileInMemory</code> supports saving textures to DDS files.</p>
+</li>
+<li>
+<p>D3DX 9 supports reading 1-bit, 2-bit, and 4-bit indexed pixel formats, as well as the CxV8U8 format.</p>
+</li>
+<li>
+<p>D3DX 10 and 11 support compressing and decompressing BC4 and BC5 formats.</p>
+</li>
+<li>
+<p>D3DX 10 and 11 support generating mipmap levels while loading textures.</p>
+</li>
+<li>
+<p><code class="inline-code">ID3DXEffect::SetRawValue()</code> is partially implemented.</p>
+</li>
+<li>
+<p><code class="inline-code">ID3DXSkinInfo::UpdateSkinnedMesh()</code> is implemented.</p>
+</li>
+</ul>
+<h4 id="user-content-input--hid-devices">Input / HID devices</h4>
+<ul>
+<li>
+<p>Compatibility with more Joystick devices is improved through the <code class="inline-code">hidraw</code> backend. Per-vendor and per-device registry options are available to selectively opt into the hidraw backend.</p>
+</li>
+<li>
+<p>Force feedback support is improved, with increased compatibility for joysticks and driving wheels, and better performance.</p>
+</li>
+<li>
+<p>Better support for gamepads in the Windows.Gaming.Input API and with the evdev backend when SDL is not available or disabled.</p>
+</li>
+<li>
+<p>There is a configuration tab for the Windows.Gaming.Input API in the Game Controllers Control Panel applet.</p>
+</li>
+<li>
+<p>DirectInput compatibility with older games that use action maps and device semantics is improved.</p>
+</li>
+<li>
+<p>More device enumeration APIs from Windows.Devices.Enumeration and cfgmgr32 are implemented.</p>
+</li>
+</ul>
+<h4 id="user-content-bluetooth">Bluetooth</h4>
+<ul>
+<li>
+<p>The Bluetooth driver supports scanning and configuring host device discoverability, with some basic support for pairing via both the API and a wizard. At this point, this is only supported on Linux systems using BlueZ.</p>
+</li>
+<li>
+<p>Bluetooth radios and devices (both classic and low-energy) are visible to Windows applications.</p>
+</li>
+<li>
+<p>Applications can make low-level RFCOMM connections to remote devices using winsock APIs.</p>
+</li>
+<li>
+<p>There is initial support for Bluetooth Low Energy (BLE) Generic Attribute Profile (GATT) services and characteristics, making them visible through the Win32 BLE APIs.</p>
+</li>
+</ul>
+<h4 id="user-content-scanner-support">Scanner support</h4>
+<ul>
+<li>
+<p><code class="inline-code">DAT_IMAGENATIVEXFER</code> is supported.</p>
+</li>
+<li>
+<p>Scanner selection and configuration are saved in the registry.</p>
+</li>
+<li>
+<p>TWAIN 2.0 API for scanning is implemented, which allows scanning to work in 64-bit applications.</p>
+</li>
+<li>
+<p>Multi-page and Automatic Document Feed scans are supported.</p>
+</li>
+<li>
+<p>There is a user interface showing scanning progress and error messages.</p>
+</li>
+<li>
+<p>The scanner user interface no longer blocks the application using it.</p>
+</li>
+<li>
+<p>Windows-native scanner drivers can be loaded if they're installed in Wine.</p>
+</li>
+</ul>
+<h4 id="user-content-multimedia">Multimedia</h4>
+<ul>
+<li>
+<p>The Multimedia Streaming library implements a custom allocator for DirectDraw streams, reducing the number of buffer copies required for filters which support a downstream custom allocator.</p>
+</li>
+<li>
+<p>Dynamic format change is supported in the DMO Wrapper, AVI Decoder, and GStreamer-based demuxer and transform filters.</p>
+</li>
+<li>
+<p>GStreamer-based demuxer filters support the Indeo 5.0 codec.</p>
+</li>
+<li>
+<p>The DirectSound Renderer filter more properly signals end-of-stream. Previously end-of-stream could be signaled too early, clipping the end of an audio stream.</p>
+</li>
+<li>
+<p>The ASF Reader filter supports seeking.</p>
+</li>
+<li>
+<p>The AVI Decoder filter supports nontrivial source and destination rectangles.</p>
+</li>
+</ul>
+<h4 id="user-content-directmusic">DirectMusic</h4>
+<ul>
+<li>
+<p>SoundFont(SF2) supports more features:</p>
+<ul>
+<li>Parsing of preset, instrument and default modulators.</li>
+<li>Layering support required for many SF2 instruments.</li>
+<li>Reuse of downloaded waves and zero-copy access sample data to prevent out-of-memory errors.</li>
+<li>Instrument normalization.</li>
+</ul>
+</li>
+<li>
+<p>The Synthesizer is improved:</p>
+<ul>
+<li>The latency clock is derived from the master clock to fix uneven playback in certain tracks.</li>
+<li>Voice shutdown is instant and the synth better handles channel pressure events and LFO connections.</li>
+<li>Setting the volume is supported and is automatically done when creating a synth or adding a port.</li>
+</ul>
+</li>
+<li>
+<p>The DX7 version of the Style form is supported.</p>
+</li>
+<li>
+<p>Cache management improvements in the loader.</p>
+</li>
+<li>
+<p>More MIDI meta events are supported.</p>
+</li>
+</ul>
+<h4 id="user-content-mono--net--winrt">Mono / .NET / WinRT</h4>
+<ul>
+<li>
+<p>XNA4 applications run based on SDL3, and render using the new SDL_GPU API by default.</p>
+</li>
+<li>
+<p>A text layout engine supporting System.Windows.Documents APIs is added to WPF (Windows Presentation Framework).</p>
+</li>
+<li>
+<p>Theming works in Windows Forms.</p>
+</li>
+<li>
+<p>WinRT metadata files can be generated by <code class="inline-code">widl</code>, and there is an initial implementation of the loader classes.</p>
+</li>
+<li>
+<p>WinRT C++ exceptions are supported.</p>
+</li>
+</ul>
+<h4 id="user-content-internationalization">Internationalization</h4>
+<ul>
+<li>
+<p>Locale data is generated from the Unicode CLDR database version 48. The following additional locales are supported: <code class="inline-code">bqi-IR</code>, <code class="inline-code">bua-RU</code>, <code class="inline-code">cop-EG</code>, <code class="inline-code">ht-HT</code>, <code class="inline-code">kek-GT</code>, <code class="inline-code">lzz-TR</code>, <code class="inline-code">mww-Hmnp-US</code>, <code class="inline-code">oka-CA</code>, <code class="inline-code">pi-Latn-GB</code>, <code class="inline-code">pms-IT</code>, <code class="inline-code">sgs-LT</code>, <code class="inline-code">suz-Deva-NP</code>, and <code class="inline-code">suz-Sunu-NP</code>,</p>
+</li>
+<li>
+<p>Unicode character tables are based on version 17.0.0 of the Unicode Standard.</p>
+</li>
+<li>
+<p>The timezone data is based on version 2025a of the IANA timezone database.</p>
+</li>
+</ul>
+<h4 id="user-content-internet-and-networking">Internet and networking</h4>
+<ul>
+<li>
+<p>MSHTML exposes DOM attributes as proper DOM nodes in standards-compliant mode.</p>
+</li>
+<li>
+<p>JavaScript typed arrays are supported.</p>
+</li>
+<li>
+<p>The MSHTML objects DOMParser, XDomainRequest and msCrypto are implemented.</p>
+</li>
+<li>
+<p>Ping is implemented for ICMPv6.</p>
+</li>
+</ul>
+<h4 id="user-content-databases">Databases</h4>
+<ul>
+<li>
+<p>MSADO supports writing changes to the database.</p>
+</li>
+<li>
+<p>Most of the MSADO Recordset functions are implemented.</p>
+</li>
+<li>
+<p>ODBC remaps Unicode strings to support ANSI-only Win32 drivers.</p>
+</li>
+</ul>
+<h4 id="user-content-debugging">Debugging</h4>
+<ul>
+<li>
+<p>The PDB file loader in DbgHelp is reimplemented, to support large files (&gt; 4G), faster loading, and use fewer memory resources.</p>
+</li>
+<li>
+<p>NT system calls can be traced with <code class="inline-code">WINEDEBUG=syscall</code>. Unlike <code class="inline-code">WINEDEBUG=relay</code>, this is transparent to the application, and avoids breaking applications that hook system call entry points.</p>
+</li>
+<li>
+<p>It is possible to generate both DWARF and PDB debug information in a single build.</p>
+</li>
+</ul>
+<h4 id="user-content-builtin-applications">Builtin applications</h4>
+<ul>
+<li>
+<p>The Audio tab of WineCfg allows configuring the default MIDI device.</p>
+</li>
+<li>
+<p>The Command Prompt tool <code class="inline-code">cmd</code> can create reparse points with <code class="inline-code">mklink /j</code>, and display them in directory listings.</p>
+</li>
+<li>
+<p>The Command Prompt tool <code class="inline-code">cmd</code> supports more complex instructions, and file name auto completion in interactive prompt.</p>
+</li>
+<li>
+<p>The Console Hosting application <code class="inline-code">conhost</code> supports F1 and F3 keys for history retrieval.</p>
+</li>
+<li>
+<p>The <code class="inline-code">timeout</code> application is implemented.</p>
+</li>
+<li>
+<p>The <code class="inline-code">find</code> tool supports options <code class="inline-code">/c</code> (display match count) and <code class="inline-code">/i</code> (case insensitive matches).</p>
+</li>
+<li>
+<p>The <code class="inline-code">whoami</code> tool supports output format specifiers.</p>
+</li>
+<li>
+<p>There is a basic implementation of the <code class="inline-code">subst</code> command</p>
+</li>
+<li>
+<p>There is an initial implementation of the <code class="inline-code">runas</code> tool.</p>
+</li>
+</ul>
+<h4 id="user-content-miscellaneous">Miscellaneous</h4>
+<ul>
+<li>
+<p>Common Controls version 5 and version 6 are fully separated DLLs, and v6-only features are removed from the v5 DLL for better compatibility.</p>
+</li>
+<li>
+<p>The PBKDF2 key derivation algorithm is supported in BCrypt.</p>
+</li>
+<li>
+<p>The well-known shell folders <code class="inline-code">UserProgramFiles</code>, <code class="inline-code">AccountPictures</code> and <code class="inline-code">Screenshots</code> are supported.</p>
+</li>
+</ul>
+<h4 id="user-content-development-tools">Development tools</h4>
+<ul>
+<li>
+<p>The IDL compiler can generate Windows Runtime metadata files (<code class="inline-code">.winmd</code>) with the <code class="inline-code">--winmd</code> option</p>
+</li>
+<li>
+<p>The <code class="inline-code">winedump</code> tool supports dumping MUI resources, syscall numbers, embedded NE modules, and large PDB files (&gt;4G).</p>
+</li>
+<li>
+<p>The <code class="inline-code">wine/unixlib.h</code> header is installed as part of the development package, as a first step towards supporting use of the Unixlib interface in third-party modules. This is still a work in progress.</p>
+</li>
+</ul>
+<h4 id="user-content-build-infrastructure">Build infrastructure</h4>
+<ul>
+<li>
+<p>The X11-derived <code class="inline-code">install-sh</code> script is reimplemented in C, to enable installing several files in a single program invocation. This speeds up the file copying phase of <code class="inline-code">make install</code> by an order of magnitude.</p>
+</li>
+<li>
+<p>Compiler exceptions are used to implement <code class="inline-code">__try/__except</code> blocks when building with Clang for 64-bit MSVC targets.</p>
+</li>
+<li>
+<p>The WineHQ Gitlab CI supports ARM64 builds.</p>
+</li>
+</ul>
+<h4 id="user-content-bundled-libraries">Bundled libraries</h4>
+<ul>
+<li>
+<p>The LLVM Compiler-RT runtime library version 8.0.1 is bundled, and used when building modules in MSVC mode.</p>
+</li>
+<li>
+<p>The TomCrypt library version 1.18.2 is bundled and used to implement cryptographic primitives in the RsaEnh and BCrypt modules.</p>
+</li>
+<li>
+<p>Vkd3d is updated to the upstream release <a href="https://gitlab.winehq.org/wine/vkd3d/-/releases/vkd3d-1.18" rel="noopener nofollow" target="_blank">1.18</a>.</p>
+</li>
+<li>
+<p>Faudio is updated to the upstream release 25.12.</p>
+</li>
+<li>
+<p>FluidSynth is updated to the upstream release 2.4.2.</p>
+</li>
+<li>
+<p>LCMS2 is updated to the upstream release 2.17.</p>
+</li>
+<li>
+<p>LibMPG123 is updated to the upstream release 1.33.0.</p>
+</li>
+<li>
+<p>LibPng is updated to the upstream release 1.6.51.</p>
+</li>
+<li>
+<p>LibTiff is updated to the upstream release 4.7.1.</p>
+</li>
+<li>
+<p>LibXml2 is updated to the upstream release 2.12.10.</p>
+</li>
+<li>
+<p>LibXslt is updated to the upstream release 1.1.43.</p>
+</li>
+</ul>
+<h4 id="user-content-external-dependencies">External dependencies</h4>
+<ul>
+<li>
+<p>The OSMesa library is no longer used. OpenGL bitmap rendering is implemented using EGL instead.</p>
+</li>
+<li>
+<p>The HwLoc library is used for CPU detection on FreeBSD.</p>
+</li>
+</ul>
+</div>
+</details>
+<p>Valve will eventually upgrade Proton to be based on Wine 11 but as usual we have no timeframe from Valve on when that will happen. However, Valve did just get a <a href="https://www.gamingonlinux.com/2026/01/steamos-3-7-20-adds-the-ntsync-driver-to-help-improve-some-game-performance/" rel="noopener" target="_blank">SteamOS Beta out recently with NTSync support</a>.</p>
+<p>Fantastic to see it release, to bring even better Windows app and game compatibility to Linux systems.</p>
+<p><em>Source: <a href="https://gitlab.winehq.org/wine/wine/-/releases/wine-11.0" rel="noopener nofollow" target="_blank">Wine GitLab</a></em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/windows-compatibility-layer-wine-11-arrives-bringing-masses-of-improvements-to-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/windows-compatibility-layer-wine-11-arrives-bringing-masses-of-improvements-to-linux/</guid>
+      <pubDate>Tue, 13 Jan 2026 16:35:33 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/wine-generic.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+      <category>Wine</category>
+      
+    </item>
+    
+    <item>
+      <title>Check out the full first video episode for Games For Everyone</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://www.gamingonlinux.com/2026/01/check-out-the-new-games-for-everyone-podcast-and-have-a-listen/" rel="noopener" target="_blank">Recently we mentioned</a> a new podcast series hosted by Jason at Linux For Everyone called Games For Everyone. Now you can catch the first full video episode. As a reminder it features myself for GamingOnLinux along with the wonderful Jason Evangelho from <a class="gol680" href="https://linuxforeveryone.net/" rel="noopener nofollow" target="_blank">Linux For Everyone</a>, <a class="gol171" href="https://www.youtube.com/@gardiner_bryant" rel="noopener nofollow" target="_blank">Gardiner Bryant</a>, and Nick from <a class="gol603" href="https://www.youtube.com/@TheLinuxEXP" rel="noopener nofollow" target="_blank">The Linux Experiment</a>. </p>
+<p>See the full video below:</p>
+<div class="hidden_video" data-video-id="XC4WzCvZk4g"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/1ea46e9cd87a3c4f6506d8e56b14e096.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/XC4WzCvZk4g" target="_blank">See video</a></div></div>
+<p>The podcast for audio is on the <a class="gol94" href="https://linuxforeveryone.net/games-for-everyone-1-valves-third-act/" rel="noopener nofollow" target="_blank">Linux For Everyone</a> website.</p>
+<p>We hope you enjoy it as much as we did while doing it.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/check-out-the-full-first-video-episode-for-games-for-everyone/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/check-out-the-full-first-video-episode-for-games-for-everyone/</guid>
+      <pubDate>Tue, 13 Jan 2026 16:16:31 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/499450407id28308gol.jpg" type="image/jpeg"/>
+      
+      <category>Misc</category>
+      
+      <category>Podcast</category>
+      
+      <category>Video</category>
+      
+    </item>
+    
+    <item>
+      <title>Hytale has arrived in Early Access with Linux support</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>It has been a long road for Hytale but the sandbox exploration RPG is now officially out in Early Access, with Native Linux support. Giving you a procedurally generated world full of dungeons, secrets, and a variety of creatures that you can shape block by block. Like a mixture of Minecraft with a proper RPG, it's an interesting mixture but very early days for it.</p>
+<p>The Linux version as they previously announced comes as a Flatpak, which has its own launcher that will download and apply updates for you.</p>
+<p>Since there was no pre-release testing available, I jumped in as soon as it went live to verify their Linux version. As far as I can see, it is working nicely in the opening area. But, keep in mind is really unfinished and only just arrived and the developers are still catching up after acquiring it back from Riot after Riot cancelled it. As noted in the release <a href="https://hytale.com/news/2026/1/hytale-is-finally-here" rel="noopener nofollow" target="_blank">announcement</a>:</p>
+<blockquote>
+<ul>
+<li>Early Access - many features are still missing, and bugs are expected</li>
+<li>It's only been two months since we reacquired Hytale - and that's how long we've had to prepare the game and rebuild the team from the ground up</li>
+<li>Demand has exceeded our expectations, which means launch week will be bumpy, but we'll get everyone in</li>
+</ul>
+</blockquote>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/14832272231768318327gol2.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/14832272231768318327gol2.jpg"/></a><br/>
+<em>Pictured - Hytale on Fedora KDE Linux</em></p>
+<p>As for what to expect from it right now:</p>
+<blockquote>
+<ul>
+<li>Exploration Mode</li>
+<li>Creative Mode - in-game and standalone tools</li>
+<li>Modding Support</li>
+<li>Multiplayer Support - for all modes</li>
+</ul>
+</blockquote>
+<p>And what's not in it yet:</p>
+<blockquote>
+<ul>
+<li>Adventure Mode - Will include rich story and narrative elements, deeper progression systems, dungeons with boss fights, and more.</li>
+<li>Official Minigames - fun social games and competitive multiplayer modes</li>
+<li>Default Spawn: World Gen V2 - the complete, restored world of Orbis</li>
+<li>Social features - friends lists and guilds</li>
+</ul>
+</blockquote>
+<p>Really happy to see it arrive and it <a href="https://www.gamingonlinux.com/2026/01/hytale-pre-orders-have-been-so-strong-development-is-secured-for-two-years/" rel="noopener" target="_blank">has been a clear success</a> so plenty of updates to come. I foresee many hours getting lost in the world while exploring, as I have absolutely no clue what I am doing right now. But, thankfully, all my many previous hours of Mincraft are coming in handy. <em>Punch tree, get wood. Okay, good start. </em></p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/12279275701768318729gol2.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/12279275701768318729gol2.jpg"/></a><br/>
+<em>Pictured - Hytale on Fedora KDE Linux</em></p>
+<p>A Fox repeatedly hiding and attempting to sneak up to me, and then scurrying away with a little noise when I try to move towards it is my new favourite thing:</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/4224242641768319119gol2.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/4224242641768319119gol2.jpg"/></a><br/>
+<em>Pictured - Hytale on Fedora KDE Linux</em></p>
+<p>This already feels like what I personally <em>wished</em> Minecraft actually was.</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/20490149461768319643gol2.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/20490149461768319643gol2.jpg"/></a></p>
+<p>For a first release, I'm pretty impressed at how it's running on my system. With settings cranked up to High, it's very smooth, but I am running solo right now at the beginning of the game. Really pleased to see official Linux support for another big indie game like this.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43616/hytale/">Hytale</a></strong><br/>Platform: Native Linux</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://hytale.com/">Official Website</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/hytale-has-arrived-with-linux-support/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/hytale-has-arrived-with-linux-support/</guid>
+      <pubDate>Tue, 13 Jan 2026 15:54:23 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/2010932101id28307gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Native Linux</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Java</category>
+      
+    </item>
+    
+    <item>
+      <title>Star Trek: Voyager - Across the Unknown gets a combat deep dive and release date</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Star Trek: Voyager - Across the Unknown is getting ready for warp speed with a new combat deep dive trailer, and they've announce a release for February 18th.</p>
+<p>Giving you the chance to blast through the Delta Quadrant your own way, making choices that Captain Janeway never made, there's a lot of ways you can change your run through - and even end it rather early. Peace at all costs? Take over everything? The adventure this time is your own. Blending elements of strategy, resource management, exploration and more - it has all the makings to be a good one.</p>
+<p>At release it will come with a "Deluxe Upgrade" edition on Steam which adds in "new missions, new recruitable heroes, and powerful technologies drawn from pivotal alien encounters in the Delta Quadrant".</p>
+<p>Check out the new deep dive for combat below:</p>
+<div class="hidden_video" data-video-id="7K9_Kn6fvEU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/5203e8c6be6a33f85de7d839075cee7d.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/7K9_Kn6fvEU" target="_blank">See video</a></div></div>
+<p>As a big Star Trek fan, and a lover of Voyager, I am excited - I just hope they've sorted the audio out that was severely lacking in the early demos. The Steam page does now mention the full game will have "partial voice over as well as updated music and sound effects" so I'm hoping that will really bring it to life.</p>
+<p>From the press release: "Following the demo release, we’ve taken lots of valuable player feedback on board. This valuable input allows us to refine core gameplay systems even further, polish localization, and add meaningful details – ensuring the journey through the Delta Quadrant will shine when the game launches in early 2026," says Daniel Bernard, Game Director at gameXcite.</p>
+<p>Jonas Hüsges, COO of Daedalic Entertainment GmbH, shared the following: "Matching the spirit of Starfleet, we want to bring this adventure to as many of you as possible on day one. The additional time allows us to synchronize all platforms, including the newly added Nintendo Switch 2 version and improve the game on all levels. A unified launch is the right call for a story about a crew that survives by sticking together. We’re excited to give fans the best possible voyage home."</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42741/star-trek-voyager-across-the-unknown/">Star Trek: Voyager - Across the Unknown</a></strong> | Release Date: 18th February 2026<br/>Platform: Proton / Wine</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2643390/Star_Trek_Voyager__Across_the_Unknown/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/star-trek-voyager-across-the-unknown-gets-a-combat-deep-dive-and-release-date/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/star-trek-voyager-across-the-unknown-gets-a-combat-deep-dive-and-release-date/</guid>
+      <pubDate>Tue, 13 Jan 2026 15:15:31 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/123468902id28306gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Adventure</category>
+      
+      <category>Steam</category>
+      
+      <category>Strategy</category>
+      
+    </item>
+    
+    <item>
+      <title>Get ready to enter Winnie&#39;s Hole when it arrives January 26</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Infection is progression in Winnie's Hole. The roguelite is set to enter Early Access on January 26, and judging by the previous demo it's going to be good.</p>
+<p>Yes, this is the actual Winnie-the-Pooh from children's stories since it entered public domain back in 2022 in the US, although it's still protected in the UK until January 2027.</p>
+<p>Winnie's Hole is viral roguelite not in the sense of it hitting it big by a YouTuber, but in the way that you progress as you explore Winnie's cells inside their body and spread a virus.<em> </em>It's a bit of a gruesome idea and poor old pooh, look at what they've done to you. Great idea for a game though. Capture cells to mutate, explore randomised cellular worlds, and build a deck of actions to unleash in combo-driven combat, from the creators of the popular Ring of Pain.</p>
+<p>Check out the new trailer:</p>
+<div class="hidden_video" data-video-id="sHK0zHtJdTc"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/ef5360ef8ec21a35d4a9ddc398e8ca6f.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/sHK0zHtJdTc" target="_blank">See video</a></div></div>
+<p>Game Highlights:</p>
+<blockquote>
+<div class="styles_listContainer__PSxE8">
+<ul>
+<li><strong>Bodybuilding in the worst way</strong> - Mutate Winnie as a symbiotic virus.</li>
+<li>Reimagining of <strong>A.A. Milne’s classic characters</strong> in a world of dark science and medical malpractise.</li>
+<li><strong>An anti-cosy antidote</strong> - Cute animal friends discovering the horrors of increasingly parasitic viruses.</li>
+<li>Break the limits of your host in <strong>randomly generated roguelike runs</strong>.</li>
+<li>Explore cellular worlds with <strong>tetromino-like block shapes</strong> - No roguelite node maps, explore by spreading a virus through the body of your host.</li>
+<li><strong>Combo-driven combat</strong> - Semi-auto battling within the brain of your host, using a single block shape to perform multiple actions at once.</li>
+<li><strong>Genre-hybrid innovations</strong> - More strategic input than an autobattler, faster turns than a typical deckbuilder.</li>
+<li><strong>Collect cells and make gut decisions</strong> - Influence the adventure with accessible turn-based gameplay.</li>
+<li>Evolve and <strong>unlock new virus types, strains, and mutations</strong> - Extract samples to research as you delve into uncharted biomes.</li>
+<li><strong>‘Holesome’ dark comedy</strong> with the grit of Brothers Grimm fairytales and humour of Nickelodeon cartoons - Embrace discomfort in a story of judgement and self-acceptance.</li>
+</ul>
+</div>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42027/winnies-hole/">Winnie's Hole</a></strong> | Release Date: 26th January 2026<br/>Platform: Proton / Wine</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2319730/Winnies_Hole/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/get-ready-to-enter-winnies-hole-when-it-arrives-january-26/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/get-ready-to-enter-winnies-hole-when-it-arrives-january-26/</guid>
+      <pubDate>Tue, 13 Jan 2026 14:44:56 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1581030622id28305gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Proton</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Rogue-lite</category>
+      
+    </item>
+    
+    <item>
+      <title>Budgie 10.10 finally makes the Wayland jump as development moves to Budgie 11</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>Budgie may not be one of the most popular desktop environments on Linux but it is an interesting one, and with Budgie 10.10 it finally migrated to Wayland.</p>
+<p>In the release <a href="https://buddiesofbudgie.org/blog/budgie-10-10-released" rel="noopener nofollow" target="_blank">announcement</a> developer Joshua Strobl mentioned how "This release series brings to a close just over a decade of Budgie 10 development; we are formally putting Budgie 10 into maintenance mode to focus our efforts on Budgie 11".</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/9269915421768312558gol2.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9269915421768312558gol2.jpg"/></a><br/>
+<em>Pictured - Budgie 10.10, Credit: Budgie team</em></p>
+<p>Instead of reinventing the wheel and doing their own thing, they're using Wayland-supporting tools from elsewhere as outlined in the post:</p>
+<blockquote>
+<ul>
+<li><strong>Screenshots</strong>: Functionality is powered by <a href="https://github.com/emersion/grim" rel="noopener nofollow" target="_blank">grim</a> and <a href="https://github.com/emersion/slurp" rel="noopener nofollow" target="_blank">slurp</a> for capturing images and selecting screen regions.</li>
+<li><strong>Screen Locking and Idle Management</strong>: We have integrated <a href="https://github.com/swaywm/swayidle" rel="noopener nofollow" target="_blank">swayidle</a>, <a href="https://github.com/jovanlanik/gtklock" rel="noopener nofollow" target="_blank">gtklock</a> or <a href="https://github.com/swaywm/swaylock" rel="noopener nofollow" target="_blank">swaylock</a>, and <a href="https://git.sr.ht/~leon_plickat/wlopm/" rel="noopener nofollow" target="_blank">wlopm</a>. These modern solutions leverage the <code class="inline-code">ext-session-lock</code> protocol, and Budgie Screensaver (our fork of gnome-screensaver) is now considered deprecated. Your screen will automatically dim and lock after inactivity, and manual locking is supported at any time.</li>
+<li><strong>Desktop Backgrounds</strong>: Handled by <a href="https://github.com/swaywm/swaybg" rel="noopener nofollow" target="_blank">swaybg</a> to ensure wallpapers display correctly under Wayland.</li>
+<li><strong>Application Integration</strong>: Uses XDG Desktop Portals <a href="https://github.com/flatpak/xdg-desktop-portal-gtk" rel="noopener nofollow" target="_blank">xdg-desktop-portal-gtk</a> for most tasks and <a href="https://github.com/emersion/xdg-desktop-portal-wlr" rel="noopener nofollow" target="_blank">xdg-desktop-portal-wlr</a> for screenshots and ScreenCasts. This enables applications to request screen sharing in a secure, standardized way.</li>
+</ul>
+</blockquote>
+<p>They're currently recommending using it with a wlroots-based compositor like <a href="https://labwc.github.io/" rel="noopener nofollow" target="_blank">labwc</a>. They said the move to Wayland "represents a fundamental architectural shift" to a "protocol-first architecture" that "decouples the desktop from a specific window manager (budgie-wm, which in turn relied on our fork of Mutter called Magpie), and makes Budgie truly compositor-agnostic, opening the door for experimentation with alternative compositors beyond our primary recommendations".</p>
+<p>On top of the Wayland move the release comes with a lot of improvements to desktop panels, applets and major improvements to Budgie Control Center.</p>
+<p>In an additional <a href="https://buddiesofbudgie.org/blog/state-of-the-budgie-2025" rel="noopener nofollow" target="_blank">announcement</a> Strobl noted they're going with Qt6 for Budgie 11 with development already kicked-off. With plans to make Budgie more modular, to allow more personalization and to "pave the way for new form factors, input devices, and workflows". They also plan to improve communication, which has been lacking.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/budgie-10-10-finally-makes-the-wayland-jump-as-development-moves-to-budgie-11/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/budgie-10-10-finally-makes-the-wayland-jump-as-development-moves-to-budgie-11/</guid>
+      <pubDate>Tue, 13 Jan 2026 14:03:44 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1917432331id28304gol.jpg" type="image/jpeg"/>
+      
+      <category>Desktop Environment</category>
+      
+      <category>Misc</category>
+      
+      <category>Open Source</category>
+      
+    </item>
+    
+    <item>
+      <title>NVIDIA recommended driver 580.126.09 release for Linux</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>NVIDIA today released their latest recommended driver version 580.126.09 for Linux but it's quite light on actual changes and improvements. This is their main stable branch that receives bug-fixes, with the newer stuff coming in the 590 series that had a first proper release recently with <a href="https://www.gamingonlinux.com/2025/12/nvidia-release-linux-driver-version-590-48-01/" rel="noopener" target="_blank">590.48.01</a> back in December.</p>
+<p>The three improvements noted in version <a href="http://www.nvidia.com/en-us/drivers/details/261702/" rel="noopener nofollow" target="_blank">580.126.09</a> are:</p>
+<blockquote>
+<ul>
+<li>Fixed a bug that prevented certain display modes that require YUV 4:2:0 subsampling from working.</li>
+<li>Improved compatibility with recent Linux kernels.</li>
+<li>Updated libnvidia-egl-gbm to commit a73cbce to support FP16 DRM formats.</li>
+</ul>
+</blockquote>
+<p>On the same day they also released a bug-fix to the much older series with <a href="https://www.nvidia.com/en-us/drivers/details/261122/" rel="noopener nofollow" target="_blank">570.211.01</a> also out now that notes:</p>
+<blockquote>
+<div class="nv-text text aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--offset--default--0">
+<div class="general-container-text" id="nv-text-3102f5f7d4">
+<div class="text-left lap-text-left tab-text-left mob-text-left">
+<div class="description" id="ddReleaseNotes_div">
+<ul>
+<li>Fixed a bug that could cause system freezes on PREEMPT_RT kernels.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+<p>In other related NVIDIA news they recently revealed <a href="https://www.gamingonlinux.com/2026/01/nvidia-announce-dlss-4-5-with-dynamic-multi-frame-generation-plus-dlss-updater-gets-linux-support/" rel="noopener" target="_blank">DLSS 4.5</a> and an upcoming <a href="https://www.gamingonlinux.com/2026/01/nvidia-announce-a-native-linux-app-for-geforce-now/" rel="noopener" target="_blank">Native Linux app for GeForce NOW</a>.</p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/nvidia-recommended-driver-580-126-09-release-for-linux/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/nvidia-recommended-driver-580-126-09-release-for-linux/</guid>
+      <pubDate>Tue, 13 Jan 2026 13:43:07 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/tagline_gallery/nvidia-logo.jpg" type="image/jpeg"/>
+      
+      <category>Drivers</category>
+      
+      <category>Misc</category>
+      
+      <category>New Release</category>
+      
+      <category>NVIDIA</category>
+      
+    </item>
+    
+    <item>
+      <title>Medieval kingdom builder Earth of Oryn finally arrives in Early Access on January 19</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>After a Kickstarter success back in 2022, the medieval kingdom builder Earth of Oryn is set to enter Early Access on January 19th. It looks promising but it's far from finished.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/5951139021768311012gol2.jpg"/></p>
+<p>In the Steam <a href="https://store.steampowered.com/news/app/1972450/view/525364745339930357" rel="noopener nofollow" target="_blank">announcement</a> the developer said:</p>
+<blockquote>
+<p>Earth of Oryn has been in development for several years as a solo project. Over time, it grew into a deep, systems-driven city builder focused on simulation, atmosphere, and long-term management. As the project evolved, its scope and complexity increased significantly and early access is now the most honest and realistic way to move forward.<br/>
+<br/>
+This release is not about presenting a finished product, but about opening the game up, letting players experience it in its current state, and continuing development in a transparent and sustainable way.</p>
+</blockquote>
+<p>The original Kickstarter mentioned "Linux and SteamDeck are high on my backlog and should be added to the roadmap after the 1.0 version of the game" but it has been a long time since then. </p>
+<p>See the original trailer below which is still the most up to date shown on Steam:</p>
+<div class="hidden_video" data-video-id="0SSYSLR2EdM"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/c5ca9e0d9b75f2db6d8903802a0f7598.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/0SSYSLR2EdM" target="_blank">See video</a></div></div>
+<p>It will be priced at $14.99. They have no estimate on when it will leave Early Access so it could be a long time.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/37815/earth-of-oryn/">Earth of Oryn</a></strong><br/>Platform: Proton / Wine</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1972450/Earth_of_Oryn/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/medieval-kingdom-builder-earth-of-oryn-finally-arrives-in-early-access-on-january-19/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/medieval-kingdom-builder-earth-of-oryn-finally-arrives-in-early-access-on-january-19/</guid>
+      <pubDate>Tue, 13 Jan 2026 13:32:41 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1506393876id28302gol.jpg" type="image/jpeg"/>
+      
+      <category>Early Access</category>
+      
+      <category>Proton</category>
+      
+      <category>City Builder</category>
+      
+      <category>Indie Game</category>
+      
+    </item>
+    
+    <item>
+      <title>Dev of Steam game &#39;Hardest&#39; will delete it after new girlfriend made them realise AI is bad</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p><a href="https://store.steampowered.com/app/3435450/Hardest/" rel="noopener nofollow" target="_blank">Hardest</a> is getting removed from Steam by the developer at the end of the month, as they say "AI is bad" and "AI is evil" - oh my. <em>Never heard of it until it was pointed out on <a href="https://techhub.social/@ozone89/115884536966623498" rel="noopener nofollow" target="_blank">Mastodon</a> to me.</em></p>
+<p>In a Steam <a href="https://store.steampowered.com/news/app/3435450/view/525364745339929910" rel="noopener nofollow" target="_blank">announcement</a> the developer mentioned they made the game in a few Summer months using AI "because in university there is so much brainwashing on students and all the tools are given for free". Now they have "realized the AI is not actually free, and it has a major effect on the economy and environment." and that some AI companies "can use this game just existing as a reason the get more investment for their AI companies, that benefit no one, but rather suck resources from the economy from hard working people".</p>
+<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/1211687381768310442gol2.jpg" rel="noopener nofollow" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/1211687381768310442gol2.jpg"/></a></p>
+<p>While they say they coded it the game used AI generated assets and that makes it "a disgrace to all game makers and players". The sticking point for the developer? They said the "girl I've been dating for a month made me realize this" and so it's getting deleted from Steam on January 30th.</p>
+<p>A tiny game that had a Mixed rating on Steam from 33 overall reviews. I don't think anyone will miss it. Probably the first time this has ever happened though?</p>
+<p>Realistically, we're still only in the infancy of seeing how generative AI is going to affect the gaming industry. More and more developers are using it. <em>The bubble will burst eventually.</em></p>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/dev-of-steam-game-hardest-will-delete-it-after-new-girlfriend-made-them-realise-ai-is-bad/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/dev-of-steam-game-hardest-will-delete-it-after-new-girlfriend-made-them-realise-ai-is-bad/</guid>
+      <pubDate>Tue, 13 Jan 2026 13:24:49 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/767773303id28301gol.jpg" type="image/jpeg"/>
+      
+      <category>AI</category>
+      
+      <category>Card Game</category>
+      
+      <category>Indie Game</category>
+      
+      <category>Steam</category>
+      
+    </item>
+    
+    <item>
+      <title>Eat creatures and grind them into pieces or use them as weapons in autobattler Dunderbeck</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>I quite enjoy inventory management and autobattlers and Dunderbeck definitely takes the cake as one of the absolute weirdest I've played.</p>
+<p>Coming from RUST LTD., who previously made the popular VR game Hot Dogs, Horseshoes &amp; Hand Grenades. This game is made with <a href="https://godotengine.org/" rel="noopener nofollow" target="_blank">Godot</a>, and it has a Native Linux demo available on Steam right now. A little more on the gruesome side with you collecting things and eating them, allowing you discover all the special properties they can give you - or make you sick. Everything is edible but doesn't mean it's a good idea. Everything is a weapon too, but that also doesn't mean it's any good - but you have to work with what you find during a run.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18610829301768309144gol2.jpg"/></p>
+<p>The idea is definitely interesting. Your character walks along the top of the screen, fighting creatures as you come to them with whatever you've placed into your hands. When you defeat enemies, you pick up their bodies from the bottom of the screen that scrolls along as you move. Then you have to decide if you grind them into resources, eat them for possible benefits, use them as a weapon or keep them to sell when you get back to the city.</p>
+<p>It's all about timing here on everything. Some enemies can even pinch things out of your bag as the battles go on, with a little claw appearing on your bag showing you what row they're going to grab from. So you're constantly on the go doing something between protecting your bag, eating, sorting your inventory, grinding something down and swapping items in your hands.</p>
+<p>Super weird but I'm into it. Love the idea, very different to others in the genre.</p>
+<p>From the Steam page:</p>
+<blockquote>
+<p>Grind magical creatures into sausages in the mystical world of Cincinnati, Ohio!</p>
+<p>So, what do I do in this game? Huh?</p>
+<p>Introducing the portable, all-purpose cooking &amp; crafting machine: Shove in carcasses and random junk; cook up things that might be edible, and cobble together basic tools and weapons!</p>
+<p>Seriously, pick something up and swing. A spoon? Sure. A lead pipe? Why not. A rat? Desperate times, right? Just don't expect your makeshift arsenal to last forever.</p>
+<p>Hey, everything is eatable - at least once! Hold any item in your mouth for too long, and down the hatch it goes!</p>
+<p>Just like the garbage you keep at home, all of OUR WONDERFUL GARBAGE has a size and shape. You can put it into nice little rows, or you can just go full goblin mode. We aren't your mom - do what feels right, you know?</p>
+</blockquote>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/44091/dunderbeck/">Dunderbeck</a></strong><br/>Platform: Native Linux</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2477750/Dunderbeck/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/eat-creatures-and-grind-them-into-pieces-or-use-them-as-weapons-in-autobattler-dunderbeck/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/eat-creatures-and-grind-them-into-pieces-or-use-them-as-weapons-in-autobattler-dunderbeck/</guid>
+      <pubDate>Tue, 13 Jan 2026 13:05:21 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1265706643id28300gol.jpg" type="image/jpeg"/>
+      
+      <category>Native Linux</category>
+      
+      <category>Autobattler</category>
+      
+      <category>Demo</category>
+      
+      <category>Godot Engine</category>
+      
+    </item>
+    
+    <item>
+      <title>ARC Raiders hits over 12.4M sales - new patch out with weapon nerfs, a free gift and a darker Stella Montis</title>
+      <author>Liam Dawe</author>
+      <description><div class="content group e-content">
+<p>ARC Raiders has been a huge success for Nexon / Embark Studios with 12.4 million sales, and it seems sales are actually speeding up. Oh, and a new patch is out.</p>
+<p>In a <a href="https://www.nexon.co.jp/en/news/detail/?id=20260113-9bbd7e90" rel="noopener nofollow" target="_blank">press release</a> on January 13th Nexon confirmed ARC Raiders had surpassed 10 million sales by the end of December, with it accelerating as it's now up to 12.4 million. It even hit 960,000 concurrent players across all platforms in January. Thankfully, Embark have kept the <a href="https://www.gamingonlinux.com/anticheat/" rel="noopener" target="_blank">anti-cheat enabled for Linux</a> players - so it's one of the biggest multiplayer titles available for us.</p>
+<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/9478768831768307097gol2.jpg"/></p>
+<p>That sales milestone is despite plenty of groans across the net about the use of generative AI for the player voices, which is used call out things like enemies and items in the world. Making me call into question my own stance on the ethics of it all, since I genuinely do see it as my favourite game right now. They did pay people for their voices, but it's still a form of generative AI.<em> It's a tough one for me. </em></p>
+<p>Embark also just released a <a href="https://arcraiders.com/news/patch-notes-1-11-0" rel="noopener nofollow" target="_blank">new patch</a> that gives a gift to all players that logged in before the end of January 13th (10:59 PM UTC) with a Gilded Pickaxe Raider Tool. The actual patch notes:</p>
+<blockquote>
+<ul>
+<li>Kettle</li>
+<li>
+<ul>
+<li>Dev note: Reduced fire rate from 600 to 450. The previous fire rate was only realistically reachable by players using macros, which creates an unfair dynamic that favours using 3rd party software.</li>
+</ul>
+</li>
+<li>Trigger ‘Nade</li>
+<li>
+<ul>
+<li>Dev note: Trigger ‘Nade currently dominates PVP encounters, and players favour picking it over all our other grenades. This nerf aims to make it less usable as a “trigger-in-air” grenade, whilst keeping its usefulness as a sticky bomb. Damage falloff has been rebalanced to concentrate the damage closer to the center of the explosion, and deal less damage further away. The delay between triggering the grenade and it detonating, has been increased from 0.7s to 1.5s, giving players more time to react, and making it harder to time the detonation in air.</li>
+</ul>
+</li>
+<li>Fixed a key card exploit that allowed players to keep room keys after using them.</li>
+<li>Lighting has been lowered in some areas on Stella Montis Night Raid making flashlights and listening more relevant.</li>
+</ul>
+</blockquote>
+<p>Watch me completely fail with the Snap Hook in the below video while attempting to do something stupid:</p>
+<div class="hidden_video" data-video-id="QX3TTWMQrPU"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/dce87534b06baf6f3424fd36bc0982ea.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/QX3TTWMQrPU" target="_blank">See video</a></div></div>
+<p>Fanatical do still somehow have it discounted by 14% at time of publishing. Good time to grab it.</p>
+<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43449/arc-raiders/">ARC Raiders</a></strong> | Release Date: 30th October 2025<br/>Platform: Proton / Wine</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.fanatical.com/en/game/arc-raiders">Fanatical</a></li><li><a href="https://store.steampowered.com/app/1808500/ARC_Raiders/">Steam</a></li></ul></div>
+<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
+</div></description>
+      <link>https://www.gamingonlinux.com/2026/01/arc-raiders-hits-over-12-4m-sales-new-patch-out-with-weapon-nerfs-a-free-gift-and-a-darker-stella-montis/</link>
+      <guid isPermaLink="true">https://www.gamingonlinux.com/2026/01/arc-raiders-hits-over-12-4m-sales-new-patch-out-with-weapon-nerfs-a-free-gift-and-a-darker-stella-montis/</guid>
+      <pubDate>Tue, 13 Jan 2026 12:30:20 +0000</pubDate>
+      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/998965301id28299gol.jpg" type="image/jpeg"/>
+      
+      <category>Proton</category>
+      
+      <category>Anti-Cheat</category>
+      
+      <category>Online Co-op</category>
+      
+      <category>Online Multiplayer</category>
+      
+    </item>
     
     <item>
       <title>Hytale pre-orders have been so strong development is secured for two years</title>
@@ -4509,416 +5367,6 @@ Recruit Fellow Hunters</p>
       <category>Monster Catching</category>
       
       <category>RPG</category>
-      
-    </item>
-    
-    <item>
-      <title>The Home Sweet Home update for Palworld with the ULTRAKILL crossover is out now</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Palworld just levelled up with a big new free Home Sweet Home update as Pocketpair work towards finishing up the game for a full release next year. This update not only brings new enhancements to building and raids, but also has an ULTRAKILL crossover.</p>
-<p>For the ULTRAKILL content you get some weapons and armour, as well as a V1’s infamous coin toss added to the game. The bigger part of the update is the building system. There's a bunch more building parts, and the much-requests triangular pieces along with the ability to change the colour of building pieces. Additionally the building menu UI was overhauled to make it easier to use.</p>
-<p>For summoning a raid boss there's now an option to jump into a special arena, instead of potentially destroying your base. A new raid boss is also available to fight. Melee combat was tweaked to make it "more viable and fun for players" like the ability to attack consecutively by repeatedly clicks, and some weapons now have special attacks. More melee improvements are planned to come for the 1.0 update.</p>
-<p>Check out the trailer:</p>
-<div class="hidden_video" data-video-id="Vn4-gKzJr0A"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/94911824208bab44883d4706582c4a04.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/Vn4-gKzJr0A" target="_blank">See video</a></div></div>
-<p>There's more to read in <a href="https://store.steampowered.com/news/app/1623730/view/627819185726031239" rel="noopener nofollow" target="_blank">the release notes</a> including experimental PvP options.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40377/palworld/">Palworld</a></strong> | Release Date: 19th January 2024<br/>Platform: Proton / Wine</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/1623730/Palworld/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/the-home-sweet-home-update-for-palworld-with-the-ultrakill-crossover-is-out-now/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/the-home-sweet-home-update-for-palworld-with-the-ultrakill-crossover-is-out-now/</guid>
-      <pubDate>Wed, 17 Dec 2025 18:28:09 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/606532266id28209gol.jpg" type="image/jpeg"/>
-      
-      <category>Early Access</category>
-      
-      <category>Proton</category>
-      
-      <category>Indie Game</category>
-      
-      <category>Monster Catching</category>
-      
-    </item>
-    
-    <item>
-      <title>Stalker 2: Heart of Chornobyl just got a huge free Stories Untold upgrade</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Stories Untold brings a whole lot new to the world of Stalker 2: Heart of Chornobyl with hours of new content for you to play through. <em>Oh I do love a free update!</em></p>
-<p>The developers say that depending on your pace, it may take you about five hours to get through the new story bits where you "Discover the mysterious transmission that gives stalkers headaches, nosebleeds, and even hallucinations" that brings "8 new missions, 7 new locations, 6 new characters, 3 new unique items, unique weapon, and more".</p>
-<p>On top of that they teased that various previously barren locations are now actually used, and the story may lead you to create a whole new hub in the Burnt Forest region. There's also a new GP37V2 weapon, a modified version of the GP37 with a pre-installed suppressor and a low-magnification scope.</p>
-<div class="hidden_video" data-video-id="5qdv38i67U0"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/78d3a107e5aea2ca369c5456e717b2d9.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/5qdv38i67U0" target="_blank">See video</a></div></div>
-<p>A number of addition tweaks were noted too including:</p>
-<blockquote>
-<ul>
-<li>Fixed an issue where multiple artifacts could spawn in one place.</li>
-<li>Optimized multiple mutant models.</li>
-<li>Fixed an issue where NPC could not find a way to the shelter during an Emission at the Cement Factory location.</li>
-<li>Fixed an issue where NPC could not find a way to the shelter during an Emission in Zalissya.</li>
-<li>Fixed an issue that could cause massive mutant hordes to spawn at the Plant location of the Garbage region.</li>
-<li>Adjusted dead zone settings for DualSense controller on PC.</li>
-<li>Fixed an issue where the player could obtain the Heart of Chornobyl artifact from the regular anomalies.</li>
-</ul>
-</blockquote>
-<p>See more in <a href="https://store.steampowered.com/news/app/1643320/view/519732795817328984" rel="noopener nofollow" target="_blank">the release notes</a>.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/40460/s-t-a-l-k-e-r-2-heart-of-chornobyl/">S.T.A.L.K.E.R. 2: Heart of Chornobyl</a></strong> | Release Date: 20th November 2024<br/>Platform: Proton / Wine</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.gog.com/en/game/stalker_2_heart_of_chornobyl_standard_edition">GOG</a></li><li><a href="https://store.steampowered.com/app/1643320/STALKER_2_Heart_of_Chornobyl/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/stalker-2-heart-of-chornobyl-just-got-a-huge-free-stories-untold-upgrade/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/stalker-2-heart-of-chornobyl-just-got-a-huge-free-stories-untold-upgrade/</guid>
-      <pubDate>Wed, 17 Dec 2025 18:21:08 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/890334539id28208gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Action</category>
-      
-      <category>FPS</category>
-      
-      <category>GOG</category>
-      
-    </item>
-    
-    <item>
-      <title>Warhammer 40,000: Mechanicus II to release in Spring 2026</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Warhammer 40,000: Mechanicus II from Bulwark Studios and Kasedo Games has a release window now set for sometime in Spring 2026. The hotly anticipated sequel is looking promising, but needs time to cook and so going by the expected calendar that puts it anywhere between March 20 - June 20.</p>
-<p>Announced via an email to GamingOnLinux they said:</p>
-<blockquote>
-<p>The new release window will allow the team to further refine the experience in response to player requests following the Steam Next Fest demo, where it ranked among the event’s most played titles.</p>
-<p>Building on this momentum, Bulwark Studios have listened closely to player feedback and have begun working on those widely requested features. The full game will now include an audio option to play with either ‘lingua-technis’, the binaric machine code language of the Adeptus Mechanicus that contributed heavily to the first game’s distinct atmosphere, or with the traditional human voiceover as heard in the demo. Movement systems are also being enhanced, with an optional setting to allow the Move action to auto-select when cycling between units, creating a smoother and more efficient tactical flow.</p>
-<p>The team is equally committed to addressing performance concerns raised during the demo period. These optimisations, together with the continued refinement of new systems and campaign content, are central to delivering a sequel that meets the expectations set by both the community and the studio’s own ambitions.</p>
-</blockquote>
-<p>A new trailer was also revealed:</p>
-<div class="hidden_video" data-video-id="JzZEQruL_xQ"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/3c1a9fcb6815e54fc486478da3451fa1.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/JzZEQruL_xQ" target="_blank">See video</a></div></div>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/42011/warhammer-40000-mechanicus-ii/">Warhammer 40,000: Mechanicus II</a></strong><br/>Platform: Proton / Wine</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/2532480/Warhammer_40000_Mechanicus_II/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/warhammer-40000-mechanicus-ii-to-release-in-spring-2026/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/warhammer-40000-mechanicus-ii-to-release-in-spring-2026/</guid>
-      <pubDate>Wed, 17 Dec 2025 12:34:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/348695072id28207gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Steam</category>
-      
-      <category>Strategy</category>
-      
-      <category>Turn-based strategy</category>
-      
-    </item>
-    
-    <item>
-      <title>Open Fodder, an open source port of the classic Cannon Fodder v2.0 released</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Cannon Fodder is a retro action-strategy gem from 1993 that was originally released on my old love the Amiga, and the modern open source port just got upgraded. Open Fodder works with <a href="https://www.gog.com/en/game/cannon_fodder" rel="noopener nofollow" target="_blank">Cannon Fodder 1</a> and <a href="https://www.gog.com/en/game/cannon_fodder_2" rel="noopener nofollow" target="_blank">Cannon Fodder 2</a> which you need need the original data files to play it which you can grab from GOG.</p>
-<p>The open source game engine adds in a number of enhancements to run it on modern PC platforms, and includes a random map system to play through too.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/15351682011765974130gol1.jpg"/><br/>
-<em>Pictured - Open Fodder on Fedora KDE</em></p>
-<p>For version 2.0.0 released December 16th the <a href="https://github.com/OpenFodder/openfodder/releases/tag/2.0.0" rel="noopener nofollow" target="_blank">changelog</a> notes:</p>
-<blockquote>
-<div class="markdown-body my-3" data-pjax="true" data-test-selector="body-content" data-view-component="true">
-<ul>
-<li>Added the missing unarmed helicopters, stopped them being grenade droppers</li>
-<li>Improved helicopter briefing screen:
-	<ul>
-<li>Corrected mission text positioning</li>
-<li>Smoother movement, correctly scaled to your display’s refresh rate</li>
-</ul>
-</li>
-<li>Fixed intro and briefing visual issues on the DOS version</li>
-<li>Fixed a bug where the random map generation screen text cleared incorrectly</li>
-<li>Fixed mouse locking when using alternative mouse modes</li>
-<li>Fixed rare crashes and visual glitches with soldier sprites on modern systems (original engine bug)</li>
-<li>Fixed an issue where soldier animations could break when changing direction or animation state (original engine bug)</li>
-<li>Improved Flatpak usability (XDG_DATA_HOME now supported)</li>
-</ul>
-</div>
-</blockquote>
-<p>Open Fodder itself is available on <a href="https://flathub.org/en/apps/org.openfodder.OpenFodder" rel="noopener nofollow" target="_blank">Flathub</a> for Linux / SteamOS. There's some <a href="https://github.com/OpenFodder/openfodder/issues/97" rel="noopener nofollow" target="_blank">issues</a> with it currently though that should hopefully be solved soon to make the install easier.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/open-fodder-an-open-source-port-of-the-classic-cannon-fodder-v2-0-released/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/open-fodder-an-open-source-port-of-the-classic-cannon-fodder-v2-0-released/</guid>
-      <pubDate>Wed, 17 Dec 2025 12:22:50 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1843290672id28206gol.jpg" type="image/jpeg"/>
-      
-      <category>Native Linux</category>
-      
-      <category>Action</category>
-      
-      <category>Open Source</category>
-      
-      <category>Retro</category>
-      
-    </item>
-    
-    <item>
-      <title>MicroProse announce a revival of the retro Geoff Crammond Racing series</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>First released in the '90s, the retro racing series designed by Geoff Crammond is making a return under new names with publisher MicroProse.</p>
-<p>From the press release GamingOnLinux received today:</p>
-<blockquote>
-<p>MicroProse is excited to announce its renewed partnership with legendary game developer Geoff Crammond, creator of some of the most influential racing simulation games of the 1990s and early 2000s. </p>
-<p>Together, we are bringing back his groundbreaking racing game engine in a re-release of the original game technology, enhanced with updates, new tools, and Steam Workshop support, through the upcoming Geoff  Crammond Racing series: GCR1, GCR2, GCR3, and GCR4, scheduled to release in 2026.</p>
-</blockquote>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/953321511765972415gol1.jpg"/></p>
-<p>Additionally, MicroProse noted the new titles are to reflect the independent direction and to ensure separation from official motorsport licensing which can be quite a minefield.</p>
-<p>More from the press release:</p>
-<blockquote>
-<p>Geoff Crammond’s original work helped define the foundations of modern racing games, introducing innovations such as advanced real-time physics, highly configurable driving assists (including the ideal racing line, steering help and auto braking), realistic AI driver behaviour, deep telemetry analysis, comprehensive car setup systems, extensive wet weather system, and the list goes on. <br/>
-The GCR series proudly carries this legacy forward.</p>
-</blockquote>
-<p>On top of that they said to expect more announcements in the series to come, so perhaps we might see some modern games being announced next year.</p>
-<p>The classics will be named (Steam links):</p>
-<p><a href="https://store.steampowered.com/app/3603710/GCR1_Geoff_Crammond/" rel="noopener nofollow" target="_blank">GCR1 Geoff Crammond</a></p>
-<p><a href="https://store.steampowered.com/app/3603720/GCR2_Geoff_Crammond/" rel="noopener nofollow" target="_blank">GCR2 Geoff Crammond</a></p>
-<p><a href="https://store.steampowered.com/app/3603730/GCR3_Geoff_Crammond/" rel="noopener nofollow" target="_blank">GCR3 Geoff Crammond</a></p>
-<p><a href="https://store.steampowered.com/app/3603740/GCR4_Geoff_Crammond/" rel="noopener nofollow" target="_blank">GCR4 Geoff Crammond</a></p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/microprose-announce-a-revival-of-the-retro-geoff-crammond-racing-series/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/microprose-announce-a-revival-of-the-retro-geoff-crammond-racing-series/</guid>
-      <pubDate>Wed, 17 Dec 2025 11:55:19 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/346982527id28205gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Racing</category>
-      
-      <category>Retro</category>
-      
-      <category>Steam</category>
-      
-    </item>
-    
-    <item>
-      <title>Latest Steam Deck update will warn you if an Xbox controller needs upgrading</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve released a new Steam Deck Beta update that includes a useful tweak to its Xbox controller detection.</p>
-<p>There's a bit of a problem with modern Xbox controllers and Bluetooth, where they won't properly connect up with SteamOS / Linux unless they've gone through a firmware update. I've seen a lot of support requests about this issue over the years and so it's good to see Valve highlight it directly. <em>While it's a Steam Deck Beta Client update, it should apply to other SteamOS devices too. </em></p>
-<p>From the <a href="https://steamcommunity.com/games/1675200/announcements/detail/499466596943660348?snr=2___" rel="noopener nofollow" target="_blank">changelog</a>:</p>
-<blockquote><strong>General</strong>
-<ul>
-<li>On the Bluetooth settings screen, we will now detect and notify the player when trying to pair/connect an Xbox controller with older firmware versions that cannot properly connect to Steam Deck. To fix these issues you must connect the controller to a Windows PC and update the firmware via the Xbox Accessories App.</li>
-</ul>
-<strong>Accessibility</strong>
-<ul>
-<li>Moved the Screen Reader's "Stop Talking" button to X so that external gamepads can still open the Quick Access Menu with Guide button + their equivalent of A button</li>
-</ul>
-<strong>Friends &amp; Chat</strong>
-<ul>
-<li>Suspicious or harassing group chat messages can be reported directly in the chat window by selecting the message and pressing 'Options'. You can optionally block and/or unfriend the other user while submitting the report.</li>
-</ul>
-<strong>Remote Play</strong>
-<ul>
-<li>Fixed being unable to move the mouse to another monitor when using touch controls on the Steam Link app.</li>
-</ul>
-</blockquote>
-<p>Frustrating that you're forced into using Windows to do it though but thankfully there's a lot of controllers out there that Steam Input and so SteamOS support.</p>
-<p>At some point Valve will have to start calling these Steam Deck Client updates something else, like SteamOS Client update or something similar, given that there's already other official devices with SteamOS (like the Legion Go S) and there's going to be more of their own devices soon with the <a href="https://www.gamingonlinux.com/2025/11/valve-reveal-the-new-steam-frame-steam-controller-and-steam-machine-with-steamos/" rel="noopener" target="_blank">Steam Frame and Steam Machine</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/latest-steam-deck-update-will-warn-you-if-an-xbox-controller-needs-upgrading/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/latest-steam-deck-update-will-warn-you-if-an-xbox-controller-needs-upgrading/</guid>
-      <pubDate>Wed, 17 Dec 2025 11:31:54 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1282045864id28204gol.jpg" type="image/jpeg"/>
-      
-      <category>Steam Deck</category>
-      
-      <category>Beta</category>
-      
-      <category>Steam</category>
-      
-      <category>SteamOS</category>
-      
-    </item>
-    
-    <item>
-      <title>Steam Replay is live and notes only 14% &#34;of playtime spent by all Steam users&#34; was for 2025 releases</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Valve have released Steam Replay for 2025, showing off some interesting stats about your gaming and how it stacks up against everyone on Steam.</p>
-<p>Interestingly, this year they note that only 14% of gaming was "spent by all Steam users in new releases (games released in 2025)". That's actually down a single digit percentage from last year, but continues to show that with<a href="https://www.gamingonlinux.com/2025/12/over-19000-games-have-released-on-steam-in-2025-with-nearly-half-seeing-fewer-than-10-reviews/" rel="noopener" target="_blank"> the onslaught of over 19,000 games from 2025</a> that a lot of people continue playing through their older games. According to the stats 44% of playtime from all Steam users were for releases from the last 1-7 years, and 40% playtime from all Steam users was spent on releases from 8 or more years ago.</p>
-<p>Valve's stats don't include time spent in offline mode or when you're without internet.</p>
-<p style="text-align:center"><img src="https://uploads.golmedia.net/uploads/articles/article_media/18451290861765969334gol1.jpg"/><br/>
-<em>Mine has been quite skewed back to Desktop Linux due to ARC Raiders, Dune: Awakening, and Overwatch 2.</em></p>
-<p>What did you spend the most time on across 2025?</p>
-<p>Check out <a href="https://store.steampowered.com/replay/" rel="noopener nofollow" target="_blank">your own on Steam Replay</a>.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/steam-replay-is-live-and-notes-only-14-of-playtime-spent-by-all-steam-users-was-for-2025-releases/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/steam-replay-is-live-and-notes-only-14-of-playtime-spent-by-all-steam-users-was-for-2025-releases/</guid>
-      <pubDate>Wed, 17 Dec 2025 11:16:59 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1942997836id28203gol.jpg" type="image/jpeg"/>
-      
-      <category>Misc</category>
-      
-      <category>Steam</category>
-      
-      <category>Valve</category>
-      
-    </item>
-    
-    <item>
-      <title>It just keeps getting worse - Firefox to &#34;evolve into a modern AI browser&#34;</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p><a href="https://www.gamingonlinux.com/2025/09/please-make-it-stop-google-chrome-to-be-reimagined-with-ai/" rel="noopener" target="_blank">Just like Google plan with Chrome</a>, Mozilla aren't sitting still on expanding Firefox into something resembling a web browser but with more AI.</p>
-<p>As <a href="https://blog.mozilla.org/en/mozilla/leadership/mozillas-next-chapter-anthony-enzor-demeo-new-ceo/" rel="noopener nofollow" target="_blank">announced</a> today on the Mozilla blog, they've got a new CEO with Anthony Enzor-DeMeo. Here's a short but important excerpt on the future of Firefox from the post (emphasis ours):</p>
-<blockquote>
-<p>As Mozilla moves forward, we will focus on becoming the trusted software company. This is not a slogan. It is a direction that guides how we build and how we grow. It means three things.</p>
-<ul>
-<li>First: Every product we build must give people agency in how it works. Privacy, data use, and AI must be clear and understandable. Controls must be simple. AI should always be a choice — something people can easily turn off. People should know why a feature works the way it does and what value they get from it.</li>
-<li>Second: our business model must align with trust. We will grow through transparent monetization that people recognize and value.</li>
-<li>Third: Firefox will grow from a browser into a broader ecosystem of trusted software. Firefox will remain our anchor. <strong>It will evolve into a modern AI browser</strong> and support a portfolio of new and trusted software additions.</li>
-</ul>
-</blockquote>
-<hr/>
-<p>You should read the full post to form your own opinion on it, but regular readers will know my thoughts on AI quite well by now. Companies everywhere are scrambling to force AI into where it isn't needed, or wanted, and all it ends up doing is causing the complete enshittification of whatever it is.</p>
-<p>If they really wanted to give us privacy and agency in how we use it, they would give us a very <em>simple</em> opt-out for all AI features. But like other companies and organisations - they won't, because they need to force people into it to make numbers go up. They say we should be able to easily turn it off, but I'll believe that when I see it as a clear option to disable it all.</p>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/it-just-keeps-getting-worse-firefox-to-evolve-into-a-modern-ai-browser/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/it-just-keeps-getting-worse-firefox-to-evolve-into-a-modern-ai-browser/</guid>
-      <pubDate>Tue, 16 Dec 2025 19:28:25 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/117339128id28202gol.jpg" type="image/jpeg"/>
-      
-      <category>AI</category>
-      
-      <category>Misc</category>
-      
-      <category>Open Source</category>
-      
-    </item>
-    
-    <item>
-      <title>Vampire Crawlers from the Vampire Survivors dev gets a fun new trailer</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>I am seriously stoked by Vampire Crawlers that adds to the world of Vampire Survivors with a fast-paced deck-builder from developer poncle.</p>
-<p><a href="https://www.gamingonlinux.com/2025/11/vampire-survivors-gets-turned-officially-into-a-crazy-deck-builder-with-vampire-crawlers-from-poncle/" rel="noopener" target="_blank">Announced back in November</a>, it's more of a casual deck-builder set in the same world as Vampire Survivors and will no doubt be another success for poncle. They've just <a href="https://store.steampowered.com/news/app/3265700/view/583907108616931531" rel="noopener nofollow" target="_blank">revealed</a> it already has amassed over 170K wishlists on Steam and they said: "So far we have published only what is effectively a hype trailer to try to convey how it feels to play Vampire Crawlers, with a few sneak peeks at many of the game features and options to snowball into unhinged chaos. So, for a first update, we are showing a new gameplay trailer and some simple and unedited gameplay footage of the very first dungeon floor, focused on basic gameplay. This should let you see what is at the core of Vampire Crawlers: have fun playing satisfying abilities in turbo turn-based battles, at whatever speed you prefer."</p>
-<p>See it below:</p>
-<div class="hidden_video" data-video-id="SARs48njusw"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/860044c220900d3baa68d058804de545.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/SARs48njusw" target="_blank">See video</a></div></div>
-<p>More highlights:</p>
-<blockquote>
-<ul>
-<li><strong>Snowballing, turn‑based carnage</strong>: Play cards in ascending mana order to land combos; each step multiplies the next card’s effect. Use Wilds to extend the stack and keep going to 10, 20, 30… Can you reach infinite?</li>
-<li><strong>Pick your pace</strong>: Either take your time and be tactical, or play turns as fast as you humanly can: the outcome is always accurate!</li>
-<li><strong>Deck-Building</strong>: Accumulate experience and level up to gain new cards, headbutt chests for customization gems and power‑ups; chase weapon evolutions and summon survivors to trigger cascade of effects and break the game.</li>
-<li><strong>Dungeon Crawling</strong>: Explore dungeons packed with something seldom seen in Vampire Survivors: functioning walls. And then all sorts of unique treasures and interactions. Find the shovel to dig into the next floor, that will most likely take place in the clouds!</li>
-</ul>
-</blockquote>
-<p>I really do love the look of this. Taking the pure chaos of Vampire Survivors and tuning into in a spin-off with a dungeon crawling deck-building focus. Excellent.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43643/vampire-crawlers-the-turbo-wildcard-from-vampire-survivors/">Vampire Crawlers: The Turbo Wildcard from Vampire Survivors</a></strong><br/>Platform: Proton / Wine</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3265700/Vampire_Crawlers_The_Turbo_Wildcard_from_Vampire_Survivors/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/vampire-crawlers-from-the-vampire-survivors-dev-gets-a-fun-new-trailer/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/vampire-crawlers-from-the-vampire-survivors-dev-gets-a-fun-new-trailer/</guid>
-      <pubDate>Tue, 16 Dec 2025 14:07:00 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/865989740id28201gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Deck-builder</category>
-      
-      <category>Dungeon Crawler</category>
-      
-      <category>Indie Game</category>
-      
-    </item>
-    
-    <item>
-      <title>Tingus Goose is completely absurd and possibly 2025&#39;s strangest game</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Tingus Goose has released recently and after being mystified by the demo, I took a look at the full game and I honestly still have no idea what is going on.</p>
-<p>It's a clicker / idle game about growing a weird human-goose hybrid tree, one that spawns little babies called Tingis to help you earn money to continue growing your freak of nature towards the sky to mate with another goose. Once they've mated, your tree fully blossoms and explodes a whole bunch of new geese out into the world and you continue onto the next level.</p>
-<p>It's so utterly bizarre I don't quite know how to properly explain it to you. Seeing is believing, and still wildly confusing. Not confusing in the sense of I don't know what I'm doing, the objective is clear to keep growing, I'm just confused on what goes through the mind of the creators when they thought this up.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/21223741571765891503gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/21223741571765891503gol1.jpg"/></a></p>
-<p>Tingus Goose is laughably nuts but at the same time it's weirdly captivating of your attention too, as you progress you just want to see more of it to see how batshit insane it will become in the later levels. And to appreciate all the little animations sprinkled into the game.</p>
-<p>As you grow your freaky baby spawning goose tree, you get various growths (Blossoms) on the side that are various forms of geese with their own screwed up style and benefits. The key is to get the babies crawling and bouncing all over them as they fall down the goose tree to earn you more credits to keep watering that freaky goose to grow some more towards your mate up in the sky.</p>
-<p>You get a sprinkle of upgrades as you go through it too. This system is also completely ridiculous. Below the ground are the roots, which get supplied with calcium from a cow. Yes, there's an underground cow hooked up to supply calcium and that's probably the least weirdest thing in the game.</p>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/2051621061765892239gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/2051621061765892239gol1.jpg"/></a></p>
-<p>It's here where you can spend bones to unlock permanent upgrades for you run. Like the ability to combine babies into screwed up abominations that earn you even more money to grow your goose.</p>
-<p>On top of that there's a freaky doctor who will allow you to buy various extras using gems you find as you grow, that help you earn even more monies. You can buy up new types of Blossoms for your tree, DNA to upgrade your clicks on babies and more weirdness.</p>
-<p>With it being an idle / clicker incremental game the main point is just to keep on going. With each chapter you start fresh with a new goose tree and the amount you need to grow gets longer, but you bring with it all the upgrades you've earned to keep things interesting and not even remotely difficult. It's a casual game that just takes time and not much else.</p>
-<p>This is the good stuff right here.</p>
-<div class="hidden_video" data-video-id="qZzyBRDIfds"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/95dda987e676df64f19ead3a9ccfcc29.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/qZzyBRDIfds" target="_blank">See video</a></div></div>
-<p>Game Highlights:</p>
-<blockquote>
-<ul>
-<li>Plant seeds in people: Pop a goose seed into a patient's torso, add water, and watch a towering goose-tree burst to life in MasterTingus's unmistakably twisted style.</li>
-<li>Idle meets Rube Goldberg: Babies rain down branches, ricocheting off "Blossoms" to generate cash while "Specimens" chain wild synergies for exponential growth.</li>
-<li>17 unsettling chapters, 150 plus unlockables: Every chapter introduces new modifiers, lore, Blossoms, Specimens, and Relics. All art is hand-illustrated by MasterTingus.</li>
-<li>Each run offers a uniquely bizarre experience.</li>
-</ul>
-</blockquote>
-<p>There is one issue running the game with Proton - there's a few brief animation videos that don't work on Linux / SteamOS where you end up seeing a <a href="https://uploads.golmedia.net/uploads/articles/article_media/1770843771765890818gol1.jpg" rel="noopener nofollow" target="_blank">video test screen</a> due to the unsupported codec used by the developer. It's quite a common problem and you'll <a href="https://www.gamingonlinux.com/guides/view/how-to-install-ge-proton-on-steam-deck-steamos-linux/" rel="noopener" target="_blank">need to use GE-Proton</a> to solve that until the developer fixes it. Apart from that, the game appeared to run fine.</p>
-<p>If you like games that try to be different, weird, unique and like nothing else but you also appreciate more chilled games — Tingus Goose is a seriously easy recommendation to pick up.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43371/tingus-goose/">Tingus Goose</a></strong> | Release Date: 2nd December 2025<br/>Platform: Proton / Wine</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://store.steampowered.com/app/3629780/Tingus_Goose/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/tingus-goose-is-completely-absurd-and-possibly-2025s-strangest-game/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/tingus-goose-is-completely-absurd-and-possibly-2025s-strangest-game/</guid>
-      <pubDate>Tue, 16 Dec 2025 13:42:51 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/385506599id28200gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Casual</category>
-      
-      <category>Clicker</category>
-      
-      <category>Idle</category>
-      
-    </item>
-    
-    <item>
-      <title>ARC Raiders gets a huge v1.7.0 free update with a new map condition, new event, skill tree resets and more</title>
-      <author>Liam Dawe</author>
-      <description><div class="content group e-content">
-<p>Embark Games have been cooking, with ARC Raiders v1.7.0 out now that brings quite a lot to the popular extraction shooter - so time for another run.</p>
-<p>One of the most requested features for the game has also been added, with the ability to re-do your skill tree. You can also toggle to aim down the sights of weapons now too, useful to save a bit of finger ache. There's a cap on the amount of blue Cred you can have at any one time too, which is now actually shown in-game. We even get to customize our Raider Tool now too, they've improved Stella Montis spawns and moved the Aphelion blueprint drop from the Matriarch to Stella Montis. Also, one of my favourite changes - the Rattler is no longer completely useless with the clip size increased by default to 12.</p>
-<div class="hidden_video" data-video-id="zdGMteCqknE"><img alt="YouTube Thumbnail" src="https://www.gamingonlinux.com/cache/youtube_thumbs/2b5f65ef609e01fcaf3c078c9aedd0ea.jpg"/><div class="hidden_video_content"><a href="https://yewtu.be/embed/zdGMteCqknE" target="_blank">See video</a></div></div>
-<p class="plain-list-title">That's just the smaller listed above stuff as there's also:</p>
-<ul>
-<li>A new Cold Snap map condition:
-	<ul>
-<li>During the Cold Snap condition, the clock is ticking. The freezing weather will cut your Raider down in minutes unless you get indoors, or heal up quickly. Bear this in mind when engaging other Raiders - getting pinned down in the open is a death sentence during a Rust Belt winter.</li>
-</ul>
-</li>
-<li>Flickering Flames event:
-	<ul>
-<li>Gather Candleberries and XP during a run to progress through to earn various items.</li>
-</ul>
-</li>
-<li>New free Raider Deck "Goalie" - coming on December 26.</li>
-<li>New Quests and Items.</li>
-</ul>
-<p style="text-align:center"><a data-fancybox="images" href="https://uploads.golmedia.net/uploads/articles/article_media/8829375961765888758gol1.jpg" target="_blank"><img src="https://uploads.golmedia.net/uploads/articles/article_media/8829375961765888758gol1.jpg"/></a></p>
-<p>There's lots more tweaks you can see all in <a href="https://arcraiders.com/news/cold-snap-patch-notes" rel="noopener nofollow" target="_blank">the patch notes</a>.</p>
-<p>Also, somehow Fanatical still have it on a discount so they're the best place to buy it.</p>
-<div class="itemdb_embed"><p><strong><a href="https://www.gamingonlinux.com/itemdb/app/43449/arc-raiders/">ARC Raiders</a></strong> | Release Date: 30th October 2025<br/>Platform: Proton / Wine</p><p class="plain-list-title">Official links:</p><ul><li><a href="https://www.fanatical.com/en/game/arc-raiders">Fanatical</a></li><li><a href="https://store.steampowered.com/app/1808500/ARC_Raiders/">Steam</a></li></ul></div>
-<span class="hidden_message">Article taken from <a href="https://www.gamingonlinux.com/">GamingOnLinux.com.</a></span>
-</div></description>
-      <link>https://www.gamingonlinux.com/2025/12/arc-raiders-gets-a-huge-v1-7-0-free-update-with-a-new-map-condition-new-event-skill-tree-resets-and-more/</link>
-      <guid isPermaLink="true">https://www.gamingonlinux.com/2025/12/arc-raiders-gets-a-huge-v1-7-0-free-update-with-a-new-map-condition-new-event-skill-tree-resets-and-more/</guid>
-      <pubDate>Tue, 16 Dec 2025 12:40:03 +0000</pubDate>
-      <enclosure url="https://www.gamingonlinux.com/uploads/articles/tagline_images/1520490317id28195gol.jpg" type="image/jpeg"/>
-      
-      <category>Proton</category>
-      
-      <category>Anti-Cheat</category>
-      
-      <category>Extraction Shooter</category>
-      
-      <category>Online Co-op</category>
       
     </item>
     
